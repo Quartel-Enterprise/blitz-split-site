@@ -1,0 +1,14 @@
+{
+  "name": "blitzsplit-site",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    // /g/<code> and any other unknown page answer with the provisional page.
+    "not_found_handling": "single-page-application",
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "blitzsplit.com", "custom_domain": true },
+    { "pattern": "www.blitzsplit.com", "custom_domain": true }
+  ]
+}

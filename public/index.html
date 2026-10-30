@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blitz Split</title>
+  <meta name="description" content="Split bills with friends, even offline.">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #ffffff;
+      --foreground: #09090b;
+      --muted: #71717a;
+      --card: #f4f4f5;
+      --primary: #266489;
+      --shape: #ffdbce;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #09090b;
+        --foreground: #fafafa;
+        --muted: #a1a1aa;
+        --card: #18181b;
+        --primary: #95cdf7;
+        --shape: #71361c;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      background: var(--background);
+      color: var(--foreground);
+      font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { width: 100%; max-width: 420px; text-align: center; }
+    .badge {
+      width: 88px; height: 88px; margin: 0 auto 24px;
+      display: grid; place-items: center;
+      border-radius: 28px; background: var(--shape);
+    }
+    .badge img { width: 48px; height: 48px; }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.02em; }
+    p { margin: 0; color: var(--muted); }
+    .invite {
+      margin-top: 28px; padding: 16px; border-radius: 16px;
+      background: var(--card); color: var(--foreground); text-align: left;
+    }
+    .invite strong { display: block; margin-bottom: 4px; color: var(--primary); }
+    .invite p { font-size: 15px; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge"><img src="/icon.svg" alt=""></div>
+    <h1 data-i18n="name">Blitz Split</h1>
+    <p data-i18n="tagline">Split bills with friends, even offline.</p>
+    <p data-i18n="soon" style="margin-top: 4px">Our new website is on its way.</p>
+    <section class="invite" id="invite" hidden>
+      <strong data-i18n="inviteTitle">You got a group invite</strong>
+      <p data-i18n="inviteBody">Open this link on your phone with the app installed to join the group.</p>
+    </section>
+  </main>
+  <script>
+    // Portuguese for any pt locale, English for every other language.
+    const strings = {
+      pt: {
+        name: "Bora Rachar",
+        tagline: "Divida contas com os amigos, mesmo offline.",
+        soon: "Nosso site novo está chegando.",
+        inviteTitle: "Você recebeu um convite para um grupo",
+        inviteBody: "Abra este link no celular com o app instalado para entrar no grupo.",
+      },
+    };
+    const lang = /^pt\b/i.test(navigator.language) ? "pt" : "en";
+    const dict = strings[lang];
+    if (dict) {
+      document.documentElement.lang = "pt-BR";
+      document.title = dict.name;
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        el.textContent = dict[el.dataset.i18n];
+      });
+    }
+    if (/^\/g\/[A-Za-z0-9]{8}\/?$/.test(location.pathname)) {
+      document.getElementById("invite").hidden = false;
+    }
+  </script>
+</body>
+</html>
