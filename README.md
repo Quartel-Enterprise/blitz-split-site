@@ -20,9 +20,12 @@ The `.well-known` files are copies of `webApp/public/.well-known` in
 ```bash
 npm install
 npm run dev      # http://localhost:8787
-npm run deploy   # production: blitzsplit.com and www.blitzsplit.com
 ```
 
-`deploy` publishes straight to the production domain, so it needs `npx wrangler login` on an account with the
-blitzsplit.com zone. Cloudflare's redirect rules run before the Worker: the zone must have no rule that redirects
-blitzsplit.com, or at least none that catches `/.well-known/*` and `/g/*`.
+Every commit on `main` deploys to blitzsplit.com and www.blitzsplit.com through
+[Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/): Cloudflare runs `npx wrangler deploy`
+and reports the result as a check on the commit. Other branches don't build.
+
+`npm run deploy` publishes from your machine straight to the production domain, so it needs `npx wrangler login`
+on the account with the blitzsplit.com zone. Cloudflare's redirect rules run before the Worker: the zone must have
+no rule that redirects blitzsplit.com, or at least none that catches `/.well-known/*` and `/g/*`.
