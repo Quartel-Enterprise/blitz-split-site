@@ -15,7 +15,7 @@
       --muted: #71717a;
       --card: #f4f4f5;
       --primary: #266489;
-      --shape: #ffdbce;
+      --badge-edge: #e4e4e7;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -24,7 +24,7 @@
         --muted: #a1a1aa;
         --card: #18181b;
         --primary: #95cdf7;
-        --shape: #71361c;
+        --badge-edge: transparent;
       }
     }
     * { box-sizing: border-box; }
@@ -39,12 +39,14 @@
       font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     }
     main { width: 100%; max-width: 420px; text-align: center; }
+    /* The app icon: the blue mark on a white tile, in both themes. */
     .badge {
       width: 88px; height: 88px; margin: 0 auto 24px;
       display: grid; place-items: center;
-      border-radius: 28px; background: var(--shape);
+      border-radius: 22px; background: #ffffff;
+      box-shadow: 0 0 0 1px var(--badge-edge);
     }
-    .badge img { width: 48px; height: 48px; }
+    .badge img { width: 56px; height: 56px; }
     h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.02em; }
     p { margin: 0; color: var(--muted); }
     .invite {
