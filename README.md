@@ -5,7 +5,7 @@ What [blitzsplit.com](https://blitzsplit.com) serves: a Cloudflare Worker with s
 | Path | What it answers |
 | --- | --- |
 | `/` | A provisional page (Bora Rachar in Portuguese, Blitz Split in any other language) until the new landing exists |
-| `/g/<code>` | The same page, plus a note to open the group invite on a phone with the app installed |
+| `/g/<code>`, `/g/<code>/<member>` | The same page, plus a note to open the group invite (or a member's personal invite) on a phone with the app installed |
 | `/.well-known/assetlinks.json` | Android App Links of `com.quare.blitzsplit` |
 | `/.well-known/apple-app-site-association` | Apple Universal Links and shared web credentials (the recovery code in the Passwords app) of `TTV2A365LG.com.quare.blitzsplit` |
 

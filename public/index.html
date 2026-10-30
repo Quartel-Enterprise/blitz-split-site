@@ -89,7 +89,8 @@
         el.textContent = dict[el.dataset.i18n];
       });
     }
-    if (/^\/g\/[A-Za-z0-9]{8}\/?$/.test(location.pathname)) {
+    // A group's link, /g/<code>, or a member's personal one, /g/<code>/<member>.
+    if (/^\/g\/[A-Za-z0-9]{8}(\/[A-Za-z0-9]{6})?\/?$/.test(location.pathname)) {
       document.getElementById("invite").hidden = false;
     }
   </script>
