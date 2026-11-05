@@ -49,6 +49,8 @@
     <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
     <symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></symbol>
     <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+    <symbol id="i-icecream" viewBox="0 0 24 24"><path d="m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11"/><path d="M17 7A5 5 0 0 0 7 7"/><path d="M17 7a2 2 0 0 1 0 4H7a2 2 0 0 1 0-4"/></symbol>
     <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
     <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
     <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
@@ -138,23 +140,25 @@
           </div>
 
           <!-- A group in the app: every amount adds up (R$ 1,560.60 split 4 ways). -->
-          <div class="showcase" aria-hidden="true">
+          <!-- A working preview of a group (preview.js): its tabs switch, and "Split a bill" adds a bill that every tab follows. -->
+          <div class="showcase" role="region" aria-label="App preview" data-i18n-label="previewLabel">
             <div class="phone">
               <div class="screen">
-                <div class="screen-status"><span>9:41</span><span class="island"></span><span class="bars"><i></i></span></div>
+                <div class="screen-status" aria-hidden="true"><span>9:41</span><span class="island"></span><span class="bars"><i></i></span></div>
                 <div class="screen-head">
-                  <span class="back"><svg class="icon"><use href="#i-left"/></svg></span>
-                  <div><h3 data-i18n="mGroup">Floripa trip</h3><small data-i18n="mMembers">4 people · 3 bills</small></div>
+                  <span class="back" aria-hidden="true"><svg class="icon"><use href="#i-left"/></svg></span>
+                  <div><h3 data-i18n="mGroup">Floripa trip</h3><small data-pv="members" data-i18n="mMembers">4 people · 3 bills</small></div>
                 </div>
                 <div class="balance">
                   <small data-i18n="mYourBalance">Your balance in the group</small>
-                  <strong class="num" data-i18n="mBalance">+$809.85</strong>
-                  <small data-i18n="mToGet">to get back</small>
-                  <div class="faces">
+                  <strong class="num" data-pv="balance" data-i18n="mBalance">+$809.85</strong>
+                  <small data-pv="balance-label" data-i18n="mToGet">to get back</small>
+                  <div class="faces" aria-hidden="true">
                     <span class="av blue">P</span><span class="av green">A</span><span class="av peach">B</span><span class="av lilac">C</span>
                   </div>
                 </div>
-                <div class="tabs"><span class="on" data-i18n="mTabBills">Expenses</span><span data-i18n="mTabBalances">Balances</span><span data-i18n="mTabStats">Statistics</span></div>
+                <div class="tabs" role="tablist"><button type="button" role="tab" aria-selected="true" data-tab="bills" data-i18n="mTabBills">Expenses</button><button type="button" role="tab" aria-selected="false" data-tab="balances" data-i18n="mTabBalances">Balances</button><button type="button" role="tab" aria-selected="false" data-tab="stats" data-i18n="mTabStats">Statistics</button></div>
+                <div class="screen-body" role="tabpanel" data-pv="panel">
                 <ul class="list">
                   <li>
                     <span class="cat"><svg class="icon"><use href="#i-bed"/></svg></span>
@@ -178,16 +182,17 @@
                   <span><span class="av peach">B</span>Bruno<b class="pos" data-i18n="mOwe2">$341.55</b></span>
                   <span><span class="av green">A</span>Ana<b class="pos" data-i18n="mOwe3">$78.15</b></span>
                 </div>
-                <div class="screen-cta"><span><svg class="icon"><use href="#i-plus"/></svg><span data-i18n="mSplit">Split a bill</span></span></div>
+                </div>
+                <button type="button" class="screen-cta" data-pv="split"><svg class="icon"><use href="#i-plus"/></svg><span data-i18n="mSplit">Split a bill</span></button>
               </div>
             </div>
-            <div class="float float-pay">
+            <div class="float float-pay" aria-hidden="true">
               <span class="av green" style="width:32px;height:32px;font-size:13px">A</span>
               <span><b data-i18n="fPayTitle">Ana paid you $78.15</b><small data-i18n="fPayBody">Floripa trip · via Pix</small></span>
             </div>
-            <div class="float float-sync">
+            <div class="float float-sync" aria-hidden="true">
               <span class="badge-ic"><svg class="icon"><use href="#i-wifi-off"/></svg></span>
-              <span><b data-i18n="fSyncTitle">Offline</b><small class="pend" data-i18n="fSyncBody">2 changes in the queue</small></span>
+              <span><b data-i18n="fSyncTitle">Offline</b><small class="pend" data-pv="queue" data-i18n="fSyncBody">2 changes in the queue</small></span>
             </div>
           </div>
         </div>
@@ -481,6 +486,7 @@
         mOwe1: "R$ 390,15",
         mOwe2: "R$ 341,55",
         mOwe3: "R$ 78,15",
+        previewLabel: "Prévia do app",
         mSplit: "Rachar conta",
         fPayTitle: "Ana te pagou R$ 78,15",
         fPayBody: "Viagem Floripa · via Pix",
@@ -603,6 +609,7 @@
         mOwe1: "$390,15",
         mOwe2: "$341,55",
         mOwe3: "$78,15",
+        previewLabel: "Vista previa de la app",
         mSplit: "Dividir cuenta",
         fPayTitle: "Ana te pagó $78,15",
         fPayBody: "Viaje a Floripa · por Pix",
@@ -690,6 +697,7 @@
     };
   </script>
   <script src="/site.js"></script>
+  <script src="/preview.js"></script>
   <script>
     // A group's link, /g/<code>, or a member's personal one, /g/<code>/<member>.
     if (/^\/g\/[A-Za-z0-9]{8}(\/[A-Za-z0-9]{6})?\/?$/.test(location.pathname)) {

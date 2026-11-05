@@ -311,6 +311,7 @@ a.status .icon { width: 15px; height: 15px; }
   position: relative; height: 100%; border-radius: 37px; overflow: hidden;
   background: var(--bg); display: flex; flex-direction: column; font-size: 13px;
 }
+.screen-status, .screen-head, .balance { flex: none; }
 .screen-status { display: flex; justify-content: space-between; align-items: center; padding: 14px 26px 6px; font-size: 12px; font-weight: 600; }
 .screen-status .island { width: 84px; height: 24px; border-radius: 999px; background: var(--device); }
 .screen-status .bars { display: flex; gap: 4px; align-items: center; }
@@ -328,9 +329,45 @@ a.status .icon { width: 15px; height: 15px; }
 .balance strong { display: block; margin-top: 2px; font-size: 26px; letter-spacing: -0.03em; line-height: 1.15; }
 .balance .faces { display: flex; margin-top: 10px; }
 .balance .faces .av { margin-right: -6px; box-shadow: 0 0 0 2px var(--primary-container); }
-.tabs { display: flex; gap: 4px; margin: 14px 14px 6px; padding: 3px; border-radius: 10px; background: var(--muted); }
-.tabs span { flex: 1; text-align: center; padding: 5px 0; border-radius: 8px; font-size: 11.5px; font-weight: 500; color: var(--muted-fg); }
-.tabs span.on { background: var(--surface); color: var(--fg); box-shadow: var(--shadow-sm); }
+.tabs { display: flex; gap: 4px; margin: 14px 14px 6px; padding: 3px; border-radius: 10px; background: var(--muted); flex: none; }
+.tabs button {
+  flex: 1; min-width: 0; padding: 5px 0; border: 0; border-radius: 8px; background: transparent; cursor: pointer;
+  font: 500 11.5px/1.4 var(--font); color: var(--muted-fg); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.tabs button:hover { color: var(--fg); }
+.tabs button[aria-selected="true"] { background: var(--surface); color: var(--fg); box-shadow: var(--shadow-sm); }
+.tabs button:focus-visible { outline-offset: 0; }
+/* Under the tabs the screen scrolls, with room at the bottom for the floating "Split a bill". */
+.screen-body { flex: 1; min-height: 0; overflow-y: auto; padding-bottom: 76px; scrollbar-width: none; }
+.screen-body::-webkit-scrollbar { display: none; }
+.screen-body.swap { animation: pv-in 0.26s cubic-bezier(0.2, 0.8, 0.2, 1); }
+@keyframes pv-in { from { opacity: 0; transform: translateY(6px); } }
+.list li.fresh { animation: pv-fresh 1.6s ease-out; }
+@keyframes pv-fresh { 0% { background: var(--primary-container); transform: translateY(-6px); opacity: 0; } 18% { transform: none; opacity: 1; } 40% { background: var(--primary-container); } }
+.list .zero, .pv-scope .zero { color: var(--muted-fg); }
+.pv-label { margin: 12px 16px 6px; font-size: 11px; font-weight: 500; color: var(--muted-fg); }
+.list.people li { justify-content: space-between; }
+.list.people .who { display: flex; align-items: center; gap: 8px; font-size: 12.5px; }
+.list.people .who b { font-weight: 600; }
+.list .v .zero { color: var(--muted-fg); }
+.moves { list-style: none; margin: 0; padding: 0 14px; display: grid; gap: 6px; }
+.moves li { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+.moves .av { width: 22px; height: 22px; font-size: 10px; }
+.moves .arrow { color: var(--fg-soft); }
+.moves b { margin-left: auto; font-weight: 600; }
+.pv-total { margin: 10px 14px 8px; padding: 12px 14px; border-radius: 14px; background: var(--surface); }
+.pv-total small { display: block; color: var(--muted-fg); font-size: 11px; }
+.pv-total strong { font-size: 20px; letter-spacing: -0.02em; }
+.list.stats li { align-items: center; }
+.bar-t { flex: 1; min-width: 0; display: grid; gap: 6px; }
+.bar-row { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; }
+.bar-row b { font-weight: 600; }
+.bar-row .num { color: var(--fg-soft); font-size: 11px; }
+.bar { height: 6px; border-radius: 999px; background: var(--muted); overflow: hidden; }
+.bar i { display: block; height: 100%; border-radius: inherit; background: var(--primary); transform-origin: left; animation: pv-grow 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.bar i.o1 { opacity: 0.7; } .bar i.o2 { opacity: 0.45; }
+@keyframes pv-grow { from { transform: scaleX(0); } }
 .list { list-style: none; margin: 0; padding: 4px 14px; display: grid; gap: 2px; }
 .list li { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 12px; background: var(--surface); }
 .list li:first-child { border-radius: 14px 14px 4px 4px; }
@@ -347,9 +384,52 @@ a.status .icon { width: 15px; height: 15px; }
 .owes > span { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; }
 .owes .av { width: 22px; height: 22px; font-size: 10px; }
 .owes b { margin-left: auto; font-weight: 600; }
-.screen-cta { margin-top: auto; padding: 12px 14px 22px; display: flex; justify-content: flex-end; }
-.screen-cta > span { display: inline-flex; align-items: center; gap: 6px; padding: 12px 16px; border-radius: 16px; background: var(--primary); color: var(--on-primary); font-weight: 600; font-size: 13px; box-shadow: var(--shadow-sm); }
+.screen-cta {
+  position: absolute; right: 14px; bottom: 22px; z-index: 2; display: inline-flex; align-items: center; gap: 6px;
+  padding: 12px 16px; border: 0; border-radius: 16px; background: var(--primary); color: var(--on-primary); cursor: pointer;
+  font: 600 13px/1.2 var(--font); box-shadow: 0 6px 16px -6px rgba(0, 0, 0, 0.45); transition: transform 0.15s, opacity 0.2s;
+}
+.screen-cta:hover { transform: translateY(-1px); }
+.screen-cta:active { transform: scale(0.97); }
 .screen-cta .icon { width: 16px; height: 16px; }
+.screen.sheet-open .screen-cta { opacity: 0; pointer-events: none; }
+
+/* "Split a bill" in the preview: a sheet rising over the screen. */
+.pv-scrim { position: absolute; inset: 0; z-index: 3; background: rgba(0, 0, 0, 0.4); opacity: 0; transition: opacity 0.24s; }
+.pv-scrim.show { opacity: 1; }
+.pv-sheet {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; max-height: 88%; overflow-y: auto; scrollbar-width: none;
+  padding: 8px 16px 20px; border-radius: 24px 24px 0 0; background: var(--card); color: var(--fg);
+  transform: translateY(100%); transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.pv-sheet.show { transform: none; }
+.pv-sheet .grabber { display: block; width: 36px; height: 4px; margin: 0 auto 8px; border-radius: 999px; background: var(--border); }
+.sheet-head { display: flex; align-items: center; justify-content: space-between; }
+.sheet-head h4 { margin: 0; font-size: 15px; letter-spacing: -0.01em; }
+.sheet-x { width: 28px; height: 28px; border: 0; border-radius: 50%; display: grid; place-items: center; background: var(--muted); color: var(--fg-soft); cursor: pointer; }
+.sheet-x .icon { width: 14px; height: 14px; }
+.pv-sheet .field { margin-top: 12px; }
+.pv-sheet .field > small { display: block; margin-bottom: 6px; color: var(--muted-fg); font-size: 11px; font-weight: 500; }
+.pv-sheet .desc { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; }
+.pv-sheet .desc .cat { width: 28px; height: 28px; border-radius: 8px; }
+.pv-sheet .amount { font-size: 24px; letter-spacing: -0.03em; }
+.picks { display: flex; flex-wrap: wrap; gap: 6px; }
+.pick {
+  display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px 3px 3px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--border); background: transparent; color: var(--fg-soft); font: 500 11.5px/1.2 var(--font);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.pick .av { width: 20px; height: 20px; font-size: 9.5px; }
+.pick[aria-pressed="true"] { background: var(--primary-container); border-color: transparent; color: var(--on-primary-container); }
+.pv-sheet .each { display: block; margin-top: 8px; font-size: 11.5px; color: var(--fg-soft); }
+.sheet-actions { margin-top: 16px; display: flex; gap: 8px; justify-content: flex-end; }
+.sheet-actions button { border: 0; border-radius: 999px; cursor: pointer; font: 600 12.5px/1 var(--font); padding: 10px 14px; display: inline-flex; align-items: center; gap: 6px; }
+.sheet-actions .ghost { background: transparent; color: var(--fg-soft); }
+.sheet-actions .ghost:hover { background: var(--muted); }
+.sheet-actions .save { background: var(--primary); color: var(--on-primary); }
+.sheet-actions .icon { width: 14px; height: 14px; }
+.float-sync.bump { animation: pv-bump 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), bob 6s ease-in-out -3s infinite; }
+@keyframes pv-bump { 30% { transform: scale(1.08); } }
 .av {
   width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; flex: none;
   font-size: 11px; font-weight: 600;
@@ -376,10 +456,15 @@ a.status .icon { width: 15px; height: 15px; }
 .float-sync .pend { color: var(--pending); font-weight: 600; }
 @keyframes bob { 50% { transform: translateY(-8px); } }
 @media (max-width: 520px) {
+  /* On a phone the cards sit on the device's edges, off what the preview shows. */
+  .showcase { padding: 40px 0 44px; }
   .float { font-size: 12px; max-width: 200px; padding: 8px 12px 8px 8px; }
-  .float-pay { right: 0; top: 25%; }
-  .float-sync { left: 0; bottom: 5%; }
+  .float-pay { right: 0; top: 4px; }
+  .float-sync { left: 0; bottom: 6px; }
 }
+/* While the preview's sheet is open, the cards step aside. */
+.float { transition: opacity 0.2s; }
+.showcase:has(.sheet-open) .float { opacity: 0; pointer-events: none; }
 
 /* Sections */
 .section { padding: 72px 0; }
