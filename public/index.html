@@ -51,9 +51,10 @@
     <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
     <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
     <symbol id="i-icecream" viewBox="0 0 24 24"><path d="m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11"/><path d="M17 7A5 5 0 0 0 7 7"/><path d="M17 7a2 2 0 0 1 0 4H7a2 2 0 0 1 0-4"/></symbol>
+    <!-- "Split a bill", as the app draws it (the client's SplitBillIcon): a receipt with a plus. Filled. -->
+    <symbol id="i-split-bill" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M5.75 12V10.334H18.25V2.834L17 4.084 15.75 2.834 14.5 4.084 13.25 2.834 12 4.084 10.75 2.834 9.5 4.084 8.25 2.834 7 4.084 5.75 2.834 4.5 4.084 3.25 2.834V19.5L4.5 18.25 5.75 19.5 7 18.25 8.25 19.5 9.5 18.25 10.75 19.5 12 18.25H10.75V14.167H14.5V12H5.75ZM5.75 8.667H15.75V7H5.75V8.667ZM13.25 19.5 12 18.25H14.5L13.25 19.5Z"/><path d="M20.75 15.016V17.063H11.75V15.016H20.75ZM17.922 11.167V21.167H15.588V11.167H17.922Z"/></symbol>
     <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
     <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
-    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
     <symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></symbol>
     <symbol id="i-food" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
     <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
@@ -183,7 +184,7 @@
                   <span><span class="av green"><img src="/people/ana.webp" alt=""></span>Ana<b class="pos" data-i18n="mOwe3">$78.15</b></span>
                 </div>
                 </div>
-                <button type="button" class="screen-cta" data-pv="split"><svg class="icon"><use href="#i-plus"/></svg><span data-i18n="mSplit">Split a bill</span></button>
+                <button type="button" class="screen-cta" data-pv="split"><svg class="icon-fill" aria-hidden="true"><use href="#i-split-bill"/></svg><span data-i18n="mSplit">Split a bill</span></button>
               </div>
             </div>
             <div class="float float-pay" aria-hidden="true">
