@@ -13,7 +13,7 @@
 
   const TEXT = {
     en: {
-      you: "You", youObj: "you", youPaid: "You paid", paid: "{name} paid", notIn: "Not in this one",
+      paid: "{name} paid", notIn: "Not in this one",
       members: (people, bills) => `${people} people · ${bills} ${bills === 1 ? "bill" : "bills"}`,
       toGet: "to get back", youOwe: "you owe", settled: "all settled", owesYou: "Who owes you", youOweTitle: "You owe",
       eachOne: "Each one's balance", getsBack: "gets back", owes: "owes", even: "settled up",
@@ -23,14 +23,14 @@
       queue: (n) => `${n} changes in the queue`,
       split: "How it was split", yourShare: "Your share", deleteBill: "Delete bill",
       recordPayment: "Record payment", record: "Record", viaPix: "via Pix", payment: "Payment", deletePayment: "Delete payment",
-      payLine: (from, to) => `${from === "me" ? "You" : name(from)} paid ${to === "me" ? "you" : name(to)}`,
+      payLine: (from, to) => `${name(from)} paid ${name(to)}`,
       paidYou: (who, value) => `${who} paid you ${value}`,
       paidTotal: "Paid in total", shareTotal: "Share of the bills", balance: "Balance",
       bills: (n) => `${n} ${n === 1 ? "bill" : "bills"}`,
       titles: { b1: "Lagoa guesthouse", b2: "Dinner at Ribeirão", b3: "Ride to the beach", p1: "Ice cream on the beach", p2: "Weekly groceries", p3: "Parking" },
     },
     pt: {
-      you: "Você", youObj: "você", youPaid: "Você pagou", paid: "{name} pagou", notIn: "Fora desta",
+      paid: "{name} pagou", notIn: "Fora desta",
       members: (people, bills) => `${people} pessoas · ${bills} ${bills === 1 ? "conta" : "contas"}`,
       toGet: "a receber", youOwe: "você deve", settled: "tudo acertado", owesYou: "Te devem", youOweTitle: "Você deve",
       eachOne: "Saldo de cada um", getsBack: "a receber", owes: "deve", even: "quite",
@@ -40,14 +40,14 @@
       queue: (n) => `${n} alterações na fila`,
       split: "Como foi dividida", yourShare: "Sua parte", deleteBill: "Excluir conta",
       recordPayment: "Registrar pagamento", record: "Registrar", viaPix: "via Pix", payment: "Pagamento", deletePayment: "Excluir pagamento",
-      payLine: (from, to) => `${from === "me" ? "Você" : name(from)} pagou ${to === "me" ? "você" : name(to)}`,
+      payLine: (from, to) => `${name(from)} pagou ${name(to)}`,
       paidYou: (who, value) => `${who} te pagou ${value}`,
       paidTotal: "Pagou no total", shareTotal: "Parte nas contas", balance: "Saldo",
       bills: (n) => `${n} ${n === 1 ? "conta" : "contas"}`,
       titles: { b1: "Pousada na Lagoa", b2: "Jantar no Ribeirão", b3: "Uber para a praia", p1: "Sorvete na praia", p2: "Mercado da semana", p3: "Estacionamento" },
     },
     es: {
-      you: "Tú", youObj: "ti", youPaid: "Pagaste tú", paid: "Pagó {name}", notIn: "No participas",
+      paid: "Pagó {name}", notIn: "No participas",
       members: (people, bills) => `${people} personas · ${bills} ${bills === 1 ? "cuenta" : "cuentas"}`,
       toGet: "por cobrar", youOwe: "debes", settled: "todo saldado", owesYou: "Te deben", youOweTitle: "Debes",
       eachOne: "Saldo de cada uno", getsBack: "por cobrar", owes: "debe", even: "al día",
@@ -57,7 +57,7 @@
       queue: (n) => `${n} cambios en la cola`,
       split: "Cómo se dividió", yourShare: "Tu parte", deleteBill: "Eliminar cuenta",
       recordPayment: "Registrar pago", record: "Registrar", viaPix: "por Pix", payment: "Pago", deletePayment: "Eliminar pago",
-      payLine: (from, to) => from === "me" ? `Le pagaste a ${name(to)}` : to === "me" ? `${name(from)} te pagó` : `${name(from)} le pagó a ${name(to)}`,
+      payLine: (from, to) => `${name(from)} le pagó a ${name(to)}`,
       paidYou: (who, value) => `${who} te pagó ${value}`,
       paidTotal: "Pagó en total", shareTotal: "Su parte en las cuentas", balance: "Saldo",
       bills: (n) => `${n} ${n === 1 ? "cuenta" : "cuentas"}`,
@@ -78,13 +78,13 @@
   }
 
   const PEOPLE = [
-    { id: "me", name: null, initial: "P", color: "blue" },
+    { id: "me", name: "Pedro", initial: "P", color: "blue" },
     { id: "ana", name: "Ana", initial: "A", color: "green" },
     { id: "bruno", name: "Bruno", initial: "B", color: "peach" },
     { id: "carla", name: "Carla", initial: "C", color: "lilac" },
   ];
   const everyone = PEOPLE.map((p) => p.id);
-  function name(id) { return id === "me" ? TEXT.you : PEOPLE.find((p) => p.id === id).name; }
+  function name(id) { return PEOPLE.find((p) => p.id === id).name; }
   const CATEGORY = { lodging: "i-bed", food: "i-food", transport: "i-car" };
 
   // What the group has, newest first, as Expenses lists it: bills and recorded payments.
@@ -159,7 +159,7 @@
       }
       const share = shares(e);
       const mine = (e.payer === "me" ? e.amount : 0) - (share.me || 0);
-      const who = e.payer === "me" ? TEXT.youPaid : fill(TEXT.paid, { name: name(e.payer) });
+      const who = fill(TEXT.paid, { name: name(e.payer) });
       const part = e.payer !== "me" && !share.me
         ? `<small class="zero">${TEXT.notIn}</small>`
         : `<small class="${tone(mine)}">${money(mine, true)}</small>`;
@@ -308,7 +308,7 @@
 
   function billSheet(bill) {
     const share = shares(bill);
-    const who = bill.payer === "me" ? TEXT.youPaid : fill(TEXT.paid, { name: name(bill.payer) });
+    const who = fill(TEXT.paid, { name: name(bill.payer) });
     const mine = (bill.payer === "me" ? bill.amount : 0) - (share.me || 0);
     return {
       title: TEXT.titles[bill.title],
@@ -378,7 +378,7 @@
       title: TEXT[key],
       html: () => head(TEXT[key], CATEGORY[key])
         + `<div class="field"><strong class="num amount">${money(total)}</strong><span class="each">${TEXT.bills(list.length)}</span></div>
-        <ul class="list sheet-list">${list.map((b) => `<li><button type="button" class="row" data-bill="${entries.indexOf(b)}"><span class="cat">${icon(b.icon)}</span><span class="t"><b>${esc(TEXT.titles[b.title])}</b><small>${esc(b.payer === "me" ? TEXT.youPaid : fill(TEXT.paid, { name: name(b.payer) }))}</small></span><span class="v num"><span>${money(b.amount)}</span></span></button></li>`).join("")}</ul>`
+        <ul class="list sheet-list">${list.map((b) => `<li><button type="button" class="row" data-bill="${entries.indexOf(b)}"><span class="cat">${icon(b.icon)}</span><span class="t"><b>${esc(TEXT.titles[b.title])}</b><small>${esc(fill(TEXT.paid, { name: name(b.payer) }))}</small></span><span class="v num"><span>${money(b.amount)}</span></span></button></li>`).join("")}</ul>`
         + actions(button("close", TEXT.close, "save")),
       onClick(b) { if (b.dataset.bill) return { next: billSheet(entries[Number(b.dataset.bill)]) }; },
       focus: '[data-act="close"].save',
