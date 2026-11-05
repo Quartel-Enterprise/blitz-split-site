@@ -18,15 +18,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@500&display=swap">
   <link rel="stylesheet" href="/site.css">
   <script src="/boot.js"></script>
-  <script src="/stores.js"></script>
-  <!-- Google Analytics of the site's own Firebase project (blitzsplit-site), apart from the app's. -->
+  <!-- Google Analytics of the site's own Firebase project (blitzsplit-site), apart from the app's: analytics.js. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD94WD10FJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-JD94WD10FJ');
-  </script>
+  <script src="/analytics.js"></script>
+  <script src="/stores.js"></script>
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">

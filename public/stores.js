@@ -94,9 +94,8 @@
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
   const platformName = { android: "Android", ios: isIos && /ipad/i.test(agent) ? "iPad" : "iPhone", mac: "Mac" };
 
-  function track(name, params) {
-    if (typeof window.gtag === "function") window.gtag("event", name, params);
-  }
+  // analytics.js, loaded before this script, sends the events.
+  const track = (name, params) => window.track?.(name, params);
 
   function setUp() {
     // The badges: each store linked, standing out or not, or shown as "Coming soon" with no link.
@@ -212,7 +211,10 @@
     stay.href = store.url;
     go.onclick = () => track("store_mismatch_go", { store: ownStore });
     stay.onclick = () => track("store_mismatch_stay", { store: key });
-    dialog.querySelector("[data-close]").setAttribute("aria-label", TEXT.close);
+    const close = dialog.querySelector("[data-close]");
+    close.setAttribute("aria-label", TEXT.close);
+    close.onclick = () => track("store_mismatch_dismiss", { method: "close_button" });
+    dialog.oncancel = () => track("store_mismatch_dismiss", { method: "escape" });
     track("store_mismatch_view", { clicked: key, recommended: ownStore });
     dialog.showModal();
   }

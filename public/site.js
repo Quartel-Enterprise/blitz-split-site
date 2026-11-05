@@ -5,6 +5,11 @@
   const params = new URLSearchParams(location.search);
   // boot.js, in <head>, already picked the theme and the language.
   const lang = ["pt", "es"].includes(document.documentElement.dataset.lang) ? document.documentElement.dataset.lang : "en";
+  // analytics.js, in <head>, sends the events; README.md lists them.
+  const track = (name, params) => window.track?.(name, params);
+  // Where a link or button sits: the header's menus, the rest of the header or the footer.
+  const originOf = (el) => (el.closest("details") && el.closest(".site-header") ? "header_menu"
+    : el.closest(".site-header") ? "header" : el.closest(".site-footer") ? "footer" : "content");
 
   const dict = (window.SITE_STRINGS || {})[lang];
   if (dict) {
@@ -34,6 +39,7 @@
     link.href = url.pathname + url.search + url.hash;
     link.addEventListener("click", () => {
       try { localStorage.setItem("lang", target); } catch (e) { /* private mode: the URL still carries it */ }
+      if (target !== lang) track("language_change", { language: target, origin: originOf(link) });
     });
   });
 
@@ -65,6 +71,7 @@
   showTheme(root.dataset.themePref || "system");
   document.querySelectorAll("[data-set-theme]").forEach((el) => el.addEventListener("click", () => {
     const pref = el.dataset.setTheme;
+    if (pref !== root.dataset.themePref) track("theme_change", { theme: pref, origin: originOf(el) });
     try { localStorage.setItem("theme", pref); } catch (e) { /* private mode: this page still switches */ }
     showTheme(pref);
     el.closest("details")?.removeAttribute("open");
@@ -73,6 +80,11 @@
   // The header's menus (language and theme): the language one shows its code, and a click outside or Esc closes them.
   document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = lang.toUpperCase(); });
   const langMenus = [...document.querySelectorAll(".lang-menu, .theme-menu, .get-menu")];
+  langMenus.forEach((menu) => menu.addEventListener("toggle", () => {
+    if (!menu.open) return;
+    const id = menu.classList.contains("lang-menu") ? "language_menu" : menu.classList.contains("theme-menu") ? "theme_menu" : "get_menu";
+    track("menu_click", { menu_id: id });
+  }));
   document.addEventListener("click", (e) => {
     langMenus.forEach((menu) => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
   });
@@ -90,6 +102,10 @@
     const body = item.querySelector(".faq-body");
     let running = null;
     summary.addEventListener("click", (e) => {
+      // Opening, or opening again while it slides closed: q1 for the first question's q1q.
+      if (!item.open || item.classList.contains("closing")) {
+        track("faq_open", { question: summary.querySelector("[data-i18n]")?.dataset.i18n.replace(/q$/, "") });
+      }
       if (reduceMotion.matches || !body.animate) return;
       e.preventDefault();
       const from = running ? body.getBoundingClientRect().height : null;
@@ -147,6 +163,20 @@
   }
   // On a phone, picking a section closes the contents.
   document.querySelectorAll(".toc a").forEach((a) => a.addEventListener("click", () => {
+    track("navigation_click", { target: a.hash.slice(1), origin: "toc" });
     if (!wide.matches) a.closest("details")?.removeAttribute("open");
+  }));
+
+  // The rest of the links: the logo, the landing's sections, "back to top" and the legal pages.
+  document.querySelectorAll(".logo").forEach((a) => a.addEventListener("click", () => {
+    track("logo_click", { origin: originOf(a) });
+  }));
+  document.querySelectorAll('.site-header .nav a[href^="#"]').forEach((a) => a.addEventListener("click", () => {
+    track("navigation_click", { target: a.hash.slice(1), origin: "header" });
+  }));
+  toTop?.addEventListener("click", () => track("navigation_click", { target: "top", origin: "to_top" }));
+  const LEGAL = { "/privacidade": "privacy_policy", "/termos": "terms_of_service" };
+  document.querySelectorAll('a[href^="/privacidade"], a[href^="/termos"]').forEach((a) => a.addEventListener("click", () => {
+    track("select_content", { content_type: "legal", item_id: LEGAL[new URL(a.href).pathname], origin: originOf(a) });
   }));
 })();

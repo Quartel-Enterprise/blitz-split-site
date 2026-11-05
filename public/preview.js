@@ -10,6 +10,8 @@
   if (!screen) return;
   const lang = ["pt", "es"].includes(root.dataset.lang) ? root.dataset.lang : "en";
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  // analytics.js, in <head>, sends the events; README.md lists them.
+  const track = (name, params) => window.track?.(name, params);
 
   const TEXT = {
     en: {
@@ -224,15 +226,20 @@
   const tabs = [...screen.querySelectorAll('[role="tab"]')];
   tabs.forEach((button) => {
     button.id = `pv-tab-${button.dataset.tab}`;
-    button.addEventListener("click", () => select(button.dataset.tab, true));
+    button.addEventListener("click", () => choose(button.dataset.tab));
     button.addEventListener("keydown", (e) => {
       if (!["ArrowLeft", "ArrowRight"].includes(e.key)) return;
       const i = tabs.indexOf(button) + (e.key === "ArrowRight" ? 1 : -1);
       const next = tabs[(i + tabs.length) % tabs.length];
       next.focus();
-      select(next.dataset.tab, true);
+      choose(next.dataset.tab);
     });
   });
+  // A tab the visitor picks.
+  function choose(nameOfTab) {
+    if (nameOfTab !== tab) track("preview_tab_select", { tab: nameOfTab });
+    select(nameOfTab, true);
+  }
   function select(nameOfTab, animate) {
     tab = nameOfTab;
     tabs.forEach((b) => {
@@ -279,6 +286,7 @@
     const preset = PRESETS[nextPreset % PRESETS.length];
     const draft = { kind: "bill", ...preset, payer: "me", among: [...everyone] };
     return {
+      sheet: "split",
       title: TEXT.sheetTitle,
       html() {
         const each = Math.min(...Object.values(shares(draft)));
@@ -298,7 +306,7 @@
           if (kept.length) draft.among = kept;
         } else if (b.dataset.act === "save") {
           nextPreset += 1;
-          return change(() => { entries.unshift(draft); fresh = draft; });
+          return change("add_bill", () => { entries.unshift(draft); fresh = draft; });
         } else return;
         return "rerender";
       },
@@ -311,6 +319,7 @@
     const who = fill(TEXT.paid, { name: name(bill.payer) });
     const mine = (bill.payer === "me" ? bill.amount : 0) - (share.me || 0);
     return {
+      sheet: "bill",
       title: TEXT.titles[bill.title],
       html: () => head(TEXT.titles[bill.title], bill.icon)
         + `<div class="field"><strong class="num amount">${money(bill.amount)}</strong><span class="each">${avatar(bill.payer)} ${esc(who)}</span></div>
@@ -318,19 +327,20 @@
           `<li${id === "me" ? ' class="me"' : ""}>${avatar(id)}<span>${esc(name(id))}</span><b class="num">${money(share[id])}</b></li>`).join("")}</ul></div>
         ${share.me || bill.payer === "me" ? `<div class="field mine"><small>${TEXT.yourShare}</small><b class="num ${tone(mine)}">${money(mine, true)}</b></div>` : ""}`
         + actions(button("delete", TEXT.deleteBill, "danger", "i-x"), button("close", TEXT.close, "save")),
-      onClick(b) { if (b.dataset.act === "delete") return change(() => { entries = entries.filter((e) => e !== bill); }); },
+      onClick(b) { if (b.dataset.act === "delete") return change("delete_bill", () => { entries = entries.filter((e) => e !== bill); }); },
       focus: '[data-act="close"].save',
     };
   }
 
   function paymentSheet(payment) {
     return {
+      sheet: "payment",
       title: TEXT.payment,
       html: () => head(TEXT.payment)
         + `<div class="field payflow">${avatar(payment.from)}<span class="arrow-line" aria-hidden="true"></span>${avatar(payment.to)}</div>
         <div class="field center"><strong class="num amount">${money(payment.amount)}</strong><span class="each">${esc(TEXT.payLine(payment.from, payment.to))} · ${TEXT.viaPix}</span></div>`
         + actions(button("delete", TEXT.deletePayment, "danger", "i-x"), button("close", TEXT.close, "save")),
-      onClick(b) { if (b.dataset.act === "delete") return change(() => { entries = entries.filter((e) => e !== payment); }); },
+      onClick(b) { if (b.dataset.act === "delete") return change("delete_payment", () => { entries = entries.filter((e) => e !== payment); }); },
       focus: '[data-act="close"].save',
     };
   }
@@ -339,6 +349,7 @@
     const [from, to, amount] = move.split(":");
     const cents = Number(amount);
     return {
+      sheet: "record",
       title: TEXT.recordPayment,
       html: () => head(TEXT.recordPayment)
         + `<div class="field payflow">${avatar(from)}<span class="arrow-line" aria-hidden="true"></span>${avatar(to)}</div>
@@ -347,7 +358,7 @@
       onClick(b) {
         if (b.dataset.act !== "record") return;
         const payment = { kind: "payment", from, to, amount: cents };
-        return change(() => { entries.unshift(payment); fresh = payment; }, to === "me" ? TEXT.paidYou(name(from), money(cents)) : null);
+        return change("record_payment", () => { entries.unshift(payment); fresh = payment; }, to === "me" ? TEXT.paidYou(name(from), money(cents)) : null);
       },
       focus: '[data-act="record"]',
     };
@@ -359,6 +370,7 @@
     const owed = bills().reduce((s, b) => s + (shares(b)[id] || 0), 0);
     const moves = settlements(net).filter((m) => m.from === id || m.to === id);
     return {
+      sheet: "person",
       title: name(id),
       html: () => `<span class="grabber" aria-hidden="true"></span>
         <div class="sheet-head">${avatar(id)}<h4>${esc(name(id))}</h4><button type="button" class="sheet-x" data-act="close" aria-label="${TEXT.close}">${icon("i-x")}</button></div>
@@ -375,6 +387,7 @@
     const list = bills().filter((b) => b.category === key);
     const total = list.reduce((s, b) => s + b.amount, 0);
     return {
+      sheet: "category",
       title: TEXT[key],
       html: () => head(TEXT[key], CATEGORY[key])
         + `<div class="field"><strong class="num amount">${money(total)}</strong><span class="each">${TEXT.bills(list.length)}</span></div>
@@ -400,6 +413,7 @@
       sheet.querySelector(key)?.focus();
     } else if (result && result.next) {
       current = result.next;
+      track("preview_sheet_open", { sheet: current.sheet });
       paintSheet();
       sheet.scrollTop = 0;
       sheet.querySelector(current.focus)?.focus({ preventScroll: true });
@@ -415,6 +429,7 @@
   scrim.addEventListener("click", () => closeSheet());
 
   function openSheet(kind, from) {
+    track("preview_sheet_open", { sheet: kind.sheet });
     current = kind;
     opener = from || splitButton;
     paintSheet();
@@ -443,7 +458,8 @@
   }
 
   // A change saves on the device and joins the offline queue, as in the app.
-  function change(apply, paidYou) {
+  function change(action, apply, paidYou) {
+    track("preview_change", { action });
     closeSheet(() => {
       apply();
       queued += 1;
