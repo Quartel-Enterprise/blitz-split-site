@@ -1,6 +1,8 @@
 # Blitz Split site
 
-What [blitzsplit.com](https://blitzsplit.com) serves: a Cloudflare Worker with static assets only, no script.
+What [blitzsplit.com](https://blitzsplit.com) serves: a Cloudflare Worker with static assets only, no bundle. The page loads Google Analytics' `gtag.js`, which reports to the
+Firebase project `blitzsplit-site` (measurement id `G-JD94WD10FJ`): a project of its own, so the site's visits don't mix
+with the app's numbers (the app's project is `blitz-split`).
 
 | Path | What it answers |
 | --- | --- |
