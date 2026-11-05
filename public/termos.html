@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Terms of use · Blitz Split</title>
+  <meta name="description" content="The rules for using Blitz Split: what the app does, what it doesn't, and what each side is responsible for.">
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://blitzsplit.com/termos">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="/site.css">
+  <script src="/boot.js"></script>
+  <script src="/stores.js"></script>
+  <!-- Google Analytics of the site's own Firebase project (blitzsplit-site), apart from the app's. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD94WD10FJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-JD94WD10FJ');
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="/">
+        <span class="logo-tile"><img src="/icon.svg" alt=""></span>
+        <span data-i18n="name">Blitz Split</span>
+      </a>
+      <nav class="nav" aria-label="Legal">
+        <a href="/privacidade" data-i18n="privacy">Privacy policy</a>
+        <a href="/termos" aria-current="page" data-i18n="terms">Terms of use</a>
+      </nav>
+      <div class="header-end">
+        <details class="lang-menu">
+          <summary aria-label="Language" data-i18n-label="language"><svg class="icon"><use href="#i-globe"/></svg><span class="lang-code">EN</span></summary>
+          <div class="lang-pop">
+            <a data-set-lang="en" href="?lang=en" lang="en">English</a>
+            <a data-set-lang="pt" href="?lang=pt" lang="pt-BR">Português (Brasil)</a>
+            <a data-set-lang="es" href="?lang=es" lang="es">Español</a>
+          </div>
+        </details>
+        <details class="theme-menu">
+          <summary aria-label="Theme" data-i18n-label="theme"><svg class="icon ic-light"><use href="#i-sun"/></svg><svg class="icon ic-dark"><use href="#i-moon"/></svg><svg class="icon ic-system"><use href="#i-monitor"/></svg></summary>
+          <div class="lang-pop">
+            <button type="button" data-set-theme="light"><span><svg class="icon"><use href="#i-sun"/></svg><span data-i18n="themeLight">Light</span></span></button>
+            <button type="button" data-set-theme="dark"><span><svg class="icon"><use href="#i-moon"/></svg><span data-i18n="themeDark">Dark</span></span></button>
+            <button type="button" data-set-theme="system"><span><svg class="icon"><use href="#i-monitor"/></svg><span data-i18n="themeSystem">System</span></span></button>
+          </div>
+        </details>
+        <!-- What the header offers depends on the visitor's platform and the stores that list the app: stores.js. -->
+        <span class="header-get" data-header-get>
+          <a class="btn btn-outline btn-sm header-web" data-header-web hidden>Open web app</a>
+          <a class="btn btn-primary btn-sm" data-header-store hidden>Open web app</a>
+          <details class="get-menu" data-header-menu hidden><summary class="btn btn-primary btn-sm">Get the app</summary><div class="lang-pop"></div></details>
+        </span>
+      </div>
+    </div>
+  </header>
+
+    <main id="main">
+    <!-- ============================ Português ============================ -->
+    <div data-lang="pt">
+      <div class="legal-hero">
+        <div class="wrap">
+          <a class="crumbs" href="/"><svg class="icon"><use href="#i-left"/></svg>Bora Rachar</a>
+          <h1>Termos de uso</h1>
+          <div class="meta">
+            <span><svg class="icon"><use href="#i-cal"/></svg>Atualizados em 5 de novembro de 2026</span>
+            <span><svg class="icon"><use href="#i-clock"/></svg>Leitura de 6 minutos</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap legal-layout">
+        <aside class="toc">
+          <details>
+            <summary>Nesta página<svg class="icon"><use href="#i-down"/></svg></summary>
+            <ol>
+              <li><a href="#pt-aceite">Aceitação</a></li>
+              <li><a href="#pt-servico">O que o app faz</a></li>
+              <li><a href="#pt-conta">Sua conta e o acesso</a></li>
+              <li><a href="#pt-conteudo">O que você lança</a></li>
+              <li><a href="#pt-regras">Uso aceitável</a></li>
+              <li><a href="#pt-recibos">Recibos e cálculos</a></li>
+              <li><a href="#pt-disponibilidade">Disponibilidade</a></li>
+              <li><a href="#pt-preco">Preço</a></li>
+              <li><a href="#pt-marca">Marca e propriedade</a></li>
+              <li><a href="#pt-encerrar">Encerramento</a></li>
+              <li><a href="#pt-responsabilidade">Responsabilidade</a></li>
+              <li><a href="#pt-lei">Lei e foro</a></li>
+              <li><a href="#pt-mudancas">Mudanças e contato</a></li>
+            </ol>
+          </details>
+        </aside>
+
+        <article class="prose">
+          <div class="summary-card">
+            <h2><svg class="icon"><use href="#i-shield"/></svg>Em resumo</h2>
+            <ul>
+              <li><svg class="icon"><use href="#i-check"/></svg>O Bora Rachar organiza as contas do grupo. Ele não movimenta dinheiro.</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Você usa sem conta. Guarde o código de recuperação: sem ele, não há como devolver o acesso.</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>O que você lança é seu, e você responde por ele.</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Confira o que a leitura do recibo preencheu antes de salvar.</li>
+            </ul>
+          </div>
+
+          <section id="pt-aceite">
+            <h2><span class="n">1</span>Aceitação</h2>
+            <p>Estes termos valem entre você e a <strong>PI Software LTDA</strong> (Quartel Enterprise, “nós”) para o uso dos apps do Bora Rachar (Blitz Split fora do Brasil) para Android, iPhone, iPad, Mac e navegador, e do site blitzsplit.com.</p>
+            <p>Ao usar o app, você concorda com estes termos e com a <a href="/privacidade">Política de privacidade</a>. Se não concordar, não use o app.</p>
+          </section>
+
+          <section id="pt-servico">
+            <h2><span class="n">2</span>O que o app faz</h2>
+            <p>O Bora Rachar ajuda grupos a dividir despesas: registra as contas, calcula quanto cada pessoa deve a quem e guarda os pagamentos que vocês registram.</p>
+            <div class="callout">
+              <strong>Ele não é um banco nem uma instituição de pagamento.</strong>
+              Nenhum dinheiro passa pelo app. Pix, Bitcoin ou qualquer outro meio acontecem fora dele, entre vocês e seus bancos ou carteiras. O app só mostra a chave ou o endereço que cada membro cadastrou.
+            </div>
+            <p>Os saldos são o resultado do que o grupo lançou. Eles não são cobrança, título de crédito nem prova de dívida.</p>
+          </section>
+
+          <section id="pt-conta">
+            <h2><span class="n">3</span>Sua conta e o acesso</h2>
+            <ul>
+              <li>Você pode usar o app sem conta. Conectar Google ou Apple é opcional e serve para sincronizar e recuperar o acesso.</li>
+              <li>Sem Google ou Apple, <strong>o código de recuperação é a única forma de voltar à sua conta</strong>. Se você o perder, não temos como devolver o acesso.</li>
+              <li>Você responde pelo que for feito com o seu código e com as contas que conectar. Não compartilhe o código.</li>
+              <li>Use um nome que as pessoas do grupo reconheçam e não se passe por outra pessoa.</li>
+            </ul>
+          </section>
+
+          <section id="pt-conteudo">
+            <h2><span class="n">4</span>O que você lança</h2>
+            <p>Contas, comentários, fotos e chaves que você lança continuam sendo seus. Para o app funcionar, você nos dá uma licença gratuita, mundial e não exclusiva para guardar, copiar, sincronizar e mostrar esse conteúdo às pessoas dos seus grupos, enquanto ele existir no serviço.</p>
+            <p>Só adicione pessoas, fotos e informações que você tem o direito de compartilhar. Quem está num grupo vê o que é lançado nele.</p>
+          </section>
+
+          <section id="pt-regras">
+            <h2><span class="n">5</span>Uso aceitável</h2>
+            <p>Não use o app para:</p>
+            <ul>
+              <li>fraude, lavagem de dinheiro ou qualquer fim ilegal;</li>
+              <li>assediar, ameaçar ou expor alguém;</li>
+              <li>mandar spam por convites ou notificações;</li>
+              <li>publicar conteúdo ilegal, ofensivo ou que viole direitos de outras pessoas;</li>
+              <li>tentar acessar grupos que não são seus, burlar a segurança ou sobrecarregar o serviço;</li>
+              <li>coletar dados de outras pessoas de forma automatizada.</li>
+            </ul>
+          </section>
+
+          <section id="pt-recibos">
+            <h2><span class="n">6</span>Recibos e cálculos</h2>
+            <p>A leitura de recibo usa inteligência artificial e pode errar um item, um preço ou o total. O app mostra o que leu para você conferir antes de salvar, e o que for salvo passa a ser como qualquer conta lançada à mão.</p>
+            <p>Os valores são calculados a partir do que o grupo lança e das regras de divisão escolhidas. Confira os números antes de pagar ou cobrar alguém.</p>
+          </section>
+
+          <section id="pt-disponibilidade">
+            <h2><span class="n">7</span>Disponibilidade</h2>
+            <p>O app funciona offline e sincroniza quando há internet, o que depende da sua conexão e dos nossos servidores. O serviço pode ficar fora do ar para manutenção ou por falhas que não controlamos.</p>
+            <p>Podemos mudar, incluir ou tirar recursos. Se uma mudança afetar o que você já usa, avisamos no app antes.</p>
+          </section>
+
+          <section id="pt-preco">
+            <h2><span class="n">8</span>Preço</h2>
+            <p>Se houver recursos pagos, o preço e as condições aparecem antes de qualquer cobrança, e as compras seguem as regras da Google Play e da App Store, inclusive para cancelamento e reembolso.</p>
+          </section>
+
+          <section id="pt-marca">
+            <h2><span class="n">9</span>Marca e propriedade</h2>
+            <p>Os nomes Bora Rachar e Blitz Split, o ícone e o visual do app são nossos. Estes termos não dão a você direito de usá-los fora do app.</p>
+          </section>
+
+          <section id="pt-encerrar">
+            <h2><span class="n">10</span>Encerramento</h2>
+            <p>Você pode parar de usar o app quando quiser e excluir sua conta em Perfil › “Excluir conta e dados”. O que acontece com seus dados está na <a href="/privacidade#pt-tempo">Política de privacidade</a>.</p>
+            <p>Podemos suspender ou encerrar uma conta que viole estes termos, avisando antes sempre que possível.</p>
+          </section>
+
+          <section id="pt-responsabilidade">
+            <h2><span class="n">11</span>Responsabilidade</h2>
+            <p>Fazemos o possível para o app estar correto e no ar, mas ele é oferecido como está. Na medida em que a lei permite, não respondemos por:</p>
+            <ul>
+              <li>acordos e pagamentos entre os membros de um grupo;</li>
+              <li>dados perdidos com o código de recuperação, ou com o aparelho antes de sincronizar;</li>
+              <li>erros nos dados lançados pelas pessoas ou lidos de recibos e salvos sem conferir.</li>
+            </ul>
+            <p>Nada aqui limita os direitos que o Código de Defesa do Consumidor garante a você.</p>
+          </section>
+
+          <section id="pt-lei">
+            <h2><span class="n">12</span>Lei e foro</h2>
+            <p>Estes termos seguem as leis do Brasil. Qualquer disputa é resolvida no foro do seu domicílio.</p>
+          </section>
+
+          <section id="pt-mudancas">
+            <h2><span class="n">13</span>Mudanças e contato</h2>
+            <p>Quando estes termos mudarem, atualizamos a data no topo e, se a mudança for importante, avisamos no app antes de ela valer. Continuar usando o app depois disso significa aceitar a nova versão.</p>
+            <p>Dúvidas: <a href="mailto:quare.software@gmail.com">quare.software@gmail.com</a>.</p>
+          </section>
+        </article>
+      </div>
+    </div>
+
+    <!-- ============================ English ============================ -->
+    <div data-lang="en">
+      <div class="legal-hero">
+        <div class="wrap">
+          <a class="crumbs" href="/"><svg class="icon"><use href="#i-left"/></svg>Blitz Split</a>
+          <h1>Terms of use</h1>
+          <div class="meta">
+            <span><svg class="icon"><use href="#i-cal"/></svg>Updated November 5, 2026</span>
+            <span><svg class="icon"><use href="#i-clock"/></svg>6 min read</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap legal-layout">
+        <aside class="toc">
+          <details>
+            <summary>On this page<svg class="icon"><use href="#i-down"/></svg></summary>
+            <ol>
+              <li><a href="#en-accept">Acceptance</a></li>
+              <li><a href="#en-service">What the app does</a></li>
+              <li><a href="#en-account">Your account and access</a></li>
+              <li><a href="#en-content">What you add</a></li>
+              <li><a href="#en-rules">Acceptable use</a></li>
+              <li><a href="#en-receipts">Receipts and math</a></li>
+              <li><a href="#en-availability">Availability</a></li>
+              <li><a href="#en-price">Price</a></li>
+              <li><a href="#en-brand">Brand and ownership</a></li>
+              <li><a href="#en-end">Ending</a></li>
+              <li><a href="#en-liability">Liability</a></li>
+              <li><a href="#en-law">Governing law</a></li>
+              <li><a href="#en-changes">Changes and contact</a></li>
+            </ol>
+          </details>
+        </aside>
+
+        <article class="prose">
+          <div class="summary-card">
+            <h2><svg class="icon"><use href="#i-shield"/></svg>In short</h2>
+            <ul>
+              <li><svg class="icon"><use href="#i-check"/></svg>Blitz Split keeps the group's accounts. It doesn't move money.</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>You use it without an account. Keep your recovery code: without it, there's no way to give your access back.</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>What you add is yours, and you're responsible for it.</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Check what the receipt reader filled in before saving.</li>
+            </ul>
+          </div>
+
+          <section id="en-accept">
+            <h2><span class="n">1</span>Acceptance</h2>
+            <p>These terms are between you and <strong>PI Software LTDA</strong> (Quartel Enterprise, “we”) for using the Blitz Split apps (Bora Rachar in Brazil) for Android, iPhone, iPad, Mac and the browser, and the blitzsplit.com website.</p>
+            <p>By using the app, you agree to these terms and to the <a href="/privacidade">Privacy policy</a>. If you don't agree, don't use the app.</p>
+          </section>
+
+          <section id="en-service">
+            <h2><span class="n">2</span>What the app does</h2>
+            <p>Blitz Split helps groups share expenses: it records bills, works out who owes whom how much, and keeps the payments you record.</p>
+            <div class="callout">
+              <strong>It is not a bank or a payment institution.</strong>
+              No money goes through the app. Pix, Bitcoin or any other method happens outside it, between you and your banks or wallets. The app only shows the key or address each member saved.
+            </div>
+            <p>Balances are the result of what the group added. They are not a bill, a credit instrument or proof of debt.</p>
+          </section>
+
+          <section id="en-account">
+            <h2><span class="n">3</span>Your account and access</h2>
+            <ul>
+              <li>You can use the app without an account. Connecting Google or Apple is optional and serves to sync and recover your access.</li>
+              <li>Without Google or Apple, <strong>your recovery code is the only way back into your account</strong>. If you lose it, we can't give your access back.</li>
+              <li>You're responsible for what is done with your code and with the accounts you connect. Don't share the code.</li>
+              <li>Use a name your group recognizes, and don't pretend to be someone else.</li>
+            </ul>
+          </section>
+
+          <section id="en-content">
+            <h2><span class="n">4</span>What you add</h2>
+            <p>Bills, comments, photos and keys you add remain yours. For the app to work, you give us a free, worldwide, non-exclusive license to store, copy, sync and show that content to the people in your groups, for as long as it exists in the service.</p>
+            <p>Only add people, photos and information you have the right to share. Everyone in a group sees what is added to it.</p>
+          </section>
+
+          <section id="en-rules">
+            <h2><span class="n">5</span>Acceptable use</h2>
+            <p>Don't use the app for:</p>
+            <ul>
+              <li>fraud, money laundering or anything illegal;</li>
+              <li>harassing, threatening or exposing anyone;</li>
+              <li>spamming through invites or notifications;</li>
+              <li>posting content that is illegal, offensive or infringes other people's rights;</li>
+              <li>trying to reach groups that aren't yours, getting around security or overloading the service;</li>
+              <li>collecting other people's data by automated means.</li>
+            </ul>
+          </section>
+
+          <section id="en-receipts">
+            <h2><span class="n">6</span>Receipts and math</h2>
+            <p>The receipt reader uses artificial intelligence and may get an item, a price or the total wrong. The app shows what it read for you to check before saving, and once saved it is like any bill added by hand.</p>
+            <p>Amounts are worked out from what the group adds and the split you picked. Check the numbers before paying or asking someone to pay.</p>
+          </section>
+
+          <section id="en-availability">
+            <h2><span class="n">7</span>Availability</h2>
+            <p>The app works offline and syncs when there's a connection, which depends on your network and our servers. The service may be down for maintenance or for failures outside our control.</p>
+            <p>We may change, add or remove features. If a change affects something you already use, we tell you in the app first.</p>
+          </section>
+
+          <section id="en-price">
+            <h2><span class="n">8</span>Price</h2>
+            <p>If there are paid features, the price and conditions show before any charge, and purchases follow Google Play's and the App Store's rules, cancellation and refunds included.</p>
+          </section>
+
+          <section id="en-brand">
+            <h2><span class="n">9</span>Brand and ownership</h2>
+            <p>The Blitz Split and Bora Rachar names, the icon and the app's look are ours. These terms don't give you the right to use them outside the app.</p>
+          </section>
+
+          <section id="en-end">
+            <h2><span class="n">10</span>Ending</h2>
+            <p>You can stop using the app whenever you want and delete your account in Profile › “Delete account and data”. What happens to your data is in the <a href="/privacidade#en-keep">Privacy policy</a>.</p>
+            <p>We may suspend or close an account that breaks these terms, warning you first whenever we can.</p>
+          </section>
+
+          <section id="en-liability">
+            <h2><span class="n">11</span>Liability</h2>
+            <p>We do our best to keep the app correct and online, but it is provided as is. As far as the law allows, we aren't responsible for:</p>
+            <ul>
+              <li>agreements and payments between the members of a group;</li>
+              <li>data lost along with the recovery code, or with the device before it synced;</li>
+              <li>mistakes in data people added, or read from receipts and saved without checking.</li>
+            </ul>
+            <p>Nothing here limits the rights Brazil's Consumer Protection Code gives you.</p>
+          </section>
+
+          <section id="en-law">
+            <h2><span class="n">12</span>Governing law</h2>
+            <p>These terms follow the laws of Brazil. Any dispute is settled in the courts of your place of residence.</p>
+          </section>
+
+          <section id="en-changes">
+            <h2><span class="n">13</span>Changes and contact</h2>
+            <p>When these terms change, we update the date at the top and, if the change matters, tell you in the app before it takes effect. Keeping on using the app after that means you accept the new version.</p>
+            <p>Questions: <a href="mailto:quare.software@gmail.com">quare.software@gmail.com</a>.</p>
+          </section>
+        </article>
+      </div>
+    </div>
+    <!-- ============================ Español ============================ -->
+    <!-- The app itself is in English and Portuguese only, so its buttons are named here as a Spanish speaker sees them: in English. -->
+    <div data-lang="es">
+      <div class="legal-hero">
+        <div class="wrap">
+          <a class="crumbs" href="/"><svg class="icon"><use href="#i-left"/></svg>Blitz Split</a>
+          <h1>Términos de uso</h1>
+          <div class="meta">
+            <span><svg class="icon"><use href="#i-cal"/></svg>Actualizados el 5 de noviembre de 2026</span>
+            <span><svg class="icon"><use href="#i-clock"/></svg>Lectura de 6 minutos</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap legal-layout">
+        <aside class="toc">
+          <details>
+            <summary>En esta página<svg class="icon"><use href="#i-down"/></svg></summary>
+            <ol>
+              <li><a href="#es-aceptacion">Aceptación</a></li>
+              <li><a href="#es-servicio">Qué hace la app</a></li>
+              <li><a href="#es-cuenta">Tu cuenta y el acceso</a></li>
+              <li><a href="#es-contenido">Lo que anotas</a></li>
+              <li><a href="#es-reglas">Uso aceptable</a></li>
+              <li><a href="#es-recibos">Recibos y cálculos</a></li>
+              <li><a href="#es-disponibilidad">Disponibilidad</a></li>
+              <li><a href="#es-precio">Precio</a></li>
+              <li><a href="#es-marca">Marca y propiedad</a></li>
+              <li><a href="#es-fin">Terminación</a></li>
+              <li><a href="#es-responsabilidad">Responsabilidad</a></li>
+              <li><a href="#es-ley">Ley aplicable</a></li>
+              <li><a href="#es-cambios">Cambios y contacto</a></li>
+            </ol>
+          </details>
+        </aside>
+
+        <article class="prose">
+          <div class="summary-card">
+            <h2><svg class="icon"><use href="#i-shield"/></svg>En resumen</h2>
+            <ul>
+              <li><svg class="icon"><use href="#i-check"/></svg>Blitz Split lleva las cuentas del grupo. No mueve dinero.</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>La usas sin cuenta. Guarda tu código de recuperación: sin él, no hay forma de devolverte el acceso.</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Lo que anotas es tuyo, y respondes por ello.</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Revisa lo que completó la lectura del recibo antes de guardar.</li>
+            </ul>
+          </div>
+
+          <section id="es-aceptacion">
+            <h2><span class="n">1</span>Aceptación</h2>
+            <p>Estos términos rigen entre tú y <strong>PI Software LTDA</strong> (Quartel Enterprise, “nosotros”) para el uso de las apps de Blitz Split (Bora Rachar en Brasil) para Android, iPhone, iPad, Mac y navegador, y del sitio blitzsplit.com.</p>
+            <p>Al usar la app, aceptas estos términos y la <a href="/privacidade">Política de privacidad</a>. Si no estás de acuerdo, no uses la app.</p>
+          </section>
+
+          <section id="es-servicio">
+            <h2><span class="n">2</span>Qué hace la app</h2>
+            <p>Blitz Split ayuda a los grupos a dividir gastos: anota las cuentas, calcula cuánto le debe cada persona a quién y guarda los pagos que registran.</p>
+            <div class="callout">
+              <strong>No es un banco ni una institución de pago.</strong>
+              Ningún dinero pasa por la app. Pix, Bitcoin o cualquier otro medio ocurren fuera de ella, entre ustedes y sus bancos o billeteras. La app solo muestra la clave o la dirección que guardó cada miembro.
+            </div>
+            <p>Los saldos son el resultado de lo que anotó el grupo. No son un cobro, un título de crédito ni una prueba de deuda.</p>
+          </section>
+
+          <section id="es-cuenta">
+            <h2><span class="n">3</span>Tu cuenta y el acceso</h2>
+            <ul>
+              <li>Puedes usar la app sin cuenta. Conectar Google o Apple es opcional y sirve para sincronizar y recuperar el acceso.</li>
+              <li>Sin Google ni Apple, <strong>tu código de recuperación es la única forma de volver a tu cuenta</strong>. Si lo pierdes, no podemos devolverte el acceso.</li>
+              <li>Respondes por lo que se haga con tu código y con las cuentas que conectes. No compartas el código.</li>
+              <li>Usa un nombre que tu grupo reconozca y no te hagas pasar por otra persona.</li>
+            </ul>
+          </section>
+
+          <section id="es-contenido">
+            <h2><span class="n">4</span>Lo que anotas</h2>
+            <p>Las cuentas, comentarios, fotos y claves que anotas siguen siendo tuyos. Para que la app funcione, nos das una licencia gratuita, mundial y no exclusiva para guardar, copiar, sincronizar y mostrar ese contenido a las personas de tus grupos, mientras exista en el servicio.</p>
+            <p>Agrega solo personas, fotos e información que tengas derecho a compartir. Quien está en un grupo ve lo que se anota en él.</p>
+          </section>
+
+          <section id="es-reglas">
+            <h2><span class="n">5</span>Uso aceptable</h2>
+            <p>No uses la app para:</p>
+            <ul>
+              <li>fraude, lavado de dinero o cualquier fin ilegal;</li>
+              <li>acosar, amenazar o exponer a alguien;</li>
+              <li>enviar spam por invitaciones o notificaciones;</li>
+              <li>publicar contenido ilegal, ofensivo o que viole derechos de otras personas;</li>
+              <li>intentar acceder a grupos que no son tuyos, burlar la seguridad o sobrecargar el servicio;</li>
+              <li>recoger datos de otras personas de forma automatizada.</li>
+            </ul>
+          </section>
+
+          <section id="es-recibos">
+            <h2><span class="n">6</span>Recibos y cálculos</h2>
+            <p>La lectura de recibos usa inteligencia artificial y puede equivocarse en un ítem, un precio o el total. La app muestra lo que leyó para que lo revises antes de guardar, y una vez guardado es como cualquier cuenta anotada a mano.</p>
+            <p>Los montos se calculan a partir de lo que anota el grupo y de la división elegida. Revisa los números antes de pagar o cobrarle a alguien.</p>
+          </section>
+
+          <section id="es-disponibilidad">
+            <h2><span class="n">7</span>Disponibilidad</h2>
+            <p>La app funciona sin conexión y se sincroniza cuando hay internet, lo que depende de tu red y de nuestros servidores. El servicio puede no estar disponible por mantenimiento o por fallos que no controlamos.</p>
+            <p>Podemos cambiar, agregar o quitar funciones. Si un cambio afecta algo que ya usas, te avisamos antes en la app.</p>
+          </section>
+
+          <section id="es-precio">
+            <h2><span class="n">8</span>Precio</h2>
+            <p>Si hay funciones de pago, el precio y las condiciones aparecen antes de cualquier cobro, y las compras siguen las reglas de Google Play y de la App Store, incluidas las de cancelación y reembolso.</p>
+          </section>
+
+          <section id="es-marca">
+            <h2><span class="n">9</span>Marca y propiedad</h2>
+            <p>Los nombres Blitz Split y Bora Rachar, el ícono y el aspecto de la app son nuestros. Estos términos no te dan derecho a usarlos fuera de la app.</p>
+          </section>
+
+          <section id="es-fin">
+            <h2><span class="n">10</span>Terminación</h2>
+            <p>Puedes dejar de usar la app cuando quieras y eliminar tu cuenta en Profile › “Delete account and data”. Lo que pasa con tus datos está en la <a href="/privacidade#es-tiempo">Política de privacidad</a>.</p>
+            <p>Podemos suspender o cerrar una cuenta que viole estos términos, avisándote antes siempre que sea posible.</p>
+          </section>
+
+          <section id="es-responsabilidad">
+            <h2><span class="n">11</span>Responsabilidad</h2>
+            <p>Hacemos lo posible para que la app sea correcta y esté disponible, pero se ofrece tal como está. En la medida en que la ley lo permita, no respondemos por:</p>
+            <ul>
+              <li>acuerdos y pagos entre los miembros de un grupo;</li>
+              <li>datos perdidos junto con el código de recuperación, o con el dispositivo antes de sincronizarse;</li>
+              <li>errores en los datos anotados por las personas, o leídos de recibos y guardados sin revisar.</li>
+            </ul>
+            <p>Nada de esto limita los derechos que te da la ley de protección al consumidor que te corresponda.</p>
+          </section>
+
+          <section id="es-ley">
+            <h2><span class="n">12</span>Ley aplicable</h2>
+            <p>Estos términos se rigen por las leyes de Brasil. Cualquier disputa se resuelve en los tribunales de tu domicilio.</p>
+          </section>
+
+          <section id="es-cambios">
+            <h2><span class="n">13</span>Cambios y contacto</h2>
+            <p>Cuando estos términos cambien, actualizamos la fecha de arriba y, si el cambio es importante, te avisamos en la app antes de que entre en vigor. Seguir usando la app después significa aceptar la nueva versión.</p>
+            <p>Dudas: <a href="mailto:quare.software@gmail.com">quare.software@gmail.com</a>.</p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <a class="to-top" href="#main" aria-label="Back to top" data-i18n-label="toTop"><svg class="icon"><use href="#i-up"/></svg></a>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="/"><span class="logo-tile"><img src="/icon.svg" alt=""></span><span data-i18n="name">Blitz Split</span></a>
+          <p data-i18n="footerTag">Split bills with friends, even offline.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="/privacidade" data-i18n="privacy">Privacy policy</a>
+          <a href="/termos" data-i18n="terms">Terms of use</a>
+          <a data-store-link="play" hidden>Google Play</a>
+          <a data-store-link="appstore" hidden>App Store</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Quartel Enterprise • PI Software LTDA</span>
+        <span class="footer-prefs"><span class="lang-switch" role="group" aria-label="Language" data-i18n-label="language"><a data-set-lang="en" href="?lang=en" lang="en">English</a><a data-set-lang="pt" href="?lang=pt" lang="pt-BR">Português</a><a data-set-lang="es" href="?lang=es" lang="es">Español</a></span><span class="lang-switch" role="group" aria-label="Theme" data-i18n-label="theme"><button type="button" data-set-theme="light"><svg class="icon"><use href="#i-sun"/></svg><span data-i18n="themeLight">Light</span></button><button type="button" data-set-theme="dark"><svg class="icon"><use href="#i-moon"/></svg><span data-i18n="themeDark">Dark</span></button><button type="button" data-set-theme="system"><svg class="icon"><use href="#i-monitor"/></svg><span data-i18n="themeSystem">System</span></button></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.SITE_STRINGS = {
+      pt: {
+        title: "Termos de uso · Bora Rachar",
+        description: "As regras para usar o Bora Rachar: o que o app faz, o que não faz e pelo que cada lado responde.",
+        name: "Bora Rachar",
+        skip: "Pular para o conteúdo",
+        privacy: "Política de privacidade",
+        terms: "Termos de uso",
+        toTop: "Voltar ao topo",
+        footerTag: "Divida contas com os amigos, mesmo offline.",
+        language: "Idioma",
+        theme: "Tema",
+        themeLight: "Claro",
+        themeDark: "Escuro",
+        themeSystem: "Sistema",
+      },
+      es: {
+        title: "Términos de uso · Blitz Split",
+        description: "Las reglas para usar Blitz Split: qué hace la app, qué no hace y de qué responde cada parte.",
+        skip: "Ir al contenido",
+        privacy: "Política de privacidad",
+        terms: "Términos de uso",
+        toTop: "Volver arriba",
+        footerTag: "Divide cuentas con amigos, incluso sin conexión.",
+        language: "Idioma",
+        theme: "Tema",
+        themeLight: "Claro",
+        themeDark: "Oscuro",
+        themeSystem: "Sistema",
+      },
+    };
+  </script>
+  <script src="/site.js"></script>
+</body>
+</html>
