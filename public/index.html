@@ -72,6 +72,14 @@
     <h1 data-i18n="name">Blitz Split</h1>
     <p data-i18n="tagline">Split bills with friends, even offline.</p>
     <p data-i18n="soon" style="margin-top: 4px">Our new website is on its way.</p>
+    <section class="invite" id="stores" hidden>
+      <strong data-i18n="storesTitle">Get the app on your phone</strong>
+      <p>
+        <a id="google-play" href="#" hidden>Google Play</a>
+        <span id="stores-or" data-i18n="storesOr" hidden>or</span>
+        <a id="app-store" href="#" hidden>App Store</a>
+      </p>
+    </section>
     <section class="invite" id="invite" hidden>
       <strong data-i18n="inviteTitle">You got a group invite</strong>
       <p data-i18n="inviteBody">Open this link on your phone with the app installed to join the group.</p>
@@ -86,6 +94,8 @@
         soon: "Nosso site novo está chegando.",
         inviteTitle: "Você recebeu um convite para um grupo",
         inviteBody: "Abra este link no celular com o app instalado para entrar no grupo.",
+        storesTitle: "Baixe o app no celular",
+        storesOr: "ou",
       },
     };
     const lang = /^pt\b/i.test(navigator.language) ? "pt" : "en";
@@ -100,6 +110,31 @@
     // A group's link, /g/<code>, or a member's personal one, /g/<code>/<member>.
     if (/^\/g\/[A-Za-z0-9]{8}(\/[A-Za-z0-9]{6})?\/?$/.test(location.pathname)) {
       document.getElementById("invite").hidden = false;
+    }
+    // /app-download, the link of the web's and the Mac's "Get the app" (client page 14): Android to Google Play, an
+    // iPhone or iPad to the App Store, anything else to this page with the stores that list the app. Keep these in
+    // step with blitz-split-client's stores.properties: an empty one is a store that doesn't list the app yet.
+    const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.quare.blitzsplit";
+    const APP_STORE_URL = "";
+    if (/^\/app-download\/?$/.test(location.pathname)) {
+      const agent = navigator.userAgent;
+      const isAndroid = /Android/i.test(agent);
+      // iPadOS reports a Mac, which only a touch screen tells apart.
+      const isApple = /iPhone|iPad|iPod/.test(agent) || (/Macintosh/.test(agent) && navigator.maxTouchPoints > 1);
+      if (isAndroid && GOOGLE_PLAY_URL) {
+        location.replace(GOOGLE_PLAY_URL);
+      } else if (isApple && APP_STORE_URL) {
+        location.replace(APP_STORE_URL);
+      } else {
+        const googlePlay = document.getElementById("google-play");
+        const appStore = document.getElementById("app-store");
+        googlePlay.href = GOOGLE_PLAY_URL;
+        googlePlay.hidden = !GOOGLE_PLAY_URL;
+        appStore.href = APP_STORE_URL;
+        appStore.hidden = !APP_STORE_URL;
+        document.getElementById("stores-or").hidden = !(GOOGLE_PLAY_URL && APP_STORE_URL);
+        document.getElementById("stores").hidden = false;
+      }
     }
   </script>
 </body>

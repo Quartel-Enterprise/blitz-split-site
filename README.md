@@ -9,6 +9,7 @@ with the app's numbers (the app's project is `blitz-split`).
 | `/` | A provisional page (Bora Rachar in Portuguese, Blitz Split in any other language) until the new landing exists |
 | `/g/<code>`, `/g/<code>/<member>` | The same page, plus a note to open the group invite (or a member's personal invite) on a phone with the app installed |
 | `/b/<bill>?comentario=<comment>` | The same page; on a phone or a Mac with the app installed, the app opens the comment instead |
+| `/app-download` | The link of "Get the app" in the web and the Mac app: Android goes to Google Play, an iPhone or iPad to the App Store, anything else sees the stores that list the app (`GOOGLE_PLAY_URL` and `APP_STORE_URL` in `index.html`, in step with the client's `stores.properties`) |
 | `/.well-known/assetlinks.json` | Android App Links of `com.quare.blitzsplit` |
 | `/.well-known/apple-app-site-association` | Apple Universal Links and shared web credentials (the recovery code in the Passwords app) of `TTV2A365LG.com.quare.blitzsplit` |
 
