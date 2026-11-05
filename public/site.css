@@ -402,7 +402,7 @@ a.status .icon { width: 15px; height: 15px; }
 }
 .screen-cta:hover { transform: translateY(-1px); }
 .screen-cta:active { transform: scale(0.97); }
-.screen-cta .icon { width: 16px; height: 16px; }
+.screen-cta .icon-fill { width: 18px; height: 18px; fill: currentColor; flex: none; }
 .screen.sheet-open .screen-cta { opacity: 0; pointer-events: none; }
 
 /* What the preview's tabs list opens a sheet: each row is a button. */
