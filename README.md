@@ -11,7 +11,7 @@ with the app's numbers (the app's project is `blitz-split`).
 | `/termos` | The terms of use, the address the apps' Profile › "Terms of use" opens (`/terms` redirects to it) |
 | `/g/<code>`, `/g/<code>/<member>` | The landing, plus a note to open the group invite (or a member's personal invite) on a phone with the app installed |
 | `/b/<bill>?comentario=<comment>` | The same page; on a phone or a Mac with the app installed, the app opens the comment instead |
-| `/download`, `/app-download` | The store of the visitor's platform (the apps' "Get the app" opens `/app-download`), or the landing's buttons while that store doesn't offer the app |
+| `/download`, `/app-download` | The store of the visitor's platform, or the landing's buttons while that store doesn't offer the app. `/app-download` is the link of "Get the app" in the web and the Mac app; which stores list the app is `CONFIG` in `stores.js`, in step with the client's `stores.properties` |
 | `/download/android`, `/download/ios` | That store, whatever the platform, or the landing's buttons while it doesn't offer the app |
 | `/.well-known/assetlinks.json` | Android App Links of `com.quare.blitzsplit` |
 | `/.well-known/apple-app-site-association` | Apple Universal Links and shared web credentials (the recovery code in the Passwords app) of `TTV2A365LG.com.quare.blitzsplit` |
