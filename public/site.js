@@ -175,8 +175,8 @@
     track("navigation_click", { target: a.hash.slice(1), origin: "header" });
   }));
   toTop?.addEventListener("click", () => track("navigation_click", { target: "top", origin: "to_top" }));
-  const LEGAL = { "/privacidade": "privacy_policy", "/termos": "terms_of_service" };
-  document.querySelectorAll('a[href^="/privacidade"], a[href^="/termos"]').forEach((a) => a.addEventListener("click", () => {
+  const LEGAL = { "/privacy": "privacy_policy", "/terms": "terms_of_service" };
+  document.querySelectorAll('a[href^="/privacy"], a[href^="/terms"]').forEach((a) => a.addEventListener("click", () => {
     track("select_content", { content_type: "legal", item_id: LEGAL[new URL(a.href).pathname], origin: originOf(a) });
   }));
 })();
