@@ -8,7 +8,7 @@
   const root = document.documentElement;
   const screen = document.querySelector(".showcase .screen");
   if (!screen) return;
-  const lang = ["pt", "es"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr"].includes(root.dataset.lang) ? root.dataset.lang : "en";
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   // analytics.js, in <head>, sends the events; README.md lists them.
   const track = (name, params) => window.track?.(name, params);
@@ -65,16 +65,33 @@
       bills: (n) => `${n} ${n === 1 ? "cuenta" : "cuentas"}`,
       titles: { b1: "Posada en la Lagoa", b2: "Cena en Ribeirão", b3: "Uber a la playa", p1: "Helado en la playa", p2: "Súper de la semana", p3: "Estacionamiento" },
     },
+    fr: {
+      paid: "{name} a payé", notIn: "Pas dans celle-ci",
+      members: (people, bills) => `${people} personnes · ${bills} ${bills === 1 ? "dépense" : "dépenses"}`,
+      toGet: "à récupérer", youOwe: "vous devez", settled: "tout est réglé", owesYou: "Ils vous doivent", youOweTitle: "Vous devez",
+      eachOne: "Solde de chacun", getsBack: "à récupérer", owes: "doit", even: "quitte",
+      toSettle: "À régler", total: "Total du groupe", lodging: "Hébergement", food: "Repas", transport: "Transport",
+      sheetTitle: "Partager une dépense", description: "Description", amount: "Montant", whoPaid: "Qui a payé",
+      splitAmong: "Partager à parts égales entre", each: "{value} chacun", cancel: "Annuler", save: "Enregistrer", close: "Fermer",
+      queue: (n) => `${n} modifications en attente`,
+      split: "Comment elle a été partagée", yourShare: "Votre part", deleteBill: "Supprimer la dépense",
+      recordPayment: "Enregistrer un paiement", record: "Enregistrer", viaPix: "via Pix", payment: "Paiement", deletePayment: "Supprimer le paiement",
+      payLine: (from, to) => `${name(from)} a payé ${name(to)}`,
+      paidYou: (who, value) => `${who} vous a payé ${value}`,
+      paidTotal: "Payé au total", shareTotal: "Part dans les dépenses", balance: "Solde",
+      bills: (n) => `${n} ${n === 1 ? "dépense" : "dépenses"}`,
+      titles: { b1: "Auberge de la Lagoa", b2: "Dîner à Ribeirão", b3: "Trajet jusqu'à la plage", p1: "Glace sur la plage", p2: "Courses de la semaine", p3: "Parking" },
+    },
   }[lang];
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
   // Amounts as the app shows them: the language's separators, and no decimals when they are all zero.
-  const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."] }[lang];
+  const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", "\u202f", "\u00a0$"] }[lang];
   function money(cents, signed) {
     const abs = Math.abs(cents);
     const whole = String(Math.floor(abs / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
     const frac = abs % 100;
-    const text = CURRENCY[0] + whole + (frac ? CURRENCY[1] + String(frac).padStart(2, "0") : "");
+    const text = CURRENCY[0] + whole + (frac ? CURRENCY[1] + String(frac).padStart(2, "0") : "") + (CURRENCY[3] || "");
     if (!signed || cents === 0) return text;
     return (cents > 0 ? "+" : "−") + text;
   }
@@ -483,7 +500,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat({ pt: "pt-BR", es: "es", en: "en-US" }[lang], { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat({ pt: "pt-BR", es: "es", fr: "fr", en: "en-US" }[lang], { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

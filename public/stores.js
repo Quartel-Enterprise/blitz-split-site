@@ -19,7 +19,7 @@
   };
 
   const root = document.documentElement;
-  const lang = ["pt", "es"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr"].includes(root.dataset.lang) ? root.dataset.lang : "en";
 
   // The platform. iPadOS reports a Mac, which only a touch screen tells apart. ?platform=android|ios|mac|desktop pins
   // one, to check each case (the design board uses it).
@@ -34,10 +34,10 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${{ pt: "pt-BR", es: "es", en: "en" }[lang]}`
+    ? `${CONFIG.googlePlayUrl}&hl=${{ pt: "pt-BR", es: "es", fr: "fr", en: "en" }[lang]}`
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${{ pt: "br", es: "es", en: "us" }[lang]}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${{ pt: "br", es: "es", fr: "fr", en: "us" }[lang]}/app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -89,6 +89,15 @@
       mismatchBody: "Estás en un {platform}. Para la mejor experiencia, descarga la app {in}.",
       mismatchGo: "Ir {to}", mismatchStay: "Continuar {to}", close: "Cerrar",
       in: { play: "en Google Play", appstore: "en la App Store" }, to: { play: "a Google Play", appstore: "a la App Store" },
+    },
+    fr: {
+      play: ["Disponible sur", "Bientôt sur"], appstore: ["Télécharger dans l'", "Bientôt dans l'"], web: ["Ouvrir dans votre", "Bientôt dans votre"], browser: "Navigateur",
+      getApp: "Télécharger l'application", openWeb: "Ouvrir l'application web", soon: "Bientôt",
+      playLive: "Disponible sur Google Play", appStoreLive: "Disponible sur l'App Store", webLive: "Ouvrir l'application web",
+      mismatchTitle: "Choisissez votre store",
+      mismatchBody: "Vous êtes sur {platform}. Pour la meilleure expérience, téléchargez l'application {in}.",
+      mismatchGo: "Aller {to}", mismatchStay: "Continuer {to}", close: "Fermer",
+      in: { play: "sur Google Play", appstore: "sur l'App Store" }, to: { play: "vers Google Play", appstore: "vers l'App Store" },
     },
   }[lang];
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
