@@ -266,6 +266,15 @@ a.status .icon { width: 15px; height: 15px; }
 .hero-note a:hover { text-decoration: underline; }
 .hero-note a .icon { width: 16px; height: 16px; }
 
+/* Group invite note, on /g/<code> */
+.invite {
+  display: flex; gap: 12px; align-items: flex-start;
+  margin: 0 0 28px; padding: 14px 16px; border-radius: var(--radius-card); max-width: 560px;
+  background: var(--info); color: var(--on-info);
+}
+.invite strong { display: block; font-weight: 600; }
+.invite p { font-size: 15px; color: var(--fg-soft); }
+
 /* Hero */
 .hero { position: relative; padding: 40px 0 64px; isolation: isolate; }
 .hero::before {
