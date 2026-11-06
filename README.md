@@ -6,7 +6,7 @@ with the app's numbers (the app's project is `blitz-split`). [Analytics](#analyt
 
 | Path | What it answers |
 | --- | --- |
-| `/` | The landing (Bora Rachar in Portuguese, Blitz Split in English and Spanish) |
+| `/` | The landing (Bora Rachar in Portuguese, Blitz Split in English, Spanish and French) |
 | `/privacy` | The privacy policy, the address the apps' Profile › "Privacy policy" opens (`/privacidade`, which older app versions open, redirects to it) |
 | `/terms` | The terms of use, the address the apps' Profile › "Terms of use" opens (`/termos`, which older app versions open, redirects to it) |
 | `/g/<code>`, `/g/<code>/<member>` | The landing, plus a note to open the group invite (or a member's personal invite) on a phone with the app installed |
@@ -26,11 +26,11 @@ The `.well-known` files are copies of `webApp/public/.well-known` in
 
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
-and `public/site.js` translates the page, in English, Portuguese (Brazil) and Spanish. The markup is in English; each page
-carries its Portuguese and Spanish strings in `window.SITE_STRINGS`, and the legal pages write each language in full,
+and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish and French. The markup is in English; each page
+carries its Portuguese, Spanish and French strings in `window.SITE_STRINGS`, and the legal pages write each language in full,
 in blocks marked `data-lang`. The language is the first of the browser's languages the site has, English when none,
 and the header's globe menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
-`?lang=en|pt|es` and `?theme=light|dark` pin one. The apps only speak English and Portuguese, so the Spanish legal
+`?lang=en|pt|es|fr` and `?theme=light|dark` pin one. The apps only speak English and Portuguese, so the Spanish legal
 pages name the apps' buttons in English, as a Spanish speaker sees them.
 
 The landing's phone is a working preview (`public/preview.js`): its tabs switch, "Split a bill" adds a bill, and a
@@ -74,7 +74,7 @@ keep only `/g/` or `/b/` and drop `?comentario=`. The events, after Bible Planne
 | `store_mismatch_stay` | "Choose your store" › continue to the clicked store | `store` |
 | `store_mismatch_dismiss` | "Choose your store" closes with neither | `method`: `close_button`, `escape` |
 | `menu_click` | A header menu opens | `menu_id`: `language_menu`, `theme_menu`, `get_menu` |
-| `language_change` | Another language is picked | `language`: `en`, `pt`, `es`; `origin`: `header_menu`, `footer` |
+| `language_change` | Another language is picked | `language`: `en`, `pt`, `es`, `fr`; `origin`: `header_menu`, `footer` |
 | `theme_change` | Another theme is picked | `theme`: `light`, `dark`, `system`; `origin`: `header_menu`, `footer` |
 | `logo_click` | The logo | `origin`: `header`, `footer` |
 | `navigation_click` | A link to a section of the page | `target`: the section's id (`features`, `how`, `platforms`, `faq`, a legal section), `top`; `origin`: `header`, `toc`, `to_top` |
