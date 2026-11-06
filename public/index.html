@@ -105,6 +105,14 @@
     <!-- Hero -->
     <section class="hero">
       <div class="wrap">
+        <div id="invite" class="invite" role="status" hidden>
+          <svg class="icon"><use href="#i-link"/></svg>
+          <div>
+            <strong data-i18n="inviteTitle">You got a group invite</strong>
+            <p data-i18n="inviteBody">Open this link on your phone with the app installed to join the group.</p>
+          </div>
+        </div>
+
         <div class="hero-grid">
           <div>
             <span class="eyebrow"><span class="dot"></span><span data-i18n="eyebrow">Offline first · account optional</span></span>
@@ -444,6 +452,8 @@
         navHow: "Como funciona",
         navPlatforms: "Plataformas",
         navFaq: "Dúvidas",
+        inviteTitle: "Você recebeu um convite para um grupo",
+        inviteBody: "Abra este link no celular com o app instalado para entrar no grupo.",
         eyebrow: "Offline primeiro · conta opcional",
         heroTitle: 'Divida contas com os amigos. <span class="accent">Mesmo offline.</span>',
         heroLead: "Crie um grupo, lance o que cada um pagou e veja quem deve quanto a quem. Sem cadastro obrigatório, e tudo fica salvo no aparelho no mesmo toque.",
@@ -565,6 +575,8 @@
         navHow: "Cómo funciona",
         navPlatforms: "Plataformas",
         navFaq: "Preguntas",
+        inviteTitle: "Te invitaron a un grupo",
+        inviteBody: "Abre este enlace en el celular con la app instalada para unirte al grupo.",
         eyebrow: "Primero sin conexión · cuenta opcional",
         heroTitle: 'Divide cuentas con amigos. <span class="accent">Incluso sin conexión.</span>',
         heroLead: "Crea un grupo, anota lo que pagó cada uno y mira quién le debe a quién. Sin registro obligatorio, y todo se guarda en el dispositivo en el mismo toque.",
@@ -682,5 +694,11 @@
   </script>
   <script src="/site.js"></script>
   <script src="/preview.js"></script>
+  <script>
+    // A group's link, /g/<code>, or a member's personal one, /g/<code>/<member>.
+    if (/^\/g\/[A-Za-z0-9]{8}(\/[A-Za-z0-9]{6})?\/?$/.test(location.pathname)) {
+      document.getElementById("invite").hidden = false;
+    }
+  </script>
 </body>
 </html>
