@@ -234,8 +234,12 @@
             <span class="ic"><svg class="icon"><use href="#i-split"/></svg></span>
             <h3 data-i18n="f3Title">Split it the way it really was</h3>
             <p data-i18n="f3Body">Equally, by amounts, percentages, shares, by income or item by item, with the service charge shared by what each one had.</p>
-            <div class="tile-visual chips">
-              <span class="chip on" data-i18n="s1">Equally</span><span class="chip" data-i18n="s2">Amounts</span><span class="chip" data-i18n="s3">Percentages</span><span class="chip" data-i18n="s4">Shares</span><span class="chip" data-i18n="s5">By income</span><span class="chip" data-i18n="s6">Items</span>
+            <!-- Each way to split shows the same bill split that way (split-modes.js); without scripts, the chips alone. -->
+            <div class="tile-visual split-demo">
+              <div class="chips" role="group" aria-label="Ways to split" data-i18n-label="splitModes">
+                <button type="button" class="chip" data-mode="equal" aria-pressed="true" data-i18n="s1">Equally</button><button type="button" class="chip" data-mode="amounts" aria-pressed="false" data-i18n="s2">Amounts</button><button type="button" class="chip" data-mode="percent" aria-pressed="false" data-i18n="s3">Percentages</button><button type="button" class="chip" data-mode="shares" aria-pressed="false" data-i18n="s4">Shares</button><button type="button" class="chip" data-mode="income" aria-pressed="false" data-i18n="s5">By income</button><button type="button" class="chip" data-mode="items" aria-pressed="false" data-i18n="s6">Items</button>
+              </div>
+              <div class="split-example" data-split-example hidden></div>
             </div>
           </article>
 
@@ -511,6 +515,7 @@
         codeLabel: "Seu código de recuperação",
         f3Title: "Divida do jeito que foi",
         f3Body: "Igual, por valores, porcentagem, partes, por renda ou item a item, com a taxa de serviço dividida pelo que cada um consumiu.",
+        splitModes: "Formas de dividir",
         s1: "Igual", s2: "Valores", s3: "Porcentagem", s4: "Partes", s5: "Por renda", s6: "Itens",
         f4Title: "Escaneie o recibo",
         f4Body: "Tire uma foto e os itens aparecem, prontos para cada um marcar o que consumiu. Você confere antes de salvar.",
@@ -634,6 +639,7 @@
         codeLabel: "Tu código de recuperación",
         f3Title: "Divide como fue de verdad",
         f3Body: "En partes iguales, por montos, porcentajes, partes, por ingresos o ítem por ítem, con la propina repartida según lo que consumió cada uno.",
+        splitModes: "Formas de dividir",
         s1: "Iguales", s2: "Montos", s3: "Porcentajes", s4: "Partes", s5: "Por ingresos", s6: "Ítems",
         f4Title: "Escanea el recibo",
         f4Body: "Toma una foto y aparecen los ítems, listos para que cada uno marque lo que consumió. Tú lo revisas antes de guardar.",
@@ -757,6 +763,7 @@
         codeLabel: "Votre code de récupération",
         f3Title: "Partagez comme ça s'est vraiment passé",
         f3Body: "À parts égales, par montants, pourcentages, parts, selon les revenus ou article par article, avec le service réparti selon ce que chacun a pris.",
+        splitModes: "Façons de partager",
         s1: "À parts égales", s2: "Montants", s3: "Pourcentages", s4: "Parts", s5: "Selon les revenus", s6: "Articles",
         f4Title: "Scannez le ticket",
         f4Body: "Prenez une photo et les articles apparaissent, prêts à être cochés par chacun selon ce qu'il a pris. Vous vérifiez avant d'enregistrer.",
@@ -825,6 +832,7 @@
   </script>
   <script src="/site.js"></script>
   <script src="/preview.js"></script>
+  <script src="/split-modes.js"></script>
   <script>
     // A group's link, /g/<code>, or a member's personal one, /g/<code>/<member>.
     if (/^\/g\/[A-Za-z0-9]{8}(\/[A-Za-z0-9]{6})?\/?$/.test(location.pathname)) {

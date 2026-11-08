@@ -579,8 +579,34 @@ a.status .icon { width: 15px; height: 15px; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; background: var(--muted); color: var(--fg-soft); border: 1px solid transparent; }
-.chip.on { background: var(--primary-container); color: var(--on-primary-container); }
+.chip.on, .chip[aria-pressed="true"] { background: var(--primary-container); color: var(--on-primary-container); }
 .chip .icon { width: 14px; height: 14px; }
+button.chip { font-family: inherit; line-height: inherit; cursor: pointer; min-height: 32px; transition: background-color 0.2s, color 0.2s; }
+button.chip:hover:not([aria-pressed="true"]) { background: color-mix(in srgb, var(--muted) 70%, var(--border)); color: var(--fg); }
+
+/* The ways to split, each shown on the same bill (split-modes.js): what the way means, then each one's part, its
+   basis (a quarter, a percentage, shares, income, items) and a bar on one scale for every way, so switching moves
+   the bars by how much each one's part changes. */
+.split-demo { display: grid; gap: 14px; }
+.split-example { padding: 14px 16px; border-radius: 12px; background: var(--bg); border: 1px solid var(--border-subtle); font-size: 13.5px; }
+/* Two lines held for every way's sentence, so the card keeps its height while switching. */
+.split-note { color: var(--fg-soft); min-height: 3.2em; }
+.split-bill { display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; padding-bottom: 8px; border-bottom: 1px dashed var(--border); font-weight: 600; }
+.split-rows { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
+.split-rows li { display: grid; grid-template-columns: auto minmax(84px, auto) minmax(40px, 1fr) 64px; align-items: center; gap: 10px; }
+.split-rows .av { width: 24px; height: 24px; }
+.split-rows .who { line-height: 1.25; }
+.split-rows .who small { display: block; color: var(--muted-fg); font-size: 12px; white-space: nowrap; }
+.split-rows b { font-weight: 600; text-align: right; }
+.split-bar { height: 8px; border-radius: 999px; background: var(--muted); overflow: hidden; }
+.split-bar i {
+  display: block; height: 100%; border-radius: inherit; background: var(--primary);
+  transform-origin: left; transform: scaleX(var(--w, 0));
+  transition: transform 0.55s var(--ease-out) calc(var(--n, 0) * 40ms);
+}
+.split-swap { animation: split-swap 0.35s var(--ease-out); }
+@keyframes split-swap { from { opacity: 0; transform: translateY(3px); } }
+:root.motion .tile:not(.in) .split-bar i { transform: scaleX(0); }
 
 .queue { display: grid; gap: 8px; }
 .queue-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--bg); border: 1px solid var(--border-subtle); font-size: 14px; }
@@ -780,8 +806,9 @@ a.status .icon { width: 15px; height: 15px; }
 :root.motion .tile .bars-chart div:nth-child(3) span[style] { transition-delay: calc(var(--d, 0s) + 0.65s); }
 :root.motion .tile:not(.in) .bars-chart span[style] { transform: scaleX(0); }
 :root.motion .tile :is(.chip, .queue-row, .receipt > div, .code-card) {
-  transition: opacity 0.5s var(--ease-out), scale 0.5s var(--ease-spring), translate 0.6s var(--ease-out);
-  transition-delay: calc(var(--d, 0s) + 0.3s + var(--n, 0) * 60ms);
+  --in: calc(var(--d, 0s) + 0.3s + var(--n, 0) * 60ms);
+  transition: opacity 0.5s var(--ease-out) var(--in), scale 0.5s var(--ease-spring) var(--in),
+    translate 0.6s var(--ease-out) var(--in), background-color 0.2s, color 0.2s;
 }
 :root.motion .tile:not(.in) .chip { opacity: 0; scale: 0.8; }
 :root.motion .tile:not(.in) :is(.queue-row, .receipt > div, .code-card) { opacity: 0; translate: -14px 0; }
