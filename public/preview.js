@@ -8,11 +8,13 @@
   const root = document.documentElement;
   const screen = document.querySelector(".showcase .screen");
   if (!screen) return;
-  const lang = ["pt", "es", "fr"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr", "de", "it", "pl"].includes(root.dataset.lang) ? root.dataset.lang : "en";
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 
+  // Polish counts take one form for 1, another for 2–4 (22–24…) and a third for the rest.
+  const plPlural = (n, one, few, many) => ({ one, few }[new Intl.PluralRules("pl").select(n)] ?? many);
   const TEXT = {
     en: {
       paid: "{name} paid", notIn: "Not in this one",
@@ -82,11 +84,64 @@
       bills: (n) => `${n} ${n === 1 ? "dépense" : "dépenses"}`,
       titles: { b1: "Auberge de la Lagoa", b2: "Dîner à Ribeirão", b3: "Trajet jusqu'à la plage", p1: "Glace sur la plage", p2: "Courses de la semaine", p3: "Parking" },
     },
+    de: {
+      paid: "{name} hat bezahlt", notIn: "Nicht dabei",
+      members: (people, bills) => `${people} Personen · ${bills} ${bills === 1 ? "Ausgabe" : "Ausgaben"}`,
+      toGet: "zu bekommen", youOwe: "du schuldest", settled: "alles ausgeglichen", owesYou: "Du bekommst", youOweTitle: "Du schuldest",
+      eachOne: "Saldo jeder Person", getsBack: "bekommt", owes: "schuldet", even: "ausgeglichen",
+      toSettle: "Zu begleichen", total: "Summe der Gruppe", lodging: "Unterkunft", food: "Essen", transport: "Transport",
+      sheetTitle: "Ausgabe aufteilen", description: "Beschreibung", amount: "Betrag", whoPaid: "Wer hat bezahlt",
+      splitAmong: "Gleichmäßig aufteilen auf", each: "{value} pro Person", cancel: "Abbrechen", save: "Speichern", close: "Schließen",
+      queue: (n) => `${n} ${n === 1 ? "Änderung" : "Änderungen"} in der Warteschlange`,
+      split: "So wurde aufgeteilt", yourShare: "Dein Anteil", deleteBill: "Ausgabe löschen",
+      recordPayment: "Zahlung erfassen", record: "Erfassen", viaPix: "per Pix", payment: "Zahlung", deletePayment: "Zahlung löschen",
+      payLine: (from, to) => `${name(from)} hat ${name(to)} bezahlt`,
+      paidYou: (who, value) => `${who} hat dir ${value} gezahlt`,
+      paidTotal: "Insgesamt bezahlt", shareTotal: "Anteil an den Ausgaben", balance: "Saldo",
+      bills: (n) => `${n} ${n === 1 ? "Ausgabe" : "Ausgaben"}`,
+      titles: { b1: "Pension in Lagoa", b2: "Abendessen in Ribeirão", b3: "Fahrt zum Strand", p1: "Eis am Strand", p2: "Wocheneinkauf", p3: "Parken" },
+    },
+    it: {
+      paid: "{name} ha pagato", notIn: "Non partecipi",
+      members: (people, bills) => `${people} persone · ${bills} ${bills === 1 ? "spesa" : "spese"}`,
+      toGet: "da ricevere", youOwe: "devi", settled: "tutto in pari", owesYou: "Ti devono", youOweTitle: "Devi",
+      eachOne: "Saldo di ciascuno", getsBack: "da ricevere", owes: "deve", even: "in pari",
+      toSettle: "Da saldare", total: "Totale del gruppo", lodging: "Alloggio", food: "Cibo", transport: "Trasporti",
+      sheetTitle: "Dividi una spesa", description: "Descrizione", amount: "Importo", whoPaid: "Chi ha pagato",
+      splitAmong: "Dividi in parti uguali tra", each: "{value} a testa", cancel: "Annulla", save: "Salva", close: "Chiudi",
+      queue: (n) => `${n} ${n === 1 ? "modifica" : "modifiche"} in coda`,
+      split: "Come è stata divisa", yourShare: "La tua parte", deleteBill: "Elimina spesa",
+      recordPayment: "Registra pagamento", record: "Registra", viaPix: "con Pix", payment: "Pagamento", deletePayment: "Elimina pagamento",
+      payLine: (from, to) => `${name(from)} ha pagato ${name(to)}`,
+      paidYou: (who, value) => `${who} ti ha pagato ${value}`,
+      paidTotal: "Pagato in totale", shareTotal: "Quota delle spese", balance: "Saldo",
+      bills: (n) => `${n} ${n === 1 ? "spesa" : "spese"}`,
+      titles: { b1: "Pensione a Lagoa", b2: "Cena a Ribeirão", b3: "Corsa fino alla spiaggia", p1: "Gelato in spiaggia", p2: "Spesa della settimana", p3: "Parcheggio" },
+    },
+    pl: {
+      paid: "{name} zapłacił(a)", notIn: "Bez ciebie",
+      members: (people, bills) => `${people} ${plPlural(people, "osoba", "osoby", "osób")} · ${bills} ${plPlural(bills, "wydatek", "wydatki", "wydatków")}`,
+      toGet: "do odzyskania", youOwe: "do oddania", settled: "wszystko rozliczone", owesYou: "Do odzyskania", youOweTitle: "Do oddania",
+      eachOne: "Saldo każdej osoby", getsBack: "do odzyskania", owes: "do oddania", even: "na czysto",
+      toSettle: "Do rozliczenia", total: "Suma w grupie", lodging: "Nocleg", food: "Jedzenie", transport: "Transport",
+      sheetTitle: "Podziel wydatek", description: "Opis", amount: "Kwota", whoPaid: "Kto zapłacił",
+      splitAmong: "Podziel po równo między", each: "{value} na osobę", cancel: "Anuluj", save: "Zapisz", close: "Zamknij",
+      queue: (n) => `${n} ${plPlural(n, "zmiana", "zmiany", "zmian")} w kolejce`,
+      split: "Jak podzielono", yourShare: "Twoja część", deleteBill: "Usuń wydatek",
+      recordPayment: "Zapisz płatność", record: "Zapisz", viaPix: "przez Pix", payment: "Płatność", deletePayment: "Usuń płatność",
+      // A name is never declined: who paid whom as an arrow, as the Balances tab writes it.
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} zapłacił(a) ci ${value}`,
+      paidTotal: "Zapłacono łącznie", shareTotal: "Udział w wydatkach", balance: "Saldo",
+      bills: (n) => `${n} ${plPlural(n, "wydatek", "wydatki", "wydatków")}`,
+      titles: { b1: "Pensjonat w Lagoa", b2: "Kolacja w Ribeirão", b3: "Przejazd na plażę", p1: "Lody na plaży", p2: "Zakupy na tydzień", p3: "Parking" },
+    },
   }[lang];
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
   // Amounts as the app shows them: the language's separators, and no decimals when they are all zero.
-  const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", "\u202f", "\u00a0$"] }[lang];
+  const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", "\u202f", "\u00a0$"],
+    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"] }[lang];
   function money(cents, signed) {
     const abs = Math.abs(cents);
     const whole = String(Math.floor(abs / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
@@ -525,7 +580,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat({ pt: "pt-BR", es: "es", fr: "fr", en: "en-US" }[lang], { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat({ pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", en: "en-US" }[lang], { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

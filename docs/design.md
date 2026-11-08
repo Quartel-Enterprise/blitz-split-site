@@ -4,11 +4,12 @@
 
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
-and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish and French. The markup is in English; each page
-carries its Portuguese, Spanish and French strings in `window.SITE_STRINGS`, and the legal pages write each language in full,
-in blocks marked `data-lang`. The language is the first of the browser's languages the site has, English when none,
+and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian and Polish. The
+markup is in English; each page carries its other languages' strings in `window.SITE_STRINGS`, and the legal pages write
+each language in full, in blocks marked `data-lang` (English, Portuguese and Spanish; the other languages read the
+English). The language is the first of the browser's languages the site has, English when none,
 and the header's globe menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
-`?lang=en|pt|es|fr` and `?theme=light|dark` pin one. The apps only speak English and Portuguese, so the Spanish legal
+`?lang=en|pt|es|fr|de|it|pl` and `?theme=light|dark` pin one. The apps only speak English and Portuguese, so the Spanish legal
 pages name the apps' buttons in English, as a Spanish speaker sees them.
 
 The theme is Light, Dark or System (the default), from the header's theme menu or the footer, kept for the next visit.

@@ -16,7 +16,7 @@
   const panel = demo?.querySelector("[data-split-example]");
   if (!panel) return;
   const root = document.documentElement;
-  const lang = ["pt", "es", "fr"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr", "de", "it", "pl"].includes(root.dataset.lang) ? root.dataset.lang : "en";
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 
@@ -129,18 +129,111 @@
         less: "Une part de moins pour {name}", more: "Une part de plus pour {name}", had: "Qui a pris {item}",
       },
     },
+    de: {
+      bill: "Pizzaabend", paid: "Pedro hat bezahlt", notIn: "Nicht dabei",
+      each: "{a} pro Person", among: "{a} auf {n} Personen.", amongOne: "{a} für 1 Person.", out: "{name} ist nicht dabei.",
+      nobody: "Noch niemand dabei", nobodyEqual: "Wähl mindestens eine Person aus, um {a} aufzuteilen.",
+      checkAll: "Alle auswählen", uncheckAll: "Alle abwählen",
+      left: "Es fehlen {a}", over: "{a} zu viel", closed: "Passt: {a}",
+      progress: "Bisher {a} von {b}.", closedMsg: "Die Teile ergeben genau den Gesamtbetrag.",
+      parts: "{a} in {n} Anteilen", personParts: "{name} hat {n} Anteile.", nobodyShares: "Gib mindestens einer Person einen Anteil, um {a} aufzuteilen.",
+      ofEach: "{p} jeder Ausgabe", ofBill: "{p} der Ausgabe", incomeDetail: "Der Anteil jeder Person richtet sich nach ihrem Einkommen.", perMonth: "/Monat",
+      service: "Service ({p})", serviceSub: "Nach dem, was jede Person hatte",
+      loose: "Markier, wer was hatte", looseDetail: "Tipp bei jeder Position auf die Gesichter, um zu markieren, wer sie hatte.",
+      itemsClosed: "{a} für Positionen und {b} Service.", nobodyItem: "Niemand ausgewählt", eachItem: "{a} pro Person",
+      items: { pizza: "Große Pizza", beer: "Bier", salad: "Salat", draft: "Bier vom Fass", shrimp: "Garnelenplatte" },
+      receiptBill: "Hafenbar",
+      hint: {
+        equal: "Geht es nicht glatt auf, gehen die übrigen Cent an die Person, die bezahlt hat.",
+        amounts: "Wer bei {zero} bleibt, ist bei der Ausgabe nicht dabei.",
+        percent: "Nur ganze Zahlen. Die übrigen Cent gehen an die Person, die bezahlt hat.",
+        shares: "Nimm Anteile, wenn jemand mehr hatte, etwa wer eine Begleitung mitgebracht hat.",
+        income: "Die Einkommen bleiben auf dem Gerät. Die Gruppe sieht nur die Prozente.",
+        items: "Jede Position wird unter denen aufgeteilt, die sie hatten, und der Service nach dem, was jede Person hatte.",
+      },
+      label: {
+        amount: "Betrag von {name}", percent: "Prozent von {name}", income: "Monatseinkommen von {name}",
+        less: "Ein Anteil weniger für {name}", more: "Ein Anteil mehr für {name}", had: "Wer hatte {item}",
+      },
+    },
+    it: {
+      bill: "Serata pizza", paid: "Pedro ha pagato", notIn: "Non partecipa",
+      each: "{a} a testa", among: "{a} tra {n} persone.", amongOne: "{a} per 1 persona.", out: "{name} non partecipa.",
+      nobody: "Ancora nessuno partecipa", nobodyEqual: "Seleziona almeno una persona per dividere {a}.",
+      checkAll: "Seleziona tutti", uncheckAll: "Deseleziona tutti",
+      left: "Mancano {a}", over: "{a} in più", closed: "I conti tornano: {a}",
+      progress: "Finora {a} su {b}.", closedMsg: "La somma delle parti è uguale al totale.",
+      parts: "{a} in {n} quote", personParts: "{name} ha {n} quote.", nobodyShares: "Dai almeno una quota a qualcuno per dividere {a}.",
+      ofEach: "{p} di ogni spesa", ofBill: "{p} della spesa", incomeDetail: "La parte di ciascuno segue il suo reddito.", perMonth: "/mese",
+      service: "Servizio ({p})", serviceSub: "In proporzione a quanto ha preso ciascuno",
+      loose: "Segna chi ha preso cosa", looseDetail: "Tocca i volti su ogni voce per segnare chi l’ha presa.",
+      itemsClosed: "{a} di voci e {b} di servizio.", nobodyItem: "Nessuno selezionato", eachItem: "{a} a testa",
+      items: { pizza: "Pizza grande", beer: "Birra", salad: "Insalata", draft: "Birra alla spina", shrimp: "Piatto di gamberi" },
+      receiptBill: "Bar del Porto",
+      hint: {
+        equal: "Quando la divisione non è esatta, i centesimi in più vanno a chi ha pagato.",
+        amounts: "Chi resta a {zero} è fuori dalla spesa.",
+        percent: "Solo numeri interi. I centesimi in più vanno a chi ha pagato.",
+        shares: "Usa le quote quando qualcuno prende di più, come chi porta qualcuno con sé.",
+        income: "I redditi restano sul dispositivo. Il gruppo vede solo le percentuali.",
+        items: "Ogni voce è divisa tra chi l’ha presa, e il servizio in base a quanto ha preso ciascuno.",
+      },
+      label: {
+        amount: "Importo di {name}", percent: "Percentuale di {name}", income: "Reddito mensile di {name}",
+        less: "Una quota in meno per {name}", more: "Una quota in più per {name}", had: "Chi ha preso {item}",
+      },
+    },
+    // Polish: a message with "|" holds its forms for {n}, "one|few|many" or "few|many", and fill picks one. A name is
+    // never declined, so where Polish would need its case it stands after a colon.
+    pl: {
+      bill: "Wieczór z pizzą", paid: "Pedro zapłacił(a)", notIn: "Poza podziałem",
+      each: "{a} na osobę", among: "{a} na {n} osoby.|{a} na {n} osób.", amongOne: "{a} na 1 osobę.", out: "{name} nie bierze udziału.",
+      nobody: "Nikt jeszcze nie bierze udziału", nobodyEqual: "Zaznacz co najmniej jedną osobę, żeby podzielić {a}.",
+      checkAll: "Zaznacz wszystkich", uncheckAll: "Odznacz wszystkich",
+      left: "Brakuje {a}", over: "{a} za dużo", closed: "Zgadza się: {a}",
+      progress: "Na razie {a} z {b}.", closedMsg: "Części sumują się do całości.",
+      parts: "{a} na {n} udział|{a} na {n} udziały|{a} na {n} udziałów", personParts: "{name} ma {n} udziały.|{name} ma {n} udziałów.",
+      nobodyShares: "Daj komuś co najmniej jeden udział, żeby podzielić {a}.",
+      ofEach: "{p} każdego wydatku", ofBill: "{p} wydatku", incomeDetail: "Część każdej osoby zależy od jej dochodu.", perMonth: "/mies.",
+      service: "Serwis ({p})", serviceSub: "Proporcjonalnie do tego, co kto zamówił",
+      loose: "Zaznacz, kto co zamówił", looseDetail: "Dotknij twarzy przy każdej pozycji, żeby zaznaczyć, kto ją zamówił.",
+      itemsClosed: "{a} za pozycje i {b} za serwis.", nobodyItem: "Nikogo nie zaznaczono", eachItem: "{a} na osobę",
+      items: { pizza: "Duża pizza", beer: "Piwo", salad: "Sałatka", draft: "Piwo z beczki", shrimp: "Półmisek krewetek" },
+      receiptBill: "Bar Portowy",
+      hint: {
+        equal: "Gdy nie dzieli się równo, pozostałe centy trafiają do osoby, która zapłaciła.",
+        amounts: "Kto zostaje przy {zero}, wypada z wydatku.",
+        percent: "Tylko liczby całkowite. Pozostałe centy trafiają do osoby, która zapłaciła.",
+        shares: "Użyj udziałów, gdy ktoś ma więcej, np. gdy przychodzi z osobą towarzyszącą.",
+        income: "Dochody zostają na urządzeniu. Grupa widzi tylko procenty.",
+        items: "Każda pozycja dzieli się między osoby, które ją zamówiły, a serwis według tego, co kto zamówił.",
+      },
+      label: {
+        amount: "Kwota: {name}", percent: "Procent: {name}", income: "Dochód miesięczny: {name}",
+        less: "Jeden udział mniej: {name}", more: "Jeden udział więcej: {name}", had: "Kto zamówił: {item}",
+      },
+    },
   }[lang];
-  const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
+  const plural = new Intl.PluralRules(lang);
+  function fill(text, values) {
+    const forms = text.split("|");
+    if (forms.length > 1) {
+      const kind = plural.select(values.n);
+      text = forms.length === 3 ? forms[{ one: 0, few: 1 }[kind] ?? 2] : forms[kind === "few" ? 0 : 1];
+    }
+    return text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
+  }
 
   // Amounts as preview.js writes them: the language's separators, no decimals when they are zero.
-  const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", " ", " $"] }[lang];
+  const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", " ", " $"],
+    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"] }[lang];
   function plain(cents) {
     const whole = String(Math.floor(cents / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
     const frac = cents % 100;
     return whole + (frac ? CURRENCY[1] + String(frac).padStart(2, "0") : "");
   }
   const money = (cents) => CURRENCY[0] + plain(cents) + (CURRENCY[3] || "");
-  const pct = (n) => (lang === "fr" ? `${n} %` : `${n}%`);
+  const pct = (n) => (["fr", "de"].includes(lang) ? `${n} %` : `${n}%`);
   // What someone types, in cents: the last "," or "." followed by one or two digits is the decimal point, whatever the
   // language, so "33,5", "33.50" and "6.000" all read as meant.
   function parseMoney(text) {

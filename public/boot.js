@@ -2,10 +2,10 @@
 // The theme: Light, Dark or System (the default, which the CSS follows through prefers-color-scheme), as picked in the
 // header's theme menu or the footer and kept for the next visit. ?theme=light|dark pins one without keeping it (the
 // design board uses it).
-// The language, English, Portuguese (Brazil), Spanish or French: ?lang=, then the last one picked in the language menu, then
+// The language, English, Portuguese (Brazil), Spanish, French, German, Italian or Polish: ?lang=, then the last one picked in the language menu, then
 // the browser's languages in order of preference, English when none of them is one of ours.
 (function () {
-  const SUPPORTED = ["en", "pt", "es", "fr"];
+  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl"];
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
   function stored(key) {
@@ -21,7 +21,7 @@
     .find((code) => SUPPORTED.includes(code));
   const lang = [params.get("lang"), stored("lang"), preferred].find((code) => SUPPORTED.includes(code)) || "en";
   root.dataset.lang = lang;
-  root.lang = { en: "en", pt: "pt-BR", es: "es", fr: "fr" }[lang];
+  root.lang = { en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl" }[lang];
 
   // Motion: the landing's hero comes in and its sections rise as they scroll into view (site.css, site.js). Not with
   // reduced motion, and not when the design board pins a theme, so its captures show every section.

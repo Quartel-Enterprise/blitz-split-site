@@ -1,10 +1,10 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, es: { … }, fr: { … } } before this script, and
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, es: { … }, fr: …, de: …, it: …, pl: … } before this script, and
 // blocks written per language carry data-lang="en", "pt" or "es".
 (function () {
   const params = new URLSearchParams(location.search);
   // boot.js, in <head>, already picked the theme and the language.
-  const lang = ["pt", "es", "fr"].includes(document.documentElement.dataset.lang) ? document.documentElement.dataset.lang : "en";
+  const lang = ["pt", "es", "fr", "de", "it", "pl"].includes(document.documentElement.dataset.lang) ? document.documentElement.dataset.lang : "en";
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
   // Where a link or button sits: the header's menus, the rest of the header or the footer.
