@@ -1,11 +1,19 @@
 {
   "name": "blitzsplit-site",
+  "main": "src/index.js",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./public",
-    // /g/<code>, /g/<code>/<member> and any other unknown page answer with the provisional page.
+    "binding": "ASSETS",
+    // /g/* (an invite's meta tags) and /og/* (its preview's image) run src/index.js; every other path is a static
+    // file. Any other unknown page answers with the landing.
+    "run_worker_first": ["/g/*", "/og/*"],
     "not_found_handling": "single-page-application",
     "html_handling": "auto-trailing-slash"
+  },
+  "vars": {
+    // The API's edge function that answers what an invite link's preview shows (blitz-split-api).
+    "INVITE_PREVIEW_URL": "https://cfgnuyijsncgpgywoldf.supabase.co/functions/v1/invite-preview"
   },
   "routes": [
     { "pattern": "blitzsplit.com", "custom_domain": true },
