@@ -20,7 +20,7 @@ keep only `/g/` or `/b/` and drop `?comentario=`. The events, after Bible Planne
 | `store_mismatch_stay` | "Choose your store" › continue to the clicked store | `store` |
 | `store_mismatch_dismiss` | "Choose your store" closes with neither | `method`: `close_button`, `escape` |
 | `menu_click` | A header menu opens | `menu_id`: `language_menu`, `theme_menu`, `get_menu` |
-| `language_change` | Another language is picked | `language`: `en`, `pt`, `es`, `fr`; `origin`: `header_menu`, `footer` |
+| `language_change` | Another language is picked | `language`: `en`, `pt`, `es`, `fr`, `de`, `it`, `pl`; `origin`: `header_menu`, `footer` |
 | `theme_change` | Another theme is picked | `theme`: `light`, `dark`, `system`; `origin`: `header_menu`, `footer` |
 | `logo_click` | The logo | `origin`: `header`, `footer` |
 | `navigation_click` | A link to a section of the page | `target`: the section's id (`features`, `how`, `platforms`, `faq`, a legal section), `top`; `origin`: `header`, `toc`, `to_top` |

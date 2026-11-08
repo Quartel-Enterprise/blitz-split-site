@@ -7,7 +7,7 @@
   const demo = document.querySelector("[data-scan]");
   if (!demo) return;
   const root = document.documentElement;
-  const lang = ["pt", "es", "fr"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr", "de", "it", "pl"].includes(root.dataset.lang) ? root.dataset.lang : "en";
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 
@@ -32,6 +32,21 @@
       store: "BAR DU PORT", address: "120 rue des Mouettes", date: "08/11/2026  21:47",
       lines: [["2 BIÈRE PRESSION", "28,00", 1], ["1 PLAT. CREVETTES", "96,00", 2]],
       subtotal: ["SOUS-TOTAL", "124,00"], service: ["SERVICE 10 %", "12,40", 3], total: ["TOTAL", "136,40"],
+    },
+    de: {
+      store: "HAFENBAR", address: "Möwenstraße 120", date: "08.11.2026  21:47",
+      lines: [["2 BIER VOM FASS", "28,00", 1], ["1 GARNELENPLATTE", "96,00", 2]],
+      subtotal: ["ZWISCHENSUMME", "124,00"], service: ["SERVICE 10 %", "12,40", 3], total: ["SUMME", "136,40"],
+    },
+    it: {
+      store: "BAR DEL PORTO", address: "Via dei Gabbiani 120", date: "08/11/2026  21:47",
+      lines: [["2 BIRRA SPINA", "28,00", 1], ["1 PIATTO GAMBERI", "96,00", 2]],
+      subtotal: ["SUBTOTALE", "124,00"], service: ["SERVIZIO 10%", "12,40", 3], total: ["TOTALE", "136,40"],
+    },
+    pl: {
+      store: "BAR PORTOWY", address: "ul. Mewia 120", date: "08.11.2026  21:47",
+      lines: [["2 PIWO Z BECZKI", "28,00", 1], ["1 PÓŁM. KREWETEK", "96,00", 2]],
+      subtotal: ["SUMA CZĘŚCIOWA", "124,00"], service: ["SERWIS 10%", "12,40", 3], total: ["SUMA", "136,40"],
     },
   }[lang];
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;

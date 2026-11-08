@@ -19,7 +19,7 @@
   };
 
   const root = document.documentElement;
-  const lang = ["pt", "es", "fr"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr", "de", "it", "pl"].includes(root.dataset.lang) ? root.dataset.lang : "en";
 
   // The platform. iPadOS reports a Mac, which only a touch screen tells apart. ?platform=android|ios|mac|desktop pins
   // one, to check each case (the design board uses it).
@@ -34,10 +34,10 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${{ pt: "pt-BR", es: "es", fr: "fr", en: "en" }[lang]}`
+    ? `${CONFIG.googlePlayUrl}&hl=${{ pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", en: "en" }[lang]}`
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${{ pt: "br", es: "es", fr: "fr", en: "us" }[lang]}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${{ pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", en: "us" }[lang]}/app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -98,6 +98,33 @@
       mismatchBody: "Vous êtes sur {platform}. Pour la meilleure expérience, téléchargez l'application {in}.",
       mismatchGo: "Aller {to}", mismatchStay: "Continuer {to}", close: "Fermer",
       in: { play: "sur Google Play", appstore: "sur l'App Store" }, to: { play: "vers Google Play", appstore: "vers l'App Store" },
+    },
+    de: {
+      play: ["Jetzt bei", "Bald bei"], appstore: ["Laden im", "Bald im"], web: ["Öffnen im", "Bald im"], browser: "Browser",
+      getApp: "App holen", openWeb: "Web-App öffnen", soon: "Bald verfügbar",
+      playLive: "Bei Google Play erhältlich", appStoreLive: "Im App Store erhältlich", webLive: "Web-App öffnen",
+      mismatchTitle: "Wähl deinen Store",
+      mismatchBody: "Du nutzt {platform}. Am besten holst du dir die App {in}.",
+      mismatchGo: "Lieber {to}", mismatchStay: "Trotzdem {to}", close: "Schließen",
+      in: { play: "bei Google Play", appstore: "im App Store" }, to: { play: "zu Google Play", appstore: "zum App Store" },
+    },
+    it: {
+      play: ["Disponibile su", "Presto su"], appstore: ["Scarica su", "Presto su"], web: ["Apri nel", "Presto nel"], browser: "Browser",
+      getApp: "Scarica l’app", openWeb: "Apri la web app", soon: "Presto disponibile",
+      playLive: "Disponibile su Google Play", appStoreLive: "Disponibile su App Store", webLive: "Apri la web app",
+      mismatchTitle: "Scegli il tuo store",
+      mismatchBody: "Sei su {platform}. Per un’esperienza migliore, scarica l’app {in}.",
+      mismatchGo: "Vai {to}", mismatchStay: "Continua {to}", close: "Chiudi",
+      in: { play: "da Google Play", appstore: "dall’App Store" }, to: { play: "su Google Play", appstore: "sull’App Store" },
+    },
+    pl: {
+      play: ["Pobierz z", "Wkrótce w"], appstore: ["Pobierz z", "Wkrótce w"], web: ["Otwórz w", "Wkrótce w"], browser: "przeglądarce",
+      getApp: "Pobierz aplikację", openWeb: "Otwórz aplikację webową", soon: "Wkrótce",
+      playLive: "Dostępna w Google Play", appStoreLive: "Dostępna w App Store", webLive: "Otwórz aplikację webową",
+      mismatchTitle: "Wybierz sklep",
+      mismatchBody: "Twoje urządzenie to {platform}. Najlepiej pobierz aplikację {in}.",
+      mismatchGo: "Przejdź {to}", mismatchStay: "Mimo to przejdź {to}", close: "Zamknij",
+      in: { play: "z Google Play", appstore: "z App Store" }, to: { play: "do Google Play", appstore: "do App Store" },
     },
   }[lang];
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
