@@ -10,7 +10,7 @@
   if (!screen) return;
   const lang = ["pt", "es", "fr"].includes(root.dataset.lang) ? root.dataset.lang : "en";
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  // analytics.js, in <head>, sends the events; README.md lists them.
+  // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 
   const TEXT = {
@@ -226,10 +226,35 @@
   }
 
   const panel = screen.querySelector('[data-pv="panel"]');
+  // The balance rolls from the amount it showed to the new one, in whole cents, and its card glows once.
+  const balanceEl = screen.querySelector('[data-pv="balance"]');
+  let shownBalance = null;
+  let rolling = 0;
+  function showBalance(cents, animate) {
+    const from = shownBalance;
+    shownBalance = cents;
+    cancelAnimationFrame(rolling);
+    if (!animate || from === null || from === cents || reduceMotion.matches) {
+      balanceEl.textContent = money(cents, true);
+      return;
+    }
+    const card = balanceEl.closest(".balance");
+    card.classList.remove("changed");
+    void card.offsetWidth;
+    card.classList.add("changed");
+    const start = performance.now();
+    const step = (now) => {
+      const t = Math.min(1, (now - start) / 700);
+      const eased = 1 - Math.pow(1 - t, 3);
+      balanceEl.textContent = money(Math.round(from + (cents - from) * eased), true);
+      if (t < 1) rolling = requestAnimationFrame(step);
+    };
+    rolling = requestAnimationFrame(step);
+  }
   function render(animate) {
     const net = balances();
     screen.querySelector('[data-pv="members"]').textContent = TEXT.members(PEOPLE.length, bills().length);
-    screen.querySelector('[data-pv="balance"]').textContent = money(net.me, true);
+    showBalance(net.me, animate);
     screen.querySelector('[data-pv="balance-label"]').textContent = net.me > 0 ? TEXT.toGet : net.me < 0 ? TEXT.youOwe : TEXT.settled;
     panel.innerHTML = tab === "bills" ? renderBills(net) : tab === "balances" ? renderBalances(net) : renderStats();
     if (animate && !reduceMotion.matches) {

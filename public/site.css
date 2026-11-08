@@ -31,6 +31,8 @@
   --av-sand: #ffe08b;  --on-av-sand: #241a00;
   --ring: rgba(38, 100, 137, 0.35);
   --glow: rgba(38, 100, 137, 0.14);
+  --glow-2: rgba(0, 108, 76, 0.10);   /* the hero's second light, on --positive */
+  --accent-2: #006c4c;        /* where the hero's accent ends: blue to green, as a debt settles */
   --device: #18181b;
   --shadow-lg: 0 1px 2px rgba(9, 9, 11, 0.04), 0 24px 48px -12px rgba(9, 9, 11, 0.18);
   --shadow-sm: 0 1px 2px rgba(9, 9, 11, 0.05), 0 4px 12px -4px rgba(9, 9, 11, 0.08);
@@ -61,6 +63,8 @@
     --av-sand: #574500;  --on-av-sand: #ffe08b;
     --ring: rgba(149, 205, 247, 0.4);
     --glow: rgba(149, 205, 247, 0.10);
+    --glow-2: rgba(110, 219, 170, 0.07);
+    --accent-2: #6edbaa;
     --device: #000000;
     --shadow-lg: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 24px 48px -12px rgba(0, 0, 0, 0.7);
     --shadow-sm: 0 0 0 1px rgba(255, 255, 255, 0.04);
@@ -83,6 +87,8 @@
   --av-sand: #574500;  --on-av-sand: #ffe08b;
   --ring: rgba(149, 205, 247, 0.4);
   --glow: rgba(149, 205, 247, 0.10);
+  --glow-2: rgba(110, 219, 170, 0.07);
+  --accent-2: #6edbaa;
   --device: #000000;
   --shadow-lg: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 24px 48px -12px rgba(0, 0, 0, 0.7);
   --shadow-sm: 0 0 0 1px rgba(255, 255, 255, 0.04);
@@ -277,11 +283,25 @@ a.status .icon { width: 15px; height: 15px; }
 
 /* Hero */
 .hero { position: relative; padding: 40px 0 64px; isolation: isolate; }
+/* Two lights, the brand's blue and the green of a settled debt, drifting slowly over a faint dot grid. */
 .hero::before {
-  content: ""; position: absolute; z-index: -1; inset: -64px 0 auto; height: 720px;
+  content: ""; position: absolute; z-index: -1; inset: -64px 0 auto; height: 760px;
   background:
-    radial-gradient(60% 50% at 75% 30%, var(--glow), transparent 70%),
-    radial-gradient(40% 40% at 10% 10%, var(--glow), transparent 70%);
+    radial-gradient(55% 50% at 75% 30%, var(--glow), transparent 70%),
+    radial-gradient(35% 40% at 92% 70%, var(--glow-2), transparent 70%),
+    radial-gradient(40% 40% at 10% 10%, var(--glow), transparent 70%),
+    radial-gradient(30% 35% at 30% 60%, var(--glow-2), transparent 70%);
+  background-size: 130% 130%;
+  background-position: 0% 0%;
+}
+:root.motion .hero::before { animation: aurora 22s ease-in-out infinite alternate; }
+@keyframes aurora { to { background-position: 100% 60%; } }
+.hero::after {
+  content: ""; position: absolute; z-index: -1; inset: -64px 0 auto; height: 760px; pointer-events: none;
+  background-image: radial-gradient(color-mix(in srgb, var(--fg) 13%, transparent) 1px, transparent 1.4px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 55% at 60% 35%, #000 10%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 55% at 60% 35%, #000 10%, transparent 75%);
 }
 .hero-grid { display: grid; gap: 48px; align-items: center; }
 .eyebrow {
@@ -291,7 +311,14 @@ a.status .icon { width: 15px; height: 15px; }
 }
 .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--positive); box-shadow: 0 0 0 3px color-mix(in srgb, var(--positive) 20%, transparent); }
 .hero h1 { margin-top: 20px; font-size: clamp(38px, 7.4vw, 68px); font-weight: 700; letter-spacing: -0.04em; line-height: 1.02; }
-.hero h1 .accent { color: var(--primary); }
+.hero h1 .accent {
+  color: var(--primary);
+  background: linear-gradient(100deg, var(--primary) 0%, var(--accent-2) 45%, var(--primary) 90%) 0 0 / 220% 100%;
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  /* The descenders of "offline" stay inside the painted box. */
+  padding-bottom: 0.08em;
+}
+@media (forced-colors: active) { .hero h1 .accent { background: none; -webkit-text-fill-color: currentColor; } }
 .hero .lead { margin-top: 20px; font-size: clamp(17px, 2vw, 19px); color: var(--fg-soft); max-width: 34em; }
 .hero-cta { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .hero-note { margin-top: 16px; font-size: 14px; color: var(--muted-fg); display: flex; align-items: center; gap: 8px; }
@@ -302,7 +329,13 @@ a.status .icon { width: 15px; height: 15px; }
 }
 
 /* The phone mockup in the hero: a group, drawn with the app's tokens */
-.showcase { position: relative; display: grid; place-items: center; padding: 16px 0 24px; }
+.showcase { position: relative; display: grid; place-items: center; padding: 16px 0 24px; isolation: isolate; }
+/* A soft light behind the phone, so it sits on the page rather than on top of it. */
+.showcase::before {
+  content: ""; position: absolute; z-index: -1; width: min(420px, 100%); aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--primary) 22%, transparent), transparent 65%);
+  filter: blur(24px);
+}
 .phone {
   width: min(320px, 82vw); aspect-ratio: 9 / 18.6; border-radius: 46px; padding: 10px;
   background: var(--device); box-shadow: var(--shadow-lg);
@@ -641,6 +674,131 @@ a.status .icon { width: 15px; height: 15px; }
 .lang-switch button .icon { width: 14px; height: 14px; }
 .lang-switch a[aria-current="true"], .lang-switch button[aria-pressed="true"] { background: var(--surface); color: var(--fg); box-shadow: var(--shadow-sm); }
 @media (min-width: 760px) { .footer-grid { grid-template-columns: 1.2fr 1fr; align-items: start; } .footer-links { justify-content: flex-end; } }
+
+/* Cards answer the pointer: they lift, their border takes the brand's color and a light follows the pointer (site.js
+   sets --mx and --my). The light sits under the card's content: isolation makes the ::before's z-index -1 paint over
+   the card's own background. */
+.tile, .platform, .steps li { isolation: isolate; }
+.platform, .steps li { position: relative; overflow: hidden; }
+.tile::before, .platform::before, .steps li::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; border-radius: inherit;
+  background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 0%), color-mix(in srgb, var(--primary) 11%, transparent), transparent 65%);
+  opacity: 0; transition: opacity 0.3s;
+}
+.tile, .platform, .steps li { transition: transform 0.3s var(--ease-out), border-color 0.3s, box-shadow 0.3s; }
+.tile .ic, .platform > .icon { transition: transform 0.4s var(--ease-spring); }
+@media (hover: hover) and (pointer: fine) {
+  .tile:hover, .platform:hover, .steps li:hover {
+    transform: translateY(-4px); box-shadow: var(--shadow-lg);
+    border-color: color-mix(in srgb, var(--primary) 32%, var(--border));
+  }
+  .tile:hover::before, .platform:hover::before, .steps li:hover::after { opacity: 1; }
+  .tile:hover .ic { transform: scale(1.08) rotate(-6deg); }
+  .platform:hover > .icon { transform: translateY(-2px) scale(1.1); }
+  /* A store that offers the app lifts, and the one that stands out gets a sheen across. */
+  .store:not(.store-soon) { position: relative; overflow: hidden; transition: background 0.15s, transform 0.25s var(--ease-out), box-shadow 0.25s; }
+  .store:not(.store-soon):hover { transform: translateY(-2px); box-shadow: inset 0 0 0 1px var(--border), var(--shadow-sm); }
+  .store.is-primary:not(.store-soon):hover { box-shadow: var(--shadow-lg); }
+  .store.is-primary:not(.store-soon)::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(105deg, transparent 35%, color-mix(in srgb, var(--bg) 30%, transparent) 50%, transparent 65%);
+    transform: translateX(-100%);
+  }
+  .store.is-primary:not(.store-soon):hover::after { transform: translateX(100%); transition: transform 0.7s var(--ease-out); }
+}
+.steps li::before { position: relative; box-shadow: 0 0 0 6px color-mix(in srgb, var(--primary) 14%, transparent); }
+
+/* The final call: the brand's light behind its icon. */
+.cta-final { position: relative; isolation: isolate; overflow: hidden; }
+.cta-final::before {
+  content: ""; position: absolute; z-index: -1; left: 50%; top: 0; width: min(900px, 140%); height: 520px; translate: -50% 0;
+  background:
+    radial-gradient(45% 45% at 50% 30%, var(--glow), transparent 70%),
+    radial-gradient(30% 30% at 62% 52%, var(--glow-2), transparent 70%);
+}
+.cta-final .logo-tile { box-shadow: 0 0 0 1px var(--border), 0 18px 40px -12px color-mix(in srgb, var(--primary) 45%, transparent); }
+
+/* The header's line fills as the page scrolls, where the browser drives an animation by scrolling. */
+@supports (animation-timeline: scroll()) {
+  :root.motion .site-header::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; pointer-events: none;
+    background: linear-gradient(90deg, var(--primary), var(--accent-2));
+    transform-origin: 0 50%; animation: read-progress linear both; animation-timeline: scroll(root);
+  }
+  @keyframes read-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+}
+
+/* Status dots breathe: the eyebrow's "offline first" and the queue's pending changes. */
+:root.motion .eyebrow .dot { animation: ping 2.4s ease-out infinite; }
+@keyframes ping {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--positive) 45%, transparent); }
+  70%, 100% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--positive) 0%, transparent); }
+}
+:root.motion .pill-pending::before { animation: breathe 1.6s ease-in-out infinite; }
+@keyframes breathe { 50% { opacity: 0.35; } }
+
+/* Motion. boot.js sets .motion on <html> before the first paint, unless the visitor asked for reduced motion (then
+   every element simply shows) or the design board pins a theme. Entrances use a backwards fill, so once done each
+   element is back on its own styles. */
+:root { --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+/* The hero, on load: the words one after another, then the phone, then its two cards. */
+:root.motion .hero-grid > div:first-child > * { animation: rise 0.9s var(--ease-out) backwards; }
+:root.motion .hero-grid > div:first-child > :nth-child(1) { animation-delay: 0.05s; }
+:root.motion .hero-grid > div:first-child > :nth-child(2) { animation-delay: 0.13s; }
+:root.motion .hero-grid > div:first-child > :nth-child(3) { animation-delay: 0.23s; }
+:root.motion .hero-grid > div:first-child > :nth-child(4) { animation-delay: 0.33s; }
+:root.motion .hero-grid > div:first-child > :nth-child(5) { animation-delay: 0.42s; }
+:root.motion .hero h1 .accent { animation: sweep 1.8s var(--ease-out) 0.7s backwards; }
+:root.motion .invite { animation: rise 0.7s var(--ease-out) backwards; }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); filter: blur(4px); } }
+@keyframes sweep { from { background-position: 100% 0; } }
+:root.motion .showcase .phone { animation: phone-in 1.1s var(--ease-out) 0.2s backwards; }
+:root.motion .showcase::before { animation: fade-in 1.6s ease-out 0.4s backwards; }
+@keyframes phone-in { from { opacity: 0; transform: translateY(48px) scale(0.94); } }
+@keyframes fade-in { from { opacity: 0; } }
+/* The cards pop in with individual transform properties, so they add to bob's transform instead of replacing it. */
+:root.motion .float-pay { animation: float-in 0.7s var(--ease-spring) 0.95s backwards, bob 6s ease-in-out 1.65s infinite; }
+:root.motion .float-sync { animation: float-in 0.7s var(--ease-spring) 1.15s backwards, bob 6s ease-in-out -1.35s infinite; }
+:root.motion .float-pay.bump { animation: pv-bump 0.7s var(--ease-out), bob 6s ease-in-out 1.65s infinite; }
+:root.motion .float-sync.bump { animation: pv-bump 0.7s var(--ease-out), bob 6s ease-in-out -1.35s infinite; }
+@keyframes float-in { from { opacity: 0; scale: 0.7; translate: 0 16px; } }
+
+/* The rest rises as it scrolls into view, a few at a time in reading order (site.js adds .in and staggers with --d). */
+:root.motion :is(.section-head, .bento .tile, .steps li, .platform, .privacy-band, .faq details, .cta-final .wrap > *) {
+  transition: opacity 0.8s var(--ease-out) var(--d, 0s), translate 0.8s var(--ease-out) var(--d, 0s),
+    transform 0.3s var(--ease-out), border-color 0.3s, box-shadow 0.3s;
+}
+:root.motion :is(.section-head, .bento .tile, .steps li, .platform, .privacy-band, .faq details, .cta-final .wrap > *):not(.in) {
+  opacity: 0; translate: 0 28px;
+}
+/* What each card shows plays once it is in: the bars fill, the chips, rows and receipt lines come one by one, the step's
+   number and the final icon pop. */
+.bars-chart span[style] { transform-origin: left; }
+:root.motion .tile .bars-chart span[style] { transition: transform 1.1s var(--ease-out) calc(var(--d, 0s) + 0.35s); }
+:root.motion .tile .bars-chart div:nth-child(2) span[style] { transition-delay: calc(var(--d, 0s) + 0.5s); }
+:root.motion .tile .bars-chart div:nth-child(3) span[style] { transition-delay: calc(var(--d, 0s) + 0.65s); }
+:root.motion .tile:not(.in) .bars-chart span[style] { transform: scaleX(0); }
+:root.motion .tile :is(.chip, .queue-row, .receipt > div, .code-card) {
+  transition: opacity 0.5s var(--ease-out), scale 0.5s var(--ease-spring), translate 0.6s var(--ease-out);
+  transition-delay: calc(var(--d, 0s) + 0.3s + var(--n, 0) * 60ms);
+}
+:root.motion .tile:not(.in) .chip { opacity: 0; scale: 0.8; }
+:root.motion .tile:not(.in) :is(.queue-row, .receipt > div, .code-card) { opacity: 0; translate: -14px 0; }
+.chips .chip:nth-child(2), .queue-row:nth-child(2), .receipt > div:nth-child(2) { --n: 1; }
+.chips .chip:nth-child(3) { --n: 2; }
+.chips .chip:nth-child(4), .receipt > div:nth-child(4) { --n: 3; }
+.chips .chip:nth-child(5) { --n: 4; }
+.chips .chip:nth-child(6) { --n: 5; }
+.chips .chip:nth-child(7) { --n: 6; }
+:root.motion .steps li::before { transition: scale 0.6s var(--ease-spring) calc(var(--d, 0s) + 0.25s); }
+:root.motion .steps li:not(.in)::before { scale: 0; }
+:root.motion .cta-final .logo-tile { transition: opacity 0.8s var(--ease-out) var(--d, 0s), translate 0.8s var(--ease-out) var(--d, 0s), scale 0.8s var(--ease-spring) var(--d, 0s), rotate 0.8s var(--ease-spring) var(--d, 0s); }
+:root.motion .cta-final .logo-tile:not(.in) { scale: 0.6; rotate: -12deg; }
+
+/* The phone's balance rolls to its new amount (preview.js) and its card glows once. */
+.balance.changed { animation: balance-glow 0.9s var(--ease-out); }
+@keyframes balance-glow { 30% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 30%, transparent); } }
 
 /* Legal pages */
 .legal-hero { padding: 48px 0 32px; border-bottom: 1px solid var(--border); }

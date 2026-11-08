@@ -5,7 +5,7 @@
   const params = new URLSearchParams(location.search);
   // boot.js, in <head>, already picked the theme and the language.
   const lang = ["pt", "es", "fr"].includes(document.documentElement.dataset.lang) ? document.documentElement.dataset.lang : "en";
-  // analytics.js, in <head>, sends the events; README.md lists them.
+  // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
   // Where a link or button sits: the header's menus, the rest of the header or the footer.
   const originOf = (el) => (el.closest("details") && el.closest(".site-header") ? "header_menu"
@@ -131,6 +131,32 @@
       running.addEventListener("finish", () => { running = null; });
     });
   });
+
+  // The landing's sections rise as they scroll into view (site.css), those that come in together one after another in
+  // reading order. boot.js sets .motion unless the visitor asked for reduced motion; without it everything just shows.
+  if (root.classList.contains("motion")) {
+    const reveal = new IntersectionObserver((entries) => {
+      entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top || a.boundingClientRect.left - b.boundingClientRect.left)
+        .forEach((entry, i) => {
+          entry.target.style.setProperty("--d", `${Math.min(i, 5) * 90}ms`);
+          entry.target.classList.add("in");
+          reveal.unobserve(entry.target);
+        });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    document.querySelectorAll(".section-head, .bento .tile, .steps li, .platform, .privacy-band, .faq details, .cta-final .wrap > *")
+      .forEach((el) => reveal.observe(el));
+  }
+
+  // On a pointer, the cards' light follows it (site.css).
+  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    document.querySelectorAll(".tile, .platform, .steps li").forEach((card) => card.addEventListener("pointermove", (e) => {
+      const box = card.getBoundingClientRect();
+      card.style.setProperty("--mx", `${e.clientX - box.left}px`);
+      card.style.setProperty("--my", `${e.clientY - box.top}px`);
+    }));
+  }
 
   // The header gets its border once the page scrolls; the legal pages show "back to top" further down.
   const header = document.querySelector(".site-header");
