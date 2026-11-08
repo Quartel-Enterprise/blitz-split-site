@@ -247,11 +247,22 @@
             <span class="ic"><svg class="icon"><use href="#i-receipt"/></svg></span>
             <h3 data-i18n="f4Title">Scan the receipt</h3>
             <p data-i18n="f4Body">Take a photo and the items show up, ready for each one to mark what they had. You check it before saving.</p>
-            <div class="tile-visual receipt num">
-              <div><span data-i18n="r1">2× Draft beer</span><span class="who"><span class="av blue"><img src="/people/me.webp" alt=""></span><span class="av peach"><img src="/people/bruno.webp" alt=""></span></span><span data-i18n="r1v">$28</span></div>
-              <div><span data-i18n="r2">Shrimp platter</span><span class="who"><span class="av green"><img src="/people/ana.webp" alt=""></span><span class="av lilac"><img src="/people/carla.webp" alt=""></span></span><span data-i18n="r2v">$96</span></div>
-              <hr>
-              <div><span data-i18n="r3">Service 10%</span><span></span><span data-i18n="r3v">$12.40</span></div>
+            <!-- A receipt's photo being read (scan.js): as the line passes each printed line, its item comes into the list,
+                 then who had it; "Split these items" takes them to the card beside (split-modes.js). Without scripts, the
+                 list alone. -->
+            <div class="tile-visual scan-demo" data-scan>
+              <div class="scan-stage" data-scan-stage hidden></div>
+              <div class="receipt num">
+                <div data-scan-row="1"><span data-i18n="r1">2× Draft beer</span><span class="who"><span class="av blue"><img src="/people/me.webp" alt=""></span><span class="av peach"><img src="/people/bruno.webp" alt=""></span></span><span data-i18n="r1v">$28</span></div>
+                <div data-scan-row="2"><span data-i18n="r2">Shrimp platter</span><span class="who"><span class="av green"><img src="/people/ana.webp" alt=""></span><span class="av lilac"><img src="/people/carla.webp" alt=""></span></span><span data-i18n="r2v">$96</span></div>
+                <hr>
+                <div data-scan-row="3"><span data-i18n="r3">Service 10%</span><span></span><span data-i18n="r3v">$12.40</span></div>
+              </div>
+              <div class="scan-actions" data-scan-actions hidden>
+                <span class="scan-badge"><svg class="icon"><use href="#i-check"/></svg><span data-i18n="scanRead">2 items and the service</span></span>
+                <button type="button" class="scan-again" data-scan-again aria-label="Scan again" data-i18n-label="scanAgain"><svg class="icon"><use href="#i-sync"/></svg></button>
+                <button type="button" class="btn btn-primary btn-sm" data-scan-split><span data-i18n="scanSplit">Split these items</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+              </div>
             </div>
           </article>
 
@@ -522,6 +533,7 @@
         r1: "2× Chope", r1v: "R$ 28",
         r2: "Porção de camarão", r2v: "R$ 96",
         r3: "Serviço 10%", r3v: "R$ 12,40",
+        scanRead: "2 itens e o serviço", scanSplit: "Dividir esses itens", scanAgain: "Escanear de novo",
         f5Title: "Acerte com Pix ou Bitcoin",
         f5Body: "Cadastre sua chave Pix ou endereço Bitcoin e quem te deve vê na hora para onde pagar, com QR code. Depois é só registrar o pagamento.",
         f6Title: "Veja para onde foi o dinheiro",
@@ -646,6 +658,7 @@
         r1: "2× Cerveza", r1v: "$28",
         r2: "Porción de camarones", r2v: "$96",
         r3: "Servicio 10%", r3v: "$12,40",
+        scanRead: "2 ítems y el servicio", scanSplit: "Dividir estos ítems", scanAgain: "Escanear de nuevo",
         f5Title: "Salda con Pix o Bitcoin",
         f5Body: "Guarda tu clave Pix o tu dirección Bitcoin y quien te debe ve al instante adónde pagar, con código QR. Después solo registras el pago.",
         f6Title: "Mira adónde fue el dinero",
@@ -770,6 +783,7 @@
         r1: "2× Bière pression", r1v: "28 $",
         r2: "Plateau de crevettes", r2v: "96 $",
         r3: "Service 10 %", r3v: "12,40 $",
+        scanRead: "2 articles et le service", scanSplit: "Partager ces articles", scanAgain: "Scanner à nouveau",
         f5Title: "Réglez avec Pix ou Bitcoin",
         f5Body: "Enregistrez votre clé Pix ou votre adresse Bitcoin : celui qui vous doit de l'argent voit où payer, code QR compris. Il ne reste qu'à enregistrer le paiement.",
         f6Title: "Voyez où est passé l'argent",
@@ -833,6 +847,7 @@
   <script src="/site.js"></script>
   <script src="/preview.js"></script>
   <script src="/split-modes.js"></script>
+  <script src="/scan.js"></script>
   <script>
     // A group's link, /g/<code>, or a member's personal one, /g/<code>/<member>.
     if (/^\/g\/[A-Za-z0-9]{8}(\/[A-Za-z0-9]{6})?\/?$/.test(location.pathname)) {

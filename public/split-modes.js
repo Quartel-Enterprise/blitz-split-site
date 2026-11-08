@@ -1,6 +1,6 @@
 // The landing's "Split it the way it really was" card, working as the app's split editor (blitz-split-client,
 // feature/split_bill): each chip, a way to split, opens that way's editor on the same bill, a $132 pizza night that
-// Pedro paid, among the phone's four people (preview.js).
+// Pedro paid, among the phone's four people (preview.js), or the receipt the card beside reads (scan.js).
 //   Equally      a checkbox each, and "Check all"; at least one person must be in.
 //   Amounts      a field each; the parts must add up to the total, and whoever is left at 0 is out.
 //   Percentages  a whole number each; they must add up to 100.
@@ -33,7 +33,8 @@
       service: "Service ({p})", serviceSub: "In proportion to what each one had",
       loose: "Mark who had each item", looseDetail: "Tap the faces on each item to mark who had it.",
       itemsClosed: "{a} in items and {b} of service.", nobodyItem: "Nobody checked", eachItem: "{a} each",
-      items: { pizza: "Large pizza", beer: "Beer", salad: "Salad" },
+      items: { pizza: "Large pizza", beer: "Beer", salad: "Salad", draft: "Draft beer", shrimp: "Shrimp platter" },
+      receiptBill: "Harbor Bar",
       hint: {
         equal: "When it doesn't split evenly, the leftover cents go to whoever paid.",
         amounts: "Whoever is left at {zero} is out of the bill.",
@@ -59,7 +60,8 @@
       service: "Serviço ({p})", serviceSub: "Proporcional ao que cada um consumiu",
       loose: "Marque quem consumiu", looseDetail: "Toque nos rostos de cada item e marque quem consumiu.",
       itemsClosed: "{a} em itens e {b} de serviço.", nobodyItem: "Ninguém marcado", eachItem: "{a} cada",
-      items: { pizza: "Pizza grande", beer: "Cerveja", salad: "Salada" },
+      items: { pizza: "Pizza grande", beer: "Cerveja", salad: "Salada", draft: "Chope", shrimp: "Porção de camarão" },
+      receiptBill: "Bar do Porto",
       hint: {
         equal: "Quando não dá conta exata, os centavos que sobram ficam com quem pagou.",
         amounts: "Quem fica com {zero} sai da conta.",
@@ -85,7 +87,8 @@
       service: "Servicio ({p})", serviceSub: "Según lo que consumió cada uno",
       loose: "Marca quién consumió", looseDetail: "Toca las caras de cada ítem y marca quién lo consumió.",
       itemsClosed: "{a} en ítems y {b} de servicio.", nobodyItem: "Nadie marcado", eachItem: "{a} cada uno",
-      items: { pizza: "Pizza grande", beer: "Cerveza", salad: "Ensalada" },
+      items: { pizza: "Pizza grande", beer: "Cerveza", salad: "Ensalada", draft: "Cerveza", shrimp: "Porción de camarones" },
+      receiptBill: "Bar del Puerto",
       hint: {
         equal: "Cuando no da exacto, los centavos que sobran quedan para quien pagó.",
         amounts: "Quien queda en {zero} sale de la cuenta.",
@@ -111,7 +114,8 @@
       service: "Service ({p})", serviceSub: "Selon ce que chacun a pris",
       loose: "Indiquez qui a pris quoi", looseDetail: "Touchez les visages de chaque article pour indiquer qui l'a pris.",
       itemsClosed: "{a} d'articles et {b} de service.", nobodyItem: "Personne", eachItem: "{a} chacun",
-      items: { pizza: "Grande pizza", beer: "Bière", salad: "Salade" },
+      items: { pizza: "Grande pizza", beer: "Bière", salad: "Salade", draft: "Bière pression", shrimp: "Plateau de crevettes" },
+      receiptBill: "Bar du Port",
       hint: {
         equal: "Quand ça ne tombe pas juste, les centimes en trop vont à celui qui a payé.",
         amounts: "Qui reste à {zero} sort de la dépense.",
@@ -182,24 +186,41 @@
     return whole;
   }
 
-  // The items: $120, and 10% of service makes the bill's $132.
-  const ITEMS = [
-    { key: "pizza", qty: 1, each: 6000, who: [true, true, false, false] },
-    { key: "beer", qty: 3, each: 1200, who: [true, false, true, true] },
-    { key: "salad", qty: 1, each: 2400, who: [false, false, false, true] },
-  ];
-  const ITEMS_TOTAL = sum(ITEMS.map((it) => it.qty * it.each));
-  const SERVICE_TOTAL = Math.round((ITEMS_TOTAL * SERVICE) / 100);
-  const TOTAL = ITEMS_TOTAL + SERVICE_TOTAL;
-
-  // Each way keeps what was typed in it while the visitor switches between them.
-  const state = {
-    equal: [true, true, true, true],
-    amounts: distribute(TOTAL, [1, 1, 1, 1]),
-    percent: [25, 25, 25, 25],
-    shares: [1, 1, 1, 1],
-    income: [600000, 400000, 300000, 200000],
+  // The bills: the pizza night ($120 of items, and 10% of service makes $132), and the receipt the card beside reads
+  // (scan.js), which "Split these items" brings here, the faces it marked included.
+  const BILLS = {
+    pizza: {
+      title: TEXT.bill,
+      items: [
+        { key: "pizza", qty: 1, each: 6000, who: [true, true, false, false] },
+        { key: "beer", qty: 3, each: 1200, who: [true, false, true, true] },
+        { key: "salad", qty: 1, each: 2400, who: [false, false, false, true] },
+      ],
+    },
+    receipt: {
+      title: TEXT.receiptBill,
+      items: [
+        { key: "draft", qty: 2, each: 1400, who: [true, false, true, false] },
+        { key: "shrimp", qty: 1, each: 9600, who: [false, true, false, true] },
+      ],
+    },
   };
+  let bill, ITEMS, ITEMS_TOTAL, TOTAL, state;
+  // A bill starts every way afresh: everyone in, the amounts and percentages even, a share each. Incomes stay.
+  function load(name) {
+    bill = BILLS[name];
+    ITEMS = bill.items.map((it) => ({ ...it, who: it.who.slice() }));
+    ITEMS_TOTAL = sum(ITEMS.map((it) => it.qty * it.each));
+    TOTAL = ITEMS_TOTAL + Math.round((ITEMS_TOTAL * SERVICE) / 100);
+    state = {
+      equal: [true, true, true, true],
+      amounts: distribute(TOTAL, [1, 1, 1, 1]),
+      percent: [25, 25, 25, 25],
+      shares: [1, 1, 1, 1],
+      income: state?.income ?? [600000, 400000, 300000, 200000],
+    };
+  }
+  load("pizza");
   let mode = "equal";
   const edited = new Set();
   function noteEdit() {
@@ -312,7 +333,7 @@
       <ul class="split-sums">${PEOPLE.map((p, i) => `<li class="split-row" style="--n:${i}">${face(p)}<span class="who">${p.name}</span><b class="num"></b></li>`).join("")}</ul>`;
     panel.innerHTML = `
       <div class="split-status" aria-live="polite"><strong></strong><span></span></div>
-      <div class="split-bill"><span><b>${TEXT.bill}</b><small>${TEXT.paid}</small></span><b class="num">${money(TOTAL)}</b></div>
+      <div class="split-bill"><span><b>${bill.title}</b><small>${TEXT.paid}</small></span><b class="num">${money(TOTAL)}</b></div>
       ${people}${items}
       <p class="split-hint">${fill(TEXT.hint[mode], { zero: money(0) })}</p>`;
     panel.hidden = false;
@@ -424,4 +445,19 @@
     build();
   }));
   build();
+
+  // "Split these items" in the receipt's card: its bill opens here in Items, the card glows once and comes into view.
+  document.addEventListener("split:receipt", () => {
+    load("receipt");
+    mode = "items";
+    chips.forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.mode === mode)));
+    build();
+    const tile = demo.closest(".tile");
+    const still = !root.classList.contains("motion");
+    tile.scrollIntoView({ behavior: still ? "auto" : "smooth", block: "nearest" });
+    if (still) return;
+    panel.classList.remove("arrived");
+    void panel.offsetWidth;
+    panel.classList.add("arrived");
+  });
 })();

@@ -693,6 +693,79 @@ label.split-row { cursor: pointer; }
 .receipt .who .av { width: 20px; height: 20px; font-size: 9.5px; }
 .receipt hr { border: 0; border-top: 1px dashed var(--border); margin: 4px 0; width: 100%; }
 
+/* The receipt being read (scan.js): a photo of the paper in a camera's corners, a line sweeping down it, each printed
+   line lighting up as the line passes, its item coming into the list below, then who had it, then the actions. The
+   card stretches to its neighbour's height, so the stage takes what is left and centers the paper. */
+.scan-demo { flex: 1; display: flex; flex-direction: column; gap: 14px; }
+.scan-stage { flex: 1; display: grid; place-items: center; min-height: 0; padding: 6px 0; }
+.scan-frame { position: relative; padding: 20px 26px; }
+.scan-frame::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; --c: color-mix(in srgb, var(--primary) 75%, transparent);
+  background:
+    linear-gradient(var(--c) 0 0) 0 0 / 22px 2px, linear-gradient(var(--c) 0 0) 0 0 / 2px 22px,
+    linear-gradient(var(--c) 0 0) 100% 0 / 22px 2px, linear-gradient(var(--c) 0 0) 100% 0 / 2px 22px,
+    linear-gradient(var(--c) 0 0) 0 100% / 22px 2px, linear-gradient(var(--c) 0 0) 0 100% / 2px 22px,
+    linear-gradient(var(--c) 0 0) 100% 100% / 22px 2px, linear-gradient(var(--c) 0 0) 100% 100% / 2px 22px;
+  background-repeat: no-repeat;
+}
+/* The paper stays paper in both themes; its shadow is a drop-shadow, since the torn edge's mask would cut a box-shadow. */
+.paper-wrap { position: relative; rotate: -2deg; filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.16)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.08)); }
+.paper {
+  position: relative; width: 228px; padding: 16px 16px 22px; display: grid; gap: 1px;
+  background: #fffdf7; color: #3b3732; font: 500 11px/1.6 var(--mono); letter-spacing: 0.01em;
+  -webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 10px 100%;
+  mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 10px 100%;
+}
+.paper hr { width: 100%; margin: 6px 0; border: 0; border-top: 1px dashed #c9c2b6; }
+.paper-store { text-align: center; font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em; }
+.paper-center { text-align: center; color: #7a7266; }
+.paper-line { display: flex; justify-content: space-between; gap: 12px; margin: 0 -6px; padding: 0 6px; border-radius: 3px; }
+.paper-total { font-weight: 700; font-size: 12px; margin-top: 2px; }
+.scan-line {
+  position: absolute; left: -14px; right: -14px; top: 0; height: 2px; border-radius: 2px; opacity: 0; pointer-events: none;
+  background: var(--primary); box-shadow: 0 0 14px 3px color-mix(in srgb, var(--primary) 55%, transparent);
+}
+.scan-line::before {
+  content: ""; position: absolute; left: 14px; right: 14px; bottom: 2px; height: 46px;
+  background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--primary) 16%, transparent));
+}
+.scan-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.scan-badge { display: inline-flex; align-items: center; gap: 6px; margin-right: auto; color: var(--positive); font-size: 13px; font-weight: 600; }
+.scan-badge .icon { width: 16px; height: 16px; }
+.scan-again {
+  width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--fg-soft);
+  display: grid; place-items: center; cursor: pointer; transition: background-color 0.15s, color 0.15s;
+}
+.scan-again:hover { background: var(--muted); color: var(--fg); }
+.scan-again .icon { width: 16px; height: 16px; transition: rotate 0.5s var(--ease-out, ease-out); }
+.scan-again:hover .icon { rotate: 180deg; }
+[data-scan-split] .icon { width: 16px; height: 16px; }
+/* Still, there is nothing to scan again. */
+:root:not(.motion) .scan-again { display: none; }
+/* The run. Before it, under motion, the list and the actions wait. */
+:root.motion .scan-demo:not(.run) :is([data-scan-row], .receipt hr, .scan-actions) { opacity: 0; }
+.scan-demo.run .scan-line { animation: scan-sweep var(--sweep, 2200ms) cubic-bezier(0.45, 0, 0.55, 1) 300ms both; }
+@keyframes scan-sweep { 0% { top: 0; opacity: 0; } 6%, 92% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
+.scan-demo.run [data-scan-line] { animation: scan-hit 1s ease-out var(--at) both; }
+@keyframes scan-hit {
+  0% { background: transparent; }
+  15% { background: color-mix(in srgb, var(--primary) 30%, transparent); }
+  100% { background: color-mix(in srgb, var(--primary) 10%, transparent); }
+}
+.scan-demo.run [data-scan-row] { animation: scan-row 0.55s var(--ease-out) var(--at) backwards; }
+@keyframes scan-row { from { opacity: 0; translate: 0 -12px; filter: blur(3px); } }
+.scan-demo.run .receipt hr { animation: fade-in 0.4s ease-out var(--done) backwards; }
+.scan-demo.run [data-scan-row] .who .av { animation: scan-face 0.45s var(--ease-spring) calc(var(--done) + 0.1s) backwards; }
+.scan-demo.run [data-scan-row="2"] .who .av { animation-delay: calc(var(--done) + 0.3s); }
+.scan-demo.run [data-scan-row] .who .av + .av { animation-delay: calc(var(--done) + 0.2s); }
+.scan-demo.run [data-scan-row="2"] .who .av + .av { animation-delay: calc(var(--done) + 0.4s); }
+@keyframes scan-face { from { opacity: 0; scale: 0.4; } }
+.scan-demo.run .scan-actions { animation: rise 0.6s var(--ease-out) calc(var(--done) + 0.55s) backwards; }
+
+/* The split card glows once when the receipt's items arrive. */
+.split-example.arrived { animation: arrived 1.2s var(--ease-out); }
+@keyframes arrived { 20% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 35%, transparent); border-color: var(--primary); } }
+
 .code-card { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 12px; background: var(--bg); border: 1px solid var(--border-subtle); }
 .code-card .mono { font-size: 15px; letter-spacing: 0.04em; }
 .code-card small { display: block; color: var(--muted-fg); font-size: 12.5px; }
@@ -877,16 +950,16 @@ label.split-row { cursor: pointer; }
 :root.motion .tile .bars-chart div:nth-child(2) span[style] { transition-delay: calc(var(--d, 0s) + 0.5s); }
 :root.motion .tile .bars-chart div:nth-child(3) span[style] { transition-delay: calc(var(--d, 0s) + 0.65s); }
 :root.motion .tile:not(.in) .bars-chart span[style] { transform: scaleX(0); }
-:root.motion .tile :is(.chip, .queue-row, .receipt > div, .code-card) {
+:root.motion .tile :is(.chip, .queue-row, .code-card) {
   --in: calc(var(--d, 0s) + 0.3s + var(--n, 0) * 60ms);
   transition: opacity 0.5s var(--ease-out) var(--in), scale 0.5s var(--ease-spring) var(--in),
     translate 0.6s var(--ease-out) var(--in), background-color 0.2s, color 0.2s;
 }
 :root.motion .tile:not(.in) .chip { opacity: 0; scale: 0.8; }
-:root.motion .tile:not(.in) :is(.queue-row, .receipt > div, .code-card) { opacity: 0; translate: -14px 0; }
-.chips .chip:nth-child(2), .queue-row:nth-child(2), .receipt > div:nth-child(2) { --n: 1; }
+:root.motion .tile:not(.in) :is(.queue-row, .code-card) { opacity: 0; translate: -14px 0; }
+.chips .chip:nth-child(2), .queue-row:nth-child(2) { --n: 1; }
 .chips .chip:nth-child(3) { --n: 2; }
-.chips .chip:nth-child(4), .receipt > div:nth-child(4) { --n: 3; }
+.chips .chip:nth-child(4) { --n: 3; }
 .chips .chip:nth-child(5) { --n: 4; }
 .chips .chip:nth-child(6) { --n: 5; }
 .chips .chip:nth-child(7) { --n: 6; }

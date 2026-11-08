@@ -40,6 +40,12 @@ service by what each one had. Above the people, the status the app shows ("$33 e
 in yet") in its tone, and behind each one a light as wide as their part. The cents work as the app's: each part rounded
 down, the cents left to whoever paid. What is typed in a way stays while switching.
 
+The "Scan the receipt" card shows a receipt being read (`public/scan.js`): a photo of a made-up bar's receipt in a
+camera's corners, a line sweeping down it, each printed line lighting up as it passes and its item coming into the list
+below, then the faces of who had it. It plays once the card is in view and again on "Scan again". "Split these items"
+opens that receipt in the split card, in Items, with the faces it marked. The paper fills the height the split card
+gives the row, whatever way is open there.
+
 ## Design board
 
 `design/board.html` (not deployed) shows each page at the phone, tablet, laptop and desktop sizes it must hold, light
