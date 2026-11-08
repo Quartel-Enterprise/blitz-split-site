@@ -1,6 +1,7 @@
 # Blitz Split site
 
-What [blitzsplit.com](https://blitzsplit.com) serves: a Cloudflare Worker with static assets only, no bundle. The page loads Google Analytics' `gtag.js`, which reports to the
+What [blitzsplit.com](https://blitzsplit.com) serves: a Cloudflare Worker with static assets and one script,
+`src/index.js`, which serves the [invite links' previews](#invite-link-previews). The page loads Google Analytics' `gtag.js`, which reports to the
 Firebase project `blitzsplit-site` (measurement id `G-JD94WD10FJ`): a project of its own, so the site's visits don't mix
 with the app's numbers (the app's project is `blitz-split`). [Analytics](#analytics) lists the events.
 
@@ -9,7 +10,8 @@ with the app's numbers (the app's project is `blitz-split`). [Analytics](#analyt
 | `/` | The landing (Bora Rachar in Portuguese, Blitz Split in English, Spanish and French) |
 | `/privacy` | The privacy policy, the address the apps' Profile › "Privacy policy" opens (`/privacidade`, which older app versions open, redirects to it) |
 | `/terms` | The terms of use, the address the apps' Profile › "Terms of use" opens (`/termos`, which older app versions open, redirects to it) |
-| `/g/<code>`, `/g/<code>/<member>` | The landing, plus a note to open the group invite (or a member's personal invite) on a phone with the app installed |
+| `/g/<code>`, `/g/<code>/<member>` | The landing, plus a note to open the group invite (or a member's personal invite) on a phone with the app installed, with the invite's meta tags for its link preview |
+| `/og/g/<code>.png`, `/og/g/<code>/<member>.png` | The image of that link preview; `/og/blitzsplit.png` is the brand's, the landing's and a dead invite's |
 | `/b/<bill>?comentario=<comment>` | The same page; on a phone or a Mac with the app installed, the app opens the comment instead |
 | `/download`, `/app-download` | The store of the visitor's platform, or the landing's buttons while that store doesn't offer the app. `/app-download` is the link of "Get the app" in the web and the Mac app; which stores list the app is `CONFIG` in `stores.js`, in step with the client's `stores.properties` |
 | `/download/android`, `/download/ios` | That store, whatever the platform, or the landing's buttons while it doesn't offer the app |
@@ -21,6 +23,34 @@ serves both `.well-known` files as `application/json`, which Android and Apple r
 
 The `.well-known` files are copies of `webApp/public/.well-known` in
 [blitz-split-client](https://github.com/Quartel-Enterprise/blitz-split-client): change both together.
+
+## Invite link previews
+
+WhatsApp, iMessage, Telegram and the rest draw a link's preview from the page's meta tags. `src/index.js` runs only for
+`/g/*` and `/og/*` (`run_worker_first` in `wrangler.jsonc`); every other path, `/.well-known/*` among them, is a static
+file. For `/g/<code>` it serves the landing with that invite's title, description and image:
+
+| Link | Title | Image |
+| --- | --- | --- |
+| The group's, `/g/<code>` | "Join <group>" and how many people split there | The group's photo, or its initials on its color, its name, type, people and up to five of their faces |
+| A member's personal one, `/g/<code>/<member>?from=<inviter>` | "Join <group> as <member>" and who saved them the spot | The member's initial, the group's name and "You join as <member>", on the member's color |
+| A code nobody has (a changed link, a used personal link, a typo) | "Invite to a group on Blitz Split" | `/og/blitzsplit.png`, the brand's card, as the landing's |
+
+What a preview says and its card come from the API's
+[`invite-preview`](https://github.com/Quartel-Enterprise/blitz-split-api/tree/main/supabase/functions/invite-preview)
+edge function, `INVITE_PREVIEW_URL` in `wrangler.jsonc`: it reads `get_invite`, picks the language by the group's
+currency (BRL Portuguese, the Spanish speaking countries' Spanish, any other English) and draws the 1200 × 630 card
+with satori. Drawing takes 40 to 75 ms of CPU, past the 10 ms the Workers Free plan allows a request, so the
+function draws and this Worker only asks it and keeps each answer in Cloudflare's cache: the words for five minutes,
+an image for a day. The image's address carries the function's `imageVersion` (`?v=`), which changes with whatever
+the card shows, since WhatsApp keeps an image by its address. Should the function fail, the page keeps the landing's
+own meta tags and an image answers the brand's card.
+
+`public/og/blitzsplit.png`, the brand's card, is a static file the function's `brand_card.ts` draws with the same
+layout: run it there after changing the layout or the brand, and copy the file here.
+
+When the 302 of the app links to the web app comes back (#12, paused by #13), `/g/*` must still answer crawlers with
+this page, or the previews go back to the landing's.
 
 ## Pages and design
 
@@ -93,6 +123,11 @@ definitions), event-scoped, with the same name. Add an event's row here in the s
 npm install
 npm run dev      # http://localhost:8787
 ```
+
+`npm run dev` asks the hosted `invite-preview` function, so a real invite code shows its preview at
+http://localhost:8787/g/<code>, and its image at the `og:image` address the page names (`blitzsplit.com` in the
+address stands for `localhost:8787`). `npx wrangler dev --var INVITE_PREVIEW_URL:http://localhost:54321/functions/v1/invite-preview` asks a local
+one instead (`supabase functions serve`).
 
 Every commit on `main` deploys to blitzsplit.com and www.blitzsplit.com through
 [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/): Cloudflare runs `npx wrangler deploy`
