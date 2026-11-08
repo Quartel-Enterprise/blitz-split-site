@@ -584,29 +584,101 @@ a.status .icon { width: 15px; height: 15px; }
 button.chip { font-family: inherit; line-height: inherit; cursor: pointer; min-height: 32px; transition: background-color 0.2s, color 0.2s; }
 button.chip:hover:not([aria-pressed="true"]) { background: color-mix(in srgb, var(--muted) 70%, var(--border)); color: var(--fg); }
 
-/* The ways to split, each shown on the same bill (split-modes.js): what the way means, then each one's part, its
-   basis (a quarter, a percentage, shares, income, items) and a bar on one scale for every way, so switching moves
-   the bars by how much each one's part changes. */
+/* The ways to split, working as the app's split editor (split-modes.js): the status the app shows ("$33 each",
+   "$10 left"), the bill, then each person with that way's control (a checkbox, an amount, a percentage, a stepper, an
+   income) and a light behind the row as wide as their part of the bill. Items: who had each one, by their faces. */
 .split-demo { display: grid; gap: 14px; }
-.split-example { padding: 14px 16px; border-radius: 12px; background: var(--bg); border: 1px solid var(--border-subtle); font-size: 13.5px; }
-/* Two lines held for every way's sentence, so the card keeps its height while switching. */
-.split-note { color: var(--fg-soft); min-height: 3.2em; }
-.split-bill { display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; padding-bottom: 8px; border-bottom: 1px dashed var(--border); font-weight: 600; }
-.split-rows { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
-.split-rows li { display: grid; grid-template-columns: auto minmax(84px, auto) minmax(40px, 1fr) 64px; align-items: center; gap: 10px; }
-.split-rows .av { width: 24px; height: 24px; }
-.split-rows .who { line-height: 1.25; }
-.split-rows .who small { display: block; color: var(--muted-fg); font-size: 12px; white-space: nowrap; }
-.split-rows b { font-weight: 600; text-align: right; }
-.split-bar { height: 8px; border-radius: 999px; background: var(--muted); overflow: hidden; }
-.split-bar i {
-  display: block; height: 100%; border-radius: inherit; background: var(--primary);
-  transform-origin: left; transform: scaleX(var(--w, 0));
-  transition: transform 0.55s var(--ease-out) calc(var(--n, 0) * 40ms);
+.split-example { display: grid; gap: 10px; padding: 12px; border-radius: 14px; background: var(--bg); border: 1px solid var(--border-subtle); font-size: 13.5px; }
+.split-status {
+  --tone: var(--positive);
+  display: grid; gap: 2px; padding: 10px 12px; border-radius: 10px; line-height: 1.4;
+  background: color-mix(in srgb, var(--tone) 10%, var(--card)); transition: background-color 0.25s;
 }
-.split-swap { animation: split-swap 0.35s var(--ease-out); }
-@keyframes split-swap { from { opacity: 0; transform: translateY(3px); } }
-:root.motion .tile:not(.in) .split-bar i { transform: scaleX(0); }
+.split-status[data-tone="wait"] { --tone: var(--pending); }
+.split-status[data-tone="bad"] { --tone: var(--negative); }
+.split-status strong { color: var(--tone); font-size: 15px; font-weight: 650; font-variant-numeric: tabular-nums; transition: color 0.25s; }
+.split-status span { color: var(--fg-soft); font-size: 12.5px; min-height: 1.4em; }
+.split-bill { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 4px; }
+.split-bill small { display: block; color: var(--muted-fg); font-size: 12px; font-weight: 400; }
+.split-bill b { font-weight: 600; }
+.split-all { justify-self: start; border: 0; background: none; padding: 4px; margin: -4px 0; color: var(--primary); font: 600 13px/1.2 var(--font); cursor: pointer; border-radius: 6px; }
+.split-all:hover { text-decoration: underline; }
+.split-rows, .split-items, .split-sums { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.split-row {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px;
+  min-height: 48px; padding: 6px 8px 6px 10px; border-radius: 10px; background: var(--card); border: 1px solid var(--border-subtle);
+  transition: opacity 0.2s;
+}
+/* The light: the row's part of the bill. */
+.split-row::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: color-mix(in srgb, var(--primary) 13%, transparent);
+  transform-origin: left; transform: scaleX(var(--w, 0));
+  transition: transform 0.5s var(--ease-out, ease-out) calc(var(--n, 0) * 30ms);
+}
+label.split-row { cursor: pointer; }
+.split-row.is-out .who, .split-row.is-out .av { opacity: 0.5; }
+.split-row .av { width: 28px; height: 28px; }
+.split-row .who { min-width: 0; line-height: 1.3; font-weight: 500; }
+.split-row .who small { display: block; color: var(--muted-fg); font-size: 12px; font-weight: 400; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.split-row > b { font-weight: 600; }
+.split-check { width: 20px; height: 20px; margin: 0 6px 0 0; accent-color: var(--primary); cursor: pointer; }
+.split-status[data-tone="bad"] ~ .split-rows .split-check { outline: 2px solid var(--negative); outline-offset: 1px; border-radius: 4px; }
+/* A field with the currency, or %, around a number, as the app's. 16px keeps phones from zooming in on focus. */
+.split-field {
+  display: inline-flex; align-items: center; gap: 4px; height: 38px; padding: 0 10px; border-radius: 10px;
+  background: var(--card); border: 1px solid var(--border); color: var(--muted-fg); font-size: 13px; cursor: text;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.split-field:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px var(--ring); }
+.split-field input {
+  width: 5.2ch; min-width: 0; padding: 0; border: 0; background: transparent; outline: none; text-align: right;
+  font: 600 16px/1 var(--font); color: var(--fg); font-variant-numeric: tabular-nums;
+}
+.split-example[data-mode="percent"] .split-field input { width: 3ch; }
+.split-example[data-mode="income"] .split-field input { width: 6ch; }
+.split-field small { font-size: 11.5px; }
+.split-stepper { display: inline-flex; align-items: center; gap: 2px; padding: 2px; border-radius: 999px; background: var(--card); border: 1px solid var(--border); }
+.split-stepper button {
+  width: 34px; height: 34px; border: 0; border-radius: 50%; background: transparent; color: var(--fg);
+  font: 500 18px/1 var(--font); cursor: pointer; transition: background-color 0.15s, transform 0.15s;
+}
+.split-stepper button:hover { background: var(--muted); }
+.split-stepper button:active { transform: scale(0.9); }
+.split-stepper output { min-width: 2ch; text-align: center; font-weight: 650; font-size: 15px; }
+/* Items: the name and price, the faces of who had it (tap to mark), and each one's part. */
+.split-items { container-type: inline-size; }
+.split-item {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name price" "faces faces";
+  align-items: center; gap: 6px 12px; padding: 8px 10px 8px 12px; border-radius: 10px; background: var(--card); border: 1px solid var(--border-subtle);
+}
+/* With room, the faces sit between the name and the price, one line per item. */
+@container (min-width: 380px) {
+  .split-item { grid-template-columns: minmax(0, 1fr) auto auto; grid-template-areas: "name faces price"; }
+}
+.split-item-name { grid-area: name; min-width: 0; line-height: 1.3; }
+.split-item-name b { font-weight: 600; }
+.split-item-name small { display: block; color: var(--muted-fg); font-size: 12px; }
+.split-item-price { grid-area: price; text-align: right; line-height: 1.3; min-width: 64px; }
+.split-item-price b { font-weight: 600; }
+.split-faces { grid-area: faces; display: flex; gap: 2px; }
+.split-face { padding: 2px; border: 0; border-radius: 50%; background: none; cursor: pointer; transition: transform 0.2s var(--ease-spring, ease-out); }
+.split-face .av { width: 28px; height: 28px; transition: filter 0.2s, opacity 0.2s, box-shadow 0.2s; }
+.split-face[aria-pressed="false"] .av { filter: grayscale(1); opacity: 0.4; }
+.split-face[aria-pressed="true"] .av { box-shadow: 0 0 0 2px var(--card), 0 0 0 4px var(--primary); }
+.split-face:hover { transform: translateY(-2px); }
+.split-face:active { transform: scale(0.92); }
+.split-item-each { display: block; color: var(--muted-fg); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.split-item-each.is-loose { color: var(--pending); font-weight: 600; }
+.split-service { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 2px 4px; }
+.split-service small { display: block; color: var(--muted-fg); font-size: 12px; }
+.split-service b { font-weight: 600; }
+.split-sums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.split-sums .split-row { min-height: 42px; gap: 8px; padding-right: 10px; }
+.split-sums .split-row .av { width: 24px; height: 24px; }
+.split-hint { color: var(--muted-fg); font-size: 12.5px; padding: 0 4px; }
+:root.motion .tile:not(.in) .split-row::before { transform: scaleX(0); }
 
 .queue { display: grid; gap: 8px; }
 .queue-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--bg); border: 1px solid var(--border-subtle); font-size: 14px; }

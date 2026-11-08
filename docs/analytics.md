@@ -30,6 +30,7 @@ keep only `/g/` or `/b/` and drop `?comentario=`. The events, after Bible Planne
 | `preview_sheet_open` | A sheet of the phone opens | `sheet`: `split`, `bill`, `payment`, `record`, `person`, `category` |
 | `preview_change` | A change in the phone | `action`: `add_bill`, `delete_bill`, `record_payment`, `delete_payment` |
 | `split_mode_select` | Another way to split in "Split it the way it really was" | `mode`: `equal`, `amounts`, `percent`, `shares`, `income`, `items` |
+| `split_mode_edit` | The first change in a way to split, once per way and visit (a box, a field, a stepper, an item's face) | `mode`: `equal`, `amounts`, `percent`, `shares`, `income`, `items` |
 
 A parameter shows in Google Analytics' reports only once it is registered as a custom dimension (Admin › Custom
 definitions), event-scoped, with the same name. Add an event's row here in the same change that sends it.
