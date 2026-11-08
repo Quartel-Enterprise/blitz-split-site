@@ -1,6 +1,6 @@
 // Google Analytics of the site's own Firebase project (blitzsplit-site), apart from the app's (blitz-split). Every page
 // loads gtag.js and then this script, in <head> and before the others, which send their events with window.track().
-// README.md lists every event.
+// docs/analytics.md lists every event.
 (function () {
   const MEASUREMENT_ID = "G-JD94WD10FJ";
   window.dataLayer = window.dataLayer || [];

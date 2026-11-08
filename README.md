@@ -1,138 +1,42 @@
 # Blitz Split site
 
-What [blitzsplit.com](https://blitzsplit.com) serves: a Cloudflare Worker with static assets and one script,
-`src/index.js`, which serves the [invite links' previews](#invite-link-previews). The page loads Google Analytics' `gtag.js`, which reports to the
-Firebase project `blitzsplit-site` (measurement id `G-JD94WD10FJ`): a project of its own, so the site's visits don't mix
-with the app's numbers (the app's project is `blitz-split`). [Analytics](#analytics) lists the events.
+The website of **Bora Rachar** (Blitz Split in English, Spanish and French), at [blitzsplit.com](https://blitzsplit.com).
 
-| Path | What it answers |
-| --- | --- |
-| `/` | The landing (Bora Rachar in Portuguese, Blitz Split in English, Spanish and French) |
-| `/privacy` | The privacy policy, the address the apps' Profile › "Privacy policy" opens (`/privacidade`, which older app versions open, redirects to it) |
-| `/terms` | The terms of use, the address the apps' Profile › "Terms of use" opens (`/termos`, which older app versions open, redirects to it) |
-| `/g/<code>`, `/g/<code>/<member>` | The landing, plus a note to open the group invite (or a member's personal invite) on a phone with the app installed, with the invite's meta tags for its link preview |
-| `/og/g/<code>.png`, `/og/g/<code>/<member>.png` | The image of that link preview; `/og/blitzsplit.png` is the brand's, the landing's and a dead invite's |
-| `/b/<bill>?comentario=<comment>` | The same page; on a phone or a Mac with the app installed, the app opens the comment instead |
-| `/download`, `/app-download` | The store of the visitor's platform, or the landing's buttons while that store doesn't offer the app. `/app-download` is the link of "Get the app" in the web and the Mac app; which stores list the app is `CONFIG` in `stores.js`, in step with the client's `stores.properties` |
-| `/download/android`, `/download/ios` | That store, whatever the platform, or the landing's buttons while it doesn't offer the app |
-| `/.well-known/assetlinks.json` | Android App Links of `com.quare.blitzsplit` |
-| `/.well-known/apple-app-site-association` | Apple Universal Links and shared web credentials (the recovery code in the Passwords app) of `TTV2A365LG.com.quare.blitzsplit` |
+Bora Rachar splits bills with friends, even offline. Make a group, add what each one paid and see who owes whom: no
+sign-up required, and everything saves on the device the moment you tap.
 
-Every path is in English, whatever the page's language. Any other path answers with the landing (`not_found_handling: single-page-application`). `public/_headers`
-serves both `.well-known` files as `application/json`, which Android and Apple require, with a 200 and no redirect.
+- **Offline first.** Bills and payments save on the device at once and sync by themselves when the connection comes
+  back.
+- **No account required.** A recovery code keeps your access; Google or Apple only to sync across devices.
+- **Split it the way it really was.** Equally, by amounts, percentages, shares, income or item by item, with the
+  receipt scanned into items.
+- **Settle up.** Who owes whom with as few payments as possible, and a Pix key or Bitcoin address to pay to.
+- **Everywhere.** Android, iPhone and iPad, Mac and the web, each with the look of its own system, sharing the same
+  groups.
 
-The `.well-known` files are copies of `webApp/public/.well-known` in
-[blitz-split-client](https://github.com/Quartel-Enterprise/blitz-split-client): change both together.
+This repository is the site: the landing, the privacy policy and the terms of use, in English, Portuguese, Spanish and
+French, plus the link previews of group invites and the app links' files. The apps live in
+[blitz-split-client](https://github.com/Quartel-Enterprise/blitz-split-client) and the backend in
+[blitz-split-api](https://github.com/Quartel-Enterprise/blitz-split-api).
 
-## Invite link previews
-
-WhatsApp, iMessage, Telegram and the rest draw a link's preview from the page's meta tags. `src/index.js` runs only for
-`/g/*` and `/og/*` (`run_worker_first` in `wrangler.jsonc`); every other path, `/.well-known/*` among them, is a static
-file. For `/g/<code>` it serves the landing with that invite's title, description and image:
-
-| Link | Title | Image |
-| --- | --- | --- |
-| The group's, `/g/<code>` | "Join <group>" and how many people split there | The group's photo, or its initials on its color, its name, type, people and up to five of their faces |
-| A member's personal one, `/g/<code>/<member>?from=<inviter>` | "Join <group> as <member>" and who saved them the spot | The member's initial, the group's name and "You join as <member>", on the member's color |
-| A code nobody has (a changed link, a used personal link, a typo) | "Invite to a group on Blitz Split" | `/og/blitzsplit.png`, the brand's card, as the landing's |
-
-What a preview says and its card come from the API's
-[`invite-preview`](https://github.com/Quartel-Enterprise/blitz-split-api/tree/main/supabase/functions/invite-preview)
-edge function, `INVITE_PREVIEW_URL` in `wrangler.jsonc`: it reads `get_invite`, picks the language by the group's
-currency (BRL Portuguese, the Spanish speaking countries' Spanish, any other English) and draws the 1200 × 630 card
-with satori. Drawing takes 40 to 75 ms of CPU, past the 10 ms the Workers Free plan allows a request, so the
-function draws and this Worker only asks it and keeps each answer in Cloudflare's cache: the words for five minutes,
-an image for a day. The image's address carries the function's `imageVersion` (`?v=`), which changes with whatever
-the card shows, since WhatsApp keeps an image by its address. Should the function fail, the page keeps the landing's
-own meta tags and an image answers the brand's card.
-
-`public/og/blitzsplit.png`, the brand's card, is a static file the function's `brand_card.ts` draws with the same
-layout: run it there after changing the layout or the brand, and copy the file here.
-
-When the 302 of the app links to the web app comes back (#12, paused by #13), `/g/*` must still answer crawlers with
-this page, or the previews go back to the landing's.
-
-## Pages and design
-
-Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
-blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
-and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish and French. The markup is in English; each page
-carries its Portuguese, Spanish and French strings in `window.SITE_STRINGS`, and the legal pages write each language in full,
-in blocks marked `data-lang`. The language is the first of the browser's languages the site has, English when none,
-and the header's globe menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
-`?lang=en|pt|es|fr` and `?theme=light|dark` pin one. The apps only speak English and Portuguese, so the Spanish legal
-pages name the apps' buttons in English, as a Spanish speaker sees them.
-
-The landing's phone is a working preview (`public/preview.js`): its tabs switch, "Split a bill" adds a bill, and a
-bill, a payment, a person or a category opens its sheet, every change moving the balances and the offline queue. Its
-people's photos in `public/people/` are faces of people who don't exist, generated by a StyleGAN model
-(thispersondoesnotexist.com), cropped to 160 px WebP.
-
-`design/board.html` (not deployed) shows each page at the phone, tablet, laptop and desktop sizes it must hold, light
-and dark side by side: run `npm run dev` and open the file in a browser. `design/<page>-sizes.png` show each page's
-first screen at every size, light over dark; the full captures, in each language, go to `design/screenshots/`, which
-git ignores.
-
-The theme is Light, Dark or System (the default), from the header's theme menu or the footer, kept for the next visit.
-Where to get the app is `public/stores.js`, as Bible Planner's landing does it: the visitor's platform (Android, an
-iPhone or iPad, a Mac, any other computer) puts its own store first and makes it stand out, the header's button goes
-straight to it, and a store of the other platform asks first ("Choose your store"). A store that doesn't offer the app
-yet shows as "Coming soon" with no link, and the web app stands out instead; turn each store on in `CONFIG` once its
-listing is public (Google Play's `googlePlayLive` is off: the app can't be downloaded from it yet; the App Store's
-`appStoreId` is empty), in step with the client's `stores.properties`, and the web app with `webAppLive` once it is
-open to the public. While nothing is on, every button reads "Coming soon" and the header shows no download button. `?platform=android|ios|mac|desktop` pins one. The web app lives at
-[app.blitzsplit.com](https://app.blitzsplit.com), which serves `webApp/dist` of the client once it is deployed there.
-
-The legal pages mark what is still to fill in (the company, its CNPJ, the contact emails, retention periods) with
-`<span class="todo">`, which shows in amber: none may be left before they go live.
-
-## Analytics
-
-`public/analytics.js`, loaded in every page's `<head>` right after `gtag.js` and before the other scripts, sets up
-Google Analytics and gives them `window.track(name, params)`. Google Analytics' own events (`page_view`, `scroll`,
-outbound `click`, `first_visit`, `session_start`) stay as they are. An app link's group code, member, bill and comment
-ids never reach Analytics, as the privacy policy promises: on `/g/…` and `/b/…`, `page_location` and `page_referrer`
-keep only `/g/` or `/b/` and drop `?comentario=`. The events, after Bible Planner's landing:
-
-| Event | When | Parameters |
-| --- | --- | --- |
-| `app_link_view` | The page opens from an app link | `kind`: `group_invite`, `member_invite`, `bill_comment` |
-| `traffic_source` | The page opens with `utm_source`, once per visit for the same values | `source`, `medium`, `campaign`, `term`, `content` (each when present, up to 100 characters) |
-| `store_click` | A store's badge or the header's button | `store`: `play`, `appstore`, `web`; `origin`: `hero`, `cta`, `header`, `header_menu`; `platform`: `android`, `ios`, `mac`, `desktop` (not from `header_menu`, nor the header's web button) |
-| `store_mismatch_view` | "Choose your store" opens, after a click on the other platform's store | `clicked`, `recommended`: `play`, `appstore` |
-| `store_mismatch_go` | "Choose your store" › go to the recommended store | `store` |
-| `store_mismatch_stay` | "Choose your store" › continue to the clicked store | `store` |
-| `store_mismatch_dismiss` | "Choose your store" closes with neither | `method`: `close_button`, `escape` |
-| `menu_click` | A header menu opens | `menu_id`: `language_menu`, `theme_menu`, `get_menu` |
-| `language_change` | Another language is picked | `language`: `en`, `pt`, `es`, `fr`; `origin`: `header_menu`, `footer` |
-| `theme_change` | Another theme is picked | `theme`: `light`, `dark`, `system`; `origin`: `header_menu`, `footer` |
-| `logo_click` | The logo | `origin`: `header`, `footer` |
-| `navigation_click` | A link to a section of the page | `target`: the section's id (`features`, `how`, `platforms`, `faq`, a legal section), `top`; `origin`: `header`, `toc`, `to_top` |
-| `select_content` | A link to a legal page | `content_type`: `legal`; `item_id`: `privacy_policy`, `terms_of_service`; `origin`: `header`, `footer`, `content` |
-| `faq_open` | A FAQ question opens | `question`: `q1` to `q5` |
-| `preview_tab_select` | Another tab of the landing's phone | `tab`: `bills`, `balances`, `stats` |
-| `preview_sheet_open` | A sheet of the phone opens | `sheet`: `split`, `bill`, `payment`, `record`, `person`, `category` |
-| `preview_change` | A change in the phone | `action`: `add_bill`, `delete_bill`, `record_payment`, `delete_payment` |
-
-A parameter shows in Google Analytics' reports only once it is registered as a custom dimension (Admin › Custom
-definitions), event-scoped, with the same name. Add an event's row here in the same change that sends it.
-
-## Run and deploy
+## Run
 
 ```bash
 npm install
 npm run dev      # http://localhost:8787
 ```
 
-`npm run dev` asks the hosted `invite-preview` function, so a real invite code shows its preview at
-http://localhost:8787/g/<code>, and its image at the `og:image` address the page names (`blitzsplit.com` in the
-address stands for `localhost:8787`). `npx wrangler dev --var INVITE_PREVIEW_URL:http://localhost:54321/functions/v1/invite-preview` asks a local
-one instead (`supabase functions serve`).
+Every commit on `main` deploys to blitzsplit.com.
 
-Every commit on `main` deploys to blitzsplit.com and www.blitzsplit.com through
-[Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/): Cloudflare runs `npx wrangler deploy`
-and reports the result as a check on the commit. Other branches don't build.
+## Docs
 
-`npm run deploy` publishes from your machine straight to the production domain, so it needs `npx wrangler login`
-on the account with the blitzsplit.com zone. Cloudflare's redirect rules run before the Worker: the zone must have
-no rule that redirects blitzsplit.com, or at least none that catches `/.well-known/*` and `/g/*`.
+| Doc | What it covers |
+| --- | --- |
+| [Routes](docs/routes.md) | Every path the site answers, the app links' `.well-known` files |
+| [Invite link previews](docs/invite-previews.md) | How `/g/<code>` gets the invite's title and card |
+| [Pages and design](docs/design.md) | Tokens, languages, theme, motion, the landing's phone, the design board |
+| [Stores and downloads](docs/stores.md) | Which store each visitor sees and how to turn a store on |
+| [Analytics](docs/analytics.md) | Google Analytics setup and every event the site sends |
+| [Run and deploy](docs/development.md) | Local development, the invite previews locally, deploys |
+
+[CLAUDE.md](CLAUDE.md) holds the conventions for changing the site.
