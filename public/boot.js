@@ -22,4 +22,10 @@
   const lang = [params.get("lang"), stored("lang"), preferred].find((code) => SUPPORTED.includes(code)) || "en";
   root.dataset.lang = lang;
   root.lang = { en: "en", pt: "pt-BR", es: "es", fr: "fr" }[lang];
+
+  // Motion: the landing's hero comes in and its sections rise as they scroll into view (site.css, site.js). Not with
+  // reduced motion, and not when the design board pins a theme, so its captures show every section.
+  const still = params.has("theme") || !("IntersectionObserver" in window)
+    || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  if (!still) root.classList.add("motion");
 })();
