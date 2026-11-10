@@ -14,6 +14,14 @@
     try { return localStorage.getItem(key); } catch (e) { return null; } // storage blocked
   }
 
+  // First, so the scripts that read data-lang have it even if the theme below fails.
+  const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
+    .map((tag) => tag.toLowerCase().split("-")[0])
+    .find((code) => SUPPORTED.includes(code));
+  const lang = [params.get("lang"), stored("lang"), preferred].find((code) => SUPPORTED.includes(code)) || "en";
+  root.dataset.lang = lang;
+  root.lang = { en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja" }[lang];
+
   const theme = [params.get("theme"), stored("theme")].find((t) => ["light", "dark", "system"].includes(t)) || "system";
   const systemDark = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
   function applyTheme(pref) {
@@ -25,15 +33,9 @@
   if (systemDark) {
     const follow = () => { if (root.dataset.themePref === "system") applyTheme("system"); };
     // Safari before 14 only has addListener.
-    if (systemDark.addEventListener) systemDark.addEventListener("change", follow); else systemDark.addListener(follow);
+    if (systemDark.addEventListener) systemDark.addEventListener("change", follow);
+    else if (systemDark.addListener) systemDark.addListener(follow);
   }
-
-  const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
-    .map((tag) => tag.toLowerCase().split("-")[0])
-    .find((code) => SUPPORTED.includes(code));
-  const lang = [params.get("lang"), stored("lang"), preferred].find((code) => SUPPORTED.includes(code)) || "en";
-  root.dataset.lang = lang;
-  root.lang = { en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja" }[lang];
 
   // Motion: the landing's hero comes in and its sections rise as they scroll into view (site.css, site.js). Not with
   // reduced motion, and not when the design board pins a theme, so its captures show every section.
