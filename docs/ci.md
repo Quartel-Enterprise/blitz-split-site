@@ -24,9 +24,8 @@ pull request that changes `claude-review.yml` itself isn't reviewed. Bump every 
 
 [Quartel-Enterprise/copied-code-check](https://github.com/Quartel-Enterprise/copied-code-check) runs jscpd on what
 `.jscpd.json` lists: the JavaScript and CSS of `public/` and `src/`. The HTML is left out, since the legal pages
-repeat their structure in each language on purpose. `.jscpd-baseline.json` lists the copied lines of each file today
-(the dark theme's tokens, written for `prefers-color-scheme` and for `data-theme="dark"`, and the language list
-`scan.js` and `split-modes.js` share) and only shrinks: `./scripts/cpd.sh --update-baseline` after removing copied
+repeat their structure in each language on purpose. `.jscpd-baseline.json` lists the copied lines of each file (none
+today) and only shrinks: `./scripts/cpd.sh --update-baseline` after removing copied
 code, `--allow-new` only for a copy on purpose, said why in the pull request. `scripts/cpd.sh` never changes; the
 release is the one `duplication.yml` pins.
 
