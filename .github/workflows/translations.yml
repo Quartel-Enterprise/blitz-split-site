@@ -1,0 +1,49 @@
+name: translations
+
+# Fails when a page or a script misses a string in one of the site's languages, or a translation has other
+# {placeholders} than English's: see scripts/check-translations.mjs. Run it locally with npm run check:translations.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/translations.yml'
+      - 'scripts/check-translations.mjs'
+      - 'public/**/*.html'
+      - 'public/**/*.js'
+      - 'src/**/*.js'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/translations.yml'
+      - 'scripts/check-translations.mjs'
+      - 'public/**/*.html'
+      - 'public/**/*.js'
+      - 'src/**/*.js'
+
+permissions:
+  contents: read
+
+# Cancels in-progress runs if a new commit is pushed to the same PR or branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  translations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      # No dependencies to install: the check is plain Node.
+      - name: Check the translations
+        run: node scripts/check-translations.mjs

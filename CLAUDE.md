@@ -16,6 +16,7 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
   `public/stores.js`.
 - **Analytics**: [`docs/analytics.md`](docs/analytics.md): Google Analytics setup and every event.
 - **Run and deploy**: [`docs/development.md`](docs/development.md).
+- **Checks on pull requests**: [`docs/ci.md`](docs/ci.md): the Claude review, copied code and the translations check.
 
 ## Conventions
 
@@ -26,7 +27,9 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
 - The markup is in English. Every string a page shows has a `data-i18n` key with its Portuguese, Spanish, French, German,
   Italian, Polish, Dutch, Turkish, Indonesian and Japanese in the page's `window.SITE_STRINGS`; the legal pages write
   English, Portuguese, Spanish, Dutch, Turkish, Indonesian and Japanese in full in `data-lang` blocks. Add all eleven
-  languages in the same change.
+  languages in the same change: `npm run check:translations` fails on a missing one, as CI does.
+- No new copied JavaScript or CSS: `npm run check:duplication` (jscpd, against `.jscpd-baseline.json`) fails on it,
+  as CI does.
 - `public/boot.js` runs in `<head>` and decides the theme, the language and `.motion` before the first paint. Every
   animation hangs on `:root.motion`, so with reduced motion (or a pinned `?theme=`) the page shows still and complete.
 - Sending a new analytics event means adding its row to [`docs/analytics.md`](docs/analytics.md) in the same change.

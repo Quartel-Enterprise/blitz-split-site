@@ -1,6 +1,7 @@
 /* Blitz Split / Bora Rachar site: the landing and the legal pages.
    Colors are the design system's tokens (web-* for the zinc base, the M3 scheme for the brand), in light and dark.
-   The page follows the system theme; ?theme=light|dark pins one (data-theme on <html>), for the design board. */
+   boot.js sets data-theme on <html> to light or dark before the first paint (System takes the system's theme), so the
+   dark tokens are written once, under [data-theme="dark"]. Without scripts the page is light. */
 
 /* Geist and Geist Mono (SIL Open Font License), served from /fonts so the first paint waits on no other site: the
    Latin files, and Latin Extended for Polish and Turkish, each fetched only by a page that uses its characters. */
@@ -52,31 +53,6 @@
   --max: 1160px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --bg: #09090b; --surface: #111113; --card: #18181b;
-    --fg: #fafafa; --fg-soft: #d4d4d8; --muted: #27272a; --muted-fg: #a1a1aa;
-    --border: #27272a; --border-subtle: #1f1f23;
-    --primary: #95cdf7; --on-primary: #00344e;
-    --primary-container: #004b6f; --on-primary-container: #c9e6ff;
-    --info: rgba(149, 205, 247, 0.14); --on-info: #95cdf7;
-    --positive: #6edbaa; --negative: #ffb599;
-    --pending: #f9bc3e; --pending-container: #5e4200; --on-pending-container: #ffdea8;
-    --av-blue: #004b6f;  --on-av-blue: #c9e6ff;
-    --av-peach: #71361c; --on-av-peach: #ffdbce;
-    --av-green: #00513a; --on-av-green: #bdefd3;
-    --av-lilac: #4f378b; --on-av-lilac: #e8ddff;
-    --av-sand: #574500;  --on-av-sand: #ffe08b;
-    --ring: rgba(149, 205, 247, 0.4);
-    --glow: rgba(149, 205, 247, 0.10);
-    --glow-2: rgba(110, 219, 170, 0.07);
-    --accent-2: #6edbaa;
-    --device: #000000;
-    --shadow-lg: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 24px 48px -12px rgba(0, 0, 0, 0.7);
-    --shadow-sm: 0 0 0 1px rgba(255, 255, 255, 0.04);
-  }
-}
 :root[data-theme="dark"] {
   color-scheme: dark;
   --bg: #09090b; --surface: #111113; --card: #18181b;

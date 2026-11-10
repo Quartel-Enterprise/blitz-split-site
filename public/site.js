@@ -4,7 +4,7 @@
 (function () {
   const params = new URLSearchParams(location.search);
   // boot.js, in <head>, already picked the theme and the language.
-  const lang = ["pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"].includes(document.documentElement.dataset.lang) ? document.documentElement.dataset.lang : "en";
+  const lang = document.documentElement.dataset.lang;
   // analytics.js, which runs before this script, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
   // Where a link or button sits: the header's menus, the rest of the header or the footer.
@@ -54,11 +54,10 @@
   }
 
   // The theme: Light, Dark or System, from the header's menu or the footer's switch, kept for the next visit.
-  // boot.js applied the saved one; the CSS follows the system while data-theme is unset.
+  // boot.js applied the saved one, and applyTheme resolves System to the system's theme.
   const root = document.documentElement;
   function showTheme(pref) {
-    root.dataset.themePref = pref;
-    if (pref === "system") delete root.dataset.theme; else root.dataset.theme = pref;
+    window.applyTheme(pref);
     // The browser's bar follows the page: each theme-color keeps its own scheme's color under System.
     document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
       meta.dataset.own ??= meta.content;
