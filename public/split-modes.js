@@ -16,7 +16,7 @@
   const panel = demo?.querySelector("[data-split-example]");
   if (!panel) return;
   const root = document.documentElement;
-  const lang = ["pt", "es", "fr", "de", "it", "pl"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"].includes(root.dataset.lang) ? root.dataset.lang : "en";
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 
@@ -213,6 +213,116 @@
         less: "Jeden udział mniej: {name}", more: "Jeden udział więcej: {name}", had: "Kto zamówił: {item}",
       },
     },
+    nl: {
+      bill: "Pizza-avond", paid: "Pedro betaalde", notIn: "Doet niet mee",
+      each: "{a} per persoon", among: "{a} over {n} personen.", amongOne: "{a} voor 1 persoon.", out: "{name} doet niet mee.",
+      nobody: "Nog niemand doet mee", nobodyEqual: "Vink minstens één persoon aan om {a} te verdelen.",
+      checkAll: "Alles aanvinken", uncheckAll: "Alles uitvinken",
+      left: "Nog {a}", over: "{a} te veel", closed: "Klopt: {a}",
+      progress: "Al {a} van {b}.", closedMsg: "De delen tellen op tot het totaal.",
+      parts: "{n} delen van {a}", personParts: "{name} heeft {n} delen.", nobodyShares: "Geef minstens één persoon een deel om {a} te verdelen.",
+      ofEach: "{p} van elke uitgave", ofBill: "{p} van de rekening", incomeDetail: "Ieders deel volgt het inkomen.", perMonth: "/mnd",
+      service: "Service ({p})", serviceSub: "Naar verhouding van wat ieder had",
+      loose: "Geef aan wie wat had", looseDetail: "Tik op de gezichten bij elk item om aan te geven wie het had.",
+      itemsClosed: "{a} aan items en {b} service.", nobodyItem: "Niemand aangevinkt", eachItem: "{a} per persoon",
+      items: { pizza: "Grote pizza", beer: "Bier", salad: "Salade", draft: "Tapbier", shrimp: "Garnalenschotel" },
+      receiptBill: "Havenbar",
+      hint: {
+        equal: "Gaat het niet precies op, dan gaan de overgebleven centen naar wie betaalde.",
+        amounts: "Wie op {zero} blijft staan, doet niet mee aan de rekening.",
+        percent: "Alleen hele getallen. De overgebleven centen gaan naar wie betaalde.",
+        shares: "Gebruik delen als iemand meer heeft, bijvoorbeeld wie iemand meeneemt.",
+        income: "Inkomens blijven op het apparaat. De groep ziet alleen de percentages.",
+        items: "Elk item wordt verdeeld over wie het had, en de service naar wat ieder had.",
+      },
+      label: {
+        amount: "Bedrag van {name}", percent: "Percentage van {name}", income: "Maandinkomen van {name}",
+        less: "Eén deel minder voor {name}", more: "Eén deel meer voor {name}", had: "Wie had {item}",
+      },
+    },
+    // Turkish: a name takes no case ending, so where Turkish would need one it stands before a colon; the percent sign
+    // goes before the number (pct).
+    tr: {
+      bill: "Pizza gecesi", paid: "Pedro ödedi", notIn: "Bu masrafta yok",
+      each: "Kişi başı {a}", among: "{a}, {n} kişiye.", amongOne: "{a}, 1 kişiye.", out: "{name} dahil değil.",
+      nobody: "Henüz kimse dahil değil", nobodyEqual: "{a} tutarını bölmek için en az bir kişiyi işaretle.",
+      checkAll: "Tümünü işaretle", uncheckAll: "İşaretleri kaldır",
+      left: "{a} kaldı", over: "{a} fazla", closed: "Tamam: {a}",
+      progress: "Şimdilik {a} / {b}.", closedMsg: "Paylar toplamı tutuyor.",
+      parts: "{a}, {n} paya", personParts: "{name}: {n} pay.", nobodyShares: "{a} tutarını bölmek için en az bir kişiye pay ver.",
+      ofEach: "her masrafta {p}", ofBill: "toplamda {p}", incomeDetail: "Herkesin payı gelirine göre.", perMonth: "/ay",
+      service: "Servis ({p})", serviceSub: "Herkesin aldığı orana göre",
+      loose: "Kimin ne aldığını işaretle", looseDetail: "Kimin aldığını işaretlemek için her üründeki yüzlere dokun.",
+      itemsClosed: "Ürünlere {a}, servise {b}.", nobodyItem: "Kimse işaretlenmedi", eachItem: "Kişi başı {a}",
+      items: { pizza: "Büyük pizza", beer: "Bira", salad: "Salata", draft: "Fıçı bira", shrimp: "Karides tabağı" },
+      receiptBill: "Liman Bar",
+      hint: {
+        equal: "Tam bölünmediğinde artan sentler ödeyen kişiye gider.",
+        amounts: "{zero} olarak kalan kişi masrafa dahil olmaz.",
+        percent: "Yalnızca tam sayılar. Artan sentler ödeyen kişiye gider.",
+        shares: "Biri daha fazla pay alacaksa, örneğin yanında birini getirdiyse, payları kullan.",
+        income: "Gelirler cihazda kalır. Grup yalnızca yüzdeleri görür.",
+        items: "Her ürün onu alanlar arasında, servis de herkesin aldığına göre bölünür.",
+      },
+      label: {
+        amount: "{name}: tutar", percent: "{name}: yüzde", income: "{name}: aylık gelir",
+        less: "{name}: bir pay az", more: "{name}: bir pay fazla", had: "{item}: kim aldı",
+      },
+    },
+    id: {
+      bill: "Malam pizza", paid: "Pedro bayar", notIn: "Tidak ikut",
+      each: "{a} per orang", among: "{a} dibagi {n} orang.", amongOne: "{a} untuk 1 orang.", out: "{name} tidak ikut.",
+      nobody: "Belum ada yang ikut", nobodyEqual: "Centang minimal satu orang untuk membagi {a}.",
+      checkAll: "Centang semua", uncheckAll: "Hapus semua centang",
+      left: "Kurang {a}", over: "Lebih {a}", closed: "Pas: {a}",
+      progress: "Baru {a} dari {b}.", closedMsg: "Jumlah bagiannya sama dengan total.",
+      parts: "{n} porsi dari {a}", personParts: "{name} dapat {n} porsi.", nobodyShares: "Beri minimal satu orang porsi untuk membagi {a}.",
+      ofEach: "{p} dari tiap tagihan", ofBill: "{p} dari tagihan", incomeDetail: "Bagian tiap orang mengikuti penghasilannya.", perMonth: "/bln",
+      service: "Layanan ({p})", serviceSub: "Sesuai pesanan masing-masing",
+      loose: "Tandai siapa pesan apa", looseDetail: "Ketuk wajah di tiap item untuk menandai siapa yang memesannya.",
+      itemsClosed: "{a} untuk item dan {b} untuk layanan.", nobodyItem: "Belum ada yang dicentang", eachItem: "{a} per orang",
+      items: { pizza: "Pizza besar", beer: "Bir", salad: "Salad", draft: "Bir draft", shrimp: "Platter udang" },
+      receiptBill: "Bar Pelabuhan",
+      hint: {
+        equal: "Kalau tidak bisa dibagi rata, sisa sennya masuk ke yang membayar.",
+        amounts: "Yang tetap di {zero} tidak ikut tagihan ini.",
+        percent: "Hanya bilangan bulat. Sisa sennya masuk ke yang membayar.",
+        shares: "Pakai porsi kalau ada yang dapat lebih, misalnya yang membawa teman.",
+        income: "Penghasilan tetap di perangkat. Grup hanya melihat persentasenya.",
+        items: "Tiap item dibagi di antara yang memesannya, dan biaya layanan sesuai pesanan masing-masing.",
+      },
+      label: {
+        amount: "Nominal {name}", percent: "Persentase {name}", income: "Penghasilan bulanan {name}",
+        less: "Kurangi satu porsi {name}", more: "Tambah satu porsi {name}", had: "Siapa yang pesan {item}",
+      },
+    },
+    ja: {
+      bill: "ピザナイト", paid: "Pedroが支払い", notIn: "今回は対象外",
+      each: "1人{a}", among: "{a}を{n}人で。", amongOne: "{a}を1人で。", out: "{name}は対象外。",
+      nobody: "まだ誰も入っていません", nobodyEqual: "{a}を分けるには、少なくとも1人にチェックしてください。",
+      checkAll: "すべてチェック", uncheckAll: "すべて外す",
+      left: "あと{a}", over: "{a}超過", closed: "ぴったり：{a}",
+      progress: "現在{b}のうち{a}。", closedMsg: "各自の分が合計と一致しています。",
+      parts: "{a}を{n}口で", personParts: "{name}は{n}口。", nobodyShares: "{a}を分けるには、少なくとも1人に1口割り当ててください。",
+      ofEach: "各支出の{p}", ofBill: "支出の{p}", incomeDetail: "各自の分は収入に応じて決まります。", perMonth: "/月",
+      service: "サービス料（{p}）", serviceSub: "各自が頼んだ分に応じて",
+      loose: "誰が何を頼んだかチェック", looseDetail: "品目ごとに、頼んだ人の顔をタップしてください。",
+      itemsClosed: "品目{a}、サービス料{b}。", nobodyItem: "チェックなし", eachItem: "1人{a}",
+      items: { pizza: "ピザ（L）", beer: "ビール", salad: "サラダ", draft: "生ビール", shrimp: "エビの盛り合わせ" },
+      receiptBill: "ハーバーバー",
+      hint: {
+        equal: "割り切れないときは、余りのセントは支払った人に回ります。",
+        amounts: "{zero}のままの人は、この支出の対象外になります。",
+        percent: "整数のみ。余りのセントは支払った人に回ります。",
+        shares: "連れを呼んだ人など、多めに負担する人がいるときは口数を使います。",
+        income: "収入は端末内に保存されます。グループには割合だけが表示されます。",
+        items: "品目は頼んだ人で分け、サービス料は各自が頼んだ分に応じて分けます。",
+      },
+      label: {
+        amount: "{name}の金額", percent: "{name}の割合", income: "{name}の月収",
+        less: "{name}を1口減らす", more: "{name}を1口増やす", had: "{item}を頼んだ人",
+      },
+    },
   }[lang];
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
@@ -226,14 +336,16 @@
 
   // Amounts as preview.js writes them: the language's separators, no decimals when they are zero.
   const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", " ", " $"],
-    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"] }[lang];
+    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
+    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] }[lang];
   function plain(cents) {
     const whole = String(Math.floor(cents / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
     const frac = cents % 100;
     return whole + (frac ? CURRENCY[1] + String(frac).padStart(2, "0") : "");
   }
   const money = (cents) => CURRENCY[0] + plain(cents) + (CURRENCY[3] || "");
-  const pct = (n) => (["fr", "de"].includes(lang) ? `${n} %` : `${n}%`);
+  // Turkish writes the sign first: %10.
+  const pct = (n) => (["fr", "de"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
   // What someone types, in cents: the last "," or "." followed by one or two digits is the decimal point, whatever the
   // language, so "33,5", "33.50" and "6.000" all read as meant.
   function parseMoney(text) {
@@ -395,7 +507,8 @@
     if (mode === "equal") return `<input type="checkbox" class="split-check" ${state.equal[i] ? "checked" : ""}>`;
     if (mode === "amounts") return moneyField(state.amounts[i], fill(TEXT.label.amount, { name }));
     if (mode === "percent") {
-      return `<span class="split-field"><input type="text" inputmode="numeric" autocomplete="off" maxlength="3" value="${state.percent[i]}" aria-label="${fill(TEXT.label.percent, { name })}"><span>%</span></span>`;
+      const field = `<input type="text" inputmode="numeric" autocomplete="off" maxlength="3" value="${state.percent[i]}" aria-label="${fill(TEXT.label.percent, { name })}">`;
+      return `<span class="split-field">${lang === "tr" ? `<span>%</span>${field}` : `${field}<span>%</span>`}</span>`;
     }
     if (mode === "shares") {
       return `<span class="split-stepper"><button type="button" data-step="-1" aria-label="${fill(TEXT.label.less, { name })}">−</button>`

@@ -5,7 +5,7 @@ and one script, `src/index.js`, which serves the [invite links' previews](invite
 
 | Path | What it answers |
 | --- | --- |
-| `/` | The landing (Bora Rachar in Portuguese, Blitz Split in English, Spanish, French, German, Italian and Polish) |
+| `/` | The landing (Bora Rachar in Portuguese, Blitz Split in English, Spanish, French, German, Italian, Polish, Dutch, Turkish, Indonesian and Japanese) |
 | `/privacy` | The privacy policy, the address the apps' Profile › "Privacy policy" opens (`/privacidade`, which older app versions open, redirects to it) |
 | `/terms` | The terms of use, the address the apps' Profile › "Terms of use" opens (`/termos`, which older app versions open, redirects to it) |
 | `/g/<code>`, `/g/<code>/<member>` | The landing, plus a note to open the group invite (or a member's personal invite) on a phone with the app installed, with the invite's meta tags for its link preview |

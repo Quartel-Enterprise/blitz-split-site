@@ -113,6 +113,10 @@ a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: 4px; }
 h1, h2, h3 { margin: 0; letter-spacing: -0.025em; line-height: 1.15; text-wrap: balance; }
 p { margin: 0; text-wrap: pretty; }
+/* Japanese: strict line-breaking rules (no small kana or closing punctuation at a line's start), breaks between
+   phrases rather than anywhere in a heading, and none of the Latin headings' tight tracking. */
+:root[lang="ja"] { line-break: strict; }
+:root[lang="ja"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .balance strong, .amount) { letter-spacing: 0; word-break: auto-phrase; }
 .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 .icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 .mono { font-family: var(--mono); }
@@ -123,7 +127,11 @@ p { margin: 0; text-wrap: pretty; }
 /* Blocks written per language: boot.js sets data-lang on <html> before the first paint. */
 :root[data-lang="pt"] body [data-lang]:not([data-lang="pt"]),
 :root[data-lang="es"] body [data-lang]:not([data-lang="es"]),
-:root:not([data-lang="pt"]):not([data-lang="es"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
+:root[data-lang="nl"] body [data-lang]:not([data-lang="nl"]),
+:root[data-lang="tr"] body [data-lang]:not([data-lang="tr"]),
+:root[data-lang="id"] body [data-lang]:not([data-lang="id"]),
+:root[data-lang="ja"] body [data-lang]:not([data-lang="ja"]),
+:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }
 @media (prefers-reduced-motion: reduce) {
@@ -843,6 +851,8 @@ label.split-row { cursor: pointer; }
 .lang-switch a, .lang-switch button { border: 0; background: transparent; cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 6px;
   padding: 4px 12px; border-radius: 999px; color: var(--fg-soft); text-decoration: none; font-size: 13px; font-weight: 500; }
 .lang-switch button .icon { width: 14px; height: 14px; }
+/* Eleven languages don't fit one line on a phone: the footer's language switch wraps, as a rounded box. */
+.lang-switch:has([data-set-lang]) { flex-wrap: wrap; max-width: 100%; border-radius: 18px; }
 .lang-switch a[aria-current="true"], .lang-switch button[aria-pressed="true"] { background: var(--surface); color: var(--fg); box-shadow: var(--shadow-sm); }
 @media (min-width: 760px) { .footer-grid { grid-template-columns: 1.2fr 1fr; align-items: start; } .footer-links { justify-content: flex-end; } }
 
