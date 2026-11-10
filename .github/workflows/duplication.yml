@@ -41,9 +41,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
+        # Credentials kept: the action fetches the base branch's baseline with them.
         with:
           fetch-depth: 1
-          persist-credentials: false
 
       # The same check as ./scripts/cpd.sh locally, which reads its release from this line. It warns when the
       # baseline takes in copied code against the pull request's base branch.
