@@ -7,7 +7,8 @@
   const demo = document.querySelector("[data-scan]");
   if (!demo) return;
   const root = document.documentElement;
-  const lang = ["pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  // One of the site's languages: boot.js, in <head>, picked it.
+  const lang = root.dataset.lang;
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 

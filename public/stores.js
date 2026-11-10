@@ -19,7 +19,8 @@
   };
 
   const root = document.documentElement;
-  const lang = ["pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  // One of the site's languages: boot.js, in <head>, picked it.
+  const lang = root.dataset.lang;
 
   // The platform. iPadOS reports a Mac, which only a touch screen tells apart. ?platform=android|ios|mac|desktop pins
   // one, to check each case (the design board uses it).
