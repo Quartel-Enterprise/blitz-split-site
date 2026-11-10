@@ -1,0 +1,11 @@
+# Blitz Split
+
+> Blitz Split (Bora Rachar in Brazil) is an app to split bills with friends: make a group, add what each one paid and see who owes whom. It works offline and needs no account. This site is its landing page and legal pages; the app itself is for Android, iPhone, iPad, Mac and the web.
+
+The site is in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch, Turkish, Indonesian and Japanese: add `?lang=en|pt|es|fr|de|it|pl|nl|tr|id|ja` to a page's address to read it in one of them.
+
+## Pages
+
+- [Blitz Split](https://blitzsplit.com/): what the app does, how it works and where it runs
+- [Privacy policy](https://blitzsplit.com/privacy): what the app collects, why, who sees it and how to delete it
+- [Terms of use](https://blitzsplit.com/terms): the rules for using the app and what each side is responsible for
