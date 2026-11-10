@@ -17,8 +17,8 @@ tracking; Turkish writes the percent sign first (%10).
 The theme is Light, Dark or System (the default), from the header's theme menu or the footer, kept for the next visit.
 `boot.js` always sets `data-theme` to `light` or `dark`, resolving System to the system's theme and following it when it
 changes, so `site.css` writes the dark tokens once, under `[data-theme="dark"]`; without scripts the page is light.
-Every script reads the language from the `data-lang` `boot.js` set, so `SUPPORTED` in `boot.js` is the one list of the
-site's languages.
+Every script reads the language from the `data-lang` `boot.js` set, so `SUPPORTED` in `boot.js` is the one list the
+site picks a language from; each script's strings and formats still carry a key per language.
 
 ## Motion
 
