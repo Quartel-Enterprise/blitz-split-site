@@ -19,7 +19,7 @@
   };
 
   const root = document.documentElement;
-  const lang = ["pt", "es", "fr", "de", "it", "pl"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"].includes(root.dataset.lang) ? root.dataset.lang : "en";
 
   // The platform. iPadOS reports a Mac, which only a touch screen tells apart. ?platform=android|ios|mac|desktop pins
   // one, to check each case (the design board uses it).
@@ -34,10 +34,10 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${{ pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", en: "en" }[lang]}`
+    ? `${CONFIG.googlePlayUrl}&hl=${{ pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en" }[lang]}`
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${{ pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", en: "us" }[lang]}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${{ pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", en: "us" }[lang]}/app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -125,6 +125,42 @@
       mismatchBody: "Twoje urządzenie to {platform}. Najlepiej pobierz aplikację {in}.",
       mismatchGo: "Przejdź {to}", mismatchStay: "Mimo to przejdź {to}", close: "Zamknij",
       in: { play: "z Google Play", appstore: "z App Store" }, to: { play: "do Google Play", appstore: "do App Store" },
+    },
+    nl: {
+      play: ["Ontdek het op", "Binnenkort op"], appstore: ["Download in de", "Binnenkort in de"], web: ["Open in je", "Binnenkort in je"], browser: "Browser",
+      getApp: "Download de app", openWeb: "Web-app openen", soon: "Binnenkort",
+      playLive: "Beschikbaar op Google Play", appStoreLive: "Beschikbaar in de App Store", webLive: "Open de web-app",
+      mismatchTitle: "Kies je store",
+      mismatchBody: "Je gebruikt een {platform}. Download de app voor de beste ervaring {in}.",
+      mismatchGo: "Ga {to}", mismatchStay: "Toch {to}", close: "Sluiten",
+      in: { play: "via Google Play", appstore: "via de App Store" }, to: { play: "naar Google Play", appstore: "naar de App Store" },
+    },
+    tr: {
+      play: ["Şuradan indir", "Yakında"], appstore: ["Şuradan indir", "Yakında"], web: ["Şurada aç", "Yakında"], browser: "Tarayıcında",
+      getApp: "Uygulamayı indir", openWeb: "Web uygulamasını aç", soon: "Yakında",
+      playLive: "Google Play'de mevcut", appStoreLive: "App Store'da mevcut", webLive: "Web uygulamasını aç",
+      mismatchTitle: "Mağazanı seç",
+      mismatchBody: "{platform} kullanıyorsun. En iyi deneyim için uygulamayı {in} indir.",
+      mismatchGo: "{to} git", mismatchStay: "Yine de {to} git", close: "Kapat",
+      in: { play: "Google Play'den", appstore: "App Store'dan" }, to: { play: "Google Play'e", appstore: "App Store'a" },
+    },
+    id: {
+      play: ["Temukan di", "Segera di"], appstore: ["Unduh di", "Segera di"], web: ["Buka di", "Segera di"], browser: "Browser",
+      getApp: "Unduh aplikasinya", openWeb: "Buka aplikasi web", soon: "Segera hadir",
+      playLive: "Tersedia di Google Play", appStoreLive: "Tersedia di App Store", webLive: "Buka aplikasi web",
+      mismatchTitle: "Pilih toko aplikasimu",
+      mismatchBody: "Kamu memakai {platform}. Untuk pengalaman terbaik, unduh aplikasinya {in}.",
+      mismatchGo: "Ke {to}", mismatchStay: "Tetap ke {to}", close: "Tutup",
+      in: { play: "dari Google Play", appstore: "dari App Store" }, to: { play: "Google Play", appstore: "App Store" },
+    },
+    ja: {
+      play: ["ダウンロード", "近日公開"], appstore: ["ダウンロード", "近日公開"], web: ["今すぐ開く", "近日公開"], browser: "ブラウザ",
+      getApp: "アプリを入手", openWeb: "Webアプリを開く", soon: "近日公開",
+      playLive: "Google Playで配信中", appStoreLive: "App Storeで配信中", webLive: "Webアプリを開く",
+      mismatchTitle: "ストアを選択",
+      mismatchBody: "お使いの端末は{platform}です。快適に使うには、{in}アプリを入手してください。",
+      mismatchGo: "{to}へ", mismatchStay: "このまま{to}へ", close: "閉じる",
+      in: { play: "Google Playから", appstore: "App Storeから" }, to: { play: "Google Play", appstore: "App Store" },
     },
   }[lang];
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

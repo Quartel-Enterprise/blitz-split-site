@@ -8,7 +8,7 @@
   const root = document.documentElement;
   const screen = document.querySelector(".showcase .screen");
   if (!screen) return;
-  const lang = ["pt", "es", "fr", "de", "it", "pl"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"].includes(root.dataset.lang) ? root.dataset.lang : "en";
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
@@ -136,12 +136,85 @@
       bills: (n) => `${n} ${plPlural(n, "wydatek", "wydatki", "wydatków")}`,
       titles: { b1: "Pensjonat w Lagoa", b2: "Kolacja w Ribeirão", b3: "Przejazd na plażę", p1: "Lody na plaży", p2: "Zakupy na tydzień", p3: "Parking" },
     },
+    nl: {
+      paid: "{name} betaalde", notIn: "Doet niet mee",
+      members: (people, bills) => `${people} personen · ${bills} ${bills === 1 ? "uitgave" : "uitgaven"}`,
+      toGet: "te ontvangen", youOwe: "te betalen", settled: "alles verrekend", owesYou: "Wie jou iets schuldig is", youOweTitle: "Jij moet betalen",
+      eachOne: "Saldo per persoon", getsBack: "krijgt terug", owes: "moet betalen", even: "quitte",
+      toSettle: "Te verrekenen", total: "Totaal van de groep", lodging: "Verblijf", food: "Eten", transport: "Vervoer",
+      sheetTitle: "Rekening delen", description: "Omschrijving", amount: "Bedrag", whoPaid: "Wie betaalde",
+      splitAmong: "Gelijk verdelen over", each: "{value} per persoon", cancel: "Annuleren", save: "Opslaan", close: "Sluiten",
+      queue: (n) => `${n} ${n === 1 ? "wijziging" : "wijzigingen"} in de wachtrij`,
+      split: "Zo is het verdeeld", yourShare: "Jouw deel", deleteBill: "Uitgave verwijderen",
+      recordPayment: "Betaling vastleggen", record: "Vastleggen", viaPix: "via Pix", payment: "Betaling", deletePayment: "Betaling verwijderen",
+      payLine: (from, to) => `${name(from)} betaalde ${name(to)}`,
+      paidYou: (who, value) => `${who} heeft je ${value} betaald`,
+      paidTotal: "Totaal betaald", shareTotal: "Aandeel in de uitgaven", balance: "Saldo",
+      bills: (n) => `${n} ${n === 1 ? "uitgave" : "uitgaven"}`,
+      titles: { b1: "Pension in Lagoa", b2: "Diner in Ribeirão", b3: "Rit naar het strand", p1: "IJsje op het strand", p2: "Boodschappen voor de week", p3: "Parkeren" },
+    },
+    // Turkish: a noun after a number stays singular, and a name takes no case ending here (who paid whom as an arrow,
+    // as the Balances tab writes it), so no name needs its vowel harmony worked out.
+    tr: {
+      paid: "{name} ödedi", notIn: "Bu masrafta yok",
+      members: (people, bills) => `${people} kişi · ${bills} masraf`,
+      toGet: "alacak", youOwe: "borç", settled: "hesap kapandı", owesYou: "Sana borçlu olanlar", youOweTitle: "Borçların",
+      eachOne: "Herkesin bakiyesi", getsBack: "alacaklı", owes: "borçlu", even: "ödeşti",
+      toSettle: "Ödeşmek için", total: "Grup toplamı", lodging: "Konaklama", food: "Yemek", transport: "Ulaşım",
+      sheetTitle: "Masraf böl", description: "Açıklama", amount: "Tutar", whoPaid: "Kim ödedi",
+      splitAmong: "Eşit bölünecek kişiler", each: "Kişi başı {value}", cancel: "İptal", save: "Kaydet", close: "Kapat",
+      queue: (n) => `Kuyrukta ${n} değişiklik`,
+      split: "Nasıl bölündü", yourShare: "Senin payın", deleteBill: "Masrafı sil",
+      recordPayment: "Ödeme kaydet", record: "Kaydet", viaPix: "Pix ile", payment: "Ödeme", deletePayment: "Ödemeyi sil",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} sana ${value} ödedi`,
+      paidTotal: "Toplam ödenen", shareTotal: "Masraflardaki payı", balance: "Bakiye",
+      bills: (n) => `${n} masraf`,
+      titles: { b1: "Lagoa'daki pansiyon", b2: "Ribeirão'da akşam yemeği", b3: "Plaja ulaşım", p1: "Plajda dondurma", p2: "Haftalık market alışverişi", p3: "Otopark" },
+    },
+    id: {
+      paid: "{name} bayar", notIn: "Tidak ikut",
+      members: (people, bills) => `${people} orang · ${bills} tagihan`,
+      toGet: "akan diterima", youOwe: "harus dibayar", settled: "semua lunas", owesYou: "Yang berutang padamu", youOweTitle: "Utangmu",
+      eachOne: "Saldo tiap orang", getsBack: "akan menerima", owes: "berutang", even: "lunas",
+      toSettle: "Untuk pelunasan", total: "Total grup", lodging: "Penginapan", food: "Makanan", transport: "Transportasi",
+      sheetTitle: "Bagi tagihan", description: "Deskripsi", amount: "Nominal", whoPaid: "Siapa yang bayar",
+      splitAmong: "Bagi rata ke", each: "{value} per orang", cancel: "Batal", save: "Simpan", close: "Tutup",
+      queue: (n) => `${n} perubahan dalam antrean`,
+      split: "Cara dibaginya", yourShare: "Bagianmu", deleteBill: "Hapus tagihan",
+      recordPayment: "Catat pembayaran", record: "Catat", viaPix: "via Pix", payment: "Pembayaran", deletePayment: "Hapus pembayaran",
+      payLine: (from, to) => `${name(from)} bayar ke ${name(to)}`,
+      paidYou: (who, value) => `${who} membayarmu ${value}`,
+      paidTotal: "Total dibayar", shareTotal: "Bagian dari tagihan", balance: "Saldo",
+      bills: (n) => `${n} tagihan`,
+      titles: { b1: "Penginapan di Lagoa", b2: "Makan malam di Ribeirão", b3: "Ongkos ke pantai", p1: "Es krim di pantai", p2: "Belanja mingguan", p3: "Parkir" },
+    },
+    ja: {
+      paid: "{name}が支払い", notIn: "今回は対象外",
+      members: (people, bills) => `${people}人 · 支出${bills}件`,
+      toGet: "受け取り予定", youOwe: "支払い予定", settled: "精算済み", owesYou: "あなたに払う人", youOweTitle: "あなたが払う相手",
+      eachOne: "各自の残高", getsBack: "受け取り", owes: "支払い", even: "精算済み",
+      toSettle: "精算方法", total: "グループの合計", lodging: "宿泊", food: "食事", transport: "交通",
+      sheetTitle: "割り勘する", description: "内容", amount: "金額", whoPaid: "支払った人",
+      splitAmong: "均等に分ける人", each: "1人{value}", cancel: "キャンセル", save: "保存", close: "閉じる",
+      queue: (n) => `${n}件の変更が送信待ち`,
+      split: "分け方", yourShare: "あなたの負担分", deleteBill: "支出を削除",
+      recordPayment: "支払いを記録", record: "記録", viaPix: "Pixで", payment: "支払い", deletePayment: "支払いを削除",
+      payLine: (from, to) => `${name(from)}が${name(to)}に支払い`,
+      paidYou: (who, value) => `${who}が${value}を支払い`,
+      paidTotal: "支払い合計", shareTotal: "支出の負担分", balance: "残高",
+      bills: (n) => `支出${n}件`,
+      titles: { b1: "ラゴアのゲストハウス", b2: "リベイロンでの夕食", b3: "ビーチまでの移動", p1: "ビーチでアイス", p2: "1週間分の食料品", p3: "駐車場" },
+    },
   }[lang];
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
   // Amounts as the app shows them: the language's separators, and no decimals when they are all zero.
   const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", "\u202f", "\u00a0$"],
-    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"] }[lang];
+    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
+    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] }[lang];
+  // Turkish writes the percent sign first: %10.
+  const pct = (n) => (lang === "tr" ? `%${n}` : `${n}%`);
   function money(cents, signed) {
     const abs = Math.abs(cents);
     const whole = String(Math.floor(abs / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
@@ -274,7 +347,7 @@
     const max = byCategory[0][1];
     const rows = byCategory.map(([key, cents], i) => `<li><button type="button" class="row" data-category="${key}">
         <span class="cat">${icon(CATEGORY[key])}</span>
-        <span class="bar-t"><span class="bar-row"><b>${TEXT[key]}</b><span class="num">${money(cents)} · ${Math.round((cents / total) * 100)}%</span></span>
+        <span class="bar-t"><span class="bar-row"><b>${TEXT[key]}</b><span class="num">${money(cents)} · ${pct(Math.round((cents / total) * 100))}</span></span>
         <span class="bar"><i class="o${Math.min(i, 2)}" style="width:${Math.max(3, (cents / max) * 100)}%"></i></span></span>
       </button></li>`).join("");
     return `<div class="pv-total"><small>${TEXT.total}</small><strong class="num">${money(total)}</strong></div><ul class="list stats">${rows}</ul>`;
@@ -580,7 +653,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat({ pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", en: "en-US" }[lang], { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat({ pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en-US" }[lang], { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

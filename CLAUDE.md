@@ -1,7 +1,7 @@
 # Blitz Split: site
 
-The site at blitzsplit.com of Bora Rachar (Blitz Split in English, Spanish, French, German, Italian and Polish): the
-landing, the privacy policy and the terms of use, served by a Cloudflare Worker with static assets (`public/`) and one
+The site at blitzsplit.com of Bora Rachar (Blitz Split in English, Spanish, French, German, Italian, Polish, Dutch,
+Turkish, Indonesian and Japanese): the landing, the privacy policy and the terms of use, served by a Cloudflare Worker with static assets (`public/`) and one
 script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and JavaScript with no build. The apps live in
 `blitz-split-client` and the backend in `blitz-split-api`.
 
@@ -24,8 +24,9 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
 - No build and no dependencies in the pages: `public/site.css` holds the design system's tokens (light and dark) and
   every component; use the tokens, never raw colors in components.
 - The markup is in English. Every string a page shows has a `data-i18n` key with its Portuguese, Spanish, French, German,
-  Italian and Polish in the page's `window.SITE_STRINGS`; the legal pages write each language in full in `data-lang`
-  blocks. Add all seven languages in the same change.
+  Italian, Polish, Dutch, Turkish, Indonesian and Japanese in the page's `window.SITE_STRINGS`; the legal pages write
+  English, Portuguese, Spanish, Dutch, Turkish, Indonesian and Japanese in full in `data-lang` blocks. Add all eleven
+  languages in the same change.
 - `public/boot.js` runs in `<head>` and decides the theme, the language and `.motion` before the first paint. Every
   animation hangs on `:root.motion`, so with reduced motion (or a pinned `?theme=`) the page shows still and complete.
 - Sending a new analytics event means adding its row to [`docs/analytics.md`](docs/analytics.md) in the same change.

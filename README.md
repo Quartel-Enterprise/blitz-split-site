@@ -1,6 +1,6 @@
 # Blitz Split site
 
-The website of **Bora Rachar** (Blitz Split in English, Spanish, French, German, Italian and Polish), at [blitzsplit.com](https://blitzsplit.com).
+The website of **Bora Rachar** (Blitz Split in English, Spanish, French, German, Italian, Polish, Dutch, Turkish, Indonesian and Japanese), at [blitzsplit.com](https://blitzsplit.com).
 
 Bora Rachar splits bills with friends, even offline. Make a group, add what each one paid and see who owes whom: no
 sign-up required, and everything saves on the device the moment you tap.
@@ -15,7 +15,7 @@ sign-up required, and everything saves on the device the moment you tap.
   groups.
 
 This repository is the site: the landing, the privacy policy and the terms of use, in English, Portuguese, Spanish,
-French, German, Italian and Polish, plus the link previews of group invites and the app links' files. The apps live in
+French, German, Italian, Polish, Dutch, Turkish, Indonesian and Japanese, plus the link previews of group invites and the app links' files. The apps live in
 [blitz-split-client](https://github.com/Quartel-Enterprise/blitz-split-client) and the backend in
 [blitz-split-api](https://github.com/Quartel-Enterprise/blitz-split-api).
 

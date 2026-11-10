@@ -7,7 +7,7 @@
   const demo = document.querySelector("[data-scan]");
   if (!demo) return;
   const root = document.documentElement;
-  const lang = ["pt", "es", "fr", "de", "it", "pl"].includes(root.dataset.lang) ? root.dataset.lang : "en";
+  const lang = ["pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"].includes(root.dataset.lang) ? root.dataset.lang : "en";
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 
@@ -47,6 +47,26 @@
       store: "BAR PORTOWY", address: "ul. Mewia 120", date: "08.11.2026  21:47",
       lines: [["2 PIWO Z BECZKI", "28,00", 1], ["1 PÓŁM. KREWETEK", "96,00", 2]],
       subtotal: ["SUMA CZĘŚCIOWA", "124,00"], service: ["SERWIS 10%", "12,40", 3], total: ["SUMA", "136,40"],
+    },
+    nl: {
+      store: "HAVENBAR", address: "Meeuwenstraat 120", date: "08-11-2026  21:47",
+      lines: [["2 TAPBIER", "28,00", 1], ["1 GARNALENSCHOTEL", "96,00", 2]],
+      subtotal: ["SUBTOTAAL", "124,00"], service: ["SERVICE 10%", "12,40", 3], total: ["TOTAAL", "136,40"],
+    },
+    tr: {
+      store: "LİMAN BAR", address: "Martı Sokak No: 120", date: "08.11.2026  21:47",
+      lines: [["2 FIÇI BİRA", "28,00", 1], ["1 KARİDES TABAĞI", "96,00", 2]],
+      subtotal: ["ARA TOPLAM", "124,00"], service: ["SERVİS %10", "12,40", 3], total: ["TOPLAM", "136,40"],
+    },
+    id: {
+      store: "BAR PELABUHAN", address: "Jl. Camar No. 120", date: "08/11/2026  21:47",
+      lines: [["2 BIR DRAFT", "28,00", 1], ["1 PLATTER UDANG", "96,00", 2]],
+      subtotal: ["SUBTOTAL", "124,00"], service: ["LAYANAN 10%", "12,40", 3], total: ["TOTAL", "136,40"],
+    },
+    ja: {
+      store: "ハーバーバー", address: "かもめ通り120", date: "2026/11/08  21:47",
+      lines: [["2 生ビール", "28.00", 1], ["1 エビ盛り合わせ", "96.00", 2]],
+      subtotal: ["小計", "124.00"], service: ["サービス料 10%", "12.40", 3], total: ["合計", "136.40"],
     },
   }[lang];
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
