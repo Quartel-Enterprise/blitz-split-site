@@ -1,0 +1,51 @@
+name: duplication
+
+# Fails on copied code in the site's JavaScript and CSS that .jscpd-baseline.json doesn't list (what it
+# scans is in .jscpd.json). The HTML is left out: the legal pages repeat their structure in every language on
+# purpose. Run it locally with ./scripts/cpd.sh.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/duplication.yml'
+      - 'scripts/cpd.sh'
+      - '.jscpd.json'
+      - '.jscpd-baseline.json'
+      - 'public/**/*.js'
+      - 'public/**/*.css'
+      - 'src/**/*.js'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/duplication.yml'
+      - 'scripts/cpd.sh'
+      - '.jscpd.json'
+      - '.jscpd-baseline.json'
+      - 'public/**/*.js'
+      - 'public/**/*.css'
+      - 'src/**/*.js'
+
+permissions:
+  contents: read
+
+# Cancels in-progress runs if a new commit is pushed to the same PR or branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  duplication:
+    runs-on: ubuntu-latest
+    # A hung runner would otherwise hold the check for six hours.
+    timeout-minutes: 10
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      # The same check as ./scripts/cpd.sh locally, which reads its release from this line. It warns when the
+      # baseline takes in copied code against the pull request's base branch.
+      - name: Look for copied code
+        uses: Quartel-Enterprise/copied-code-check@1.0.3

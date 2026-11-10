@@ -1,0 +1,8 @@
+{
+  "path": ["public", "src"],
+  "format": ["javascript", "css"],
+  "minTokens": 70,
+  "ignore": ["**/node_modules/**", "**/.wrangler/**"],
+  "gitignore": true,
+  "silent": true
+}
