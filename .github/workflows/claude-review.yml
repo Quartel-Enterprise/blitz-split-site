@@ -1,0 +1,57 @@
+name: claude-review
+
+# Reviews every pull request with Claude when it opens, fixes what it found, and pushes the fixes as
+# a commit to the pull request's branch. It then posts the findings as one review: the fixed ones in
+# its body, the ones left for the author as an inline comment each. A draft is reviewed when it is
+# marked ready for review instead; a reopened pull request isn't. A draft marked ready a second time
+# is reviewed again, told what the earlier reviews found so it doesn't repeat them.
+#
+# The checks don't wait for this review: they run on the opening commit and again on the fix commit,
+# both short enough that a gate (as blitz-split-client has) would cost more than it saves.
+#
+# The job fails only when the run itself does (an expired token, the timeout), never because of what
+# the review found. The fix commit, like every push after the pull request opens, isn't reviewed
+# again: adding the ai-review label does (claude-review-on-request), and that review only comments.
+# The action is Quartel-Enterprise/claude-review: its README has the setup (the Claude GitHub App on
+# the repository and the CLAUDE_CODE_OAUTH_TOKEN secret).
+on:
+  pull_request:
+    types:
+      - opened
+      - ready_for_review
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    # GitHub withholds secrets from pull requests opened from forks, so the review can't run there.
+    # Dependabot's pull requests only get Dependabot's secrets, and they only bump the review's own
+    # refs, which claude-code-action refuses to review anyway.
+    if: >-
+      !github.event.pull_request.draft &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.actor != 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: read
+      id-token: write
+    steps:
+      # The head commit, not GitHub's merge of it with main: the review's line numbers have to match the
+      # commit the comments are anchored to. No persisted credentials: checkout keeps GITHUB_TOKEN's
+      # header in a file of its own, which claude-code-action doesn't find when it swaps in the App's
+      # token, so git would keep sending the read-only token and the fix push would be refused.
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - uses: Quartel-Enterprise/claude-review/review@1.2.0
+        with:
+          oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          fix: 'true'
