@@ -1,6 +1,8 @@
 // Google Analytics of the site's own Firebase project (blitzsplit-site), apart from the app's (blitz-split). Every page
-// loads gtag.js and then this script, in <head> and before the others, which send their events with window.track().
-// docs/analytics.md lists every event.
+// loads this script with defer, so it runs once the page is parsed, before the page's other deferred scripts and
+// DOMContentLoaded; the others send their events with window.track(). docs/analytics.md lists every event.
+// gtag.js itself, the heaviest script of the page, comes only once the page has loaded: what was queued meanwhile
+// (the page view, the events) is sent when it arrives.
 (function () {
   const MEASUREMENT_ID = "G-JD94WD10FJ";
   window.dataLayer = window.dataLayer || [];
@@ -33,6 +35,15 @@
   window.track = function track(name, params) {
     window.gtag("event", name, params);
   };
+
+  function loadTag() {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
+    document.head.append(script);
+  }
+  if (document.readyState === "complete") loadTag();
+  else window.addEventListener("load", loadTag, { once: true });
 
   const kind = appLink(here);
   if (kind) window.track("app_link_view", { kind });

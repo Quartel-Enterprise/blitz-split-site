@@ -5,7 +5,7 @@
   const params = new URLSearchParams(location.search);
   // boot.js, in <head>, already picked the theme and the language.
   const lang = ["pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"].includes(document.documentElement.dataset.lang) ? document.documentElement.dataset.lang : "en";
-  // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
+  // analytics.js, which runs before this script, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
   // Where a link or button sits: the header's menus, the rest of the header or the footer.
   const originOf = (el) => (el.closest("details") && el.closest(".site-header") ? "header_menu"
@@ -166,7 +166,8 @@
     toTop?.classList.toggle("show", window.scrollY > 900);
   }
   window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
+  // Why not right away: reading the scroll position here would lay the page out before the other scripts change it.
+  requestAnimationFrame(onScroll);
 
   // The legal pages' contents: open on a wide screen, the section on screen highlighted.
   const wide = window.matchMedia("(min-width: 1000px)");

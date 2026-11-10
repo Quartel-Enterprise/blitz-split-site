@@ -1,11 +1,13 @@
 # Analytics
 
-The pages load Google Analytics' `gtag.js`, which reports to the Firebase project `blitzsplit-site` (measurement id
+The pages use Google Analytics' `gtag.js`, which reports to the Firebase project `blitzsplit-site` (measurement id
 `G-JD94WD10FJ`): a project of its own, so the site's visits don't mix with the app's numbers (the app's project is
 `blitz-split`).
 
-`public/analytics.js`, loaded in every page's `<head>` right after `gtag.js` and before the other scripts, sets up
-Google Analytics and gives them `window.track(name, params)`. Google Analytics' own events (`page_view`, `scroll`,
+`public/analytics.js`, loaded with `defer` in every page's `<head>`, sets up Google Analytics and gives the other
+scripts `window.track(name, params)`. It adds `gtag.js` itself only once the page has loaded, so the page's heaviest
+script never competes with what the visitor is waiting to see; the page view and any event sent before it arrives
+wait in `dataLayer`. Google Analytics' own events (`page_view`, `scroll`,
 outbound `click`, `first_visit`, `session_start`) stay as they are. An app link's group code, member, bill and comment
 ids never reach Analytics, as the privacy policy promises: on `/g/…` and `/b/…`, `page_location` and `page_referrer`
 keep only `/g/` or `/b/` and drop `?comentario=`. The events, after Bible Planner's landing:

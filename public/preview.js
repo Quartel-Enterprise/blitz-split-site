@@ -418,7 +418,8 @@
       b.tabIndex = on ? 0 : -1;
     });
     panel.setAttribute("aria-labelledby", `pv-tab-${nameOfTab}`);
-    panel.scrollTop = 0;
+    // Not on the first draw (animate is false only then): the panel is already at its top, and setting it lays the page out.
+    if (animate) panel.scrollTop = 0;
     render(animate);
   }
 

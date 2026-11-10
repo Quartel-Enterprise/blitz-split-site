@@ -13,10 +13,13 @@ and one script, `src/index.js`, which serves the [invite links' previews](invite
 | `/b/<bill>?comentario=<comment>` | The same page; on a phone or a Mac with the app installed, the app opens the comment instead |
 | `/download`, `/app-download` | The store of the visitor's platform, or the landing's buttons while that store doesn't offer the app. `/app-download` is the link of "Get the app" in the web and the Mac app; which stores list the app is `CONFIG` in `stores.js`, in step with the client's `stores.properties` |
 | `/download/android`, `/download/ios` | That store, whatever the platform, or the landing's buttons while it doesn't offer the app |
+| `/robots.txt` | Every crawler may read every page |
+| `/llms.txt` | What the site is and its pages, in Markdown, for language models ([llmstxt.org](https://llmstxt.org)) |
 | `/.well-known/assetlinks.json` | Android App Links of `com.quare.blitzsplit` |
 | `/.well-known/apple-app-site-association` | Apple Universal Links and shared web credentials (the recovery code in the Passwords app) of `TTV2A365LG.com.quare.blitzsplit` |
 
-Every path is in English, whatever the page's language. Any other path answers with the landing (`not_found_handling: single-page-application`). `public/_headers`
+Every path is in English, whatever the page's language. Any other path answers with the landing (`not_found_handling: single-page-application`), except under `/.well-known/`, where `src/index.js` answers
+a file the site doesn't have with a 404, so a crawler that looks for one doesn't get the landing's HTML. `public/_headers`
 serves both `.well-known` files as `application/json`, which Android and Apple require, with a 200 and no redirect.
 
 The `.well-known` files are copies of `webApp/public/.well-known` in
