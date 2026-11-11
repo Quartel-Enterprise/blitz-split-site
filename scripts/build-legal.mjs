@@ -7,6 +7,11 @@
 //   node scripts/build-legal.mjs --check   fails when a page isn't what its Markdown gives (CI)
 
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+// The paths below are the repository's, wherever the script is run from.
+process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 const PAGES = ["privacy", "terms"];
 // The order of the pages' blocks. English is what every other language is checked against.
@@ -24,6 +29,9 @@ const CHROME = {
 };
 // The reading time every language shows is the English text's, at this pace.
 const WORDS_PER_MINUTE = 180;
+
+// Each page's sections' anchors by language, read before any page is written, so a link to a section checks it exists.
+const ANCHORS = {};
 
 class LegalError extends Error {}
 const fail = (file, line, message) => { throw new LegalError(`${file}:${line}: ${message}`); };
@@ -43,7 +51,10 @@ function parse(file, source) {
     meta[match[1]] = match[2];
   }
   if (!meta.title) fail(file, 1, "the front matter needs a title");
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(meta.updated || "")) fail(file, 1, "the front matter needs updated: YYYY-MM-DD");
+  // Why: Date.UTC rolls an impossible date over (2026-13-05 is January 2027) instead of failing.
+  const isDate = /^\d{4}-\d{2}-\d{2}$/.test(meta.updated || "") && !Number.isNaN(Date.parse(meta.updated))
+    && new Date(Date.parse(meta.updated)).toISOString().startsWith(meta.updated);
+  if (!isDate) fail(file, 1, "the front matter needs updated: YYYY-MM-DD");
   if (Object.keys(meta).length !== 2) fail(file, 1, "the front matter takes only title and updated");
   const body = lines.slice(end + 1);
   return { meta, blocks: parseBlocks(file, body, end + 2, false), words: body.join(" ").split(/\s+/).filter((word) => /\p{L}/u.test(word)).length };
@@ -68,6 +79,8 @@ function parseBlocks(file, lines, firstLine, inCallout) {
       const match = /^## (.+) \{#([a-z0-9-]+)\}$/.exec(line);
       if (!match) fail(file, at, "a section is `## Title {#anchor}`");
       if (inCallout) fail(file, at, "a callout takes no section");
+      // Why: the title is also the link of its entry in the page's list of sections, and a link can't hold another.
+      if (match[1].includes("](")) fail(file, at, "a section's title takes no link");
       blocks.push({ kind: "section", at, text: match[1], anchor: match[2] });
       i++;
     } else if (line.startsWith("### ")) {
@@ -99,7 +112,8 @@ function parseBlocks(file, lines, firstLine, inCallout) {
       if (body.length !== 1) fail(file, at, "a callout holds its title and one paragraph or list");
       blocks.push({ kind: "callout", at, title: title[1], body: body[0] });
     } else {
-      if (/^(\d+\.|\*|\+|```|~~~|---|    |\t)/.test(line)) fail(file, at, "not a construct the legal pages take (docs/legal.md)");
+      // A numbered or `*`/`+` list, code, a rule or an indented block; a paragraph may still start with **bold**.
+      if (/^(\d+\.\s|[*+]\s|```|~~~|---|    |\t)/.test(line)) fail(file, at, "not a construct the legal pages take (docs/legal.md)");
       blocks.push({ kind: "paragraph", at, text: line });
       i++;
     }
@@ -110,6 +124,8 @@ function parseBlocks(file, lines, firstLine, inCallout) {
 // --- Inline text ----------------------------------------------------------------------------------------------------
 
 const escapeHtml = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+// An attribute's value, from text already escaped as HTML: no tags, and no quote to close it early.
+const attribute = (html) => html.replace(/<[^>]*>/g, "").replace(/"/g, "&quot;");
 
 /** A text with **bold**, [links](address) and <mark>what is still to decide</mark>, as HTML. */
 function inline(file, at, lang, text) {
@@ -123,7 +139,7 @@ function inline(file, at, lang, text) {
     html += escapeHtml(plain);
     if (!match) break;
     if (match[1] !== undefined) html += `<strong>${inline(file, at, lang, match[1])}</strong>`;
-    else if (match[2] !== undefined) html += `<a href="${escapeHtml(address(file, at, lang, match[3]))}">${inline(file, at, lang, match[2])}</a>`;
+    else if (match[2] !== undefined) html += `<a href="${attribute(escapeHtml(address(file, at, lang, match[3])))}">${inline(file, at, lang, match[2])}</a>`;
     else html += `<span class="todo">${inline(file, at, lang, match[4])}</span>`;
     rest = rest.slice(match.index + match[0].length);
   }
@@ -135,6 +151,8 @@ function address(file, at, lang, href) {
   if (/^mailto:[^@\s]+@[^@\s]+$/.test(href) || /^https:\/\//.test(href)) return href;
   const match = /^\/(privacy|terms)(?:#([a-z0-9-]+))?$/.exec(href);
   if (!match) fail(file, at, `a link goes to /privacy, /terms, one of their sections, https:// or mailto:, not ${href}`);
+  // Why: each language names its own anchors (#keep, #tempo), so a link copied from another language goes nowhere.
+  if (match[2] && !ANCHORS[match[1]][lang].includes(match[2])) fail(file, at, `${match[1]} has no section {#${match[2]}} in this language`);
   return match[2] ? `/${match[1]}#${lang}-${match[2]}` : href;
 }
 
@@ -153,7 +171,7 @@ function renderBlock(file, lang, block, pad) {
       return [`${pad}<div class="callout">`, `${pad}  <strong>${text(block.title)}</strong>`, `${pad}  ${text(block.body.text)}`, `${pad}</div>`];
     case "table": {
       const labels = block.header.map((cell) => text(cell));
-      const row = (cells) => `<tr>${cells.map((cell, index) => `<td data-label="${labels[index]}">${text(cell)}</td>`).join("")}</tr>`;
+      const row = (cells) => `<tr>${cells.map((cell, index) => `<td data-label="${attribute(labels[index])}">${text(cell)}</td>`).join("")}</tr>`;
       return [
         `${pad}<div class="table-wrap">`,
         `${pad}  <table>`,
@@ -241,7 +259,8 @@ const shape = (blocks) => blocks
   .map((block) => (block.kind === "table" ? `table(${block.header.length}x${block.rows.length})` : "section"))
   .join(" ");
 
-function renderPage(page) {
+/** A page's documents by language, checked against English's, its sections' anchors kept in ANCHORS. */
+function loadPage(page) {
   const docs = {};
   for (const lang of LANGS) {
     const file = `${LEGAL_DIR}/${page}.${lang}.md`;
@@ -250,12 +269,18 @@ function renderPage(page) {
     docs[lang] = { file, ...parse(file, source) };
   }
   const english = docs.en;
+  ANCHORS[page] = {};
   for (const lang of LANGS) {
     const doc = docs[lang];
     if (doc.meta.updated !== english.meta.updated) fail(doc.file, 1, `updated is ${doc.meta.updated}, and ${english.meta.updated} in English`);
     if (shape(doc.blocks) !== shape(english.blocks)) fail(doc.file, 1, "the sections and their tables aren't English's: the same sections in the same order, each with the same tables");
+    ANCHORS[page][lang] = doc.blocks.filter((block) => block.kind === "section").map((block) => block.anchor);
   }
-  const minutes = String(Math.ceil(english.words / WORDS_PER_MINUTE));
+  return docs;
+}
+
+function renderPage(page, docs) {
+  const minutes = String(Math.ceil(docs.en.words / WORDS_PER_MINUTE));
   return LANGS.flatMap((lang) => renderLanguage(page, lang, docs[lang].file, docs[lang], minutes)).join("\n");
 }
 
@@ -264,7 +289,9 @@ const CLOSE = "\n  </main>";
 
 function build(check) {
   const known = new Set(PAGES.flatMap((page) => LANGS.map((lang) => `${page}.${lang}.md`)));
-  for (const name of readdirSync(LEGAL_DIR)) if (!known.has(name)) fail(`${LEGAL_DIR}/${name}`, 1, "not a page and a language of the legal pages");
+  // Why: a hidden file a system leaves (macOS's .DS_Store) isn't a misnamed legal text.
+  for (const name of readdirSync(LEGAL_DIR)) if (!name.startsWith(".") && !known.has(name)) fail(`${LEGAL_DIR}/${name}`, 1, "not a page and a language of the legal pages");
+  const docs = Object.fromEntries(PAGES.map((page) => [page, loadPage(page)]));
   let stale = false;
   for (const page of PAGES) {
     const file = `public/${page}.html`;
@@ -272,7 +299,7 @@ function build(check) {
     const start = html.indexOf(OPEN);
     const end = html.indexOf(CLOSE);
     if (start < 0 || end < start) fail(file, 1, "no <main id=\"main\"> … </main> to write the text in");
-    const next = html.slice(0, start + OPEN.length) + renderPage(page) + html.slice(end);
+    const next = html.slice(0, start + OPEN.length) + renderPage(page, docs[page]) + html.slice(end);
     if (next === html) continue;
     if (check) {
       console.error(`${file} isn't what ${LEGAL_DIR}/${page}.*.md gives: run npm run build:legal and commit it.`);
