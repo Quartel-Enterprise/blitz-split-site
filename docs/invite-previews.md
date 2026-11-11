@@ -1,9 +1,9 @@
 # Invite link previews
 
 WhatsApp, iMessage, Telegram and the rest draw a link's preview from the page's meta tags. `src/index.js` runs only for
-`/g/*`, `/og/*` and `/.well-known/*` (`run_worker_first` in `wrangler.jsonc`, the last only to answer a file the site
-doesn't have with a 404, see [routes](routes.md)); every other path is a static file. For `/g/<code>` it serves the
-landing with that invite's title, description and image:
+`/g/*`, `/u/*` (a profile's link, see [routes](routes.md)), `/og/*`, `/.well-known/*` and `/legal/*` (`run_worker_first` in
+`wrangler.jsonc`, the last two only to answer a file the site doesn't have with a 404, see [routes](routes.md)); every
+other path is a static file. For `/g/<code>` it serves the landing with that invite's title, description and image:
 
 | Link | Title | Image |
 | --- | --- | --- |

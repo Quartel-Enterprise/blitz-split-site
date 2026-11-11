@@ -5,16 +5,20 @@
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",
-    // /g/* (an invite's meta tags), /og/* (its preview's image), /.well-known/* and /legal/* (a 404 for a file the
-    // site doesn't have) run src/index.js; every other path is a static file. Any other unknown page answers with
-    // the landing.
-    "run_worker_first": ["/g/*", "/og/*", "/.well-known/*", "/legal/*"],
+    // /g/* (an invite's meta tags), /u/* (a profile's), /og/* (an invite preview's image), /.well-known/* and /legal/*
+    // (a 404 for a file the site doesn't have) run src/index.js; every other path is a static file. Any other unknown
+    // page answers with the landing.
+    "run_worker_first": ["/g/*", "/u/*", "/og/*", "/.well-known/*", "/legal/*"],
     "not_found_handling": "single-page-application",
     "html_handling": "auto-trailing-slash"
   },
   "vars": {
     // The API's edge function that answers what an invite link's preview shows (blitz-split-api).
-    "INVITE_PREVIEW_URL": "https://cfgnuyijsncgpgywoldf.supabase.co/functions/v1/invite-preview"
+    "INVITE_PREVIEW_URL": "https://cfgnuyijsncgpgywoldf.supabase.co/functions/v1/invite-preview",
+    // The API's RPC that answers whose profile a profile link opens (blitz-split-api), with the publishable key the
+    // apps also ship: it answers only a name, a color and a photo.
+    "PROFILE_LINK_URL": "https://cfgnuyijsncgpgywoldf.supabase.co/rest/v1/rpc/get_profile_by_share_code",
+    "SUPABASE_PUBLISHABLE_KEY": "sb_publishable_OEqhD3YPNU5Gd7c45jjDRQ_o2kL0UE5"
   },
   "routes": [
     { "pattern": "blitzsplit.com", "custom_domain": true },
