@@ -3,6 +3,7 @@
 // /g/<code>, /g/<code>/<member>: the landing, as before, with the invite's meta tags, which WhatsApp, iMessage,
 // Telegram and the rest read to draw the link's preview.
 // /og/g/<code>.png, /og/g/<code>/<member>.png?from=: that preview's image.
+// /u/<code>: the landing with a profile link's meta tags, the person's name and photo.
 //
 // What a preview shows, its words and its card, comes from the API's invite-preview edge function
 // (blitz-split-api), which draws the card there: drawing takes more CPU than a Worker on the Free plan may use. This
@@ -12,6 +13,7 @@
 const INVITE_PATH = /^\/g\/([A-Za-z0-9]{8})(?:\/([A-Za-z0-9]{6}))?\/?$/;
 const IMAGE_PATH = /^\/og\/g\/([A-Za-z0-9]{8})(?:\/([A-Za-z0-9]{6}))?\.png$/;
 const MEMBER_CODE = /^[A-Za-z0-9]{6}$/;
+const PROFILE_PATH = /^\/u\/([A-Za-z0-9]{10})\/?$/;
 const BRAND_IMAGE = "/og/blitzsplit.png";
 const WIDTH = 1200;
 const HEIGHT = 630;
@@ -27,6 +29,8 @@ export default {
     if (page) return invitePage(request, url, env, ctx, targetOf(page, url));
     const image = IMAGE_PATH.exec(url.pathname);
     if (image) return inviteImage(request, url, env, ctx, targetOf(image, url));
+    const profile = PROFILE_PATH.exec(url.pathname);
+    if (profile) return profilePage(request, url, env, ctx, profile[1]);
     if (url.pathname.startsWith("/.well-known/")) return wellKnown(request, env);
     return env.ASSETS.fetch(request);
   },
@@ -75,10 +79,15 @@ async function invitePage(request, url, env, ctx, target) {
     "og:image:alt": words.imageAlt,
     "twitter:card": "summary_large_image",
   };
+  return withTags(landing, words.title, words.description, tags);
+}
+
+// Why: the landing's own og tags give way to the link's, written once at the end of the head, and kept as briefly as
+// the words they come from.
+function withTags(landing, title, description, tags) {
   const rewritten = new HTMLRewriter()
-    .on("title", { element: (el) => el.setInnerContent(words.title) })
-    .on('meta[name="description"]', { element: (el) => el.setAttribute("content", words.description) })
-    // Why: the landing's own og tags give way to the invite's, written once at the end of the head.
+    .on("title", { element: (el) => el.setInnerContent(title) })
+    .on('meta[name="description"]', { element: (el) => el.setAttribute("content", description) })
     .on('meta[property^="og:"], meta[name^="twitter:"]', { element: (el) => el.remove() })
     .on("head", {
       element: (el) => {
@@ -158,4 +167,53 @@ function askPreview(env, target, image) {
 
 function escapeAttribute(value) {
   return value.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+// A profile link's preview: the person's name, and their photo when they have one, over the landing. The words stay
+// the brand's in every language, since a crawler says nothing of who reads it. An unknown code, or the API failing,
+// leaves the landing's own tags.
+async function profilePage(request, url, env, ctx, code) {
+  const landing = await env.ASSETS.fetch(new Request(new URL("/", url), request));
+  let profile;
+  try {
+    profile = await sharedProfile(url, env, ctx, code);
+  } catch (error) {
+    console.error(error);
+    return landing;
+  }
+  if (!profile) return landing;
+  const tags = {
+    "og:title": profile.display_name,
+    "og:description": "Blitz Split · Bora Rachar",
+    "og:url": url.href,
+    "og:type": "profile",
+    "og:site_name": "Blitz Split",
+    "og:image": profile.avatar_url || new URL(BRAND_IMAGE, url).href,
+    "twitter:card": profile.avatar_url ? "summary" : "summary_large_image",
+  };
+  return withTags(landing, profile.display_name, tags["og:description"], tags);
+}
+
+// The RPC answers a POST, which Cloudflare's cache doesn't keep, so its answer is kept under a GET of its own; null
+// for a code no profile has.
+async function sharedProfile(url, env, ctx, code) {
+  const key = new Request(new URL(`/__profile-link/${code}`, url));
+  const cached = await caches.default.match(key);
+  if (cached) return cached.json();
+  const response = await fetch(env.PROFILE_LINK_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      apikey: env.SUPABASE_PUBLISHABLE_KEY,
+    },
+    body: JSON.stringify({ p_code: code }),
+  });
+  if (!response.ok) throw new Error(`get_profile_by_share_code answered ${response.status}`);
+  const [row] = await response.json();
+  const profile = row ? { display_name: row.display_name, avatar_url: row.avatar_url } : null;
+  const kept = new Response(JSON.stringify(profile), {
+    headers: { "Content-Type": "application/json", "Cache-Control": `public, max-age=${WORDS_TTL}` },
+  });
+  ctx.waitUntil(caches.default.put(key, kept));
+  return profile;
 }

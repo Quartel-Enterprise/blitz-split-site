@@ -8,19 +8,20 @@
   window.dataLayer = window.dataLayer || [];
   window.gtag = function gtag() { window.dataLayer.push(arguments); };
 
-  // An app link carries a group's code, a member's or a bill's id and a comment's: none of them reaches Analytics, as
-  // the privacy policy promises. Its page view keeps only the kind of link.
+  // An app link carries a group's code, a member's, a bill's id, a comment's or a profile's code: none of them reaches
+  // Analytics, as the privacy policy promises. Its page view keeps only the kind of link.
   function appLink(url) {
     if (/^\/g\/[^/]+\/[^/]+\/?$/.test(url.pathname)) return "member_invite";
     if (/^\/g\/[^/]+\/?$/.test(url.pathname)) return "group_invite";
     if (/^\/b\/[^/]+\/?$/.test(url.pathname)) return "bill_comment";
+    if (/^\/u\/[^/]+\/?$/.test(url.pathname)) return "profile_link";
     return null;
   }
   function withoutIds(href) {
     const url = new URL(href);
     const kind = appLink(url);
     if (!kind) return href;
-    url.pathname = kind === "bill_comment" ? "/b/" : "/g/";
+    url.pathname = { bill_comment: "/b/", profile_link: "/u/" }[kind] ?? "/g/";
     url.searchParams.delete("comentario");
     url.hash = "";
     return url.href;

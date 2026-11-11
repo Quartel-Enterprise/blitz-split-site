@@ -9,12 +9,12 @@ scripts `window.track(name, params)`. It adds `gtag.js` itself only once the pag
 script never competes with what the visitor is waiting to see; the page view and any event sent before it arrives
 wait in `dataLayer`. Google Analytics' own events (`page_view`, `scroll`,
 outbound `click`, `first_visit`, `session_start`) stay as they are. An app link's group code, member, bill and comment
-ids never reach Analytics, as the privacy policy promises: on `/g/…` and `/b/…`, `page_location` and `page_referrer`
-keep only `/g/` or `/b/` and drop `?comentario=`. The events, after Bible Planner's landing:
+ids and a profile's code never reach Analytics, as the privacy policy promises: on `/g/…`, `/b/…` and `/u/…`, `page_location` and `page_referrer`
+keep only `/g/`, `/b/` or `/u/` and drop `?comentario=`. The events, after Bible Planner's landing:
 
 | Event | When | Parameters |
 | --- | --- | --- |
-| `app_link_view` | The page opens from an app link | `kind`: `group_invite`, `member_invite`, `bill_comment` |
+| `app_link_view` | The page opens from an app link | `kind`: `group_invite`, `member_invite`, `bill_comment`, `profile_link` |
 | `traffic_source` | The page opens with `utm_source`, once per visit for the same values | `source`, `medium`, `campaign`, `term`, `content` (each when present, up to 100 characters) |
 | `store_click` | A store's badge or the header's button | `store`: `play`, `appstore`, `web`; `origin`: `hero`, `cta`, `header`, `header_menu`; `platform`: `android`, `ios`, `mac`, `desktop` (not from `header_menu`, nor the header's web button) |
 | `store_mismatch_view` | "Choose your store" opens, after a click on the other platform's store | `clicked`, `recommended`: `play`, `appstore` |
