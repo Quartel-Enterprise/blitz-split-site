@@ -5,10 +5,10 @@
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",
-    // /g/* (an invite's meta tags), /u/* (a profile's), /og/* (an invite preview's image) and /.well-known/* (a 404 for
-    // a file the site doesn't have) run src/index.js; every other path is a static file. Any other unknown page
-    // answers with the landing.
-    "run_worker_first": ["/g/*", "/u/*", "/og/*", "/.well-known/*"],
+    // /g/* (an invite's meta tags), /u/* (a profile's), /og/* (an invite preview's image), /.well-known/* and /legal/*
+    // (a 404 for a file the site doesn't have) run src/index.js; every other path is a static file. Any other unknown
+    // page answers with the landing.
+    "run_worker_first": ["/g/*", "/u/*", "/og/*", "/.well-known/*", "/legal/*"],
     "not_found_handling": "single-page-application",
     "html_handling": "auto-trailing-slash"
   },

@@ -12,6 +12,8 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
   `invite-preview` function and the cache.
 - **Pages and design**: [`docs/design.md`](docs/design.md): tokens, languages, theme, motion, the landing's working
   phone, the design board and the legal pages' open points.
+- **Legal pages**: [`docs/legal.md`](docs/legal.md): the Markdown the privacy policy and the terms are written in,
+  which the pages are generated from and the apps draw natively.
 - **Stores and downloads**: [`docs/stores.md`](docs/stores.md): which store each platform sees and `CONFIG` in
   `public/stores.js`.
 - **Analytics**: [`docs/analytics.md`](docs/analytics.md): Google Analytics setup and every event.
@@ -26,7 +28,7 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
   every component; use the tokens, never raw colors in components.
 - The markup is in English. Every string a page shows has a `data-i18n` key with its Portuguese, Spanish, French, German,
   Italian, Polish, Dutch, Turkish, Indonesian and Japanese in the page's `window.SITE_STRINGS`; the legal pages write
-  English, Portuguese, Spanish, Dutch, Turkish, Indonesian and Japanese in full in `data-lang` blocks. Add all eleven
+  English, Portuguese, Spanish, Dutch, Turkish, Indonesian and Japanese in full in `data-lang` blocks, generated from `public/legal/*.md`. Add all eleven
   languages in the same change: `npm run check:translations` fails on a missing one, as CI does.
 - No new copied JavaScript or CSS: `npm run check:duplication` (jscpd, against `.jscpd-baseline.json`) fails on it,
   as CI does.
@@ -36,6 +38,10 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
   Never send a group code, member, bill or comment id to Analytics.
 - Change the `.well-known` files together with `webApp/public/.well-known` in `blitz-split-client`, and `CONFIG` in
   `public/stores.js` together with the client's `stores.properties`.
-- The legal pages' `<span class="todo">` marks what is still to fill in; none may be left before they go live.
+- Never edit a legal page's text in its HTML: edit `public/legal/<page>.<language>.md`, run `npm run build:legal` and
+  commit both (`npm run check:legal` fails otherwise, as CI does). The apps parse the same Markdown, so use only what
+  [`docs/legal.md`](docs/legal.md) lists.
+- The legal pages' `<mark>` (`<span class="todo">` on the page) marks what is still to fill in; none may be left
+  before they go live.
 - Check a visual change in `design/board.html` (every size, light and dark) with `npm run dev` running.
 - Deploy: every commit on `main` deploys to blitzsplit.com through Workers Builds; other branches don't build.
