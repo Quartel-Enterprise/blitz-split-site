@@ -21,7 +21,8 @@
     const url = new URL(href);
     const kind = appLink(url);
     if (!kind) return href;
-    url.pathname = { bill_comment: "/b/", profile_link: "/u/" }[kind] ?? "/g/";
+    // Why: every app link's path starts with its kind's prefix, /g/, /b/ or /u/.
+    url.pathname = url.pathname.slice(0, 3);
     url.searchParams.delete("comentario");
     url.hash = "";
     return url.href;
