@@ -166,10 +166,17 @@ async function inviteImage(request, url, env, ctx, target) {
     return fallback;
   }
   const image = new Response(response.body, {
-    headers: { "Content-Type": "image/png", "Cache-Control": `public, max-age=${IMAGE_TTL}` },
+    headers: { "Content-Type": "image/png", "Cache-Control": `public, max-age=${imageTtlOf(response)}` },
   });
   ctx.waitUntil(caches.default.put(request, image.clone()));
   return image;
+}
+
+// Why: the function answers a minute for a card drawn with initials because a photo didn't load, which keeps the
+// address of a good card; a day otherwise.
+function imageTtlOf(response) {
+  const maxAge = /max-age=(\d+)/.exec(response.headers.get("Cache-Control") || "");
+  return maxAge ? Math.min(Number(maxAge[1]), IMAGE_TTL) : IMAGE_TTL;
 }
 
 function askPreview(env, target, image) {
