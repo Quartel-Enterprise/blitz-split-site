@@ -6,6 +6,7 @@
 | `claude-review-on-request` | Reviews it again, comments only, when the `ai-review` label is added | |
 | `claude-review-refs` | Fails when the workflows pin different releases of the review | |
 | `duplication` | Fails on copied JavaScript or CSS that `.jscpd-baseline.json` doesn't list | `npm run check:duplication` |
+| `legal` | Fails when a legal page isn't what its Markdown gives, or the Markdown has something the apps can't draw ([legal.md](legal.md)) | `npm run check:legal` |
 | `translations` | Fails when a page or a script misses a string in one of the site's languages | `npm run check:translations` |
 
 Cloudflare's Workers Builds deploys `main` on its own and reports it as a check on the commit
