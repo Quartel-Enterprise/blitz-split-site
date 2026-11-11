@@ -1,12 +1,13 @@
 # Invite link previews
 
 WhatsApp, iMessage, Telegram and the rest draw a link's preview from the page's meta tags. `src/index.js` runs only for
-`/g/*` and `/og/*` (`run_worker_first` in `wrangler.jsonc`); every other path, `/.well-known/*` among them, is a static
-file. For `/g/<code>` it serves the landing with that invite's title, description and image:
+`/g/*`, `/og/*` and `/.well-known/*` (`run_worker_first` in `wrangler.jsonc`, the last only to answer a file the site
+doesn't have with a 404, see [routes](routes.md)); every other path is a static file. For `/g/<code>` it serves the
+landing with that invite's title, description and image:
 
 | Link | Title | Image |
 | --- | --- | --- |
-| The group's, `/g/<code>` | "Join <group>" and how many people split there | The group's photo, or its initials on its color, its name, type, people and up to five of their faces |
+| The group's, `/g/<code>` | "Join <group>" and how many people split there | The group's photo, or its initials on its color, its name, type, people and up to five of their faces: each person's photo, or their initials on their color |
 | A member's personal one, `/g/<code>/<member>?from=<inviter>` | "Join <group> as <member>" and who saved them the spot | The member's initial, the group's name and "You join as <member>", on the member's color |
 | A code nobody has (a changed link, a used personal link, a typo) | "Invite to a group on Blitz Split" | `/og/blitzsplit.png`, the brand's card, as the landing's |
 
@@ -18,7 +19,12 @@ with satori. Drawing takes 40 to 75 ms of CPU, past the 10 ms the Workers Free p
 function draws and this Worker only asks it and keeps each answer in Cloudflare's cache: the words for five minutes,
 an image for a day. The image's address carries the function's `imageVersion` (`?v=`), which changes with whatever
 the card shows, since WhatsApp keeps an image by its address. Should the function fail, the page keeps the landing's
-own meta tags and an image answers the brand's card.
+own meta tags and an image answers the brand's card. The function loads the group's and the people's photos itself
+before drawing (Storage, or a Google account's picture), and a photo that doesn't load shows the initials; the
+Worker never fetches a photo. Such a card keeps the address a good one would have, so the function answers it with
+`max-age=60` and the Worker keeps an image only as long as the function's `Cache-Control` says, up to a day: the
+next ask a minute later tries the photo again. A new photo changes `?v=` by itself, since the apps store each one
+with `?v=<updated_at>` in its URL and a Google picture's URL changes with it.
 
 `public/og/blitzsplit.png`, the brand's card, is a static file the function's `brand_card.ts` draws with the same
 layout: run it there after changing the layout or the brand, and copy the file here.
