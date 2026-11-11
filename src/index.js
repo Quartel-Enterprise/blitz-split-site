@@ -1,4 +1,5 @@
-// The Worker runs only for /g/*, /og/* and /.well-known/* (run_worker_first); every other path is a static file.
+// The Worker runs only for /g/*, /og/*, /.well-known/* and /legal/* (run_worker_first); every other path is a static
+// file.
 //
 // /g/<code>, /g/<code>/<member>: the landing, as before, with the invite's meta tags, which WhatsApp, iMessage,
 // Telegram and the rest read to draw the link's preview.
@@ -27,14 +28,15 @@ export default {
     if (page) return invitePage(request, url, env, ctx, targetOf(page, url));
     const image = IMAGE_PATH.exec(url.pathname);
     if (image) return inviteImage(request, url, env, ctx, targetOf(image, url));
-    if (url.pathname.startsWith("/.well-known/")) return wellKnown(request, env);
+    if (url.pathname.startsWith("/.well-known/") || url.pathname.startsWith("/legal/")) return fileOrNotFound(request, env);
     return env.ASSETS.fetch(request);
   },
 };
 
 // Why: an unknown path answers with the landing, and whoever asks for a /.well-known file the site doesn't have
-// (a crawler's ard.json, security.txt) must hear that it doesn't exist, not get a page it then fails to parse.
-async function wellKnown(request, env) {
+// (a crawler's ard.json, security.txt) must hear that it doesn't exist, not get a page it then fails to parse. The
+// same goes for /legal/<page>.<language>.md: the apps ask for their own language and read English on a 404.
+async function fileOrNotFound(request, env) {
   const response = await env.ASSETS.fetch(request);
   const isLanding = (response.headers.get("Content-Type") || "").startsWith("text/html");
   return isLanding ? new Response("Not found\n", { status: 404, headers: { "Content-Type": "text/plain; charset=utf-8" } }) : response;
