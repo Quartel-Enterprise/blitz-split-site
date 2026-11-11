@@ -58,15 +58,12 @@ function targetOf(match, url) {
 }
 
 async function invitePage(request, url, env, ctx, target) {
-  const landing = await env.ASSETS.fetch(new Request(new URL("/", url), request));
-  let words;
-  try {
-    words = await previewWords(url, env, ctx, target);
-  } catch (error) {
-    // Why: the landing with its own meta tags, the brand's, rather than no page.
-    console.error(error);
-    return landing;
-  }
+  const [landing, words] = await Promise.all([
+    landingOf(request, url, env),
+    orNull(previewWords(url, env, ctx, target)),
+  ]);
+  // Why: the landing with its own meta tags, the brand's, rather than no page.
+  if (!words) return landing;
   const tags = {
     "og:title": words.title,
     "og:description": words.description,
@@ -118,22 +115,38 @@ function imageUrlOf(url, target, words) {
   return image.href;
 }
 
-// The function answers a POST, which Cloudflare's cache doesn't keep, so its answers are kept under a GET of their
-// own.
-async function previewWords(url, env, ctx, target) {
-  const key = new Request(
-    new URL(`/__invite-preview/${target.code}/${target.memberCode ?? ""}?from=${target.inviterCode ?? ""}`, url),
-  );
+function landingOf(request, url, env) {
+  return env.ASSETS.fetch(new Request(new URL("/", url), request));
+}
+
+// Why: an API failing leaves the landing's own tags, so its error is only logged.
+function orNull(promise) {
+  return promise.catch((error) => {
+    console.error(error);
+    return null;
+  });
+}
+
+// The API answers a POST, which Cloudflare's cache doesn't keep, so its answers are kept under a GET of their own.
+async function cachedJson(url, ctx, path, load) {
+  const key = new Request(new URL(path, url));
   const cached = await caches.default.match(key);
   if (cached) return cached.json();
-  const response = await askPreview(env, target, false);
-  if (!response.ok) throw new Error(`invite-preview answered ${response.status}`);
-  const words = await response.json();
-  const kept = new Response(JSON.stringify(words), {
+  const value = await load();
+  const kept = new Response(JSON.stringify(value), {
     headers: { "Content-Type": "application/json", "Cache-Control": `public, max-age=${WORDS_TTL}` },
   });
   ctx.waitUntil(caches.default.put(key, kept));
-  return words;
+  return value;
+}
+
+function previewWords(url, env, ctx, target) {
+  const path = `/__invite-preview/${target.code}/${target.memberCode ?? ""}?from=${target.inviterCode ?? ""}`;
+  return cachedJson(url, ctx, path, async () => {
+    const response = await askPreview(env, target, false);
+    if (!response.ok) throw new Error(`invite-preview answered ${response.status}`);
+    return response.json();
+  });
 }
 
 async function inviteImage(request, url, env, ctx, target) {
@@ -175,47 +188,44 @@ function escapeAttribute(value) {
 // the brand's in every language, since a crawler says nothing of who reads it. An unknown code, or the API failing,
 // leaves the landing's own tags.
 async function profilePage(request, url, env, ctx, code) {
-  const landing = await env.ASSETS.fetch(new Request(new URL("/", url), request));
-  let profile;
-  try {
-    profile = await sharedProfile(url, env, ctx, code);
-  } catch (error) {
-    console.error(error);
-    return landing;
-  }
-  if (!profile) return landing;
+  const [landing, profile] = await Promise.all([
+    landingOf(request, url, env),
+    orNull(sharedProfile(url, env, ctx, code)),
+  ]);
+  // Why: a profile without a name has nothing to title the preview with.
+  if (!profile?.display_name) return landing;
+  // Why: a crawler only fetches an absolute address.
+  const photo = /^https?:\/\//.test(profile.avatar_url ?? "") ? profile.avatar_url : null;
   const tags = {
     "og:title": profile.display_name,
     "og:description": "Blitz Split · Bora Rachar",
     "og:url": url.href,
     "og:type": "profile",
     "og:site_name": "Blitz Split",
-    "og:image": profile.avatar_url || new URL(BRAND_IMAGE, url).href,
-    "twitter:card": profile.avatar_url ? "summary" : "summary_large_image",
+    "og:image": photo || new URL(BRAND_IMAGE, url).href,
+    ...(photo
+      ? {}
+      : { "og:image:type": "image/png", "og:image:width": String(WIDTH), "og:image:height": String(HEIGHT) }),
+    "twitter:card": photo ? "summary" : "summary_large_image",
   };
   return withTags(landing, profile.display_name, tags["og:description"], tags);
 }
 
-// The RPC answers a POST, which Cloudflare's cache doesn't keep, so its answer is kept under a GET of its own; null
-// for a code no profile has.
-async function sharedProfile(url, env, ctx, code) {
-  const key = new Request(new URL(`/__profile-link/${code}`, url));
-  const cached = await caches.default.match(key);
-  if (cached) return cached.json();
-  const response = await fetch(env.PROFILE_LINK_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      apikey: env.SUPABASE_PUBLISHABLE_KEY,
-    },
-    body: JSON.stringify({ p_code: code }),
+// Null for a code no profile has.
+function sharedProfile(url, env, ctx, code) {
+  return cachedJson(url, ctx, `/__profile-link/${code}`, async () => {
+    const response = await fetch(env.PROFILE_LINK_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        apikey: env.SUPABASE_PUBLISHABLE_KEY,
+      },
+      body: JSON.stringify({ p_code: code }),
+    });
+    if (!response.ok) throw new Error(`get_profile_by_share_code answered ${response.status}`);
+    // Why: PostgREST answers a set-returning function with an array, a one-row one with an object or null.
+    const answer = await response.json();
+    const row = Array.isArray(answer) ? answer[0] : answer;
+    return row ? { display_name: row.display_name, avatar_url: row.avatar_url } : null;
   });
-  if (!response.ok) throw new Error(`get_profile_by_share_code answered ${response.status}`);
-  const [row] = await response.json();
-  const profile = row ? { display_name: row.display_name, avatar_url: row.avatar_url } : null;
-  const kept = new Response(JSON.stringify(profile), {
-    headers: { "Content-Type": "application/json", "Cache-Control": `public, max-age=${WORDS_TTL}` },
-  });
-  ctx.waitUntil(caches.default.put(key, kept));
-  return profile;
 }
