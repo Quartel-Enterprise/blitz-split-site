@@ -7,10 +7,10 @@ blue, light and dark) and every component, `public/boot.js` picks the theme and 
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
 Dutch, Turkish, Indonesian and Japanese. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (English,
-Portuguese, Spanish, Dutch, Turkish, Indonesian and Japanese; French, German, Italian and Polish read the English). The language is the first of the browser's languages the site has, English when none,
+Portuguese, Spanish, Dutch, Turkish, Indonesian and Japanese; French, German, Italian and Polish read the English), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the header's globe menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
-`?lang=en|pt|es|fr|de|it|pl|nl|tr|id|ja` and `?theme=light|dark` pin one. The apps don't speak Spanish, Dutch, Turkish, Indonesian or
-Japanese, so those legal pages name the apps' buttons in English, as their speakers see them. Japanese keeps
+`?lang=en|pt|es|fr|de|it|pl|nl|tr|id|ja` and `?theme=light|dark` pin one. The legal pages in Spanish, Dutch, Turkish, Indonesian and
+Japanese name the apps' buttons in English, as they were written before the apps spoke those languages. Japanese keeps
 `line-break: strict`, breaks headings between phrases (`word-break: auto-phrase`) and drops the Latin headings' tight
 tracking; Turkish writes the percent sign first (%10).
 
@@ -67,5 +67,7 @@ git ignores.
 
 ## Legal pages
 
-The legal pages mark what is still to fill in (the company, its CNPJ, the contact emails, retention periods) with
-`<span class="todo">`, which shows in amber: none may be left before they go live.
+The legal pages' text is written in Markdown, `public/legal/<page>.<language>.md`, which `npm run build:legal` writes
+into the pages and the apps draw natively: [legal.md](legal.md). What is still to fill in (the company, its CNPJ, the
+contact emails, retention periods) is marked `<mark>` there, `<span class="todo">` on the page, which shows in amber:
+none may be left before they go live.
