@@ -10,7 +10,7 @@ sign-up required, and everything saves on the device the moment you tap.
 - **No account required.** A recovery code keeps your access; Google or Apple only to sync across devices.
 - **Split it the way it really was.** Equally, by amounts, percentages, shares, income or item by item, with the
   receipt scanned into items.
-- **Settle up.** Who owes whom with as few payments as possible, and a Pix key or Bitcoin address to pay to.
+- **Settle up.** Who owes whom with as few payments as possible, and a Bitcoin address to pay to, and a Pix key in Brazil.
 - **Everywhere.** Android, iPhone and iPad, Mac and the web, each with the look of its own system, sharing the same
   groups.
 

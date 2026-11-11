@@ -27,7 +27,7 @@
       splitAmong: "Split equally among", each: "{value} each", cancel: "Cancel", save: "Save", close: "Close",
       queue: (n) => `${n} changes in the queue`,
       split: "How it was split", yourShare: "Your share", deleteBill: "Delete bill",
-      recordPayment: "Record payment", record: "Record", viaPix: "via Pix", payment: "Payment", deletePayment: "Delete payment",
+      recordPayment: "Record payment", record: "Record", viaMethod: "via transfer", payment: "Payment", deletePayment: "Delete payment",
       payLine: (from, to) => `${name(from)} paid ${name(to)}`,
       paidYou: (who, value) => `${who} paid you ${value}`,
       paidTotal: "Paid in total", shareTotal: "Share of the bills", balance: "Balance",
@@ -44,7 +44,7 @@
       splitAmong: "Dividir igual entre", each: "{value} para cada", cancel: "Cancelar", save: "Salvar", close: "Fechar",
       queue: (n) => `${n} alterações na fila`,
       split: "Como foi dividida", yourShare: "Sua parte", deleteBill: "Excluir conta",
-      recordPayment: "Registrar pagamento", record: "Registrar", viaPix: "via Pix", payment: "Pagamento", deletePayment: "Excluir pagamento",
+      recordPayment: "Registrar pagamento", record: "Registrar", viaMethod: "via Pix", payment: "Pagamento", deletePayment: "Excluir pagamento",
       payLine: (from, to) => `${name(from)} pagou ${name(to)}`,
       paidYou: (who, value) => `${who} te pagou ${value}`,
       paidTotal: "Pagou no total", shareTotal: "Parte nas contas", balance: "Saldo",
@@ -61,7 +61,7 @@
       splitAmong: "Dividir igual entre", each: "{value} para cada uno", cancel: "Cancelar", save: "Guardar", close: "Cerrar",
       queue: (n) => `${n} cambios en la cola`,
       split: "Cómo se dividió", yourShare: "Tu parte", deleteBill: "Eliminar cuenta",
-      recordPayment: "Registrar pago", record: "Registrar", viaPix: "por Pix", payment: "Pago", deletePayment: "Eliminar pago",
+      recordPayment: "Registrar pago", record: "Registrar", viaMethod: "por transferencia", payment: "Pago", deletePayment: "Eliminar pago",
       payLine: (from, to) => `${name(from)} le pagó a ${name(to)}`,
       paidYou: (who, value) => `${who} te pagó ${value}`,
       paidTotal: "Pagó en total", shareTotal: "Su parte en las cuentas", balance: "Saldo",
@@ -78,7 +78,7 @@
       splitAmong: "Partager à parts égales entre", each: "{value} chacun", cancel: "Annuler", save: "Enregistrer", close: "Fermer",
       queue: (n) => `${n} modifications en attente`,
       split: "Comment elle a été partagée", yourShare: "Votre part", deleteBill: "Supprimer la dépense",
-      recordPayment: "Enregistrer un paiement", record: "Enregistrer", viaPix: "via Pix", payment: "Paiement", deletePayment: "Supprimer le paiement",
+      recordPayment: "Enregistrer un paiement", record: "Enregistrer", viaMethod: "par virement", payment: "Paiement", deletePayment: "Supprimer le paiement",
       payLine: (from, to) => `${name(from)} a payé ${name(to)}`,
       paidYou: (who, value) => `${who} vous a payé ${value}`,
       paidTotal: "Payé au total", shareTotal: "Part dans les dépenses", balance: "Solde",
@@ -95,7 +95,7 @@
       splitAmong: "Gleichmäßig aufteilen auf", each: "{value} pro Person", cancel: "Abbrechen", save: "Speichern", close: "Schließen",
       queue: (n) => `${n} ${n === 1 ? "Änderung" : "Änderungen"} in der Warteschlange`,
       split: "So wurde aufgeteilt", yourShare: "Dein Anteil", deleteBill: "Ausgabe löschen",
-      recordPayment: "Zahlung erfassen", record: "Erfassen", viaPix: "per Pix", payment: "Zahlung", deletePayment: "Zahlung löschen",
+      recordPayment: "Zahlung erfassen", record: "Erfassen", viaMethod: "per Überweisung", payment: "Zahlung", deletePayment: "Zahlung löschen",
       payLine: (from, to) => `${name(from)} hat ${name(to)} bezahlt`,
       paidYou: (who, value) => `${who} hat dir ${value} gezahlt`,
       paidTotal: "Insgesamt bezahlt", shareTotal: "Anteil an den Ausgaben", balance: "Saldo",
@@ -112,7 +112,7 @@
       splitAmong: "Dividi in parti uguali tra", each: "{value} a testa", cancel: "Annulla", save: "Salva", close: "Chiudi",
       queue: (n) => `${n} ${n === 1 ? "modifica" : "modifiche"} in coda`,
       split: "Come è stata divisa", yourShare: "La tua parte", deleteBill: "Elimina spesa",
-      recordPayment: "Registra pagamento", record: "Registra", viaPix: "con Pix", payment: "Pagamento", deletePayment: "Elimina pagamento",
+      recordPayment: "Registra pagamento", record: "Registra", viaMethod: "con bonifico", payment: "Pagamento", deletePayment: "Elimina pagamento",
       payLine: (from, to) => `${name(from)} ha pagato ${name(to)}`,
       paidYou: (who, value) => `${who} ti ha pagato ${value}`,
       paidTotal: "Pagato in totale", shareTotal: "Quota delle spese", balance: "Saldo",
@@ -129,7 +129,7 @@
       splitAmong: "Podziel po równo między", each: "{value} na osobę", cancel: "Anuluj", save: "Zapisz", close: "Zamknij",
       queue: (n) => `${n} ${plPlural(n, "zmiana", "zmiany", "zmian")} w kolejce`,
       split: "Jak podzielono", yourShare: "Twoja część", deleteBill: "Usuń wydatek",
-      recordPayment: "Zapisz płatność", record: "Zapisz", viaPix: "przez Pix", payment: "Płatność", deletePayment: "Usuń płatność",
+      recordPayment: "Zapisz płatność", record: "Zapisz", viaMethod: "przelewem", payment: "Płatność", deletePayment: "Usuń płatność",
       // A name is never declined: who paid whom as an arrow, as the Balances tab writes it.
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `${who} zapłacił(a) ci ${value}`,
@@ -147,7 +147,7 @@
       splitAmong: "Gelijk verdelen over", each: "{value} per persoon", cancel: "Annuleren", save: "Opslaan", close: "Sluiten",
       queue: (n) => `${n} ${n === 1 ? "wijziging" : "wijzigingen"} in de wachtrij`,
       split: "Zo is het verdeeld", yourShare: "Jouw deel", deleteBill: "Uitgave verwijderen",
-      recordPayment: "Betaling vastleggen", record: "Vastleggen", viaPix: "via Pix", payment: "Betaling", deletePayment: "Betaling verwijderen",
+      recordPayment: "Betaling vastleggen", record: "Vastleggen", viaMethod: "via overboeking", payment: "Betaling", deletePayment: "Betaling verwijderen",
       payLine: (from, to) => `${name(from)} betaalde ${name(to)}`,
       paidYou: (who, value) => `${who} heeft je ${value} betaald`,
       paidTotal: "Totaal betaald", shareTotal: "Aandeel in de uitgaven", balance: "Saldo",
@@ -166,7 +166,7 @@
       splitAmong: "Eşit bölünecek kişiler", each: "Kişi başı {value}", cancel: "İptal", save: "Kaydet", close: "Kapat",
       queue: (n) => `Kuyrukta ${n} değişiklik`,
       split: "Nasıl bölündü", yourShare: "Senin payın", deleteBill: "Masrafı sil",
-      recordPayment: "Ödeme kaydet", record: "Kaydet", viaPix: "Pix ile", payment: "Ödeme", deletePayment: "Ödemeyi sil",
+      recordPayment: "Ödeme kaydet", record: "Kaydet", viaMethod: "havale ile", payment: "Ödeme", deletePayment: "Ödemeyi sil",
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `${who} sana ${value} ödedi`,
       paidTotal: "Toplam ödenen", shareTotal: "Masraflardaki payı", balance: "Bakiye",
@@ -183,7 +183,7 @@
       splitAmong: "Bagi rata ke", each: "{value} per orang", cancel: "Batal", save: "Simpan", close: "Tutup",
       queue: (n) => `${n} perubahan dalam antrean`,
       split: "Cara dibaginya", yourShare: "Bagianmu", deleteBill: "Hapus tagihan",
-      recordPayment: "Catat pembayaran", record: "Catat", viaPix: "via Pix", payment: "Pembayaran", deletePayment: "Hapus pembayaran",
+      recordPayment: "Catat pembayaran", record: "Catat", viaMethod: "via transfer", payment: "Pembayaran", deletePayment: "Hapus pembayaran",
       payLine: (from, to) => `${name(from)} bayar ke ${name(to)}`,
       paidYou: (who, value) => `${who} membayarmu ${value}`,
       paidTotal: "Total dibayar", shareTotal: "Bagian dari tagihan", balance: "Saldo",
@@ -200,7 +200,7 @@
       splitAmong: "均等に分ける人", each: "1人{value}", cancel: "キャンセル", save: "保存", close: "閉じる",
       queue: (n) => `${n}件の変更が送信待ち`,
       split: "分け方", yourShare: "あなたの負担分", deleteBill: "支出を削除",
-      recordPayment: "支払いを記録", record: "記録", viaPix: "Pixで", payment: "支払い", deletePayment: "支払いを削除",
+      recordPayment: "支払いを記録", record: "記録", viaMethod: "振込で", payment: "支払い", deletePayment: "支払いを削除",
       payLine: (from, to) => `${name(from)}が${name(to)}に支払い`,
       paidYou: (who, value) => `${who}が${value}を支払い`,
       paidTotal: "支払い合計", shareTotal: "支出の負担分", balance: "残高",
@@ -302,7 +302,7 @@
         return `<li${e === fresh ? ' class="fresh"' : ""}><button type="button" class="row" data-entry="${i}">
           <span class="cat pay">${icon("i-check")}</span>
           <span class="t"><b>${TEXT.payment}</b><small>${esc(TEXT.payLine(e.from, e.to))}</small></span>
-          <span class="v num"><span>${money(e.amount)}</span><small class="zero">${TEXT.viaPix}</small></span>
+          <span class="v num"><span>${money(e.amount)}</span><small class="zero">${TEXT.viaMethod}</small></span>
         </button></li>`;
       }
       const share = shares(e);
@@ -510,7 +510,7 @@
       title: TEXT.payment,
       html: () => head(TEXT.payment)
         + `<div class="field payflow">${avatar(payment.from)}<span class="arrow-line" aria-hidden="true"></span>${avatar(payment.to)}</div>
-        <div class="field center"><strong class="num amount">${money(payment.amount)}</strong><span class="each">${esc(TEXT.payLine(payment.from, payment.to))} · ${TEXT.viaPix}</span></div>`
+        <div class="field center"><strong class="num amount">${money(payment.amount)}</strong><span class="each">${esc(TEXT.payLine(payment.from, payment.to))} · ${TEXT.viaMethod}</span></div>`
         + actions(button("delete", TEXT.deletePayment, "danger", "i-x"), button("close", TEXT.close, "save")),
       onClick(b) { if (b.dataset.act === "delete") return change("delete_payment", () => { entries = entries.filter((e) => e !== payment); }); },
       focus: '[data-act="close"].save',
@@ -525,7 +525,7 @@
       title: TEXT.recordPayment,
       html: () => head(TEXT.recordPayment)
         + `<div class="field payflow">${avatar(from)}<span class="arrow-line" aria-hidden="true"></span>${avatar(to)}</div>
-        <div class="field center"><strong class="num amount">${money(cents)}</strong><span class="each">${esc(TEXT.payLine(from, to))} · ${TEXT.viaPix}</span></div>`
+        <div class="field center"><strong class="num amount">${money(cents)}</strong><span class="each">${esc(TEXT.payLine(from, to))} · ${TEXT.viaMethod}</span></div>`
         + actions(button("close", TEXT.cancel, "ghost"), button("record", TEXT.record, "save", "i-check")),
       onClick(b) {
         if (b.dataset.act !== "record") return;
