@@ -4,8 +4,7 @@
 // - public/release-notes/<language>.json, the feed the apps download: every version of that language, newest first.
 // - public/release-notes.html, the page: pages/release-notes.html with a block per language, newest first.
 //
-// Neither is in git: the deploy and `npm run dev` write them (wrangler.jsonc's build, and the build command of
-// Cloudflare's Workers Builds).
+// Neither is in git: `wrangler deploy` and `wrangler dev` write them first (wrangler.jsonc's build).
 //
 //   node scripts/build-release-notes.mjs           writes the feeds and the page
 //   node scripts/build-release-notes.mjs --check   only fails on a wrong file, writing nothing (CI)
@@ -187,10 +186,12 @@ function build(check) {
   if (page === null) fail(TEMPLATE, "no <main id=\"main\"> … </main> to write the versions in");
   // Why: a check only reads the notes and draws them, which is where a wrong file fails; nothing is written.
   if (check) return;
-  // Why: a feed nobody writes anymore would still be served, and read by an app.
-  rmSync(FEED_DIR, { recursive: true, force: true });
   mkdirSync(FEED_DIR, { recursive: true });
+  const feeds = notes.map(({ lang }) => `${lang}.json`);
   for (const { lang, releases } of notes) writeFileSync(`${FEED_DIR}/${lang}.json`, feed(releases));
+  // Why: a feed nobody writes anymore would still be served, and read by an app. Only the stale ones go, after the
+  // others are written, so `wrangler dev` rebuilding never serves a 404 for a feed that exists.
+  for (const name of readdirSync(FEED_DIR)) if (!feeds.includes(name)) rmSync(`${FEED_DIR}/${name}`, { recursive: true, force: true });
   writeFileSync(PAGE, page);
   console.log(`Wrote ${PAGE} and ${notes.length} feeds in ${FEED_DIR}/ (${notes[0].releases.length} versions)`);
 }

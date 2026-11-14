@@ -2,9 +2,8 @@
   "name": "blitzsplit-site",
   "main": "src/index.js",
   "compatibility_date": "2026-10-01",
-  // The release notes' feeds and page aren't in git: this writes them before `wrangler dev` and a `wrangler deploy` run
-  // from a machine. Workers Builds doesn't read it, so its own "Build command" runs the same script
-  // (docs/development.md).
+  // The release notes' feeds and page aren't in git: this writes them before every `wrangler dev` and `wrangler deploy`,
+  // the one Workers Builds runs included (docs/development.md).
   "build": {
     "command": "node scripts/build-release-notes.mjs",
     "watch_dir": ["release-notes", "pages", "scripts"]

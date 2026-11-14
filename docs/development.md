@@ -20,10 +20,9 @@ The release notes' feeds and page (`public/release-notes/<language>.json`, `publ
 git: `node scripts/build-release-notes.mjs` writes them from `release-notes/` and `pages/release-notes.html`
 ([release-notes.md](release-notes.md)). Everything else in `public/` is served as it is.
 
-- `npm run dev` and a deploy from your machine run it through `build` in `wrangler.jsonc`.
-- Workers Builds runs it as the Worker's **Build command** (Workers & Pages › blitzsplit-site › Settings › Build):
-  `node scripts/build-release-notes.mjs`. It is a setting of the Cloudflare account, not a file here: without it a
-  deploy from `main` would publish a site with no "What's new" and no feed for the apps.
+`wrangler dev` and `wrangler deploy` run it through `build` in `wrangler.jsonc`, so `npm run dev`, `npm run deploy`
+and the `npx wrangler deploy` of Workers Builds all write them first; the Worker's **Build command** in Cloudflare
+needs nothing. A note that breaks the script fails the deploy, and the site keeps the last one.
 
 After a deploy, https://blitzsplit.com/release-notes/en.json answering with the newest version says it ran.
 

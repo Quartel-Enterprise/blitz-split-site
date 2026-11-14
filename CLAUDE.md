@@ -2,8 +2,7 @@
 
 The site at blitzsplit.com of Bora Rachar (Blitz Split in English, Spanish, French, German, Italian, Polish, Dutch,
 Turkish, Indonesian and Japanese): the landing, the privacy policy and the terms of use, served by a Cloudflare Worker with static assets (`public/`) and one
-script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and JavaScript; the only thing built is the
-release notes' feed and page. The apps live in
+script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and JavaScript with no build. The apps live in
 `blitz-split-client` and the backend in `blitz-split-api`.
 
 ## Documentation
@@ -45,10 +44,10 @@ release notes' feed and page. The apps live in
 - Never edit a legal page's text in its HTML: edit `public/legal/<page>.<language>.md`, run `npm run build:legal` and
   commit both (`npm run check:legal` fails otherwise, as CI does). The apps parse the same Markdown, so use only what
   [`docs/legal.md`](docs/legal.md) lists.
-- A version's notes are `release-notes/<language>/<version>.json`, in every language (`npm run check:release-notes`
-  fails otherwise, as CI does). `public/release-notes.html` and `public/release-notes/*.json` aren't in git: the
-  deploy and `npm run dev` write them, the page from its shell, `pages/release-notes.html`. The apps read the feed,
-  so use only what [`docs/release-notes.md`](docs/release-notes.md) lists.
+- Never edit a version's notes in `public/release-notes.html` or `public/release-notes/*.json`: edit
+  `release-notes/<language>/<version>.json` in every language, run `npm run build:release-notes` and commit all of it
+  (`npm run check:release-notes` fails otherwise, as CI does). The apps read the feed, so use only what
+  [`docs/release-notes.md`](docs/release-notes.md) lists.
 - The legal pages' `<mark>` (`<span class="todo">` on the page) marks what is still to fill in; none may be left
   before they go live.
 - Check a visual change in `design/board.html` (every size, light and dark) with `npm run dev` running.

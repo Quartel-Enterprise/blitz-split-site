@@ -67,8 +67,9 @@ key must be one an older app can ignore, and a new platform's name one it can sk
 1. Write `release-notes/<language>/<version>.json` in every language.
 2. Commit them: the deploy writes the feeds and the page. `npm run dev` shows the page as it will be.
 
-`npm run check:release-notes` fails, as CI does (`release-notes.yml`), when a language misses a version or has one English doesn't, when a version's date, number of notes or a note's
-platforms aren't English's, or when a file has anything this page doesn't list.
+`npm run check:release-notes` fails, as CI does (`release-notes.yml`), when a language misses a version or has one
+English doesn't, when a version's date, number of notes or a note's platforms aren't English's, or when a file has
+anything this page doesn't list.
 
 ## The page
 
