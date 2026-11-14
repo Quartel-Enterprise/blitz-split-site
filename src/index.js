@@ -1,5 +1,5 @@
-// The Worker runs only for /g/*, /c/*, /u/*, /b/*, /download, /app-download, /og/*, /.well-known/* and /legal/*
-// (run_worker_first); every other path is a static file.
+// The Worker runs only for /g/*, /c/*, /u/*, /b/*, /download, /app-download, /og/*, /.well-known/*, /legal/* and
+// /release-notes/* (run_worker_first); every other path is a static file.
 //
 // /g/<code>, /g/<code>/<member> (an invite), /c/<code> (a bill's link) and /u/<code> (a profile's): the landing, as
 // before, with that link's meta tags, which WhatsApp, iMessage, Telegram and the rest read to draw its preview.
@@ -65,6 +65,9 @@ const STATIC_IMAGE = /^\/og\/(comment|download|privacy|terms)\.png$/;
 // otherwise preview in Portuguese and open a page that doesn't.
 const LANGUAGE = /^[a-z]{2,3}$/;
 
+// The folders whose files something other than a browser asks for by name: see fileOrNotFound.
+const FILE_OR_NOT_FOUND = ["/.well-known/", "/legal/", "/release-notes/"];
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -73,18 +76,22 @@ export default {
     if (page) return previewPage(request, url, env, ctx, page);
     const image = linkTargetOf(IMAGE_PATHS, url) ?? staticTargetOf(STATIC_IMAGE.exec(url.pathname)?.[1], url);
     if (image) return previewImage(request, url, env, ctx, image);
-    if (url.pathname.startsWith("/.well-known/") || url.pathname.startsWith("/legal/")) return fileOrNotFound(request, env);
+    if (FILE_OR_NOT_FOUND.some((prefix) => url.pathname.startsWith(prefix))) return fileOrNotFound(request, env);
     return env.ASSETS.fetch(request);
   },
 };
 
 // Why: an unknown path answers with the landing, and whoever asks for a /.well-known file the site doesn't have
 // (a crawler's ard.json, security.txt) must hear that it doesn't exist, not get a page it then fails to parse. The
-// same goes for /legal/<page>.<language>.md: the apps ask for their own language and read English on a 404.
+// same goes for /legal/<page>.<language>.md and /release-notes/<language>.json: the apps ask for their own language
+// and read English on a 404. Why any origin may read the 404: the web app (app.blitzsplit.com) asks from another one,
+// and a browser hides a response without Access-Control-Allow-Origin, so it would see a network error, not the 404.
 async function fileOrNotFound(request, env) {
   const response = await env.ASSETS.fetch(request);
   const isLanding = (response.headers.get("Content-Type") || "").startsWith("text/html");
-  return isLanding ? new Response("Not found\n", { status: 404, headers: { "Content-Type": "text/plain; charset=utf-8" } }) : response;
+  return isLanding
+    ? new Response("Not found\n", { status: 404, headers: { "Content-Type": "text/plain; charset=utf-8", "Access-Control-Allow-Origin": "*" } })
+    : response;
 }
 
 // Which link a path is, by the first of the paths it matches (PAGE_PATHS or IMAGE_PATHS); null for any other path.

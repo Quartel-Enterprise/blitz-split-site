@@ -9,3 +9,4 @@ The site is in English, Portuguese (Brazil), Spanish, French, German, Italian, P
 - [Blitz Split](https://blitzsplit.com/): what the app does, how it works and where it runs
 - [Privacy policy](https://blitzsplit.com/privacy): what the app collects, why, who sees it and how to delete it
 - [Terms of use](https://blitzsplit.com/terms): the rules for using the app and what each side is responsible for
+- [What's new](https://blitzsplit.com/release-notes): what each version of the app changed, newest first

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Le lien d’une dépense s’ouvre désormais dans l’application plutôt que dans le navigateur, avec ses photos et ses commentaires.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Le lien d’une dépense qui n’est plus partagée, ou que seules les personnes de la dépense peuvent ouvrir, l’indique désormais au lieu d’afficher une erreur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Le lien d’un profil s’ouvre désormais même si vous n’êtes pas connecté.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Confidentialité et à propos propose un nouvel interrupteur, « Partager les données d’utilisation » : désactivez-le pour ne plus envoyer la façon dont vous utilisez l’application.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les liens que vous partagez vers votre profil, vers un commentaire et pour obtenir l’application affichent désormais leur aperçu dans votre langue.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

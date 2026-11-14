@@ -43,12 +43,12 @@
     });
   });
 
-  // Internal links keep a pinned theme and language, so the design board can walk the pages.
-  if (params.has("theme") || params.has("lang")) {
+  // Internal links keep a pinned theme, language and "Show beta versions", so the design board can walk the pages.
+  const pinned = ["theme", "lang", "beta"].filter((name) => params.has(name));
+  if (pinned.length) {
     document.querySelectorAll('a[href^="/"]:not([data-set-lang])').forEach((link) => {
       const url = new URL(link.getAttribute("href"), location.origin);
-      if (params.has("theme")) url.searchParams.set("theme", params.get("theme"));
-      if (params.has("lang")) url.searchParams.set("lang", params.get("lang"));
+      pinned.forEach((name) => url.searchParams.set(name, params.get(name)));
       link.href = url.pathname + url.search + url.hash;
     });
   }
@@ -193,7 +193,25 @@
     if (!wide.matches) a.closest("details")?.removeAttribute("open");
   }));
 
-  // The rest of the links: the logo, the landing's sections, "back to top" and the legal pages.
+  // The release notes' "Show beta versions": off at first, kept for the next visit. Every language's block has its own
+  // switch, so they move together, and site.css shows the beta versions while one is on. boot.js read the kept choice
+  // into data-beta.
+  const betaSwitches = [...document.querySelectorAll("[data-show-beta]")];
+  function showBeta(on) {
+    betaSwitches.forEach((el) => { el.checked = on; });
+    root.dataset.beta = on ? "on" : "off";
+  }
+  if (betaSwitches.length) {
+    showBeta(root.dataset.beta === "on");
+    betaSwitches.forEach((el) => el.addEventListener("change", () => {
+      const state = el.checked ? "on" : "off";
+      showBeta(el.checked);
+      try { localStorage.setItem("beta", state); } catch (e) { /* private mode: this page still switches */ }
+      track("beta_versions_toggle", { state });
+    }));
+  }
+
+  // The rest of the links: the logo, the landing's sections, "back to top", the legal pages and the release notes.
   document.querySelectorAll(".logo").forEach((a) => a.addEventListener("click", () => {
     track("logo_click", { origin: originOf(a) });
   }));
@@ -201,8 +219,12 @@
     track("navigation_click", { target: a.hash.slice(1), origin: "header" });
   }));
   toTop?.addEventListener("click", () => track("navigation_click", { target: "top", origin: "to_top" }));
-  const LEGAL = { "/privacy": "privacy_policy", "/terms": "terms_of_service" };
-  document.querySelectorAll('a[href^="/privacy"], a[href^="/terms"]').forEach((a) => a.addEventListener("click", () => {
-    track("select_content", { content_type: "legal", item_id: LEGAL[new URL(a.href).pathname], origin: originOf(a) });
+  const PAGES = {
+    "/privacy": { content_type: "legal", item_id: "privacy_policy" },
+    "/terms": { content_type: "legal", item_id: "terms_of_service" },
+    "/release-notes": { content_type: "release_notes", item_id: "release_notes" },
+  };
+  document.querySelectorAll('a[href^="/privacy"], a[href^="/terms"], a[href^="/release-notes"]').forEach((a) => a.addEventListener("click", () => {
+    track("select_content", { ...PAGES[new URL(a.href).pathname], origin: originOf(a) });
   }));
 })();

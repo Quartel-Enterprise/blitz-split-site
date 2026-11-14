@@ -1,0 +1,43 @@
+{
+  "releases": [
+    {
+      "version": "3.0.0-beta_10",
+      "beta": true,
+      "date": "2026-11-14",
+      "notes": [
+        {
+          "text": "O link de uma conta agora abre no app em vez do navegador, com as fotos e os comentários.",
+          "platforms": [
+            "android",
+            "ios",
+            "mac"
+          ]
+        },
+        {
+          "text": "O link de uma conta que deixou de ser compartilhada, ou que só as pessoas da conta podem abrir, agora avisa isso em vez de mostrar um erro.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "O link de um perfil agora abre mesmo sem você ter entrado na sua conta.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Perfil › Privacidade e sobre tem uma chave nova, \"Compartilhar dados de uso\": desligue para parar de enviar como você usa o app.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Os links que você compartilha do seu perfil, de um comentário e para baixar o app agora mostram a prévia no seu idioma.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    }
+  ]
+}

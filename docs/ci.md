@@ -7,6 +7,7 @@
 | `claude-review-refs` | Fails when the workflows pin different releases of the review | |
 | `duplication` | Fails on copied JavaScript or CSS that `.jscpd-baseline.json` doesn't list | `npm run check:duplication` |
 | `legal` | Fails when a legal page isn't what its Markdown gives, or the Markdown has something the apps can't draw ([legal.md](legal.md)) | `npm run check:legal` |
+| `release-notes` | Fails when a language's release notes feed or the "What's new" page isn't what the notes give, or a language's notes aren't English's ([release-notes.md](release-notes.md)) | `npm run check:release-notes` |
 | `translations` | Fails when a page or a script misses a string in one of the site's languages | `npm run check:translations` |
 | `merge-when-green` | Squash merges a pull request with the `merge-when-green` label once every check passed and every review conversation is resolved ([below](#merge-when-green)) | |
 

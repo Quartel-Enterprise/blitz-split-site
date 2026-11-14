@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "De link van een uitgave opent nu in de app in plaats van in de browser, met de foto's en reacties.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "De link van een uitgave die niet meer wordt gedeeld, of die alleen de mensen van de uitgave kunnen openen, zegt dat nu in plaats van een fout te tonen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De link van een profiel opent nu ook als je niet bent ingelogd.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel › Privacy en info heeft een nieuwe schakelaar, \"Gebruiksgegevens delen\": zet hem uit om niet meer te versturen hoe je de app gebruikt.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De links die je deelt naar je profiel, naar een reactie en om de app te downloaden tonen hun voorbeeld nu in jouw taal.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

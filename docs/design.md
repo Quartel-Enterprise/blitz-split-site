@@ -71,3 +71,9 @@ The legal pages' text is written in Markdown, `public/legal/<page>.<language>.md
 into the pages and the apps draw natively: [legal.md](legal.md). What is still to fill in (the company, its CNPJ, the
 contact emails, retention periods) is marked `<mark>` there, `<span class="todo">` on the page, which shows in amber:
 none may be left before they go live.
+
+## Release notes
+
+"What's new" (`/release-notes`) keeps the legal pages' header and hero, with "Show beta versions" under its title, and
+lists each version as a card: [release-notes.md](release-notes.md). The design board opens it with `?beta=on`, so the
+cards show while every version is still a beta.

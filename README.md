@@ -35,6 +35,7 @@ Every commit on `main` deploys to blitzsplit.com.
 | [Routes](docs/routes.md) | Every path the site answers, the app links' `.well-known` files |
 | [Link previews](docs/invite-previews.md) | How each link the apps share gets its title and card |
 | [Legal pages](docs/legal.md) | The Markdown the privacy policy and the terms are written in, for the site and the apps |
+| [Release notes](docs/release-notes.md) | The JSON each version's notes are written in, for the "What's new" page and the apps |
 | [Pages and design](docs/design.md) | Tokens, languages, theme, motion, the landing's phone, the design board |
 | [Stores and downloads](docs/stores.md) | Which store each visitor sees and how to turn a store on |
 | [Analytics](docs/analytics.md) | Google Analytics setup and every event the site sends |

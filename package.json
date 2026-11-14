@@ -6,6 +6,8 @@
     "deploy": "wrangler deploy",
     "build:legal": "node scripts/build-legal.mjs",
     "check:legal": "node scripts/build-legal.mjs --check",
+    "build:release-notes": "node scripts/build-release-notes.mjs",
+    "check:release-notes": "node scripts/build-release-notes.mjs --check",
     "check:translations": "node scripts/check-translations.mjs",
     "check:duplication": "./scripts/cpd.sh"
   },
