@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Los montos y los textos ya no se parten en dos líneas ni se cortan en pantallas pequeñas, plegables y con letra grande.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los textos, botones y contornos que costaba leer ahora tienen más contraste, en los temas claro y oscuro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar un campo en el navegador del iPhone ya no amplía la página.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

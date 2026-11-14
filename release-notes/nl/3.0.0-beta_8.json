@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Een uitgave kan nu Op inkomen worden verdeeld, en de inkomens die je invult zijn zichtbaar voor de leden van de groep.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Elke uitgave onder Laatste uitgaven op Start heeft nu een menu: Bewerken, Dupliceren, Delen en Verwijderen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Alles bekijken op Start opent nu Alle uitgaven: elke uitgave waar je aan meedoet, uit al je groepen, met zoeken, filters en sorteren.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De foto van een groep is nu groter boven aan het scherm en krimpt als je scrolt, en het openen van een groep animeert vanuit de rij.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Activiteit toont nu de foto's van mensen, Saldi › Per groep de foto van elke groep en Grootste uitgave in Statistieken de categorie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel › Account en synchronisatie toont nu het logo van Google of Apple en je hele e-mailadres, dat alleen jij ziet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Account verwijderen legt nu uit wat in je groepen blijft nadat je account weg is.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De schakelaar \"Standaard-Pix-sleutel\" ziet er bij je standaardsleutel niet meer uit alsof hij uit staat in het donkere thema.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Bir grubun ekranının üstündeki fotoğrafına dokunarak onu büyük gör; fotoğrafı oradan değiştir ya da kaldır.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

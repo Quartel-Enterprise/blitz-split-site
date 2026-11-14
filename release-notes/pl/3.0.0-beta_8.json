@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Wydatek można teraz podzielić „Według dochodów”, a wpisane przez Ciebie dochody widzą członkowie grupy.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Każdy z „Ostatnich wydatków” na ekranie Start ma teraz menu: Edytuj, Duplikuj, Udostępnij i Usuń.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Zobacz wszystkie” na ekranie Start otwiera teraz „Wszystkie wydatki”: wszystkie wydatki, w których uczestniczysz, ze wszystkich Twoich grup, z wyszukiwaniem, filtrami i sortowaniem.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zdjęcie grupy jest teraz większe u góry jej ekranu i zmniejsza się podczas przewijania, a otwieranie grupy jest animowane od jej wiersza.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktywność pokazuje teraz zdjęcia osób, Salda › Według grup zdjęcie każdej grupy, a „Największy wydatek” w Statystykach swoją kategorię.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Konto i synchronizacja pokazuje teraz logo Google lub Apple i Twój cały adres e-mail, który widzisz tylko Ty.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Usuń konto” wyjaśnia teraz, co zostaje w Twoich grupach po usunięciu konta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Przełącznik „Domyślny klucz Pix” nie wygląda już na wyłączony przy Twoim domyślnym kluczu w ciemnym motywie.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

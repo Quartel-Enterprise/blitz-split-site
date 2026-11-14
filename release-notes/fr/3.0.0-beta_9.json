@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Les montants et les libellés ne se coupent plus sur deux lignes et ne sont plus tronqués sur les petits écrans, les appareils pliables et avec un grand texte.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les textes, boutons et contours difficiles à lire ont désormais plus de contraste, dans les thèmes clair et sombre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toucher un champ dans le navigateur d’un iPhone ne zoome plus sur la page.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

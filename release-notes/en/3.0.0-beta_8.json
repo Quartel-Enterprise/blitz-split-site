@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "A bill can now be split By income, and the incomes you type are shared with the group's members.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Each of Home's Latest expenses now has a menu: Edit, Duplicate, Share and Delete.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "See all on Home now opens All expenses: every bill you're part of, across your groups, with search, filters and sorting.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A group's photo is now bigger at the top of its screen and shrinks as you scroll, and opening a group animates from its row.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Activity now shows people's photos, Balances › By group shows each group's photo, and Statistics' Biggest expense shows its category.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profile › Account and sync now shows the Google or Apple logo and your whole email, which only you see.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Delete account now explains what stays in your groups after your account is gone.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The Default Pix key switch no longer looks off on your default key in the dark theme.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

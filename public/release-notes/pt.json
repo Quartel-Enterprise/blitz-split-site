@@ -38,6 +38,339 @@
           ]
         }
       ]
+    },
+    {
+      "version": "3.0.0-beta_9",
+      "beta": true,
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "text": "Valores e textos não quebram mais em duas linhas nem ficam cortados em telas pequenas, dobráveis e com fonte grande.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Textos, botões e contornos difíceis de ler agora têm mais contraste, nos temas claro e escuro.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Tocar em um campo no navegador do iPhone não dá mais zoom na página.",
+          "platforms": [
+            "web"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_8",
+      "beta": true,
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "text": "Agora dá para rachar uma conta Pela renda, e as rendas que você digita ficam visíveis para os membros do grupo.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Cada uma das Últimas despesas do Início agora tem um menu: Editar, Duplicar, Compartilhar e Apagar.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Ver tudo no Início agora abre Todas as despesas: todas as contas de que você participa, em todos os seus grupos, com busca, filtros e ordenação.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "A foto do grupo agora é maior no topo da tela dele e encolhe conforme você rola, e abrir um grupo anima a partir da linha dele.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "Atividade agora mostra as fotos das pessoas, Saldos › Por grupo mostra a foto de cada grupo e a Maior despesa de Estatísticas mostra a categoria dela.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Perfil › Conta e sincronização agora mostra o logo do Google ou da Apple e seu e-mail inteiro, que só você vê.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Excluir conta agora explica o que fica nos seus grupos depois que a conta é excluída.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "A opção \"Chave Pix padrão\" não parece mais desligada na sua chave padrão no tema escuro.",
+          "platforms": [
+            "android"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_7",
+      "beta": true,
+      "date": "2026-11-12",
+      "notes": [
+        {
+          "text": "O Bora Rachar agora fala holandês, japonês, turco e indonésio, e a lista de idiomas mostra cada idioma no próprio idioma.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Grupos e contas agora podem usar o zloty polonês, a lira turca e a rupia indonésia.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Perfil tem um botão novo, Compartilhar perfil: quem abre o seu link vê seu nome e sua foto e pode convidar você para um grupo.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "O link de convite de um grupo novo fica pronto na hora, mesmo offline, e Membros tem um botão novo para copiá-lo.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Fechar um formulário com algo que você não salvou agora pergunta \"Descartar alterações?\" antes.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "A Política de Privacidade e os Termos de Serviço agora abrem dentro do app em vez do navegador.",
+          "platforms": [
+            "android",
+            "ios",
+            "mac"
+          ]
+        },
+        {
+          "text": "No celular, as barras de cima e de baixo agora saem da frente quando você rola para baixo e voltam quando rola para cima.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "Em Rachar conta, escolher uma data não pula mais direto para o relógio: a hora tem seu próprio botão.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "Toque no grupo no topo de Rachar conta para abri-lo; ao voltar, a conta continua com tudo o que você digitou.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "As Últimas despesas do Início agora mostram o grupo de cada conta e quem pagou como fotos.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "O Pix agora aparece só para quem provavelmente vai usá-lo, como quem usa o app em português, tem uma chave Pix ou está em um grupo em reais.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "\"Sincronizando…\" agora aparece só na primeira vez que sua conta carrega em um aparelho, e não a cada sincronização.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Perfil não oferece mais desconectar o Google ou a Apple da sua conta: saia da conta ou exclua-a.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Editar perfil agora abre como uma folha sobre o Perfil em vez de uma tela separada.",
+          "platforms": [
+            "android",
+            "ios"
+          ]
+        },
+        {
+          "text": "A faixa em branco entre o formulário e o teclado em Rachar conta sumiu.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "Os Grupos em comum de um contato agora mostram a foto de cada grupo.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_6",
+      "beta": true,
+      "date": "2026-11-08",
+      "notes": [
+        {
+          "text": "Toque na foto do grupo no topo da tela dele para vê-la grande, e troque ou remova a foto ali mesmo.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_5",
+      "beta": true,
+      "date": "2026-11-08",
+      "notes": [
+        {
+          "text": "O Bora Rachar agora fala alemão, italiano e polonês: ele segue o idioma do aparelho, ou você escolhe um em Perfil › Idioma.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Cada categoria agora tem sua própria cor, e Estatísticas desenha cada categoria e cada pessoa na cor dela.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Agora você pode mudar a cor de uma categoria, no formulário da categoria ou no Mapa de categorias.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "O menu de uma conta em Despesas tem uma opção nova, Duplicar: ela abre uma conta nova já preenchida como a original.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Os grupos e as contas não somem mais por um instante quando você volta para o app.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "A busca não fecha mais sozinha quando você ainda não tem nenhum grupo.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Um grupo novo agora começa como Evento, o primeiro tipo da lista.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Sem nenhum grupo, Convidar com link ou QR agora mostra só o botão Novo grupo em vez de botões que não dava para usar.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Um cupom fiscal que demora mais para ser lido não termina mais em erro de conexão.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "As linhas de categoria em Estatísticas ficaram mais limpas: não listam mais o valor de cada subcategoria.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_1",
+      "beta": true,
+      "date": "2026-11-06",
+      "notes": [
+        {
+          "text": "O Bora Rachar é um app novo, refeito do zero: ele substitui o Blitz Split 2.4.0 e roda no Android, iPhone, iPad, Mac e na web.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Rache uma conta por igual, por valores, por porcentagens, por partes ou item por item, com uma ou várias pessoas pagando.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Leia um cupom fiscal e o app preenche os itens e o total para você.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Crie grupos para viagens, casa ou eventos e convide as pessoas com um link ou um QR code.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Veja quem deve a quem em cada grupo e em todos eles, registre pagamentos e simplifique as dívidas para acertar tudo com menos pagamentos.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Tudo funciona offline: o que você faz fica salvo no aparelho e é enviado quando a internet volta.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Criar uma conta é opcional: conecte o Google ou a Apple, ou guarde um código de recuperação, para ter seus grupos de volta em outro aparelho.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Comente em uma conta, anexe fotos, acompanhe o que aconteceu em Atividade e veja para onde foi o dinheiro em Estatísticas.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Cada conta e cada pagamento tem sua própria moeda, e o app está em inglês, português, espanhol e francês.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
     }
   ]
 }

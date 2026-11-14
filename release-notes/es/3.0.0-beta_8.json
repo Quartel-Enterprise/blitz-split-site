@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Ahora un gasto se puede dividir Por ingresos, y los ingresos que escribes se comparten con los miembros del grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada uno de los Últimos gastos de Inicio ahora tiene un menú: Editar, Duplicar, Compartir y Eliminar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ver todo en Inicio ahora abre Todos los gastos: todos los gastos en los que participas, en todos tus grupos, con búsqueda, filtros y orden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La foto de un grupo ahora es más grande en la parte superior de su pantalla y se encoge al desplazarte, y abrir un grupo se anima desde su fila.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Actividad ahora muestra las fotos de las personas, Saldos › Por grupo muestra la foto de cada grupo y el Mayor gasto de Estadísticas muestra su categoría.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil › Cuenta y sincronización ahora muestra el logo de Google o Apple y tu correo completo, que solo tú ves.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Eliminar cuenta ahora explica qué se queda en tus grupos después de eliminar tu cuenta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "El interruptor \"Clave de Pix predeterminada\" ya no parece apagado en tu clave predeterminada con el tema oscuro.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

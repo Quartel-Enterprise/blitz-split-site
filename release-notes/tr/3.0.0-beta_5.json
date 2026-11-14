@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split artık Almanca, İtalyanca ve Lehçe konuşuyor: cihazının dilini izliyor ya da Profil › Dil bölümünden birini seçebilirsin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Artık her kategorinin kendi rengi var ve İstatistikler her kategoriyi ve her kişiyi kendi renginde çiziyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Artık bir kategorinin rengini kategori formundan ya da Kategori haritası ekranından değiştirebilirsin.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Harcamalar sekmesinde bir harcamanın menüsünde yeni bir seçenek var: \"Çoğalt\". Aslı gibi doldurulmuş yeni bir harcama açıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulamaya döndüğünde gruplar ve harcamalar artık bir anlığına kaybolmuyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Henüz hiç grubun yokken arama artık hemen kapanmıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni bir grup artık listedeki ilk tür olan \"Etkinlik\" olarak başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hiç grubun yokken \"Bağlantı ya da QR ile davet et\" artık kullanamadığın düğmeler yerine yalnızca \"Yeni grup\" düğmesini gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Okunması uzun süren bir fiş artık bağlantı hatasıyla sonuçlanmıyor.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "İstatistikler ekranındaki kategori satırları artık daha sade: her alt kategorinin tutarını listelemiyor.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

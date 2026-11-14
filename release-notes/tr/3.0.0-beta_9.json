@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Tutarlar ve etiketler küçük ekranlarda, katlanabilir cihazlarda ve büyük yazı boyutunda artık iki satıra bölünmüyor ya da kesilmiyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Okunması zor olan metinler, düğmeler ve çerçeveler artık açık ve koyu temada daha yüksek kontrasta sahip.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPhone tarayıcısında bir alana dokunmak artık sayfayı yakınlaştırmıyor.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Agora dá para rachar uma conta Pela renda, e as rendas que você digita ficam visíveis para os membros do grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada uma das Últimas despesas do Início agora tem um menu: Editar, Duplicar, Compartilhar e Apagar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ver tudo no Início agora abre Todas as despesas: todas as contas de que você participa, em todos os seus grupos, com busca, filtros e ordenação.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A foto do grupo agora é maior no topo da tela dele e encolhe conforme você rola, e abrir um grupo anima a partir da linha dele.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Atividade agora mostra as fotos das pessoas, Saldos › Por grupo mostra a foto de cada grupo e a Maior despesa de Estatísticas mostra a categoria dela.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil › Conta e sincronização agora mostra o logo do Google ou da Apple e seu e-mail inteiro, que só você vê.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Excluir conta agora explica o que fica nos seus grupos depois que a conta é excluída.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A opção \"Chave Pix padrão\" não parece mais desligada na sua chave padrão no tema escuro.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

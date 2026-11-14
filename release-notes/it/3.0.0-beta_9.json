@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Gli importi e le etichette non vanno più a capo e non vengono più tagliati su schermi piccoli, pieghevoli e con testo grande.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Testi, pulsanti e contorni difficili da leggere ora hanno più contrasto, nei temi chiaro e scuro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toccare un campo nel browser di un iPhone non ingrandisce più la pagina.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

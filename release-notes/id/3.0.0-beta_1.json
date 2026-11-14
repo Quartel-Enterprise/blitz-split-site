@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split adalah aplikasi baru yang dibuat ulang dari nol: menggantikan Blitz Split 2.4.0 dan berjalan di Android, iPhone, iPad, Mac, dan web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bagi tagihan secara rata, berdasarkan nominal, persentase, bagian, atau item per item, dengan satu atau beberapa orang yang membayar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pindai struk dan aplikasi akan membaca item serta totalnya untukmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Buat grup untuk perjalanan, rumah, atau acara dan undang orang lewat tautan atau kode QR.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lihat siapa berutang kepada siapa di tiap grup maupun di semua grup, catat pembayaran, dan sederhanakan utang agar semuanya lunas dengan lebih sedikit pembayaran.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Semuanya berfungsi offline: yang kamu lakukan disimpan di perangkatmu dan dikirim saat kamu kembali online.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Akun bersifat opsional: hubungkan Google atau Apple, atau simpan kode pemulihan, untuk mendapatkan kembali grupmu di perangkat lain.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Komentari tagihan, lampirkan foto, ikuti apa yang terjadi di Aktivitas, dan lihat ke mana uang pergi di Statistik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Setiap tagihan dan setiap pembayaran punya mata uangnya sendiri, dan aplikasi tersedia dalam bahasa Inggris, Portugis, Spanyol, dan Prancis.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

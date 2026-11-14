@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split spricht jetzt Deutsch, Italienisch und Polnisch: Die App folgt der Sprache deines Geräts, oder du wählst eine unter Profil › Sprache.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jede Kategorie hat jetzt ihre eigene Farbe, und die Statistiken zeichnen jede Kategorie und jede Person in ihrer eigenen Farbe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Du kannst die Farbe einer Kategorie jetzt ändern, im Formular der Kategorie oder in der Kategorienzuordnung.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Das Menü einer Ausgabe unter Ausgaben hat eine neue Option, „Duplizieren“: Sie öffnet eine neue Ausgabe, die schon wie das Original ausgefüllt ist.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen und Ausgaben verschwinden nicht mehr für einen Moment, wenn du zur App zurückkehrst.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die Suche schließt sich nicht mehr sofort, wenn du noch keine Gruppe hast.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Eine neue Gruppe beginnt jetzt als Event, dem ersten Typ in der Liste.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ohne Gruppe zeigt „Per Link oder QR einladen“ jetzt nur noch den Button „Neue Gruppe“ statt Buttons, die du nicht nutzen konntest.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ein Beleg, dessen Auslesen länger dauert, endet nicht mehr mit einem Verbindungsfehler.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Die Kategoriezeilen in den Statistiken sind aufgeräumter: Sie listen nicht mehr den Betrag jeder Unterkategorie auf.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Une dépense peut désormais être partagée « Selon le revenu », et les revenus que vous saisissez sont visibles par les membres du groupe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chacune des Dernières dépenses de l’Accueil a désormais un menu : Modifie, Duplique, Partage et Supprime.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "« Vois tout » sur l’Accueil ouvre désormais Toutes les dépenses : toutes les dépenses auxquelles vous participez, dans tous vos groupes, avec recherche, filtres et tri.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La photo d’un groupe est désormais plus grande en haut de son écran et rétrécit quand vous faites défiler, et l’ouverture d’un groupe s’anime depuis sa ligne.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Activité affiche désormais les photos des personnes, Soldes › Par groupe la photo de chaque groupe, et la Plus grosse dépense de Statistiques sa catégorie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Compte et synchronisation affiche désormais le logo Google ou Apple et votre adresse e-mail complète, que vous seul voyez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "« Supprime le compte » explique désormais ce qui reste dans vos groupes une fois votre compte supprimé.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’interrupteur « Clé Pix par défaut » ne paraît plus désactivé sur votre clé par défaut avec le thème sombre.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

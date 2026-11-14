@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Kwoty i etykiety nie łamią się już na dwie linie ani nie są ucinane na małych ekranach, składanych urządzeniach i przy dużym tekście.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Teksty, przyciski i obrysy, które trudno było odczytać, mają teraz większy kontrast, w jasnym i ciemnym motywie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dotknięcie pola w przeglądarce na iPhonie nie powiększa już strony.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

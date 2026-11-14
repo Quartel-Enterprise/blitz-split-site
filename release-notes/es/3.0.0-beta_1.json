@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split es una app nueva, rehecha desde cero: reemplaza a Blitz Split 2.4.0 y funciona en Android, iPhone, iPad, Mac y la web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Divide un gasto en partes iguales, por montos, por porcentajes, por partes o artículo por artículo, con una o varias personas pagando.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Escanea un recibo y la app lee sus artículos y el total por ti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Crea grupos para viajes, casa o eventos e invita a la gente con un enlace o un código QR.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mira quién le debe a quién en cada grupo y en todos ellos, registra pagos y simplifica las deudas para saldar todo con menos pagos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Todo funciona sin conexión: lo que haces se guarda en tu dispositivo y se envía cuando vuelves a tener internet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La cuenta es opcional: conecta Google o Apple, o guarda un código de recuperación, para recuperar tus grupos en otro dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Comenta un gasto, adjunta fotos, sigue lo que pasó en Actividad y mira a dónde se fue el dinero en Estadísticas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada gasto y cada pago tiene su propia moneda, y la app está en inglés, portugués, español y francés.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

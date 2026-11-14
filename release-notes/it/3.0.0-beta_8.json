@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Ora una spesa si può dividere Per reddito, e i redditi che inserisci sono visibili ai membri del gruppo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ognuna delle Ultime spese della Home ora ha un menu: Modifica, Duplica, Condividi ed Elimina.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vedi tutte nella Home ora apre Tutte le spese: tutte le spese a cui partecipi, in tutti i tuoi gruppi, con ricerca, filtri e ordinamento.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La foto di un gruppo ora è più grande in cima alla sua schermata e si rimpicciolisce mentre scorri, e l’apertura di un gruppo si anima dalla sua riga.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Attività ora mostra le foto delle persone, Saldi › Per gruppo la foto di ogni gruppo e la Spesa più grande di Statistiche la sua categoria.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilo › Account e sincronizzazione ora mostra il logo di Google o Apple e la tua email completa, che vedi solo tu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Elimina account ora spiega cosa resta nei tuoi gruppi dopo l’eliminazione dell’account.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’interruttore \"Chiave Pix predefinita\" non sembra più spento sulla tua chiave predefinita con il tema scuro.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

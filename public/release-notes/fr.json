@@ -38,6 +38,339 @@
           ]
         }
       ]
+    },
+    {
+      "version": "3.0.0-beta_9",
+      "beta": true,
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "text": "Les montants et les libellés ne se coupent plus sur deux lignes et ne sont plus tronqués sur les petits écrans, les appareils pliables et avec un grand texte.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Les textes, boutons et contours difficiles à lire ont désormais plus de contraste, dans les thèmes clair et sombre.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Toucher un champ dans le navigateur d’un iPhone ne zoome plus sur la page.",
+          "platforms": [
+            "web"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_8",
+      "beta": true,
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "text": "Une dépense peut désormais être partagée « Selon le revenu », et les revenus que vous saisissez sont visibles par les membres du groupe.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Chacune des Dernières dépenses de l’Accueil a désormais un menu : Modifie, Duplique, Partage et Supprime.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "« Vois tout » sur l’Accueil ouvre désormais Toutes les dépenses : toutes les dépenses auxquelles vous participez, dans tous vos groupes, avec recherche, filtres et tri.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "La photo d’un groupe est désormais plus grande en haut de son écran et rétrécit quand vous faites défiler, et l’ouverture d’un groupe s’anime depuis sa ligne.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "Activité affiche désormais les photos des personnes, Soldes › Par groupe la photo de chaque groupe, et la Plus grosse dépense de Statistiques sa catégorie.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profil › Compte et synchronisation affiche désormais le logo Google ou Apple et votre adresse e-mail complète, que vous seul voyez.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "« Supprime le compte » explique désormais ce qui reste dans vos groupes une fois votre compte supprimé.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "L’interrupteur « Clé Pix par défaut » ne paraît plus désactivé sur votre clé par défaut avec le thème sombre.",
+          "platforms": [
+            "android"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_7",
+      "beta": true,
+      "date": "2026-11-12",
+      "notes": [
+        {
+          "text": "Blitz Split parle désormais néerlandais, japonais, turc et indonésien, et la liste des langues nomme chaque langue dans sa propre langue.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Les groupes et les dépenses peuvent désormais utiliser le zloty polonais, la livre turque et la roupie indonésienne.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profil propose un nouveau bouton, « Partager le profil » : la personne qui ouvre votre lien voit votre nom et votre photo et peut vous inviter dans un groupe.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Le lien d’invitation d’un nouveau groupe est prêt tout de suite, même hors ligne, et Membres propose un nouveau bouton pour le copier.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Fermer un formulaire contenant des modifications non enregistrées demande désormais d’abord « Abandonner les modifications ? ».",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "La Politique de confidentialité et les Conditions d’utilisation s’ouvrent désormais dans l’application plutôt que dans le navigateur.",
+          "platforms": [
+            "android",
+            "ios",
+            "mac"
+          ]
+        },
+        {
+          "text": "Sur un téléphone, les barres du haut et du bas s’effacent désormais quand vous faites défiler vers le bas et reviennent quand vous remontez.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "Dans Partager une dépense, choisir une date ne bascule plus directement sur l’horloge : l’heure a son propre bouton.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "Touchez le groupe en haut de Partager une dépense pour l’ouvrir ; au retour, la dépense conserve tout ce que vous avez saisi.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Les Dernières dépenses de l’Accueil affichent désormais le groupe de chaque dépense et les personnes qui ont payé sous forme de photos.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Pix n’apparaît désormais que pour les personnes susceptibles de l’utiliser, par exemple celles qui utilisent l’application en portugais, ont une clé Pix ou font partie d’un groupe en reais.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "« Synchronisation… » ne s’affiche désormais que la première fois que votre compte se charge sur un appareil, et non à chaque synchronisation.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profil ne propose plus de déconnecter Google ou Apple de votre compte : déconnectez-vous ou supprimez le compte.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "« Modifier le profil » s’ouvre désormais dans une feuille au-dessus de Profil plutôt que dans un écran séparé.",
+          "platforms": [
+            "android",
+            "ios"
+          ]
+        },
+        {
+          "text": "La bande vide entre le formulaire et le clavier dans Partager une dépense a disparu.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "Les Groupes en commun d’un contact affichent désormais la photo de chaque groupe.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_6",
+      "beta": true,
+      "date": "2026-11-08",
+      "notes": [
+        {
+          "text": "Touchez la photo d’un groupe en haut de son écran pour la voir en grand, et changez-la ou retirez-la directement.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_5",
+      "beta": true,
+      "date": "2026-11-08",
+      "notes": [
+        {
+          "text": "Blitz Split parle désormais allemand, italien et polonais : il suit la langue de votre appareil, ou vous pouvez en choisir une dans Profil › Langue.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Chaque catégorie a désormais sa propre couleur, et Statistiques dessine chaque catégorie et chaque personne dans la sienne.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Vous pouvez désormais changer la couleur d’une catégorie, dans le formulaire de la catégorie ou dans la Carte des catégories.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "Le menu d’une dépense dans Dépenses propose une nouvelle option, « Duplique » : elle ouvre une nouvelle dépense déjà remplie comme l’originale.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Les groupes et les dépenses ne disparaissent plus un instant quand vous revenez dans l’application.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "La recherche ne se referme plus aussitôt quand vous n’avez pas encore de groupe.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Un nouveau groupe commence désormais comme Événement, le premier type de la liste.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Sans aucun groupe, « Invite avec un lien ou un QR » n’affiche plus que le bouton Nouveau groupe, au lieu de boutons inutilisables.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Un reçu plus long à lire ne se termine plus par une erreur de connexion.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "Les lignes de catégorie de Statistiques sont plus épurées : elles n’indiquent plus le montant de chaque sous-catégorie.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_1",
+      "beta": true,
+      "date": "2026-11-06",
+      "notes": [
+        {
+          "text": "Blitz Split est une nouvelle application, entièrement refaite : elle remplace Blitz Split 2.4.0 et fonctionne sur Android, iPhone, iPad, Mac et le web.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Partagez une dépense à parts égales, par montants, par pourcentages, par parts ou article par article, avec une ou plusieurs personnes qui paient.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Scannez un reçu et l’application lit ses articles et son total pour vous.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Créez des groupes pour les voyages, la maison ou les événements et invitez des personnes avec un lien ou un QR code.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Voyez qui doit combien à qui dans chaque groupe et dans l’ensemble, enregistrez des paiements et simplifiez les dettes pour tout régler en moins de paiements.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Tout fonctionne hors ligne : ce que vous faites est enregistré sur votre appareil et envoyé dès que vous êtes de nouveau en ligne.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Le compte est facultatif : connectez Google ou Apple, ou gardez un code de récupération, pour retrouver vos groupes sur un autre appareil.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Commentez une dépense, joignez des photos, suivez ce qui s’est passé dans Activité et voyez où est passé l’argent dans Statistiques.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Chaque dépense et chaque paiement a sa propre devise, et l’application existe en anglais, portugais, espagnol et français.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
     }
   ]
 }

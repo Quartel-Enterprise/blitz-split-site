@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Eine Ausgabe lässt sich jetzt „Nach Einkommen“ aufteilen, und die Einkommen, die du eingibst, sehen auch die Mitglieder der Gruppe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jede Ausgabe unter „Neueste Ausgaben“ auf Start hat jetzt ein Menü: Bearbeiten, Duplizieren, Teilen und Löschen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Alle ansehen“ auf Start öffnet jetzt „Alle Ausgaben“: alle Ausgaben, an denen du beteiligt bist, über alle deine Gruppen, mit Suche, Filtern und Sortierung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Das Foto einer Gruppe ist oben auf ihrem Bildschirm jetzt größer und schrumpft beim Scrollen, und das Öffnen einer Gruppe wird von ihrer Zeile aus animiert.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktivität zeigt jetzt die Fotos der Personen, Salden › Nach Gruppe das Foto jeder Gruppe und „Größte Ausgabe“ in den Statistiken ihre Kategorie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Konto und Synchronisierung zeigt jetzt das Logo von Google oder Apple und deine ganze E-Mail-Adresse, die nur du siehst.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Konto löschen“ erklärt jetzt, was in deinen Gruppen bleibt, nachdem dein Konto gelöscht ist.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Der Schalter „Standard-Pix-Schlüssel“ sieht bei deinem Standardschlüssel im dunklen Design nicht mehr ausgeschaltet aus.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

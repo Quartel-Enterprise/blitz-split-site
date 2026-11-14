@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split sekarang tersedia dalam bahasa Jerman, Italia, dan Polandia: mengikuti bahasa perangkatmu, atau kamu bisa memilihnya di Profil › Bahasa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Setiap kategori sekarang punya warnanya sendiri, dan Statistik menggambar tiap kategori dan tiap orang dengan warnanya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sekarang kamu bisa mengubah warna kategori, di formulir kategori atau di Peta kategori.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Menu tagihan di Pengeluaran punya opsi baru, Duplikat: membuka tagihan baru yang sudah terisi seperti aslinya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup dan tagihan tidak lagi menghilang sesaat ketika kamu kembali ke aplikasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pencarian tidak lagi langsung tertutup ketika kamu belum punya grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup baru sekarang dimulai sebagai Acara, jenis pertama di daftar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saat belum ada grup, Undang lewat tautan atau QR sekarang hanya menampilkan tombol Grup baru, bukan tombol yang tidak bisa kamu pakai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Struk yang butuh waktu lebih lama untuk dibaca tidak lagi berakhir dengan kesalahan koneksi.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Baris kategori di Statistik kini lebih rapi: tidak lagi mencantumkan nominal tiap subkategori.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

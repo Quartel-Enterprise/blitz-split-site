@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Bir harcama artık \"Gelire göre\" bölünebiliyor ve yazdığın gelirler grup üyeleriyle paylaşılıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ana Sayfa'daki \"Son harcamalar\" bölümünde her harcamanın artık bir menüsü var: Düzenle, Çoğalt, Paylaş ve Sil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ana Sayfa'daki \"Tümünü gör\" artık \"Tüm harcamalar\" ekranını açıyor: tüm gruplarında yer aldığın her harcama; arama, filtreler ve sıralamayla.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bir grubun fotoğrafı artık ekranının üstünde daha büyük ve kaydırdıkça küçülüyor; grup da açılırken satırından animasyonla geliyor.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Etkinlik artık kişilerin fotoğraflarını, Bakiyeler › Gruba göre her grubun fotoğrafını, İstatistikler'deki \"En büyük harcama\" da kategorisini gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Hesap ve eşitleme artık Google ya da Apple logosunu ve yalnızca senin gördüğün e-postanın tamamını gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Hesabı sil\" artık hesabın silindikten sonra gruplarında nelerin kalacağını açıklıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Varsayılan Pix anahtarı\" seçeneği, koyu temada varsayılan anahtarında artık kapalı gibi görünmüyor.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "O Bora Rachar agora fala alemão, italiano e polonês: ele segue o idioma do aparelho, ou você escolhe um em Perfil › Idioma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada categoria agora tem sua própria cor, e Estatísticas desenha cada categoria e cada pessoa na cor dela.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Agora você pode mudar a cor de uma categoria, no formulário da categoria ou no Mapa de categorias.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "O menu de uma conta em Despesas tem uma opção nova, Duplicar: ela abre uma conta nova já preenchida como a original.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos e as contas não somem mais por um instante quando você volta para o app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A busca não fecha mais sozinha quando você ainda não tem nenhum grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Um grupo novo agora começa como Evento, o primeiro tipo da lista.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sem nenhum grupo, Convidar com link ou QR agora mostra só o botão Novo grupo em vez de botões que não dava para usar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Um cupom fiscal que demora mais para ser lido não termina mais em erro de conexão.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "As linhas de categoria em Estatísticas ficaram mais limpas: não listam mais o valor de cada subcategoria.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

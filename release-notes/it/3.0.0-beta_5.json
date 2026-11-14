@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split ora parla tedesco, italiano e polacco: segue la lingua del tuo dispositivo, oppure puoi sceglierne una in Profilo › Lingua.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ogni categoria ora ha il proprio colore, e Statistiche disegna ogni categoria e ogni persona con il suo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ora puoi cambiare il colore di una categoria, nel modulo della categoria o nella Mappa delle categorie.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Il menu di una spesa in Spese ha una nuova opzione, Duplica: apre una nuova spesa già compilata come l’originale.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I gruppi e le spese non spariscono più per un attimo quando torni nell’app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La ricerca non si chiude più subito quando non hai ancora nessun gruppo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Un nuovo gruppo ora parte come Evento, il primo tipo dell’elenco.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Senza alcun gruppo, Invita con link o QR ora mostra solo il pulsante Nuovo gruppo invece di pulsanti che non potevi usare.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uno scontrino che richiede più tempo per essere letto non finisce più con un errore di connessione.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Le righe delle categorie in Statistiche sono più pulite: non elencano più l’importo di ogni sottocategoria.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

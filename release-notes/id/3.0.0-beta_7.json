@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split sekarang tersedia dalam bahasa Belanda, Jepang, Turki, dan Indonesia, dan daftar bahasa menampilkan tiap bahasa dalam bahasanya sendiri.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup dan tagihan sekarang bisa memakai zloty Polandia, lira Turki, dan rupiah Indonesia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil punya tombol baru, Bagikan profil: siapa pun yang membuka tautanmu melihat nama dan fotomu dan bisa mengundangmu ke grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tautan undangan grup baru langsung siap, bahkan saat offline, dan Anggota punya tombol baru untuk menyalinnya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Menutup formulir yang berisi hal yang belum kamu simpan sekarang bertanya dulu \"Buang perubahan?\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kebijakan Privasi dan Ketentuan Layanan sekarang terbuka di dalam aplikasi, bukan di browser.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Di ponsel, bilah atas dan bawah sekarang menyingkir saat kamu menggulir ke bawah dan kembali saat kamu menggulir ke atas.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Di Bagi tagihan, memilih tanggal tidak lagi langsung melompat ke jam: waktu punya tombolnya sendiri.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ketuk grup di bagian atas Bagi tagihan untuk membukanya; saat kembali, tagihan tetap berisi semua yang kamu ketik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pengeluaran terbaru di Beranda sekarang menampilkan grup tiap tagihan dan siapa yang membayar sebagai foto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix sekarang hanya muncul untuk orang yang kemungkinan memakainya, misalnya yang memakai aplikasi dalam bahasa Portugis, punya kunci Pix, atau berada di grup dalam real.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Menyinkronkan…\" sekarang hanya muncul saat akunmu pertama kali dimuat di sebuah perangkat, bukan di setiap sinkronisasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil tidak lagi menawarkan pemutusan Google atau Apple dari akunmu: keluar atau hapus akun saja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Edit profil sekarang terbuka sebagai lembar di atas Profil, bukan layar terpisah.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Pita kosong di antara formulir dan keyboard di Bagi tagihan sudah hilang.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grup bersama milik sebuah kontak sekarang menampilkan foto tiap grup.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

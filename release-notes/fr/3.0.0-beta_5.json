@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split parle désormais allemand, italien et polonais : il suit la langue de votre appareil, ou vous pouvez en choisir une dans Profil › Langue.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chaque catégorie a désormais sa propre couleur, et Statistiques dessine chaque catégorie et chaque personne dans la sienne.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vous pouvez désormais changer la couleur d’une catégorie, dans le formulaire de la catégorie ou dans la Carte des catégories.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Le menu d’une dépense dans Dépenses propose une nouvelle option, « Duplique » : elle ouvre une nouvelle dépense déjà remplie comme l’originale.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes et les dépenses ne disparaissent plus un instant quand vous revenez dans l’application.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La recherche ne se referme plus aussitôt quand vous n’avez pas encore de groupe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Un nouveau groupe commence désormais comme Événement, le premier type de la liste.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sans aucun groupe, « Invite avec un lien ou un QR » n’affiche plus que le bouton Nouveau groupe, au lieu de boutons inutilisables.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Un reçu plus long à lire ne se termine plus par une erreur de connexion.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Les lignes de catégorie de Statistiques sont plus épurées : elles n’indiquent plus le montant de chaque sous-catégorie.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

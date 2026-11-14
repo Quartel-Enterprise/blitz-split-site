@@ -38,6 +38,339 @@
           ]
         }
       ]
+    },
+    {
+      "version": "3.0.0-beta_9",
+      "beta": true,
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "text": "Kwoty i etykiety nie łamią się już na dwie linie ani nie są ucinane na małych ekranach, składanych urządzeniach i przy dużym tekście.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Teksty, przyciski i obrysy, które trudno było odczytać, mają teraz większy kontrast, w jasnym i ciemnym motywie.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Dotknięcie pola w przeglądarce na iPhonie nie powiększa już strony.",
+          "platforms": [
+            "web"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_8",
+      "beta": true,
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "text": "Wydatek można teraz podzielić „Według dochodów”, a wpisane przez Ciebie dochody widzą członkowie grupy.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Każdy z „Ostatnich wydatków” na ekranie Start ma teraz menu: Edytuj, Duplikuj, Udostępnij i Usuń.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "„Zobacz wszystkie” na ekranie Start otwiera teraz „Wszystkie wydatki”: wszystkie wydatki, w których uczestniczysz, ze wszystkich Twoich grup, z wyszukiwaniem, filtrami i sortowaniem.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Zdjęcie grupy jest teraz większe u góry jej ekranu i zmniejsza się podczas przewijania, a otwieranie grupy jest animowane od jej wiersza.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "Aktywność pokazuje teraz zdjęcia osób, Salda › Według grup zdjęcie każdej grupy, a „Największy wydatek” w Statystykach swoją kategorię.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profil › Konto i synchronizacja pokazuje teraz logo Google lub Apple i Twój cały adres e-mail, który widzisz tylko Ty.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "„Usuń konto” wyjaśnia teraz, co zostaje w Twoich grupach po usunięciu konta.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Przełącznik „Domyślny klucz Pix” nie wygląda już na wyłączony przy Twoim domyślnym kluczu w ciemnym motywie.",
+          "platforms": [
+            "android"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_7",
+      "beta": true,
+      "date": "2026-11-12",
+      "notes": [
+        {
+          "text": "Blitz Split mówi teraz po niderlandzku, japońsku, turecku i indonezyjsku, a lista języków podaje każdy język w jego własnym języku.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Grupy i wydatki mogą teraz używać polskiego złotego, liry tureckiej i rupii indonezyjskiej.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profil ma nowy przycisk „Udostępnij profil”: osoba, która otworzy Twój link, zobaczy Twoje imię i zdjęcie i może zaprosić Cię do grupy.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Link z zaproszeniem do nowej grupy jest gotowy od razu, także offline, a Członkowie mają nowy przycisk do jego skopiowania.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Zamykanie formularza z niezapisanymi zmianami najpierw pyta teraz „Odrzucić zmiany?”.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Polityka prywatności i Warunki korzystania otwierają się teraz w aplikacji zamiast w przeglądarce.",
+          "platforms": [
+            "android",
+            "ios",
+            "mac"
+          ]
+        },
+        {
+          "text": "Na telefonie górny i dolny pasek chowają się teraz przy przewijaniu w dół i wracają przy przewijaniu w górę.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "W „Podziel wydatek” wybór daty nie przeskakuje już od razu do zegara: godzina ma własny przycisk.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "Dotknij grupy u góry ekranu „Podziel wydatek”, aby ją otworzyć; po powrocie wydatek ma wszystko, co zostało wpisane.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "„Ostatnie wydatki” na ekranie Start pokazują teraz grupę każdego wydatku i osoby, które zapłaciły, jako zdjęcia.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Pix pojawia się teraz tylko u osób, które prawdopodobnie z niego korzystają, na przykład gdy używasz aplikacji po portugalsku, masz klucz Pix albo jesteś w grupie rozliczanej w realach.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "„Synchronizacja…” pojawia się teraz tylko wtedy, gdy Twoje konto ładuje się na urządzeniu po raz pierwszy, a nie przy każdej synchronizacji.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profil nie proponuje już odłączenia Google ani Apple od Twojego konta: zamiast tego wyloguj się albo usuń konto.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "„Edytuj profil” otwiera się teraz jako arkusz nad Profilem zamiast osobnego ekranu.",
+          "platforms": [
+            "android",
+            "ios"
+          ]
+        },
+        {
+          "text": "Pusty pas między formularzem a klawiaturą w „Podziel wydatek” zniknął.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "„Wspólne grupy” kontaktu pokazują teraz zdjęcie każdej grupy.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_6",
+      "beta": true,
+      "date": "2026-11-08",
+      "notes": [
+        {
+          "text": "Dotknij zdjęcia grupy u góry jej ekranu, aby zobaczyć je w dużym rozmiarze i od razu je zmienić lub usunąć.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_5",
+      "beta": true,
+      "date": "2026-11-08",
+      "notes": [
+        {
+          "text": "Blitz Split mówi teraz po niemiecku, włosku i polsku: używa języka Twojego urządzenia albo tego, który wybierzesz w Profil › Język.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Każda kategoria ma teraz własny kolor, a Statystyki rysują każdą kategorię i każdą osobę w jej kolorze.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Możesz teraz zmienić kolor kategorii, w formularzu kategorii albo w Mapie kategorii.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "Menu wydatku w Wydatkach ma nową opcję „Duplikuj”: otwiera nowy wydatek wypełniony tak jak oryginał.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Grupy i wydatki nie znikają już na chwilę, gdy wracasz do aplikacji.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Wyszukiwanie nie zamyka się już od razu, gdy nie masz jeszcze żadnej grupy.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Nowa grupa zaczyna teraz jako Wydarzenie, pierwszy typ na liście.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Gdy nie masz żadnej grupy, „Zaproś linkiem lub kodem QR” pokazuje teraz tylko przycisk „Nowa grupa” zamiast przycisków, których nie dało się użyć.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Paragon, którego odczyt trwa dłużej, nie kończy się już błędem połączenia.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "Wiersze kategorii w Statystykach są czytelniejsze: nie wymieniają już kwoty każdej podkategorii.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_1",
+      "beta": true,
+      "date": "2026-11-06",
+      "notes": [
+        {
+          "text": "Blitz Split to nowa aplikacja, napisana od zera: zastępuje Blitz Split 2.4.0 i działa na Androidzie, iPhonie, iPadzie, Macu i w przeglądarce.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Podziel wydatek po równo, według kwot, procentów, udziałów albo pozycja po pozycji, także gdy płaci kilka osób.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Zeskanuj paragon, a aplikacja odczyta za Ciebie pozycje i sumę.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Twórz grupy na wyjazdy, dom lub wydarzenia i zapraszaj ludzi linkiem albo kodem QR.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Sprawdzaj, kto komu jest winien, w każdej grupie i we wszystkich razem, zapisuj płatności i upraszczaj długi, żeby rozliczyć wszystko mniejszą liczbą płatności.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Wszystko działa offline: to, co robisz, zapisuje się na urządzeniu i wysyła, gdy wrócisz do sieci.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Konto jest opcjonalne: połącz Google lub Apple albo zachowaj kod odzyskiwania, aby odzyskać swoje grupy na innym urządzeniu.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Komentuj wydatki, dodawaj zdjęcia, śledź w Aktywności, co się wydarzyło, i sprawdzaj w Statystykach, na co poszły pieniądze.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Każdy wydatek i każda płatność ma własną walutę, a aplikacja jest dostępna po angielsku, portugalsku, hiszpańsku i francusku.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
     }
   ]
 }

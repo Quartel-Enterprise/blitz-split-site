@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split parle désormais néerlandais, japonais, turc et indonésien, et la liste des langues nomme chaque langue dans sa propre langue.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes et les dépenses peuvent désormais utiliser le zloty polonais, la livre turque et la roupie indonésienne.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil propose un nouveau bouton, « Partager le profil » : la personne qui ouvre votre lien voit votre nom et votre photo et peut vous inviter dans un groupe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Le lien d’invitation d’un nouveau groupe est prêt tout de suite, même hors ligne, et Membres propose un nouveau bouton pour le copier.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fermer un formulaire contenant des modifications non enregistrées demande désormais d’abord « Abandonner les modifications ? ».",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La Politique de confidentialité et les Conditions d’utilisation s’ouvrent désormais dans l’application plutôt que dans le navigateur.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Sur un téléphone, les barres du haut et du bas s’effacent désormais quand vous faites défiler vers le bas et reviennent quand vous remontez.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Dans Partager une dépense, choisir une date ne bascule plus directement sur l’horloge : l’heure a son propre bouton.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Touchez le groupe en haut de Partager une dépense pour l’ouvrir ; au retour, la dépense conserve tout ce que vous avez saisi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les Dernières dépenses de l’Accueil affichent désormais le groupe de chaque dépense et les personnes qui ont payé sous forme de photos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix n’apparaît désormais que pour les personnes susceptibles de l’utiliser, par exemple celles qui utilisent l’application en portugais, ont une clé Pix ou font partie d’un groupe en reais.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "« Synchronisation… » ne s’affiche désormais que la première fois que votre compte se charge sur un appareil, et non à chaque synchronisation.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil ne propose plus de déconnecter Google ou Apple de votre compte : déconnectez-vous ou supprimez le compte.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "« Modifier le profil » s’ouvre désormais dans une feuille au-dessus de Profil plutôt que dans un écran séparé.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "La bande vide entre le formulaire et le clavier dans Partager une dépense a disparu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Les Groupes en commun d’un contact affichent désormais la photo de chaque groupe.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

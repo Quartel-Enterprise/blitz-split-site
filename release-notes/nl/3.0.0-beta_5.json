@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split spreekt nu Duits, Italiaans en Pools: de app volgt de taal van je apparaat, of je kiest er een in Profiel › Taal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Elke categorie heeft nu een eigen kleur, en Statistieken tekent elke categorie en elke persoon in die kleur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Je kunt nu de kleur van een categorie wijzigen, in het formulier van de categorie of in de Categoriekaart.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Het menu van een uitgave in Uitgaven heeft een nieuwe optie, Dupliceren: die opent een nieuwe uitgave die al is ingevuld zoals het origineel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen en uitgaven verdwijnen niet meer even wanneer je terugkomt in de app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zoeken sluit niet meer meteen wanneer je nog geen groep hebt.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Een nieuwe groep begint nu als Evenement, het eerste type in de lijst.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zonder groep toont Uitnodigen met link of QR nu alleen de knop Nieuwe groep in plaats van knoppen die je niet kon gebruiken.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Een bonnetje dat langer nodig heeft om gelezen te worden, eindigt niet meer in een verbindingsfout.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "De categorierijen in Statistieken zijn rustiger: ze tonen niet meer het bedrag van elke subcategorie.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
