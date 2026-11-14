@@ -58,15 +58,17 @@ const STATIC_PAGES = {
 };
 const STATIC_IMAGE = /^\/og\/(comment|download|privacy|terms)\.png$/;
 // Why: the language a link asks its preview in, the app's own when it shared the link; the pages read the same
-// parameter (boot.js), so the page that opens speaks it too.
-const LANGUAGE = /^[A-Za-z]{2,3}$/;
+// parameter (boot.js), so the page that opens speaks it too. Lowercase only, as boot.js matches it: a "PT" would
+// otherwise preview in Portuguese and open a page that doesn't.
+const LANGUAGE = /^[a-z]{2,3}$/;
 
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    const page = linkTargetOf(PAGE_PATHS, url);
+    const page = linkTargetOf(PAGE_PATHS, url)
+      ?? staticTargetOf(Object.keys(STATIC_PAGES).find((name) => STATIC_PAGES[name].test(url.pathname)), url);
     if (page) return previewPage(request, url, env, ctx, page);
-    const image = linkTargetOf(IMAGE_PATHS, url);
+    const image = linkTargetOf(IMAGE_PATHS, url) ?? staticTargetOf(STATIC_IMAGE.exec(url.pathname)?.[1], url);
     if (image) return previewImage(request, url, env, ctx, image);
     if (url.pathname.startsWith("/.well-known/") || url.pathname.startsWith("/legal/")) return fileOrNotFound(request, env);
     return env.ASSETS.fetch(request);
@@ -88,21 +90,18 @@ function linkTargetOf(paths, url) {
     const match = path.exec(url.pathname);
     if (match) return targetOf(link, match, url);
   }
-  return staticTargetOf(paths, url);
+  return null;
 }
 
-// A static page's target, or its card's image's: no code, only which card and in which language.
-function staticTargetOf(paths, url) {
-  const card = paths === IMAGE_PATHS
-    ? STATIC_IMAGE.exec(url.pathname)?.[1]
-    : Object.keys(STATIC_PAGES).find((name) => STATIC_PAGES[name].test(url.pathname));
+// A static page's target, or its card's image's: no code, only which card and in which language; null for no card.
+function staticTargetOf(card, url) {
   if (!card) return null;
   return { link: "static", card, code: null, memberCode: null, inviterCode: null, language: languageOf(url) };
 }
 
 function languageOf(url) {
   const language = url.searchParams.get("lang");
-  return language && LANGUAGE.test(language) ? language.toLowerCase() : null;
+  return language && LANGUAGE.test(language) ? language : null;
 }
 
 function targetOf(link, match, url) {
@@ -112,7 +111,9 @@ function targetOf(link, match, url) {
     link,
     card: null,
     code,
-    language: languageOf(url),
+    // Why: an invite and a bill speak their currency's language, so only a profile reads ?lang=; for the others it
+    // would only split their cached words and give their card a new address.
+    language: link === "profile" ? languageOf(url) : null,
     memberCode: memberCode ?? null,
     // Why: only a personal link says who shared it, as the apps read it.
     inviterCode: memberCode && from && MEMBER_CODE.test(from) ? from : null,
@@ -169,8 +170,8 @@ function withTags(landing, title, description, tags) {
 
 function imageUrlOf(url, target, words) {
   if (words.kind === "invalid" || !words.imageVersion) return new URL(BRAND_IMAGE, url).href;
-  const path = target.memberCode ? `${target.code}/${target.memberCode}` : target.code;
-  const image = new URL(target.card ? `/og/${target.card}.png` : `/og/${PATH_LETTERS[target.link]}/${path}.png`, url);
+  const path = target.card ?? `${PATH_LETTERS[target.link]}/${target.code}${target.memberCode ? `/${target.memberCode}` : ""}`;
+  const image = new URL(`/og/${path}.png`, url);
   if (target.inviterCode) image.searchParams.set("from", target.inviterCode);
   if (target.language) image.searchParams.set("lang", target.language);
   // Why: WhatsApp keeps an image by its address; the version changes with whatever the card shows.
