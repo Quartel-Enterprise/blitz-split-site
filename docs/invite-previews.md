@@ -22,18 +22,17 @@ An invite and a bill speak the language of their currency. A profile, which has 
 download paths speak the language their link asks for, `?lang=`: the apps add their own language to those links when
 they share them, and the pages read the same parameter (`boot.js`), so the page that opens speaks it too. Every one
 of the apps' eleven languages is written (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
-Japanese, Turkish and Indonesian); any other language, or none, reads English.
+Turkish, Indonesian and Japanese); any other language, or none, reads English.
 
 What a preview says and its card come from the API's
 [`invite-preview`](https://github.com/Quartel-Enterprise/blitz-split-api/tree/main/supabase/functions/invite-preview)
 edge function, `INVITE_PREVIEW_URL` in `wrangler.jsonc`, asked with `link` (`invite`, `bill` or `profile`) and the
 link's code: it reads `get_invite`, `get_shared_bill` or `get_profile_by_share_code`, picks the language by the group's or the bill's
-currency (BRL Portuguese, the Spanish speaking countries' Spanish, JPY Japanese, TRY Turkish, IDR Indonesian, PLN
-Polish, any other English) and draws the 1200 × 630 card
-with satori. Drawing takes 40 to 75 ms of CPU, past the 10 ms the Workers Free plan allows a request, so the
-function draws and this Worker only asks it and keeps each answer in Cloudflare's cache: the words for five minutes,
-an image for a day. The image's address carries the function's `imageVersion` (`?v=`), which changes with whatever
-the card shows, since WhatsApp keeps an image by its address. Should the function fail, or answer a kind the link can't have (one
+currency (BRL Portuguese, the Spanish speaking countries' Spanish, PLN Polish, TRY Turkish, IDR Indonesian, JPY
+Japanese, any other English) and draws the 1200 × 630 card with satori. Drawing takes 40 to 75 ms of CPU, past the
+10 ms the Workers Free plan allows a request, so the function draws and this Worker only asks it and keeps each
+answer in Cloudflare's cache: the words for five minutes, an image for a day. The image's address carries the
+function's `imageVersion` (`?v=`), which changes with whatever the card shows, since WhatsApp keeps an image by its address. Should the function fail, or answer a kind the link can't have (one
 deployed before it knew `link` reads a bill's code as an invite's), the page keeps the landing's
 own meta tags and an image answers the brand's card. The function loads the group's and the people's photos itself
 before drawing (Storage, or a Google account's picture), and a photo that doesn't load shows the initials; the
