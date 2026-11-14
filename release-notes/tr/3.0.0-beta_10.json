@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Bir harcamanın bağlantısı artık tarayıcı yerine uygulamada, fotoğrafları ve yorumlarıyla açılıyor.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Artık paylaşılmayan veya yalnızca harcamadaki kişilerin açabildiği bir harcama bağlantısı, hata göstermek yerine bunu söylüyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bir profilin bağlantısı artık giriş yapmamış olsan da açılıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Gizlilik ve hakkında bölümünde yeni bir anahtar var: \"Kullanım verilerini paylaş\". Uygulamayı nasıl kullandığını göndermeyi durdurmak için kapat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiline, bir yoruma ve uygulamayı indirmeye giden paylaştığın bağlantılar artık önizlemelerini senin dilinde gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

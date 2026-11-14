@@ -1,0 +1,43 @@
+{
+  "releases": [
+    {
+      "version": "3.0.0-beta_10",
+      "beta": true,
+      "date": "2026-11-14",
+      "notes": [
+        {
+          "text": "A bill's link now opens in the app instead of the browser, with its photos and comments.",
+          "platforms": [
+            "android",
+            "ios",
+            "mac"
+          ]
+        },
+        {
+          "text": "A bill's link that is no longer shared, or that only the people in the bill can open, now says so instead of showing an error.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "A profile's link now opens even when you haven't signed in.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profile › Privacy and about has a new switch, \"Share usage data\": turn it off to stop sending how you use the app.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "The links you share to your profile, to a comment and to get the app now show their preview in your language.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    }
+  ]
+}

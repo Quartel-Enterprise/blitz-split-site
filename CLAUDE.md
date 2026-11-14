@@ -1,7 +1,7 @@
 # Blitz Split: site
 
 The site at blitzsplit.com of Bora Rachar (Blitz Split in English, Spanish, French, German, Italian, Polish, Dutch,
-Turkish, Indonesian and Japanese): the landing, the privacy policy and the terms of use, served by a Cloudflare Worker with static assets (`public/`) and one
+Turkish, Indonesian and Japanese): the landing, the privacy policy, the terms of use and the release notes, served by a Cloudflare Worker with static assets (`public/`) and one
 script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and JavaScript with no build. The apps live in
 `blitz-split-client` and the backend in `blitz-split-api`.
 
@@ -14,6 +14,8 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
   phone, the design board and the legal pages' open points.
 - **Legal pages**: [`docs/legal.md`](docs/legal.md): the Markdown the privacy policy and the terms are written in,
   which the pages are generated from and the apps draw natively.
+- **Release notes**: [`docs/release-notes.md`](docs/release-notes.md): the JSON each version's notes are written in,
+  which the "What's new" page and the feed the apps download are generated from.
 - **Stores and downloads**: [`docs/stores.md`](docs/stores.md): which store each platform sees and `CONFIG` in
   `public/stores.js`.
 - **Analytics**: [`docs/analytics.md`](docs/analytics.md): Google Analytics setup and every event.
@@ -41,6 +43,10 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
 - Never edit a legal page's text in its HTML: edit `public/legal/<page>.<language>.md`, run `npm run build:legal` and
   commit both (`npm run check:legal` fails otherwise, as CI does). The apps parse the same Markdown, so use only what
   [`docs/legal.md`](docs/legal.md) lists.
+- Never edit a version's notes in `public/release-notes.html` or `public/release-notes/*.json`: edit
+  `release-notes/<language>/<version>.json` in every language, run `npm run build:release-notes` and commit all of it
+  (`npm run check:release-notes` fails otherwise, as CI does). The apps read the feed, so use only what
+  [`docs/release-notes.md`](docs/release-notes.md) lists.
 - The legal pages' `<mark>` (`<span class="todo">` on the page) marks what is still to fill in; none may be left
   before they go live.
 - Check a visual change in `design/board.html` (every size, light and dark) with `npm run dev` running.

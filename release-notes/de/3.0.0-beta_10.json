@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Der Link einer Ausgabe öffnet sich jetzt in der App statt im Browser, mit Fotos und Kommentaren.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Der Link einer Ausgabe, die nicht mehr geteilt wird oder die nur die Personen der Ausgabe öffnen können, sagt das jetzt, statt einen Fehler zu zeigen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Der Link eines Profils öffnet sich jetzt auch, wenn du nicht angemeldet bist.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Datenschutz und Info hat einen neuen Schalter, „Nutzungsdaten teilen“: Schalte ihn aus, um nicht mehr zu senden, wie du die App nutzt.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die Links, die du zu deinem Profil, zu einem Kommentar und zum Laden der App teilst, zeigen ihre Vorschau jetzt in deiner Sprache.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

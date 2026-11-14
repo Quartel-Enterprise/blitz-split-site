@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Tautan tagihan sekarang terbuka di aplikasi, bukan di browser, lengkap dengan foto dan komentarnya.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Tautan tagihan yang tidak lagi dibagikan, atau yang hanya bisa dibuka oleh orang-orang di tagihan itu, sekarang memberi tahu hal tersebut alih-alih menampilkan kesalahan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tautan profil sekarang terbuka meskipun kamu belum masuk.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Privasi dan tentang punya sakelar baru, \"Bagikan data penggunaan\": matikan untuk berhenti mengirim cara kamu memakai aplikasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tautan yang kamu bagikan ke profilmu, ke sebuah komentar, dan untuk mendapatkan aplikasi sekarang menampilkan pratinjau dalam bahasamu.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

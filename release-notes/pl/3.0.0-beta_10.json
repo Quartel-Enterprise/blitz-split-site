@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Link do wydatku otwiera się teraz w aplikacji zamiast w przeglądarce, ze zdjęciami i komentarzami.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Link do wydatku, który nie jest już udostępniany albo który mogą otworzyć tylko osoby z wydatku, teraz o tym informuje, zamiast pokazywać błąd.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Link do profilu otwiera się teraz także wtedy, gdy nie jesteś zalogowany.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Prywatność i informacje ma nowy przełącznik „Udostępniaj dane o użyciu”: wyłącz go, aby przestać wysyłać informacje o tym, jak korzystasz z aplikacji.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Linki, które udostępniasz do swojego profilu, do komentarza i do pobrania aplikacji, pokazują teraz podgląd w Twoim języku.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

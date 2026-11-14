@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Il link di una spesa ora si apre nell’app invece che nel browser, con le sue foto e i suoi commenti.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Il link di una spesa che non è più condivisa, o che possono aprire solo le persone della spesa, ora lo dice invece di mostrare un errore.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Il link di un profilo ora si apre anche se non hai effettuato l’accesso.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilo › Privacy e informazioni ha un nuovo interruttore, \"Condividi dati di utilizzo\": disattivalo per smettere di inviare come usi l’app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I link che condividi al tuo profilo, a un commento e per scaricare l’app ora mostrano l’anteprima nella tua lingua.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

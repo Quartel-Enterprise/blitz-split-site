@@ -1047,6 +1047,34 @@ label.split-row { cursor: pointer; }
 /* An open point the owner still has to fill in before publishing. Loud on purpose. */
 .todo { background: var(--pending-container); color: var(--on-pending-container); border-radius: 4px; padding: 0 4px; font-weight: 600; font-style: normal; }
 
+/* Release notes: the page's hero is the legal pages', with a switch that shows the beta versions, off at first. Each
+   version is a card, newest first, written by scripts/build-release-notes.mjs. */
+.release-lead { margin-top: 10px; font-size: 17px; color: var(--fg-soft); }
+.beta-switch { margin-top: 20px; display: inline-flex; align-items: center; gap: 12px; min-height: 44px; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--fg-soft); }
+.beta-switch input { appearance: none; -webkit-appearance: none; flex: none; margin: 0; width: 40px; height: 24px; border-radius: 999px; background: var(--muted-fg); cursor: pointer; position: relative; }
+.beta-switch input::before { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: var(--bg); }
+.beta-switch input:checked { background: var(--primary); }
+.beta-switch input:checked::before { transform: translateX(16px); }
+:root.motion .beta-switch input, :root.motion .beta-switch input::before { transition: background 0.15s, transform 0.15s; }
+@media (forced-colors: active) { .beta-switch input { border: 1px solid ButtonText; } .beta-switch input::before { background: ButtonText; } .beta-switch input:checked { background: Highlight; } }
+.releases { padding-top: 40px; padding-bottom: 80px; }
+.releases > * { max-width: 70ch; }
+.releases-empty { color: var(--muted-fg); }
+.release { margin-bottom: 16px; padding: 24px; border: 1px solid var(--border); border-radius: var(--radius-card); background: var(--card); }
+.release header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+.release h2 { font-size: 24px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.release time { font-size: 14px; color: var(--muted-fg); }
+.release-beta { align-self: center; padding: 2px 10px; border-radius: 999px; font-size: 12.5px; font-weight: 600; background: var(--pending-container); color: var(--on-pending-container); }
+.release ul { margin: 14px 0 0; padding-left: 1.2em; font-size: 16.5px; line-height: 1.7; color: var(--fg-soft); }
+.release li + li { margin-top: 8px; }
+.release li::marker { color: var(--muted-fg); }
+.release-platforms { display: inline-flex; flex-wrap: wrap; gap: 4px; margin-left: 4px; vertical-align: 1px; }
+.release-platforms span { padding: 1px 8px; border-radius: 999px; font-size: 12.5px; font-weight: 500; line-height: 1.5; background: var(--muted); color: var(--fg-soft); }
+/* A beta version shows only with the switch on, in any language's block; the line that says there is no stable
+   version yet only with it off. */
+.release[data-beta], body:has([data-show-beta]:checked) .releases-empty { display: none; }
+body:has([data-show-beta]:checked) .release[data-beta] { display: block; }
+
 .to-top { position: fixed; right: 16px; bottom: 16px; z-index: 40; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--card); color: var(--fg); border: 1px solid var(--border); box-shadow: var(--shadow-sm); opacity: 0; pointer-events: none; transition: opacity 0.2s; }
 .to-top.show { opacity: 1; pointer-events: auto; }
 

@@ -1,0 +1,43 @@
+{
+  "releases": [
+    {
+      "version": "3.0.0-beta_10",
+      "beta": true,
+      "date": "2026-11-14",
+      "notes": [
+        {
+          "text": "El enlace de un gasto ahora se abre en la app en lugar del navegador, con sus fotos y comentarios.",
+          "platforms": [
+            "android",
+            "ios",
+            "mac"
+          ]
+        },
+        {
+          "text": "El enlace de un gasto que ya no se comparte, o que solo pueden abrir las personas del gasto, ahora lo indica en lugar de mostrar un error.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "El enlace de un perfil ahora se abre aunque no hayas iniciado sesión.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Perfil › Privacidad y acerca de tiene un interruptor nuevo, \"Compartir datos de uso\": desactívalo para dejar de enviar cómo usas la app.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Los enlaces que compartes a tu perfil, a un comentario y para obtener la app ahora muestran su vista previa en tu idioma.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    }
+  ]
+}
