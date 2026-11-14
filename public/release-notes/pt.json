@@ -114,7 +114,7 @@
           ]
         },
         {
-          "text": "A chave \"Chave Pix padrão\" não parece mais desligada na sua chave padrão no tema escuro.",
+          "text": "A opção \"Chave Pix padrão\" não parece mais desligada na sua chave padrão no tema escuro.",
           "platforms": [
             "android"
           ]
@@ -353,7 +353,7 @@
           ]
         },
         {
-          "text": "A conta é opcional: conecte o Google ou a Apple, ou guarde um código de recuperação, para ter seus grupos de volta em outro aparelho.",
+          "text": "Criar uma conta é opcional: conecte o Google ou a Apple, ou guarde um código de recuperação, para ter seus grupos de volta em outro aparelho.",
           "platforms": [
             "all"
           ]
