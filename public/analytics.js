@@ -15,13 +15,14 @@
     if (/^\/g\/[^/]+\/?$/.test(url.pathname)) return "group_invite";
     if (/^\/b\/[^/]+\/?$/.test(url.pathname)) return "bill_comment";
     if (/^\/u\/[^/]+\/?$/.test(url.pathname)) return "profile_link";
+    if (/^\/c\/[^/]+\/?$/.test(url.pathname)) return "bill_link";
     return null;
   }
   function withoutIds(href) {
     const url = new URL(href);
     const kind = appLink(url);
     if (!kind) return href;
-    // Why: every app link's path starts with its kind's prefix, /g/, /b/ or /u/.
+    // Why: every app link's path starts with its kind's prefix, /g/, /b/, /u/ or /c/.
     url.pathname = url.pathname.slice(0, 3);
     url.searchParams.delete("comentario");
     url.hash = "";

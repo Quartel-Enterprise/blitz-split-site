@@ -1,20 +1,27 @@
-// The Worker runs only for /g/*, /u/*, /og/*, /.well-known/* and /legal/* (run_worker_first); every other path is a
-// static file.
+// The Worker runs only for /g/*, /c/*, /u/*, /b/*, /download, /app-download, /og/*, /.well-known/* and /legal/*
+// (run_worker_first); every other path is a static file.
 //
-// /g/<code>, /g/<code>/<member>: the landing, as before, with the invite's meta tags, which WhatsApp, iMessage,
-// Telegram and the rest read to draw the link's preview.
-// /og/g/<code>.png, /og/g/<code>/<member>.png?from=: that preview's image.
-// /u/<code>: the landing with a profile link's meta tags, the person's name and photo.
+// /g/<code>, /g/<code>/<member> (an invite), /c/<code> (a bill's link) and /u/<code> (a profile's): the landing, as
+// before, with that link's meta tags, which WhatsApp, iMessage, Telegram and the rest read to draw its preview.
+// /og/g/<code>.png, /og/g/<code>/<member>.png?from=, /og/c/<code>.png, /og/u/<code>.png: that preview's image.
+// /b/<bill> (a comment's link) and the download paths: the landing with tags of their own and a static card.
 //
 // What a preview shows, its words and its card, comes from the API's invite-preview edge function
 // (blitz-split-api), which draws the card there: drawing takes more CPU than a Worker on the Free plan may use. This
 // Worker only asks it and keeps each answer in Cloudflare's cache. /og/blitzsplit.png, the brand's card (the
-// landing's and a dead invite's), is a static file the function's brand_card.ts draws.
+// landing's and a dead link's), and the other static cards are files the function's brand_card.ts draws.
 
 const INVITE_PATH = /^\/g\/([A-Za-z0-9]{8})(?:\/([A-Za-z0-9]{6}))?\/?$/;
-const IMAGE_PATH = /^\/og\/g\/([A-Za-z0-9]{8})(?:\/([A-Za-z0-9]{6}))?\.png$/;
-const MEMBER_CODE = /^[A-Za-z0-9]{6}$/;
+const BILL_PATH = /^\/c\/([A-Za-z0-9]{8})\/?$/;
 const PROFILE_PATH = /^\/u\/([A-Za-z0-9]{10})\/?$/;
+const IMAGE_PATHS = {
+  invite: /^\/og\/g\/([A-Za-z0-9]{8})(?:\/([A-Za-z0-9]{6}))?\.png$/,
+  bill: /^\/og\/c\/([A-Za-z0-9]{8})\.png$/,
+  profile: /^\/og\/u\/([A-Za-z0-9]{10})\.png$/,
+};
+// Why: the letter each link's path and its image's start with.
+const PATH_LETTERS = { invite: "g", bill: "c", profile: "u" };
+const MEMBER_CODE = /^[A-Za-z0-9]{6}$/;
 const BRAND_IMAGE = "/og/blitzsplit.png";
 const WIDTH = 1200;
 const HEIGHT = 630;
@@ -23,15 +30,35 @@ const HEIGHT = 630;
 const WORDS_TTL = 300;
 const IMAGE_TTL = 86400;
 
+// The links whose preview is the same for every address: a comment's link opens only for the people of its group, so
+// its preview shows nothing of the bill, and the download paths lead to a store. In English alone, since nothing in
+// the address says who reads it. The words are the API's (STATIC in _shared/link_preview.ts), as the cards are.
+const COMMENT_PATH = /^\/b\/[0-9A-Fa-f-]{36}\/?$/;
+const DOWNLOAD_PATH = /^\/(?:app-download|download(?:\/(?:android|ios))?)\/?$/;
+const STATIC_PREVIEWS = {
+  comment: {
+    title: "Comment on a bill · Blitz Split",
+    description: "Open it in Blitz Split to read it and answer.",
+    image: "/og/comment.png",
+  },
+  download: {
+    title: "Get Blitz Split",
+    description: "Split bills with friends, even offline. No sign-up required.",
+    image: "/og/download.png",
+  },
+};
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    const page = INVITE_PATH.exec(url.pathname);
-    if (page) return invitePage(request, url, env, ctx, targetOf(page, url));
-    const image = IMAGE_PATH.exec(url.pathname);
-    if (image) return inviteImage(request, url, env, ctx, targetOf(image, url));
-    const profile = PROFILE_PATH.exec(url.pathname);
-    if (profile) return profilePage(request, url, env, ctx, profile[1]);
+    const page = pageTargetOf(url);
+    if (page) return previewPage(request, url, env, ctx, page);
+    for (const [link, path] of Object.entries(IMAGE_PATHS)) {
+      const image = path.exec(url.pathname);
+      if (image) return previewImage(request, url, env, ctx, targetOf(link, image, url));
+    }
+    if (COMMENT_PATH.test(url.pathname)) return staticPage(request, url, env, STATIC_PREVIEWS.comment);
+    if (DOWNLOAD_PATH.test(url.pathname)) return staticPage(request, url, env, STATIC_PREVIEWS.download);
     if (url.pathname.startsWith("/.well-known/") || url.pathname.startsWith("/legal/")) return fileOrNotFound(request, env);
     return env.ASSETS.fetch(request);
   },
@@ -46,10 +73,21 @@ async function fileOrNotFound(request, env) {
   return isLanding ? new Response("Not found\n", { status: 404, headers: { "Content-Type": "text/plain; charset=utf-8" } }) : response;
 }
 
-function targetOf(match, url) {
+// Which link a page's path is, null for any other path.
+function pageTargetOf(url) {
+  const invite = INVITE_PATH.exec(url.pathname);
+  if (invite) return targetOf("invite", invite, url);
+  const bill = BILL_PATH.exec(url.pathname);
+  if (bill) return targetOf("bill", bill, url);
+  const profile = PROFILE_PATH.exec(url.pathname);
+  return profile ? targetOf("profile", profile, url) : null;
+}
+
+function targetOf(link, match, url) {
   const [, code, memberCode] = match;
   const from = url.searchParams.get("from");
   return {
+    link,
     code,
     memberCode: memberCode ?? null,
     // Why: only a personal link says who shared it, as the apps read it.
@@ -57,7 +95,7 @@ function targetOf(match, url) {
   };
 }
 
-async function invitePage(request, url, env, ctx, target) {
+async function previewPage(request, url, env, ctx, target) {
   const [landing, words] = await Promise.all([
     landingOf(request, url, env),
     orNull(previewWords(url, env, ctx, target)),
@@ -68,7 +106,7 @@ async function invitePage(request, url, env, ctx, target) {
     "og:title": words.title,
     "og:description": words.description,
     "og:url": url.href,
-    "og:type": "website",
+    "og:type": words.kind === "profile" ? "profile" : "website",
     "og:site_name": words.siteName,
     "og:locale": words.locale,
     "og:image": imageUrlOf(url, target, words),
@@ -107,8 +145,8 @@ function withTags(landing, title, description, tags) {
 
 function imageUrlOf(url, target, words) {
   if (words.kind === "invalid" || !words.imageVersion) return new URL(BRAND_IMAGE, url).href;
-  const path = target.memberCode ? `g/${target.code}/${target.memberCode}` : `g/${target.code}`;
-  const image = new URL(`/og/${path}.png`, url);
+  const path = target.memberCode ? `${target.code}/${target.memberCode}` : target.code;
+  const image = new URL(`/og/${PATH_LETTERS[target.link]}/${path}.png`, url);
   if (target.inviterCode) image.searchParams.set("from", target.inviterCode);
   // Why: WhatsApp keeps an image by its address; the version changes with whatever the card shows.
   image.searchParams.set("v", words.imageVersion);
@@ -141,7 +179,7 @@ async function cachedJson(url, ctx, path, load) {
 }
 
 function previewWords(url, env, ctx, target) {
-  const path = `/__invite-preview/${target.code}/${target.memberCode ?? ""}?from=${target.inviterCode ?? ""}`;
+  const path = `/__preview/${target.link}/${target.code}/${target.memberCode ?? ""}?from=${target.inviterCode ?? ""}`;
   return cachedJson(url, ctx, path, async () => {
     const response = await askPreview(env, target, false);
     if (!response.ok) throw new Error(`invite-preview answered ${response.status}`);
@@ -149,7 +187,7 @@ function previewWords(url, env, ctx, target) {
   });
 }
 
-async function inviteImage(request, url, env, ctx, target) {
+async function previewImage(request, url, env, ctx, target) {
   const cached = await caches.default.match(request);
   if (cached) return cached;
   let response = null;
@@ -191,48 +229,21 @@ function escapeAttribute(value) {
   return value.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-// A profile link's preview: the person's name, and their photo when they have one, over the landing. The words stay
-// the brand's in every language, since a crawler says nothing of who reads it. An unknown code, or the API failing,
-// leaves the landing's own tags.
-async function profilePage(request, url, env, ctx, code) {
-  const [landing, profile] = await Promise.all([
-    landingOf(request, url, env),
-    orNull(sharedProfile(url, env, ctx, code)),
-  ]);
-  // Why: a profile without a name has nothing to title the preview with.
-  if (!profile?.display_name) return landing;
-  // Why: a crawler only fetches an absolute address.
-  const photo = /^https?:\/\//.test(profile.avatar_url ?? "") ? profile.avatar_url : null;
+// A page whose preview is the same for every address: the landing with that preview's tags and its static card.
+async function staticPage(request, url, env, preview) {
+  const landing = await landingOf(request, url, env);
   const tags = {
-    "og:title": profile.display_name,
-    "og:description": "Blitz Split · Bora Rachar",
-    "og:url": url.href,
-    "og:type": "profile",
+    "og:title": preview.title,
+    "og:description": preview.description,
+    "og:url": new URL(url.pathname, url).href,
+    "og:type": "website",
     "og:site_name": "Blitz Split",
-    "og:image": photo || new URL(BRAND_IMAGE, url).href,
-    ...(photo
-      ? {}
-      : { "og:image:type": "image/png", "og:image:width": String(WIDTH), "og:image:height": String(HEIGHT) }),
-    "twitter:card": photo ? "summary" : "summary_large_image",
+    "og:image": new URL(preview.image, url).href,
+    "og:image:type": "image/png",
+    "og:image:width": String(WIDTH),
+    "og:image:height": String(HEIGHT),
+    "og:image:alt": preview.title,
+    "twitter:card": "summary_large_image",
   };
-  return withTags(landing, profile.display_name, tags["og:description"], tags);
-}
-
-// Null for a code no profile has.
-function sharedProfile(url, env, ctx, code) {
-  return cachedJson(url, ctx, `/__profile-link/${code}`, async () => {
-    const response = await fetch(env.PROFILE_LINK_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        apikey: env.SUPABASE_PUBLISHABLE_KEY,
-      },
-      body: JSON.stringify({ p_code: code }),
-    });
-    if (!response.ok) throw new Error(`get_profile_by_share_code answered ${response.status}`);
-    // Why: PostgREST answers a set-returning function with an array, a one-row one with an object or null.
-    const answer = await response.json();
-    const row = Array.isArray(answer) ? answer[0] : answer;
-    return row ? { display_name: row.display_name, avatar_url: row.avatar_url } : null;
-  });
+  return withTags(landing, preview.title, preview.description, tags);
 }
