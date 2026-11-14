@@ -18,7 +18,8 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
   `public/stores.js`.
 - **Analytics**: [`docs/analytics.md`](docs/analytics.md): Google Analytics setup and every event.
 - **Run and deploy**: [`docs/development.md`](docs/development.md).
-- **Checks on pull requests**: [`docs/ci.md`](docs/ci.md): the Claude review, copied code and the translations check.
+- **Checks on pull requests**: [`docs/ci.md`](docs/ci.md): the Claude review, copied code, the translations check and the
+  `merge-when-green` label.
 
 ## Conventions
 

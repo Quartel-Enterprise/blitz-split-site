@@ -14,14 +14,24 @@ name: claude-review
 # again: adding the ai-review label does (claude-review-on-request), and that review only comments.
 # The action is Quartel-Enterprise/claude-review: its README has the setup (the Claude GitHub App on
 # the repository and the CLAUDE_CODE_OAUTH_TOKEN secret).
+#
+# GitHub starts no pull_request workflow while the pull request conflicts with its base, so one opened
+# (or marked ready) with a conflict gets no review on that event. That is why pushes run this
+# workflow too: the action reviews the push that solves the conflict, when this workflow has no run
+# between the pull request's opening (or a draft's last marking as ready) and this one, and every
+# other push (the review's own fix commit included) ends in seconds without reviewing.
 on:
   pull_request:
     types:
       - opened
       - ready_for_review
+      - synchronize
 
+# A push runs in a group of its own, so it neither cancels the opening review nor waits behind it.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  group: >-
+    ${{ github.workflow }}-${{ github.event.pull_request.number
+    }}${{ github.event.action == 'synchronize' && format('-{0}', github.run_id) || '' }}
   cancel-in-progress: true
 
 jobs:
@@ -36,6 +46,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
+      # On a push, the action reads this workflow's earlier runs.
+      actions: read
       contents: read
       pull-requests: write
       issues: read
@@ -51,7 +63,7 @@ jobs:
           fetch-depth: 1
           persist-credentials: false
 
-      - uses: Quartel-Enterprise/claude-review/review@1.2.0
+      - uses: Quartel-Enterprise/claude-review/review@1.2.2
         with:
           oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           fix: 'true'

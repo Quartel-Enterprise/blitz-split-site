@@ -39,5 +39,6 @@ Every commit on `main` deploys to blitzsplit.com.
 | [Stores and downloads](docs/stores.md) | Which store each visitor sees and how to turn a store on |
 | [Analytics](docs/analytics.md) | Google Analytics setup and every event the site sends |
 | [Run and deploy](docs/development.md) | Local development, the invite previews locally, deploys |
+| [Checks on pull requests](docs/ci.md) | The Claude review, the checks, and the `merge-when-green` label |
 
 [CLAUDE.md](CLAUDE.md) holds the conventions for changing the site.
