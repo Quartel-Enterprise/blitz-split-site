@@ -154,7 +154,8 @@ function checkScript(file) {
 }
 
 const files = (dir, extension) => readdirSync(dir).filter((name) => name.endsWith(extension)).map((name) => join(dir, name));
-files(PUBLIC, ".html").forEach(checkPage);
+// Why pages/ too: a page whose text is written at deploy keeps its hand-written shell, with its strings, there.
+[...files(PUBLIC, ".html"), ...files(join(ROOT, "pages"), ".html")].forEach(checkPage);
 [...files(PUBLIC, ".js"), ...files(join(ROOT, "src"), ".js")].forEach(checkScript);
 
 if (errors.length > 0) {

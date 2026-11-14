@@ -7,7 +7,7 @@
 | `claude-review-refs` | Fails when the workflows pin different releases of the review | |
 | `duplication` | Fails on copied JavaScript or CSS that `.jscpd-baseline.json` doesn't list | `npm run check:duplication` |
 | `legal` | Fails when a legal page isn't what its Markdown gives, or the Markdown has something the apps can't draw ([legal.md](legal.md)) | `npm run check:legal` |
-| `release-notes` | Fails when a language's release notes feed or the "What's new" page isn't what the notes give, or a language's notes aren't English's ([release-notes.md](release-notes.md)) | `npm run check:release-notes` |
+| `release-notes` | Fails when a version's notes have something the apps can't read, or a language's notes aren't English's ([release-notes.md](release-notes.md)) | `npm run check:release-notes` |
 | `translations` | Fails when a page or a script misses a string in one of the site's languages | `npm run check:translations` |
 | `merge-when-green` | Squash merges a pull request with the `merge-when-green` label once every check passed and every review conversation is resolved ([below](#merge-when-green)) | |
 
@@ -77,7 +77,8 @@ release is the one `duplication.yml` pins.
 
 `scripts/check-translations.mjs` reads the languages from `SUPPORTED` in `public/boot.js` and checks:
 
-- Every key a page's `data-i18n`, `data-i18n-html` and `data-i18n-label` use has a value in each language of its
+- Every key a page's `data-i18n`, `data-i18n-html` and `data-i18n-label` use (the pages of `public/` and the shells of
+  `pages/`, whose text the deploy writes) has a value in each language of its
   `window.SITE_STRINGS`, and no language keeps a key the page no longer uses. The legal pages (the ones with
   `data-lang` blocks) have one block of each language for every English one. `name` may
   be left out of a language: the markup's Blitz Split is its name everywhere but in Portuguese.

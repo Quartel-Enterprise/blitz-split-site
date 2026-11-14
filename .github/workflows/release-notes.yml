@@ -10,8 +10,7 @@ on:
       - 'scripts/build-release-notes.mjs'
       - 'scripts/lib/**'
       - 'release-notes/**'
-      - 'public/release-notes/**'
-      - 'public/release-notes.html'
+      - 'pages/release-notes.html'
   push:
     branches:
       - main
@@ -20,8 +19,7 @@ on:
       - 'scripts/build-release-notes.mjs'
       - 'scripts/lib/**'
       - 'release-notes/**'
-      - 'public/release-notes/**'
-      - 'public/release-notes.html'
+      - 'pages/release-notes.html'
 
 permissions:
   contents: read

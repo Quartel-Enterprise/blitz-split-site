@@ -3,17 +3,19 @@
 What each version of the app changed is written once, in JSON, one file per language and version:
 `release-notes/<language>/<version>.json` (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
 Turkish, Indonesian and Japanese). The folder is outside `public/`, so nobody reads those files as they are:
-`npm run build:release-notes` (`scripts/build-release-notes.mjs`) writes from them the two things that are read.
+`scripts/build-release-notes.mjs` writes from them the two things that are read.
 
 - **The apps' feed.** `public/release-notes/<language>.json`, at
   `https://blitzsplit.com/release-notes/<language>.json`: every version of that language, newest first. A language
   the site doesn't have answers 404 (`src/index.js`), and the app reads English. `public/_headers` lets any origin
   read it, since the web app (`app.blitzsplit.com`) asks from another one.
 - **The page.** [`/release-notes`](https://blitzsplit.com/release-notes), "What's new", which the footer of every
-  page links: `public/release-notes.html`, the versions between `<main>` and `</main>`, a block per language as the
-  legal pages. The rest of the page (the header, the footer, `window.SITE_STRINGS`) is written by hand.
+  page links: `public/release-notes.html`, a block per language as the legal pages, written into the page's shell,
+  `pages/release-notes.html` (the header, the footer and `window.SITE_STRINGS`, written by hand).
 
-Both stay in git, so the deploy still builds nothing.
+Neither is in git (`.gitignore`): a pull request shows only the notes it adds. They are written when the site is
+deployed and when `npm run dev` starts, and again while it runs whenever a note, the shell or the script changes
+([development.md](development.md#what-the-deploy-builds)).
 
 ## A version's file
 
@@ -63,10 +65,9 @@ key must be one an older app can ignore, and a new platform's name one it can sk
 ## Adding a version
 
 1. Write `release-notes/<language>/<version>.json` in every language.
-2. Run `npm run build:release-notes` and commit the feeds and the page with the notes.
+2. Commit them: the deploy writes the feeds and the page. `npm run dev` shows the page as it will be.
 
-`npm run check:release-notes` fails, as CI does (`release-notes.yml`), when a feed or the page isn't what the notes
-give, when a language misses a version or has one English doesn't, when a version's date, number of notes or a note's
+`npm run check:release-notes` fails, as CI does (`release-notes.yml`), when a language misses a version or has one English doesn't, when a version's date, number of notes or a note's
 platforms aren't English's, or when a file has anything this page doesn't list.
 
 ## The page
