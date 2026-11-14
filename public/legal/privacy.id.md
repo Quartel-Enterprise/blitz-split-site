@@ -1,6 +1,6 @@
 ---
 title: Kebijakan privasi
-updated: 2026-11-05
+updated: 2026-11-13
 ---
 
 > **Singkatnya**
@@ -8,7 +8,7 @@ updated: 2026-11-05
 > - Kamu bisa memakai aplikasi tanpa membuat akun. Google dan Apple bersifat opsional.
 > - Apa yang kamu tambahkan disimpan di perangkatmu terlebih dahulu, dan hanya dikirim ke server untuk disinkronkan dan sampai ke grupmu.
 > - Orang-orang dalam satu grup melihat apa yang menjadi milik grup. Tidak ada yang melihat emailmu.
-> - Metrik penggunaan dan laporan crash tidak memuat nama, jumlah uang, atau id. Kami tidak menggunakan id iklan.
+> - Metrik penggunaan dan laporan crash tidak memuat nama atau jumlah uang. Jika kamu punya akun, metrik terkait dengan id akun itu. Kami tidak menggunakan id iklan, dan kamu bisa mematikan metrik di Profile.
 > - Kami tidak menjual data. Kamu menghapus akun dan datamu langsung dari aplikasi.
 
 ## Siapa kami {#who}
@@ -35,7 +35,7 @@ Kebijakan ini mengikuti Undang-Undang Umum Pelindungan Data Brasil (Undang-Undan
 
 ### Yang dikumpulkan secara otomatis
 
-- **Metrik penggunaan** (Google Firebase Analytics): layar yang dibuka dan tindakan yang dilakukan, seperti “membuat grup”, beserta data perangkat (model, sistem, bahasa, versi aplikasi, dan perkiraan negara). Metrik ini tidak pernah memuat nama, jumlah uang, atau id grup, tagihan, maupun orang. Kami tidak menggunakan id iklan, dan personalisasi iklan dinonaktifkan.
+- **Metrik penggunaan** (Google Firebase Analytics): layar yang dibuka dan tindakan yang dilakukan, seperti “membuat grup”, beserta data perangkat (model, sistem, bahasa, versi aplikasi, dan perkiraan negara). Metrik ini tidak pernah memuat nama, jumlah uang, atau id grup, tagihan, maupun orang. Kami tidak menggunakan id iklan, dan personalisasi iklan dinonaktifkan. Jika kamu punya akun, anonim atau dengan Google atau Apple, metrik memuat id akun itu, kode acak yang bukan nama atau email kamu, agar kami melihat cara aplikasi dipakai di ponsel, komputer, dan browser kamu sekaligus. Kamu mematikannya di setiap perangkat lewat Profile › Privacy and about › “Share usage data” (bagikan data penggunaan).
 - **Laporan crash** (Firebase Crashlytics, di aplikasi Android, iPhone, iPad, dan Mac): jenis kesalahan dan di bagian kode mana kesalahan itu terjadi, tanpa pesan-pesannya, yang bisa berisi datamu.
 - **Token notifikasi:** alamat yang diberikan Google, Apple, atau browser kepada perangkat untuk menerima pemberitahuan.
 - **Data koneksi**, seperti alamat IP, yang dicatat oleh penyedia infrastruktur kami.
@@ -60,7 +60,7 @@ Aplikasi ini **mengutamakan offline**: apa yang kamu tambahkan disimpan dalam ba
 | Masuk dan memulihkan akses | Id anonim, kode pemulihan, akun Google atau Apple | Pelaksanaan kontrak |
 | Membaca struk | Foto struk, atas permintaanmu | Pelaksanaan kontrak |
 | Mengirim notifikasi | Token perangkat, peristiwa grup | Pelaksanaan kontrak; kamu memilih yang mana di Profile › Notifications |
-| Meningkatkan aplikasi dan memperbaiki crash | Metrik penggunaan, laporan crash | Kepentingan sah (pasal 7, IX) <mark>atau persetujuan: belum diputuskan</mark> |
+| Meningkatkan aplikasi dan memperbaiki crash | Metrik penggunaan, laporan crash | Kepentingan sah (pasal 7, IX); kamu menolaknya dengan mematikan “Share usage data” di Profile |
 | Keamanan dan pencegahan penyalahgunaan | Data koneksi | Kepentingan sah |
 | Mematuhi hukum | Apa yang diwajibkan oleh kewajiban tersebut | Kewajiban hukum (pasal 7, II) |
 
@@ -97,7 +97,7 @@ Sebagian penyedia ini menyimpan atau memproses data di luar Brasil, sebagian bes
 - **Sign out** (keluar) menghapus salinan di perangkat. Dengan Google atau Apple, datamu tetap ada di server untuk saat kamu masuk lagi.
 - **Tanpa akun**, “Erase profile and sign out” membersihkan perangkat dan kode pemulihanmu tetap berfungsi. Untuk menghapus juga apa yang ada di server, hubungi kami (bagian 12).
 - **“Delete account and data”**, di Profile, menghapus profil, foto, kunci pembayaran, dan kode pemulihanmu sekaligus, serta mencabut akses yang diberikan Apple. Tagihan yang kamu tambahkan ke grup bersama orang lain tetap ada di sana untuk grup, tanpa namamu, sebagai “Former member”.
-- Data penggunaan yang terkait dengan suatu perangkat disimpan di Google Analytics hingga 14 bulan. Setelah itu, hanya angka agregat yang tersisa, tanpa apa pun yang dapat mengidentifikasi seseorang.
+- Data penggunaan yang terkait dengan suatu perangkat disimpan di Google Analytics hingga 14 bulan. Setelah itu, hanya angka agregat yang tersisa, tanpa apa pun yang dapat mengidentifikasi seseorang. Setelah akunmu dihapus, id yang dimuatnya tidak lagi mengarah kepadamu.
 
 ## Hak-hakmu {#rights}
 

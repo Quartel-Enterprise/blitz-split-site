@@ -1,6 +1,6 @@
 ---
 title: Privacy policy
-updated: 2026-11-05
+updated: 2026-11-13
 ---
 
 > **In short**
@@ -8,7 +8,7 @@ updated: 2026-11-05
 > - You use the app without creating an account. Google and Apple are optional.
 > - What you add stays on your device first, and only goes to the server to sync and reach your group.
 > - People in a group see what belongs to the group. Nobody sees your email.
-> - Usage metrics and crash reports carry no names, amounts or ids. We don't use an advertising id.
+> - Usage metrics and crash reports carry no names or amounts. With an account, the metrics are tied to its id. We don't use an advertising id, and you turn the metrics off in Profile.
 > - We don't sell data. You delete your account and data from the app itself.
 
 ## Who we are {#who}
@@ -35,7 +35,7 @@ It follows Brazil's General Data Protection Law (Law 13,709/2018, the LGPD). By 
 
 ### What is collected automatically
 
-- **Usage metrics** (Google Firebase Analytics): the screens opened and the actions taken, such as “created a group”, with device data (model, system, language, app version and approximate country). They never carry names, amounts or the ids of groups, bills or people. We don't use the advertising id, and ad personalization is off.
+- **Usage metrics** (Google Firebase Analytics): the screens opened and the actions taken, such as “created a group”, with device data (model, system, language, app version and approximate country). They never carry names, amounts or the ids of groups, bills or people. We don't use the advertising id, and ad personalization is off. If you have an account, anonymous or with Google or Apple, the metrics carry its id, a random code that isn't your name or email, so we see how the app is used across your phone, computer and browser. You turn them off on each device in Profile › Privacy and about › “Share usage data”.
 - **Crash reports** (Firebase Crashlytics, in the Android, iPhone, iPad and Mac apps): the kind of error and where in the code it happened, without the messages, which could hold your data.
 - **Notification token:** the address Google, Apple or the browser gives the device to receive notices.
 - **Connection data**, such as the IP address, logged by our infrastructure providers.
@@ -60,7 +60,7 @@ The app is **offline first**: what you add saves in a database on the device its
 | Sign in and recover access | Anonymous id, recovery code, Google or Apple account | Performance of a contract |
 | Read receipts | The receipt's photo, at your request | Performance of a contract |
 | Send notifications | Device token, group events | Performance of a contract; you pick which in Profile › Notifications |
-| Improve the app and fix crashes | Usage metrics, crash reports | Legitimate interest (art. 7, IX) <mark>or consent: to decide</mark> |
+| Improve the app and fix crashes | Usage metrics, crash reports | Legitimate interest (art. 7, IX); you object by turning off “Share usage data” in Profile |
 | Security and abuse prevention | Connection data | Legitimate interest |
 | Comply with the law | What the obligation requires | Legal obligation (art. 7, II) |
 
@@ -97,7 +97,7 @@ Some of these providers store or process data outside Brazil, mostly in the Unit
 - **Sign out** erases the device's copy. With Google or Apple, your data stays on the server for when you sign in again.
 - **Without an account**, “Erase profile and sign out” clears the device and your recovery code keeps working. To erase what is on the server too, contact us (section 12).
 - **“Delete account and data”**, in Profile, deletes your profile, photo, payment keys and recovery code at once, and revokes the access Apple granted. Bills you added to groups with other people stay there for the group, without your name, as “Former member”.
-- Usage data tied to a device stays in Google Analytics for up to 14 months. After that, only aggregated numbers remain, with nothing that identifies anyone.
+- Usage data tied to a device stays in Google Analytics for up to 14 months. After that, only aggregated numbers remain, with nothing that identifies anyone. Once your account is deleted, the id they carry no longer leads to you.
 
 ## Your rights {#rights}
 

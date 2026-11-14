@@ -1,6 +1,6 @@
 ---
 title: Gizlilik politikası
-updated: 2026-11-05
+updated: 2026-11-13
 ---
 
 > **Kısaca**
@@ -8,7 +8,7 @@ updated: 2026-11-05
 > - Uygulamayı hesap açmadan kullanırsın. Google ve Apple isteğe bağlıdır.
 > - Eklediğin her şey önce kendi cihazında kalır; sunucuya yalnızca eşitlemek ve grubuna ulaşmak için gider.
 > - Bir gruptakiler yalnızca o gruba ait olanı görür. E-postanı kimse görmez.
-> - Kullanım ölçümleri ve çökme raporları ad, tutar ya da kimlik içermez. Reklam kimliği kullanmayız.
+> - Kullanım ölçümleri ve çökme raporları ad ya da tutar içermez. Bir hesabın varsa ölçümler onun kimliğine bağlanır. Reklam kimliği kullanmayız ve ölçümleri Profile'dan kapatabilirsin.
 > - Veri satmayız. Hesabını ve verilerini uygulamanın içinden silersin.
 
 ## Biz kimiz {#who}
@@ -35,7 +35,7 @@ Bu politika, Brezilya Genel Veri Koruma Kanunu'na (13.709/2018 sayılı Kanun, L
 
 ### Otomatik olarak toplananlar
 
-- **Kullanım ölçümleri** (Google Firebase Analytics): açılan ekranlar ve yapılan işlemler, örneğin “grup oluşturdu”, cihaz verileriyle birlikte (model, sistem, dil, uygulama sürümü ve yaklaşık ülke). Hiçbir zaman ad, tutar ya da grupların, masrafların veya kişilerin kimliklerini içermez. Reklam kimliğini kullanmayız ve reklam kişiselleştirmesi kapalıdır.
+- **Kullanım ölçümleri** (Google Firebase Analytics): açılan ekranlar ve yapılan işlemler, örneğin “grup oluşturdu”, cihaz verileriyle birlikte (model, sistem, dil, uygulama sürümü ve yaklaşık ülke). Hiçbir zaman ad, tutar ya da grupların, masrafların veya kişilerin kimliklerini içermez. Reklam kimliğini kullanmayız ve reklam kişiselleştirmesi kapalıdır. Anonim ya da Google veya Apple ile bir hesabın varsa ölçümler, adın ya da e-postan olmayan rastgele bir kod olan hesap kimliğini taşır; böylece uygulamanın telefonunda, bilgisayarında ve tarayıcında birlikte nasıl kullanıldığını görürüz. Bunları her cihazda Profile › Privacy and about › “Share usage data” (kullanım verilerini paylaş) ile kapatırsın.
 - **Çökme raporları** (Firebase Crashlytics, Android, iPhone, iPad ve Mac uygulamalarında): hatanın türü ve kodda nerede oluştuğu; verilerini içerebilecek mesajlar olmadan.
 - **Bildirim belirteci (token):** Google'ın, Apple'ın ya da tarayıcının, bildirim alabilmesi için cihaza verdiği adres.
 - **Bağlantı verileri**, örneğin IP adresi; altyapı sağlayıcılarımız tarafından kaydedilir.
@@ -60,7 +60,7 @@ Uygulama **önce çevrimdışı** çalışır: eklediğin her şey cihazın kend
 | Giriş yapmak ve erişimi kurtarmak | Anonim kimlik, kurtarma kodu, Google veya Apple hesabı | Sözleşmenin ifası |
 | Fişleri okumak | Fişin fotoğrafı, senin isteğinle | Sözleşmenin ifası |
 | Bildirim göndermek | Cihaz belirteci, grup olayları | Sözleşmenin ifası; hangilerini alacağını Profile › Notifications'tan seçersin |
-| Uygulamayı iyileştirmek ve çökmeleri düzeltmek | Kullanım ölçümleri, çökme raporları | Meşru menfaat (md. 7, IX) <mark>ya da açık rıza: karar verilecek</mark> |
+| Uygulamayı iyileştirmek ve çökmeleri düzeltmek | Kullanım ölçümleri, çökme raporları | Meşru menfaat (md. 7, IX); Profile'da “Share usage data”yı kapatarak itiraz edersin |
 | Güvenlik ve kötüye kullanımın önlenmesi | Bağlantı verileri | Meşru menfaat |
 | Yasalara uymak | Yükümlülüğün gerektirdiği veriler | Hukuki yükümlülük (md. 7, II) |
 
@@ -97,7 +97,7 @@ Bu sağlayıcılardan bazıları verileri Brezilya dışında, çoğunlukla Amer
 - **“Sign out”** (çıkış yap) cihazdaki kopyayı siler. Google veya Apple ile, tekrar giriş yaptığında kullanmak üzere verilerin sunucuda kalır.
 - **Hesapsız** kullanıyorsan, “Erase profile and sign out” cihazı temizler ve kurtarma kodun çalışmaya devam eder. Sunucudakileri de silmek için bize ulaş (12. bölüm).
 - Profile'daki **“Delete account and data”**, profilini, fotoğrafını, ödeme anahtarlarını ve kurtarma kodunu anında siler ve Apple'a verdiğin erişimi iptal eder. Başkalarıyla olan gruplara eklediğin masraflar, grup için orada kalır; adın olmadan, “Former member” (eski üye) olarak.
-- Bir cihaza bağlı kullanım verileri Google Analytics'te en fazla 14 ay kalır. Bundan sonra, kimseyi tanımlayan hiçbir şey içermeyen yalnızca toplu sayılar kalır.
+- Bir cihaza bağlı kullanım verileri Google Analytics'te en fazla 14 ay kalır. Bundan sonra, kimseyi tanımlayan hiçbir şey içermeyen yalnızca toplu sayılar kalır. Hesabın silindiğinde, taşıdıkları kimlik artık sana götürmez.
 
 ## Hakların {#rights}
 

@@ -1,6 +1,6 @@
 ---
 title: Política de privacidade
-updated: 2026-11-05
+updated: 2026-11-13
 ---
 
 > **Em resumo**
@@ -8,7 +8,7 @@ updated: 2026-11-05
 > - Você usa o app sem criar conta. Google e Apple são opcionais.
 > - O que você lança fica primeiro no seu aparelho e só vai ao servidor para sincronizar e chegar ao seu grupo.
 > - Quem está no grupo vê o que é do grupo. Ninguém vê o seu e-mail.
-> - Métricas de uso e relatórios de falha não levam nomes, valores nem IDs. Não usamos ID de publicidade.
+> - Métricas de uso e relatórios de falha não levam nomes nem valores. Com uma conta, as métricas ficam ligadas ao ID dela. Não usamos ID de publicidade, e você desliga as métricas no Perfil.
 > - Não vendemos dados. Você exclui sua conta e seus dados pelo próprio app.
 
 ## Quem somos {#quem}
@@ -35,7 +35,7 @@ Ela segue a Lei Geral de Proteção de Dados (Lei 13.709/2018, a LGPD). Ao usar 
 
 ### O que é coletado automaticamente
 
-- **Métricas de uso** (Google Firebase Analytics): as telas abertas e as ações feitas, como “criou um grupo”, com dados do aparelho (modelo, sistema, idioma, versão do app e país aproximado). Elas nunca levam nomes, valores nem os IDs de grupos, contas ou pessoas. Não usamos o ID de publicidade, e a personalização de anúncios fica desligada.
+- **Métricas de uso** (Google Firebase Analytics): as telas abertas e as ações feitas, como “criou um grupo”, com dados do aparelho (modelo, sistema, idioma, versão do app e país aproximado). Elas nunca levam nomes, valores nem os IDs de grupos, contas ou pessoas. Não usamos o ID de publicidade, e a personalização de anúncios fica desligada. Se você tem uma conta, anônima ou com Google ou Apple, as métricas levam o ID dela, um código aleatório que não é o seu nome nem o seu e-mail, para vermos o uso do app somado entre o seu celular, computador e navegador. Você as desliga em cada aparelho em Perfil › Privacidade e sobre › “Compartilhar dados de uso”.
 - **Relatórios de falha** (Firebase Crashlytics, nos apps de Android, iPhone, iPad e Mac): o tipo do erro e o ponto do código onde ele aconteceu, sem as mensagens, que poderiam conter dados seus.
 - **Token de notificação:** o endereço que o Google, a Apple ou o navegador dá ao aparelho para receber avisos.
 - **Dados de conexão**, como o endereço IP, registrados pelos provedores de infraestrutura.
@@ -60,7 +60,7 @@ O app é **offline primeiro**: o que você lança fica salvo num banco de dados 
 | Entrar e recuperar o acesso | ID anônimo, código de recuperação, conta Google ou Apple | Execução de contrato |
 | Ler recibos | Foto do recibo, a seu pedido | Execução de contrato |
 | Enviar notificações | Token do aparelho, eventos do grupo | Execução de contrato; você escolhe quais em Perfil › Notificações |
-| Melhorar o app e corrigir falhas | Métricas de uso, relatórios de falha | Legítimo interesse (art. 7º, IX) <mark>ou consentimento: a definir</mark> |
+| Melhorar o app e corrigir falhas | Métricas de uso, relatórios de falha | Legítimo interesse (art. 7º, IX); você se opõe desligando “Compartilhar dados de uso” no Perfil |
 | Segurança e prevenção de abuso | Dados de conexão | Legítimo interesse |
 | Cumprir a lei | O que a obrigação exigir | Obrigação legal (art. 7º, II) |
 
@@ -97,7 +97,7 @@ Alguns desses provedores guardam ou processam dados fora do Brasil, principalmen
 - **Sair** apaga a cópia do aparelho. Com Google ou Apple, seus dados continuam no servidor para quando você entrar de novo.
 - **Sem conta**, “Apagar perfil e sair” limpa o aparelho e o código de recuperação continua valendo. Para apagar também o que está no servidor, fale com a gente (seção 12).
 - **“Excluir conta e dados”**, em Perfil, apaga na hora seu perfil, sua foto, suas chaves de pagamento e seu código de recuperação, e revoga o acesso dado pela Apple. As contas que você lançou em grupos com outras pessoas continuam lá para o grupo, sem o seu nome, como “Ex-membro”.
-- Os dados de uso ligados a um aparelho ficam no Google Analytics por até 14 meses. Depois disso, só restam números agregados, sem nada que identifique alguém.
+- Os dados de uso ligados a um aparelho ficam no Google Analytics por até 14 meses. Depois disso, só restam números agregados, sem nada que identifique alguém. Quando a sua conta é excluída, o ID que elas levam deixa de apontar para você.
 
 ## Seus direitos {#direitos}
 
