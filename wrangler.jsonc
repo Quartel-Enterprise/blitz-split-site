@@ -25,7 +25,8 @@
     "html_handling": "auto-trailing-slash"
   },
   "vars": {
-    // The API's edge function that answers what a link's preview shows: an invite's, a bill's and a profile's
+    // The API's edge function that answers what a link's preview shows: an invite's, a bill's, a profile's and the
+    // cards that are the same for every address (a comment's link, the download paths, the legal pages)
     // (blitz-split-api).
     "INVITE_PREVIEW_URL": "https://cfgnuyijsncgpgywoldf.supabase.co/functions/v1/invite-preview"
   },
