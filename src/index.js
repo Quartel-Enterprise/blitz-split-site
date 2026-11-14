@@ -23,6 +23,12 @@ const IMAGE_PATHS = {
 };
 // Why: the letter each link's path and its image's start with.
 const PATH_LETTERS = { invite: "g", bill: "c", profile: "u" };
+// Why: the kinds the function answers for each link.
+const WORD_KINDS = {
+  invite: ["group", "personal", "invalid"],
+  bill: ["bill", "bill_members", "invalid"],
+  profile: ["profile", "invalid"],
+};
 const MEMBER_CODE = /^[A-Za-z0-9]{6}$/;
 const BRAND_IMAGE = "/og/blitzsplit.png";
 const WIDTH = 1200;
@@ -189,7 +195,11 @@ function previewWords(url, env, ctx, target) {
   return cachedJson(url, ctx, path, async () => {
     const response = await askPreview(env, target, false);
     if (!response.ok) throw new Error(`invite-preview answered ${response.status}`);
-    return response.json();
+    const words = await response.json();
+    // Why: a function deployed before it knew `link` reads a bill's code as an invite's, and would put a group's
+    // invite on a bill's link. Such an answer isn't kept, and the page keeps the landing's own tags.
+    if (!WORD_KINDS[target.link].includes(words.kind)) throw new Error(`invite-preview answered ${words.kind}`);
+    return words;
   });
 }
 

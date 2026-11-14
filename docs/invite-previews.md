@@ -29,7 +29,8 @@ currency (BRL Portuguese, the Spanish speaking countries' Spanish, any other Eng
 with satori. Drawing takes 40 to 75 ms of CPU, past the 10 ms the Workers Free plan allows a request, so the
 function draws and this Worker only asks it and keeps each answer in Cloudflare's cache: the words for five minutes,
 an image for a day. The image's address carries the function's `imageVersion` (`?v=`), which changes with whatever
-the card shows, since WhatsApp keeps an image by its address. Should the function fail, the page keeps the landing's
+the card shows, since WhatsApp keeps an image by its address. Should the function fail, or answer a kind the link can't have (one
+deployed before it knew `link` reads a bill's code as an invite's), the page keeps the landing's
 own meta tags and an image answers the brand's card. The function loads the group's and the people's photos itself
 before drawing (Storage, or a Google account's picture), and a photo that doesn't load shows the initials; the
 Worker never fetches a photo. Such a card keeps the address a good one would have, so the function answers it with
