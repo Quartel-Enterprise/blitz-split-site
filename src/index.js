@@ -84,11 +84,14 @@ export default {
 // Why: an unknown path answers with the landing, and whoever asks for a /.well-known file the site doesn't have
 // (a crawler's ard.json, security.txt) must hear that it doesn't exist, not get a page it then fails to parse. The
 // same goes for /legal/<page>.<language>.md and /release-notes/<language>.json: the apps ask for their own language
-// and read English on a 404.
+// and read English on a 404. Why any origin may read the 404: the web app (app.blitzsplit.com) asks from another one,
+// and a browser hides a response without Access-Control-Allow-Origin, so it would see a network error, not the 404.
 async function fileOrNotFound(request, env) {
   const response = await env.ASSETS.fetch(request);
   const isLanding = (response.headers.get("Content-Type") || "").startsWith("text/html");
-  return isLanding ? new Response("Not found\n", { status: 404, headers: { "Content-Type": "text/plain; charset=utf-8" } }) : response;
+  return isLanding
+    ? new Response("Not found\n", { status: 404, headers: { "Content-Type": "text/plain; charset=utf-8", "Access-Control-Allow-Origin": "*" } })
+    : response;
 }
 
 // Which link a path is, by the first of the paths it matches (PAGE_PATHS or IMAGE_PATHS); null for any other path.

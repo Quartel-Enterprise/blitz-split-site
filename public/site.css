@@ -1071,9 +1071,10 @@ label.split-row { cursor: pointer; }
 .release-platforms { display: inline-flex; flex-wrap: wrap; gap: 4px; margin-left: 4px; vertical-align: 1px; }
 .release-platforms span { padding: 1px 8px; border-radius: 999px; font-size: 12.5px; font-weight: 500; line-height: 1.5; background: var(--muted); color: var(--fg-soft); }
 /* A beta version shows only with the switch on, in any language's block; the line that says there is no stable
-   version yet only with it off. */
-.release[data-beta], body:has([data-show-beta]:checked) .releases-empty { display: none; }
-body:has([data-show-beta]:checked) .release[data-beta] { display: block; }
+   version yet only with it off. boot.js sets data-beta from the kept choice before the first paint, site.js follows the
+   switch, and :has() keeps the switch working without JavaScript. */
+.release[data-beta], body:has([data-show-beta]:checked) .releases-empty, :root[data-beta="on"] .releases-empty { display: none; }
+body:has([data-show-beta]:checked) .release[data-beta], :root[data-beta="on"] .release[data-beta] { display: block; }
 
 .to-top { position: fixed; right: 16px; bottom: 16px; z-index: 40; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--card); color: var(--fg); border: 1px solid var(--border); box-shadow: var(--shadow-sm); opacity: 0; pointer-events: none; transition: opacity 0.2s; }
 .to-top.show { opacity: 1; pointer-events: auto; }

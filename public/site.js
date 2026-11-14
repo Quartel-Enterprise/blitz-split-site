@@ -194,15 +194,15 @@
   }));
 
   // The release notes' "Show beta versions": off at first, kept for the next visit. Every language's block has its own
-  // switch, so they move together, and site.css shows the beta versions while one is on.
+  // switch, so they move together, and site.css shows the beta versions while one is on. boot.js read the kept choice
+  // into data-beta.
   const betaSwitches = [...document.querySelectorAll("[data-show-beta]")];
   function showBeta(on) {
     betaSwitches.forEach((el) => { el.checked = on; });
+    root.dataset.beta = on ? "on" : "off";
   }
   if (betaSwitches.length) {
-    let saved = null;
-    try { saved = localStorage.getItem("beta"); } catch (e) { /* storage blocked: off */ }
-    showBeta(saved === "on");
+    showBeta(root.dataset.beta === "on");
     betaSwitches.forEach((el) => el.addEventListener("change", () => {
       const state = el.checked ? "on" : "off";
       showBeta(el.checked);

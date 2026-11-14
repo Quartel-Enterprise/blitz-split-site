@@ -24,7 +24,8 @@ const PAGE = "public/release-notes.html";
 // The platforms a note names, in the order the page lists them; "all" stands alone, for every one of them.
 const PLATFORMS = ["android", "ios", "mac", "web"];
 // A version's name as the app's version.properties and its beta tags write it: 3.1.0, 3.1.0-beta_2.
-const VERSION = /^(\d+)\.(\d+)\.(\d+)(?:-beta_([1-9]\d*))?$/;
+// Why no leading zero: 3.01.0 and 3.1.0 would be two files of one version.
+const VERSION = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-beta_([1-9]\d*))?$/;
 
 const CHROME = {
   pt: { language: "Português", brand: "Bora Rachar", locale: "pt-BR", title: "Novidades", lead: "O que mudou em cada versão do app.", showBeta: "Mostrar versões beta", beta: "Beta", empty: "Ainda não há uma versão estável. Ative as versões beta para ver o que está em teste.", platforms: { android: "Android", ios: "iPhone e iPad", mac: "Mac", web: "Web" } },
@@ -79,6 +80,8 @@ function readVersion(file) {
     if (typeof note.text !== "string" || note.text.trim() === "" || note.text !== note.text.trim() || /[\n\r\t]/.test(note.text)) {
       fail(file, `${what}'s text is one line, with no space around it`);
     }
+    // Why: the apps draw the text as it is, so a tag or **bold** would show as written.
+    if (/[<>`]|\*\*|__|\]\(/.test(note.text)) fail(file, `${what}'s text is plain, with no Markdown and no HTML`);
     const platforms = note.platforms;
     if (!Array.isArray(platforms) || platforms.length === 0) fail(file, `${what}'s platforms is a list: ["all"], or some of ${PLATFORMS.join(", ")}`);
     if (platforms.join() === "all") return;
