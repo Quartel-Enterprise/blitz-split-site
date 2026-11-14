@@ -3,3 +3,6 @@ node_modules/
 .dev.vars*
 .DS_Store
 design/screenshots/
+# Written by scripts/build-release-notes.mjs, at deploy and by npm run dev
+public/release-notes.html
+public/release-notes/

@@ -2,14 +2,16 @@
 // are written, into the two things that are read:
 //
 // - public/release-notes/<language>.json, the feed the apps download: every version of that language, newest first.
-// - public/release-notes.html, the page, between <main> and </main>: a block per language, newest first.
+// - public/release-notes.html, the page: pages/release-notes.html with a block per language, newest first.
+//
+// Neither is in git: `wrangler deploy` and `wrangler dev` write them first (wrangler.jsonc's build).
 //
 //   node scripts/build-release-notes.mjs           writes the feeds and the page
-//   node scripts/build-release-notes.mjs --check   fails when one isn't what the notes give (CI)
+//   node scripts/build-release-notes.mjs --check   only fails on a wrong file, writing nothing (CI)
 //
 // docs/release-notes.md says what a version's file takes.
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, statSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
@@ -21,6 +23,8 @@ process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 const LANGS = ["pt", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
 const SOURCE_DIR = "release-notes";
 const FEED_DIR = "public/release-notes";
+// The page's shell, written by hand: its header, its footer and its strings, with nothing between <main> and </main>.
+const TEMPLATE = "pages/release-notes.html";
 const PAGE = "public/release-notes.html";
 // The platforms a note names, in the order the page lists them; "all" stands alone, for every one of them.
 const PLATFORMS = ["android", "ios", "mac", "web"];
@@ -178,36 +182,22 @@ function renderLanguage({ lang, releases }) {
 
 function build(check) {
   const notes = loadNotes();
-  const html = readFileSync(PAGE, "utf8");
-  const page = withMain(html, notes.flatMap(renderLanguage).join("\n"));
-  if (page === null) fail(PAGE, "no <main id=\"main\"> … </main> to write the versions in");
-  const outputs = [
-    ...notes.map(({ lang, releases }) => [`${FEED_DIR}/${lang}.json`, feed(releases)]),
-    [PAGE, page],
-  ];
-  // Why: a check writes nothing, not even the folder.
-  if (!check) mkdirSync(FEED_DIR, { recursive: true });
-  // Why: a feed nobody writes anymore would still be served, and read by an app.
-  const feeds = outputs.map(([file]) => file);
-  for (const name of existsSync(FEED_DIR) ? readdirSync(FEED_DIR) : []) if (!name.startsWith(".") && !feeds.includes(`${FEED_DIR}/${name}`)) fail(`${FEED_DIR}/${name}`, "not a language's feed: delete it");
-  let stale = false;
-  for (const [file, next] of outputs) {
-    let current = null;
-    try { current = readFileSync(file, "utf8"); } catch { /* a feed not written yet */ }
-    if (next === current) continue;
-    if (check) {
-      console.error(`${file} isn't what ${SOURCE_DIR}/ gives: run npm run build:release-notes and commit it.`);
-      stale = true;
-    } else {
-      writeFileSync(file, next);
-      console.log(`Wrote ${file}`);
-    }
-  }
-  return stale;
+  const page = withMain(readFileSync(TEMPLATE, "utf8"), notes.flatMap(renderLanguage).join("\n"));
+  if (page === null) fail(TEMPLATE, "no <main id=\"main\"> … </main> to write the versions in");
+  // Why: a check only reads the notes and draws them, which is where a wrong file fails; nothing is written.
+  if (check) return;
+  mkdirSync(FEED_DIR, { recursive: true });
+  const feeds = notes.map(({ lang }) => `${lang}.json`);
+  for (const { lang, releases } of notes) writeFileSync(`${FEED_DIR}/${lang}.json`, feed(releases));
+  // Why: a feed nobody writes anymore would still be served, and read by an app. Only the stale ones go, after the
+  // others are written, so `wrangler dev` rebuilding never serves a 404 for a feed that exists.
+  for (const name of readdirSync(FEED_DIR)) if (!feeds.includes(name)) rmSync(`${FEED_DIR}/${name}`, { recursive: true, force: true });
+  writeFileSync(PAGE, page);
+  console.log(`Wrote ${PAGE} and ${notes.length} feeds in ${FEED_DIR}/ (${notes[0].releases.length} versions)`);
 }
 
 try {
-  if (build(process.argv.includes("--check"))) process.exit(1);
+  build(process.argv.includes("--check"));
 } catch (error) {
   if (!(error instanceof NotesError)) throw error;
   console.error(error.message);

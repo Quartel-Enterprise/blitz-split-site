@@ -6,7 +6,7 @@ Dutch, Turkish, Indonesian and Japanese). Two readers take those files:
 
 - **The site.** `npm run build:legal` (`scripts/build-legal.mjs`) writes each language's block, between `<main>` and
   `</main>` of `public/privacy.html` and `public/terms.html`, from them. The pages stay plain HTML in git, so the
-  deploy still builds nothing; the rest of each page (the header, the footer, `window.SITE_STRINGS`) is written by
+  deploy builds nothing for them; the rest of each page (the header, the footer, `window.SITE_STRINGS`) is written by
   hand, as on the landing.
 - **The apps.** Android, iPhone, iPad and Mac download `https://blitzsplit.com/legal/<page>.<language>.md` and draw
   it with their own components (`blitz-split-client`, `LegalDocumentParser`). A language the site doesn't have answers
