@@ -8,7 +8,7 @@ updated: 2026-11-13
 > - Uygulamayı hesap açmadan kullanırsın. Google ve Apple isteğe bağlıdır.
 > - Eklediğin her şey önce kendi cihazında kalır; sunucuya yalnızca eşitlemek ve grubuna ulaşmak için gider.
 > - Bir gruptakiler yalnızca o gruba ait olanı görür. E-postanı kimse görmez.
-> - Kullanım ölçümleri ve çökme raporları ad ya da tutar içermez. Bir hesabın varsa ölçümler onun kimliğine bağlanır. Reklam kimliği kullanmayız ve ölçümleri Profil'den kapatabilirsin.
+> - Kullanım ölçümleri ve çökme raporları ad ya da tutar içermez. Bir hesabın varsa ölçümler onun kimliğine bağlanır. Reklam kimliği kullanmayız ve ölçümleri Profile'dan kapatabilirsin.
 > - Veri satmayız. Hesabını ve verilerini uygulamanın içinden silersin.
 
 ## Biz kimiz {#who}
@@ -35,7 +35,7 @@ Bu politika, Brezilya Genel Veri Koruma Kanunu'na (13.709/2018 sayılı Kanun, L
 
 ### Otomatik olarak toplananlar
 
-- **Kullanım ölçümleri** (Google Firebase Analytics): açılan ekranlar ve yapılan işlemler, örneğin “grup oluşturdu”, cihaz verileriyle birlikte (model, sistem, dil, uygulama sürümü ve yaklaşık ülke). Hiçbir zaman ad, tutar ya da grupların, masrafların veya kişilerin kimliklerini içermez. Reklam kimliğini kullanmayız ve reklam kişiselleştirmesi kapalıdır. Anonim ya da Google veya Apple ile bir hesabın varsa ölçümler, adın ya da e-postan olmayan rastgele bir kod olan hesap kimliğini taşır; böylece uygulamanın telefonunda, bilgisayarında ve tarayıcında birlikte nasıl kullanıldığını görürüz. Bunları her cihazda Profil › Gizlilik ve hakkında › “Kullanım verilerini paylaş” ile kapatırsın.
+- **Kullanım ölçümleri** (Google Firebase Analytics): açılan ekranlar ve yapılan işlemler, örneğin “grup oluşturdu”, cihaz verileriyle birlikte (model, sistem, dil, uygulama sürümü ve yaklaşık ülke). Hiçbir zaman ad, tutar ya da grupların, masrafların veya kişilerin kimliklerini içermez. Reklam kimliğini kullanmayız ve reklam kişiselleştirmesi kapalıdır. Anonim ya da Google veya Apple ile bir hesabın varsa ölçümler, adın ya da e-postan olmayan rastgele bir kod olan hesap kimliğini taşır; böylece uygulamanın telefonunda, bilgisayarında ve tarayıcında birlikte nasıl kullanıldığını görürüz. Bunları her cihazda Profile › Privacy and about › “Share usage data” (kullanım verilerini paylaş) ile kapatırsın.
 - **Çökme raporları** (Firebase Crashlytics, Android, iPhone, iPad ve Mac uygulamalarında): hatanın türü ve kodda nerede oluştuğu; verilerini içerebilecek mesajlar olmadan.
 - **Bildirim belirteci (token):** Google'ın, Apple'ın ya da tarayıcının, bildirim alabilmesi için cihaza verdiği adres.
 - **Bağlantı verileri**, örneğin IP adresi; altyapı sağlayıcılarımız tarafından kaydedilir.
@@ -60,7 +60,7 @@ Uygulama **önce çevrimdışı** çalışır: eklediğin her şey cihazın kend
 | Giriş yapmak ve erişimi kurtarmak | Anonim kimlik, kurtarma kodu, Google veya Apple hesabı | Sözleşmenin ifası |
 | Fişleri okumak | Fişin fotoğrafı, senin isteğinle | Sözleşmenin ifası |
 | Bildirim göndermek | Cihaz belirteci, grup olayları | Sözleşmenin ifası; hangilerini alacağını Profile › Notifications'tan seçersin |
-| Uygulamayı iyileştirmek ve çökmeleri düzeltmek | Kullanım ölçümleri, çökme raporları | Meşru menfaat (md. 7, IX); Profil'de “Kullanım verilerini paylaş”ı kapatarak itiraz edersin |
+| Uygulamayı iyileştirmek ve çökmeleri düzeltmek | Kullanım ölçümleri, çökme raporları | Meşru menfaat (md. 7, IX); Profile'da “Share usage data”yı kapatarak itiraz edersin |
 | Güvenlik ve kötüye kullanımın önlenmesi | Bağlantı verileri | Meşru menfaat |
 | Yasalara uymak | Yükümlülüğün gerektirdiği veriler | Hukuki yükümlülük (md. 7, II) |
 
