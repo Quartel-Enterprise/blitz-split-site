@@ -13,13 +13,15 @@ that link's title, description and image.
 | A bill's, `/c/<code>` (also with `?comentario=`), which "Anyone with the link" opens | "<bill> · <amount>", who paid, among how many it is split and the group | The category's icon, the bill's name, its amount and "<payer> paid · split among <n>", on the group's color |
 | A bill's which "Only people in the bill" open | "A bill on Blitz Split" | A lock and "Only people in the bill can open it": nothing of the bill, as its page shows nothing to whoever isn't signed in |
 | A profile's, `/u/<code>` | The person's name | Their photo, or their initials on their color, their name and "Split bills with <name>" |
-| A comment's, `/b/<bill>?comentario=<comment>` | "Comment on a bill · Blitz Split" | `/og/comment.png`, a static card: the link opens only for the people of its group, so the preview shows nothing of the bill |
-| `/download`, `/download/android`, `/download/ios`, `/app-download` | "Get Blitz Split" | `/og/download.png`, a static card |
-| `/privacy`, `/terms` | The page's own title | `/og/privacy.png`, `/og/terms.png`, static cards named in the page's own tags |
+| A comment's, `/b/<bill>?comentario=<comment>` | "Comment on a bill · Blitz Split" | `/og/comment.png`, a card that is the same for every bill: the link opens only for the people of its group, so the preview shows nothing of the bill |
+| `/download`, `/download/android`, `/download/ios`, `/app-download` | "Get Blitz Split" | `/og/download.png`, the same card for every address |
+| `/privacy`, `/terms` | The page's own title | `/og/privacy.png`, `/og/terms.png`, named in the page's own tags, in English |
 | A code nobody has (a changed link, a used personal link, a bill's link turned off, a typo) | "Invite to a group on Blitz Split" for an invite, the brand's name otherwise | `/og/blitzsplit.png`, the brand's card, as the landing's |
 
-An invite and a bill speak the language of their currency; a profile, which has none, and the static cards are in
-English.
+An invite and a bill speak the language of their currency. A profile, which has none, a comment's link and the
+download paths speak the language their link asks for, `?lang=`: the apps add their own language to those links when
+they share them, and the pages read the same parameter (`boot.js`), so the page that opens speaks it too. Portuguese
+and Spanish are written; any other language, or none, reads English.
 
 What a preview says and its card come from the API's
 [`invite-preview`](https://github.com/Quartel-Enterprise/blitz-split-api/tree/main/supabase/functions/invite-preview)
@@ -38,10 +40,11 @@ Worker never fetches a photo. Such a card keeps the address a good one would hav
 next ask a minute later tries the photo again. A new photo changes `?v=` by itself, since the apps store each one
 with `?v=<updated_at>` in its URL and a Google picture's URL changes with it.
 
-`public/og/blitzsplit.png`, the brand's card, and the other static cards (`comment.png`, `download.png`, `privacy.png`,
-`terms.png`) are files the function's `brand_card.ts` draws with the same layout: run it there after changing the
-layout or the brand (`brand_card.ts <out.png> [comment|download|privacy|terms]`), and copy the files here. The static
-previews' words are `STATIC_PREVIEWS` in `src/index.js`, the same as the function's.
+`public/og/blitzsplit.png`, the brand's card, is the one image the site keeps as a file, since it is what a preview
+shows when the function fails: the function's `brand_card.ts` draws it with the same layout, so run it there after
+changing the layout or the brand, and copy the file here. Every other card, the ones that are the same for every
+address too (`/og/comment.png`, `/og/download.png`, `/og/privacy.png`, `/og/terms.png`), is drawn by the function on
+demand, in the language asked, as are their words: the Worker holds none.
 
 When the 302 of the app links to the web app comes back ([blitz-split-site#12](https://github.com/Quartel-Enterprise/blitz-split-site/pull/12), paused by
 [blitz-split-site#13](https://github.com/Quartel-Enterprise/blitz-split-site/pull/13)), `/g/*`, `/c/*`, `/u/*` and `/b/*` must still answer crawlers with

@@ -4,12 +4,15 @@
 // /g/<code>, /g/<code>/<member> (an invite), /c/<code> (a bill's link) and /u/<code> (a profile's): the landing, as
 // before, with that link's meta tags, which WhatsApp, iMessage, Telegram and the rest read to draw its preview.
 // /og/g/<code>.png, /og/g/<code>/<member>.png?from=, /og/c/<code>.png, /og/u/<code>.png: that preview's image.
-// /b/<bill> (a comment's link) and the download paths: the landing with tags of their own and a static card.
+// /b/<bill> (a comment's link) and the download paths: the landing with the tags of a card that is the same for every
+// address, in the language the link asks for (?lang=). /og/comment.png, /og/download.png, /og/privacy.png and
+// /og/terms.png: those cards and the legal pages'.
 //
 // What a preview shows, its words and its card, comes from the API's invite-preview edge function
 // (blitz-split-api), which draws the card there: drawing takes more CPU than a Worker on the Free plan may use. This
 // Worker only asks it and keeps each answer in Cloudflare's cache. /og/blitzsplit.png, the brand's card (the
-// landing's and a dead link's), and the other static cards are files the function's brand_card.ts draws.
+// landing's and a dead link's, and any card's when the function fails), is the one file, which the function's
+// brand_card.ts draws.
 
 const PAGE_PATHS = {
   invite: /^\/g\/([A-Za-z0-9]{8})(?:\/([A-Za-z0-9]{6}))?\/?$/,
@@ -28,6 +31,7 @@ const WORD_KINDS = {
   invite: ["group", "personal", "invalid"],
   bill: ["bill", "bill_members", "invalid"],
   profile: ["profile", "invalid"],
+  static: ["static"],
 };
 const MEMBER_CODE = /^[A-Za-z0-9]{6}$/;
 const BRAND_IMAGE = "/og/blitzsplit.png";
@@ -45,23 +49,17 @@ const CARD_TAGS = {
 const WORDS_TTL = 300;
 const IMAGE_TTL = 86400;
 
-// The links whose preview is the same for every address: a comment's link opens only for the people of its group, so
-// its preview shows nothing of the bill, and the download paths lead to a store. In English alone, since nothing in
-// the address says who reads it. The words are the API's (STATIC in _shared/link_preview.ts), as the cards are.
-const COMMENT_PATH = /^\/b\/[0-9A-Fa-f-]{36}\/?$/;
-const DOWNLOAD_PATH = /^\/(?:app-download|download(?:\/(?:android|ios))?)\/?$/;
-const STATIC_PREVIEWS = {
-  comment: {
-    title: "Comment on a bill · Blitz Split",
-    description: "Open it in Blitz Split to read it and answer.",
-    image: "/og/comment.png",
-  },
-  download: {
-    title: "Get Blitz Split",
-    description: "Split bills with friends, even offline. No sign-up required.",
-    image: "/og/download.png",
-  },
+// The pages whose preview is the same for every address, but for its language: a comment's link opens only for the
+// people of its group, so its preview shows nothing of the bill, and the download paths lead to a store. The function
+// writes their words and draws their cards, as it does the legal pages' cards (/og/privacy.png, /og/terms.png).
+const STATIC_PAGES = {
+  comment: /^\/b\/[0-9A-Fa-f-]{36}\/?$/,
+  download: /^\/(?:app-download|download(?:\/(?:android|ios))?)\/?$/,
 };
+const STATIC_IMAGE = /^\/og\/(comment|download|privacy|terms)\.png$/;
+// Why: the language a link asks its preview in, the app's own when it shared the link; the pages read the same
+// parameter (boot.js), so the page that opens speaks it too.
+const LANGUAGE = /^[A-Za-z]{2,3}$/;
 
 export default {
   async fetch(request, env, ctx) {
@@ -70,8 +68,6 @@ export default {
     if (page) return previewPage(request, url, env, ctx, page);
     const image = linkTargetOf(IMAGE_PATHS, url);
     if (image) return previewImage(request, url, env, ctx, image);
-    if (COMMENT_PATH.test(url.pathname)) return staticPage(request, url, env, STATIC_PREVIEWS.comment);
-    if (DOWNLOAD_PATH.test(url.pathname)) return staticPage(request, url, env, STATIC_PREVIEWS.download);
     if (url.pathname.startsWith("/.well-known/") || url.pathname.startsWith("/legal/")) return fileOrNotFound(request, env);
     return env.ASSETS.fetch(request);
   },
@@ -92,7 +88,21 @@ function linkTargetOf(paths, url) {
     const match = path.exec(url.pathname);
     if (match) return targetOf(link, match, url);
   }
-  return null;
+  return staticTargetOf(paths, url);
+}
+
+// A static page's target, or its card's image's: no code, only which card and in which language.
+function staticTargetOf(paths, url) {
+  const card = paths === IMAGE_PATHS
+    ? STATIC_IMAGE.exec(url.pathname)?.[1]
+    : Object.keys(STATIC_PAGES).find((name) => STATIC_PAGES[name].test(url.pathname));
+  if (!card) return null;
+  return { link: "static", card, code: null, memberCode: null, inviterCode: null, language: languageOf(url) };
+}
+
+function languageOf(url) {
+  const language = url.searchParams.get("lang");
+  return language && LANGUAGE.test(language) ? language.toLowerCase() : null;
 }
 
 function targetOf(link, match, url) {
@@ -100,7 +110,9 @@ function targetOf(link, match, url) {
   const from = url.searchParams.get("from");
   return {
     link,
+    card: null,
     code,
+    language: languageOf(url),
     memberCode: memberCode ?? null,
     // Why: only a personal link says who shared it, as the apps read it.
     inviterCode: memberCode && from && MEMBER_CODE.test(from) ? from : null,
@@ -158,8 +170,9 @@ function withTags(landing, title, description, tags) {
 function imageUrlOf(url, target, words) {
   if (words.kind === "invalid" || !words.imageVersion) return new URL(BRAND_IMAGE, url).href;
   const path = target.memberCode ? `${target.code}/${target.memberCode}` : target.code;
-  const image = new URL(`/og/${PATH_LETTERS[target.link]}/${path}.png`, url);
+  const image = new URL(target.card ? `/og/${target.card}.png` : `/og/${PATH_LETTERS[target.link]}/${path}.png`, url);
   if (target.inviterCode) image.searchParams.set("from", target.inviterCode);
+  if (target.language) image.searchParams.set("lang", target.language);
   // Why: WhatsApp keeps an image by its address; the version changes with whatever the card shows.
   image.searchParams.set("v", words.imageVersion);
   return image.href;
@@ -191,7 +204,8 @@ async function cachedJson(url, ctx, path, load) {
 }
 
 function previewWords(url, env, ctx, target) {
-  const path = `/__preview/${target.link}/${target.code}/${target.memberCode ?? ""}?from=${target.inviterCode ?? ""}`;
+  const subject = target.card ?? `${target.code}/${target.memberCode ?? ""}`;
+  const path = `/__preview/${target.link}/${subject}?from=${target.inviterCode ?? ""}&lang=${target.language ?? ""}`;
   return cachedJson(url, ctx, path, async () => {
     const response = await askPreview(env, target, false);
     if (!response.ok) throw new Error(`invite-preview answered ${response.status}`);
@@ -243,20 +257,4 @@ function askPreview(env, target, image) {
 
 function escapeAttribute(value) {
   return value.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-// A page whose preview is the same for every address: the landing with that preview's tags and its static card.
-async function staticPage(request, url, env, preview) {
-  const landing = await landingOf(request, url, env);
-  const tags = {
-    "og:title": preview.title,
-    "og:description": preview.description,
-    "og:url": new URL(url.pathname, url).href,
-    "og:type": "website",
-    "og:site_name": "Blitz Split",
-    "og:image": new URL(preview.image, url).href,
-    "og:image:alt": preview.title,
-    ...CARD_TAGS,
-  };
-  return withTags(landing, preview.title, preview.description, tags);
 }
