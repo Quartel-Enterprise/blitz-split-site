@@ -11,9 +11,11 @@
 // Worker only asks it and keeps each answer in Cloudflare's cache. /og/blitzsplit.png, the brand's card (the
 // landing's and a dead link's), and the other static cards are files the function's brand_card.ts draws.
 
-const INVITE_PATH = /^\/g\/([A-Za-z0-9]{8})(?:\/([A-Za-z0-9]{6}))?\/?$/;
-const BILL_PATH = /^\/c\/([A-Za-z0-9]{8})\/?$/;
-const PROFILE_PATH = /^\/u\/([A-Za-z0-9]{10})\/?$/;
+const PAGE_PATHS = {
+  invite: /^\/g\/([A-Za-z0-9]{8})(?:\/([A-Za-z0-9]{6}))?\/?$/,
+  bill: /^\/c\/([A-Za-z0-9]{8})\/?$/,
+  profile: /^\/u\/([A-Za-z0-9]{10})\/?$/,
+};
 const IMAGE_PATHS = {
   invite: /^\/og\/g\/([A-Za-z0-9]{8})(?:\/([A-Za-z0-9]{6}))?\.png$/,
   bill: /^\/og\/c\/([A-Za-z0-9]{8})\.png$/,
@@ -25,6 +27,13 @@ const MEMBER_CODE = /^[A-Za-z0-9]{6}$/;
 const BRAND_IMAGE = "/og/blitzsplit.png";
 const WIDTH = 1200;
 const HEIGHT = 630;
+// Why: every card, drawn or static, is a 1200 × 630 PNG shown large.
+const CARD_TAGS = {
+  "og:image:type": "image/png",
+  "og:image:width": String(WIDTH),
+  "og:image:height": String(HEIGHT),
+  "twitter:card": "summary_large_image",
+};
 // Why: a renamed group or a new member shows a few minutes later; an image's address changes with what it shows,
 // so it may stay a day.
 const WORDS_TTL = 300;
@@ -51,12 +60,10 @@ const STATIC_PREVIEWS = {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    const page = pageTargetOf(url);
+    const page = linkTargetOf(PAGE_PATHS, url);
     if (page) return previewPage(request, url, env, ctx, page);
-    for (const [link, path] of Object.entries(IMAGE_PATHS)) {
-      const image = path.exec(url.pathname);
-      if (image) return previewImage(request, url, env, ctx, targetOf(link, image, url));
-    }
+    const image = linkTargetOf(IMAGE_PATHS, url);
+    if (image) return previewImage(request, url, env, ctx, image);
     if (COMMENT_PATH.test(url.pathname)) return staticPage(request, url, env, STATIC_PREVIEWS.comment);
     if (DOWNLOAD_PATH.test(url.pathname)) return staticPage(request, url, env, STATIC_PREVIEWS.download);
     if (url.pathname.startsWith("/.well-known/") || url.pathname.startsWith("/legal/")) return fileOrNotFound(request, env);
@@ -73,14 +80,13 @@ async function fileOrNotFound(request, env) {
   return isLanding ? new Response("Not found\n", { status: 404, headers: { "Content-Type": "text/plain; charset=utf-8" } }) : response;
 }
 
-// Which link a page's path is, null for any other path.
-function pageTargetOf(url) {
-  const invite = INVITE_PATH.exec(url.pathname);
-  if (invite) return targetOf("invite", invite, url);
-  const bill = BILL_PATH.exec(url.pathname);
-  if (bill) return targetOf("bill", bill, url);
-  const profile = PROFILE_PATH.exec(url.pathname);
-  return profile ? targetOf("profile", profile, url) : null;
+// Which link a path is, by the first of the paths it matches (PAGE_PATHS or IMAGE_PATHS); null for any other path.
+function linkTargetOf(paths, url) {
+  for (const [link, path] of Object.entries(paths)) {
+    const match = path.exec(url.pathname);
+    if (match) return targetOf(link, match, url);
+  }
+  return null;
 }
 
 function targetOf(link, match, url) {
@@ -110,11 +116,8 @@ async function previewPage(request, url, env, ctx, target) {
     "og:site_name": words.siteName,
     "og:locale": words.locale,
     "og:image": imageUrlOf(url, target, words),
-    "og:image:type": "image/png",
-    "og:image:width": String(WIDTH),
-    "og:image:height": String(HEIGHT),
     "og:image:alt": words.imageAlt,
-    "twitter:card": "summary_large_image",
+    ...CARD_TAGS,
   };
   return withTags(landing, words.title, words.description, tags);
 }
@@ -128,7 +131,10 @@ function withTags(landing, title, description, tags) {
     .on('meta[property^="og:"], meta[name^="twitter:"]', { element: (el) => el.remove() })
     .on("head", {
       element: (el) => {
+        // Why: a field the function leaves out (a profile has no currency to give a locale) is no tag, rather than
+        // escapeAttribute throwing inside the rewriter and cutting the page short.
         const html = Object.entries(tags)
+          .filter(([, value]) => value != null)
           .map(([key, value]) => {
             const attribute = key.startsWith("twitter:") ? "name" : "property";
             return `<meta ${attribute}="${key}" content="${escapeAttribute(value)}">`;
@@ -239,11 +245,8 @@ async function staticPage(request, url, env, preview) {
     "og:type": "website",
     "og:site_name": "Blitz Split",
     "og:image": new URL(preview.image, url).href,
-    "og:image:type": "image/png",
-    "og:image:width": String(WIDTH),
-    "og:image:height": String(HEIGHT),
     "og:image:alt": preview.title,
-    "twitter:card": "summary_large_image",
+    ...CARD_TAGS,
   };
   return withTags(landing, preview.title, preview.description, tags);
 }

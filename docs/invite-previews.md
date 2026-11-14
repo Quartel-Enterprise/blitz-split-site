@@ -1,7 +1,7 @@
 # Link previews
 
 WhatsApp, iMessage, Telegram and the rest draw a link's preview from the page's meta tags. `src/index.js` runs only for
-`/g/*`, `/c/*`, `/u/*`, `/b/*`, `/download`, `/app-download`, `/og/*`, `/.well-known/*` and `/legal/*` (`run_worker_first` in
+`/g/*`, `/c/*`, `/u/*`, `/b/*`, `/download`, `/download/*`, `/app-download`, `/og/*`, `/.well-known/*` and `/legal/*` (`run_worker_first` in
 `wrangler.jsonc`, the last two only to answer a file the site doesn't have with a 404, see [routes](routes.md)); every
 other path is a static file. Every link the apps share has a preview of its own: the Worker serves the landing with
 that link's title, description and image.

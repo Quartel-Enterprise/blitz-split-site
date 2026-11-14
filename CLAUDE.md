@@ -2,14 +2,14 @@
 
 The site at blitzsplit.com of Bora Rachar (Blitz Split in English, Spanish, French, German, Italian, Polish, Dutch,
 Turkish, Indonesian and Japanese): the landing, the privacy policy and the terms of use, served by a Cloudflare Worker with static assets (`public/`) and one
-script (`src/index.js`) for the shared links' previews. Plain HTML, CSS and JavaScript with no build. The apps live in
+script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and JavaScript with no build. The apps live in
 `blitz-split-client` and the backend in `blitz-split-api`.
 
 ## Documentation
 
 - **Routes**: [`docs/routes.md`](docs/routes.md): every path the site answers, redirects and the `.well-known` files.
-- **Link previews**: [`docs/invite-previews.md`](docs/invite-previews.md): every link the apps share (`/g/*`, `/c/*`,
-  `/u/*`, `/b/*`, the download paths) and `/og/*`, the API's `invite-preview` function and the cache.
+- **Invite link previews**: [`docs/invite-previews.md`](docs/invite-previews.md): `/g/*` and `/og/*`, the API's
+  `invite-preview` function and the cache.
 - **Pages and design**: [`docs/design.md`](docs/design.md): tokens, languages, theme, motion, the landing's working
   phone, the design board and the legal pages' open points.
 - **Legal pages**: [`docs/legal.md`](docs/legal.md): the Markdown the privacy policy and the terms are written in,

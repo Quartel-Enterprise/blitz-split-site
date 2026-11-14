@@ -8,8 +8,8 @@
   window.dataLayer = window.dataLayer || [];
   window.gtag = function gtag() { window.dataLayer.push(arguments); };
 
-  // An app link carries a group's code, a member's, a bill's id, a comment's or a profile's code: none of them reaches
-  // Analytics, as the privacy policy promises. Its page view keeps only the kind of link.
+  // An app link carries a group's code, a member's, a bill's id or its link's code, a comment's or a profile's code:
+  // none of them reaches Analytics, as the privacy policy promises. Its page view keeps only the kind of link.
   function appLink(url) {
     if (/^\/g\/[^/]+\/[^/]+\/?$/.test(url.pathname)) return "member_invite";
     if (/^\/g\/[^/]+\/?$/.test(url.pathname)) return "group_invite";
