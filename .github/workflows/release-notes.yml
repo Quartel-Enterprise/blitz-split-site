@@ -8,6 +8,7 @@ on:
     paths:
       - '.github/workflows/release-notes.yml'
       - 'scripts/build-release-notes.mjs'
+      - 'scripts/lib/**'
       - 'release-notes/**'
       - 'public/release-notes/**'
       - 'public/release-notes.html'
@@ -17,6 +18,7 @@ on:
     paths:
       - '.github/workflows/release-notes.yml'
       - 'scripts/build-release-notes.mjs'
+      - 'scripts/lib/**'
       - 'release-notes/**'
       - 'public/release-notes/**'
       - 'public/release-notes.html'

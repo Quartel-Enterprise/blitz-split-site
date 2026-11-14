@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
 
 // The paths below are the repository's, wherever the script is run from.
 process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
@@ -55,10 +56,7 @@ function parse(file, source) {
     meta[match[1]] = match[2];
   }
   if (!meta.title) fail(file, 1, "the front matter needs a title");
-  // Why: Date.UTC rolls an impossible date over (2026-13-05 is January 2027) instead of failing.
-  const isDate = /^\d{4}-\d{2}-\d{2}$/.test(meta.updated || "") && !Number.isNaN(Date.parse(meta.updated))
-    && new Date(Date.parse(meta.updated)).toISOString().startsWith(meta.updated);
-  if (!isDate) fail(file, 1, "the front matter needs updated: YYYY-MM-DD");
+  if (!isDate(meta.updated)) fail(file, 1, "the front matter needs updated: YYYY-MM-DD");
   if (Object.keys(meta).length !== 2) fail(file, 1, "the front matter takes only title and updated");
   const body = lines.slice(end + 1);
   return { meta, blocks: parseBlocks(file, body, end + 2, false), words: body.join(" ").split(/\s+/).filter((word) => /\p{L}/u.test(word)).length };
@@ -127,7 +125,6 @@ function parseBlocks(file, lines, firstLine, inCallout) {
 
 // --- Inline text ----------------------------------------------------------------------------------------------------
 
-const escapeHtml = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 // An attribute's value, from text already escaped as HTML: no tags, and no quote to close it early.
 const attribute = (html) => html.replace(/<[^>]*>/g, "").replace(/"/g, "&quot;");
 
@@ -161,8 +158,6 @@ function address(file, at, lang, href) {
 }
 
 // --- Blocks to HTML -------------------------------------------------------------------------------------------------
-
-const ICON = (name) => `<svg class="icon"><use href="#i-${name}"/></svg>`;
 
 function renderBlock(file, lang, block, pad) {
   const text = (value) => inline(file, block.at, lang, value);
@@ -206,8 +201,7 @@ function renderLanguage(page, lang, file, doc, minutes) {
   const repeated = anchors.find((anchor, index) => anchors.indexOf(anchor) !== index);
   if (repeated) fail(file, 1, `two sections are {#${repeated}}`);
 
-  const [year, month, day] = doc.meta.updated.split("-").map(Number);
-  const date = new Intl.DateTimeFormat(chrome.locale, { dateStyle: "long", timeZone: "UTC" }).format(new Date(Date.UTC(year, month - 1, day)));
+  const date = longDate(chrome.locale, doc.meta.updated);
   const updated = (typeof chrome.updated === "string" ? chrome.updated : chrome.updated[page]).replace("{date}", date);
   const text = (at, value) => inline(file, at, lang, value);
 
@@ -288,9 +282,6 @@ function renderPage(page, docs) {
   return LANGS.flatMap((lang) => renderLanguage(page, lang, docs[lang].file, docs[lang], minutes)).join("\n");
 }
 
-const OPEN = '  <main id="main">\n';
-const CLOSE = "\n  </main>";
-
 function build(check) {
   const known = new Set(PAGES.flatMap((page) => LANGS.map((lang) => `${page}.${lang}.md`)));
   // Why: a hidden file a system leaves (macOS's .DS_Store) isn't a misnamed legal text.
@@ -300,10 +291,8 @@ function build(check) {
   for (const page of PAGES) {
     const file = `public/${page}.html`;
     const html = readFileSync(file, "utf8");
-    const start = html.indexOf(OPEN);
-    const end = html.indexOf(CLOSE);
-    if (start < 0 || end < start) fail(file, 1, "no <main id=\"main\"> … </main> to write the text in");
-    const next = html.slice(0, start + OPEN.length) + renderPage(page, docs[page]) + html.slice(end);
+    const next = withMain(html, renderPage(page, docs[page]));
+    if (next === null) fail(file, 1, "no <main id=\"main\"> … </main> to write the text in");
     if (next === html) continue;
     if (check) {
       console.error(`${file} isn't what ${LEGAL_DIR}/${page}.*.md gives: run npm run build:legal and commit it.`);

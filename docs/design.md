@@ -74,5 +74,6 @@ none may be left before they go live.
 
 ## Release notes
 
-"What's new" (`/release-notes`) keeps the legal pages' hero, with "Show beta versions" under its title, and lists
-each version as a card: [release-notes.md](release-notes.md).
+"What's new" (`/release-notes`) keeps the legal pages' header and hero, with "Show beta versions" under its title, and
+lists each version as a card: [release-notes.md](release-notes.md). The design board opens it with `?beta=on`, so the
+cards show while every version is still a beta.

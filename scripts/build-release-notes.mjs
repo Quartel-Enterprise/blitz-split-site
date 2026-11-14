@@ -9,9 +9,10 @@
 //
 // docs/release-notes.md says what a version's file takes.
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, statSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
 
 // The paths below are the repository's, wherever the script is run from.
 process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
@@ -56,10 +57,6 @@ const newestFirst = (a, b) => {
   const at = x.findIndex((part, index) => part !== y[index]);
   return at < 0 ? 0 : y[at] > x[at] ? 1 : -1;
 };
-
-const isDate = (value) => typeof value === "string" && /^\d{4}-\d{2}-\d{2}$/.test(value)
-  // Why: Date.parse rolls an impossible date over (2026-02-31 is March 3) instead of failing.
-  && !Number.isNaN(Date.parse(value)) && new Date(Date.parse(value)).toISOString().startsWith(value);
 
 /** A version's file: the day it came out and its notes, each a text and the platforms it is for. */
 function readVersion(file) {
@@ -135,13 +132,10 @@ function loadNotes() {
 /** What the apps download: a language's versions, newest first. `beta` is the version's name saying so. */
 const feed = (releases) => `${JSON.stringify({ releases }, null, 2)}\n`;
 
-const escapeHtml = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-const ICON = (name) => `<svg class="icon"><use href="#i-${name}"/></svg>`;
 
 function renderRelease(lang, chrome, release) {
   const [name, betaNumber] = release.version.split("-beta_");
-  const [year, month, day] = release.date.split("-").map(Number);
-  const date = new Intl.DateTimeFormat(chrome.locale, { dateStyle: "long", timeZone: "UTC" }).format(new Date(Date.UTC(year, month - 1, day)));
+  const date = longDate(chrome.locale, release.date);
   return [
     `        <article class="release" id="${lang}-${release.version}"${release.beta ? " data-beta" : ""}>`,
     `          <header>`,
@@ -182,23 +176,20 @@ function renderLanguage({ lang, releases }) {
   ];
 }
 
-const OPEN = '  <main id="main">\n';
-const CLOSE = "\n  </main>";
-
 function build(check) {
   const notes = loadNotes();
   const html = readFileSync(PAGE, "utf8");
-  const start = html.indexOf(OPEN);
-  const end = html.indexOf(CLOSE);
-  if (start < 0 || end < start) fail(PAGE, "no <main id=\"main\"> … </main> to write the versions in");
+  const page = withMain(html, notes.flatMap(renderLanguage).join("\n"));
+  if (page === null) fail(PAGE, "no <main id=\"main\"> … </main> to write the versions in");
   const outputs = [
     ...notes.map(({ lang, releases }) => [`${FEED_DIR}/${lang}.json`, feed(releases)]),
-    [PAGE, html.slice(0, start + OPEN.length) + notes.flatMap(renderLanguage).join("\n") + html.slice(end)],
+    [PAGE, page],
   ];
-  mkdirSync(FEED_DIR, { recursive: true });
+  // Why: a check writes nothing, not even the folder.
+  if (!check) mkdirSync(FEED_DIR, { recursive: true });
   // Why: a feed nobody writes anymore would still be served, and read by an app.
   const feeds = outputs.map(([file]) => file);
-  for (const name of readdirSync(FEED_DIR)) if (!name.startsWith(".") && !feeds.includes(`${FEED_DIR}/${name}`)) fail(`${FEED_DIR}/${name}`, "not a language's feed: delete it");
+  for (const name of existsSync(FEED_DIR) ? readdirSync(FEED_DIR) : []) if (!name.startsWith(".") && !feeds.includes(`${FEED_DIR}/${name}`)) fail(`${FEED_DIR}/${name}`, "not a language's feed: delete it");
   let stale = false;
   for (const [file, next] of outputs) {
     let current = null;

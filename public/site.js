@@ -43,12 +43,12 @@
     });
   });
 
-  // Internal links keep a pinned theme and language, so the design board can walk the pages.
-  if (params.has("theme") || params.has("lang")) {
+  // Internal links keep a pinned theme, language and "Show beta versions", so the design board can walk the pages.
+  const pinned = ["theme", "lang", "beta"].filter((name) => params.has(name));
+  if (pinned.length) {
     document.querySelectorAll('a[href^="/"]:not([data-set-lang])').forEach((link) => {
       const url = new URL(link.getAttribute("href"), location.origin);
-      if (params.has("theme")) url.searchParams.set("theme", params.get("theme"));
-      if (params.has("lang")) url.searchParams.set("lang", params.get("lang"));
+      pinned.forEach((name) => url.searchParams.set(name, params.get(name)));
       link.href = url.pathname + url.search + url.hash;
     });
   }

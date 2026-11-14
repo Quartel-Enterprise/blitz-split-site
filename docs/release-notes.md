@@ -74,4 +74,6 @@ platforms aren't English's, or when a file has anything this page doesn't list.
 The versions come newest first, each a card with its number, its date and its notes; a note that isn't for every
 platform names its platforms. "Show beta versions", a switch under the page's title, is off at first: the page shows
 only the stable versions, and the beta ones with it on. The choice is kept for the next visit (`localStorage`'s `beta`),
-as the theme and the language are. While no stable version exists, the page says so and points at the switch.
+as the theme and the language are. `?beta=on|off` pins it without keeping it, as `?theme=` does (the design board
+opens the page with it on, so its cards show), and a link to a beta version's card (`/release-notes#en-3.1.0-beta_2`)
+shows that card whatever was kept. While no stable version exists, the page says so and points at the switch.

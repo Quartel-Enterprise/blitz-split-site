@@ -40,8 +40,11 @@
   // Motion: the landing's hero comes in and its sections rise as they scroll into view (site.css, site.js). Not with
   // reduced motion, and not when the design board pins a theme, so its captures show every section.
   // The release notes' "Show beta versions", kept for the next visit: on here, site.css shows the beta versions from
-  // the first paint instead of once site.js checks the switch.
-  if (stored("beta") === "on") root.dataset.beta = "on";
+  // the first paint instead of once site.js checks the switch. ?beta=on|off pins it without keeping it (the design
+  // board uses it), and a link to a beta version's card (#en-3.1.0-beta_2) shows that card whatever was kept.
+  const beta = ["on", "off"].find((value) => value === params.get("beta"))
+    || (/-beta_\d+$/.test(location.hash) ? "on" : stored("beta"));
+  if (beta === "on") root.dataset.beta = "on";
 
   const still = params.has("theme") || !("IntersectionObserver" in window)
     || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);

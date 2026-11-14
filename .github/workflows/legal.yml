@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/legal.yml'
       - 'scripts/build-legal.mjs'
+      - 'scripts/lib/**'
       - 'public/legal/**'
       - 'public/privacy.html'
       - 'public/terms.html'
@@ -16,6 +17,7 @@ on:
     paths:
       - '.github/workflows/legal.yml'
       - 'scripts/build-legal.mjs'
+      - 'scripts/lib/**'
       - 'public/legal/**'
       - 'public/privacy.html'
       - 'public/terms.html'

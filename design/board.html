@@ -80,7 +80,7 @@
         row.innerHTML = `<h2>${s.name} · ${s.w}×${s.h}<small>${s.note}${s.note ? " · " : ""}${Math.round(scale * 100)}%</small></h2><div class="pair"></div>`;
         for (const theme of ["light", "dark"]) {
           const fig = document.createElement("figure");
-          const url = `${ORIGIN}${state.page}?theme=${theme}&lang=${state.lang}&platform=${state.platform}`;
+          const url = `${ORIGIN}${state.page}?theme=${theme}&lang=${state.lang}&platform=${state.platform}&beta=on`;
           fig.innerHTML = `<figcaption>${theme === "light" ? "Light" : "Dark"}</figcaption>
             <div class="frame" style="width:${s.w * scale}px;height:${s.h * scale}px">
               <iframe loading="lazy" src="${url}" width="${s.w}" height="${s.h}" style="transform:scale(${scale})" title="${s.name} ${theme}"></iframe>
