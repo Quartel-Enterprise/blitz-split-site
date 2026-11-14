@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split ahora habla alemán, italiano y polaco: sigue el idioma de tu dispositivo, o puedes elegir uno en Perfil › Idioma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada categoría ahora tiene su propio color, y Estadísticas dibuja cada categoría y cada persona con el suyo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ahora puedes cambiar el color de una categoría, en el formulario de la categoría o en el Mapa de categorías.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "El menú de un gasto en Gastos tiene una opción nueva, Duplicar: abre un gasto nuevo ya rellenado como el original.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los grupos y los gastos ya no desaparecen por un momento cuando vuelves a la app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La búsqueda ya no se cierra enseguida cuando todavía no tienes ningún grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Un grupo nuevo ahora empieza como Evento, el primer tipo de la lista.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sin ningún grupo, Invitar con enlace o QR ahora muestra solo el botón Nuevo grupo en lugar de botones que no podías usar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Un recibo que tarda más en leerse ya no termina en un error de conexión.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Las filas de categoría en Estadísticas quedan más limpias: ya no muestran el monto de cada subcategoría.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

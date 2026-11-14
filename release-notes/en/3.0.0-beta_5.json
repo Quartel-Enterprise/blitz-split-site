@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split now speaks German, Italian and Polish: it follows your device's language, or you can pick one in Profile › Language.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Every category now has its own color, and Statistics draws each category and each person in theirs.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "You can now change a category's color, in the category's form or in Category map.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "A bill's menu on Expenses has a new option, Duplicate: it opens a new bill already filled in like the original.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups and bills no longer disappear for a moment when you come back to the app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Search no longer closes right away when you don't have a group yet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A new group now starts as Event, the first type on the list.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "With no group yet, Invite with link or QR now shows only the New group button instead of buttons you couldn't use.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A receipt that takes longer to read no longer ends in a connection error.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Statistics' category rows are cleaner: they no longer list each subcategory's amount.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

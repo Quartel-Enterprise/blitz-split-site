@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split mówi teraz po niemiecku, włosku i polsku: używa języka Twojego urządzenia albo tego, który wybierzesz w Profil › Język.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Każda kategoria ma teraz własny kolor, a Statystyki rysują każdą kategorię i każdą osobę w jej kolorze.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Możesz teraz zmienić kolor kategorii, w formularzu kategorii albo w Mapie kategorii.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Menu wydatku w Wydatkach ma nową opcję „Duplikuj”: otwiera nowy wydatek wypełniony tak jak oryginał.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy i wydatki nie znikają już na chwilę, gdy wracasz do aplikacji.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Wyszukiwanie nie zamyka się już od razu, gdy nie masz jeszcze żadnej grupy.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nowa grupa zaczyna teraz jako Wydarzenie, pierwszy typ na liście.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gdy nie masz żadnej grupy, „Zaproś linkiem lub kodem QR” pokazuje teraz tylko przycisk „Nowa grupa” zamiast przycisków, których nie dało się użyć.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Paragon, którego odczyt trwa dłużej, nie kończy się już błędem połączenia.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Wiersze kategorii w Statystykach są czytelniejsze: nie wymieniają już kwoty każdej podkategorii.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

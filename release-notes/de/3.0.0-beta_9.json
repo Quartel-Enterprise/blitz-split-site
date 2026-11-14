@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Beträge und Beschriftungen werden auf kleinen Bildschirmen, Foldables und bei großer Schrift nicht mehr umbrochen oder abgeschnitten.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Texte, Buttons und Umrisse, die schwer zu lesen waren, haben jetzt mehr Kontrast, im hellen und im dunklen Design.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Das Antippen eines Felds im Browser eines iPhones zoomt die Seite nicht mehr heran.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Nominal dan label tidak lagi terpotong atau terpecah menjadi dua baris di layar kecil, perangkat lipat, dan dengan teks besar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Teks, tombol, dan garis tepi yang sulit dibaca sekarang punya kontras lebih tinggi, di tema terang dan gelap.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mengetuk kolom isian di browser iPhone tidak lagi memperbesar halaman.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

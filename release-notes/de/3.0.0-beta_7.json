@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split spricht jetzt Niederländisch, Japanisch, Türkisch und Indonesisch, und die Sprachliste nennt jede Sprache in ihrer eigenen Sprache.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen und Ausgaben können jetzt den polnischen Złoty, die türkische Lira und die indonesische Rupiah nutzen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Das Profil hat einen neuen Button, „Profil teilen“: Wer deinen Link öffnet, sieht deinen Namen und dein Foto und kann dich in eine Gruppe einladen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Der Einladungslink einer neuen Gruppe ist sofort bereit, auch offline, und unter Mitglieder gibt es einen neuen Button, um ihn zu kopieren.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Wenn du ein Formular mit ungespeicherten Eingaben schließt, fragt die App jetzt zuerst „Änderungen verwerfen?“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die Datenschutzerklärung und die Nutzungsbedingungen öffnen sich jetzt in der App statt im Browser.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Auf dem Handy weichen die obere und die untere Leiste jetzt beim Herunterscrollen zurück und kommen beim Hochscrollen wieder.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Unter „Ausgabe aufteilen“ springt die Datumsauswahl nicht mehr direkt zur Uhr: Die Uhrzeit hat ihren eigenen Button.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tippe oben in „Ausgabe aufteilen“ auf die Gruppe, um sie zu öffnen; beim Zurückgehen ist die Ausgabe mit allen Eingaben noch da.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Neueste Ausgaben“ auf Start zeigt jetzt die Gruppe jeder Ausgabe und wer bezahlt hat als Fotos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix erscheint jetzt nur noch bei Personen, die es wahrscheinlich nutzen, etwa wenn du die App auf Portugiesisch nutzt, einen Pix-Schlüssel hast oder in einer Gruppe in Real bist.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Synchronisierung…“ erscheint jetzt nur noch, wenn dein Konto zum ersten Mal auf einem Gerät geladen wird, nicht mehr bei jeder Synchronisierung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Das Profil bietet nicht mehr an, Google oder Apple von deinem Konto zu trennen: Melde dich stattdessen ab oder lösche das Konto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Profil bearbeiten“ öffnet sich jetzt als Blatt über dem Profil statt als eigener Bildschirm.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Der leere Streifen zwischen Formular und Tastatur in „Ausgabe aufteilen“ ist weg.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Gemeinsame Gruppen“ eines Kontakts zeigt jetzt das Foto jeder Gruppe.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

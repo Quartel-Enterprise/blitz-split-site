@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split mówi teraz po niderlandzku, japońsku, turecku i indonezyjsku, a lista języków podaje każdy język w jego własnym języku.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy i wydatki mogą teraz używać polskiego złotego, liry tureckiej i rupii indonezyjskiej.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil ma nowy przycisk „Udostępnij profil”: osoba, która otworzy Twój link, zobaczy Twoje imię i zdjęcie i może zaprosić Cię do grupy.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Link z zaproszeniem do nowej grupy jest gotowy od razu, także offline, a Członkowie mają nowy przycisk do jego skopiowania.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zamykanie formularza z niezapisanymi zmianami najpierw pyta teraz „Odrzucić zmiany?”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Polityka prywatności i Warunki korzystania otwierają się teraz w aplikacji zamiast w przeglądarce.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Na telefonie górny i dolny pasek chowają się teraz przy przewijaniu w dół i wracają przy przewijaniu w górę.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "W „Podziel wydatek” wybór daty nie przeskakuje już od razu do zegara: godzina ma własny przycisk.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dotknij grupy u góry ekranu „Podziel wydatek”, aby ją otworzyć; po powrocie wydatek ma wszystko, co zostało wpisane.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Ostatnie wydatki” na ekranie Start pokazują teraz grupę każdego wydatku i osoby, które zapłaciły, jako zdjęcia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix pojawia się teraz tylko u osób, które prawdopodobnie z niego korzystają, na przykład gdy używasz aplikacji po portugalsku, masz klucz Pix albo jesteś w grupie rozliczanej w realach.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Synchronizacja…” pojawia się teraz tylko wtedy, gdy Twoje konto ładuje się na urządzeniu po raz pierwszy, a nie przy każdej synchronizacji.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil nie proponuje już odłączenia Google ani Apple od Twojego konta: zamiast tego wyloguj się albo usuń konto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Edytuj profil” otwiera się teraz jako arkusz nad Profilem zamiast osobnego ekranu.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Pusty pas między formularzem a klawiaturą w „Podziel wydatek” zniknął.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Wspólne grupy” kontaktu pokazują teraz zdjęcie każdej grupy.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

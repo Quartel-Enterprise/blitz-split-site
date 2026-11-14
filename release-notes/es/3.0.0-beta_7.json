@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split ahora habla neerlandés, japonés, turco e indonesio, y la lista de idiomas muestra cada idioma en su propio idioma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los grupos y los gastos ahora pueden usar el esloti polaco, la lira turca y la rupia indonesia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil tiene un botón nuevo, Compartir perfil: quien abre tu enlace ve tu nombre y tu foto y puede invitarte a un grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "El enlace de invitación de un grupo nuevo está listo al instante, incluso sin conexión, y Miembros tiene un botón nuevo para copiarlo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cerrar un formulario con algo que no guardaste ahora pregunta primero \"¿Descartar los cambios?\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La Política de Privacidad y los Términos de Servicio ahora se abren dentro de la app en lugar del navegador.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "En un teléfono, las barras de arriba y de abajo ahora se apartan cuando te desplazas hacia abajo y vuelven cuando subes.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "En Dividir un gasto, elegir una fecha ya no salta directo al reloj: la hora tiene su propio botón.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Toca el grupo en la parte superior de Dividir un gasto para abrirlo; al volver, el gasto sigue con todo lo que escribiste.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los Últimos gastos de Inicio ahora muestran el grupo de cada gasto y quién pagó como fotos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix ahora solo aparece para quienes probablemente lo usen, como quienes usan la app en portugués, tienen una clave de Pix o están en un grupo en reales.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sincronizando…\" ahora aparece solo la primera vez que tu cuenta se carga en un dispositivo, no en cada sincronización.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil ya no ofrece desconectar Google o Apple de tu cuenta: cierra sesión o elimina la cuenta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Editar perfil ahora se abre como una hoja sobre Perfil en lugar de una pantalla aparte.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "La franja en blanco entre el formulario y el teclado en Dividir un gasto ya no aparece.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Los Grupos en común de un contacto ahora muestran la foto de cada grupo.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Amounts and labels no longer break across lines or get cut off on small screens, foldables and with large text.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Text, buttons and outlines that were hard to read now have more contrast, in the light and dark themes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tapping a field in an iPhone's browser no longer zooms the page.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

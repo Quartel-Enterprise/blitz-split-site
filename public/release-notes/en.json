@@ -38,6 +38,339 @@
           ]
         }
       ]
+    },
+    {
+      "version": "3.0.0-beta_9",
+      "beta": true,
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "text": "Amounts and labels no longer break across lines or get cut off on small screens, foldables and with large text.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Text, buttons and outlines that were hard to read now have more contrast, in the light and dark themes.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Tapping a field in an iPhone's browser no longer zooms the page.",
+          "platforms": [
+            "web"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_8",
+      "beta": true,
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "text": "A bill can now be split By income, and the incomes you type are shared with the group's members.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Each of Home's Latest expenses now has a menu: Edit, Duplicate, Share and Delete.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "See all on Home now opens All expenses: every bill you're part of, across your groups, with search, filters and sorting.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "A group's photo is now bigger at the top of its screen and shrinks as you scroll, and opening a group animates from its row.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "Activity now shows people's photos, Balances › By group shows each group's photo, and Statistics' Biggest expense shows its category.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profile › Account and sync now shows the Google or Apple logo and your whole email, which only you see.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Delete account now explains what stays in your groups after your account is gone.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "The Default Pix key switch no longer looks off on your default key in the dark theme.",
+          "platforms": [
+            "android"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_7",
+      "beta": true,
+      "date": "2026-11-12",
+      "notes": [
+        {
+          "text": "Blitz Split now speaks Dutch, Japanese, Turkish and Indonesian, and the language list names each language in its own language.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Groups and bills can now use the Polish zloty, the Turkish lira and the Indonesian rupiah.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profile has a new button, Share profile: whoever opens your link sees your name and photo and can invite you to a group.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "A new group's invite link is ready right away, even offline, and Members has a new button to copy it.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Closing a form with something you haven't saved now asks \"Discard changes?\" first.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "The Privacy Policy and the Terms of Service now open inside the app instead of the browser.",
+          "platforms": [
+            "android",
+            "ios",
+            "mac"
+          ]
+        },
+        {
+          "text": "On a phone, the top and bottom bars now get out of the way when you scroll down and come back when you scroll up.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "On Split a bill, picking a date no longer jumps straight to the clock: the time has its own button.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "Tap the group at the top of Split a bill to open it; going back returns to the bill with everything you typed.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Home's Latest expenses now show each bill's group and who paid as photos.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Pix now shows only to people likely to use it, such as those using the app in Portuguese, with a Pix key or in a group in reais.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "\"Syncing…\" now shows only the first time your account loads on a device, not on every sync.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Profile no longer offers to disconnect Google or Apple from your account: sign out or delete the account instead.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Edit profile now opens as a sheet over Profile instead of a separate screen.",
+          "platforms": [
+            "android",
+            "ios"
+          ]
+        },
+        {
+          "text": "The blank band between the form and the keyboard on Split a bill is gone.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "A contact's Groups in common now show each group's photo.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_6",
+      "beta": true,
+      "date": "2026-11-08",
+      "notes": [
+        {
+          "text": "Tap a group's photo at the top of its screen to see it big, and change or remove it right there.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_5",
+      "beta": true,
+      "date": "2026-11-08",
+      "notes": [
+        {
+          "text": "Blitz Split now speaks German, Italian and Polish: it follows your device's language, or you can pick one in Profile › Language.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Every category now has its own color, and Statistics draws each category and each person in theirs.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "You can now change a category's color, in the category's form or in Category map.",
+          "platforms": [
+            "android",
+            "ios",
+            "web"
+          ]
+        },
+        {
+          "text": "A bill's menu on Expenses has a new option, Duplicate: it opens a new bill already filled in like the original.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Groups and bills no longer disappear for a moment when you come back to the app.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Search no longer closes right away when you don't have a group yet.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "A new group now starts as Event, the first type on the list.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "With no group yet, Invite with link or QR now shows only the New group button instead of buttons you couldn't use.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "A receipt that takes longer to read no longer ends in a connection error.",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
+          "text": "Statistics' category rows are cleaner: they no longer list each subcategory's amount.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "3.0.0-beta_1",
+      "beta": true,
+      "date": "2026-11-06",
+      "notes": [
+        {
+          "text": "Blitz Split is a new app, rebuilt from scratch: it replaces Blitz Split 2.4.0 and runs on Android, iPhone, iPad, Mac and the web.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Split a bill equally, by amounts, by percentages, by shares or item by item, with one person or several paying.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Scan a receipt and the app reads its items and total for you.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Create groups for trips, home or events and invite people with a link or a QR code.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "See who owes whom in each group and across all of them, record payments and simplify debts so fewer payments settle everything.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Everything works offline: what you do is saved on your device and goes out when you're back online.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "An account is optional: connect Google or Apple, or keep a recovery code, to get your groups back on another device.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Comment on a bill, attach photos, follow what happened in Activity and see where the money went in Statistics.",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "text": "Each bill and each payment has its own currency, and the app comes in English, Portuguese, Spanish and French.",
+          "platforms": [
+            "all"
+          ]
+        }
+      ]
     }
   ]
 }

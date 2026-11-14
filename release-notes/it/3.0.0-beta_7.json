@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split ora parla olandese, giapponese, turco e indonesiano, e l’elenco delle lingue indica ogni lingua nella propria lingua.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I gruppi e le spese ora possono usare lo zloty polacco, la lira turca e la rupia indonesiana.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilo ha un nuovo pulsante, Condividi profilo: chi apre il tuo link vede il tuo nome e la tua foto e può invitarti in un gruppo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Il link di invito di un nuovo gruppo è pronto subito, anche offline, e Membri ha un nuovo pulsante per copiarlo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chiudere un modulo con qualcosa che non hai salvato ora chiede prima \"Scartare le modifiche?\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’Informativa sulla privacy e i Termini di servizio ora si aprono nell’app invece che nel browser.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Su un telefono, le barre in alto e in basso ora si fanno da parte quando scorri verso il basso e tornano quando scorri verso l’alto.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "In Dividi una spesa, scegliere una data non passa più direttamente all’orologio: l’ora ha il suo pulsante.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tocca il gruppo in cima a Dividi una spesa per aprirlo; tornando indietro, la spesa conserva tutto quello che hai scritto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Le Ultime spese della Home ora mostrano il gruppo di ogni spesa e chi ha pagato come foto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix ora compare solo a chi probabilmente lo usa, per esempio chi usa l’app in portoghese, ha una chiave Pix o fa parte di un gruppo in real.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sincronizzazione…\" ora compare solo la prima volta che il tuo account si carica su un dispositivo, non a ogni sincronizzazione.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilo non propone più di scollegare Google o Apple dal tuo account: esci oppure elimina l’account.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Modifica profilo ora si apre come un pannello sopra Profilo invece che come schermata separata.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "La fascia vuota tra il modulo e la tastiera in Dividi una spesa non c’è più.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "I Gruppi in comune di un contatto ora mostrano la foto di ogni gruppo.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

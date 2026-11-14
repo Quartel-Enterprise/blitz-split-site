@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "O Bora Rachar agora fala holandês, japonês, turco e indonésio, e a lista de idiomas mostra cada idioma no próprio idioma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupos e contas agora podem usar o zloty polonês, a lira turca e a rupia indonésia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil tem um botão novo, Compartilhar perfil: quem abre o seu link vê seu nome e sua foto e pode convidar você para um grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O link de convite de um grupo novo fica pronto na hora, mesmo offline, e Membros tem um botão novo para copiá-lo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fechar um formulário com algo que você não salvou agora pergunta \"Descartar alterações?\" antes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Política de Privacidade e os Termos de Serviço agora abrem dentro do app em vez do navegador.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "No celular, as barras de cima e de baixo agora saem da frente quando você rola para baixo e voltam quando rola para cima.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Em Rachar conta, escolher uma data não pula mais direto para o relógio: a hora tem seu próprio botão.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Toque no grupo no topo de Rachar conta para abri-lo; ao voltar, a conta continua com tudo o que você digitou.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As Últimas despesas do Início agora mostram o grupo de cada conta e quem pagou como fotos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O Pix agora aparece só para quem provavelmente vai usá-lo, como quem usa o app em português, tem uma chave Pix ou está em um grupo em reais.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sincronizando…\" agora aparece só na primeira vez que sua conta carrega em um aparelho, e não a cada sincronização.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil não oferece mais desconectar o Google ou a Apple da sua conta: saia da conta ou exclua-a.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Editar perfil agora abre como uma folha sobre o Perfil em vez de uma tela separada.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "A faixa em branco entre o formulário e o teclado em Rachar conta sumiu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Os Grupos em comum de um contato agora mostram a foto de cada grupo.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

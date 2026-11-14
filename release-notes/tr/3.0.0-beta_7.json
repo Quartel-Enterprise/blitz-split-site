@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split artık Felemenkçe, Japonca, Türkçe ve Endonezce konuşuyor; dil listesi de her dili kendi dilinde gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar ve harcamalar artık Polonya zlotisi, Türk lirası ve Endonezya rupiahı kullanabiliyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil ekranında yeni bir düğme var: \"Profili paylaş\". Bağlantını açan kişi adını ve fotoğrafını görüyor ve seni bir gruba davet edebiliyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni bir grubun davet bağlantısı çevrimdışıyken bile hemen hazır; Üyeler sekmesinde de onu kopyalamak için yeni bir düğme var.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kaydetmediğin bir şey olan formu kapatırken artık önce \"Değişiklikler silinsin mi?\" diye soruluyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gizlilik Politikası ve Hizmet Şartları artık tarayıcı yerine uygulamanın içinde açılıyor.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Telefonda üst ve alt çubuklar artık aşağı kaydırınca çekiliyor, yukarı kaydırınca geri geliyor.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "\"Harcama böl\" ekranında tarih seçmek artık doğrudan saate atlamıyor: saatin kendi düğmesi var.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Harcama böl\" ekranının üstündeki gruba dokunarak onu aç; geri döndüğünde harcama yazdığın her şeyle duruyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ana Sayfa'daki \"Son harcamalar\" artık her harcamanın grubunu ve ödeyenleri fotoğraf olarak gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix artık yalnızca onu kullanması muhtemel kişilere görünüyor: örneğin uygulamayı Portekizce kullananlara, Pix anahtarı olanlara ya da real kullanan bir gruptakilere.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Eşitleniyor…\" artık her eşitlemede değil, yalnızca hesabın bir cihaza ilk kez yüklenirken görünüyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil artık Google ya da Apple'ı hesabından ayırmayı önermiyor: bunun yerine çıkış yap ya da hesabı sil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Profili düzenle\" artık ayrı bir ekran yerine Profil'in üzerinde bir sayfa olarak açılıyor.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Harcama böl\" ekranında form ile klavye arasındaki boş şerit artık yok.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Bir kişinin \"Ortak gruplar\" bölümü artık her grubun fotoğrafını gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

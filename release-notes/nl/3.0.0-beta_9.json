@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Bedragen en labels breken niet meer over twee regels en worden niet meer afgekapt op kleine schermen, vouwbare apparaten en met grote tekst.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tekst, knoppen en omlijningen die moeilijk te lezen waren, hebben nu meer contrast, in het lichte en het donkere thema.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tikken op een veld in de browser van een iPhone zoomt de pagina niet meer in.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

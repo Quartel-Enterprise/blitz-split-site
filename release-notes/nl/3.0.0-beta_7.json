@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split spreekt nu Nederlands, Japans, Turks en Indonesisch, en de talenlijst noemt elke taal in haar eigen taal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen en uitgaven kunnen nu de Poolse zloty, de Turkse lira en de Indonesische roepia gebruiken.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel heeft een nieuwe knop, Profiel delen: wie je link opent ziet je naam en foto en kan je uitnodigen voor een groep.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De uitnodigingslink van een nieuwe groep is meteen klaar, ook offline, en Leden heeft een nieuwe knop om hem te kopiëren.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Als je een formulier sluit met iets wat je niet hebt opgeslagen, vraagt de app nu eerst \"Wijzigingen negeren?\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Het Privacybeleid en de Servicevoorwaarden openen nu in de app in plaats van in de browser.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Op een telefoon schuiven de balken boven en onder nu weg als je omlaag scrolt en komen ze terug als je omhoog scrolt.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "In Uitgave verdelen springt het kiezen van een datum niet meer meteen naar de klok: de tijd heeft een eigen knop.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tik op de groep boven in Uitgave verdelen om hem te openen; als je teruggaat, staat de uitgave er nog met alles wat je hebt getypt.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Laatste uitgaven op Start toont nu de groep van elke uitgave en wie betaalde als foto's.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix verschijnt nu alleen bij mensen die het waarschijnlijk gebruiken, zoals wie de app in het Portugees gebruikt, een Pix-sleutel heeft of in een groep in real zit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Synchroniseren…\" verschijnt nu alleen de eerste keer dat je account op een apparaat laadt, niet bij elke synchronisatie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel biedt niet meer aan om Google of Apple van je account los te koppelen: log uit of verwijder het account.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel bewerken opent nu als een blad over Profiel in plaats van als een apart scherm.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "De lege strook tussen het formulier en het toetsenbord in Uitgave verdelen is weg.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Gedeelde groepen van een contact toont nu de foto van elke groep.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

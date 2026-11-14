@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Tagihan sekarang bisa dibagi Sesuai penghasilan, dan penghasilan yang kamu ketik terlihat oleh anggota grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Setiap tagihan di Pengeluaran terbaru di Beranda sekarang punya menu: Edit, Duplikat, Bagikan, dan Hapus.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lihat semua di Beranda sekarang membuka Semua pengeluaran: semua tagihan yang kamu ikuti, di semua grupmu, dengan pencarian, filter, dan pengurutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Foto grup sekarang lebih besar di bagian atas layarnya dan mengecil saat kamu menggulir, dan membuka grup dianimasikan dari barisnya.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktivitas sekarang menampilkan foto orang, Saldo › Per grup menampilkan foto tiap grup, dan Pengeluaran terbesar di Statistik menampilkan kategorinya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Akun dan sinkronisasi sekarang menampilkan logo Google atau Apple dan emailmu secara lengkap, yang hanya kamu lihat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hapus akun sekarang menjelaskan apa yang tetap ada di grupmu setelah akunmu dihapus.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sakelar \"Kunci Pix default\" tidak lagi tampak mati pada kunci default-mu di tema gelap.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
