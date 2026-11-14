@@ -72,7 +72,7 @@ De namen Blitz Split en Bora Rachar, het icoon en het uiterlijk van de app zijn 
 
 ## Beëindiging {#end}
 
-Je kunt op elk moment stoppen met de app en je account verwijderen via Profile › “Delete account and data”. Wat er met je gegevens gebeurt, staat in het [Privacybeleid](/privacy#keep).
+Je kunt op elk moment stoppen met de app en je account verwijderen via Profiel › “Account en gegevens verwijderen”. Wat er met je gegevens gebeurt, staat in het [Privacybeleid](/privacy#keep).
 
 We kunnen een account dat deze voorwaarden schendt opschorten of sluiten, en waarschuwen je vooraf wanneer dat mogelijk is.
 

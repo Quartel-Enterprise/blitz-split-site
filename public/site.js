@@ -1,6 +1,6 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
 // The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: … }
-// before this script, and blocks written per language carry data-lang="en", "pt", "es", "nl", "tr", "id" or "ja".
+// before this script, and blocks written per language carry data-lang with the language ("en", "pt", "fr"…).
 (function () {
   const params = new URLSearchParams(location.search);
   // boot.js, in <head>, already picked the theme and the language.

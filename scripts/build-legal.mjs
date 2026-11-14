@@ -15,13 +15,17 @@ process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 const PAGES = ["privacy", "terms"];
 // The order of the pages' blocks. English is what every other language is checked against.
-const LANGS = ["pt", "en", "es", "nl", "tr", "id", "ja"];
+const LANGS = ["pt", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
 const LEGAL_DIR = "public/legal";
 
 const CHROME = {
   pt: { language: "Português", brand: "Bora Rachar", locale: "pt-BR", updated: { privacy: "Atualizada em {date}", terms: "Atualizados em {date}" }, read: "Leitura de {n} minutos", toc: "Nesta página" },
   en: { language: "English", brand: "Blitz Split", locale: "en-US", updated: "Updated {date}", read: "{n} min read", toc: "On this page" },
   es: { language: "Español", brand: "Blitz Split", locale: "es", updated: { privacy: "Actualizada el {date}", terms: "Actualizados el {date}" }, read: "Lectura de {n} minutos", toc: "En esta página" },
+  fr: { language: "Français", brand: "Blitz Split", locale: "fr", updated: { privacy: "Mise à jour le {date}", terms: "Mises à jour le {date}" }, read: "Lecture de {n} min", toc: "Sur cette page" },
+  de: { language: "Deutsch", brand: "Blitz Split", locale: "de", updated: "Aktualisiert am {date}", read: "{n} Min. Lesezeit", toc: "Auf dieser Seite" },
+  it: { language: "Italiano", brand: "Blitz Split", locale: "it", updated: { privacy: "Aggiornata il {date}", terms: "Aggiornati il {date}" }, read: "Lettura di {n} minuti", toc: "In questa pagina" },
+  pl: { language: "Polski", brand: "Blitz Split", locale: "pl", updated: "Aktualizacja: {date}", read: "{n} min czytania", toc: "Na tej stronie" },
   nl: { language: "Nederlands", brand: "Blitz Split", locale: "nl", updated: "Bijgewerkt op {date}", read: "{n} minuten lezen", toc: "Op deze pagina" },
   tr: { language: "Türkçe", brand: "Blitz Split", locale: "tr", updated: "Güncelleme: {date}", read: "{n} dakikalık okuma", toc: "Bu sayfada" },
   id: { language: "Bahasa Indonesia", brand: "Blitz Split", locale: "id", updated: "Diperbarui {date}", read: "Dibaca {n} menit", toc: "Di halaman ini" },
@@ -253,7 +257,7 @@ function renderLanguage(page, lang, file, doc, minutes) {
 // --- Pages ----------------------------------------------------------------------------------------------------------
 
 /** What every language's text shares with English's: its sections, and each one's tables by columns and rows. A
- *  language may still say something of its own (Spanish explains that it names the app's buttons in English). */
+ *  language may still word a paragraph or a list its own way. */
 const shape = (blocks) => blocks
   .filter((block) => block.kind === "section" || block.kind === "table")
   .map((block) => (block.kind === "table" ? `table(${block.header.length}x${block.rows.length})` : "section"))

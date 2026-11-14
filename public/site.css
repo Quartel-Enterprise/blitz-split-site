@@ -110,11 +110,15 @@ p { margin: 0; text-wrap: pretty; }
 /* Blocks written per language: boot.js sets data-lang on <html> before the first paint. */
 :root[data-lang="pt"] body [data-lang]:not([data-lang="pt"]),
 :root[data-lang="es"] body [data-lang]:not([data-lang="es"]),
+:root[data-lang="fr"] body [data-lang]:not([data-lang="fr"]),
+:root[data-lang="de"] body [data-lang]:not([data-lang="de"]),
+:root[data-lang="it"] body [data-lang]:not([data-lang="it"]),
+:root[data-lang="pl"] body [data-lang]:not([data-lang="pl"]),
 :root[data-lang="nl"] body [data-lang]:not([data-lang="nl"]),
 :root[data-lang="tr"] body [data-lang]:not([data-lang="tr"]),
 :root[data-lang="id"] body [data-lang]:not([data-lang="id"]),
 :root[data-lang="ja"] body [data-lang]:not([data-lang="ja"]),
-:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
+:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="fr"]):not([data-lang="de"]):not([data-lang="it"]):not([data-lang="pl"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }
 @media (prefers-reduced-motion: reduce) {

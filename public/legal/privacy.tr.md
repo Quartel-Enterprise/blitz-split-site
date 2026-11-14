@@ -8,7 +8,7 @@ updated: 2026-11-13
 > - Uygulamayı hesap açmadan kullanırsın. Google ve Apple isteğe bağlıdır.
 > - Eklediğin her şey önce kendi cihazında kalır; sunucuya yalnızca eşitlemek ve grubuna ulaşmak için gider.
 > - Bir gruptakiler yalnızca o gruba ait olanı görür. E-postanı kimse görmez.
-> - Kullanım ölçümleri ve çökme raporları ad ya da tutar içermez. Bir hesabın varsa ölçümler onun kimliğine bağlanır. Reklam kimliği kullanmayız ve ölçümleri Profile'dan kapatabilirsin.
+> - Kullanım ölçümleri ve çökme raporları ad ya da tutar içermez. Bir hesabın varsa ölçümler onun kimliğine bağlanır. Reklam kimliği kullanmayız ve ölçümleri Profil'den kapatabilirsin.
 > - Veri satmayız. Hesabını ve verilerini uygulamanın içinden silersin.
 
 ## Biz kimiz {#who}
@@ -25,7 +25,7 @@ Bu politika, Brezilya Genel Veri Koruma Kanunu'na (13.709/2018 sayılı Kanun, L
 - **Gruplar ve masraflar:** grubun adı ve para birimi; her masrafın açıklaması, tutarı, tarihi, kategorisi, kimin ödediği ve nasıl bölündüğü; kalemler, yorumlar ve eklenen fotoğraflar.
 - Üyeler arasında kaydettiğin **ödemeler**.
 - Kaydettiğin **ödeme anahtarları**: bir Pix anahtarı ve bir Bitcoin adresi.
-- **Gelirler**, yalnızca “By income” (gelire göre) bölersen.
+- **Gelirler**, yalnızca “Gelire göre” bölersen.
 - Henüz uygulamaya sahip olmadan bir gruba **eklediğin kişiler**, onlara verdiğin adla.
 
 ### Hesabın
@@ -35,9 +35,9 @@ Bu politika, Brezilya Genel Veri Koruma Kanunu'na (13.709/2018 sayılı Kanun, L
 
 ### Otomatik olarak toplananlar
 
-- **Kullanım ölçümleri** (Google Firebase Analytics): açılan ekranlar ve yapılan işlemler, örneğin “grup oluşturdu”, cihaz verileriyle birlikte (model, sistem, dil, uygulama sürümü ve yaklaşık ülke). Hiçbir zaman ad, tutar ya da grupların, masrafların veya kişilerin kimliklerini içermez. Reklam kimliğini kullanmayız ve reklam kişiselleştirmesi kapalıdır. Anonim ya da Google veya Apple ile bir hesabın varsa ölçümler, adın ya da e-postan olmayan rastgele bir kod olan hesap kimliğini taşır; böylece uygulamanın telefonunda, bilgisayarında ve tarayıcında birlikte nasıl kullanıldığını görürüz. Bunları her cihazda Profile › Privacy and about › “Share usage data” (kullanım verilerini paylaş) ile kapatırsın.
+- **Kullanım ölçümleri** (Google Firebase Analytics): açılan ekranlar ve yapılan işlemler, örneğin “grup oluşturdu”, cihaz verileriyle birlikte (model, sistem, dil, uygulama sürümü ve yaklaşık ülke). Hiçbir zaman ad, tutar ya da grupların, masrafların veya kişilerin kimliklerini içermez. Reklam kimliğini kullanmayız ve reklam kişiselleştirmesi kapalıdır. Anonim ya da Google veya Apple ile bir hesabın varsa ölçümler, adın ya da e-postan olmayan rastgele bir kod olan hesap kimliğini taşır; böylece uygulamanın telefonunda, bilgisayarında ve tarayıcında birlikte nasıl kullanıldığını görürüz. Bunları her cihazda Profil › Gizlilik ve hakkında › “Kullanım verilerini paylaş” ile kapatırsın.
 - **Çökme raporları** (Firebase Crashlytics, Android, iPhone, iPad ve Mac uygulamalarında): hatanın türü ve kodda nerede oluştuğu; verilerini içerebilecek mesajlar olmadan.
-- **Bildirim belirteci (token):** Google'ın, Apple'ın ya da tarayıcının, bildirim alabilmesi için cihaza verdiği adres.
+- **Bildirim belirteci:** Google'ın, Apple'ın ya da tarayıcının, bildirim alabilmesi için cihaza verdiği adres.
 - **Bağlantı verileri**, örneğin IP adresi; altyapı sağlayıcılarımız tarafından kaydedilir.
 
 ### Web sitesinde
@@ -48,7 +48,7 @@ blitzsplit.com, ziyaretleri saymak için uygulamanınkinden ayrı bir projede Go
 
 Uygulama **önce çevrimdışı** çalışır: eklediğin her şey cihazın kendisindeki bir veritabanına kaydedilir (tarayıcıda, sitenin depolama alanında). Bağlantı olduğunda veriler, cihazlarını eşitleyen ve her üyeye gruba ait olanı ileten sunucumuza gider.
 
-> **“Scan receipt” (fiş tarama)**
+> **“Fiş tara”**
 >
 > Fotoğraf sunucumuza gider ve Anthropic'in bir yapay zekâ modeli (Claude) tarafından okunur; model kalemleri, fiyatları ve toplamı döndürür. Fotoğrafı okuduktan sonra saklamayız: yalnızca masrafa eklersen orada kalır. Anthropic'in ticari koşulları gereği bu içerik model eğitmek için kullanılmaz.
 
@@ -59,8 +59,8 @@ Uygulama **önce çevrimdışı** çalışır: eklediğin her şey cihazın kend
 | Saklamak, eşitlemek ve gruba göstermek | Profil, gruplar, masraflar, ödemeler, ödeme anahtarları | Sözleşmenin ifası (md. 7, V) |
 | Giriş yapmak ve erişimi kurtarmak | Anonim kimlik, kurtarma kodu, Google veya Apple hesabı | Sözleşmenin ifası |
 | Fişleri okumak | Fişin fotoğrafı, senin isteğinle | Sözleşmenin ifası |
-| Bildirim göndermek | Cihaz belirteci, grup olayları | Sözleşmenin ifası; hangilerini alacağını Profile › Notifications'tan seçersin |
-| Uygulamayı iyileştirmek ve çökmeleri düzeltmek | Kullanım ölçümleri, çökme raporları | Meşru menfaat (md. 7, IX); Profile'da “Share usage data”yı kapatarak itiraz edersin |
+| Bildirim göndermek | Cihaz belirteci, grup olayları | Sözleşmenin ifası; hangilerini alacağını Profil › Bildirimler'den seçersin |
+| Uygulamayı iyileştirmek ve çökmeleri düzeltmek | Kullanım ölçümleri, çökme raporları | Meşru menfaat (md. 7, IX); Profil'de “Kullanım verilerini paylaş” seçeneğini kapatarak itiraz edersin |
 | Güvenlik ve kötüye kullanımın önlenmesi | Bağlantı verileri | Meşru menfaat |
 | Yasalara uymak | Yükümlülüğün gerektirdiği veriler | Hukuki yükümlülük (md. 7, II) |
 
@@ -94,9 +94,9 @@ Bu sağlayıcılardan bazıları verileri Brezilya dışında, çoğunlukla Amer
 ## Ne kadar süre saklarız {#keep}
 
 - Hesabın var olduğu sürece, uygulamanın çalışması için gerekenleri saklarız.
-- **“Sign out”** (çıkış yap) cihazdaki kopyayı siler. Google veya Apple ile, tekrar giriş yaptığında kullanmak üzere verilerin sunucuda kalır.
-- **Hesapsız** kullanıyorsan, “Erase profile and sign out” cihazı temizler ve kurtarma kodun çalışmaya devam eder. Sunucudakileri de silmek için bize ulaş (12. bölüm).
-- Profile'daki **“Delete account and data”**, profilini, fotoğrafını, ödeme anahtarlarını ve kurtarma kodunu anında siler ve Apple'a verdiğin erişimi iptal eder. Başkalarıyla olan gruplara eklediğin masraflar, grup için orada kalır; adın olmadan, “Former member” (eski üye) olarak.
+- **“Çıkış yap”** cihazdaki kopyayı siler. Google veya Apple ile, tekrar giriş yaptığında kullanmak üzere verilerin sunucuda kalır.
+- **Hesapsız** kullanıyorsan, “Profili sil ve çıkış yap” cihazı temizler ve kurtarma kodun çalışmaya devam eder. Sunucudakileri de silmek için bize ulaş (12. bölüm).
+- Profil'deki **“Hesabı ve verileri sil”**, profilini, fotoğrafını, ödeme anahtarlarını ve kurtarma kodunu anında siler ve Apple'a verdiğin erişimi iptal eder. Başkalarıyla olan gruplara eklediğin masraflar, grup için orada kalır; adın olmadan, “Eski üye” olarak.
 - Bir cihaza bağlı kullanım verileri Google Analytics'te en fazla 14 ay kalır. Bundan sonra, kimseyi tanımlayan hiçbir şey içermeyen yalnızca toplu sayılar kalır. Hesabın silindiğinde, taşıdıkları kimlik artık sana götürmez.
 
 ## Hakların {#rights}
@@ -117,7 +117,7 @@ Bunların çoğunu uygulamanın içinden yaparsın: profilini düzenler, bir öd
 
 Veriler şifreli olarak (HTTPS) iletilir. Sunucuda, erişim kuralları herkesin yalnızca üyesi olduğu grupları okuyabilmesini sağlar. Hiçbir sistem kusursuz değildir, ama her olayı ciddiye alırız ve yasa gerektirdiğinde sana ve ANPD'ye bildiririz.
 
-Kurtarma kodun bir parola gibi çalışır: onu güvenli bir yerde sakla ve kimseyle paylaşma. iPhone, iPad ve Mac'te uygulama onu Parolalar (Passwords) uygulamasına kaydeder.
+Kurtarma kodun bir parola gibi çalışır: onu güvenli bir yerde sakla ve kimseyle paylaşma. iPhone, iPad ve Mac'te uygulama onu Parolalar uygulamasına kaydeder.
 
 ## Çocuklar {#children}
 

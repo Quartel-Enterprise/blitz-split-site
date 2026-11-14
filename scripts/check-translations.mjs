@@ -4,9 +4,8 @@
 // - Each page's window.SITE_STRINGS has every translated language, each with a non-empty value for every key the
 //   page's data-i18n, data-i18n-html and data-i18n-label use, and no key the page no longer uses (title and
 //   description are read by site.js itself).
-//   A legal page (one with blocks written per language, data-lang) is checked in the legal languages only, since
-//   French, German, Italian and Polish read it all in English (docs/design.md), and has one block of each legal
-//   language for every English one.
+//   A legal page (one with blocks written per language, data-lang) has one block of each legal language for every
+//   English one.
 // - Every dictionary of the scripts keyed by language (const TEXT = { en: …, pt: … }, PAPER, CURRENCY…) has every
 //   language, with the same keys, the same shapes, the same {placeholders} and the same function arities as English.
 //
@@ -19,8 +18,8 @@ import vm from "node:vm";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC = join(ROOT, "public");
-// The legal pages are written in full in these languages only; the others read the English text.
-const LEGAL_LANGS = ["en", "pt", "es", "nl", "tr", "id", "ja"];
+// The languages the legal pages are written in full, every language the site speaks.
+const LEGAL_LANGS = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
 // Keys of SITE_STRINGS that site.js reads by name instead of from a data-i18n attribute.
 const PAGE_KEYS = ["title", "description"];
 // Keys whose English markup is right in every language but the ones that set them: the product's name is Blitz Split
