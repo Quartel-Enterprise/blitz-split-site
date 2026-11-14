@@ -47,6 +47,9 @@ const CARD_TAGS = {
 // Why: a renamed group or a new member shows a few minutes later; an image's address changes with what it shows,
 // so it may stay a day.
 const WORDS_TTL = 300;
+const WORDS_TIMEOUT_MS = 3000;
+// Why: what a card's image depends on: who shared a personal link, the language asked and the card's version.
+const IMAGE_PARAMETERS = ["from", "lang", "v"];
 const IMAGE_TTL = 86400;
 
 // The pages whose preview is the same for every address, but for its language: a comment's link opens only for the
@@ -130,7 +133,8 @@ async function previewPage(request, url, env, ctx, target) {
   const tags = {
     "og:title": words.title,
     "og:description": words.description,
-    "og:url": url.href,
+    // Why: a static page is one page whatever its query says (a comment's id, tracking), so only its path.
+    "og:url": target.card ? new URL(url.pathname, url).href : url.href,
     "og:type": words.kind === "profile" ? "profile" : "website",
     "og:site_name": words.siteName,
     "og:locale": words.locale,
@@ -169,13 +173,14 @@ function withTags(landing, title, description, tags) {
 }
 
 function imageUrlOf(url, target, words) {
-  if (words.kind === "invalid" || !words.imageVersion) return new URL(BRAND_IMAGE, url).href;
+  // Why: a static card has an address of its own even should the function send no version.
+  if (words.kind === "invalid" || (!words.imageVersion && !target.card)) return new URL(BRAND_IMAGE, url).href;
   const path = target.card ?? `${PATH_LETTERS[target.link]}/${target.code}${target.memberCode ? `/${target.memberCode}` : ""}`;
   const image = new URL(`/og/${path}.png`, url);
   if (target.inviterCode) image.searchParams.set("from", target.inviterCode);
   if (target.language) image.searchParams.set("lang", target.language);
   // Why: WhatsApp keeps an image by its address; the version changes with whatever the card shows.
-  image.searchParams.set("v", words.imageVersion);
+  if (words.imageVersion) image.searchParams.set("v", words.imageVersion);
   return image.href;
 }
 
@@ -219,7 +224,9 @@ function previewWords(url, env, ctx, target) {
 }
 
 async function previewImage(request, url, env, ctx, target) {
-  const cached = await caches.default.match(request);
+  // Why: kept under what the card depends on alone, so any other parameter never draws it again.
+  const key = imageKeyOf(url);
+  const cached = await caches.default.match(key);
   if (cached) return cached;
   let response = null;
   try {
@@ -237,8 +244,17 @@ async function previewImage(request, url, env, ctx, target) {
   const image = new Response(response.body, {
     headers: { "Content-Type": "image/png", "Cache-Control": `public, max-age=${imageTtlOf(response)}` },
   });
-  ctx.waitUntil(caches.default.put(request, image.clone()));
+  ctx.waitUntil(caches.default.put(key, image.clone()));
   return image;
+}
+
+function imageKeyOf(url) {
+  const key = new URL(url.pathname, url);
+  for (const name of IMAGE_PARAMETERS) {
+    const value = url.searchParams.get(name);
+    if (value !== null) key.searchParams.set(name, value);
+  }
+  return new Request(key);
 }
 
 // Why: the function answers a minute for a card drawn with initials because a photo didn't load, which keeps the
@@ -251,6 +267,8 @@ function imageTtlOf(response) {
 function askPreview(env, target, image) {
   return fetch(env.INVITE_PREVIEW_URL, {
     method: "POST",
+    // Why: a page waits for its words, so a slow function gives way to the landing's own tags; a card may take its time.
+    signal: image ? undefined : AbortSignal.timeout(WORDS_TIMEOUT_MS),
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ ...target, image }),
   });
