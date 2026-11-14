@@ -78,7 +78,7 @@ release is the one `duplication.yml` pins.
 `scripts/check-translations.mjs` reads the languages from `SUPPORTED` in `public/boot.js` and checks:
 
 - Every key a page's `data-i18n`, `data-i18n-html` and `data-i18n-label` use (the pages of `public/` and the shells of
-  `pages/`, whose text the deploy writes) has a value in each language of its
+  `pages/`, whose text the deploy writes; the check writes the release notes' page first, so its blocks are counted too) has a value in each language of its
   `window.SITE_STRINGS`, and no language keeps a key the page no longer uses. The legal pages (the ones with
   `data-lang` blocks) have one block of each language for every English one. `name` may
   be left out of a language: the markup's Blitz Split is its name everywhere but in Portuguese.

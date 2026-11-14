@@ -1,8 +1,7 @@
 name: release-notes
 
-# Fails when a language's feed or the release notes' page isn't what the notes give, or a version's file has something
-# the apps can't read: see scripts/build-release-notes.mjs and docs/release-notes.md. Run it locally with
-# npm run check:release-notes.
+# Fails when a version's file has something the apps can't read, or a language's notes aren't English's: see
+# scripts/build-release-notes.mjs and docs/release-notes.md. Run it locally with npm run check:release-notes.
 on:
   pull_request:
     paths:
