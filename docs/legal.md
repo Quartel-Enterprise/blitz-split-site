@@ -1,8 +1,8 @@
 # Legal pages
 
 The privacy policy and the terms of use are written once, in Markdown, one file per page and language:
-`public/legal/<page>.<language>.md` (`privacy` and `terms`; English, Portuguese, Spanish, Dutch, Turkish, Indonesian
-and Japanese). Two readers take those files:
+`public/legal/<page>.<language>.md` (`privacy` and `terms`; English, Portuguese, Spanish, French, German, Italian, Polish,
+Dutch, Turkish, Indonesian and Japanese). Two readers take those files:
 
 - **The site.** `npm run build:legal` (`scripts/build-legal.mjs`) writes each language's block, between `<main>` and
   `</main>` of `public/privacy.html` and `public/terms.html`, from them. The pages stay plain HTML in git, so the
@@ -10,7 +10,9 @@ and Japanese). Two readers take those files:
   hand, as on the landing.
 - **The apps.** Android, iPhone, iPad and Mac download `https://blitzsplit.com/legal/<page>.<language>.md` and draw
   it with their own components (`blitz-split-client`, `LegalDocumentParser`). A language the site doesn't have answers
-  404 (`src/index.js`), and the app reads English.
+  404 (`src/index.js`), and the app reads English. The apps download both texts at launch and keep them for offline,
+  asking again at most once a day with the saved text's `ETag` (`If-None-Match`, which the static assets answer with
+  `304`), so a change reaches the apps within a day of its deploy.
 
 ## Changing the text
 
@@ -66,5 +68,6 @@ A paragraph, on one line, with **bold**, a [link](/terms#anchor) and <mark>what 
 - **`<mark>`** is what is still to fill in or decide (the company's data, a retention period). The page shows it in
   amber (`.todo`), the apps as plain text: none may be left before a text goes live.
 
-French, German, Italian and Polish read the English text, on the site and in the apps. Spanish, Dutch, Turkish,
-Indonesian and Japanese name the apps' buttons in English, as the texts were written before the apps spoke them.
+Every language names the apps' buttons and screens as the app shows them in that language (Profile › Notifications is
+Perfil › Notificações in Portuguese), and nothing else of another language but the product's and the companies' names.
+A language the apps learn later reads English until its texts are written here.

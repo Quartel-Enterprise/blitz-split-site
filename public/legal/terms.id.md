@@ -72,7 +72,7 @@ Nama Blitz Split dan Bora Rachar, ikon, dan tampilan aplikasi adalah milik kami.
 
 ## Pengakhiran {#end}
 
-Kamu bisa berhenti memakai aplikasi kapan pun kamu mau dan menghapus akunmu di Profile › “Delete account and data”. Apa yang terjadi pada datamu dijelaskan dalam [Kebijakan privasi](/privacy#keep).
+Kamu bisa berhenti memakai aplikasi kapan pun kamu mau dan menghapus akunmu di Profil › “Hapus akun dan data”. Apa yang terjadi pada datamu dijelaskan dalam [Kebijakan privasi](/privacy#keep).
 
 Kami dapat menangguhkan atau menutup akun yang melanggar ketentuan ini, dengan memperingatkanmu terlebih dahulu sebisa mungkin.
 

@@ -36,8 +36,7 @@ release is the one `duplication.yml` pins.
 
 - Every key a page's `data-i18n`, `data-i18n-html` and `data-i18n-label` use has a value in each language of its
   `window.SITE_STRINGS`, and no language keeps a key the page no longer uses. The legal pages (the ones with
-  `data-lang` blocks) are checked in their legal languages only, since French, German, Italian and Polish read them
-  in English ([design.md](design.md)), and have one block of each legal language for every English one. `name` may
+  `data-lang` blocks) have one block of each language for every English one. `name` may
   be left out of a language: the markup's Blitz Split is its name everywhere but in Portuguese.
 - Every dictionary of the scripts keyed by language (`TEXT`, `PAPER`…) has each language with English's keys, shapes,
   `{placeholders}` and function arities. `CURRENCY` is a format, so only its languages are checked.

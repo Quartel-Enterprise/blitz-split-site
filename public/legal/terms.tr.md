@@ -72,7 +72,7 @@ Blitz Split ve Bora Rachar adları, simge ve uygulamanın görünümü bize aitt
 
 ## Sona erme {#end}
 
-Uygulamayı istediğin zaman kullanmayı bırakabilir ve hesabını Profile › “Delete account and data” yoluyla silebilirsin. Verilerine ne olacağı [Gizlilik politikası](/privacy#keep)'nda yazıyor.
+Uygulamayı istediğin zaman kullanmayı bırakabilir ve hesabını Profil › “Hesabı ve verileri sil” yoluyla silebilirsin. Verilerine ne olacağı [Gizlilik politikası](/privacy#keep)'nda yazıyor.
 
 Bu koşulları ihlal eden bir hesabı askıya alabilir ya da kapatabiliriz; mümkün olduğunda seni önceden uyarırız.
 

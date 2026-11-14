@@ -8,7 +8,7 @@ updated: 2026-11-13
 > - Kamu bisa memakai aplikasi tanpa membuat akun. Google dan Apple bersifat opsional.
 > - Apa yang kamu tambahkan disimpan di perangkatmu terlebih dahulu, dan hanya dikirim ke server untuk disinkronkan dan sampai ke grupmu.
 > - Orang-orang dalam satu grup melihat apa yang menjadi milik grup. Tidak ada yang melihat emailmu.
-> - Metrik penggunaan dan laporan crash tidak memuat nama atau jumlah uang. Jika kamu punya akun, metrik terkait dengan id akun itu. Kami tidak menggunakan id iklan, dan kamu bisa mematikan metrik di Profile.
+> - Metrik penggunaan dan laporan kerusakan tidak memuat nama atau jumlah uang. Jika kamu punya akun, metrik terkait dengan id akun itu. Kami tidak menggunakan id iklan, dan kamu bisa mematikan metrik di Profil.
 > - Kami tidak menjual data. Kamu menghapus akun dan datamu langsung dari aplikasi.
 
 ## Siapa kami {#who}
@@ -25,7 +25,7 @@ Kebijakan ini mengikuti Undang-Undang Umum Pelindungan Data Brasil (Undang-Undan
 - **Grup dan tagihan:** nama dan mata uang grup; deskripsi, jumlah, tanggal, kategori setiap tagihan, siapa yang membayar dan bagaimana pembagiannya; item, komentar, dan foto yang dilampirkan.
 - **Pembayaran** yang kamu catat antaranggota.
 - **Kunci pembayaran** yang kamu simpan: kunci Pix dan alamat Bitcoin.
-- **Penghasilan**, hanya jika kamu membagi “By income” (berdasarkan penghasilan).
+- **Penghasilan**, hanya jika kamu membagi “Sesuai penghasilan”.
 - **Orang yang kamu tambahkan** ke grup sebelum mereka punya aplikasinya, dengan nama yang kamu berikan.
 
 ### Akunmu
@@ -35,8 +35,8 @@ Kebijakan ini mengikuti Undang-Undang Umum Pelindungan Data Brasil (Undang-Undan
 
 ### Yang dikumpulkan secara otomatis
 
-- **Metrik penggunaan** (Google Firebase Analytics): layar yang dibuka dan tindakan yang dilakukan, seperti “membuat grup”, beserta data perangkat (model, sistem, bahasa, versi aplikasi, dan perkiraan negara). Metrik ini tidak pernah memuat nama, jumlah uang, atau id grup, tagihan, maupun orang. Kami tidak menggunakan id iklan, dan personalisasi iklan dinonaktifkan. Jika kamu punya akun, anonim atau dengan Google atau Apple, metrik memuat id akun itu, kode acak yang bukan nama atau email kamu, agar kami melihat cara aplikasi dipakai di ponsel, komputer, dan browser kamu sekaligus. Kamu mematikannya di setiap perangkat lewat Profile › Privacy and about › “Share usage data” (bagikan data penggunaan).
-- **Laporan crash** (Firebase Crashlytics, di aplikasi Android, iPhone, iPad, dan Mac): jenis kesalahan dan di bagian kode mana kesalahan itu terjadi, tanpa pesan-pesannya, yang bisa berisi datamu.
+- **Metrik penggunaan** (Google Firebase Analytics): layar yang dibuka dan tindakan yang dilakukan, seperti “membuat grup”, beserta data perangkat (model, sistem, bahasa, versi aplikasi, dan perkiraan negara). Metrik ini tidak pernah memuat nama, jumlah uang, atau id grup, tagihan, maupun orang. Kami tidak menggunakan id iklan, dan personalisasi iklan dinonaktifkan. Jika kamu punya akun, anonim atau dengan Google atau Apple, metrik memuat id akun itu, kode acak yang bukan nama atau email kamu, agar kami melihat cara aplikasi dipakai di ponsel, komputer, dan browser kamu sekaligus. Kamu mematikannya di setiap perangkat lewat Profil › Privasi dan tentang › “Bagikan data penggunaan”.
+- **Laporan kerusakan** (Firebase Crashlytics, di aplikasi Android, iPhone, iPad, dan Mac): jenis kesalahan dan di bagian kode mana kesalahan itu terjadi, tanpa pesan-pesannya, yang bisa berisi datamu.
 - **Token notifikasi:** alamat yang diberikan Google, Apple, atau browser kepada perangkat untuk menerima pemberitahuan.
 - **Data koneksi**, seperti alamat IP, yang dicatat oleh penyedia infrastruktur kami.
 
@@ -48,7 +48,7 @@ blitzsplit.com menggunakan Google Analytics untuk menghitung kunjungan, dalam pr
 
 Aplikasi ini **mengutamakan offline**: apa yang kamu tambahkan disimpan dalam basis data di perangkat itu sendiri (di browser, di dalam penyimpanan situs). Saat ada koneksi, data dikirim ke server kami, yang menyinkronkan perangkat-perangkatmu dan memberikan kepada setiap anggota apa yang menjadi milik grup.
 
-> **Scan receipt (Pindai struk)**
+> **Pindai struk**
 >
 > Foto dikirim ke server kami dan dibaca oleh model AI dari Anthropic (Claude), yang mengembalikan item, harga, dan total. Kami tidak menyimpan foto setelah membacanya: foto hanya tetap ada di tagihan jika kamu melampirkannya. Berdasarkan ketentuan komersial Anthropic, konten ini tidak digunakan untuk melatih model.
 
@@ -59,8 +59,8 @@ Aplikasi ini **mengutamakan offline**: apa yang kamu tambahkan disimpan dalam ba
 | Menyimpan, menyinkronkan, dan menampilkan kepada grup | Profil, grup, tagihan, pembayaran, kunci pembayaran | Pelaksanaan kontrak (pasal 7, V) |
 | Masuk dan memulihkan akses | Id anonim, kode pemulihan, akun Google atau Apple | Pelaksanaan kontrak |
 | Membaca struk | Foto struk, atas permintaanmu | Pelaksanaan kontrak |
-| Mengirim notifikasi | Token perangkat, peristiwa grup | Pelaksanaan kontrak; kamu memilih yang mana di Profile › Notifications |
-| Meningkatkan aplikasi dan memperbaiki crash | Metrik penggunaan, laporan crash | Kepentingan sah (pasal 7, IX); kamu menolaknya dengan mematikan “Share usage data” di Profile |
+| Mengirim notifikasi | Token perangkat, peristiwa grup | Pelaksanaan kontrak; kamu memilih yang mana di Profil › Notifikasi |
+| Meningkatkan aplikasi dan memperbaiki kerusakan aplikasi | Metrik penggunaan, laporan kerusakan | Kepentingan sah (pasal 7, IX); kamu menolaknya dengan mematikan “Bagikan data penggunaan” di Profil |
 | Keamanan dan pencegahan penyalahgunaan | Data koneksi | Kepentingan sah |
 | Mematuhi hukum | Apa yang diwajibkan oleh kewajiban tersebut | Kewajiban hukum (pasal 7, II) |
 
@@ -79,7 +79,7 @@ Perusahaan-perusahaan berikut menangani data atas nama kami, hanya untuk hal-hal
 | Perusahaan | Untuk apa |
 | --- | --- |
 | Supabase | Basis data, proses masuk, dan penyimpanan foto |
-| Google (Firebase) | Metrik penggunaan, laporan crash, dan notifikasi di Android; Google Analytics situs web; masuk dengan Google |
+| Google (Firebase) | Metrik penggunaan, laporan kerusakan, dan notifikasi di Android; Google Analytics situs web; masuk dengan Google |
 | Apple | Notifikasi di iPhone, iPad, dan Mac; masuk dengan Apple |
 | Anthropic | Membaca foto struk |
 | Cloudflare | Hosting situs web blitzsplit.com |
@@ -94,9 +94,9 @@ Sebagian penyedia ini menyimpan atau memproses data di luar Brasil, sebagian bes
 ## Berapa lama kami menyimpannya {#keep}
 
 - Selama akunmu ada, kami menyimpan apa yang dibutuhkan aplikasi agar berfungsi.
-- **Sign out** (keluar) menghapus salinan di perangkat. Dengan Google atau Apple, datamu tetap ada di server untuk saat kamu masuk lagi.
-- **Tanpa akun**, “Erase profile and sign out” membersihkan perangkat dan kode pemulihanmu tetap berfungsi. Untuk menghapus juga apa yang ada di server, hubungi kami (bagian 12).
-- **“Delete account and data”**, di Profile, menghapus profil, foto, kunci pembayaran, dan kode pemulihanmu sekaligus, serta mencabut akses yang diberikan Apple. Tagihan yang kamu tambahkan ke grup bersama orang lain tetap ada di sana untuk grup, tanpa namamu, sebagai “Former member”.
+- **“Keluar”** menghapus salinan di perangkat. Dengan Google atau Apple, datamu tetap ada di server untuk saat kamu masuk lagi.
+- **Tanpa akun**, “Hapus profil dan keluar” membersihkan perangkat dan kode pemulihanmu tetap berfungsi. Untuk menghapus juga apa yang ada di server, hubungi kami (bagian 12).
+- **“Hapus akun dan data”**, di Profil, menghapus profil, foto, kunci pembayaran, dan kode pemulihanmu sekaligus, serta mencabut akses yang diberikan Apple. Tagihan yang kamu tambahkan ke grup bersama orang lain tetap ada di sana untuk grup, tanpa namamu, sebagai “Mantan anggota”.
 - Data penggunaan yang terkait dengan suatu perangkat disimpan di Google Analytics hingga 14 bulan. Setelah itu, hanya angka agregat yang tersisa, tanpa apa pun yang dapat mengidentifikasi seseorang. Setelah akunmu dihapus, id yang dimuatnya tidak lagi mengarah kepadamu.
 
 ## Hak-hakmu {#rights}
@@ -117,7 +117,7 @@ Sebagian besar hal ini bisa kamu lakukan langsung di aplikasi: mengedit profil, 
 
 Data dikirim dalam keadaan terenkripsi (HTTPS). Di server, aturan akses memastikan setiap orang hanya membaca grup tempat ia menjadi anggota. Tidak ada sistem yang sempurna, tetapi kami menanggapi setiap insiden dengan serius dan memberi tahu kamu serta ANPD jika diwajibkan oleh hukum.
 
-Kode pemulihanmu berfungsi seperti kata sandi: simpan di tempat yang aman dan jangan bagikan. Di iPhone, iPad, dan Mac, aplikasi menyimpannya di aplikasi Passwords.
+Kode pemulihanmu berfungsi seperti kata sandi: simpan di tempat yang aman dan jangan bagikan. Di iPhone, iPad, dan Mac, aplikasi menyimpannya di aplikasi Kata Sandi.
 
 ## Anak-anak {#children}
 

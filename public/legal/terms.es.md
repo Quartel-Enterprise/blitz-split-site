@@ -72,7 +72,7 @@ Los nombres Blitz Split y Bora Rachar, el ícono y el aspecto de la app son nues
 
 ## Terminación {#fin}
 
-Puedes dejar de usar la app cuando quieras y eliminar tu cuenta en Profile › “Delete account and data”. Lo que pasa con tus datos está en la [Política de privacidad](/privacy#tiempo).
+Puedes dejar de usar la app cuando quieras y eliminar tu cuenta en Perfil › “Eliminar cuenta y datos”. Lo que pasa con tus datos está en la [Política de privacidad](/privacy#tiempo).
 
 Podemos suspender o cerrar una cuenta que viole estos términos, avisándote antes siempre que sea posible.
 
