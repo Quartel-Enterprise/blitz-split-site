@@ -6,7 +6,7 @@ npm run dev      # http://localhost:8787
 ```
 
 `npm run dev` asks the hosted `invite-preview` function, so a real invite code shows its preview at
-http://localhost:8787/g/<code>, and its image at the `og:image` address the page names (`blitzsplit.com` in the
+http://localhost:8787/g/<code> (a bill's link at `/c/<code>`, a profile's at `/u/<code>`), and its image at the `og:image` address the page names (`blitzsplit.com` in the
 address stands for `localhost:8787`). `npx wrangler dev --var INVITE_PREVIEW_URL:http://localhost:54321/functions/v1/invite-preview` asks a local
 one instead (`supabase functions serve`).
 

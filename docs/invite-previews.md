@@ -1,24 +1,36 @@
-# Invite link previews
+# Link previews
 
 WhatsApp, iMessage, Telegram and the rest draw a link's preview from the page's meta tags. `src/index.js` runs only for
-`/g/*`, `/u/*` (a profile's link, see [routes](routes.md)), `/og/*`, `/.well-known/*` and `/legal/*` (`run_worker_first` in
+`/g/*`, `/c/*`, `/u/*`, `/b/*`, `/download`, `/download/*`, `/app-download`, `/og/*`, `/.well-known/*` and `/legal/*` (`run_worker_first` in
 `wrangler.jsonc`, the last two only to answer a file the site doesn't have with a 404, see [routes](routes.md)); every
-other path is a static file. For `/g/<code>` it serves the landing with that invite's title, description and image:
+other path is a static file. Every link the apps share has a preview of its own: the Worker serves the landing with
+that link's title, description and image.
 
 | Link | Title | Image |
 | --- | --- | --- |
 | The group's, `/g/<code>` | "Join <group>" and how many people split there | The group's photo, or its initials on its color, its name, type, people and up to five of their faces: each person's photo, or their initials on their color |
 | A member's personal one, `/g/<code>/<member>?from=<inviter>` | "Join <group> as <member>" and who saved them the spot | The member's initial, the group's name and "You join as <member>", on the member's color |
-| A code nobody has (a changed link, a used personal link, a typo) | "Invite to a group on Blitz Split" | `/og/blitzsplit.png`, the brand's card, as the landing's |
+| A bill's, `/c/<code>` (also with `?comentario=`), which "Anyone with the link" opens | "<bill> · <amount>", who paid, among how many it is split and the group | The category's icon, the bill's name, its amount and "<payer> paid · split among <n>", on the group's color |
+| A bill's which "Only people in the bill" open | "A bill on Blitz Split" | A lock and "Only people in the bill can open it": nothing of the bill, as its page shows nothing to whoever isn't signed in |
+| A profile's, `/u/<code>` | The person's name | Their photo, or their initials on their color, their name and "Split bills with <name>" |
+| A comment's, `/b/<bill>?comentario=<comment>` | "Comment on a bill · Blitz Split" | `/og/comment.png`, a static card: the link opens only for the people of its group, so the preview shows nothing of the bill |
+| `/download`, `/download/android`, `/download/ios`, `/app-download` | "Get Blitz Split" | `/og/download.png`, a static card |
+| `/privacy`, `/terms` | The page's own title | `/og/privacy.png`, `/og/terms.png`, static cards named in the page's own tags |
+| A code nobody has (a changed link, a used personal link, a bill's link turned off, a typo) | "Invite to a group on Blitz Split" for an invite, the brand's name otherwise | `/og/blitzsplit.png`, the brand's card, as the landing's |
+
+An invite and a bill speak the language of their currency; a profile, which has none, and the static cards are in
+English.
 
 What a preview says and its card come from the API's
 [`invite-preview`](https://github.com/Quartel-Enterprise/blitz-split-api/tree/main/supabase/functions/invite-preview)
-edge function, `INVITE_PREVIEW_URL` in `wrangler.jsonc`: it reads `get_invite`, picks the language by the group's
+edge function, `INVITE_PREVIEW_URL` in `wrangler.jsonc`, asked with `link` (`invite`, `bill` or `profile`) and the
+link's code: it reads `get_invite`, `get_shared_bill` or `get_profile_by_share_code`, picks the language by the group's or the bill's
 currency (BRL Portuguese, the Spanish speaking countries' Spanish, any other English) and draws the 1200 × 630 card
 with satori. Drawing takes 40 to 75 ms of CPU, past the 10 ms the Workers Free plan allows a request, so the
 function draws and this Worker only asks it and keeps each answer in Cloudflare's cache: the words for five minutes,
 an image for a day. The image's address carries the function's `imageVersion` (`?v=`), which changes with whatever
-the card shows, since WhatsApp keeps an image by its address. Should the function fail, the page keeps the landing's
+the card shows, since WhatsApp keeps an image by its address. Should the function fail, or answer a kind the link can't have (one
+deployed before it knew `link` reads a bill's code as an invite's), the page keeps the landing's
 own meta tags and an image answers the brand's card. The function loads the group's and the people's photos itself
 before drawing (Storage, or a Google account's picture), and a photo that doesn't load shows the initials; the
 Worker never fetches a photo. Such a card keeps the address a good one would have, so the function answers it with
@@ -26,9 +38,11 @@ Worker never fetches a photo. Such a card keeps the address a good one would hav
 next ask a minute later tries the photo again. A new photo changes `?v=` by itself, since the apps store each one
 with `?v=<updated_at>` in its URL and a Google picture's URL changes with it.
 
-`public/og/blitzsplit.png`, the brand's card, is a static file the function's `brand_card.ts` draws with the same
-layout: run it there after changing the layout or the brand, and copy the file here.
+`public/og/blitzsplit.png`, the brand's card, and the other static cards (`comment.png`, `download.png`, `privacy.png`,
+`terms.png`) are files the function's `brand_card.ts` draws with the same layout: run it there after changing the
+layout or the brand (`brand_card.ts <out.png> [comment|download|privacy|terms]`), and copy the files here. The static
+previews' words are `STATIC_PREVIEWS` in `src/index.js`, the same as the function's.
 
 When the 302 of the app links to the web app comes back ([blitz-split-site#12](https://github.com/Quartel-Enterprise/blitz-split-site/pull/12), paused by
-[blitz-split-site#13](https://github.com/Quartel-Enterprise/blitz-split-site/pull/13)), `/g/*` must still answer crawlers with
+[blitz-split-site#13](https://github.com/Quartel-Enterprise/blitz-split-site/pull/13)), `/g/*`, `/c/*`, `/u/*` and `/b/*` must still answer crawlers with
 this page, or the previews go back to the landing's.

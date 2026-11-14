@@ -33,7 +33,7 @@ Every commit on `main` deploys to blitzsplit.com.
 | Doc | What it covers |
 | --- | --- |
 | [Routes](docs/routes.md) | Every path the site answers, the app links' `.well-known` files |
-| [Invite link previews](docs/invite-previews.md) | How `/g/<code>` gets the invite's title and card |
+| [Link previews](docs/invite-previews.md) | How each link the apps share gets its title and card |
 | [Legal pages](docs/legal.md) | The Markdown the privacy policy and the terms are written in, for the site and the apps |
 | [Pages and design](docs/design.md) | Tokens, languages, theme, motion, the landing's phone, the design board |
 | [Stores and downloads](docs/stores.md) | Which store each visitor sees and how to turn a store on |

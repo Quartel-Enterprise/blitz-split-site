@@ -8,20 +8,21 @@
   window.dataLayer = window.dataLayer || [];
   window.gtag = function gtag() { window.dataLayer.push(arguments); };
 
-  // An app link carries a group's code, a member's, a bill's id, a comment's or a profile's code: none of them reaches
-  // Analytics, as the privacy policy promises. Its page view keeps only the kind of link.
+  // An app link carries a group's code, a member's, a bill's id or its link's code, a comment's or a profile's code:
+  // none of them reaches Analytics, as the privacy policy promises. Its page view keeps only the kind of link.
   function appLink(url) {
     if (/^\/g\/[^/]+\/[^/]+\/?$/.test(url.pathname)) return "member_invite";
     if (/^\/g\/[^/]+\/?$/.test(url.pathname)) return "group_invite";
     if (/^\/b\/[^/]+\/?$/.test(url.pathname)) return "bill_comment";
     if (/^\/u\/[^/]+\/?$/.test(url.pathname)) return "profile_link";
+    if (/^\/c\/[^/]+\/?$/.test(url.pathname)) return "bill_link";
     return null;
   }
   function withoutIds(href) {
     const url = new URL(href);
     const kind = appLink(url);
     if (!kind) return href;
-    // Why: every app link's path starts with its kind's prefix, /g/, /b/ or /u/.
+    // Why: every app link's path starts with its kind's prefix, /g/, /b/, /u/ or /c/.
     url.pathname = url.pathname.slice(0, 3);
     url.searchParams.delete("comentario");
     url.hash = "";
