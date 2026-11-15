@@ -64,6 +64,16 @@ key must be one an older app can ignore, and a new platform's name one it can sk
 
 ## Adding a version
 
+The releases of blitz-split-client add them. Each pull request there leaves its notes, in every language, in a
+fragment, and a release writes the version's files here from the fragments it tells, runs `npm run
+check:release-notes`'s check, and opens and merges a pull request from a `release-notes/<version>` branch, which
+deploys the site (that repository's `docs/release-notes.md` and `scripts/release/send-release-notes-to-site.sh`). The
+review skips those pull requests ([ci.md](ci.md#the-review)).
+
+A release leaves a version this repository already has as it is. So a version whose notes are better written by
+hand (3.0.0, the first one after the legacy app) is added here before it is released, and the release then tells
+these notes everywhere else, the stores included:
+
 1. Write `release-notes/<language>/<version>.json` in every language.
 2. Commit them: the deploy writes the feeds and the page. `npm run dev` shows the page as it will be.
 
