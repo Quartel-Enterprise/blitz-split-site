@@ -79,7 +79,6 @@
     // Portugal's Portuguese: only what Portugal says differently, the rest is pt's.
     "pt-PT": {
       nobodyEqual: "Marca pelo menos uma pessoa para dividir {a}.",
-      over: "Passou {a}",
       nobodyShares: "Dá pelo menos uma parte a alguém para dividir {a}.",
       ofEach: "{p} de cada despesa", ofBill: "{p} da despesa", incomeDetail: "A parte de cada um segue o rendimento.",
       loose: "Marca quem consumiu", looseDetail: "Toca nas caras de cada item e marca quem consumiu.",

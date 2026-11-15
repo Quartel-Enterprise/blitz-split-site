@@ -68,14 +68,13 @@ function closingBracket(source, start) {
 // Evaluates a literal of the site's own source; its functions are only compared, never called.
 const evaluate = (literal) => vm.runInNewContext(`(${literal})`, {});
 
+const boot = readFileSync(join(PUBLIC, "boot.js"), "utf8");
 const languages = (() => {
-  const boot = readFileSync(join(PUBLIC, "boot.js"), "utf8");
   const match = boot.match(/const SUPPORTED = (\[[^\]]*\])/);
   if (!match) throw new Error("public/boot.js has no `const SUPPORTED = [...]` to read the languages from");
   return evaluate(match[1]);
 })();
 const variants = (() => {
-  const boot = readFileSync(join(PUBLIC, "boot.js"), "utf8");
   const match = boot.match(/const VARIANTS = (\[[^\]]*\])/);
   return match ? evaluate(match[1]) : [];
 })();
@@ -131,12 +130,7 @@ function checkPage(file) {
         if (!used.has(key) && !PAGE_KEYS.includes(key)) fail(file, `SITE_STRINGS.${lang}.${key} isn't used by the page`);
       }
     }
-  }
-
-  if (at >= 0) {
     // A variant's words are partial, but each one must be a key the page uses.
-    const open = html.indexOf("{", at);
-    const strings = evaluate(html.slice(open, closingBracket(html, open) + 1));
     for (const variant of variants) {
       for (const [key, value] of Object.entries(strings[variant] || {})) {
         if (!used.has(key) && !PAGE_KEYS.includes(key)) fail(file, `SITE_STRINGS.${variant}.${key} isn't used by the page`);

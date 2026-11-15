@@ -19,8 +19,6 @@
   };
 
   const root = document.documentElement;
-  // One of the site's languages: boot.js, in <head>, picked it.
-  const lang = root.dataset.lang;
 
   // The platform. iPadOS reports a Mac, which only a touch screen tells apart. ?platform=android|ios|mac|desktop pins
   // one, to check each case (the design board uses it).
@@ -35,10 +33,10 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${{ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en" }[root.dataset.variant || lang]}`
+    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en" })}`
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${{ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", en: "us" }[root.dataset.variant || lang]}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", en: "us" })}/app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -85,9 +83,9 @@
     // Portugal's Portuguese: only what Portugal says differently, the rest is pt's.
     "pt-PT": {
       play: ["Disponível no", "Brevemente no"], appstore: ["Descarregar na", "Brevemente na"], web: ["Abrir no", "Brevemente no"],
-      getApp: "Descarregar a app", openWeb: "Abrir app web", soon: "Brevemente", webLive: "Abrir a app web",
+      getApp: "Descarregar a app", soon: "Brevemente", webLive: "Abrir a app web",
+      mismatchTitle: "Escolhe a tua loja",
       mismatchBody: "Estás num {platform}. Para a melhor experiência, descarrega a app {in}.",
-      mismatchStay: "Continuar {to}",
     },
     es: {
       play: ["Disponible en", "Próximamente en"], appstore: ["Descárgalo en la", "Próximamente en la"], web: ["Abrir en el", "Próximamente en el"], browser: "Navegador",

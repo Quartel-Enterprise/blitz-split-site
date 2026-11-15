@@ -54,7 +54,7 @@
     // Portugal's Portuguese: only what Portugal says differently, the rest is pt's.
     "pt-PT": {
       members: (people, bills) => `${people} pessoas · ${bills} ${bills === 1 ? "despesa" : "despesas"}`,
-      youOwe: "deves", owesYou: "Devem-te", youOweTitle: "Deves",
+      youOwe: "deves", owesYou: "Devem-te", youOweTitle: "Deves", lodging: "Alojamento",
       sheetTitle: "Dividir despesa", splitAmong: "Dividir por igual entre", save: "Guardar",
       yourShare: "A tua parte", deleteBill: "Eliminar despesa",
       recordPayment: "Registar pagamento", record: "Registar", deletePayment: "Eliminar pagamento",
@@ -667,7 +667,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en-US" }[root.dataset.variant || lang], { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();
