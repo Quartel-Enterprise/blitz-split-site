@@ -159,6 +159,13 @@ function checkScript(file) {
     for (const lang of Object.keys(dict)) if (!languages.includes(lang) && !variants.includes(lang)) fail(file, `${name}.${lang} isn't a language of the site`);
     if (FORMATS.includes(name)) {
       for (const lang of languages) if (!dict[lang]) fail(file, `${name} has no ${lang}`);
+      // A variant's format has the same parts as its language's: a missing separator would print "undefined".
+      for (const variant of variants) {
+        const base = dict[variant.split("-")[0]];
+        if (dict[variant] && base && (dict[variant].length < base.length || dict[variant].some((part) => typeof part !== "string"))) {
+          fail(file, `${name}.${variant} has ${dict[variant].length} part(s) of text, but ${variant.split("-")[0]}'s has ${base.length}`);
+        }
+      }
       continue;
     }
     if (!dict.en) { fail(file, `${name} has no English to compare the other languages with`); continue; }

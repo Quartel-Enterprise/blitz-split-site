@@ -16,16 +16,17 @@
 
   // A variant is a regional overlay on its language: data-lang is the language (pt, so the legal pages' blocks and the
   // languages' words apply) and data-variant the variant (pt-PT), whose words, where it has its own, win over pt's.
-  // Only the exact tag picks one: every other pt-* browser language stays pt.
+  // Only that tag picks one, in any case (pt-pt, pt_PT): every other pt-* browser language stays pt.
   const VARIANTS = ["pt-PT"];
-  const normalize = (tag) => VARIANTS.find((variant) => variant.toLowerCase() === String(tag).toLowerCase()) || String(tag).toLowerCase().split("-")[0];
+  const variantOf = (tag) => VARIANTS.find((variant) => variant.toLowerCase() === String(tag).toLowerCase().replace("_", "-"));
+  const normalize = (tag) => variantOf(tag) || String(tag).toLowerCase().split("-")[0];
   const known = (code) => SUPPORTED.includes(code) || VARIANTS.includes(code);
 
   // First, so the scripts that read data-lang have it even if the theme below fails.
   const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
     .map(normalize)
     .find(known);
-  const pick = [params.get("lang"), stored("lang"), preferred].find(known) || "en";
+  const pick = [params.get("lang"), stored("lang")].map((code) => variantOf(code) || code).concat(preferred).find(known) || "en";
   const variant = VARIANTS.includes(pick) ? pick : "";
   const lang = variant ? variant.split("-")[0] : pick;
   root.dataset.lang = lang;

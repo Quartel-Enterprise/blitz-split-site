@@ -79,7 +79,7 @@
   }));
 
   // The header's menus (language and theme): the language one shows its code, and a click outside or Esc closes them.
-  document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = lang.toUpperCase(); });
+  document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = picked.toUpperCase(); });
   const langMenus = [...document.querySelectorAll(".lang-menu, .theme-menu, .get-menu")];
   langMenus.forEach((menu) => menu.addEventListener("toggle", () => {
     if (!menu.open) return;
