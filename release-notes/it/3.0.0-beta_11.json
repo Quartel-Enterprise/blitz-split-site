@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Un account senza Google o Apple ora viene cancellato dopo 30 giorni di inutilizzo. La schermata di benvenuto e il Profilo lo segnalano, e collegare Google o Apple conserva i tuoi dati.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ora puoi valutare l’app in Profilo › Assistenza e feedback, con \"Valuta l’app\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Una spesa aperta da Home o da Tutte le spese ora torna direttamente dove l'hai aperta, senza passare dal suo gruppo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corretta la bolla \"+N\" di una pila di volti, che appariva sotto il primo volto invece che sopra.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

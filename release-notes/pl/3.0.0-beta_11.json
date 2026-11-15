@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Konto bez Google ani Apple jest teraz usuwane po 30 dniach nieużywania. Informują o tym ekran powitalny i Profil, a połączenie Google lub Apple zachowuje Twoje dane.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Możesz teraz ocenić aplikację w sekcji Profil › Pomoc i opinie, wybierając „Oceń aplikację”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Wydatek otwarty ze Start lub z Wszystkie wydatki wraca teraz prosto tam, skąd go otwarto, bez przechodzenia przez jego grupę.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Naprawiono dymek „+N” w stosie twarzy, który pojawiał się pod pierwszą twarzą zamiast nad nią.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

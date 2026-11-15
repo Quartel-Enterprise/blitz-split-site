@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "An account without Google or Apple is now deleted after 30 days without use. The welcome screen and Profile say so, and connecting Google or Apple keeps your data.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "You can now rate the app from Profile › Support and feedback, with \"Rate the app\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "A bill opened from Home or All expenses now goes back straight to where you opened it, without passing through its group.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fixed the \"+N\" bubble of a stack of faces showing under the first face instead of over it.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

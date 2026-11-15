@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Ein Konto ohne Google oder Apple wird jetzt nach 30 Tagen ohne Nutzung gelöscht. Der Willkommensbildschirm und das Profil weisen darauf hin, und mit Google oder Apple bleiben deine Daten erhalten.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Du kannst die App jetzt unter Profil › Support und Feedback mit „App bewerten“ bewerten.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Eine Ausgabe, die du über Start oder Alle Ausgaben öffnest, führt beim Zurückgehen jetzt direkt dorthin zurück, ohne Umweg über ihre Gruppe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die „+N“-Blase eines Gesichterstapels erscheint nicht mehr unter dem ersten Gesicht, sondern darüber.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

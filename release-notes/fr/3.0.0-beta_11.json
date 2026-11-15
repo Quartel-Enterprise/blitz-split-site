@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Un compte sans Google ni Apple est désormais effacé après 30 jours sans utilisation. L’écran d’accueil et le Profil le signalent, et connecter Google ou Apple conserve vos données.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vous pouvez désormais noter l’app dans Profil › Assistance et avis, avec « Noter l’app ».",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Une dépense ouverte depuis Accueil ou Toutes les dépenses revient maintenant directement là où vous l'avez ouverte, sans passer par son groupe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Correction de la bulle « +N » d'une pile de visages, qui s'affichait sous le premier visage au lieu de le recouvrir.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}
