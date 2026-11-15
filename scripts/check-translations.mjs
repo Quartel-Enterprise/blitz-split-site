@@ -21,7 +21,7 @@ import vm from "node:vm";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC = join(ROOT, "public");
 // The languages the legal pages are written in full, every language the site speaks.
-const LEGAL_LANGS = ["en", "pt", "pt-PT", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
+const LEGAL_LANGS = ["en", "pt", "pt-PT", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk"];
 // Keys of SITE_STRINGS that site.js reads by name instead of from a data-i18n attribute.
 const PAGE_KEYS = ["title", "description"];
 // Keys whose English markup is right in every language but the ones that set them: the product's name is Blitz Split
