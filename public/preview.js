@@ -14,8 +14,10 @@
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 
-  // Polish counts take one form for 1, another for 2–4 (22–24…) and a third for the rest.
-  const plPlural = (n, one, few, many) => ({ one, few }[new Intl.PluralRules("pl").select(n)] ?? many);
+  // Polish, Russian and Ukrainian counts take one form for 1 (and, in Russian and Ukrainian, 21, 31…), another for
+  // 2–4 (22–24…) and a third for the rest.
+  const plural = new Intl.PluralRules(lang);
+  const countForm = (n, one, few, many) => ({ one, few }[plural.select(n)] ?? many);
   const TEXT = window.localized({
     en: {
       paid: "{name} paid", notIn: "Not in this one",
@@ -133,20 +135,20 @@
     },
     pl: {
       paid: "{name} zapłacił(a)", notIn: "Bez ciebie",
-      members: (people, bills) => `${people} ${plPlural(people, "osoba", "osoby", "osób")} · ${bills} ${plPlural(bills, "wydatek", "wydatki", "wydatków")}`,
+      members: (people, bills) => `${people} ${countForm(people, "osoba", "osoby", "osób")} · ${bills} ${countForm(bills, "wydatek", "wydatki", "wydatków")}`,
       toGet: "do odzyskania", youOwe: "do oddania", settled: "wszystko rozliczone", owesYou: "Do odzyskania", youOweTitle: "Do oddania",
       eachOne: "Saldo każdej osoby", getsBack: "do odzyskania", owes: "do oddania", even: "na czysto",
       toSettle: "Do rozliczenia", total: "Suma w grupie", lodging: "Nocleg", food: "Jedzenie", transport: "Transport",
       sheetTitle: "Podziel wydatek", description: "Opis", amount: "Kwota", whoPaid: "Kto zapłacił",
       splitAmong: "Podziel po równo między", each: "{value} na osobę", cancel: "Anuluj", save: "Zapisz", close: "Zamknij",
-      queue: (n) => `${n} ${plPlural(n, "zmiana", "zmiany", "zmian")} w kolejce`,
+      queue: (n) => `${n} ${countForm(n, "zmiana", "zmiany", "zmian")} w kolejce`,
       split: "Jak podzielono", yourShare: "Twoja część", deleteBill: "Usuń wydatek",
       recordPayment: "Zapisz płatność", record: "Zapisz", viaMethod: "przelewem", payment: "Płatność", deletePayment: "Usuń płatność",
       // A name is never declined: who paid whom as an arrow, as the Balances tab writes it.
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `${who} zapłacił(a) ci ${value}`,
       paidTotal: "Zapłacono łącznie", shareTotal: "Udział w wydatkach", balance: "Saldo",
-      bills: (n) => `${n} ${plPlural(n, "wydatek", "wydatki", "wydatków")}`,
+      bills: (n) => `${n} ${countForm(n, "wydatek", "wydatki", "wydatków")}`,
       titles: { b1: "Pensjonat w Lagoa", b2: "Kolacja w Ribeirão", b3: "Przejazd na plażę", p1: "Lody na plaży", p2: "Zakupy na tydzień", p3: "Parking" },
     },
     nl: {
@@ -219,13 +221,51 @@
       bills: (n) => `支出${n}件`,
       titles: { b1: "ラゴアのゲストハウス", b2: "リベイロンでの夕食", b3: "ビーチまでの移動", p1: "ビーチでアイス", p2: "1週間分の食料品", p3: "駐車場" },
     },
+    // Russian and Ukrainian: a name is never declined (who paid whom as an arrow, as the Balances tab writes it), and a
+    // past tense about anyone writes both endings.
+    ru: {
+      paid: "{name} оплатил(а)", notIn: "Не участвует",
+      members: (people, bills) => `${people} ${countForm(people, "человек", "человека", "человек")} · ${bills} ${countForm(bills, "расход", "расхода", "расходов")}`,
+      toGet: "к получению", youOwe: "ты должен(-на)", settled: "всё оплачено", owesYou: "Тебе должны", youOweTitle: "Ты должен(-на)",
+      eachOne: "Баланс каждого", getsBack: "получит", owes: "должен(-на)", even: "без долгов",
+      toSettle: "Чтобы рассчитаться", total: "Всего в группе", lodging: "Жильё", food: "Еда", transport: "Транспорт",
+      sheetTitle: "Разделить счёт", description: "Описание", amount: "Сумма", whoPaid: "Кто платил",
+      splitAmong: "Разделить поровну между", each: "{value} с каждого", cancel: "Отмена", save: "Сохранить", close: "Закрыть",
+      queue: (n) => `${n} ${countForm(n, "изменение", "изменения", "изменений")} в очереди`,
+      split: "Как разделено", yourShare: "Твоя доля", deleteBill: "Удалить расход",
+      recordPayment: "Записать платёж", record: "Записать", viaMethod: "переводом", payment: "Платёж", deletePayment: "Удалить платёж",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} заплатил(а) тебе ${value}`,
+      paidTotal: "Заплачено всего", shareTotal: "Доля в расходах", balance: "Баланс",
+      bills: (n) => `${n} ${countForm(n, "расход", "расхода", "расходов")}`,
+      titles: { b1: "Гостевой дом в Лагоа", b2: "Ужин в Рибейране", b3: "Дорога на пляж", p1: "Мороженое на пляже", p2: "Продукты на неделю", p3: "Парковка" },
+    },
+    uk: {
+      paid: "{name} сплатив(-ла)", notIn: "Не бере участі",
+      members: (people, bills) => `${people} ${countForm(people, "людина", "людини", "людей")} · ${bills} ${countForm(bills, "витрата", "витрати", "витрат")}`,
+      toGet: "до отримання", youOwe: "ти винен(-на)", settled: "усе сплачено", owesYou: "Тобі винні", youOweTitle: "Ти винен(-на)",
+      eachOne: "Баланс кожного", getsBack: "отримає", owes: "винен(-на)", even: "без боргів",
+      toSettle: "Щоб розрахуватися", total: "Усього в групі", lodging: "Житло", food: "Їжа", transport: "Транспорт",
+      sheetTitle: "Розділити рахунок", description: "Опис", amount: "Сума", whoPaid: "Хто платив",
+      splitAmong: "Розділити порівну між", each: "{value} з кожного", cancel: "Скасувати", save: "Зберегти", close: "Закрити",
+      queue: (n) => `${n} ${countForm(n, "зміна", "зміни", "змін")} у черзі`,
+      split: "Як розділено", yourShare: "Твоя частка", deleteBill: "Видалити витрату",
+      recordPayment: "Записати платіж", record: "Записати", viaMethod: "переказом", payment: "Платіж", deletePayment: "Видалити платіж",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} заплатив(-ла) тобі ${value}`,
+      paidTotal: "Сплачено загалом", shareTotal: "Частка у витратах", balance: "Баланс",
+      bills: (n) => `${n} ${countForm(n, "витрата", "витрати", "витрат")}`,
+      titles: { b1: "Гостьовий будинок у Лагоа", b2: "Вечеря в Рібейрані", b3: "Дорога на пляж", p1: "Морозиво на пляжі", p2: "Продукти на тиждень", p3: "Паркування" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
   // Amounts as the app shows them: the language's separators, and no decimals when they are all zero.
   const CURRENCY = window.localized({ pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", "\u202f", "\u00a0$"],
     de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
-    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] });
+    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","],
+    // Russian and Ukrainian show their own currencies, as Portugal's Portuguese shows the euro.
+    ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"] });
   // Turkish writes the percent sign first: %10.
   const pct = (n) => (lang === "tr" ? `%${n}` : `${n}%`);
   function money(cents, signed) {
@@ -667,7 +707,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

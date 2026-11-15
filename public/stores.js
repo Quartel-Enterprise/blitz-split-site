@@ -33,10 +33,10 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en" })}`
+    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", en: "en" })}`
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", en: "us" })}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", en: "us" })}/app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -167,6 +167,24 @@
       mismatchBody: "お使いの端末は{platform}です。快適に使うには、{in}アプリを入手してください。",
       mismatchGo: "{to}へ", mismatchStay: "このまま{to}へ", close: "閉じる",
       in: { play: "Google Playから", appstore: "App Storeから" }, to: { play: "Google Play", appstore: "App Store" },
+    },
+    ru: {
+      play: ["Доступно в", "Скоро в"], appstore: ["Загрузи в", "Скоро в"], web: ["Открой в", "Скоро в"], browser: "браузере",
+      getApp: "Скачать приложение", openWeb: "Открыть веб-приложение", soon: "Скоро",
+      playLive: "Доступно в Google Play", appStoreLive: "Доступно в App Store", webLive: "Открыть веб-приложение",
+      mismatchTitle: "Выбери магазин",
+      mismatchBody: "У тебя {platform}. Чтобы всё работало лучше всего, скачай приложение {in}.",
+      mismatchGo: "Перейти {to}", mismatchStay: "Всё равно перейти {to}", close: "Закрыть",
+      in: { play: "из Google Play", appstore: "из App Store" }, to: { play: "в Google Play", appstore: "в App Store" },
+    },
+    uk: {
+      play: ["Доступно в", "Незабаром у"], appstore: ["Завантаж з", "Незабаром в"], web: ["Відкрий у", "Незабаром у"], browser: "браузері",
+      getApp: "Завантажити застосунок", openWeb: "Відкрити вебзастосунок", soon: "Незабаром",
+      playLive: "Доступно в Google Play", appStoreLive: "Доступно в App Store", webLive: "Відкрити вебзастосунок",
+      mismatchTitle: "Обери магазин",
+      mismatchBody: "У тебе {platform}. Щоб усе працювало найкраще, завантаж застосунок {in}.",
+      mismatchGo: "Перейти {to}", mismatchStay: "Усе одно перейти {to}", close: "Закрити",
+      in: { play: "з Google Play", appstore: "з App Store" }, to: { play: "до Google Play", appstore: "до App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

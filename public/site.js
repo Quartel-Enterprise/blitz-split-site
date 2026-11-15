@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: … }
 // before this script, and blocks written per language carry data-lang with the language ("en", "pt", "fr"…).
 (function () {
   const params = new URLSearchParams(location.search);
@@ -79,7 +79,8 @@
   }));
 
   // The header's menus (language and theme): the language one shows its code, and a click outside or Esc closes them.
-  document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = picked.toUpperCase(); });
+  // Ukrainian shows "UA", as the app's language picker does: "UK" reads as the United Kingdom.
+  document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = picked === "uk" ? "UA" : picked.toUpperCase(); });
   const langMenus = [...document.querySelectorAll(".lang-menu, .theme-menu, .get-menu")];
   langMenus.forEach((menu) => menu.addEventListener("toggle", () => {
     if (!menu.open) return;

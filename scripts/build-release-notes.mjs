@@ -20,7 +20,7 @@ import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
 process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 // The order of the page's blocks. English is what every other language is checked against.
-const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
+const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk"];
 const SOURCE_DIR = "release-notes";
 const FEED_DIR = "public/release-notes";
 // The page's shell, written by hand: its header, its footer and its strings, with nothing between <main> and </main>.
@@ -45,6 +45,8 @@ const CHROME = {
   tr: { language: "Türkçe", brand: "Blitz Split", locale: "tr", title: "Yenilikler", lead: "Uygulamanın her sürümünde neler değişti.", showBeta: "Beta sürümlerini göster", beta: "Beta", empty: "Henüz kararlı bir sürüm yok. Nelerin test edildiğini görmek için beta sürümlerini aç.", platforms: { android: "Android", ios: "iPhone ve iPad", mac: "Mac", web: "Web" } },
   id: { language: "Bahasa Indonesia", brand: "Blitz Split", locale: "id", title: "Yang baru", lead: "Apa yang berubah di setiap versi aplikasi.", showBeta: "Tampilkan versi beta", beta: "Beta", empty: "Belum ada versi stabil. Aktifkan versi beta untuk melihat apa yang sedang diuji.", platforms: { android: "Android", ios: "iPhone dan iPad", mac: "Mac", web: "Web" } },
   ja: { language: "日本語", brand: "Blitz Split", locale: "ja", title: "新機能", lead: "アプリの各バージョンでの変更点。", showBeta: "ベータ版を表示", beta: "ベータ", empty: "安定版はまだありません。ベータ版を表示すると、テスト中の内容を確認できます。", platforms: { android: "Android", ios: "iPhoneとiPad", mac: "Mac", web: "Web" } },
+  ru: { language: "Русский", brand: "Blitz Split", locale: "ru", title: "Что нового", lead: "Что изменилось в каждой версии приложения.", showBeta: "Показывать бета-версии", beta: "Бета", empty: "Стабильной версии пока нет. Включи бета-версии, чтобы увидеть, что сейчас тестируется.", platforms: { android: "Android", ios: "iPhone и iPad", mac: "Mac", web: "Веб" } },
+  uk: { language: "Українська", brand: "Blitz Split", locale: "uk", title: "Що нового", lead: "Що змінилося в кожній версії застосунку.", showBeta: "Показувати бета-версії", beta: "Бета", empty: "Стабільної версії ще немає. Увімкни бета-версії, щоб побачити, що зараз тестується.", platforms: { android: "Android", ios: "iPhone і iPad", mac: "Mac", web: "Веб" } },
 };
 
 class NotesError extends Error {}

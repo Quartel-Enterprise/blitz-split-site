@@ -20,8 +20,6 @@ import vm from "node:vm";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC = join(ROOT, "public");
-// The languages the legal pages are written in full, every language the site speaks.
-const LEGAL_LANGS = ["en", "pt", "pt-PT", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
 // Keys of SITE_STRINGS that site.js reads by name instead of from a data-i18n attribute.
 const PAGE_KEYS = ["title", "description"];
 // Keys whose English markup is right in every language but the ones that set them: the product's name is Blitz Split
@@ -79,6 +77,8 @@ const variants = (() => {
   return match ? evaluate(match[1]) : [];
 })();
 const translated = languages.filter((lang) => lang !== "en");
+// The languages the legal pages are written in full: every language the site speaks, and each variant.
+const LEGAL_LANGS = [...languages, ...variants];
 
 // Unique, since a language may write a placeholder once per plural form ("{a} na {n} osoby.|{a} na {n} osób.").
 const placeholders = (text) => [...new Set([...text.matchAll(/\{(\w+)\}/g)].map((m) => m[1]))].sort().join(",");
