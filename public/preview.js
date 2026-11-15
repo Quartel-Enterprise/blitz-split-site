@@ -16,7 +16,8 @@
 
   // Polish, Russian and Ukrainian counts take one form for 1 (and, in Russian and Ukrainian, 21, 31…), another for
   // 2–4 (22–24…) and a third for the rest.
-  const countForm = (n, one, few, many) => ({ one, few }[new Intl.PluralRules(lang).select(n)] ?? many);
+  const plural = new Intl.PluralRules(lang);
+  const countForm = (n, one, few, many) => ({ one, few }[plural.select(n)] ?? many);
   const TEXT = window.localized({
     en: {
       paid: "{name} paid", notIn: "Not in this one",
