@@ -13,7 +13,7 @@
   const track = (name, params) => window.track?.(name, params);
 
   // The printed receipt, as a bar of each language's country would print it.
-  const PAPER = {
+  const PAPER = window.localized({
     en: {
       store: "HARBOR BAR", address: "120 Gull Street", date: "11/08/2026  9:47 PM",
       lines: [["2 DRAFT BEER", "28.00", 1], ["1 SHRIMP PLATTER", "96.00", 2]],
@@ -23,6 +23,10 @@
       store: "BAR DO PORTO", address: "Rua das Gaivotas, 120", date: "08/11/2026  21:47",
       lines: [["2 CHOPE 500ML", "28,00", 1], ["1 PORÇÃO CAMARÃO", "96,00", 2]],
       subtotal: ["SUBTOTAL", "124,00"], service: ["SERVIÇO 10%", "12,40", 3], total: ["TOTAL", "136,40"],
+    },
+    // Portugal's Portuguese: only what Portugal says differently, the rest is pt's.
+    "pt-PT": {
+      lines: [["2 IMPERIAL", "28,00", 1], ["1 PETISCO CAMARÃO", "96,00", 2]],
     },
     es: {
       store: "BAR DEL PUERTO", address: "Calle Gaviotas 120", date: "08/11/2026  21:47",
@@ -69,7 +73,7 @@
       lines: [["2 生ビール", "28.00", 1], ["1 エビ盛り合わせ", "96.00", 2]],
       subtotal: ["小計", "124.00"], service: ["サービス料 10%", "12.40", 3], total: ["合計", "136.40"],
     },
-  }[lang];
+  });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 
   const stage = demo.querySelector("[data-scan-stage]");

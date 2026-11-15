@@ -4,7 +4,7 @@
 // dark, so site.css writes the dark tokens once: System takes the system's theme here, and follows it when it changes.
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
-// Turkish, Indonesian or Japanese: ?lang=, then the last one picked in the language menu, then
+// Turkish, Indonesian or Japanese, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language menu, then
 // the browser's languages in order of preference, English when none of them is one of ours.
 (function () {
   const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
@@ -14,13 +14,33 @@
     try { return localStorage.getItem(key); } catch (e) { return null; } // storage blocked
   }
 
+  // A variant is a regional overlay on its language: data-lang is the language (pt, so the legal pages' blocks and the
+  // languages' words apply) and data-variant the variant (pt-PT), whose words, where it has its own, win over pt's.
+  // Only the exact tag picks one: every other pt-* browser language stays pt.
+  const VARIANTS = ["pt-PT"];
+  const normalize = (tag) => VARIANTS.find((variant) => variant.toLowerCase() === String(tag).toLowerCase()) || String(tag).toLowerCase().split("-")[0];
+  const known = (code) => SUPPORTED.includes(code) || VARIANTS.includes(code);
+
   // First, so the scripts that read data-lang have it even if the theme below fails.
   const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
-    .map((tag) => tag.toLowerCase().split("-")[0])
-    .find((code) => SUPPORTED.includes(code));
-  const lang = [params.get("lang"), stored("lang"), preferred].find((code) => SUPPORTED.includes(code)) || "en";
+    .map(normalize)
+    .find(known);
+  const pick = [params.get("lang"), stored("lang"), preferred].find(known) || "en";
+  const variant = VARIANTS.includes(pick) ? pick : "";
+  const lang = variant ? variant.split("-")[0] : pick;
   root.dataset.lang = lang;
-  root.lang = { en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja" }[lang];
+  if (variant) root.dataset.variant = variant;
+  root.lang = variant || { en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja" }[lang];
+  // A table keyed by language, with the variant's own entries over its language's, objects merged key by key: the words Portugal says
+  // differently, the rest falling back to pt. A table without the variant is returned as the language's.
+  const plain = (value) => value && typeof value === "object" && !Array.isArray(value);
+  const merge = (base, over) => {
+    if (!plain(base) || !plain(over)) return over;
+    const out = { ...base };
+    for (const key in over) out[key] = merge(base[key], over[key]);
+    return out;
+  };
+  window.localized = (table) => (variant && table[variant] ? merge(table[lang], table[variant]) : table[lang]);
 
   const theme = [params.get("theme"), stored("theme")].find((t) => ["light", "dark", "system"].includes(t)) || "system";
   const systemDark = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;

@@ -9,7 +9,13 @@ Dutch, Turkish, Indonesian and Japanese. The markup is in English; each page car
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the header's globe menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
-`?lang=en|pt|es|fr|de|it|pl|nl|tr|id|ja` and `?theme=light|dark` pin one. Each legal page names the apps' buttons as the app shows them
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a twelfth language: only the exact tag `pt-PT` (a browser's
+or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
+CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
+`pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
+the words Portugal says differently ("tu", ecrã/telemóvel/partilhar, "estar a", euro amounts; the app is **Blitz Split**).
+`npm run check:translations` checks those entries' shape and placeholders but doesn't require them complete. The legal
+pages and the release notes have no pt-PT text yet: pt-PT reads the `pt` ones, which say "Bora Rachar". Each legal page names the apps' buttons as the app shows them
 in its language. Japanese keeps
 `line-break: strict`, breaks headings between phrases (`word-break: auto-phrase`) and drops the Latin headings' tight
 tracking; Turkish writes the percent sign first (%10).

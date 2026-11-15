@@ -35,10 +35,10 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${{ pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en" }[lang]}`
+    ? `${CONFIG.googlePlayUrl}&hl=${{ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en" }[root.dataset.variant || lang]}`
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${{ pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", en: "us" }[lang]}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${{ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", en: "us" }[root.dataset.variant || lang]}/app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -63,7 +63,7 @@
     history.replaceState(null, "", "/" + location.search + "#get");
   }
 
-  const TEXT = {
+  const TEXT = window.localized({
     en: {
       play: ["Get it on", "Coming soon to"], appstore: ["Download on the", "Coming soon to the"], web: ["Open in your", "Coming soon to your"], browser: "Browser",
       getApp: "Get the app", openWeb: "Open web app", soon: "Coming soon",
@@ -81,6 +81,13 @@
       mismatchBody: "Você está num {platform}. Para a melhor experiência, baixe o app {in}.",
       mismatchGo: "Ir {to}", mismatchStay: "Continuar {to}", close: "Fechar",
       in: { play: "no Google Play", appstore: "na App Store" }, to: { play: "para o Google Play", appstore: "para a App Store" },
+    },
+    // Portugal's Portuguese: only what Portugal says differently, the rest is pt's.
+    "pt-PT": {
+      play: ["Disponível no", "Brevemente no"], appstore: ["Descarregar na", "Brevemente na"], web: ["Abrir no", "Brevemente no"],
+      getApp: "Descarregar a app", openWeb: "Abrir app web", soon: "Brevemente", webLive: "Abrir a app web",
+      mismatchBody: "Estás num {platform}. Para a melhor experiência, descarrega a app {in}.",
+      mismatchStay: "Continuar {to}",
     },
     es: {
       play: ["Disponible en", "Próximamente en"], appstore: ["Descárgalo en la", "Próximamente en la"], web: ["Abrir en el", "Próximamente en el"], browser: "Navegador",
@@ -163,7 +170,7 @@
       mismatchGo: "{to}へ", mismatchStay: "このまま{to}へ", close: "閉じる",
       in: { play: "Google Playから", appstore: "App Storeから" }, to: { play: "Google Play", appstore: "App Store" },
     },
-  }[lang];
+  });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
   const platformName = { android: "Android", ios: isIos && /ipad/i.test(agent) ? "iPad" : "iPhone", mac: "Mac" };
 
