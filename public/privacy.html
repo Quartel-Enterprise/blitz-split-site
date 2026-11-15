@@ -163,7 +163,7 @@
             <h3>O que é coletado automaticamente</h3>
             <ul>
               <li><strong>Métricas de uso</strong> (Google Firebase Analytics): as telas abertas e as ações feitas, como “criou um grupo”, com dados do aparelho (modelo, sistema, idioma, versão do app e país aproximado). Elas nunca levam nomes, valores nem os IDs de grupos, contas ou pessoas. Não usamos o ID de publicidade, e a personalização de anúncios fica desligada. Se você tem uma conta, anônima ou com Google ou Apple, as métricas levam o ID dela, um código aleatório que não é o seu nome nem o seu e-mail, para vermos o uso do app somado entre o seu celular, computador e navegador. Você as desliga em cada aparelho em Perfil › Privacidade e sobre › “Compartilhar dados de uso”.</li>
-              <li><strong>Relatórios de falha</strong> (Firebase Crashlytics nos apps de Android, iPhone, iPad e Mac, e Sentry no navegador): o tipo do erro e o ponto do código onde ele aconteceu, sem as mensagens, que poderiam conter dados seus.</li>
+              <li><strong>Relatórios de falha</strong> (Firebase Crashlytics nos apps de Android, iPhone, iPad e Mac, e Sentry no navegador): o tipo do erro e o ponto do código onde ele aconteceu, com a versão do app e dados do aparelho ou do navegador (modelo, sistema), sem as mensagens, que poderiam conter dados seus.</li>
               <li><strong>Token de notificação:</strong> o endereço que o Google, a Apple ou o navegador dá ao aparelho para receber avisos.</li>
               <li><strong>Dados de conexão</strong>, como o endereço IP, registrados pelos provedores de infraestrutura.</li>
             </ul>
@@ -190,7 +190,8 @@
                   <tr><td data-label="Finalidade">Entrar e recuperar o acesso</td><td data-label="Dados">ID anônimo, código de recuperação, conta Google ou Apple</td><td data-label="Base legal (LGPD)">Execução de contrato</td></tr>
                   <tr><td data-label="Finalidade">Ler recibos</td><td data-label="Dados">Foto do recibo, a seu pedido</td><td data-label="Base legal (LGPD)">Execução de contrato</td></tr>
                   <tr><td data-label="Finalidade">Enviar notificações</td><td data-label="Dados">Token do aparelho, eventos do grupo</td><td data-label="Base legal (LGPD)">Execução de contrato; você escolhe quais em Perfil › Notificações</td></tr>
-                  <tr><td data-label="Finalidade">Melhorar o app e corrigir falhas</td><td data-label="Dados">Métricas de uso, relatórios de falha</td><td data-label="Base legal (LGPD)">Legítimo interesse (art. 7º, IX); você se opõe desligando “Compartilhar dados de uso” no Perfil</td></tr>
+                  <tr><td data-label="Finalidade">Melhorar o app</td><td data-label="Dados">Métricas de uso</td><td data-label="Base legal (LGPD)">Legítimo interesse (art. 7º, IX); você se opõe desligando “Compartilhar dados de uso” no Perfil</td></tr>
+                  <tr><td data-label="Finalidade">Corrigir falhas</td><td data-label="Dados">Relatórios de falha</td><td data-label="Base legal (LGPD)">Legítimo interesse (art. 7º, IX); eles não seguem esse ajuste, e você se opõe escrevendo para nós</td></tr>
                   <tr><td data-label="Finalidade">Segurança e prevenção de abuso</td><td data-label="Dados">Dados de conexão</td><td data-label="Base legal (LGPD)">Legítimo interesse</td></tr>
                   <tr><td data-label="Finalidade">Cumprir a lei</td><td data-label="Dados">O que a obrigação exigir</td><td data-label="Base legal (LGPD)">Obrigação legal (art. 7º, II)</td></tr>
                 </tbody>
@@ -210,7 +211,7 @@
                 <thead><tr><th>Empresa</th><th>Para quê</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Empresa">Supabase</td><td data-label="Para quê">Banco de dados, login e armazenamento das fotos</td></tr>
-                  <tr><td data-label="Empresa">Google (Firebase)</td><td data-label="Para quê">Métricas de uso, relatórios de falha e notificações no Android; Google Analytics do site; entrar com Google</td></tr>
+                  <tr><td data-label="Empresa">Google (Firebase)</td><td data-label="Para quê">Métricas de uso; relatórios de falha nos apps de Android, iPhone, iPad e Mac; notificações no Android; Google Analytics do site; entrar com Google</td></tr>
                   <tr><td data-label="Empresa">Apple</td><td data-label="Para quê">Notificações no iPhone, iPad e Mac; entrar com a Apple</td></tr>
                   <tr><td data-label="Empresa">Anthropic</td><td data-label="Para quê">Leitura das fotos de recibo</td></tr>
                   <tr><td data-label="Empresa">Sentry</td><td data-label="Para quê">Relatórios de falha no navegador</td></tr>
@@ -235,6 +236,7 @@
               <li><strong>Sem conta</strong>, “Apagar perfil e sair” limpa o aparelho e o código de recuperação continua valendo. Para apagar também o que está no servidor, fale com a gente (seção 12).</li>
               <li><strong>“Excluir conta e dados”</strong>, em Perfil, apaga na hora seu perfil, sua foto, suas chaves de pagamento e seu código de recuperação, e revoga o acesso dado pela Apple. As contas que você lançou em grupos com outras pessoas continuam lá para o grupo, sem o seu nome, como “Ex-membro”.</li>
               <li>Os dados de uso ligados a um aparelho ficam no Google Analytics por até 14 meses. Depois disso, só restam números agregados, sem nada que identifique alguém. Quando a sua conta é excluída, o ID que elas levam deixa de apontar para você.</li>
+              <li>Os relatórios de falha ficam guardados por até 90 dias e depois são apagados.</li>
             </ul>
           </section>
 
@@ -347,7 +349,7 @@
             <h3>O que é recolhido automaticamente</h3>
             <ul>
               <li><strong>Métricas de utilização</strong> (Google Firebase Analytics): os ecrãs abertos e as ações feitas, como “criou um grupo”, com dados do aparelho (modelo, sistema, idioma, versão da app e país aproximado). Nunca levam nomes, valores nem os IDs de grupos, despesas ou pessoas. Não usamos o ID de publicidade, e a personalização de anúncios fica desligada. Se tens uma conta, anónima ou com Google ou Apple, as métricas levam o ID dela, um código aleatório que não é o teu nome nem o teu e-mail, para vermos a utilização da app somada entre o teu telemóvel, computador e navegador. Desligas as métricas em cada aparelho em Perfil › Privacidade e sobre › “Partilhar dados de utilização”.</li>
-              <li><strong>Relatórios de falhas</strong> (Firebase Crashlytics nas apps de Android, iPhone, iPad e Mac, e Sentry no navegador): o tipo do erro e o ponto do código onde aconteceu, sem as mensagens, que poderiam conter dados teus.</li>
+              <li><strong>Relatórios de falhas</strong> (Firebase Crashlytics nas apps de Android, iPhone, iPad e Mac, e Sentry no navegador): o tipo do erro e o ponto do código onde aconteceu, com a versão da app e dados do aparelho ou do navegador (modelo, sistema), sem as mensagens, que poderiam conter dados teus.</li>
               <li><strong>Token de notificação:</strong> o endereço que o Google, a Apple ou o navegador dá ao aparelho para receber avisos.</li>
               <li><strong>Dados de ligação</strong>, como o endereço IP, registados pelos fornecedores de infraestrutura.</li>
             </ul>
@@ -374,7 +376,8 @@
                   <tr><td data-label="Finalidade">Entrar e recuperar o acesso</td><td data-label="Dados">ID anónimo, código de recuperação, conta Google ou Apple</td><td data-label="Base legal (LGPD)">Execução de contrato</td></tr>
                   <tr><td data-label="Finalidade">Ler talões</td><td data-label="Dados">Fotografia do talão, a teu pedido</td><td data-label="Base legal (LGPD)">Execução de contrato</td></tr>
                   <tr><td data-label="Finalidade">Enviar notificações</td><td data-label="Dados">Token do aparelho, eventos do grupo</td><td data-label="Base legal (LGPD)">Execução de contrato; escolhes quais em Perfil › Notificações</td></tr>
-                  <tr><td data-label="Finalidade">Melhorar a app e corrigir falhas</td><td data-label="Dados">Métricas de utilização, relatórios de falhas</td><td data-label="Base legal (LGPD)">Interesse legítimo (art. 7.º, IX); opões-te desligando “Partilhar dados de utilização” no Perfil</td></tr>
+                  <tr><td data-label="Finalidade">Melhorar a app</td><td data-label="Dados">Métricas de utilização</td><td data-label="Base legal (LGPD)">Interesse legítimo (art. 7.º, IX); opões-te desligando “Partilhar dados de utilização” no Perfil</td></tr>
+                  <tr><td data-label="Finalidade">Corrigir falhas</td><td data-label="Dados">Relatórios de falhas</td><td data-label="Base legal (LGPD)">Interesse legítimo (art. 7.º, IX); não seguem essa definição, e opões-te escrevendo-nos</td></tr>
                   <tr><td data-label="Finalidade">Segurança e prevenção de abusos</td><td data-label="Dados">Dados de ligação</td><td data-label="Base legal (LGPD)">Interesse legítimo</td></tr>
                   <tr><td data-label="Finalidade">Cumprir a lei</td><td data-label="Dados">O que a obrigação exigir</td><td data-label="Base legal (LGPD)">Obrigação legal (art. 7.º, II)</td></tr>
                 </tbody>
@@ -394,7 +397,7 @@
                 <thead><tr><th>Empresa</th><th>Para quê</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Empresa">Supabase</td><td data-label="Para quê">Base de dados, início de sessão e armazenamento das fotografias</td></tr>
-                  <tr><td data-label="Empresa">Google (Firebase)</td><td data-label="Para quê">Métricas de utilização, relatórios de falhas e notificações no Android; Google Analytics do site; entrar com o Google</td></tr>
+                  <tr><td data-label="Empresa">Google (Firebase)</td><td data-label="Para quê">Métricas de utilização; relatórios de falhas nas apps de Android, iPhone, iPad e Mac; notificações no Android; Google Analytics do site; entrar com o Google</td></tr>
                   <tr><td data-label="Empresa">Apple</td><td data-label="Para quê">Notificações no iPhone, iPad e Mac; entrar com a Apple</td></tr>
                   <tr><td data-label="Empresa">Anthropic</td><td data-label="Para quê">Leitura das fotografias de talões</td></tr>
                   <tr><td data-label="Empresa">Sentry</td><td data-label="Para quê">Relatórios de falhas no navegador</td></tr>
@@ -419,6 +422,7 @@
               <li><strong>Sem conta</strong>, “Apagar perfil e terminar sessão” limpa o aparelho e o código de recuperação continua válido. Para apagar também o que está no servidor, fala connosco (secção 12).</li>
               <li><strong>“Eliminar conta e dados”</strong>, no Perfil, apaga de imediato o teu perfil, a tua fotografia, as tuas chaves de pagamento e o teu código de recuperação, e revoga o acesso dado pela Apple. As despesas que registaste em grupos com outras pessoas continuam lá para o grupo, sem o teu nome, como “Ex-membro”.</li>
               <li>Os dados de utilização ligados a um aparelho ficam no Google Analytics até 14 meses. Depois disso, só restam números agregados, sem nada que identifique alguém. Quando a tua conta é eliminada, o ID que levam deixa de apontar para ti.</li>
+              <li>Os relatórios de falhas ficam guardados até 90 dias e depois são apagados.</li>
             </ul>
           </section>
 
@@ -531,7 +535,7 @@
             <h3>What is collected automatically</h3>
             <ul>
               <li><strong>Usage metrics</strong> (Google Firebase Analytics): the screens opened and the actions taken, such as “created a group”, with device data (model, system, language, app version and approximate country). They never carry names, amounts or the ids of groups, bills or people. We don't use the advertising id, and ad personalization is off. If you have an account, anonymous or with Google or Apple, the metrics carry its id, a random code that isn't your name or email, so we see how the app is used across your phone, computer and browser. You turn them off on each device in Profile › Privacy and about › “Share usage data”.</li>
-              <li><strong>Crash reports</strong> (Firebase Crashlytics in the Android, iPhone, iPad and Mac apps, and Sentry in the browser): the kind of error and where in the code it happened, without the messages, which could hold your data.</li>
+              <li><strong>Crash reports</strong> (Firebase Crashlytics in the Android, iPhone, iPad and Mac apps, and Sentry in the browser): the kind of error and where in the code it happened, with the app's version and the device's or browser's data (model, system), without the messages, which could hold your data.</li>
               <li><strong>Notification token:</strong> the address Google, Apple or the browser gives the device to receive notices.</li>
               <li><strong>Connection data</strong>, such as the IP address, logged by our infrastructure providers.</li>
             </ul>
@@ -558,7 +562,8 @@
                   <tr><td data-label="Purpose">Sign in and recover access</td><td data-label="Data">Anonymous id, recovery code, Google or Apple account</td><td data-label="Legal basis (LGPD)">Performance of a contract</td></tr>
                   <tr><td data-label="Purpose">Read receipts</td><td data-label="Data">The receipt's photo, at your request</td><td data-label="Legal basis (LGPD)">Performance of a contract</td></tr>
                   <tr><td data-label="Purpose">Send notifications</td><td data-label="Data">Device token, group events</td><td data-label="Legal basis (LGPD)">Performance of a contract; you pick which in Profile › Notifications</td></tr>
-                  <tr><td data-label="Purpose">Improve the app and fix crashes</td><td data-label="Data">Usage metrics, crash reports</td><td data-label="Legal basis (LGPD)">Legitimate interest (art. 7, IX); you object by turning off “Share usage data” in Profile</td></tr>
+                  <tr><td data-label="Purpose">Improve the app</td><td data-label="Data">Usage metrics</td><td data-label="Legal basis (LGPD)">Legitimate interest (art. 7, IX); you object by turning off “Share usage data” in Profile</td></tr>
+                  <tr><td data-label="Purpose">Fix crashes</td><td data-label="Data">Crash reports</td><td data-label="Legal basis (LGPD)">Legitimate interest (art. 7, IX); they don't follow that setting, and you object by writing to us</td></tr>
                   <tr><td data-label="Purpose">Security and abuse prevention</td><td data-label="Data">Connection data</td><td data-label="Legal basis (LGPD)">Legitimate interest</td></tr>
                   <tr><td data-label="Purpose">Comply with the law</td><td data-label="Data">What the obligation requires</td><td data-label="Legal basis (LGPD)">Legal obligation (art. 7, II)</td></tr>
                 </tbody>
@@ -578,7 +583,7 @@
                 <thead><tr><th>Company</th><th>What for</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Company">Supabase</td><td data-label="What for">Database, sign in and photo storage</td></tr>
-                  <tr><td data-label="Company">Google (Firebase)</td><td data-label="What for">Usage metrics, crash reports and notifications on Android; the website's Google Analytics; sign in with Google</td></tr>
+                  <tr><td data-label="Company">Google (Firebase)</td><td data-label="What for">Usage metrics; crash reports in the Android, iPhone, iPad and Mac apps; notifications on Android; the website's Google Analytics; sign in with Google</td></tr>
                   <tr><td data-label="Company">Apple</td><td data-label="What for">Notifications on iPhone, iPad and Mac; sign in with Apple</td></tr>
                   <tr><td data-label="Company">Anthropic</td><td data-label="What for">Reading receipt photos</td></tr>
                   <tr><td data-label="Company">Sentry</td><td data-label="What for">Crash reports in the browser</td></tr>
@@ -603,6 +608,7 @@
               <li><strong>Without an account</strong>, “Erase profile and sign out” clears the device and your recovery code keeps working. To erase what is on the server too, contact us (section 12).</li>
               <li><strong>“Delete account and data”</strong>, in Profile, deletes your profile, photo, payment keys and recovery code at once, and revokes the access Apple granted. Bills you added to groups with other people stay there for the group, without your name, as “Former member”.</li>
               <li>Usage data tied to a device stays in Google Analytics for up to 14 months. After that, only aggregated numbers remain, with nothing that identifies anyone. Once your account is deleted, the id they carry no longer leads to you.</li>
+              <li>Crash reports are kept for up to 90 days and then deleted.</li>
             </ul>
           </section>
 
@@ -715,7 +721,7 @@
             <h3>Lo que se recoge automáticamente</h3>
             <ul>
               <li><strong>Métricas de uso</strong> (Google Firebase Analytics): las pantallas abiertas y las acciones hechas, como “creó un grupo”, con datos del dispositivo (modelo, sistema, idioma, versión de la app y país aproximado). Nunca llevan nombres, montos ni los IDs de grupos, cuentas o personas. No usamos el ID de publicidad, y la personalización de anuncios está desactivada. Si tienes una cuenta, anónima o con Google o Apple, las métricas llevan su ID, un código aleatorio que no es tu nombre ni tu correo, para ver el uso de la app sumado entre tu celular, tu computadora y tu navegador. Las desactivas en cada dispositivo en Perfil › Privacidad y acerca de › “Compartir datos de uso”.</li>
-              <li><strong>Informes de fallos</strong> (Firebase Crashlytics en las apps de Android, iPhone, iPad y Mac, y Sentry en el navegador): el tipo de error y el punto del código donde ocurrió, sin los mensajes, que podrían contener tus datos.</li>
+              <li><strong>Informes de fallos</strong> (Firebase Crashlytics en las apps de Android, iPhone, iPad y Mac, y Sentry en el navegador): el tipo de error y el punto del código donde ocurrió, con la versión de la app y datos del dispositivo o del navegador (modelo, sistema), sin los mensajes, que podrían contener tus datos.</li>
               <li><strong>Token de notificaciones:</strong> la dirección que Google, Apple o el navegador le da al dispositivo para recibir avisos.</li>
               <li><strong>Datos de conexión</strong>, como la dirección IP, registrados por nuestros proveedores de infraestructura.</li>
             </ul>
@@ -742,7 +748,8 @@
                   <tr><td data-label="Finalidad">Iniciar sesión y recuperar el acceso</td><td data-label="Datos">ID anónimo, código de recuperación, cuenta de Google o Apple</td><td data-label="Base legal (LGPD)">Ejecución de un contrato</td></tr>
                   <tr><td data-label="Finalidad">Leer recibos</td><td data-label="Datos">La foto del recibo, a tu pedido</td><td data-label="Base legal (LGPD)">Ejecución de un contrato</td></tr>
                   <tr><td data-label="Finalidad">Enviar notificaciones</td><td data-label="Datos">Token del dispositivo, eventos del grupo</td><td data-label="Base legal (LGPD)">Ejecución de un contrato; eliges cuáles en Perfil › Notificaciones</td></tr>
-                  <tr><td data-label="Finalidad">Mejorar la app y corregir fallos</td><td data-label="Datos">Métricas de uso, informes de fallos</td><td data-label="Base legal (LGPD)">Interés legítimo (art. 7, IX); te opones desactivando “Compartir datos de uso” en Perfil</td></tr>
+                  <tr><td data-label="Finalidad">Mejorar la app</td><td data-label="Datos">Métricas de uso</td><td data-label="Base legal (LGPD)">Interés legítimo (art. 7, IX); te opones desactivando “Compartir datos de uso” en Perfil</td></tr>
+                  <tr><td data-label="Finalidad">Corregir fallos</td><td data-label="Datos">Informes de fallos</td><td data-label="Base legal (LGPD)">Interés legítimo (art. 7, IX); no siguen ese ajuste, y te opones escribiéndonos</td></tr>
                   <tr><td data-label="Finalidad">Seguridad y prevención de abusos</td><td data-label="Datos">Datos de conexión</td><td data-label="Base legal (LGPD)">Interés legítimo</td></tr>
                   <tr><td data-label="Finalidad">Cumplir la ley</td><td data-label="Datos">Lo que exija la obligación</td><td data-label="Base legal (LGPD)">Obligación legal (art. 7, II)</td></tr>
                 </tbody>
@@ -762,7 +769,7 @@
                 <thead><tr><th>Empresa</th><th>Para qué</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Empresa">Supabase</td><td data-label="Para qué">Base de datos, inicio de sesión y almacenamiento de fotos</td></tr>
-                  <tr><td data-label="Empresa">Google (Firebase)</td><td data-label="Para qué">Métricas de uso, informes de fallos y notificaciones en Android; el Google Analytics del sitio; iniciar sesión con Google</td></tr>
+                  <tr><td data-label="Empresa">Google (Firebase)</td><td data-label="Para qué">Métricas de uso; informes de fallos en las apps de Android, iPhone, iPad y Mac; notificaciones en Android; el Google Analytics del sitio; iniciar sesión con Google</td></tr>
                   <tr><td data-label="Empresa">Apple</td><td data-label="Para qué">Notificaciones en iPhone, iPad y Mac; iniciar sesión con Apple</td></tr>
                   <tr><td data-label="Empresa">Anthropic</td><td data-label="Para qué">Lectura de las fotos de recibos</td></tr>
                   <tr><td data-label="Empresa">Sentry</td><td data-label="Para qué">Informes de fallos en el navegador</td></tr>
@@ -787,6 +794,7 @@
               <li><strong>Sin cuenta</strong>, “Borrar perfil y cerrar sesión” limpia el dispositivo y tu código de recuperación sigue valiendo. Para borrar también lo que está en el servidor, escríbenos (sección 12).</li>
               <li><strong>“Eliminar cuenta y datos”</strong>, en Perfil, borra al instante tu perfil, tu foto, tus claves de pago y tu código de recuperación, y revoca el acceso que diste a Apple. Las cuentas que anotaste en grupos con otras personas siguen ahí para el grupo, sin tu nombre, como “Exmiembro”.</li>
               <li>Los datos de uso ligados a un dispositivo quedan en Google Analytics hasta 14 meses. Después, solo quedan números agregados, sin nada que identifique a nadie. Cuando tu cuenta se elimina, el ID que llevan deja de apuntar a ti.</li>
+              <li>Los informes de fallos se conservan hasta 90 días y después se eliminan.</li>
             </ul>
           </section>
 
@@ -899,7 +907,7 @@
             <h3>Ce qui est collecté automatiquement</h3>
             <ul>
               <li><strong>Statistiques d’utilisation</strong> (Google Firebase Analytics) : les écrans ouverts et les actions effectuées, comme « a créé un groupe », avec des données sur l’appareil (modèle, système, langue, version de l’app et pays approximatif). Elles ne contiennent jamais de noms, de montants ni les identifiants des groupes, des dépenses ou des personnes. Nous n’utilisons pas l’identifiant publicitaire, et la personnalisation des annonces est désactivée. Si vous avez un compte, anonyme ou avec Google ou Apple, les statistiques portent son identifiant, un code aléatoire qui n’est ni votre nom ni votre e-mail, pour voir l’usage de l’app sur votre téléphone, votre ordinateur et votre navigateur réunis. Vous les désactivez sur chaque appareil dans Profil › Confidentialité et à propos › « Partager les données d’utilisation ».</li>
-              <li><strong>Rapports de plantage</strong> (Firebase Crashlytics dans les apps Android, iPhone, iPad et Mac, et Sentry dans le navigateur) : le type d’erreur et l’endroit du code où elle s’est produite, sans les messages, qui pourraient contenir vos données.</li>
+              <li><strong>Rapports de plantage</strong> (Firebase Crashlytics dans les apps Android, iPhone, iPad et Mac, et Sentry dans le navigateur) : le type d’erreur et l’endroit du code où elle s’est produite, avec la version de l’app et des données de l’appareil ou du navigateur (modèle, système), sans les messages, qui pourraient contenir vos données.</li>
               <li><strong>Jeton de notification :</strong> l’adresse que Google, Apple ou le navigateur attribue à l’appareil pour recevoir des alertes.</li>
               <li><strong>Données de connexion</strong>, comme l’adresse IP, enregistrées par nos fournisseurs d’infrastructure.</li>
             </ul>
@@ -926,7 +934,8 @@
                   <tr><td data-label="Finalité">Se connecter et récupérer l’accès</td><td data-label="Données">Identifiant anonyme, code de récupération, compte Google ou Apple</td><td data-label="Base légale (LGPD)">Exécution d’un contrat</td></tr>
                   <tr><td data-label="Finalité">Lire les reçus</td><td data-label="Données">La photo du reçu, à votre demande</td><td data-label="Base légale (LGPD)">Exécution d’un contrat</td></tr>
                   <tr><td data-label="Finalité">Envoyer des notifications</td><td data-label="Données">Jeton de l’appareil, événements du groupe</td><td data-label="Base légale (LGPD)">Exécution d’un contrat ; vous choisissez lesquelles dans Profil › Notifications</td></tr>
-                  <tr><td data-label="Finalité">Améliorer l’app et corriger les plantages</td><td data-label="Données">Statistiques d’utilisation, rapports de plantage</td><td data-label="Base légale (LGPD)">Intérêt légitime (art. 7, IX) ; vous vous y opposez en désactivant « Partager les données d’utilisation » dans Profil</td></tr>
+                  <tr><td data-label="Finalité">Améliorer l’app</td><td data-label="Données">Statistiques d’utilisation</td><td data-label="Base légale (LGPD)">Intérêt légitime (art. 7, IX) ; vous vous y opposez en désactivant « Partager les données d’utilisation » dans Profil</td></tr>
+                  <tr><td data-label="Finalité">Corriger les plantages</td><td data-label="Données">Rapports de plantage</td><td data-label="Base légale (LGPD)">Intérêt légitime (art. 7, IX) ; ils ne suivent pas ce réglage, et vous vous y opposez en nous écrivant</td></tr>
                   <tr><td data-label="Finalité">Sécurité et prévention des abus</td><td data-label="Données">Données de connexion</td><td data-label="Base légale (LGPD)">Intérêt légitime</td></tr>
                   <tr><td data-label="Finalité">Respecter la loi</td><td data-label="Données">Ce que l’obligation exige</td><td data-label="Base légale (LGPD)">Obligation légale (art. 7, II)</td></tr>
                 </tbody>
@@ -946,7 +955,7 @@
                 <thead><tr><th>Entreprise</th><th>Pour quoi faire</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Entreprise">Supabase</td><td data-label="Pour quoi faire">Base de données, connexion et stockage des photos</td></tr>
-                  <tr><td data-label="Entreprise">Google (Firebase)</td><td data-label="Pour quoi faire">Statistiques d’utilisation, rapports de plantage et notifications sur Android ; le Google Analytics du site ; connexion avec Google</td></tr>
+                  <tr><td data-label="Entreprise">Google (Firebase)</td><td data-label="Pour quoi faire">Statistiques d’utilisation ; rapports de plantage dans les apps Android, iPhone, iPad et Mac ; notifications sur Android ; le Google Analytics du site ; connexion avec Google</td></tr>
                   <tr><td data-label="Entreprise">Apple</td><td data-label="Pour quoi faire">Notifications sur iPhone, iPad et Mac ; connexion avec Apple</td></tr>
                   <tr><td data-label="Entreprise">Anthropic</td><td data-label="Pour quoi faire">Lecture des photos de reçus</td></tr>
                   <tr><td data-label="Entreprise">Sentry</td><td data-label="Pour quoi faire">Rapports de plantage dans le navigateur</td></tr>
@@ -971,6 +980,7 @@
               <li><strong>Sans compte</strong>, « Effacer le profil et se déconnecter » vide l’appareil et votre code de récupération reste valable. Pour effacer aussi ce qui se trouve sur le serveur, contactez-nous (section 12).</li>
               <li><strong>« Supprimer le compte et les données »</strong>, dans Profil, supprime d’un coup votre profil, votre photo, vos clés de paiement et votre code de récupération, et révoque l’accès accordé par Apple. Les dépenses que vous avez ajoutées dans des groupes avec d’autres personnes y restent pour le groupe, sans votre nom, sous « Ancien membre ».</li>
               <li>Les données d’utilisation liées à un appareil restent dans Google Analytics jusqu’à 14 mois. Ensuite, il ne reste que des chiffres agrégés, sans rien qui permette d’identifier qui que ce soit. Une fois votre compte supprimé, l’identifiant qu’elles portent ne mène plus à vous.</li>
+              <li>Les rapports de plantage sont conservés jusqu’à 90 jours, puis supprimés.</li>
             </ul>
           </section>
 
@@ -1083,7 +1093,7 @@
             <h3>Was automatisch erfasst wird</h3>
             <ul>
               <li><strong>Nutzungsstatistiken</strong> (Google Firebase Analytics): die geöffneten Bildschirme und ausgeführten Aktionen, etwa „Gruppe erstellt“, mit Gerätedaten (Modell, System, Sprache, App-Version und ungefähres Land). Sie enthalten nie Namen, Beträge oder die IDs von Gruppen, Ausgaben oder Personen. Wir verwenden keine Werbe-ID, und personalisierte Werbung ist deaktiviert. Wenn du ein Konto hast, anonym oder mit Google oder Apple, tragen die Statistiken dessen ID, einen zufälligen Code, der weder dein Name noch deine E-Mail-Adresse ist, damit wir sehen, wie die App über dein Handy, deinen Computer und deinen Browser hinweg genutzt wird. Du schaltest sie auf jedem Gerät unter Profil › Datenschutz und Info › „Nutzungsdaten teilen“ aus.</li>
-              <li><strong>Absturzberichte</strong> (Firebase Crashlytics in den Apps für Android, iPhone, iPad und Mac sowie Sentry im Browser): die Art des Fehlers und wo im Code er auftrat, ohne die Fehlermeldungen, die deine Daten enthalten könnten.</li>
+              <li><strong>Absturzberichte</strong> (Firebase Crashlytics in den Apps für Android, iPhone, iPad und Mac sowie Sentry im Browser): die Art des Fehlers und wo im Code er auftrat, mit der App-Version und Daten des Geräts oder Browsers (Modell, System), ohne die Fehlermeldungen, die deine Daten enthalten könnten.</li>
               <li><strong>Mitteilungs-Token:</strong> die Adresse, die Google, Apple oder der Browser dem Gerät gibt, damit es Mitteilungen empfangen kann.</li>
               <li><strong>Verbindungsdaten</strong> wie die IP-Adresse, die unsere Infrastrukturanbieter protokollieren.</li>
             </ul>
@@ -1110,7 +1120,8 @@
                   <tr><td data-label="Zweck">Anmelden und Zugriff wiederherstellen</td><td data-label="Daten">Anonyme ID, Wiederherstellungscode, Google- oder Apple-Konto</td><td data-label="Rechtsgrundlage (LGPD)">Vertragserfüllung</td></tr>
                   <tr><td data-label="Zweck">Belege lesen</td><td data-label="Daten">Das Foto des Belegs, auf deinen Wunsch</td><td data-label="Rechtsgrundlage (LGPD)">Vertragserfüllung</td></tr>
                   <tr><td data-label="Zweck">Mitteilungen senden</td><td data-label="Daten">Geräte-Token, Ereignisse der Gruppe</td><td data-label="Rechtsgrundlage (LGPD)">Vertragserfüllung; welche, wählst du unter Profil › Mitteilungen</td></tr>
-                  <tr><td data-label="Zweck">Die App verbessern und Abstürze beheben</td><td data-label="Daten">Nutzungsstatistiken, Absturzberichte</td><td data-label="Rechtsgrundlage (LGPD)">Berechtigtes Interesse (Art. 7, IX); du widersprichst, indem du „Nutzungsdaten teilen“ in Profil ausschaltest</td></tr>
+                  <tr><td data-label="Zweck">Die App verbessern</td><td data-label="Daten">Nutzungsstatistiken</td><td data-label="Rechtsgrundlage (LGPD)">Berechtigtes Interesse (Art. 7, IX); du widersprichst, indem du „Nutzungsdaten teilen“ in Profil ausschaltest</td></tr>
+                  <tr><td data-label="Zweck">Abstürze beheben</td><td data-label="Daten">Absturzberichte</td><td data-label="Rechtsgrundlage (LGPD)">Berechtigtes Interesse (Art. 7, IX); sie folgen dieser Einstellung nicht, und du widersprichst, indem du uns schreibst</td></tr>
                   <tr><td data-label="Zweck">Sicherheit und Schutz vor Missbrauch</td><td data-label="Daten">Verbindungsdaten</td><td data-label="Rechtsgrundlage (LGPD)">Berechtigtes Interesse</td></tr>
                   <tr><td data-label="Zweck">Gesetzliche Pflichten erfüllen</td><td data-label="Daten">Was die Pflicht verlangt</td><td data-label="Rechtsgrundlage (LGPD)">Rechtliche Verpflichtung (Art. 7, II)</td></tr>
                 </tbody>
@@ -1130,7 +1141,7 @@
                 <thead><tr><th>Unternehmen</th><th>Wofür</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Unternehmen">Supabase</td><td data-label="Wofür">Datenbank, Anmeldung und Speicherung von Fotos</td></tr>
-                  <tr><td data-label="Unternehmen">Google (Firebase)</td><td data-label="Wofür">Nutzungsstatistiken, Absturzberichte und Mitteilungen auf Android; Google Analytics der Website; Anmeldung mit Google</td></tr>
+                  <tr><td data-label="Unternehmen">Google (Firebase)</td><td data-label="Wofür">Nutzungsstatistiken; Absturzberichte in den Apps für Android, iPhone, iPad und Mac; Mitteilungen auf Android; Google Analytics der Website; Anmeldung mit Google</td></tr>
                   <tr><td data-label="Unternehmen">Apple</td><td data-label="Wofür">Mitteilungen auf iPhone, iPad und Mac; Anmeldung mit Apple</td></tr>
                   <tr><td data-label="Unternehmen">Anthropic</td><td data-label="Wofür">Lesen von Belegfotos</td></tr>
                   <tr><td data-label="Unternehmen">Sentry</td><td data-label="Wofür">Absturzberichte im Browser</td></tr>
@@ -1155,6 +1166,7 @@
               <li><strong>Ohne Konto</strong> leert „Profil löschen und abmelden“ das Gerät, und dein Wiederherstellungscode funktioniert weiter. Um auch zu löschen, was auf dem Server liegt, schreib uns (Abschnitt 12).</li>
               <li><strong>„Konto und Daten löschen“</strong> unter Profil löscht dein Profil, dein Foto, deine Zahlungsdaten und deinen Wiederherstellungscode auf einmal und widerruft den Zugriff, den Apple gewährt hat. Ausgaben, die du in Gruppen mit anderen eingetragen hast, bleiben dort für die Gruppe, ohne deinen Namen, als „Ehemaliges Mitglied“.</li>
               <li>Nutzungsdaten, die mit einem Gerät verknüpft sind, bleiben bis zu 14 Monate in Google Analytics. Danach bleiben nur zusammengefasste Zahlen, die niemanden identifizieren. Sobald dein Konto gelöscht ist, führt die ID, die sie tragen, nicht mehr zu dir.</li>
+              <li>Absturzberichte werden bis zu 90 Tage aufbewahrt und danach gelöscht.</li>
             </ul>
           </section>
 
@@ -1267,7 +1279,7 @@
             <h3>Ciò che viene raccolto automaticamente</h3>
             <ul>
               <li><strong>Metriche di utilizzo</strong> (Google Firebase Analytics): le schermate aperte e le azioni compiute, come “ha creato un gruppo”, con dati del dispositivo (modello, sistema, lingua, versione dell'app e paese approssimativo). Non contengono mai nomi, importi né gli identificativi di gruppi, spese o persone. Non usiamo l'identificativo pubblicitario e la personalizzazione degli annunci è disattivata. Se hai un account, anonimo o con Google o Apple, le metriche portano il suo identificativo, un codice casuale che non è il tuo nome né la tua email, per vedere l'uso dell'app tra telefono, computer e browser insieme. Le disattivi su ogni dispositivo in Profilo › Privacy e informazioni › “Condividi dati di utilizzo”.</li>
-              <li><strong>Rapporti sugli arresti anomali</strong> (Firebase Crashlytics nelle app per Android, iPhone, iPad e Mac, e Sentry nel browser): il tipo di errore e il punto del codice in cui si è verificato, senza i messaggi, che potrebbero contenere i tuoi dati.</li>
+              <li><strong>Rapporti sugli arresti anomali</strong> (Firebase Crashlytics nelle app per Android, iPhone, iPad e Mac, e Sentry nel browser): il tipo di errore e il punto del codice in cui si è verificato, con la versione dell'app e dati del dispositivo o del browser (modello, sistema), senza i messaggi, che potrebbero contenere i tuoi dati.</li>
               <li><strong>Token per le notifiche:</strong> l'indirizzo che Google, Apple o il browser assegna al dispositivo per ricevere gli avvisi.</li>
               <li><strong>Dati di connessione</strong>, come l'indirizzo IP, registrati dai nostri fornitori di infrastruttura.</li>
             </ul>
@@ -1294,7 +1306,8 @@
                   <tr><td data-label="Finalità">Accedere e recuperare l'accesso</td><td data-label="Dati">Identificativo anonimo, codice di recupero, account Google o Apple</td><td data-label="Base giuridica (LGPD)">Esecuzione di un contratto</td></tr>
                   <tr><td data-label="Finalità">Leggere gli scontrini</td><td data-label="Dati">La foto dello scontrino, su tua richiesta</td><td data-label="Base giuridica (LGPD)">Esecuzione di un contratto</td></tr>
                   <tr><td data-label="Finalità">Inviare notifiche</td><td data-label="Dati">Token del dispositivo, eventi del gruppo</td><td data-label="Base giuridica (LGPD)">Esecuzione di un contratto; scegli quali in Profilo › Notifiche</td></tr>
-                  <tr><td data-label="Finalità">Migliorare l'app e correggere gli arresti anomali</td><td data-label="Dati">Metriche di utilizzo, rapporti sugli arresti anomali</td><td data-label="Base giuridica (LGPD)">Legittimo interesse (art. 7, IX); ti opponi disattivando “Condividi dati di utilizzo” in Profilo</td></tr>
+                  <tr><td data-label="Finalità">Migliorare l'app</td><td data-label="Dati">Metriche di utilizzo</td><td data-label="Base giuridica (LGPD)">Legittimo interesse (art. 7, IX); ti opponi disattivando “Condividi dati di utilizzo” in Profilo</td></tr>
+                  <tr><td data-label="Finalità">Correggere gli arresti anomali</td><td data-label="Dati">Rapporti sugli arresti anomali</td><td data-label="Base giuridica (LGPD)">Legittimo interesse (art. 7, IX); non seguono questa impostazione, e ti opponi scrivendoci</td></tr>
                   <tr><td data-label="Finalità">Sicurezza e prevenzione degli abusi</td><td data-label="Dati">Dati di connessione</td><td data-label="Base giuridica (LGPD)">Legittimo interesse</td></tr>
                   <tr><td data-label="Finalità">Rispettare la legge</td><td data-label="Dati">Ciò che l'obbligo richiede</td><td data-label="Base giuridica (LGPD)">Obbligo legale (art. 7, II)</td></tr>
                 </tbody>
@@ -1314,7 +1327,7 @@
                 <thead><tr><th>Azienda</th><th>Per cosa</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Azienda">Supabase</td><td data-label="Per cosa">Database, accesso e archiviazione delle foto</td></tr>
-                  <tr><td data-label="Azienda">Google (Firebase)</td><td data-label="Per cosa">Metriche di utilizzo, rapporti sugli arresti anomali e notifiche su Android; Google Analytics del sito; accesso con Google</td></tr>
+                  <tr><td data-label="Azienda">Google (Firebase)</td><td data-label="Per cosa">Metriche di utilizzo; rapporti sugli arresti anomali nelle app per Android, iPhone, iPad e Mac; notifiche su Android; Google Analytics del sito; accesso con Google</td></tr>
                   <tr><td data-label="Azienda">Apple</td><td data-label="Per cosa">Notifiche su iPhone, iPad e Mac; accesso con Apple</td></tr>
                   <tr><td data-label="Azienda">Anthropic</td><td data-label="Per cosa">Lettura delle foto degli scontrini</td></tr>
                   <tr><td data-label="Azienda">Sentry</td><td data-label="Per cosa">Rapporti sugli arresti anomali nel browser</td></tr>
@@ -1339,6 +1352,7 @@
               <li><strong>Senza account</strong>, “Cancella profilo ed esci” svuota il dispositivo e il tuo codice di recupero continua a funzionare. Per cancellare anche ciò che si trova sul server, contattaci (sezione 12).</li>
               <li><strong>“Elimina account e dati”</strong>, in Profilo, elimina subito il tuo profilo, la foto, le chiavi di pagamento e il codice di recupero, e revoca l'accesso concesso ad Apple. Le spese che hai aggiunto ai gruppi con altre persone restano lì per il gruppo, senza il tuo nome, come “Ex membro”.</li>
               <li>I dati di utilizzo legati a un dispositivo restano in Google Analytics per un massimo di 14 mesi. Dopo, restano solo numeri aggregati, senza nulla che identifichi qualcuno. Una volta eliminato il tuo account, l'identificativo che portano non riconduce più a te.</li>
+              <li>I rapporti sugli arresti anomali sono conservati fino a 90 giorni e poi eliminati.</li>
             </ul>
           </section>
 
@@ -1451,7 +1465,7 @@
             <h3>Co zbieramy automatycznie</h3>
             <ul>
               <li><strong>Statystyki użytkowania</strong> (Google Firebase Analytics): otwierane ekrany i wykonywane czynności, np. „utworzono grupę”, wraz z danymi urządzenia (model, system, język, wersja aplikacji i przybliżony kraj). Nigdy nie zawierają imion, kwot ani identyfikatorów grup, wydatków czy osób. Nie używamy identyfikatora reklamowego, a personalizacja reklam jest wyłączona. Jeśli masz konto, anonimowe albo przez Google lub Apple, statystyki zawierają jego identyfikator, losowy kod, który nie jest twoim imieniem ani adresem e-mail, abyśmy widzieli, jak aplikacja jest używana łącznie na telefonie, komputerze i w przeglądarce. Wyłączasz je na każdym urządzeniu w Profil › Prywatność i informacje › „Udostępniaj dane o użyciu”.</li>
-              <li><strong>Raporty o awariach</strong> (Firebase Crashlytics w aplikacjach na Androida, iPhone'a, iPada i Maca oraz Sentry w przeglądarce): rodzaj błędu i miejsce w kodzie, w którym wystąpił, bez komunikatów, które mogłyby zawierać twoje dane.</li>
+              <li><strong>Raporty o awariach</strong> (Firebase Crashlytics w aplikacjach na Androida, iPhone'a, iPada i Maca oraz Sentry w przeglądarce): rodzaj błędu i miejsce w kodzie, w którym wystąpił, z wersją aplikacji i danymi urządzenia lub przeglądarki (model, system), bez komunikatów, które mogłyby zawierać twoje dane.</li>
               <li><strong>Token powiadomień:</strong> adres, który Google, Apple lub przeglądarka nadaje urządzeniu, by mogło odbierać powiadomienia.</li>
               <li><strong>Dane połączenia</strong>, takie jak adres IP, rejestrowane przez dostawców naszej infrastruktury.</li>
             </ul>
@@ -1478,7 +1492,8 @@
                   <tr><td data-label="Cel">Logowanie i odzyskiwanie dostępu</td><td data-label="Dane">Anonimowy identyfikator, kod odzyskiwania, konto Google lub Apple</td><td data-label="Podstawa prawna (LGPD)">Wykonanie umowy</td></tr>
                   <tr><td data-label="Cel">Odczytywanie paragonów</td><td data-label="Dane">Zdjęcie paragonu, na twoją prośbę</td><td data-label="Podstawa prawna (LGPD)">Wykonanie umowy</td></tr>
                   <tr><td data-label="Cel">Wysyłanie powiadomień</td><td data-label="Dane">Token urządzenia, zdarzenia w grupie</td><td data-label="Podstawa prawna (LGPD)">Wykonanie umowy; wybierasz je w sekcji Profil › Powiadomienia</td></tr>
-                  <tr><td data-label="Cel">Ulepszanie aplikacji i naprawianie awarii</td><td data-label="Dane">Statystyki użytkowania, raporty o awariach</td><td data-label="Podstawa prawna (LGPD)">Prawnie uzasadniony interes (art. 7 pkt IX); sprzeciw zgłaszasz, wyłączając „Udostępniaj dane o użyciu” w Profilu</td></tr>
+                  <tr><td data-label="Cel">Ulepszanie aplikacji</td><td data-label="Dane">Statystyki użytkowania</td><td data-label="Podstawa prawna (LGPD)">Prawnie uzasadniony interes (art. 7 pkt IX); sprzeciw zgłaszasz, wyłączając „Udostępniaj dane o użyciu” w Profilu</td></tr>
+                  <tr><td data-label="Cel">Naprawianie awarii</td><td data-label="Dane">Raporty o awariach</td><td data-label="Podstawa prawna (LGPD)">Prawnie uzasadniony interes (art. 7 pkt IX); nie zależą od tego ustawienia, a sprzeciw zgłaszasz, pisząc do nas</td></tr>
                   <tr><td data-label="Cel">Bezpieczeństwo i zapobieganie nadużyciom</td><td data-label="Dane">Dane połączenia</td><td data-label="Podstawa prawna (LGPD)">Prawnie uzasadniony interes</td></tr>
                   <tr><td data-label="Cel">Przestrzeganie prawa</td><td data-label="Dane">To, czego wymaga dany obowiązek</td><td data-label="Podstawa prawna (LGPD)">Obowiązek prawny (art. 7 pkt II)</td></tr>
                 </tbody>
@@ -1498,7 +1513,7 @@
                 <thead><tr><th>Firma</th><th>W jakim celu</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Firma">Supabase</td><td data-label="W jakim celu">Baza danych, logowanie i przechowywanie zdjęć</td></tr>
-                  <tr><td data-label="Firma">Google (Firebase)</td><td data-label="W jakim celu">Statystyki użytkowania, raporty o awariach i powiadomienia na Androidzie; Google Analytics serwisu internetowego; logowanie przez Google</td></tr>
+                  <tr><td data-label="Firma">Google (Firebase)</td><td data-label="W jakim celu">Statystyki użytkowania; raporty o awariach w aplikacjach na Androida, iPhone'a, iPada i Maca; powiadomienia na Androidzie; Google Analytics serwisu internetowego; logowanie przez Google</td></tr>
                   <tr><td data-label="Firma">Apple</td><td data-label="W jakim celu">Powiadomienia na iPhonie, iPadzie i Macu; logowanie przez Apple</td></tr>
                   <tr><td data-label="Firma">Anthropic</td><td data-label="W jakim celu">Odczytywanie zdjęć paragonów</td></tr>
                   <tr><td data-label="Firma">Sentry</td><td data-label="W jakim celu">Raporty o awariach w przeglądarce</td></tr>
@@ -1523,6 +1538,7 @@
               <li><strong>Bez konta</strong> „Wymaż profil i wyloguj się” czyści urządzenie, a twój kod odzyskiwania nadal działa. Aby usunąć także to, co jest na serwerze, skontaktuj się z nami (sekcja 12).</li>
               <li><strong>„Usuń konto i dane”</strong> w sekcji Profil od razu usuwa twój profil, zdjęcie, klucze płatnicze i kod odzyskiwania oraz cofa dostęp przyznany przez Apple. Wydatki dodane przez ciebie w grupach z innymi osobami zostają w nich dla grupy, bez twojego imienia, jako „Były członek”.</li>
               <li>Dane o użytkowaniu powiązane z urządzeniem pozostają w Google Analytics do 14 miesięcy. Potem zostają tylko zbiorcze liczby, bez niczego, co pozwalałoby kogokolwiek zidentyfikować. Po usunięciu konta identyfikator, który zawierają, nie prowadzi już do ciebie.</li>
+              <li>Raporty o awariach przechowujemy do 90 dni, a potem je usuwamy.</li>
             </ul>
           </section>
 
@@ -1635,7 +1651,7 @@
             <h3>Wat automatisch wordt verzameld</h3>
             <ul>
               <li><strong>Gebruiksstatistieken</strong> (Google Firebase Analytics): de geopende schermen en de uitgevoerde acties, zoals “groep aangemaakt”, met apparaatgegevens (model, besturingssysteem, taal, appversie en bij benadering het land). Ze bevatten nooit namen, bedragen of de id’s van groepen, rekeningen of mensen. We gebruiken de advertentie-id niet, en gepersonaliseerde advertenties staan uit. Heb je een account, anoniem of met Google of Apple, dan bevatten de statistieken de id daarvan, een willekeurige code die niet je naam of e-mailadres is, zodat we zien hoe de app samen op je telefoon, computer en browser wordt gebruikt. Je zet ze per apparaat uit via Profiel › Privacy en info › “Gebruiksgegevens delen”.</li>
-              <li><strong>Crashrapporten</strong> (Firebase Crashlytics in de apps voor Android, iPhone, iPad en Mac, en Sentry in de browser): het soort fout en waar in de code die optrad, zonder de foutmeldingen, want die kunnen jouw gegevens bevatten.</li>
+              <li><strong>Crashrapporten</strong> (Firebase Crashlytics in de apps voor Android, iPhone, iPad en Mac, en Sentry in de browser): het soort fout en waar in de code die optrad, met de appversie en gegevens van het apparaat of de browser (model, systeem), zonder de foutmeldingen, want die kunnen jouw gegevens bevatten.</li>
               <li><strong>Notificatietoken:</strong> het adres dat Google, Apple of de browser aan het apparaat geeft om meldingen te ontvangen.</li>
               <li><strong>Verbindingsgegevens</strong>, zoals het IP-adres, die onze infrastructuuraanbieders registreren.</li>
             </ul>
@@ -1662,7 +1678,8 @@
                   <tr><td data-label="Doel">Inloggen en toegang herstellen</td><td data-label="Gegevens">Anoniem id, herstelcode, Google- of Apple-account</td><td data-label="Rechtsgrond (LGPD)">Uitvoering van een overeenkomst</td></tr>
                   <tr><td data-label="Doel">Bonnen lezen</td><td data-label="Gegevens">De foto van de bon, op jouw verzoek</td><td data-label="Rechtsgrond (LGPD)">Uitvoering van een overeenkomst</td></tr>
                   <tr><td data-label="Doel">Meldingen versturen</td><td data-label="Gegevens">Apparaattoken, groepsgebeurtenissen</td><td data-label="Rechtsgrond (LGPD)">Uitvoering van een overeenkomst; je kiest welke in Profiel › Meldingen</td></tr>
-                  <tr><td data-label="Doel">De app verbeteren en crashes oplossen</td><td data-label="Gegevens">Gebruiksstatistieken, crashrapporten</td><td data-label="Rechtsgrond (LGPD)">Gerechtvaardigd belang (art. 7, IX); je maakt bezwaar door “Gebruiksgegevens delen” in Profiel uit te zetten</td></tr>
+                  <tr><td data-label="Doel">De app verbeteren</td><td data-label="Gegevens">Gebruiksstatistieken</td><td data-label="Rechtsgrond (LGPD)">Gerechtvaardigd belang (art. 7, IX); je maakt bezwaar door “Gebruiksgegevens delen” in Profiel uit te zetten</td></tr>
+                  <tr><td data-label="Doel">Crashes oplossen</td><td data-label="Gegevens">Crashrapporten</td><td data-label="Rechtsgrond (LGPD)">Gerechtvaardigd belang (art. 7, IX); ze volgen die instelling niet, en je maakt bezwaar door ons te schrijven</td></tr>
                   <tr><td data-label="Doel">Beveiliging en het voorkomen van misbruik</td><td data-label="Gegevens">Verbindingsgegevens</td><td data-label="Rechtsgrond (LGPD)">Gerechtvaardigd belang</td></tr>
                   <tr><td data-label="Doel">Voldoen aan de wet</td><td data-label="Gegevens">Wat de verplichting vereist</td><td data-label="Rechtsgrond (LGPD)">Wettelijke verplichting (art. 7, II)</td></tr>
                 </tbody>
@@ -1682,7 +1699,7 @@
                 <thead><tr><th>Bedrijf</th><th>Waarvoor</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Bedrijf">Supabase</td><td data-label="Waarvoor">Database, inloggen en opslag van foto’s</td></tr>
-                  <tr><td data-label="Bedrijf">Google (Firebase)</td><td data-label="Waarvoor">Gebruiksstatistieken, crashrapporten en meldingen op Android; Google Analytics van de website; inloggen met Google</td></tr>
+                  <tr><td data-label="Bedrijf">Google (Firebase)</td><td data-label="Waarvoor">Gebruiksstatistieken; crashrapporten in de apps voor Android, iPhone, iPad en Mac; meldingen op Android; Google Analytics van de website; inloggen met Google</td></tr>
                   <tr><td data-label="Bedrijf">Apple</td><td data-label="Waarvoor">Meldingen op iPhone, iPad en Mac; inloggen met Apple</td></tr>
                   <tr><td data-label="Bedrijf">Anthropic</td><td data-label="Waarvoor">Foto’s van bonnen lezen</td></tr>
                   <tr><td data-label="Bedrijf">Sentry</td><td data-label="Waarvoor">Crashrapporten in de browser</td></tr>
@@ -1707,6 +1724,7 @@
               <li><strong>Zonder account</strong> wist “Profiel wissen en uitloggen” het apparaat en blijft je herstelcode werken. Wil je ook wissen wat op de server staat, neem dan contact met ons op (sectie 12).</li>
               <li><strong>“Account en gegevens verwijderen”</strong>, in Profiel, verwijdert in één keer je profiel, foto, betaalgegevens en herstelcode, en trekt de toegang in die je Apple hebt gegeven. Rekeningen die je hebt toegevoegd in groepen met andere mensen blijven daar voor de groep staan, zonder je naam, als “Voormalig lid”.</li>
               <li>Gebruiksgegevens die aan een apparaat gekoppeld zijn, blijven maximaal 14 maanden in Google Analytics. Daarna blijven alleen geaggregeerde cijfers over, zonder iets waarmee iemand te identificeren is. Zodra je account verwijderd is, leidt de id die ze bevatten niet meer naar jou.</li>
+              <li>Crashrapporten worden maximaal 90 dagen bewaard en daarna verwijderd.</li>
             </ul>
           </section>
 
@@ -1819,7 +1837,7 @@
             <h3>Otomatik olarak toplananlar</h3>
             <ul>
               <li><strong>Kullanım ölçümleri</strong> (Google Firebase Analytics): açılan ekranlar ve yapılan işlemler, örneğin “grup oluşturdu”, cihaz verileriyle birlikte (model, sistem, dil, uygulama sürümü ve yaklaşık ülke). Hiçbir zaman ad, tutar ya da grupların, masrafların veya kişilerin kimliklerini içermez. Reklam kimliğini kullanmayız ve reklam kişiselleştirmesi kapalıdır. Anonim ya da Google veya Apple ile bir hesabın varsa ölçümler, adın ya da e-postan olmayan rastgele bir kod olan hesap kimliğini taşır; böylece uygulamanın telefonunda, bilgisayarında ve tarayıcında birlikte nasıl kullanıldığını görürüz. Bunları her cihazda Profil › Gizlilik ve hakkında › “Kullanım verilerini paylaş” ile kapatırsın.</li>
-              <li><strong>Çökme raporları</strong> (Android, iPhone, iPad ve Mac uygulamalarında Firebase Crashlytics, tarayıcıda Sentry): hatanın türü ve kodda nerede oluştuğu; verilerini içerebilecek mesajlar olmadan.</li>
+              <li><strong>Çökme raporları</strong> (Android, iPhone, iPad ve Mac uygulamalarında Firebase Crashlytics, tarayıcıda Sentry): hatanın türü ve kodda nerede oluştuğu, uygulamanın sürümü ve cihaz ya da tarayıcı bilgileriyle (model, sistem); verilerini içerebilecek mesajlar olmadan.</li>
               <li><strong>Bildirim belirteci:</strong> Google'ın, Apple'ın ya da tarayıcının, bildirim alabilmesi için cihaza verdiği adres.</li>
               <li><strong>Bağlantı verileri</strong>, örneğin IP adresi; altyapı sağlayıcılarımız tarafından kaydedilir.</li>
             </ul>
@@ -1846,7 +1864,8 @@
                   <tr><td data-label="Amaç">Giriş yapmak ve erişimi kurtarmak</td><td data-label="Veriler">Anonim kimlik, kurtarma kodu, Google veya Apple hesabı</td><td data-label="Hukuki dayanak (LGPD)">Sözleşmenin ifası</td></tr>
                   <tr><td data-label="Amaç">Fişleri okumak</td><td data-label="Veriler">Fişin fotoğrafı, senin isteğinle</td><td data-label="Hukuki dayanak (LGPD)">Sözleşmenin ifası</td></tr>
                   <tr><td data-label="Amaç">Bildirim göndermek</td><td data-label="Veriler">Cihaz belirteci, grup olayları</td><td data-label="Hukuki dayanak (LGPD)">Sözleşmenin ifası; hangilerini alacağını Profil › Bildirimler'den seçersin</td></tr>
-                  <tr><td data-label="Amaç">Uygulamayı iyileştirmek ve çökmeleri düzeltmek</td><td data-label="Veriler">Kullanım ölçümleri, çökme raporları</td><td data-label="Hukuki dayanak (LGPD)">Meşru menfaat (md. 7, IX); Profil'de “Kullanım verilerini paylaş” seçeneğini kapatarak itiraz edersin</td></tr>
+                  <tr><td data-label="Amaç">Uygulamayı iyileştirmek</td><td data-label="Veriler">Kullanım ölçümleri</td><td data-label="Hukuki dayanak (LGPD)">Meşru menfaat (md. 7, IX); Profil'de “Kullanım verilerini paylaş” seçeneğini kapatarak itiraz edersin</td></tr>
+                  <tr><td data-label="Amaç">Çökmeleri düzeltmek</td><td data-label="Veriler">Çökme raporları</td><td data-label="Hukuki dayanak (LGPD)">Meşru menfaat (md. 7, IX); bu ayara bağlı değildir, bize yazarak itiraz edersin</td></tr>
                   <tr><td data-label="Amaç">Güvenlik ve kötüye kullanımın önlenmesi</td><td data-label="Veriler">Bağlantı verileri</td><td data-label="Hukuki dayanak (LGPD)">Meşru menfaat</td></tr>
                   <tr><td data-label="Amaç">Yasalara uymak</td><td data-label="Veriler">Yükümlülüğün gerektirdiği veriler</td><td data-label="Hukuki dayanak (LGPD)">Hukuki yükümlülük (md. 7, II)</td></tr>
                 </tbody>
@@ -1866,7 +1885,7 @@
                 <thead><tr><th>Şirket</th><th>Ne için</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Şirket">Supabase</td><td data-label="Ne için">Veritabanı, giriş ve fotoğraf depolama</td></tr>
-                  <tr><td data-label="Şirket">Google (Firebase)</td><td data-label="Ne için">Android'de kullanım ölçümleri, çökme raporları ve bildirimler; web sitesinin Google Analytics'i; Google ile giriş</td></tr>
+                  <tr><td data-label="Şirket">Google (Firebase)</td><td data-label="Ne için">Kullanım ölçümleri; Android, iPhone, iPad ve Mac uygulamalarında çökme raporları; Android'de bildirimler; web sitesinin Google Analytics'i; Google ile giriş</td></tr>
                   <tr><td data-label="Şirket">Apple</td><td data-label="Ne için">iPhone, iPad ve Mac'te bildirimler; Apple ile giriş</td></tr>
                   <tr><td data-label="Şirket">Anthropic</td><td data-label="Ne için">Fiş fotoğraflarını okumak</td></tr>
                   <tr><td data-label="Şirket">Sentry</td><td data-label="Ne için">Tarayıcıdaki çökme raporları</td></tr>
@@ -1891,6 +1910,7 @@
               <li><strong>Hesapsız</strong> kullanıyorsan, “Profili sil ve çıkış yap” cihazı temizler ve kurtarma kodun çalışmaya devam eder. Sunucudakileri de silmek için bize ulaş (12. bölüm).</li>
               <li>Profil'deki <strong>“Hesabı ve verileri sil”</strong>, profilini, fotoğrafını, ödeme anahtarlarını ve kurtarma kodunu anında siler ve Apple'a verdiğin erişimi iptal eder. Başkalarıyla olan gruplara eklediğin masraflar, grup için orada kalır; adın olmadan, “Eski üye” olarak.</li>
               <li>Bir cihaza bağlı kullanım verileri Google Analytics'te en fazla 14 ay kalır. Bundan sonra, kimseyi tanımlayan hiçbir şey içermeyen yalnızca toplu sayılar kalır. Hesabın silindiğinde, taşıdıkları kimlik artık sana götürmez.</li>
+              <li>Çökme raporları en fazla 90 gün saklanır, sonra silinir.</li>
             </ul>
           </section>
 
@@ -2003,7 +2023,7 @@
             <h3>Yang dikumpulkan secara otomatis</h3>
             <ul>
               <li><strong>Metrik penggunaan</strong> (Google Firebase Analytics): layar yang dibuka dan tindakan yang dilakukan, seperti “membuat grup”, beserta data perangkat (model, sistem, bahasa, versi aplikasi, dan perkiraan negara). Metrik ini tidak pernah memuat nama, jumlah uang, atau id grup, tagihan, maupun orang. Kami tidak menggunakan id iklan, dan personalisasi iklan dinonaktifkan. Jika kamu punya akun, anonim atau dengan Google atau Apple, metrik memuat id akun itu, kode acak yang bukan nama atau email kamu, agar kami melihat cara aplikasi dipakai di ponsel, komputer, dan browser kamu sekaligus. Kamu mematikannya di setiap perangkat lewat Profil › Privasi dan tentang › “Bagikan data penggunaan”.</li>
-              <li><strong>Laporan kerusakan</strong> (Firebase Crashlytics di aplikasi Android, iPhone, iPad, dan Mac, serta Sentry di browser): jenis kesalahan dan di bagian kode mana kesalahan itu terjadi, tanpa pesan-pesannya, yang bisa berisi datamu.</li>
+              <li><strong>Laporan kerusakan</strong> (Firebase Crashlytics di aplikasi Android, iPhone, iPad, dan Mac, serta Sentry di browser): jenis kesalahan dan di bagian kode mana kesalahan itu terjadi, beserta versi aplikasi dan data perangkat atau browser (model, sistem), tanpa pesan-pesannya, yang bisa berisi datamu.</li>
               <li><strong>Token notifikasi:</strong> alamat yang diberikan Google, Apple, atau browser kepada perangkat untuk menerima pemberitahuan.</li>
               <li><strong>Data koneksi</strong>, seperti alamat IP, yang dicatat oleh penyedia infrastruktur kami.</li>
             </ul>
@@ -2030,7 +2050,8 @@
                   <tr><td data-label="Tujuan">Masuk dan memulihkan akses</td><td data-label="Data">Id anonim, kode pemulihan, akun Google atau Apple</td><td data-label="Dasar hukum (LGPD)">Pelaksanaan kontrak</td></tr>
                   <tr><td data-label="Tujuan">Membaca struk</td><td data-label="Data">Foto struk, atas permintaanmu</td><td data-label="Dasar hukum (LGPD)">Pelaksanaan kontrak</td></tr>
                   <tr><td data-label="Tujuan">Mengirim notifikasi</td><td data-label="Data">Token perangkat, peristiwa grup</td><td data-label="Dasar hukum (LGPD)">Pelaksanaan kontrak; kamu memilih yang mana di Profil › Notifikasi</td></tr>
-                  <tr><td data-label="Tujuan">Meningkatkan aplikasi dan memperbaiki kerusakan aplikasi</td><td data-label="Data">Metrik penggunaan, laporan kerusakan</td><td data-label="Dasar hukum (LGPD)">Kepentingan sah (pasal 7, IX); kamu menolaknya dengan mematikan “Bagikan data penggunaan” di Profil</td></tr>
+                  <tr><td data-label="Tujuan">Meningkatkan aplikasi</td><td data-label="Data">Metrik penggunaan</td><td data-label="Dasar hukum (LGPD)">Kepentingan sah (pasal 7, IX); kamu menolaknya dengan mematikan “Bagikan data penggunaan” di Profil</td></tr>
+                  <tr><td data-label="Tujuan">Memperbaiki kerusakan aplikasi</td><td data-label="Data">Laporan kerusakan</td><td data-label="Dasar hukum (LGPD)">Kepentingan sah (pasal 7, IX); laporan ini tidak mengikuti setelan itu, dan kamu menolaknya dengan menulis kepada kami</td></tr>
                   <tr><td data-label="Tujuan">Keamanan dan pencegahan penyalahgunaan</td><td data-label="Data">Data koneksi</td><td data-label="Dasar hukum (LGPD)">Kepentingan sah</td></tr>
                   <tr><td data-label="Tujuan">Mematuhi hukum</td><td data-label="Data">Apa yang diwajibkan oleh kewajiban tersebut</td><td data-label="Dasar hukum (LGPD)">Kewajiban hukum (pasal 7, II)</td></tr>
                 </tbody>
@@ -2050,7 +2071,7 @@
                 <thead><tr><th>Perusahaan</th><th>Untuk apa</th></tr></thead>
                 <tbody>
                   <tr><td data-label="Perusahaan">Supabase</td><td data-label="Untuk apa">Basis data, proses masuk, dan penyimpanan foto</td></tr>
-                  <tr><td data-label="Perusahaan">Google (Firebase)</td><td data-label="Untuk apa">Metrik penggunaan, laporan kerusakan, dan notifikasi di Android; Google Analytics situs web; masuk dengan Google</td></tr>
+                  <tr><td data-label="Perusahaan">Google (Firebase)</td><td data-label="Untuk apa">Metrik penggunaan; laporan kerusakan di aplikasi Android, iPhone, iPad, dan Mac; notifikasi di Android; Google Analytics situs web; masuk dengan Google</td></tr>
                   <tr><td data-label="Perusahaan">Apple</td><td data-label="Untuk apa">Notifikasi di iPhone, iPad, dan Mac; masuk dengan Apple</td></tr>
                   <tr><td data-label="Perusahaan">Anthropic</td><td data-label="Untuk apa">Membaca foto struk</td></tr>
                   <tr><td data-label="Perusahaan">Sentry</td><td data-label="Untuk apa">Laporan kerusakan di browser</td></tr>
@@ -2075,6 +2096,7 @@
               <li><strong>Tanpa akun</strong>, “Hapus profil dan keluar” membersihkan perangkat dan kode pemulihanmu tetap berfungsi. Untuk menghapus juga apa yang ada di server, hubungi kami (bagian 12).</li>
               <li><strong>“Hapus akun dan data”</strong>, di Profil, menghapus profil, foto, kunci pembayaran, dan kode pemulihanmu sekaligus, serta mencabut akses yang diberikan Apple. Tagihan yang kamu tambahkan ke grup bersama orang lain tetap ada di sana untuk grup, tanpa namamu, sebagai “Mantan anggota”.</li>
               <li>Data penggunaan yang terkait dengan suatu perangkat disimpan di Google Analytics hingga 14 bulan. Setelah itu, hanya angka agregat yang tersisa, tanpa apa pun yang dapat mengidentifikasi seseorang. Setelah akunmu dihapus, id yang dimuatnya tidak lagi mengarah kepadamu.</li>
+              <li>Laporan kerusakan disimpan hingga 90 hari, lalu dihapus.</li>
             </ul>
           </section>
 
@@ -2187,7 +2209,7 @@
             <h3>自動的に収集されるデータ</h3>
             <ul>
               <li><strong>利用状況の指標</strong>（Google Firebase Analytics）：開いた画面や「グループを作成した」などの操作と、端末データ（機種、OS、言語、アプリのバージョン、おおよその国）。名前、金額、グループ・支出・人物のIDが含まれることはありません。広告IDは使用せず、広告のパーソナライズは無効にしています。アカウント（匿名、またはGoogleやApple）がある場合、指標にはそのID（名前やメールアドレスではないランダムなコード）が含まれ、スマートフォン、パソコン、ブラウザでの利用をまとめて把握できます。端末ごとに、「プロフィール」›「プライバシーとアプリ情報」›「利用データを共有」でオフにできます。</li>
-              <li><strong>クラッシュレポート</strong>（Android、iPhone、iPad、Mac向けアプリではFirebase Crashlytics、ブラウザではSentry）：エラーの種類とコード内の発生箇所。お客様のデータを含む可能性があるメッセージは含みません。</li>
+              <li><strong>クラッシュレポート</strong>（Android、iPhone、iPad、Mac向けアプリではFirebase Crashlytics、ブラウザではSentry）：エラーの種類とコード内の発生箇所、アプリのバージョン、デバイスまたはブラウザの情報（機種、OS）。お客様のデータを含む可能性があるメッセージは含みません。</li>
               <li><strong>通知トークン：</strong>通知を受け取るためにGoogle、Apple、またはブラウザが端末に割り当てるアドレス。</li>
               <li><strong>接続データ</strong>：IPアドレスなど、当社のインフラ提供事業者が記録するもの。</li>
             </ul>
@@ -2214,7 +2236,8 @@
                   <tr><td data-label="目的">サインインとアクセスの復元</td><td data-label="データ">匿名ID、リカバリーコード、GoogleまたはAppleのアカウント</td><td data-label="法的根拠（LGPD）">契約の履行</td></tr>
                   <tr><td data-label="目的">レシートの読み取り</td><td data-label="データ">お客様の依頼によるレシートの写真</td><td data-label="法的根拠（LGPD）">契約の履行</td></tr>
                   <tr><td data-label="目的">通知の送信</td><td data-label="データ">端末のトークン、グループのイベント</td><td data-label="法的根拠（LGPD）">契約の履行。受け取る通知は「プロフィール」›「通知」で選択できます</td></tr>
-                  <tr><td data-label="目的">アプリの改善とクラッシュの修正</td><td data-label="データ">利用状況の指標、クラッシュレポート</td><td data-label="法的根拠（LGPD）">正当な利益（第7条第IX号）。「プロフィール」の「利用データを共有」をオフにして異議を申し立てられます</td></tr>
+                  <tr><td data-label="目的">アプリの改善</td><td data-label="データ">利用状況の指標</td><td data-label="法的根拠（LGPD）">正当な利益（第7条第IX号）。「プロフィール」の「利用データを共有」をオフにして異議を申し立てられます</td></tr>
+                  <tr><td data-label="目的">クラッシュの修正</td><td data-label="データ">クラッシュレポート</td><td data-label="法的根拠（LGPD）">正当な利益（第7条第IX号）。この設定には連動しません。当社へのご連絡により異議を申し立てられます</td></tr>
                   <tr><td data-label="目的">セキュリティと不正利用の防止</td><td data-label="データ">接続データ</td><td data-label="法的根拠（LGPD）">正当な利益</td></tr>
                   <tr><td data-label="目的">法令の遵守</td><td data-label="データ">その義務が求めるもの</td><td data-label="法的根拠（LGPD）">法的義務（第7条第II号）</td></tr>
                 </tbody>
@@ -2234,7 +2257,7 @@
                 <thead><tr><th>企業</th><th>目的</th></tr></thead>
                 <tbody>
                   <tr><td data-label="企業">Supabase</td><td data-label="目的">データベース、サインイン、写真の保存</td></tr>
-                  <tr><td data-label="企業">Google（Firebase）</td><td data-label="目的">利用状況の指標、クラッシュレポート、Androidでの通知。ウェブサイトのGoogle Analytics。Googleでサインイン</td></tr>
+                  <tr><td data-label="企業">Google（Firebase）</td><td data-label="目的">利用状況の指標。Android、iPhone、iPad、Mac向けアプリのクラッシュレポート。Androidでの通知。ウェブサイトのGoogle Analytics。Googleでサインイン</td></tr>
                   <tr><td data-label="企業">Apple</td><td data-label="目的">iPhone、iPad、Macでの通知。Appleでサインイン</td></tr>
                   <tr><td data-label="企業">Anthropic</td><td data-label="目的">レシート写真の読み取り</td></tr>
                   <tr><td data-label="企業">Sentry</td><td data-label="目的">ブラウザでのクラッシュレポート</td></tr>
@@ -2259,6 +2282,7 @@
               <li><strong>アカウントなしの場合</strong>、「プロフィールを消去してログアウト」で端末が消去され、リカバリーコードは引き続き有効です。サーバー上のデータも消去するには、当社にお問い合わせください（第12項）。</li>
               <li>「プロフィール」にある<strong>「アカウントとデータを削除」</strong>を行うと、プロフィール、写真、支払い用キー、リカバリーコードが一度に削除され、Appleに付与したアクセス権も取り消されます。他の人がいるグループに追加した支出は、お客様の名前を外し「元メンバー」としてグループに残ります。</li>
               <li>端末に紐付いた利用データは、Google Analyticsに最大14か月間保存されます。その後は、個人を特定できない集計値のみが残ります。アカウントを削除すると、指標に含まれるIDはお客様に結び付かなくなります。</li>
+              <li>クラッシュレポートは最長90日間保存され、その後削除されます。</li>
             </ul>
           </section>
 

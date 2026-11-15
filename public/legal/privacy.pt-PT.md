@@ -36,7 +36,7 @@ Segue a Lei Geral de Proteção de Dados do Brasil (Lei 13.709/2018, a LGPD). Ao
 ### O que é recolhido automaticamente
 
 - **Métricas de utilização** (Google Firebase Analytics): os ecrãs abertos e as ações feitas, como “criou um grupo”, com dados do aparelho (modelo, sistema, idioma, versão da app e país aproximado). Nunca levam nomes, valores nem os IDs de grupos, despesas ou pessoas. Não usamos o ID de publicidade, e a personalização de anúncios fica desligada. Se tens uma conta, anónima ou com Google ou Apple, as métricas levam o ID dela, um código aleatório que não é o teu nome nem o teu e-mail, para vermos a utilização da app somada entre o teu telemóvel, computador e navegador. Desligas as métricas em cada aparelho em Perfil › Privacidade e sobre › “Partilhar dados de utilização”.
-- **Relatórios de falhas** (Firebase Crashlytics nas apps de Android, iPhone, iPad e Mac, e Sentry no navegador): o tipo do erro e o ponto do código onde aconteceu, sem as mensagens, que poderiam conter dados teus.
+- **Relatórios de falhas** (Firebase Crashlytics nas apps de Android, iPhone, iPad e Mac, e Sentry no navegador): o tipo do erro e o ponto do código onde aconteceu, com a versão da app e dados do aparelho ou do navegador (modelo, sistema), sem as mensagens, que poderiam conter dados teus.
 - **Token de notificação:** o endereço que o Google, a Apple ou o navegador dá ao aparelho para receber avisos.
 - **Dados de ligação**, como o endereço IP, registados pelos fornecedores de infraestrutura.
 
@@ -60,7 +60,8 @@ A app é **offline primeiro**: o que registas fica guardado numa base de dados n
 | Entrar e recuperar o acesso | ID anónimo, código de recuperação, conta Google ou Apple | Execução de contrato |
 | Ler talões | Fotografia do talão, a teu pedido | Execução de contrato |
 | Enviar notificações | Token do aparelho, eventos do grupo | Execução de contrato; escolhes quais em Perfil › Notificações |
-| Melhorar a app e corrigir falhas | Métricas de utilização, relatórios de falhas | Interesse legítimo (art. 7.º, IX); opões-te desligando “Partilhar dados de utilização” no Perfil |
+| Melhorar a app | Métricas de utilização | Interesse legítimo (art. 7.º, IX); opões-te desligando “Partilhar dados de utilização” no Perfil |
+| Corrigir falhas | Relatórios de falhas | Interesse legítimo (art. 7.º, IX); não seguem essa definição, e opões-te escrevendo-nos |
 | Segurança e prevenção de abusos | Dados de ligação | Interesse legítimo |
 | Cumprir a lei | O que a obrigação exigir | Obrigação legal (art. 7.º, II) |
 
@@ -79,7 +80,7 @@ Estas empresas tratam dados em nosso nome, só para o que está descrito aqui:
 | Empresa | Para quê |
 | --- | --- |
 | Supabase | Base de dados, início de sessão e armazenamento das fotografias |
-| Google (Firebase) | Métricas de utilização, relatórios de falhas e notificações no Android; Google Analytics do site; entrar com o Google |
+| Google (Firebase) | Métricas de utilização; relatórios de falhas nas apps de Android, iPhone, iPad e Mac; notificações no Android; Google Analytics do site; entrar com o Google |
 | Apple | Notificações no iPhone, iPad e Mac; entrar com a Apple |
 | Anthropic | Leitura das fotografias de talões |
 | Sentry | Relatórios de falhas no navegador |
@@ -99,6 +100,7 @@ Alguns destes fornecedores guardam ou tratam dados fora do Brasil, principalment
 - **Sem conta**, “Apagar perfil e terminar sessão” limpa o aparelho e o código de recuperação continua válido. Para apagar também o que está no servidor, fala connosco (secção 12).
 - **“Eliminar conta e dados”**, no Perfil, apaga de imediato o teu perfil, a tua fotografia, as tuas chaves de pagamento e o teu código de recuperação, e revoga o acesso dado pela Apple. As despesas que registaste em grupos com outras pessoas continuam lá para o grupo, sem o teu nome, como “Ex-membro”.
 - Os dados de utilização ligados a um aparelho ficam no Google Analytics até 14 meses. Depois disso, só restam números agregados, sem nada que identifique alguém. Quando a tua conta é eliminada, o ID que levam deixa de apontar para ti.
+- Os relatórios de falhas ficam guardados até 90 dias e depois são apagados.
 
 ## Os teus direitos {#direitos}
 

@@ -36,7 +36,7 @@ Sigue la Ley General de Protección de Datos de Brasil (Ley 13.709/2018, la LGPD
 ### Lo que se recoge automáticamente
 
 - **Métricas de uso** (Google Firebase Analytics): las pantallas abiertas y las acciones hechas, como “creó un grupo”, con datos del dispositivo (modelo, sistema, idioma, versión de la app y país aproximado). Nunca llevan nombres, montos ni los IDs de grupos, cuentas o personas. No usamos el ID de publicidad, y la personalización de anuncios está desactivada. Si tienes una cuenta, anónima o con Google o Apple, las métricas llevan su ID, un código aleatorio que no es tu nombre ni tu correo, para ver el uso de la app sumado entre tu celular, tu computadora y tu navegador. Las desactivas en cada dispositivo en Perfil › Privacidad y acerca de › “Compartir datos de uso”.
-- **Informes de fallos** (Firebase Crashlytics en las apps de Android, iPhone, iPad y Mac, y Sentry en el navegador): el tipo de error y el punto del código donde ocurrió, sin los mensajes, que podrían contener tus datos.
+- **Informes de fallos** (Firebase Crashlytics en las apps de Android, iPhone, iPad y Mac, y Sentry en el navegador): el tipo de error y el punto del código donde ocurrió, con la versión de la app y datos del dispositivo o del navegador (modelo, sistema), sin los mensajes, que podrían contener tus datos.
 - **Token de notificaciones:** la dirección que Google, Apple o el navegador le da al dispositivo para recibir avisos.
 - **Datos de conexión**, como la dirección IP, registrados por nuestros proveedores de infraestructura.
 
@@ -60,7 +60,8 @@ La app funciona **primero sin conexión**: lo que anotas se guarda en una base d
 | Iniciar sesión y recuperar el acceso | ID anónimo, código de recuperación, cuenta de Google o Apple | Ejecución de un contrato |
 | Leer recibos | La foto del recibo, a tu pedido | Ejecución de un contrato |
 | Enviar notificaciones | Token del dispositivo, eventos del grupo | Ejecución de un contrato; eliges cuáles en Perfil › Notificaciones |
-| Mejorar la app y corregir fallos | Métricas de uso, informes de fallos | Interés legítimo (art. 7, IX); te opones desactivando “Compartir datos de uso” en Perfil |
+| Mejorar la app | Métricas de uso | Interés legítimo (art. 7, IX); te opones desactivando “Compartir datos de uso” en Perfil |
+| Corregir fallos | Informes de fallos | Interés legítimo (art. 7, IX); no siguen ese ajuste, y te opones escribiéndonos |
 | Seguridad y prevención de abusos | Datos de conexión | Interés legítimo |
 | Cumplir la ley | Lo que exija la obligación | Obligación legal (art. 7, II) |
 
@@ -79,7 +80,7 @@ Estas empresas tratan datos en nuestro nombre, solo para lo que se describe aqu�
 | Empresa | Para qué |
 | --- | --- |
 | Supabase | Base de datos, inicio de sesión y almacenamiento de fotos |
-| Google (Firebase) | Métricas de uso, informes de fallos y notificaciones en Android; el Google Analytics del sitio; iniciar sesión con Google |
+| Google (Firebase) | Métricas de uso; informes de fallos en las apps de Android, iPhone, iPad y Mac; notificaciones en Android; el Google Analytics del sitio; iniciar sesión con Google |
 | Apple | Notificaciones en iPhone, iPad y Mac; iniciar sesión con Apple |
 | Anthropic | Lectura de las fotos de recibos |
 | Sentry | Informes de fallos en el navegador |
@@ -99,6 +100,7 @@ Algunos de estos proveedores guardan o procesan datos fuera de Brasil, sobre tod
 - **Sin cuenta**, “Borrar perfil y cerrar sesión” limpia el dispositivo y tu código de recuperación sigue valiendo. Para borrar también lo que está en el servidor, escríbenos (sección 12).
 - **“Eliminar cuenta y datos”**, en Perfil, borra al instante tu perfil, tu foto, tus claves de pago y tu código de recuperación, y revoca el acceso que diste a Apple. Las cuentas que anotaste en grupos con otras personas siguen ahí para el grupo, sin tu nombre, como “Exmiembro”.
 - Los datos de uso ligados a un dispositivo quedan en Google Analytics hasta 14 meses. Después, solo quedan números agregados, sin nada que identifique a nadie. Cuando tu cuenta se elimina, el ID que llevan deja de apuntar a ti.
+- Los informes de fallos se conservan hasta 90 días y después se eliminan.
 
 ## Tus derechos {#derechos}
 

@@ -36,7 +36,7 @@ Kebijakan ini mengikuti Undang-Undang Umum Pelindungan Data Brasil (Undang-Undan
 ### Yang dikumpulkan secara otomatis
 
 - **Metrik penggunaan** (Google Firebase Analytics): layar yang dibuka dan tindakan yang dilakukan, seperti “membuat grup”, beserta data perangkat (model, sistem, bahasa, versi aplikasi, dan perkiraan negara). Metrik ini tidak pernah memuat nama, jumlah uang, atau id grup, tagihan, maupun orang. Kami tidak menggunakan id iklan, dan personalisasi iklan dinonaktifkan. Jika kamu punya akun, anonim atau dengan Google atau Apple, metrik memuat id akun itu, kode acak yang bukan nama atau email kamu, agar kami melihat cara aplikasi dipakai di ponsel, komputer, dan browser kamu sekaligus. Kamu mematikannya di setiap perangkat lewat Profil › Privasi dan tentang › “Bagikan data penggunaan”.
-- **Laporan kerusakan** (Firebase Crashlytics di aplikasi Android, iPhone, iPad, dan Mac, serta Sentry di browser): jenis kesalahan dan di bagian kode mana kesalahan itu terjadi, tanpa pesan-pesannya, yang bisa berisi datamu.
+- **Laporan kerusakan** (Firebase Crashlytics di aplikasi Android, iPhone, iPad, dan Mac, serta Sentry di browser): jenis kesalahan dan di bagian kode mana kesalahan itu terjadi, beserta versi aplikasi dan data perangkat atau browser (model, sistem), tanpa pesan-pesannya, yang bisa berisi datamu.
 - **Token notifikasi:** alamat yang diberikan Google, Apple, atau browser kepada perangkat untuk menerima pemberitahuan.
 - **Data koneksi**, seperti alamat IP, yang dicatat oleh penyedia infrastruktur kami.
 
@@ -60,7 +60,8 @@ Aplikasi ini **mengutamakan offline**: apa yang kamu tambahkan disimpan dalam ba
 | Masuk dan memulihkan akses | Id anonim, kode pemulihan, akun Google atau Apple | Pelaksanaan kontrak |
 | Membaca struk | Foto struk, atas permintaanmu | Pelaksanaan kontrak |
 | Mengirim notifikasi | Token perangkat, peristiwa grup | Pelaksanaan kontrak; kamu memilih yang mana di Profil › Notifikasi |
-| Meningkatkan aplikasi dan memperbaiki kerusakan aplikasi | Metrik penggunaan, laporan kerusakan | Kepentingan sah (pasal 7, IX); kamu menolaknya dengan mematikan “Bagikan data penggunaan” di Profil |
+| Meningkatkan aplikasi | Metrik penggunaan | Kepentingan sah (pasal 7, IX); kamu menolaknya dengan mematikan “Bagikan data penggunaan” di Profil |
+| Memperbaiki kerusakan aplikasi | Laporan kerusakan | Kepentingan sah (pasal 7, IX); laporan ini tidak mengikuti setelan itu, dan kamu menolaknya dengan menulis kepada kami |
 | Keamanan dan pencegahan penyalahgunaan | Data koneksi | Kepentingan sah |
 | Mematuhi hukum | Apa yang diwajibkan oleh kewajiban tersebut | Kewajiban hukum (pasal 7, II) |
 
@@ -79,7 +80,7 @@ Perusahaan-perusahaan berikut menangani data atas nama kami, hanya untuk hal-hal
 | Perusahaan | Untuk apa |
 | --- | --- |
 | Supabase | Basis data, proses masuk, dan penyimpanan foto |
-| Google (Firebase) | Metrik penggunaan, laporan kerusakan, dan notifikasi di Android; Google Analytics situs web; masuk dengan Google |
+| Google (Firebase) | Metrik penggunaan; laporan kerusakan di aplikasi Android, iPhone, iPad, dan Mac; notifikasi di Android; Google Analytics situs web; masuk dengan Google |
 | Apple | Notifikasi di iPhone, iPad, dan Mac; masuk dengan Apple |
 | Anthropic | Membaca foto struk |
 | Sentry | Laporan kerusakan di browser |
@@ -99,6 +100,7 @@ Sebagian penyedia ini menyimpan atau memproses data di luar Brasil, sebagian bes
 - **Tanpa akun**, “Hapus profil dan keluar” membersihkan perangkat dan kode pemulihanmu tetap berfungsi. Untuk menghapus juga apa yang ada di server, hubungi kami (bagian 12).
 - **“Hapus akun dan data”**, di Profil, menghapus profil, foto, kunci pembayaran, dan kode pemulihanmu sekaligus, serta mencabut akses yang diberikan Apple. Tagihan yang kamu tambahkan ke grup bersama orang lain tetap ada di sana untuk grup, tanpa namamu, sebagai “Mantan anggota”.
 - Data penggunaan yang terkait dengan suatu perangkat disimpan di Google Analytics hingga 14 bulan. Setelah itu, hanya angka agregat yang tersisa, tanpa apa pun yang dapat mengidentifikasi seseorang. Setelah akunmu dihapus, id yang dimuatnya tidak lagi mengarah kepadamu.
+- Laporan kerusakan disimpan hingga 90 hari, lalu dihapus.
 
 ## Hak-hakmu {#rights}
 

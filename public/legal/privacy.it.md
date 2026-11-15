@@ -36,7 +36,7 @@ Segue la Legge generale sulla protezione dei dati del Brasile (Legge 13.709/2018
 ### Ciò che viene raccolto automaticamente
 
 - **Metriche di utilizzo** (Google Firebase Analytics): le schermate aperte e le azioni compiute, come “ha creato un gruppo”, con dati del dispositivo (modello, sistema, lingua, versione dell'app e paese approssimativo). Non contengono mai nomi, importi né gli identificativi di gruppi, spese o persone. Non usiamo l'identificativo pubblicitario e la personalizzazione degli annunci è disattivata. Se hai un account, anonimo o con Google o Apple, le metriche portano il suo identificativo, un codice casuale che non è il tuo nome né la tua email, per vedere l'uso dell'app tra telefono, computer e browser insieme. Le disattivi su ogni dispositivo in Profilo › Privacy e informazioni › “Condividi dati di utilizzo”.
-- **Rapporti sugli arresti anomali** (Firebase Crashlytics nelle app per Android, iPhone, iPad e Mac, e Sentry nel browser): il tipo di errore e il punto del codice in cui si è verificato, senza i messaggi, che potrebbero contenere i tuoi dati.
+- **Rapporti sugli arresti anomali** (Firebase Crashlytics nelle app per Android, iPhone, iPad e Mac, e Sentry nel browser): il tipo di errore e il punto del codice in cui si è verificato, con la versione dell'app e dati del dispositivo o del browser (modello, sistema), senza i messaggi, che potrebbero contenere i tuoi dati.
 - **Token per le notifiche:** l'indirizzo che Google, Apple o il browser assegna al dispositivo per ricevere gli avvisi.
 - **Dati di connessione**, come l'indirizzo IP, registrati dai nostri fornitori di infrastruttura.
 
@@ -60,7 +60,8 @@ L'app funziona **prima di tutto offline**: ciò che aggiungi viene salvato in un
 | Accedere e recuperare l'accesso | Identificativo anonimo, codice di recupero, account Google o Apple | Esecuzione di un contratto |
 | Leggere gli scontrini | La foto dello scontrino, su tua richiesta | Esecuzione di un contratto |
 | Inviare notifiche | Token del dispositivo, eventi del gruppo | Esecuzione di un contratto; scegli quali in Profilo › Notifiche |
-| Migliorare l'app e correggere gli arresti anomali | Metriche di utilizzo, rapporti sugli arresti anomali | Legittimo interesse (art. 7, IX); ti opponi disattivando “Condividi dati di utilizzo” in Profilo |
+| Migliorare l'app | Metriche di utilizzo | Legittimo interesse (art. 7, IX); ti opponi disattivando “Condividi dati di utilizzo” in Profilo |
+| Correggere gli arresti anomali | Rapporti sugli arresti anomali | Legittimo interesse (art. 7, IX); non seguono questa impostazione, e ti opponi scrivendoci |
 | Sicurezza e prevenzione degli abusi | Dati di connessione | Legittimo interesse |
 | Rispettare la legge | Ciò che l'obbligo richiede | Obbligo legale (art. 7, II) |
 
@@ -79,7 +80,7 @@ Queste aziende trattano dati per nostro conto, solo per quanto descritto qui:
 | Azienda | Per cosa |
 | --- | --- |
 | Supabase | Database, accesso e archiviazione delle foto |
-| Google (Firebase) | Metriche di utilizzo, rapporti sugli arresti anomali e notifiche su Android; Google Analytics del sito; accesso con Google |
+| Google (Firebase) | Metriche di utilizzo; rapporti sugli arresti anomali nelle app per Android, iPhone, iPad e Mac; notifiche su Android; Google Analytics del sito; accesso con Google |
 | Apple | Notifiche su iPhone, iPad e Mac; accesso con Apple |
 | Anthropic | Lettura delle foto degli scontrini |
 | Sentry | Rapporti sugli arresti anomali nel browser |
@@ -99,6 +100,7 @@ Alcuni di questi fornitori conservano o trattano dati fuori dal Brasile, sopratt
 - **Senza account**, “Cancella profilo ed esci” svuota il dispositivo e il tuo codice di recupero continua a funzionare. Per cancellare anche ciò che si trova sul server, contattaci (sezione 12).
 - **“Elimina account e dati”**, in Profilo, elimina subito il tuo profilo, la foto, le chiavi di pagamento e il codice di recupero, e revoca l'accesso concesso ad Apple. Le spese che hai aggiunto ai gruppi con altre persone restano lì per il gruppo, senza il tuo nome, come “Ex membro”.
 - I dati di utilizzo legati a un dispositivo restano in Google Analytics per un massimo di 14 mesi. Dopo, restano solo numeri aggregati, senza nulla che identifichi qualcuno. Una volta eliminato il tuo account, l'identificativo che portano non riconduce più a te.
+- I rapporti sugli arresti anomali sono conservati fino a 90 giorni e poi eliminati.
 
 ## I tuoi diritti {#diritti}
 

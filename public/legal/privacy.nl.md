@@ -36,7 +36,7 @@ Het volgt de Braziliaanse Algemene Wet Gegevensbescherming (Wet 13.709/2018, de 
 ### Wat automatisch wordt verzameld
 
 - **Gebruiksstatistieken** (Google Firebase Analytics): de geopende schermen en de uitgevoerde acties, zoals “groep aangemaakt”, met apparaatgegevens (model, besturingssysteem, taal, appversie en bij benadering het land). Ze bevatten nooit namen, bedragen of de id’s van groepen, rekeningen of mensen. We gebruiken de advertentie-id niet, en gepersonaliseerde advertenties staan uit. Heb je een account, anoniem of met Google of Apple, dan bevatten de statistieken de id daarvan, een willekeurige code die niet je naam of e-mailadres is, zodat we zien hoe de app samen op je telefoon, computer en browser wordt gebruikt. Je zet ze per apparaat uit via Profiel › Privacy en info › “Gebruiksgegevens delen”.
-- **Crashrapporten** (Firebase Crashlytics in de apps voor Android, iPhone, iPad en Mac, en Sentry in de browser): het soort fout en waar in de code die optrad, zonder de foutmeldingen, want die kunnen jouw gegevens bevatten.
+- **Crashrapporten** (Firebase Crashlytics in de apps voor Android, iPhone, iPad en Mac, en Sentry in de browser): het soort fout en waar in de code die optrad, met de appversie en gegevens van het apparaat of de browser (model, systeem), zonder de foutmeldingen, want die kunnen jouw gegevens bevatten.
 - **Notificatietoken:** het adres dat Google, Apple of de browser aan het apparaat geeft om meldingen te ontvangen.
 - **Verbindingsgegevens**, zoals het IP-adres, die onze infrastructuuraanbieders registreren.
 
@@ -60,7 +60,8 @@ De app werkt **eerst offline**: wat je toevoegt, wordt opgeslagen in een databas
 | Inloggen en toegang herstellen | Anoniem id, herstelcode, Google- of Apple-account | Uitvoering van een overeenkomst |
 | Bonnen lezen | De foto van de bon, op jouw verzoek | Uitvoering van een overeenkomst |
 | Meldingen versturen | Apparaattoken, groepsgebeurtenissen | Uitvoering van een overeenkomst; je kiest welke in Profiel › Meldingen |
-| De app verbeteren en crashes oplossen | Gebruiksstatistieken, crashrapporten | Gerechtvaardigd belang (art. 7, IX); je maakt bezwaar door “Gebruiksgegevens delen” in Profiel uit te zetten |
+| De app verbeteren | Gebruiksstatistieken | Gerechtvaardigd belang (art. 7, IX); je maakt bezwaar door “Gebruiksgegevens delen” in Profiel uit te zetten |
+| Crashes oplossen | Crashrapporten | Gerechtvaardigd belang (art. 7, IX); ze volgen die instelling niet, en je maakt bezwaar door ons te schrijven |
 | Beveiliging en het voorkomen van misbruik | Verbindingsgegevens | Gerechtvaardigd belang |
 | Voldoen aan de wet | Wat de verplichting vereist | Wettelijke verplichting (art. 7, II) |
 
@@ -79,7 +80,7 @@ Deze bedrijven verwerken gegevens namens ons, uitsluitend voor wat hier beschrev
 | Bedrijf | Waarvoor |
 | --- | --- |
 | Supabase | Database, inloggen en opslag van foto’s |
-| Google (Firebase) | Gebruiksstatistieken, crashrapporten en meldingen op Android; Google Analytics van de website; inloggen met Google |
+| Google (Firebase) | Gebruiksstatistieken; crashrapporten in de apps voor Android, iPhone, iPad en Mac; meldingen op Android; Google Analytics van de website; inloggen met Google |
 | Apple | Meldingen op iPhone, iPad en Mac; inloggen met Apple |
 | Anthropic | Foto’s van bonnen lezen |
 | Sentry | Crashrapporten in de browser |
@@ -99,6 +100,7 @@ Sommige van deze aanbieders slaan gegevens op of verwerken ze buiten Brazilië, 
 - **Zonder account** wist “Profiel wissen en uitloggen” het apparaat en blijft je herstelcode werken. Wil je ook wissen wat op de server staat, neem dan contact met ons op (sectie 12).
 - **“Account en gegevens verwijderen”**, in Profiel, verwijdert in één keer je profiel, foto, betaalgegevens en herstelcode, en trekt de toegang in die je Apple hebt gegeven. Rekeningen die je hebt toegevoegd in groepen met andere mensen blijven daar voor de groep staan, zonder je naam, als “Voormalig lid”.
 - Gebruiksgegevens die aan een apparaat gekoppeld zijn, blijven maximaal 14 maanden in Google Analytics. Daarna blijven alleen geaggregeerde cijfers over, zonder iets waarmee iemand te identificeren is. Zodra je account verwijderd is, leidt de id die ze bevatten niet meer naar jou.
+- Crashrapporten worden maximaal 90 dagen bewaard en daarna verwijderd.
 
 ## Je rechten {#rights}
 
