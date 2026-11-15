@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Tik in Releaseopmerkingen op een versie om de pagina ervan op GitHub te openen, of op de GitHub-knop om ze allemaal te zien.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De groepspagina, de uitnodiging en de details van een uitgave tonen nu de foto's van maximaal vijf personen naast elkaar in plaats van twee.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op een liggende iPad of geopende iPhone Duo toont een groep die het hele scherm vult (bijvoorbeeld geopend vanuit Start) nu de foto, de leden en je saldo naast de uitgaven.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Tikken op de kaart Totaalsaldo in Start opent nu het tabblad Saldi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op een telefoon vliegen bij het openen van een groep of rekening vanuit Start nu het saldo van de groep, of het icoon, de titel, het totaal en jouw deel van de rekening, naar het scherm en terug als je teruggaat.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profiel › Taal toont Spaans nu twee keer, \"Español (Latinoamérica)\" en \"Español (España)\", zodat je je eigen Spaans kiest, waar je toestel ook is.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Met je telefoon of tablet liggend begint wat naast de lijst staat in Contacten en Saldi nu bovenaan het scherm, met je profielfoto boven de lijst.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "De rand van de knop 'Persoon toevoegen' bij de Leden van een groep is beter te zien.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "De kleur van een kaart in \"Betaalmethoden\" kies je nu uit dezelfde kleuren als categorieën: de twaalf kleuren, je eigen kleuren en \"Nieuwe kleur\" om er een te maken.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In \"Uitgave verdelen\" is \"Betaald met\" nu een kleine knop onder de verdeling, en als je nog geen betaalmethode hebt, maakt \"Betaalmethode toevoegen\" er daar meteen een aan en kiest die voor de uitgave. Betaalkaarten hebben nu ook een eigen pictogram.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Een betaalmethode toevoegen of bewerken in Profiel opent nu eroverheen in plaats van op een apart scherm.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dynamische kleuren legt nu uit dat de app de systeemkleuren van Android gebruikt, die uit je achtergrond komen of uit het palet dat je in de Android-instellingen hebt gekozen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Met Verminder beweging aan toont Statistieken van een groep de grafieken nu meteen, zonder groeiende staven of een ring die rondloopt.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "In Braziliaans Portugees stond in Activiteit en de geschiedenis van de uitgave \"Você criaste\" en dergelijke in plaats van \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "De datums in de datumkiezer van Statistieken breken niet meer om per letter of twee: de einddatum komt onder de begindatum als ze niet allebei passen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Meldingen en enkele zinnen verschenen in het Spaans van Spanje en het Portugees van Portugal in het Engels of als een code zoals \"push.bill_deleted\"; dat is opgelost.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "De rij met personen op Start toonde in het Portugees van Portugal \"te deve\" onder een naam in plaats van \"deve-te\"; dat is opgelost.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

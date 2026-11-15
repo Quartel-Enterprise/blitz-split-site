@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Sürüm notlarında bir sürüme dokunarak GitHub'daki sayfasını, GitHub düğmesiyle de tüm sürümleri açabilirsin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup ekranı, davet ve bir harcamanın ayrıntıları artık iki yerine en fazla beş kişinin fotoğrafını yan yana gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yatay tutulan iPad’de ya da açık iPhone Duo’da, ekranın tamamını kaplayan grup (örneğin Ana Sayfa’dan açılan) artık fotoğrafı, üyeleri ve bakiyeni harcamaların yanında gösteriyor.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ana Sayfa'daki Genel bakiye kartına dokunmak artık Bakiyeler sekmesini açıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefonda Ana Sayfa'dan bir grup ya da hesap açınca grubun bakiyesi, ya da hesabın simgesi, başlığı, toplamı ve senin payın artık ekranına uçuyor ve geri dönünce yerine dönüyor.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Dil artık İspanyolcayı iki seçenekle gösteriyor, \"Español (Latinoamérica)\" ve \"Español (España)\"; cihazın nerede olursa olsun konuştuğunu seçebilirsin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefon veya tablet yatayken Kişiler ve Bakiyeler'de listenin yanındakiler artık ekranın en üstünden başlıyor; profil fotoğrafın listenin üstünde.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grubun Üyeler bölümündeki \"Kişi ekle\" düğmesinin kenarı artık daha kolay görünüyor.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "\"Ödeme yöntemleri\"ndeki bir kartın rengi artık kategorilerle aynı renklerden seçiliyor: on iki renk, kendi renklerin ve yenisini oluşturmak için \"Yeni renk\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Harcama böl\" ekranında \"Ödeme şekli\" artık bölüşümün altında küçük bir düğme. Henüz ödeme yöntemin yoksa \"Ödeme yöntemi ekle\" orada bir tane oluşturup harcama için seçer. Banka kartının da artık kendi simgesi var.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil'de ödeme yöntemi eklemek veya düzenlemek artık ayrı bir ekran yerine profilin üzerinde açılıyor.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dinamik renkler artık uygulamanın Android sistem renklerini kullandığını, bu renklerin duvar kağıdından ya da Android ayarlarında seçtiğin paletten geldiğini açıklıyor.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Hareketi Azalt açıkken bir grubun İstatistikler ekranı artık grafikleri çubuklar büyümeden ve halka dönmeden hemen gösteriyor.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Brezilya Portekizcesinde Etkinlik ve harcamanın geçmişi \"Você criou\" yerine \"Você criaste\" gibi ifadeler yazıyordu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "İstatistikler'in tarih seçicisinde tarihlerin satır başına bir iki harf kırılması düzeltildi; ikisi sığmadığında bitiş tarihi başlangıç tarihinin altına geçiyor.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "İspanya İspanyolcasında ve Portekiz Portekizcesinde bildirimlerin ve birkaç cümlenin İngilizce ya da \"push.bill_deleted\" gibi bir kod olarak görünmesi düzeltildi.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Portekiz Portekizcesinde Ana Sayfa'daki kişiler satırında adın altında \"deve-te\" yerine \"te deve\" yazması düzeltildi.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

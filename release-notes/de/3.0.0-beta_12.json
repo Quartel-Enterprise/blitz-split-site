@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Tippe in den Versionshinweisen auf eine Version, um ihre Seite auf GitHub zu öffnen, oder auf den GitHub-Button, um alle zu sehen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die Gruppenseite, die Einladung und die Details einer Ausgabe zeigen jetzt die Fotos von bis zu fünf Personen nebeneinander statt nur zwei.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Auf einem iPad oder einem geöffneten iPhone Duo im Querformat zeigt eine Gruppe, die den ganzen Bildschirm füllt (zum Beispiel über Start geöffnet), jetzt Foto, Mitglieder und dein Saldo neben den Ausgaben.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ein Tipp auf die Karte Gesamtsaldo in Start öffnet jetzt den Tab Salden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Auf dem Handy fliegen beim Öffnen einer Gruppe oder Rechnung aus Start jetzt der Saldo der Gruppe oder Symbol, Titel, Betrag und dein Anteil der Rechnung in ihren Bildschirm und beim Zurückgehen wieder zurück.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Sprache führt Spanisch jetzt zweimal auf, „Español (Latinoamérica)“ und „Español (España)“, damit du deins wählst, egal wo dein Gerät ist.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mit Handy oder Tablet quer beginnt in Kontakte und Salden, was neben der Liste steht, jetzt am oberen Bildschirmrand, dein Profilbild steht über der Liste.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Der Rand der Schaltfläche „Person hinzufügen“ in den Mitgliedern einer Gruppe ist besser zu sehen.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Die Farbe einer Karte unter „Zahlungsmethoden“ stammt jetzt aus denselben Farben wie die Kategorien: die zwölf Farben, deine eigenen und „Neue Farbe“, um eine weitere anzulegen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In „Ausgabe aufteilen“ ist „Bezahlt mit“ jetzt ein kleiner Button unter der Aufteilung. Hast du noch keine Zahlungsmethode, legt „Zahlungsmethode hinzufügen“ direkt dort eine an und wählt sie für die Ausgabe aus. Debitkarten haben jetzt außerdem ein eigenes Symbol.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Eine Zahlungsmethode im Profil hinzuzufügen oder zu bearbeiten öffnet sich jetzt darüber statt auf einem eigenen Bildschirm.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dynamische Farben erklärt jetzt, dass die App die Systemfarben von Android nutzt, die aus deinem Hintergrundbild oder aus der in den Android-Einstellungen gewählten Palette stammen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Mit „Bewegung reduzieren“ zeigen die Statistiken einer Gruppe ihre Diagramme jetzt sofort, ohne wachsende Balken oder einen sich aufbauenden Ring.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Auf brasilianischem Portugiesisch stand in Aktivität und im Verlauf der Ausgabe „Você criaste“ und Ähnliches statt „Você criou“.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Die Daten in der Datumsauswahl der Statistiken brechen nicht mehr nach ein, zwei Buchstaben um: Das Enddatum steht unter dem Startdatum, wenn beide nicht passen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Mitteilungen und einige Sätze erschienen im Spanisch Spaniens und im Portugiesisch Portugals auf Englisch oder als Code wie „push.bill_deleted“; das ist behoben.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Die Personenzeile auf „Start“ zeigte im Portugiesisch Portugals „te deve“ unter dem Namen statt „deve-te“; das ist behoben.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "In Release notes, tap a version to open its release on GitHub, or the GitHub button to see every release.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A group's page, an invite and a bill's details now show up to five people's photos side by side instead of two.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "On an iPad or an open iPhone Duo lying down, a group that fills the screen (opened from Home, for example) now shows its photo, members and your balance beside the expenses.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Tapping Home's Overall balance card now opens the Balances tab.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "On a phone, opening a group or a bill from Home now flies the group's balance, or the bill's icon, title, total and your share, into its screen and back again when you return.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profile › Language now lists Spanish twice, \"Español (Latinoamérica)\" and \"Español (España)\", so you pick the one you speak wherever your device is.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "With the phone or a tablet lying down, what sits beside the list in Contacts and Balances now starts at the top of the screen, with your profile photo over the list.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "The edge of the \"Add person\" button in a group's Members is easier to see.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "A card's color in \"Payment methods\" now picks from the same colors as categories: the twelve colors, your own ones and \"New color\" to create another.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In \"Split a bill\", \"Paid with\" is now a small button under Split, and if you have no payment method yet, \"Add a payment method\" creates one right there and picks it for the bill. Debit cards also have their own icon now.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Adding or editing a payment method in Profile now opens over it instead of on a separate screen.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dynamic colors now explains that the app takes Android's system colors, which come from your wallpaper or from the palette you picked in Android's settings.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "With Reduce Motion on, a group's Statistics now shows its charts at once, without the bars growing or the ring sweeping in.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "In Brazilian Portuguese, Activity and a bill's history said \"Você criaste\" and the like instead of \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Fixed the dates in Statistics' date picker breaking a letter or two per line; the end date now goes under the start date when both don't fit.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Fixed notifications and a few sentences that showed in English, or as a code like \"push.bill_deleted\", in Spain's Spanish and Portugal's Portuguese.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Fixed Home's people row in Portugal's Portuguese, which said \"te deve\" under a name instead of \"deve-te\".",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

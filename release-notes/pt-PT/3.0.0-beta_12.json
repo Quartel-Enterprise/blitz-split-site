@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Nas Notas de versão, toca numa versão para abrir a página dela no GitHub, ou no botão do GitHub para veres todas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O ecrã do grupo, o convite e os detalhes de uma conta mostram agora as fotos de até cinco pessoas lado a lado, em vez de duas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "No iPad ou no iPhone Duo aberto, deitados, um grupo que ocupa o ecrã todo (aberto a partir do Início, por exemplo) mostra agora a foto, os membros e o teu saldo ao lado das despesas.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Tocar no cartão Saldo geral do Início abre agora o separador Saldos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "No telemóvel, abrir um grupo ou uma conta a partir do Início leva agora o saldo do grupo, ou o ícone, o título, o total e a tua parte da conta, a voar até ao ecrã e de volta quando regressas.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Perfil › Idioma mostra agora o espanhol em duas opções, \"Español (Latinoamérica)\" e \"Español (España)\", e escolhes o que falas onde quer que esteja o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Com o telemóvel ou o tablet deitado, o que fica ao lado da lista em Contactos e Saldos começa agora no topo do ecrã, com a tua foto de perfil sobre a lista.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "O contorno do botão \"Adicionar pessoa\" em Membros do grupo está mais fácil de ver.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "A cor de um cartão em \"Formas de pagamento\" passou a usar as mesmas cores das categorias: as doze cores, as tuas e \"Nova cor\" para criares outra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em \"Dividir conta\", o \"Pago com\" passou a ser um botão discreto por baixo da divisão e, se ainda não tens forma de pagamento, \"Adicionar forma de pagamento\" cria uma ali mesmo e marca-a logo na conta. O cartão de débito também passou a ter um ícone próprio.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Adicionar ou editar uma forma de pagamento no Perfil passou a abrir por cima dele, em vez de num ecrã à parte.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "As Cores dinâmicas explicam agora que a app usa as cores do sistema Android, que vêm do teu fundo de ecrã ou da paleta escolhida nas definições do Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Com Reduzir movimento ativado, as Estatísticas de um grupo mostram agora os gráficos de uma vez, sem as barras a crescer nem o anel a rodar.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Em português do Brasil, a Atividade e o histórico da despesa diziam \"Você criaste\" e afins em vez de \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Corrigimos as datas do seletor de datas das Estatísticas, que partiam uma ou duas letras por linha; a data final passa agora para baixo da inicial quando as duas não cabem.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Corrigimos notificações e algumas frases que apareciam em inglês, ou como um código do género \"push.bill_deleted\", no espanhol de Espanha e no português de Portugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Corrigimos a fila de pessoas do Início, que dizia \"te deve\" por baixo do nome em vez de \"deve-te\".",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
