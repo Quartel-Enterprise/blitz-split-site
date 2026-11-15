@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Di Catatan rilis, ketuk versi untuk membuka halamannya di GitHub, atau tombol GitHub untuk melihat semuanya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Layar grup, undangan, dan detail tagihan kini menampilkan foto hingga lima orang secara berdampingan, bukan dua.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di iPad atau iPhone Duo terbuka dalam posisi mendatar, grup yang memenuhi layar (misalnya dibuka dari Beranda) sekarang menampilkan foto, anggota, dan saldomu di samping pengeluaran.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Mengetuk kartu Saldo keseluruhan di Beranda kini membuka tab Saldo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di ponsel, membuka grup atau tagihan dari Beranda kini menerbangkan saldo grup, atau ikon, judul, total, dan bagianmu dari tagihan, ke layarnya dan kembali lagi saat kamu kembali.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Bahasa kini menampilkan bahasa Spanyol dalam dua pilihan, \"Español (Latinoamérica)\" dan \"Español (España)\", jadi kamu memilih yang kamu pakai di mana pun perangkatmu berada.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saat ponsel atau tablet dalam posisi mendatar, isi di samping daftar di Kontak dan Saldo kini dimulai dari bagian atas layar, dengan foto profilmu di atas daftar.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tepi tombol \"Tambah orang\" di Anggota grup kini lebih mudah terlihat.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Warna kartu di \"Metode pembayaran\" sekarang dipilih dari warna yang sama dengan kategori: dua belas warna, warnamu sendiri, dan \"Warna baru\" untuk membuat yang lain.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di \"Bagi tagihan\", \"Dibayar dengan\" sekarang jadi tombol kecil di bawah pembagian, dan kalau kamu belum punya metode pembayaran, \"Tambah metode pembayaran\" langsung membuatnya di sana dan memilihnya untuk tagihan. Kartu debit juga sekarang punya ikon sendiri.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Menambah atau mengubah metode pembayaran di Profil sekarang terbuka di atasnya, bukan di layar terpisah.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Warna dinamis kini menjelaskan bahwa aplikasi memakai warna sistem Android, yang berasal dari wallpaper-mu atau dari palet yang kamu pilih di setelan Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dengan Kurangi Gerakan aktif, Statistik grup kini menampilkan grafiknya langsung, tanpa batang yang tumbuh atau cincin yang berputar.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Dalam bahasa Portugis Brasil, Aktivitas dan riwayat tagihan menampilkan \"Você criaste\" dan sejenisnya alih-alih \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Memperbaiki tanggal di pemilih tanggal Statistik yang terpotong satu atau dua huruf per baris; tanggal akhir kini turun ke bawah tanggal mulai jika keduanya tidak muat.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Memperbaiki notifikasi dan beberapa kalimat yang tampil dalam bahasa Inggris, atau sebagai kode seperti \"push.bill_deleted\", dalam bahasa Spanyol Spanyol dan Portugis Portugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Memperbaiki baris orang di Beranda dalam bahasa Portugis Portugal, yang menampilkan \"te deve\" di bawah nama, bukan \"deve-te\".",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

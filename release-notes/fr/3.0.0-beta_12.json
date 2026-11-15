@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Dans Notes de version, touchez une version pour ouvrir sa page sur GitHub, ou le bouton GitHub pour les voir toutes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L'écran du groupe, l'invitation et le détail d'une dépense affichent désormais les photos de cinq personnes au maximum côte à côte, au lieu de deux.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sur un iPad ou un iPhone Duo ouvert à l’horizontale, un groupe qui occupe tout l’écran (ouvert depuis Accueil, par exemple) affiche désormais sa photo, ses membres et ton solde à côté des dépenses.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Toucher la carte Solde global de l’Accueil ouvre désormais l’onglet Soldes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sur téléphone, ouvrir un groupe ou une dépense depuis Accueil fait désormais voler le solde du groupe, ou l’icône, le titre, le total et ta part de la dépense, jusqu’à son écran, puis les ramène quand tu reviens.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Langue propose désormais l’espagnol en deux options, « Español (Latinoamérica) » et « Español (España) », pour choisir le vôtre où que soit votre appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Téléphone ou tablette à l'horizontale, ce qui est à côté de la liste dans Contacts et Soldes commence désormais en haut de l'écran, avec ta photo de profil au-dessus de la liste.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Le contour du bouton « Ajouter une personne » dans les Membres d'un groupe se voit mieux.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "La couleur d’une carte dans « Moyens de paiement » se choisit désormais parmi les mêmes couleurs que les catégories : les douze couleurs, les vôtres et « Nouvelle couleur » pour en créer une autre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dans « Partager une dépense », « Payé avec » est désormais un petit bouton sous « Répartition » et, si vous n’avez pas encore de moyen de paiement, « Ajouter un moyen de paiement » en crée un sur place et le choisit pour la dépense. La carte de débit a aussi sa propre icône.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ajouter ou modifier un moyen de paiement dans Profil s’ouvre désormais par-dessus, au lieu d’un écran séparé.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Couleurs dynamiques explique désormais que l’app reprend les couleurs du système Android, qui viennent de votre fond d’écran ou de la palette choisie dans les paramètres d’Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Avec Réduire les animations activé, les Statistiques d’un groupe affichent désormais leurs graphiques d’un coup, sans barres qui grandissent ni anneau qui tourne.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "En portugais du Brésil, Activité et l’historique de la dépense affichaient « Você criaste » et autres au lieu de « Você criou ».",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Les dates du sélecteur de dates des Statistiques ne se coupent plus lettre par lettre : la date de fin passe sous la date de début quand les deux ne tiennent pas.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Correction des notifications et de quelques phrases qui s'affichaient en anglais, ou sous forme de code comme « push.bill_deleted », en espagnol d'Espagne et en portugais du Portugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Correction de la rangée de personnes de l'Accueil en portugais du Portugal, qui affichait « te deve » sous le nom au lieu de « deve-te ».",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

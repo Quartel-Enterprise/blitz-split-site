@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Nelle Note di rilascio, tocca una versione per aprire la sua pagina su GitHub, o il pulsante di GitHub per vederle tutte.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La schermata del gruppo, l'invito e i dettagli di una spesa ora mostrano le foto di un massimo di cinque persone affiancate, invece di due.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Su un iPad o un iPhone Duo aperto in orizzontale, un gruppo che occupa tutto lo schermo (aperto da Home, per esempio) ora mostra foto, membri e il tuo saldo accanto alle spese.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Toccando la scheda Saldo complessivo della Home si apre ora la scheda Saldi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sul telefono, aprendo un gruppo o un conto dalla Home, il saldo del gruppo, o l’icona, il titolo, il totale e la tua quota del conto, ora volano nella sua schermata e tornano indietro quando torni.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profilo › Lingua ora mostra lo spagnolo in due opzioni, \"Español (Latinoamérica)\" ed \"Español (España)\", così scegli il tuo ovunque si trovi il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Con il telefono o il tablet in orizzontale, ciò che sta accanto all'elenco in Contatti e Saldi ora parte dall'alto dello schermo, con la tua foto profilo sopra l'elenco.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Il bordo del pulsante \"Aggiungi persona\" nei Membri del gruppo si vede meglio.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Il colore di una carta in \"Metodi di pagamento\" ora si sceglie tra gli stessi colori delle categorie: i dodici colori, i tuoi e \"Nuovo colore\" per crearne un altro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In \"Dividi una spesa\", \"Pagato con\" ora è un piccolo pulsante sotto la divisione e, se non hai ancora un metodo di pagamento, \"Aggiungi un metodo di pagamento\" ne crea uno lì stesso e lo sceglie per la spesa. Anche la carta di debito ha ora la sua icona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aggiungere o modificare un metodo di pagamento nel Profilo ora si apre sopra, invece che in una schermata a parte.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Colori dinamici ora spiega che l’app usa i colori di sistema di Android, che vengono dal tuo sfondo o dalla tavolozza scelta nelle impostazioni di Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Con Riduci movimento attivo, le Statistiche di un gruppo ora mostrano i grafici subito, senza barre che crescono né anello che ruota.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "In portoghese del Brasile, Attività e la cronologia della spesa dicevano \"Você criaste\" e simili invece di \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Le date nel selettore delle Statistiche non vanno più a capo ogni una o due lettere: la data di fine va sotto quella di inizio quando non ci stanno entrambe.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Corrette le notifiche e alcune frasi che comparivano in inglese, o come un codice del tipo \"push.bill_deleted\", nello spagnolo di Spagna e nel portoghese del Portogallo.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Corretta la riga delle persone nella Home in portoghese del Portogallo, che mostrava \"te deve\" sotto il nome invece di \"deve-te\".",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

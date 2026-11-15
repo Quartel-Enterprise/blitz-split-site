@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "W Informacjach o wersji dotknij wersji, aby otworzyć jej stronę w GitHubie, albo przycisku GitHub, aby zobaczyć wszystkie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ekran grupy, zaproszenie i szczegóły wydatku pokazują teraz obok siebie zdjęcia nawet pięciu osób zamiast dwóch.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPadzie lub otwartym iPhonie Duo w poziomie grupa zajmująca cały ekran (otwarta na przykład z ekranu Start) pokazuje teraz zdjęcie, członków i Twoje saldo obok wydatków.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Dotknięcie karty Saldo ogólne na ekranie Start otwiera teraz kartę Salda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na telefonie otwarcie grupy lub rachunku z ekranu Start przenosi teraz saldo grupy albo ikonę, tytuł, kwotę i Twój udział w rachunku na jego ekran i z powrotem, gdy wracasz.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Język pokazuje teraz hiszpański w dwóch wersjach, „Español (Latinoamérica)” i „Español (España)”, więc wybierasz swoją, gdziekolwiek jest urządzenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na telefonie lub tablecie w poziomie to, co jest obok listy w Kontaktach i Saldach, zaczyna się teraz od samej góry ekranu, a Twoje zdjęcie profilowe jest nad listą.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Obramowanie przycisku „Dodaj osobę” w Członkach grupy jest lepiej widoczne.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Kolor karty w „Metody płatności” wybierasz teraz z tych samych kolorów co kategorie: dwunastu kolorów, Twoich własnych i „Nowy kolor”, by utworzyć kolejny.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "W „Podziel wydatek” pole „Zapłacono za pomocą” to teraz mały przycisk pod podziałem, a jeśli nie masz jeszcze metody płatności, „Dodaj metodę płatności” utworzy ją od razu i wybierze dla wydatku. Karta debetowa ma też teraz własną ikonę.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodawanie i edycja metody płatności w Profilu otwiera się teraz nad nim, a nie na osobnym ekranie.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Kolory dynamiczne wyjaśniają teraz, że aplikacja używa kolorów systemu Android, które pochodzą z tapety albo z palety wybranej w ustawieniach Androida.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Przy włączonej opcji Ogranicz ruch Statystyki grupy pokazują teraz wykresy od razu, bez rosnących słupków i obracającego się pierścienia.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "W portugalskim brazylijskim Aktywność i historia wydatku pokazywały „Você criaste” i podobne zamiast „Você criou”.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Daty w wyborze dat w Statystykach nie łamią się już co jedną lub dwie litery: data końcowa trafia pod początkową, gdy obie się nie mieszczą.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Naprawiono powiadomienia i kilka zdań, które w hiszpańskim z Hiszpanii i portugalskim z Portugalii pojawiały się po angielsku albo jako kod w rodzaju „push.bill_deleted”.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Naprawiono wiersz osób na ekranie Start w portugalskim z Portugalii, który pod imieniem pokazywał „te deve” zamiast „deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
