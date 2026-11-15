@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "O Blitz Split passa a falar neerlandês, japonês, turco e indonésio, e a lista de idiomas mostra cada idioma no seu próprio idioma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos e as despesas podem agora usar o zloty polaco, a lira turca e a rupia indonésia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O Perfil tem um botão novo, Partilhar perfil: quem abre a tua ligação vê o teu nome e a tua fotografia e pode convidar-te para um grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A ligação de convite de um grupo novo fica pronta na hora, mesmo offline, e Membros tem um botão novo para a copiar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fechar um formulário com algo que não guardaste pergunta agora \"Descartar alterações?\" antes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Política de Privacidade e os Termos de Serviço abrem agora dentro da app em vez do navegador.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "No telemóvel, as barras de cima e de baixo saem agora da frente quando deslizas para baixo e voltam quando deslizas para cima.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Em Dividir despesa, escolher uma data já não salta diretamente para o relógio: a hora tem o seu próprio botão.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Toca no grupo no topo de Dividir despesa para o abrir; ao voltar, a despesa continua com tudo o que escreveste.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As Últimas despesas do Início mostram agora o grupo de cada despesa e quem pagou como fotografias.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O Pix aparece agora só a quem provavelmente o vai usar, como quem usa a app em português, tem uma chave Pix ou está num grupo em reais.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"A sincronizar…\" aparece agora só na primeira vez que a tua conta carrega num aparelho, e não a cada sincronização.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O Perfil já não oferece desligar o Google ou a Apple da tua conta: termina a sessão ou elimina a conta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Editar perfil abre agora como uma folha sobre o Perfil em vez de um ecrã separado.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "A faixa em branco entre o formulário e o teclado em Dividir despesa desapareceu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Os Grupos em comum de um contacto mostram agora a fotografia de cada grupo.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

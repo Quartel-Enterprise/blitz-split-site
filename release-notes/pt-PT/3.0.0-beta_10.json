@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "A ligação de uma despesa abre agora na app em vez do navegador, com as fotografias e os comentários.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "A ligação de uma despesa que deixou de ser partilhada, ou que só as pessoas da despesa podem abrir, avisa agora isso em vez de mostrar um erro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A ligação de um perfil abre agora mesmo sem teres iniciado sessão na tua conta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil › Privacidade e sobre tem um interruptor novo, \"Partilhar dados de utilização\": desliga para deixares de enviar como usas a app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As ligações que partilhas do teu perfil, de um comentário e para descarregar a app mostram agora a pré-visualização no teu idioma.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

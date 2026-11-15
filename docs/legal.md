@@ -1,7 +1,7 @@
 # Legal pages
 
 The privacy policy and the terms of use are written once, in Markdown, one file per page and language:
-`public/legal/<page>.<language>.md` (`privacy` and `terms`; English, Portuguese, Spanish, French, German, Italian, Polish,
+`public/legal/<page>.<language>.md` (`privacy` and `terms`; English, Portuguese (Brazil), Portuguese (Portugal, `pt-PT`), Spanish, French, German, Italian, Polish,
 Dutch, Turkish, Indonesian and Japanese). Two readers take those files:
 
 - **The site.** `npm run build:legal` (`scripts/build-legal.mjs`) writes each language's block, between `<main>` and

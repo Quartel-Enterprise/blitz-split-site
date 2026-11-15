@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Agora é possível dividir uma despesa Por rendimento, e os rendimentos que escreves ficam visíveis para os membros do grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada uma das Últimas despesas do Início tem agora um menu: Editar, Duplicar, Partilhar e Apagar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ver tudo no Início abre agora Todas as despesas: todas as despesas de que participas, em todos os teus grupos, com pesquisa, filtros e ordenação.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A fotografia do grupo é agora maior no topo do ecrã e encolhe à medida que deslizas, e abrir um grupo anima a partir da sua linha.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "A Atividade mostra agora as fotografias das pessoas, Saldos › Por grupo mostra a fotografia de cada grupo e a Maior despesa das Estatísticas mostra a sua categoria.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil › Conta e sincronização mostra agora o logótipo do Google ou da Apple e o teu e-mail completo, que só tu vês.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Eliminar conta explica agora o que fica nos teus grupos depois de a conta ser eliminada.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A opção \"Chave Pix predefinida\" já não parece desligada na tua chave predefinida no tema escuro.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

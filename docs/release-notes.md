@@ -1,7 +1,7 @@
 # Release notes
 
 What each version of the app changed is written once, in JSON, one file per language and version:
-`release-notes/<language>/<version>.json` (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
+`release-notes/<language>/<version>.json` (English, Portuguese (Brazil), Portuguese (Portugal, `pt-PT`), Spanish, French, German, Italian, Polish, Dutch,
 Turkish, Indonesian and Japanese). The folder is outside `public/`, so nobody reads those files as they are:
 `scripts/build-release-notes.mjs` writes from them the two things that are read.
 

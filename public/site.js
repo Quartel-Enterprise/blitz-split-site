@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: … }
 // before this script, and blocks written per language carry data-lang with the language ("en", "pt", "fr"…).
 (function () {
   const params = new URLSearchParams(location.search);
@@ -11,7 +11,9 @@
   const originOf = (el) => (el.closest("details") && el.closest(".site-header") ? "header_menu"
     : el.closest(".site-header") ? "header" : el.closest(".site-footer") ? "footer" : "content");
 
-  const dict = (window.SITE_STRINGS || {})[lang];
+  // The language picked in the menu: the variant (pt-PT) when there is one.
+  const picked = document.documentElement.dataset.variant || lang;
+  const dict = window.localized(window.SITE_STRINGS || {});
   if (dict) {
     if (dict.title) document.title = dict.title;
     if (dict.description) document.querySelector('meta[name="description"]')?.setAttribute("content", dict.description);
@@ -33,13 +35,13 @@
   // The language menu (header) and switch (footer) keep the choice for the next visit.
   document.querySelectorAll("[data-set-lang]").forEach((link) => {
     const target = link.dataset.setLang;
-    link.setAttribute("aria-current", String(target === lang));
+    link.setAttribute("aria-current", String(target === picked));
     const url = new URL(location.href);
     url.searchParams.set("lang", target);
     link.href = url.pathname + url.search + url.hash;
     link.addEventListener("click", () => {
       try { localStorage.setItem("lang", target); } catch (e) { /* private mode: the URL still carries it */ }
-      if (target !== lang) track("language_change", { language: target, origin: originOf(link) });
+      if (target !== picked) track("language_change", { language: target, origin: originOf(link) });
     });
   });
 
@@ -77,7 +79,7 @@
   }));
 
   // The header's menus (language and theme): the language one shows its code, and a click outside or Esc closes them.
-  document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = lang.toUpperCase(); });
+  document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = picked.toUpperCase(); });
   const langMenus = [...document.querySelectorAll(".lang-menu, .theme-menu, .get-menu")];
   langMenus.forEach((menu) => menu.addEventListener("toggle", () => {
     if (!menu.open) return;
@@ -175,7 +177,7 @@
   }
   syncToc();
   wide.addEventListener("change", syncToc);
-  const tocLinks = [...document.querySelectorAll(`[data-lang="${lang}"] .toc a, .toc[data-lang="${lang}"] a`)];
+  const tocLinks = [...document.querySelectorAll(`[data-lang="${picked}"] .toc a, .toc[data-lang="${picked}"] a`)];
   if (tocLinks.length && "IntersectionObserver" in window) {
     const byId = new Map(tocLinks.map((a) => [a.hash.slice(1), a]));
     const observer = new IntersectionObserver((entries) => {

@@ -23,6 +23,8 @@ download paths speak the language their link asks for, `?lang=`: the apps add th
 they share them, and the pages read the same parameter (`boot.js`), so the page that opens speaks it too. Every one
 of the apps' eleven languages is written (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
 Turkish, Indonesian and Japanese); any other language, or none, reads English.
+`pt-PT` (Portugal's Portuguese, a variant of `pt`: [design.md](design.md)) is the one tag with a region the Worker passes on, as the
+apps and the page write it; the API reads any other `pt-*` as Portuguese, and, until it has Portugal's wording, pt-PT too.
 
 What a preview says and its card come from the API's
 [`invite-preview`](https://github.com/Quartel-Enterprise/blitz-split-api/tree/main/supabase/functions/invite-preview)

@@ -9,6 +9,8 @@
 // - Every dictionary of the scripts keyed by language (const TEXT = { en: …, pt: … }, PAPER, CURRENCY…) has every
 //   language, with the same keys, the same shapes, the same {placeholders} and the same function arities as English.
 //
+// A regional variant (pt-PT) overlays its language with only the words it says differently: every page and script may
+// carry one, each of whose entries must match English's shape and placeholders, and none of whose keys may be unknown.
 // The languages come from SUPPORTED in public/boot.js, the one list the site picks a language from. Run it with
 // `npm run check:translations`; CI runs it on every pull request (.github/workflows/translations.yml).
 import { readFileSync, readdirSync } from "node:fs";
@@ -19,7 +21,7 @@ import vm from "node:vm";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC = join(ROOT, "public");
 // The languages the legal pages are written in full, every language the site speaks.
-const LEGAL_LANGS = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
+const LEGAL_LANGS = ["en", "pt", "pt-PT", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
 // Keys of SITE_STRINGS that site.js reads by name instead of from a data-i18n attribute.
 const PAGE_KEYS = ["title", "description"];
 // Keys whose English markup is right in every language but the ones that set them: the product's name is Blitz Split
@@ -66,11 +68,15 @@ function closingBracket(source, start) {
 // Evaluates a literal of the site's own source; its functions are only compared, never called.
 const evaluate = (literal) => vm.runInNewContext(`(${literal})`, {});
 
+const boot = readFileSync(join(PUBLIC, "boot.js"), "utf8");
 const languages = (() => {
-  const boot = readFileSync(join(PUBLIC, "boot.js"), "utf8");
   const match = boot.match(/const SUPPORTED = (\[[^\]]*\])/);
   if (!match) throw new Error("public/boot.js has no `const SUPPORTED = [...]` to read the languages from");
   return evaluate(match[1]);
+})();
+const variants = (() => {
+  const match = boot.match(/const VARIANTS = (\[[^\]]*\])/);
+  return match ? evaluate(match[1]) : [];
 })();
 const translated = languages.filter((lang) => lang !== "en");
 
@@ -79,8 +85,8 @@ const placeholders = (text) => [...new Set([...text.matchAll(/\{(\w+)\}/g)].map(
 const shape = (value) => (Array.isArray(value) ? "array" : value === null ? "null" : typeof value);
 
 // Compares a language's value with English's, reporting each difference under its path.
-function compare(file, path, english, other) {
-  if (other === undefined) return fail(file, `${path} is missing`);
+function compare(file, path, english, other, partial = false) {
+  if (other === undefined) return partial ? undefined : fail(file, `${path} is missing`);
   if (shape(english) !== shape(other)) return fail(file, `${path} is ${shape(other)}, but English's is ${shape(english)}`);
   if (typeof english === "string") {
     if (english.trim() !== "" && other.trim() === "") fail(file, `${path} is empty`);
@@ -91,9 +97,9 @@ function compare(file, path, english, other) {
     if (english.length !== other.length) fail(file, `${path} takes ${other.length} argument(s), but English's takes ${english.length}`);
   } else if (Array.isArray(english)) {
     if (english.length !== other.length) fail(file, `${path} has ${other.length} item(s), but English has ${english.length}`);
-    english.forEach((item, index) => compare(file, `${path}[${index}]`, item, other[index]));
+    english.forEach((item, index) => compare(file, `${path}[${index}]`, item, other[index], partial));
   } else if (shape(english) === "object") {
-    for (const key of Object.keys(english)) compare(file, `${path}.${key}`, english[key], other[key]);
+    for (const key of Object.keys(english)) compare(file, `${path}.${key}`, english[key], other[key], partial);
     for (const key of Object.keys(other)) if (!(key in english)) fail(file, `${path}.${key} isn't in English`);
   }
 }
@@ -103,14 +109,14 @@ function checkPage(file) {
   const used = new Set([...html.matchAll(/\sdata-i18n(?:-html|-label)?="([^"]+)"/g)].map((m) => m[1]));
 
   const blocks = [...html.matchAll(/\sdata-lang="([^"]+)"/g)].map((m) => m[1]);
-  const pageLangs = blocks.length > 0 ? LEGAL_LANGS.filter((lang) => lang !== "en") : translated;
+  const pageLangs = blocks.length > 0 ? LEGAL_LANGS.filter((lang) => lang !== "en" && !variants.includes(lang)) : translated;
 
   const at = html.indexOf("window.SITE_STRINGS = {");
   if (used.size > 0 && at < 0) fail(file, "uses data-i18n keys but sets no window.SITE_STRINGS");
   if (at >= 0) {
     const open = html.indexOf("{", at);
     const strings = evaluate(html.slice(open, closingBracket(html, open) + 1));
-    for (const lang of Object.keys(strings)) if (!pageLangs.includes(lang)) fail(file, `SITE_STRINGS.${lang} isn't a language of this page`);
+    for (const lang of Object.keys(strings)) if (!pageLangs.includes(lang) && !variants.includes(lang)) fail(file, `SITE_STRINGS.${lang} isn't a language of this page`);
     for (const lang of pageLangs) {
       const dict = strings[lang];
       if (!dict) { fail(file, `SITE_STRINGS has no ${lang}`); continue; }
@@ -122,6 +128,13 @@ function checkPage(file) {
       }
       for (const key of Object.keys(dict)) {
         if (!used.has(key) && !PAGE_KEYS.includes(key)) fail(file, `SITE_STRINGS.${lang}.${key} isn't used by the page`);
+      }
+    }
+    // A variant's words are partial, but each one must be a key the page uses.
+    for (const variant of variants) {
+      for (const [key, value] of Object.entries(strings[variant] || {})) {
+        if (!used.has(key) && !PAGE_KEYS.includes(key)) fail(file, `SITE_STRINGS.${variant}.${key} isn't used by the page`);
+        else if (String(value).trim() === "") fail(file, `SITE_STRINGS.${variant}.${key} is empty`);
       }
     }
   }
@@ -138,18 +151,26 @@ function checkPage(file) {
 function checkScript(file) {
   const source = readFileSync(file, "utf8");
   // A dictionary keyed by language: a constant whose first key is a language.
-  const declaration = new RegExp(`const (\\w+) = \\{\\s*(?:${languages.join("|")}):`, "g");
+  const declaration = new RegExp(`const (\\w+) = (?:window\\.localized\\()?\\{\\s*(?:${languages.join("|")}):`, "g");
   for (const match of source.matchAll(declaration)) {
     const open = source.indexOf("{", match.index);
     const dict = evaluate(source.slice(open, closingBracket(source, open) + 1));
     const name = match[1];
-    for (const lang of Object.keys(dict)) if (!languages.includes(lang)) fail(file, `${name}.${lang} isn't a language of the site`);
+    for (const lang of Object.keys(dict)) if (!languages.includes(lang) && !variants.includes(lang)) fail(file, `${name}.${lang} isn't a language of the site`);
     if (FORMATS.includes(name)) {
       for (const lang of languages) if (!dict[lang]) fail(file, `${name} has no ${lang}`);
+      // A variant's format has the same parts as its language's: a missing separator would print "undefined".
+      for (const variant of variants) {
+        const base = dict[variant.split("-")[0]];
+        if (dict[variant] && base && (dict[variant].length < base.length || dict[variant].some((part) => typeof part !== "string"))) {
+          fail(file, `${name}.${variant} has ${dict[variant].length} part(s) of text, but ${variant.split("-")[0]}'s has ${base.length}`);
+        }
+      }
       continue;
     }
     if (!dict.en) { fail(file, `${name} has no English to compare the other languages with`); continue; }
     for (const lang of translated) compare(file, `${name}.${lang}`, dict.en, dict[lang]);
+    for (const variant of variants) if (dict[variant]) compare(file, `${name}.${variant}`, dict.en, dict[variant], true);
   }
 }
 

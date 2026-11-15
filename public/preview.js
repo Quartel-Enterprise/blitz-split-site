@@ -16,7 +16,7 @@
 
   // Polish counts take one form for 1, another for 2–4 (22–24…) and a third for the rest.
   const plPlural = (n, one, few, many) => ({ one, few }[new Intl.PluralRules("pl").select(n)] ?? many);
-  const TEXT = {
+  const TEXT = window.localized({
     en: {
       paid: "{name} paid", notIn: "Not in this one",
       members: (people, bills) => `${people} people · ${bills} ${bills === 1 ? "bill" : "bills"}`,
@@ -50,6 +50,18 @@
       paidTotal: "Pagou no total", shareTotal: "Parte nas contas", balance: "Saldo",
       bills: (n) => `${n} ${n === 1 ? "conta" : "contas"}`,
       titles: { b1: "Pousada na Lagoa", b2: "Jantar no Ribeirão", b3: "Uber para a praia", p1: "Sorvete na praia", p2: "Mercado da semana", p3: "Estacionamento" },
+    },
+    // Portugal's Portuguese: only what Portugal says differently, the rest is pt's.
+    "pt-PT": {
+      members: (people, bills) => `${people} pessoas · ${bills} ${bills === 1 ? "despesa" : "despesas"}`,
+      youOwe: "deves", owesYou: "Devem-te", youOweTitle: "Deves", lodging: "Alojamento",
+      sheetTitle: "Dividir despesa", splitAmong: "Dividir por igual entre", save: "Guardar",
+      yourShare: "A tua parte", deleteBill: "Eliminar despesa",
+      recordPayment: "Registar pagamento", record: "Registar", deletePayment: "Eliminar pagamento",
+      paidYou: (who, value) => `${who} pagou-te ${value}`,
+      shareTotal: "Parte nas despesas",
+      bills: (n) => `${n} ${n === 1 ? "despesa" : "despesas"}`,
+      titles: { b1: "Alojamento na Lagoa", p1: "Gelado na praia", p2: "Compras da semana" },
     },
     es: {
       paid: "Pagó {name}", notIn: "No participas",
@@ -207,13 +219,13 @@
       bills: (n) => `支出${n}件`,
       titles: { b1: "ラゴアのゲストハウス", b2: "リベイロンでの夕食", b3: "ビーチまでの移動", p1: "ビーチでアイス", p2: "1週間分の食料品", p3: "駐車場" },
     },
-  }[lang];
+  });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
   // Amounts as the app shows them: the language's separators, and no decimals when they are all zero.
-  const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", "\u202f", "\u00a0$"],
+  const CURRENCY = window.localized({ pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", "\u202f", "\u00a0$"],
     de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
-    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] }[lang];
+    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] });
   // Turkish writes the percent sign first: %10.
   const pct = (n) => (lang === "tr" ? `%${n}` : `${n}%`);
   function money(cents, signed) {
@@ -655,7 +667,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat({ pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en-US" }[lang], { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

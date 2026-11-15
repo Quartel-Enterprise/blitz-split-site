@@ -107,8 +107,10 @@ p { margin: 0; text-wrap: pretty; }
 .pos { color: var(--positive); }
 .neg { color: var(--negative); }
 [hidden] { display: none !important; }
-/* Blocks written per language: boot.js sets data-lang on <html> before the first paint. */
-:root[data-lang="pt"] body [data-lang]:not([data-lang="pt"]),
+/* Blocks written per language: boot.js sets data-lang on <html> before the first paint, and data-variant (pt-PT) when
+   the visitor's language is a variant, which has blocks of its own. */
+:root[data-lang="pt"]:not([data-variant]) body [data-lang]:not([data-lang="pt"]),
+:root[data-variant="pt-PT"] body [data-lang]:not([data-lang="pt-PT"]),
 :root[data-lang="es"] body [data-lang]:not([data-lang="es"]),
 :root[data-lang="fr"] body [data-lang]:not([data-lang="fr"]),
 :root[data-lang="de"] body [data-lang]:not([data-lang="de"]),

@@ -16,11 +16,12 @@ process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 const PAGES = ["privacy", "terms"];
 // The order of the pages' blocks. English is what every other language is checked against.
-const LANGS = ["pt", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
+const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
 const LEGAL_DIR = "public/legal";
 
 const CHROME = {
   pt: { language: "Português", brand: "Bora Rachar", locale: "pt-BR", updated: { privacy: "Atualizada em {date}", terms: "Atualizados em {date}" }, read: "Leitura de {n} minutos", toc: "Nesta página" },
+  "pt-PT": { language: "Português (Portugal)", brand: "Blitz Split", locale: "pt-PT", updated: { privacy: "Atualizada em {date}", terms: "Atualizados em {date}" }, read: "Leitura de {n} minutos", toc: "Nesta página" },
   en: { language: "English", brand: "Blitz Split", locale: "en-US", updated: "Updated {date}", read: "{n} min read", toc: "On this page" },
   es: { language: "Español", brand: "Blitz Split", locale: "es", updated: { privacy: "Actualizada el {date}", terms: "Actualizados el {date}" }, read: "Lectura de {n} minutos", toc: "En esta página" },
   fr: { language: "Français", brand: "Blitz Split", locale: "fr", updated: { privacy: "Mise à jour le {date}", terms: "Mises à jour le {date}" }, read: "Lecture de {n} min", toc: "Sur cette page" },

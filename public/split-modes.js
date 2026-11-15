@@ -21,7 +21,7 @@
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 
-  const TEXT = {
+  const TEXT = window.localized({
     en: {
       bill: "Pizza night", paid: "Pedro paid", notIn: "Not in this one",
       each: "{a} each", among: "{a} among {n} people.", amongOne: "{a} for 1 person.", out: "{name} is out.",
@@ -75,6 +75,22 @@
         amount: "Valor de {name}", percent: "Porcentagem de {name}", income: "Renda por mês de {name}",
         less: "Menos uma parte para {name}", more: "Mais uma parte para {name}", had: "Quem consumiu {item}",
       },
+    },
+    // Portugal's Portuguese: only what Portugal says differently, the rest is pt's.
+    "pt-PT": {
+      nobodyEqual: "Marca pelo menos uma pessoa para dividir {a}.",
+      nobodyShares: "Dá pelo menos uma parte a alguém para dividir {a}.",
+      ofEach: "{p} de cada despesa", ofBill: "{p} da despesa", incomeDetail: "A parte de cada um segue o rendimento.",
+      loose: "Marca quem consumiu", looseDetail: "Toca nas caras de cada item e marca quem consumiu.",
+      items: { draft: "Imperial", shrimp: "Petisco de camarão" },
+      hint: {
+        equal: "Quando não dá conta certa, os cêntimos que sobram ficam com quem pagou.",
+        percent: "Só números inteiros. Os cêntimos que sobram ficam com quem pagou.",
+        shares: "Usa partes quando alguém consome mais, como quem levou acompanhante.",
+        income: "Os rendimentos ficam só no aparelho. O grupo vê só as percentagens.",
+        items: "Cada item é dividido por quem consumiu, e o serviço, pelo que cada um consumiu.",
+      },
+      label: { percent: "Percentagem de {name}", income: "Rendimento mensal de {name}" },
     },
     es: {
       bill: "Noche de pizza", paid: "Pagó Pedro", notIn: "No participa",
@@ -324,7 +340,7 @@
         less: "{name}を1口減らす", more: "{name}を1口増やす", had: "{item}を頼んだ人",
       },
     },
-  }[lang];
+  });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
     const forms = text.split("|");
@@ -336,9 +352,9 @@
   }
 
   // Amounts as preview.js writes them: the language's separators, no decimals when they are zero.
-  const CURRENCY = { pt: ["R$ ", ",", "."], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", " ", " $"],
+  const CURRENCY = window.localized({ pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", " ", " $"],
     de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
-    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] }[lang];
+    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] });
   function plain(cents) {
     const whole = String(Math.floor(cents / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
     const frac = cents % 100;

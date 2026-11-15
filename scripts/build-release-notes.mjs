@@ -20,7 +20,7 @@ import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
 process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 // The order of the page's blocks. English is what every other language is checked against.
-const LANGS = ["pt", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
+const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
 const SOURCE_DIR = "release-notes";
 const FEED_DIR = "public/release-notes";
 // The page's shell, written by hand: its header, its footer and its strings, with nothing between <main> and </main>.
@@ -34,6 +34,7 @@ const VERSION = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-beta_([1-9]\d*))?$
 
 const CHROME = {
   pt: { language: "Português", brand: "Bora Rachar", locale: "pt-BR", title: "Novidades", lead: "O que mudou em cada versão do app.", showBeta: "Mostrar versões beta", beta: "Beta", empty: "Ainda não há uma versão estável. Ative as versões beta para ver o que está em teste.", platforms: { android: "Android", ios: "iPhone e iPad", mac: "Mac", web: "Web" } },
+  "pt-PT": { language: "Português (Portugal)", brand: "Blitz Split", locale: "pt-PT", title: "Novidades", lead: "O que mudou em cada versão da app.", showBeta: "Mostrar versões beta", beta: "Beta", empty: "Ainda não há uma versão estável. Ativa as versões beta para ver o que está em teste.", platforms: { android: "Android", ios: "iPhone e iPad", mac: "Mac", web: "Web" } },
   en: { language: "English", brand: "Blitz Split", locale: "en-US", title: "What's new", lead: "What changed in each version of the app.", showBeta: "Show beta versions", beta: "Beta", empty: "There is no stable version yet. Turn on beta versions to see what is being tested.", platforms: { android: "Android", ios: "iPhone and iPad", mac: "Mac", web: "Web" } },
   es: { language: "Español", brand: "Blitz Split", locale: "es", title: "Novedades", lead: "Qué cambió en cada versión de la app.", showBeta: "Mostrar versiones beta", beta: "Beta", empty: "Todavía no hay una versión estable. Activa las versiones beta para ver lo que está en pruebas.", platforms: { android: "Android", ios: "iPhone y iPad", mac: "Mac", web: "Web" } },
   fr: { language: "Français", brand: "Blitz Split", locale: "fr", title: "Nouveautés", lead: "Ce qui a changé dans chaque version de l’application.", showBeta: "Afficher les versions bêta", beta: "Bêta", empty: "Il n’y a pas encore de version stable. Activez les versions bêta pour voir ce qui est en test.", platforms: { android: "Android", ios: "iPhone et iPad", mac: "Mac", web: "Web" } },
