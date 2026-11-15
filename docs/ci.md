@@ -20,7 +20,8 @@ The review is [Quartel-Enterprise/claude-review](https://github.com/Quartel-Ente
 `blitz-split-client`'s, without its gate: the checks here take seconds, so they just run again on the review's fix
 commit. It needs the Claude GitHub App installed on the repository and the `CLAUDE_CODE_OAUTH_TOKEN` secret (from
 `claude setup-token`); when the token expires the review fails on authentication, and a new one goes in the secret. A
-pull request that changes `claude-review.yml` itself isn't reviewed. Bump every `Quartel-Enterprise/claude-review/*`
+pull request that changes `claude-review.yml` itself isn't reviewed, and neither is one from a `release-notes/<version>`
+branch, which a release of blitz-split-client writes and merges at once ([release-notes.md](release-notes.md#adding-a-version)). Bump every `Quartel-Enterprise/claude-review/*`
 `uses:` together.
 
 GitHub starts no `pull_request` workflow while a pull request conflicts with its base, so one opened (or marked ready)
