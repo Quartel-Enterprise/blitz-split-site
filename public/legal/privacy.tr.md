@@ -1,6 +1,6 @@
 ---
 title: Gizlilik politikası
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **Kısaca**
@@ -36,7 +36,7 @@ Bu politika, Brezilya Genel Veri Koruma Kanunu'na (13.709/2018 sayılı Kanun, L
 ### Otomatik olarak toplananlar
 
 - **Kullanım ölçümleri** (Google Firebase Analytics): açılan ekranlar ve yapılan işlemler, örneğin “grup oluşturdu”, cihaz verileriyle birlikte (model, sistem, dil, uygulama sürümü ve yaklaşık ülke). Hiçbir zaman ad, tutar ya da grupların, masrafların veya kişilerin kimliklerini içermez. Reklam kimliğini kullanmayız ve reklam kişiselleştirmesi kapalıdır. Anonim ya da Google veya Apple ile bir hesabın varsa ölçümler, adın ya da e-postan olmayan rastgele bir kod olan hesap kimliğini taşır; böylece uygulamanın telefonunda, bilgisayarında ve tarayıcında birlikte nasıl kullanıldığını görürüz. Bunları her cihazda Profil › Gizlilik ve hakkında › “Kullanım verilerini paylaş” ile kapatırsın.
-- **Çökme raporları** (Firebase Crashlytics, Android, iPhone, iPad ve Mac uygulamalarında): hatanın türü ve kodda nerede oluştuğu; verilerini içerebilecek mesajlar olmadan.
+- **Çökme raporları** (Android, iPhone, iPad ve Mac uygulamalarında Firebase Crashlytics, tarayıcıda Sentry): hatanın türü ve kodda nerede oluştuğu; verilerini içerebilecek mesajlar olmadan.
 - **Bildirim belirteci:** Google'ın, Apple'ın ya da tarayıcının, bildirim alabilmesi için cihaza verdiği adres.
 - **Bağlantı verileri**, örneğin IP adresi; altyapı sağlayıcılarımız tarafından kaydedilir.
 
@@ -82,6 +82,7 @@ Bu şirketler verileri bizim adımıza ve yalnızca burada anlatılan amaçlar i
 | Google (Firebase) | Android'de kullanım ölçümleri, çökme raporları ve bildirimler; web sitesinin Google Analytics'i; Google ile giriş |
 | Apple | iPhone, iPad ve Mac'te bildirimler; Apple ile giriş |
 | Anthropic | Fiş fotoğraflarını okumak |
+| Sentry | Tarayıcıdaki çökme raporları |
 | Cloudflare | blitzsplit.com web sitesini barındırmak |
 | Google Play ve App Store | Uygulamayı dağıtmak ve güncellemek |
 

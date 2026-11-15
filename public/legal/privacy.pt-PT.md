@@ -1,6 +1,6 @@
 ---
 title: Política de privacidade
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **Em resumo**
@@ -36,7 +36,7 @@ Segue a Lei Geral de Proteção de Dados do Brasil (Lei 13.709/2018, a LGPD). Ao
 ### O que é recolhido automaticamente
 
 - **Métricas de utilização** (Google Firebase Analytics): os ecrãs abertos e as ações feitas, como “criou um grupo”, com dados do aparelho (modelo, sistema, idioma, versão da app e país aproximado). Nunca levam nomes, valores nem os IDs de grupos, despesas ou pessoas. Não usamos o ID de publicidade, e a personalização de anúncios fica desligada. Se tens uma conta, anónima ou com Google ou Apple, as métricas levam o ID dela, um código aleatório que não é o teu nome nem o teu e-mail, para vermos a utilização da app somada entre o teu telemóvel, computador e navegador. Desligas as métricas em cada aparelho em Perfil › Privacidade e sobre › “Partilhar dados de utilização”.
-- **Relatórios de falhas** (Firebase Crashlytics, nas apps de Android, iPhone, iPad e Mac): o tipo do erro e o ponto do código onde aconteceu, sem as mensagens, que poderiam conter dados teus.
+- **Relatórios de falhas** (Firebase Crashlytics nas apps de Android, iPhone, iPad e Mac, e Sentry no navegador): o tipo do erro e o ponto do código onde aconteceu, sem as mensagens, que poderiam conter dados teus.
 - **Token de notificação:** o endereço que o Google, a Apple ou o navegador dá ao aparelho para receber avisos.
 - **Dados de ligação**, como o endereço IP, registados pelos fornecedores de infraestrutura.
 
@@ -82,6 +82,7 @@ Estas empresas tratam dados em nosso nome, só para o que está descrito aqui:
 | Google (Firebase) | Métricas de utilização, relatórios de falhas e notificações no Android; Google Analytics do site; entrar com o Google |
 | Apple | Notificações no iPhone, iPad e Mac; entrar com a Apple |
 | Anthropic | Leitura das fotografias de talões |
+| Sentry | Relatórios de falhas no navegador |
 | Cloudflare | Alojamento do site blitzsplit.com |
 | Google Play e App Store | Distribuição e atualização da app |
 

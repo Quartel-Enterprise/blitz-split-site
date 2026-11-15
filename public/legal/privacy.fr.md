@@ -1,6 +1,6 @@
 ---
 title: Politique de confidentialité
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **En bref**
@@ -36,7 +36,7 @@ Elle respecte la loi générale brésilienne sur la protection des données (loi
 ### Ce qui est collecté automatiquement
 
 - **Statistiques d’utilisation** (Google Firebase Analytics) : les écrans ouverts et les actions effectuées, comme « a créé un groupe », avec des données sur l’appareil (modèle, système, langue, version de l’app et pays approximatif). Elles ne contiennent jamais de noms, de montants ni les identifiants des groupes, des dépenses ou des personnes. Nous n’utilisons pas l’identifiant publicitaire, et la personnalisation des annonces est désactivée. Si vous avez un compte, anonyme ou avec Google ou Apple, les statistiques portent son identifiant, un code aléatoire qui n’est ni votre nom ni votre e-mail, pour voir l’usage de l’app sur votre téléphone, votre ordinateur et votre navigateur réunis. Vous les désactivez sur chaque appareil dans Profil › Confidentialité et à propos › « Partager les données d’utilisation ».
-- **Rapports de plantage** (Firebase Crashlytics, dans les apps Android, iPhone, iPad et Mac) : le type d’erreur et l’endroit du code où elle s’est produite, sans les messages, qui pourraient contenir vos données.
+- **Rapports de plantage** (Firebase Crashlytics dans les apps Android, iPhone, iPad et Mac, et Sentry dans le navigateur) : le type d’erreur et l’endroit du code où elle s’est produite, sans les messages, qui pourraient contenir vos données.
 - **Jeton de notification :** l’adresse que Google, Apple ou le navigateur attribue à l’appareil pour recevoir des alertes.
 - **Données de connexion**, comme l’adresse IP, enregistrées par nos fournisseurs d’infrastructure.
 
@@ -82,6 +82,7 @@ Ces entreprises traitent des données pour notre compte, uniquement pour ce qui 
 | Google (Firebase) | Statistiques d’utilisation, rapports de plantage et notifications sur Android ; le Google Analytics du site ; connexion avec Google |
 | Apple | Notifications sur iPhone, iPad et Mac ; connexion avec Apple |
 | Anthropic | Lecture des photos de reçus |
+| Sentry | Rapports de plantage dans le navigateur |
 | Cloudflare | Hébergement du site blitzsplit.com |
 | Google Play et l’App Store | Distribution et mises à jour de l’app |
 

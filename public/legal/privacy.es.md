@@ -1,6 +1,6 @@
 ---
 title: Política de privacidad
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **En resumen**
@@ -36,7 +36,7 @@ Sigue la Ley General de Protección de Datos de Brasil (Ley 13.709/2018, la LGPD
 ### Lo que se recoge automáticamente
 
 - **Métricas de uso** (Google Firebase Analytics): las pantallas abiertas y las acciones hechas, como “creó un grupo”, con datos del dispositivo (modelo, sistema, idioma, versión de la app y país aproximado). Nunca llevan nombres, montos ni los IDs de grupos, cuentas o personas. No usamos el ID de publicidad, y la personalización de anuncios está desactivada. Si tienes una cuenta, anónima o con Google o Apple, las métricas llevan su ID, un código aleatorio que no es tu nombre ni tu correo, para ver el uso de la app sumado entre tu celular, tu computadora y tu navegador. Las desactivas en cada dispositivo en Perfil › Privacidad y acerca de › “Compartir datos de uso”.
-- **Informes de fallos** (Firebase Crashlytics, en las apps de Android, iPhone, iPad y Mac): el tipo de error y el punto del código donde ocurrió, sin los mensajes, que podrían contener tus datos.
+- **Informes de fallos** (Firebase Crashlytics en las apps de Android, iPhone, iPad y Mac, y Sentry en el navegador): el tipo de error y el punto del código donde ocurrió, sin los mensajes, que podrían contener tus datos.
 - **Token de notificaciones:** la dirección que Google, Apple o el navegador le da al dispositivo para recibir avisos.
 - **Datos de conexión**, como la dirección IP, registrados por nuestros proveedores de infraestructura.
 
@@ -82,6 +82,7 @@ Estas empresas tratan datos en nuestro nombre, solo para lo que se describe aqu�
 | Google (Firebase) | Métricas de uso, informes de fallos y notificaciones en Android; el Google Analytics del sitio; iniciar sesión con Google |
 | Apple | Notificaciones en iPhone, iPad y Mac; iniciar sesión con Apple |
 | Anthropic | Lectura de las fotos de recibos |
+| Sentry | Informes de fallos en el navegador |
 | Cloudflare | Alojamiento del sitio blitzsplit.com |
 | Google Play y App Store | Distribución y actualización de la app |
 

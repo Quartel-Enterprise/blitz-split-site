@@ -1,6 +1,6 @@
 ---
 title: Datenschutzerklärung
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **Kurz gesagt**
@@ -36,7 +36,7 @@ Sie folgt dem brasilianischen Datenschutzgesetz (Gesetz 13.709/2018, LGPD). Mit 
 ### Was automatisch erfasst wird
 
 - **Nutzungsstatistiken** (Google Firebase Analytics): die geöffneten Bildschirme und ausgeführten Aktionen, etwa „Gruppe erstellt“, mit Gerätedaten (Modell, System, Sprache, App-Version und ungefähres Land). Sie enthalten nie Namen, Beträge oder die IDs von Gruppen, Ausgaben oder Personen. Wir verwenden keine Werbe-ID, und personalisierte Werbung ist deaktiviert. Wenn du ein Konto hast, anonym oder mit Google oder Apple, tragen die Statistiken dessen ID, einen zufälligen Code, der weder dein Name noch deine E-Mail-Adresse ist, damit wir sehen, wie die App über dein Handy, deinen Computer und deinen Browser hinweg genutzt wird. Du schaltest sie auf jedem Gerät unter Profil › Datenschutz und Info › „Nutzungsdaten teilen“ aus.
-- **Absturzberichte** (Firebase Crashlytics, in den Apps für Android, iPhone, iPad und Mac): die Art des Fehlers und wo im Code er auftrat, ohne die Fehlermeldungen, die deine Daten enthalten könnten.
+- **Absturzberichte** (Firebase Crashlytics in den Apps für Android, iPhone, iPad und Mac, Sentry im Browser): die Art des Fehlers und wo im Code er auftrat, ohne die Fehlermeldungen, die deine Daten enthalten könnten.
 - **Mitteilungs-Token:** die Adresse, die Google, Apple oder der Browser dem Gerät gibt, damit es Mitteilungen empfangen kann.
 - **Verbindungsdaten** wie die IP-Adresse, die unsere Infrastrukturanbieter protokollieren.
 
@@ -82,6 +82,7 @@ Diese Unternehmen verarbeiten Daten in unserem Auftrag, nur für das hier Beschr
 | Google (Firebase) | Nutzungsstatistiken, Absturzberichte und Mitteilungen auf Android; Google Analytics der Website; Anmeldung mit Google |
 | Apple | Mitteilungen auf iPhone, iPad und Mac; Anmeldung mit Apple |
 | Anthropic | Lesen von Belegfotos |
+| Sentry | Absturzberichte im Browser |
 | Cloudflare | Hosting der Website blitzsplit.com |
 | Google Play und der App Store | Verteilung und Aktualisierung der App |
 

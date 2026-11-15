@@ -1,6 +1,6 @@
 ---
 title: Privacy policy
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **In short**
@@ -36,7 +36,7 @@ It follows Brazil's General Data Protection Law (Law 13,709/2018, the LGPD). By 
 ### What is collected automatically
 
 - **Usage metrics** (Google Firebase Analytics): the screens opened and the actions taken, such as “created a group”, with device data (model, system, language, app version and approximate country). They never carry names, amounts or the ids of groups, bills or people. We don't use the advertising id, and ad personalization is off. If you have an account, anonymous or with Google or Apple, the metrics carry its id, a random code that isn't your name or email, so we see how the app is used across your phone, computer and browser. You turn them off on each device in Profile › Privacy and about › “Share usage data”.
-- **Crash reports** (Firebase Crashlytics, in the Android, iPhone, iPad and Mac apps): the kind of error and where in the code it happened, without the messages, which could hold your data.
+- **Crash reports** (Firebase Crashlytics in the Android, iPhone, iPad and Mac apps, and Sentry in the browser): the kind of error and where in the code it happened, without the messages, which could hold your data.
 - **Notification token:** the address Google, Apple or the browser gives the device to receive notices.
 - **Connection data**, such as the IP address, logged by our infrastructure providers.
 
@@ -82,6 +82,7 @@ These companies handle data on our behalf, only for what is described here:
 | Google (Firebase) | Usage metrics, crash reports and notifications on Android; the website's Google Analytics; sign in with Google |
 | Apple | Notifications on iPhone, iPad and Mac; sign in with Apple |
 | Anthropic | Reading receipt photos |
+| Sentry | Crash reports in the browser |
 | Cloudflare | Hosting the blitzsplit.com website |
 | Google Play and the App Store | Distributing and updating the app |
 

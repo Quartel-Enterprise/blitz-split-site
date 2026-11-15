@@ -1,6 +1,6 @@
 ---
 title: Privacybeleid
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **In het kort**
@@ -36,7 +36,7 @@ Het volgt de Braziliaanse Algemene Wet Gegevensbescherming (Wet 13.709/2018, de 
 ### Wat automatisch wordt verzameld
 
 - **Gebruiksstatistieken** (Google Firebase Analytics): de geopende schermen en de uitgevoerde acties, zoals “groep aangemaakt”, met apparaatgegevens (model, besturingssysteem, taal, appversie en bij benadering het land). Ze bevatten nooit namen, bedragen of de id’s van groepen, rekeningen of mensen. We gebruiken de advertentie-id niet, en gepersonaliseerde advertenties staan uit. Heb je een account, anoniem of met Google of Apple, dan bevatten de statistieken de id daarvan, een willekeurige code die niet je naam of e-mailadres is, zodat we zien hoe de app samen op je telefoon, computer en browser wordt gebruikt. Je zet ze per apparaat uit via Profiel › Privacy en info › “Gebruiksgegevens delen”.
-- **Crashrapporten** (Firebase Crashlytics, in de apps voor Android, iPhone, iPad en Mac): het soort fout en waar in de code die optrad, zonder de foutmeldingen, want die kunnen jouw gegevens bevatten.
+- **Crashrapporten** (Firebase Crashlytics in de apps voor Android, iPhone, iPad en Mac, en Sentry in de browser): het soort fout en waar in de code die optrad, zonder de foutmeldingen, want die kunnen jouw gegevens bevatten.
 - **Notificatietoken:** het adres dat Google, Apple of de browser aan het apparaat geeft om meldingen te ontvangen.
 - **Verbindingsgegevens**, zoals het IP-adres, die onze infrastructuuraanbieders registreren.
 
@@ -82,6 +82,7 @@ Deze bedrijven verwerken gegevens namens ons, uitsluitend voor wat hier beschrev
 | Google (Firebase) | Gebruiksstatistieken, crashrapporten en meldingen op Android; Google Analytics van de website; inloggen met Google |
 | Apple | Meldingen op iPhone, iPad en Mac; inloggen met Apple |
 | Anthropic | Foto’s van bonnen lezen |
+| Sentry | Crashrapporten in de browser |
 | Cloudflare | Het hosten van de website blitzsplit.com |
 | Google Play en de App Store | De app verspreiden en bijwerken |
 

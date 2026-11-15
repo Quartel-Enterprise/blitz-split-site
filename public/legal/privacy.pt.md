@@ -1,6 +1,6 @@
 ---
 title: Política de privacidade
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **Em resumo**
@@ -36,7 +36,7 @@ Ela segue a Lei Geral de Proteção de Dados (Lei 13.709/2018, a LGPD). Ao usar 
 ### O que é coletado automaticamente
 
 - **Métricas de uso** (Google Firebase Analytics): as telas abertas e as ações feitas, como “criou um grupo”, com dados do aparelho (modelo, sistema, idioma, versão do app e país aproximado). Elas nunca levam nomes, valores nem os IDs de grupos, contas ou pessoas. Não usamos o ID de publicidade, e a personalização de anúncios fica desligada. Se você tem uma conta, anônima ou com Google ou Apple, as métricas levam o ID dela, um código aleatório que não é o seu nome nem o seu e-mail, para vermos o uso do app somado entre o seu celular, computador e navegador. Você as desliga em cada aparelho em Perfil › Privacidade e sobre › “Compartilhar dados de uso”.
-- **Relatórios de falha** (Firebase Crashlytics, nos apps de Android, iPhone, iPad e Mac): o tipo do erro e o ponto do código onde ele aconteceu, sem as mensagens, que poderiam conter dados seus.
+- **Relatórios de falha** (Firebase Crashlytics nos apps de Android, iPhone, iPad e Mac, e Sentry no navegador): o tipo do erro e o ponto do código onde ele aconteceu, sem as mensagens, que poderiam conter dados seus.
 - **Token de notificação:** o endereço que o Google, a Apple ou o navegador dá ao aparelho para receber avisos.
 - **Dados de conexão**, como o endereço IP, registrados pelos provedores de infraestrutura.
 
@@ -82,6 +82,7 @@ Estas empresas tratam dados em nosso nome, só para o que está descrito aqui:
 | Google (Firebase) | Métricas de uso, relatórios de falha e notificações no Android; Google Analytics do site; entrar com Google |
 | Apple | Notificações no iPhone, iPad e Mac; entrar com a Apple |
 | Anthropic | Leitura das fotos de recibo |
+| Sentry | Relatórios de falha no navegador |
 | Cloudflare | Hospedagem do site blitzsplit.com |
 | Google Play e App Store | Distribuição e atualização do app |
 

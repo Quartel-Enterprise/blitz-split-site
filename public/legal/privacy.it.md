@@ -1,6 +1,6 @@
 ---
 title: Informativa sulla privacy
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **In breve**
@@ -36,7 +36,7 @@ Segue la Legge generale sulla protezione dei dati del Brasile (Legge 13.709/2018
 ### Ciò che viene raccolto automaticamente
 
 - **Metriche di utilizzo** (Google Firebase Analytics): le schermate aperte e le azioni compiute, come “ha creato un gruppo”, con dati del dispositivo (modello, sistema, lingua, versione dell'app e paese approssimativo). Non contengono mai nomi, importi né gli identificativi di gruppi, spese o persone. Non usiamo l'identificativo pubblicitario e la personalizzazione degli annunci è disattivata. Se hai un account, anonimo o con Google o Apple, le metriche portano il suo identificativo, un codice casuale che non è il tuo nome né la tua email, per vedere l'uso dell'app tra telefono, computer e browser insieme. Le disattivi su ogni dispositivo in Profilo › Privacy e informazioni › “Condividi dati di utilizzo”.
-- **Rapporti sugli arresti anomali** (Firebase Crashlytics, nelle app per Android, iPhone, iPad e Mac): il tipo di errore e il punto del codice in cui si è verificato, senza i messaggi, che potrebbero contenere i tuoi dati.
+- **Rapporti sugli arresti anomali** (Firebase Crashlytics nelle app per Android, iPhone, iPad e Mac, e Sentry nel browser): il tipo di errore e il punto del codice in cui si è verificato, senza i messaggi, che potrebbero contenere i tuoi dati.
 - **Token per le notifiche:** l'indirizzo che Google, Apple o il browser assegna al dispositivo per ricevere gli avvisi.
 - **Dati di connessione**, come l'indirizzo IP, registrati dai nostri fornitori di infrastruttura.
 
@@ -82,6 +82,7 @@ Queste aziende trattano dati per nostro conto, solo per quanto descritto qui:
 | Google (Firebase) | Metriche di utilizzo, rapporti sugli arresti anomali e notifiche su Android; Google Analytics del sito; accesso con Google |
 | Apple | Notifiche su iPhone, iPad e Mac; accesso con Apple |
 | Anthropic | Lettura delle foto degli scontrini |
+| Sentry | Rapporti sugli arresti anomali nel browser |
 | Cloudflare | Hosting del sito blitzsplit.com |
 | Google Play e App Store | Distribuzione e aggiornamento dell'app |
 

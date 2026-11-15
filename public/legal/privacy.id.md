@@ -1,6 +1,6 @@
 ---
 title: Kebijakan privasi
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **Singkatnya**
@@ -36,7 +36,7 @@ Kebijakan ini mengikuti Undang-Undang Umum Pelindungan Data Brasil (Undang-Undan
 ### Yang dikumpulkan secara otomatis
 
 - **Metrik penggunaan** (Google Firebase Analytics): layar yang dibuka dan tindakan yang dilakukan, seperti “membuat grup”, beserta data perangkat (model, sistem, bahasa, versi aplikasi, dan perkiraan negara). Metrik ini tidak pernah memuat nama, jumlah uang, atau id grup, tagihan, maupun orang. Kami tidak menggunakan id iklan, dan personalisasi iklan dinonaktifkan. Jika kamu punya akun, anonim atau dengan Google atau Apple, metrik memuat id akun itu, kode acak yang bukan nama atau email kamu, agar kami melihat cara aplikasi dipakai di ponsel, komputer, dan browser kamu sekaligus. Kamu mematikannya di setiap perangkat lewat Profil › Privasi dan tentang › “Bagikan data penggunaan”.
-- **Laporan kerusakan** (Firebase Crashlytics, di aplikasi Android, iPhone, iPad, dan Mac): jenis kesalahan dan di bagian kode mana kesalahan itu terjadi, tanpa pesan-pesannya, yang bisa berisi datamu.
+- **Laporan kerusakan** (Firebase Crashlytics di aplikasi Android, iPhone, iPad, dan Mac, serta Sentry di browser): jenis kesalahan dan di bagian kode mana kesalahan itu terjadi, tanpa pesan-pesannya, yang bisa berisi datamu.
 - **Token notifikasi:** alamat yang diberikan Google, Apple, atau browser kepada perangkat untuk menerima pemberitahuan.
 - **Data koneksi**, seperti alamat IP, yang dicatat oleh penyedia infrastruktur kami.
 
@@ -82,6 +82,7 @@ Perusahaan-perusahaan berikut menangani data atas nama kami, hanya untuk hal-hal
 | Google (Firebase) | Metrik penggunaan, laporan kerusakan, dan notifikasi di Android; Google Analytics situs web; masuk dengan Google |
 | Apple | Notifikasi di iPhone, iPad, dan Mac; masuk dengan Apple |
 | Anthropic | Membaca foto struk |
+| Sentry | Laporan kerusakan di browser |
 | Cloudflare | Hosting situs web blitzsplit.com |
 | Google Play dan App Store | Mendistribusikan dan memperbarui aplikasi |
 

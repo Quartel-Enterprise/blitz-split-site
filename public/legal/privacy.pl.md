@@ -1,6 +1,6 @@
 ---
 title: Polityka prywatności
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **W skrócie**
@@ -36,7 +36,7 @@ Polityka jest zgodna z brazylijską ogólną ustawą o ochronie danych osobowych
 ### Co zbieramy automatycznie
 
 - **Statystyki użytkowania** (Google Firebase Analytics): otwierane ekrany i wykonywane czynności, np. „utworzono grupę”, wraz z danymi urządzenia (model, system, język, wersja aplikacji i przybliżony kraj). Nigdy nie zawierają imion, kwot ani identyfikatorów grup, wydatków czy osób. Nie używamy identyfikatora reklamowego, a personalizacja reklam jest wyłączona. Jeśli masz konto, anonimowe albo przez Google lub Apple, statystyki zawierają jego identyfikator, losowy kod, który nie jest twoim imieniem ani adresem e-mail, abyśmy widzieli, jak aplikacja jest używana łącznie na telefonie, komputerze i w przeglądarce. Wyłączasz je na każdym urządzeniu w Profil › Prywatność i informacje › „Udostępniaj dane o użyciu”.
-- **Raporty o awariach** (Firebase Crashlytics, w aplikacjach na Androida, iPhone'a, iPada i Maca): rodzaj błędu i miejsce w kodzie, w którym wystąpił, bez komunikatów, które mogłyby zawierać twoje dane.
+- **Raporty o awariach** (Firebase Crashlytics w aplikacjach na Androida, iPhone'a, iPada i Maca oraz Sentry w przeglądarce): rodzaj błędu i miejsce w kodzie, w którym wystąpił, bez komunikatów, które mogłyby zawierać twoje dane.
 - **Token powiadomień:** adres, który Google, Apple lub przeglądarka nadaje urządzeniu, by mogło odbierać powiadomienia.
 - **Dane połączenia**, takie jak adres IP, rejestrowane przez dostawców naszej infrastruktury.
 
@@ -82,6 +82,7 @@ Te firmy przetwarzają dane w naszym imieniu, wyłącznie w zakresie opisanym tu
 | Google (Firebase) | Statystyki użytkowania, raporty o awariach i powiadomienia na Androidzie; Google Analytics serwisu internetowego; logowanie przez Google |
 | Apple | Powiadomienia na iPhonie, iPadzie i Macu; logowanie przez Apple |
 | Anthropic | Odczytywanie zdjęć paragonów |
+| Sentry | Raporty o awariach w przeglądarce |
 | Cloudflare | Hosting serwisu blitzsplit.com |
 | Google Play i App Store | Dystrybucja i aktualizacje aplikacji |
 
