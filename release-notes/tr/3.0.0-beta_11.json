@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Google ya da Apple bağlı olmayan hesaplar artık 30 gün kullanılmazsa siliniyor. Karşılama ekranı ve Profil bunu belirtiyor; Google ya da Apple bağlarsan verilerin korunur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Artık Profil › Destek ve geri bildirim bölümündeki \"Uygulamayı değerlendir\" ile uygulamayı değerlendirebilirsin.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Ana Sayfa veya Tüm harcamalar üzerinden açılan bir harcama artık grubuna uğramadan doğrudan açtığınız yere geri döner.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yüz yığınındaki \"+N\" balonunun ilk yüzün üstünde değil altında görünmesi düzeltildi.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

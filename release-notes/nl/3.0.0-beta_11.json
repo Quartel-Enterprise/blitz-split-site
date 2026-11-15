@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Een account zonder Google of Apple wordt nu na 30 dagen zonder gebruik verwijderd. Het welkomstscherm en Profiel melden dit, en met Google of Apple blijven je gegevens bewaard.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Je kunt de app nu beoordelen via Profiel › Support en feedback, met \"Beoordeel de app\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Een uitgave die je opent vanuit Start of Alle uitgaven gaat nu terug naar waar je hem opende, zonder langs de groep te gaan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De bel \"+N\" van een stapel gezichten verscheen onder het eerste gezicht in plaats van erover; dat is opgelost.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

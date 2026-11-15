@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Una cuenta sin Google ni Apple ahora se borra tras 30 días sin uso. La pantalla de bienvenida y el Perfil lo avisan, y conectar Google o Apple conserva tus datos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ahora puedes calificar la app en Perfil › Soporte y comentarios, con \"Calificar la app\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Un gasto abierto desde Inicio o Todos los gastos ahora vuelve directo a donde lo abriste, sin pasar por su grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corregimos la burbuja \"+N\" de una pila de caras, que aparecía debajo de la primera cara en lugar de encima.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

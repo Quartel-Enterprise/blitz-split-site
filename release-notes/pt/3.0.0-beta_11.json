@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Uma conta sem Google nem Apple agora é apagada após 30 dias sem uso. A tela de entrada e o Perfil avisam, e conectar Google ou Apple mantém seus dados.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Agora você pode avaliar o app em Perfil › Suporte e feedback, com \"Avaliar o app\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Uma conta aberta pelo Início ou por Todas as despesas agora volta direto para onde você a abriu, sem passar pelo grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corrigimos a bolinha \"+N\" de uma pilha de rostos, que aparecia por baixo do primeiro rosto em vez de por cima.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

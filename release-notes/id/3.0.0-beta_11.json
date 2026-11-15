@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Akun tanpa Google atau Apple sekarang dihapus setelah 30 hari tidak dipakai. Layar sambutan dan Profil memberitahukannya, dan menghubungkan Google atau Apple menjaga datamu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sekarang kamu bisa memberi nilai aplikasi di Profil › Dukungan dan masukan, lewat \"Beri nilai aplikasi\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Tagihan yang dibuka dari Beranda atau Semua pengeluaran kini kembali langsung ke tempat Anda membukanya, tanpa melewati grupnya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Memperbaiki gelembung \"+N\" pada tumpukan wajah yang muncul di bawah wajah pertama, bukan di atasnya.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}
