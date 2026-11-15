@@ -420,8 +420,8 @@
     return whole + (frac ? CURRENCY[1] + String(frac).padStart(2, "0") : "");
   }
   const money = (cents) => CURRENCY[0] + plain(cents) + (CURRENCY[3] || "");
-  // Turkish writes the sign first: %10.
-  const pct = (n) => (["fr", "de"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
+  // Turkish writes the sign first: %10. French, German and Russian put a space before it.
+  const pct = (n) => (["fr", "de", "ru"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
   // What someone types, in cents: the last "," or "." followed by one or two digits is the decimal point, whatever the
   // language, so "33,5", "33.50" and "6.000" all read as meant.
   function parseMoney(text) {
