@@ -1,6 +1,6 @@
 ---
 title: Privacy policy
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **In short**
@@ -36,7 +36,7 @@ It follows Brazil's General Data Protection Law (Law 13,709/2018, the LGPD). By 
 ### What is collected automatically
 
 - **Usage metrics** (Google Firebase Analytics): the screens opened and the actions taken, such as “created a group”, with device data (model, system, language, app version and approximate country). They never carry names, amounts or the ids of groups, bills or people. We don't use the advertising id, and ad personalization is off. If you have an account, anonymous or with Google or Apple, the metrics carry its id, a random code that isn't your name or email, so we see how the app is used across your phone, computer and browser. You turn them off on each device in Profile › Privacy and about › “Share usage data”.
-- **Crash reports** (Firebase Crashlytics, in the Android, iPhone, iPad and Mac apps): the kind of error and where in the code it happened, without the messages, which could hold your data.
+- **Crash reports** (Firebase Crashlytics in the Android, iPhone, iPad and Mac apps, and Sentry in the browser): the kind of error and where in the code it happened, with the app's version and the device's or browser's data (model, system), without the messages, which could hold your data.
 - **Notification token:** the address Google, Apple or the browser gives the device to receive notices.
 - **Connection data**, such as the IP address, logged by our infrastructure providers.
 
@@ -60,7 +60,8 @@ The app is **offline first**: what you add saves in a database on the device its
 | Sign in and recover access | Anonymous id, recovery code, Google or Apple account | Performance of a contract |
 | Read receipts | The receipt's photo, at your request | Performance of a contract |
 | Send notifications | Device token, group events | Performance of a contract; you pick which in Profile › Notifications |
-| Improve the app and fix crashes | Usage metrics, crash reports | Legitimate interest (art. 7, IX); you object by turning off “Share usage data” in Profile |
+| Improve the app | Usage metrics | Legitimate interest (art. 7, IX); you object by turning off “Share usage data” in Profile |
+| Fix crashes | Crash reports | Legitimate interest (art. 7, IX); they don't follow that setting, and you object by writing to us |
 | Security and abuse prevention | Connection data | Legitimate interest |
 | Comply with the law | What the obligation requires | Legal obligation (art. 7, II) |
 
@@ -79,9 +80,10 @@ These companies handle data on our behalf, only for what is described here:
 | Company | What for |
 | --- | --- |
 | Supabase | Database, sign in and photo storage |
-| Google (Firebase) | Usage metrics, crash reports and notifications on Android; the website's Google Analytics; sign in with Google |
+| Google (Firebase) | Usage metrics; crash reports in the Android, iPhone, iPad and Mac apps; notifications on Android; the website's Google Analytics; sign in with Google |
 | Apple | Notifications on iPhone, iPad and Mac; sign in with Apple |
 | Anthropic | Reading receipt photos |
+| Sentry | Crash reports in the browser |
 | Cloudflare | Hosting the blitzsplit.com website |
 | Google Play and the App Store | Distributing and updating the app |
 
@@ -98,6 +100,7 @@ Some of these providers store or process data outside Brazil, mostly in the Unit
 - **Without an account**, “Erase profile and sign out” clears the device and your recovery code keeps working. To erase what is on the server too, contact us (section 12).
 - **“Delete account and data”**, in Profile, deletes your profile, photo, payment keys and recovery code at once, and revokes the access Apple granted. Bills you added to groups with other people stay there for the group, without your name, as “Former member”.
 - Usage data tied to a device stays in Google Analytics for up to 14 months. After that, only aggregated numbers remain, with nothing that identifies anyone. Once your account is deleted, the id they carry no longer leads to you.
+- Crash reports are kept for up to 90 days and then deleted.
 
 ## Your rights {#rights}
 

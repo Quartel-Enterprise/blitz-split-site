@@ -1,6 +1,6 @@
 ---
 title: Politique de confidentialité
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **En bref**
@@ -36,7 +36,7 @@ Elle respecte la loi générale brésilienne sur la protection des données (loi
 ### Ce qui est collecté automatiquement
 
 - **Statistiques d’utilisation** (Google Firebase Analytics) : les écrans ouverts et les actions effectuées, comme « a créé un groupe », avec des données sur l’appareil (modèle, système, langue, version de l’app et pays approximatif). Elles ne contiennent jamais de noms, de montants ni les identifiants des groupes, des dépenses ou des personnes. Nous n’utilisons pas l’identifiant publicitaire, et la personnalisation des annonces est désactivée. Si vous avez un compte, anonyme ou avec Google ou Apple, les statistiques portent son identifiant, un code aléatoire qui n’est ni votre nom ni votre e-mail, pour voir l’usage de l’app sur votre téléphone, votre ordinateur et votre navigateur réunis. Vous les désactivez sur chaque appareil dans Profil › Confidentialité et à propos › « Partager les données d’utilisation ».
-- **Rapports de plantage** (Firebase Crashlytics, dans les apps Android, iPhone, iPad et Mac) : le type d’erreur et l’endroit du code où elle s’est produite, sans les messages, qui pourraient contenir vos données.
+- **Rapports de plantage** (Firebase Crashlytics dans les apps Android, iPhone, iPad et Mac, et Sentry dans le navigateur) : le type d’erreur et l’endroit du code où elle s’est produite, avec la version de l’app et des données de l’appareil ou du navigateur (modèle, système), sans les messages, qui pourraient contenir vos données.
 - **Jeton de notification :** l’adresse que Google, Apple ou le navigateur attribue à l’appareil pour recevoir des alertes.
 - **Données de connexion**, comme l’adresse IP, enregistrées par nos fournisseurs d’infrastructure.
 
@@ -60,7 +60,8 @@ L’app fonctionne **d’abord hors ligne** : ce que vous ajoutez est enregistr
 | Se connecter et récupérer l’accès | Identifiant anonyme, code de récupération, compte Google ou Apple | Exécution d’un contrat |
 | Lire les reçus | La photo du reçu, à votre demande | Exécution d’un contrat |
 | Envoyer des notifications | Jeton de l’appareil, événements du groupe | Exécution d’un contrat ; vous choisissez lesquelles dans Profil › Notifications |
-| Améliorer l’app et corriger les plantages | Statistiques d’utilisation, rapports de plantage | Intérêt légitime (art. 7, IX) ; vous vous y opposez en désactivant « Partager les données d’utilisation » dans Profil |
+| Améliorer l’app | Statistiques d’utilisation | Intérêt légitime (art. 7, IX) ; vous vous y opposez en désactivant « Partager les données d’utilisation » dans Profil |
+| Corriger les plantages | Rapports de plantage | Intérêt légitime (art. 7, IX) ; ils ne suivent pas ce réglage, et vous vous y opposez en nous écrivant |
 | Sécurité et prévention des abus | Données de connexion | Intérêt légitime |
 | Respecter la loi | Ce que l’obligation exige | Obligation légale (art. 7, II) |
 
@@ -79,9 +80,10 @@ Ces entreprises traitent des données pour notre compte, uniquement pour ce qui 
 | Entreprise | Pour quoi faire |
 | --- | --- |
 | Supabase | Base de données, connexion et stockage des photos |
-| Google (Firebase) | Statistiques d’utilisation, rapports de plantage et notifications sur Android ; le Google Analytics du site ; connexion avec Google |
+| Google (Firebase) | Statistiques d’utilisation ; rapports de plantage dans les apps Android, iPhone, iPad et Mac ; notifications sur Android ; le Google Analytics du site ; connexion avec Google |
 | Apple | Notifications sur iPhone, iPad et Mac ; connexion avec Apple |
 | Anthropic | Lecture des photos de reçus |
+| Sentry | Rapports de plantage dans le navigateur |
 | Cloudflare | Hébergement du site blitzsplit.com |
 | Google Play et l’App Store | Distribution et mises à jour de l’app |
 
@@ -98,6 +100,7 @@ Certains de ces fournisseurs stockent ou traitent des données hors du Brésil, 
 - **Sans compte**, « Effacer le profil et se déconnecter » vide l’appareil et votre code de récupération reste valable. Pour effacer aussi ce qui se trouve sur le serveur, contactez-nous (section 12).
 - **« Supprimer le compte et les données »**, dans Profil, supprime d’un coup votre profil, votre photo, vos clés de paiement et votre code de récupération, et révoque l’accès accordé par Apple. Les dépenses que vous avez ajoutées dans des groupes avec d’autres personnes y restent pour le groupe, sans votre nom, sous « Ancien membre ».
 - Les données d’utilisation liées à un appareil restent dans Google Analytics jusqu’à 14 mois. Ensuite, il ne reste que des chiffres agrégés, sans rien qui permette d’identifier qui que ce soit. Une fois votre compte supprimé, l’identifiant qu’elles portent ne mène plus à vous.
+- Les rapports de plantage sont conservés jusqu’à 90 jours, puis supprimés.
 
 ## Vos droits {#droits}
 

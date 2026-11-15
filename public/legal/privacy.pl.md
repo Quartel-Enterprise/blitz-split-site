@@ -1,6 +1,6 @@
 ---
 title: Polityka prywatności
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **W skrócie**
@@ -36,7 +36,7 @@ Polityka jest zgodna z brazylijską ogólną ustawą o ochronie danych osobowych
 ### Co zbieramy automatycznie
 
 - **Statystyki użytkowania** (Google Firebase Analytics): otwierane ekrany i wykonywane czynności, np. „utworzono grupę”, wraz z danymi urządzenia (model, system, język, wersja aplikacji i przybliżony kraj). Nigdy nie zawierają imion, kwot ani identyfikatorów grup, wydatków czy osób. Nie używamy identyfikatora reklamowego, a personalizacja reklam jest wyłączona. Jeśli masz konto, anonimowe albo przez Google lub Apple, statystyki zawierają jego identyfikator, losowy kod, który nie jest twoim imieniem ani adresem e-mail, abyśmy widzieli, jak aplikacja jest używana łącznie na telefonie, komputerze i w przeglądarce. Wyłączasz je na każdym urządzeniu w Profil › Prywatność i informacje › „Udostępniaj dane o użyciu”.
-- **Raporty o awariach** (Firebase Crashlytics, w aplikacjach na Androida, iPhone'a, iPada i Maca): rodzaj błędu i miejsce w kodzie, w którym wystąpił, bez komunikatów, które mogłyby zawierać twoje dane.
+- **Raporty o awariach** (Firebase Crashlytics w aplikacjach na Androida, iPhone'a, iPada i Maca oraz Sentry w przeglądarce): rodzaj błędu i miejsce w kodzie, w którym wystąpił, z wersją aplikacji i danymi urządzenia lub przeglądarki (model, system), bez komunikatów, które mogłyby zawierać twoje dane.
 - **Token powiadomień:** adres, który Google, Apple lub przeglądarka nadaje urządzeniu, by mogło odbierać powiadomienia.
 - **Dane połączenia**, takie jak adres IP, rejestrowane przez dostawców naszej infrastruktury.
 
@@ -60,7 +60,8 @@ Aplikacja działa **przede wszystkim offline**: to, co dodajesz, zapisuje się w
 | Logowanie i odzyskiwanie dostępu | Anonimowy identyfikator, kod odzyskiwania, konto Google lub Apple | Wykonanie umowy |
 | Odczytywanie paragonów | Zdjęcie paragonu, na twoją prośbę | Wykonanie umowy |
 | Wysyłanie powiadomień | Token urządzenia, zdarzenia w grupie | Wykonanie umowy; wybierasz je w sekcji Profil › Powiadomienia |
-| Ulepszanie aplikacji i naprawianie awarii | Statystyki użytkowania, raporty o awariach | Prawnie uzasadniony interes (art. 7 pkt IX); sprzeciw zgłaszasz, wyłączając „Udostępniaj dane o użyciu” w Profilu |
+| Ulepszanie aplikacji | Statystyki użytkowania | Prawnie uzasadniony interes (art. 7 pkt IX); sprzeciw zgłaszasz, wyłączając „Udostępniaj dane o użyciu” w Profilu |
+| Naprawianie awarii | Raporty o awariach | Prawnie uzasadniony interes (art. 7 pkt IX); nie zależą od tego ustawienia, a sprzeciw zgłaszasz, pisząc do nas |
 | Bezpieczeństwo i zapobieganie nadużyciom | Dane połączenia | Prawnie uzasadniony interes |
 | Przestrzeganie prawa | To, czego wymaga dany obowiązek | Obowiązek prawny (art. 7 pkt II) |
 
@@ -79,9 +80,10 @@ Te firmy przetwarzają dane w naszym imieniu, wyłącznie w zakresie opisanym tu
 | Firma | W jakim celu |
 | --- | --- |
 | Supabase | Baza danych, logowanie i przechowywanie zdjęć |
-| Google (Firebase) | Statystyki użytkowania, raporty o awariach i powiadomienia na Androidzie; Google Analytics serwisu internetowego; logowanie przez Google |
+| Google (Firebase) | Statystyki użytkowania; raporty o awariach w aplikacjach na Androida, iPhone'a, iPada i Maca; powiadomienia na Androidzie; Google Analytics serwisu internetowego; logowanie przez Google |
 | Apple | Powiadomienia na iPhonie, iPadzie i Macu; logowanie przez Apple |
 | Anthropic | Odczytywanie zdjęć paragonów |
+| Sentry | Raporty o awariach w przeglądarce |
 | Cloudflare | Hosting serwisu blitzsplit.com |
 | Google Play i App Store | Dystrybucja i aktualizacje aplikacji |
 
@@ -98,6 +100,7 @@ Niektórzy z tych dostawców przechowują lub przetwarzają dane poza Brazylią,
 - **Bez konta** „Wymaż profil i wyloguj się” czyści urządzenie, a twój kod odzyskiwania nadal działa. Aby usunąć także to, co jest na serwerze, skontaktuj się z nami (sekcja 12).
 - **„Usuń konto i dane”** w sekcji Profil od razu usuwa twój profil, zdjęcie, klucze płatnicze i kod odzyskiwania oraz cofa dostęp przyznany przez Apple. Wydatki dodane przez ciebie w grupach z innymi osobami zostają w nich dla grupy, bez twojego imienia, jako „Były członek”.
 - Dane o użytkowaniu powiązane z urządzeniem pozostają w Google Analytics do 14 miesięcy. Potem zostają tylko zbiorcze liczby, bez niczego, co pozwalałoby kogokolwiek zidentyfikować. Po usunięciu konta identyfikator, który zawierają, nie prowadzi już do ciebie.
+- Raporty o awariach przechowujemy do 90 dni, a potem je usuwamy.
 
 ## Twoje prawa {#prawa}
 

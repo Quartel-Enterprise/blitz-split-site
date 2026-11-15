@@ -1,6 +1,6 @@
 ---
 title: Datenschutzerklärung
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **Kurz gesagt**
@@ -36,7 +36,7 @@ Sie folgt dem brasilianischen Datenschutzgesetz (Gesetz 13.709/2018, LGPD). Mit 
 ### Was automatisch erfasst wird
 
 - **Nutzungsstatistiken** (Google Firebase Analytics): die geöffneten Bildschirme und ausgeführten Aktionen, etwa „Gruppe erstellt“, mit Gerätedaten (Modell, System, Sprache, App-Version und ungefähres Land). Sie enthalten nie Namen, Beträge oder die IDs von Gruppen, Ausgaben oder Personen. Wir verwenden keine Werbe-ID, und personalisierte Werbung ist deaktiviert. Wenn du ein Konto hast, anonym oder mit Google oder Apple, tragen die Statistiken dessen ID, einen zufälligen Code, der weder dein Name noch deine E-Mail-Adresse ist, damit wir sehen, wie die App über dein Handy, deinen Computer und deinen Browser hinweg genutzt wird. Du schaltest sie auf jedem Gerät unter Profil › Datenschutz und Info › „Nutzungsdaten teilen“ aus.
-- **Absturzberichte** (Firebase Crashlytics, in den Apps für Android, iPhone, iPad und Mac): die Art des Fehlers und wo im Code er auftrat, ohne die Fehlermeldungen, die deine Daten enthalten könnten.
+- **Absturzberichte** (Firebase Crashlytics in den Apps für Android, iPhone, iPad und Mac sowie Sentry im Browser): die Art des Fehlers und wo im Code er auftrat, mit der App-Version und Daten des Geräts oder Browsers (Modell, System), ohne die Fehlermeldungen, die deine Daten enthalten könnten.
 - **Mitteilungs-Token:** die Adresse, die Google, Apple oder der Browser dem Gerät gibt, damit es Mitteilungen empfangen kann.
 - **Verbindungsdaten** wie die IP-Adresse, die unsere Infrastrukturanbieter protokollieren.
 
@@ -60,7 +60,8 @@ Die App funktioniert **offline zuerst**: Was du einträgst, wird in einer Datenb
 | Anmelden und Zugriff wiederherstellen | Anonyme ID, Wiederherstellungscode, Google- oder Apple-Konto | Vertragserfüllung |
 | Belege lesen | Das Foto des Belegs, auf deinen Wunsch | Vertragserfüllung |
 | Mitteilungen senden | Geräte-Token, Ereignisse der Gruppe | Vertragserfüllung; welche, wählst du unter Profil › Mitteilungen |
-| Die App verbessern und Abstürze beheben | Nutzungsstatistiken, Absturzberichte | Berechtigtes Interesse (Art. 7, IX); du widersprichst, indem du „Nutzungsdaten teilen“ in Profil ausschaltest |
+| Die App verbessern | Nutzungsstatistiken | Berechtigtes Interesse (Art. 7, IX); du widersprichst, indem du „Nutzungsdaten teilen“ in Profil ausschaltest |
+| Abstürze beheben | Absturzberichte | Berechtigtes Interesse (Art. 7, IX); sie folgen dieser Einstellung nicht, und du widersprichst, indem du uns schreibst |
 | Sicherheit und Schutz vor Missbrauch | Verbindungsdaten | Berechtigtes Interesse |
 | Gesetzliche Pflichten erfüllen | Was die Pflicht verlangt | Rechtliche Verpflichtung (Art. 7, II) |
 
@@ -79,9 +80,10 @@ Diese Unternehmen verarbeiten Daten in unserem Auftrag, nur für das hier Beschr
 | Unternehmen | Wofür |
 | --- | --- |
 | Supabase | Datenbank, Anmeldung und Speicherung von Fotos |
-| Google (Firebase) | Nutzungsstatistiken, Absturzberichte und Mitteilungen auf Android; Google Analytics der Website; Anmeldung mit Google |
+| Google (Firebase) | Nutzungsstatistiken; Absturzberichte in den Apps für Android, iPhone, iPad und Mac; Mitteilungen auf Android; Google Analytics der Website; Anmeldung mit Google |
 | Apple | Mitteilungen auf iPhone, iPad und Mac; Anmeldung mit Apple |
 | Anthropic | Lesen von Belegfotos |
+| Sentry | Absturzberichte im Browser |
 | Cloudflare | Hosting der Website blitzsplit.com |
 | Google Play und der App Store | Verteilung und Aktualisierung der App |
 
@@ -98,6 +100,7 @@ Einige dieser Anbieter speichern oder verarbeiten Daten außerhalb Brasiliens, v
 - **Ohne Konto** leert „Profil löschen und abmelden“ das Gerät, und dein Wiederherstellungscode funktioniert weiter. Um auch zu löschen, was auf dem Server liegt, schreib uns (Abschnitt 12).
 - **„Konto und Daten löschen“** unter Profil löscht dein Profil, dein Foto, deine Zahlungsdaten und deinen Wiederherstellungscode auf einmal und widerruft den Zugriff, den Apple gewährt hat. Ausgaben, die du in Gruppen mit anderen eingetragen hast, bleiben dort für die Gruppe, ohne deinen Namen, als „Ehemaliges Mitglied“.
 - Nutzungsdaten, die mit einem Gerät verknüpft sind, bleiben bis zu 14 Monate in Google Analytics. Danach bleiben nur zusammengefasste Zahlen, die niemanden identifizieren. Sobald dein Konto gelöscht ist, führt die ID, die sie tragen, nicht mehr zu dir.
+- Absturzberichte werden bis zu 90 Tage aufbewahrt und danach gelöscht.
 
 ## Deine Rechte {#rechte}
 

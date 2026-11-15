@@ -1,6 +1,6 @@
 ---
 title: Gizlilik politikası
-updated: 2026-11-13
+updated: 2026-11-15
 ---
 
 > **Kısaca**
@@ -36,7 +36,7 @@ Bu politika, Brezilya Genel Veri Koruma Kanunu'na (13.709/2018 sayılı Kanun, L
 ### Otomatik olarak toplananlar
 
 - **Kullanım ölçümleri** (Google Firebase Analytics): açılan ekranlar ve yapılan işlemler, örneğin “grup oluşturdu”, cihaz verileriyle birlikte (model, sistem, dil, uygulama sürümü ve yaklaşık ülke). Hiçbir zaman ad, tutar ya da grupların, masrafların veya kişilerin kimliklerini içermez. Reklam kimliğini kullanmayız ve reklam kişiselleştirmesi kapalıdır. Anonim ya da Google veya Apple ile bir hesabın varsa ölçümler, adın ya da e-postan olmayan rastgele bir kod olan hesap kimliğini taşır; böylece uygulamanın telefonunda, bilgisayarında ve tarayıcında birlikte nasıl kullanıldığını görürüz. Bunları her cihazda Profil › Gizlilik ve hakkında › “Kullanım verilerini paylaş” ile kapatırsın.
-- **Çökme raporları** (Firebase Crashlytics, Android, iPhone, iPad ve Mac uygulamalarında): hatanın türü ve kodda nerede oluştuğu; verilerini içerebilecek mesajlar olmadan.
+- **Çökme raporları** (Android, iPhone, iPad ve Mac uygulamalarında Firebase Crashlytics, tarayıcıda Sentry): hatanın türü ve kodda nerede oluştuğu, uygulamanın sürümü ve cihaz ya da tarayıcı bilgileriyle (model, sistem); verilerini içerebilecek mesajlar olmadan.
 - **Bildirim belirteci:** Google'ın, Apple'ın ya da tarayıcının, bildirim alabilmesi için cihaza verdiği adres.
 - **Bağlantı verileri**, örneğin IP adresi; altyapı sağlayıcılarımız tarafından kaydedilir.
 
@@ -60,7 +60,8 @@ Uygulama **önce çevrimdışı** çalışır: eklediğin her şey cihazın kend
 | Giriş yapmak ve erişimi kurtarmak | Anonim kimlik, kurtarma kodu, Google veya Apple hesabı | Sözleşmenin ifası |
 | Fişleri okumak | Fişin fotoğrafı, senin isteğinle | Sözleşmenin ifası |
 | Bildirim göndermek | Cihaz belirteci, grup olayları | Sözleşmenin ifası; hangilerini alacağını Profil › Bildirimler'den seçersin |
-| Uygulamayı iyileştirmek ve çökmeleri düzeltmek | Kullanım ölçümleri, çökme raporları | Meşru menfaat (md. 7, IX); Profil'de “Kullanım verilerini paylaş” seçeneğini kapatarak itiraz edersin |
+| Uygulamayı iyileştirmek | Kullanım ölçümleri | Meşru menfaat (md. 7, IX); Profil'de “Kullanım verilerini paylaş” seçeneğini kapatarak itiraz edersin |
+| Çökmeleri düzeltmek | Çökme raporları | Meşru menfaat (md. 7, IX); bu ayara bağlı değildir, bize yazarak itiraz edersin |
 | Güvenlik ve kötüye kullanımın önlenmesi | Bağlantı verileri | Meşru menfaat |
 | Yasalara uymak | Yükümlülüğün gerektirdiği veriler | Hukuki yükümlülük (md. 7, II) |
 
@@ -79,9 +80,10 @@ Bu şirketler verileri bizim adımıza ve yalnızca burada anlatılan amaçlar i
 | Şirket | Ne için |
 | --- | --- |
 | Supabase | Veritabanı, giriş ve fotoğraf depolama |
-| Google (Firebase) | Android'de kullanım ölçümleri, çökme raporları ve bildirimler; web sitesinin Google Analytics'i; Google ile giriş |
+| Google (Firebase) | Kullanım ölçümleri; Android, iPhone, iPad ve Mac uygulamalarında çökme raporları; Android'de bildirimler; web sitesinin Google Analytics'i; Google ile giriş |
 | Apple | iPhone, iPad ve Mac'te bildirimler; Apple ile giriş |
 | Anthropic | Fiş fotoğraflarını okumak |
+| Sentry | Tarayıcıdaki çökme raporları |
 | Cloudflare | blitzsplit.com web sitesini barındırmak |
 | Google Play ve App Store | Uygulamayı dağıtmak ve güncellemek |
 
@@ -98,6 +100,7 @@ Bu sağlayıcılardan bazıları verileri Brezilya dışında, çoğunlukla Amer
 - **Hesapsız** kullanıyorsan, “Profili sil ve çıkış yap” cihazı temizler ve kurtarma kodun çalışmaya devam eder. Sunucudakileri de silmek için bize ulaş (12. bölüm).
 - Profil'deki **“Hesabı ve verileri sil”**, profilini, fotoğrafını, ödeme anahtarlarını ve kurtarma kodunu anında siler ve Apple'a verdiğin erişimi iptal eder. Başkalarıyla olan gruplara eklediğin masraflar, grup için orada kalır; adın olmadan, “Eski üye” olarak.
 - Bir cihaza bağlı kullanım verileri Google Analytics'te en fazla 14 ay kalır. Bundan sonra, kimseyi tanımlayan hiçbir şey içermeyen yalnızca toplu sayılar kalır. Hesabın silindiğinde, taşıdıkları kimlik artık sana götürmez.
+- Çökme raporları en fazla 90 gün saklanır, sonra silinir.
 
 ## Hakların {#rights}
 
