@@ -177,7 +177,7 @@
   }
   syncToc();
   wide.addEventListener("change", syncToc);
-  const tocLinks = [...document.querySelectorAll(`[data-lang="${lang}"] .toc a, .toc[data-lang="${lang}"] a`)];
+  const tocLinks = [...document.querySelectorAll(`[data-lang="${picked}"] .toc a, .toc[data-lang="${picked}"] a`)];
   if (tocLinks.length && "IntersectionObserver" in window) {
     const byId = new Map(tocLinks.map((a) => [a.hash.slice(1), a]));
     const observer = new IntersectionObserver((entries) => {

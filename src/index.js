@@ -62,8 +62,9 @@ const STATIC_PAGES = {
 const STATIC_IMAGE = /^\/og\/(comment|download|privacy|terms)\.png$/;
 // Why: the language a link asks its preview in, the app's own when it shared the link; the pages read the same
 // parameter (boot.js), so the page that opens speaks it too. Lowercase only, as boot.js matches it: a "PT" would
-// otherwise preview in Portuguese and open a page that doesn't.
-const LANGUAGE = /^[a-z]{2,3}$/;
+// otherwise preview in Portuguese and open a page that doesn't. The one exception is Portugal's Portuguese, pt-PT, the
+// exact tag the apps share and the page picks.
+const LANGUAGE = /^(?:[a-z]{2,3}|pt-PT)$/;
 
 // The folders whose files something other than a browser asks for by name: see fileOrNotFound.
 const FILE_OR_NOT_FOUND = ["/.well-known/", "/legal/", "/release-notes/"];

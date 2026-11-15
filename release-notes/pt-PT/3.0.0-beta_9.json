@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Os valores e os textos já não se partem em duas linhas nem ficam cortados em ecrãs pequenos, dobráveis e com letra grande.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Textos, botões e contornos difíceis de ler têm agora mais contraste, nos temas claro e escuro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar num campo no navegador do iPhone já não faz zoom na página.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

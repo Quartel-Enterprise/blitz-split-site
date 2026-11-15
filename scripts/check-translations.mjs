@@ -21,7 +21,7 @@ import vm from "node:vm";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC = join(ROOT, "public");
 // The languages the legal pages are written in full, every language the site speaks.
-const LEGAL_LANGS = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
+const LEGAL_LANGS = ["en", "pt", "pt-PT", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja"];
 // Keys of SITE_STRINGS that site.js reads by name instead of from a data-i18n attribute.
 const PAGE_KEYS = ["title", "description"];
 // Keys whose English markup is right in every language but the ones that set them: the product's name is Blitz Split
@@ -109,7 +109,7 @@ function checkPage(file) {
   const used = new Set([...html.matchAll(/\sdata-i18n(?:-html|-label)?="([^"]+)"/g)].map((m) => m[1]));
 
   const blocks = [...html.matchAll(/\sdata-lang="([^"]+)"/g)].map((m) => m[1]);
-  const pageLangs = blocks.length > 0 ? LEGAL_LANGS.filter((lang) => lang !== "en") : translated;
+  const pageLangs = blocks.length > 0 ? LEGAL_LANGS.filter((lang) => lang !== "en" && !variants.includes(lang)) : translated;
 
   const at = html.indexOf("window.SITE_STRINGS = {");
   if (used.size > 0 && at < 0) fail(file, "uses data-i18n keys but sets no window.SITE_STRINGS");

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "O Blitz Split passa a falar alemão, italiano e polaco: segue o idioma do aparelho, ou escolhes um em Perfil › Idioma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada categoria tem agora a sua própria cor, e as Estatísticas desenham cada categoria e cada pessoa na sua cor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Agora podes mudar a cor de uma categoria, no formulário da categoria ou no Mapa de categorias.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "O menu de uma despesa em Despesas tem uma opção nova, Duplicar: abre uma despesa nova já preenchida como a original.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos e as despesas já não desaparecem por um instante quando voltas à app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A pesquisa já não fecha sozinha quando ainda não tens nenhum grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Um grupo novo começa agora como Evento, o primeiro tipo da lista.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sem nenhum grupo, Convidar com ligação ou QR mostra agora só o botão Novo grupo em vez de botões que não se podiam usar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Um talão que demora mais tempo a ser lido já não acaba em erro de ligação.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "As linhas de categoria nas Estatísticas ficaram mais limpas: já não listam o valor de cada subcategoria.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
