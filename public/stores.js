@@ -59,6 +59,8 @@
     const target = STORES[wanted].url;
     if (target) { location.replace(target); return; }
     history.replaceState(null, "", "/" + location.search + "#get");
+    // Why: with defer this runs once the page is parsed and painted, so the browser no longer goes to #get by itself.
+    document.getElementById("get")?.scrollIntoView();
   }
 
   const TEXT = window.localized({
@@ -315,6 +317,6 @@
     dialog.showModal();
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", setUp);
-  else setUp();
+  // Loaded with defer, so the page is already parsed.
+  setUp();
 })();

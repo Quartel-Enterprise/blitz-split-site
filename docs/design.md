@@ -39,9 +39,9 @@ scripts.
 
 The landing moves (`public/site.css`, "Motion"): the hero comes in on load, word block by word block, then the phone
 and its two cards; the words and the phone only move into place, never fade in (the first screen is there from the
-first paint, which Largest Contentful Paint and Speed Index time), and only the two small cards pop in; the sections rise as they scroll into
-view, those that come in together one after another (`public/site.js`), and each card's picture plays once it is in (the bars fill, the chips and rows come one by one);
-the cards lift on hover with a light that follows the pointer, and the header's line fills as the page scrolls. It all
+first paint, which Largest Contentful Paint and Speed Index time), and only the two small cards pop in; the sections
+rise as they scroll into view, those that come in together one after another (`public/site.js`), and each card's
+picture plays once it is in (the bars fill, the chips and rows come one by one); the cards lift on hover with a light that follows the pointer, and the header's line fills as the page scrolls. It all
 hangs on `.motion`, which `public/boot.js` puts on `<html>` before the first paint unless the visitor asked for reduced
 motion (then everything just shows, still) or a theme is pinned with `?theme=`, so the design board's captures show
 every section.

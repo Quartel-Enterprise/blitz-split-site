@@ -931,8 +931,8 @@ label.split-row { cursor: pointer; }
 :root.motion .hero-grid > div:first-child > :nth-child(5) { animation-delay: 0.42s; }
 /* Why: what the first screen shows is drawn from the first paint and only moves into place, never fades in: the
    heading and the lead are what Largest Contentful Paint times, and Speed Index compares each frame's colors with the
-   last one's, so a hero that starts transparent or blurred scores as unfinished until its entrance ends. Only the phone's two small
-   cards pop in. */
+   last one's, so a hero that starts transparent or blurred scores as unfinished until its entrance ends. Only the
+   phone's two small cards pop in. */
 @keyframes rise-shown { from { transform: translateY(18px); } }
 :root.motion .hero h1 .accent { animation: sweep 1.8s var(--ease-out) 0.7s backwards; }
 :root.motion .invite { animation: rise 0.7s var(--ease-out) backwards; }
