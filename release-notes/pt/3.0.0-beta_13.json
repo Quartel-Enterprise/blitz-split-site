@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "O app agora fala russo e ucraniano: escolha \"Русский\" ou \"Українська\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem dividir em rublo russo (RUB) e hryvnia ucraniana (UAH), e um grupo criado na Rússia ou na Ucrânia já começa na moeda de lá.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O Perfil ganhou a preferência \"Formato de hora\": siga o sistema ou mostre sempre as horas no formato 24 horas (14:30) ou 12 horas com AM e PM (2:30 PM), nas contas, na Atividade, nos comentários e na escolha da hora.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Com o celular deitado, e em tablets, o \"Rachar conta\" de um grupo agora fica na barra de cima em vez de flutuar sobre as contas.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Com Cores dinâmicas ligadas, o que você deve continua laranja em vez de ficar vermelho, e nunca se confunde com o verde do que você tem a receber.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Na Atividade, cada linha agora mostra a foto do grupo ao lado do nome dele, quando o grupo tem uma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Seu saldo neste grupo não repete mais o valor numa segunda linha quando você só tem a receber ou só deve.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na Divisão padrão, a parte de cada pessoa na conta de exemplo agora tem uma cor própria, com um ponto da mesma cor antes do nome, e quem está lado a lado na lista nunca parece uma pessoa só.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A barra do topo de uma conta agora mostra a foto do grupo, ou as iniciais dele, ao lado do nome do grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar na foto de alguém agora leva a foto até o perfil da pessoa, e de volta quando você retorna.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Uma conta aberta pelas Despesas do grupo agora se move até o lugar como já fazia pelo Início, e a foto do grupo nas contas do Início voa até a barra do topo da conta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Rachar conta\" agora também fica no topo de Saldos e Contatos, e na tela do grupo foi para a barra do topo em vez de flutuar sobre a lista, com \"Adicionar pessoas\" agora no menu ⋯. Ele começa com o nome e encolhe para o ícone conforme você rola.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Em Grupos, tocar no card de Saldo geral abre Saldos.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Convidar pessoas\" no grupo agora se chama \"Adicionar pessoas\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "No iPad, as abas abrem na barra lateral, e quando ficam na barra do topo, como com o iPad em pé, \"Rachar conta\" continua à vista ali, enquanto os outros botões passam para uma fileira logo abaixo.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Em \"Rachar conta\", o \"Pago com\" agora aparece também quando outra pessoa pagou a conta, apagado: um toque explica que só quem pagou pode marcar com o que pagou.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sem conta, seu código de recuperação agora é de 12 palavras numeradas, mais fáceis de anotar, e para recuperar você digita uma palavra por campo, com sugestões enquanto digita. Códigos guardados antes desta versão não funcionam mais: guarde o novo ou conecte o Google ou a Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em Despesas por categoria, cada despesa agora tem o mesmo menu ⋮ das despesas do grupo: edite, duplique, compartilhe ou apague sem precisar abrir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em telas largas (celular deitado, tablets, Mac e web), Despesas por categoria mostra as categorias e o total numa coluna ao lado das despesas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em alemão, holandês e japonês, as frases da Atividade agora seguem a ordem natural de cada idioma, sem dois-pontos antes do nome da conta ou do grupo.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "A primeira letra de \"Adicionar foto\" nos anexos de uma conta não aparece mais cortada.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Em Grupos, o botão de criar grupo agora diz \"+ Grupo\" e não quebra mais em duas linhas.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "As Notas de versão agora mostram a versão que você acabou de instalar, em vez de esperar até um dia para trazer as novidades dela.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nas Estatísticas do grupo, o botão do período (\"Todo o período\") não quebra mais em duas linhas: as datas vão para baixo dele quando não cabem juntos.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

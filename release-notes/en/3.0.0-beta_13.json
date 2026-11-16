@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "The app now speaks Russian and Ukrainian: pick \"Русский\" or \"Українська\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Russian ruble (RUB) and the Ukrainian hryvnia (UAH), and a group made in Russia or Ukraine starts in its currency.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profile has a new \"Time format\" preference: follow the system, or always show times in 24-hour (14:30) or 12-hour with AM and PM (2:30 PM), in bills, Activity, comments and the time pickers.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "With the phone lying down, and on tablets, a group's \"Split a bill\" now sits in the top bar instead of floating over the bills.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "With Dynamic colors on, what you owe stays orange instead of turning red, so it never looks like the green of what comes back to you.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Activity, each line now shows the group's photo next to its name, when the group has one.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Your balance in this group no longer repeats the amount on a second line when you only get back or only owe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Default split, each person's part of the example bill now has a color of its own, with a matching dot before their name, so people next to each other in the list never look like one.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A bill's top bar now shows the group's photo, or its initials, next to the group's name.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tapping someone's photo now carries it into their profile, and back again when you return.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "A bill opened from a group's Expenses now moves into place as it does from Home, and the group's photo on Home's bills flies into the bill's top bar.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Split a bill\" is now also at the top of Balances and Contacts, and on the group screen it moved to the top bar instead of floating over the list, with \"Add people\" now in the ⋯ menu. It starts with its name and shrinks to its icon as you scroll.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In Groups, tapping the Overall balance card opens Balances.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Invite people\" in a group is now called \"Add people\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "On iPad, the tabs open in the sidebar, and when they sit in the top bar, as with the iPad upright, \"Split a bill\" stays in sight there while the other buttons move to a row just below.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In \"Split a bill\", \"Paid with\" now also shows when someone else paid the bill, dimmed: tapping it explains that only those who paid can mark what they paid with.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Without an account, your recovery code is now 12 numbered words, easier to write down, and restoring takes them one word per field, suggesting each word as you type. Codes saved before this version no longer work: save the new one, or connect Google or Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Expenses by category, each bill now has the same ⋮ menu as in a group's expenses: edit, duplicate, share or delete it without opening it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "On wide screens (a phone lying down, tablets, the Mac and the web), Expenses by category keeps its categories and total in a column beside the bills.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In German, Dutch and Japanese, Activity's sentences now read in each language's natural word order, with no colon before the bill or group's name.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "The first letter of \"Add photo\" under a bill's attachments is no longer cut off.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Groups, the button to create a group now reads \"+ Group\" and no longer breaks onto two lines.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Release notes now show the version you just installed, instead of waiting up to a day to bring its notes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In a group's Statistics, the period button (\"All time\") no longer breaks onto two lines: the dates move under it when both don't fit.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

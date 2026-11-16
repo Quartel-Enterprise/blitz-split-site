@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikacja mówi teraz po rosyjsku i ukraińsku: wybierz „Русский” lub „Українська” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w rublach rosyjskich (RUB) i hrywnach ukraińskich (UAH), a grupa założona w Rosji lub na Ukrainie startuje w ich walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "W Profilu jest nowe ustawienie „Format godziny”: zgodnie z systemem albo zawsze w formacie 24-godzinnym (14:30) lub 12-godzinnym z AM i PM (2:30 PM) — w wydatkach, Aktywności, komentarzach i przy wyborze godziny.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Przy telefonie w poziomie i na tabletach „Podziel wydatek” w grupie jest teraz na górnym pasku, zamiast unosić się nad wydatkami.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Przy włączonych Kolorach dynamicznych to, co jesteś winien, zostaje pomarańczowe zamiast czerwonego i nie myli się z zielenią tego, co masz odzyskać.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "W Aktywności każdy wiersz pokazuje teraz zdjęcie grupy obok jej nazwy, jeśli grupa je ma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Twoje saldo w tej grupie nie powtarza już kwoty w drugim wierszu, gdy tylko masz coś do odzyskania albo tylko do oddania.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "W Domyślnym podziale część każdej osoby w przykładowym rachunku ma teraz własny kolor, z kropką w tym samym kolorze przed imieniem, więc sąsiednie osoby na liście nigdy nie wyglądają jak jedna.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Górny pasek wydatku pokazuje teraz zdjęcie grupy lub jej inicjały obok nazwy grupy.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dotknięcie czyjegoś zdjęcia przenosi je teraz do profilu tej osoby, a po powrocie z powrotem.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Wydatek otwarty z Wydatków grupy przesuwa się teraz na miejsce tak jak ze Strony głównej, a zdjęcie grupy przy wydatkach na Stronie głównej przelatuje na górny pasek wydatku.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Podziel wydatek” jest teraz na górze także w Saldach i Kontaktach, a na ekranie grupy przeniósł się na górny pasek zamiast unosić się nad listą; „Dodaj osoby” jest teraz w menu ⋯. Zaczyna z nazwą i zmniejsza się do ikony, gdy przewijasz.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "W Grupach dotknięcie karty Saldo ogólne otwiera Salda.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "„Zaproś osoby” w grupie nazywa się teraz „Dodaj osoby”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPadzie karty otwierają się na pasku bocznym, a gdy są na górnym pasku, jak przy iPadzie w pionie, „Podziel wydatek” zostaje tam na widoku, natomiast pozostałe przyciski przechodzą do rzędu tuż pod nim.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "W „Podziel wydatek” pole „Zapłacono za pomocą” pojawia się teraz także, wyszarzone, gdy zapłacił ktoś inny: dotknięcie wyjaśnia, że tylko płacący mogą zaznaczyć, czym zapłacili.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bez konta twój kod odzyskiwania to teraz 12 ponumerowanych słów, łatwiejszych do zapisania, a przy odzyskiwaniu wpisujesz jedno słowo na pole, z podpowiedziami podczas pisania. Kody zapisane przed tą wersją już nie działają: zapisz nowy albo połącz Google lub Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "W Wydatkach według kategorii każdy wydatek ma teraz to samo menu ⋮ co w wydatkach grupy: edytuj, duplikuj, udostępnij lub usuń go bez otwierania.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na szerokich ekranach (telefon w poziomie, tablety, Mac i web) Wydatki według kategorii pokazują kategorie i sumę w kolumnie obok wydatków.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Po niemiecku, niderlandzku i japońsku zdania w Aktywności mają teraz naturalny szyk każdego języka, bez dwukropka przed nazwą wydatku lub grupy.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Pierwsza litera „Dodaj zdjęcie” w załącznikach wydatku nie jest już ucięta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "W Grupach przycisk tworzenia grupy ma teraz napis „+ Grupa” i nie łamie się już na dwie linie.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Informacje o wersji pokazują teraz właśnie zainstalowaną wersję, zamiast czekać nawet dzień na jej nowości.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "W Statystykach grupy przycisk okresu („Cały czas”) nie łamie się już na dwie linie: daty przechodzą pod niego, gdy oba się nie mieszczą.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikasi kini berbahasa Rusia dan Ukraina: pilih \"Русский\" atau \"Українська\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam rubel Rusia (RUB) dan hryvnia Ukraina (UAH), dan grup yang dibuat di Rusia atau Ukraina langsung memakai mata uangnya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil kini punya preferensi \"Format waktu\": ikuti sistem, atau selalu tampilkan jam dalam format 24 jam (14:30) atau 12 jam dengan AM dan PM (2:30 PM), di tagihan, Aktivitas, komentar, dan saat memilih jam.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saat ponsel dalam posisi mendatar, dan di tablet, \"Bagi tagihan\" sebuah grup kini ada di bilah atas, tidak lagi melayang di atas tagihan.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Saat Warna dinamis aktif, utangmu tetap oranye alih-alih merah, jadi tidak pernah tertukar dengan hijau dari yang akan kamu terima.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Di Aktivitas, setiap baris kini menampilkan foto grup di samping namanya, jika grup punya foto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saldomu di grup ini tidak lagi mengulang jumlahnya di baris kedua saat kamu hanya menerima atau hanya berutang.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di Pembagian default, bagian setiap orang pada tagihan contoh kini punya warna sendiri, dengan titik berwarna sama di depan namanya, jadi dua orang yang bersebelahan di daftar tidak pernah terlihat seperti satu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bilah atas sebuah tagihan kini menampilkan foto grup, atau inisialnya, di samping nama grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mengetuk foto seseorang kini membawa foto itu ke profilnya, dan kembali lagi saat kamu kembali.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Tagihan yang dibuka dari Pengeluaran grup kini bergerak ke tempatnya seperti dari Beranda, dan foto grup di tagihan Beranda terbang ke bilah atas tagihan.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Bagi tagihan\" kini juga ada di atas Saldo dan Kontak, dan di layar grup pindah ke bilah atas alih-alih melayang di atas daftar, dengan \"Tambah orang\" kini di menu ⋯. Tombolnya mulai dengan nama dan mengecil jadi ikon saat kamu menggulir.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Di Grup, mengetuk kartu Saldo keseluruhan kini membuka Saldo.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Undang orang\" di grup kini bernama \"Tambah orang\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di iPad, tab kini terbuka di bilah samping, dan saat tab ada di bilah atas, seperti saat iPad tegak, \"Bagi tagihan\" tetap terlihat di sana, sementara tombol lainnya pindah ke baris tepat di bawahnya.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Di \"Bagi tagihan\", \"Dibayar dengan\" kini juga tampil redup saat orang lain yang membayar: mengetuknya menjelaskan bahwa hanya yang membayar yang bisa menandai cara bayarnya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tanpa akun, kode pemulihanmu sekarang berupa 12 kata bernomor yang lebih mudah dicatat, dan saat memulihkan kamu mengetik satu kata per kolom, dengan saran saat mengetik. Kode yang disimpan sebelum versi ini tidak berlaku lagi: simpan yang baru, atau hubungkan Google atau Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di Pengeluaran per kategori, setiap pengeluaran kini punya menu ⋮ yang sama seperti di pengeluaran grup: edit, duplikat, bagikan, atau hapus tanpa membukanya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di layar lebar (ponsel mendatar, tablet, Mac, dan web), Pengeluaran per kategori menampilkan kategori dan totalnya di kolom samping pengeluaran.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dalam bahasa Jerman, Belanda, dan Jepang, kalimat di Aktivitas kini mengikuti urutan kata alami tiap bahasa, tanpa titik dua sebelum nama tagihan atau grup.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Huruf pertama \"Tambah foto\" di lampiran tagihan tidak lagi terpotong.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Di Grup, tombol untuk membuat grup kini bertuliskan \"+ Grup\" dan tidak lagi terpotong jadi dua baris.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Catatan rilis kini menampilkan versi yang baru kamu pasang, tanpa menunggu hingga sehari untuk membawa catatannya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di Statistik grup, tombol periode (\"Sepanjang waktu\") tidak lagi terpotong jadi dua baris: tanggalnya pindah ke bawah saat keduanya tidak muat.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

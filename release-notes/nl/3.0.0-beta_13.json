@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "De app spreekt nu Russisch en Oekraïens: kies \"Русский\" of \"Українська\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Russische roebel (RUB) en Oekraïense hryvnja (UAH), en een groep die in Rusland of Oekraïne wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel heeft een nieuwe voorkeur, \"Tijdnotatie\": volg het systeem, of toon tijden altijd met de 24-uursklok (14:30) of de 12-uursklok met AM en PM (2:30 PM), bij uitgaven, in Activiteit, bij reacties en bij het kiezen van een tijd.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Met de telefoon liggend, en op tablets, staat \"Uitgave verdelen\" van een groep nu in de bovenste balk in plaats van boven de uitgaven te zweven.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Met Dynamische kleuren aan blijft wat je schuldig bent oranje in plaats van rood, zodat het nooit lijkt op het groen van wat je terugkrijgt.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Activiteit toont elke regel nu de foto van de groep naast de naam, als de groep er een heeft.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Je saldo in deze groep herhaalt het bedrag niet meer op een tweede regel als je alleen iets krijgt of alleen iets schuldig bent.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Standaardverdeling heeft het deel van elke persoon in de voorbeeldrekening nu een eigen kleur, met een bijpassende stip voor de naam, zodat buren in de lijst nooit op één persoon lijken.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De bovenbalk van een uitgave toont nu de foto van de groep, of haar initialen, naast de groepsnaam.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tik je op iemands foto, dan beweegt die nu mee naar het profiel, en weer terug als je teruggaat.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Een uitgave die je opent vanuit de Uitgaven van een groep schuift nu op haar plek zoals vanaf Home, en de groepsfoto bij de uitgaven op Home vliegt naar de bovenbalk van de uitgave.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Uitgave verdelen\" staat nu ook bovenaan in Saldi en Contacten, en op het groepsscherm staat het in de bovenste balk in plaats van boven de lijst te zweven, met \"Mensen toevoegen\" nu in het ⋯-menu. Het begint met de naam en krimpt tot het pictogram als je scrolt.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In Groepen opent een tik op de kaart Totaalsaldo de Saldi.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Mensen uitnodigen\" in een groep heet nu \"Mensen toevoegen\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op de iPad openen de tabbladen in de navigatiekolom, en staan ze in de bovenste balk, zoals bij een staande iPad, dan blijft \"Uitgave verdelen\" daar in beeld en gaan de andere knoppen naar een rij er net onder.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In \"Uitgave verdelen\" verschijnt \"Betaald met\" nu ook, gedimd, als iemand anders heeft betaald: een tik legt uit dat alleen wie betaalde kan aangeven waarmee.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zonder account bestaat je herstelcode nu uit 12 genummerde woorden die makkelijker op te schrijven zijn, en bij het herstellen typ je één woord per veld, met suggesties terwijl je typt. Codes die je vóór deze versie hebt bewaard, werken niet meer: bewaar de nieuwe of koppel Google of Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Uitgaven per categorie heeft elke uitgave nu hetzelfde ⋮-menu als bij de uitgaven van de groep: bewerk, dupliceer, deel of verwijder hem zonder hem te openen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op brede schermen (een liggende telefoon, tablets, de Mac en het web) toont Uitgaven per categorie de categorieën en het totaal in een kolom naast de uitgaven.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De zinnen in Activiteit staan nu in de natuurlijke woordvolgorde, zonder dubbele punt voor de naam van de uitgave of groep: \"Ana heeft Diner verdeeld\".",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "De eerste letter van \"Foto toevoegen\" bij de bijlagen van een uitgave wordt niet meer afgesneden.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Groepen heet de knop om een groep te maken nu \"+ Groep\" en loopt hij niet meer over twee regels.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Releaseopmerkingen tonen nu de versie die je net hebt geïnstalleerd, in plaats van tot een dag te wachten op de nieuwe punten ervan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In de Statistieken van een groep breekt de periodeknop (\"Altijd\") niet meer over twee regels: de datums gaan eronder als ze niet samen passen.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "L’app ora parla russo e ucraino: scegli \"Русский\" o \"Українська\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I gruppi ora possono dividere in rublo russo (RUB) e grivnia ucraina (UAH), e un gruppo creato in Russia o in Ucraina parte nella sua valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Il Profilo ha una nuova preferenza, \"Formato ora\": segui il sistema oppure mostra sempre l’ora nel formato 24 ore (14:30) o 12 ore con AM e PM (2:30 PM), nelle spese, nell’Attività, nei commenti e nella scelta dell’ora.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Con il telefono in orizzontale, e sui tablet, \"Dividi una spesa\" di un gruppo ora sta nella barra in alto invece di fluttuare sulle spese.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Con Colori dinamici attivi, quello che devi resta arancione invece di diventare rosso, così non si confonde mai con il verde di quello che ti spetta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Attività, ogni riga ora mostra la foto del gruppo accanto al suo nome, quando il gruppo ne ha una.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Il tuo saldo in questo gruppo non ripete più l'importo su una seconda riga quando ricevi soltanto o devi soltanto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Divisione predefinita, la parte di ogni persona nella spesa di esempio ora ha un colore tutto suo, con un punto dello stesso colore prima del nome, così due vicini nella lista non sembrano mai una persona sola.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La barra in alto di una spesa ora mostra la foto del gruppo, o le sue iniziali, accanto al nome del gruppo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toccando la foto di qualcuno, ora la foto si sposta nel suo profilo e torna indietro quando rientri.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Una spesa aperta dalle Spese di un gruppo ora si sposta al suo posto come dalla Home, e la foto del gruppo nelle spese della Home vola nella barra in alto della spesa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Dividi una spesa\" ora è in alto anche in Saldi e Contatti, e nella schermata del gruppo è passato nella barra in alto invece di galleggiare sopra l'elenco, con \"Aggiungi persone\" ora nel menu ⋯. Parte con il suo nome e si riduce alla sua icona mentre scorri.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In Gruppi, toccare la scheda Saldo complessivo apre Saldi.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Invita persone\" in un gruppo ora si chiama \"Aggiungi persone\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Su iPad, le schede si aprono nella barra laterale, e quando stanno nella barra in alto, come con l'iPad in verticale, \"Dividi una spesa\" resta in vista lì, mentre gli altri pulsanti passano in una riga appena sotto.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In \"Dividi una spesa\", \"Pagato con\" ora compare anche, attenuato, quando ha pagato qualcun altro: un tocco spiega che solo chi ha pagato può indicare con cosa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Senza account, il tuo codice di recupero ora è di 12 parole numerate, più facili da annotare, e per ripristinarlo scrivi una parola per campo, con suggerimenti mentre digiti. I codici salvati prima di questa versione non funzionano più: salva quello nuovo o collega Google o Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Spese per categoria ogni spesa ha ora lo stesso menu ⋮ delle spese del gruppo: modificala, duplicala, condividila o eliminala senza aprirla.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sugli schermi larghi (telefono in orizzontale, tablet, Mac e web), Spese per categoria mostra le categorie e il totale in una colonna accanto alle spese.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In tedesco, olandese e giapponese, le frasi di Attività ora seguono l’ordine naturale di ogni lingua, senza i due punti prima del nome della spesa o del gruppo.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "La prima lettera di \"Aggiungi foto\" negli allegati di una spesa non viene più tagliata.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Gruppi, il pulsante per creare un gruppo ora dice \"+ Gruppo\" e non va più a capo su due righe.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Le Note di rilascio ora mostrano la versione appena installata, invece di aspettare fino a un giorno per portarne le novità.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nelle Statistiche del gruppo il pulsante del periodo (\"Da sempre\") non va più a capo su due righe: le date passano sotto quando non c’è spazio per entrambi.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}
