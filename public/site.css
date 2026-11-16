@@ -100,9 +100,11 @@ p { margin: 0; text-wrap: pretty; }
    phrases rather than anywhere in a heading, and none of the Latin headings' tight tracking. */
 :root[lang="ja"] { line-break: strict; }
 :root[lang="ja"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; word-break: auto-phrase; }
-/* Russian and Ukrainian draw their Cyrillic in the system font, as the bundled Geist subsets have none: the tracking
-   tuned for Geist would cramp it. */
-:root:is([lang="ru"], [lang="uk"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+/* Russian and Ukrainian draw their Cyrillic, and Korean its Hangul, in the system font, as the bundled Geist subsets
+   have neither: the tracking tuned for Geist would cramp them. */
+:root:is([lang="ru"], [lang="uk"], [lang="ko"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+/* Korean breaks lines between words (its spaces), never inside one, as Korean text does. */
+:root[lang="ko"] { word-break: keep-all; overflow-wrap: break-word; }
 .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 .icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 .mono { font-family: var(--mono); }
@@ -125,7 +127,8 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="ja"] body [data-lang]:not([data-lang="ja"]),
 :root[data-lang="ru"] body [data-lang]:not([data-lang="ru"]),
 :root[data-lang="uk"] body [data-lang]:not([data-lang="uk"]),
-:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="fr"]):not([data-lang="de"]):not([data-lang="it"]):not([data-lang="pl"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]):not([data-lang="ru"]):not([data-lang="uk"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
+:root[data-lang="ko"] body [data-lang]:not([data-lang="ko"]),
+:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="fr"]):not([data-lang="de"]):not([data-lang="it"]):not([data-lang="pl"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]):not([data-lang="ru"]):not([data-lang="uk"]):not([data-lang="ko"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }
 @media (prefers-reduced-motion: reduce) {
@@ -637,11 +640,11 @@ label.split-row { cursor: pointer; }
 }
 .split-field:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px var(--ring); }
 .split-field input {
-  width: 5.2ch; min-width: 0; padding: 0; border: 0; background: transparent; outline: none; text-align: right;
+  width: max(5.2ch, calc(var(--chars, 0) * 1ch)); min-width: 0; padding: 0; border: 0; background: transparent; outline: none; text-align: right;
   font: 600 16px/1 var(--font); color: var(--fg); font-variant-numeric: tabular-nums;
 }
 .split-example[data-mode="percent"] .split-field input { width: 3ch; }
-.split-example[data-mode="income"] .split-field input { width: 6ch; }
+.split-example[data-mode="income"] .split-field input { width: max(6ch, calc(var(--chars, 0) * 1ch)); }
 .split-field small { font-size: 11.5px; }
 .split-stepper { display: inline-flex; align-items: center; gap: 2px; padding: 2px; border-radius: 999px; background: var(--card); border: 1px solid var(--border); }
 .split-stepper button {

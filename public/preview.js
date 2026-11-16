@@ -257,25 +257,32 @@
       bills: (n) => `${n} ${countForm(n, "витрата", "витрати", "витрат")}`,
       titles: { b1: "Гостьовий будинок у Лагоа", b2: "Вечеря в Рібейрані", b3: "Дорога на пляж", p1: "Морозиво на пляжі", p2: "Продукти на тиждень", p3: "Паркування" },
     },
+    // Korean: a particle follows the sound of the word before it, so it never follows a name or an amount filled in
+    // here: a name takes " 님" before one, or stands in a label ("결제: Ana"), as the app writes them.
+    ko: {
+      paid: "결제: {name}", notIn: "이번엔 제외",
+      members: (people, bills) => `${people}명 · 지출 ${bills}건`,
+      toGet: "받을 돈", youOwe: "줄 돈", settled: "정산 완료", owesYou: "받을 돈", youOweTitle: "줄 돈",
+      eachOne: "각자의 잔액", getsBack: "받을 돈", owes: "줄 돈", even: "정산 완료",
+      toSettle: "정산하기", total: "그룹 합계", lodging: "숙소", food: "식비", transport: "교통",
+      sheetTitle: "지출 나누기", description: "설명", amount: "금액", whoPaid: "낸 사람",
+      splitAmong: "똑같이 나눌 사람", each: "1인당 {value}", cancel: "취소", save: "저장", close: "닫기",
+      queue: (n) => `변경 사항 ${n}건 전송 대기`,
+      split: "분담", yourShare: "내 몫", deleteBill: "지출 삭제",
+      recordPayment: "송금 기록", record: "기록", viaMethod: "계좌 이체", payment: "송금", deletePayment: "송금 삭제",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} 님이 나에게 ${value} 송금했어요`,
+      paidTotal: "낸 금액 합계", shareTotal: "지출 중 내 몫", balance: "잔액",
+      bills: (n) => `지출 ${n}건`,
+      titles: { b1: "라고아 게스트하우스", b2: "히베이랑 저녁 식사", b3: "해변까지 교통비", p1: "해변 아이스크림", p2: "일주일 장보기", p3: "주차" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
-  // Amounts as the app shows them: the language's separators, and no decimals when they are all zero.
-  const CURRENCY = window.localized({ pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", "\u202f", "\u00a0$"],
-    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
-    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","],
-    // Russian and Ukrainian show their own currencies, as Portugal's Portuguese shows the euro.
-    ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"] });
   // Turkish writes the percent sign first: %10.
   const pct = (n) => (lang === "tr" ? `%${n}` : `${n}%`);
-  function money(cents, signed) {
-    const abs = Math.abs(cents);
-    const whole = String(Math.floor(abs / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
-    const frac = abs % 100;
-    const text = CURRENCY[0] + whole + (frac ? CURRENCY[1] + String(frac).padStart(2, "0") : "") + (CURRENCY[3] || "");
-    if (!signed || cents === 0) return text;
-    return (cents > 0 ? "+" : "−") + text;
-  }
+  // Amounts in the visitor's currency, as the app shows them (money.js).
+  const money = window.money.format;
 
   const PEOPLE = [
     { id: "me", name: "Pedro", initial: "P", color: "blue" },
@@ -707,7 +714,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

@@ -33,10 +33,10 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", en: "en" })}`
+    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", en: "en" })}`
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", en: "us" })}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", ko: "kr", en: "us" })}/app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -185,6 +185,15 @@
       mismatchBody: "У тебе {platform}. Щоб усе працювало найкраще, завантаж застосунок {in}.",
       mismatchGo: "Перейти {to}", mismatchStay: "Усе одно перейти {to}", close: "Закрити",
       in: { play: "з Google Play", appstore: "з App Store" }, to: { play: "до Google Play", appstore: "до App Store" },
+    },
+    ko: {
+      play: ["다운로드하기", "출시 예정"], appstore: ["다운로드하기", "출시 예정"], web: ["지금 열기", "출시 예정"], browser: "브라우저",
+      getApp: "앱 받기", openWeb: "웹 앱 열기", soon: "출시 예정",
+      playLive: "Google Play에서 받기", appStoreLive: "App Store에서 받기", webLive: "웹 앱 열기",
+      mismatchTitle: "스토어 선택",
+      mismatchBody: "지금 {platform} 기기를 쓰고 있어요. 가장 잘 쓰려면 {in} 앱을 받으세요.",
+      mismatchGo: "{to} 이동", mismatchStay: "그대로 {to} 이동", close: "닫기",
+      in: { play: "Google Play에서", appstore: "App Store에서" }, to: { play: "Google Play로", appstore: "App Store로" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
