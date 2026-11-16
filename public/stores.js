@@ -1,7 +1,7 @@
 // Where to get the app, as Bible Planner's landing does it: the visitor's platform picks which store comes first and
 // stands out, the header's download button goes straight to it, a store of the other platform asks first, and
-// /download (/download/android, /download/ios) redirects to the right store. Loaded in <head>, so a redirect happens
-// before anything is drawn; the page's buttons are set once the DOM is ready.
+// /download (/download/android, /download/ios) redirects to the right store. Loaded with defer, so it never holds up
+// the first paint (only a /download path's redirect waits for the page to be parsed); the buttons are set right then.
 //
 // Turn a store on here once its listing is public, in step with blitz-split-client's stores.properties, and the web app
 // once it is open to the public.
