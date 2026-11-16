@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "L’app parle désormais russe et ukrainien : choisis « Русский » ou « Українська » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en rouble russe (RUB) et en hryvnia ukrainienne (UAH), et un groupe créé en Russie ou en Ukraine démarre dans sa devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Le Profil propose une nouvelle préférence, « Format de l’heure » : suivre le système, ou toujours afficher l’heure sur 24 heures (14:30) ou sur 12 heures avec AM et PM (2:30 PM), dans les dépenses, l’Activité, les commentaires et le choix de l’heure.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Téléphone à l’horizontale, et sur tablette, « Partager une dépense » d’un groupe se trouve désormais dans la barre du haut au lieu de flotter sur les dépenses.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Avec Couleurs dynamiques activé, ce que tu dois reste orange au lieu de passer au rouge, pour ne jamais se confondre avec le vert de ce qu’on te doit.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dans Activité, chaque ligne affiche désormais la photo du groupe à côté de son nom, quand le groupe en a une.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ton solde dans ce groupe ne répète plus le montant sur une deuxième ligne quand tu ne fais que recevoir ou que devoir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dans Répartition par défaut, la part de chaque personne sur la dépense d’exemple a désormais sa propre couleur, avec un point assorti avant son nom, pour que deux voisins dans la liste ne se confondent jamais.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La barre du haut d’une dépense affiche désormais la photo du groupe, ou ses initiales, à côté de son nom.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toucher la photo de quelqu’un l’emmène maintenant jusqu’à son profil, et la ramène quand vous revenez.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Une dépense ouverte depuis les Dépenses d’un groupe se déplace maintenant comme depuis l’Accueil, et la photo du groupe des dépenses de l’Accueil s’envole vers la barre du haut de la dépense.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "« Partager une dépense » est désormais aussi en haut de Soldes et Contacts, et sur l’écran du groupe il passe dans la barre du haut au lieu de flotter sur la liste, avec « Ajouter des personnes » désormais dans le menu ⋯. Il commence avec son nom et se réduit à son icône quand tu fais défiler.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Dans Groupes, toucher la carte Solde global ouvre Soldes.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "« Inviter des personnes » dans un groupe s’appelle désormais « Ajouter des personnes ».",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sur iPad, les onglets s’ouvrent dans la barre latérale, et quand ils sont dans la barre du haut, comme avec l’iPad à la verticale, « Partager une dépense » y reste visible, tandis que les autres boutons passent dans une rangée juste en dessous.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Dans « Partager une dépense », « Payé avec » s’affiche désormais aussi, grisé, quand quelqu’un d’autre a payé : un appui explique que seuls ceux qui ont payé peuvent indiquer avec quoi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sans compte, ton code de récupération est désormais composé de 12 mots numérotés, plus faciles à noter, et pour le restaurer tu saisis un mot par champ, avec des suggestions au fil de la frappe. Les codes enregistrés avant cette version ne fonctionnent plus : garde le nouveau ou connecte Google ou Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dans Dépenses par catégorie, chaque dépense a désormais le même menu ⋮ que dans les dépenses du groupe : modifiez-la, dupliquez-la, partagez-la ou supprimez-la sans l’ouvrir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sur les écrans larges (téléphone à l’horizontale, tablettes, Mac et web), Dépenses par catégorie affiche les catégories et le total dans une colonne à côté des dépenses.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En allemand, en néerlandais et en japonais, les phrases d’Activité suivent désormais l’ordre naturel de chaque langue, sans deux-points avant le nom de la dépense ou du groupe.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "La première lettre de « Ajouter une photo » dans les pièces jointes d’une dépense n’est plus coupée.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dans Groupes, le bouton pour créer un groupe affiche désormais « + Groupe » et ne passe plus sur deux lignes.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Les Notes de version affichent désormais la version que vous venez d’installer, au lieu d’attendre jusqu’à un jour pour en apporter les nouveautés.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dans les Statistiques d’un groupe, le bouton de période (« Depuis toujours ») ne se coupe plus sur deux lignes : les dates passent dessous quand les deux ne tiennent pas.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

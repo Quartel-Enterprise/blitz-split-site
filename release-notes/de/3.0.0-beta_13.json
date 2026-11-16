@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Die App spricht jetzt Russisch und Ukrainisch: Wähle „Русский“ oder „Українська“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Russischem Rubel (RUB) und Ukrainischer Hrywnja (UAH) teilen, und eine in Russland oder der Ukraine erstellte Gruppe startet in deren Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Im Profil gibt es die neue Einstellung „Uhrzeitformat“: dem System folgen oder Uhrzeiten immer im 24-Stunden-Format (14:30) oder im 12-Stunden-Format mit AM und PM (2:30 PM) zeigen, bei Ausgaben, in der Aktivität, in Kommentaren und bei der Zeitauswahl.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bei quer gehaltenem Handy und auf Tablets sitzt „Ausgabe aufteilen“ einer Gruppe jetzt in der oberen Leiste, statt über den Ausgaben zu schweben.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Mit Dynamische Farben bleibt, was du schuldest, orange statt rot, damit es nie wie das Grün dessen aussieht, was du zurückbekommst.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Aktivität zeigt jede Zeile jetzt das Foto der Gruppe neben ihrem Namen, wenn die Gruppe eins hat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dein Saldo in dieser Gruppe wiederholt den Betrag nicht mehr in einer zweiten Zeile, wenn du nur etwas bekommst oder nur etwas schuldest.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In der Standardaufteilung hat jetzt jeder Anteil an der Beispielrechnung eine eigene Farbe, mit einem passenden Punkt vor dem Namen, damit zwei Nachbarn in der Liste nie wie eine Person aussehen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die obere Leiste einer Ausgabe zeigt jetzt das Foto der Gruppe oder ihre Initialen neben dem Gruppennamen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tippst du auf das Foto einer Person, wandert es jetzt in ihr Profil und beim Zurückgehen wieder zurück.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Eine Ausgabe, die du in den Ausgaben einer Gruppe öffnest, gleitet jetzt wie auf der Startseite an ihren Platz, und das Gruppenfoto der Ausgaben auf der Startseite fliegt in die obere Leiste der Ausgabe.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Ausgabe aufteilen“ steht jetzt auch oben in Salden und Kontakte, und auf dem Gruppenbildschirm ist es in die obere Leiste gewandert, statt über der Liste zu schweben; „Personen hinzufügen“ steht jetzt im ⋯-Menü. Es beginnt mit seinem Namen und schrumpft beim Scrollen auf sein Symbol.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In Gruppen öffnet ein Tippen auf die Karte Gesamtsaldo die Salden.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "„Personen einladen“ in einer Gruppe heißt jetzt „Personen hinzufügen“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Auf dem iPad öffnen sich die Tabs in der Seitenleiste, und wenn sie in der oberen Leiste stehen, etwa beim iPad im Hochformat, bleibt „Ausgabe aufteilen“ dort sichtbar, während die anderen Schaltflächen in eine Reihe direkt darunter wandern.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In „Ausgabe aufteilen“ erscheint „Bezahlt mit“ jetzt auch ausgegraut, wenn jemand anderes bezahlt hat: Ein Tippen erklärt, dass nur wer bezahlt hat angeben kann, womit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ohne Konto besteht dein Wiederherstellungscode jetzt aus 12 nummerierten Wörtern, die sich leichter aufschreiben lassen, und beim Wiederherstellen gibst du ein Wort pro Feld ein, mit Vorschlägen beim Tippen. Codes, die du vor dieser Version gespeichert hast, funktionieren nicht mehr: Speichere den neuen oder verbinde Google oder Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In „Ausgaben nach Kategorie“ hat jede Ausgabe jetzt dasselbe ⋮-Menü wie in den Ausgaben der Gruppe: bearbeiten, duplizieren, teilen oder löschen, ohne sie zu öffnen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Auf breiten Bildschirmen (Smartphone quer, Tablets, Mac und Web) zeigt „Ausgaben nach Kategorie“ die Kategorien und die Summe in einer Spalte neben den Ausgaben.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die Sätze unter Aktivität stehen jetzt in natürlicher Wortstellung, ohne Doppelpunkt vor dem Namen der Ausgabe oder Gruppe: „Ana hat Abendessen aufgeteilt“.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Der erste Buchstabe von „Foto hinzufügen“ bei den Anhängen einer Ausgabe wird nicht mehr abgeschnitten.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Gruppen heißt die Schaltfläche zum Erstellen einer Gruppe jetzt „+ Gruppe“ und bricht nicht mehr in zwei Zeilen um.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Die Versionshinweise zeigen jetzt die gerade installierte Version, statt bis zu einen Tag auf ihre Neuerungen zu warten.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In den Statistiken einer Gruppe bricht die Zeitraum-Schaltfläche („Gesamter Zeitraum“) nicht mehr in zwei Zeilen um: Die Daten rutschen darunter, wenn beides nicht passt.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

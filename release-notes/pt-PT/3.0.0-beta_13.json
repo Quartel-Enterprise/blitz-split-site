@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "A app fala agora russo e ucraniano: escolhe \"Русский\" ou \"Українська\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em rublo russo (RUB) e hryvnia ucraniana (UAH), e um grupo criado na Rússia ou na Ucrânia começa logo na moeda de lá.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O Perfil tem uma nova preferência, \"Formato de hora\": segue o sistema ou mostra sempre as horas no formato de 24 horas (14:30) ou de 12 horas com AM e PM (2:30 PM), nas contas, na Atividade, nos comentários e na escolha da hora.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Com o telemóvel deitado, e em tablets, o \"Dividir conta\" de um grupo fica agora na barra de cima em vez de flutuar sobre as contas.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Com as Cores dinâmicas ativas, o que deves continua laranja em vez de ficar vermelho, e nunca se confunde com o verde do que tens a receber.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Na Atividade, cada linha mostra agora a fotografia do grupo ao lado do nome, quando o grupo tem uma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O teu saldo neste grupo já não repete o valor numa segunda linha quando só tens a receber ou só deves.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na Divisão predefinida, a parte de cada pessoa na conta de exemplo tem agora uma cor própria, com um ponto da mesma cor antes do nome, e quem está lado a lado na lista nunca parece uma pessoa só.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A barra do topo de uma conta mostra agora a fotografia do grupo, ou as iniciais dele, ao lado do nome do grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar na fotografia de alguém leva-a agora até ao perfil da pessoa, e de volta quando regressas.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Uma conta aberta a partir das Despesas do grupo move-se agora para o lugar como já fazia a partir do Início, e a fotografia do grupo nas contas do Início voa até à barra do topo da conta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Dividir conta\" está agora também no topo de Saldos e Contactos, e no ecrã do grupo passou para a barra de cima em vez de flutuar sobre a lista, com \"Adicionar pessoas\" agora no menu ⋯. Começa com o nome e encolhe para o ícone à medida que fazes scroll.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Em Grupos, tocar no cartão de Saldo geral abre Saldos.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Convidar pessoas\" no grupo chama-se agora \"Adicionar pessoas\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "No iPad, os separadores abrem na barra lateral, e quando ficam na barra de cima, como com o iPad na vertical, \"Dividir conta\" continua à vista aí, enquanto os outros botões passam para uma fila logo abaixo.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Em \"Dividir conta\", o \"Pago com\" aparece agora também quando outra pessoa pagou a conta, esbatido: um toque explica que só quem pagou pode marcar com o que pagou.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sem conta, o teu código de recuperação agora é de 12 palavras numeradas, mais fáceis de anotar, e para recuperar escreves uma palavra por campo, com sugestões enquanto escreves. Os códigos guardados antes desta versão deixam de funcionar: guarda o novo ou liga a Google ou a Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em Despesas por categoria, cada despesa tem agora o mesmo menu ⋮ das despesas do grupo: edita, duplica, partilha ou apaga sem a abrires.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em ecrãs largos (telemóvel deitado, tablets, Mac e web), Despesas por categoria mostra as categorias e o total numa coluna ao lado das despesas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em alemão, neerlandês e japonês, as frases da Atividade seguem agora a ordem natural de cada língua, sem dois pontos antes do nome da despesa ou do grupo.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "A primeira letra de \"Adicionar foto\" nos anexos de uma conta já não aparece cortada.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Em Grupos, o botão para criar um grupo diz agora \"+ Grupo\" e já não se divide em duas linhas.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "As Notas de versão mostram agora a versão que acabaste de instalar, em vez de esperarem até um dia para trazer as novidades dela.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nas Estatísticas do grupo, o botão do período (\"Todo o período\") já não se parte em duas linhas: as datas passam para baixo dele quando não cabem juntos.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

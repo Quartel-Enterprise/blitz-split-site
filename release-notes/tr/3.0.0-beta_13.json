@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Uygulama artık Rusça ve Ukraynaca konuşuyor: Profil › Dil'den \"Русский\" ya da \"Українська\"yı seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Rus rublesi (RUB) ve Ukrayna grivnası (UAH) ile bölebiliyor; Rusya'da ya da Ukrayna'da açılan bir grup o ülkenin para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil'de yeni bir \"Saat biçimi\" tercihi var: sistemi izle ya da harcamalarda, Etkinlik'te, yorumlarda ve saat seçerken saatleri her zaman 24 saat (14:30) veya AM ve PM ile 12 saat (2:30 PM) biçiminde göster.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefon yatay tutulduğunda ve tabletlerde, bir grubun \"Harcama böl\" düğmesi artık harcamaların üzerinde durmak yerine üst çubukta yer alıyor.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dinamik renkler açıkken borcun kırmızıya dönmek yerine turuncu kalıyor, böylece alacağının yeşiliyle hiç karışmıyor.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Etkinlik'te her satır artık grubun fotoğrafı varsa onu grubun adının yanında gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bu gruptaki bakiyen, yalnızca alacağın ya da yalnızca borcun olduğunda tutarı ikinci bir satırda tekrarlamıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Varsayılan bölüşümde örnek hesaptaki herkesin payı artık kendine ait bir renkte, adının önünde aynı renkte bir nokta var; böylece listede yan yana olan iki kişi asla tek kişi gibi görünmüyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bir harcamanın üst çubuğu artık grubun adının yanında grubun fotoğrafını ya da baş harflerini gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Birinin fotoğrafına dokunduğunda fotoğraf artık profiline taşınıyor, geri döndüğünde de yerine dönüyor.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Bir grubun Harcamalar sekmesinden açılan harcama artık Ana Sayfa'dan açıldığı gibi yerine kayıyor; Ana Sayfa'daki harcamalarda grubun fotoğrafı da harcamanın üst çubuğuna uçuyor.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Harcama böl\" artık Bakiyeler ve Kişiler'de de en üstte; grup ekranında listenin üzerinde süzülmek yerine üst çubuğa taşındı ve \"Kişi ekle\" artık ⋯ menüsünde. Adıyla başlıyor ve kaydırdıkça simgesine küçülüyor.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Gruplar'da Genel bakiye kartına dokunmak Bakiyeler'i açıyor.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Bir gruptaki \"Kişi davet et\" artık \"Kişi ekle\" adını taşıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPad'de sekmeler artık kenar çubuğunda açılıyor; iPad dikeyken olduğu gibi sekmeler üst çubukta durduğunda \"Harcama böl\" orada görünür kalıyor, diğer düğmeler hemen altındaki bir sıraya geçiyor.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Harcama böl\" ekranında \"Ödeme şekli\" artık başkası ödediğinde de soluk olarak görünüyor: dokununca yalnızca ödeyenlerin seçebileceğini açıklıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hesapsız kullanımda kurtarma kodun artık not alması daha kolay, numaralı 12 kelime. Geri yüklerken her alana bir kelime yazıyorsun ve yazarken öneriler çıkıyor. Bu sürümden önce kaydettiğin kodlar artık çalışmıyor: yenisini kaydet ya da Google veya Apple'ı bağla.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategoriye göre harcamalar ekranında her harcamada artık grubun harcamalarındaki ⋮ menüsü var: açmadan düzenleyin, çoğaltın, paylaşın veya silin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Geniş ekranlarda (yatay telefon, tabletler, Mac ve web) Kategoriye göre harcamalar, kategorileri ve toplamı harcamaların yanındaki bir sütunda gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Almanca, Felemenkçe ve Japoncada Etkinlik cümleleri artık her dilin doğal söz dizimiyle, harcama ya da grup adından önce iki nokta olmadan okunuyor.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Bir harcamanın eklerindeki \"Fotoğraf ekle\" yazısının ilk harfi artık kesilmiyor.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Gruplar'da grup oluşturma düğmesi artık \"+ Grup\" diyor ve iki satıra bölünmüyor.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Sürüm notları artık yeni yüklediğin sürümü gösteriyor; yeniliklerini getirmek için bir güne kadar beklemiyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grubun İstatistikler ekranında dönem düğmesi (\"Tüm zamanlar\") artık iki satıra bölünmüyor: ikisi sığmadığında tarihler altına geçiyor.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}
