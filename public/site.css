@@ -100,13 +100,11 @@ p { margin: 0; text-wrap: pretty; }
    phrases rather than anywhere in a heading, and none of the Latin headings' tight tracking. */
 :root[lang="ja"] { line-break: strict; }
 :root[lang="ja"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; word-break: auto-phrase; }
-/* Russian and Ukrainian draw their Cyrillic in the system font, as the bundled Geist subsets have none: the tracking
-   tuned for Geist would cramp it. */
-:root:is([lang="ru"], [lang="uk"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
-/* Korean draws its Hangul in the system font too, and breaks lines between words (its spaces), never inside one, as
-   Korean text does. */
+/* Russian and Ukrainian draw their Cyrillic, and Korean its Hangul, in the system font, as the bundled Geist subsets
+   have neither: the tracking tuned for Geist would cramp them. */
+:root:is([lang="ru"], [lang="uk"], [lang="ko"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+/* Korean breaks lines between words (its spaces), never inside one, as Korean text does. */
 :root[lang="ko"] { word-break: keep-all; overflow-wrap: break-word; }
-:root[lang="ko"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
 .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 .icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 .mono { font-family: var(--mono); }

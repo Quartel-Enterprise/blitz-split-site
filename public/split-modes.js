@@ -585,7 +585,7 @@
   const prefix = window.money.symbolBefore;
   const suffix = window.money.symbolAfter;
   const moneyField = (value, label, extra = "") => `<span class="split-field">${prefix ? `<span>${prefix}</span>` : ""}`
-    + `<input type="text" inputmode="decimal" autocomplete="off" value="${plain(value)}" aria-label="${label}">`
+    + `<input type="text" inputmode="${window.money.wholeUnits ? "numeric" : "decimal"}" autocomplete="off" value="${plain(value)}" aria-label="${label}">`
     + `${suffix ? `<span>${suffix}</span>` : ""}${extra}</span>`;
 
   function control(i) {
