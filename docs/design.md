@@ -8,7 +8,7 @@ and `public/site.js` translates the page, in English, Portuguese (Brazil), Spani
 Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian and Korean. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
-and the header's globe menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
+and the header's translate-icon menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
 `?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a fifteenth language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
