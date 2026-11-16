@@ -155,11 +155,11 @@ p { margin: 0; text-wrap: pretty; }
 .header-end { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 @media (min-width: 1000px) { .nav { display: flex; } }
 .logo { white-space: nowrap; }
-/* On a phone the language menu shows only its globe and the header drops its button: the hero's store buttons are
+/* On a phone the language menu shows only its icon and the header drops its button: the hero's store buttons are
    right below. */
 @media (max-width: 419px) { .site-header .wrap { gap: 12px; } .lang-code { display: none; } .header-end { gap: 2px; } .header-end .header-get { display: none; } }
 
-/* Language menu, as Bible Planner's: a globe in the header opening the three languages, each in its own name. */
+/* Language menu, as Bible Planner's: a translate icon in the header opening the three languages, each in its own name. */
 .lang-menu, .theme-menu { position: relative; }
 .lang-menu summary, .theme-menu summary {
   list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
