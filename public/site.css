@@ -771,7 +771,10 @@ label.split-row { cursor: pointer; }
 @keyframes arrived { 20% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 35%, transparent); border-color: var(--primary); } }
 
 .code-card { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 12px; background: var(--bg); border: 1px solid var(--border-subtle); }
-.code-card .mono { font-size: 15px; letter-spacing: 0.04em; }
+/* The recovery code is 12 numbered words; the tile shows the first ones, an illustration screen readers skip
+   (they read "Your recovery code"). */
+.code-card .code-words { display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 15px; }
+.code-card .code-words .n { color: var(--muted-fg); }
 .code-card small { display: block; color: var(--muted-fg); font-size: 12.5px; }
 
 .bars-chart { display: grid; gap: 8px; }
