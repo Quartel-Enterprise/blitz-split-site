@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Al abrir a alguien desde Contactos o Saldos, su nombre y su saldo ahora viajan con la foto hasta su perfil, y vuelven cuando regresas.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "En Estadísticas, el centro del anillo de \"Por persona\" ahora dice solo \"Tú\" cuando la parte es tuya, y un nombre largo termina en \"…\" en vez de tocar el anillo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Al abrir un grupo desde Grupos, las caras de sus miembros ahora viajan de la fila a la pantalla del grupo, y vuelven al salir.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "En el teléfono, abrir un gasto ahora lleva más cosas consigo: quién pagó viaja desde su fila en Inicio y Todos los gastos, la hora desde su fila en los Gastos del grupo, y la foto y el nombre del grupo desde la pantalla del grupo. Vuelven al salir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "El nombre de un grupo ahora viaja a la pantalla del grupo al abrirlo, no solo al volver.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
