@@ -65,13 +65,13 @@
     },
     id: {
       store: "BAR PELABUHAN", address: "Jl. Camar No. 120", date: "08/11/2026  21:47",
-      lines: [["2 BIR DRAFT", "28,00", 1], ["1 PLATTER UDANG", "96,00", 2]],
-      subtotal: ["SUBTOTAL", "124,00"], service: ["LAYANAN 10%", "12,40", 3], total: ["TOTAL", "136,40"],
+      lines: [["2 BIR DRAFT", "280.000", 1], ["1 PLATTER UDANG", "960.000", 2]],
+      subtotal: ["SUBTOTAL", "1.240.000"], service: ["LAYANAN 10%", "124.000", 3], total: ["TOTAL", "1.364.000"],
     },
     ja: {
       store: "ハーバーバー", address: "かもめ通り120", date: "2026/11/08  21:47",
-      lines: [["2 生ビール", "28.00", 1], ["1 エビ盛り合わせ", "96.00", 2]],
-      subtotal: ["小計", "124.00"], service: ["サービス料 10%", "12.40", 3], total: ["合計", "136.40"],
+      lines: [["2 生ビール", "2,800", 1], ["1 エビ盛り合わせ", "9,600", 2]],
+      subtotal: ["小計", "12,400"], service: ["サービス料 10%", "1,240", 3], total: ["合計", "13,640"],
     },
     ru: {
       store: "ПОРТОВЫЙ БАР", address: "ул. Чаечная, 120", date: "08.11.2026  21:47",
@@ -82,6 +82,11 @@
       store: "ПОРТОВИЙ БАР", address: "вул. Чайкова, 120", date: "08.11.2026  21:47",
       lines: [["2 ПИВО РОЗЛИВНЕ", "28,00", 1], ["1 ТАРІЛКА КРЕВЕТОК", "96,00", 2]],
       subtotal: ["ПРОМІЖНИЙ ПІДСУМОК", "124,00"], service: ["ОБСЛУГОВУВАННЯ 10%", "12,40", 3], total: ["РАЗОМ", "136,40"],
+    },
+    ko: {
+      store: "항구 바", address: "갈매기로 120", date: "2026.11.08  21:47",
+      lines: [["2 생맥주", "28,000", 1], ["1 새우 플래터", "96,000", 2]],
+      subtotal: ["소계", "124,000"], service: ["봉사료 10%", "12,400", 3], total: ["합계", "136,400"],
     },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;

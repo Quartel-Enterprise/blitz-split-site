@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Bir grubun Harcamalar bölümünde artık \"Tümünü gör\" var; Tüm harcamalar'ı o gruba göre filtrelenmiş olarak açar, böylece harcamalarını arayabilir, sıralayabilir ve filtreleyebilirsin. Tüm grupları görmek için filtreyi temizle.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni grup ekranında \"Adıyla ekle\" artık sen yazarken Kişiler'inden insanları fotoğraflarıyla öneriyor: grubu o kişiyle oluşturmak için birine dokun.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bir grupta kaydırırken daraltılmış üst çubuk artık yalnızca grubun fotoğrafını ve adını gösteriyor; yanında kesik görünen üyeler ve toplam yok.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Artık kurtarma kodunun 12 kelimesini metin dosyası olarak indirebilirsin.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Kurtarma kodunu kaydet artık verilerini geri getirdiğini ve 30 gün kullanılmazsa verilerin silindiğini söylüyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Harcama böl artık Fiş tara'yı üstte, Kaydet'in yanında da gösteriyor; klavye artık onu gizlemiyor. Ödeme yöntemi ekle daha sade.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup İstatistiklerinde Kişiye göre artık herkesin payını gösteren bir halka; her kişi Varsayılan bölüşümdeki rengiyle görünüyor, isimler ve tutarların listesi de altında açıklama olarak duruyor. Tüketilen ve Ödenen gösterilen şeyi değiştiriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni grup ekranındaki \"Kimler var\" artık baş harfin yerine profil fotoğrafını gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulamaya döndüğünde Ana Sayfa ve Gruplar'da \"Eşitleniyor…\" artık sürekli görünmüyor: grupların ekrandayken eşitleme sessizce yapılıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tabletlerde ve telefon yatay tutulduğunda, yan çubuğun üstündeki \"Harcama böl\" düğmesinin gölgesi artık kenarlarından kesilmiyor.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

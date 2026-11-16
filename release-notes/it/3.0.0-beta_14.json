@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Le Spese di un gruppo ora hanno \"Vedi tutte\", che apre Tutte le spese già filtrate per quel gruppo, così puoi cercare, ordinare e filtrare le sue spese. Cancella il filtro per vedere tutti i gruppi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Nuovo gruppo, \"Aggiungi per nome\" ora suggerisce persone dai tuoi Contatti mentre scrivi, con la loro foto: tocca una per creare il gruppo con quella stessa persona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Scorrendo un gruppo, la barra in alto ridotta mostra solo la foto e il nome del gruppo, senza i membri e il totale tagliati accanto.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ora puoi scaricare le 12 parole del tuo codice di recupero come file di testo.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Salva il tuo codice di recupero ora dice che riporta i tuoi dati, e che dopo 30 giorni di inutilizzo vengono cancellati.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dividi una spesa ora ha Scansiona scontrino anche in alto, accanto a Salva, così la tastiera non lo nasconde più, e Aggiungi un metodo di pagamento è più discreto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nelle Statistiche del gruppo, Per persona ora è un anello con la parte di ciascuno, nello stesso colore che ogni persona ha in Divisione predefinita, con l’elenco di nomi e importi sotto come legenda. Consumato e Pagato cambiano ciò che mostra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Chi partecipa\" di Nuovo gruppo mostra la tua foto profilo invece della tua iniziale.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sincronizzazione…\" non compare più di continuo in Home e Gruppi quando torni nell’app: con i tuoi gruppi sullo schermo, la sincronizzazione avviene in silenzio.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sui tablet e con il telefono in orizzontale, l'ombra di \"Dividi una spesa\" in cima alla barra laterale non è più tagliata ai bordi.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

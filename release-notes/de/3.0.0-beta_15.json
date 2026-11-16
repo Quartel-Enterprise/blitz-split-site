@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Wenn du jemanden in Kontakte oder Salden öffnest, wandern Name und Saldo jetzt mit dem Foto in das Profil und beim Zurückgehen wieder zurück.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "In Statistiken steht in der Mitte des Rings „Nach Person“ jetzt nur „Du“, wenn der Anteil deiner ist, und ein langer Name endet mit „…“, statt den Ring zu berühren.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Öffnest du eine Gruppe unter Gruppen, wandern die Gesichter der Mitglieder jetzt aus der Zeile in die Gruppe und beim Verlassen zurück.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Auf dem Handy nimmt das Öffnen einer Ausgabe jetzt mehr mit: Wer bezahlt hat, kommt aus der Zeile in Start und Alle Ausgaben, die Uhrzeit aus der Zeile in den Ausgaben der Gruppe, Foto und Name der Gruppe aus der Gruppe. Beim Verlassen wandern sie zurück.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Der Name einer Gruppe wandert jetzt auch beim Öffnen in die Gruppe, nicht nur auf dem Rückweg.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

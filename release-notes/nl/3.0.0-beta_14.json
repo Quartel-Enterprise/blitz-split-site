@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "De Uitgaven van een groep hebben nu \"Alles bekijken\", dat Alle uitgaven al gefilterd op die groep opent, zodat je de uitgaven kunt zoeken, sorteren en filteren. Wis het filter om alle groepen te zien.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Nieuwe groep stelt \"Toevoegen op naam\" nu tijdens het typen mensen uit je Contacten voor, met hun foto: tik op iemand om de groep met diezelfde persoon te maken.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Als je door een groep scrolt, toont de ingeklapte bovenste balk alleen de foto en naam van de groep, zonder de afgekapte leden en het totaal ernaast.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Je kunt de 12 woorden van je herstelcode nu als tekstbestand downloaden.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Bewaar je herstelcode zegt nu dat hij je gegevens terugbrengt, en dat ze na 30 dagen zonder gebruik worden verwijderd.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uitgave verdelen heeft Bonnetje scannen nu ook bovenaan, naast Opslaan, zodat het toetsenbord het niet meer verbergt, en Betaalmethode toevoegen valt minder op.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In de Statistieken van een groep is Per persoon nu een ring met ieders deel, in dezelfde kleur die elke persoon in Standaardverdeling heeft, met de lijst van namen en bedragen eronder als legenda. Verbruikt en Betaald wisselen wat hij toont.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Wie doet mee\" in Nieuwe groep toont je profielfoto in plaats van je initiaal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Synchroniseren…\" verschijnt niet meer steeds op Start en Groepen als je terugkomt in de app: zodra je groepen in beeld zijn, synchroniseert de app stil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op tablets en met de telefoon liggend wordt de schaduw van \"Uitgave verdelen\" bovenaan de zijbalk niet meer aan de randen afgesneden.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

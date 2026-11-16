@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aprendo qualcuno da Contatti o Saldi, ora il nome e il saldo arrivano nel suo profilo insieme alla foto, e tornano indietro quando torni.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "In Statistiche, il centro dell’anello \"Per persona\" ora dice solo \"Tu\" quando la quota è tua, e un nome lungo finisce con \"…\" invece di toccare l’anello.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aprendo un gruppo da Gruppi, i volti dei membri ora passano dalla riga alla schermata del gruppo, e tornano quando esci.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Sul telefono, aprire una spesa ora porta con sé più elementi: chi ha pagato arriva dalla sua riga in Home e Tutte le spese, l’orario dalla sua riga nelle Spese del gruppo, e la foto e il nome del gruppo dalla schermata del gruppo. Tornano indietro quando esci.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Il nome di un gruppo ora passa nella schermata del gruppo quando lo apri, non solo al ritorno.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

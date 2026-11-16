@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Otwarcie kogoś z Kontaktów lub Sald przenosi teraz jego imię i saldo do profilu razem ze zdjęciem, a przy powrocie z powrotem.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "W Statystykach środek pierścienia „Według osób” pokazuje teraz tylko „Ty”, gdy to twoja część, a długie imię kończy się „…” zamiast dotykać pierścienia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Po otwarciu grupy z Grup twarze jej członków przechodzą teraz z wiersza na ekran grupy i wracają, gdy z niej wychodzisz.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Na telefonie otwarcie wydatku przenosi teraz więcej: kto zapłacił przechodzi z wiersza na Start i we Wszystkich wydatkach, godzina z wiersza w Wydatkach grupy, a zdjęcie i nazwa grupy z ekranu grupy. Wracają, gdy wychodzisz.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Nazwa grupy przechodzi teraz na ekran grupy także przy otwieraniu, a nie tylko w drodze powrotnej.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

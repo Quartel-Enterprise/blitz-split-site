@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Los Gastos de un grupo ahora tienen \"Ver todo\", que abre Todos los gastos ya filtrados por ese grupo, para que busques, ordenes y filtres sus gastos. Borra el filtro para ver todos los grupos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En Nuevo grupo, \"Agregar por nombre\" ahora sugiere personas de tus Contactos mientras escribes, con su foto: toca una para crear el grupo con esa misma persona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Al desplazarte por un grupo, la barra superior plegada muestra solo la foto y el nombre del grupo, sin los miembros y el total cortados al lado.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ahora puedes descargar las 12 palabras de tu código de recuperación como archivo de texto.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Guarda tu código de recuperación ahora dice que recupera tus datos, y que se borran tras 30 días sin uso.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dividir un gasto ahora también tiene Escanear recibo arriba, junto a Guardar, así el teclado ya no lo tapa, y Agregar método de pago es más discreto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En las Estadísticas del grupo, Por persona ahora es una dona con la parte de cada uno, en el mismo color que cada persona tiene en División predeterminada, con la lista de nombres y montos debajo como leyenda. Consumido y Pagado cambian lo que muestra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Quiénes participan\" de Nuevo grupo muestra tu foto de perfil en vez de tu inicial.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sincronizando…\" ya no aparece a cada rato en Inicio y Grupos al volver a la app: con tus grupos en pantalla, la sincronización ocurre en silencio.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En tablets y con el teléfono acostado, la sombra de \"Dividir un gasto\" arriba de la barra lateral ya no aparece cortada en los bordes.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

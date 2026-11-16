@@ -16,7 +16,7 @@ process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 const PAGES = ["privacy", "terms"];
 // The order of the pages' blocks. English is what every other language is checked against.
-const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk"];
+const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko"];
 const LEGAL_DIR = "public/legal";
 
 const CHROME = {
@@ -34,6 +34,7 @@ const CHROME = {
   ja: { language: "日本語", brand: "Blitz Split", locale: "ja", updated: "{date}更新", read: "読了時間：約{n}分", toc: "このページの内容" },
   ru: { language: "Русский", brand: "Blitz Split", locale: "ru", updated: "Обновлено {date}", read: "{n} мин чтения", toc: "На этой странице" },
   uk: { language: "Українська", brand: "Blitz Split", locale: "uk", updated: "Оновлено {date}", read: "{n} хв читання", toc: "На цій сторінці" },
+  ko: { language: "한국어", brand: "Blitz Split", locale: "ko", updated: "{date} 업데이트", read: "{n}분 분량", toc: "이 페이지의 내용" },
 };
 // The reading time every language shows is the English text's, at this pace.
 const WORDS_PER_MINUTE = 180;

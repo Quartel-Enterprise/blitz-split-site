@@ -218,9 +218,9 @@
       items: { pizza: "Duża pizza", beer: "Piwo", salad: "Sałatka", draft: "Piwo z beczki", shrimp: "Półmisek krewetek" },
       receiptBill: "Bar Portowy",
       hint: {
-        equal: "Gdy nie dzieli się równo, pozostałe centy trafiają do osoby, która zapłaciła.",
+        equal: "Gdy nie dzieli się równo, pozostałe grosze trafiają do osoby, która zapłaciła.",
         amounts: "Kto zostaje przy {zero}, wypada z wydatku.",
-        percent: "Tylko liczby całkowite. Pozostałe centy trafiają do osoby, która zapłaciła.",
+        percent: "Tylko liczby całkowite. Pozostałe grosze trafiają do osoby, która zapłaciła.",
         shares: "Użyj udziałów, gdy ktoś ma więcej, np. gdy przychodzi z osobą towarzyszącą.",
         income: "Dochody zostają na urządzeniu. Grupa widzi tylko procenty.",
         items: "Każda pozycja dzieli się między osoby, które ją zamówiły, a serwis według tego, co kto zamówił.",
@@ -274,9 +274,9 @@
       items: { pizza: "Büyük pizza", beer: "Bira", salad: "Salata", draft: "Fıçı bira", shrimp: "Karides tabağı" },
       receiptBill: "Liman Bar",
       hint: {
-        equal: "Tam bölünmediğinde artan sentler ödeyen kişiye gider.",
+        equal: "Tam bölünmediğinde artan kuruşlar ödeyen kişiye gider.",
         amounts: "{zero} olarak kalan kişi masrafa dahil olmaz.",
-        percent: "Yalnızca tam sayılar. Artan sentler ödeyen kişiye gider.",
+        percent: "Yalnızca tam sayılar. Artan kuruşlar ödeyen kişiye gider.",
         shares: "Biri daha fazla pay alacaksa, örneğin yanında birini getirdiyse, payları kullan.",
         income: "Gelirler cihazda kalır. Grup yalnızca yüzdeleri görür.",
         items: "Her ürün onu alanlar arasında, servis de herkesin aldığına göre bölünür.",
@@ -301,9 +301,9 @@
       items: { pizza: "Pizza besar", beer: "Bir", salad: "Salad", draft: "Bir draft", shrimp: "Platter udang" },
       receiptBill: "Bar Pelabuhan",
       hint: {
-        equal: "Kalau tidak bisa dibagi rata, sisa sennya masuk ke yang membayar.",
+        equal: "Kalau tidak bisa dibagi rata, sisanya masuk ke yang membayar.",
         amounts: "Yang tetap di {zero} tidak ikut tagihan ini.",
-        percent: "Hanya bilangan bulat. Sisa sennya masuk ke yang membayar.",
+        percent: "Hanya bilangan bulat. Sisanya masuk ke yang membayar.",
         shares: "Pakai porsi kalau ada yang dapat lebih, misalnya yang membawa teman.",
         income: "Penghasilan tetap di perangkat. Grup hanya melihat persentasenya.",
         items: "Tiap item dibagi di antara yang memesannya, dan biaya layanan sesuai pesanan masing-masing.",
@@ -328,9 +328,9 @@
       items: { pizza: "ピザ（L）", beer: "ビール", salad: "サラダ", draft: "生ビール", shrimp: "エビの盛り合わせ" },
       receiptBill: "ハーバーバー",
       hint: {
-        equal: "割り切れないときは、余りのセントは支払った人に回ります。",
+        equal: "割り切れないときは、端数は支払った人に回ります。",
         amounts: "{zero}のままの人は、この支出の対象外になります。",
-        percent: "整数のみ。余りのセントは支払った人に回ります。",
+        percent: "整数のみ。端数は支払った人に回ります。",
         shares: "連れを呼んだ人など、多めに負担する人がいるときは口数を使います。",
         income: "収入は端末内に保存されます。グループには割合だけが表示されます。",
         items: "品目は頼んだ人で分け、サービス料は各自が頼んだ分に応じて分けます。",
@@ -398,6 +398,35 @@
         less: "На одну частку менше: {name}", more: "На одну частку більше: {name}", had: "Хто замовляв: {item}",
       },
     },
+    // Korean: one form, so no message holds a "|", and no particle follows a name or an amount: the sentence names
+    // them in a label ("제외: Ana") or before a noun ("Ana 님: 2몫"), as the app writes them.
+    ko: {
+      bill: "피자 파티", paid: "결제: Pedro", notIn: "이번엔 제외",
+      each: "1인당 {a}", among: "합계 {a}, {n}명이 나눠요.", amongOne: "합계 {a}, 1명이 부담해요.", out: "제외: {name}.",
+      nobody: "아직 아무도 포함되지 않았어요", nobodyEqual: "합계 {a} 나누려면 한 명 이상 선택하세요.",
+      checkAll: "모두 선택", uncheckAll: "모두 선택 해제",
+      left: "{a} 남음", over: "{a} 초과", closed: "합계가 맞아요: {a}",
+      progress: "{b} 중 {a} 배분됨.", closedMsg: "나눈 금액의 합이 합계와 같아요.",
+      parts: "합계 {a}, {n}몫", personParts: "{name} 님: {n}몫.", nobodyShares: "합계 {a} 나누려면 한 명 이상에게 몫을 주세요.",
+      ofEach: "각 지출의 {p}", ofBill: "지출의 {p}", incomeDetail: "각자의 몫은 소득에 따라 정해져요.", perMonth: "/월",
+      service: "봉사료 ({p})", serviceSub: "각자 주문한 만큼 비례해서",
+      loose: "항목마다 먹은 사람을 표시하세요", looseDetail: "각 항목의 얼굴을 눌러 먹은 사람을 표시하세요.",
+      itemsClosed: "항목 {a}, 봉사료 {b}.", nobodyItem: "선택된 사람 없음", eachItem: "1인당 {a}",
+      items: { pizza: "라지 피자", beer: "맥주", salad: "샐러드", draft: "생맥주", shrimp: "새우 플래터" },
+      receiptBill: "항구 바",
+      hint: {
+        equal: "똑같이 나누어떨어지지 않으면 남은 금액은 낸 사람에게 돌아가요.",
+        amounts: "금액이 {zero} 그대로인 사람은 이 지출에서 제외돼요.",
+        percent: "정수만 입력할 수 있어요. 남은 금액은 낸 사람에게 돌아가요.",
+        shares: "누군가 더 많이 부담할 때 비율을 사용하세요. 예를 들어 동행을 데려온 사람처럼요.",
+        income: "소득은 기기에만 저장돼요. 그룹에는 퍼센트만 보여요.",
+        items: "각 항목은 먹은 사람끼리 나누고, 봉사료는 각자 주문한 만큼 나눠요.",
+      },
+      label: {
+        amount: "{name} 몫", percent: "{name} 퍼센트", income: "{name} 월 소득",
+        less: "{name} 몫 하나 줄이기", more: "{name} 몫 하나 늘리기", had: "먹은 사람: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
@@ -409,29 +438,10 @@
     return text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
   }
 
-  // Amounts as preview.js writes them: the language's separators, no decimals when they are zero.
-  const CURRENCY = window.localized({ pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", " ", " $"],
-    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
-    ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"],
-    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] });
-  function plain(cents) {
-    const whole = String(Math.floor(cents / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
-    const frac = cents % 100;
-    return whole + (frac ? CURRENCY[1] + String(frac).padStart(2, "0") : "");
-  }
-  const money = (cents) => CURRENCY[0] + plain(cents) + (CURRENCY[3] || "");
+  // Amounts in the visitor's currency, as preview.js writes them (money.js).
+  const { plain, format: money, parse: parseMoney } = window.money;
   // Turkish writes the sign first: %10. French, German and Russian put a space before it.
   const pct = (n) => (["fr", "de", "ru"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
-  // What someone types, in cents: the last "," or "." followed by one or two digits is the decimal point, whatever the
-  // language, so "33,5", "33.50" and "6.000" all read as meant.
-  function parseMoney(text) {
-    const t = text.replace(/[^\d.,]/g, "");
-    const sep = Math.max(t.lastIndexOf(","), t.lastIndexOf("."));
-    if (sep >= 0 && t.length - sep - 1 <= 2) {
-      return Number(t.slice(0, sep).replace(/[.,]/g, "") || 0) * 100 + Number(t.slice(sep + 1).padEnd(2, "0"));
-    }
-    return Number(t.replace(/[.,]/g, "") || 0) * 100;
-  }
 
   const PEOPLE = [
     { name: "Pedro", photo: "me", color: "blue" },
@@ -572,10 +582,12 @@
   }
 
   const face = (p) => `<span class="av ${p.color}"><img src="/people/${p.photo}.webp" alt=""></span>`;
-  const prefix = CURRENCY[0].trim();
-  const suffix = (CURRENCY[3] || "").trim();
+  const prefix = window.money.symbolBefore;
+  const suffix = window.money.symbolAfter;
+  // A money field grows with what it holds: ₩6,000,000 or Rp60.000.000 is longer than $6,000.
+  const fit = (input) => input.style.setProperty("--chars", String(input.value.length));
   const moneyField = (value, label, extra = "") => `<span class="split-field">${prefix ? `<span>${prefix}</span>` : ""}`
-    + `<input type="text" inputmode="decimal" autocomplete="off" value="${plain(value)}" aria-label="${label}">`
+    + `<input type="text" inputmode="${window.money.wholeUnits ? "numeric" : "decimal"}" autocomplete="off" value="${plain(value)}" style="--chars: ${plain(value).length}" aria-label="${label}">`
     + `${suffix ? `<span>${suffix}</span>` : ""}${extra}</span>`;
 
   function control(i) {
@@ -677,6 +689,7 @@
       state.percent[i] = Math.min(100, Number(input.value || 0));
     } else {
       state[mode][i] = Math.min(mode === "income" ? 99999999 : 999999, parseMoney(input.value));
+      fit(input);
     }
     noteEdit();
     update();
@@ -687,6 +700,7 @@
     if (!input.matches(".split-field input")) return;
     const i = [...panel.querySelectorAll(".split-field input")].indexOf(input);
     input.value = mode === "percent" ? String(state.percent[i]) : plain(state[mode][i]);
+    fit(input);
   });
   panel.addEventListener("click", (e) => {
     const all = e.target.closest(".split-all");

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Wydatki grupy mają teraz „Zobacz wszystkie”, które otwiera Wszystkie wydatki od razu przefiltrowane do tej grupy, żeby szukać, sortować i filtrować jej wydatki. Wyczyść filtr, aby zobaczyć wszystkie grupy.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "W „Nowa grupa” pole „Dodaj po imieniu” podpowiada teraz podczas pisania osoby z Twoich Kontaktów, z ich zdjęciem: dotknij jednej, aby utworzyć grupę z tą samą osobą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Podczas przewijania grupy zwinięty górny pasek pokazuje tylko zdjęcie i nazwę grupy, bez uciętych obok członków i sumy.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Możesz teraz pobrać 12 słów kodu odzyskiwania jako plik tekstowy.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Zapisz swój kod odzyskiwania mówi teraz, że kod przywraca twoje dane i że po 30 dniach nieużywania są one usuwane.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Podziel wydatek ma teraz Zeskanuj paragon także u góry, obok Zapisz, więc klawiatura już go nie zasłania, a Dodaj metodę płatności jest mniej widoczne.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "W Statystykach grupy widok Według osób to teraz pierścień z udziałem każdego, w tym samym kolorze, który każda osoba ma w Domyślnym podziale, z listą imion i kwot pod nim jako legendą. Skonsumowane i Zapłacone przełączają to, co pokazuje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Kto bierze udział” w „Nowa grupa” pokazuje Twoje zdjęcie profilowe zamiast inicjału.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Synchronizacja…” nie pojawia się już co chwilę na ekranach Start i Grupy po powrocie do aplikacji: gdy widać twoje grupy, synchronizacja działa po cichu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na tabletach i przy telefonie w poziomie cień przycisku „Podziel wydatek” na górze bocznego paska nie jest już ucięty na krawędziach.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

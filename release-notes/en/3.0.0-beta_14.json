@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "A group's Expenses now has \"See all\", which opens All expenses already filtered by that group, so you can search, sort and filter its bills. Clear the filter to see every group.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In New group, \"Add by name\" now suggests people from your Contacts as you type, with their photo: tap one to create the group with that same person.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Scrolling a group, its folded top bar shows only the group's photo and name, without the members and total cut off beside them.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "You can now download your recovery code's 12 words as a text file.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Save your recovery code now says it brings back your data, and that without use for 30 days the data is deleted.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Split a bill now has Scan receipt at the top too, beside Save, so the keyboard no longer hides it, and Add a payment method is quieter.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In a group's Statistics, By person is now a donut of each one's share, in the same color each person has in Default split, with the list of names and amounts under it as its legend. Consumed and Paid switch what it shows.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "New group's \"Who's in\" shows your profile photo instead of your initial.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Syncing…\" no longer keeps showing up on Home and Groups when you come back to the app: syncs run quietly once your groups are on screen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "On tablets and with the phone lying down, the shadow of \"Split a bill\" at the top of the side bar is no longer cut off at its edges.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
