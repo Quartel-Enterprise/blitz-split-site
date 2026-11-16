@@ -83,6 +83,11 @@
       lines: [["2 ПИВО РОЗЛИВНЕ", "28,00", 1], ["1 ТАРІЛКА КРЕВЕТОК", "96,00", 2]],
       subtotal: ["ПРОМІЖНИЙ ПІДСУМОК", "124,00"], service: ["ОБСЛУГОВУВАННЯ 10%", "12,40", 3], total: ["РАЗОМ", "136,40"],
     },
+    ko: {
+      store: "항구 바", address: "갈매기로 120", date: "2026.11.08  21:47",
+      lines: [["2 생맥주", "28.00", 1], ["1 새우 플래터", "96.00", 2]],
+      subtotal: ["소계", "124.00"], service: ["봉사료 10%", "12.40", 3], total: ["합계", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

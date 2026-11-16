@@ -5,11 +5,11 @@
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian and Ukrainian. The markup is in English; each page carries its other languages' strings in
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian and Korean. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the header's globe menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
-`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a fourteenth language: only the exact tag `pt-PT` (a browser's
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a fifteenth language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
 `pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
@@ -22,7 +22,10 @@ in its language. Japanese keeps
 `line-break: strict`, breaks headings between phrases (`word-break: auto-phrase`) and drops the Latin headings' tight
 tracking; Turkish writes the percent sign first (%10). Russian and Ukrainian show their own currencies on the
 landing (₽, ₴), as pt-PT shows the euro, and count in three forms, as Polish does, `one|few|many` in a message with
-`|` (21, 31… take `one`, so they always write all three).
+`|` (21, 31… take `one`, so they always write all three). Korean breaks lines
+only between words (`word-break: keep-all`), drops the Latin headings' tracking, counts in one form (no `|`), and never
+glues a particle to a name or an amount filled in at run time ("결제: Ana", "Ana 님이"), as the app writes them; it
+shows dollars on the landing, as Japanese does, since the won has no cents and the demo's amounts do.
 
 The theme is Light, Dark or System (the default), from the header's theme menu or the footer, kept for the next visit.
 `boot.js` always sets `data-theme` to `light` or `dark`, resolving System to the system's theme and following it when it
@@ -32,7 +35,7 @@ site picks a language from; each script's strings and formats still carry a key 
 
 The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the Latin and Latin Extended subsets Google
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
-`geist-latin.woff2`. Japanese, Russian and Ukrainian fall back to the system's font, since neither subset has their
+`geist-latin.woff2`. Japanese, Russian, Ukrainian and Korean fall back to the system's font, since neither subset has their
 scripts.
 
 ## Motion

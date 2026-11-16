@@ -21,8 +21,8 @@ that link's title, description and image.
 An invite and a bill speak the language of their currency. A profile, which has none, a comment's link and the
 download paths speak the language their link asks for, `?lang=`: the apps add their own language to those links when
 they share them, and the pages read the same parameter (`boot.js`), so the page that opens speaks it too. Eleven of
-the apps' thirteen languages are written (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
-Turkish, Indonesian and Japanese); Russian and Ukrainian, which the site speaks, read English here until the API's
+the apps' fourteen languages are written (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
+Turkish, Indonesian and Japanese); Russian, Ukrainian and Korean, which the site speaks, read English here until the API's
 function has their words, as does any other language, or none.
 `pt-PT` (Portugal's Portuguese, a variant of `pt`: [design.md](design.md)) is the one tag with a region the Worker passes on, as the
 apps and the page write it; the API reads any other `pt-*` as Portuguese, and, until it has Portugal's wording, pt-PT too.

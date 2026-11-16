@@ -398,6 +398,35 @@
         less: "На одну частку менше: {name}", more: "На одну частку більше: {name}", had: "Хто замовляв: {item}",
       },
     },
+    // Korean: one form, so no message holds a "|", and no particle follows a name or an amount: the sentence names
+    // them in a label ("제외: Ana") or before a noun ("Ana 님: 2몫"), as the app writes them.
+    ko: {
+      bill: "피자 파티", paid: "결제: Pedro", notIn: "이번엔 제외",
+      each: "1인당 {a}", among: "합계 {a}, {n}명이 나눠요.", amongOne: "합계 {a}, 1명이 부담해요.", out: "제외: {name}.",
+      nobody: "아직 아무도 포함되지 않았어요", nobodyEqual: "합계 {a} 나누려면 한 명 이상 선택하세요.",
+      checkAll: "모두 선택", uncheckAll: "모두 선택 해제",
+      left: "{a} 남음", over: "{a} 초과", closed: "합계가 맞아요: {a}",
+      progress: "{b} 중 {a} 배분됨.", closedMsg: "나눈 금액의 합이 합계와 같아요.",
+      parts: "합계 {a}, {n}몫", personParts: "{name} 님: {n}몫.", nobodyShares: "합계 {a} 나누려면 한 명 이상에게 몫을 주세요.",
+      ofEach: "각 지출의 {p}", ofBill: "지출의 {p}", incomeDetail: "각자의 몫은 소득에 따라 정해져요.", perMonth: "/월",
+      service: "봉사료 ({p})", serviceSub: "각자 주문한 만큼 비례해서",
+      loose: "항목마다 먹은 사람을 표시하세요", looseDetail: "각 항목의 얼굴을 눌러 먹은 사람을 표시하세요.",
+      itemsClosed: "항목 {a}, 봉사료 {b}.", nobodyItem: "선택된 사람 없음", eachItem: "1인당 {a}",
+      items: { pizza: "라지 피자", beer: "맥주", salad: "샐러드", draft: "생맥주", shrimp: "새우 플래터" },
+      receiptBill: "항구 바",
+      hint: {
+        equal: "똑같이 나누어떨어지지 않으면 남은 금액은 낸 사람에게 돌아가요.",
+        amounts: "금액이 {zero} 그대로인 사람은 이 지출에서 제외돼요.",
+        percent: "정수만 입력할 수 있어요. 남은 금액은 낸 사람에게 돌아가요.",
+        shares: "누군가 더 많이 부담할 때 비율을 사용하세요. 예를 들어 동행을 데려온 사람처럼요.",
+        income: "소득은 기기에만 저장돼요. 그룹에는 퍼센트만 보여요.",
+        items: "각 항목은 먹은 사람끼리 나누고, 봉사료는 각자 주문한 만큼 나눠요.",
+      },
+      label: {
+        amount: "{name} 몫", percent: "{name} 퍼센트", income: "{name} 월 소득",
+        less: "{name} 몫 하나 줄이기", more: "{name} 몫 하나 늘리기", had: "먹은 사람: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
@@ -412,7 +441,7 @@
   // Amounts as preview.js writes them: the language's separators, no decimals when they are zero.
   const CURRENCY = window.localized({ pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", " ", " $"],
     de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
-    ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"],
+    ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"], ko: ["$", ".", ","],
     nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] });
   function plain(cents) {
     const whole = String(Math.floor(cents / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
