@@ -20,12 +20,17 @@ pages and the release notes are the exception: pt-PT has its own, written in ful
 `/release-notes/pt-PT.json` for the apps), the legal ones still on Brazil's law as every language's are. Each legal page names the apps' buttons as the app shows them
 in its language. Japanese keeps
 `line-break: strict`, breaks headings between phrases (`word-break: auto-phrase`) and drops the Latin headings' tight
-tracking; Turkish writes the percent sign first (%10). Russian and Ukrainian show their own currencies on the
-landing (₽, ₴), as pt-PT shows the euro, and count in three forms, as Polish does, `one|few|many` in a message with
+tracking; Turkish writes the percent sign first (%10). Russian and Ukrainian count in three forms, as Polish does, `one|few|many` in a message with
 `|` (21, 31… take `one`, so they always write all three). Korean breaks lines
 only between words (`word-break: keep-all`), drops the Latin headings' tracking, counts in one form (no `|`), and never
-glues a particle to a name or an amount filled in at run time ("결제: Ana", "Ana 님이"), as the app writes them; it
-shows dollars on the landing, as Japanese does, since the won has no cents and the demo's amounts do.
+glues a particle to a name or an amount filled in at run time ("결제: Ana", "Ana 님이"), as the app writes them.
+
+The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
+the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
+in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, and the rupiah, the yen and
+the won, which have no cents in use. The demo keeps every amount in cents and those three show it scaled to whole
+units (a cent is Rp100, ¥1 and ₩10), so a $48.60 ride reads Rp486.000, ¥4,860 or ₩48,600 and every split still adds
+up exactly. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way.
 
 The theme is Light, Dark or System (the default), from the header's theme menu or the footer, kept for the next visit.
 `boot.js` always sets `data-theme` to `light` or `dark`, resolving System to the system's theme and following it when it

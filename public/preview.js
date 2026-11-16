@@ -279,22 +279,10 @@
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
-  // Amounts as the app shows them: the language's separators, and no decimals when they are all zero.
-  const CURRENCY = window.localized({ pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", "\u202f", "\u00a0$"],
-    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
-    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","],
-    // Russian and Ukrainian show their own currencies, as Portugal's Portuguese shows the euro.
-    ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"], ko: ["$", ".", ","] });
   // Turkish writes the percent sign first: %10.
   const pct = (n) => (lang === "tr" ? `%${n}` : `${n}%`);
-  function money(cents, signed) {
-    const abs = Math.abs(cents);
-    const whole = String(Math.floor(abs / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
-    const frac = abs % 100;
-    const text = CURRENCY[0] + whole + (frac ? CURRENCY[1] + String(frac).padStart(2, "0") : "") + (CURRENCY[3] || "");
-    if (!signed || cents === 0) return text;
-    return (cents > 0 ? "+" : "−") + text;
-  }
+  // Amounts in the visitor's currency, as the app shows them (money.js).
+  const money = window.money.format;
 
   const PEOPLE = [
     { id: "me", name: "Pedro", initial: "P", color: "blue" },

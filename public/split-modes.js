@@ -218,9 +218,9 @@
       items: { pizza: "Duża pizza", beer: "Piwo", salad: "Sałatka", draft: "Piwo z beczki", shrimp: "Półmisek krewetek" },
       receiptBill: "Bar Portowy",
       hint: {
-        equal: "Gdy nie dzieli się równo, pozostałe centy trafiają do osoby, która zapłaciła.",
+        equal: "Gdy nie dzieli się równo, pozostałe grosze trafiają do osoby, która zapłaciła.",
         amounts: "Kto zostaje przy {zero}, wypada z wydatku.",
-        percent: "Tylko liczby całkowite. Pozostałe centy trafiają do osoby, która zapłaciła.",
+        percent: "Tylko liczby całkowite. Pozostałe grosze trafiają do osoby, która zapłaciła.",
         shares: "Użyj udziałów, gdy ktoś ma więcej, np. gdy przychodzi z osobą towarzyszącą.",
         income: "Dochody zostają na urządzeniu. Grupa widzi tylko procenty.",
         items: "Każda pozycja dzieli się między osoby, które ją zamówiły, a serwis według tego, co kto zamówił.",
@@ -274,9 +274,9 @@
       items: { pizza: "Büyük pizza", beer: "Bira", salad: "Salata", draft: "Fıçı bira", shrimp: "Karides tabağı" },
       receiptBill: "Liman Bar",
       hint: {
-        equal: "Tam bölünmediğinde artan sentler ödeyen kişiye gider.",
+        equal: "Tam bölünmediğinde artan kuruşlar ödeyen kişiye gider.",
         amounts: "{zero} olarak kalan kişi masrafa dahil olmaz.",
-        percent: "Yalnızca tam sayılar. Artan sentler ödeyen kişiye gider.",
+        percent: "Yalnızca tam sayılar. Artan kuruşlar ödeyen kişiye gider.",
         shares: "Biri daha fazla pay alacaksa, örneğin yanında birini getirdiyse, payları kullan.",
         income: "Gelirler cihazda kalır. Grup yalnızca yüzdeleri görür.",
         items: "Her ürün onu alanlar arasında, servis de herkesin aldığına göre bölünür.",
@@ -301,9 +301,9 @@
       items: { pizza: "Pizza besar", beer: "Bir", salad: "Salad", draft: "Bir draft", shrimp: "Platter udang" },
       receiptBill: "Bar Pelabuhan",
       hint: {
-        equal: "Kalau tidak bisa dibagi rata, sisa sennya masuk ke yang membayar.",
+        equal: "Kalau tidak bisa dibagi rata, sisanya masuk ke yang membayar.",
         amounts: "Yang tetap di {zero} tidak ikut tagihan ini.",
-        percent: "Hanya bilangan bulat. Sisa sennya masuk ke yang membayar.",
+        percent: "Hanya bilangan bulat. Sisanya masuk ke yang membayar.",
         shares: "Pakai porsi kalau ada yang dapat lebih, misalnya yang membawa teman.",
         income: "Penghasilan tetap di perangkat. Grup hanya melihat persentasenya.",
         items: "Tiap item dibagi di antara yang memesannya, dan biaya layanan sesuai pesanan masing-masing.",
@@ -328,9 +328,9 @@
       items: { pizza: "ピザ（L）", beer: "ビール", salad: "サラダ", draft: "生ビール", shrimp: "エビの盛り合わせ" },
       receiptBill: "ハーバーバー",
       hint: {
-        equal: "割り切れないときは、余りのセントは支払った人に回ります。",
+        equal: "割り切れないときは、端数は支払った人に回ります。",
         amounts: "{zero}のままの人は、この支出の対象外になります。",
-        percent: "整数のみ。余りのセントは支払った人に回ります。",
+        percent: "整数のみ。端数は支払った人に回ります。",
         shares: "連れを呼んだ人など、多めに負担する人がいるときは口数を使います。",
         income: "収入は端末内に保存されます。グループには割合だけが表示されます。",
         items: "品目は頼んだ人で分け、サービス料は各自が頼んだ分に応じて分けます。",
@@ -438,29 +438,10 @@
     return text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
   }
 
-  // Amounts as preview.js writes them: the language's separators, no decimals when they are zero.
-  const CURRENCY = window.localized({ pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], en: ["$", ".", ","], es: ["$", ",", "."], fr: ["", ",", " ", " $"],
-    de: ["", ",", ".", "\u00a0$"], it: ["", ",", ".", "\u00a0$"], pl: ["", ",", "\u00a0", "\u00a0$"],
-    ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"], ko: ["$", ".", ","],
-    nl: ["$\u00a0", ",", "."], tr: ["$", ",", "."], id: ["$", ",", "."], ja: ["$", ".", ","] });
-  function plain(cents) {
-    const whole = String(Math.floor(cents / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, CURRENCY[2]);
-    const frac = cents % 100;
-    return whole + (frac ? CURRENCY[1] + String(frac).padStart(2, "0") : "");
-  }
-  const money = (cents) => CURRENCY[0] + plain(cents) + (CURRENCY[3] || "");
+  // Amounts in the visitor's currency, as preview.js writes them (money.js).
+  const { plain, format: money, parse: parseMoney } = window.money;
   // Turkish writes the sign first: %10. French, German and Russian put a space before it.
   const pct = (n) => (["fr", "de", "ru"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
-  // What someone types, in cents: the last "," or "." followed by one or two digits is the decimal point, whatever the
-  // language, so "33,5", "33.50" and "6.000" all read as meant.
-  function parseMoney(text) {
-    const t = text.replace(/[^\d.,]/g, "");
-    const sep = Math.max(t.lastIndexOf(","), t.lastIndexOf("."));
-    if (sep >= 0 && t.length - sep - 1 <= 2) {
-      return Number(t.slice(0, sep).replace(/[.,]/g, "") || 0) * 100 + Number(t.slice(sep + 1).padEnd(2, "0"));
-    }
-    return Number(t.replace(/[.,]/g, "") || 0) * 100;
-  }
 
   const PEOPLE = [
     { name: "Pedro", photo: "me", color: "blue" },
@@ -601,8 +582,8 @@
   }
 
   const face = (p) => `<span class="av ${p.color}"><img src="/people/${p.photo}.webp" alt=""></span>`;
-  const prefix = CURRENCY[0].trim();
-  const suffix = (CURRENCY[3] || "").trim();
+  const prefix = window.money.symbolBefore;
+  const suffix = window.money.symbolAfter;
   const moneyField = (value, label, extra = "") => `<span class="split-field">${prefix ? `<span>${prefix}</span>` : ""}`
     + `<input type="text" inputmode="decimal" autocomplete="off" value="${plain(value)}" aria-label="${label}">`
     + `${suffix ? `<span>${suffix}</span>` : ""}${extra}</span>`;
