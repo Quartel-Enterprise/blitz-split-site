@@ -30,7 +30,9 @@ the phone, the split card and the receipt share): dollars in English and Spanish
 in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, and the rupiah, the yen and
 the won, which have no cents in use. The demo keeps every amount in cents and those three show it scaled to whole
 units (a cent is Rp100, ¥1 and ₩10), so a $48.60 ride reads Rp486.000, ¥4,860 or ₩48,600 and every split still adds
-up exactly. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way.
+up exactly; an amount typed in the split card rounds to the nearest ₩10 or Rp100, and a field grows with what it
+holds. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way, by hand, so the
+first paint shows them before any script runs.
 
 The theme is Light, Dark or System (the default), from the header's theme menu or the footer, kept for the next visit.
 `boot.js` always sets `data-theme` to `light` or `dark`, resolving System to the system's theme and following it when it

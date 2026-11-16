@@ -584,8 +584,10 @@
   const face = (p) => `<span class="av ${p.color}"><img src="/people/${p.photo}.webp" alt=""></span>`;
   const prefix = window.money.symbolBefore;
   const suffix = window.money.symbolAfter;
+  // A money field grows with what it holds: ₩6,000,000 or Rp60.000.000 is longer than $6,000.
+  const fit = (input) => input.style.setProperty("--chars", String(input.value.length));
   const moneyField = (value, label, extra = "") => `<span class="split-field">${prefix ? `<span>${prefix}</span>` : ""}`
-    + `<input type="text" inputmode="${window.money.wholeUnits ? "numeric" : "decimal"}" autocomplete="off" value="${plain(value)}" aria-label="${label}">`
+    + `<input type="text" inputmode="${window.money.wholeUnits ? "numeric" : "decimal"}" autocomplete="off" value="${plain(value)}" style="--chars: ${plain(value).length}" aria-label="${label}">`
     + `${suffix ? `<span>${suffix}</span>` : ""}${extra}</span>`;
 
   function control(i) {
@@ -687,6 +689,7 @@
       state.percent[i] = Math.min(100, Number(input.value || 0));
     } else {
       state[mode][i] = Math.min(mode === "income" ? 99999999 : 999999, parseMoney(input.value));
+      fit(input);
     }
     noteEdit();
     update();
@@ -697,6 +700,7 @@
     if (!input.matches(".split-field input")) return;
     const i = [...panel.querySelectorAll(".split-field input")].indexOf(input);
     input.value = mode === "percent" ? String(state.percent[i]) : plain(state[mode][i]);
+    fit(input);
   });
   panel.addEventListener("click", (e) => {
     const all = e.target.closest(".split-all");
