@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Kişiler veya Bakiyeler'den birini açtığında artık adı ve bakiyesi fotoğrafla birlikte profiline taşınıyor, geri döndüğünde de yerine dönüyor.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "İstatistikler'de \"Kişiye göre\" halkasının ortası, pay seninse artık sadece \"Sen\" yazıyor; uzun bir isim de halkaya değmek yerine \"…\" ile bitiyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar'dan bir grup açtığında, üyelerin yüzleri artık satırdan grubun ekranına geçiyor ve çıkınca geri dönüyor.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Telefonda bir harcamayı açmak artık daha fazlasını beraberinde getiriyor: kimin ödediği Ana Sayfa ve Tüm harcamalar'daki satırından, saat grubun Harcamalar'ındaki satırından, grubun fotoğrafı ve adı da grubun ekranından geliyor. Çıkınca geri dönüyorlar.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Bir grubun adı artık yalnızca dönüşte değil, açarken de grubun ekranına geçiyor.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Als je iemand opent vanuit Contacten of Saldi, gaan de naam en het saldo nu samen met de foto mee naar het profiel, en weer terug als je teruggaat.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "In Statistieken staat in het midden van de ring \"Per persoon\" nu alleen \"Jij\" als het aandeel van jou is, en een lange naam eindigt op \"…\" in plaats van de ring te raken.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Open je een groep vanuit Groepen, dan gaan de gezichten van de leden nu van de rij naar het scherm van de groep, en terug als je weggaat.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Op een telefoon neemt het openen van een uitgave nu meer mee: wie betaalde komt uit de rij op Start en Alle uitgaven, de tijd uit de rij in de Uitgaven van de groep, en de foto en naam van de groep uit het scherm van de groep. Ze gaan terug als je weggaat.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "De naam van een groep gaat nu ook bij het openen naar het scherm van de groep, niet alleen op de terugweg.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

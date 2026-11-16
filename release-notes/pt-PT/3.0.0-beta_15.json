@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Abrir alguém em Contactos ou Saldos leva agora o nome e o saldo da pessoa até ao perfil juntamente com a foto, e de volta quando regressas.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Nas Estatísticas, o meio do anel de \"Por pessoa\" diz agora só \"Tu\" quando a parte é tua, e um nome comprido termina em \"…\" em vez de tocar no anel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ao abrir um grupo em Grupos, as caras dos membros passam agora da linha para o ecrã do grupo, e voltam quando sais.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "No telemóvel, abrir uma conta leva agora mais coisas consigo: quem pagou vem da linha no Início e em Todas as despesas, a hora vem da linha nas Despesas do grupo, e a foto e o nome do grupo vêm do ecrã do grupo. Voltam quando sais.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "O nome do grupo passa agora para o ecrã do grupo ao abri-lo, não só no regresso.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

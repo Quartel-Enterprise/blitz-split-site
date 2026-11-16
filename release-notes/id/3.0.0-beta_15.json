@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Membuka seseorang dari Kontak atau Saldo kini membawa nama dan saldonya ke profil bersama fotonya, lalu kembali lagi saat kamu kembali.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Di Statistik, bagian tengah cincin \"Per orang\" kini hanya menulis \"Kamu\" saat bagiannya milikmu, dan nama panjang diakhiri \"…\" alih-alih menyentuh cincin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saat membuka grup dari Grup, wajah para anggotanya kini berpindah dari baris ke layar grup, dan kembali saat kamu keluar.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Di ponsel, membuka tagihan kini membawa lebih banyak hal: siapa yang membayar berpindah dari barisnya di Beranda dan Semua pengeluaran, jamnya dari barisnya di Pengeluaran grup, serta foto dan nama grup dari layar grup. Semuanya kembali saat kamu keluar.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Nama grup kini berpindah ke layar grup saat dibuka, tidak hanya saat kembali.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

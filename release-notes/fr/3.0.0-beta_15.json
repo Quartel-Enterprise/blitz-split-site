@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Ouvrir quelqu’un depuis Contacts ou Soldes emmène désormais son nom et son solde jusqu’à son profil avec la photo, et les ramène quand tu reviens.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Dans Statistiques, le centre de l’anneau « Par personne » indique maintenant juste « Toi » quand la part est la tienne, et un nom long se termine par « … » au lieu de toucher l’anneau.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En ouvrant un groupe depuis Groupes, les visages de ses membres passent désormais de la ligne à l’écran du groupe, et reviennent quand tu en sors.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Sur un téléphone, ouvrir une dépense emporte désormais plus d’éléments : qui a payé part de sa ligne dans Accueil et Toutes les dépenses, l’heure de sa ligne dans les Dépenses du groupe, et la photo et le nom du groupe de l’écran du groupe. Ils reviennent quand tu en sors.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Le nom d’un groupe passe désormais dans l’écran du groupe à l’ouverture, pas seulement au retour.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

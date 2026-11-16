@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Opening someone from Contacts or Balances now carries their name and balance into their profile along with the photo, and back again when you return.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "In Statistics, the middle of the \"By person\" ring now just says \"You\" when the share is yours, and a long name ends in \"…\" instead of touching the ring.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Opening a group from Groups, its members' faces now travel from the row into the group's screen, and back when you leave.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "On a phone, opening a bill now carries more of it along: who paid travels from its row on Home and All expenses, the time from its row in the group's Expenses, and the group's photo and name from the group's screen. They travel back when you leave.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A group's name now travels into the group's screen as it opens, not only on the way back.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
