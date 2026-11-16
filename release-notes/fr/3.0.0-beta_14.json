@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Les Dépenses d’un groupe ont maintenant « Tout voir », qui ouvre Toutes les dépenses déjà filtrées sur ce groupe, pour rechercher, trier et filtrer ses dépenses. Efface le filtre pour voir tous les groupes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dans Nouveau groupe, « Ajouter par nom » propose maintenant des personnes de tes Contacts pendant que tu écris, avec leur photo : touche-en une pour créer le groupe avec cette même personne.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En faisant défiler un groupe, la barre du haut repliée n’affiche plus que la photo et le nom du groupe, sans les membres et le total coupés à côté.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tu peux maintenant télécharger les 12 mots de ton code de récupération en fichier texte.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Enregistre ton code de récupération indique maintenant qu’il te rend tes données, et qu’elles sont effacées après 30 jours sans utilisation.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Partager une dépense propose maintenant aussi Scanne un reçu en haut, à côté d'Enregistre : le clavier ne le cache plus. Ajouter un moyen de paiement est plus discret.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dans les Statistiques du groupe, Par personne est désormais un anneau de la part de chacun, dans la couleur que chaque personne a dans Répartition par défaut, avec la liste des noms et des montants en dessous comme légende. Consommé et Payé changent ce qu’il montre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "« Qui participe » de Nouveau groupe affiche ta photo de profil au lieu de ton initiale.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "« Synchronisation… » ne s’affiche plus sans arrêt sur Accueil et Groupes quand tu reviens dans l’app : une fois tes groupes à l’écran, la synchronisation se fait en silence.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sur tablette et téléphone à l’horizontale, l’ombre de « Partager une dépense » en haut de la barre latérale n’est plus coupée sur les bords.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Pengeluaran sebuah grup kini punya \"Lihat semua\", yang membuka Semua pengeluaran yang sudah difilter ke grup itu, jadi kamu bisa mencari, mengurutkan, dan memfilter tagihannya. Hapus filternya untuk melihat semua grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di Grup baru, \"Tambah dengan nama\" kini menyarankan orang dari Kontak saat kamu mengetik, lengkap dengan fotonya: ketuk salah satunya untuk membuat grup dengan orang yang sama itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saat menggulir grup, bilah atas yang terlipat kini hanya menampilkan foto dan nama grup, tanpa anggota dan total yang terpotong di sebelahnya.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Sekarang kamu bisa mengunduh 12 kata kode pemulihanmu sebagai file teks.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Simpan kode pemulihanmu kini menjelaskan bahwa kode itu mengembalikan datamu, dan data dihapus setelah 30 hari tidak dipakai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bagi tagihan kini juga punya Pindai struk di atas, di samping Simpan, jadi tidak lagi tertutup keyboard, dan Tambah metode pembayaran kini lebih sederhana.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di Statistik grup, Per orang kini berupa donat bagian masing-masing, dengan warna yang sama seperti di Pembagian default, dan daftar nama serta jumlah di bawahnya sebagai keterangan. Dipakai dan Dibayar mengganti yang ditampilkan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Siapa saja yang ikut\" di Grup baru kini menampilkan foto profilmu, bukan inisialmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Menyinkronkan…\" tidak lagi terus muncul di Beranda dan Grup saat kamu kembali ke aplikasi: begitu grupmu tampil, sinkronisasi berjalan diam-diam.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di tablet dan saat ponsel mendatar, bayangan \"Bagi tagihan\" di atas bilah samping tidak lagi terpotong di tepinya.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
