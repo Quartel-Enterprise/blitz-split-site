@@ -162,7 +162,7 @@ p { margin: 0; text-wrap: pretty; }
    right below. */
 @media (max-width: 419px) { .site-header .wrap { gap: 12px; } .lang-code { display: none; } .header-end { gap: 2px; } .header-end .header-get { display: none; } }
 
-/* Language menu, as Bible Planner's: a translate icon in the header opening the three languages, each in its own name. */
+/* Language menu, as Bible Planner's: a translate icon in the header opening every language, each in its own name. */
 .lang-menu, .theme-menu { position: relative; }
 .lang-menu summary, .theme-menu summary {
   list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
