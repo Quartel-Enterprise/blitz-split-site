@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Die Ausgaben einer Gruppe haben jetzt „Alle ansehen“, das Alle Ausgaben bereits nach dieser Gruppe gefiltert öffnet, damit du ihre Ausgaben suchen, sortieren und filtern kannst. Setz den Filter zurück, um alle Gruppen zu sehen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In „Neue Gruppe“ schlägt „Nach Namen hinzufügen“ jetzt beim Tippen Personen aus deinen Kontakten vor, mit ihrem Foto: Tippe auf eine, um die Gruppe mit genau dieser Person zu erstellen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Beim Scrollen in einer Gruppe zeigt die eingeklappte obere Leiste nur noch Foto und Namen der Gruppe, ohne die abgeschnittenen Mitglieder und die Summe daneben.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Du kannst die 12 Wörter deines Wiederherstellungscodes jetzt als Textdatei herunterladen.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Speichere deinen Wiederherstellungscode sagt jetzt, dass er deine Daten zurückholt und dass sie nach 30 Tagen ohne Nutzung gelöscht werden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ausgabe aufteilen hat Beleg scannen jetzt auch oben neben Speichern, damit die Tastatur es nicht mehr verdeckt, und Zahlungsmethode hinzufügen ist dezenter.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In der Gruppenstatistik ist Nach Person jetzt ein Ring mit dem Anteil jedes Einzelnen, in derselben Farbe wie in der Standardaufteilung, mit der Liste der Namen und Beträge darunter als Legende. Verbraucht und Bezahlt wechseln, was er zeigt.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Wer ist dabei“ in „Neue Gruppe“ zeigt dein Profilfoto statt deines Anfangsbuchstabens.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Synchronisierung…“ taucht auf Start und Gruppen nicht mehr ständig auf, wenn du zur App zurückkehrst: Sind deine Gruppen zu sehen, synchronisiert die App still im Hintergrund.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Auf Tablets und bei quer gehaltenem Handy wird der Schatten von „Ausgabe aufteilen“ oben in der Seitenleiste nicht mehr an den Rändern abgeschnitten.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

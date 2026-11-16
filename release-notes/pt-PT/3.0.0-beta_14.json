@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "As Despesas de um grupo têm agora \"Ver tudo\", que abre Todas as despesas já filtradas por esse grupo, para pesquisares, ordenares e filtrares as contas dele. Limpa o filtro para veres todos os grupos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "No Novo grupo, o \"Adicionar pelo nome\" sugere agora pessoas dos teus Contactos enquanto escreves, com a fotografia delas: toca numa para criares o grupo com essa mesma pessoa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ao deslizar um grupo, a barra de cima recolhida mostra só a foto e o nome do grupo, sem os membros e o total cortados ao lado.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Agora podes transferir as 12 palavras do teu código de recuperação como ficheiro de texto.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Guarda o teu código de recuperação agora diz que ele traz de volta os teus dados, e que são apagados após 30 dias sem utilização.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dividir conta tem agora Ler talão também no topo, ao lado de Guardar, por isso o teclado já não o esconde, e Adicionar forma de pagamento está mais discreto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nas Estatísticas do grupo, Por pessoa é agora um anel com a parte de cada um, na mesma cor que cada pessoa tem na Divisão predefinida, com a lista de nomes e valores por baixo como legenda. Consumo e Pagou trocam o que mostra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O \"Quem participa\" do Novo grupo mostra a tua fotografia de perfil em vez da tua inicial.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O \"A sincronizar…\" já não aparece a toda a hora no Início e nos Grupos quando voltas à app: com os teus grupos no ecrã, a sincronização acontece em silêncio.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em tablets e com o telemóvel deitado, a sombra do \"Dividir conta\" no topo da barra lateral já não aparece cortada nas margens.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

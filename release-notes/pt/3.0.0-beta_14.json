@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "As Despesas de um grupo agora têm \"Ver tudo\", que abre Todas as despesas já filtradas por esse grupo, para você buscar, ordenar e filtrar as contas dele. Limpe o filtro para ver todos os grupos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "No Novo grupo, o \"Adicionar pelo nome\" agora sugere pessoas dos seus Contatos enquanto você digita, com a foto delas: toque em uma para criar o grupo com essa mesma pessoa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ao rolar um grupo, a barra de cima recolhida mostra só a foto e o nome do grupo, sem os membros e o total cortados ao lado.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Agora você pode baixar as 12 palavras do seu código de recuperação como arquivo de texto.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Guarde seu código de recuperação agora diz que ele traz de volta seus dados, e que eles são apagados após 30 dias sem uso.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rachar conta agora tem Ler cupom fiscal também no topo, ao lado de Salvar, então o teclado não esconde mais o botão, e Adicionar forma de pagamento ficou mais discreto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nas Estatísticas do grupo, Por pessoa agora é uma rosca com a parte de cada um, na mesma cor que cada pessoa tem na Divisão padrão, com a lista de nomes e valores embaixo como legenda. Consumo e Pagou trocam o que ela mostra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O \"Quem participa\" do Novo grupo mostra a sua foto de perfil em vez da sua inicial.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O \"Sincronizando…\" não aparece mais toda hora no Início e em Grupos quando você volta ao app: com seus grupos na tela, a sincronização acontece em silêncio.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em tablets e com o celular deitado, a sombra do \"Rachar conta\" no alto da barra lateral não aparece mais cortada nas bordas.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
