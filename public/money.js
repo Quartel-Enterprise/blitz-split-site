@@ -14,6 +14,7 @@
     ar: ["$", ".", ","],
     hi: ["₹", ".", ",", "", 0, 2],
     zh: ["¥", ".", ","],
+    he: ["₪", ".", ","],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");

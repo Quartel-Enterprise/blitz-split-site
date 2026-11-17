@@ -20,7 +20,7 @@ import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
 process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 // The order of the page's blocks. English is what every other language is checked against.
-const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh"];
+const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he"];
 const SOURCE_DIR = "release-notes";
 const FEED_DIR = "public/release-notes";
 // The page's shell, written by hand: its header, its footer and its strings, with nothing between <main> and </main>.
@@ -51,6 +51,7 @@ const CHROME = {
   ar: { language: "العربية", brand: "Blitz Split", locale: "ar-u-nu-latn", title: "ما الجديد", lead: "ما الذي تغيّر في كل إصدار من التطبيق.", showBeta: "عرض الإصدارات التجريبية", beta: "تجريبي", empty: "لا يوجد إصدار مستقر بعد. يمكن تشغيل الإصدارات التجريبية لمعرفة ما يتم اختباره.", platforms: { android: "Android", ios: "iPhone وiPad", mac: "Mac", web: "الويب" } },
   hi: { language: "हिन्दी", brand: "Blitz Split", locale: "hi", title: "नया क्या है", lead: "ऐप के हर वर्शन में क्या बदला।", showBeta: "बीटा वर्शन दिखाएं", beta: "बीटा", empty: "अभी कोई स्टेबल वर्शन नहीं है। जो टेस्ट हो रहा है उसे देखने के लिए बीटा वर्शन चालू करें।", platforms: { android: "Android", ios: "iPhone और iPad", mac: "Mac", web: "वेब" } },
   zh: { language: "中文（简体）", brand: "Blitz Split", locale: "zh-Hans", title: "更新说明", lead: "应用每个版本的变化。", showBeta: "显示测试版", beta: "测试版", empty: "还没有正式版。打开测试版，看看正在测试的内容。", platforms: { android: "Android", ios: "iPhone和iPad", mac: "Mac", web: "网页版" } },
+  he: { language: "עברית", brand: "Blitz Split", locale: "he", title: "מה חדש", lead: "מה השתנה בכל גרסה של האפליקציה.", showBeta: "הצגת גרסאות בטא", beta: "בטא", empty: "עדיין אין גרסה יציבה. אפשר להפעיל את גרסאות הבטא כדי לראות מה נמצא בבדיקה.", platforms: { android: "Android", ios: "iPhone ו-iPad", mac: "Mac", web: "ווב" } },
 };
 
 class NotesError extends Error {}

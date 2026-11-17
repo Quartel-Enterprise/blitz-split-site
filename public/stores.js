@@ -37,7 +37,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${root.dataset.lang === "zh" ? "zh-CN" : root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's as Google Play writes it
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -222,6 +222,15 @@
       mismatchBody: "你正在使用{platform}。为获得最佳体验，请{in}下载应用。",
       mismatchGo: "{to}", mismatchStay: "仍然{to}", close: "关闭",
       in: { play: "从Google Play", appstore: "从App Store" }, to: { play: "前往Google Play", appstore: "前往App Store" },
+    },
+    he: {
+      play: ["זמין ב-", "בקרוב ב-"], appstore: ["להורדה מ-", "בקרוב ב-"], web: ["לפתיחה", "בקרוב"], browser: "בדפדפן",
+      getApp: "הורדת האפליקציה", openWeb: "פתיחת אפליקציית הווב", soon: "בקרוב",
+      playLive: "זמין ב-Google Play", appStoreLive: "זמין ב-App Store", webLive: "פתיחת אפליקציית הווב",
+      mismatchTitle: "בחירת חנות",
+      mismatchBody: "המכשיר הזה הוא {platform}. לחוויה הטובה ביותר, כדאי להוריד את האפליקציה {in}.",
+      mismatchGo: "מעבר {to}", mismatchStay: "המשך {to}", close: "סגירה",
+      in: { play: "מ-Google Play", appstore: "מ-App Store" }, to: { play: "ל-Google Play", appstore: "ל-App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

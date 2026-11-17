@@ -517,6 +517,37 @@
         less: "{name}减少一份", more: "{name}增加一份", had: "谁点了{item}",
       },
     },
+    // Hebrew: a message with "|" holds three forms for {n}, "one|two|other", as the app writes them (fill gives Hebrew's
+    // two the third, the same words as other); no verb says anyone's gender: a name stands in a label ("מחוץ לחשבון: Ana").
+    he: {
+      bill: "ערב פיצה", paid: "שולם על ידי: Pedro", notIn: "לא בחשבון הזה",
+      each: "{a} לכל אחד", among: "{a} בין {n} אנשים.", amongOne: "{a} לאדם אחד.", out: "מחוץ לחשבון: {name}.",
+      nobody: "עדיין אין משתתפים", nobodyEqual: "יש לסמן לפחות אדם אחד כדי לפצל {a}.",
+      checkAll: "סימון של כולם", uncheckAll: "ביטול הסימון של כולם",
+      left: "נותר: {a}", over: "חריגה: {a}", closed: "הסכום מתאים: {a}",
+      progress: "חולקו עד עכשיו {a} מתוך {b}.", closedMsg: "סכום החלקים שווה לסה״כ.",
+      parts: "חלק אחד של {a}|{n} חלקים של {a}|{n} חלקים של {a}",
+      personParts: "{name}: חלק אחד.|{name}: {n} חלקים.|{name}: {n} חלקים.",
+      nobodyShares: "יש לתת חלק לאדם אחד לפחות כדי לפצל {a}.",
+      ofEach: "{p} מכל חשבון", ofBill: "{p} מהחשבון", incomeDetail: "החלק של כל אחד נקבע לפי ההכנסה.", perMonth: "/חודש",
+      service: "שירות ({p})", serviceSub: "באופן יחסי למה שכל אחד הזמין",
+      loose: "סימון מי הזמין כל פריט", looseDetail: "נגיעה בפרצופים שעל כל פריט מסמנת מי הזמין אותו.",
+      itemsClosed: "{a} בפריטים ו-{b} שירות.", nobodyItem: "אין סימון", eachItem: "{a} לכל אחד",
+      items: { pizza: "פיצה גדולה", beer: "בירה", salad: "סלט", draft: "בירה מהחבית", shrimp: "מגש שרימפס" },
+      receiptBill: "בר הנמל",
+      hint: {
+        equal: "כשהחלוקה לא יוצאת שווה, האגורות שנשארות הולכות למי ששילם.",
+        amounts: "מי שנשאר עם {zero} לא נכלל בחשבון.",
+        percent: "מספרים שלמים בלבד. האגורות שנשארות הולכות למי ששילם.",
+        shares: "כדאי להשתמש בחלקים כשלמישהו יש יותר, למשל כשמגיעים עם פלוס אחד.",
+        income: "ההכנסות נשארות במכשיר. הקבוצה רואה רק את האחוזים.",
+        items: "כל פריט מתחלק בין מי שהזמין אותו, והשירות לפי מה שכל אחד הזמין.",
+      },
+      label: {
+        amount: "הסכום של {name}", percent: "האחוז של {name}", income: "ההכנסה החודשית של {name}",
+        less: "חלק אחד פחות ל-{name}", more: "חלק אחד יותר ל-{name}", had: "מי הזמין: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
