@@ -5,7 +5,7 @@
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
 // Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese,
-// Traditional Chinese, Swedish, Czech or Romanian, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language menu, then
+// Traditional Chinese, Swedish, Czech or Romanian, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
 // the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
 // browser language (zh-Hant, zh-TW, zh-HK, zh-MO) picks Traditional Chinese, zh-Hant, as in the apps; every other zh-* stays zh.
 (function () {
@@ -44,7 +44,11 @@
   const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
     .map(normalize)
     .find(known);
-  const pick = [params.get("lang"), stored("lang")].map((code) => code && normalize(code)).concat(preferred).find(known) || "en";
+  // What the visitor chose, by ?lang= or in the language picker; none, and the site follows the browser's languages:
+  // the picker's "System", which data-lang-pref says for site.js.
+  const chosen = [params.get("lang"), stored("lang")].map((code) => code && normalize(code)).find(known);
+  const pick = chosen || preferred || "en";
+  root.dataset.langPref = chosen || "system";
   const variant = VARIANTS.includes(pick) ? pick : "";
   const lang = variant ? variant.split("-")[0] : pick;
   root.dataset.lang = lang;
