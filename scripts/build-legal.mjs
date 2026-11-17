@@ -16,8 +16,13 @@ process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 const PAGES = ["privacy", "terms"];
 // The order of the pages' blocks. English is what every other language is checked against.
-const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "hi"];
+const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi"];
 const LEGAL_DIR = "public/legal";
+
+// Arabic counts in six forms (zero, one, two, few: 3–10, many: 11–99, other), picked as Intl.PluralRules("ar") says.
+const ARABIC_MINUTES = { zero: "{n} دقيقة", one: "دقيقة واحدة", two: "دقيقتان", few: "{n} دقائق", many: "{n} دقيقة", other: "{n} دقيقة" };
+const arabicPlural = new Intl.PluralRules("ar");
+const arabicMinutes = (n) => ARABIC_MINUTES[arabicPlural.select(Number(n))].replace("{n}", n);
 
 const CHROME = {
   pt: { language: "Português", brand: "Bora Rachar", locale: "pt-BR", updated: { privacy: "Atualizada em {date}", terms: "Atualizados em {date}" }, read: "Leitura de {n} minutos", toc: "Nesta página" },
@@ -35,6 +40,7 @@ const CHROME = {
   ru: { language: "Русский", brand: "Blitz Split", locale: "ru", updated: "Обновлено {date}", read: "{n} мин чтения", toc: "На этой странице" },
   uk: { language: "Українська", brand: "Blitz Split", locale: "uk", updated: "Оновлено {date}", read: "{n} хв читання", toc: "На цій сторінці" },
   ko: { language: "한국어", brand: "Blitz Split", locale: "ko", updated: "{date} 업데이트", read: "{n}분 분량", toc: "이 페이지의 내용" },
+  ar: { language: "العربية", brand: "Blitz Split", locale: "ar-u-nu-latn", updated: "آخر تحديث: {date}", read: (n) => `مدة القراءة: ${arabicMinutes(n)}`, toc: "في هذه الصفحة" },
   hi: { language: "हिन्दी", brand: "Blitz Split", locale: "hi", updated: "{date} को अपडेट किया गया", read: "{n} मिनट में पढ़ें", toc: "इस पेज पर" },
 };
 // The reading time every language shows is the English text's, at this pace.
@@ -219,7 +225,7 @@ function renderLanguage(page, lang, file, doc, minutes) {
     `          <h1>${escapeHtml(doc.meta.title)}</h1>`,
     `          <div class="meta">`,
     `            <span>${ICON("cal")}${updated}</span>`,
-    `            <span>${ICON("clock")}${chrome.read.replace("{n}", minutes)}</span>`,
+    `            <span>${ICON("clock")}${typeof chrome.read === "function" ? chrome.read(minutes) : chrome.read.replace("{n}", minutes)}</span>`,
     `          </div>`,
     `        </div>`,
     `      </div>`,

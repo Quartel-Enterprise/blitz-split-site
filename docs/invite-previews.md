@@ -20,10 +20,12 @@ that link's title, description and image.
 
 An invite and a bill speak the language of their currency. A profile, which has none, a comment's link and the
 download paths speak the language their link asks for, `?lang=`: the apps add their own language to those links when
-they share them, and the pages read the same parameter (`boot.js`), so the page that opens speaks it too. Eleven of
-the apps' fifteen languages are written (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
+they share them, and the pages read the same parameter (`boot.js`), so the page that opens speaks it too. Twelve of
+the apps' sixteen languages are written (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
 Turkish, Indonesian and Japanese); Russian, Ukrainian, Korean and Hindi, which the site speaks, read English here until the API's
-function has their words, as does any other language, or none.
+function has their words, as does any other language, or none. The twelfth, Arabic, came with blitz-split-api#83 (a group in
+riyals, dirhams or Egyptian pounds), and the Worker sets the preview page's `<html>` to the words' `language`, with
+`dir="rtl"` for a right-to-left one (`directionOf` in `src/index.js`), so a crawler reads it as written.
 `pt-PT` (Portugal's Portuguese, a variant of `pt`: [design.md](design.md)) is the one tag with a region the Worker passes on, as the
 apps and the page write it; the API reads any other `pt-*` as Portuguese, and, until it has Portugal's wording, pt-PT too.
 

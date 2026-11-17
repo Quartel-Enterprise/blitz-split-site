@@ -11,6 +11,7 @@
     fr: ["", ",", "\u202f", "\u00a0€"], de: ["", ",", ".", "\u00a0€"], it: ["", ",", ".", "\u00a0€"],
     pl: ["", ",", "\u00a0", "\u00a0zł"], nl: ["€\u00a0", ",", "."], tr: ["₺", ",", "."], id: ["Rp\u00a0", ",", ".", "", 100],
     ja: ["¥", ".", ",", "", 1], ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"], ko: ["₩", ".", ",", "", 10],
+    ar: ["$", ".", ","],
     hi: ["₹", ".", ",", "", 0, 2],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3] = CURRENCY;
@@ -28,11 +29,14 @@
     const frac = abs % 100;
     return group(Math.floor(abs / 100)) + (frac ? decimal + String(frac).padStart(2, "0") : "");
   }
+  // Why: in a right-to-left page a sign and a symbol around Latin digits would come apart ("$12.15−"), so the amount
+  // reads as one left-to-right isolate there, as the app writes it.
+  const isolate = document.documentElement.dir === "rtl" ? (text) => `\u2066${text}\u2069` : (text) => text;
   // With its symbol, and "+" or "−" when signed.
   function format(cents, signed) {
     const text = before + plain(cents) + after;
-    if (!signed || cents === 0) return text;
-    return (cents > 0 ? "+" : "−") + text;
+    if (!signed || cents === 0) return isolate(text);
+    return isolate((cents > 0 ? "+" : "−") + text);
   }
   // What someone types, in cents. The last "," or "." followed by one or two digits is the decimal point, whatever the
   // language, so "33,5", "33.50" and "6.000" all read as meant; a currency with no cents in use drops those decimals

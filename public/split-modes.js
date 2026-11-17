@@ -427,6 +427,39 @@
         less: "{name} 몫 하나 줄이기", more: "{name} 몫 하나 늘리기", had: "먹은 사람: {item}",
       },
     },
+    // Arabic: a message with "|" holds its six forms for {n}, "zero|one|two|few|many|other", and no verb says anyone's
+    // gender: a name stands in a label ("غير مشارك: Ana"), as the app writes them.
+    ar: {
+      bill: "سهرة البيتزا", paid: "الدافع: Pedro", notIn: "غير مشارك",
+      each: "{a} لكل شخص",
+      among: "{a} بين {n} شخص.|{a} لشخص واحد.|{a} بين شخصين.|{a} بين {n} أشخاص.|{a} بين {n} شخصًا.|{a} بين {n} شخص.",
+      amongOne: "{a} لشخص واحد.", out: "غير مشارك: {name}.",
+      nobody: "لا أحد مشارك بعد", nobodyEqual: "يلزم تحديد شخص واحد على الأقل لتقسيم {a}.",
+      checkAll: "تحديد الكل", uncheckAll: "إلغاء تحديد الكل",
+      left: "المتبقي: {a}", over: "الزيادة: {a}", closed: "المجموع مطابق: {a}",
+      progress: "تم توزيع {a} من {b} حتى الآن.", closedMsg: "مجموع الأجزاء يساوي الإجمالي.",
+      parts: "{n} حصة من {a}|حصة واحدة من {a}|حصتان من {a}|{n} حصص من {a}|{n} حصة من {a}|{n} حصة من {a}",
+      personParts: "{name}: {n} حصة.|{name}: حصة واحدة.|{name}: حصتان.|{name}: {n} حصص.|{name}: {n} حصة.|{name}: {n} حصة.",
+      nobodyShares: "يلزم إعطاء حصة لشخص واحد على الأقل لتقسيم {a}.",
+      ofEach: "{p} من كل فاتورة", ofBill: "{p} من الفاتورة", incomeDetail: "حصة كل شخص تتبع الدخل.", perMonth: "/شهر",
+      service: "رسوم الخدمة ({p})", serviceSub: "بنسبة ما طلبه كل شخص",
+      loose: "تحديد من طلب كل عنصر", looseDetail: "يتم التحديد بلمس الوجوه في كل عنصر.",
+      itemsClosed: "{a} للعناصر و{b} لرسوم الخدمة.", nobodyItem: "لم يُحدَّد أحد", eachItem: "{a} لكل شخص",
+      items: { pizza: "بيتزا كبيرة", beer: "مشروب غازي", salad: "سلطة", draft: "عصير طازج", shrimp: "طبق روبيان" },
+      receiptBill: "مقهى الميناء",
+      hint: {
+        equal: "عندما لا يكون التقسيم متساويًا تمامًا، تذهب السنتات المتبقية إلى الدافع.",
+        amounts: "من يبقى مبلغه {zero} يُستبعد من الفاتورة.",
+        percent: "أعداد صحيحة فقط. تذهب السنتات المتبقية إلى الدافع.",
+        shares: "الحصص مفيدة عندما يكون نصيب أحدهم أكبر، كمن أحضر مرافقًا.",
+        income: "تبقى المداخيل على الجهاز. لا ترى المجموعة إلا النسب المئوية.",
+        items: "يُقسَّم كل عنصر بين من طلبه، ورسوم الخدمة حسب ما طلبه كل شخص.",
+      },
+      label: {
+        amount: "المبلغ: {name}", percent: "النسبة المئوية: {name}", income: "الدخل الشهري: {name}",
+        less: "حصة أقل: {name}", more: "حصة إضافية: {name}", had: "من طلب: {item}",
+      },
+    },
     // Hindi: one share is हिस्सा and more हिस्से, so the total's shares write one|few|many (Hindi has no few); the rest
     // need no "|" (one person has its own message, and a person's shares show only above one).
     hi: {
@@ -462,7 +495,8 @@
     const forms = text.split("|");
     if (forms.length > 1) {
       const kind = plural.select(values.n);
-      text = forms.length === 3 ? forms[{ one: 0, few: 1 }[kind] ?? 2] : forms[kind === "few" ? 0 : 1];
+      text = forms.length === 6 ? forms[["zero", "one", "two", "few", "many", "other"].indexOf(kind)]
+        : forms.length === 3 ? forms[{ one: 0, few: 1 }[kind] ?? 2] : forms[kind === "few" ? 0 : 1];
     }
     return text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
   }
