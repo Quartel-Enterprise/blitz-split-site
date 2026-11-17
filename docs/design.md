@@ -57,10 +57,10 @@ vowels and tone marks it stacks above and below its letters. Its dates are the p
 era's year included (2569), as the apps write them.
 Vietnamese (`vi`) is one variant for every `vi` browser language, as the app writes it: "bạn" for the reader, the
 modern tone-mark placement ("hóa", "tùy", not "hoá"), “” quotes, one form for counts (no `|`) and the app's own words
-(nhóm, khoản chi, chia khoản chi, số dư, thanh toán, mã khôi phục, and hóa đơn for a receipt). Its letters with a tone
-mark stacked over a circumflex or a breve (ể, ở, ặ) aren't in the bundled Geist subsets, so it draws in the system
-font rather than mix two fonts in one word, and its headings get a little more room between lines for those marks
-(`site.css`).
+(nhóm, khoản chi, chia khoản chi, số dư, thanh toán, mã khôi phục, and hóa đơn for a receipt). The bundled Geist
+subsets leave out the Latin Extended Additional letters Vietnamese writes with (U+1EA0–1EF9: ạ, ả, ụ as much as the
+stacked ể, ở, ặ), so it draws in the system font rather than mix two fonts in ordinary words ("mục", "hóa đơn"), and
+its headings get a little more room between lines for its stacked marks and dots below (`site.css`).
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
@@ -81,7 +81,7 @@ site picks a language from; each script's strings and formats still carry a key 
 The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the Latin and Latin Extended subsets Google
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
 `geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai and Vietnamese fall back to the system's font, since neither subset has their
-scripts (or, for Vietnamese, its stacked tone marks).
+scripts (or, for Vietnamese, its Latin Extended Additional letters).
 
 ## Motion
 
