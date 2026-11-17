@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Ứng dụng giờ đã có tiếng Hàn: chọn “한국어” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng won Hàn Quốc (KRW), và nhóm được tạo ở Hàn Quốc sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Tài khoản và đồng bộ” trong Hồ sơ giờ hiện ID người dùng của bạn, có thể sao chép chỉ với một lần chạm, để bạn cho chúng tôi biết bạn là ai khi trả lời khảo sát của chúng tôi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ảnh bạn thêm vào khoản chi giờ mở trong “Chỉnh ảnh” trước, để bạn căn khung hình vuông sẽ được đính kèm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Theo thu nhập” giờ nhắc bạn nhập thu nhập ròng của từng người, sau thuế, và “Cách chia mặc định” chỉ hiện phần trăm của mỗi người khi đã nhập thu nhập.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Phần đầu của nhóm gọn gàng hơn: dòng ghi số thành viên và tổng dưới tên nhóm đã được bỏ. Các khuôn mặt cho thấy ai tham gia, còn Thống kê cho thấy tổng.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ảnh chụp sao kê thẻ hoặc ngân hàng giờ được nhận ra và gợi ý bạn nhập khoản chi bằng tay, thay vì báo không đọc được hóa đơn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Một danh mục trong Thống kê giờ mở Tất cả khoản chi với nhóm, danh mục và khoảng thời gian đã được chọn sẵn, để bạn cũng tìm kiếm được các khoản chi đó. Tất cả khoản chi cũng có thêm bộ lọc Khoảng thời gian.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trong Theo người của Thống kê, chạm bên cạnh vòng hoặc vào giữa vòng sẽ bỏ chọn người đang được chọn.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

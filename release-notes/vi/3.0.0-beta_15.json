@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Khi mở một người từ Danh bạ hoặc Số dư, tên và số dư của họ giờ cùng ảnh chuyển vào hồ sơ của họ, và chuyển ngược lại khi bạn quay về.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Trong Thống kê, giữa vòng “Theo người” giờ chỉ ghi “Bạn” khi phần đó là của bạn, và tên dài sẽ kết thúc bằng “…” thay vì chạm vào vòng.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Khi mở một nhóm từ Nhóm, khuôn mặt các thành viên giờ di chuyển từ dòng đó vào màn hình của nhóm, và quay lại khi bạn rời đi.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Trên điện thoại, khi mở một khoản chi, nhiều thông tin hơn giờ đi theo: người trả di chuyển từ dòng của nó ở Trang chủ và Tất cả khoản chi, thời gian từ dòng của nó trong Khoản chi của nhóm, còn ảnh và tên nhóm từ màn hình của nhóm. Chúng quay lại khi bạn rời đi.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tên nhóm giờ di chuyển vào màn hình của nhóm khi mở, không chỉ khi quay lại.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

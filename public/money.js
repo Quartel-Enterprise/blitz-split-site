@@ -1,8 +1,8 @@
 // The landing's amounts in the visitor's own currency, written the way their language writes it: the working phone
 // (preview.js) and the split card (split-modes.js) read window.money, and the receipt (scan.js) is printed the same
 // way by hand. The demo keeps every
-// amount in cents; a currency with no cents in use (the won, the yen, the rupiah) shows it scaled to whole units, so
-// a $48.60 ride reads ₩48,600, ¥4,860 or Rp486.000 and every split still adds up exactly.
+// amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong) shows it scaled to whole
+// units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000 or 48.600 ₫ and every split still adds up exactly.
 (function () {
   // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents,
   //  digits in each group above the first three: 2 in India, so ₹1,20,000]
@@ -16,6 +16,7 @@
     zh: ["¥", ".", ","],
     he: ["₪", ".", ","],
     th: ["฿", ".", ","],
+    vi: ["", ",", ".", "\u00a0₫", 10],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");

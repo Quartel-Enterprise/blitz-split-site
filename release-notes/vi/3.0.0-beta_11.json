@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Tài khoản không liên kết Google hay Apple giờ sẽ bị xóa sau 30 ngày không dùng. Màn hình chào mừng và Hồ sơ có ghi rõ điều này, và liên kết Google hoặc Apple sẽ giữ lại dữ liệu của bạn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Giờ bạn có thể đánh giá ứng dụng từ Hồ sơ › Hỗ trợ và góp ý, với “Đánh giá ứng dụng”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Khoản chi mở từ Trang chủ hoặc Tất cả khoản chi giờ quay thẳng về nơi bạn đã mở, không đi qua nhóm của nó.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Đã sửa lỗi bong bóng “+N” của chồng khuôn mặt hiện bên dưới khuôn mặt đầu tiên thay vì bên trên.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

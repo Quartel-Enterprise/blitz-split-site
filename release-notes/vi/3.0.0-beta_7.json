@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split giờ đã có tiếng Hà Lan, tiếng Nhật, tiếng Thổ Nhĩ Kỳ và tiếng Indonesia, và danh sách ngôn ngữ ghi tên mỗi ngôn ngữ bằng chính ngôn ngữ đó.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm và khoản chi giờ có thể dùng zloty Ba Lan, lira Thổ Nhĩ Kỳ và rupiah Indonesia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hồ sơ có nút mới, Chia sẻ hồ sơ: ai mở liên kết của bạn sẽ thấy tên và ảnh của bạn và có thể mời bạn vào một nhóm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Liên kết mời của nhóm mới có sẵn ngay, kể cả khi không có mạng, và Thành viên có nút mới để sao chép liên kết.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Đóng một biểu mẫu khi còn thay đổi chưa lưu giờ sẽ hỏi “Bỏ thay đổi?” trước.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chính sách quyền riêng tư và Điều khoản dịch vụ giờ mở bên trong ứng dụng thay vì trình duyệt.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Trên điện thoại, thanh trên cùng và thanh dưới cùng giờ ẩn đi khi bạn cuộn xuống và hiện lại khi bạn cuộn lên.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Trong Chia khoản chi, chọn ngày không còn nhảy thẳng sang đồng hồ: thời gian có nút riêng.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Chạm vào nhóm ở đầu Chia khoản chi để mở nhóm; quay lại sẽ trở về khoản chi với mọi thứ bạn đã nhập.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Khoản chi gần đây ở Trang chủ giờ hiện nhóm và người trả của mỗi khoản chi bằng ảnh.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix giờ chỉ hiện với những người có khả năng dùng nó, như người dùng ứng dụng bằng tiếng Bồ Đào Nha, có khóa Pix hoặc ở trong nhóm dùng real.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Đang đồng bộ…” giờ chỉ hiện lần đầu tài khoản của bạn tải trên một thiết bị, không phải mỗi lần đồng bộ.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hồ sơ không còn đề nghị ngắt kết nối Google hoặc Apple khỏi tài khoản của bạn: thay vào đó, hãy đăng xuất hoặc xóa tài khoản.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sửa hồ sơ giờ mở ngay trên Hồ sơ thay vì trên một màn hình riêng.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dải trống giữa biểu mẫu và bàn phím trong Chia khoản chi đã không còn.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Nhóm chung của một liên hệ giờ hiện ảnh của từng nhóm.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

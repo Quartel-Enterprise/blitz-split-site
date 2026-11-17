@@ -369,6 +369,24 @@
       bills: (n) => `${n} บิล`,
       titles: { b1: "เกสต์เฮาส์ที่ลากอา", b2: "มื้อเย็นที่ริเบเรา", b3: "ค่ารถไปชายหาด", p1: "ไอศกรีมที่ชายหาด", p2: "ของใช้ประจำสัปดาห์", p3: "ที่จอดรถ" },
     },
+    // Vietnamese: one form for counts, "bạn" for the user, and the app's words (khoản chi, số dư, thanh toán).
+    vi: {
+      paid: "{name} đã trả", notIn: "Không tham gia khoản này",
+      members: (people, bills) => `${people} người · ${bills} khoản chi`,
+      toGet: "được nhận lại", youOwe: "bạn nợ", settled: "đã thanh toán xong", owesYou: "Ai nợ bạn", youOweTitle: "Bạn nợ",
+      eachOne: "Số dư của mỗi người", getsBack: "được nhận lại", owes: "nợ", even: "đã thanh toán xong",
+      toSettle: "Cần thanh toán", total: "Tổng của nhóm", lodging: "Chỗ ở", food: "Ăn uống", transport: "Đi lại",
+      sheetTitle: "Chia khoản chi", description: "Mô tả", amount: "Số tiền", whoPaid: "Ai đã trả",
+      splitAmong: "Chia đều cho", each: "mỗi người {value}", cancel: "Hủy", save: "Lưu", close: "Đóng",
+      queue: (n) => `${n} thay đổi đang chờ`,
+      split: "Cách chia", yourShare: "Phần của bạn", deleteBill: "Xóa khoản chi",
+      recordPayment: "Ghi nhận thanh toán", record: "Ghi nhận", viaMethod: "qua chuyển khoản", payment: "Khoản thanh toán", deletePayment: "Xóa khoản thanh toán",
+      payLine: (from, to) => `${name(from)} đã trả ${name(to)}`,
+      paidYou: (who, value) => `${who} đã trả bạn ${value}`,
+      paidTotal: "Tổng đã trả", shareTotal: "Phần trong các khoản chi", balance: "Số dư",
+      bills: (n) => `${n} khoản chi`,
+      titles: { b1: "Nhà nghỉ ở Lagoa", b2: "Bữa tối ở Ribeirão", b3: "Xe ra biển", p1: "Kem trên bãi biển", p2: "Đi chợ trong tuần", p3: "Gửi xe" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -807,7 +825,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

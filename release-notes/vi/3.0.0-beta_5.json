@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split giờ đã có tiếng Đức, tiếng Ý và tiếng Ba Lan: ứng dụng theo ngôn ngữ của thiết bị, hoặc bạn có thể chọn một ngôn ngữ trong Hồ sơ › Ngôn ngữ.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mỗi danh mục giờ có màu riêng, và Thống kê vẽ mỗi danh mục và mỗi người bằng màu của mình.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Giờ bạn có thể đổi màu của một danh mục, trong biểu mẫu của danh mục hoặc trong Bản đồ danh mục.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Menu của khoản chi trong Khoản chi có tùy chọn mới, Nhân bản: mở một khoản chi mới đã điền sẵn giống bản gốc.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm và khoản chi không còn biến mất trong giây lát khi bạn quay lại ứng dụng.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tìm kiếm không còn đóng ngay khi bạn chưa có nhóm nào.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm mới giờ bắt đầu với loại Sự kiện, loại đầu tiên trong danh sách.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Khi chưa có nhóm nào, Mời bằng liên kết hoặc QR giờ chỉ hiện nút Nhóm mới thay vì những nút bạn không dùng được.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hóa đơn cần đọc lâu hơn không còn kết thúc bằng lỗi kết nối.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Các dòng danh mục trong Thống kê gọn gàng hơn: không còn liệt kê số tiền của từng danh mục con.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

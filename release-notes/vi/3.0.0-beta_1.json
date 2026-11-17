@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split là một ứng dụng mới, được xây dựng lại từ đầu: thay thế Blitz Split 2.4.0 và chạy trên Android, iPhone, iPad, Mac và web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chia khoản chi đều nhau, theo số tiền, theo phần trăm, theo phần hoặc theo từng món, với một hay nhiều người trả.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Quét hóa đơn và ứng dụng sẽ đọc các món và tổng giúp bạn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tạo nhóm cho chuyến đi, nhà ở hoặc sự kiện và mời mọi người bằng liên kết hoặc mã QR.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Xem ai nợ ai trong từng nhóm và trên tất cả các nhóm, ghi lại các khoản thanh toán và đơn giản hóa nợ để chỉ cần ít lần thanh toán hơn là thanh toán xong tất cả.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mọi thứ đều hoạt động khi không có mạng: những gì bạn làm được lưu trên thiết bị và được gửi đi khi bạn có mạng trở lại.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tài khoản là tùy chọn: liên kết Google hoặc Apple, hoặc giữ mã khôi phục, để lấy lại các nhóm của bạn trên thiết bị khác.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bình luận về khoản chi, đính kèm ảnh, theo dõi những gì đã xảy ra trong Hoạt động và xem tiền đã đi đâu trong Thống kê.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mỗi khoản chi và mỗi khoản thanh toán có tiền tệ riêng, và ứng dụng có tiếng Anh, tiếng Bồ Đào Nha, tiếng Tây Ban Nha và tiếng Pháp.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

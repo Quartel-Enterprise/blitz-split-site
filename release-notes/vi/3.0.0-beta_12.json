@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Trong Ghi chú phát hành, chạm vào một phiên bản để mở bản phát hành của nó trên GitHub, hoặc nút GitHub để xem mọi bản phát hành.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trang của nhóm, lời mời và chi tiết khoản chi giờ hiện ảnh của tối đa năm người cạnh nhau thay vì hai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trên iPad hoặc iPhone Duo mở ra và đặt nằm ngang, nhóm chiếm toàn màn hình (ví dụ khi mở từ Trang chủ) giờ hiện ảnh, thành viên và số dư của bạn bên cạnh các khoản chi.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Chạm vào thẻ Tổng số dư ở Trang chủ giờ sẽ mở tab Số dư.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trên điện thoại, khi mở một nhóm hoặc khoản chi từ Trang chủ, số dư của nhóm, hoặc biểu tượng, tiêu đề, tổng và phần của bạn trong khoản chi, giờ bay vào màn hình của nó và bay ngược lại khi bạn quay về.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Hồ sơ › Ngôn ngữ giờ liệt kê tiếng Tây Ban Nha hai lần, “Español (Latinoamérica)” và “Español (España)”, để bạn chọn đúng biến thể mình nói dù thiết bị ở đâu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Khi đặt điện thoại hoặc máy tính bảng nằm ngang, phần bên cạnh danh sách trong Danh bạ và Số dư giờ bắt đầu từ đầu màn hình, với ảnh hồ sơ của bạn ở trên danh sách.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Viền của nút “Thêm người” trong Thành viên của nhóm giờ dễ nhìn hơn.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Màu của thẻ trong “Phương thức thanh toán” giờ chọn từ cùng các màu như danh mục: mười hai màu, các màu riêng của bạn và “Màu mới” để tạo thêm màu khác.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trong “Chia khoản chi”, “Trả bằng” giờ là một nút nhỏ dưới Cách chia, và nếu bạn chưa có phương thức thanh toán nào, “Thêm phương thức thanh toán” sẽ tạo ngay tại đó và chọn nó cho khoản chi. Thẻ ghi nợ giờ cũng có biểu tượng riêng.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Thêm hoặc sửa phương thức thanh toán trong Hồ sơ giờ mở ngay trên đó thay vì trên một màn hình riêng.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Màu động giờ giải thích rằng ứng dụng lấy màu hệ thống của Android, vốn đến từ hình nền hoặc bảng màu bạn đã chọn trong cài đặt của Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Khi bật Giảm chuyển động, Thống kê của nhóm giờ hiện biểu đồ ngay lập tức, không có hiệu ứng cột mọc lên hay vòng quét vào.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Trong tiếng Bồ Đào Nha (Brazil), Hoạt động và lịch sử khoản chi từng ghi “Você criaste” và những câu tương tự thay vì “Você criou”.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Đã sửa lỗi ngày trong bộ chọn ngày của Thống kê bị ngắt một hai chữ mỗi dòng; giờ ngày kết thúc nằm dưới ngày bắt đầu khi cả hai không vừa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Đã sửa thông báo và vài câu hiện bằng tiếng Anh, hoặc dưới dạng mã như “push.bill_deleted”, trong tiếng Tây Ban Nha (Tây Ban Nha) và tiếng Bồ Đào Nha (Bồ Đào Nha).",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Đã sửa hàng người ở Trang chủ trong tiếng Bồ Đào Nha (Bồ Đào Nha), vốn ghi “te deve” dưới tên thay vì “deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -38,7 +38,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", he: "iw" }[root.dataset.lang] || root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's and Hebrew's as Google Play writes them
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -241,6 +241,15 @@
       mismatchBody: "คุณกำลังใช้ {platform} เพื่อประสบการณ์ที่ดีที่สุด ดาวน์โหลดแอป{in}",
       mismatchGo: "ไป{to}", mismatchStay: "ไปต่อ{to}", close: "ปิด",
       in: { play: "จาก Google Play", appstore: "จาก App Store" }, to: { play: "ที่ Google Play", appstore: "ที่ App Store" },
+    },
+    vi: {
+      play: ["Tải về trên", "Sắp có trên"], appstore: ["Tải về trên", "Sắp có trên"], web: ["Mở trong", "Sắp có trong"], browser: "Trình duyệt",
+      getApp: "Tải ứng dụng", openWeb: "Mở ứng dụng web", soon: "Sắp có",
+      playLive: "Có trên Google Play", appStoreLive: "Có trên App Store", webLive: "Mở ứng dụng web",
+      mismatchTitle: "Chọn cửa hàng của bạn",
+      mismatchBody: "Bạn đang dùng {platform}. Để có trải nghiệm tốt nhất, hãy tải ứng dụng {in}.",
+      mismatchGo: "Chuyển đến {to}", mismatchStay: "Tiếp tục đến {to}", close: "Đóng",
+      in: { play: "từ Google Play", appstore: "từ App Store" }, to: { play: "Google Play", appstore: "App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

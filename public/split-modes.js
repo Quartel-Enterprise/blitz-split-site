@@ -576,6 +576,34 @@
         less: "ลดส่วนของ {name} 1 ส่วน", more: "เพิ่มส่วนของ {name} 1 ส่วน", had: "ใครสั่ง {item}",
       },
     },
+    // Vietnamese: one form, so no message holds a "|"; "bạn" for the user and the app's words (chia đều, theo phần, theo món).
+    vi: {
+      bill: "Tối pizza", paid: "Pedro đã trả", notIn: "Không tham gia khoản này",
+      each: "mỗi người {a}", among: "{a} chia cho {n} người.", amongOne: "{a} cho 1 người.", out: "{name} không tham gia.",
+      nobody: "Chưa có ai tham gia", nobodyEqual: "Hãy chọn ít nhất một người để chia {a}.",
+      checkAll: "Chọn tất cả", uncheckAll: "Bỏ chọn tất cả",
+      left: "còn thiếu {a}", over: "dư {a}", closed: "Đã khớp: {a}",
+      progress: "Đến giờ là {a} trên {b}.", closedMsg: "Các phần cộng lại bằng tổng số tiền.",
+      parts: "{n} phần, mỗi phần {a}", personParts: "{name} có {n} phần.", nobodyShares: "Hãy cho ít nhất một người một phần để chia {a}.",
+      ofEach: "{p} mỗi khoản chi", ofBill: "{p} của khoản chi", incomeDetail: "Phần của mỗi người theo thu nhập của họ.", perMonth: "/tháng",
+      service: "Phí dịch vụ ({p})", serviceSub: "Theo tỷ lệ những gì mỗi người đã gọi",
+      loose: "Đánh dấu ai đã gọi từng món", looseDetail: "Chạm vào các khuôn mặt trên mỗi món để đánh dấu ai đã gọi.",
+      itemsClosed: "{a} tiền món và {b} phí dịch vụ.", nobodyItem: "Chưa chọn ai", eachItem: "mỗi người {a}",
+      items: { pizza: "Pizza cỡ lớn", beer: "Bia", salad: "Salad", draft: "Bia tươi", shrimp: "Đĩa tôm" },
+      receiptBill: "Quán bar bến cảng",
+      hint: {
+        equal: "Khi không chia đều được, phần lẻ còn lại thuộc về người đã trả.",
+        amounts: "Ai còn ở mức {zero} sẽ không tham gia khoản chi.",
+        percent: "Chỉ dùng số nguyên. Phần lẻ còn lại thuộc về người đã trả.",
+        shares: "Dùng phần khi có người dùng nhiều hơn, như người dẫn thêm bạn đi cùng.",
+        income: "Thu nhập chỉ nằm trên thiết bị. Nhóm chỉ thấy phần trăm.",
+        items: "Mỗi món được chia cho những người đã gọi, và phí dịch vụ theo những gì mỗi người đã gọi.",
+      },
+      label: {
+        amount: "Số tiền của {name}", percent: "Phần trăm của {name}", income: "Thu nhập mỗi tháng của {name}",
+        less: "Bớt một phần cho {name}", more: "Thêm một phần cho {name}", had: "Ai đã gọi {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
