@@ -427,7 +427,8 @@
         less: "{name} 몫 하나 줄이기", more: "{name} 몫 하나 늘리기", had: "먹은 사람: {item}",
       },
     },
-    // Hindi: no "|" either, as Hindi counts in the form the numbers take here (one person has its own message).
+    // Hindi: one share is हिस्सा and more हिस्से, so the total's shares write one|few|many (Hindi has no few); the rest
+    // need no "|" (one person has its own message, and a person's shares show only above one).
     hi: {
       bill: "पिज़्ज़ा नाइट", paid: "Pedro ने भुगतान किया", notIn: "इसमें शामिल नहीं",
       each: "हर एक {a}", among: "{a}, {n} लोगों में बंटा।", amongOne: "{a}, सिर्फ़ 1 व्यक्ति पर।", out: "{name} शामिल नहीं है।",
@@ -435,7 +436,7 @@
       checkAll: "सभी चुनें", uncheckAll: "सभी हटाएं",
       left: "{a} बाकी", over: "{a} ज़्यादा", closed: "हिसाब मिल गया: {a}",
       progress: "अब तक {b} में से {a}।", closedMsg: "सभी हिस्से मिलकर कुल के बराबर हैं।",
-      parts: "{a} के {n} हिस्से", personParts: "{name} के {n} हिस्से हैं।", nobodyShares: "{a} बांटने के लिए कम से कम एक व्यक्ति को हिस्सा दें।",
+      parts: "{a} का {n} हिस्सा|{a} के {n} हिस्से|{a} के {n} हिस्से", personParts: "{name} के {n} हिस्से हैं।", nobodyShares: "{a} बांटने के लिए कम से कम एक व्यक्ति को हिस्सा दें।",
       ofEach: "हर खर्च का {p}", ofBill: "खर्च का {p}", incomeDetail: "हर एक का हिस्सा उसकी आय के अनुसार होता है।", perMonth: "/महीना",
       service: "सर्विस ({p})", serviceSub: "हर किसी ने जो लिया, उसके अनुपात में",
       loose: "हर आइटम पर मार्क करें कि किसने लिया", looseDetail: "किसने लिया, यह मार्क करने के लिए हर आइटम पर चेहरों को टैप करें।",

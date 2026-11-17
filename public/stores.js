@@ -33,7 +33,7 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", hi: "hi", en: "en" })}`
+    ? `${CONFIG.googlePlayUrl}&hl=${root.lang}` // the page's tag, as boot.js set it: pt-BR, pt-PT, en, hi…
     : "";
   const appStoreUrl = CONFIG.appStoreId
     ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", ko: "kr", hi: "in", en: "us" })}/app/id${CONFIG.appStoreId}`

@@ -24,8 +24,8 @@ tracking; Turkish writes the percent sign first (%10). Russian and Ukrainian cou
 `|` (21, 31… take `one`, so they always write all three). Korean breaks lines
 only between words (`word-break: keep-all`), drops the Latin headings' tracking, counts in one form (no `|`), and never
 glues a particle to a name or an amount filled in at run time ("결제: Ana", "Ana 님이"), as the app writes them. Hindi
-talks to the visitor as आप, ends sentences with the danda (।), counts in one form (no `|`, one person has its own
-message) and names the app's screens with the app's own words.
+talks to the visitor as आप, ends sentences with the danda (।), counts in one form except where a noun has a singular
+(1 हिस्सा, 2 हिस्से: `one|few|many`, Hindi having no `few`; one person has its own message) and names the app's screens with the app's own words.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros

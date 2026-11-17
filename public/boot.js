@@ -31,7 +31,8 @@
   const lang = variant ? variant.split("-")[0] : pick;
   root.dataset.lang = lang;
   if (variant) root.dataset.variant = variant;
-  root.lang = variant || { en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", hi: "hi" }[lang];
+  // Every language's tag is its code, but Brazil's Portuguese, pt-BR.
+  root.lang = variant || (lang === "pt" ? "pt-BR" : lang);
   // A table keyed by language, with the variant's own entries over its language's, objects merged key by key: the words Portugal says
   // differently, the rest falling back to pt. A table without the variant is returned as the language's.
   const plain = (value) => value && typeof value === "object" && !Array.isArray(value);
