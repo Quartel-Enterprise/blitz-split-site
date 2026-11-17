@@ -5,11 +5,11 @@
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai and Vietnamese. The markup is in English; each page carries its other languages' strings in
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese and Traditional Chinese. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the header's translate-icon menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
-`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a twenty-first language: only the exact tag `pt-PT` (a browser's
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a twenty-second language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
 `pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
@@ -39,9 +39,8 @@ Hindi talks to the visitor as आप, ends sentences with the danda (।), count
 Simplified Chinese (`zh`, the page's tag `zh-Hans`) is mainland China's: it talks to the visitor as 你 (never 您), puts
 no space between Chinese and a name, a number or a Latin word ("Pedro支付", "4人"), writes full-width punctuation and
 “” quotes, counts in one form (no `|`), keeps Japanese's strict line breaking and names the app's screens with the app's
-own words (群组, 账单, 分摊, 余额, 结清). A Simplified `zh-*` browser language picks it; a Traditional one (`zh-Hant`,
-`zh-TW`, `zh-HK`, `zh-MO`) doesn't, as in the apps, and the next browser language does, English for none, until the
-site has Traditional Chinese, which will sit beside it as `zh-Hant`, as pt-PT does beside pt.
+own words (群组, 账单, 分摊, 余额, 结清). A Simplified `zh-*` browser language picks it; a Traditional one picks
+Traditional Chinese, below.
 Hebrew (`he`) is modern Israeli Hebrew, one variant, and reads right to left as Arabic does (`RIGHT_TO_LEFT`). Like the
 app, it never says anyone's gender: buttons and titles are action nouns ("שמירה", "פיצול חשבון"), instructions the
 infinitive ("יש לפתוח"), a payer a label ("שולם על ידי: Ana"), the masculine as the generic only where nothing else
@@ -61,13 +60,24 @@ modern tone-mark placement ("hóa", "tùy", not "hoá"), “” quotes, one form
 subsets leave out the Latin Extended Additional letters Vietnamese writes with (U+1EA0–1EF9: ạ, ả, ụ as much as the
 stacked ể, ở, ặ), so it draws in the system font rather than mix two fonts in ordinary words ("mục", "hóa đơn"), and
 its headings get a little more room between lines for its stacked marks and dots below (`site.css`).
+Traditional Chinese (`zh-Hant`, also the page's tag) is Taiwan's, and a language of its own rather than a variant of
+`zh`: hardly a word is written alike, so it has every string, its own legal pages and release notes, and its whole tag
+is its code, as the apps ask for its legal pages and notes (`/legal/privacy.zh-Hant.md`, `release-notes/zh-Hant.json`).
+A Traditional browser language picks it, as in the apps: by its script when the tag has one (`zh-Hant-CN` is
+Traditional, `zh-Hans-TW` Simplified), else by a region that writes it (`zh-TW`, `zh-HK`, `zh-MO`); every other `zh-*`
+stays `zh`, and `?lang=` reads the same tags. It is written for Taiwan, not converted from Simplified: 你 for the
+reader, Taiwan's words (預設, 帳號, 訊息, 網路, 連結, 檔案, and the app's 群組, 帳單, 分攤, 餘額, 結清, 復原碼, 收據),
+「」 quotes, no space between Chinese and a name, a number or a Latin word ("Pedro支付", "4人", "App"), one form for
+counts and Simplified's strict line breaking and headings kept whole. Its Han draws in the system font, which the
+`zh-Hant` tag points at Taiwan's glyphs, and its quotes' and dots' punctuation font is Taiwan's (`site.css`). The
+language menus name the two "中文（简体）" and "中文（繁體）", each in its own script.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
 in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, grouped
 as India writes them (₹1,20,000), yuan in Simplified Chinese (¥, with its fen, so the demo's numbers stay as they are:
-¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won and the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫), which have no cents in use. The demo keeps every amount in cents and those four show it scaled to whole
-units (a cent is Rp100, ¥1, ₩10 and 10 ₫), so a $48.60 ride reads Rp486.000, ¥4,860, ₩48,600 or 48.600 ₫ and every split still adds
+¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The demo keeps every amount in cents and those five show it scaled to whole
+units (a cent is Rp100, ¥1, ₩10, 10 ₫ and NT$1, the smallest whole scale, which keeps every split exact), so a $48.60 ride reads Rp486.000, ¥4,860, ₩48,600, 48.600 ₫ or NT$4,860 and every split still adds
 up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫ or Rp100, and a field grows with what it
 holds. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way, by hand, so the
 first paint shows them before any script runs.
@@ -80,7 +90,7 @@ site picks a language from; each script's strings and formats still carry a key 
 
 The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the Latin and Latin Extended subsets Google
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
-`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai and Vietnamese fall back to the system's font, since neither subset has their
+`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese and Traditional Chinese fall back to the system's font, since neither subset has their
 scripts (or, for Vietnamese, its Latin Extended Additional letters).
 
 ## Motion

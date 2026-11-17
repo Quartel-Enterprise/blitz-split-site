@@ -604,6 +604,35 @@
         less: "Bớt một phần cho {name}", more: "Thêm một phần cho {name}", had: "Ai đã gọi {item}",
       },
     },
+    // Traditional Chinese, Taiwan's: one form, so no message holds a "|", no space between Chinese and a name or an
+    // amount, and the app's words (平均, 份數, 項目, 服務費).
+    "zh-Hant": {
+      bill: "披薩之夜", paid: "Pedro支付", notIn: "不參與這筆",
+      each: "每人{a}", among: "{a}由{n}人分攤。", amongOne: "{a}由1人負擔。", out: "{name}不參與。",
+      nobody: "還沒有人參與", nobodyEqual: "至少勾選一個人來分攤{a}。",
+      checkAll: "全選", uncheckAll: "全部取消",
+      left: "還差{a}", over: "超出{a}", closed: "剛好相符：{a}",
+      progress: "目前已分配{a}，共{b}。", closedMsg: "各部分加起來等於總額。",
+      parts: "{a}分成{n}份", personParts: "{name}有{n}份。", nobodyShares: "至少給一個人分配份數來分攤{a}。",
+      ofEach: "每筆帳單的{p}", ofBill: "帳單的{p}", incomeDetail: "每個人的部分依其收入計算。", perMonth: "/月",
+      service: "服務費（{p}）", serviceSub: "按每個人點的比例",
+      loose: "標記每個項目是誰點的", looseDetail: "輕點每個項目上的大頭貼，標記是誰點的。",
+      itemsClosed: "項目{a}，服務費{b}。", nobodyItem: "沒有勾選任何人", eachItem: "每人{a}",
+      items: { pizza: "大披薩", beer: "啤酒", salad: "沙拉", draft: "生啤酒", shrimp: "大蝦拼盤" },
+      receiptBill: "港灣酒吧",
+      hint: {
+        equal: "無法平均分攤時，剩下的零頭歸付款人。",
+        amounts: "金額維持在{zero}的人不參與這筆帳單。",
+        percent: "只能填整數。剩下的零頭歸付款人。",
+        shares: "有人分得比較多時就用份數，例如多帶一個朋友來的人。",
+        income: "收入只存在裝置上。群組只看得到百分比。",
+        items: "每個項目由點了它的人分攤，服務費則按每個人點了什麼來分攤。",
+      },
+      label: {
+        amount: "{name}的金額", percent: "{name}的百分比", income: "{name}的每月收入",
+        less: "{name}減少一份", more: "{name}增加一份", had: "誰點了{item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

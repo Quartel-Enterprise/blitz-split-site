@@ -122,6 +122,13 @@
       lines: [["2 BIA TƯƠI", "28.000", 1], ["1 ĐĨA TÔM", "96.000", 2]],
       subtotal: ["TẠM TÍNH", "124.000"], service: ["PHÍ DỊCH VỤ 10%", "12.400", 3], total: ["TỔNG CỘNG", "136.400"],
     },
+    // Traditional Chinese: a harbor bar's receipt, in New Taiwan dollars as money.js counts Traditional Chinese (no cents
+    // in use, so the amounts scaled), dated as Taiwan writes it.
+    "zh-Hant": {
+      store: "港灣酒吧", address: "海鷗路120號", date: "2026/11/08  21:47",
+      lines: [["2 生啤酒", "2,800", 1], ["1 大蝦拼盤", "9,600", 2]],
+      subtotal: ["小計", "12,400"], service: ["服務費10%", "1,240", 3], total: ["合計", "13,640"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

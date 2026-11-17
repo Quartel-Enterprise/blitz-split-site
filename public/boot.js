@@ -4,11 +4,12 @@
 // dark, so site.css writes the dark tokens once: System takes the system's theme here, and follows it when it changes.
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
-// Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai or Vietnamese, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language menu, then
+// Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese or
+// Traditional Chinese, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language menu, then
 // the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
-// browser language (zh-Hant, zh-TW, zh-HK, zh-MO) isn't Simplified: as in the apps, it is skipped for the next one.
+// browser language (zh-Hant, zh-TW, zh-HK, zh-MO) picks Traditional Chinese, zh-Hant, as in the apps; every other zh-* stays zh.
 (function () {
-  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi"];
+  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant"];
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
   function stored(key) {
@@ -23,7 +24,6 @@
   // Hebrew's legacy code, iw (Android's, and older browsers'), is Hebrew: iw and iw-* pick he.
   const LEGACY = { iw: "he" };
   const canonical = (code) => LEGACY[code] || code;
-  const normalize = (tag) => variantOf(tag) || canonical(String(tag).toLowerCase().split(/[-_]/)[0]);
   const known = (code) => SUPPORTED.includes(code) || VARIANTS.includes(code);
   // Traditional Chinese, as the apps tell it: by its script when the tag has one (zh-Hant-CN is Traditional, zh-Hans-HK
   // Simplified), else by a region that writes it (Taiwan, Hong Kong, Macau).
@@ -33,18 +33,23 @@
     const script = rest.find((part) => part.length === 4);
     return script ? script === "hant" : rest.some((part) => ["tw", "hk", "mo"].includes(part));
   };
+  // Why: Traditional Chinese is a language of its own, with its whole tag as its code, "zh-Hant", as the apps' legal
+  // pages and release notes ask for it; the bare "zh" is Simplified's.
+  const TRADITIONAL = "zh-Hant";
+  // A tag as the site reads it, from the browser or from ?lang= alike: Traditional Chinese or a variant (pt-PT) by
+  // the whole tag, every other language by its first subtag (zh-CN is zh, EN is en).
+  const normalize = (tag) => (traditional(tag) ? TRADITIONAL : variantOf(tag) || canonical(String(tag).toLowerCase().split(/[-_]/)[0]));
 
   // First, so the scripts that read data-lang have it even if the theme below fails.
   const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
-    .filter((tag) => !traditional(tag))
     .map(normalize)
     .find(known);
-  const pick = [params.get("lang"), stored("lang")].map((code) => variantOf(code) || canonical(code)).concat(preferred).find(known) || "en";
+  const pick = [params.get("lang"), stored("lang")].map((code) => code && normalize(code)).concat(preferred).find(known) || "en";
   const variant = VARIANTS.includes(pick) ? pick : "";
   const lang = variant ? variant.split("-")[0] : pick;
   root.dataset.lang = lang;
   if (variant) root.dataset.variant = variant;
-  // Every language's tag is its code, but Brazil's Portuguese, pt-BR, and Simplified Chinese, zh-Hans.
+  // Every language's tag is its code (Traditional Chinese's, zh-Hant, too), but Brazil's Portuguese, pt-BR, and Simplified Chinese, zh-Hans.
   root.lang = variant || { pt: "pt-BR", zh: "zh-Hans" }[lang] || lang;
   // Arabic and Hebrew (and any later right-to-left language) read right to left: the page mirrors, as site.css writes its sides
   // as start and end; src/index.js says the same of a link preview's page.
