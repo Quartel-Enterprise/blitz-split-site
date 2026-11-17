@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Účet bez Googlu nebo Applu se teď smaže po 30 dnech bez používání. Uvítací obrazovka a Profil to říkají a propojení Googlu nebo Applu tvoje data zachová.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikaci teď můžeš ohodnotit v Profil › Podpora a zpětná vazba přes „Ohodnotit aplikaci“.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Výdaj otevřený z Domů nebo ze Všech výdajů se teď vrací rovnou tam, odkud jsi ho otevřel(a), bez zastávky v jeho skupině.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bublina „+N“ u řady obličejů se už neukazuje pod prvním obličejem, ale nad ním.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

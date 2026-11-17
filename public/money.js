@@ -3,10 +3,13 @@
 // way by hand. The demo keeps every
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar) shows
 // it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫ or NT$4,860 and every split
-// still adds up exactly.
+// still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
+// koruna, the leu) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
+// preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč or 243 lei
+// and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
 (function () {
   // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents,
-  //  digits in each group above the first three: 2 in India, so ₹1,20,000]
+  //  digits in each group above the first three: 2 in India, so ₹1,20,000, the currency's cents per cent of the demo's amounts]
   const CURRENCY = window.localized({
     en: ["$", ".", ","], pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], es: ["$", ",", "."],
     fr: ["", ",", "\u202f", "\u00a0€"], de: ["", ",", ".", "\u00a0€"], it: ["", ",", ".", "\u00a0€"],
@@ -19,8 +22,11 @@
     th: ["฿", ".", ","],
     vi: ["", ",", ".", "\u00a0₫", 10],
     "zh-Hant": ["NT$", ".", ",", "", 1],
+    sv: ["", ",", "\u00a0", "\u00a0kr", 0, 3, 10],
+    cs: ["", ",", "\u00a0", "\u00a0Kč", 0, 3, 23],
+    ro: ["", ",", ".", "\u00a0lei", 0, 3, 5],
   });
-  const [before, decimal, thousands, after = "", scale = 0, upper = 3] = CURRENCY;
+  const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
   function group(n) {
     const digits = String(n);
@@ -56,5 +62,10 @@
     return scale ? Math.round((whole + frac / 100) / scale) : whole * 100 + frac;
   }
 
-  window.money = { format, plain, parse, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
+  // A demo amount, written in the dollar's cents, in this currency's own cents: the same but where the currency is worth
+  // much less and keeps its cents. Why not in format: the splits then work in the currency's own cents, so a typed
+  // amount is never rounded to a multiple of the factor.
+  const cents = (amount) => amount * factor;
+
+  window.money = { format, plain, parse, cents, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
 })();

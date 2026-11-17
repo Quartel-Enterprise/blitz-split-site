@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "I Versionsinformation trycker du på en version för att öppna dess utgåva på GitHub, eller på GitHub-knappen för att se alla utgåvor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En grupps sida, en inbjudan och en utgifts detaljer visar nu upp till fem personers foton bredvid varandra i stället för två.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "På en iPad eller en öppen iPhone Duo i liggande läge visar en grupp som fyller skärmen (öppnad från Hem, till exempel) nu sitt foto, sina medlemmar och ditt saldo bredvid utgifterna.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Trycker du på kortet Totalt saldo på Hem öppnas nu fliken Saldon.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "På en telefon flyger nu gruppens saldo, eller utgiftens ikon, titel, total och din andel, in i skärmen när du öppnar en grupp eller en utgift från Hem, och tillbaka igen när du går tillbaka.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Språk listar nu spanska två gånger, ”Español (Latinoamérica)” och ”Español (España)”, så att du väljer den du talar var din enhet än är inställd på.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Med telefonen eller en surfplatta liggande börjar det som står bredvid listan i Kontakter och Saldon nu högst upp på skärmen, med ditt profilfoto ovanför listan.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kanten på knappen ”Lägg till person” i en grupps Medlemmar syns tydligare.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Ett korts färg i ”Betalsätt” väljs nu bland samma färger som kategoriernas: de tolv färgerna, dina egna och ”Ny färg” för att skapa en till.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I ”Dela upp en utgift” är ”Betalt med” nu en liten knapp under Fördelning, och har du inget betalsätt än skapar ”Lägg till ett betalsätt” ett direkt där och väljer det för utgiften. Betalkort har nu också en egen ikon.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "När du lägger till eller redigerar ett betalsätt i Profil öppnas det nu ovanpå profilen i stället för på en egen skärm.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dynamiska färger förklarar nu att appen använder Android-systemets färger, som kommer från din bakgrundsbild eller från paletten du valde i Androids inställningar.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Med Minska rörelse på visar en grupps Statistik nu sina diagram direkt, utan att staplarna växer eller ringen sveper fram.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "På brasiliansk portugisiska stod det ”Você criaste” och liknande i Aktivitet och en utgifts historik i stället för ”Você criou”.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Åtgärdat att datumen i datumväljaren i Statistik bröts en bokstav eller två per rad; slutdatumet hamnar nu under startdatumet när båda inte får plats.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Åtgärdat aviseringar och några meningar som visades på engelska, eller som en kod som ”push.bill_deleted”, på spanska för Spanien och portugisiska för Portugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Åtgärdat raden med personer på Hem på portugisiska för Portugal, där det stod ”te deve” under ett namn i stället för ”deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

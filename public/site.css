@@ -171,6 +171,9 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="th"] body [data-lang]:not([data-lang="th"]),
 :root[data-lang="vi"] body [data-lang]:not([data-lang="vi"]),
 :root[data-lang="zh-Hant"] body [data-lang]:not([data-lang="zh-Hant"]),
+:root[data-lang="sv"] body [data-lang]:not([data-lang="sv"]),
+:root[data-lang="cs"] body [data-lang]:not([data-lang="cs"]),
+:root[data-lang="ro"] body [data-lang]:not([data-lang="ro"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
 .skip:focus { inset-inline-start: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }

@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "În Note de versiune, atinge o versiune ca să-i deschizi lansarea pe GitHub, sau butonul GitHub ca să vezi toate lansările.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pagina unui grup, o invitație și detaliile unei cheltuieli arată acum fotografiile a până la cinci persoane una lângă alta, în loc de două.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pe un iPad sau pe un iPhone Duo deschis, în poziție orizontală, un grup care umple ecranul (deschis din Acasă, de exemplu) arată acum fotografia, membrii și soldul tău lângă cheltuieli.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Când atingi cardul Sold general din Acasă, se deschide acum fila Solduri.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pe telefon, când deschizi un grup sau o cheltuială din Acasă, soldul grupului, ori pictograma, titlul, totalul și partea ta din cheltuială, zboară acum în ecranul lor, și înapoi când te întorci.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Limbă afișează acum spaniola de două ori, „Español (Latinoamérica)” și „Español (España)”, ca s-o alegi pe cea pe care o vorbești, oriunde ar fi dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cu telefonul sau o tabletă în poziție orizontală, ce stă lângă listă în Contacte și Solduri începe acum din partea de sus a ecranului, cu fotografia ta de profil deasupra listei.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Marginea butonului „Adaugă persoană” din Membrii unui grup se vede mai ușor.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Culoarea unui card din „Metode de plată” se alege acum din aceleași culori ca la categorii: cele douăsprezece culori, culorile tale și „Culoare nouă” ca să creezi alta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "În „Împarte o cheltuială”, „Plătit cu” e acum un buton mic sub Împărțire, iar dacă nu ai încă nicio metodă de plată, „Adaugă o metodă de plată” creează una chiar acolo și o alege pentru cheltuială. Cardurile de debit au acum și pictograma lor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Adăugarea sau editarea unei metode de plată din Profil se deschide acum deasupra lui, nu pe un ecran separat.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Culori dinamice explică acum că aplicația preia culorile de sistem ale Android, care vin din imaginea de fundal sau din paleta aleasă de tine în setările Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Cu Reducere mișcare activată, Statisticile unui grup arată acum graficele imediat, fără ca barele să crească sau inelul să se rotească.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "În portugheza braziliană, Activitate și istoricul unei cheltuieli spuneau „Você criaste” și altele asemenea în loc de „Você criou”.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Am reparat datele din selectorul de date al Statisticilor, care se rupeau câte o literă sau două pe rând; data de sfârșit trece acum sub data de început când nu încap amândouă.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Am reparat notificările și câteva propoziții care apăreau în engleză, sau ca un cod precum „push.bill_deleted”, în spaniola din Spania și în portugheza din Portugalia.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Am reparat rândul de persoane din Acasă în portugheza din Portugalia, care spunea „te deve” sub un nume în loc de „deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

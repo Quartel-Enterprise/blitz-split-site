@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Výdaje skupiny mají teď „Zobrazit vše“, které otevře Všechny výdaje už vyfiltrované podle té skupiny, takže můžeš její výdaje hledat, řadit a filtrovat. Zruš filtr a uvidíš všechny skupiny.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Nové skupině teď „Přidat podle jména“ při psaní nabízí lidi z tvých Kontaktů i s fotkou: klepni na jednoho a skupina se založí právě s tímto člověkem.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Při posouvání skupiny ukazuje její sbalená horní lišta jen fotku a název skupiny, bez useknutých členů a celkové částky vedle nich.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Těch 12 slov obnovovacího kódu si teď můžeš stáhnout jako textový soubor.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "„Ulož si obnovovací kód“ teď říká, že ti vrátí tvoje data a že po 30 dnech bez používání se data smažou.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rozdělit výdaj má teď Naskenovat účtenku i nahoře vedle Uložit, takže ho klávesnice už nezakryje, a Přidat způsob platby je nenápadnější.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ve Statistikách skupiny je teď Podle osoby prstencový graf podílu každého, ve stejné barvě, jakou má každý ve Výchozím rozdělení, a pod ním seznam jmen a částek jako legenda. Spotřebováno a Zaplaceno přepínají, co ukazuje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Kdo je ve skupině“ v Nové skupině ukazuje tvou profilovou fotku místo iniciály.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Synchronizuji…“ se už neukazuje pořád na Domů a ve Skupinách, když se do aplikace vrátíš: synchronizace probíhá potichu, jakmile jsou tvoje skupiny na obrazovce.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na tabletech a s telefonem na šířku už není stín „Rozdělit výdaj“ nahoře v postranní liště na okrajích useknutý.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

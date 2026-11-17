@@ -129,6 +129,24 @@
       lines: [["2 生啤酒", "2,800", 1], ["1 大蝦拼盤", "9,600", 2]],
       subtotal: ["小計", "12,400"], service: ["服務費10%", "1,240", 3], total: ["合計", "13,640"],
     },
+    // Swedish: a harbor bar's receipt, in kronor as money.js counts Swedish (ten to the dollar).
+    sv: {
+      store: "HAMNBAREN", address: "Måsgatan 120", date: "2026-11-08  21:47",
+      lines: [["2 FATÖL", "280,00", 1], ["1 RÄKFAT", "960,00", 2]],
+      subtotal: ["DELSUMMA", "1 240,00"], service: ["SERVICE 10 %", "124,00", 3], total: ["TOTALT", "1 364,00"],
+    },
+    // Czech: a harbor bar's receipt, in koruny as money.js counts Czech (23 to the dollar).
+    cs: {
+      store: "PŘÍSTAVNÍ BAR", address: "Racková 120", date: "08.11.2026  21:47",
+      lines: [["2 TOČENÉ PIVO", "644,00", 1], ["1 TALÍŘ KREVET", "2 208,00", 2]],
+      subtotal: ["MEZISOUČET", "2 852,00"], service: ["OBSLUHA 10 %", "285,20", 3], total: ["CELKEM", "3 137,20"],
+    },
+    // Romanian: a harbor bar's receipt, in lei as money.js counts Romanian (five to the dollar).
+    ro: {
+      store: "BARUL DIN PORT", address: "Str. Pescărușilor 120", date: "08.11.2026  21:47",
+      lines: [["2 BERE LA HALBĂ", "140,00", 1], ["1 PLATOU CREVEȚI", "480,00", 2]],
+      subtotal: ["SUBTOTAL", "620,00"], service: ["SERVICIU 10%", "62,00", 3], total: ["TOTAL", "682,00"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

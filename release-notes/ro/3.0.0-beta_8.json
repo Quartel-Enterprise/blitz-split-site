@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "O cheltuială poate fi împărțită acum După venit, iar veniturile pe care le introduci sunt vizibile pentru membrii grupului.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fiecare dintre Ultimele cheltuieli din Acasă are acum un meniu: Editează, Duplică, Distribuie și Șterge.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vezi tot din Acasă deschide acum Toate cheltuielile: fiecare cheltuială din care faci parte, din toate grupurile tale, cu căutare, filtre și sortare.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotografia unui grup e acum mai mare în partea de sus a ecranului său și se micșorează când derulezi, iar deschiderea unui grup pornește animat din rândul lui.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Activitate arată acum fotografiile persoanelor, Solduri › Pe grupuri arată fotografia fiecărui grup, iar Cea mai mare cheltuială din Statistici își arată categoria.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Cont și sincronizare arată acum sigla Google sau Apple și adresa ta de e-mail întreagă, pe care doar tu o vezi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Șterge contul explică acum ce rămâne în grupurile tale după ce contul tău dispare.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Comutatorul Cheia Pix implicită nu mai pare dezactivat pe cheia ta implicită în tema întunecată.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

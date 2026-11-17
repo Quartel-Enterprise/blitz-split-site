@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "En utgift kan nu delas upp Efter inkomst, och inkomsterna du skriver in delas med gruppens medlemmar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Varje utgift i Senaste utgifterna i Hem har nu en meny: Redigera, Duplicera, Dela och Radera.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Visa alla i Hem öppnar nu Alla utgifter: varje utgift du är med i, i alla dina grupper, med sökning, filter och sortering.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En grupps foto är nu större högst upp på gruppens skärm och krymper när du rullar, och en grupp som öppnas animeras fram från sin rad.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktivitet visar nu personernas foton, Saldon › Per grupp visar varje grupps foto, och Största utgiften i Statistik visar sin kategori.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Konto och synkronisering visar nu Google- eller Apple-logotypen och hela din e-postadress, som bara du ser.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Radera konto förklarar nu vad som finns kvar i dina grupper när ditt konto är borta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Reglaget Standard-Pix-nyckel ser inte längre avstängt ut på din standardnyckel i det mörka temat.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

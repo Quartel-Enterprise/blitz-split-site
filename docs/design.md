@@ -5,11 +5,11 @@
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese and Traditional Chinese. The markup is in English; each page carries its other languages' strings in
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech and Romanian. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the header's translate-icon menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
-`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a twenty-second language: only the exact tag `pt-PT` (a browser's
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a twenty-fifth language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
 `pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
@@ -71,12 +71,22 @@ reader, Taiwan's words (預設, 帳號, 訊息, 網路, 連結, 檔案, and the 
 counts and Simplified's strict line breaking and headings kept whole. Its Han draws in the system font, which the
 `zh-Hant` tag points at Taiwan's glyphs, and its quotes' and dots' punctuation font is Taiwan's (`site.css`). The
 language menus name the two "中文（简体）" and "中文（繁體）", each in its own script.
+Swedish (`sv`, Sweden's), Czech (`cs`) and Romanian (`ro`) are one variant each for every browser language of theirs,
+as the apps write them: "du", "ty" and "tu" for the reader, and each one's quotes (”…”, „…“, „…”). Czech counts in
+one, few and other forms (1 výdaj, 2 výdaje, 5 výdajů) and never declines a filled-in name, which stands after a colon
+or an arrow where Czech would need its case; Romanian counts in one, few and other forms, the other with "de"
+(20 de cheltuieli), and writes ș and ț with the comma below, never the cedilla. Each uses the app's own words (grupp,
+utgift, saldo; skupina, výdaj, zůstatek; grup, cheltuială, sold). Geist's Latin Extended subset has their letters
+(č, ř, ů, ă, ș, ț), so they draw in Geist as Polish does.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
 in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, grouped
 as India writes them (₹1,20,000), yuan in Simplified Chinese (¥, with its fen, so the demo's numbers stay as they are:
-¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The demo keeps every amount in cents and those five show it scaled to whole
+¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The krona in Swedish, the koruna in Czech and the leu in Romanian keep their cents but are
+worth much less than the dollar, so the demo's own amounts are multiplied by a whole number before anything is split
+(`money.cents`: ten, 23 and five, so 486 kr, 1 117,80 Kč and 243 lei for the ride), and from there everything works in
+that currency's own cents: every split adds up exactly and an amount typed in the split card stays as typed. The demo keeps every amount in cents and the five with no cents in use show it scaled to whole
 units (a cent is Rp100, ¥1, ₩10, 10 ₫ and NT$1, the smallest whole scale, which keeps every split exact), so a $48.60 ride reads Rp486.000, ¥4,860, ₩48,600, 48.600 ₫ or NT$4,860 and every split still adds
 up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫ or Rp100, and a field grows with what it
 holds. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way, by hand, so the

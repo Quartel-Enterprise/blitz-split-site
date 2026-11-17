@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Un cont fără Google sau Apple e șters acum după 30 de zile fără utilizare. Ecranul de bun venit și Profilul spun asta, iar dacă conectezi Google sau Apple îți păstrezi datele.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Acum poți evalua aplicația din Profil › Asistență și feedback, cu „Evaluează aplicația”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "O cheltuială deschisă din Acasă sau din Toate cheltuielile te duce acum înapoi direct de unde ai deschis-o, fără să treacă prin grupul ei.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Am reparat bula „+N” dintr-un șir de fețe, care apărea sub prima față în loc să stea deasupra ei.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

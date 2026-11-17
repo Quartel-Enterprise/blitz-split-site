@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split este o aplicație nouă, refăcută de la zero: înlocuiește Blitz Split 2.4.0 și rulează pe Android, iPhone, iPad, Mac și web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Împarte o cheltuială în mod egal, pe sume, pe procente, pe părți sau articol cu articol, cu una sau mai multe persoane care plătesc.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Scanează un bon, iar aplicația îi citește articolele și totalul pentru tine.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Creează grupuri pentru călătorii, casă sau evenimente și invită persoane cu un link sau un cod QR.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vezi cine cui datorează în fiecare grup și în toate la un loc, înregistrează plăți și simplifică datoriile, ca mai puține plăți să achite totul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Totul funcționează offline: ce faci se salvează pe dispozitivul tău și pleacă atunci când revii online.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Contul e opțional: conectează Google sau Apple, ori păstrează un cod de recuperare, ca să-ți recuperezi grupurile pe alt dispozitiv.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Comentează o cheltuială, atașează fotografii, urmărește ce s-a întâmplat în Activitate și vezi unde s-au dus banii în Statistici.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fiecare cheltuială și fiecare plată are moneda ei, iar aplicația e disponibilă în engleză, portugheză, spaniolă și franceză.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

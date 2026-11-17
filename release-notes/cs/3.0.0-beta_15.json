@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Když otevřeš někoho z Kontaktů nebo Zůstatků, do jeho profilu se teď spolu s fotkou přenese i jméno a zůstatek, a při návratu zase zpátky.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Ve Statistikách teď střed prstence „Podle osoby“ ukazuje jen „Ty“, když je podíl tvůj, a dlouhé jméno končí „…“, místo aby se dotýkalo prstence.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Když otevřeš skupinu ze Skupin, obličeje jejích členů teď přeletí z řádku na obrazovku skupiny, a při odchodu zpátky.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Na telefonu teď otevření výdaje přenese víc z něj: kdo platil, přeletí z jeho řádku na Domů a ve Všech výdajích, čas z jeho řádku ve Výdajích skupiny a fotka a název skupiny z obrazovky skupiny. Při odchodu se vrátí zpátky.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Název skupiny teď přeletí na obrazovku skupiny už při otevírání, nejen cestou zpět.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

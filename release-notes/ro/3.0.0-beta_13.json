@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplicația vorbește acum rusă și ucraineană: alege „Русский” sau „Українська” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în ruble rusești (RUB) și hrivne ucrainene (UAH), iar un grup creat în Rusia sau în Ucraina pornește în moneda țării.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilul are o preferință nouă, „Formatul orei”: urmează sistemul sau arată mereu orele în format de 24 de ore (14:30) ori de 12 ore cu AM și PM (2:30 PM), în cheltuieli, Activitate, comentarii și selectoarele de oră.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cu telefonul în poziție orizontală, și pe tablete, „Împarte o cheltuială” dintr-un grup stă acum în bara de sus, în loc să plutească peste cheltuieli.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Cu Culori dinamice activate, ce datorezi rămâne portocaliu în loc să devină roșu, ca să nu semene niciodată cu verdele a ceea ce ai de primit.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "În Activitate, fiecare rând arată acum fotografia grupului lângă numele lui, când grupul are una.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Soldul tău în acest grup nu mai repetă suma pe un al doilea rând când doar ai de primit sau doar ai de plătit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "În Împărțire implicită, partea fiecărei persoane din cheltuiala de exemplu are acum o culoare proprie, cu un punct la fel înaintea numelui, ca persoanele vecine din listă să nu mai pară una singură.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bara de sus a unei cheltuieli arată acum fotografia grupului, sau inițialele lui, lângă numele grupului.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Când atingi fotografia cuiva, ea trece acum în profilul său, și înapoi când te întorci.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "O cheltuială deschisă din Cheltuielile unui grup se mută acum la locul ei ca atunci când o deschizi din Acasă, iar fotografia grupului de pe cheltuielile din Acasă zboară în bara de sus a cheltuielii.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Împarte o cheltuială” e acum și în partea de sus a Soldurilor și Contactelor, iar în ecranul grupului s-a mutat în bara de sus în loc să plutească peste listă, cu „Adaugă persoane” acum în meniul ⋯. Începe cu numele și se restrânge la pictogramă când derulezi.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "În Grupuri, atingerea cardului Sold general deschide Solduri.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "„Invită persoane” dintr-un grup se numește acum „Adaugă persoane”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pe iPad, filele se deschid în bara laterală, iar când stau în bara de sus, ca atunci când iPadul e în poziție verticală, „Împarte o cheltuială” rămâne la vedere acolo, în timp ce celelalte butoane trec pe un rând chiar dedesubt.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "În „Împarte o cheltuială”, „Plătit cu” apare acum, estompat, și când altcineva a plătit cheltuiala: dacă îl atingi, îți explică faptul că doar cei care au plătit pot marca cu ce au plătit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fără cont, codul tău de recuperare e acum format din 12 cuvinte numerotate, mai ușor de notat, iar la restaurare le introduci câte un cuvânt pe câmp, cu sugestii pentru fiecare cuvânt în timp ce scrii. Codurile salvate înainte de această versiune nu mai funcționează: salvează-l pe cel nou sau conectează Google ori Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "În Cheltuieli pe categorii, fiecare cheltuială are acum același meniu ⋮ ca în cheltuielile unui grup: o poți edita, duplica, distribui sau șterge fără s-o deschizi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pe ecrane late (un telefon în poziție orizontală, tablete, Mac și web), Cheltuieli pe categorii păstrează categoriile și totalul într-o coloană lângă cheltuieli.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "În germană, neerlandeză și japoneză, propozițiile din Activitate se citesc acum în ordinea firească a cuvintelor din fiecare limbă, fără două puncte înaintea numelui cheltuielii sau al grupului.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Prima literă din „Adaugă fotografie”, sub atașamentele unei cheltuieli, nu mai e tăiată.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "În Grupuri, butonul pentru crearea unui grup arată acum „+ Grup” și nu se mai rupe pe două rânduri.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Notele de versiune arată acum versiunea pe care tocmai ai instalat-o, în loc să aștepte până la o zi ca să-i aducă notele.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "În Statisticile unui grup, butonul de perioadă („Oricând”) nu se mai rupe pe două rânduri: datele trec sub el când nu încap amândouă.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

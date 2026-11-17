@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Când deschizi pe cineva din Contacte sau Solduri, numele și soldul lui trec acum în profilul său împreună cu fotografia, și înapoi când te întorci.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "În Statistici, mijlocul inelului „După persoană” spune acum doar „Tu” când partea e a ta, iar un nume lung se termină în „…” în loc să atingă inelul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Când deschizi un grup din Grupuri, fețele membrilor trec acum din rând în ecranul grupului, și înapoi când ieși.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Pe telefon, o cheltuială pe care o deschizi ia acum mai multe cu ea: cine a plătit trece din rândul ei din Acasă și din Toate cheltuielile, ora din rândul ei din Cheltuielile grupului, iar fotografia și numele grupului din ecranul grupului. Toate se întorc când ieși.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Numele unui grup trece acum în ecranul grupului când acesta se deschide, nu doar la întoarcere.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
