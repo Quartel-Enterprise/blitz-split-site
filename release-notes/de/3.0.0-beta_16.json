@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Die App spricht jetzt Koreanisch: Wähle „한국어“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Südkoreanischem Won (KRW) teilen, und eine in Südkorea erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Konto und Synchronisierung“ im Profil zeigt jetzt deine Nutzer-ID, die du mit einem Tippen kopierst, damit du uns sagen kannst, wer du bist, wenn du an einer unserer Umfragen teilnimmst.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ein Foto, das du einer Ausgabe hinzufügst, öffnet sich jetzt zuerst in Foto anpassen, damit du den Ausschnitt wählst, der angehängt wird.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Nach Einkommen“ erinnert dich jetzt daran, das Nettoeinkommen jeder Person nach Steuern einzugeben, und die „Standardaufteilung“ zeigt den Prozentsatz jeder Person erst, sobald ein Einkommen eingetragen ist.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Der Kopf einer Gruppe ist aufgeräumter: Die Zeile mit der Mitgliederzahl und der Gesamtsumme unter dem Namen ist weg. Die Gesichter zeigen, wer dabei ist, die Statistiken die Gesamtsumme.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotos einer Karten- oder Kontoabrechnung sagen das jetzt und schlagen vor, die Ausgabe von Hand auszufüllen, statt zu melden, dass der Beleg nicht gelesen werden konnte.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Eine Kategorie in den Statistiken öffnet jetzt Alle Ausgaben mit Gruppe, Kategorie und Zeitraum schon ausgewählt, und du kannst diese Ausgaben auch durchsuchen. Alle Ausgaben hat außerdem einen neuen Filter Zeitraum.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In den Statistiken hebt unter Nach Person ein Tippen neben den Ring oder in seine Mitte die Auswahl der Person auf.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

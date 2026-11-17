@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "La app ahora habla coreano: elige \"한국어\" en Perfil › Idioma, o deja que siga a tu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los grupos ya pueden dividir en won surcoreano (KRW), y un grupo creado en Corea del Sur empieza en esa moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Cuenta y sincronización\" del Perfil ahora muestra tu ID de usuario, que copias con un toque, para decirnos quién eres cuando respondas una de nuestras encuestas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La foto que agregas a un gasto ahora se abre primero en Ajustar foto, para que encuadres el cuadrado que se adjunta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Por ingresos\" ahora te recuerda poner los ingresos netos de cada uno, después de impuestos, y la \"División predeterminada\" solo muestra el porcentaje de cada uno cuando hay algún ingreso escrito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La cabecera del grupo está más limpia: se quitó la línea con el número de miembros y el total bajo su nombre. Las caras muestran quién está, y Estadísticas muestra el total.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Las fotos de un extracto de tarjeta o del banco ahora lo dicen y sugieren rellenar el gasto a mano, en vez de decir que no se pudo leer el recibo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Una categoría en Estadísticas ahora abre Todos los gastos con el grupo, la categoría y el período ya elegidos, y además puedes buscar en esos gastos. Todos los gastos también tiene ahora el filtro Período.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En Por persona, en Estadísticas, un toque al lado del gráfico o en su centro quita la selección de la persona elegida.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

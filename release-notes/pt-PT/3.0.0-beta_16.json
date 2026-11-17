@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "A app fala agora coreano: escolhe \"한국어\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em won sul-coreano (KRW), e um grupo criado na Coreia do Sul começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A secção \"Conta e sincronização\" do Perfil mostra agora o teu ID de utilizador, que copias com um toque, para nos dizeres quem és quando responderes a um dos nossos inquéritos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A foto que adicionas a uma conta abre agora primeiro em Ajustar foto, para enquadrares o quadrado que vai ser anexado.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Pelo rendimento\" lembra-te agora de indicar o rendimento líquido de cada um, depois dos impostos, e a \"Divisão predefinida\" só mostra a percentagem de cada um depois de escreveres algum rendimento.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O topo do grupo está mais limpo: saiu a linha com o número de membros e o total por baixo do nome. As fotos mostram quem está no grupo, e as Estatísticas mostram o total.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As fotos de uma fatura de cartão ou extrato dizem agora isso e sugerem preencher a conta à mão, em vez de dizer que o talão não pôde ser lido.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uma categoria nas Estatísticas abre agora Todas as despesas com o grupo, a categoria e o período já escolhidos, e ainda podes pesquisar nessas contas. Todas as despesas passou também a ter o filtro Período.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em Por pessoa, nas Estatísticas, um toque ao lado do gráfico ou no meio dele tira a seleção da pessoa escolhida.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

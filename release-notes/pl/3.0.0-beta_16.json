@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikacja mówi teraz po koreańsku: wybierz „한국어” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w wonach południowokoreańskich (KRW), a grupa założona w Korei Południowej startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Konto i synchronizacja” w Profilu pokazuje teraz twoje ID użytkownika, które kopiujesz jednym dotknięciem, żeby powiedzieć nam, kim jesteś, gdy odpowiadasz na jedną z naszych ankiet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zdjęcie dodawane do wydatku otwiera się teraz najpierw w Dopasuj zdjęcie, żeby wykadrować kwadrat, który zostanie dołączony.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Według dochodów” przypomina teraz, żeby wpisać dochód netto każdej osoby, po opodatkowaniu, a „Domyślny podział” pokazuje procent każdej osoby dopiero po wpisaniu jakiegoś dochodu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nagłówek grupy jest czystszy: zniknęła linia z liczbą członków i sumą pod nazwą. Twarze pokazują, kto jest w grupie, a Statystyki pokazują sumę.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zdjęcia wyciągu z karty lub z banku teraz o tym informują i proponują ręczne uzupełnienie wydatku, zamiast pisać, że nie udało się odczytać paragonu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategoria w Statystykach otwiera teraz Wszystkie wydatki z wybraną już grupą, kategorią i okresem, więc możesz też przeszukać te wydatki. Wszystkie wydatki mają też nowy filtr Okres.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "W sekcji Według osób w Statystykach dotknięcie obok wykresu lub w jego środku odznacza wybraną osobę.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

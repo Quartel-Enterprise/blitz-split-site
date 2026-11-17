@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "The app now speaks Korean: pick \"한국어\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the South Korean won (KRW), and a group made in South Korea starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profile's \"Account and sync\" now shows your User ID, which you can copy with one tap, so you can tell us who you are when you answer one of our surveys.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A photo you add to a bill now opens in Adjust photo first, so you frame the square that gets attached.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"By income\" now reminds you to enter each one's net income, after taxes, and \"Default split\" only shows each one's percentage once an income is typed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A group's header is cleaner: the line with the member count and the total under its name is gone. The faces show who's in, and Statistics shows the total.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Photos of a card or bank statement now say so, and suggest filling the bill in by hand, instead of saying the receipt couldn't be read.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A category in Statistics now opens All expenses with the group, the category and the period already picked, so you can search those bills too. All expenses also gained a Period filter.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Statistics' By person, a tap beside the ring or in its middle lets go of the picked person.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
