@@ -517,8 +517,8 @@
         less: "{name}减少一份", more: "{name}增加一份", had: "谁点了{item}",
       },
     },
-    // Hebrew: a message with "|" holds three forms for {n}, "one|two|other", as the app writes them (fill gives Hebrew's
-    // two the third, the same words as other); no verb says anyone's gender: a name stands in a label ("מחוץ לחשבון: Ana").
+    // Hebrew: a message with "|" holds three forms for {n}, "one|two|other", as the app writes them (fill picks the
+    // second for Hebrew's two); no verb says anyone's gender: a name stands in a label ("מחוץ לחשבון: Ana").
     he: {
       bill: "ערב פיצה", paid: "שולם על ידי: Pedro", notIn: "לא בחשבון הזה",
       each: "{a} לכל אחד", among: "{a} בין {n} אנשים.", amongOne: "{a} לאדם אחד.", out: "מחוץ לחשבון: {name}.",
@@ -555,7 +555,7 @@
     if (forms.length > 1) {
       const kind = plural.select(values.n);
       text = forms.length === 6 ? forms[["zero", "one", "two", "few", "many", "other"].indexOf(kind)]
-        : forms.length === 3 ? forms[{ one: 0, few: 1 }[kind] ?? 2] : forms[kind === "few" ? 0 : 1];
+        : forms.length === 3 ? forms[{ one: 0, few: 1, two: 1 }[kind] ?? 2] : forms[kind === "few" ? 0 : 1];
     }
     return text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
   }
