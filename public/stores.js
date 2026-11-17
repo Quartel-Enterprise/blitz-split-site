@@ -33,10 +33,10 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", en: "en" })}`
+    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", zh: "zh-CN", en: "en" })}`
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", ko: "kr", en: "us" })}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", ko: "kr", zh: "cn", en: "us" })}/app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -194,6 +194,15 @@
       mismatchBody: "지금 {platform} 기기를 쓰고 있어요. 가장 잘 쓰려면 {in} 앱을 받으세요.",
       mismatchGo: "{to} 이동", mismatchStay: "그대로 {to} 이동", close: "닫기",
       in: { play: "Google Play에서", appstore: "App Store에서" }, to: { play: "Google Play로", appstore: "App Store로" },
+    },
+    zh: {
+      play: ["立即下载", "即将登陆"], appstore: ["立即下载", "即将登陆"], web: ["立即打开", "即将登陆"], browser: "浏览器",
+      getApp: "下载应用", openWeb: "打开网页版", soon: "即将上线",
+      playLive: "在Google Play下载", appStoreLive: "在App Store下载", webLive: "打开网页版",
+      mismatchTitle: "选择你的应用商店",
+      mismatchBody: "你正在使用{platform}。为获得最佳体验，请{in}下载应用。",
+      mismatchGo: "{to}", mismatchStay: "仍然{to}", close: "关闭",
+      in: { play: "从Google Play", appstore: "从App Store" }, to: { play: "前往Google Play", appstore: "前往App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

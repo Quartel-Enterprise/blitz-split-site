@@ -276,6 +276,24 @@
       bills: (n) => `지출 ${n}건`,
       titles: { b1: "라고아 게스트하우스", b2: "히베이랑 저녁 식사", b3: "해변까지 교통비", p1: "해변 아이스크림", p2: "일주일 장보기", p3: "주차" },
     },
+    // Simplified Chinese: one form for counts, and no space between Chinese and a name or a number ("Pedro支付", "4人").
+    zh: {
+      paid: "{name}支付", notIn: "不参与",
+      members: (people, bills) => `${people}人 · ${bills}笔账单`,
+      toGet: "应收", youOwe: "应付", settled: "已结清", owesYou: "谁欠你", youOweTitle: "你欠谁",
+      eachOne: "每人的余额", getsBack: "应收", owes: "应付", even: "已结清",
+      toSettle: "如何结清", total: "群组总计", lodging: "住宿", food: "餐饮", transport: "交通",
+      sheetTitle: "分摊账单", description: "描述", amount: "金额", whoPaid: "谁付的",
+      splitAmong: "平均分摊给", each: "每人{value}", cancel: "取消", save: "保存", close: "关闭",
+      queue: (n) => `${n}项更改排队中`,
+      split: "怎么分摊的", yourShare: "你的份额", deleteBill: "删除账单",
+      recordPayment: "记录付款", record: "记录", viaMethod: "通过转账", payment: "付款", deletePayment: "删除付款",
+      payLine: (from, to) => `${name(from)}付给${name(to)}`,
+      paidYou: (who, value) => `${who}付给你${value}`,
+      paidTotal: "共支付", shareTotal: "账单中的份额", balance: "余额",
+      bills: (n) => `${n}笔账单`,
+      titles: { b1: "拉戈阿民宿", b2: "里贝朗晚餐", b3: "去海滩的车费", p1: "海滩上的冰淇淋", p2: "一周的采购", p3: "停车费" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -714,7 +732,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", zh: "zh-Hans", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

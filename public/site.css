@@ -100,6 +100,13 @@ p { margin: 0; text-wrap: pretty; }
    phrases rather than anywhere in a heading, and none of the Latin headings' tight tracking. */
 :root[lang="ja"] { line-break: strict; }
 :root[lang="ja"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; word-break: auto-phrase; }
+/* Simplified Chinese: the same strict line-breaking (no closing punctuation at a line's start), and its Han in the
+   system font, as the bundled Geist subsets have none: the tracking tuned for Geist would cramp it. */
+:root[lang="zh-Hans"] { line-break: strict; }
+:root[lang="zh-Hans"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+/* Chinese has no spaces, so a heading would break anywhere: it breaks at its punctuation (，。) and where its words
+   mark a <wbr>, keeping each phrase whole, as Japanese's auto-phrase does, and inside one only when it doesn't fit. */
+:root[lang="zh-Hans"] :is(h1, h2, h3) { word-break: keep-all; overflow-wrap: break-word; }
 /* Russian and Ukrainian draw their Cyrillic, and Korean its Hangul, in the system font, as the bundled Geist subsets
    have neither: the tracking tuned for Geist would cramp them. */
 :root:is([lang="ru"], [lang="uk"], [lang="ko"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
@@ -128,7 +135,8 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="ru"] body [data-lang]:not([data-lang="ru"]),
 :root[data-lang="uk"] body [data-lang]:not([data-lang="uk"]),
 :root[data-lang="ko"] body [data-lang]:not([data-lang="ko"]),
-:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="fr"]):not([data-lang="de"]):not([data-lang="it"]):not([data-lang="pl"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]):not([data-lang="ru"]):not([data-lang="uk"]):not([data-lang="ko"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
+:root[data-lang="zh"] body [data-lang]:not([data-lang="zh"]),
+:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="fr"]):not([data-lang="de"]):not([data-lang="it"]):not([data-lang="pl"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]):not([data-lang="ru"]):not([data-lang="uk"]):not([data-lang="ko"]):not([data-lang="zh"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }
 @media (prefers-reduced-motion: reduce) {

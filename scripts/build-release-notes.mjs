@@ -20,7 +20,7 @@ import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
 process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 // The order of the page's blocks. English is what every other language is checked against.
-const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko"];
+const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "zh"];
 const SOURCE_DIR = "release-notes";
 const FEED_DIR = "public/release-notes";
 // The page's shell, written by hand: its header, its footer and its strings, with nothing between <main> and </main>.
@@ -48,6 +48,7 @@ const CHROME = {
   ru: { language: "Русский", brand: "Blitz Split", locale: "ru", title: "Что нового", lead: "Что изменилось в каждой версии приложения.", showBeta: "Показывать бета-версии", beta: "Бета", empty: "Стабильной версии пока нет. Включи бета-версии, чтобы увидеть, что сейчас тестируется.", platforms: { android: "Android", ios: "iPhone и iPad", mac: "Mac", web: "Веб" } },
   uk: { language: "Українська", brand: "Blitz Split", locale: "uk", title: "Що нового", lead: "Що змінилося в кожній версії застосунку.", showBeta: "Показувати бета-версії", beta: "Бета", empty: "Стабільної версії ще немає. Увімкни бета-версії, щоб побачити, що зараз тестується.", platforms: { android: "Android", ios: "iPhone і iPad", mac: "Mac", web: "Веб" } },
   ko: { language: "한국어", brand: "Blitz Split", locale: "ko", title: "새로운 기능", lead: "앱의 버전마다 바뀐 내용이에요.", showBeta: "베타 버전 보기", beta: "베타", empty: "아직 정식 버전이 없어요. 베타 버전을 켜면 테스트 중인 내용을 볼 수 있어요.", platforms: { android: "Android", ios: "iPhone 및 iPad", mac: "Mac", web: "웹" } },
+  zh: { language: "中文（简体）", brand: "Blitz Split", locale: "zh-Hans", title: "更新说明", lead: "应用每个版本的变化。", showBeta: "显示测试版", beta: "测试版", empty: "还没有正式版。打开测试版，看看正在测试的内容。", platforms: { android: "Android", ios: "iPhone和iPad", mac: "Mac", web: "网页版" } },
 };
 
 class NotesError extends Error {}
