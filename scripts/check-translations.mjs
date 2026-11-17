@@ -28,6 +28,9 @@ const ENGLISH_BY_DEFAULT = ["name"];
 // Dictionaries of formats, not words: each language has its own shape (a currency's prefix, separators and suffix),
 // so only their languages are checked.
 const FORMATS = ["CURRENCY"];
+// Tables keyed by language that hold no words, only for some languages: the language picker's chips (site.js), the
+// codes that differ from a language's own. Only their keys are checked.
+const NOT_WORDS = ["LANGUAGE_CHIPS"];
 
 const errors = [];
 const fail = (file, message) => errors.push(`${relative(ROOT, file)}: ${message}`);
@@ -157,6 +160,7 @@ function checkScript(file) {
     const dict = evaluate(source.slice(open, closingBracket(source, open) + 1));
     const name = match[1];
     for (const lang of Object.keys(dict)) if (!languages.includes(lang) && !variants.includes(lang)) fail(file, `${name}.${lang} isn't a language of the site`);
+    if (NOT_WORDS.includes(name)) continue;
     if (FORMATS.includes(name)) {
       for (const lang of languages) if (!dict[lang]) fail(file, `${name} has no ${lang}`);
       // A variant's format has the same parts as its language's: a missing separator would print "undefined".

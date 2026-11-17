@@ -8,7 +8,8 @@ and `public/site.js` translates the page, in English, Portuguese (Brazil), Spani
 Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech and Romanian. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
-and the header's translate-icon menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
+and the language picker picks another, kept for the next visit, or "System" again, which forgets it and follows the
+browser (`boot.js` sets `data-lang-pref` to the language chosen or `system`);
 `?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a twenty-fifth language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
@@ -70,7 +71,7 @@ reader, Taiwan's words (預設, 帳號, 訊息, 網路, 連結, 檔案, and the 
 「」 quotes, no space between Chinese and a name, a number or a Latin word ("Pedro支付", "4人", "App"), one form for
 counts and Simplified's strict line breaking and headings kept whole. Its Han draws in the system font, which the
 `zh-Hant` tag points at Taiwan's glyphs, and its quotes' and dots' punctuation font is Taiwan's (`site.css`). The
-language menus name the two "中文（简体）" and "中文（繁體）", each in its own script.
+language picker names the two "中文（简体）" and "中文（繁體）", each in its own script, and marks them 简 and 繁.
 Swedish (`sv`, Sweden's), Czech (`cs`) and Romanian (`ro`) are one variant each for every browser language of theirs,
 as the apps write them: "du", "ty" and "tu" for the reader, and each one's quotes (”…”, „…“, „…”). Czech counts in
 one, few and other forms (1 výdaj, 2 výdaje, 5 výdajů) and never declines a filled-in name, which stands after a colon
@@ -91,6 +92,20 @@ units (a cent is Rp100, ¥1, ₩10, 10 ₫ and NT$1, the smallest whole scale, w
 up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫ or Rp100, and a field grows with what it
 holds. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way, by hand, so the
 first paint shows them before any script runs.
+
+The language picker is the apps' Profile › Language: the header's translate button (with the code of the language
+shown: `EN`, `BR` and `PT` for the two Portuguese, `UA` for Ukrainian, `简` and `繁` for the two Chinese) and the
+footer's button (the language's own name) open it. A wider window shows it as a dialog of a fixed height; a phone,
+upright or lying down (narrower than 600px or lower than 500px), as a screen of its own with a back arrow. It lists
+"System" first, the default, then every language in its own name, over the same name in the page's language (the
+browser's `Intl.DisplayNames`, hidden when both read the same), with its code in a chip and a radio. The search
+finds a row by any of those names, its English one or its code, folding accents ("cestina" finds "Čeština"). Its
+rows are plain links in each page's markup (`?lang=…`, "System" without it), so crawlers find every language's page;
+`site.js` adds the chips and the translated names. Picking one needs scripts, as showing a language does: `boot.js`
+picks it and `site.js` translates the page, so without them every page is in English and there is nothing to switch.
+Its words (the search, "System", Back, Close…) are `PICKER_TEXT` in `site.js`, not a `data-i18n` key in each page's
+`SITE_STRINGS`: the picker is on every page, so one dictionary keeps them, which `check:translations` checks as it
+checks `stores.js`'s.
 
 The theme is Light, Dark or System (the default), from the header's theme menu or the footer, kept for the next visit.
 `boot.js` always sets `data-theme` to `light` or `dark`, resolving System to the system's theme and following it when it

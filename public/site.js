@@ -11,7 +11,7 @@
   const originOf = (el) => (el.closest("details") && el.closest(".site-header") ? "header_menu"
     : el.closest(".site-header") ? "header" : el.closest(".site-footer") ? "footer" : "content");
 
-  // The language picked in the menu: the variant (pt-PT) when there is one.
+  // The language on the page, as the picker names it: the variant (pt-PT) when there is one.
   const picked = document.documentElement.dataset.variant || lang;
   const dict = window.localized(window.SITE_STRINGS || {});
   if (dict) {
@@ -32,18 +32,190 @@
     });
   }
 
-  // The language menu (header) and switch (footer) keep the choice for the next visit.
-  document.querySelectorAll("[data-set-lang]").forEach((link) => {
-    const target = link.dataset.setLang;
-    link.setAttribute("aria-current", String(target === picked));
-    const url = new URL(location.href);
-    url.searchParams.set("lang", target);
-    link.href = url.pathname + url.search + url.hash;
-    link.addEventListener("click", () => {
-      try { localStorage.setItem("lang", target); } catch (e) { /* private mode: the URL still carries it */ }
-      if (target !== picked) track("language_change", { language: target, origin: originOf(link) });
+  // The language picker, as the apps' Profile › Language: "System", which follows the browser's languages, then every
+  // language in its own name, the way its speakers look for it, over the same name in the page's language; a search
+  // finds a row by any of its names, its English one or its code. The header's button and the footer's open it, a
+  // dialog on a wider window and a screen of its own on a phone (site.css). A language picked is kept for the next
+  // visit; "System" forgets it. boot.js says what the visitor chose: data-lang-pref, a language or "system".
+  const PICKER_TEXT = {
+    en: { search: "Search languages", clear: "Clear search", none: "No language matches “{query}”", system: "System", systemDetail: "Device language", back: "Back", close: "Close" },
+    pt: { search: "Buscar idioma", clear: "Limpar busca", none: "Nenhum idioma encontrado para “{query}”", system: "Sistema", systemDetail: "Idioma do aparelho", back: "Voltar", close: "Fechar" },
+    "pt-PT": { search: "Pesquisar idioma", clear: "Limpar pesquisa" },
+    es: { search: "Buscar idioma", clear: "Borrar búsqueda", none: "Ningún idioma coincide con «{query}»", system: "Sistema", systemDetail: "Idioma del dispositivo", back: "Atrás", close: "Cerrar" },
+    fr: { search: "Rechercher une langue", clear: "Effacer la recherche", none: "Aucune langue ne correspond à « {query} »", system: "Système", systemDetail: "Langue de l’appareil", back: "Retour", close: "Fermer" },
+    de: { search: "Sprache suchen", clear: "Suche löschen", none: "Keine Sprache passt zu „{query}“", system: "System", systemDetail: "Sprache des Geräts", back: "Zurück", close: "Schließen" },
+    it: { search: "Cerca una lingua", clear: "Cancella ricerca", none: "Nessuna lingua corrisponde a “{query}”", system: "Sistema", systemDetail: "Lingua del dispositivo", back: "Indietro", close: "Chiudi" },
+    pl: { search: "Szukaj języka", clear: "Wyczyść wyszukiwanie", none: "Brak języków pasujących do „{query}”", system: "System", systemDetail: "Język urządzenia", back: "Wstecz", close: "Zamknij" },
+    nl: { search: "Taal zoeken", clear: "Zoekopdracht wissen", none: "Geen taal gevonden voor ‘{query}’", system: "Systeem", systemDetail: "Taal van het apparaat", back: "Terug", close: "Sluiten" },
+    tr: { search: "Dil ara", clear: "Aramayı temizle", none: "“{query}” ile eşleşen dil yok", system: "Sistem", systemDetail: "Cihaz dili", back: "Geri", close: "Kapat" },
+    id: { search: "Cari bahasa", clear: "Hapus pencarian", none: "Tidak ada bahasa yang cocok dengan “{query}”", system: "Sistem", systemDetail: "Bahasa perangkat", back: "Kembali", close: "Tutup" },
+    ja: { search: "言語を検索", clear: "検索をクリア", none: "「{query}」に一致する言語はありません", system: "システム", systemDetail: "デバイスの言語", back: "戻る", close: "閉じる" },
+    ru: { search: "Поиск языков", clear: "Очистить поиск", none: "Нет языков по запросу «{query}»", system: "Системный", systemDetail: "Язык устройства", back: "Назад", close: "Закрыть" },
+    uk: { search: "Пошук мов", clear: "Очистити пошук", none: "Немає мови, що відповідає «{query}»", system: "Системна", systemDetail: "Мова пристрою", back: "Назад", close: "Закрити" },
+    ko: { search: "언어 검색", clear: "검색어 지우기", none: "“{query}” 검색어와 일치하는 언어가 없어요", system: "시스템 설정", systemDetail: "기기 언어", back: "뒤로", close: "닫기" },
+    ar: { search: "البحث عن لغة", clear: "مسح البحث", none: "لا توجد لغة تطابق «{query}»", system: "النظام", systemDetail: "لغة الجهاز", back: "رجوع", close: "إغلاق" },
+    hi: { search: "भाषा खोजें", clear: "खोज साफ़ करें", none: "“{query}” से मेल खाती कोई भाषा नहीं", system: "सिस्टम", systemDetail: "डिवाइस की भाषा", back: "वापस", close: "बंद करें" },
+    zh: { search: "搜索语言", clear: "清除搜索", none: "没有与“{query}”匹配的语言", system: "系统", systemDetail: "设备语言", back: "返回", close: "关闭" },
+    he: { search: "חיפוש שפה", clear: "ניקוי החיפוש", none: "אין שפה שמתאימה ל־„{query}”", system: "מערכת", systemDetail: "שפת המכשיר", back: "חזרה", close: "סגירה" },
+    th: { search: "ค้นหาภาษา", clear: "ล้างการค้นหา", none: "ไม่พบภาษาที่ตรงกับ “{query}”", system: "ระบบ", systemDetail: "ภาษาของอุปกรณ์", back: "กลับ", close: "ปิด" },
+    vi: { search: "Tìm ngôn ngữ", clear: "Xóa tìm kiếm", none: "Không có ngôn ngữ nào khớp với “{query}”", system: "Hệ thống", systemDetail: "Ngôn ngữ của thiết bị", back: "Quay lại", close: "Đóng" },
+    "zh-Hant": { search: "搜尋語言", clear: "清除搜尋", none: "沒有符合「{query}」的語言", system: "系統", systemDetail: "裝置語言", back: "返回", close: "關閉" },
+    sv: { search: "Sök språk", clear: "Rensa sökningen", none: "Inget språk matchar ”{query}”", system: "System", systemDetail: "Enhetens språk", back: "Tillbaka", close: "Stäng" },
+    cs: { search: "Hledat jazyk", clear: "Vymazat hledání", none: "Žádný jazyk neodpovídá „{query}“", system: "Systém", systemDetail: "Jazyk zařízení", back: "Zpět", close: "Zavřít" },
+    ro: { search: "Caută o limbă", clear: "Șterge căutarea", none: "Nicio limbă nu corespunde cu „{query}”", system: "Sistem", systemDetail: "Limba dispozitivului", back: "Înapoi", close: "Închide" },
+  };
+  // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
+  // Ukrainian by Ukraine's UA ("UK" reads as the United Kingdom) and the two Chinese by their scripts, as Chinese
+  // pickers mark them. The header's button shows the one on the page.
+  // check-translations.mjs knows it holds codes, not words, so it only checks that its keys are languages.
+  const LANGUAGE_CHIPS = { pt: "BR", "pt-PT": "PT", uk: "UA", zh: "简", "zh-Hant": "繁" };
+  const chipOf = (code) => LANGUAGE_CHIPS[code] || code.toUpperCase();
+  document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = chipOf(picked); });
+
+  const picker = document.getElementById("lang-dialog");
+  if (picker) {
+    const text = window.localized(PICKER_TEXT);
+    const pref = document.documentElement.dataset.langPref || picked;
+    const pageTag = document.documentElement.lang;
+    // A language's name in another, from the browser's own names (CLDR): "Japonês" on a Portuguese page.
+    const namer = (tag) => {
+      try { return new Intl.DisplayNames([tag], { type: "language", languageDisplay: "standard" }); } catch (e) { return null; }
+    };
+    const inPage = namer(pageTag);
+    const inEnglish = namer("en");
+    const nameIn = (names, tag) => {
+      let name = "";
+      try { name = names?.of(tag) || ""; } catch (e) { /* a browser without this tag: the row shows its own name only */ }
+      return name && name !== tag ? name.charAt(0).toLocaleUpperCase(pageTag) + name.slice(1) : "";
+    };
+    // Folded as the apps' searches: "portugues" finds "Português", "cestina" "Čeština"; other scripts stay as they are.
+    const fold = (value) => value.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+    const list = picker.querySelector(".lang-list");
+    const group = list.querySelector("#lang-rows");
+    const empty = picker.querySelector(".lang-empty");
+    const search = picker.querySelector(".lang-search input");
+    const clear = picker.querySelector(".lang-clear");
+    search.placeholder = text.search;
+    search.setAttribute("aria-label", text.search);
+    clear.setAttribute("aria-label", text.clear);
+    picker.querySelector(".lang-back").setAttribute("aria-label", text.back);
+    picker.querySelector(".lang-x").setAttribute("aria-label", text.close);
+
+    const rows = [...group.querySelectorAll("[data-set-lang]")].map((link) => {
+      const code = link.dataset.setLang;
+      const system = code === "system";
+      const tag = link.getAttribute("lang");
+      const own = system ? text.system : link.textContent.trim();
+      const translated = system ? text.systemDetail : nameIn(inPage, tag);
+      // The chip, then the language's own name, in its language and direction, over the translated one, unless both
+      // read the same ("Italiano" on an Italian page); the radio is site.css's.
+      const chip = document.createElement("span");
+      chip.className = "lang-chip";
+      chip.setAttribute("aria-hidden", "true");
+      if (system) chip.innerHTML = '<svg class="icon"><use href="#i-monitor"/></svg>';
+      else chip.textContent = chipOf(code);
+      const names = document.createElement("span");
+      names.className = "lang-names";
+      const name = document.createElement("span");
+      name.className = "lang-name";
+      name.textContent = own;
+      if (tag) name.lang = tag;
+      if (link.dir) name.dir = link.dir;
+      names.append(name);
+      if (translated && fold(translated) !== fold(own)) {
+        const detail = document.createElement("span");
+        detail.className = "lang-detail";
+        detail.textContent = translated;
+        names.append(detail);
+      }
+      link.removeAttribute("lang");
+      link.removeAttribute("dir");
+      link.replaceChildren(chip, names);
+
+      const url = new URL(location.href);
+      if (system) url.searchParams.delete("lang");
+      else url.searchParams.set("lang", code);
+      link.href = url.pathname + url.search + url.hash;
+      link.setAttribute("aria-current", String(code === pref));
+      link.addEventListener("click", (e) => {
+        // Kept even for the choice already made, which may only be ?lang='s (a shared link) and not yet stored.
+        try {
+          if (system) localStorage.removeItem("lang");
+          else localStorage.setItem("lang", code);
+        } catch (err) { /* private mode: the URL still carries it */ }
+        // The choice already made only closes the picker, as the apps' does.
+        if (code === pref) { e.preventDefault(); picker.close(); return; }
+        track("language_change", { language: code, origin: picker.dataset.origin });
+      });
+      const terms = [own, translated, system ? "" : nameIn(inEnglish, tag)].filter(Boolean).map(fold);
+      const codes = system ? [] : [code.toLowerCase(), chipOf(code).toLowerCase()];
+      return { link, terms, codes };
     });
-  });
+    const current = rows.find((row) => row.link.dataset.setLang === pref)?.link;
+    const shown = () => rows.filter((row) => !row.link.hidden).map((row) => row.link);
+
+    // The footer's button names the language on the page, in its own name.
+    const onPage = rows.find((row) => row.link.dataset.setLang === picked)?.link.querySelector(".lang-name");
+    const now = document.getElementById("lang-now");
+    if (now && onPage) { now.textContent = onPage.textContent; now.lang = onPage.lang; }
+
+    function filter() {
+      const query = fold(search.value.trim());
+      rows.forEach((row) => {
+        row.link.hidden = Boolean(query) && !row.codes.includes(query) && !row.terms.some((term) => term.includes(query));
+      });
+      const any = shown().length > 0;
+      group.hidden = !any;
+      clear.hidden = !search.value;
+      empty.textContent = any ? "" : text.none.replace("{query}", () => search.value.trim());
+    }
+    search.addEventListener("input", filter);
+    clear.addEventListener("click", () => { search.value = ""; filter(); search.focus(); });
+
+    // Every opening starts from the whole list, the choice made in view and focused.
+    document.querySelectorAll("[data-lang-open]").forEach((button) => button.addEventListener("click", () => {
+      if (typeof picker.showModal !== "function") return;
+      picker.dataset.origin = originOf(button) === "footer" ? "footer" : "header_menu";
+      search.value = "";
+      filter();
+      picker.showModal();
+      if (current) {
+        list.scrollTop = current.offsetTop - (list.clientHeight - current.offsetHeight) / 2;
+        current.focus({ preventScroll: true });
+      }
+      track("menu_click", { menu_id: "language_menu" });
+    }));
+    picker.querySelectorAll("[data-lang-close]").forEach((button) => button.addEventListener("click", () => picker.close()));
+    // A click on the backdrop, outside the dialog's box, closes it; not a drag that only ends there (selecting the
+    // search's text), whose click lands on the dialog too.
+    const outside = (e) => {
+      const box = picker.getBoundingClientRect();
+      return e.target === picker && (e.clientX < box.left || e.clientX > box.right || e.clientY < box.top || e.clientY > box.bottom);
+    };
+    let pressedOutside = false;
+    picker.addEventListener("pointerdown", (e) => { pressedOutside = outside(e); });
+    picker.addEventListener("click", (e) => {
+      if (pressedOutside && outside(e)) picker.close();
+      pressedOutside = false;
+    });
+    // The keyboard: the arrows walk the rows and the search, Enter in the search picks the first row left, and typing
+    // on a row goes to the search.
+    picker.addEventListener("keydown", (e) => {
+      if (e.isComposing) return;
+      const links = shown();
+      const at = links.indexOf(document.activeElement);
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        const next = e.key === "ArrowDown" ? links[at + 1] : at > 0 ? links[at - 1] : at === 0 ? search : null;
+        if (next) { e.preventDefault(); next.focus(); }
+      } else if (e.key === "Enter" && e.target === search && links[0]) {
+        e.preventDefault();
+        links[0].click();
+      } else if (e.key.length === 1 && e.key !== " " && !e.ctrlKey && !e.metaKey && !e.altKey && e.target !== search) {
+        search.focus();
+      }
+    });
+  }
 
   // Internal links keep a pinned theme, language and "Show beta versions", so the design board can walk the pages.
   const pinned = ["theme", "lang", "beta"].filter((name) => params.has(name));
@@ -78,21 +250,17 @@
     el.closest("details")?.removeAttribute("open");
   }));
 
-  // The header's menus (language and theme): the language one shows its code, and a click outside or Esc closes them.
-  // Ukrainian shows "UA", as the app's language picker does: "UK" reads as the United Kingdom.
-  document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = picked === "uk" ? "UA" : picked.toUpperCase(); });
-  const langMenus = [...document.querySelectorAll(".lang-menu, .theme-menu, .get-menu")];
-  langMenus.forEach((menu) => menu.addEventListener("toggle", () => {
-    if (!menu.open) return;
-    const id = menu.classList.contains("lang-menu") ? "language_menu" : menu.classList.contains("theme-menu") ? "theme_menu" : "get_menu";
-    track("menu_click", { menu_id: id });
+  // The header's menus (theme and "Get the app"): a click outside or Esc closes them.
+  const menus = [...document.querySelectorAll(".theme-menu, .get-menu")];
+  menus.forEach((menu) => menu.addEventListener("toggle", () => {
+    if (menu.open) track("menu_click", { menu_id: menu.classList.contains("theme-menu") ? "theme_menu" : "get_menu" });
   }));
   document.addEventListener("click", (e) => {
-    langMenus.forEach((menu) => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+    menus.forEach((menu) => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
   });
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
-    langMenus.forEach((menu) => {
+    menus.forEach((menu) => {
       if (menu.open) { menu.open = false; menu.querySelector("summary").focus(); }
     });
   });
@@ -227,7 +395,8 @@
     "/terms": { content_type: "legal", item_id: "terms_of_service" },
     "/release-notes": { content_type: "release_notes", item_id: "release_notes" },
   };
-  document.querySelectorAll('a[href^="/privacy"], a[href^="/terms"], a[href^="/release-notes"]').forEach((a) => a.addEventListener("click", () => {
+  // Not the language picker's rows, which link to the page they are on.
+  document.querySelectorAll(':is(a[href^="/privacy"], a[href^="/terms"], a[href^="/release-notes"]):not([data-set-lang])').forEach((a) => a.addEventListener("click", () => {
     track("select_content", { ...PAGES[new URL(a.href).pathname], origin: originOf(a) });
   }));
 })();

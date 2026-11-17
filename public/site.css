@@ -204,27 +204,27 @@ p { margin: 0; text-wrap: pretty; }
 .header-end { margin-inline-start: auto; display: flex; align-items: center; gap: 8px; }
 @media (min-width: 1000px) { .nav { display: flex; } }
 .logo { white-space: nowrap; }
-/* On a phone the language menu shows only its icon and the header drops its button: the hero's store buttons are
+/* On a phone the language button shows only its icon and the header drops its button: the hero's store buttons are
    right below. */
 @media (max-width: 419px) { .site-header .wrap { gap: 12px; } .lang-code { display: none; } .header-end { gap: 2px; } .header-end .header-get { display: none; } }
 
-/* Language menu, as Bible Planner's: a translate icon in the header opening every language, each in its own name. */
-.lang-menu, .theme-menu { position: relative; }
-.lang-menu summary, .theme-menu summary {
-  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
-  min-height: 36px; padding: 0 10px; border-radius: 999px; color: var(--fg-soft); font-size: 13px; font-weight: 600;
+/* The header's language button, as Bible Planner's: a translate icon and the code of the language shown, opening the
+   language picker; the theme menu beside it. */
+.lang-open, .theme-menu summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; border: 0; background: transparent;
+  font-family: inherit; min-height: 36px; padding: 0 10px; border-radius: 999px; color: var(--fg-soft); font-size: 13px; font-weight: 600;
 }
-.lang-menu summary::-webkit-details-marker, .theme-menu summary::-webkit-details-marker { display: none; }
-.lang-menu summary:hover, .lang-menu[open] summary, .theme-menu summary:hover, .theme-menu[open] summary { background: var(--muted); color: var(--fg); }
-.lang-menu summary .icon, .theme-menu summary .icon { width: 18px; height: 18px; }
+.theme-menu { position: relative; }
+.theme-menu summary::-webkit-details-marker { display: none; }
+.lang-open:hover, .theme-menu summary:hover, .theme-menu[open] summary { background: var(--muted); color: var(--fg); }
+.lang-open .icon, .theme-menu summary .icon { width: 18px; height: 18px; }
 .theme-menu summary { padding: 0 9px; }
 /* The theme button shows the theme picked: a sun, a moon or the screen of System. */
 .theme-menu summary .icon { display: none; }
 :root[data-theme-pref="light"] .theme-menu summary .ic-light,
 :root[data-theme-pref="dark"] .theme-menu summary .ic-dark,
 :root:not([data-theme-pref="light"]):not([data-theme-pref="dark"]) .theme-menu summary .ic-system { display: block; }
-/* The header is sticky, so a menu taller than the window (the language menu's 22 languages) would hide its last items
-   for good: it scrolls inside instead. */
+/* The header is sticky, so a menu taller than the window would hide its last items for good: it scrolls inside instead. */
 .lang-pop {
   position: absolute; inset-inline-end: 0; top: calc(100% + 8px); z-index: 60; min-width: 200px; padding: 6px;
   display: grid; gap: 2px; border-radius: 12px; background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow-lg);
@@ -239,8 +239,8 @@ p { margin: 0; text-wrap: pretty; }
 .lang-pop button span { display: inline-flex; align-items: center; gap: 10px; }
 .lang-pop button .icon { width: 17px; height: 17px; color: var(--muted-fg); }
 .lang-pop button[aria-pressed="true"] .icon { color: inherit; }
-.lang-pop a[aria-current="true"], .lang-pop button[aria-pressed="true"] { background: var(--info); color: var(--on-info); }
-.lang-pop a[aria-current="true"]::after, .lang-pop button[aria-pressed="true"]::after {
+.lang-pop button[aria-pressed="true"] { background: var(--info); color: var(--on-info); }
+.lang-pop button[aria-pressed="true"]::after {
   content: ""; width: 16px; height: 16px; background: currentColor;
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / contain no-repeat;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / contain no-repeat;
@@ -311,12 +311,87 @@ p { margin: 0; text-wrap: pretty; }
   width: min(440px, calc(100vw - 32px)); padding: 28px 24px 24px; border: 1px solid var(--border); border-radius: var(--radius-xl);
   background: var(--card); color: var(--fg); box-shadow: var(--shadow-lg);
 }
-.store-dialog::backdrop { background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(4px); }
+.store-dialog::backdrop, .lang-dialog::backdrop { background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(4px); }
 .store-dialog h2 { font-size: 20px; font-weight: 650; padding-inline-end: 32px; }
 .store-dialog p { margin-top: 10px; color: var(--fg-soft); font-size: 15.5px; }
 .dialog-actions { margin-top: 24px; display: grid; gap: 8px; }
-.dialog-close { position: absolute; top: 14px; inset-inline-end: 14px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: transparent; color: var(--fg-soft); cursor: pointer; display: grid; place-items: center; }
-.dialog-close:hover { background: var(--muted); color: var(--fg); }
+/* The dialogs' round icon buttons: the store dialog's close, the language picker's back, close and clear. */
+.dialog-close, .lang-bar button, .lang-clear { width: 36px; height: 36px; border-radius: 50%; border: 0; background: transparent; color: var(--fg-soft); cursor: pointer; display: grid; place-items: center; }
+.dialog-close:hover, .lang-bar button:hover, .lang-clear:hover { background: var(--muted); color: var(--fg); }
+.dialog-close { position: absolute; top: 14px; inset-inline-end: 14px; }
+
+/* The language picker, as the apps' Profile › Language: a search over "System" and every language, each row with its
+   code, its own name over the same name in the page's language, and a radio. A wider window shows it as a dialog of a
+   fixed height, so it holds still while the search narrows the list; a phone, upright or lying down, as a screen of its
+   own, with a back arrow (site.js fills and searches it). */
+.lang-dialog {
+  width: min(480px, calc(100vw - 32px)); height: min(680px, calc(100vh - 48px)); height: min(680px, calc(100dvh - 48px));
+  max-height: none; padding: 0; border: 1px solid var(--border); border-radius: var(--radius-xl);
+  background: var(--card); color: var(--fg); box-shadow: var(--shadow-lg); overflow: hidden;
+}
+.lang-dialog[open] { display: flex; flex-direction: column; }
+/* Why: a browser without <dialog> (Safari before 15.4) would show the closed picker inline, at the top of every page. */
+.lang-dialog:not([open]) { display: none; }
+.lang-bar { flex: none; display: flex; align-items: center; gap: 4px; padding-block: 16px 4px; padding-inline: 24px 14px; }
+.lang-bar h2 { flex: 1; min-width: 0; font-size: 20px; font-weight: 650; }
+.lang-bar button { flex: none; width: 40px; height: 40px; }
+.lang-bar .lang-back { display: none; }
+.lang-search {
+  flex: none; position: relative; display: flex; align-items: center; margin: 12px 20px 8px; height: 44px;
+  border: 1px solid var(--border); border-radius: 999px; background: var(--surface);
+}
+.lang-search:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px var(--ring); }
+.lang-search > .icon { flex: none; width: 18px; height: 18px; margin-inline-start: 14px; color: var(--muted-fg); }
+.lang-search input {
+  flex: 1; min-width: 0; height: 100%; border: 0; background: transparent; outline: none; color: var(--fg);
+  font: inherit; font-size: 15px; padding: 0 10px; -webkit-appearance: none; appearance: none;
+}
+.lang-search input::placeholder { color: var(--muted-fg); }
+.lang-search input::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
+.lang-clear { flex: none; width: 34px; height: 34px; margin-inline-end: 5px; color: var(--muted-fg); }
+.lang-clear .icon { width: 16px; height: 16px; }
+.lang-list { flex: 1; min-height: 0; position: relative; overflow-y: auto; overscroll-behavior: contain; padding: 8px 20px 20px; }
+.lang-list > div { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+.lang-list a {
+  display: flex; align-items: center; gap: 14px; padding: 12px 16px; min-height: 64px; color: var(--fg); text-decoration: none;
+}
+/* A line between rows, none over the first one the search leaves. */
+.lang-list a:not([hidden]) ~ a { border-top: 1px solid var(--border); }
+.lang-list a:hover { background: var(--muted); }
+.lang-list a:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+.lang-list a[aria-current="true"] { background: var(--info); }
+/* The radio, at the row's end. */
+.lang-list a::after { content: ""; flex: none; width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--muted-fg); box-sizing: border-box; }
+.lang-list a[aria-current="true"]::after { border-color: var(--primary); background: radial-gradient(circle, var(--primary) 0 4.5px, transparent 5px); }
+.lang-chip {
+  flex: none; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--muted);
+  color: var(--fg-soft); font-size: 12.5px; font-weight: 650; letter-spacing: 0.02em;
+}
+.lang-chip .icon { width: 18px; height: 18px; }
+.lang-list a[aria-current="true"] .lang-chip { background: var(--primary); color: var(--on-primary); }
+/* Each name keeps its own direction (العربية, עברית) but sits at the row's start, as the others do. */
+.lang-names { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.lang-name { font-size: 15.5px; font-weight: 500; }
+.lang-list a[aria-current="true"] .lang-name { font-weight: 650; }
+.lang-detail { font-size: 13.5px; color: var(--muted-fg); }
+.lang-empty { color: var(--muted-fg); font-size: 15px; text-align: center; padding: 24px 8px; }
+.lang-empty:empty { padding: 0; }
+@media (max-width: 599px), (max-height: 499px) {
+  .lang-dialog {
+    width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; border: 0; border-radius: 0; box-shadow: none;
+    background: var(--bg); padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  .lang-bar { padding-block: 8px 0; padding-inline: 4px 12px; }
+  .lang-bar h2 { font-size: 18px; }
+  .lang-bar .lang-back { display: grid; }
+  .lang-bar .lang-x { display: none; }
+  .lang-search { margin: 8px 16px; }
+  .lang-list { padding: 8px 16px 24px; }
+}
+:root.motion .lang-dialog[open] { animation: lang-in 0.22s cubic-bezier(0.2, 0.8, 0.2, 1); }
+:root.motion .lang-dialog[open]::backdrop { animation: lang-fade 0.22s ease-out; }
+@keyframes lang-in { from { opacity: 0; transform: translateY(12px) scale(0.98); } }
+@keyframes lang-fade { from { opacity: 0; } }
 
 a.status { text-decoration: none; }
 a.status[href]:hover { text-decoration: underline; }
@@ -913,12 +988,13 @@ label.split-row { cursor: pointer; }
 .footer-prefs { display: flex; flex-wrap: wrap; gap: 8px; }
 .footer-bottom { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; }
 .lang-switch { display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: var(--muted); }
-.lang-switch a, .lang-switch button { border: 0; background: transparent; cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 6px;
-  padding: 4px 12px; border-radius: 999px; color: var(--fg-soft); text-decoration: none; font-size: 13px; font-weight: 500; }
+.lang-switch button { border: 0; background: transparent; cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 12px; border-radius: 999px; color: var(--fg-soft); font-size: 13px; font-weight: 500; }
 .lang-switch button .icon { width: 14px; height: 14px; }
-/* Eleven languages don't fit one line on a phone: the footer's language switch wraps, as a rounded box. */
-.lang-switch:has([data-set-lang]) { flex-wrap: wrap; max-width: 100%; border-radius: 18px; }
-.lang-switch a[aria-current="true"], .lang-switch button[aria-pressed="true"] { background: var(--surface); color: var(--fg); box-shadow: var(--shadow-sm); }
+/* The footer's language: the language shown, in its own name, opening the language picker. */
+.lang-switch button[data-lang-open] { color: var(--fg); }
+.lang-switch button[data-lang-open]:hover { background: var(--surface); }
+.lang-switch button[aria-pressed="true"] { background: var(--surface); color: var(--fg); box-shadow: var(--shadow-sm); }
 @media (min-width: 760px) { .footer-grid { grid-template-columns: 1.2fr 1fr; align-items: start; } .footer-links { justify-content: flex-end; } }
 
 /* Cards answer the pointer: they lift, their border takes the brand's color and a light follows the pointer (site.js
