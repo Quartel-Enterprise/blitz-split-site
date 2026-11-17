@@ -100,7 +100,7 @@ site picks a language from; each script's strings and formats still carry a key 
 
 The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the Latin and Latin Extended subsets Google
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
-`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech and Romanian fall back to the system's font, since neither subset has their
+`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese and Traditional Chinese fall back to the system's font, since neither subset has their
 scripts (or, for Vietnamese, its Latin Extended Additional letters).
 
 ## Motion
