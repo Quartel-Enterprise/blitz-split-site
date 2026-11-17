@@ -67,8 +67,9 @@
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
   // Ukrainian by Ukraine's UA ("UK" reads as the United Kingdom) and the two Chinese by their scripts, as Chinese
   // pickers mark them. The header's button shows the one on the page.
-  // Why a function: a constant keyed by languages reads as a dictionary of words to check-translations.mjs.
-  const chipOf = (code) => ({ pt: "BR", "pt-PT": "PT", uk: "UA", zh: "简", "zh-Hant": "繁" })[code] || code.toUpperCase();
+  // check-translations.mjs knows it holds codes, not words, so it only checks that its keys are languages.
+  const LANGUAGE_CHIPS = { pt: "BR", "pt-PT": "PT", uk: "UA", zh: "简", "zh-Hant": "繁" };
+  const chipOf = (code) => LANGUAGE_CHIPS[code] || code.toUpperCase();
   document.querySelectorAll(".lang-code").forEach((el) => { el.textContent = chipOf(picked); });
 
   const picker = document.getElementById("lang-dialog");

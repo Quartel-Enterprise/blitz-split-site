@@ -100,8 +100,12 @@ upright or lying down (narrower than 600px or lower than 500px), as a screen of 
 "System" first, the default, then every language in its own name, over the same name in the page's language (the
 browser's `Intl.DisplayNames`, hidden when both read the same), with its code in a chip and a radio. The search
 finds a row by any of those names, its English one or its code, folding accents ("cestina" finds "Čeština"). Its
-rows are plain links in each page's markup (`?lang=…`, "System" without it), so they work and are crawled without
-`site.js`, which adds the chips and the translated names; its words are `PICKER_TEXT` in `site.js`.
+rows are plain links in each page's markup (`?lang=…`, "System" without it), so crawlers find every language's page;
+`site.js` adds the chips and the translated names. Picking one needs scripts, as showing a language does: `boot.js`
+picks it and `site.js` translates the page, so without them every page is in English and there is nothing to switch.
+Its words (the search, "System", Back, Close…) are `PICKER_TEXT` in `site.js`, not a `data-i18n` key in each page's
+`SITE_STRINGS`: the picker is on every page, so one dictionary keeps them, which `check:translations` checks as it
+checks `stores.js`'s.
 
 The theme is Light, Dark or System (the default), from the header's theme menu or the footer, kept for the next visit.
 `boot.js` always sets `data-theme` to `light` or `dark`, resolving System to the system's theme and following it when it

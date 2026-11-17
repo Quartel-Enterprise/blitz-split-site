@@ -30,7 +30,8 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
 - No build and no dependencies in the pages: `public/site.css` holds the design system's tokens (light and dark) and
   every component; use the tokens, never raw colors in components.
 - The markup is in English. Every string a page shows has a `data-i18n` key with its Portuguese, Spanish, French, German,
-  Italian, Polish, Dutch, Turkish, Indonesian and Japanese in the page's `window.SITE_STRINGS`; the legal pages write all
+  Italian, Polish, Dutch, Turkish, Indonesian and Japanese in the page's `window.SITE_STRINGS`, or, for words a script
+  shows on every page (the language picker, the store dialog), a dictionary keyed by language in that script; the legal pages write all
   eleven in full in `data-lang` blocks, generated from `public/legal/*.md`. Add all eleven
   languages in the same change: `npm run check:translations` fails on a missing one, as CI does.
 - No new copied JavaScript or CSS: `npm run check:duplication` (jscpd, against `.jscpd-baseline.json`) fails on it,

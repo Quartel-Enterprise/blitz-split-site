@@ -330,6 +330,8 @@ p { margin: 0; text-wrap: pretty; }
   background: var(--card); color: var(--fg); box-shadow: var(--shadow-lg); overflow: hidden;
 }
 .lang-dialog[open] { display: flex; flex-direction: column; }
+/* Why: a browser without <dialog> (Safari before 15.4) would show the closed picker inline, at the top of every page. */
+.lang-dialog:not([open]) { display: none; }
 .lang-bar { flex: none; display: flex; align-items: center; gap: 4px; padding-block: 16px 4px; padding-inline: 24px 14px; }
 .lang-bar h2 { flex: 1; min-width: 0; font-size: 20px; font-weight: 650; }
 .lang-bar button { flex: none; width: 40px; height: 40px; }
