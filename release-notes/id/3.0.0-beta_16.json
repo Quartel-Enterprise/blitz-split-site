@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikasi kini berbahasa Korea: pilih \"한국어\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam won Korea Selatan (KRW), dan grup yang dibuat di Korea Selatan langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Akun dan sinkronisasi\" di Profil kini menampilkan ID penggunamu, yang bisa kamu salin dengan sekali ketuk, untuk memberi tahu kami siapa kamu saat menjawab salah satu survei kami.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Foto yang kamu tambahkan ke tagihan kini dibuka dulu di Atur foto, jadi kamu bisa membingkai persegi yang dilampirkan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sesuai penghasilan\" kini mengingatkanmu untuk memasukkan penghasilan bersih masing-masing, setelah pajak, dan \"Pembagian default\" baru menampilkan persentase masing-masing setelah ada penghasilan yang diisi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bagian atas grup kini lebih rapi: baris jumlah anggota dan total di bawah namanya sudah dihapus. Wajah-wajah menunjukkan siapa saja anggotanya, dan Statistik menunjukkan totalnya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Foto tagihan kartu atau mutasi bank kini disebut apa adanya dan menyarankan mengisi tagihan secara manual, bukan bilang struk tidak bisa dibaca.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategori di Statistik kini membuka Semua pengeluaran dengan grup, kategori, dan periode yang sudah dipilih, jadi kamu juga bisa mencari di tagihan itu. Semua pengeluaran juga punya filter Periode baru.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di Per orang pada Statistik, ketukan di samping cincin atau di tengahnya melepas pilihan orang itu.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

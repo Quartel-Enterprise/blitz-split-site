@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "L’app parle désormais coréen : choisis « 한국어 » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en won sud-coréen (KRW), et un groupe créé en Corée du Sud démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "« Compte et synchronisation » du Profil affiche désormais ton ID utilisateur, que tu copies d’une touche, pour nous dire qui tu es quand tu réponds à l’un de nos sondages.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La photo que vous ajoutez à une dépense s'ouvre d'abord dans Ajuster la photo, pour cadrer le carré qui sera joint.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "« Selon le revenu » te rappelle désormais d’indiquer le revenu net de chacun, après impôts, et la « Répartition par défaut » n’affiche le pourcentage de chacun qu’une fois un revenu saisi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’en-tête d’un groupe est plus épuré : la ligne avec le nombre de membres et le total sous son nom a disparu. Les visages montrent qui en fait partie, et les Statistiques le total.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les photos d’un relevé de carte ou de banque le disent désormais et proposent de remplir la dépense à la main, au lieu d’indiquer que le reçu n’a pas pu être lu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Une catégorie des Statistiques ouvre désormais Toutes les dépenses avec le groupe, la catégorie et la période déjà choisis, et tu peux aussi y faire une recherche. Toutes les dépenses a aussi un nouveau filtre Période.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dans Par personne, dans les Statistiques, un appui à côté de l’anneau ou en son centre désélectionne la personne choisie.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

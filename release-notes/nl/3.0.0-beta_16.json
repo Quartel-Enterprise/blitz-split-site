@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "De app spreekt nu Koreaans: kies \"한국어\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Zuid-Koreaanse won (KRW), en een groep die in Zuid-Korea wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Account en synchronisatie\" in je Profiel toont nu je gebruikers-ID, die je met één tik kopieert, zodat je ons kunt laten weten wie je bent als je een van onze enquêtes invult.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Een foto die je aan een uitgave toevoegt, opent nu eerst in Foto aanpassen, zodat je het vierkant kiest dat wordt bijgevoegd.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Op inkomen\" herinnert je er nu aan ieders netto-inkomen in te vullen, na belasting, en de \"Standaardverdeling\" toont ieders percentage pas zodra er een inkomen is ingevuld.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De kop van een groep is rustiger: de regel met het aantal leden en het totaal onder de naam is weg. De gezichten laten zien wie erin zit, en Statistieken het totaal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Foto’s van een creditcard- of bankafschrift zeggen dat nu en stellen voor de uitgave zelf in te vullen, in plaats van te melden dat het bonnetje niet gelezen kon worden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Een categorie in Statistieken opent nu Alle uitgaven met de groep, de categorie en de periode al gekozen, zodat je die uitgaven ook kunt doorzoeken. Alle uitgaven heeft ook een nieuw filter Periode.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bij Per persoon in Statistieken heft een tik naast de ring of in het midden de selectie van de gekozen persoon op.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

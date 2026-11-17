@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Uygulama artık Korece konuşuyor: Profil › Dil'den \"한국어\"yu seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Güney Kore wonu (KRW) ile bölebiliyor; Güney Kore'de açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil'deki \"Hesap ve eşitleme\" artık kullanıcı kimliğini gösteriyor. Tek dokunuşla kopyalayıp anketlerimizden birini yanıtlarken kim olduğunu bize söyleyebilirsin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bir harcamaya eklediğin fotoğraf artık önce Fotoğrafı ayarla'da açılıyor; eklenecek kareyi sen seçiyorsun.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Gelire göre\" artık herkesin vergiler sonrası net gelirini girmeni hatırlatıyor; \"Varsayılan bölüşüm\" de herkesin yüzdesini ancak bir gelir girildiğinde gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grubun üst kısmı sadeleşti: adının altındaki üye sayısı ve toplam satırı kaldırıldı. Yüzler grupta kimlerin olduğunu, İstatistikler ise toplamı gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kart veya banka ekstresi fotoğrafları artık fişin okunamadığını söylemek yerine bunu belirtiyor ve harcamayı elle doldurmayı öneriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "İstatistikler'deki bir kategori artık grubu, kategoriyi ve dönemi seçili olarak Tüm harcamalar'ı açıyor; bu harcamalarda arama da yapabilirsin. Tüm harcamalar'a Dönem filtresi de eklendi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "İstatistikler'deki Kişiye göre bölümünde halkanın yanına ya da ortasına dokunmak seçili kişiyi bırakıyor.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "O app agora fala coreano: escolha \"한국어\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem dividir em won sul-coreano (KRW), e um grupo criado na Coreia do Sul já começa nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O \"Conta e sincronização\" do Perfil agora mostra o seu ID de usuário, que você copia com um toque, para dizer quem você é quando responder a uma das nossas pesquisas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A foto que você adiciona a uma conta agora abre primeiro em Ajustar foto, para você enquadrar o quadrado que vai ser anexado.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Pela renda\" agora lembra de colocar a renda líquida de cada um, depois dos impostos, e a \"Divisão padrão\" só mostra a porcentagem de cada um depois que alguma renda é digitada.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O topo do grupo ficou mais limpo: saiu a linha com o número de membros e o total embaixo do nome. As fotos mostram quem está no grupo, e as Estatísticas mostram o total.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotos de uma fatura de cartão ou extrato agora dizem isso e sugerem preencher a conta à mão, em vez de dizer que o cupom não pôde ser lido.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uma categoria nas Estatísticas agora abre Todas as despesas com o grupo, a categoria e o período já escolhidos, e você ainda pode pesquisar nessas contas. Todas as despesas também ganhou o filtro Período.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Em Por pessoa, nas Estatísticas, um toque ao lado do gráfico ou no meio dele tira a seleção da pessoa escolhida.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
