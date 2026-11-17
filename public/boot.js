@@ -36,13 +36,15 @@
   // Why: Traditional Chinese is a language of its own, with its whole tag as its code, "zh-Hant", as the apps' legal
   // pages and release notes ask for it; the bare "zh" is Simplified's.
   const TRADITIONAL = "zh-Hant";
-  const normalize = (tag) => (traditional(tag) ? TRADITIONAL : variantOf(tag) || canonical(String(tag).toLowerCase().split(/[-_]/)[0]));
+  // A whole tag that names one of ours by itself: Traditional Chinese or a variant (pt-PT).
+  const whole = (tag) => (traditional(tag) ? TRADITIONAL : variantOf(tag));
+  const normalize = (tag) => whole(tag) || canonical(String(tag).toLowerCase().split(/[-_]/)[0]);
 
   // First, so the scripts that read data-lang have it even if the theme below fails.
   const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
     .map(normalize)
     .find(known);
-  const pick = [params.get("lang"), stored("lang")].map((code) => (traditional(code) ? TRADITIONAL : variantOf(code) || canonical(code))).concat(preferred).find(known) || "en";
+  const pick = [params.get("lang"), stored("lang")].map((code) => whole(code) || canonical(code)).concat(preferred).find(known) || "en";
   const variant = VARIANTS.includes(pick) ? pick : "";
   const lang = variant ? variant.split("-")[0] : pick;
   root.dataset.lang = lang;

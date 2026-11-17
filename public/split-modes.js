@@ -613,7 +613,7 @@
       checkAll: "全選", uncheckAll: "全部取消",
       left: "還差{a}", over: "超出{a}", closed: "剛好相符：{a}",
       progress: "目前已分配{a}，共{b}。", closedMsg: "各部分加起來等於總額。",
-      parts: "{n}份，每份{a}", personParts: "{name}有{n}份。", nobodyShares: "至少給一個人分配份數來分攤{a}。",
+      parts: "{a}分成{n}份", personParts: "{name}有{n}份。", nobodyShares: "至少給一個人分配份數來分攤{a}。",
       ofEach: "每筆帳單的{p}", ofBill: "帳單的{p}", incomeDetail: "每個人的部分依其收入計算。", perMonth: "/月",
       service: "服務費（{p}）", serviceSub: "按每個人點的比例",
       loose: "標記每個項目是誰點的", looseDetail: "輕點每個項目上的大頭貼，標記是誰點的。",
