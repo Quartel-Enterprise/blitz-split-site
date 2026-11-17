@@ -5,7 +5,7 @@ and one script, `src/index.js`, which serves the [links' previews](invite-previe
 
 | Path | What it answers |
 | --- | --- |
-| `/` | The landing (Bora Rachar in Portuguese (Brazil), Blitz Split in Portugal's Portuguese, English, Spanish, French, German, Italian, Polish, Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian and Korean) |
+| `/` | The landing (Bora Rachar in Portuguese (Brazil), Blitz Split in Portugal's Portuguese, English, Spanish, French, German, Italian, Polish, Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean and Arabic) |
 | `/privacy` | The privacy policy, the address the apps' Profile › "Privacy policy" opens (`/privacidade`, which older app versions open, redirects to it) |
 | `/terms` | The terms of use, the address the apps' Profile › "Terms of use" opens (`/termos`, which older app versions open, redirects to it) |
 | `/legal/<page>.<language>.md` | The Markdown of a legal page (`privacy`, `terms`) in one language, which the apps draw natively and the pages above are generated from ([legal.md](legal.md)); a 404 for a language the legal pages don't have, and the app reads English |

@@ -88,6 +88,12 @@
       lines: [["2 생맥주", "28,000", 1], ["1 새우 플래터", "96,000", 2]],
       subtotal: ["소계", "124,000"], service: ["봉사료 10%", "12,400", 3], total: ["합계", "136,400"],
     },
+    // Arabic: a café's receipt, in dollars as money.js counts Arabic, with fresh juice for the draft beer.
+    ar: {
+      store: "مقهى الميناء", address: "120 شارع النوارس", date: "08/11/2026  21:47",
+      lines: [["2 عصير طازج", "28.00", 1], ["1 طبق روبيان", "96.00", 2]],
+      subtotal: ["المجموع الفرعي", "124.00"], service: ["خدمة 10%", "12.40", 3], total: ["الإجمالي", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 
