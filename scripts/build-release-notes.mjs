@@ -52,6 +52,7 @@ const CHROME = {
   he: { language: "עברית", brand: "Blitz Split", locale: "he", title: "מה חדש", lead: "מה השתנה בכל גרסה של האפליקציה.", showBeta: "הצגת גרסאות בטא", beta: "בטא", empty: "עדיין אין גרסה יציבה. אפשר להפעיל את גרסאות הבטא כדי לראות מה נמצא בבדיקה.", platforms: { android: "Android", ios: "iPhone ו-iPad", mac: "Mac", web: "ווב" } },
   th: { language: "ไทย", brand: "Blitz Split", locale: "th", title: "บันทึกประจำรุ่น", lead: "สิ่งที่เปลี่ยนไปในแอปแต่ละเวอร์ชัน", showBeta: "แสดงเวอร์ชันเบต้า", beta: "เบต้า", empty: "ยังไม่มีเวอร์ชันเสถียร เปิดเวอร์ชันเบต้าเพื่อดูสิ่งที่กำลังทดสอบอยู่", platforms: { android: "Android", ios: "iPhone และ iPad", mac: "Mac", web: "เว็บ" } },
   vi: { language: "Tiếng Việt", brand: "Blitz Split", locale: "vi", title: "Ghi chú phát hành", lead: "Những thay đổi trong mỗi phiên bản của ứng dụng.", showBeta: "Hiện các phiên bản beta", beta: "Beta", empty: "Chưa có phiên bản ổn định. Hãy bật các phiên bản beta để xem những gì đang được thử nghiệm.", platforms: { android: "Android", ios: "iPhone và iPad", mac: "Mac", web: "Web" } },
+  "zh-Hant": { language: "中文（繁體）", brand: "Blitz Split", locale: "zh-Hant", title: "版本資訊", lead: "App每個版本的變化。", showBeta: "顯示測試版", beta: "測試版", empty: "還沒有正式版。開啟測試版即可查看正在測試的內容。", platforms: { android: "Android", ios: "iPhone和iPad", mac: "Mac", web: "網頁版" } },
 };
 
 class NotesError extends Error {}

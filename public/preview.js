@@ -387,6 +387,25 @@
       bills: (n) => `${n} khoản chi`,
       titles: { b1: "Nhà nghỉ ở Lagoa", b2: "Bữa tối ở Ribeirão", b3: "Xe ra biển", p1: "Kem trên bãi biển", p2: "Đi chợ trong tuần", p3: "Gửi xe" },
     },
+    // Traditional Chinese, Taiwan's: one form for counts, no space between Chinese and a name or a number ("Pedro支付",
+    // "4人"), and the app's words (帳單, 餘額, 結清).
+    "zh-Hant": {
+      paid: "{name}支付", notIn: "不參與這筆",
+      members: (people, bills) => `${people}人 · ${bills}筆帳單`,
+      toGet: "應收", youOwe: "你欠", settled: "已結清", owesYou: "誰欠你", youOweTitle: "你欠誰",
+      eachOne: "每個人的餘額", getsBack: "應收", owes: "應付", even: "已結清",
+      toSettle: "如何結清", total: "群組總計", lodging: "住宿", food: "餐飲", transport: "交通",
+      sheetTitle: "分攤帳單", description: "描述", amount: "金額", whoPaid: "付款人",
+      splitAmong: "平均分攤給", each: "每人{value}", cancel: "取消", save: "儲存", close: "關閉",
+      queue: (n) => `${n}項變更排隊中`,
+      split: "怎麼分攤的", yourShare: "你的份額", deleteBill: "刪除帳單",
+      recordPayment: "記錄付款", record: "記錄", viaMethod: "透過轉帳", payment: "付款", deletePayment: "刪除付款",
+      payLine: (from, to) => `${name(from)}付給${name(to)}`,
+      paidYou: (who, value) => `${who}付給你${value}`,
+      paidTotal: "總共支付", shareTotal: "帳單中的份額", balance: "餘額",
+      bills: (n) => `${n}筆帳單`,
+      titles: { b1: "拉戈阿民宿", b2: "里貝朗晚餐", b3: "去海灘的車資", p1: "海灘上的冰淇淋", p2: "一週的採買", p3: "停車費" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -825,7 +844,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

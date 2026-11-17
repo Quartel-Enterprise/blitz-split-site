@@ -35,10 +35,10 @@
   // Store storefront: China's lists only apps with an ICP filing, so Apple takes the visitor's own.
   // Why iw: Google Play documents Hebrew by its legacy code, the one it has always honoured.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", he: "iw" }[root.dataset.lang] || root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's and Hebrew's as Google Play writes them
+    ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw" }[root.dataset.lang] || root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional) and Hebrew's as Google Play writes them
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -250,6 +250,15 @@
       mismatchBody: "Bạn đang dùng {platform}. Để có trải nghiệm tốt nhất, hãy tải ứng dụng {in}.",
       mismatchGo: "Chuyển đến {to}", mismatchStay: "Tiếp tục đến {to}", close: "Đóng",
       in: { play: "từ Google Play", appstore: "từ App Store" }, to: { play: "Google Play", appstore: "App Store" },
+    },
+    "zh-Hant": {
+      play: ["立即下載", "即將登陸"], appstore: ["立即下載", "即將登陸"], web: ["立即開啟", "即將登陸"], browser: "瀏覽器",
+      getApp: "下載App", openWeb: "開啟網頁版", soon: "即將推出",
+      playLive: "在Google Play下載", appStoreLive: "在App Store下載", webLive: "開啟網頁版",
+      mismatchTitle: "選擇你的應用程式商店",
+      mismatchBody: "你正在使用{platform}。為了獲得最佳體驗，請{in}下載App。",
+      mismatchGo: "{to}", mismatchStay: "仍然{to}", close: "關閉",
+      in: { play: "從Google Play", appstore: "從App Store" }, to: { play: "前往Google Play", appstore: "前往App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
