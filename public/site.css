@@ -311,12 +311,14 @@ p { margin: 0; text-wrap: pretty; }
   width: min(440px, calc(100vw - 32px)); padding: 28px 24px 24px; border: 1px solid var(--border); border-radius: var(--radius-xl);
   background: var(--card); color: var(--fg); box-shadow: var(--shadow-lg);
 }
-.store-dialog::backdrop { background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(4px); }
+.store-dialog::backdrop, .lang-dialog::backdrop { background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(4px); }
 .store-dialog h2 { font-size: 20px; font-weight: 650; padding-inline-end: 32px; }
 .store-dialog p { margin-top: 10px; color: var(--fg-soft); font-size: 15.5px; }
 .dialog-actions { margin-top: 24px; display: grid; gap: 8px; }
-.dialog-close { position: absolute; top: 14px; inset-inline-end: 14px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: transparent; color: var(--fg-soft); cursor: pointer; display: grid; place-items: center; }
-.dialog-close:hover { background: var(--muted); color: var(--fg); }
+/* The dialogs' round icon buttons: the store dialog's close, the language picker's back, close and clear. */
+.dialog-close, .lang-bar button, .lang-clear { width: 36px; height: 36px; border-radius: 50%; border: 0; background: transparent; color: var(--fg-soft); cursor: pointer; display: grid; place-items: center; }
+.dialog-close:hover, .lang-bar button:hover, .lang-clear:hover { background: var(--muted); color: var(--fg); }
+.dialog-close { position: absolute; top: 14px; inset-inline-end: 14px; }
 
 /* The language picker, as the apps' Profile › Language: a search over "System" and every language, each row with its
    code, its own name over the same name in the page's language, and a radio. A wider window shows it as a dialog of a
@@ -328,11 +330,9 @@ p { margin: 0; text-wrap: pretty; }
   background: var(--card); color: var(--fg); box-shadow: var(--shadow-lg); overflow: hidden;
 }
 .lang-dialog[open] { display: flex; flex-direction: column; }
-.lang-dialog::backdrop { background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(4px); }
-.lang-bar { flex: none; display: flex; align-items: center; gap: 4px; padding: 16px 14px 4px 24px; }
+.lang-bar { flex: none; display: flex; align-items: center; gap: 4px; padding-block: 16px 4px; padding-inline: 24px 14px; }
 .lang-bar h2 { flex: 1; min-width: 0; font-size: 20px; font-weight: 650; }
-.lang-bar button { flex: none; width: 40px; height: 40px; border-radius: 50%; border: 0; background: transparent; color: var(--fg-soft); cursor: pointer; display: grid; place-items: center; }
-.lang-bar button:hover { background: var(--muted); color: var(--fg); }
+.lang-bar button { flex: none; width: 40px; height: 40px; }
 .lang-bar .lang-back { display: none; }
 .lang-search {
   flex: none; position: relative; display: flex; align-items: center; margin: 12px 20px 8px; height: 44px;
@@ -346,8 +346,7 @@ p { margin: 0; text-wrap: pretty; }
 }
 .lang-search input::placeholder { color: var(--muted-fg); }
 .lang-search input::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
-.lang-clear { flex: none; width: 34px; height: 34px; margin-inline-end: 5px; border-radius: 50%; border: 0; background: transparent; color: var(--muted-fg); cursor: pointer; display: grid; place-items: center; }
-.lang-clear:hover { background: var(--muted); color: var(--fg); }
+.lang-clear { flex: none; width: 34px; height: 34px; margin-inline-end: 5px; color: var(--muted-fg); }
 .lang-clear .icon { width: 16px; height: 16px; }
 .lang-list { flex: 1; min-height: 0; position: relative; overflow-y: auto; overscroll-behavior: contain; padding: 8px 20px 20px; }
 .lang-list > div { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
@@ -380,7 +379,7 @@ p { margin: 0; text-wrap: pretty; }
     width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; border: 0; border-radius: 0; box-shadow: none;
     background: var(--bg); padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
-  .lang-bar { padding: 8px 12px 0 4px; }
+  .lang-bar { padding-block: 8px 0; padding-inline: 4px 12px; }
   .lang-bar h2 { font-size: 18px; }
   .lang-bar .lang-back { display: grid; }
   .lang-bar .lang-x { display: none; }

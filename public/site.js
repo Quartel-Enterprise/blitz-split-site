@@ -138,19 +138,20 @@
       link.href = url.pathname + url.search + url.hash;
       link.setAttribute("aria-current", String(code === pref));
       link.addEventListener("click", (e) => {
-        // The choice already made only closes the picker, as the apps' does.
-        if (code === pref) { e.preventDefault(); picker.close(); return; }
+        // Kept even for the choice already made, which may only be ?lang='s (a shared link) and not yet stored.
         try {
           if (system) localStorage.removeItem("lang");
           else localStorage.setItem("lang", code);
         } catch (err) { /* private mode: the URL still carries it */ }
+        // The choice already made only closes the picker, as the apps' does.
+        if (code === pref) { e.preventDefault(); picker.close(); return; }
         track("language_change", { language: code, origin: picker.dataset.origin });
       });
       const terms = [own, translated, system ? "" : nameIn(inEnglish, tag)].filter(Boolean).map(fold);
       const codes = system ? [] : [code.toLowerCase(), chipOf(code).toLowerCase()];
       return { link, terms, codes };
     });
-    const current = rows.find((row) => row.link.getAttribute("aria-current") === "true")?.link;
+    const current = rows.find((row) => row.link.dataset.setLang === pref)?.link;
     const shown = () => rows.filter((row) => !row.link.hidden).map((row) => row.link);
 
     // The footer's button names the language on the page, in its own name.
@@ -185,10 +186,17 @@
       track("menu_click", { menu_id: "language_menu" });
     }));
     picker.querySelectorAll("[data-lang-close]").forEach((button) => button.addEventListener("click", () => picker.close()));
-    // A click on the backdrop, outside the dialog's box, closes it.
-    picker.addEventListener("click", (e) => {
+    // A click on the backdrop, outside the dialog's box, closes it; not a drag that only ends there (selecting the
+    // search's text), whose click lands on the dialog too.
+    const outside = (e) => {
       const box = picker.getBoundingClientRect();
-      if (e.target === picker && (e.clientX < box.left || e.clientX > box.right || e.clientY < box.top || e.clientY > box.bottom)) picker.close();
+      return e.target === picker && (e.clientX < box.left || e.clientX > box.right || e.clientY < box.top || e.clientY > box.bottom);
+    };
+    let pressedOutside = false;
+    picker.addEventListener("pointerdown", (e) => { pressedOutside = outside(e); });
+    picker.addEventListener("click", (e) => {
+      if (pressedOutside && outside(e)) picker.close();
+      pressedOutside = false;
     });
     // The keyboard: the arrows walk the rows and the search, Enter in the search picks the first row left, and typing
     // on a row goes to the search.
