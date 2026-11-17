@@ -33,8 +33,9 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app. Chinese names no App
   // Store storefront: China's lists only apps with an ICP filing, so Apple takes the visitor's own.
+  // Why iw: Google Play documents Hebrew by its legacy code, the one it has always honoured.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${root.dataset.lang === "zh" ? "zh-CN" : root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's as Google Play writes it
+    ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", he: "iw" }[root.dataset.lang] || root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's and Hebrew's as Google Play writes them
     : "";
   const appStoreUrl = CONFIG.appStoreId
     ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", en: "us/" })}app/id${CONFIG.appStoreId}`

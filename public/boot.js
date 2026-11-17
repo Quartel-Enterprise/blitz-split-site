@@ -20,7 +20,10 @@
   // Only that tag picks one, in any case (pt-pt, pt_PT): every other pt-* browser language stays pt.
   const VARIANTS = ["pt-PT"];
   const variantOf = (tag) => VARIANTS.find((variant) => variant.toLowerCase() === String(tag).toLowerCase().replace("_", "-"));
-  const normalize = (tag) => variantOf(tag) || String(tag).toLowerCase().split("-")[0];
+  // Hebrew's legacy code, iw (Android's, and older browsers'), is Hebrew: iw and iw-* pick he.
+  const LEGACY = { iw: "he" };
+  const canonical = (code) => LEGACY[code] || code;
+  const normalize = (tag) => variantOf(tag) || canonical(String(tag).toLowerCase().split(/[-_]/)[0]);
   const known = (code) => SUPPORTED.includes(code) || VARIANTS.includes(code);
   // Traditional Chinese, as the apps tell it: by its script when the tag has one (zh-Hant-CN is Traditional, zh-Hans-HK
   // Simplified), else by a region that writes it (Taiwan, Hong Kong, Macau).
@@ -36,7 +39,7 @@
     .filter((tag) => !traditional(tag))
     .map(normalize)
     .find(known);
-  const pick = [params.get("lang"), stored("lang")].map((code) => variantOf(code) || code).concat(preferred).find(known) || "en";
+  const pick = [params.get("lang"), stored("lang")].map((code) => variantOf(code) || canonical(code)).concat(preferred).find(known) || "en";
   const variant = VARIANTS.includes(pick) ? pick : "";
   const lang = variant ? variant.split("-")[0] : pick;
   root.dataset.lang = lang;
