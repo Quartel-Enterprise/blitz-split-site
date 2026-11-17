@@ -4,11 +4,12 @@
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar) shows
 // it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫ or NT$4,860 and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
-// koruna, the leu) shows the same amounts multiplied by a whole number, so a $48.60 ride reads 486 kr, 1 117,80 Kč or
-// 243 lei, and every split still adds up exactly too.
+// koruna, the leu) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
+// preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč or 243 lei
+// and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
 (function () {
   // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents,
-  //  digits in each group above the first three: 2 in India, so ₹1,20,000, cents of the currency per cent of the demo]
+  //  digits in each group above the first three: 2 in India, so ₹1,20,000, the currency's cents per cent of the demo's amounts]
   const CURRENCY = window.localized({
     en: ["$", ".", ","], pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], es: ["$", ",", "."],
     fr: ["", ",", "\u202f", "\u00a0€"], de: ["", ",", ".", "\u00a0€"], it: ["", ",", ".", "\u00a0€"],
@@ -35,7 +36,7 @@
 
   // The number alone, as a field holds it: no decimals when they are zero.
   function plain(cents) {
-    const abs = Math.abs(cents) * factor;
+    const abs = Math.abs(cents);
     if (scale) return group(abs * scale);
     const frac = abs % 100;
     return group(Math.floor(abs / 100)) + (frac ? decimal + String(frac).padStart(2, "0") : "");
@@ -58,8 +59,13 @@
     const decimals = sep >= 0 && t.length - sep - 1 <= 2;
     const whole = Number((decimals ? t.slice(0, sep) : t).replace(/[.,]/g, "") || 0);
     const frac = decimals ? Number(t.slice(sep + 1).padEnd(2, "0")) : 0;
-    return scale ? Math.round((whole + frac / 100) / scale) : Math.round((whole * 100 + frac) / factor);
+    return scale ? Math.round((whole + frac / 100) / scale) : whole * 100 + frac;
   }
 
-  window.money = { format, plain, parse, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
+  // A demo amount, written in the dollar's cents, in this currency's own cents: the same but where the currency is worth
+  // much less and keeps its cents. Why not in format: the splits then work in the currency's own cents, so a typed
+  // amount is never rounded to a multiple of the factor.
+  const cents = (amount) => amount * factor;
+
+  window.money = { format, plain, parse, cents, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
 })();

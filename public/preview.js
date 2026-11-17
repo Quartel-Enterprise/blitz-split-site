@@ -467,9 +467,12 @@
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
   // Turkish writes the percent sign first: %10.
-  const pct = (n) => (lang === "tr" ? `%${n}` : `${n}%`);
+  // Turkish writes the sign first: %10. French, German, Russian, Swedish and Czech put a space before it, as the split card does.
+  const pct = (n) => (["fr", "de", "ru", "sv", "cs"].includes(lang) ? `${n}\u00a0%` : lang === "tr" ? `%${n}` : `${n}%`);
   // Amounts in the visitor's currency, as the app shows them (money.js).
   const money = window.money.format;
+  // The demo's amounts below are in the dollar's cents; this gives them in the currency's own (money.js).
+  const cents = window.money.cents;
 
   const PEOPLE = [
     { id: "me", name: "Pedro", initial: "P", color: "blue" },
@@ -483,15 +486,15 @@
 
   // What the group has, newest first, as Expenses lists it: bills and recorded payments.
   let entries = [
-    { kind: "bill", title: "b1", icon: "i-bed", category: "lodging", amount: 120000, payer: "me", among: everyone },
-    { kind: "bill", title: "b2", icon: "i-food", category: "food", amount: 31200, payer: "ana", among: everyone },
-    { kind: "bill", title: "b3", icon: "i-car", category: "transport", amount: 4860, payer: "bruno", among: everyone },
+    { kind: "bill", title: "b1", icon: "i-bed", category: "lodging", amount: cents(120000), payer: "me", among: everyone },
+    { kind: "bill", title: "b2", icon: "i-food", category: "food", amount: cents(31200), payer: "ana", among: everyone },
+    { kind: "bill", title: "b3", icon: "i-car", category: "transport", amount: cents(4860), payer: "bruno", among: everyone },
   ];
   const bills = () => entries.filter((e) => e.kind === "bill");
   const PRESETS = [
-    { title: "p1", icon: "i-icecream", category: "food", amount: 4800 },
-    { title: "p2", icon: "i-cart", category: "food", amount: 18640 },
-    { title: "p3", icon: "i-car", category: "transport", amount: 2500 },
+    { title: "p1", icon: "i-icecream", category: "food", amount: cents(4800) },
+    { title: "p2", icon: "i-cart", category: "food", amount: cents(18640) },
+    { title: "p3", icon: "i-car", category: "transport", amount: cents(2500) },
   ];
   let nextPreset = 0;
   let queued = 2;

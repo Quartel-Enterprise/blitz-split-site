@@ -84,9 +84,9 @@ the phone, the split card and the receipt share): dollars in English and Spanish
 in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, grouped
 as India writes them (₹1,20,000), yuan in Simplified Chinese (¥, with its fen, so the demo's numbers stay as they are:
 ¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The krona in Swedish, the koruna in Czech and the leu in Romanian keep their cents but are
-worth much less than the dollar, so the demo's amounts are multiplied by a whole number, which keeps every split exact
-(ten, 23 and five: 486 kr, 1 117,80 Kč and 243 lei for the ride), and an amount typed in the split card rounds to the
-nearest 0,10 kr, 0,23 Kč or 0,05 lei. The demo keeps every amount in cents and the five with no cents in use show it scaled to whole
+worth much less than the dollar, so the demo's own amounts are multiplied by a whole number before anything is split
+(`money.cents`: ten, 23 and five, so 486 kr, 1 117,80 Kč and 243 lei for the ride), and from there everything works in
+that currency's own cents: every split adds up exactly and an amount typed in the split card stays as typed. The demo keeps every amount in cents and the five with no cents in use show it scaled to whole
 units (a cent is Rp100, ¥1, ₩10, 10 ₫ and NT$1, the smallest whole scale, which keeps every split exact), so a $48.60 ride reads Rp486.000, ¥4,860, ₩48,600, 48.600 ₫ or NT$4,860 and every split still adds
 up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫ or Rp100, and a field grows with what it
 holds. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way, by hand, so the

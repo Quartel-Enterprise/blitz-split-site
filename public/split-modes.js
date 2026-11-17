@@ -735,7 +735,9 @@
   }
 
   // Amounts in the visitor's currency, as preview.js writes them (money.js).
-  const { plain, format: money, parse: parseMoney } = window.money;
+  // The bills' amounts below are in the dollar's cents; cents gives them in the currency's own, so the splits and what
+  // is typed work in those (money.js).
+  const { plain, format: money, parse: parseMoney, cents } = window.money;
   // Turkish writes the sign first: %10. French, German, Russian, Swedish and Czech put a space before it.
   const pct = (n) => (["fr", "de", "ru", "sv", "cs"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
 
@@ -779,16 +781,16 @@
     pizza: {
       title: TEXT.bill,
       items: [
-        { key: "pizza", qty: 1, each: 6000, who: [true, true, false, false] },
-        { key: "beer", qty: 3, each: 1200, who: [true, false, true, true] },
-        { key: "salad", qty: 1, each: 2400, who: [false, false, false, true] },
+        { key: "pizza", qty: 1, each: cents(6000), who: [true, true, false, false] },
+        { key: "beer", qty: 3, each: cents(1200), who: [true, false, true, true] },
+        { key: "salad", qty: 1, each: cents(2400), who: [false, false, false, true] },
       ],
     },
     receipt: {
       title: TEXT.receiptBill,
       items: [
-        { key: "draft", qty: 2, each: 1400, who: [true, false, true, false] },
-        { key: "shrimp", qty: 1, each: 9600, who: [false, true, false, true] },
+        { key: "draft", qty: 2, each: cents(1400), who: [true, false, true, false] },
+        { key: "shrimp", qty: 1, each: cents(9600), who: [false, true, false, true] },
       ],
     },
   };
@@ -804,7 +806,7 @@
       amounts: distribute(TOTAL, [1, 1, 1, 1]),
       percent: [25, 25, 25, 25],
       shares: [1, 1, 1, 1],
-      income: state?.income ?? [600000, 400000, 300000, 200000],
+      income: state?.income ?? [600000, 400000, 300000, 200000].map(cents),
     };
   }
   load("pizza");
