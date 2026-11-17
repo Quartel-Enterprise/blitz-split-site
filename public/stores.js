@@ -38,7 +38,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", he: "iw" }[root.dataset.lang] || root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's and Hebrew's as Google Play writes them
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -232,6 +232,15 @@
       mismatchBody: "המכשיר הזה הוא {platform}. לחוויה הטובה ביותר, כדאי להוריד את האפליקציה {in}.",
       mismatchGo: "מעבר {to}", mismatchStay: "המשך {to}", close: "סגירה",
       in: { play: "מ-Google Play", appstore: "מ-App Store" }, to: { play: "ל-Google Play", appstore: "ל-App Store" },
+    },
+    th: {
+      play: ["ดาวน์โหลดได้ที่", "เร็วๆ นี้ที่"], appstore: ["ดาวน์โหลดได้ที่", "เร็วๆ นี้ที่"], web: ["เปิดใน", "เร็วๆ นี้ใน"], browser: "เบราว์เซอร์",
+      getApp: "ดาวน์โหลดแอป", openWeb: "เปิดเว็บแอป", soon: "เร็วๆ นี้",
+      playLive: "ดาวน์โหลดได้ที่ Google Play", appStoreLive: "ดาวน์โหลดได้ที่ App Store", webLive: "เปิดเว็บแอป",
+      mismatchTitle: "เลือกสโตร์ของคุณ",
+      mismatchBody: "คุณกำลังใช้ {platform} เพื่อประสบการณ์ที่ดีที่สุด ดาวน์โหลดแอป{in}",
+      mismatchGo: "ไป{to}", mismatchStay: "ไป{to}ต่อ", close: "ปิด",
+      in: { play: "จาก Google Play", appstore: "จาก App Store" }, to: { play: "ที่ Google Play", appstore: "ที่ App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

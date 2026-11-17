@@ -110,6 +110,12 @@
       lines: [["2 בירה מהחבית", "28.00", 1], ["1 מגש שרימפס", "96.00", 2]],
       subtotal: ["סכום ביניים", "124.00"], service: ["שירות 10%", "12.40", 3], total: ["סה״כ", "136.40"],
     },
+    // Thai: a beach bar's receipt, in baht as money.js counts Thai.
+    th: {
+      store: "บาร์ริมท่า", address: "120 ถนนนกนางนวล", date: "08/11/2026  21:47",
+      lines: [["2 เบียร์สด", "28.00", 1], ["1 ชุดกุ้งรวม", "96.00", 2]],
+      subtotal: ["ยอดรวมย่อย", "124.00"], service: ["ค่าบริการ 10%", "12.40", 3], total: ["ยอดรวม", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 
