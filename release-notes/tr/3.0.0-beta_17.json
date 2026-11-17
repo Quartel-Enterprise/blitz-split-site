@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Uygulama artık sağdan sola okunan ekranlarıyla Arapça konuşuyor: Profil › Dil'den \"العربية\"yı seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Suudi riyali (SAR), BAE dirhemi (AED), Mısır lirası (EGP) ve Fas dirhemi (MAD) ile bölebiliyor; bu ülkelerden birinde açılan bir grup o ülkenin para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Basitleştirilmiş Çince konuşuyor: Profil › Dil'den \"中文（简体）\"i seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Çin yuanı (CNY) ile bölebiliyor; Çin anakarasında açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Geleneksel Çince konuşuyor: Profil › Dil'den \"中文（繁體）\"i seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Yeni Tayvan doları (TWD) ile bölebiliyor; Tayvan'da açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Çekçe konuşuyor: Profil › Dil'den \"Čeština\"yı seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Çek korunası (CZK) ile bölebiliyor; Çekya'da açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Her grubun artık kendi hesaplaşma hatırlatıcısı var: pazartesi 10:00'daki haftalık hatırlatıcıyı koruyun, başka bir haftanın gününü ya da ayın bir gününü ve saati seçin (örneğin her ayın 25'i saat 12:00) veya kapatın; grubu oluştururken ya da Grubu düzenle'de. Bildirimi yalnızca hâlâ borcu olanlar alır ve grupta kapatabilecekleri bir uyarı görür.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık sağdan sola okunan ekranlarıyla İbranice konuşuyor: Profil › Dil'den \"עברית\"i seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık İsrail yeni şekeli (ILS) ile bölebiliyor; İsrail'de açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Hintçe konuşuyor: Profil › Dil'den \"हिन्दी\"yi seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Hindistan rupisi (INR) ile bölebiliyor; Hindistan'da açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Rumence konuşuyor: Profil › Dil'den \"Română\"yı seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Rumen leyi (RON) ile bölebiliyor; Romanya'da açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık İsveççe konuşuyor: Profil › Dil'den \"Svenska\"yı seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık İsveç kronu (SEK) ile bölebiliyor; İsveç'te açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Tayca konuşuyor: Profil › Dil'den \"ไทย\"yı seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Tayland bahtı (THB) ile bölebiliyor; Tayland'da açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Vietnamca konuşuyor: Profil › Dil'den \"Tiếng Việt\"i seç ya da cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Vietnam dongu (VND) ile bölebiliyor; Vietnam'da açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bir harcamanın üst çubuğundaki grup fotoğrafına dokunarak onu büyük görebilirsin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "İki kişilik bir grupta soluk Borçları sadeleştir anahtarına dokunmak artık grup 3 kişi olunca kullanılabilir olacağını söylüyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Borçları sadeleştir’in Nasıl çalışır ekranındaki örnek artık baş harfler yerine kişilerin fotoğraflarını gösteriyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ödeme sayfasından açılan bir kişinin profilinden geri hareketiyle çıkılamaması düzeltildi; artık sayfaya geri dönüyor.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

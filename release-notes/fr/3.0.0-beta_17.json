@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "L’app parle désormais arabe, avec des écrans qui se lisent de droite à gauche : choisis « العربية » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en riyal saoudien (SAR), en dirham des Émirats (AED), en livre égyptienne (EGP) et en dirham marocain (MAD), et un groupe créé dans l’un de ces pays démarre dans sa devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais chinois simplifié : choisis « 中文（简体） » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en yuan chinois (CNY), et un groupe créé en Chine continentale démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais chinois traditionnel : choisis « 中文（繁體） » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en nouveau dollar de Taïwan (TWD), et un groupe créé à Taïwan démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais tchèque : choisis « Čeština » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en couronne tchèque (CZK), et un groupe créé en Tchéquie démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chaque groupe a désormais son propre rappel de remboursement : gardez celui du lundi à 10h00, choisissez un autre jour de la semaine ou un jour du mois et une heure (par exemple, le 25 de chaque mois à 12h00) ou désactivez-le, à la création du groupe ou dans Modifier le groupe. Seuls ceux qui doivent encore de l'argent reçoivent la notification et voient une bannière dans le groupe, qu'ils peuvent fermer.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais hébreu, avec des écrans qui se lisent de droite à gauche : choisis « עברית » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en nouveau shekel israélien (ILS), et un groupe créé en Israël démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais hindi : choisis « हिन्दी » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en roupie indienne (INR), et un groupe créé en Inde démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais roumain : choisis « Română » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en leu roumain (RON), et un groupe créé en Roumanie démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais suédois : choisis « Svenska » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en couronne suédoise (SEK), et un groupe créé en Suède démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais thaï : choisis « ไทย » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en baht thaïlandais (THB), et un groupe créé en Thaïlande démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais vietnamien : choisis « Tiếng Việt » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en dong vietnamien (VND), et un groupe créé au Viêt Nam démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Touche la photo du groupe dans la barre du haut d'une dépense pour la voir en grand.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toucher le bouton grisé de Simplifier les dettes dans un groupe de deux affiche désormais qu’il sera disponible dès que le groupe compte 3 personnes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dans Comment ça marche de Simplifier les dettes, l’exemple affiche désormais des photos de personnes au lieu d’initiales.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Correction du geste retour qui ne quittait pas le profil d'une personne ouvert depuis la feuille de paiement ; il revient maintenant à la feuille.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Appen talar nu arabiska, med en layout som läses från höger till vänster: välj ”العربية” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i saudiska riyal (SAR), emiratiska dirham (AED), egyptiska pund (EGP) och marockanska dirham (MAD), och en grupp som skapas i något av de länderna börjar i landets valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu förenklad kinesiska: välj ”中文（简体）” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i kinesiska yuan (CNY), och en grupp som skapas i Fastlandskina börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu traditionell kinesiska: välj ”中文（繁體）” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i nya taiwanesiska dollar (TWD), och en grupp som skapas i Taiwan börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu tjeckiska: välj ”Čeština” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i tjeckiska kronor (CZK), och en grupp som skapas i Tjeckien börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Varje grupp har nu en egen påminnelse om att göra upp: behåll den veckovisa på måndagar kl. 10:00, välj en annan veckodag eller en dag i månaden och en tid (till exempel den 25:e kl. 12:00), eller stäng av den, när du skapar gruppen eller i Redigera grupp. Bara de som fortfarande är skyldiga får aviseringen, och de ser en banner i gruppen som de kan stänga.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu hebreiska, med en layout som läses från höger till vänster: välj ”עברית” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i nya israeliska shekel (ILS), och en grupp som skapas i Israel börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu hindi: välj ”हिन्दी” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i indiska rupier (INR), och en grupp som skapas i Indien börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu rumänska: välj ”Română” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i rumänska lei (RON), och en grupp som skapas i Rumänien börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu svenska: välj ”Svenska” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i svenska kronor (SEK), och en grupp som skapas i Sverige börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu thailändska: välj ”ไทย” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i thailändska baht (THB), och en grupp som skapas i Thailand börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu vietnamesiska: välj ”Tiếng Việt” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i vietnamesiska dong (VND), och en grupp som skapas i Vietnam börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tryck på gruppens foto i en utgifts övre fält för att se det i stort format.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trycker du på det nedtonade reglaget Förenkla skulder i en grupp med två personer får du nu veta att det blir tillgängligt när gruppen har 3 personer.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I Så fungerar det för Förenkla skulder visar exemplet nu personernas foton i stället för initialer.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Åtgärdat att bakåtgesten inte lämnade en persons profil som öppnats från en betalningspanel; nu går den tillbaka till panelen.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

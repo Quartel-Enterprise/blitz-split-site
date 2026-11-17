@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Aplikacja mówi teraz po arabsku, z ekranami czytanymi od prawej do lewej: wybierz „العربية” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w rialach saudyjskich (SAR), dirhamach ZEA (AED), funtach egipskich (EGP) i dirhamach marokańskich (MAD), a grupa założona w jednym z tych krajów startuje w jego walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po chińsku uproszczonym: wybierz „中文（简体）” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w juanach chińskich (CNY), a grupa założona w Chinach kontynentalnych startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po chińsku tradycyjnym: wybierz „中文（繁體）” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w nowych dolarach tajwańskich (TWD), a grupa założona na Tajwanie startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po czesku: wybierz „Čeština” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w koronach czeskich (CZK), a grupa założona w Czechach startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Każda grupa ma teraz własne przypomnienie o rozliczeniu: zostaw cotygodniowe w poniedziałek o 10:00, wybierz inny dzień tygodnia albo dzień miesiąca i godzinę (na przykład każdego 25. o 12:00) lub wyłącz je, podczas tworzenia grupy albo w Edytuj grupę. Powiadomienie dostają tylko osoby, które wciąż są coś winne, i widzą w grupie baner, który można zamknąć.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po hebrajsku, z ekranami czytanymi od prawej do lewej: wybierz „עברית” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w nowych szeklach izraelskich (ILS), a grupa założona w Izraelu startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz w hindi: wybierz „हिन्दी” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w rupiach indyjskich (INR), a grupa założona w Indiach startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po rumuńsku: wybierz „Română” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w lejach rumuńskich (RON), a grupa założona w Rumunii startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po szwedzku: wybierz „Svenska” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w koronach szwedzkich (SEK), a grupa założona w Szwecji startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po tajsku: wybierz „ไทย” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w batach tajskich (THB), a grupa założona w Tajlandii startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po wietnamsku: wybierz „Tiếng Việt” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w dongach wietnamskich (VND), a grupa założona w Wietnamie startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dotknij zdjęcia grupy na górnym pasku wydatku, aby zobaczyć je w dużym rozmiarze.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dotknięcie wyszarzonego przełącznika Uprość długi w grupie dwuosobowej pokazuje teraz, że będzie dostępny, gdy w grupie będą 3 osoby.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "W Jak to działa przy Uprość długi przykład pokazuje teraz zdjęcia osób zamiast inicjałów.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Naprawiono gest cofania, który nie opuszczał profilu osoby otwartego z arkusza płatności; teraz wraca do arkusza.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

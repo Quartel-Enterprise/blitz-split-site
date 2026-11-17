@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "The app now speaks Arabic, laid out to read right to left: pick \"العربية\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Saudi riyal (SAR), the UAE dirham (AED), the Egyptian pound (EGP) and the Moroccan dirham (MAD), and a group made in one of those countries starts in its currency.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Simplified Chinese: pick \"中文（简体）\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Chinese yuan (CNY), and a group made in mainland China starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Traditional Chinese: pick \"中文（繁體）\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the New Taiwan dollar (TWD), and a group made in Taiwan starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Czech: pick \"Čeština\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Czech koruna (CZK), and a group made in Czechia starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Each group now has its own settle-up reminder: keep the weekly one on Monday at 10:00, pick another weekday or a day of the month and a time (for example, every 25th at 12:00), or turn it off, when you create the group or in Edit group. Only people who still owe get the notification, and they see a banner in the group that they can dismiss.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Hebrew, laid out to read right to left: pick \"עברית\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Israeli new shekel (ILS), and a group made in Israel starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Hindi: pick \"हिन्दी\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Indian rupee (INR), and a group made in India starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Romanian: pick \"Română\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Romanian leu (RON), and a group made in Romania starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Swedish: pick \"Svenska\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Swedish krona (SEK), and a group made in Sweden starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Thai: pick \"ไทย\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Thai baht (THB), and a group made in Thailand starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Vietnamese: pick \"Tiếng Việt\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Vietnamese dong (VND), and a group made in Vietnam starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tap the group's photo in a bill's top bar to see it big.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tapping the dimmed Simplify debts switch in a group of two now tells you it becomes available once the group has 3 people.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Simplify debts’ How it works, the example now shows photos of people instead of initials.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fixed the back gesture not leaving a person's profile opened from a payment sheet; it now goes back to the sheet.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

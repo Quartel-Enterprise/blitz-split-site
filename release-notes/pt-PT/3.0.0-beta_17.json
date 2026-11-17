@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "A app fala agora árabe, com os ecrãs da direita para a esquerda: escolhe \"العربية\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em rial saudita (SAR), dirham dos Emirados (AED), libra egípcia (EGP) e dirham marroquino (MAD), e um grupo criado num desses países começa logo na moeda de lá.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora chinês simplificado: escolhe \"中文（简体）\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em yuan chinês (CNY), e um grupo criado na China continental começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora chinês tradicional: escolhe \"中文（繁體）\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em novo dólar taiwanês (TWD), e um grupo criado em Taiwan começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora checo: escolhe \"Čeština\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em coroa checa (CZK), e um grupo criado na Chéquia começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada grupo tem agora o seu próprio lembrete de acerto: mantém o semanal de segunda às 10:00, escolhe outro dia da semana ou um dia do mês e uma hora (por exemplo, todo o dia 25 às 12:00) ou desliga, ao criares o grupo ou em Editar grupo. Só quem ainda deve recebe a notificação e vê um aviso no grupo que pode dispensar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora hebraico, com os ecrãs da direita para a esquerda: escolhe \"עברית\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em novo shekel israelita (ILS), e um grupo criado em Israel começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora hindi: escolhe \"हिन्दी\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em rupia indiana (INR), e um grupo criado na Índia começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora romeno: escolhe \"Română\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em leu romeno (RON), e um grupo criado na Roménia começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora sueco: escolhe \"Svenska\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em coroa sueca (SEK), e um grupo criado na Suécia começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora tailandês: escolhe \"ไทย\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em baht tailandês (THB), e um grupo criado na Tailândia começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora vietnamita: escolhe \"Tiếng Việt\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em dong vietnamita (VND), e um grupo criado no Vietname começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toca na foto do grupo na barra de cima de uma conta para a ver grande.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar no botão apagado de Simplificar dívidas num grupo de duas pessoas avisa agora que fica disponível quando o grupo tiver 3 pessoas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "No Como funciona de Simplificar dívidas, o exemplo mostra agora fotos de pessoas em vez de iniciais.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corrigido o gesto de voltar que não saía do perfil de uma pessoa aberto a partir da folha de pagamento; agora volta para a folha.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

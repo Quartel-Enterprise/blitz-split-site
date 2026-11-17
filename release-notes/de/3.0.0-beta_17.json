@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Die App spricht jetzt Arabisch, von rechts nach links gelesen: Wähle „العربية“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Saudi-Riyal (SAR), VAE-Dirham (AED), Ägyptischem Pfund (EGP) und Marokkanischem Dirham (MAD) teilen, und eine in einem dieser Länder erstellte Gruppe startet in dessen Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt vereinfachtes Chinesisch: Wähle „中文（简体）“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Chinesischem Yuan (CNY) teilen, und eine in Festlandchina erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt traditionelles Chinesisch: Wähle „中文（繁體）“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Neuem Taiwan-Dollar (TWD) teilen, und eine in Taiwan erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Tschechisch: Wähle „Čeština“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Tschechischen Kronen (CZK) teilen, und eine in Tschechien erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jede Gruppe hat jetzt ihre eigene Erinnerung zum Ausgleichen: Behalte die wöchentliche am Montag um 10:00 Uhr, wähle einen anderen Wochentag oder einen Tag im Monat und eine Uhrzeit (zum Beispiel jeden 25. um 12:00 Uhr) oder schalte sie aus, beim Erstellen der Gruppe oder unter Gruppe bearbeiten. Nur wer noch etwas schuldet, bekommt die Benachrichtigung und sieht in der Gruppe einen Hinweis, den man schließen kann.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Hebräisch, von rechts nach links gelesen: Wähle „עברית“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Neuem Israelischem Schekel (ILS) teilen, und eine in Israel erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Hindi: Wähle „हिन्दी“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Indischer Rupie (INR) teilen, und eine in Indien erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Rumänisch: Wähle „Română“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Rumänischem Leu (RON) teilen, und eine in Rumänien erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Schwedisch: Wähle „Svenska“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Schwedischer Krone (SEK) teilen, und eine in Schweden erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Thailändisch: Wähle „ไทย“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Thailändischem Baht (THB) teilen, und eine in Thailand erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Vietnamesisch: Wähle „Tiếng Việt“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Vietnamesischem Dong (VND) teilen, und eine in Vietnam erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tippe in der oberen Leiste einer Ausgabe auf das Gruppenfoto, um es groß zu sehen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tippst du in einer Gruppe mit zwei Personen auf den abgeblendeten Schalter von Schulden vereinfachen, erfährst du jetzt, dass er ab 3 Personen verfügbar ist.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Im So funktioniert’s von Schulden vereinfachen zeigt das Beispiel jetzt Fotos von Personen statt Initialen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Behoben: Die Zurück-Geste verließ das Profil einer Person nicht, wenn es aus dem Zahlungsblatt geöffnet wurde; jetzt geht sie zurück zum Blatt.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

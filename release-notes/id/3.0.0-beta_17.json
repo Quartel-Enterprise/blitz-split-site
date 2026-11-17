@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Aplikasi kini berbahasa Arab, dengan layar dari kanan ke kiri: pilih \"العربية\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam riyal Saudi (SAR), dirham UEA (AED), pound Mesir (EGP), dan dirham Maroko (MAD), dan grup yang dibuat di salah satu negara itu langsung memakai mata uangnya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Tionghoa Sederhana: pilih \"中文（简体）\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam yuan Tiongkok (CNY), dan grup yang dibuat di Tiongkok daratan langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Tionghoa Tradisional: pilih \"中文（繁體）\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam dolar Taiwan baru (TWD), dan grup yang dibuat di Taiwan langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Ceko: pilih \"Čeština\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam koruna Ceko (CZK), dan grup yang dibuat di Ceko langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Setiap grup sekarang punya pengingat pelunasan sendiri: pertahankan yang mingguan setiap Senin pukul 10.00, pilih hari lain dalam seminggu atau tanggal dalam sebulan beserta jamnya (misalnya setiap tanggal 25 pukul 12.00), atau matikan, saat membuat grup atau di Edit grup. Hanya yang masih berutang yang mendapat notifikasi, dan mereka melihat spanduk di grup yang bisa ditutup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Ibrani, dengan layar dari kanan ke kiri: pilih \"עברית\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam shekel baru Israel (ILS), dan grup yang dibuat di Israel langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Hindi: pilih \"हिन्दी\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam rupee India (INR), dan grup yang dibuat di India langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Rumania: pilih \"Română\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam leu Rumania (RON), dan grup yang dibuat di Rumania langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Swedia: pilih \"Svenska\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam krona Swedia (SEK), dan grup yang dibuat di Swedia langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Thai: pilih \"ไทย\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam baht Thailand (THB), dan grup yang dibuat di Thailand langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Vietnam: pilih \"Tiếng Việt\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam dong Vietnam (VND), dan grup yang dibuat di Vietnam langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ketuk foto grup di bilah atas sebuah tagihan untuk melihatnya besar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mengetuk sakelar Sederhanakan utang yang redup di grup berdua kini memberi tahu bahwa fitur itu tersedia setelah grup berisi 3 orang.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di Cara kerjanya Sederhanakan utang, contohnya kini menampilkan foto orang, bukan inisial.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Memperbaiki gestur kembali yang tidak keluar dari profil seseorang yang dibuka dari lembar pembayaran; kini kembali ke lembar itu.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
