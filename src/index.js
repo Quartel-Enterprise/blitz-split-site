@@ -65,6 +65,11 @@ const STATIC_IMAGE = /^\/og\/(comment|download|privacy|terms)\.png$/;
 // otherwise preview in Portuguese and open a page that doesn't. The one exception is Portugal's Portuguese, pt-PT, the
 // exact tag the apps share and the page picks.
 const LANGUAGE = /^(?:[a-z]{2,3}|pt-PT)$/;
+// Legacy language codes and the site's own: Hebrew's iw (Android's) is he, so ?lang=iw, /legal/<page>.iw.md and
+// /release-notes/iw.json answer in Hebrew rather than with English or a 404. Why: the same as LEGACY in public/boot.js.
+const LEGACY = { iw: "he" };
+const canonicalLanguage = (language) => LEGACY[language] || language;
+const LEGACY_FILE = /^(\/legal\/[a-z]+\.|\/release-notes\/)(iw)(\.md|\.json)$/;
 
 // The folders whose files something other than a browser asks for by name: see fileOrNotFound.
 const FILE_OR_NOT_FOUND = ["/.well-known/", "/legal/", "/release-notes/"];
@@ -88,6 +93,12 @@ export default {
 // and read English on a 404. Why any origin may read the 404: the web app (app.blitzsplit.com) asks from another one,
 // and a browser hides a response without Access-Control-Allow-Origin, so it would see a network error, not the 404.
 async function fileOrNotFound(request, env) {
+  const url = new URL(request.url);
+  const legacy = LEGACY_FILE.exec(url.pathname);
+  if (legacy) {
+    url.pathname = legacy[1] + canonicalLanguage(legacy[2]) + legacy[3];
+    request = new Request(url, request);
+  }
   const response = await env.ASSETS.fetch(request);
   const isLanding = (response.headers.get("Content-Type") || "").startsWith("text/html");
   return isLanding
@@ -112,7 +123,7 @@ function staticTargetOf(card, url) {
 
 function languageOf(url) {
   const language = url.searchParams.get("lang");
-  return language && LANGUAGE.test(language) ? language : null;
+  return language && LANGUAGE.test(language) ? canonicalLanguage(language) : null;
 }
 
 function targetOf(link, match, url) {
@@ -155,8 +166,8 @@ async function previewPage(request, url, env, ctx, target) {
 
 // The languages the site speaks written right to left: a page in one of them says dir="rtl" on <html>. Why: the same
 // list as RIGHT_TO_LEFT in public/boot.js, which runs alone in <head> and can't import it; change both together.
-const RIGHT_TO_LEFT = ["ar"];
-const directionOf = (language) => (RIGHT_TO_LEFT.includes(String(language).split("-")[0]) ? "rtl" : "ltr");
+const RIGHT_TO_LEFT = ["ar", "he"];
+const directionOf = (language) => (RIGHT_TO_LEFT.includes(canonicalLanguage(String(language).split("-")[0])) ? "rtl" : "ltr");
 
 // Why: the landing's own og tags give way to the link's, written once at the end of the head, and kept as briefly as
 // the words they come from.

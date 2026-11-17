@@ -331,6 +331,26 @@
       bills: (n) => `${n}笔账单`,
       titles: { b1: "拉戈阿民宿", b2: "里贝朗晚餐", b3: "去海滩的车费", p1: "海滩上的冰淇淋", p2: "一周的采购", p3: "停车费" },
     },
+    // Hebrew: the app never knows anyone's gender, so a payer or a payment is a label ("שולם על ידי: Ana") or an action
+    // noun, never a conjugated verb; one bill is "חשבון אחד", two or more the plural, as the app counts them.
+    he: {
+      paid: "שולם על ידי: {name}", notIn: "לא בחשבון הזה",
+      members: (people, bills) => `${people} אנשים · ${bills === 1 ? "חשבון אחד" : `${bills} חשבונות`}`,
+      toGet: "מגיע לך", youOwe: "חוב שלך", settled: "הכול סגור", owesYou: "ממי מגיע לך", youOweTitle: "למי מגיע ממך",
+      eachOne: "היתרה של כל אחד", getsBack: "לקבל", owes: "חוב", even: "החשבון נסגר",
+      toSettle: "לסגירת החשבון", total: "סה״כ בקבוצה", lodging: "לינה", food: "אוכל", transport: "תחבורה",
+      sheetTitle: "פיצול חשבון", description: "תיאור", amount: "סכום", whoPaid: "שולם על ידי",
+      splitAmong: "חלוקה שווה בשווה בין", each: "{value} לכל אחד", cancel: "ביטול", save: "שמירה", close: "סגירה",
+      queue: (n) => (n === 1 ? "שינוי אחד בתור" : `${n} שינויים בתור`),
+      split: "איך זה חולק", yourShare: "החלק שלך", deleteBill: "מחיקת החשבון",
+      recordPayment: "רישום תשלום", record: "רישום", viaMethod: "בהעברה", payment: "תשלום", deletePayment: "מחיקת התשלום",
+      // Why "→": the names are Latin, so the line runs left to right even in a right-to-left page, as Arabic's does.
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who}: תשלום של ${value} אליך`,
+      paidTotal: "סה״כ ששולם", shareTotal: "החלק בחשבונות", balance: "יתרה",
+      bills: (n) => (n === 1 ? "חשבון אחד" : `${n} חשבונות`),
+      titles: { b1: "אכסניה בלגואה", b2: "ארוחת ערב בריבייראו", b3: "נסיעה לחוף", p1: "גלידה בחוף", p2: "קניות השבוע", p3: "חניה" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -769,7 +789,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();
