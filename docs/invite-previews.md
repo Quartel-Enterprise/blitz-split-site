@@ -22,7 +22,7 @@ An invite and a bill speak the language of their currency. A profile, which has 
 download paths speak the language their link asks for, `?lang=`: the apps add their own language to those links when
 they share them, and the pages read the same parameter (`boot.js`), so the page that opens speaks it too. Twelve of
 the apps' sixteen languages are written (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
-Turkish, Indonesian and Japanese); Russian, Ukrainian and Korean, which the site speaks, read English here until the API's
+Turkish, Indonesian and Japanese); Russian, Ukrainian, Korean and Hindi, which the site speaks, read English here until the API's
 function has their words, as does any other language, or none. The twelfth, Arabic, came with blitz-split-api#83 (a group in
 riyals, dirhams or Egyptian pounds), and the Worker sets the preview page's `<html>` to the words' `language`, with
 `dir="rtl"` for a right-to-left one (`directionOf` in `src/index.js`), so a crawler reads it as written.

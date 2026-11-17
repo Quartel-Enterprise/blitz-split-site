@@ -94,6 +94,11 @@
       lines: [["2 عصير طازج", "28.00", 1], ["1 طبق روبيان", "96.00", 2]],
       subtotal: ["المجموع الفرعي", "124.00"], service: ["خدمة 10%", "12.40", 3], total: ["الإجمالي", "136.40"],
     },
+    hi: {
+      store: "हार्बर बार", address: "120, गल स्ट्रीट", date: "08/11/2026  9:47 PM",
+      lines: [["2 ड्राफ़्ट बियर", "28.00", 1], ["1 झींगा प्लैटर", "96.00", 2]],
+      subtotal: ["सबटोटल", "124.00"], service: ["सर्विस 10%", "12.40", 3], total: ["कुल", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

@@ -100,9 +100,9 @@ p { margin: 0; text-wrap: pretty; }
    phrases rather than anywhere in a heading, and none of the Latin headings' tight tracking. */
 :root[lang="ja"] { line-break: strict; }
 :root[lang="ja"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; word-break: auto-phrase; }
-/* Russian and Ukrainian draw their Cyrillic, and Korean its Hangul, in the system font, as the bundled Geist subsets
-   have neither: the tracking tuned for Geist would cramp them. */
-:root:is([lang="ru"], [lang="uk"], [lang="ko"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+/* Russian and Ukrainian draw their Cyrillic, Korean its Hangul and Hindi its Devanagari in the system font, as the
+   bundled Geist subsets have none of them: the tracking tuned for Geist would cramp them. */
+:root:is([lang="ru"], [lang="uk"], [lang="ko"], [lang="hi"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
 /* Korean breaks lines between words (its spaces), never inside one, as Korean text does. */
 :root[lang="ko"] { word-break: keep-all; overflow-wrap: break-word; }
 /* Arabic draws in the system font, as the bundled Geist subsets have no Arabic: no Latin tracking, which would also
@@ -145,7 +145,8 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="uk"] body [data-lang]:not([data-lang="uk"]),
 :root[data-lang="ko"] body [data-lang]:not([data-lang="ko"]),
 :root[data-lang="ar"] body [data-lang]:not([data-lang="ar"]),
-:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="fr"]):not([data-lang="de"]):not([data-lang="it"]):not([data-lang="pl"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]):not([data-lang="ru"]):not([data-lang="uk"]):not([data-lang="ko"]):not([data-lang="ar"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
+:root[data-lang="hi"] body [data-lang]:not([data-lang="hi"]),
+:root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
 .skip:focus { inset-inline-start: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }
 @media (prefers-reduced-motion: reduce) {
@@ -340,6 +341,10 @@ a.status .icon { width: 15px; height: 15px; }
   /* The descenders of "offline" stay inside the painted box. */
   padding-bottom: 0.08em;
 }
+/* Devanagari's marks reach above the headline and below the baseline further than Geist's Latin: Hindi's title
+   gets the room between its lines, and its gradient's painted box the room around them. */
+:root[lang="hi"] .hero h1 { line-height: 1.25; }
+:root[lang="hi"] .hero h1 .accent { padding-block: 0.12em 0.16em; }
 @media (forced-colors: active) { .hero h1 .accent { background: none; -webkit-text-fill-color: currentColor; } }
 .hero .lead { margin-top: 20px; font-size: clamp(17px, 2vw, 19px); color: var(--fg-soft); max-width: 34em; }
 .hero-cta { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }

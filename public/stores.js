@@ -33,10 +33,10 @@
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar", en: "en" })}`
+    ? `${CONFIG.googlePlayUrl}&hl=${root.lang}` // the page's tag, as boot.js set it: pt-BR, pt-PT, en, hi…
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", ko: "kr", ar: "sa", en: "us" })}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", ko: "kr", ar: "sa", hi: "in", en: "us" })}/app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -203,6 +203,15 @@
       mismatchBody: "جهازك يعمل بنظام {platform}. للحصول على أفضل تجربة، يُنصح بتنزيل التطبيق {in}.",
       mismatchGo: "الانتقال {to}", mismatchStay: "المتابعة {to}", close: "إغلاق",
       in: { play: "من Google Play", appstore: "من App Store" }, to: { play: "إلى Google Play", appstore: "إلى App Store" },
+    },
+    hi: {
+      play: ["इसे पाएं", "जल्द आ रहा है"], appstore: ["डाउनलोड करें", "जल्द आ रहा है"], web: ["अभी खोलें", "जल्द आ रहा है"], browser: "ब्राउज़र",
+      getApp: "ऐप पाएं", openWeb: "वेब ऐप खोलें", soon: "जल्द आ रहा है",
+      playLive: "Google Play पर उपलब्ध", appStoreLive: "App Store पर उपलब्ध", webLive: "वेब ऐप खोलें",
+      mismatchTitle: "अपना स्टोर चुनें",
+      mismatchBody: "आप {platform} पर हैं। सबसे अच्छे अनुभव के लिए ऐप {in} पाएं।",
+      mismatchGo: "{to} जाएं", mismatchStay: "फिर भी {to} जाएं", close: "बंद करें",
+      in: { play: "Google Play से", appstore: "App Store से" }, to: { play: "Google Play पर", appstore: "App Store पर" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
