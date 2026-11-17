@@ -289,7 +289,8 @@
       queue: (n) => `التغييرات في قائمة الانتظار: ${n}`,
       split: "طريقة التقسيم", yourShare: "حصتك", deleteBill: "حذف الفاتورة",
       recordPayment: "تسجيل دفعة", record: "تسجيل", viaMethod: "عبر تحويل", payment: "دفعة", deletePayment: "حذف الدفعة",
-      payLine: (from, to) => `${name(from)} ← ${name(to)}`,
+      // Why "→": the names are Latin, so the line runs left to right even in a right-to-left page, as the Balances tab's does.
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `${who}: دفعة ${value} إليك`,
       paidTotal: "إجمالي المدفوع", shareTotal: "الحصة من الفواتير", balance: "الرصيد",
       bills: (n) => `الفواتير: ${n}`,

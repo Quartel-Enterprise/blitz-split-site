@@ -113,7 +113,12 @@ p { margin: 0; text-wrap: pretty; }
    the start, and the switch's knob slides toward the end. */
 :root[dir="rtl"] .icon:not(.chev):has(use[href="#i-arrow"], use[href="#i-left"]) { transform: scaleX(-1); }
 :root[dir="rtl"] .chev { transform: none; }
-:root[dir="rtl"] :is(.bar i, .bars-chart span[style], .split-row::before) { transform-origin: right; }
+:root[dir="rtl"] :is(.bar i, .bars-chart span[style]), :root[dir="rtl"] .split-row::before { transform-origin: right; }
+/* The payment's flow runs from who pays to who is paid, who now sit the other way round. */
+:root[dir="rtl"] .arrow-line { transform: scaleX(-1); }
+/* A money or percent field reads as its amounts do, left to right: "$1,200", "50%". */
+:root[dir="rtl"] .split-field { direction: ltr; }
+:root[dir="rtl"].motion .tile:not(.in) :is(.queue-row, .code-card) { translate: 14px 0; }
 :root[dir="rtl"] .beta-switch input:checked::before { transform: translateX(-16px); }
 :root[dir="rtl"].motion .site-header::after { transform-origin: 100% 50%; }
 .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
@@ -139,7 +144,8 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="ru"] body [data-lang]:not([data-lang="ru"]),
 :root[data-lang="uk"] body [data-lang]:not([data-lang="uk"]),
 :root[data-lang="ko"] body [data-lang]:not([data-lang="ko"]),
-:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="fr"]):not([data-lang="de"]):not([data-lang="it"]):not([data-lang="pl"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]):not([data-lang="ru"]):not([data-lang="uk"]):not([data-lang="ko"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
+:root[data-lang="ar"] body [data-lang]:not([data-lang="ar"]),
+:root:not([data-lang="pt"]):not([data-lang="es"]):not([data-lang="fr"]):not([data-lang="de"]):not([data-lang="it"]):not([data-lang="pl"]):not([data-lang="nl"]):not([data-lang="tr"]):not([data-lang="id"]):not([data-lang="ja"]):not([data-lang="ru"]):not([data-lang="uk"]):not([data-lang="ko"]):not([data-lang="ar"]) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
 .skip:focus { inset-inline-start: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }
 @media (prefers-reduced-motion: reduce) {
@@ -229,7 +235,7 @@ p { margin: 0; text-wrap: pretty; }
 /* Store badges (stores.js): the one for the visitor's platform stands out, filled; the others sit on the page's
    surface; a store that doesn't offer the app yet is dashed, with no link. */
 .store {
-  display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 8px 20px 8px 16px;
+  display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 8px 20px; padding-inline-start: 16px;
   border-radius: 14px; text-decoration: none;
   background: var(--surface); color: var(--fg); box-shadow: inset 0 0 0 1px var(--border);
   transition: background 0.15s, transform 0.15s;
@@ -321,7 +327,7 @@ a.status .icon { width: 15px; height: 15px; }
 }
 .hero-grid { display: grid; gap: 48px; align-items: center; }
 .eyebrow {
-  display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px 6px 8px; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; padding-inline-start: 8px; border-radius: 999px;
   background: var(--surface); border: 1px solid var(--border); color: var(--fg-soft);
   font-size: 13px; font-weight: 500;
 }
@@ -490,7 +496,7 @@ a.status .icon { width: 15px; height: 15px; }
 .pv-sheet .amount { font-size: 24px; letter-spacing: -0.03em; }
 .picks { display: flex; flex-wrap: wrap; gap: 6px; }
 .pick {
-  display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px 3px 3px; border-radius: 999px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; padding-inline-start: 3px; border-radius: 999px; cursor: pointer;
   border: 1px solid var(--border); background: transparent; color: var(--fg-soft); font: 500 11.5px/1.2 var(--font);
   transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
@@ -543,7 +549,7 @@ a.status .icon { width: 15px; height: 15px; }
 
 .float {
   position: absolute; display: flex; align-items: center; gap: 10px;
-  padding: 10px 14px 10px 10px; border-radius: 16px; font-size: 13px; line-height: 1.35;
+  padding: 10px 14px; padding-inline-start: 10px; border-radius: 16px; font-size: 13px; line-height: 1.35;
   background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow-lg);
   max-width: 240px;
 }
@@ -559,7 +565,7 @@ a.status .icon { width: 15px; height: 15px; }
 @media (max-width: 520px) {
   /* On a phone the cards sit on the device's edges, off what the preview shows. */
   .showcase { padding: 40px 0 44px; }
-  .float { font-size: 12px; max-width: 200px; padding: 8px 12px 8px 8px; }
+  .float { font-size: 12px; max-width: 200px; padding: 8px 12px; padding-inline-start: 8px; }
   .float-pay { inset-inline-end: 0; top: 4px; }
   .float-sync { inset-inline-start: 0; bottom: 6px; }
 }
@@ -625,7 +631,7 @@ button.chip:hover:not([aria-pressed="true"]) { background: color-mix(in srgb, va
 .split-row {
   position: relative; isolation: isolate; overflow: hidden;
   display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px;
-  min-height: 48px; padding: 6px 8px 6px 10px; border-radius: 10px; background: var(--card); border: 1px solid var(--border-subtle);
+  min-height: 48px; padding: 6px 8px; padding-inline-start: 10px; border-radius: 10px; background: var(--card); border: 1px solid var(--border-subtle);
   transition: opacity 0.2s;
 }
 /* The light: the row's part of the bill. */
@@ -669,7 +675,7 @@ label.split-row { cursor: pointer; }
 .split-items { container-type: inline-size; }
 .split-item {
   display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name price" "faces faces";
-  align-items: center; gap: 6px 12px; padding: 8px 10px 8px 12px; border-radius: 10px; background: var(--card); border: 1px solid var(--border-subtle);
+  align-items: center; gap: 6px 12px; padding: 8px 10px; padding-inline-start: 12px; border-radius: 10px; background: var(--card); border: 1px solid var(--border-subtle);
 }
 /* With room, the faces sit between the name and the price, one line per item. */
 @container (min-width: 380px) {
