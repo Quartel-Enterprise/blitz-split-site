@@ -115,14 +115,15 @@ p { margin: 0; text-wrap: pretty; }
 :root:is([lang="ru"], [lang="uk"], [lang="ko"], [lang="hi"], [lang="th"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
 /* Korean breaks lines between words (its spaces), never inside one, as Korean text does. */
 :root[lang="ko"] { word-break: keep-all; overflow-wrap: break-word; }
-/* Arabic and Hebrew draw in the system font, as the bundled Geist subsets have neither: no Latin tracking, which would
-   also break Arabic's joined letters apart. */
-:root:is([lang="ar"], [lang="he"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
 /* Vietnamese stacks a tone mark over a circumflex or breve (ể, ở, ặ), letters the bundled Geist subsets don't have: a
    word would mix Geist's letters with the system font's accented ones, so Vietnamese draws in the system font, as
-   Vietnamese sites do, without the tracking tuned for Geist. */
-:root[lang="vi"] { --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-:root[lang="vi"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+   Vietnamese sites do: the page, its receipt (in the system's monospace) and its name in every other language's menus. */
+:root[lang="vi"], :root [lang="vi"] { --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+:root [lang="vi"] { font-family: var(--font); }
+:root[lang="vi"] .paper { --mono: ui-monospace, SFMono-Regular, Menlo, monospace; }
+/* Arabic, Hebrew and Vietnamese draw in the system font, as the bundled Geist subsets have none of Arabic and Hebrew
+   (nor Vietnamese's stacked marks): no Latin tracking, which would also break Arabic's joined letters apart. */
+:root:is([lang="ar"], [lang="he"], [lang="vi"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
 /* Right to left (boot.js sets dir="rtl" for Arabic and Hebrew): the sides are written as start and end, so the layout mirrors by
    itself; what still points one way is turned here. Arrows and the back chevron point the reading way, bars grow from
    the start, and the switch's knob slides toward the end. */
