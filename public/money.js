@@ -4,15 +4,22 @@
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah) shows it scaled to whole units, so
 // a $48.60 ride reads ₩48,600, ¥4,860 or Rp486.000 and every split still adds up exactly.
 (function () {
-  // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents]
+  // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents,
+  //  digits in each group above the first three: 2 in India, so ₹1,20,000]
   const CURRENCY = window.localized({
     en: ["$", ".", ","], pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], es: ["$", ",", "."],
     fr: ["", ",", "\u202f", "\u00a0€"], de: ["", ",", ".", "\u00a0€"], it: ["", ",", ".", "\u00a0€"],
     pl: ["", ",", "\u00a0", "\u00a0zł"], nl: ["€\u00a0", ",", "."], tr: ["₺", ",", "."], id: ["Rp\u00a0", ",", ".", "", 100],
     ja: ["¥", ".", ",", "", 1], ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"], ko: ["₩", ".", ",", "", 10],
+    hi: ["₹", ".", ",", "", 0, 2],
   });
-  const [before, decimal, thousands, after = "", scale = 0] = CURRENCY;
-  const group = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, thousands);
+  const [before, decimal, thousands, after = "", scale = 0, upper = 3] = CURRENCY;
+  const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
+  function group(n) {
+    const digits = String(n);
+    const head = digits.slice(0, -3);
+    return head ? head.replace(upperGroups, thousands) + thousands + digits.slice(-3) : digits;
+  }
 
   // The number alone, as a field holds it: no decimals when they are zero.
   function plain(cents) {

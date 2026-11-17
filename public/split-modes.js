@@ -427,6 +427,34 @@
         less: "{name} 몫 하나 줄이기", more: "{name} 몫 하나 늘리기", had: "먹은 사람: {item}",
       },
     },
+    // Hindi: no "|" either, as Hindi counts in the form the numbers take here (one person has its own message).
+    hi: {
+      bill: "पिज़्ज़ा नाइट", paid: "Pedro ने भुगतान किया", notIn: "इसमें शामिल नहीं",
+      each: "हर एक {a}", among: "{a}, {n} लोगों में बंटा।", amongOne: "{a}, सिर्फ़ 1 व्यक्ति पर।", out: "{name} शामिल नहीं है।",
+      nobody: "अभी कोई शामिल नहीं", nobodyEqual: "{a} बांटने के लिए कम से कम एक व्यक्ति चुनें।",
+      checkAll: "सभी चुनें", uncheckAll: "सभी हटाएं",
+      left: "{a} बाकी", over: "{a} ज़्यादा", closed: "हिसाब मिल गया: {a}",
+      progress: "अब तक {b} में से {a}।", closedMsg: "सभी हिस्से मिलकर कुल के बराबर हैं।",
+      parts: "{a} के {n} हिस्से", personParts: "{name} के {n} हिस्से हैं।", nobodyShares: "{a} बांटने के लिए कम से कम एक व्यक्ति को हिस्सा दें।",
+      ofEach: "हर खर्च का {p}", ofBill: "खर्च का {p}", incomeDetail: "हर एक का हिस्सा उसकी आय के अनुसार होता है।", perMonth: "/महीना",
+      service: "सर्विस ({p})", serviceSub: "हर किसी ने जो लिया, उसके अनुपात में",
+      loose: "हर आइटम पर मार्क करें कि किसने लिया", looseDetail: "किसने लिया, यह मार्क करने के लिए हर आइटम पर चेहरों को टैप करें।",
+      itemsClosed: "आइटम में {a} और सर्विस के {b}।", nobodyItem: "कोई नहीं चुना", eachItem: "हर एक {a}",
+      items: { pizza: "लार्ज पिज़्ज़ा", beer: "बियर", salad: "सलाद", draft: "ड्राफ़्ट बियर", shrimp: "झींगा प्लैटर" },
+      receiptBill: "हार्बर बार",
+      hint: {
+        equal: "जब बराबर न बंटे, तो बचे हुए पैसे भुगतान करने वाले को जाते हैं।",
+        amounts: "जिसकी रकम {zero} रहती है, वह इस खर्च में शामिल नहीं होता।",
+        percent: "सिर्फ़ पूर्ण संख्याएं। बचे हुए पैसे भुगतान करने वाले को जाते हैं।",
+        shares: "हिस्से तब इस्तेमाल करें जब किसी का ज़्यादा हो, जैसे जो किसी मेहमान को साथ लाया हो।",
+        income: "आय डिवाइस पर ही रहती है। ग्रुप को सिर्फ़ प्रतिशत दिखते हैं।",
+        items: "हर आइटम उन लोगों में बंटता है जिन्होंने उसे लिया, और सर्विस इस हिसाब से कि किसने क्या लिया।",
+      },
+      label: {
+        amount: "{name} की रकम", percent: "{name} का प्रतिशत", income: "{name} की मासिक आय",
+        less: "{name} का एक हिस्सा कम करें", more: "{name} का एक हिस्सा बढ़ाएं", had: "{item} किसने लिया",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
