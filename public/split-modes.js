@@ -548,6 +548,34 @@
         less: "חלק אחד פחות ל-{name}", more: "חלק אחד יותר ל-{name}", had: "מי הזמין: {item}",
       },
     },
+    // Thai: one form, so no message holds a "|"; a space around a name or an amount, and no full stop.
+    th: {
+      bill: "คืนพิซซ่า", paid: "Pedro จ่าย", notIn: "ไม่ได้อยู่ในบิลนี้",
+      each: "คนละ {a}", among: "{a} หาร {n} คน", amongOne: "{a} สำหรับ 1 คน", out: "{name} ไม่ร่วมหาร",
+      nobody: "ยังไม่มีใครร่วมหาร", nobodyEqual: "เลือกอย่างน้อย 1 คนเพื่อหาร {a}",
+      checkAll: "เลือกทั้งหมด", uncheckAll: "ไม่เลือกทั้งหมด",
+      left: "เหลือ {a}", over: "เกิน {a}", closed: "ครบยอดพอดี: {a}",
+      progress: "{a} จาก {b} แล้ว", closedMsg: "ส่วนต่างๆ รวมกันได้เท่ายอดรวม",
+      parts: "{n} ส่วน ส่วนละ {a}", personParts: "{name} มี {n} ส่วน", nobodyShares: "ให้ส่วนกับอย่างน้อย 1 คนเพื่อหาร {a}",
+      ofEach: "{p} ของแต่ละบิล", ofBill: "{p} ของบิล", incomeDetail: "ส่วนของแต่ละคนเป็นไปตามรายได้", perMonth: "/เดือน",
+      service: "ค่าบริการ ({p})", serviceSub: "ตามสัดส่วนที่แต่ละคนสั่ง",
+      loose: "ระบุว่าใครสั่งแต่ละรายการ", looseDetail: "แตะใบหน้าบนแต่ละรายการเพื่อระบุว่าใครสั่ง",
+      itemsClosed: "รายการ {a} และค่าบริการ {b}", nobodyItem: "ไม่ได้เลือกใคร", eachItem: "คนละ {a}",
+      items: { pizza: "พิซซ่าถาดใหญ่", beer: "เบียร์", salad: "สลัด", draft: "เบียร์สด", shrimp: "ชุดกุ้งรวม" },
+      receiptBill: "บาร์ริมท่า",
+      hint: {
+        equal: "หากหารไม่ลงตัว เศษสตางค์ที่เหลือจะเป็นของคนจ่าย",
+        amounts: "คนที่ยังเป็น {zero} จะไม่ร่วมหารบิลนี้",
+        percent: "ใช้จำนวนเต็มเท่านั้น เศษสตางค์ที่เหลือจะเป็นของคนจ่าย",
+        shares: "ใช้ส่วนเมื่อบางคนมีมากกว่า เช่น คนที่พาเพื่อนมาด้วย",
+        income: "รายได้จะอยู่ในอุปกรณ์เท่านั้น กลุ่มเห็นแค่เปอร์เซ็นต์",
+        items: "แต่ละรายการหารกันระหว่างคนที่สั่ง และค่าบริการหารตามที่แต่ละคนสั่ง",
+      },
+      label: {
+        amount: "ส่วนของ {name}", percent: "เปอร์เซ็นต์ของ {name}", income: "รายได้ต่อเดือนของ {name}",
+        less: "ลดส่วนของ {name} 1 ส่วน", more: "เพิ่มส่วนของ {name} 1 ส่วน", had: "ใครสั่ง {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

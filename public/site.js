@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: … }
 // before this script, and blocks written per language carry data-lang with the language ("en", "pt", "fr"…).
 (function () {
   const params = new URLSearchParams(location.search);

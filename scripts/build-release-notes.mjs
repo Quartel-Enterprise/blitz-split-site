@@ -14,13 +14,11 @@
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
+import { ICON, LANGS, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
 
 // The paths below are the repository's, wherever the script is run from.
 process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
-// The order of the page's blocks. English is what every other language is checked against.
-const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he"];
 const SOURCE_DIR = "release-notes";
 const FEED_DIR = "public/release-notes";
 // The page's shell, written by hand: its header, its footer and its strings, with nothing between <main> and </main>.
@@ -52,6 +50,7 @@ const CHROME = {
   hi: { language: "हिन्दी", brand: "Blitz Split", locale: "hi", title: "नया क्या है", lead: "ऐप के हर वर्शन में क्या बदला।", showBeta: "बीटा वर्शन दिखाएं", beta: "बीटा", empty: "अभी कोई स्टेबल वर्शन नहीं है। जो टेस्ट हो रहा है उसे देखने के लिए बीटा वर्शन चालू करें।", platforms: { android: "Android", ios: "iPhone और iPad", mac: "Mac", web: "वेब" } },
   zh: { language: "中文（简体）", brand: "Blitz Split", locale: "zh-Hans", title: "更新说明", lead: "应用每个版本的变化。", showBeta: "显示测试版", beta: "测试版", empty: "还没有正式版。打开测试版，看看正在测试的内容。", platforms: { android: "Android", ios: "iPhone和iPad", mac: "Mac", web: "网页版" } },
   he: { language: "עברית", brand: "Blitz Split", locale: "he", title: "מה חדש", lead: "מה השתנה בכל גרסה של האפליקציה.", showBeta: "הצגת גרסאות בטא", beta: "בטא", empty: "עדיין אין גרסה יציבה. אפשר להפעיל את גרסאות הבטא כדי לראות מה נמצא בבדיקה.", platforms: { android: "Android", ios: "iPhone ו-iPad", mac: "Mac", web: "ווב" } },
+  th: { language: "ไทย", brand: "Blitz Split", locale: "th", title: "บันทึกประจำรุ่น", lead: "สิ่งที่เปลี่ยนไปในแอปแต่ละเวอร์ชัน", showBeta: "แสดงเวอร์ชันเบต้า", beta: "เบต้า", empty: "ยังไม่มีเวอร์ชันเสถียร เปิดเวอร์ชันเบต้าเพื่อดูสิ่งที่กำลังทดสอบอยู่", platforms: { android: "Android", ios: "iPhone และ iPad", mac: "Mac", web: "เว็บ" } },
 };
 
 class NotesError extends Error {}

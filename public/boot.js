@@ -4,11 +4,11 @@
 // dark, so site.css writes the dark tokens once: System takes the system's theme here, and follows it when it changes.
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
-// Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese or Hebrew, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language menu, then
+// Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew or Thai, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language menu, then
 // the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
 // browser language (zh-Hant, zh-TW, zh-HK, zh-MO) isn't Simplified: as in the apps, it is skipped for the next one.
 (function () {
-  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he"];
+  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th"];
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
   function stored(key) {
