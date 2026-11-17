@@ -31,12 +31,13 @@
   const platform = isAndroid ? "android" : isApple ? "apple" : "desktop";
   root.dataset.platform = isAndroid ? "android" : isIos ? "ios" : isMac ? "mac" : "desktop";
 
-  // Each store's link in the visitor's language, or none while the store doesn't offer the app.
+  // Each store's link in the visitor's language, or none while the store doesn't offer the app. Chinese names no App
+  // Store storefront: China's lists only apps with an ICP filing, so Apple takes the visitor's own.
   const playUrl = CONFIG.googlePlayLive
     ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", zh: "zh-CN", en: "en" })}`
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", ko: "kr", zh: "cn", en: "us" })}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", zh: "", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },

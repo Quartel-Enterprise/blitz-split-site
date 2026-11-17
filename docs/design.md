@@ -27,8 +27,9 @@ glues a particle to a name or an amount filled in at run time ("결제: Ana", "A
 Simplified Chinese (`zh`, the page's tag `zh-Hans`) is mainland China's: it talks to the visitor as 你 (never 您), puts
 no space between Chinese and a name, a number or a Latin word ("Pedro支付", "4人"), writes full-width punctuation and
 “” quotes, counts in one form (no `|`), keeps Japanese's strict line breaking and names the app's screens with the app's
-own words (群组, 账单, 分摊, 余额, 结清). Every `zh-*` browser language picks it, Traditional Chinese's (`zh-TW`,
-`zh-Hant`) too, until the site has Traditional Chinese, which will sit beside it as `zh-Hant`, as pt-PT does beside pt.
+own words (群组, 账单, 分摊, 余额, 结清). A Simplified `zh-*` browser language picks it; a Traditional one (`zh-Hant`,
+`zh-TW`, `zh-HK`, `zh-MO`) doesn't, as in the apps, and the next browser language does, English for none, until the
+site has Traditional Chinese, which will sit beside it as `zh-Hant`, as pt-PT does beside pt.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros

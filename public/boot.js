@@ -5,8 +5,8 @@
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
 // Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean or Simplified Chinese, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language menu, then
-// the browser's languages in order of preference, English when none of them is one of ours. Every zh-* browser
-// language, Traditional Chinese's (zh-TW, zh-Hant) too, reads Simplified Chinese until the site has Traditional's.
+// the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
+// browser language (zh-Hant, zh-TW, zh-HK, zh-MO) isn't Simplified: as in the apps, it is skipped for the next one.
 (function () {
   const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "zh"];
   const root = document.documentElement;
@@ -22,9 +22,18 @@
   const variantOf = (tag) => VARIANTS.find((variant) => variant.toLowerCase() === String(tag).toLowerCase().replace("_", "-"));
   const normalize = (tag) => variantOf(tag) || String(tag).toLowerCase().split("-")[0];
   const known = (code) => SUPPORTED.includes(code) || VARIANTS.includes(code);
+  // Traditional Chinese, as the apps tell it: by its script when the tag has one (zh-Hant-CN is Traditional, zh-Hans-HK
+  // Simplified), else by a region that writes it (Taiwan, Hong Kong, Macau).
+  const traditional = (tag) => {
+    const [language, ...rest] = String(tag).toLowerCase().split(/[-_]/);
+    if (language !== "zh") return false;
+    const script = rest.find((part) => part.length === 4);
+    return script ? script === "hant" : rest.some((part) => ["tw", "hk", "mo"].includes(part));
+  };
 
   // First, so the scripts that read data-lang have it even if the theme below fails.
   const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
+    .filter((tag) => !traditional(tag))
     .map(normalize)
     .find(known);
   const pick = [params.get("lang"), stored("lang")].map((code) => variantOf(code) || code).concat(preferred).find(known) || "en";
