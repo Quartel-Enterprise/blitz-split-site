@@ -34,10 +34,10 @@
   // Each store's link in the visitor's language, or none while the store doesn't offer the app. Chinese names no App
   // Store storefront: China's lists only apps with an ICP filing, so Apple takes the visitor's own.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", zh: "zh-CN", en: "en" })}`
+    ? `${CONFIG.googlePlayUrl}&hl=${root.dataset.lang === "zh" ? "zh-CN" : root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's as Google Play writes it
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", zh: "", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -195,6 +195,24 @@
       mismatchBody: "지금 {platform} 기기를 쓰고 있어요. 가장 잘 쓰려면 {in} 앱을 받으세요.",
       mismatchGo: "{to} 이동", mismatchStay: "그대로 {to} 이동", close: "닫기",
       in: { play: "Google Play에서", appstore: "App Store에서" }, to: { play: "Google Play로", appstore: "App Store로" },
+    },
+    ar: {
+      play: ["متوفر على", "قريبًا على"], appstore: ["تنزيل من", "قريبًا على"], web: ["فتح في", "قريبًا في"], browser: "المتصفح",
+      getApp: "تنزيل التطبيق", openWeb: "فتح تطبيق الويب", soon: "قريبًا",
+      playLive: "متوفر على Google Play", appStoreLive: "متوفر على App Store", webLive: "فتح تطبيق الويب",
+      mismatchTitle: "اختيار المتجر",
+      mismatchBody: "جهازك يعمل بنظام {platform}. للحصول على أفضل تجربة، يُنصح بتنزيل التطبيق {in}.",
+      mismatchGo: "الانتقال {to}", mismatchStay: "المتابعة {to}", close: "إغلاق",
+      in: { play: "من Google Play", appstore: "من App Store" }, to: { play: "إلى Google Play", appstore: "إلى App Store" },
+    },
+    hi: {
+      play: ["इसे पाएं", "जल्द आ रहा है"], appstore: ["डाउनलोड करें", "जल्द आ रहा है"], web: ["अभी खोलें", "जल्द आ रहा है"], browser: "ब्राउज़र",
+      getApp: "ऐप पाएं", openWeb: "वेब ऐप खोलें", soon: "जल्द आ रहा है",
+      playLive: "Google Play पर उपलब्ध", appStoreLive: "App Store पर उपलब्ध", webLive: "वेब ऐप खोलें",
+      mismatchTitle: "अपना स्टोर चुनें",
+      mismatchBody: "आप {platform} पर हैं। सबसे अच्छे अनुभव के लिए ऐप {in} पाएं।",
+      mismatchGo: "{to} जाएं", mismatchStay: "फिर भी {to} जाएं", close: "बंद करें",
+      in: { play: "Google Play से", appstore: "App Store से" }, to: { play: "Google Play पर", appstore: "App Store पर" },
     },
     zh: {
       play: ["立即下载", "即将登陆"], appstore: ["立即下载", "即将登陆"], web: ["立即打开", "即将登陆"], browser: "浏览器",

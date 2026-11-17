@@ -4,16 +4,24 @@
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah) shows it scaled to whole units, so
 // a $48.60 ride reads ₩48,600, ¥4,860 or Rp486.000 and every split still adds up exactly.
 (function () {
-  // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents]
+  // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents,
+  //  digits in each group above the first three: 2 in India, so ₹1,20,000]
   const CURRENCY = window.localized({
     en: ["$", ".", ","], pt: ["R$ ", ",", "."], "pt-PT": ["", ",", "\u00a0", "\u00a0€"], es: ["$", ",", "."],
     fr: ["", ",", "\u202f", "\u00a0€"], de: ["", ",", ".", "\u00a0€"], it: ["", ",", ".", "\u00a0€"],
     pl: ["", ",", "\u00a0", "\u00a0zł"], nl: ["€\u00a0", ",", "."], tr: ["₺", ",", "."], id: ["Rp\u00a0", ",", ".", "", 100],
     ja: ["¥", ".", ",", "", 1], ru: ["", ",", "\u00a0", "\u00a0₽"], uk: ["", ",", "\u00a0", "\u00a0₴"], ko: ["₩", ".", ",", "", 10],
+    ar: ["$", ".", ","],
+    hi: ["₹", ".", ",", "", 0, 2],
     zh: ["¥", ".", ","],
   });
-  const [before, decimal, thousands, after = "", scale = 0] = CURRENCY;
-  const group = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, thousands);
+  const [before, decimal, thousands, after = "", scale = 0, upper = 3] = CURRENCY;
+  const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
+  function group(n) {
+    const digits = String(n);
+    const head = digits.slice(0, -3);
+    return head ? head.replace(upperGroups, thousands) + thousands + digits.slice(-3) : digits;
+  }
 
   // The number alone, as a field holds it: no decimals when they are zero.
   function plain(cents) {
@@ -22,11 +30,14 @@
     const frac = abs % 100;
     return group(Math.floor(abs / 100)) + (frac ? decimal + String(frac).padStart(2, "0") : "");
   }
+  // Why: in a right-to-left page a sign and a symbol around Latin digits would come apart ("$12.15−"), so the amount
+  // reads as one left-to-right isolate there, as the app writes it.
+  const isolate = document.documentElement.dir === "rtl" ? (text) => `\u2066${text}\u2069` : (text) => text;
   // With its symbol, and "+" or "−" when signed.
   function format(cents, signed) {
     const text = before + plain(cents) + after;
-    if (!signed || cents === 0) return text;
-    return (cents > 0 ? "+" : "−") + text;
+    if (!signed || cents === 0) return isolate(text);
+    return isolate((cents > 0 ? "+" : "−") + text);
   }
   // What someone types, in cents. The last "," or "." followed by one or two digits is the decimal point, whatever the
   // language, so "33,5", "33.50" and "6.000" all read as meant; a currency with no cents in use drops those decimals

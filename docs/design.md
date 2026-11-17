@@ -5,11 +5,11 @@
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean and Simplified Chinese. The markup is in English; each page carries its other languages' strings in
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi and Simplified Chinese. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the header's translate-icon menu (as Bible Planner's) or the footer's switch picks another, kept for the next visit;
-`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|zh` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a sixteenth language: only the exact tag `pt-PT` (a browser's
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not an eighteenth language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
 `pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
@@ -24,6 +24,18 @@ tracking; Turkish writes the percent sign first (%10). Russian and Ukrainian cou
 `|` (21, 31… take `one`, so they always write all three). Korean breaks lines
 only between words (`word-break: keep-all`), drops the Latin headings' tracking, counts in one form (no `|`), and never
 glues a particle to a name or an amount filled in at run time ("결제: Ana", "Ana 님이"), as the app writes them.
+Arabic is Modern Standard Arabic for every `ar` tag and reads right to left: `boot.js` sets `dir="rtl"` on `<html>`
+(`RIGHT_TO_LEFT`, kept the same in `boot.js` and `src/index.js`, today `ar` alone), `site.css` writes every side
+as start and end (`margin-inline-start`, `inset-inline-end`, `text-align: end`…) so the page mirrors by itself, and
+turns what points one way under `:root[dir="rtl"]` (the arrows and the back chevron, the bars that grow, the switch's
+knob, the header's scroll line). Like the app, it never says anyone's gender: a label ("الدافع: Ana"), a verbal noun
+("تسجيل دفعة") or the passive, the masculine as the generic only where nothing else reads naturally; it writes Latin
+digits, «» around names of things, and counts in six forms, `zero|one|two|few|many|other` in a message with `|`.
+Its amounts are dollars, as Spanish's, each one a left-to-right isolate (`money.js`, and `\u2066…\u2069` in the
+page's own) so a sign and a symbol stay with their number. Its receipt and split card have fresh juice and a soft
+drink where the others have beer.
+Hindi talks to the visitor as आप, ends sentences with the danda (।), counts in one form except where a noun has a singular
+(1 हिस्सा, 2 हिस्से: `one|few|many`, Hindi having no `few`; one person has its own message) and names the app's screens with the app's own words.
 Simplified Chinese (`zh`, the page's tag `zh-Hans`) is mainland China's: it talks to the visitor as 你 (never 您), puts
 no space between Chinese and a name, a number or a Latin word ("Pedro支付", "4人"), writes full-width punctuation and
 “” quotes, counts in one form (no `|`), keeps Japanese's strict line breaking and names the app's screens with the app's
@@ -33,9 +45,9 @@ site has Traditional Chinese, which will sit beside it as `zh-Hant`, as pt-PT do
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
-in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, yuan in Simplified Chinese (¥, with its fen, so the demo's
-numbers stay as they are: ¥48.60, ¥1,200), and the rupiah, the yen and
-the won, which have no cents in use. The demo keeps every amount in cents and those three show it scaled to whole
+in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, grouped
+as India writes them (₹1,20,000), yuan in Simplified Chinese (¥, with its fen, so the demo's numbers stay as they are:
+¥48.60, ¥1,200), and the rupiah, the yen and the won, which have no cents in use. The demo keeps every amount in cents and those three show it scaled to whole
 units (a cent is Rp100, ¥1 and ₩10), so a $48.60 ride reads Rp486.000, ¥4,860 or ₩48,600 and every split still adds
 up exactly; an amount typed in the split card rounds to the nearest ₩10 or Rp100, and a field grows with what it
 holds. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way, by hand, so the
@@ -49,7 +61,7 @@ site picks a language from; each script's strings and formats still carry a key 
 
 The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the Latin and Latin Extended subsets Google
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
-`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean and Simplified Chinese fall back to the system's font, since neither subset has their
+`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi and Simplified Chinese fall back to the system's font, since neither subset has their
 scripts.
 
 ## Motion

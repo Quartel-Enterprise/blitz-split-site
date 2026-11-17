@@ -276,6 +276,43 @@
       bills: (n) => `지출 ${n}건`,
       titles: { b1: "라고아 게스트하우스", b2: "히베이랑 저녁 식사", b3: "해변까지 교통비", p1: "해변 아이스크림", p2: "일주일 장보기", p3: "주차" },
     },
+    // Arabic: the app never knows anyone's gender, so a count, a payer or a payment is a label ("الدافع: Ana") or a
+    // verbal noun, never a conjugated verb, as the app writes them.
+    ar: {
+      paid: "الدافع: {name}", notIn: "غير مشارك",
+      members: (people, bills) => `الأشخاص: ${people} · الفواتير: ${bills}`,
+      toGet: "لك", youOwe: "عليك", settled: "تمت التسوية بالكامل", owesYou: "المستحق لك", youOweTitle: "المستحق عليك",
+      eachOne: "رصيد كل شخص", getsBack: "دائن", owes: "مدين", even: "تمت التسوية",
+      toSettle: "للتسوية", total: "إجمالي المجموعة", lodging: "الإقامة", food: "الطعام", transport: "المواصلات",
+      sheetTitle: "تقسيم فاتورة", description: "الوصف", amount: "المبلغ", whoPaid: "الدافع",
+      splitAmong: "التقسيم بالتساوي بين", each: "{value} لكل شخص", cancel: "إلغاء", save: "حفظ", close: "إغلاق",
+      queue: (n) => `التغييرات في قائمة الانتظار: ${n}`,
+      split: "طريقة التقسيم", yourShare: "حصتك", deleteBill: "حذف الفاتورة",
+      recordPayment: "تسجيل دفعة", record: "تسجيل", viaMethod: "عبر تحويل", payment: "دفعة", deletePayment: "حذف الدفعة",
+      // Why "→": the names are Latin, so the line runs left to right even in a right-to-left page, as the Balances tab's does.
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who}: دفعة ${value} إليك`,
+      paidTotal: "إجمالي المدفوع", shareTotal: "الحصة من الفواتير", balance: "الرصيد",
+      bills: (n) => `الفواتير: ${n}`,
+      titles: { b1: "نُزل لاغوا", b2: "عشاء في ريبيراو", b3: "مشوار إلى الشاطئ", p1: "آيس كريم على الشاطئ", p2: "مشتريات الأسبوع", p3: "موقف السيارات" },
+    },
+    hi: {
+      paid: "{name} ने भुगतान किया", notIn: "इसमें शामिल नहीं",
+      members: (people, bills) => `${people} ${people === 1 ? "व्यक्ति" : "लोग"} · ${bills} खर्च`,
+      toGet: "वापस मिलने हैं", youOwe: "आपको देने हैं", settled: "हिसाब बराबर", owesYou: "आपको किससे लेने हैं", youOweTitle: "आपको किसे देने हैं",
+      eachOne: "हर एक का बैलेंस", getsBack: "वापस मिलेंगे", owes: "देने हैं", even: "हिसाब बराबर",
+      toSettle: "हिसाब चुकाने के लिए", total: "ग्रुप का कुल", lodging: "ठहरना", food: "खाना", transport: "परिवहन",
+      sheetTitle: "खर्च बांटें", description: "विवरण", amount: "रकम", whoPaid: "किसने भुगतान किया",
+      splitAmong: "इनमें बराबर बांटें", each: "हर एक {value}", cancel: "रद्द करें", save: "सहेजें", close: "बंद करें",
+      queue: (n) => `कतार में ${n} बदलाव`,
+      split: "कैसे बांटा गया", yourShare: "आपका हिस्सा", deleteBill: "खर्च हटाएं",
+      recordPayment: "भुगतान दर्ज करें", record: "दर्ज करें", viaMethod: "ट्रांसफ़र से", payment: "भुगतान", deletePayment: "भुगतान हटाएं",
+      payLine: (from, to) => `${name(from)} ने ${name(to)} को भुगतान किया`,
+      paidYou: (who, value) => `${who} ने आपको ${value} का भुगतान किया`,
+      paidTotal: "कुल भुगतान", shareTotal: "खर्चों में हिस्सा", balance: "बैलेंस",
+      bills: (n) => `${n} खर्च`,
+      titles: { b1: "लागोआ गेस्टहाउस", b2: "रिबेराओ में डिनर", b3: "बीच तक का सफ़र", p1: "बीच पर आइसक्रीम", p2: "हफ़्ते भर का राशन", p3: "पार्किंग" },
+    },
     // Simplified Chinese: one form for counts, and no space between Chinese and a name or a number ("Pedro支付", "4人").
     zh: {
       paid: "{name}支付", notIn: "不参与",
@@ -732,8 +769,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    // The page's own tag, which boot.js set (pt-BR, pt-PT, zh-Hans…).
-    const format = new Intl.DateTimeFormat(root.lang, { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();
