@@ -9,6 +9,9 @@
 @font-face { font-family: "Geist"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("/fonts/geist-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 @font-face { font-family: "Geist Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/geist-mono-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: "Geist Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/geist-mono-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* Chinese text's quotes, ellipsis and middle dot, which Geist's Latin subset also covers, in the system's CJK font: its
+   full-width forms, not Geist's narrow ones squeezed against the Han. Only Simplified Chinese's --font lists it. */
+@font-face { font-family: "CJK Punctuation"; font-style: normal; font-weight: 400 700; src: local("PingFangSC-Regular"), local("PingFang SC Regular"), local("NotoSansCJKsc-Regular"), local("Noto Sans CJK SC"), local("NotoSansSC-Regular"), local("Noto Sans SC"), local("MicrosoftYaHei"), local("Microsoft YaHei"); unicode-range: U+00B7, U+2018-2019, U+201C-201D, U+2026; }
 
 :root {
   color-scheme: light;
@@ -98,8 +101,15 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.025em; line-height: 1.15; text-wrap: 
 p { margin: 0; text-wrap: pretty; }
 /* Japanese: strict line-breaking rules (no small kana or closing punctuation at a line's start), breaks between
    phrases rather than anywhere in a heading, and none of the Latin headings' tight tracking. */
-:root[lang="ja"] { line-break: strict; }
+:root:is([lang="ja"], [lang="zh-Hans"]) { line-break: strict; }
 :root[lang="ja"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; word-break: auto-phrase; }
+/* Simplified Chinese: the same strict line-breaking (above: no closing punctuation at a line's start), and its Han in
+   the system font, as the bundled Geist subsets have none: the tracking tuned for Geist would cramp it. */
+:root[lang="zh-Hans"] :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+:root[lang="zh-Hans"] { --font: "CJK Punctuation", "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+/* Chinese has no spaces, so a heading would break anywhere: it breaks at its punctuation (，。) and where its words
+   mark a <wbr>, keeping each phrase whole, as Japanese's auto-phrase does, and inside one only when it doesn't fit. */
+:root[lang="zh-Hans"] :is(h1, h2, h3) { word-break: keep-all; overflow-wrap: break-word; }
 /* Russian and Ukrainian draw their Cyrillic, Korean its Hangul and Hindi its Devanagari in the system font, as the
    bundled Geist subsets have none of them: the tracking tuned for Geist would cramp them. */
 :root:is([lang="ru"], [lang="uk"], [lang="ko"], [lang="hi"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
@@ -146,6 +156,7 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="ko"] body [data-lang]:not([data-lang="ko"]),
 :root[data-lang="ar"] body [data-lang]:not([data-lang="ar"]),
 :root[data-lang="hi"] body [data-lang]:not([data-lang="hi"]),
+:root[data-lang="zh"] body [data-lang]:not([data-lang="zh"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
 .skip:focus { inset-inline-start: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }

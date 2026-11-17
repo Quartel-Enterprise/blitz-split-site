@@ -31,12 +31,13 @@
   const platform = isAndroid ? "android" : isApple ? "apple" : "desktop";
   root.dataset.platform = isAndroid ? "android" : isIos ? "ios" : isMac ? "mac" : "desktop";
 
-  // Each store's link in the visitor's language, or none while the store doesn't offer the app.
+  // Each store's link in the visitor's language, or none while the store doesn't offer the app. Chinese names no App
+  // Store storefront: China's lists only apps with an ICP filing, so Apple takes the visitor's own.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${root.lang}` // the page's tag, as boot.js set it: pt-BR, pt-PT, en, hi…
+    ? `${CONFIG.googlePlayUrl}&hl=${root.dataset.lang === "zh" ? "zh-CN" : root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's as Google Play writes it
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt", pt: "br", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "jp", ru: "ru", uk: "ua", ko: "kr", ar: "sa", hi: "in", en: "us" })}/app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -212,6 +213,15 @@
       mismatchBody: "आप {platform} पर हैं। सबसे अच्छे अनुभव के लिए ऐप {in} पाएं।",
       mismatchGo: "{to} जाएं", mismatchStay: "फिर भी {to} जाएं", close: "बंद करें",
       in: { play: "Google Play से", appstore: "App Store से" }, to: { play: "Google Play पर", appstore: "App Store पर" },
+    },
+    zh: {
+      play: ["立即下载", "即将登陆"], appstore: ["立即下载", "即将登陆"], web: ["立即打开", "即将登陆"], browser: "浏览器",
+      getApp: "下载应用", openWeb: "打开网页版", soon: "即将上线",
+      playLive: "在Google Play下载", appStoreLive: "在App Store下载", webLive: "打开网页版",
+      mismatchTitle: "选择你的应用商店",
+      mismatchBody: "你正在使用{platform}。为获得最佳体验，请{in}下载应用。",
+      mismatchGo: "{to}", mismatchStay: "仍然{to}", close: "关闭",
+      in: { play: "从Google Play", appstore: "从App Store" }, to: { play: "前往Google Play", appstore: "前往App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

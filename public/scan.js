@@ -99,6 +99,11 @@
       lines: [["2 ड्राफ़्ट बियर", "28.00", 1], ["1 झींगा प्लैटर", "96.00", 2]],
       subtotal: ["सबटोटल", "124.00"], service: ["सर्विस 10%", "12.40", 3], total: ["कुल", "136.40"],
     },
+    zh: {
+      store: "港湾酒吧", address: "海鸥路120号", date: "2026-11-08  21:47",
+      lines: [["2 扎啤", "28.00", 1], ["1 大虾拼盘", "96.00", 2]],
+      subtotal: ["小计", "124.00"], service: ["服务费10%", "12.40", 3], total: ["合计", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

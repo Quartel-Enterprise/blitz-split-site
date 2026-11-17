@@ -16,7 +16,7 @@ process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 const PAGES = ["privacy", "terms"];
 // The order of the pages' blocks. English is what every other language is checked against.
-const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi"];
+const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh"];
 const LEGAL_DIR = "public/legal";
 
 // Arabic counts in six forms (zero, one, two, few: 3–10, many: 11–99, other), picked as Intl.PluralRules("ar") says.
@@ -42,6 +42,7 @@ const CHROME = {
   ko: { language: "한국어", brand: "Blitz Split", locale: "ko", updated: "{date} 업데이트", read: "{n}분 분량", toc: "이 페이지의 내용" },
   ar: { language: "العربية", brand: "Blitz Split", locale: "ar-u-nu-latn", updated: "آخر تحديث: {date}", read: (n) => `مدة القراءة: ${arabicMinutes(n)}`, toc: "في هذه الصفحة" },
   hi: { language: "हिन्दी", brand: "Blitz Split", locale: "hi", updated: "{date} को अपडेट किया गया", read: "{n} मिनट में पढ़ें", toc: "इस पेज पर" },
+  zh: { language: "中文（简体）", brand: "Blitz Split", locale: "zh-Hans", updated: "更新于{date}", read: "阅读约需{n}分钟", toc: "本页内容" },
 };
 // The reading time every language shows is the English text's, at this pace.
 const WORDS_PER_MINUTE = 180;

@@ -4,10 +4,11 @@
 // dark, so site.css writes the dark tokens once: System takes the system's theme here, and follows it when it changes.
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
-// Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic or Hindi, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language menu, then
-// the browser's languages in order of preference, English when none of them is one of ours.
+// Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi or Simplified Chinese, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language menu, then
+// the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
+// browser language (zh-Hant, zh-TW, zh-HK, zh-MO) isn't Simplified: as in the apps, it is skipped for the next one.
 (function () {
-  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi"];
+  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh"];
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
   function stored(key) {
@@ -21,9 +22,18 @@
   const variantOf = (tag) => VARIANTS.find((variant) => variant.toLowerCase() === String(tag).toLowerCase().replace("_", "-"));
   const normalize = (tag) => variantOf(tag) || String(tag).toLowerCase().split("-")[0];
   const known = (code) => SUPPORTED.includes(code) || VARIANTS.includes(code);
+  // Traditional Chinese, as the apps tell it: by its script when the tag has one (zh-Hant-CN is Traditional, zh-Hans-HK
+  // Simplified), else by a region that writes it (Taiwan, Hong Kong, Macau).
+  const traditional = (tag) => {
+    const [language, ...rest] = String(tag).toLowerCase().split(/[-_]/);
+    if (language !== "zh") return false;
+    const script = rest.find((part) => part.length === 4);
+    return script ? script === "hant" : rest.some((part) => ["tw", "hk", "mo"].includes(part));
+  };
 
   // First, so the scripts that read data-lang have it even if the theme below fails.
   const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
+    .filter((tag) => !traditional(tag))
     .map(normalize)
     .find(known);
   const pick = [params.get("lang"), stored("lang")].map((code) => variantOf(code) || code).concat(preferred).find(known) || "en";
@@ -31,8 +41,8 @@
   const lang = variant ? variant.split("-")[0] : pick;
   root.dataset.lang = lang;
   if (variant) root.dataset.variant = variant;
-  // Every language's tag is its code, but Brazil's Portuguese, pt-BR.
-  root.lang = variant || (lang === "pt" ? "pt-BR" : lang);
+  // Every language's tag is its code, but Brazil's Portuguese, pt-BR, and Simplified Chinese, zh-Hans.
+  root.lang = variant || { pt: "pt-BR", zh: "zh-Hans" }[lang] || lang;
   // Arabic (and any later right-to-left language) reads right to left: the page mirrors, as site.css writes its sides
   // as start and end; src/index.js says the same of a link preview's page.
   // Why: its own copy of src/index.js's RIGHT_TO_LEFT, since this script runs alone in <head>, before any module, and

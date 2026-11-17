@@ -489,6 +489,34 @@
         less: "{name} का एक हिस्सा कम करें", more: "{name} का एक हिस्सा बढ़ाएं", had: "{item} किसने लिया",
       },
     },
+    // Simplified Chinese: one form, so no message holds a "|", and no space between Chinese and a name or an amount.
+    zh: {
+      bill: "披萨之夜", paid: "Pedro支付", notIn: "不参与",
+      each: "每人{a}", among: "{a}由{n}人分摊。", amongOne: "{a}由1人承担。", out: "{name}不参与。",
+      nobody: "还没有人参与", nobodyEqual: "至少勾选一人来分摊{a}。",
+      checkAll: "全选", uncheckAll: "全部取消",
+      left: "还差{a}", over: "超出{a}", closed: "合计正好：{a}",
+      progress: "目前已分配{a}，共{b}。", closedMsg: "各部分加起来等于总计。",
+      parts: "{a}分成{n}份", personParts: "{name}有{n}份。", nobodyShares: "至少给一人分配份数来分摊{a}。",
+      ofEach: "每笔账单的{p}", ofBill: "账单的{p}", incomeDetail: "每人的部分按其收入计算。", perMonth: "/月",
+      service: "服务费（{p}）", serviceSub: "按每人的消费比例",
+      loose: "标记每个项目是谁点的", looseDetail: "点按每个项目上的头像，标记是谁点的。",
+      itemsClosed: "项目{a}，服务费{b}。", nobodyItem: "没有勾选任何人", eachItem: "每人{a}",
+      items: { pizza: "大份披萨", beer: "啤酒", salad: "沙拉", draft: "扎啤", shrimp: "大虾拼盘" },
+      receiptBill: "港湾酒吧",
+      hint: {
+        equal: "无法平均分摊时，剩下的零头归付款人。",
+        amounts: "金额保持为{zero}的人不参与这笔账单。",
+        percent: "只能填整数。剩下的零头归付款人。",
+        shares: "有人分摊得更多时用份数，比如带了朋友来的人。",
+        income: "收入只保存在设备上。群组只能看到百分比。",
+        items: "每个项目由点了它的人分摊，服务费按每人点了什么来分摊。",
+      },
+      label: {
+        amount: "{name}的金额", percent: "{name}的百分比", income: "{name}的月收入",
+        less: "{name}减少一份", more: "{name}增加一份", had: "谁点了{item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
