@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Aplicația vorbește acum arabă, așezată de la dreapta la stânga: alege „العربية” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în riyali saudiți (SAR), dirhami emiratezi (AED), lire egiptene (EGP) și dirhami marocani (MAD), iar un grup creat într-una dintre aceste țări pornește în moneda ei.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum chineză simplificată: alege „中文（简体）” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în yuani chinezești (CNY), iar un grup creat în China continentală pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum chineză tradițională: alege „中文（繁體）” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în dolari noi taiwanezi (TWD), iar un grup creat în Taiwan pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum cehă: alege „Čeština” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în coroane cehe (CZK), iar un grup creat în Cehia pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fiecare grup are acum propriul memento de achitare: păstrează-l pe cel săptămânal, lunea la 10:00, alege altă zi a săptămânii sau o zi a lunii și o oră (de exemplu, pe 25 ale fiecărei luni la 12:00) sau dezactivează-l, când creezi grupul sau în Editează grupul. Doar cei care încă datorează primesc notificarea și văd în grup un banner pe care îl pot închide.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum ebraică, așezată de la dreapta la stânga: alege „עברית” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în shekeli noi israelieni (ILS), iar un grup creat în Israel pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum hindi: alege „हिन्दी” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în rupii indiene (INR), iar un grup creat în India pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum română: alege „Română” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în lei românești (RON), iar un grup creat în România pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum suedeză: alege „Svenska” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în coroane suedeze (SEK), iar un grup creat în Suedia pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum thailandeză: alege „ไทย” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în bahți thailandezi (THB), iar un grup creat în Thailanda pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum vietnameză: alege „Tiếng Việt” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în dongi vietnamezi (VND), iar un grup creat în Vietnam pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Atinge fotografia grupului din bara de sus a unei cheltuieli ca s-o vezi mare.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dacă atingi comutatorul estompat Simplifică datoriile într-un grup de două persoane, ți se spune acum că devine disponibil când grupul are 3 persoane.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "În Cum funcționează din Simplifică datoriile, exemplul arată acum fotografii ale persoanelor în loc de inițiale.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Am reparat gestul de înapoi, care nu ieșea din profilul unei persoane deschis din fereastra unei plăți; acum te duce înapoi la fereastră.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

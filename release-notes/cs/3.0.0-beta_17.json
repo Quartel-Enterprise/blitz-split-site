@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Aplikace teď mluví arabsky, s rozvržením zprava doleva: vyber „العربية“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v saúdském riyalu (SAR), dirhamu SAE (AED), egyptské libře (EGP) a marockém dirhamu (MAD) a skupina založená v jedné z těchto zemí začne v její měně.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví zjednodušenou čínštinou: vyber „中文（简体）“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v čínském jüanu (CNY) a skupina založená v pevninské Číně začne v něm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví tradiční čínštinou: vyber „中文（繁體）“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v novém tchajwanském dolaru (TWD) a skupina založená na Tchaj-wanu začne v něm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví česky: vyber „Čeština“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v české koruně (CZK) a skupina založená v Česku začne v ní.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Každá skupina má teď vlastní připomínku vyrovnání: nech týdenní v pondělí v 10:00, vyber jiný den v týdnu nebo den v měsíci a čas (například každého 25. ve 12:00), nebo ji vypni, při zakládání skupiny nebo v Upravit skupinu. Oznámení dostanou jen ti, kdo ještě dluží, a ve skupině uvidí banner, který můžou zavřít.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví hebrejsky, s rozvržením zprava doleva: vyber „עברית“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v novém izraelském šekelu (ILS) a skupina založená v Izraeli začne v něm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví hindsky: vyber „हिन्दी“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v indické rupii (INR) a skupina založená v Indii začne v ní.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví rumunsky: vyber „Română“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v rumunském leu (RON) a skupina založená v Rumunsku začne v něm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví švédsky: vyber „Svenska“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit ve švédské koruně (SEK) a skupina založená ve Švédsku začne v ní.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví thajsky: vyber „ไทย“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v thajském bahtu (THB) a skupina založená v Thajsku začne v něm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví vietnamsky: vyber „Tiếng Việt“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit ve vietnamském dongu (VND) a skupina založená ve Vietnamu začne v něm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Klepni na fotku skupiny v horní liště výdaje a uvidíš ji ve velkém.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Klepnutí na ztlumený přepínač Zjednodušit dluhy ve skupině dvou lidí ti teď řekne, že bude dostupný, jakmile budou ve skupině 3 lidé.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Jak to funguje u Zjednodušit dluhy teď příklad ukazuje fotky lidí místo iniciál.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Opravili jsme gesto zpět, které neopouštělo profil člověka otevřený z panelu platby; teď se vrátí zpátky na panel.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

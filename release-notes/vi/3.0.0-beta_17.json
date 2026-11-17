@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Ứng dụng giờ đã có tiếng Ả Rập, với bố cục đọc từ phải sang trái: chọn “العربية” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng riyal Ả Rập Xê Út (SAR), dirham UAE (AED), bảng Ai Cập (EGP) và dirham Ma-rốc (MAD), và nhóm được tạo ở một trong các nước đó sẽ bắt đầu với tiền tệ của nước đó.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Trung giản thể: chọn “中文（简体）” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng nhân dân tệ (CNY), và nhóm được tạo ở Trung Quốc đại lục sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Trung phồn thể: chọn “中文（繁體）” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng Tân Đài tệ (TWD), và nhóm được tạo ở Đài Loan sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Séc: chọn “Čeština” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng koruna Séc (CZK), và nhóm được tạo ở Séc sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mỗi nhóm giờ có lời nhắc thanh toán nợ riêng: giữ lời nhắc hằng tuần vào thứ Hai lúc 10:00, chọn một ngày khác trong tuần hoặc một ngày trong tháng và giờ nhắc (ví dụ: ngày 25 hằng tháng lúc 12:00), hoặc tắt đi, khi tạo nhóm hoặc trong Sửa nhóm. Chỉ những người còn nợ mới nhận được thông báo, và họ thấy một biểu ngữ trong nhóm mà họ có thể đóng.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Do Thái, với bố cục đọc từ phải sang trái: chọn “עברית” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng shekel mới của Israel (ILS), và nhóm được tạo ở Israel sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Hindi: chọn “हिन्दी” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng rupee Ấn Độ (INR), và nhóm được tạo ở Ấn Độ sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Romania: chọn “Română” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng leu Romania (RON), và nhóm được tạo ở Romania sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Thụy Điển: chọn “Svenska” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng krona Thụy Điển (SEK), và nhóm được tạo ở Thụy Điển sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Thái: chọn “ไทย” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng baht Thái (THB), và nhóm được tạo ở Thái Lan sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Việt: chọn “Tiếng Việt” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng đồng Việt Nam (VND), và nhóm được tạo ở Việt Nam sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chạm vào ảnh nhóm trên thanh trên cùng của khoản chi để xem ảnh lớn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chạm vào công tắc Đơn giản hóa nợ đang mờ trong nhóm hai người giờ sẽ cho bạn biết tính năng này dùng được khi nhóm có 3 người.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trong phần Cách hoạt động của Đơn giản hóa nợ, ví dụ giờ hiện ảnh của mọi người thay vì chữ cái đầu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Đã sửa lỗi cử chỉ quay lại không thoát khỏi hồ sơ của một người được mở từ bảng thanh toán; giờ nó quay về bảng đó.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

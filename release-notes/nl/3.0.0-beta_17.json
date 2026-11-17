@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "De app spreekt nu Arabisch, van rechts naar links: kies \"العربية\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Saudische riyal (SAR), VAE-dirham (AED), Egyptisch pond (EGP) en Marokkaanse dirham (MAD), en een groep die in een van die landen wordt gemaakt, start in de valuta van dat land.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Vereenvoudigd Chinees: kies \"中文（简体）\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Chinese yuan (CNY), en een groep die op het Chinese vasteland wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Traditioneel Chinees: kies \"中文（繁體）\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Nieuwe Taiwanese dollar (TWD), en een groep die in Taiwan wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Tsjechisch: kies \"Čeština\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Tsjechische kronen (CZK), en een groep die in Tsjechië wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Elke groep heeft nu een eigen herinnering om af te rekenen: houd de wekelijkse op maandag om 10:00 uur, kies een andere weekdag of een dag van de maand en een tijd (bijvoorbeeld elke 25e om 12:00 uur) of zet hem uit, bij het maken van de groep of in Groep bewerken. Alleen wie nog iets verschuldigd is krijgt de melding en ziet een banner in de groep die je kunt sluiten.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Hebreeuws, van rechts naar links: kies \"עברית\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Israëlische nieuwe sjekel (ILS), en een groep die in Israël wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Hindi: kies \"हिन्दी\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Indiase roepie (INR), en een groep die in India wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Roemeens: kies \"Română\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Roemeense leu (RON), en een groep die in Roemenië wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Zweeds: kies \"Svenska\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Zweedse kroon (SEK), en een groep die in Zweden wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Thai: kies \"ไทย\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Thaise baht (THB), en een groep die in Thailand wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Vietnamees: kies \"Tiếng Việt\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Vietnamese dong (VND), en een groep die in Vietnam wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tik op de groepsfoto in de bovenbalk van een uitgave om hem groot te zien.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tik je in een groep van twee op de gedimde schakelaar van Schulden vereenvoudigen, dan zie je nu dat die beschikbaar wordt zodra de groep 3 personen heeft.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Hoe het werkt van Schulden vereenvoudigen toont het voorbeeld nu foto’s van mensen in plaats van initialen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Opgelost: het terug-gebaar verliet het profiel van een persoon niet als dat vanuit het betalingsblad was geopend; nu gaat het terug naar het blad.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
