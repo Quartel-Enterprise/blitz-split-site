@@ -153,8 +153,9 @@ async function previewPage(request, url, env, ctx, target) {
   return withTags(landing, words.title, words.description, tags, words.language);
 }
 
-// The languages written right to left: a page in one of them says dir="rtl" on <html>, as boot.js does on the client.
-const RIGHT_TO_LEFT = ["ar", "he", "fa", "ur"];
+// The languages the site speaks written right to left: a page in one of them says dir="rtl" on <html>. Why: the same
+// list as RIGHT_TO_LEFT in public/boot.js, which runs alone in <head> and can't import it; change both together.
+const RIGHT_TO_LEFT = ["ar"];
 const directionOf = (language) => (RIGHT_TO_LEFT.includes(String(language).split("-")[0]) ? "rtl" : "ltr");
 
 // Why: the landing's own og tags give way to the link's, written once at the end of the head, and kept as briefly as

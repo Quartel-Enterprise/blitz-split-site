@@ -25,7 +25,7 @@ tracking; Turkish writes the percent sign first (%10). Russian and Ukrainian cou
 only between words (`word-break: keep-all`), drops the Latin headings' tracking, counts in one form (no `|`), and never
 glues a particle to a name or an amount filled in at run time ("결제: Ana", "Ana 님이"), as the app writes them.
 Arabic is Modern Standard Arabic for every `ar` tag and reads right to left: `boot.js` sets `dir="rtl"` on `<html>`
-(for any right-to-left language: `ar`, and `he`, `fa`, `ur` should the site add them), `site.css` writes every side
+(`RIGHT_TO_LEFT`, kept the same in `boot.js` and `src/index.js`, today `ar` alone), `site.css` writes every side
 as start and end (`margin-inline-start`, `inset-inline-end`, `text-align: end`…) so the page mirrors by itself, and
 turns what points one way under `:root[dir="rtl"]` (the arrows and the back chevron, the bars that grow, the switch's
 knob, the header's scroll line). Like the app, it never says anyone's gender: a label ("الدافع: Ana"), a verbal noun

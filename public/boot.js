@@ -34,7 +34,10 @@
   root.lang = variant || { en: "en", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar" }[lang];
   // Arabic (and any later right-to-left language) reads right to left: the page mirrors, as site.css writes its sides
   // as start and end; src/index.js says the same of a link preview's page.
-  root.dir = ["ar", "he", "fa", "ur"].includes(lang) ? "rtl" : "ltr";
+  // Why: its own copy of src/index.js's RIGHT_TO_LEFT, since this script runs alone in <head>, before any module, and
+  // the Worker can't import a page's script; add a right-to-left language to both, and only once SUPPORTED has it.
+  const RIGHT_TO_LEFT = ["ar"];
+  root.dir = RIGHT_TO_LEFT.includes(lang) ? "rtl" : "ltr";
   // A table keyed by language, with the variant's own entries over its language's, objects merged key by key: the words Portugal says
   // differently, the rest falling back to pt. A table without the variant is returned as the language's.
   const plain = (value) => value && typeof value === "object" && !Array.isArray(value);
