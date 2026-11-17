@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Částky a popisky se už nelámou na víc řádků ani se neořezávají na malých obrazovkách, skládacích telefonech a s velkým písmem.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Texty, tlačítka a obrysy, které se špatně četly, mají teď větší kontrast ve světlém i tmavém motivu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Klepnutí na pole v prohlížeči na iPhonu už stránku nepřiblíží.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

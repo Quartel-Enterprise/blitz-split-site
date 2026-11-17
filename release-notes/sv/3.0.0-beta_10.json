@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "En länk till en utgift öppnas nu i appen i stället för i webbläsaren, med utgiftens foton och kommentarer.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "En länk till en utgift som inte längre delas, eller som bara personerna i utgiften kan öppna, säger nu det i stället för att visa ett fel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En länk till en profil öppnas nu även när du inte har loggat in.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Integritet och om har ett nytt reglage, ”Dela användningsdata”: stäng av det för att sluta skicka hur du använder appen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Länkarna du delar till din profil, till en kommentar och för att hämta appen visar nu sin förhandsvisning på ditt språk.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -633,6 +633,95 @@
         less: "{name}減少一份", more: "{name}增加一份", had: "誰點了{item}",
       },
     },
+    // Swedish: like English, no message holds a "|" (one person has its own message, and a person's shares show only
+    // above one); "du" for the user and the app's words (lika, andelar, efter inkomst, artiklar).
+    sv: {
+      bill: "Pizzakväll", paid: "Pedro betalade", notIn: "Inte med i den här",
+      each: "{a} var", among: "{a} delat på {n} personer.", amongOne: "{a} för 1 person.", out: "{name} är inte med.",
+      nobody: "Ingen är med än", nobodyEqual: "Markera minst en person för att dela {a}.",
+      checkAll: "Markera alla", uncheckAll: "Avmarkera alla",
+      left: "{a} kvar", over: "{a} för mycket", closed: "Det går ihop: {a}",
+      progress: "{a} av {b} hittills.", closedMsg: "Delarna blir tillsammans totalen.",
+      parts: "{n} andelar à {a}", personParts: "{name} har {n} andelar.", nobodyShares: "Ge minst en person en andel för att dela {a}.",
+      ofEach: "{p} av varje utgift", ofBill: "{p} av utgiften", incomeDetail: "Var och ens del följer deras inkomst.", perMonth: "/mån",
+      service: "Service ({p})", serviceSub: "I proportion till vad var och en tog",
+      loose: "Markera vem som tog vad", looseDetail: "Tryck på ansiktena vid varje artikel för att markera vem som tog den.",
+      itemsClosed: "{a} i artiklar och {b} i service.", nobodyItem: "Ingen markerad", eachItem: "{a} var",
+      items: { pizza: "Stor pizza", beer: "Öl", salad: "Sallad", draft: "Fatöl", shrimp: "Räkfat" },
+      receiptBill: "Hamnbaren",
+      hint: {
+        equal: "När det inte går jämnt ut går överblivna ören till den som betalade.",
+        amounts: "Den som står kvar på {zero} är inte med i utgiften.",
+        percent: "Bara heltal. Överblivna ören går till den som betalade.",
+        shares: "Använd andelar när någon har mer, som den som tog med sig en gäst.",
+        income: "Inkomsterna stannar på enheten. Gruppen ser bara procenten.",
+        items: "Varje artikel delas mellan dem som tog den, och servicen efter vad var och en tog.",
+      },
+      label: {
+        amount: "Belopp för {name}", percent: "Procent för {name}", income: "Månadsinkomst för {name}",
+        less: "En andel mindre för {name}", more: "En andel till för {name}", had: "Vem tog {item}",
+      },
+    },
+    // Czech: a message with "|" holds its forms for {n}, "one|few|other" or "few|other" (2 lidé, 5 lidí), and fill picks
+    // one. A name is never declined, so where Czech would need its case it stands after a colon.
+    cs: {
+      bill: "Večer s pizzou", paid: "Pedro zaplatil(a)", notIn: "Není v tomto výdaji",
+      each: "{a} na osobu", among: "{a} na {n} lidi.|{a} na {n} lidí.", amongOne: "{a} pro 1 osobu.", out: "{name} není ve výdaji.",
+      nobody: "Zatím nikdo není ve výdaji", nobodyEqual: "Zaškrtni aspoň jednoho člověka, abys rozdělil(a) {a}.",
+      checkAll: "Zaškrtnout vše", uncheckAll: "Odškrtnout vše",
+      left: "Zbývá {a}", over: "{a} navíc", closed: "Sedí to: {a}",
+      progress: "Zatím {a} z {b}.", closedMsg: "Části dávají dohromady celek.",
+      parts: "{n} podíl po {a}|{n} podíly po {a}|{n} podílů po {a}", personParts: "{name} má {n} podíly.|{name} má {n} podílů.",
+      nobodyShares: "Dej aspoň jednomu člověku podíl, abys rozdělil(a) {a}.",
+      ofEach: "{p} každého výdaje", ofBill: "{p} výdaje", incomeDetail: "Část každého odpovídá jeho příjmu.", perMonth: "/měs.",
+      service: "Obsluha ({p})", serviceSub: "Podle toho, co kdo měl",
+      loose: "Označ, kdo co měl", looseDetail: "Klepni na obličeje u každé položky a označ, kdo ji měl.",
+      itemsClosed: "{a} za položky a {b} za obsluhu.", nobodyItem: "Nikdo nezaškrtnut", eachItem: "{a} na osobu",
+      items: { pizza: "Velká pizza", beer: "Pivo", salad: "Salát", draft: "Točené pivo", shrimp: "Talíř krevet" },
+      receiptBill: "Přístavní bar",
+      hint: {
+        equal: "Když to nejde rozdělit přesně, zbylé haléře dostane ten, kdo platil.",
+        amounts: "Kdo zůstane na {zero}, není ve výdaji.",
+        percent: "Jen celá čísla. Zbylé haléře dostane ten, kdo platil.",
+        shares: "Podíly použij, když má někdo víc, třeba kdo přivedl doprovod.",
+        income: "Příjmy zůstávají v zařízení. Skupina vidí jen procenta.",
+        items: "Každá položka se dělí mezi ty, kdo ji měli, a obsluha podle toho, co kdo měl.",
+      },
+      label: {
+        amount: "Částka: {name}", percent: "Procento: {name}", income: "Měsíční příjem: {name}",
+        less: "O podíl méně: {name}", more: "O podíl víc: {name}", had: "Kdo měl: {item}",
+      },
+    },
+    // Romanian: a message with "|" holds its forms for {n}, "one|few|other" or "few|other", the other with "de"
+    // (20 de persoane), and fill picks one; "tu" for the user and the app's words (egal, părți, după venit, produse).
+    ro: {
+      bill: "Seară cu pizza", paid: "A plătit Pedro", notIn: "Nu participă la aceasta",
+      each: "câte {a} fiecare", among: "{a} împărțit la {n} persoane.|{a} împărțit la {n} de persoane.", amongOne: "{a} pentru 1 persoană.", out: "{name} nu participă.",
+      nobody: "Încă nu participă nimeni", nobodyEqual: "Bifează cel puțin o persoană ca să împarți {a}.",
+      checkAll: "Bifează tot", uncheckAll: "Debifează tot",
+      left: "Mai rămân {a}", over: "{a} în plus", closed: "Se potrivește: {a}",
+      progress: "{a} din {b} până acum.", closedMsg: "Părțile dau totalul.",
+      parts: "{n} parte a câte {a}|{n} părți a câte {a}|{n} de părți a câte {a}", personParts: "{name} are {n} părți.|{name} are {n} de părți.",
+      nobodyShares: "Dă cel puțin unei persoane o parte ca să împarți {a}.",
+      ofEach: "{p} din fiecare cheltuială", ofBill: "{p} din cheltuială", incomeDetail: "Partea fiecăruia urmează venitul său.", perMonth: "/lună",
+      service: "Serviciu ({p})", serviceSub: "Proporțional cu ce a luat fiecare",
+      loose: "Bifează cine ce a luat", looseDetail: "Atinge fețele de la fiecare produs ca să bifezi cine l-a luat.",
+      itemsClosed: "{a} pe produse și {b} serviciu.", nobodyItem: "Nimeni bifat", eachItem: "câte {a} fiecare",
+      items: { pizza: "Pizza mare", beer: "Bere", salad: "Salată", draft: "Bere la halbă", shrimp: "Platou de creveți" },
+      receiptBill: "Barul din port",
+      hint: {
+        equal: "Când nu se împarte exact, banii rămași îi primește cine a plătit.",
+        amounts: "Cine rămâne la {zero} nu participă la cheltuială.",
+        percent: "Doar numere întregi. Banii rămași îi primește cine a plătit.",
+        shares: "Folosește părți când cineva are mai mult, de pildă cine a venit cu un însoțitor.",
+        income: "Veniturile rămân pe dispozitiv. Grupul vede doar procentele.",
+        items: "Fiecare produs se împarte între cei care l-au luat, iar serviciul după ce a luat fiecare.",
+      },
+      label: {
+        amount: "Suma lui {name}", percent: "Procentul lui {name}", income: "Venitul lunar al lui {name}",
+        less: "O parte în minus pentru {name}", more: "O parte în plus pentru {name}", had: "Cine a luat {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
@@ -647,8 +736,8 @@
 
   // Amounts in the visitor's currency, as preview.js writes them (money.js).
   const { plain, format: money, parse: parseMoney } = window.money;
-  // Turkish writes the sign first: %10. French, German and Russian put a space before it.
-  const pct = (n) => (["fr", "de", "ru"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
+  // Turkish writes the sign first: %10. French, German, Russian, Swedish and Czech put a space before it.
+  const pct = (n) => (["fr", "de", "ru", "sv", "cs"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
 
   const PEOPLE = [
     { name: "Pedro", photo: "me", color: "blue" },

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Sumele și etichetele nu se mai rup pe mai multe rânduri și nu mai sunt tăiate pe ecrane mici, pe telefoane pliabile și cu text mare.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Textele, butoanele și contururile greu de citit au acum mai mult contrast, în tema luminoasă și în cea întunecată.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Atingerea unui câmp în browserul unui iPhone nu mai mărește pagina.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Výdaj teď jde rozdělit Podle příjmu a příjmy, které zadáš, se sdílejí se členy skupiny.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Každý z Posledních výdajů na Domů má teď nabídku: Upravit, Duplikovat, Sdílet a Smazat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zobrazit vše na Domů teď otevře Všechny výdaje: každý výdaj, ve kterém jsi, napříč tvými skupinami, s hledáním, filtry a řazením.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotka skupiny je teď nahoře na její obrazovce větší a při posouvání se zmenšuje a otevření skupiny se animuje z jejího řádku.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktivita teď ukazuje fotky lidí, Zůstatky › Podle skupin ukazují fotku každé skupiny a Největší výdaj ve Statistikách ukazuje svou kategorii.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Účet a synchronizace teď ukazuje logo Google nebo Apple a celý tvůj e-mail, který vidíš jen ty.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Smazat účet teď vysvětluje, co zůstane ve tvých skupinách, až tvůj účet zmizí.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Přepínač Výchozí klíč Pix už u tvého výchozího klíče v tmavém motivu nevypadá jako vypnutý.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

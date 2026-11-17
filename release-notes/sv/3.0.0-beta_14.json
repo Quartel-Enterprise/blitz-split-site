@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "En grupps Utgifter har nu ”Visa alla”, som öppnar Alla utgifter redan filtrerat på den gruppen, så att du kan söka, sortera och filtrera dess utgifter. Rensa filtret för att se alla grupper.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I Ny grupp föreslår ”Lägg till med namn” nu personer från dina Kontakter medan du skriver, med deras foto: tryck på en för att skapa gruppen med just den personen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "När du skrollar i en grupp visar dess hopfällda övre fält bara gruppens foto och namn, utan medlemmarna och totalen avklippta bredvid.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Du kan nu ladda ned de 12 orden i din återställningskod som en textfil.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Spara din återställningskod säger nu att den tar tillbaka dina data, och att dina data raderas efter 30 dagar utan användning.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dela upp en utgift har nu Skanna kvitto högst upp också, bredvid Spara, så att tangentbordet inte längre döljer den, och Lägg till ett betalsätt tar mindre plats.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I en grupps Statistik är Per person nu ett ringdiagram över var och ens andel, i samma färg som varje person har i Standarddelning, med listan över namn och belopp under som förklaring. Förbrukat och Betalat växlar vad det visar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "”Vilka är med” i Ny grupp visar ditt profilfoto i stället för din initial.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "”Synkroniserar…” dyker inte längre upp hela tiden på Hem och Grupper när du kommer tillbaka till appen: synkroniseringen sker tyst när dina grupper väl syns på skärmen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "På surfplattor och med telefonen liggande klipps skuggan av ”Dela upp en utgift” högst upp i sidofältet inte längre av i kanterna.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split talar nu nederländska, japanska, turkiska och indonesiska, och språklistan visar varje språk på det egna språket.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper och utgifter kan nu använda polska zloty, turkiska lira och indonesiska rupier.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil har en ny knapp, Dela profil: den som öppnar din länk ser ditt namn och foto och kan bjuda in dig till en grupp.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En ny grupps inbjudningslänk är klar direkt, även offline, och Medlemmar har en ny knapp för att kopiera den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Stänger du ett formulär med något du inte har sparat frågar appen nu först ”Ignorera ändringarna?”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Integritetspolicy och Användarvillkor öppnas nu i appen i stället för i webbläsaren.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "På en telefon flyttar sig det övre och det nedre fältet nu undan när du rullar nedåt och kommer tillbaka när du rullar uppåt.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "I Dela upp en utgift hoppar datumvalet inte längre direkt till klockan: tiden har en egen knapp.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tryck på gruppen högst upp i Dela upp en utgift för att öppna den; går du tillbaka kommer du till utgiften med allt du skrev.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Senaste utgifterna i Hem visar nu varje utgifts grupp och vem som betalade som foton.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix visas nu bara för dem som troligen använder det, till exempel de som använder appen på portugisiska, har en Pix-nyckel eller är med i en grupp i real.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "”Synkroniserar…” visas nu bara första gången ditt konto läses in på en enhet, inte vid varje synkronisering.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil erbjuder inte längre att koppla bort Google eller Apple från ditt konto: logga ut eller radera kontot i stället.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Redigera profil öppnas nu som ett ark över Profil i stället för en separat skärm.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Det tomma bandet mellan formuläret och tangentbordet i Dela upp en utgift är borta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "En kontakts Gemensamma grupper visar nu varje grupps foto.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

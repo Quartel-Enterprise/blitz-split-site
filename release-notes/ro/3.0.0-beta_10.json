@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Linkul unei cheltuieli se deschide acum în aplicație în loc de browser, cu fotografiile și comentariile ei.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Linkul unei cheltuieli care nu mai e distribuită, sau pe care o pot deschide doar persoanele din cheltuială, spune acum asta în loc să arate o eroare.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Linkul unui profil se deschide acum chiar dacă nu te-ai conectat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Confidențialitate și despre are un comutator nou, „Trimite date de utilizare”: dezactivează-l ca să nu mai trimiți cum folosești aplicația.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Linkurile pe care le distribui către profilul tău, către un comentariu și pentru descărcarea aplicației își arată acum previzualizarea în limba ta.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

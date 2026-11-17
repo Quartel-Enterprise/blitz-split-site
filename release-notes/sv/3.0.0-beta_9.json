@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Belopp och etiketter bryts inte längre över flera rader eller klipps av på små skärmar, vikbara enheter och med stor text.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Text, knappar och konturer som var svåra att läsa har nu mer kontrast, i det ljusa och det mörka temat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Att trycka på ett fält i webbläsaren på en iPhone zoomar inte längre in sidan.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

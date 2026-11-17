@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplicația vorbește acum coreeană: alege „한국어” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în woni sud-coreeni (KRW), iar un grup creat în Coreea de Sud pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Cont și sincronizare” din Profil arată acum ID-ul tău de utilizator, pe care îl poți copia cu o atingere, ca să ne spui cine ești când răspunzi la unul dintre sondajele noastre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O fotografie pe care o adaugi la o cheltuială se deschide acum mai întâi în Ajustează fotografia, ca să încadrezi pătratul care se atașează.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„După venit” îți amintește acum să introduci venitul net al fiecăruia, după taxe, iar „Împărțire implicită” arată procentul fiecăruia doar după ce e introdus un venit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Antetul unui grup e mai curat: rândul cu numărul de membri și totalul de sub nume a dispărut. Fețele arată cine participă, iar Statistici arată totalul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotografiile unui extras de card sau bancar spun acum asta și îți sugerează să completezi cheltuiala de mână, în loc să spună că bonul nu a putut fi citit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O categorie din Statistici deschide acum Toate cheltuielile cu grupul, categoria și perioada deja alese, ca să poți căuta și în acele cheltuieli. Toate cheltuielile au primit și un filtru Perioadă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "În După persoană din Statistici, o atingere lângă inel sau în mijlocul lui deselectează persoana aleasă.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

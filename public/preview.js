@@ -406,6 +406,62 @@
       bills: (n) => `${n}筆帳單`,
       titles: { b1: "拉戈阿民宿", b2: "里貝朗晚餐", b3: "去海灘的車資", p1: "海灘上的冰淇淋", p2: "一週的採買", p3: "停車費" },
     },
+    // Swedish: "du" for the user, and the app's words (utgift, saldo, gör upp, registrera betalning).
+    sv: {
+      paid: "{name} betalade", notIn: "Inte med i den här",
+      members: (people, bills) => `${people} personer · ${bills} ${bills === 1 ? "utgift" : "utgifter"}`,
+      toGet: "att få tillbaka", youOwe: "du är skyldig", settled: "allt uppgjort", owesYou: "Skyldiga dig", youOweTitle: "Du är skyldig",
+      eachOne: "Var och ens saldo", getsBack: "får tillbaka", owes: "är skyldig", even: "uppgjort",
+      toSettle: "Att göra upp", total: "Gruppens total", lodging: "Boende", food: "Mat", transport: "Transport",
+      sheetTitle: "Dela upp en utgift", description: "Beskrivning", amount: "Belopp", whoPaid: "Vem betalade",
+      splitAmong: "Dela lika mellan", each: "{value} var", cancel: "Avbryt", save: "Spara", close: "Stäng",
+      queue: (n) => `${n} ${n === 1 ? "ändring" : "ändringar"} i kön`,
+      split: "Hur det delades", yourShare: "Din andel", deleteBill: "Radera utgift",
+      recordPayment: "Registrera betalning", record: "Registrera", viaMethod: "via överföring", payment: "Betalning", deletePayment: "Radera betalning",
+      payLine: (from, to) => `${name(from)} betalade ${name(to)}`,
+      paidYou: (who, value) => `${who} betalade dig ${value}`,
+      paidTotal: "Betalt totalt", shareTotal: "Andel av utgifterna", balance: "Saldo",
+      bills: (n) => `${n} ${n === 1 ? "utgift" : "utgifter"}`,
+      titles: { b1: "Pensionat i Lagoa", b2: "Middag i Ribeirão", b3: "Skjuts till stranden", p1: "Glass på stranden", p2: "Veckans matinköp", p3: "Parkering" },
+    },
+    // Czech: "ty" for the user, counts in one, few and other forms (1 výdaj, 2 výdaje, 5 výdajů), and a name never
+    // declined: who paid whom as an arrow, as the Balances tab writes it.
+    cs: {
+      paid: "{name} zaplatil(a)", notIn: "Není v tomto výdaji",
+      members: (people, bills) => `${people} ${countForm(people, "člověk", "lidé", "lidí")} · ${bills} ${countForm(bills, "výdaj", "výdaje", "výdajů")}`,
+      toGet: "dostaneš zpět", youOwe: "dlužíš", settled: "vše vyrovnáno", owesYou: "Dluží ti", youOweTitle: "Dlužíš",
+      eachOne: "Zůstatek každého", getsBack: "dostane zpět", owes: "dluží", even: "vyrovnáno",
+      toSettle: "K vyrovnání", total: "Celkem ve skupině", lodging: "Ubytování", food: "Jídlo", transport: "Doprava",
+      sheetTitle: "Rozdělit výdaj", description: "Popis", amount: "Částka", whoPaid: "Kdo platil",
+      splitAmong: "Rozdělit rovným dílem mezi", each: "{value} na osobu", cancel: "Zrušit", save: "Uložit", close: "Zavřít",
+      queue: (n) => `${n} ${countForm(n, "změna", "změny", "změn")} ve frontě`,
+      split: "Jak se dělilo", yourShare: "Tvůj podíl", deleteBill: "Smazat výdaj",
+      recordPayment: "Zaznamenat platbu", record: "Zaznamenat", viaMethod: "převodem", payment: "Platba", deletePayment: "Smazat platbu",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} ti zaplatil(a) ${value}`,
+      paidTotal: "Zaplaceno celkem", shareTotal: "Podíl na výdajích", balance: "Zůstatek",
+      bills: (n) => `${n} ${countForm(n, "výdaj", "výdaje", "výdajů")}`,
+      titles: { b1: "Penzion v Lagoa", b2: "Večeře v Ribeirão", b3: "Odvoz na pláž", p1: "Zmrzlina na pláži", p2: "Týdenní nákup", p3: "Parkování" },
+    },
+    // Romanian: "tu" for the user, counts in one, few and other forms, other with "de" (20 de cheltuieli), and the
+    // app's words (cheltuială, sold, achită, înregistrează plata).
+    ro: {
+      paid: "A plătit {name}", notIn: "Nu participă la aceasta",
+      members: (people, bills) => `${people} ${countForm(people, "persoană", "persoane", "de persoane")} · ${bills} ${countForm(bills, "cheltuială", "cheltuieli", "de cheltuieli")}`,
+      toGet: "de primit", youOwe: "datorezi", settled: "totul achitat", owesYou: "Îți datorează", youOweTitle: "Datorezi",
+      eachOne: "Soldul fiecăruia", getsBack: "primește înapoi", owes: "datorează", even: "achitat",
+      toSettle: "De achitat", total: "Totalul grupului", lodging: "Cazare", food: "Mâncare", transport: "Transport",
+      sheetTitle: "Împarte o cheltuială", description: "Descriere", amount: "Sumă", whoPaid: "Cine a plătit",
+      splitAmong: "Împărțit în mod egal între", each: "câte {value} fiecare", cancel: "Anulează", save: "Salvează", close: "Închide",
+      queue: (n) => `${n} ${countForm(n, "modificare", "modificări", "de modificări")} în coadă`,
+      split: "Cum s-a împărțit", yourShare: "Partea ta", deleteBill: "Șterge cheltuiala",
+      recordPayment: "Înregistrează plata", record: "Înregistrează", viaMethod: "prin transfer", payment: "Plată", deletePayment: "Șterge plata",
+      payLine: (from, to) => `${name(from)} i-a plătit lui ${name(to)}`,
+      paidYou: (who, value) => `${who} ți-a plătit ${value}`,
+      paidTotal: "Plătit în total", shareTotal: "Partea din cheltuieli", balance: "Sold",
+      bills: (n) => `${n} ${countForm(n, "cheltuială", "cheltuieli", "de cheltuieli")}`,
+      titles: { b1: "Pensiune în Lagoa", b2: "Cină în Ribeirão", b3: "Drum până la plajă", p1: "Înghețată pe plajă", p2: "Cumpărăturile săptămânii", p3: "Parcare" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -844,7 +900,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

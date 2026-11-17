@@ -45,6 +45,9 @@ const CHROME = {
   th: { language: "ไทย", brand: "Blitz Split", locale: "th", updated: "อัปเดตเมื่อ {date}", read: "ใช้เวลาอ่าน {n} นาที", toc: "ในหน้านี้" },
   vi: { language: "Tiếng Việt", brand: "Blitz Split", locale: "vi", updated: "Cập nhật ngày {date}", read: "{n} phút đọc", toc: "Trong trang này" },
   "zh-Hant": { language: "中文（繁體）", brand: "Blitz Split", locale: "zh-Hant", updated: "更新於{date}", read: "閱讀約需{n}分鐘", toc: "本頁內容" },
+  sv: { language: "Svenska", brand: "Blitz Split", locale: "sv", updated: "Uppdaterad {date}", read: "{n} min läsning", toc: "På den här sidan" },
+  cs: { language: "Čeština", brand: "Blitz Split", locale: "cs", updated: "Aktualizováno {date}", read: "{n} min čtení", toc: "Na této stránce" },
+  ro: { language: "Română", brand: "Blitz Split", locale: "ro", updated: "Actualizat la {date}", read: "{n} min de citit", toc: "Pe această pagină" },
 };
 // The reading time every language shows is the English text's, at this pace.
 const WORDS_PER_MINUTE = 180;

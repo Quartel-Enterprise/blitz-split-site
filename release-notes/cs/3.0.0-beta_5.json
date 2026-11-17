@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Aplikace Blitz Split teď mluví německy, italsky a polsky: řídí se jazykem zařízení, nebo si jazyk vyber v Profil › Jazyk.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Každá kategorie má teď vlastní barvu a Statistiky kreslí každou kategorii a každého člověka v jeho barvě.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Barvu kategorie teď můžeš změnit ve formuláři kategorie nebo v Mapě kategorií.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Nabídka výdaje ve Výdajích má novou volbu Duplikovat: otevře nový výdaj už vyplněný jako původní.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny a výdaje už na chvíli nezmizí, když se do aplikace vrátíš.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hledání se už hned nezavře, když ještě nemáš žádnou skupinu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nová skupina teď začíná jako Akce, první typ v seznamu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Když ještě nemáš skupinu, Pozvat odkazem nebo QR teď ukáže jen tlačítko Nová skupina místo tlačítek, která jsi nemohl(a) použít.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Účtenka, jejíž čtení trvá déle, už nekončí chybou připojení.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Řádky kategorií ve Statistikách jsou čistší: už nevypisují částku každé podkategorie.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

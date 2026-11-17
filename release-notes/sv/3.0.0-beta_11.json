@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Ett konto utan Google eller Apple raderas nu efter 30 dagar utan användning. Välkomstskärmen och Profil säger det, och om du kopplar Google eller Apple behåller du dina data.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Du kan nu betygsätta appen från Profil › Support och feedback, med ”Betygsätt appen”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "En utgift som öppnas från Hem eller Alla utgifter går nu tillbaka direkt dit du öppnade den, utan att passera dess grupp.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Åtgärdat att bubblan ”+N” i en rad av ansikten visades under det första ansiktet i stället för ovanpå det.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

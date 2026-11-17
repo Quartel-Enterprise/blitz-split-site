@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split vorbește acum neerlandeză, japoneză, turcă și indoneziană, iar lista de limbi numește fiecare limbă în limba ei.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile și cheltuielile pot folosi acum zlotul polonez, lira turcească și rupia indoneziană.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil are un buton nou, Distribuie profilul: cine îți deschide linkul îți vede numele și fotografia și te poate invita într-un grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Linkul de invitație al unui grup nou e gata imediat, chiar și offline, iar Membri are un buton nou ca să-l copiezi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Când închizi un formular cu ceva ce n-ai salvat, ești întrebat mai întâi „Renunți la modificări?”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Politica de confidențialitate și Termenii serviciului se deschid acum în aplicație în loc de browser.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Pe telefon, barele de sus și de jos se dau acum la o parte când derulezi în jos și revin când derulezi în sus.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "În Împarte o cheltuială, alegerea unei date nu mai sare direct la ceas: ora are propriul buton.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Atinge grupul din partea de sus a Împarte o cheltuială ca să-l deschizi; când te întorci, revii la cheltuială cu tot ce ai scris.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ultimele cheltuieli din Acasă arată acum, ca fotografii, grupul fiecărei cheltuieli și cine a plătit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix apare acum doar persoanelor care probabil îl folosesc, cum ar fi cele care folosesc aplicația în portugheză, au o cheie Pix sau sunt într-un grup în reali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Se sincronizează…” apare acum doar prima dată când contul tău se încarcă pe un dispozitiv, nu la fiecare sincronizare.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil nu mai oferă deconectarea Google sau Apple de la contul tău: deconectează-te sau șterge contul în schimb.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Editează profilul se deschide acum ca o foaie peste Profil, în loc de un ecran separat.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Banda goală dintre formular și tastatură din Împarte o cheltuială a dispărut.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grupurile comune ale unui contact arată acum fotografia fiecărui grup.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

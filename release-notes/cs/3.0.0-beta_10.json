@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Odkaz na výdaj se teď otevře v aplikaci místo v prohlížeči, i s fotkami a komentáři.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Odkaz na výdaj, který už není sdílený nebo který můžou otevřít jen lidé z výdaje, to teď řekne, místo aby ukázal chybu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Odkaz na profil se teď otevře, i když nejsi přihlášený(á).",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Profil › Soukromí a o aplikaci je nový přepínač „Sdílet údaje o používání“: vypni ho a aplikace přestane posílat, jak ji používáš.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Odkazy, které sdílíš na svůj profil, na komentář a na stažení aplikace, teď ukazují náhled v tvém jazyce.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -38,7 +38,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw" }[root.dataset.lang] || root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional) and Hebrew's as Google Play writes them
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -259,6 +259,33 @@
       mismatchBody: "你正在使用{platform}。為了獲得最佳體驗，請{in}下載App。",
       mismatchGo: "{to}", mismatchStay: "仍然{to}", close: "關閉",
       in: { play: "從Google Play", appstore: "從App Store" }, to: { play: "前往Google Play", appstore: "前往App Store" },
+    },
+    sv: {
+      play: ["Ladda ned på", "Kommer snart till"], appstore: ["Ladda ned från", "Kommer snart till"], web: ["Öppna i din", "Kommer snart till din"], browser: "webbläsare",
+      getApp: "Hämta appen", openWeb: "Öppna webbappen", soon: "Kommer snart",
+      playLive: "Finns på Google Play", appStoreLive: "Finns på App Store", webLive: "Öppna webbappen",
+      mismatchTitle: "Välj din butik",
+      mismatchBody: "Du använder {platform}. För bästa upplevelse, hämta appen {in}.",
+      mismatchGo: "Gå {to}", mismatchStay: "Fortsätt {to}", close: "Stäng",
+      in: { play: "från Google Play", appstore: "från App Store" }, to: { play: "till Google Play", appstore: "till App Store" },
+    },
+    cs: {
+      play: ["Stáhnout na", "Brzy na"], appstore: ["Stáhnout v", "Brzy v"], web: ["Otevřít v", "Brzy v"], browser: "prohlížeči",
+      getApp: "Stáhnout aplikaci", openWeb: "Otevřít webovou aplikaci", soon: "Brzy",
+      playLive: "K dispozici na Google Play", appStoreLive: "K dispozici v App Store", webLive: "Otevřít webovou aplikaci",
+      mismatchTitle: "Vyber si obchod",
+      mismatchBody: "Používáš {platform}. Nejlépe si aplikaci stáhni {in}.",
+      mismatchGo: "Přejít {to}", mismatchStay: "Přesto pokračovat {to}", close: "Zavřít",
+      in: { play: "z Google Play", appstore: "z App Store" }, to: { play: "na Google Play", appstore: "do App Store" },
+    },
+    ro: {
+      play: ["Descarcă din", "În curând pe"], appstore: ["Descarcă din", "În curând în"], web: ["Deschide în", "În curând în"], browser: "browser",
+      getApp: "Descarcă aplicația", openWeb: "Deschide aplicația web", soon: "În curând",
+      playLive: "Disponibilă pe Google Play", appStoreLive: "Disponibilă în App Store", webLive: "Deschide aplicația web",
+      mismatchTitle: "Alege-ți magazinul",
+      mismatchBody: "Folosești {platform}. Pentru cea mai bună experiență, descarcă aplicația {in}.",
+      mismatchGo: "Mergi {to}", mismatchStay: "Continuă {to}", close: "Închide",
+      in: { play: "din Google Play", appstore: "din App Store" }, to: { play: "la Google Play", appstore: "la App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

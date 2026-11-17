@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split vorbește acum germană, italiană și poloneză: urmează limba dispozitivului tău, sau poți alege una în Profil › Limbă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fiecare categorie are acum culoarea ei, iar Statistici desenează fiecare categorie și fiecare persoană în culoarea sa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Acum poți schimba culoarea unei categorii, în formularul categoriei sau în Harta categoriilor.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Meniul unei cheltuieli din Cheltuieli are o opțiune nouă, Duplică: deschide o cheltuială nouă, deja completată ca originalul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile și cheltuielile nu mai dispar pentru o clipă când revii în aplicație.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Căutarea nu se mai închide imediat când încă nu ai niciun grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Un grup nou pornește acum ca Eveniment, primul tip din listă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Când încă nu ai niciun grup, Invită cu link sau QR arată acum doar butonul Grup nou, în loc de butoane pe care nu le puteai folosi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Un bon care se citește mai greu nu se mai termină cu o eroare de conexiune.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Rândurile categoriilor din Statistici sunt mai curate: nu mai listează suma fiecărei subcategorii.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

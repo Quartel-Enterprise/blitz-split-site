@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Appen talar nu ryska och ukrainska: välj ”Русский” eller ”Українська” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i ryska rubel (RUB) och ukrainska hryvnia (UAH), och en grupp som skapas i Ryssland eller Ukraina börjar i landets valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil har en ny inställning, ”Tidsformat”: följ systemet, eller visa alltid tider i 24-timmarsformat (14:30) eller 12-timmarsformat med AM och PM (2:30 PM), i utgifter, Aktivitet, kommentarer och tidsväljarna.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Med telefonen liggande, och på surfplattor, sitter gruppens ”Dela upp en utgift” nu i det övre fältet i stället för att sväva över utgifterna.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Med Dynamiska färger på förblir det du är skyldig orange i stället för att bli rött, så att det aldrig ser ut som det gröna för det du får tillbaka.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "I Aktivitet visar varje rad nu gruppens foto bredvid namnet, när gruppen har ett.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ditt saldo i den här gruppen upprepar inte längre beloppet på en andra rad när du bara får tillbaka eller bara är skyldig.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I Standarddelning har varje persons del av exempelutgiften nu en egen färg, med en matchande prick före namnet, så att personer bredvid varandra i listan aldrig ser ut som en.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En utgifts övre fält visar nu gruppens foto, eller dess initialer, bredvid gruppens namn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "När du trycker på någons foto följer det nu med in i profilen, och tillbaka igen när du går tillbaka.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "En utgift som öppnas från en grupps Utgifter glider nu på plats som när den öppnas från Hem, och gruppens foto på Hems utgifter flyger in i utgiftens övre fält.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "”Dela upp en utgift” finns nu också högst upp i Saldon och Kontakter, och på gruppskärmen har den flyttat till det övre fältet i stället för att sväva över listan, med ”Lägg till personer” nu i menyn ⋯. Den börjar med sitt namn och krymper till sin ikon när du skrollar.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "I Grupper öppnar kortet Totalt saldo nu Saldon när du trycker på det.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "”Bjud in personer” i en grupp heter nu ”Lägg till personer”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "På iPad öppnas flikarna i sidofältet, och när de sitter i det övre fältet, som när iPaden står upprätt, syns ”Dela upp en utgift” kvar där medan de andra knapparna flyttar till en rad strax under.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "I ”Dela upp en utgift” visas ”Betalt med” nu även när någon annan betalade utgiften, nedtonat: trycker du på det förklaras att bara de som betalade kan markera vad de betalade med.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Utan konto är din återställningskod nu 12 numrerade ord, lättare att skriva ner, och vid återställning skriver du ett ord per fält, med förslag på varje ord medan du skriver. Koder som sparats före den här versionen fungerar inte längre: spara den nya, eller koppla Google eller Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I Utgifter per kategori har varje utgift nu samma meny ⋮ som i en grupps utgifter: redigera, duplicera, dela eller radera den utan att öppna den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "På breda skärmar (en liggande telefon, surfplattor, Mac och webben) håller Utgifter per kategori sina kategorier och totalen i en kolumn bredvid utgifterna.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "På tyska, nederländska och japanska läses meningarna i Aktivitet nu i varje språks naturliga ordföljd, utan kolon före utgiftens eller gruppens namn.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Första bokstaven i ”Lägg till foto” under en utgifts bilagor klipps inte längre av.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "I Grupper heter knappen för att skapa en grupp nu ”+ Grupp” och bryts inte längre på två rader.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Versionsinformation visar nu versionen du nyss installerade, i stället för att vänta upp till ett dygn på att hämta informationen om den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I en grupps Statistik bryts periodknappen (”Hela tiden”) inte längre på två rader: datumen flyttar under den när båda inte får plats.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

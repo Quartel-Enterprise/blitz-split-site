@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Cheltuielile unui grup au acum „Vezi tot”, care deschide Toate cheltuielile deja filtrate după acel grup, ca să-i poți căuta, sorta și filtra cheltuielile. Șterge filtrul ca să vezi toate grupurile.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "În Grup nou, „Adaugă după nume” îți sugerează acum persoane din Contacte în timp ce scrii, cu fotografia lor: atinge una ca să creezi grupul cu aceeași persoană.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Când derulezi un grup, bara de sus restrânsă arată doar fotografia și numele grupului, fără membrii și totalul tăiate alături.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Acum poți descărca cele 12 cuvinte ale codului de recuperare ca fișier text.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Salvează codul de recuperare spune acum că îți aduce înapoi datele și că, după 30 de zile fără utilizare, datele sunt șterse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Împarte o cheltuială are acum Scanează bonul și sus, lângă Salvează, ca tastatura să nu-l mai ascundă, iar Adaugă o metodă de plată e mai discret.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "În Statisticile unui grup, După persoană e acum un inel cu partea fiecăruia, în aceeași culoare pe care o are fiecare persoană în Împărțire implicită, cu lista de nume și sume dedesubt ca legendă. Consumat și Plătit schimbă ce arată.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Cine participă” din Grup nou arată fotografia ta de profil în loc de inițială.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Se sincronizează…” nu mai tot apare în Acasă și Grupuri când revii în aplicație: sincronizările rulează discret după ce grupurile tale sunt pe ecran.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pe tablete și cu telefonul în poziție orizontală, umbra lui „Împarte o cheltuială” din partea de sus a barei laterale nu mai e tăiată la margini.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
