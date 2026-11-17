@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Số tiền và nhãn không còn bị xuống dòng hoặc bị cắt trên màn hình nhỏ, thiết bị gập và khi dùng chữ cỡ lớn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chữ, nút và đường viền từng khó đọc giờ có độ tương phản cao hơn, trong cả giao diện sáng và tối.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chạm vào một ô trong trình duyệt của iPhone không còn phóng to trang nữa.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

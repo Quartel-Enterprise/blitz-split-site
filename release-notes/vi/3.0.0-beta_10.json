@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Liên kết của khoản chi giờ mở trong ứng dụng thay vì trình duyệt, kèm ảnh và bình luận của khoản chi.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Liên kết của khoản chi không còn được chia sẻ, hoặc chỉ những người trong khoản chi mới mở được, giờ sẽ nói rõ điều đó thay vì hiện lỗi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Liên kết hồ sơ giờ mở được ngay cả khi bạn chưa đăng nhập.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hồ sơ › Quyền riêng tư và giới thiệu có công tắc mới, “Chia sẻ dữ liệu sử dụng”: tắt đi để ngừng gửi cách bạn dùng ứng dụng.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Các liên kết bạn chia sẻ đến hồ sơ của bạn, đến một bình luận và để tải ứng dụng giờ hiện bản xem trước bằng ngôn ngữ của bạn.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

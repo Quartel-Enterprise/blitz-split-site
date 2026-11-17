@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Ứng dụng giờ đã có tiếng Nga và tiếng Ukraina: chọn “Русский” hoặc “Українська” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng rúp Nga (RUB) và hryvnia Ukraina (UAH), và nhóm được tạo ở Nga hoặc Ukraina sẽ bắt đầu với tiền tệ của nước đó.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hồ sơ có tùy chọn mới “Định dạng giờ”: theo hệ thống, hoặc luôn hiện giờ theo dạng 24 giờ (14:30) hoặc 12 giờ với AM và PM (2:30 PM), trong khoản chi, Hoạt động, bình luận và bộ chọn giờ.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Khi đặt điện thoại nằm ngang và trên máy tính bảng, nút “Chia khoản chi” của nhóm giờ nằm trên thanh trên cùng thay vì nổi trên danh sách khoản chi.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Khi bật Màu động, số tiền bạn nợ vẫn giữ màu cam thay vì chuyển sang đỏ, nên không bao giờ trông giống màu xanh lá của số tiền bạn được nhận lại.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Trong Hoạt động, mỗi dòng giờ hiện ảnh của nhóm bên cạnh tên nhóm, nếu nhóm có ảnh.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Số dư của bạn trong nhóm này không còn lặp lại số tiền ở dòng thứ hai khi bạn chỉ được nhận lại hoặc chỉ phải trả.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trong Cách chia mặc định, phần của mỗi người trong khoản chi ví dụ giờ có màu riêng, kèm một chấm cùng màu trước tên họ, nên những người đứng cạnh nhau trong danh sách không bao giờ trông như một.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Thanh trên cùng của khoản chi giờ hiện ảnh của nhóm, hoặc chữ cái đầu, bên cạnh tên nhóm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chạm vào ảnh của ai đó giờ sẽ đưa ảnh vào hồ sơ của họ, và đưa ngược lại khi bạn quay về.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Khoản chi mở từ Khoản chi của nhóm giờ chuyển vào vị trí giống như khi mở từ Trang chủ, và ảnh nhóm trên các khoản chi ở Trang chủ bay vào thanh trên cùng của khoản chi.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "“Chia khoản chi” giờ cũng có ở trên cùng của Số dư và Danh bạ, và trên màn hình nhóm, nút này đã chuyển lên thanh trên cùng thay vì nổi trên danh sách, còn “Thêm người” giờ nằm trong menu ⋯. Nút hiện kèm tên rồi thu lại thành biểu tượng khi bạn cuộn.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Trong Nhóm, chạm vào thẻ Số dư tổng sẽ mở Số dư.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "“Mời mọi người” trong nhóm giờ được gọi là “Thêm người”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trên iPad, các tab mở trong thanh bên, và khi chúng nằm trên thanh trên cùng, như khi iPad dựng đứng, “Chia khoản chi” vẫn hiện ở đó, còn các nút khác chuyển xuống một hàng ngay bên dưới.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Trong “Chia khoản chi”, “Trả bằng” giờ cũng hiện khi người khác trả khoản chi, ở dạng mờ: chạm vào sẽ giải thích rằng chỉ người đã trả mới chọn được mình trả bằng gì.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Khi không có tài khoản, mã khôi phục của bạn giờ là 12 từ được đánh số, dễ ghi lại hơn, và khi khôi phục bạn nhập mỗi từ vào một ô, kèm gợi ý từng từ khi gõ. Mã đã lưu trước phiên bản này không còn dùng được: hãy lưu mã mới, hoặc liên kết Google hay Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trong danh sách khoản chi theo danh mục, mỗi khoản chi giờ có cùng menu ⋮ như trong khoản chi của nhóm: sửa, nhân bản, chia sẻ hoặc xóa mà không cần mở.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trên màn hình rộng (điện thoại nằm ngang, máy tính bảng, Mac và web), danh sách khoản chi theo danh mục giữ các danh mục và tổng trong một cột bên cạnh các khoản chi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trong tiếng Đức, tiếng Hà Lan và tiếng Nhật, các câu trong Hoạt động giờ đọc theo trật tự từ tự nhiên của từng ngôn ngữ, không còn dấu hai chấm trước tên khoản chi hoặc nhóm.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Chữ cái đầu của “Thêm ảnh” dưới phần tệp đính kèm của khoản chi không còn bị cắt nữa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Trong Nhóm, nút tạo nhóm giờ ghi “+ Nhóm” và không còn bị xuống hai dòng.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ghi chú phát hành giờ hiện ngay phiên bản bạn vừa cài, thay vì chờ đến một ngày mới có ghi chú của nó.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trong Thống kê của nhóm, nút khoảng thời gian (“Toàn bộ thời gian”) không còn bị xuống hai dòng: các ngày chuyển xuống dưới nút khi không vừa.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

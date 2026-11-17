@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Khoản chi của nhóm giờ có “Xem tất cả”, mở Tất cả khoản chi đã được lọc theo nhóm đó, để bạn tìm kiếm, sắp xếp và lọc các khoản chi của nhóm. Xóa bộ lọc để xem mọi nhóm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trong Nhóm mới, “Thêm theo tên” giờ gợi ý người từ Danh bạ của bạn khi bạn gõ, kèm ảnh của họ: chạm vào một người để tạo nhóm với đúng người đó.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Khi cuộn trong nhóm, thanh trên cùng thu gọn chỉ hiện ảnh và tên nhóm, không còn thành viên và tổng bị cắt bên cạnh.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Giờ bạn có thể tải 12 từ của mã khôi phục xuống dưới dạng tệp văn bản.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "“Lưu mã khôi phục của bạn” giờ nói rõ mã này giúp lấy lại dữ liệu của bạn, và nếu không dùng trong 30 ngày thì dữ liệu sẽ bị xóa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chia khoản chi giờ có Quét hóa đơn ở trên cùng, cạnh Lưu, nên bàn phím không còn che mất nút này, và Thêm phương thức thanh toán trông nhẹ nhàng hơn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trong Thống kê của nhóm, Theo người giờ là biểu đồ vòng thể hiện phần của từng người, cùng màu mà mỗi người có trong Cách chia mặc định, với danh sách tên và số tiền bên dưới làm chú thích. Đã dùng và Đã trả đổi nội dung biểu đồ hiển thị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Ai tham gia” trong Nhóm mới hiện ảnh hồ sơ của bạn thay vì chữ cái đầu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Đang đồng bộ…” không còn liên tục hiện ở Trang chủ và Nhóm khi bạn quay lại ứng dụng: việc đồng bộ diễn ra lặng lẽ khi các nhóm của bạn đã hiện trên màn hình.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trên máy tính bảng và khi đặt điện thoại nằm ngang, bóng của “Chia khoản chi” ở trên cùng thanh bên không còn bị cắt ở các cạnh.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Khoản chi giờ có thể chia Theo thu nhập, và thu nhập bạn nhập sẽ được chia sẻ với các thành viên của nhóm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mỗi khoản chi trong Khoản chi gần đây ở Trang chủ giờ có menu: Sửa, Nhân bản, Chia sẻ và Xóa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Xem tất cả ở Trang chủ giờ mở Tất cả khoản chi: mọi khoản chi có bạn tham gia, trong tất cả các nhóm của bạn, với tìm kiếm, bộ lọc và sắp xếp.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ảnh của nhóm giờ to hơn ở đầu màn hình của nhóm và thu nhỏ lại khi bạn cuộn, và khi mở một nhóm, nhóm sẽ chuyển ra từ dòng của nó.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Hoạt động giờ hiện ảnh của mọi người, Số dư › Theo nhóm hiện ảnh của từng nhóm, và Khoản chi lớn nhất trong Thống kê hiện danh mục của nó.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hồ sơ › Tài khoản và đồng bộ giờ hiện logo Google hoặc Apple và toàn bộ email của bạn, chỉ bạn mới thấy.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Xóa tài khoản giờ giải thích những gì còn lại trong các nhóm của bạn sau khi tài khoản của bạn bị xóa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Công tắc Khóa Pix mặc định không còn trông như đang tắt trên khóa mặc định của bạn khi dùng giao diện tối.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

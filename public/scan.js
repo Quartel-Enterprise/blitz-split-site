@@ -116,6 +116,12 @@
       lines: [["2 เบียร์สด", "28.00", 1], ["1 ชุดกุ้งรวม", "96.00", 2]],
       subtotal: ["ยอดรวมย่อย", "124.00"], service: ["ค่าบริการ 10%", "12.40", 3], total: ["ยอดรวม", "136.40"],
     },
+    // Vietnamese: a harbor bar's receipt, in dong as money.js counts Vietnamese (no cents in use, so the amounts scaled).
+    vi: {
+      store: "QUÁN BAR BẾN CẢNG", address: "120 Đường Hải Âu", date: "08/11/2026  21:47",
+      lines: [["2 BIA TƯƠI", "28.000", 1], ["1 ĐĨA TÔM", "96.000", 2]],
+      subtotal: ["TẠM TÍNH", "124.000"], service: ["PHÍ DỊCH VỤ 10%", "12.400", 3], total: ["TỔNG CỘNG", "136.400"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 
