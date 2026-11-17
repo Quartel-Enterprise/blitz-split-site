@@ -324,6 +324,10 @@ a.status .icon { width: 15px; height: 15px; }
   /* The descenders of "offline" stay inside the painted box. */
   padding-bottom: 0.08em;
 }
+/* Devanagari's marks reach above the headline and below the baseline further than Geist's Latin: Hindi's title
+   gets the room between its lines, and its gradient's painted box the room around them. */
+:root[lang="hi"] .hero h1 { line-height: 1.25; }
+:root[lang="hi"] .hero h1 .accent { padding-block: 0.12em 0.16em; }
 @media (forced-colors: active) { .hero h1 .accent { background: none; -webkit-text-fill-color: currentColor; } }
 .hero .lead { margin-top: 20px; font-size: clamp(17px, 2vw, 19px); color: var(--fg-soft); max-width: 34em; }
 .hero-cta { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
