@@ -9,14 +9,12 @@
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
+import { ICON, LANGS, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
 
 // The paths below are the repository's, wherever the script is run from.
 process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
 const PAGES = ["privacy", "terms"];
-// The order of the pages' blocks. English is what every other language is checked against.
-const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th"];
 const LEGAL_DIR = "public/legal";
 
 // Arabic counts in six forms (zero, one, two, few: 3–10, many: 11–99, other), picked as Intl.PluralRules("ar") says.

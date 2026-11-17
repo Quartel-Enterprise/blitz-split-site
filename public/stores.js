@@ -239,7 +239,7 @@
       playLive: "ดาวน์โหลดได้ที่ Google Play", appStoreLive: "ดาวน์โหลดได้ที่ App Store", webLive: "เปิดเว็บแอป",
       mismatchTitle: "เลือกสโตร์ของคุณ",
       mismatchBody: "คุณกำลังใช้ {platform} เพื่อประสบการณ์ที่ดีที่สุด ดาวน์โหลดแอป{in}",
-      mismatchGo: "ไป{to}", mismatchStay: "ไป{to}ต่อ", close: "ปิด",
+      mismatchGo: "ไป{to}", mismatchStay: "ไปต่อ{to}", close: "ปิด",
       in: { play: "จาก Google Play", appstore: "จาก App Store" }, to: { play: "ที่ Google Play", appstore: "ที่ App Store" },
     },
   });

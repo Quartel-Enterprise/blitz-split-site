@@ -14,13 +14,11 @@
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { ICON, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
+import { ICON, LANGS, escapeHtml, isDate, longDate, withMain } from "./lib/pages.mjs";
 
 // The paths below are the repository's, wherever the script is run from.
 process.chdir(join(dirname(fileURLToPath(import.meta.url)), ".."));
 
-// The order of the page's blocks. English is what every other language is checked against.
-const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th"];
 const SOURCE_DIR = "release-notes";
 const FEED_DIR = "public/release-notes";
 // The page's shell, written by hand: its header, its footer and its strings, with nothing between <main> and </main>.

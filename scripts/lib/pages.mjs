@@ -1,5 +1,8 @@
 // What the scripts that write a page's text share: build-legal.mjs and build-release-notes.mjs.
 
+/** The languages a page's blocks are written in, in their order. English is what every other language is checked against. */
+export const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th"];
+
 export const escapeHtml = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 /** An icon of the page's own sprite. */
