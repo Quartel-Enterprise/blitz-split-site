@@ -186,3 +186,7 @@ Every page's footer links Support among its links and shows the address under th
 footer is written in each page, since the site has no build: `public/index.html`, `public/privacy.html`,
 `public/terms.html`, `public/support.html` and the release notes' shell, `pages/release-notes.html`. Change all five
 the same way, each with its own `SITE_STRINGS`.
+
+The copyright line's year is the current one: each footer marks it (`<span data-year>2026</span>`) and `site.js`
+fills it when the page loads, so it moves on by itself when the year turns. The year in the markup is what shows
+without scripts and the least it ever shows, so a device whose clock is behind never reads an earlier one.

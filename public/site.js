@@ -32,6 +32,12 @@
     });
   }
 
+  // The footer's copyright year is the current one, so it moves on by itself when the year turns. The year in the
+  // markup is what shows without scripts, and the least it ever shows: a device whose clock is behind keeps it.
+  document.querySelectorAll("[data-year]").forEach((el) => {
+    el.textContent = Math.max(Number(el.textContent) || 0, new Date().getFullYear());
+  });
+
   // The language picker, as the apps' Profile › Language: "System", which follows the browser's languages, then every
   // language in its own name, the way its speakers look for it, over the same name in the page's language; a search
   // finds a row by any of its names, its English one or its code. The header's button and the footer's open it, a
