@@ -100,7 +100,8 @@ function blockTexts(block) {
 /** The minutes a language's reader takes over a text: its letters, marks and digits, without the links' addresses. */
 function readingMinutes(lang, blocks) {
   const shown = blocks.flatMap(blockTexts).join(" ").replace(/\]\([^)\s]+\)/g, "").replace(/<\/?mark>/g, "");
-  const characters = shown.match(/[\p{L}\p{M}\p{N}]/gu)?.length ?? 0;
+  // Why: a letter written as a base and a combining accent (NFD) is still one letter to its reader.
+  const characters = shown.normalize("NFC").match(/[\p{L}\p{M}\p{N}]/gu)?.length ?? 0;
   return Math.ceil(characters / (CHARACTERS_PER_MINUTE[lang] ?? DEFAULT_CHARACTERS_PER_MINUTE));
 }
 
@@ -229,8 +230,9 @@ function renderBlock(file, lang, block, pad) {
 }
 
 /** A language's block of a page: the hero, the sections' list and the text. */
-function renderLanguage(page, lang, file, doc, minutes) {
+function renderLanguage(page, lang, file, doc) {
   const chrome = CHROME[lang];
+  const minutes = String(readingMinutes(lang, doc.blocks));
   const [summary, ...rest] = doc.blocks;
   if (summary?.kind !== "callout" || summary.body.kind !== "list") fail(file, summary?.at ?? 1, "the text starts with its summary: a callout holding a list");
   if (rest[0]?.kind !== "section") fail(file, rest[0]?.at ?? 1, "a section (##) comes after the summary");
@@ -320,7 +322,7 @@ function loadPage(page) {
 }
 
 function renderPage(page, docs) {
-  return LANGS.flatMap((lang) => renderLanguage(page, lang, docs[lang].file, docs[lang], String(readingMinutes(lang, docs[lang].blocks)))).join("\n");
+  return LANGS.flatMap((lang) => renderLanguage(page, lang, docs[lang].file, docs[lang])).join("\n");
 }
 
 function build(check) {
