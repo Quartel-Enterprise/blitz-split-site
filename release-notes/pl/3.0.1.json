@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Karta Salda nie pokazuje już rzędu zer, gdy nikt nic nie jest winien: teraz mówi tylko Wszystko rozliczone.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Naprawiono Profil, który pokazywał logo Apple obok e-maila konta zalogowanego przez Google, albo logo Google obok konta zalogowanego przez Apple, gdy konto ma oba.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

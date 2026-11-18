@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Tab Saldo tidak lagi menampilkan deretan angka nol saat tidak ada yang berutang: sekarang hanya tertulis Semua sudah lunas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Memperbaiki Profil yang menampilkan logo Apple di samping email akun yang masuk dengan Google, atau logo Google di samping akun yang masuk dengan Apple, saat akun memiliki keduanya.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

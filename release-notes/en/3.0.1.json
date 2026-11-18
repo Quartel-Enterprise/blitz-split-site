@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "The Balances tab no longer shows a row of zeros when nobody owes anything: it just says All settled.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fixed Profile showing Apple's logo beside the email of an account signed in with Google, or Google's beside one signed in with Apple, when the account has both.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

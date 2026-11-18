@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "La pestaña Saldos ya no muestra una fila de ceros cuando nadie debe nada: ahora solo dice Todo saldado.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Se corrigió que el Perfil mostrara el logo de Apple junto al correo de una cuenta que inició sesión con Google, o el de Google junto a una que inició sesión con Apple, cuando la cuenta tiene los dos.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

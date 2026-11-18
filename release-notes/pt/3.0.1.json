@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "A aba Saldos não mostra mais uma fileira de zeros quando ninguém deve nada: agora só diz Tudo acertado.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corrigido o Perfil mostrando o logo da Apple ao lado do e-mail de uma conta que entrou com o Google, ou o do Google ao lado de uma que entrou com a Apple, quando a conta tem os dois.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

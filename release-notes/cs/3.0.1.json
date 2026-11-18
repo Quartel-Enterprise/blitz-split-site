@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Karta Zůstatky už neukazuje řadu nul, když nikdo nic nedluží: místo toho jen říká Vše vyrovnáno.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Opraveno zobrazování loga Apple v Profilu vedle e-mailu účtu přihlášeného přes Google, nebo loga Google vedle účtu přihlášeného přes Apple, když má účet obojí.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

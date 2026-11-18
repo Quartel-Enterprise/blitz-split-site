@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "当没有人欠款时，“余额”标签页不再显示一排零，只显示“全部已结清”。",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "修复了当账号同时关联 Google 和 Apple 时，“个人资料”在用 Google 登录的账号邮箱旁显示 Apple 标志，或在用 Apple 登录的账号旁显示 Google 标志的问题。",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

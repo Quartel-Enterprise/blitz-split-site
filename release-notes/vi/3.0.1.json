@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Khi không ai nợ gì, tab Số dư không còn hiện một hàng số 0 nữa mà chỉ ghi Đã thanh toán xong.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Đã sửa lỗi Hồ sơ hiển thị logo Apple bên cạnh email của tài khoản đăng nhập bằng Google, hoặc logo Google bên cạnh tài khoản đăng nhập bằng Apple, khi tài khoản có cả hai.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
