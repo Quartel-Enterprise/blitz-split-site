@@ -26,7 +26,7 @@ keep only `/g/`, `/b/`, `/u/` or `/c/` and drop `?comentario=`. The events, afte
 | `theme_change` | Another theme is picked | `theme`: `light`, `dark`, `system`; `origin`: `header_menu`, `footer` |
 | `logo_click` | The logo | `origin`: `header`, `footer` |
 | `navigation_click` | A link to a section of the page | `target`: the section's id (`features`, `how`, `platforms`, `faq`, a legal section), `top`; `origin`: `header`, `toc`, `to_top` |
-| `select_content` | A link to a legal page or to the release notes | `content_type`: `legal`, `release_notes`; `item_id`: `privacy_policy`, `terms_of_service`, `release_notes`; `origin`: `header`, `footer`, `content` |
+| `select_content` | A link to a legal page, to the release notes or to Support | `content_type`: `legal`, `release_notes`, `support`; `item_id`: `privacy_policy`, `terms_of_service`, `release_notes`, `support`; `origin`: `header`, `footer`, `content` |
 | `beta_versions_toggle` | "Show beta versions" on the release notes | `state`: `on`, `off` |
 | `faq_open` | A FAQ question opens | `question`: `q1` to `q5` |
 | `preview_tab_select` | Another tab of the landing's phone | `tab`: `bills`, `balances`, `stats` |

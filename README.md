@@ -14,7 +14,7 @@ sign-up required, and everything saves on the device the moment you tap.
 - **Everywhere.** Android, iPhone and iPad, Mac and the web, each with the look of its own system, sharing the same
   groups.
 
-This repository is the site: the landing, the privacy policy and the terms of use, in English, Portuguese, Spanish,
+This repository is the site: the landing, the privacy policy, the terms of use, the release notes and the support page, in English, Portuguese, Spanish,
 French, German, Italian, Polish, Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech and Romanian, plus the link previews of group invites and the app links' files. The apps live in
 [blitz-split-client](https://github.com/Quartel-Enterprise/blitz-split-client) and the backend in
 [blitz-split-api](https://github.com/Quartel-Enterprise/blitz-split-api).

@@ -32,6 +32,12 @@
     });
   }
 
+  // The footer's copyright year is the current one, so it moves on by itself when the year turns. The year in the
+  // markup is what shows without scripts, and the least it ever shows: a device whose clock is behind keeps it.
+  document.querySelectorAll("[data-year]").forEach((el) => {
+    el.textContent = Math.max(Number(el.textContent) || 0, new Date().getFullYear());
+  });
+
   // The language picker, as the apps' Profile › Language: "System", which follows the browser's languages, then every
   // language in its own name, the way its speakers look for it, over the same name in the page's language; a search
   // finds a row by any of its names, its English one or its code. The header's button and the footer's open it, a
@@ -382,7 +388,8 @@
     }));
   }
 
-  // The rest of the links: the logo, the landing's sections, "back to top", the legal pages and the release notes.
+  // The rest of the links: the logo, the landing's sections, "back to top", the legal pages, the release notes and
+  // Support.
   document.querySelectorAll(".logo").forEach((a) => a.addEventListener("click", () => {
     track("logo_click", { origin: originOf(a) });
   }));
@@ -394,9 +401,14 @@
     "/privacy": { content_type: "legal", item_id: "privacy_policy" },
     "/terms": { content_type: "legal", item_id: "terms_of_service" },
     "/release-notes": { content_type: "release_notes", item_id: "release_notes" },
+    "/support": { content_type: "support", item_id: "support" },
   };
-  // Not the language picker's rows, which link to the page they are on.
-  document.querySelectorAll(':is(a[href^="/privacy"], a[href^="/terms"], a[href^="/release-notes"]):not([data-set-lang])').forEach((a) => a.addEventListener("click", () => {
-    track("select_content", { ...PAGES[new URL(a.href).pathname], origin: originOf(a) });
+  // Not the language picker's rows, which link to the page they are on. The selector takes any address that starts
+  // as a page's does (so "/privacy#keep" and "/support?lang=pt" count), and the path, without a trailing slash, says
+  // whether it is one: a link to another path that starts the same ("/support-faq") sends nothing.
+  const toPages = Object.keys(PAGES).map((path) => `a[href^="${path}"]`).join(", ");
+  document.querySelectorAll(`:is(${toPages}):not([data-set-lang])`).forEach((a) => a.addEventListener("click", () => {
+    const page = PAGES[new URL(a.href).pathname.replace(/\/$/, "")];
+    if (page) track("select_content", { ...page, origin: originOf(a) });
   }));
 })();

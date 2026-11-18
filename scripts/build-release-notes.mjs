@@ -179,11 +179,11 @@ function renderLanguage({ lang, releases }) {
     `        <div class="wrap">`,
     `          <a class="crumbs" href="/">${ICON("left")}${chrome.brand}</a>`,
     `          <h1>${escapeHtml(chrome.title)}</h1>`,
-    `          <p class="release-lead">${escapeHtml(chrome.lead)}</p>`,
+    `          <p class="hero-lead">${escapeHtml(chrome.lead)}</p>`,
     `          <label class="beta-switch"><input type="checkbox" role="switch" data-show-beta>${escapeHtml(chrome.showBeta)}</label>`,
     `        </div>`,
     `      </div>`,
-    `      <div class="wrap releases">`,
+    `      <div class="wrap page-body releases">`,
     // Why: until the first stable version, the page would open with nothing on it.
     ...(releases.every((release) => release.beta) ? [`        <p class="releases-empty">${escapeHtml(chrome.empty)}</p>`] : []),
     ...releases.flatMap((release) => renderRelease(lang, chrome, release)),

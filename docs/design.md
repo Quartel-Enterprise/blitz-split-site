@@ -171,3 +171,24 @@ none may be left before they go live.
 "What's new" (`/release-notes`) keeps the legal pages' header and hero, with "Show beta versions" under its title, and
 lists each version as a card: [release-notes.md](release-notes.md). The design board opens it with `?beta=on`, so the
 cards show while every version is still a beta.
+
+## Support and the footer's contact
+
+Support (`/support`, `public/support.html`, written by hand as the landing is) is the page the stores' Support URL
+points at, which must show a way to reach the developer: the legal pages' header and hero (with `.hero-lead` and
+`.page-body`, which it shares with the release notes), then the address to write to as a `mailto:` button, a line
+asking for the device and the app's version, and links to "What's new", the privacy policy and the terms. It promises
+nothing the rest of the site doesn't: no response time, no phone.
+
+The address is quare.software@gmail.com, the one the privacy policy and the terms publish (`public/legal/*.md`):
+change it there, on Support, in the footers and in `public/llms.txt` together. `npm run check:translations` fails, as
+CI does, when one of them has another address ([ci.md](ci.md#translations)).
+
+Every page's footer links Support among its links and shows the address under the tagline, as a `mailto:` link. The
+footer is written in each page, since the site has no build: `public/index.html`, `public/privacy.html`,
+`public/terms.html`, `public/support.html` and the release notes' shell, `pages/release-notes.html`. Change all five
+the same way, each with its own `SITE_STRINGS`.
+
+The copyright line's year is the current one: each footer marks it (`<span data-year>2026</span>`) and `site.js`
+fills it when the page loads, so it moves on by itself when the year turns. The year in the markup is what shows
+without scripts and the least it ever shows, so a device whose clock is behind never reads an earlier one.

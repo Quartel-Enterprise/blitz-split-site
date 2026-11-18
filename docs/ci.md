@@ -8,7 +8,7 @@
 | `duplication` | Fails on copied JavaScript or CSS that `.jscpd-baseline.json` doesn't list | `npm run check:duplication` |
 | `legal` | Fails when a legal page isn't what its Markdown gives, or the Markdown has something the apps can't draw ([legal.md](legal.md)) | `npm run check:legal` |
 | `release-notes` | Fails when a version's notes have something the apps can't read, or a language's notes aren't English's ([release-notes.md](release-notes.md)) | `npm run check:release-notes` |
-| `translations` | Fails when a page or a script misses a string in one of the site's languages | `npm run check:translations` |
+| `translations` | Fails when a page or a script misses a string in one of the site's languages, or a page writes to another contact address than the legal Markdown's | `npm run check:translations` |
 | `merge-when-green` | Squash merges a pull request with the `merge-when-green` label once every check passed and every review conversation is resolved ([below](#merge-when-green)) | |
 
 Cloudflare's Workers Builds deploys `main` on its own and reports it as a check on the commit
@@ -85,3 +85,9 @@ release is the one `duplication.yml` pins.
   be left out of a language: the markup's Blitz Split is its name everywhere but in Portuguese.
 - Every dictionary of the scripts keyed by language (`TEXT`, `PAPER`…) has each language with English's keys, shapes,
   `{placeholders}` and function arities. `CURRENCY` is a format, so only its languages are checked.
+
+It also checks the contact address, since it already reads every page: the legal Markdown (`public/legal/*.md`)
+publishes one address, and every `mailto:` link of a page (the five footers, the Support page's button, the legal
+pages' own), the address such a link shows and the address `public/llms.txt` names must be that one. The site has no
+build, so the address is typed by hand in each of those places
+([design.md](design.md#support-and-the-footers-contact)); a change of address that misses one fails here.
