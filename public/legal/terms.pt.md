@@ -36,7 +36,7 @@ Os saldos são o resultado do que o grupo lançou. Eles não são cobrança, tí
 
 ## O que você lança {#conteudo}
 
-Contas, comentários, fotos e chaves que você lança continuam sendo seus. Para o app funcionar, você nos dá uma licença gratuita, mundial e não exclusiva para guardar, copiar, sincronizar e mostrar esse conteúdo às pessoas dos seus grupos, enquanto ele existir no serviço.
+Contas, comentários, fotos e chaves que você lança continuam sendo seus. Para o app funcionar, você nos dá uma licença gratuita, mundial e não exclusiva para guardar, copiar, sincronizar e mostrar esse conteúdo às pessoas dos seus grupos e a quem tiver um link que você compartilha, enquanto ele existir no serviço.
 
 Só adicione pessoas, fotos e informações que você tem o direito de compartilhar. Quem está num grupo vê o que é lançado nele, e quem tem um link que você compartilha vê o que ele abre ([Política de privacidade](/privacy#quem-ve)). Compartilhe o link de uma conta com “Qualquer pessoa com o link” só com quem pode ver essa conta.
 

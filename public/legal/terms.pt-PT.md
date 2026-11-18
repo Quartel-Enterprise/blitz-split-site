@@ -36,7 +36,7 @@ Os saldos são o resultado do que o grupo registou. Não são uma cobrança, um 
 
 ## O que registas {#conteudo}
 
-As despesas, os comentários, as fotografias e as chaves que registas continuam a ser teus. Para a app funcionar, dás-nos uma licença gratuita, mundial e não exclusiva para guardar, copiar, sincronizar e mostrar esse conteúdo às pessoas dos teus grupos, enquanto ele existir no serviço.
+As despesas, os comentários, as fotografias e as chaves que registas continuam a ser teus. Para a app funcionar, dás-nos uma licença gratuita, mundial e não exclusiva para guardar, copiar, sincronizar e mostrar esse conteúdo às pessoas dos teus grupos e a quem tiver um link que partilhas, enquanto ele existir no serviço.
 
 Adiciona apenas pessoas, fotografias e informações que tenhas o direito de partilhar. Quem está num grupo vê o que é registado nele, e quem tem um link que partilhas vê o que ele abre ([Política de privacidade](/privacy#quem-ve)). Partilha o link de uma despesa com “Qualquer pessoa com o link” só com quem pode ver essa despesa.
 

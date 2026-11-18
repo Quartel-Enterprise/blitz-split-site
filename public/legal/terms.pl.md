@@ -36,7 +36,7 @@ Salda wynikają z tego, co dodała grupa. Nie są wezwaniem do zapłaty, papiere
 
 ## Co dodajesz {#tresci}
 
-Wydatki, komentarze, zdjęcia i klucze, które dodajesz, pozostają twoje. Aby aplikacja mogła działać, udzielasz nam bezpłatnej, światowej, niewyłącznej licencji na przechowywanie, kopiowanie, synchronizowanie i pokazywanie tych treści osobom z twoich grup, dopóki istnieją w usłudze.
+Wydatki, komentarze, zdjęcia i klucze, które dodajesz, pozostają twoje. Aby aplikacja mogła działać, udzielasz nam bezpłatnej, światowej, niewyłącznej licencji na przechowywanie, kopiowanie, synchronizowanie i pokazywanie tych treści osobom z twoich grup i każdemu, kto ma udostępniony przez ciebie link, dopóki istnieją w usłudze.
 
 Dodawaj tylko osoby, zdjęcia i informacje, którymi masz prawo się dzielić. Każdy w grupie widzi to, co zostało do niej dodane, a każdy, kto ma udostępniony przez ciebie link, widzi to, co ten link otwiera ([Polityka prywatności](/privacy#kto-widzi)). Link do wydatku z opcją „Każdy, kto ma link” udostępniaj tylko osobom, które mogą widzieć ten wydatek.
 

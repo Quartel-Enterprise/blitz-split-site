@@ -36,7 +36,7 @@ Saldon är resultatet av det som gruppen har lagt till. De är inte en faktura, 
 
 ## Det du lägger till {#content}
 
-Utgifter, kommentarer, foton och nycklar som du lägger till förblir dina. För att appen ska fungera ger du oss en kostnadsfri, världsomfattande, icke-exklusiv licens att lagra, kopiera, synkronisera och visa detta innehåll för personerna i dina grupper, så länge det finns i tjänsten.
+Utgifter, kommentarer, foton och nycklar som du lägger till förblir dina. För att appen ska fungera ger du oss en kostnadsfri, världsomfattande, icke-exklusiv licens att lagra, kopiera, synkronisera och visa detta innehåll för personerna i dina grupper och för den som har en länk du delar, så länge det finns i tjänsten.
 
 Lägg bara till personer, foton och information som du har rätt att dela. Alla i en grupp ser det som läggs till i den, och den som har en länk du delar ser det som länken öppnar ([Integritetspolicy](/privacy#sees)). Dela bara en utgifts länk med ”Alla med länken” med personer som får se den utgiften.
 

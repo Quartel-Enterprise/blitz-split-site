@@ -36,7 +36,7 @@ Số dư là kết quả của những gì nhóm đã thêm. Số dư không ph�
 
 ## Những gì bạn thêm {#content}
 
-Các khoản chi, bình luận, ảnh và khóa bạn thêm vẫn thuộc về bạn. Để ứng dụng hoạt động, bạn cấp cho chúng tôi một giấy phép miễn phí, toàn cầu, không độc quyền để lưu trữ, sao chép, đồng bộ và hiển thị nội dung đó cho những người trong các nhóm của bạn, trong suốt thời gian nội dung đó còn tồn tại trong dịch vụ.
+Các khoản chi, bình luận, ảnh và khóa bạn thêm vẫn thuộc về bạn. Để ứng dụng hoạt động, bạn cấp cho chúng tôi một giấy phép miễn phí, toàn cầu, không độc quyền để lưu trữ, sao chép, đồng bộ và hiển thị nội dung đó cho những người trong các nhóm của bạn và cho ai có liên kết bạn chia sẻ, trong suốt thời gian nội dung đó còn tồn tại trong dịch vụ.
 
 Chỉ thêm những người, ảnh và thông tin mà bạn có quyền chia sẻ. Mọi người trong một nhóm đều thấy những gì được thêm vào nhóm đó, và ai có liên kết bạn chia sẻ sẽ thấy những gì liên kết đó mở ra ([Chính sách quyền riêng tư](/privacy#sees)). Chỉ chia sẻ liên kết của một khoản chi với “Bất kỳ ai có liên kết” cho những người được phép xem khoản chi đó.
 

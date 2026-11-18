@@ -36,7 +36,7 @@ Balances are the result of what the group added. They are not a bill, a credit i
 
 ## What you add {#content}
 
-Bills, comments, photos and keys you add remain yours. For the app to work, you give us a free, worldwide, non-exclusive license to store, copy, sync and show that content to the people in your groups, for as long as it exists in the service.
+Bills, comments, photos and keys you add remain yours. For the app to work, you give us a free, worldwide, non-exclusive license to store, copy, sync and show that content to the people in your groups and to whoever has a link you share, for as long as it exists in the service.
 
 Only add people, photos and information you have the right to share. Everyone in a group sees what is added to it, and whoever has a link you share sees what it opens ([Privacy policy](/privacy#sees)). Share a bill's link with “Anyone with the link” only with people who may see that bill.
 

@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **In het kort**
 >
-> - Je gebruikt de app zonder account aan te maken. Google en Apple zijn optioneel, maar zonder een van beide worden je gegevens na 30 dagen zonder gebruik verwijderd.
+> - Je gebruikt de app zonder account aan te maken. Google en Apple zijn optioneel, maar zonder een van beide wordt je account na 30 dagen zonder gebruik verwijderd.
 > - Wat je toevoegt, staat eerst op je apparaat en gaat alleen naar de server om te synchroniseren en je groep te bereiken.
 > - Mensen in een groep zien wat bij de groep hoort, en wie een link heeft die jij deelt, ziet die rekening of je profiel. Niemand ziet je e-mailadres.
 > - Gebruiksstatistieken en crashrapporten bevatten geen namen of bedragen. Met een account zijn de statistieken aan de id daarvan gekoppeld. We gebruiken geen advertentie-id, en je zet de statistieken uit in Profiel.
@@ -57,7 +57,7 @@ De app werkt **eerst offline**: wat je toevoegt, wordt opgeslagen in een databas
 
 > **Uitnodigen uit contacten**
 >
-> Op Android, iPhone, iPad en Mac leest de app de contacten van je telefoon, alleen nadat je dat toestaat, om ze te tonen als je iemand voor een groep uitnodigt. Ze blijven op het apparaat: geen naam of nummer gaat naar onze server.
+> Op Android, iPhone, iPad en Mac leest de app de contacten van je apparaat, alleen nadat je dat toestaat, om ze te tonen als je iemand voor een groep uitnodigt. Ze blijven op het apparaat: geen naam of nummer gaat naar onze server.
 
 ## Waarvoor we ze gebruiken {#use}
 
@@ -85,7 +85,7 @@ Iedereen in een groep ziet de naam, foto en kleur van elk lid; de rekeningen, it
 
 ### Wie een link heeft die jij deelt
 
-- **“Uitgave delen”** maakt een link naar één rekening. Met “Alleen wie meedoet met de uitgave” openen alleen de mensen die erin staan hem. Met “Iedereen met de link” ziet wie de link heeft de rekening (de omschrijving, het bedrag, de datum, de categorie en de naam van de groep, wie er betaald heeft en hoe er verdeeld is, met namen) met de foto’s en opmerkingen, en kan iedereen die in de app is ingelogd erop reageren. De preview die een chatapp van de link maakt, toont de omschrijving, het bedrag en wie er betaald heeft. “Link uitzetten”, in Uitgave delen, laat de link stoppen met werken.
+- **“Uitgave delen”** maakt een link naar één rekening. Met “Alleen wie meedoet met de uitgave” openen alleen de mensen die erin staan hem. Met “Iedereen met de link” ziet wie de link heeft de rekening (de omschrijving, het bedrag, de datum, de categorie en de naam van de groep, wie er betaald heeft en hoe er verdeeld is, met namen) met de foto’s en opmerkingen, en kan iedereen die in de app is ingelogd erop reageren. De preview die een chatapp van de link maakt, toont de omschrijving, het bedrag, wie er betaald heeft, onder hoeveel mensen de rekening verdeeld is en de naam van de groep. “Link uitzetten”, in Uitgave delen, laat de link stoppen met werken; een preview die een chatapp al heeft gemaakt, blijft in dat gesprek staan, en de afbeelding van de preview kan tot een dag in de cache blijven.
 - **“Profiel delen”** maakt een link naar je profiel: wie die heeft, ziet je naam en foto, ook in de preview van de link.
 
 ### Wie voor ons werkt
@@ -95,11 +95,11 @@ Deze bedrijven verwerken gegevens namens ons, uitsluitend voor wat hier beschrev
 | Bedrijf | Waarvoor |
 | --- | --- |
 | Supabase | Database, inloggen en opslag van foto’s |
-| Google (Firebase) | Gebruiksstatistieken; crashrapporten in de apps voor Android, iPhone, iPad en Mac; meldingen op Android; Google Analytics van de website; inloggen met Google |
+| Google (Firebase) | Gebruiksstatistieken; crashrapporten in de apps voor Android, iPhone, iPad en Mac; meldingen op Android; Google Analytics van de website; inloggen met Google; het e-mailadres van support (Gmail) |
 | Apple | Meldingen op iPhone, iPad en Mac; inloggen met Apple |
 | Anthropic | Foto’s van bonnen lezen |
 | Sentry | Crashrapporten in de browser |
-| Cloudflare | Het hosten van de website blitzsplit.com |
+| Cloudflare | Het hosten van de website blitzsplit.com en van de previews van gedeelde links |
 | Google Play en de App Store | De app verspreiden en bijwerken |
 
 We kunnen gegevens ook delen wanneer de wet of een rechterlijk bevel dat vereist.
@@ -112,9 +112,10 @@ Sommige van deze aanbieders slaan gegevens op of verwerken ze buiten Brazilië, 
 
 - Zolang je account bestaat, bewaren we wat de app nodig heeft om te werken.
 - **“Uitloggen”** wist de kopie op het apparaat. Met Google of Apple blijven je gegevens op de server staan voor als je opnieuw inlogt.
-- **Zonder account** wist “Profiel wissen en uitloggen” het apparaat en blijft je herstelcode nog 30 dagen werken. Wil je meteen ook wissen wat op de server staat, gebruik dan “Account en gegevens verwijderen”.
+- **Zonder account** wist “Profiel wissen en uitloggen” het apparaat en blijft je herstelcode werken tot het account wegens geen gebruik wordt verwijderd (zie hieronder). Wil je meteen ook wissen wat op de server staat, gebruik dan “Account en gegevens verwijderen”.
 - **Een account zonder Google of Apple wordt na 30 dagen zonder gebruik verwijderd:** als geen van zijn apparaten 30 dagen synchroniseert, verwijdert de server het zoals “Account en gegevens verwijderen” dat doet, en werkt de herstelcode ervan niet meer.
-- **“Account en gegevens verwijderen”**, in Profiel, verwijdert in één keer je profiel, foto, betaalgegevens, betaalmethoden en herstelcode, en trekt de toegang in die je Apple hebt gegeven. Rekeningen die je hebt toegevoegd in groepen met andere mensen blijven daar voor de groep staan, zonder je naam, als “Voormalig lid”.
+- **“Account en gegevens verwijderen”**, in Profiel, verwijdert in één keer je profiel, foto, betaalgegevens, betaalmethoden en herstelcode, en trekt de toegang in die je Apple hebt gegeven. Rekeningen die je hebt toegevoegd in groepen met andere mensen blijven daar voor de groep staan, onder de naam die je erin had, niet meer gekoppeld aan een account. Dat geldt ook voor je opmerkingen, ook die bij rekeningen die via een link met je zijn gedeeld.
+- Mails aan support bewaren we zolang we ze nodig hebben om je te antwoorden en op te volgen wat je hebt gemeld. Vraag het ons en we verwijderen ze.
 - Gebruiksgegevens die aan een apparaat gekoppeld zijn, blijven maximaal 14 maanden in Google Analytics. Daarna blijven alleen geaggregeerde cijfers over, zonder iets waarmee iemand te identificeren is. Zodra je account verwijderd is, leidt de id die ze bevatten niet meer naar jou.
 - Crashrapporten worden maximaal 90 dagen bewaard en daarna verwijderd.
 
@@ -134,7 +135,7 @@ Veel hiervan doe je in de app zelf: je profiel bewerken, betaalgegevens verwijde
 
 ## Beveiliging {#security}
 
-Gegevens worden versleuteld verzonden (HTTPS). Op de server zorgen toegangsregels ervoor dat iedereen alleen de groepen kan lezen waar hij of zij lid van is. Geen enkel systeem is foutloos, maar we nemen elk incident serieus en informeren jou en de ANPD wanneer de wet dat vraagt.
+Gegevens worden versleuteld verzonden (HTTPS). Op de server zorgen toegangsregels ervoor dat iedereen alleen de groepen kan lezen waar hij of zij lid van is, en wat een link opent die hij of zij heeft gekregen. Geen enkel systeem is foutloos, maar we nemen elk incident serieus en informeren jou en de ANPD wanneer de wet dat vraagt.
 
 Je herstelcode, 12 woorden, werkt als een wachtwoord: bewaar hem op een veilige plek en deel hem niet. We bewaren de woorden niet, alleen een vingerafdruk ervan waaruit ze niet terug te halen zijn. Op iPhone, iPad en Mac slaat de app hem op in de Wachtwoorden-app.
 

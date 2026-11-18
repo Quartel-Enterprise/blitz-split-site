@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **W skrócie**
 >
-> - Korzystasz z aplikacji bez zakładania konta. Google i Apple są opcjonalne, ale bez nich twoje dane są usuwane po 30 dniach nieużywania.
+> - Korzystasz z aplikacji bez zakładania konta. Google i Apple są opcjonalne, ale bez nich twoje konto jest usuwane po 30 dniach nieużywania.
 > - To, co dodajesz, zapisuje się najpierw na twoim urządzeniu, a na serwer trafia tylko po to, by się zsynchronizować i dotrzeć do twojej grupy.
 > - Osoby w grupie widzą to, co należy do grupy, a każdy, kto ma udostępniony przez ciebie link, widzi ten wydatek lub twój profil. Nikt nie widzi twojego adresu e-mail.
 > - Statystyki użytkowania i raporty o awariach nie zawierają imion ani kwot. Jeśli masz konto, statystyki są powiązane z jego identyfikatorem. Nie używamy identyfikatora reklamowego, a statystyki wyłączysz w Profilu.
@@ -57,7 +57,7 @@ Aplikacja działa **przede wszystkim offline**: to, co dodajesz, zapisuje się w
 
 > **Zaproś z kontaktów**
 >
-> Na Androidzie, iPhonie, iPadzie i Macu aplikacja odczytuje kontakty z twojego telefonu, tylko gdy na to pozwolisz, aby wyświetlić je, gdy zapraszasz kogoś do grupy. Pozostają na urządzeniu: żadne imię ani numer nie trafia na nasz serwer.
+> Na Androidzie, iPhonie, iPadzie i Macu aplikacja odczytuje kontakty z twojego urządzenia, tylko gdy na to pozwolisz, aby wyświetlić je, gdy zapraszasz kogoś do grupy. Pozostają na urządzeniu: żadne imię ani numer nie trafia na nasz serwer.
 
 ## Do czego ich używamy {#cele}
 
@@ -85,7 +85,7 @@ Każdy w grupie widzi imię, zdjęcie i kolor każdego członka; wydatki, pozycj
 
 ### Kto ma link, który udostępniasz
 
-- **„Udostępnij wydatek”** tworzy link do jednego wydatku. Przy „Tylko osoby w wydatku” otwierają go tylko osoby, które w nim są. Przy „Każdy, kto ma link” każdy, kto ma link, widzi wydatek (jego opis, kwotę, datę, kategorię i nazwę grupy, kto zapłacił i jak go podzielono, z imionami) wraz ze zdjęciami i komentarzami, a każdy zalogowany w aplikacji może go komentować. Podgląd, który komunikator tworzy z linku, pokazuje opis, kwotę i to, kto zapłacił. „Wyłącz link” w „Udostępnij wydatek” sprawia, że link przestaje działać.
+- **„Udostępnij wydatek”** tworzy link do jednego wydatku. Przy „Tylko osoby w wydatku” otwierają go tylko osoby, które w nim są. Przy „Każdy, kto ma link” każdy, kto ma link, widzi wydatek (jego opis, kwotę, datę, kategorię i nazwę grupy, kto zapłacił i jak go podzielono, z imionami) wraz ze zdjęciami i komentarzami, a każdy zalogowany w aplikacji może go komentować. Podgląd, który komunikator tworzy z linku, pokazuje opis, kwotę, to, kto zapłacił, na ile osób podzielono wydatek, oraz nazwę grupy. „Wyłącz link” w „Udostępnij wydatek” sprawia, że link przestaje działać; podgląd, który komunikator już utworzył, zostaje w tej rozmowie, a jego obraz może pozostać w pamięci podręcznej do jednego dnia.
 - **„Udostępnij profil”** tworzy link do twojego profilu: każdy, kto go ma, widzi twoje imię i zdjęcie, także w podglądzie linku.
 
 ### Kto dla nas pracuje
@@ -95,11 +95,11 @@ Te firmy przetwarzają dane w naszym imieniu, wyłącznie w zakresie opisanym tu
 | Firma | W jakim celu |
 | --- | --- |
 | Supabase | Baza danych, logowanie i przechowywanie zdjęć |
-| Google (Firebase) | Statystyki użytkowania; raporty o awariach w aplikacjach na Androida, iPhone'a, iPada i Maca; powiadomienia na Androidzie; Google Analytics serwisu internetowego; logowanie przez Google |
+| Google (Firebase) | Statystyki użytkowania; raporty o awariach w aplikacjach na Androida, iPhone'a, iPada i Maca; powiadomienia na Androidzie; Google Analytics serwisu internetowego; logowanie przez Google; e-mail pomocy (Gmail) |
 | Apple | Powiadomienia na iPhonie, iPadzie i Macu; logowanie przez Apple |
 | Anthropic | Odczytywanie zdjęć paragonów |
 | Sentry | Raporty o awariach w przeglądarce |
-| Cloudflare | Hosting serwisu blitzsplit.com |
+| Cloudflare | Hosting serwisu blitzsplit.com i podglądów udostępnionych linków |
 | Google Play i App Store | Dystrybucja i aktualizacje aplikacji |
 
 Możemy też udostępnić dane, gdy wymaga tego prawo lub orzeczenie sądu.
@@ -112,9 +112,10 @@ Niektórzy z tych dostawców przechowują lub przetwarzają dane poza Brazylią,
 
 - Dopóki twoje konto istnieje, przechowujemy to, czego aplikacja potrzebuje do działania.
 - **„Wyloguj się”** usuwa kopię z urządzenia. Przy koncie Google lub Apple twoje dane czekają na serwerze, aż zalogujesz się ponownie.
-- **Bez konta** „Wymaż profil i wyloguj się” czyści urządzenie, a twój kod odzyskiwania działa jeszcze przez 30 dni. Aby od razu usunąć także to, co jest na serwerze, użyj „Usuń konto i dane”.
+- **Bez konta** „Wymaż profil i wyloguj się” czyści urządzenie, a twój kod odzyskiwania działa, dopóki konto nie zostanie usunięte z powodu nieużywania (poniżej). Aby od razu usunąć także to, co jest na serwerze, użyj „Usuń konto i dane”.
 - **Konto bez Google lub Apple jest usuwane po 30 dniach nieużywania:** gdy żadne z jego urządzeń nie synchronizuje się przez 30 dni, serwer usuwa je tak jak „Usuń konto i dane”, a jego kod odzyskiwania przestaje działać.
-- **„Usuń konto i dane”** w sekcji Profil od razu usuwa twój profil, zdjęcie, klucze płatnicze, metody płatności i kod odzyskiwania oraz cofa dostęp przyznany przez Apple. Wydatki dodane przez ciebie w grupach z innymi osobami zostają w nich dla grupy, bez twojego imienia, jako „Były członek”.
+- **„Usuń konto i dane”** w sekcji Profil od razu usuwa twój profil, zdjęcie, klucze płatnicze, metody płatności i kod odzyskiwania oraz cofa dostęp przyznany przez Apple. Wydatki dodane przez ciebie w grupach z innymi osobami zostają w nich dla grupy, pod twoim imieniem z tej grupy, niepowiązane już z żadnym kontem. Tak samo zostają twoje komentarze, także przy wydatkach udostępnionych ci linkiem.
+- E-maile do pomocy przechowujemy, dopóki są nam potrzebne, by ci odpowiedzieć i zająć się tym, co zgłaszasz. Na twoją prośbę je usuwamy.
 - Dane o użytkowaniu powiązane z urządzeniem pozostają w Google Analytics do 14 miesięcy. Potem zostają tylko zbiorcze liczby, bez niczego, co pozwalałoby kogokolwiek zidentyfikować. Po usunięciu konta identyfikator, który zawierają, nie prowadzi już do ciebie.
 - Raporty o awariach przechowujemy do 90 dni, a potem je usuwamy.
 
@@ -134,7 +135,7 @@ Wiele z tego zrobisz w samej aplikacji: edytujesz profil, usuniesz klucz płatni
 
 ## Bezpieczeństwo {#bezpieczenstwo}
 
-Dane są przesyłane w postaci zaszyfrowanej (HTTPS). Na serwerze reguły dostępu sprawiają, że każda osoba może odczytać tylko grupy, do których należy. Żaden system nie jest bezbłędny, ale każdy incydent traktujemy poważnie i powiadamiamy ciebie oraz ANPD, gdy wymaga tego prawo.
+Dane są przesyłane w postaci zaszyfrowanej (HTTPS). Na serwerze reguły dostępu sprawiają, że każda osoba może odczytać tylko grupy, do których należy, i to, co otwiera otrzymany przez nią link. Żaden system nie jest bezbłędny, ale każdy incydent traktujemy poważnie i powiadamiamy ciebie oraz ANPD, gdy wymaga tego prawo.
 
 Twój kod odzyskiwania, 12 słów, działa jak hasło: przechowuj go w bezpiecznym miejscu i nikomu go nie udostępniaj. Nie przechowujemy tych słów, tylko ich odcisk, z którego nie da się ich odtworzyć. Na iPhonie, iPadzie i Macu aplikacja zapisuje go w aplikacji Hasła.
 

@@ -36,7 +36,7 @@ Zůstatky jsou výsledkem toho, co skupina přidala. Nejsou fakturou, úvěrový
 
 ## Co přidáš {#content}
 
-Výdaje, komentáře, fotky a klíče, které přidáš, zůstávají tvoje. Aby aplikace fungovala, udělíš nám bezplatnou, celosvětovou, nevýhradní licenci tento obsah ukládat, kopírovat, synchronizovat a ukazovat lidem ve tvých skupinách, a to po dobu, kdy ve službě existuje.
+Výdaje, komentáře, fotky a klíče, které přidáš, zůstávají tvoje. Aby aplikace fungovala, udělíš nám bezplatnou, celosvětovou, nevýhradní licenci tento obsah ukládat, kopírovat, synchronizovat a ukazovat lidem ve tvých skupinách a každému, kdo má odkaz, který sdílíš, a to po dobu, kdy ve službě existuje.
 
 Přidávej jen lidi, fotky a informace, které máš právo sdílet. Všichni ve skupině vidí, co se do ní přidá, a kdo má odkaz, který sdílíš, vidí, co odkaz otevírá ([Zásady ochrany osobních údajů](/privacy#sees)). Odkaz na výdaj s volbou „Kdokoli s odkazem“ sdílej jen s lidmi, kteří ten výdaj smějí vidět.
 

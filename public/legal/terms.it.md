@@ -36,7 +36,7 @@ I saldi sono il risultato di ciò che il gruppo ha aggiunto. Non sono una fattur
 
 ## Ciò che aggiungi {#contenuti}
 
-Le spese, i commenti, le foto e le chiavi che aggiungi restano tuoi. Perché l'app funzioni, ci concedi una licenza gratuita, valida in tutto il mondo e non esclusiva per conservare, copiare, sincronizzare e mostrare quei contenuti alle persone dei tuoi gruppi, finché esistono nel servizio.
+Le spese, i commenti, le foto e le chiavi che aggiungi restano tuoi. Perché l'app funzioni, ci concedi una licenza gratuita, valida in tutto il mondo e non esclusiva per conservare, copiare, sincronizzare e mostrare quei contenuti alle persone dei tuoi gruppi e a chi ha un link che condividi, finché esistono nel servizio.
 
 Aggiungi solo persone, foto e informazioni che hai il diritto di condividere. Chiunque sia in un gruppo vede ciò che vi viene aggiunto, e chi ha un link che condividi vede ciò che apre ([Informativa sulla privacy](/privacy#chi-vede)). Condividi il link di una spesa con “Chiunque abbia il link” solo con chi può vedere quella spesa.
 

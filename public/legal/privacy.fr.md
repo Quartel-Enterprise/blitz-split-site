@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **En bref**
 >
-> - Vous utilisez l’app sans créer de compte. Google et Apple sont facultatifs, mais sans eux vos données sont supprimées après 30 jours sans utilisation.
+> - Vous utilisez l’app sans créer de compte. Google et Apple sont facultatifs, mais sans eux votre compte est supprimé après 30 jours sans utilisation.
 > - Ce que vous ajoutez reste d’abord sur votre appareil et ne va au serveur que pour se synchroniser et parvenir à votre groupe.
 > - Les membres d’un groupe voient ce qui appartient au groupe, et quiconque a un lien que vous partagez voit cette dépense ou votre profil. Personne ne voit votre adresse e-mail.
 > - Les statistiques d’utilisation et les rapports de plantage ne contiennent ni noms ni montants. Avec un compte, les statistiques sont liées à son identifiant. Nous n’utilisons pas d’identifiant publicitaire, et vous désactivez les statistiques dans Profil.
@@ -57,7 +57,7 @@ L’app fonctionne **d’abord hors ligne** : ce que vous ajoutez est enregistr
 
 > **Inviter depuis les contacts**
 >
-> Sur Android, iPhone, iPad et Mac, l’app lit les contacts de votre téléphone, uniquement après votre autorisation, pour les lister quand vous invitez quelqu’un dans un groupe. Ils restent sur l’appareil : aucun nom ni numéro ne va à notre serveur.
+> Sur Android, iPhone, iPad et Mac, l’app lit les contacts de votre appareil, uniquement après votre autorisation, pour les lister quand vous invitez quelqu’un dans un groupe. Ils restent sur l’appareil : aucun nom ni numéro ne va à notre serveur.
 
 ## À quoi elles nous servent {#usage}
 
@@ -85,7 +85,7 @@ Tout membre d’un groupe voit le nom, la photo et la couleur de chaque membre�
 
 ### Qui a un lien que vous partagez
 
-- **Partager la dépense** crée un lien vers une dépense. Avec « Seulement les personnes de la dépense », seules les personnes qui y figurent l’ouvrent. Avec « Toute personne ayant le lien », quiconque a le lien voit la dépense (sa description, son montant, sa date, sa catégorie et le nom du groupe, qui a payé et comment elle a été partagée, par nom) avec ses photos et ses commentaires, et toute personne connectée à l’app peut la commenter. L’aperçu qu’une messagerie affiche à partir du lien montre la description, le montant et qui a payé. « Désactiver le lien », dans Partager la dépense, le rend inutilisable.
+- **Partager la dépense** crée un lien vers une dépense. Avec « Seulement les personnes de la dépense », seules les personnes qui y figurent l’ouvrent. Avec « Toute personne ayant le lien », quiconque a le lien voit la dépense (sa description, son montant, sa date, sa catégorie et le nom du groupe, qui a payé et comment elle a été partagée, par nom) avec ses photos et ses commentaires, et toute personne connectée à l’app peut la commenter. L’aperçu qu’une messagerie affiche à partir du lien montre la description, le montant, qui a payé, entre combien de personnes la dépense est partagée et le nom du groupe. « Désactiver le lien », dans Partager la dépense, rend le lien inutilisable ; un aperçu déjà affiché par une messagerie reste dans cette conversation, et son image peut rester en cache jusqu’à un jour.
 - **Partager le profil** crée un lien vers votre profil : quiconque l’a voit votre nom et votre photo, y compris dans l’aperçu du lien.
 
 ### Nos sous-traitants
@@ -95,11 +95,11 @@ Ces entreprises traitent des données pour notre compte, uniquement pour ce qui 
 | Entreprise | Pour quoi faire |
 | --- | --- |
 | Supabase | Base de données, connexion et stockage des photos |
-| Google (Firebase) | Statistiques d’utilisation ; rapports de plantage dans les apps Android, iPhone, iPad et Mac ; notifications sur Android ; le Google Analytics du site ; connexion avec Google |
+| Google (Firebase) | Statistiques d’utilisation ; rapports de plantage dans les apps Android, iPhone, iPad et Mac ; notifications sur Android ; le Google Analytics du site ; connexion avec Google ; l’e-mail de l’assistance (Gmail) |
 | Apple | Notifications sur iPhone, iPad et Mac ; connexion avec Apple |
 | Anthropic | Lecture des photos de reçus |
 | Sentry | Rapports de plantage dans le navigateur |
-| Cloudflare | Hébergement du site blitzsplit.com |
+| Cloudflare | Hébergement du site blitzsplit.com et des aperçus des liens partagés |
 | Google Play et l’App Store | Distribution et mises à jour de l’app |
 
 Nous pouvons aussi communiquer des données lorsque la loi ou une décision de justice l’exige.
@@ -112,9 +112,10 @@ Certains de ces fournisseurs stockent ou traitent des données hors du Brésil, 
 
 - Tant que votre compte existe, nous conservons ce dont l’app a besoin pour fonctionner.
 - **« Se déconnecter »** efface la copie de l’appareil. Avec Google ou Apple, vos données restent sur le serveur pour votre prochaine connexion.
-- **Sans compte**, « Effacer le profil et se déconnecter » vide l’appareil et votre code de récupération reste valable 30 jours. Pour effacer tout de suite ce qui se trouve sur le serveur, utilisez « Supprimer le compte et les données ».
+- **Sans compte**, « Effacer le profil et se déconnecter » vide l’appareil et votre code de récupération reste valable jusqu’à ce que le compte soit supprimé faute d’utilisation (ci-dessous). Pour effacer tout de suite ce qui se trouve sur le serveur, utilisez « Supprimer le compte et les données ».
 - **Un compte sans Google ni Apple est supprimé après 30 jours sans utilisation :** quand aucun de ses appareils ne se synchronise pendant 30 jours, le serveur le supprime comme le fait « Supprimer le compte et les données », et son code de récupération cesse de fonctionner.
-- **« Supprimer le compte et les données »**, dans Profil, supprime d’un coup votre profil, votre photo, vos clés de paiement, vos moyens de paiement et votre code de récupération, et révoque l’accès accordé par Apple. Les dépenses que vous avez ajoutées dans des groupes avec d’autres personnes y restent pour le groupe, sans votre nom, sous « Ancien membre ».
+- **« Supprimer le compte et les données »**, dans Profil, supprime d’un coup votre profil, votre photo, vos clés de paiement, vos moyens de paiement et votre code de récupération, et révoque l’accès accordé par Apple. Les dépenses que vous avez ajoutées dans des groupes avec d’autres personnes y restent pour le groupe, sous le nom que vous y aviez, sans lien avec aucun compte. Il en va de même des commentaires que vous avez laissés, y compris sur des dépenses partagées avec vous par lien.
+- Les e-mails à l’assistance sont conservés tant que nous en avons besoin pour vous répondre et suivre ce que vous avez signalé. Demandez-le-nous et nous les supprimons.
 - Les données d’utilisation liées à un appareil restent dans Google Analytics jusqu’à 14 mois. Ensuite, il ne reste que des chiffres agrégés, sans rien qui permette d’identifier qui que ce soit. Une fois votre compte supprimé, l’identifiant qu’elles portent ne mène plus à vous.
 - Les rapports de plantage sont conservés jusqu’à 90 jours, puis supprimés.
 
@@ -134,7 +135,7 @@ Vous pouvez faire une bonne partie de tout cela dans l’app elle-même : modif
 
 ## Sécurité {#securite}
 
-Les données circulent chiffrées (HTTPS). Sur le serveur, des règles d’accès garantissent que chacun ne lit que les groupes dont il fait partie. Aucun système n’est infaillible, mais nous prenons tout incident au sérieux et vous en informons, ainsi que l’ANPD, lorsque la loi l’exige.
+Les données circulent chiffrées (HTTPS). Sur le serveur, des règles d’accès garantissent que chacun ne lit que les groupes dont il fait partie et ce qu’ouvre un lien qu’on lui a donné. Aucun système n’est infaillible, mais nous prenons tout incident au sérieux et vous en informons, ainsi que l’ANPD, lorsque la loi l’exige.
 
 Votre code de récupération, de 12 mots, vaut un mot de passe : gardez-le en lieu sûr et ne le communiquez à personne. Nous ne conservons pas les mots, seulement une empreinte qui ne permet pas de les retrouver. Sur iPhone, iPad et Mac, l’app l’enregistre dans l’app Mots de passe.
 

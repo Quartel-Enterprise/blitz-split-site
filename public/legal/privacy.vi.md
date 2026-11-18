@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **Tóm tắt**
 >
-> - Bạn dùng ứng dụng mà không cần tạo tài khoản. Google và Apple là tùy chọn, nhưng nếu không có chúng, dữ liệu của bạn sẽ bị xóa sau 30 ngày không sử dụng.
+> - Bạn dùng ứng dụng mà không cần tạo tài khoản. Google và Apple là tùy chọn, nhưng nếu không có chúng, tài khoản của bạn sẽ bị xóa sau 30 ngày không sử dụng.
 > - Những gì bạn thêm được lưu trên thiết bị của bạn trước, và chỉ được gửi lên máy chủ để đồng bộ và đến được với nhóm của bạn.
 > - Những người trong một nhóm thấy những gì thuộc về nhóm, và ai có liên kết bạn chia sẻ sẽ thấy khoản chi đó hoặc hồ sơ của bạn. Không ai thấy email của bạn.
 > - Số liệu sử dụng và báo cáo sự cố không chứa tên hay số tiền. Nếu có tài khoản, số liệu được gắn với ID của tài khoản đó. Chúng tôi không dùng ID quảng cáo, và bạn tắt số liệu trong Hồ sơ.
@@ -57,7 +57,7 @@ blitzsplit.com dùng Google Analytics để đếm lượt truy cập, trong m�
 
 > **Mời từ danh bạ**
 >
-> Trên Android, iPhone, iPad và Mac, ứng dụng đọc danh bạ trên điện thoại của bạn, chỉ sau khi bạn cho phép, để liệt kê chúng khi bạn mời ai đó vào một nhóm. Danh bạ ở lại trên thiết bị: không có tên hay số điện thoại nào được gửi lên máy chủ của chúng tôi.
+> Trên Android, iPhone, iPad và Mac, ứng dụng đọc danh bạ trên thiết bị của bạn, chỉ sau khi bạn cho phép, để liệt kê chúng khi bạn mời ai đó vào một nhóm. Danh bạ ở lại trên thiết bị: không có tên hay số điện thoại nào được gửi lên máy chủ của chúng tôi.
 
 ## Chúng tôi dùng dữ liệu để làm gì {#use}
 
@@ -85,7 +85,7 @@ Bất kỳ ai trong một nhóm đều thấy tên, ảnh và màu của từng 
 
 ### Ai có liên kết bạn chia sẻ
 
-- **Chia sẻ khoản chi** tạo một liên kết đến một khoản chi. Với “Chỉ người tham gia khoản chi”, chỉ những người trong khoản chi đó mở được. Với “Bất kỳ ai có liên kết”, ai có liên kết đều thấy khoản chi (mô tả, số tiền, ngày, danh mục và tên nhóm, ai đã trả và cách chia, theo tên) cùng ảnh và bình luận của nó, và bất kỳ ai đã đăng nhập vào ứng dụng đều có thể bình luận. Bản xem trước mà ứng dụng trò chuyện tạo từ liên kết hiển thị mô tả, số tiền và ai đã trả. “Tắt liên kết”, trong Chia sẻ khoản chi, khiến liên kết ngừng hoạt động.
+- **Chia sẻ khoản chi** tạo một liên kết đến một khoản chi. Với “Chỉ người tham gia khoản chi”, chỉ những người trong khoản chi đó mở được. Với “Bất kỳ ai có liên kết”, ai có liên kết đều thấy khoản chi (mô tả, số tiền, ngày, danh mục và tên nhóm, ai đã trả và cách chia, theo tên) cùng ảnh và bình luận của nó, và bất kỳ ai đã đăng nhập vào ứng dụng đều có thể bình luận. Bản xem trước mà ứng dụng trò chuyện tạo từ liên kết hiển thị mô tả, số tiền, ai đã trả, chia cho bao nhiêu người và tên nhóm. “Tắt liên kết”, trong Chia sẻ khoản chi, khiến liên kết ngừng hoạt động; bản xem trước mà ứng dụng trò chuyện đã tạo vẫn ở lại trong cuộc trò chuyện đó, và hình ảnh của bản xem trước có thể vẫn được lưu đệm tối đa một ngày.
 - **Chia sẻ hồ sơ** tạo một liên kết đến hồ sơ của bạn: ai có liên kết sẽ thấy tên và ảnh của bạn, kể cả trong bản xem trước của liên kết.
 
 ### Những bên làm việc cho chúng tôi
@@ -95,11 +95,11 @@ Các công ty sau xử lý dữ liệu thay mặt chúng tôi, chỉ cho những
 | Công ty | Để làm gì |
 | --- | --- |
 | Supabase | Cơ sở dữ liệu, đăng nhập và lưu trữ ảnh |
-| Google (Firebase) | Số liệu sử dụng; báo cáo sự cố trong các ứng dụng Android, iPhone, iPad và Mac; thông báo trên Android; Google Analytics của trang web; đăng nhập bằng Google |
+| Google (Firebase) | Số liệu sử dụng; báo cáo sự cố trong các ứng dụng Android, iPhone, iPad và Mac; thông báo trên Android; Google Analytics của trang web; đăng nhập bằng Google; email hỗ trợ (Gmail) |
 | Apple | Thông báo trên iPhone, iPad và Mac; đăng nhập bằng Apple |
 | Anthropic | Đọc ảnh hóa đơn |
 | Sentry | Báo cáo sự cố trong trình duyệt |
-| Cloudflare | Lưu trữ trang web blitzsplit.com |
+| Cloudflare | Lưu trữ trang web blitzsplit.com và bản xem trước của các liên kết được chia sẻ |
 | Google Play và App Store | Phân phối và cập nhật ứng dụng |
 
 Chúng tôi cũng có thể chia sẻ dữ liệu khi pháp luật hoặc lệnh của tòa án yêu cầu.
@@ -112,9 +112,10 @@ Một số nhà cung cấp này lưu trữ hoặc xử lý dữ liệu bên ngo�
 
 - Khi tài khoản của bạn còn tồn tại, chúng tôi giữ những gì ứng dụng cần để hoạt động.
 - **Đăng xuất** xóa bản sao trên thiết bị. Với Google hoặc Apple, dữ liệu của bạn vẫn ở trên máy chủ cho lần bạn đăng nhập lại.
-- **Không có tài khoản**, “Xóa hồ sơ và đăng xuất” xóa sạch thiết bị và mã khôi phục của bạn vẫn tiếp tục hoạt động trong 30 ngày. Để xóa ngay những gì trên máy chủ, hãy dùng “Xóa tài khoản và dữ liệu”.
+- **Không có tài khoản**, “Xóa hồ sơ và đăng xuất” xóa sạch thiết bị và mã khôi phục của bạn vẫn tiếp tục hoạt động cho đến khi tài khoản bị xóa vì không được sử dụng (xem bên dưới). Để xóa ngay những gì trên máy chủ, hãy dùng “Xóa tài khoản và dữ liệu”.
 - **Tài khoản không có Google hoặc Apple sẽ bị xóa sau 30 ngày không sử dụng:** khi không thiết bị nào của tài khoản đồng bộ trong 30 ngày, máy chủ sẽ xóa tài khoản giống như “Xóa tài khoản và dữ liệu”, và mã khôi phục của nó ngừng hoạt động.
-- **“Xóa tài khoản và dữ liệu”**, trong Hồ sơ, xóa hồ sơ, ảnh, khóa nhận thanh toán, phương thức thanh toán và mã khôi phục của bạn cùng một lúc, và thu hồi quyền truy cập mà Apple đã cấp. Các khoản chi bạn đã thêm vào nhóm có người khác vẫn ở lại đó cho nhóm, không có tên bạn, dưới dạng “Cựu thành viên”.
+- **“Xóa tài khoản và dữ liệu”**, trong Hồ sơ, xóa hồ sơ, ảnh, khóa nhận thanh toán, phương thức thanh toán và mã khôi phục của bạn cùng một lúc, và thu hồi quyền truy cập mà Apple đã cấp. Các khoản chi bạn đã thêm vào nhóm có người khác vẫn ở lại đó cho nhóm, dưới tên bạn đã dùng trong nhóm, không còn gắn với tài khoản nào. Các bình luận bạn đã để lại cũng vậy, kể cả trên các khoản chi được chia sẻ với bạn qua liên kết.
+- Email hỗ trợ được lưu giữ trong thời gian chúng tôi cần để trả lời bạn và theo dõi những gì bạn đã báo cáo. Hãy yêu cầu và chúng tôi sẽ xóa chúng.
 - Dữ liệu sử dụng gắn với một thiết bị được lưu trong Google Analytics tối đa 14 tháng. Sau đó, chỉ còn lại các con số tổng hợp, không có gì nhận dạng được bất kỳ ai. Khi tài khoản của bạn đã bị xóa, ID mà dữ liệu này mang không còn dẫn đến bạn nữa.
 - Báo cáo sự cố được giữ tối đa 90 ngày rồi bị xóa.
 
@@ -134,7 +135,7 @@ Bạn thực hiện phần lớn những điều này ngay trong ứng dụng: s
 
 ## Bảo mật {#security}
 
-Dữ liệu được truyền đi dưới dạng mã hóa (HTTPS). Trên máy chủ, các quy tắc truy cập bảo đảm mỗi người chỉ đọc được các nhóm mà họ là thành viên. Không hệ thống nào hoàn hảo, nhưng chúng tôi xem trọng mọi sự cố và thông báo cho bạn và ANPD khi pháp luật yêu cầu.
+Dữ liệu được truyền đi dưới dạng mã hóa (HTTPS). Trên máy chủ, các quy tắc truy cập bảo đảm mỗi người chỉ đọc được các nhóm mà họ là thành viên và những gì một liên kết họ được gửi mở ra. Không hệ thống nào hoàn hảo, nhưng chúng tôi xem trọng mọi sự cố và thông báo cho bạn và ANPD khi pháp luật yêu cầu.
 
 Mã khôi phục của bạn, gồm 12 từ, hoạt động như một mật khẩu: hãy cất nó ở nơi an toàn và đừng chia sẻ. Chúng tôi không lưu các từ đó, chỉ lưu một dấu vân tay của chúng không thể chuyển ngược lại thành các từ. Trên iPhone, iPad và Mac, ứng dụng lưu mã trong ứng dụng Mật khẩu.
 

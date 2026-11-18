@@ -36,7 +36,7 @@ Los saldos son el resultado de lo que anotó el grupo. No son un cobro, un títu
 
 ## Lo que anotas {#contenido}
 
-Las cuentas, comentarios, fotos y claves que anotas siguen siendo tuyos. Para que la app funcione, nos das una licencia gratuita, mundial y no exclusiva para guardar, copiar, sincronizar y mostrar ese contenido a las personas de tus grupos, mientras exista en el servicio.
+Las cuentas, comentarios, fotos y claves que anotas siguen siendo tuyos. Para que la app funcione, nos das una licencia gratuita, mundial y no exclusiva para guardar, copiar, sincronizar y mostrar ese contenido a las personas de tus grupos y a quien tenga un enlace que compartes, mientras exista en el servicio.
 
 Agrega solo personas, fotos e información que tengas derecho a compartir. Quien está en un grupo ve lo que se anota en él, y quien tiene un enlace que compartes ve lo que abre ([Política de privacidad](/privacy#quien-ve)). Comparte el enlace de una cuenta con “Cualquiera con el enlace” solo con quien pueda ver esa cuenta.
 

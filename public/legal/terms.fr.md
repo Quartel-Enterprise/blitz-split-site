@@ -36,7 +36,7 @@ Les soldes découlent de ce que le groupe a saisi. Ce ne sont ni une facture, ni
 
 ## Ce que vous ajoutez {#contenu}
 
-Les dépenses, commentaires, photos et clés que vous ajoutez restent les vôtres. Pour que l’app fonctionne, vous nous accordez une licence gratuite, mondiale et non exclusive pour stocker, copier, synchroniser et montrer ce contenu aux membres de vos groupes, tant qu’il existe dans le service.
+Les dépenses, commentaires, photos et clés que vous ajoutez restent les vôtres. Pour que l’app fonctionne, vous nous accordez une licence gratuite, mondiale et non exclusive pour stocker, copier, synchroniser et montrer ce contenu aux membres de vos groupes et à quiconque a un lien que vous partagez, tant qu’il existe dans le service.
 
 N’ajoutez que des personnes, des photos et des informations que vous avez le droit de partager. Tous les membres d’un groupe voient ce qui y est ajouté, et quiconque a un lien que vous partagez voit ce qu’il ouvre ([Politique de confidentialité](/privacy#destinataires)). Ne partagez le lien d’une dépense avec « Toute personne ayant le lien » qu’avec des personnes qui peuvent voir cette dépense.
 

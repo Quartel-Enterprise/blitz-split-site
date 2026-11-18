@@ -36,7 +36,7 @@ Salden ergeben sich aus dem, was die Gruppe eingetragen hat. Sie sind keine Rech
 
 ## Was du einträgst {#inhalte}
 
-Ausgaben, Kommentare, Fotos und Schlüssel, die du einträgst, bleiben deine. Damit die App funktioniert, räumst du uns eine unentgeltliche, weltweite, nicht ausschließliche Lizenz ein, diese Inhalte zu speichern, zu kopieren, zu synchronisieren und den Personen in deinen Gruppen zu zeigen, solange sie im Dienst bestehen.
+Ausgaben, Kommentare, Fotos und Schlüssel, die du einträgst, bleiben deine. Damit die App funktioniert, räumst du uns eine unentgeltliche, weltweite, nicht ausschließliche Lizenz ein, diese Inhalte zu speichern, zu kopieren, zu synchronisieren und den Personen in deinen Gruppen sowie allen, die einen Link haben, den du teilst, zu zeigen, solange sie im Dienst bestehen.
 
 Trag nur Personen, Fotos und Informationen ein, die du teilen darfst. Alle in einer Gruppe sehen, was dort eingetragen wird, und wer einen Link hat, den du teilst, sieht, was er öffnet ([Datenschutzerklärung](/privacy#empfaenger)). Teile den Link einer Ausgabe mit „Alle mit dem Link“ nur mit Personen, die diese Ausgabe sehen dürfen.
 

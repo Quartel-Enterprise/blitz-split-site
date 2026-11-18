@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **Em resumo**
 >
-> - Você usa o app sem criar conta. Google e Apple são opcionais, mas sem eles seus dados são apagados depois de 30 dias sem uso.
+> - Você usa o app sem criar conta. Google e Apple são opcionais, mas sem eles sua conta é excluída depois de 30 dias sem uso.
 > - O que você lança fica primeiro no seu aparelho e só vai ao servidor para sincronizar e chegar ao seu grupo.
 > - Quem está no grupo vê o que é do grupo, e quem tem um link que você compartilha vê aquela conta ou o seu perfil. Ninguém vê o seu e-mail.
 > - Métricas de uso e relatórios de falha não levam nomes nem valores. Com uma conta, as métricas ficam ligadas ao ID dela. Não usamos ID de publicidade, e você desliga as métricas no Perfil.
@@ -57,7 +57,7 @@ O app é **offline primeiro**: o que você lança fica salvo num banco de dados 
 
 > **Convidar da agenda**
 >
-> No Android, iPhone, iPad e Mac, o app lê os contatos do seu celular, só depois que você permitir, para listá-los quando você convida alguém para um grupo. Eles ficam no aparelho: nenhum nome ou número vai para o nosso servidor.
+> No Android, iPhone, iPad e Mac, o app lê os contatos do seu aparelho, só depois que você permitir, para listá-los quando você convida alguém para um grupo. Eles ficam no aparelho: nenhum nome ou número vai para o nosso servidor.
 
 ## Para que usamos {#uso}
 
@@ -85,7 +85,7 @@ Quem está num grupo vê o nome, a foto e a cor de cada membro; as contas, os it
 
 ### Quem tem um link que você compartilha
 
-- **Compartilhar conta** cria um link para uma conta. Com “Só quem está na conta”, só as pessoas dela o abrem. Com “Qualquer pessoa com o link”, quem tiver o link vê a conta (descrição, valor, data, categoria e o nome do grupo, quem pagou e como foi dividido, por nome) com as fotos e os comentários dela, e qualquer pessoa que tenha entrado no app pode comentar nela. A prévia que um app de mensagens mostra a partir do link traz a descrição, o valor e quem pagou. “Desativar link”, em Compartilhar conta, faz o link parar de funcionar.
+- **Compartilhar conta** cria um link para uma conta. Com “Só quem está na conta”, só as pessoas dela o abrem. Com “Qualquer pessoa com o link”, quem tiver o link vê a conta (descrição, valor, data, categoria e o nome do grupo, quem pagou e como foi dividido, por nome) com as fotos e os comentários dela, e qualquer pessoa que tenha entrado no app pode comentar nela. A prévia que um app de mensagens mostra a partir do link traz a descrição, o valor, quem pagou, entre quantas pessoas a conta é dividida e o nome do grupo. “Desativar link”, em Compartilhar conta, faz o link parar de funcionar; uma prévia que um app de mensagens já mostrou continua naquela conversa, e a imagem da prévia pode ficar em cache por até um dia.
 - **Compartilhar perfil** cria um link para o seu perfil: quem o tiver vê o seu nome e a sua foto, também na prévia do link.
 
 ### Quem trabalha para nós
@@ -95,11 +95,11 @@ Estas empresas tratam dados em nosso nome, só para o que está descrito aqui:
 | Empresa | Para quê |
 | --- | --- |
 | Supabase | Banco de dados, login e armazenamento das fotos |
-| Google (Firebase) | Métricas de uso; relatórios de falha nos apps de Android, iPhone, iPad e Mac; notificações no Android; Google Analytics do site; entrar com Google |
+| Google (Firebase) | Métricas de uso; relatórios de falha nos apps de Android, iPhone, iPad e Mac; notificações no Android; Google Analytics do site; entrar com Google; o e-mail do suporte (Gmail) |
 | Apple | Notificações no iPhone, iPad e Mac; entrar com a Apple |
 | Anthropic | Leitura das fotos de recibo |
 | Sentry | Relatórios de falha no navegador |
-| Cloudflare | Hospedagem do site blitzsplit.com |
+| Cloudflare | Hospedagem do site blitzsplit.com e das prévias de links compartilhados |
 | Google Play e App Store | Distribuição e atualização do app |
 
 Também podemos compartilhar dados quando a lei ou uma ordem judicial exigir.
@@ -112,9 +112,10 @@ Alguns desses provedores guardam ou processam dados fora do Brasil, principalmen
 
 - Enquanto sua conta existir, guardamos o que o app precisa para funcionar.
 - **Sair** apaga a cópia do aparelho. Com Google ou Apple, seus dados continuam no servidor para quando você entrar de novo.
-- **Sem conta**, “Apagar perfil e sair” limpa o aparelho e o código de recuperação continua valendo por 30 dias. Para apagar na hora o que está no servidor, use “Excluir conta e dados”.
+- **Sem conta**, “Apagar perfil e sair” limpa o aparelho e o código de recuperação continua valendo até a conta ser excluída por falta de uso (abaixo). Para apagar na hora o que está no servidor, use “Excluir conta e dados”.
 - **Uma conta sem Google ou Apple é excluída depois de 30 dias sem uso:** quando nenhum dos aparelhos dela sincroniza por 30 dias, o servidor a exclui como “Excluir conta e dados” faz, e o código de recuperação dela deixa de valer.
-- **“Excluir conta e dados”**, em Perfil, apaga na hora seu perfil, sua foto, suas chaves de pagamento, suas formas de pagamento e seu código de recuperação, e revoga o acesso dado pela Apple. As contas que você lançou em grupos com outras pessoas continuam lá para o grupo, sem o seu nome, como “Ex-membro”.
+- **“Excluir conta e dados”**, em Perfil, apaga na hora seu perfil, sua foto, suas chaves de pagamento, suas formas de pagamento e seu código de recuperação, e revoga o acesso dado pela Apple. As contas que você lançou em grupos com outras pessoas continuam lá para o grupo, com o nome que você tinha nele, sem ligação com nenhuma conta. O mesmo vale para os comentários que você deixou, inclusive em contas compartilhadas com você por link.
+- Os e-mails ao suporte ficam guardados enquanto precisarmos deles para responder você e acompanhar o que você relatou. Peça e nós os apagamos.
 - Os dados de uso ligados a um aparelho ficam no Google Analytics por até 14 meses. Depois disso, só restam números agregados, sem nada que identifique alguém. Quando a sua conta é excluída, o ID que elas levam deixa de apontar para você.
 - Os relatórios de falha ficam guardados por até 90 dias e depois são apagados.
 
@@ -134,7 +135,7 @@ Boa parte disso você faz no próprio app: editar o perfil, apagar uma chave de 
 
 ## Segurança {#seguranca}
 
-Os dados viajam com criptografia (HTTPS). No servidor, regras de acesso garantem que cada pessoa leia só os grupos de que faz parte. Nenhum sistema é infalível, mas tratamos qualquer incidente com seriedade e avisamos você e a ANPD quando a lei pedir.
+Os dados viajam com criptografia (HTTPS). No servidor, regras de acesso garantem que cada pessoa leia só os grupos de que faz parte e o que um link que recebeu abre. Nenhum sistema é infalível, mas tratamos qualquer incidente com seriedade e avisamos você e a ANPD quando a lei pedir.
 
 O código de recuperação, de 12 palavras, vale como uma senha: guarde-o num lugar seguro e não o compartilhe. Não guardamos as palavras, só uma impressão digital delas que não permite reconstituí-las. No iPhone, iPad e Mac, o app o salva no app Senhas.
 

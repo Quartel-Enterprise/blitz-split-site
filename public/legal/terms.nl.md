@@ -36,7 +36,7 @@ Saldi zijn het resultaat van wat de groep heeft ingevoerd. Ze zijn geen factuur,
 
 ## Wat je toevoegt {#content}
 
-Rekeningen, opmerkingen, foto’s en sleutels die je toevoegt, blijven van jou. Zodat de app kan werken, geef je ons een kosteloze, wereldwijde, niet-exclusieve licentie om die inhoud op te slaan, te kopiëren, te synchroniseren en te tonen aan de mensen in je groepen, zolang die in de dienst bestaat.
+Rekeningen, opmerkingen, foto’s en sleutels die je toevoegt, blijven van jou. Zodat de app kan werken, geef je ons een kosteloze, wereldwijde, niet-exclusieve licentie om die inhoud op te slaan, te kopiëren, te synchroniseren en te tonen aan de mensen in je groepen en aan wie een link heeft die jij deelt, zolang die in de dienst bestaat.
 
 Voeg alleen mensen, foto’s en informatie toe die je mag delen. Iedereen in een groep ziet wat eraan wordt toegevoegd, en wie een link heeft die jij deelt, ziet wat die link opent ([Privacybeleid](/privacy#sees)). Deel de link van een rekening met “Iedereen met de link” alleen met mensen die die rekening mogen zien.
 

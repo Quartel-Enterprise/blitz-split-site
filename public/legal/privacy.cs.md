@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **Ve zkratce**
 >
-> - Aplikaci používáš bez zakládání účtu. Google a Apple jsou volitelné, ale bez nich se tvoje data po 30 dnech nepoužívání smažou.
+> - Aplikaci používáš bez zakládání účtu. Google a Apple jsou volitelné, ale bez nich se tvůj účet po 30 dnech nepoužívání smaže.
 > - Co přidáš, zůstává nejdřív ve tvém zařízení a na server jde jen kvůli synchronizaci a aby se to dostalo k tvé skupině.
 > - Lidé ve skupině vidí, co patří skupině, a kdo má odkaz, který sdílíš, vidí daný výdaj nebo tvůj profil. Tvůj e-mail nevidí nikdo.
 > - Metriky používání a hlášení o pádech neobsahují jména ani částky. Když máš účet, metriky jsou spojené s jeho ID. Nepoužíváme reklamní ID a metriky si vypneš v Profilu.
@@ -57,7 +57,7 @@ Aplikace funguje **nejdřív offline**: co přidáš, uloží se do databáze p�
 
 > **Pozvat z kontaktů**
 >
-> Na Androidu, iPhonu, iPadu a Macu aplikace čte kontakty z tvého telefonu, jen když to povolíš, aby je zobrazila, když někoho zveš do skupiny. Zůstávají v zařízení: žádné jméno ani číslo se nedostane na náš server.
+> Na Androidu, iPhonu, iPadu a Macu aplikace čte kontakty z tvého zařízení, jen když to povolíš, aby je zobrazila, když někoho zveš do skupiny. Zůstávají v zařízení: žádné jméno ani číslo se nedostane na náš server.
 
 ## K čemu je používáme {#use}
 
@@ -85,7 +85,7 @@ Kdokoli ve skupině vidí jméno, fotku a barvu každého člena; výdaje, polo�
 
 ### Kdo má odkaz, který sdílíš
 
-- **Sdílet výdaj** vytvoří odkaz na jeden výdaj. S volbou „Jen lidé ve výdaji“ ho otevřou jen lidé, kteří v něm jsou. S volbou „Kdokoli s odkazem“ vidí výdaj každý, kdo má odkaz (jeho popis, částku, datum, kategorii a název skupiny, kdo platil a jak se rozdělil, se jmény), včetně fotek a komentářů, a kdokoli přihlášený v aplikaci ho může komentovat. Náhled, který z odkazu vytvoří chatovací aplikace, ukazuje popis, částku a kdo platil. „Vypnout odkaz“ ve Sdílet výdaj způsobí, že odkaz přestane fungovat.
+- **Sdílet výdaj** vytvoří odkaz na jeden výdaj. S volbou „Jen lidé ve výdaji“ ho otevřou jen lidé, kteří v něm jsou. S volbou „Kdokoli s odkazem“ vidí výdaj každý, kdo má odkaz (jeho popis, částku, datum, kategorii a název skupiny, kdo platil a jak se rozdělil, se jmény), včetně fotek a komentářů, a kdokoli přihlášený v aplikaci ho může komentovat. Náhled, který z odkazu vytvoří chatovací aplikace, ukazuje popis, částku, kdo platil, mezi kolik lidí se výdaj dělí, a název skupiny. „Vypnout odkaz“ ve Sdílet výdaj způsobí, že odkaz přestane fungovat; náhled, který už chatovací aplikace vytvořila, v daném chatu zůstane a jeho obrázek může zůstat v mezipaměti až jeden den.
 - **Sdílet profil** vytvoří odkaz na tvůj profil: kdo ho má, vidí tvoje jméno a fotku, i v náhledu odkazu.
 
 ### Kdo pro nás pracuje
@@ -95,11 +95,11 @@ Tyto společnosti zpracovávají údaje naším jménem, a to jen pro účely, k
 | Společnost | K čemu |
 | --- | --- |
 | Supabase | Databáze, přihlášení a ukládání fotek |
-| Google (Firebase) | Metriky používání; hlášení o pádech v aplikacích pro Android, iPhone, iPad a Mac; oznámení v systému Android; Google Analytics webu; přihlášení přes Google |
+| Google (Firebase) | Metriky používání; hlášení o pádech v aplikacích pro Android, iPhone, iPad a Mac; oznámení v systému Android; Google Analytics webu; přihlášení přes Google; e-mail podpory (Gmail) |
 | Apple | Oznámení na zařízeních iPhone, iPad a Mac; přihlášení přes Apple |
 | Anthropic | Čtení fotek účtenek |
 | Sentry | Hlášení o pádech v prohlížeči |
-| Cloudflare | Hosting webu blitzsplit.com |
+| Cloudflare | Hosting webu blitzsplit.com a náhledů sdílených odkazů |
 | Google Play a App Store | Distribuce a aktualizace aplikace |
 
 Údaje můžeme sdílet také tehdy, když to vyžaduje zákon nebo soudní příkaz.
@@ -112,9 +112,10 @@ Někteří z těchto poskytovatelů ukládají nebo zpracovávají údaje mimo B
 
 - Dokud tvůj účet existuje, uchováváme, co aplikace potřebuje ke svému fungování.
 - **Odhlásit se** vymaže kopii v zařízení. S účtem Google nebo Apple zůstanou tvoje data na serveru pro chvíli, kdy se znovu přihlásíš.
-- **Bez účtu** „Vymazat profil a odhlásit se“ vyčistí zařízení a tvůj obnovovací kód funguje ještě 30 dní. Pokud chceš hned vymazat i to, co je na serveru, použij „Smazat účet a data“.
+- **Bez účtu** „Vymazat profil a odhlásit se“ vyčistí zařízení a tvůj obnovovací kód funguje, dokud se účet nesmaže kvůli nepoužívání (viz níže). Pokud chceš hned vymazat i to, co je na serveru, použij „Smazat účet a data“.
 - **Účet bez Google nebo Apple se smaže po 30 dnech nepoužívání:** když se žádné z jeho zařízení 30 dní nesynchronizuje, server ho smaže stejně jako „Smazat účet a data“ a jeho obnovovací kód přestane fungovat.
-- **„Smazat účet a data“** v Profilu najednou smaže tvůj profil, fotku, platební klíče, způsoby platby a obnovovací kód a zruší přístup, který udělil Apple. Výdaje, které jsi přidal(a) do skupin s dalšími lidmi, tam pro skupinu zůstanou, bez tvého jména, jako „Bývalý člen“.
+- **„Smazat účet a data“** v Profilu najednou smaže tvůj profil, fotku, platební klíče, způsoby platby a obnovovací kód a zruší přístup, který udělil Apple. Výdaje, které jsi přidal(a) do skupin s dalšími lidmi, tam pro skupinu zůstanou pod jménem, které jsi v ní měl(a), už nepropojené s žádným účtem. Totéž platí pro komentáře, které jsi zanechal(a), i u výdajů sdílených s tebou odkazem.
+- E-maily podpoře uchováváme, dokud je potřebujeme, abychom ti odpověděli a dořešili, co jsi nahlásil(a). Požádej nás a smažeme je.
 - Údaje o používání spojené se zařízením zůstávají v Google Analytics až 14 měsíců. Potom zůstanou jen souhrnná čísla, bez čehokoli, co by někoho identifikovalo. Jakmile je tvůj účet smazán, ID, které nesou, už k tobě nevede.
 - Hlášení o pádech uchováváme až 90 dní a pak je mažeme.
 
@@ -134,7 +135,7 @@ Velkou část z toho uděláš přímo v aplikaci: upravíš profil, smažeš pl
 
 ## Zabezpečení {#security}
 
-Data se přenášejí šifrovaně (HTTPS). Na serveru pravidla přístupu zajišťují, že každý čte jen skupiny, do kterých patří. Žádný systém není bezchybný, ale každý incident bereme vážně a oznámíme ho tobě i ANPD, když to zákon vyžaduje.
+Data se přenášejí šifrovaně (HTTPS). Na serveru pravidla přístupu zajišťují, že každý čte jen skupiny, do kterých patří, a to, co otevírá odkaz, který dostal. Žádný systém není bezchybný, ale každý incident bereme vážně a oznámíme ho tobě i ANPD, když to zákon vyžaduje.
 
 Tvůj obnovovací kód, 12 slov, funguje jako heslo: ulož si ho na bezpečné místo a s nikým ho nesdílej. Slova neuchováváme, jen jejich otisk, ze kterého je nelze zpětně získat. Na zařízeních iPhone, iPad a Mac ho aplikace uloží do aplikace Hesla.
 

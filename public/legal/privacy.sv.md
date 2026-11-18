@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **Kort sagt**
 >
-> - Du använder appen utan att skapa ett konto. Google och Apple är valfria, men utan dem raderas dina data efter 30 dagar utan användning.
+> - Du använder appen utan att skapa ett konto. Google och Apple är valfria, men utan dem raderas ditt konto efter 30 dagar utan användning.
 > - Det du lägger till sparas först på din enhet och skickas bara till servern för att synkroniseras och nå din grupp.
 > - De som är med i en grupp ser det som hör till gruppen, och den som har en länk du delar ser den utgiften eller din profil. Ingen ser din e-postadress.
 > - Användningsstatistik och kraschrapporter innehåller inga namn eller belopp. Med ett konto kopplas statistiken till kontots id. Vi använder inget reklam-id, och du stänger av statistiken i Profil.
@@ -57,7 +57,7 @@ Appen är **offline först**: det du lägger till sparas i en databas på själv
 
 > **Bjud in från kontakter**
 >
-> På Android, iPhone, iPad och Mac läser appen telefonens kontakter, bara efter att du har tillåtit det, för att visa dem när du bjuder in någon till en grupp. De stannar på enheten: inget namn eller nummer skickas till vår server.
+> På Android, iPhone, iPad och Mac läser appen enhetens kontakter, bara efter att du har tillåtit det, för att visa dem när du bjuder in någon till en grupp. De stannar på enheten: inget namn eller nummer skickas till vår server.
 
 ## Vad vi använder dem till {#use}
 
@@ -85,7 +85,7 @@ Alla i en grupp ser varje medlems namn, foto och färg; gruppens utgifter, artik
 
 ### Den som har en länk du delar
 
-- **Dela utgift** skapar en länk till en utgift. Med ”Bara de som är med i utgiften” kan bara de som är med i den öppna den. Med ”Alla med länken” ser den som har länken utgiften (dess beskrivning, belopp, datum, kategori och gruppens namn, vem som betalade och hur den delades upp, med namn) med dess foton och kommentarer, och alla som är inloggade i appen kan kommentera den. Förhandsvisningen som en chattapp skapar av länken visar beskrivningen, beloppet och vem som betalade. ”Stäng av länken”, i Dela utgift, gör att länken slutar fungera.
+- **Dela utgift** skapar en länk till en utgift. Med ”Bara de som är med i utgiften” kan bara de som är med i den öppna den. Med ”Alla med länken” ser den som har länken utgiften (dess beskrivning, belopp, datum, kategori och gruppens namn, vem som betalade och hur den delades upp, med namn) med dess foton och kommentarer, och alla som är inloggade i appen kan kommentera den. Förhandsvisningen som en chattapp skapar av länken visar beskrivningen, beloppet, vem som betalade, mellan hur många personer utgiften delas och gruppens namn. ”Stäng av länken”, i Dela utgift, gör att länken slutar fungera; en förhandsvisning som en chattapp redan har skapat finns kvar i den chatten, och förhandsvisningens bild kan ligga kvar i cacheminnet i upp till ett dygn.
 - **Dela profil** skapar en länk till din profil: den som har den ser ditt namn och foto, även i länkens förhandsvisning.
 
 ### De som arbetar för oss
@@ -95,11 +95,11 @@ Dessa företag hanterar uppgifter för vår räkning, bara för det som beskrivs
 | Företag | Till vad |
 | --- | --- |
 | Supabase | Databas, inloggning och lagring av foton |
-| Google (Firebase) | Användningsstatistik; kraschrapporter i apparna för Android, iPhone, iPad och Mac; aviseringar på Android; webbplatsens Google Analytics; inloggning med Google |
+| Google (Firebase) | Användningsstatistik; kraschrapporter i apparna för Android, iPhone, iPad och Mac; aviseringar på Android; webbplatsens Google Analytics; inloggning med Google; supportens e-post (Gmail) |
 | Apple | Aviseringar på iPhone, iPad och Mac; inloggning med Apple |
 | Anthropic | Läsning av kvittofoton |
 | Sentry | Kraschrapporter i webbläsaren |
-| Cloudflare | Drift av webbplatsen blitzsplit.com |
+| Cloudflare | Drift av webbplatsen blitzsplit.com och förhandsvisningarna av delade länkar |
 | Google Play och App Store | Distribution och uppdatering av appen |
 
 Vi kan också lämna ut uppgifter när lagen eller ett domstolsbeslut kräver det.
@@ -112,9 +112,10 @@ Några av dessa leverantörer lagrar eller behandlar uppgifter utanför Brasilie
 
 - Så länge ditt konto finns sparar vi det som appen behöver för att fungera.
 - **Logga ut** raderar enhetens kopia. Med Google eller Apple finns dina data kvar på servern till nästa gång du loggar in.
-- **Utan konto** rensar ”Radera profilen och logga ut” enheten, och din återställningskod fortsätter att fungera i 30 dagar. För att radera det som finns på servern direkt använder du ”Radera konto och data”.
+- **Utan konto** rensar ”Radera profilen och logga ut” enheten, och din återställningskod fortsätter att fungera tills kontot raderas för att det inte används (se nedan). För att radera det som finns på servern direkt använder du ”Radera konto och data”.
 - **Ett konto utan Google eller Apple raderas efter 30 dagar utan användning:** när ingen av dess enheter har synkroniserat på 30 dagar raderar servern det på samma sätt som ”Radera konto och data”, och dess återställningskod slutar fungera.
-- **”Radera konto och data”**, i Profil, raderar på en gång din profil, ditt foto, dina betalningsnycklar, dina betalsätt och din återställningskod, och återkallar den åtkomst som Apple har gett. Utgifter som du har lagt till i grupper med andra personer finns kvar där för gruppen, utan ditt namn, som ”Tidigare medlem”.
+- **”Radera konto och data”**, i Profil, raderar på en gång din profil, ditt foto, dina betalningsnycklar, dina betalsätt och din återställningskod, och återkallar den åtkomst som Apple har gett. Utgifter som du har lagt till i grupper med andra personer finns kvar där för gruppen, under det namn du hade i den, utan koppling till något konto. Detsamma gäller kommentarer du har lämnat, även på utgifter som delats med dig via länk.
+- Mejl till supporten sparas så länge vi behöver dem för att svara dig och följa upp det du har rapporterat. Be oss så raderar vi dem.
 - Användningsdata som är kopplade till en enhet finns kvar i Google Analytics i upp till 14 månader. Därefter återstår bara sammanställda siffror, utan något som identifierar någon. När ditt konto har raderats leder id:t de bär inte längre till dig.
 - Kraschrapporter sparas i upp till 90 dagar och raderas sedan.
 
@@ -134,7 +135,7 @@ Mycket av detta gör du i själva appen: redigerar din profil, raderar en betaln
 
 ## Säkerhet {#security}
 
-Uppgifterna överförs krypterade (HTTPS). På servern ser åtkomstregler till att varje person bara kan läsa de grupper hen är med i. Inget system är felfritt, men vi tar varje incident på allvar och meddelar dig och ANPD när lagen kräver det.
+Uppgifterna överförs krypterade (HTTPS). På servern ser åtkomstregler till att varje person bara kan läsa de grupper hen är med i och det som en länk hen har fått öppnar. Inget system är felfritt, men vi tar varje incident på allvar och meddelar dig och ANPD när lagen kräver det.
 
 Din återställningskod, 12 ord, fungerar som ett lösenord: förvara den på ett säkert ställe och dela den inte. Vi sparar inte orden, bara ett fingeravtryck av dem som inte kan göras om till orden igen. På iPhone, iPad och Mac sparar appen den i appen Lösenord.
 

@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **In breve**
 >
-> - Usi l'app senza creare un account. Google e Apple sono facoltativi, ma senza di loro i tuoi dati vengono eliminati dopo 30 giorni di inutilizzo.
+> - Usi l'app senza creare un account. Google e Apple sono facoltativi, ma senza di loro il tuo account viene eliminato dopo 30 giorni di inutilizzo.
 > - Ciò che aggiungi resta prima sul tuo dispositivo e va al server solo per sincronizzarsi e arrivare al tuo gruppo.
 > - Chi è in un gruppo vede ciò che appartiene al gruppo, e chi ha un link che condividi vede quella spesa o il tuo profilo. Nessuno vede la tua email.
 > - Le metriche di utilizzo e i rapporti sugli arresti anomali non contengono nomi né importi. Con un account, le metriche sono legate al suo identificativo. Non usiamo l'identificativo pubblicitario, e puoi disattivare le metriche in Profilo.
@@ -57,7 +57,7 @@ L'app funziona **prima di tutto offline**: ciò che aggiungi viene salvato in un
 
 > **Invita dalla rubrica**
 >
-> Su Android, iPhone, iPad e Mac, l'app legge i contatti del tuo telefono, solo dopo che lo hai consentito, per elencarli quando inviti qualcuno in un gruppo. Restano sul dispositivo: nessun nome o numero va al nostro server.
+> Su Android, iPhone, iPad e Mac, l'app legge i contatti del tuo dispositivo, solo dopo che lo hai consentito, per elencarli quando inviti qualcuno in un gruppo. Restano sul dispositivo: nessun nome o numero va al nostro server.
 
 ## Per cosa li usiamo {#uso}
 
@@ -85,7 +85,7 @@ Chiunque sia in un gruppo vede il nome, la foto e il colore di ogni membro; le s
 
 ### Chi ha un link che condividi
 
-- **Condividi spesa** crea un link a una spesa. Con “Solo le persone nella spesa”, solo chi ne fa parte lo apre. Con “Chiunque abbia il link”, chi ha il link vede la spesa (descrizione, importo, data, categoria e nome del gruppo, chi ha pagato e come è stata divisa, per nome) con le sue foto e i suoi commenti, e chiunque abbia effettuato l'accesso all'app può commentarla. L'anteprima che un'app di messaggi mostra dal link riporta la descrizione, l'importo e chi ha pagato. “Disattiva link”, in Condividi spesa, lo fa smettere di funzionare.
+- **Condividi spesa** crea un link a una spesa. Con “Solo le persone nella spesa”, solo chi ne fa parte lo apre. Con “Chiunque abbia il link”, chi ha il link vede la spesa (descrizione, importo, data, categoria e nome del gruppo, chi ha pagato e come è stata divisa, per nome) con le sue foto e i suoi commenti, e chiunque abbia effettuato l'accesso all'app può commentarla. L'anteprima che un'app di messaggi mostra dal link riporta la descrizione, l'importo, chi ha pagato, tra quante persone è divisa e il nome del gruppo. “Disattiva link”, in Condividi spesa, fa smettere di funzionare il link; un'anteprima già mostrata da un'app di messaggi resta in quella chat, e la sua immagine può restare in cache fino a un giorno.
 - **Condividi profilo** crea un link al tuo profilo: chi lo ha vede il tuo nome e la tua foto, anche nell'anteprima del link.
 
 ### Chi lavora per noi
@@ -95,11 +95,11 @@ Queste aziende trattano dati per nostro conto, solo per quanto descritto qui:
 | Azienda | Per cosa |
 | --- | --- |
 | Supabase | Database, accesso e archiviazione delle foto |
-| Google (Firebase) | Metriche di utilizzo; rapporti sugli arresti anomali nelle app per Android, iPhone, iPad e Mac; notifiche su Android; Google Analytics del sito; accesso con Google |
+| Google (Firebase) | Metriche di utilizzo; rapporti sugli arresti anomali nelle app per Android, iPhone, iPad e Mac; notifiche su Android; Google Analytics del sito; accesso con Google; l'email dell'assistenza (Gmail) |
 | Apple | Notifiche su iPhone, iPad e Mac; accesso con Apple |
 | Anthropic | Lettura delle foto degli scontrini |
 | Sentry | Rapporti sugli arresti anomali nel browser |
-| Cloudflare | Hosting del sito blitzsplit.com |
+| Cloudflare | Hosting del sito blitzsplit.com e delle anteprime dei link condivisi |
 | Google Play e App Store | Distribuzione e aggiornamento dell'app |
 
 Possiamo anche condividere dati quando lo richiedono la legge o un ordine del giudice.
@@ -112,9 +112,10 @@ Alcuni di questi fornitori conservano o trattano dati fuori dal Brasile, sopratt
 
 - Finché il tuo account esiste, conserviamo ciò che serve all'app per funzionare.
 - **“Esci”** cancella la copia sul dispositivo. Con Google o Apple, i tuoi dati restano sul server per quando accederai di nuovo.
-- **Senza account**, “Cancella profilo ed esci” svuota il dispositivo e il tuo codice di recupero continua a funzionare per 30 giorni. Per cancellare subito ciò che si trova sul server, usa “Elimina account e dati”.
+- **Senza account**, “Cancella profilo ed esci” svuota il dispositivo e il tuo codice di recupero continua a funzionare finché l'account non viene eliminato per inutilizzo (vedi sotto). Per cancellare subito ciò che si trova sul server, usa “Elimina account e dati”.
 - **Un account senza Google o Apple viene eliminato dopo 30 giorni di inutilizzo:** quando nessuno dei suoi dispositivi si sincronizza per 30 giorni, il server lo elimina come fa “Elimina account e dati”, e il suo codice di recupero smette di funzionare.
-- **“Elimina account e dati”**, in Profilo, elimina subito il tuo profilo, la foto, le chiavi di pagamento, i metodi di pagamento e il codice di recupero, e revoca l'accesso concesso ad Apple. Le spese che hai aggiunto ai gruppi con altre persone restano lì per il gruppo, senza il tuo nome, come “Ex membro”.
+- **“Elimina account e dati”**, in Profilo, elimina subito il tuo profilo, la foto, le chiavi di pagamento, i metodi di pagamento e il codice di recupero, e revoca l'accesso concesso ad Apple. Le spese che hai aggiunto ai gruppi con altre persone restano lì per il gruppo, con il nome che avevi, non più legate ad alcun account. Lo stesso vale per i commenti che hai lasciato, anche sulle spese condivise con te tramite link.
+- Le email all'assistenza sono conservate finché ci servono per risponderti e seguire ciò che hai segnalato. Chiedicelo e le eliminiamo.
 - I dati di utilizzo legati a un dispositivo restano in Google Analytics per un massimo di 14 mesi. Dopo, restano solo numeri aggregati, senza nulla che identifichi qualcuno. Una volta eliminato il tuo account, l'identificativo che portano non riconduce più a te.
 - I rapporti sugli arresti anomali sono conservati fino a 90 giorni e poi eliminati.
 
@@ -134,7 +135,7 @@ Gran parte di questo lo fai direttamente nell'app: modificare il profilo, elimin
 
 ## Sicurezza {#sicurezza}
 
-I dati viaggiano cifrati (HTTPS). Sul server, regole di accesso fanno sì che ogni persona legga solo i gruppi di cui fa parte. Nessun sistema è infallibile, ma prendiamo sul serio qualsiasi incidente e lo notifichiamo a te e all'ANPD quando la legge lo richiede.
+I dati viaggiano cifrati (HTTPS). Sul server, regole di accesso fanno sì che ogni persona legga solo i gruppi di cui fa parte e ciò che apre un link che ha ricevuto. Nessun sistema è infallibile, ma prendiamo sul serio qualsiasi incidente e lo notifichiamo a te e all'ANPD quando la legge lo richiede.
 
 Il tuo codice di recupero, di 12 parole, funziona come una password: conservalo in un posto sicuro e non condividerlo. Non conserviamo le parole, solo un'impronta da cui non si possono ricavare. Su iPhone, iPad e Mac, l'app lo salva nell'app Password.
 

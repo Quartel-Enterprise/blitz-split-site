@@ -36,7 +36,7 @@ Soldurile sunt rezultatul a ceea ce a adăugat grupul. Nu sunt o factură, un in
 
 ## Ce adaugi {#content}
 
-Cheltuielile, comentariile, fotografiile și cheile pe care le adaugi rămân ale tale. Ca aplicația să funcționeze, ne acorzi o licență gratuită, mondială și neexclusivă de a stoca, copia, sincroniza și arăta acest conținut persoanelor din grupurile tale, cât timp el există în serviciu.
+Cheltuielile, comentariile, fotografiile și cheile pe care le adaugi rămân ale tale. Ca aplicația să funcționeze, ne acorzi o licență gratuită, mondială și neexclusivă de a stoca, copia, sincroniza și arăta acest conținut persoanelor din grupurile tale și oricui are un link pe care îl distribui, cât timp el există în serviciu.
 
 Adaugă doar persoane, fotografii și informații pe care ai dreptul să le împărtășești. Toată lumea dintr-un grup vede ce se adaugă în el, iar cine are un link pe care îl distribui vede ce deschide acesta ([Politica de confidențialitate](/privacy#sees)). Distribuie linkul unei cheltuieli cu „Oricine are linkul” doar persoanelor care pot vedea acea cheltuială.
 

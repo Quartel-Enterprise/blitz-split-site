@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **Pe scurt**
 >
-> - Folosești aplicația fără să-ți creezi un cont. Google și Apple sunt opționale, dar fără ele datele tale se șterg după 30 de zile fără utilizare.
+> - Folosești aplicația fără să-ți creezi un cont. Google și Apple sunt opționale, dar fără ele contul tău se șterge după 30 de zile fără utilizare.
 > - Ce adaugi rămâne mai întâi pe dispozitivul tău și ajunge pe server doar ca să se sincronizeze și să ajungă la grupul tău.
 > - Persoanele dintr-un grup văd ce ține de grup, iar cine are un link pe care îl distribui vede acea cheltuială sau profilul tău. Nimeni nu îți vede adresa de e-mail.
 > - Statisticile de utilizare și rapoartele de erori nu conțin nume sau sume. Dacă ai cont, statisticile sunt legate de ID-ul lui. Nu folosim un ID de publicitate, iar statisticile le dezactivezi din Profil.
@@ -57,7 +57,7 @@ Aplicația funcționează **mai întâi offline**: ce adaugi se salvează într-
 
 > **Invită din contacte**
 >
-> Pe Android, iPhone, iPad și Mac, aplicația îți citește contactele din telefon, doar după ce îi permiți, ca să ți le arate când inviți pe cineva într-un grup. Ele rămân pe dispozitiv: niciun nume sau număr nu ajunge pe serverul nostru.
+> Pe Android, iPhone, iPad și Mac, aplicația îți citește contactele de pe dispozitiv, doar după ce îi permiți, ca să ți le arate când inviți pe cineva într-un grup. Ele rămân pe dispozitiv: niciun nume sau număr nu ajunge pe serverul nostru.
 
 ## Pentru ce le folosim {#use}
 
@@ -85,7 +85,7 @@ Oricine dintr-un grup vede numele, fotografia și culoarea fiecărui membru; che
 
 ### Cine are un link pe care îl distribui
 
-- **„Distribuie cheltuiala”** creează un link către o singură cheltuială. Cu „Doar persoanele din cheltuială”, doar persoanele din ea îl deschid. Cu „Oricine are linkul”, oricine are linkul vede cheltuiala (descrierea, suma, data, categoria și numele grupului, cine a plătit și cum a fost împărțită, cu nume) cu fotografiile și comentariile ei, iar oricine e conectat în aplicație o poate comenta. Previzualizarea pe care o aplicație de chat o face din link arată descrierea, suma și cine a plătit. „Dezactivează linkul”, din „Distribuie cheltuiala”, îl face să nu mai funcționeze.
+- **„Distribuie cheltuiala”** creează un link către o singură cheltuială. Cu „Doar persoanele din cheltuială”, doar persoanele din ea îl deschid. Cu „Oricine are linkul”, oricine are linkul vede cheltuiala (descrierea, suma, data, categoria și numele grupului, cine a plătit și cum a fost împărțită, cu nume) cu fotografiile și comentariile ei, iar oricine e conectat în aplicație o poate comenta. Previzualizarea pe care o aplicație de chat o face din link arată descrierea, suma, cine a plătit, între câte persoane se împarte și numele grupului. „Dezactivează linkul”, din „Distribuie cheltuiala”, face ca linkul să nu mai funcționeze; o previzualizare pe care o aplicație de chat a făcut-o deja rămâne în acea conversație, iar imaginea previzualizării poate rămâne în cache până la o zi.
 - **„Distribuie profilul”** creează un link către profilul tău: oricine îl are îți vede numele și fotografia, inclusiv în previzualizarea linkului.
 
 ### Cine lucrează pentru noi
@@ -95,11 +95,11 @@ Aceste companii prelucrează date în numele nostru, doar pentru ce este descris
 | Companie | Pentru ce |
 | --- | --- |
 | Supabase | Baza de date, conectarea și stocarea fotografiilor |
-| Google (Firebase) | Statistici de utilizare; rapoarte de erori în aplicațiile pentru Android, iPhone, iPad și Mac; notificări pe Android; Google Analytics al site-ului; conectarea cu Google |
+| Google (Firebase) | Statistici de utilizare; rapoarte de erori în aplicațiile pentru Android, iPhone, iPad și Mac; notificări pe Android; Google Analytics al site-ului; conectarea cu Google; e-mailul de asistență (Gmail) |
 | Apple | Notificări pe iPhone, iPad și Mac; conectarea cu Apple |
 | Anthropic | Citirea fotografiilor bonurilor |
 | Sentry | Rapoarte de erori în browser |
-| Cloudflare | Găzduirea site-ului blitzsplit.com |
+| Cloudflare | Găzduirea site-ului blitzsplit.com și a previzualizărilor linkurilor distribuite |
 | Google Play și App Store | Distribuirea și actualizarea aplicației |
 
 Putem divulga date și atunci când legea sau o hotărâre judecătorească o cere.
@@ -112,9 +112,10 @@ Unii dintre acești furnizori stochează sau prelucrează date în afara Brazili
 
 - Cât timp contul tău există, păstrăm ce îi trebuie aplicației ca să funcționeze.
 - **Deconectarea** șterge copia de pe dispozitiv. Cu Google sau Apple, datele tale rămân pe server pentru când te conectezi din nou.
-- **Fără cont**, „Șterge profilul și deconectează-te” golește dispozitivul, iar codul tău de recuperare continuă să funcționeze 30 de zile. Ca să ștergi imediat și ce este pe server, folosește „Șterge contul și datele”.
+- **Fără cont**, „Șterge profilul și deconectează-te” golește dispozitivul, iar codul tău de recuperare continuă să funcționeze până când contul este șters din lipsă de utilizare (mai jos). Ca să ștergi imediat și ce este pe server, folosește „Șterge contul și datele”.
 - **Un cont fără Google sau Apple se șterge după 30 de zile fără utilizare:** când niciunul dintre dispozitivele lui nu se sincronizează timp de 30 de zile, serverul îl șterge la fel ca „Șterge contul și datele”, iar codul lui de recuperare nu mai funcționează.
-- **„Șterge contul și datele”**, din Profil, îți șterge pe loc profilul, fotografia, cheile de plată, metodele de plată și codul de recuperare și revocă accesul acordat de Apple. Cheltuielile pe care le-ai adăugat în grupuri cu alte persoane rămân acolo pentru grup, fără numele tău, ca „Fost membru”.
+- **„Șterge contul și datele”**, din Profil, îți șterge pe loc profilul, fotografia, cheile de plată, metodele de plată și codul de recuperare și revocă accesul acordat de Apple. Cheltuielile pe care le-ai adăugat în grupuri cu alte persoane rămân acolo pentru grup, sub numele pe care l-ai avut în el, fără să mai fie legate de vreun cont. La fel și comentariile pe care le-ai lăsat, inclusiv la cheltuielile distribuite cu tine prin link.
+- E-mailurile către asistență le păstrăm cât timp avem nevoie de ele ca să-ți răspundem și să urmărim ce ne-ai semnalat. Cere-ne și le ștergem.
 - Datele de utilizare legate de un dispozitiv rămân în Google Analytics până la 14 luni. După aceea rămân doar cifre agregate, fără nimic care să identifice pe cineva. După ce contul tău e șters, ID-ul pe care îl conțin nu mai duce la tine.
 - Rapoartele de erori sunt păstrate până la 90 de zile și apoi șterse.
 
@@ -134,7 +135,7 @@ Multe dintre acestea le faci chiar în aplicație: îți editezi profilul, șter
 
 ## Securitate {#security}
 
-Datele circulă criptat (HTTPS). Pe server, regulile de acces asigură că fiecare persoană citește doar grupurile din care face parte. Niciun sistem nu e perfect, dar tratăm cu seriozitate orice incident și te anunțăm pe tine și ANPD atunci când legea o cere.
+Datele circulă criptat (HTTPS). Pe server, regulile de acces asigură că fiecare persoană citește doar grupurile din care face parte și ce deschide un link pe care l-a primit. Niciun sistem nu e perfect, dar tratăm cu seriozitate orice incident și te anunțăm pe tine și ANPD atunci când legea o cere.
 
 Codul tău de recuperare, din 12 cuvinte, funcționează ca o parolă: păstrează-l într-un loc sigur și nu-l da nimănui. Nu păstrăm cuvintele, doar o amprentă a lor din care nu pot fi refăcute. Pe iPhone, iPad și Mac, aplicația îl salvează în aplicația Parole.
 

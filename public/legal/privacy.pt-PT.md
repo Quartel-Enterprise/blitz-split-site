@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **Em resumo**
 >
-> - Usas a app sem criar conta. Google e Apple são opcionais, mas sem eles os teus dados são apagados ao fim de 30 dias sem utilização.
+> - Usas a app sem criar conta. Google e Apple são opcionais, mas sem eles a tua conta é eliminada ao fim de 30 dias sem utilização.
 > - O que registas fica primeiro no teu aparelho e só vai para o servidor para sincronizar e chegar ao teu grupo.
 > - Quem está no grupo vê o que é do grupo, e quem tem um link que partilhas vê essa despesa ou o teu perfil. Ninguém vê o teu e-mail.
 > - As métricas de utilização e os relatórios de falhas não levam nomes nem valores. Com uma conta, as métricas ficam ligadas ao ID dela. Não usamos ID de publicidade, e desligas as métricas no Perfil.
@@ -57,7 +57,7 @@ A app é **offline primeiro**: o que registas fica guardado numa base de dados n
 
 > **Convidar dos contactos**
 >
-> No Android, iPhone, iPad e Mac, a app lê os contactos do teu telemóvel, só depois de o permitires, para os listar quando convidas alguém para um grupo. Ficam no aparelho: nenhum nome ou número vai para o nosso servidor.
+> No Android, iPhone, iPad e Mac, a app lê os contactos do teu aparelho, só depois de o permitires, para os listar quando convidas alguém para um grupo. Ficam no aparelho: nenhum nome ou número vai para o nosso servidor.
 
 ## Para que usamos {#uso}
 
@@ -85,7 +85,7 @@ Quem está num grupo vê o nome, a fotografia e a cor de cada membro; as despesa
 
 ### Quem tem um link que partilhas
 
-- **Partilhar conta** cria um link para uma despesa. Com “Só quem está na conta”, só as pessoas dela o abrem. Com “Qualquer pessoa com o link”, quem tiver o link vê a despesa (a descrição, o valor, a data, a categoria e o nome do grupo, quem pagou e como foi dividida, por nome) com as fotografias e os comentários dela, e qualquer pessoa com sessão iniciada na app pode comentá-la. A pré-visualização que uma app de mensagens mostra a partir do link traz a descrição, o valor e quem pagou. “Desativar link”, em Partilhar conta, faz com que o link deixe de funcionar.
+- **Partilhar conta** cria um link para uma despesa. Com “Só quem está na conta”, só as pessoas dela o abrem. Com “Qualquer pessoa com o link”, quem tiver o link vê a despesa (a descrição, o valor, a data, a categoria e o nome do grupo, quem pagou e como foi dividida, por nome) com as fotografias e os comentários dela, e qualquer pessoa com sessão iniciada na app pode comentá-la. A pré-visualização que uma app de mensagens mostra a partir do link traz a descrição, o valor, quem pagou, entre quantas pessoas a despesa é dividida e o nome do grupo. “Desativar link”, em Partilhar conta, faz com que o link deixe de funcionar; uma pré-visualização que uma app de mensagens já mostrou continua nessa conversa, e a imagem da pré-visualização pode ficar em cache até um dia.
 - **Partilhar perfil** cria um link para o teu perfil: quem o tiver vê o teu nome e a tua fotografia, também na pré-visualização do link.
 
 ### Quem trabalha para nós
@@ -95,11 +95,11 @@ Estas empresas tratam dados em nosso nome, só para o que está descrito aqui:
 | Empresa | Para quê |
 | --- | --- |
 | Supabase | Base de dados, início de sessão e armazenamento das fotografias |
-| Google (Firebase) | Métricas de utilização; relatórios de falhas nas apps de Android, iPhone, iPad e Mac; notificações no Android; Google Analytics do site; entrar com o Google |
+| Google (Firebase) | Métricas de utilização; relatórios de falhas nas apps de Android, iPhone, iPad e Mac; notificações no Android; Google Analytics do site; entrar com o Google; o e-mail do suporte (Gmail) |
 | Apple | Notificações no iPhone, iPad e Mac; entrar com a Apple |
 | Anthropic | Leitura das fotografias de talões |
 | Sentry | Relatórios de falhas no navegador |
-| Cloudflare | Alojamento do site blitzsplit.com |
+| Cloudflare | Alojamento do site blitzsplit.com e das pré-visualizações de links partilhados |
 | Google Play e App Store | Distribuição e atualização da app |
 
 Também podemos partilhar dados quando a lei ou uma ordem judicial o exigir.
@@ -112,9 +112,10 @@ Alguns destes fornecedores guardam ou tratam dados fora do Brasil, principalment
 
 - Enquanto a tua conta existir, guardamos o que a app precisa para funcionar.
 - **Terminar sessão** apaga a cópia do aparelho. Com Google ou Apple, os teus dados continuam no servidor para quando voltares a entrar.
-- **Sem conta**, “Apagar perfil e terminar sessão” limpa o aparelho e o código de recuperação continua válido durante 30 dias. Para apagar de imediato o que está no servidor, usa “Eliminar conta e dados”.
+- **Sem conta**, “Apagar perfil e terminar sessão” limpa o aparelho e o código de recuperação continua válido até a conta ser eliminada por falta de utilização (abaixo). Para apagar de imediato o que está no servidor, usa “Eliminar conta e dados”.
 - **Uma conta sem Google ou Apple é eliminada ao fim de 30 dias sem utilização:** quando nenhum dos seus aparelhos sincroniza durante 30 dias, o servidor elimina-a como faz “Eliminar conta e dados”, e o código de recuperação dela deixa de funcionar.
-- **“Eliminar conta e dados”**, no Perfil, apaga de imediato o teu perfil, a tua fotografia, as tuas chaves de pagamento, as tuas formas de pagamento e o teu código de recuperação, e revoga o acesso dado pela Apple. As despesas que registaste em grupos com outras pessoas continuam lá para o grupo, sem o teu nome, como “Ex-membro”.
+- **“Eliminar conta e dados”**, no Perfil, apaga de imediato o teu perfil, a tua fotografia, as tuas chaves de pagamento, as tuas formas de pagamento e o teu código de recuperação, e revoga o acesso dado pela Apple. As despesas que registaste em grupos com outras pessoas continuam lá para o grupo, com o nome que tinhas nele, sem ligação a nenhuma conta. O mesmo acontece com os comentários que deixaste, também em despesas partilhadas contigo por link.
+- Os e-mails ao suporte ficam guardados enquanto precisarmos deles para te responder e acompanhar o que relataste. Pede-nos e apagamo-los.
 - Os dados de utilização ligados a um aparelho ficam no Google Analytics até 14 meses. Depois disso, só restam números agregados, sem nada que identifique alguém. Quando a tua conta é eliminada, o ID que levam deixa de apontar para ti.
 - Os relatórios de falhas ficam guardados até 90 dias e depois são apagados.
 
@@ -134,7 +135,7 @@ Boa parte disto fazes na própria app: editar o perfil, apagar uma chave de paga
 
 ## Segurança {#seguranca}
 
-Os dados viajam com encriptação (HTTPS). No servidor, regras de acesso garantem que cada pessoa lê só os grupos de que faz parte. Nenhum sistema é infalível, mas tratamos qualquer incidente com seriedade e avisamos-te a ti e à ANPD quando a lei o exigir.
+Os dados viajam com encriptação (HTTPS). No servidor, regras de acesso garantem que cada pessoa lê só os grupos de que faz parte e o que abre um link que recebeu. Nenhum sistema é infalível, mas tratamos qualquer incidente com seriedade e avisamos-te a ti e à ANPD quando a lei o exigir.
 
 O código de recuperação, de 12 palavras, vale como uma palavra-passe: guarda-o num local seguro e não o partilhes. Não guardamos as palavras, só uma impressão digital delas que não permite reconstituí-las. No iPhone, iPad e Mac, a app guarda-o na app Palavras-passe.
 

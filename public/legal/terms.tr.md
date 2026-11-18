@@ -36,7 +36,7 @@ Bakiyeler, grubun eklediklerinin sonucudur. Fatura, kredi aracı ya da borç kan
 
 ## Eklediklerin {#content}
 
-Eklediğin masraflar, yorumlar, fotoğraflar ve anahtarlar senin kalır. Uygulamanın çalışabilmesi için, bu içerik hizmette var olduğu sürece onu saklamamız, kopyalamamız, eşitlememiz ve gruplarındaki kişilere göstermemiz için bize ücretsiz, dünya çapında ve münhasır olmayan bir lisans verirsin.
+Eklediğin masraflar, yorumlar, fotoğraflar ve anahtarlar senin kalır. Uygulamanın çalışabilmesi için, bu içerik hizmette var olduğu sürece onu saklamamız, kopyalamamız, eşitlememiz ve gruplarındaki kişilere ve paylaştığın bir bağlantıya sahip olanlara göstermemiz için bize ücretsiz, dünya çapında ve münhasır olmayan bir lisans verirsin.
 
 Yalnızca paylaşma hakkına sahip olduğun kişileri, fotoğrafları ve bilgileri ekle. Bir gruptaki herkes o gruba eklenenleri görür; paylaştığın bir bağlantıya sahip olan da bağlantının açtığını görür ([Gizlilik politikası](/privacy#sees)). Bir masrafın bağlantısını “Bağlantıya sahip herkes” ile yalnızca o masrafı görebilecek kişilerle paylaş.
 

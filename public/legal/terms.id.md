@@ -36,7 +36,7 @@ Saldo adalah hasil dari apa yang ditambahkan grup. Saldo bukan tagihan resmi, in
 
 ## Apa yang kamu tambahkan {#content}
 
-Tagihan, komentar, foto, dan kunci yang kamu tambahkan tetap menjadi milikmu. Agar aplikasi dapat berfungsi, kamu memberi kami lisensi gratis, berlaku di seluruh dunia, dan noneksklusif untuk menyimpan, menyalin, menyinkronkan, dan menampilkan konten tersebut kepada orang-orang di grupmu, selama konten itu ada di layanan.
+Tagihan, komentar, foto, dan kunci yang kamu tambahkan tetap menjadi milikmu. Agar aplikasi dapat berfungsi, kamu memberi kami lisensi gratis, berlaku di seluruh dunia, dan noneksklusif untuk menyimpan, menyalin, menyinkronkan, dan menampilkan konten tersebut kepada orang-orang di grupmu dan kepada siapa pun yang punya tautan yang kamu bagikan, selama konten itu ada di layanan.
 
 Hanya tambahkan orang, foto, dan informasi yang berhak kamu bagikan. Semua orang dalam satu grup melihat apa yang ditambahkan ke grup tersebut, dan siapa pun yang punya tautan yang kamu bagikan melihat apa yang dibuka tautan itu ([Kebijakan privasi](/privacy#sees)). Bagikan tautan tagihan dengan “Siapa saja yang punya tautan” hanya kepada orang yang boleh melihat tagihan itu.
 

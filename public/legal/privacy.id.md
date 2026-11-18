@@ -5,7 +5,7 @@ updated: 2026-11-17
 
 > **Singkatnya**
 >
-> - Kamu bisa memakai aplikasi tanpa membuat akun. Google dan Apple bersifat opsional, tetapi tanpa keduanya datamu dihapus setelah 30 hari tidak dipakai.
+> - Kamu bisa memakai aplikasi tanpa membuat akun. Google dan Apple bersifat opsional, tetapi tanpa keduanya akunmu dihapus setelah 30 hari tidak dipakai.
 > - Apa yang kamu tambahkan disimpan di perangkatmu terlebih dahulu, dan hanya dikirim ke server untuk disinkronkan dan sampai ke grupmu.
 > - Orang-orang dalam satu grup melihat apa yang menjadi milik grup, dan siapa pun yang punya tautan yang kamu bagikan melihat tagihan itu atau profilmu. Tidak ada yang melihat emailmu.
 > - Metrik penggunaan dan laporan kerusakan tidak memuat nama atau jumlah uang. Jika kamu punya akun, metrik terkait dengan id akun itu. Kami tidak menggunakan id iklan, dan kamu bisa mematikan metrik di Profil.
@@ -57,7 +57,7 @@ Aplikasi ini **mengutamakan offline**: apa yang kamu tambahkan disimpan dalam ba
 
 > **Undang dari kontak**
 >
-> Di Android, iPhone, iPad, dan Mac, aplikasi membaca kontak di ponselmu, hanya setelah kamu mengizinkannya, untuk menampilkannya saat kamu mengundang seseorang ke grup. Kontak tetap di perangkat: tidak ada nama atau nomor yang dikirim ke server kami.
+> Di Android, iPhone, iPad, dan Mac, aplikasi membaca kontak di perangkatmu, hanya setelah kamu mengizinkannya, untuk menampilkannya saat kamu mengundang seseorang ke grup. Kontak tetap di perangkat: tidak ada nama atau nomor yang dikirim ke server kami.
 
 ## Untuk apa kami menggunakannya {#use}
 
@@ -85,7 +85,7 @@ Siapa pun dalam satu grup melihat nama, foto, dan warna setiap anggota; tagihan,
 
 ### Siapa pun yang punya tautan yang kamu bagikan
 
-- **Bagikan tagihan** membuat tautan ke satu tagihan. Dengan “Hanya yang ikut tagihan”, hanya orang-orang yang ikut di dalamnya yang bisa membukanya. Dengan “Siapa saja yang punya tautan”, siapa pun yang punya tautan melihat tagihan itu (deskripsi, jumlah, tanggal, kategori, dan nama grupnya, siapa yang membayar dan bagaimana pembagiannya, berdasarkan nama) beserta foto dan komentarnya, dan siapa pun yang sudah masuk ke aplikasi bisa mengomentarinya. Pratinjau yang dibuat aplikasi chat dari tautan itu menampilkan deskripsi, jumlah, dan siapa yang membayar. “Nonaktifkan tautan”, di Bagikan tagihan, menghentikan tautan itu.
+- **Bagikan tagihan** membuat tautan ke satu tagihan. Dengan “Hanya yang ikut tagihan”, hanya orang-orang yang ikut di dalamnya yang bisa membukanya. Dengan “Siapa saja yang punya tautan”, siapa pun yang punya tautan melihat tagihan itu (deskripsi, jumlah, tanggal, kategori, dan nama grupnya, siapa yang membayar dan bagaimana pembagiannya, berdasarkan nama) beserta foto dan komentarnya, dan siapa pun yang sudah masuk ke aplikasi bisa mengomentarinya. Pratinjau yang dibuat aplikasi chat dari tautan itu menampilkan deskripsi, jumlah, siapa yang membayar, dibagi untuk berapa orang, dan nama grupnya. “Nonaktifkan tautan”, di Bagikan tagihan, menghentikan tautan itu; pratinjau yang sudah dibuat aplikasi chat tetap ada di chat tersebut, dan gambar pratinjaunya bisa tetap tersimpan di cache hingga satu hari.
 - **Bagikan profil** membuat tautan ke profilmu: siapa pun yang memilikinya melihat nama dan fotomu, juga di pratinjau tautan.
 
 ### Pihak yang bekerja untuk kami
@@ -95,11 +95,11 @@ Perusahaan-perusahaan berikut menangani data atas nama kami, hanya untuk hal-hal
 | Perusahaan | Untuk apa |
 | --- | --- |
 | Supabase | Basis data, proses masuk, dan penyimpanan foto |
-| Google (Firebase) | Metrik penggunaan; laporan kerusakan di aplikasi Android, iPhone, iPad, dan Mac; notifikasi di Android; Google Analytics situs web; masuk dengan Google |
+| Google (Firebase) | Metrik penggunaan; laporan kerusakan di aplikasi Android, iPhone, iPad, dan Mac; notifikasi di Android; Google Analytics situs web; masuk dengan Google; email dukungan (Gmail) |
 | Apple | Notifikasi di iPhone, iPad, dan Mac; masuk dengan Apple |
 | Anthropic | Membaca foto struk |
 | Sentry | Laporan kerusakan di browser |
-| Cloudflare | Hosting situs web blitzsplit.com |
+| Cloudflare | Hosting situs web blitzsplit.com dan pratinjau tautan yang dibagikan |
 | Google Play dan App Store | Mendistribusikan dan memperbarui aplikasi |
 
 Kami juga dapat membagikan data jika diwajibkan oleh hukum atau perintah pengadilan.
@@ -112,9 +112,10 @@ Sebagian penyedia ini menyimpan atau memproses data di luar Brasil, sebagian bes
 
 - Selama akunmu ada, kami menyimpan apa yang dibutuhkan aplikasi agar berfungsi.
 - **“Keluar”** menghapus salinan di perangkat. Dengan Google atau Apple, datamu tetap ada di server untuk saat kamu masuk lagi.
-- **Tanpa akun**, “Hapus profil dan keluar” membersihkan perangkat dan kode pemulihanmu tetap berfungsi selama 30 hari. Untuk langsung menghapus apa yang ada di server, gunakan “Hapus akun dan data”.
+- **Tanpa akun**, “Hapus profil dan keluar” membersihkan perangkat dan kode pemulihanmu tetap berfungsi sampai akunnya dihapus karena tidak dipakai (lihat di bawah). Untuk langsung menghapus apa yang ada di server, gunakan “Hapus akun dan data”.
 - **Akun tanpa Google atau Apple dihapus setelah 30 hari tidak dipakai:** jika tidak ada perangkatnya yang tersinkron selama 30 hari, server menghapusnya seperti “Hapus akun dan data”, dan kode pemulihannya berhenti berfungsi.
-- **“Hapus akun dan data”**, di Profil, menghapus profil, foto, kunci pembayaran, metode pembayaran, dan kode pemulihanmu sekaligus, serta mencabut akses yang diberikan Apple. Tagihan yang kamu tambahkan ke grup bersama orang lain tetap ada di sana untuk grup, tanpa namamu, sebagai “Mantan anggota”.
+- **“Hapus akun dan data”**, di Profil, menghapus profil, foto, kunci pembayaran, metode pembayaran, dan kode pemulihanmu sekaligus, serta mencabut akses yang diberikan Apple. Tagihan yang kamu tambahkan ke grup bersama orang lain tetap ada di sana untuk grup, dengan nama yang kamu pakai di grup itu, tidak lagi terhubung ke akun mana pun. Begitu juga komentar yang kamu tinggalkan, termasuk di tagihan yang dibagikan kepadamu lewat tautan.
+- Email dukungan disimpan selama kami membutuhkannya untuk menjawabmu dan menindaklanjuti apa yang kamu laporkan. Minta kepada kami dan kami akan menghapusnya.
 - Data penggunaan yang terkait dengan suatu perangkat disimpan di Google Analytics hingga 14 bulan. Setelah itu, hanya angka agregat yang tersisa, tanpa apa pun yang dapat mengidentifikasi seseorang. Setelah akunmu dihapus, id yang dimuatnya tidak lagi mengarah kepadamu.
 - Laporan kerusakan disimpan hingga 90 hari, lalu dihapus.
 
@@ -134,7 +135,7 @@ Sebagian besar hal ini bisa kamu lakukan langsung di aplikasi: mengedit profil, 
 
 ## Keamanan {#security}
 
-Data dikirim dalam keadaan terenkripsi (HTTPS). Di server, aturan akses memastikan setiap orang hanya membaca grup tempat ia menjadi anggota. Tidak ada sistem yang sempurna, tetapi kami menanggapi setiap insiden dengan serius dan memberi tahu kamu serta ANPD jika diwajibkan oleh hukum.
+Data dikirim dalam keadaan terenkripsi (HTTPS). Di server, aturan akses memastikan setiap orang hanya membaca grup tempat ia menjadi anggota dan apa yang dibuka oleh tautan yang diberikan kepadanya. Tidak ada sistem yang sempurna, tetapi kami menanggapi setiap insiden dengan serius dan memberi tahu kamu serta ANPD jika diwajibkan oleh hukum.
 
 Kode pemulihanmu, 12 kata, berfungsi seperti kata sandi: simpan di tempat yang aman dan jangan bagikan. Kami tidak menyimpan kata-katanya, hanya sidik jarinya, yang tidak bisa diubah kembali menjadi kata-kata itu. Di iPhone, iPad, dan Mac, aplikasi menyimpannya di aplikasi Kata Sandi.
 
