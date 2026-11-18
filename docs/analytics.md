@@ -16,7 +16,7 @@ keep only `/g/`, `/b/`, `/u/` or `/c/` and drop `?comentario=`. The events, afte
 | --- | --- | --- |
 | `app_link_view` | The page opens from an app link | `kind`: `group_invite`, `member_invite`, `bill_comment`, `profile_link`, `bill_link` |
 | `traffic_source` | The page opens with `utm_source`, once per visit for the same values | `source`, `medium`, `campaign`, `term`, `content` (each when present, up to 100 characters) |
-| `store_click` | A store's badge or the header's button | `store`: `play`, `appstore`, `web`; `origin`: `hero`, `hero_note`, `cta`, `header`, `header_menu`; `platform`: `android`, `ios`, `mac`, `desktop` (not from `header_menu`) |
+| `store_click` | A store's badge, the header's button, the line over the hero's badges or a card of the Platforms section | `store`: `play`, `appstore`, `web`; `origin`: `hero`, `hero_note`, `platforms`, `cta`, `header`, `header_menu`; `platform`: `android`, `ios`, `mac`, `desktop` (not from `header_menu`) |
 | `store_redirect` | `/download`, `/download/android`, `/download/ios` or `/app-download` leaves for a store or the web app | `store`: `play`, `appstore`, `web`; `path`: the address; `platform`: `android`, `ios`, `mac`, `desktop` |
 | `store_mismatch_view` | "Choose your store" opens, after a click on the other platform's store | `clicked`, `recommended`: `play`, `appstore` |
 | `store_mismatch_go` | "Choose your store" › go to the recommended store | `store` |
