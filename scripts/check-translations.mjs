@@ -211,7 +211,8 @@ function checkContact(file, address) {
   }
   for (const [, href, shown] of text.matchAll(/<a\b[^>]*\shref="mailto:([^"]*)"[^>]*>([\s\S]*?)<\/a>/g)) {
     if (href !== address) failContact(file, `a link writes to mailto:${href}, but the legal Markdown publishes ${address}`);
-    for (const other of addressesOf(shown.replace(/<[^>]*>/g, ""))) {
+    // Read off the link's markup as it is: an address is found among the tags, with no need to take them out.
+    for (const other of addressesOf(shown)) {
       if (other !== address) failContact(file, `a mailto: link shows ${other}, but the legal Markdown publishes ${address}`);
     }
   }
