@@ -296,6 +296,8 @@ p { margin: 0; text-wrap: pretty; }
   .hero-cta[data-stores] .store .icon { width: 22px; height: 22px; }
   .hero-cta[data-stores] .store small { line-height: 1.15; }
   .hero-cta[data-stores] [data-store="web"] { order: 1; grid-column: 1 / -1; justify-self: center; padding: 8px 20px; }
+  /* Only two badges for this visitor: side by side, the one that stands out first. */
+  .hero-cta[data-stores].is-pair [data-store="web"] { order: 0; grid-column: auto; justify-self: stretch; padding: 8px 12px; }
 }
 
 /* The header's main button (stores.js): a store, a menu of stores on a computer, or the web app. */
@@ -464,6 +466,10 @@ a.status .icon { width: 15px; height: 15px; }
 @media (forced-colors: active) { .hero h1 .accent { background: none; -webkit-text-fill-color: currentColor; } }
 .hero .lead { margin-top: 20px; font-size: clamp(17px, 2vw, 19px); color: var(--fg-soft); max-width: 34em; }
 .hero-cta { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.store-note { margin-top: 24px; font-size: 15px; font-weight: 600; }
+.store-note a { color: var(--primary); text-decoration: none; }
+.store-note a:hover { text-decoration: underline; }
+.store-note + .hero-cta { margin-top: 12px; }
 .hero-note { margin-top: 16px; font-size: 14px; color: var(--muted-fg); display: flex; align-items: center; gap: 8px; }
 .hero-note .icon { width: 16px; height: 16px; }
 @media (min-width: 960px) {
