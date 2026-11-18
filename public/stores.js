@@ -380,13 +380,13 @@
       link.addEventListener("click", (e) => onStoreClick(e, primary, "hero_note"));
     });
 
-    // The Platforms section and the footer: a store's status, its link only while it offers the app.
+    // The Platforms section's cards: a store's status, its link only while it offers the app.
     document.querySelectorAll("[data-store-status]").forEach((el) => {
       const key = el.dataset.storeStatus;
       const live = Boolean(STORES[key].url);
       el.classList.toggle("live", live);
       el.classList.toggle("soon", !live);
-      el.querySelector(".status-label").textContent = live ? TEXT[{ play: "playLive", appstore: "appStoreLive", web: "webLive" }[key]] : TEXT.soon;
+      (el.querySelector(".status-label") || el).textContent = live ? TEXT[{ play: "playLive", appstore: "appStoreLive", web: "webLive" }[key]] : TEXT.soon;
       if (live) {
         el.setAttribute("href", STORES[key].url);
         el.addEventListener("click", (e) => onStoreClick(e, key, "platforms"));

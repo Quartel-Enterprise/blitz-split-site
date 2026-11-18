@@ -960,9 +960,12 @@ label.split-row { cursor: pointer; }
 .status-arrow { width: 15px; height: 15px; flex: none; fill: none; stroke: currentColor; stroke-width: 2.25; stroke-linecap: round; stroke-linejoin: round; transition: translate 0.25s var(--ease-out); }
 .status.soon .status-arrow { display: none; }
 :root[dir="rtl"] .status-arrow { scale: -1 1; }
-.platform a.status[href]::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
-.platform a.status[href]:focus-visible { outline: none; }
-.platform:has(a.status[href]:focus-visible) { outline: 2px solid var(--primary); outline-offset: 2px; }
+.platform a.status[href]::after { content: ""; position: absolute; inset: 0; }
+/* The ring moves to the card only where :has() can draw it there; elsewhere the link keeps its own. */
+@supports selector(:has(*)) {
+  .platform a.status[href]:focus-visible { outline: none; }
+  .platform:has(a.status[href]:focus-visible) { outline: 2px solid var(--primary); outline-offset: 2px; }
+}
 :root.motion .status.live .status-label {
   color: transparent;
   background: linear-gradient(100deg, var(--positive) 40%, var(--positive-shine) 50%, var(--positive) 60%) 100% 0 / 250% 100%;
