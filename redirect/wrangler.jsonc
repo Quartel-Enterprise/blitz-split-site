@@ -1,0 +1,13 @@
+{
+  // A second, tiny Worker, apart from the site's: it only redirects the two extra domains to blitzsplit.com.
+  // Deploy with `npm run deploy:redirect` (docs/development.md).
+  "name": "blitzsplit-redirect",
+  "main": "index.js",
+  "compatibility_date": "2026-10-01",
+  "routes": [
+    { "pattern": "vamosrachar.com", "custom_domain": true },
+    { "pattern": "www.vamosrachar.com", "custom_domain": true },
+    { "pattern": "vamorachar.com", "custom_domain": true },
+    { "pattern": "www.vamorachar.com", "custom_domain": true }
+  ]
+}

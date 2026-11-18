@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
+    "deploy:redirect": "wrangler deploy --config redirect/wrangler.jsonc",
     "build:legal": "node scripts/build-legal.mjs",
     "check:legal": "node scripts/build-legal.mjs --check",
     "build:release-notes": "node scripts/build-release-notes.mjs",
