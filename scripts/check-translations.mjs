@@ -9,6 +9,9 @@
 // - Every dictionary of the scripts keyed by language (const TEXT = { en: …, pt: … }, PAPER, CURRENCY…) has every
 //   language, with the same keys, the same shapes, the same {placeholders} and the same function arities as English.
 //
+// - The contact address is the same everywhere it is typed by hand: every mailto: link of a page, the address it
+//   shows, and the address public/llms.txt names are the one the legal Markdown (public/legal/*.md) publishes.
+//
 // A regional variant (pt-PT) overlays its language with only the words it says differently: every page and script may
 // carry one, each of whose entries must match English's shape and placeholders, and none of whose keys may be unknown.
 // The languages come from SUPPORTED in public/boot.js, the one list the site picks a language from. Run it with
@@ -34,6 +37,9 @@ const NOT_WORDS = ["LANGUAGE_CHIPS"];
 
 const errors = [];
 const fail = (file, message) => errors.push(`${relative(ROOT, file)}: ${message}`);
+// The contact address's own errors, told apart from a missing translation.
+const contactErrors = [];
+const failContact = (file, message) => contactErrors.push(`${relative(ROOT, file)}: ${message}`);
 
 // The end of the bracketed literal that opens at `start`, skipping strings, template literals and comments.
 function closingBracket(source, start) {
@@ -178,14 +184,54 @@ function checkScript(file) {
   }
 }
 
+// The address the legal Markdown publishes is the site's one contact address. The footers, the Support page and
+// llms.txt type it by hand, since the site has no build, so a change of address that misses one of them fails here.
+const LEGAL = join(PUBLIC, "legal");
+const ADDRESS = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g;
+const addressesOf = (text) => [...new Set(text.match(ADDRESS) || [])];
+
+function legalAddress() {
+  const published = new Map();
+  for (const file of files(LEGAL, ".md")) {
+    const links = [...readFileSync(file, "utf8").matchAll(/\]\(mailto:([^)\s]+)\)/g)].map((m) => m[1]);
+    if (links.length === 0) failContact(file, "publishes no contact address (a mailto: link)");
+    for (const address of links) published.set(address, [...(published.get(address) || []), file]);
+  }
+  if (published.size > 1) {
+    for (const [address, where] of published) failContact(where[0], `publishes ${address}, one of ${published.size} contact addresses in ${relative(ROOT, LEGAL)}/ (${where.length} file(s) have this one): the site has one`);
+  }
+  return published.size === 1 ? [...published.keys()][0] : null;
+}
+
+function checkContact(file, address) {
+  const text = readFileSync(file, "utf8");
+  if (!file.endsWith(".html")) {
+    for (const other of addressesOf(text)) if (other !== address) failContact(file, `names ${other}, but the legal Markdown publishes ${address}`);
+    return;
+  }
+  for (const [, href, shown] of text.matchAll(/<a\b[^>]*\shref="mailto:([^"]*)"[^>]*>([\s\S]*?)<\/a>/g)) {
+    if (href !== address) failContact(file, `a link writes to mailto:${href}, but the legal Markdown publishes ${address}`);
+    for (const other of addressesOf(shown.replace(/<[^>]*>/g, ""))) {
+      if (other !== address) failContact(file, `a mailto: link shows ${other}, but the legal Markdown publishes ${address}`);
+    }
+  }
+}
+
 const files = (dir, extension) => readdirSync(dir).filter((name) => name.endsWith(extension)).map((name) => join(dir, name));
 // Why pages/ too: a page whose text is written at deploy keeps its hand-written shell, with its strings, there.
 [...files(PUBLIC, ".html"), ...files(join(ROOT, "pages"), ".html")].forEach(checkPage);
 [...files(PUBLIC, ".js"), ...files(join(ROOT, "src"), ".js")].forEach(checkScript);
+const address = legalAddress();
+if (address) [...files(PUBLIC, ".html"), ...files(join(ROOT, "pages"), ".html"), join(PUBLIC, "llms.txt")].forEach((file) => checkContact(file, address));
 
 if (errors.length > 0) {
   console.error(`❌ ${errors.length} missing or mismatched translation(s):`);
   errors.forEach((error) => console.error(`   ${error}`));
-  process.exit(1);
 }
+if (contactErrors.length > 0) {
+  console.error(`❌ ${contactErrors.length} place(s) where the contact address isn't the one the legal Markdown publishes:`);
+  contactErrors.forEach((error) => console.error(`   ${error}`));
+}
+if (errors.length > 0 || contactErrors.length > 0) process.exit(1);
+console.log(`✅ Every page writes to the contact address the legal Markdown publishes (${address})`);
 console.log(`✅ Every page and script has its strings in ${languages.length} languages (${languages.join(", ")})`);

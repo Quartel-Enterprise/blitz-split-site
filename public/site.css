@@ -1136,6 +1136,10 @@ label.split-row { cursor: pointer; }
 .legal-hero .meta { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; color: var(--muted-fg); }
 .legal-hero .meta span { display: inline-flex; align-items: center; gap: 6px; }
 .legal-hero .meta .icon { width: 16px; height: 16px; }
+/* What the pages that keep this hero without the legal pages' contents share (the release notes, Support): a lead
+   under the title, and the room around what comes under the hero. */
+.hero-lead { margin-top: 10px; font-size: 17px; color: var(--fg-soft); }
+.page-body { padding-top: 40px; padding-bottom: 80px; }
 .legal-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; padding-top: 32px; padding-bottom: 96px; }
 @media (min-width: 1000px) { .legal-layout { grid-template-columns: 248px minmax(0, 1fr); gap: 64px; padding-top: 48px; } }
 
@@ -1201,7 +1205,6 @@ label.split-row { cursor: pointer; }
 
 /* Release notes: the page's hero is the legal pages', with a switch that shows the beta versions, off at first. Each
    version is a card, newest first, written by scripts/build-release-notes.mjs. */
-.release-lead { margin-top: 10px; font-size: 17px; color: var(--fg-soft); }
 .beta-switch { margin-top: 20px; display: inline-flex; align-items: center; gap: 12px; min-height: 44px; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--fg-soft); }
 .beta-switch input { appearance: none; -webkit-appearance: none; flex: none; margin: 0; width: 40px; height: 24px; border-radius: 999px; background: var(--muted-fg); cursor: pointer; position: relative; }
 .beta-switch input::before { content: ""; position: absolute; top: 3px; inset-inline-start: 3px; width: 18px; height: 18px; border-radius: 50%; background: var(--bg); }
@@ -1209,8 +1212,6 @@ label.split-row { cursor: pointer; }
 .beta-switch input:checked::before { transform: translateX(16px); }
 :root.motion .beta-switch input, :root.motion .beta-switch input::before { transition: background 0.15s, transform 0.15s; }
 @media (forced-colors: active) { .beta-switch input { border: 1px solid ButtonText; } .beta-switch input::before { background: ButtonText; } .beta-switch input:checked { background: Highlight; } }
-/* Support keeps that hero and the legal pages' prose under it: the address to write to, then the other pages. */
-.releases, .support { padding-top: 40px; padding-bottom: 80px; }
 .releases > * { max-width: 70ch; }
 .releases-empty { color: var(--muted-fg); }
 .release { margin-bottom: 16px; padding: 24px; border: 1px solid var(--border); border-radius: var(--radius-card); background: var(--card); }

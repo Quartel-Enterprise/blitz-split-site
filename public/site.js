@@ -403,9 +403,12 @@
     "/release-notes": { content_type: "release_notes", item_id: "release_notes" },
     "/support": { content_type: "support", item_id: "support" },
   };
-  // Not the language picker's rows, which link to the page they are on.
+  // Not the language picker's rows, which link to the page they are on. The selector takes any address that starts
+  // as a page's does (so "/privacy#keep" and "/support?lang=pt" count), and the path, without a trailing slash, says
+  // whether it is one: a link to another path that starts the same ("/support-faq") sends nothing.
   const toPages = Object.keys(PAGES).map((path) => `a[href^="${path}"]`).join(", ");
   document.querySelectorAll(`:is(${toPages}):not([data-set-lang])`).forEach((a) => a.addEventListener("click", () => {
-    track("select_content", { ...PAGES[new URL(a.href).pathname], origin: originOf(a) });
+    const page = PAGES[new URL(a.href).pathname.replace(/\/$/, "")];
+    if (page) track("select_content", { ...page, origin: originOf(a) });
   }));
 })();

@@ -175,12 +175,14 @@ cards show while every version is still a beta.
 ## Support and the footer's contact
 
 Support (`/support`, `public/support.html`, written by hand as the landing is) is the page the stores' Support URL
-points at, which must show a way to reach the developer: the legal pages' header and hero, then the address to write
-to as a `mailto:` button, a line asking for the device and the app's version, and links to "What's new", the privacy
-policy and the terms. It promises nothing the rest of the site doesn't: no response time, no phone.
+points at, which must show a way to reach the developer: the legal pages' header and hero (with `.hero-lead` and
+`.page-body`, which it shares with the release notes), then the address to write to as a `mailto:` button, a line
+asking for the device and the app's version, and links to "What's new", the privacy policy and the terms. It promises
+nothing the rest of the site doesn't: no response time, no phone.
 
 The address is quare.software@gmail.com, the one the privacy policy and the terms publish (`public/legal/*.md`):
-change it there, on Support and in the footers together.
+change it there, on Support, in the footers and in `public/llms.txt` together. `npm run check:translations` fails, as
+CI does, when one of them has another address ([ci.md](ci.md#translations)).
 
 Every page's footer links Support among its links and shows the address under the tagline, as a `mailto:` link. The
 footer is written in each page, since the site has no build: `public/index.html`, `public/privacy.html`,
