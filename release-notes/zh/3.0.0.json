@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split 全新登场：从零重新打造，支持 Android、iPhone、iPad、Mac 和网页。",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "账单可以平均、按金额、按百分比、按份数或按项目分摊。扫描小票，选择每个人点了什么。",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "无需联网、无需账号即可使用。使用 Google 或 Apple 登录，让群组在你的所有设备间保持同步。",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split fait peau neuve : entièrement reconstruit, pour Android, iPhone, iPad, Mac et le web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Partage une addition à parts égales, par montants, par pourcentages, par parts ou par articles. Scanne le reçu et choisis qui a pris quoi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app fonctionne hors ligne et sans compte. Connecte-toi avec Google ou Apple pour garder tes groupes synchronisés sur tous tes appareils.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

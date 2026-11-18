@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split è tutto nuovo: rifatto da zero, per Android, iPhone, iPad, Mac e il web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dividi un conto in parti uguali, per importi, per percentuale, per quote o per voci. Scansiona lo scontrino e scegli chi ha preso cosa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Funziona offline e senza account. Accedi con Google o Apple per tenere i tuoi gruppi sincronizzati su tutti i tuoi dispositivi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

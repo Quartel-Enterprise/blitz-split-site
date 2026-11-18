@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split är helt nytt: byggt om från grunden, för Android, iPhone, iPad, Mac och webben.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dela en nota lika, efter belopp, efter procent, efter andelar eller efter artiklar. Skanna kvittot och välj vem som tog vad.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fungerar offline och utan konto. Logga in med Google eller Apple för att hålla dina grupper synkade på alla dina enheter.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

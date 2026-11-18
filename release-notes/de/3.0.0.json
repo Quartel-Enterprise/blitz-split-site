@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split ist komplett neu: von Grund auf neu gebaut, für Android, iPhone, iPad, Mac und das Web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Teile eine Rechnung gleichmäßig, nach Beträgen, nach Prozent, nach Anteilen oder nach Positionen. Scanne den Beleg und wähle, wer was hatte.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Funktioniert offline und ohne Konto. Melde dich mit Google oder Apple an, um deine Gruppen auf all deinen Geräten synchron zu halten.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
