@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Quartel-Enterprise/blitz-split-site/security/advisories/new
+    about: Please report security problems privately, never in a public issue.
+  - name: Something in the apps
+    url: https://github.com/Quartel-Enterprise/blitz-split-client/issues/new/choose
+    about: This repository is only the site at blitzsplit.com. Bugs and ideas for the apps go to blitz-split-client.
