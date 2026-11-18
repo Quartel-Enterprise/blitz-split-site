@@ -9,12 +9,13 @@ otherwise use this software, in source or binary form, in whole or in part, exce
 
   1. Viewing the source code on GitHub, and forking this repository on GitHub, as
      GitHub's Terms of Service allow.
-  2. Modifying, building and running it on your own devices for the sole purpose of
-     preparing a contribution to this repository.
+  2. Modifying, building and running it on your own devices, and pushing those
+     changes to your fork on GitHub, for the sole purpose of preparing and opening a
+     contribution to this repository.
 
 Files that carry their own license notice, and third-party files included in this
 repository (such as the Geist fonts under public/fonts, under the SIL Open Font
-License 1.1), remain under their own licenses.
+License 1.1, whose text is in public/fonts/OFL.txt), remain under their own licenses.
 
 By submitting a contribution (a pull request, a patch or any other material) to this
 repository, you agree that Quartel Enterprise may use, modify, relicense and distribute

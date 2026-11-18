@@ -18,7 +18,7 @@ body:
         - Privacy policy
         - Terms of use
         - What's new (release notes)
-        - An invite link's preview
+        - A shared link's preview (group invite, profile, bill or comment)
         - Another one
     validations:
       required: true
@@ -26,7 +26,7 @@ body:
     id: url
     attributes:
       label: Address
-      description: The link you were on. For an invite link, leave out the group's code.
+      description: The link you were on. For a link the apps share (/g/, /u/, /c/ or /b/), leave out the codes after it.
       placeholder: https://blitzsplit.com/privacy?lang=fr
   - type: input
     id: browser
