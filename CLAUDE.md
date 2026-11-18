@@ -1,7 +1,7 @@
 # Blitz Split: site
 
-The site at blitzsplit.com of Bora Rachar (Blitz Split in every language but Brazil's Portuguese; the site's languages
-are `SUPPORTED` in `public/boot.js`, plus its `VARIANTS`): the landing, the privacy policy, the terms of use, the release notes and the support page, served by a Cloudflare Worker with static assets (`public/`) and one
+The site at blitzsplit.com of Bora Rachar (Blitz Split in English, Spanish, French, German, Italian, Polish, Dutch,
+Turkish, Indonesian and Japanese): the landing, the privacy policy and the terms of use, served by a Cloudflare Worker with static assets (`public/`) and one
 script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and JavaScript with no build. The apps live in
 `blitz-split-client` and the backend in `blitz-split-api`.
 
@@ -11,7 +11,7 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
 - **Invite link previews**: [`docs/invite-previews.md`](docs/invite-previews.md): `/g/*` and `/og/*`, the API's
   `invite-preview` function and the cache.
 - **Pages and design**: [`docs/design.md`](docs/design.md): tokens, languages, theme, motion, the landing's working
-  phone, the design board, the legal pages' open points, the support page and the footer every page repeats.
+  phone, the design board and the legal pages' open points.
 - **Legal pages**: [`docs/legal.md`](docs/legal.md): the Markdown the privacy policy and the terms are written in,
   which the pages are generated from and the apps draw natively.
 - **Release notes**: [`docs/release-notes.md`](docs/release-notes.md): the JSON each version's notes are written in,
@@ -29,13 +29,11 @@ script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and Java
   the repository's purpose; details go in `docs/`.
 - No build and no dependencies in the pages: `public/site.css` holds the design system's tokens (light and dark) and
   every component; use the tokens, never raw colors in components.
-- The markup is in English. Every string a page shows has a `data-i18n` key with its words in every other language of
-  the site in the page's `window.SITE_STRINGS`, or, for words a script shows on every page (the language picker, the
-  store dialog), a dictionary keyed by language in that script; the legal pages write every language in full in
-  `data-lang` blocks, generated from `public/legal/*.md`. The languages are `SUPPORTED` in `public/boot.js`, the one
-  list, and a variant in its `VARIANTS` (`pt-PT`) holds only the words it says differently
-  ([`docs/design.md`](docs/design.md)). Add every language in the same change: `npm run check:translations` fails on a
-  missing one, as CI does.
+- The markup is in English. Every string a page shows has a `data-i18n` key with its Portuguese, Spanish, French, German,
+  Italian, Polish, Dutch, Turkish, Indonesian and Japanese in the page's `window.SITE_STRINGS`, or, for words a script
+  shows on every page (the language picker, the store dialog), a dictionary keyed by language in that script; the legal pages write all
+  eleven in full in `data-lang` blocks, generated from `public/legal/*.md`. Add all eleven
+  languages in the same change: `npm run check:translations` fails on a missing one, as CI does.
 - No new copied JavaScript or CSS: `npm run check:duplication` (jscpd, against `.jscpd-baseline.json`) fails on it,
   as CI does.
 - `public/boot.js` runs in `<head>` and decides the theme, the language and `.motion` before the first paint. Every

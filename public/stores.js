@@ -34,7 +34,8 @@
 
   // The campaign that brought the visitor, for Google Play's install referrer: Google Play hands it to the app on its
   // first launch, so an install can be traced to the campaign. Only the utm_* values go, from the address or, after
-  // moving between the site's pages, from what analytics.js kept for this visit.
+  // moving between the site's pages, from what analytics.js kept for this visit. Why it reads them itself: ad blockers
+  // often block analytics.js, and the install should still carry its campaign.
   function campaignReferrer() {
     const address = new URLSearchParams(location.search);
     let kept = {};
@@ -370,14 +371,13 @@
 
     // The line over the hero's badges: what this visitor can do right now.
     document.querySelectorAll("[data-store-note]").forEach((note) => {
-      if (!primary) return;
+      if (!primary) { note.hidden = true; return; }
       const link = note.querySelector("a");
       link.textContent = primary !== "web" ? fill(TEXT.noteStore, { in: TEXT.in[primary] })
         : ownStore === "appstore" ? fill(TEXT.noteApple, { platform: platformName[root.dataset.platform] })
         : TEXT.noteWeb;
       link.href = STORES[primary].url;
       link.addEventListener("click", (e) => onStoreClick(e, primary, "hero_note"));
-      note.hidden = false;
     });
 
     // The Platforms section and the footer: a store's status, its link only while it offers the app.

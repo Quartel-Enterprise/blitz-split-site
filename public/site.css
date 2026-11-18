@@ -466,7 +466,9 @@ a.status .icon { width: 15px; height: 15px; }
 @media (forced-colors: active) { .hero h1 .accent { background: none; -webkit-text-fill-color: currentColor; } }
 .hero .lead { margin-top: 20px; font-size: clamp(17px, 2vw, 19px); color: var(--fg-soft); max-width: 34em; }
 .hero-cta { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-.store-note { margin-top: 24px; font-size: 15px; font-weight: 600; }
+/* Two lines are kept for the note from the first paint, so the badges don't move when stores.js writes it. */
+.store-note { margin-top: 16px; min-height: 2.9em; display: flex; align-items: flex-end; font-size: 15px; line-height: 1.45; font-weight: 600; }
+@media (max-width: 599px) { .store-note { font-size: 14px; } }
 .store-note a { color: var(--primary); text-decoration: none; }
 .store-note a:hover { text-decoration: underline; }
 .store-note:not([hidden]) + .hero-cta { margin-top: 12px; }
