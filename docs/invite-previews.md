@@ -37,7 +37,9 @@ link's code: it reads `get_invite`, `get_shared_bill` or `get_profile_by_share_c
 currency (BRL Portuguese, the Spanish speaking countries' Spanish, PLN Polish, TRY Turkish, IDR Indonesian, JPY
 Japanese, any other English) and draws the 1200 × 630 card with satori. Drawing takes 40 to 75 ms of CPU, past the
 10 ms the Workers Free plan allows a request, so the function draws and this Worker only asks it and keeps each
-answer in Cloudflare's cache: the words for five minutes, an image for a day. The image's address carries the
+answer in Cloudflare's cache: the words for five minutes, an image for a day. A page waits up to 8 s for its words
+(`WORDS_TIMEOUT_MS`): the function's first answer after a quiet while, a cold start, takes past 3 s, and WhatsApp keeps
+whatever preview it got first for a link's address, so giving up early leaves the brand's preview on that link. The image's address carries the
 function's `imageVersion` (`?v=`), which changes with whatever the card shows, since WhatsApp keeps an image by its address. Should the function fail, or answer a kind the link can't have (one
 deployed before it knew `link` reads a bill's code as an invite's), the page keeps the landing's
 own meta tags and an image answers the brand's card. The function loads the group's and the people's photos itself

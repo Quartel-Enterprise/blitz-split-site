@@ -47,7 +47,10 @@ const CARD_TAGS = {
 // Why: a renamed group or a new member shows a few minutes later; an image's address changes with what it shows,
 // so it may stay a day.
 const WORDS_TTL = 300;
-const WORDS_TIMEOUT_MS = 3000;
+// Why: the function's first answer after a quiet while (a cold start) takes past 3 s, and a page served with the
+// landing's own tags then stays the link's preview in WhatsApp, which keeps it by the link's address; crawlers wait
+// longer than that for a page.
+const WORDS_TIMEOUT_MS = 8000;
 // Why: what a card's image depends on: who shared a personal link, the language asked and the card's version.
 const IMAGE_PARAMETERS = ["from", "lang", "v"];
 const IMAGE_TTL = 86400;
