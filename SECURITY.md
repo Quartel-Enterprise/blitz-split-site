@@ -21,8 +21,10 @@ in the advisory once the fix is out, unless you'd rather stay anonymous.
 ## What is in scope
 
 - The pages of blitzsplit.com: the landing, the privacy policy, the terms of use and the release notes.
-- The Cloudflare Worker in `src/index.js`: the invite previews under `/g/*` and their images under `/og/*`, what they
-  read from the backend and what they cache ([invite previews](docs/invite-previews.md)).
+- The Cloudflare Worker in `src/index.js`: the previews of every link the apps share (group invites under `/g/*`,
+  profiles under `/u/*`, bills under `/c/*` and comments under `/b/*`) and their images under `/og/*`, the download
+  paths, what they read from the backend and what they cache ([routes](docs/routes.md),
+  [link previews](docs/invite-previews.md)).
 - The app links' files under `/.well-known/`, the redirects and the response headers in `public/_headers`.
 - The scripts the pages load, and the data they send to Google Analytics ([analytics](docs/analytics.md)).
 

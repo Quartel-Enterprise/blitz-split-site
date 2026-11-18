@@ -69,7 +69,8 @@ it locally.
 
 ## Opening the pull request
 
-- Title it with the [Conventional Commits](https://www.conventionalcommits.org) type of the branch, in English:
+- Title it `<type>: <summary>` in the [Conventional Commits](https://www.conventionalcommits.org) form, with the
+  branch's type from the table above (`feature`, not the spec's `feat`), in English:
   `fix: keep the language picker open on scroll`.
 - Fill in the pull request template: the problem, the expected behavior, and how you checked it.
 - Add screenshots for any visual change, in light and dark, on a phone and a wide screen.

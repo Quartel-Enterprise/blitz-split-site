@@ -29,8 +29,8 @@ keyboard. The apps have their own statement in
 
 ## Known limitations
 
-- The invite link previews (`/g/*`) are drawn for the apps that show a link's card; their image has no text
-  alternative beyond the card's title and description.
+- The previews of the links the apps share (`/g/*`, `/u/*`, `/c/*`, `/b/*`) are drawn for the apps that show a link's
+  card; their image has no text alternative beyond the card's title and description.
 - The legal pages are long documents; their headings are the way to move around them.
 
 ## Reporting a barrier
