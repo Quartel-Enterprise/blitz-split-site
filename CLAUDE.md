@@ -1,6 +1,6 @@
 # Blitz Split: site
 
-The site at blitzsplit.com of Bora Rachar (Blitz Split in every language but Brazil's Portuguese; the site's languages
+The site at blitzsplit.com of Blitz Split (Bora Rachar in Brazil's Portuguese; the site's languages
 are `SUPPORTED` in `public/boot.js`, plus its `VARIANTS`): the landing, the privacy policy, the terms of use, the release notes and the support page, served by a Cloudflare Worker with static assets (`public/`) and one
 script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and JavaScript with no build. The apps live in
 `blitz-split-client` and the backend in `blitz-split-api`.
