@@ -1,20 +1,21 @@
 // Where to get the app, as Bible Planner's landing does it: the visitor's platform picks which store comes first and
 // stands out, the header's download button goes straight to it, a store of the other platform asks first, and
 // /download (/download/android, /download/ios) redirects to the right store. Loaded with defer, so it never holds up
-// the first paint (only a /download path's redirect waits for the page to be parsed); the buttons are set right then.
+// the first paint (a /download path's redirect waits for the page to be parsed, then up to REDIRECT_WAIT_MS for
+// Analytics to send store_redirect); the buttons are set right then.
 //
 // Turn a store on here once its listing is public, in step with blitz-split-client's stores.properties, and the web app
 // once it is open to the public.
 (function () {
   const CONFIG = {
-    // Google Play: the listing exists but the app can't be downloaded from it yet.
-    googlePlayLive: false,
+    // Google Play: the app is public there.
+    googlePlayLive: true,
     googlePlayUrl: "https://play.google.com/store/apps/details?id=com.quare.blitzsplit",
     // App Store: the numeric Apple ID of the listing (apps.apple.com/app/id<id>), empty until there is one. The iPhone,
     // iPad and Mac apps are one listing.
     appStoreId: "",
-    // The web app: its address is decided, but it isn't open to the public yet.
-    webAppLive: false,
+    // The web app: open to the public.
+    webAppLive: true,
     webAppUrl: "https://app.blitzsplit.com",
   };
 
@@ -31,11 +32,29 @@
   const platform = isAndroid ? "android" : isApple ? "apple" : "desktop";
   root.dataset.platform = isAndroid ? "android" : isIos ? "ios" : isMac ? "mac" : "desktop";
 
+  // The campaign that brought the visitor, for Google Play's install referrer: Google Play hands it to the app on its
+  // first launch, so an install can be traced to the campaign. Only the utm_* values go, from the address or, after
+  // moving between the site's pages, from what analytics.js kept for this visit. Why it reads them itself: ad blockers
+  // often block analytics.js, and the install should still carry its campaign.
+  function campaignReferrer() {
+    const address = new URLSearchParams(location.search);
+    let kept = {};
+    try { kept = JSON.parse(sessionStorage.getItem("utm")) || {}; } catch (e) { /* storage blocked: only the address counts */ }
+    const referrer = new URLSearchParams();
+    ["source", "medium", "campaign", "term", "content"].forEach((key) => {
+      const value = address.get("utm_source") ? address.get(`utm_${key}`)?.slice(0, 100) : kept[key];
+      if (value) referrer.set(`utm_${key}`, value);
+    });
+    // Why %20: URLSearchParams writes a space as "+", which Google Play's referrer would hand to the app as a literal +.
+    return referrer.toString().replace(/\+/g, "%20");
+  }
+  const referrer = campaignReferrer();
+
   // Each store's link in the visitor's language, or none while the store doesn't offer the app. Chinese names no App
   // Store storefront: China's lists only apps with an ICP filing, so Apple takes the visitor's own.
   // Why iw: Google Play documents Hebrew by its legacy code, the one it has always honoured.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw" }[root.dataset.lang] || root.lang}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional) and Hebrew's as Google Play writes them
+    ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional) and Hebrew's as Google Play writes them
     : "";
   const appStoreUrl = CONFIG.appStoreId
     ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", en: "us/" })}app/id${CONFIG.appStoreId}`
@@ -51,22 +70,24 @@
   const primary = ownStore && STORES[ownStore].url ? ownStore : STORES.web.url ? "web" : null;
   // The order: what stands out, then the visitor's own store, then the rest (Google Play, App Store, web).
   const order = [...new Set([primary, ownStore, "play", "appstore", "web"].filter(Boolean))];
+  // A phone or a Mac sees the other platform's store only when "Choose your store" can stand in front of it: that store
+  // offers the app and so does the visitor's own.
+  const isOffered = (key) => !ownStore || key === ownStore || key === "web" || Boolean(STORES[key].url && STORES[ownStore].url);
 
   // /download, /download/android and /download/ios, plus /app-download (the apps' "Get the app"): straight to the
-  // store, or to the landing's buttons while that store doesn't offer the app.
+  // store, or to the landing's buttons while that store doesn't offer the app. /download on a computer opens the web app;
+  // /app-download doesn't, as the web app's own "Get the app" links there and would only come back to it.
   const path = location.pathname.replace(/\/+$/, "");
   const wanted = { "/download/android": "play", "/download/ios": "appstore" }[path]
     || (["/download", "/app-download"].includes(path) ? (ownStore || "web") : null);
-  if (wanted) {
-    const target = STORES[wanted].url;
-    if (target) { location.replace(target); return; }
-    history.replaceState(null, "", "/" + location.search + "#get");
-  }
+  const redirect = wanted && !(wanted === "web" && path === "/app-download") ? STORES[wanted].url : "";
+  if (wanted && !redirect) history.replaceState(null, "", "/" + location.search + "#get");
 
   const TEXT = window.localized({
     en: {
       play: ["Get it on", "Coming soon to"], appstore: ["Download on the", "Coming soon to the"], web: ["Open in your", "Coming soon to your"], browser: "Browser",
       getApp: "Get the app", openWeb: "Open web app", soon: "Coming soon",
+      noteStore: "Get the app {in}.", noteApple: "On {platform}? Use it in your browser until the app reaches the App Store.", noteWeb: "Open it in your browser, nothing to install.",
       playLive: "Available on Google Play", appStoreLive: "Available on the App Store", webLive: "Open the web app",
       mismatchTitle: "Choose your store",
       mismatchBody: "You're on {platform}. For the best experience, get the app {in}.",
@@ -76,6 +97,7 @@
     pt: {
       play: ["Disponível no", "Em breve no"], appstore: ["Baixar na", "Em breve na"], web: ["Abrir no", "Em breve no"], browser: "Navegador",
       getApp: "Baixar o app", openWeb: "Abrir app web", soon: "Em breve",
+      noteStore: "Baixe o app {in}.", noteApple: "No {platform}? Use pelo navegador enquanto o app não chega à App Store.", noteWeb: "Abra no navegador, sem instalar nada.",
       playLive: "Disponível no Google Play", appStoreLive: "Disponível na App Store", webLive: "Abrir o app web",
       mismatchTitle: "Escolha sua loja",
       mismatchBody: "Você está num {platform}. Para a melhor experiência, baixe o app {in}.",
@@ -86,12 +108,14 @@
     "pt-PT": {
       play: ["Disponível no", "Brevemente no"], appstore: ["Descarregar na", "Brevemente na"], web: ["Abrir no", "Brevemente no"],
       getApp: "Descarregar a app", soon: "Brevemente", webLive: "Abrir a app web",
+      noteStore: "Descarrega a app {in}.", noteApple: "No {platform}? Usa no navegador até a app chegar à App Store.", noteWeb: "Abre no navegador, sem instalar nada.",
       mismatchTitle: "Escolhe a tua loja",
       mismatchBody: "Estás num {platform}. Para a melhor experiência, descarrega a app {in}.",
     },
     es: {
       play: ["Disponible en", "Próximamente en"], appstore: ["Descárgalo en la", "Próximamente en la"], web: ["Abrir en el", "Próximamente en el"], browser: "Navegador",
       getApp: "Descargar la app", openWeb: "Abrir app web", soon: "Próximamente",
+      noteStore: "Descarga la app {in}.", noteApple: "¿En tu {platform}? Úsala en el navegador hasta que la app llegue a la App Store.", noteWeb: "Ábrela en el navegador, sin instalar nada.",
       playLive: "Disponible en Google Play", appStoreLive: "Disponible en la App Store", webLive: "Abrir la app web",
       mismatchTitle: "Elige tu tienda",
       mismatchBody: "Estás en un {platform}. Para la mejor experiencia, descarga la app {in}.",
@@ -101,6 +125,7 @@
     fr: {
       play: ["Disponible sur", "Bientôt sur"], appstore: ["Télécharger dans l'", "Bientôt dans l'"], web: ["Ouvrir dans votre", "Bientôt dans votre"], browser: "Navigateur",
       getApp: "Télécharger l'application", openWeb: "Ouvrir l'application web", soon: "Bientôt",
+      noteStore: "Téléchargez l'application {in}.", noteApple: "Sur {platform} ? Utilisez-la dans votre navigateur en attendant son arrivée sur l'App Store.", noteWeb: "Ouvrez-la dans votre navigateur, rien à installer.",
       playLive: "Disponible sur Google Play", appStoreLive: "Disponible sur l'App Store", webLive: "Ouvrir l'application web",
       mismatchTitle: "Choisissez votre store",
       mismatchBody: "Vous êtes sur {platform}. Pour la meilleure expérience, téléchargez l'application {in}.",
@@ -110,6 +135,7 @@
     de: {
       play: ["Jetzt bei", "Bald bei"], appstore: ["Laden im", "Bald im"], web: ["Öffnen im", "Bald im"], browser: "Browser",
       getApp: "App holen", openWeb: "Web-App öffnen", soon: "Bald verfügbar",
+      noteStore: "Hol dir die App {in}.", noteApple: "Auf dem {platform}? Nutz sie im Browser, bis die App im App Store ist.", noteWeb: "Öffne sie im Browser, ohne etwas zu installieren.",
       playLive: "Bei Google Play erhältlich", appStoreLive: "Im App Store erhältlich", webLive: "Web-App öffnen",
       mismatchTitle: "Wähl deinen Store",
       mismatchBody: "Du nutzt {platform}. Am besten holst du dir die App {in}.",
@@ -119,6 +145,7 @@
     it: {
       play: ["Disponibile su", "Presto su"], appstore: ["Scarica su", "Presto su"], web: ["Apri nel", "Presto nel"], browser: "Browser",
       getApp: "Scarica l’app", openWeb: "Apri la web app", soon: "Presto disponibile",
+      noteStore: "Scarica l’app {in}.", noteApple: "Su {platform}? Usala nel browser finché l’app non arriva su App Store.", noteWeb: "Aprila nel browser, senza installare nulla.",
       playLive: "Disponibile su Google Play", appStoreLive: "Disponibile su App Store", webLive: "Apri la web app",
       mismatchTitle: "Scegli il tuo store",
       mismatchBody: "Sei su {platform}. Per un’esperienza migliore, scarica l’app {in}.",
@@ -128,6 +155,7 @@
     pl: {
       play: ["Pobierz z", "Wkrótce w"], appstore: ["Pobierz z", "Wkrótce w"], web: ["Otwórz w", "Wkrótce w"], browser: "przeglądarce",
       getApp: "Pobierz aplikację", openWeb: "Otwórz aplikację webową", soon: "Wkrótce",
+      noteStore: "Pobierz aplikację {in}.", noteApple: "Używasz urządzenia {platform}? Korzystaj w przeglądarce, dopóki aplikacja nie trafi do App Store.", noteWeb: "Otwórz ją w przeglądarce, bez instalowania.",
       playLive: "Dostępna w Google Play", appStoreLive: "Dostępna w App Store", webLive: "Otwórz aplikację webową",
       mismatchTitle: "Wybierz sklep",
       mismatchBody: "Twoje urządzenie to {platform}. Najlepiej pobierz aplikację {in}.",
@@ -137,6 +165,7 @@
     nl: {
       play: ["Ontdek het op", "Binnenkort op"], appstore: ["Download in de", "Binnenkort in de"], web: ["Open in je", "Binnenkort in je"], browser: "Browser",
       getApp: "Download de app", openWeb: "Web-app openen", soon: "Binnenkort",
+      noteStore: "Download de app {in}.", noteApple: "Op je {platform}? Gebruik hem in je browser tot de app in de App Store staat.", noteWeb: "Open hem in je browser, zonder iets te installeren.",
       playLive: "Beschikbaar op Google Play", appStoreLive: "Beschikbaar in de App Store", webLive: "Open de web-app",
       mismatchTitle: "Kies je store",
       mismatchBody: "Je gebruikt een {platform}. Download de app voor de beste ervaring {in}.",
@@ -146,6 +175,7 @@
     tr: {
       play: ["Şuradan indir", "Yakında"], appstore: ["Şuradan indir", "Yakında"], web: ["Şurada aç", "Yakında"], browser: "Tarayıcında",
       getApp: "Uygulamayı indir", openWeb: "Web uygulamasını aç", soon: "Yakında",
+      noteStore: "Uygulamayı {in} indir.", noteApple: "{platform} kullanıcısı mısın? Uygulama App Store'a gelene kadar tarayıcında kullan.", noteWeb: "Hiçbir şey yüklemeden tarayıcında aç.",
       playLive: "Google Play'de mevcut", appStoreLive: "App Store'da mevcut", webLive: "Web uygulamasını aç",
       mismatchTitle: "Mağazanı seç",
       mismatchBody: "{platform} kullanıyorsun. En iyi deneyim için uygulamayı {in} indir.",
@@ -155,6 +185,7 @@
     id: {
       play: ["Temukan di", "Segera di"], appstore: ["Unduh di", "Segera di"], web: ["Buka di", "Segera di"], browser: "Browser",
       getApp: "Unduh aplikasinya", openWeb: "Buka aplikasi web", soon: "Segera hadir",
+      noteStore: "Unduh aplikasinya {in}.", noteApple: "Pakai {platform}? Gunakan di browser sampai aplikasinya hadir di App Store.", noteWeb: "Buka di browser, tanpa perlu memasang apa pun.",
       playLive: "Tersedia di Google Play", appStoreLive: "Tersedia di App Store", webLive: "Buka aplikasi web",
       mismatchTitle: "Pilih toko aplikasimu",
       mismatchBody: "Kamu memakai {platform}. Untuk pengalaman terbaik, unduh aplikasinya {in}.",
@@ -164,6 +195,7 @@
     ja: {
       play: ["ダウンロード", "近日公開"], appstore: ["ダウンロード", "近日公開"], web: ["今すぐ開く", "近日公開"], browser: "ブラウザ",
       getApp: "アプリを入手", openWeb: "Webアプリを開く", soon: "近日公開",
+      noteStore: "{in}アプリを入手できます。", noteApple: "{platform}をお使いですか？App Storeで公開されるまでは、ブラウザでご利用ください。", noteWeb: "インストール不要で、ブラウザですぐに開けます。",
       playLive: "Google Playで配信中", appStoreLive: "App Storeで配信中", webLive: "Webアプリを開く",
       mismatchTitle: "ストアを選択",
       mismatchBody: "お使いの端末は{platform}です。快適に使うには、{in}アプリを入手してください。",
@@ -173,6 +205,7 @@
     ru: {
       play: ["Доступно в", "Скоро в"], appstore: ["Загрузи в", "Скоро в"], web: ["Открой в", "Скоро в"], browser: "браузере",
       getApp: "Скачать приложение", openWeb: "Открыть веб-приложение", soon: "Скоро",
+      noteStore: "Скачай приложение {in}.", noteApple: "У тебя {platform}? Пользуйся в браузере, пока приложение не появится в App Store.", noteWeb: "Открой в браузере, ничего не устанавливая.",
       playLive: "Доступно в Google Play", appStoreLive: "Доступно в App Store", webLive: "Открыть веб-приложение",
       mismatchTitle: "Выбери магазин",
       mismatchBody: "У тебя {platform}. Чтобы всё работало лучше всего, скачай приложение {in}.",
@@ -182,6 +215,7 @@
     uk: {
       play: ["Доступно в", "Незабаром у"], appstore: ["Завантаж з", "Незабаром в"], web: ["Відкрий у", "Незабаром у"], browser: "браузері",
       getApp: "Завантажити застосунок", openWeb: "Відкрити вебзастосунок", soon: "Незабаром",
+      noteStore: "Завантаж застосунок {in}.", noteApple: "У тебе {platform}? Користуйся в браузері, доки застосунок не з’явиться в App Store.", noteWeb: "Відкрий у браузері, нічого не встановлюючи.",
       playLive: "Доступно в Google Play", appStoreLive: "Доступно в App Store", webLive: "Відкрити вебзастосунок",
       mismatchTitle: "Обери магазин",
       mismatchBody: "У тебе {platform}. Щоб усе працювало найкраще, завантаж застосунок {in}.",
@@ -191,6 +225,7 @@
     ko: {
       play: ["다운로드하기", "출시 예정"], appstore: ["다운로드하기", "출시 예정"], web: ["지금 열기", "출시 예정"], browser: "브라우저",
       getApp: "앱 받기", openWeb: "웹 앱 열기", soon: "출시 예정",
+      noteStore: "{in} 앱을 받으세요.", noteApple: "{platform} 사용자라면 App Store에 출시될 때까지 브라우저에서 사용하세요.", noteWeb: "설치 없이 브라우저에서 바로 열어 보세요.",
       playLive: "Google Play에서 받기", appStoreLive: "App Store에서 받기", webLive: "웹 앱 열기",
       mismatchTitle: "스토어 선택",
       mismatchBody: "지금 {platform} 기기를 쓰고 있어요. 가장 잘 쓰려면 {in} 앱을 받으세요.",
@@ -200,6 +235,7 @@
     ar: {
       play: ["متوفر على", "قريبًا على"], appstore: ["تنزيل من", "قريبًا على"], web: ["فتح في", "قريبًا في"], browser: "المتصفح",
       getApp: "تنزيل التطبيق", openWeb: "فتح تطبيق الويب", soon: "قريبًا",
+      noteStore: "تنزيل التطبيق {in}.", noteApple: "تستخدم {platform}؟ يمكن استخدامه في المتصفح إلى أن يصل التطبيق إلى App Store.", noteWeb: "فتحه في المتصفح دون تثبيت أي شيء.",
       playLive: "متوفر على Google Play", appStoreLive: "متوفر على App Store", webLive: "فتح تطبيق الويب",
       mismatchTitle: "اختيار المتجر",
       mismatchBody: "جهازك يعمل بنظام {platform}. للحصول على أفضل تجربة، يُنصح بتنزيل التطبيق {in}.",
@@ -209,6 +245,7 @@
     hi: {
       play: ["इसे पाएं", "जल्द आ रहा है"], appstore: ["डाउनलोड करें", "जल्द आ रहा है"], web: ["अभी खोलें", "जल्द आ रहा है"], browser: "ब्राउज़र",
       getApp: "ऐप पाएं", openWeb: "वेब ऐप खोलें", soon: "जल्द आ रहा है",
+      noteStore: "ऐप {in} पाएं।", noteApple: "{platform} पर हैं? App Store पर ऐप आने तक इसे ब्राउज़र में इस्तेमाल करें।", noteWeb: "बिना कुछ इंस्टॉल किए ब्राउज़र में खोलें।",
       playLive: "Google Play पर उपलब्ध", appStoreLive: "App Store पर उपलब्ध", webLive: "वेब ऐप खोलें",
       mismatchTitle: "अपना स्टोर चुनें",
       mismatchBody: "आप {platform} पर हैं। सबसे अच्छे अनुभव के लिए ऐप {in} पाएं।",
@@ -218,6 +255,7 @@
     zh: {
       play: ["立即下载", "即将登陆"], appstore: ["立即下载", "即将登陆"], web: ["立即打开", "即将登陆"], browser: "浏览器",
       getApp: "下载应用", openWeb: "打开网页版", soon: "即将上线",
+      noteStore: "请{in}下载应用。", noteApple: "正在使用{platform}？在应用登陆App Store之前，请先在浏览器中使用。", noteWeb: "在浏览器中打开，无需安装。",
       playLive: "在Google Play下载", appStoreLive: "在App Store下载", webLive: "打开网页版",
       mismatchTitle: "选择你的应用商店",
       mismatchBody: "你正在使用{platform}。为获得最佳体验，请{in}下载应用。",
@@ -227,6 +265,7 @@
     he: {
       play: ["זמין ב-", "בקרוב ב-"], appstore: ["להורדה מ-", "בקרוב ב-"], web: ["לפתיחה", "בקרוב"], browser: "בדפדפן",
       getApp: "הורדת האפליקציה", openWeb: "פתיחת אפליקציית הווב", soon: "בקרוב",
+      noteStore: "כדאי להוריד את האפליקציה {in}.", noteApple: "משתמשים ב-{platform}? אפשר להשתמש בדפדפן עד שהאפליקציה תגיע ל-App Store.", noteWeb: "פתיחה בדפדפן, בלי להתקין כלום.",
       playLive: "זמין ב-Google Play", appStoreLive: "זמין ב-App Store", webLive: "פתיחת אפליקציית הווב",
       mismatchTitle: "בחירת חנות",
       mismatchBody: "המכשיר הזה הוא {platform}. לחוויה הטובה ביותר, כדאי להוריד את האפליקציה {in}.",
@@ -236,6 +275,7 @@
     th: {
       play: ["ดาวน์โหลดได้ที่", "เร็วๆ นี้ที่"], appstore: ["ดาวน์โหลดได้ที่", "เร็วๆ นี้ที่"], web: ["เปิดใน", "เร็วๆ นี้ใน"], browser: "เบราว์เซอร์",
       getApp: "ดาวน์โหลดแอป", openWeb: "เปิดเว็บแอป", soon: "เร็วๆ นี้",
+      noteStore: "ดาวน์โหลดแอป{in}", noteApple: "ใช้ {platform} อยู่ใช่ไหม ใช้งานผ่านเบราว์เซอร์ได้จนกว่าแอปจะมาถึง App Store", noteWeb: "เปิดในเบราว์เซอร์ได้เลย ไม่ต้องติดตั้ง",
       playLive: "ดาวน์โหลดได้ที่ Google Play", appStoreLive: "ดาวน์โหลดได้ที่ App Store", webLive: "เปิดเว็บแอป",
       mismatchTitle: "เลือกสโตร์ของคุณ",
       mismatchBody: "คุณกำลังใช้ {platform} เพื่อประสบการณ์ที่ดีที่สุด ดาวน์โหลดแอป{in}",
@@ -245,6 +285,7 @@
     vi: {
       play: ["Tải về trên", "Sắp có trên"], appstore: ["Tải về trên", "Sắp có trên"], web: ["Mở trong", "Sắp có trong"], browser: "Trình duyệt",
       getApp: "Tải ứng dụng", openWeb: "Mở ứng dụng web", soon: "Sắp có",
+      noteStore: "Tải ứng dụng {in}.", noteApple: "Bạn dùng {platform}? Hãy dùng trên trình duyệt cho đến khi ứng dụng có mặt trên App Store.", noteWeb: "Mở trên trình duyệt, không cần cài đặt.",
       playLive: "Có trên Google Play", appStoreLive: "Có trên App Store", webLive: "Mở ứng dụng web",
       mismatchTitle: "Chọn cửa hàng của bạn",
       mismatchBody: "Bạn đang dùng {platform}. Để có trải nghiệm tốt nhất, hãy tải ứng dụng {in}.",
@@ -254,6 +295,7 @@
     "zh-Hant": {
       play: ["立即下載", "即將登陸"], appstore: ["立即下載", "即將登陸"], web: ["立即開啟", "即將登陸"], browser: "瀏覽器",
       getApp: "下載App", openWeb: "開啟網頁版", soon: "即將推出",
+      noteStore: "請{in}下載App。", noteApple: "正在使用{platform}？在App於App Store上架前，請先在瀏覽器中使用。", noteWeb: "在瀏覽器中開啟，無須安裝。",
       playLive: "在Google Play下載", appStoreLive: "在App Store下載", webLive: "開啟網頁版",
       mismatchTitle: "選擇你的應用程式商店",
       mismatchBody: "你正在使用{platform}。為了獲得最佳體驗，請{in}下載App。",
@@ -263,6 +305,7 @@
     sv: {
       play: ["Ladda ned på", "Kommer snart till"], appstore: ["Ladda ned från", "Kommer snart till"], web: ["Öppna i din", "Kommer snart till din"], browser: "webbläsare",
       getApp: "Hämta appen", openWeb: "Öppna webbappen", soon: "Kommer snart",
+      noteStore: "Hämta appen {in}.", noteApple: "Använder du {platform}? Använd den i webbläsaren tills appen finns på App Store.", noteWeb: "Öppna den i webbläsaren, inget att installera.",
       playLive: "Finns på Google Play", appStoreLive: "Finns på App Store", webLive: "Öppna webbappen",
       mismatchTitle: "Välj din butik",
       mismatchBody: "Du använder {platform}. För bästa upplevelse, hämta appen {in}.",
@@ -272,6 +315,7 @@
     cs: {
       play: ["Stáhnout na", "Brzy na"], appstore: ["Stáhnout v", "Brzy v"], web: ["Otevřít v", "Brzy v"], browser: "prohlížeči",
       getApp: "Stáhnout aplikaci", openWeb: "Otevřít webovou aplikaci", soon: "Brzy",
+      noteStore: "Stáhni si aplikaci {in}.", noteApple: "Používáš {platform}? Používej ji v prohlížeči, dokud aplikace nebude v App Store.", noteWeb: "Otevři ji v prohlížeči bez instalace.",
       playLive: "K dispozici na Google Play", appStoreLive: "K dispozici v App Store", webLive: "Otevřít webovou aplikaci",
       mismatchTitle: "Vyber si obchod",
       mismatchBody: "Používáš {platform}. Nejlépe si aplikaci stáhni {in}.",
@@ -281,6 +325,7 @@
     ro: {
       play: ["Descarcă din", "În curând pe"], appstore: ["Descarcă din", "În curând în"], web: ["Deschide în", "În curând în"], browser: "browser",
       getApp: "Descarcă aplicația", openWeb: "Deschide aplicația web", soon: "În curând",
+      noteStore: "Descarcă aplicația {in}.", noteApple: "Folosești {platform}? Folosește-o în browser până când aplicația ajunge în App Store.", noteWeb: "Deschide-o în browser, fără să instalezi nimic.",
       playLive: "Disponibilă pe Google Play", appStoreLive: "Disponibilă în App Store", webLive: "Deschide aplicația web",
       mismatchTitle: "Alege-ți magazinul",
       mismatchBody: "Folosești {platform}. Pentru cea mai bună experiență, descarcă aplicația {in}.",
@@ -289,7 +334,9 @@
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
-  const platformName = { android: "Android", ios: isIos && /ipad/i.test(agent) ? "iPad" : "iPhone", mac: "Mac" };
+  const platformName = { android: "Android", ios: isIos && (/ipad/i.test(agent) || (!pinned && /macintosh/i.test(agent))) ? "iPad" : "iPhone", mac: "Mac" };
+
+  const REDIRECT_WAIT_MS = 1000;
 
   // analytics.js, loaded before this script, sends the events.
   const track = (name, params) => window.track?.(name, params);
@@ -301,6 +348,7 @@
       order.forEach((key) => {
         const badge = group.querySelector(`[data-store="${key}"]`);
         if (!badge) return;
+        badge.hidden = !isOffered(key);
         const store = STORES[key];
         const small = badge.querySelector("small");
         badge.classList.toggle("is-primary", key === primary);
@@ -318,6 +366,18 @@
         if (key === "web") badge.querySelector("strong").textContent = TEXT.browser;
         group.append(badge);
       });
+      group.classList.toggle("is-pair", order.filter(isOffered).length === 2);
+    });
+
+    // The line over the hero's badges: what this visitor can do right now.
+    document.querySelectorAll("[data-store-note]").forEach((note) => {
+      if (!primary) { note.hidden = true; return; }
+      const link = note.querySelector("a");
+      link.textContent = primary !== "web" ? fill(TEXT.noteStore, { in: TEXT.in[primary] })
+        : ownStore === "appstore" ? fill(TEXT.noteApple, { platform: platformName[root.dataset.platform] })
+        : TEXT.noteWeb;
+      link.href = STORES[primary].url;
+      link.addEventListener("click", (e) => onStoreClick(e, primary, "hero_note"));
     });
 
     // The Platforms section and the footer: a store's status, its link only while it offers the app.
@@ -338,8 +398,9 @@
     setUpHeader();
   }
 
-  // The header's main button: on a phone, straight to its store; on a computer, a menu of the stores that offer the
-  // app; with no store for the visitor, the web app; with nothing open yet, no button.
+  // The header's main button: on a phone, straight to its store; on a computer, the web app, which it can use right
+  // there, or a menu when both stores offer the app; with no store for the visitor, the web app; with nothing open yet,
+  // no button.
   function setUpHeader() {
     document.querySelectorAll("[data-header-get]").forEach((slot) => {
       const live = ["play", "appstore"].filter((key) => STORES[key].url);
@@ -349,8 +410,12 @@
       const direct = ownStore && STORES[ownStore].url ? ownStore : null;
       web.textContent = TEXT.openWeb;
       const webUrl = STORES.web.url;
-      if (webUrl) web.href = webUrl;
-      if (direct || (platform === "desktop" && live.length === 1)) {
+      const trackWeb = () => track("store_click", { store: "web", origin: "header", platform: root.dataset.platform });
+      if (webUrl) {
+        web.href = webUrl;
+        web.addEventListener("click", trackWeb);
+      }
+      if (direct || (platform === "desktop" && live.length === 1 && !webUrl)) {
         const key = direct || live[0];
         button.href = STORES[key].url;
         button.textContent = TEXT.getApp;
@@ -376,7 +441,7 @@
         button.hidden = false;
         button.href = webUrl;
         button.textContent = TEXT.openWeb;
-        button.addEventListener("click", () => track("store_click", { store: "web", origin: "header" }));
+        button.addEventListener("click", trackWeb);
         menu.hidden = true;
         web.hidden = true;
       } else {
@@ -416,6 +481,21 @@
     dialog.showModal();
   }
 
+  // Leaves for the store once Analytics has the visit, or after a moment without it (gtag.js may be blocked).
+  function leaveFor(url, store) {
+    let left = false;
+    const leave = () => {
+      if (left) return;
+      left = true;
+      location.replace(url);
+    };
+    track("store_redirect", { store, path, platform: root.dataset.platform, event_callback: leave, event_timeout: REDIRECT_WAIT_MS });
+    // gtag.js otherwise waits for the page's load event, which would often come after the redirect.
+    window.loadAnalytics?.();
+    setTimeout(leave, REDIRECT_WAIT_MS);
+  }
+
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", setUp);
   else setUp();
+  if (redirect) leaveFor(redirect, wanted);
 })();
