@@ -386,8 +386,11 @@
       const live = Boolean(STORES[key].url);
       el.classList.toggle("live", live);
       el.classList.toggle("soon", !live);
-      el.textContent = live ? TEXT[{ play: "playLive", appstore: "appStoreLive", web: "webLive" }[key]] : TEXT.soon;
-      if (live) el.setAttribute("href", STORES[key].url); else el.removeAttribute("href");
+      el.querySelector(".status-label").textContent = live ? TEXT[{ play: "playLive", appstore: "appStoreLive", web: "webLive" }[key]] : TEXT.soon;
+      if (live) {
+        el.setAttribute("href", STORES[key].url);
+        el.addEventListener("click", (e) => onStoreClick(e, key, "platforms"));
+      } else el.removeAttribute("href");
     });
     document.querySelectorAll("[data-store-link]").forEach((el) => {
       const url = STORES[el.dataset.storeLink].url;
