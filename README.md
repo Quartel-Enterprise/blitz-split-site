@@ -43,3 +43,10 @@ Every commit on `main` deploys to blitzsplit.com.
 | [Checks on pull requests](docs/ci.md) | The Claude review, the checks, and the `merge-when-green` label |
 
 [CLAUDE.md](CLAUDE.md) holds the conventions for changing the site.
+
+## Contributing
+
+Bug reports, translations and ideas are welcome: see [Contributing](CONTRIBUTING.md), the
+[code of conduct](CODE_OF_CONDUCT.md), the [security policy](SECURITY.md) and the
+[accessibility statement](ACCESSIBILITY.md). The source is public to read and to contribute to, under the
+[license](LICENSE), but it is not open source.
