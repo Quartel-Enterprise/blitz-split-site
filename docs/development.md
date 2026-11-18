@@ -33,7 +33,7 @@ no rule that redirects blitzsplit.com, or at least none that catches `/.well-kno
 ## Extra domains
 
 `vamosrachar.com`, `vamorachar.com` and `borarachar.com` (and their `www`) redirect, with a 301 and the same path and query, to
-`blitzsplit.com`. They are a second Worker, `blitzsplit-redirect` (`redirect/`), apart from the site's and not deployed
+`blitzsplit.com`, and `app.` of each to `app.blitzsplit.com`. They are a second Worker, `blitzsplit-redirect` (`redirect/`), apart from the site's and not deployed
 by Workers Builds: run `npm run deploy:redirect` (logged in with `npx wrangler login` to the account that owns the
 domains) when it changes. Its `routes` make the domains Custom Domains, which creates their DNS records: the deploy fails on a domain whose
 zone already has an `A`, `AAAA` or `CNAME` record for it, so delete those first. It answers on no `workers.dev`
