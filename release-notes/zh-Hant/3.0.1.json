@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "當沒有人欠款時，「餘額」分頁不再顯示一排零，只顯示「全部已結清」。",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "修正了當帳號同時連結 Google 和 Apple 時，「個人檔案」在以 Google 登入的帳號電子郵件旁顯示 Apple 標誌，或在以 Apple 登入的帳號旁顯示 Google 標誌的問題。",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

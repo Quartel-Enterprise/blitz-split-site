@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "O separador Saldos já não mostra uma fila de zeros quando ninguém deve nada: agora só diz Tudo acertado.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corrigido o Perfil a mostrar o logótipo da Apple junto ao e-mail de uma conta que iniciou sessão com a Google, ou o da Google junto a uma que iniciou sessão com a Apple, quando a conta tem os dois.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

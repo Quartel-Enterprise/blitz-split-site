@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Het tabblad Saldi toont geen rij nullen meer als niemand iets verschuldigd is: het zegt nu alleen Alles verrekend.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Opgelost: Profiel toonde het Apple-logo naast het e-mailadres van een account dat met Google was ingelogd, of het Google-logo bij een account dat met Apple was ingelogd, als het account allebei heeft.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

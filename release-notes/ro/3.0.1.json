@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Fila Solduri nu mai afișează un rând de zerouri când nimeni nu datorează nimic: acum spune doar Totul e achitat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Am remediat Profilul care afișa logoul Apple lângă e-mailul unui cont conectat cu Google, sau logoul Google lângă un cont conectat cu Apple, când contul le are pe amândouă.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

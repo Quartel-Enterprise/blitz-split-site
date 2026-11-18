@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Fliken Saldon visar inte längre en rad med nollor när ingen är skyldig något: den säger nu bara Allt är uppgjort.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Åtgärdade att Profil visade Apples logotyp bredvid e-postadressen för ett konto som loggat in med Google, eller Googles bredvid ett som loggat in med Apple, när kontot har båda.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

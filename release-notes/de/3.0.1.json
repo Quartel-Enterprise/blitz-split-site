@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Der Tab Salden zeigt keine Reihe aus Nullen mehr, wenn niemand etwas schuldet: Er sagt jetzt nur noch Alles ausgeglichen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Behoben: Das Profil zeigte das Apple-Logo neben der E-Mail eines mit Google angemeldeten Kontos, oder das Google-Logo bei einem mit Apple angemeldeten, wenn das Konto beides hat.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

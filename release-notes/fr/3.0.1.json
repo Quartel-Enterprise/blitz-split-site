@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "L'onglet Soldes n'affiche plus une rangée de zéros quand personne ne doit rien : il indique simplement Tout est réglé.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Correction du Profil qui affichait le logo d'Apple à côté de l'e-mail d'un compte connecté avec Google, ou celui de Google à côté d'un compte connecté avec Apple, quand le compte a les deux.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

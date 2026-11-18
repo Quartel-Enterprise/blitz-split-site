@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "La scheda Saldi non mostra più una fila di zeri quando nessuno deve nulla: ora dice solo Tutto in pari.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corretto il Profilo che mostrava il logo di Apple accanto all'e-mail di un account acceduto con Google, o quello di Google accanto a uno acceduto con Apple, quando l'account ha entrambi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

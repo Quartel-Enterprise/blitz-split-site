@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Kimse bir şey borçlu değilken Bakiyeler sekmesi artık bir sıra sıfır göstermiyor: yalnızca Tüm hesaplar kapandı yazıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hesap hem Google hem Apple ile bağlıyken, Profil'in Google ile giriş yapılmış hesabın e-postasının yanında Apple logosunu, Apple ile giriş yapılmış hesabın yanında ise Google logosunu göstermesi düzeltildi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
