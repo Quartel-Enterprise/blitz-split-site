@@ -96,4 +96,4 @@ Blitz Split和Bora Rachar的名称、图标以及应用的外观归我们所有�
 
 本条款变更时，我们会更新顶部的日期；如果变更较为重要，我们会在其生效前通过应用告知你。此后继续使用本应用即表示你接受新版本。
 
-如有疑问：[quare.software@gmail.com](mailto:quare.software@gmail.com)。
+如有疑问：[appborarachar@gmail.com](mailto:appborarachar@gmail.com)。

@@ -96,4 +96,4 @@ Ces conditions sont régies par le droit brésilien. Tout litige relève des tri
 
 Lorsque ces conditions changent, nous mettons à jour la date en haut de page et, si le changement est important, nous vous prévenons dans l’app avant son entrée en vigueur. Continuer à utiliser l’app ensuite vaut acceptation de la nouvelle version.
 
-Questions : [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Questions : [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

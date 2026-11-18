@@ -96,4 +96,4 @@ Estes termos seguem as leis do Brasil. Qualquer disputa é resolvida no foro do 
 
 Quando estes termos mudarem, atualizamos a data no topo e, se a mudança for importante, avisamos no app antes de ela valer. Continuar usando o app depois disso significa aceitar a nova versão.
 
-Dúvidas: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Dúvidas: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

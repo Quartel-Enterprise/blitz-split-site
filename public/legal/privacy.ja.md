@@ -131,7 +131,7 @@ LGPD（第18条）に基づき、お客様は以下を行うことができま�
 - 同意の撤回、および正当な利益に基づく取り扱いへの異議申し立て。
 - ブラジルの国家データ保護機関（ANPD）への申し立て。
 
-これらの多くはアプリ内で行えます。プロフィールの編集、支払い用キーの削除、アカウントの削除などです。それ以外については、[quare.software@gmail.com](mailto:quare.software@gmail.com)までご連絡ください。15日以内に回答します。
+これらの多くはアプリ内で行えます。プロフィールの編集、支払い用キーの削除、アカウントの削除などです。それ以外については、[appborarachar@gmail.com](mailto:appborarachar@gmail.com)までご連絡ください。15日以内に回答します。
 
 ## セキュリティ {#security}
 
@@ -149,6 +149,6 @@ Blitz Splitは13歳未満の子どもを対象としておらず、そのデー�
 
 ## お問い合わせ {#contact}
 
-本ポリシーに関するご質問やお客様のデータに関するご請求は、[quare.software@gmail.com](mailto:quare.software@gmail.com)までお寄せください。当社のデータ保護責任者の窓口も兼ねています。
+本ポリシーに関するご質問やお客様のデータに関するご請求は、[appborarachar@gmail.com](mailto:appborarachar@gmail.com)までお寄せください。当社のデータ保護責任者の窓口も兼ねています。
 
 管理者：PI Software LTDA（Quartel Enterprise）

@@ -131,7 +131,7 @@ Volgens de LGPD (art. 18) kun je:
 - je toestemming intrekken en bezwaar maken tegen verwerking op basis van gerechtvaardigd belang;
 - een klacht indienen bij de Braziliaanse Nationale Autoriteit voor Gegevensbescherming (ANPD).
 
-Veel hiervan doe je in de app zelf: je profiel bewerken, betaalgegevens verwijderen, je account verwijderen. Voor de rest kun je mailen naar [quare.software@gmail.com](mailto:quare.software@gmail.com). We antwoorden binnen 15 dagen.
+Veel hiervan doe je in de app zelf: je profiel bewerken, betaalgegevens verwijderen, je account verwijderen. Voor de rest kun je mailen naar [appborarachar@gmail.com](mailto:appborarachar@gmail.com). We antwoorden binnen 15 dagen.
 
 ## Beveiliging {#security}
 
@@ -149,6 +149,6 @@ Als dit beleid verandert, passen we de datum bovenaan aan. Is de wijziging belan
 
 ## Contact {#contact}
 
-Vragen over dit beleid of verzoeken over je gegevens: [quare.software@gmail.com](mailto:quare.software@gmail.com). Dit is ook het kanaal van onze functionaris voor gegevensbescherming.
+Vragen over dit beleid of verzoeken over je gegevens: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Dit is ook het kanaal van onze functionaris voor gegevensbescherming.
 
 Verwerkingsverantwoordelijke: PI Software LTDA (Quartel Enterprise).

@@ -131,7 +131,7 @@ LGPD(제18조)에 따라 다음을 할 수 있어요.
 - 동의를 철회하고, 정당한 이익에 근거한 처리를 거부하기
 - 브라질 국가개인정보보호청(ANPD)에 민원 제기하기
 
-이 중 많은 부분은 앱에서 직접 할 수 있어요. 프로필을 수정하고, 송금 정보를 삭제하고, 계정을 삭제할 수 있어요. 그 밖의 요청은 [quare.software@gmail.com](mailto:quare.software@gmail.com)으로 보내 주세요. 15일 안에 답변해 드려요.
+이 중 많은 부분은 앱에서 직접 할 수 있어요. 프로필을 수정하고, 송금 정보를 삭제하고, 계정을 삭제할 수 있어요. 그 밖의 요청은 [appborarachar@gmail.com](mailto:appborarachar@gmail.com)으로 보내 주세요. 15일 안에 답변해 드려요.
 
 ## 보안 {#security}
 
@@ -149,6 +149,6 @@ Blitz Split은 만 13세 미만 아동을 위한 서비스가 아니며, 아동�
 
 ## 문의 {#contact}
 
-이 방침에 대한 질문이나 내 데이터에 관한 요청은 [quare.software@gmail.com](mailto:quare.software@gmail.com)으로 보내 주세요. 이 주소는 저희 개인정보 보호 책임자의 연락 창구이기도 해요.
+이 방침에 대한 질문이나 내 데이터에 관한 요청은 [appborarachar@gmail.com](mailto:appborarachar@gmail.com)으로 보내 주세요. 이 주소는 저희 개인정보 보호 책임자의 연락 창구이기도 해요.
 
 처리자: PI Software LTDA(Quartel Enterprise).

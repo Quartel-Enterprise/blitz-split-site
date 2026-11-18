@@ -131,7 +131,7 @@ LGPD (md. 18) kapsamında şunları yapabilirsin:
 - rızanı geri çekmek ve meşru menfaate dayanan işlemeye itiraz etmek;
 - Brezilya Ulusal Veri Koruma Kurumu'na (ANPD) şikâyette bulunmak.
 
-Bunların çoğunu uygulamanın içinden yaparsın: profilini düzenler, bir ödeme anahtarını siler, hesabını silersin. Geri kalanı için [quare.software@gmail.com](mailto:quare.software@gmail.com) adresine yaz. 15 gün içinde yanıt veririz.
+Bunların çoğunu uygulamanın içinden yaparsın: profilini düzenler, bir ödeme anahtarını siler, hesabını silersin. Geri kalanı için [appborarachar@gmail.com](mailto:appborarachar@gmail.com) adresine yaz. 15 gün içinde yanıt veririz.
 
 ## Güvenlik {#security}
 
@@ -149,6 +149,6 @@ Bu politika değiştiğinde, en üstteki tarihi güncelleriz. Değişiklik önem
 
 ## İletişim {#contact}
 
-Bu politikayla ilgili sorular ya da verilerinle ilgili talepler için: [quare.software@gmail.com](mailto:quare.software@gmail.com). Bu adres, veri koruma görevlimizin de iletişim kanalıdır.
+Bu politikayla ilgili sorular ya da verilerinle ilgili talepler için: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Bu adres, veri koruma görevlimizin de iletişim kanalıdır.
 
 Veri sorumlusu: PI Software LTDA (Quartel Enterprise).

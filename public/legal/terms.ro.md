@@ -96,4 +96,4 @@ Acești termeni sunt guvernați de legile Braziliei. Orice litigiu se soluțione
 
 Când acești termeni se schimbă, actualizăm data din partea de sus și, dacă schimbarea contează, te anunțăm în aplicație înainte să intre în vigoare. Dacă folosești în continuare aplicația după aceea, accepți noua versiune.
 
-Întrebări: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Întrebări: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

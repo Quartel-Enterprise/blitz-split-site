@@ -96,4 +96,4 @@ Blitz Split עוזרת לקבוצות לחלוק הוצאות: היא רושמת
 
 כשתנאים אלה משתנים, אנו מעדכנים את התאריך בראש העמוד, ואם השינוי משמעותי, מודיעים עליו באפליקציה לפני שייכנס לתוקף. המשך השימוש באפליקציה לאחר מכן מהווה הסכמה לגרסה החדשה.
 
-שאלות: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+שאלות: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

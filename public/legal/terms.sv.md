@@ -96,4 +96,4 @@ Dessa villkor följer Brasiliens lagar. Varje tvist avgörs av domstolarna på d
 
 När dessa villkor ändras uppdaterar vi datumet högst upp och, om ändringen är viktig, berättar det i appen innan den träder i kraft. Om du fortsätter att använda appen efter det godkänner du den nya versionen.
 
-Frågor: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Frågor: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

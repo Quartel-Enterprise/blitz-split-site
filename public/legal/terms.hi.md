@@ -96,4 +96,4 @@ Blitz Split और Bora Rachar नाम, आइकन और ऐप का र�
 
 जब ये शर्तें बदलती हैं, तो हम सबसे ऊपर की तारीख अपडेट करते हैं और, अगर बदलाव अहम है, तो उसके लागू होने से पहले ऐप में आपको बताते हैं। उसके बाद भी ऐप इस्तेमाल करते रहने का मतलब है कि आप नया वर्शन स्वीकार करते हैं।
 
-सवाल: [quare.software@gmail.com](mailto:quare.software@gmail.com)।
+सवाल: [appborarachar@gmail.com](mailto:appborarachar@gmail.com)।

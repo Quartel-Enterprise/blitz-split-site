@@ -96,4 +96,4 @@ Niniejsze warunki podlegają prawu Brazylii. Wszelkie spory rozstrzygają sądy 
 
 Gdy te warunki się zmieniają, aktualizujemy datę na górze, a jeśli zmiana jest istotna, informujemy cię o niej w aplikacji, zanim wejdzie w życie. Dalsze korzystanie z aplikacji po tym oznacza akceptację nowej wersji.
 
-Pytania: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Pytania: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

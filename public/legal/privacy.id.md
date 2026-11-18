@@ -131,7 +131,7 @@ Berdasarkan LGPD (pasal 18), kamu dapat:
 - menarik persetujuan dan menolak pemrosesan yang didasarkan pada kepentingan sah;
 - mengajukan pengaduan ke Otoritas Pelindungan Data Nasional Brasil (ANPD).
 
-Sebagian besar hal ini bisa kamu lakukan langsung di aplikasi: mengedit profil, menghapus kunci pembayaran, menghapus akun. Untuk selebihnya, kirim email ke [quare.software@gmail.com](mailto:quare.software@gmail.com). Kami menjawab dalam 15 hari.
+Sebagian besar hal ini bisa kamu lakukan langsung di aplikasi: mengedit profil, menghapus kunci pembayaran, menghapus akun. Untuk selebihnya, kirim email ke [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Kami menjawab dalam 15 hari.
 
 ## Keamanan {#security}
 
@@ -149,6 +149,6 @@ Saat kebijakan ini berubah, kami memperbarui tanggal di bagian atas. Jika peruba
 
 ## Kontak {#contact}
 
-Pertanyaan tentang kebijakan ini atau permintaan terkait datamu: [quare.software@gmail.com](mailto:quare.software@gmail.com). Alamat ini juga merupakan saluran petugas pelindungan data kami.
+Pertanyaan tentang kebijakan ini atau permintaan terkait datamu: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Alamat ini juga merupakan saluran petugas pelindungan data kami.
 
 Pengendali data: PI Software LTDA (Quartel Enterprise).

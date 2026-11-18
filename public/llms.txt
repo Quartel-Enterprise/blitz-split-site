@@ -10,4 +10,4 @@ The site is in English, Portuguese (Brazil), Portuguese (Portugal), Spanish, Fre
 - [Privacy policy](https://blitzsplit.com/privacy): what the app collects, why, who sees it and how to delete it
 - [Terms of use](https://blitzsplit.com/terms): the rules for using the app and what each side is responsible for
 - [What's new](https://blitzsplit.com/release-notes): what each version of the app changed, newest first
-- [Support](https://blitzsplit.com/support): how to get help with the app, report a problem or send a suggestion, by email to quare.software@gmail.com
+- [Support](https://blitzsplit.com/support): how to get help with the app, report a problem or send a suggestion, by email to appborarachar@gmail.com

@@ -96,4 +96,4 @@ Bu koşullar Brezilya yasalarına tabidir. Her türlü uyuşmazlık, ikamet etti
 
 Bu koşullar değiştiğinde, en üstteki tarihi güncelleriz ve değişiklik önemliyse, yürürlüğe girmeden önce sana uygulamada haber veririz. Bundan sonra uygulamayı kullanmaya devam etmen, yeni sürümü kabul ettiğin anlamına gelir.
 
-Sorular için: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Sorular için: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).
