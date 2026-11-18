@@ -39,12 +39,18 @@
     window.gtag("event", name, params);
   };
 
+  // A page about to leave (stores.js's /download redirect) asks for gtag.js right away with window.loadAnalytics(), or
+  // the events queued meanwhile would leave with it unsent.
+  let tagLoaded = false;
   function loadTag() {
+    if (tagLoaded) return;
+    tagLoaded = true;
     const script = document.createElement("script");
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
     document.head.append(script);
   }
+  window.loadAnalytics = loadTag;
   if (document.readyState === "complete") loadTag();
   else window.addEventListener("load", loadTag, { once: true });
 

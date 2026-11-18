@@ -1,7 +1,8 @@
 // Where to get the app, as Bible Planner's landing does it: the visitor's platform picks which store comes first and
 // stands out, the header's download button goes straight to it, a store of the other platform asks first, and
 // /download (/download/android, /download/ios) redirects to the right store. Loaded with defer, so it never holds up
-// the first paint (only a /download path's redirect waits for the page to be parsed); the buttons are set right then.
+// the first paint (a /download path's redirect waits for the page to be parsed, then up to REDIRECT_WAIT_MS for
+// Analytics to send store_redirect); the buttons are set right then.
 //
 // Turn a store on here once its listing is public, in step with blitz-split-client's stores.properties, and the web app
 // once it is open to the public.
@@ -43,7 +44,8 @@
       const value = address.get("utm_source") ? address.get(`utm_${key}`)?.slice(0, 100) : kept[key];
       if (value) referrer.set(`utm_${key}`, value);
     });
-    return referrer.toString();
+    // Why %20: URLSearchParams writes a space as "+", which Google Play's referrer would hand to the app as a literal +.
+    return referrer.toString().replace(/\+/g, "%20");
   }
   const referrer = campaignReferrer();
 
@@ -72,11 +74,12 @@
   const isOffered = (key) => !ownStore || key === ownStore || key === "web" || Boolean(STORES[key].url && STORES[ownStore].url);
 
   // /download, /download/android and /download/ios, plus /app-download (the apps' "Get the app"): straight to the
-  // store, or to the landing's buttons while that store doesn't offer the app.
+  // store, or to the landing's buttons while that store doesn't offer the app. /download on a computer opens the web app;
+  // /app-download doesn't, as the web app's own "Get the app" links there and would only come back to it.
   const path = location.pathname.replace(/\/+$/, "");
   const wanted = { "/download/android": "play", "/download/ios": "appstore" }[path]
     || (["/download", "/app-download"].includes(path) ? (ownStore || "web") : null);
-  const redirect = wanted ? STORES[wanted].url : "";
+  const redirect = wanted && !(wanted === "web" && path === "/app-download") ? STORES[wanted].url : "";
   if (wanted && !redirect) history.replaceState(null, "", "/" + location.search + "#get");
 
   const TEXT = window.localized({
@@ -407,9 +410,10 @@
       const direct = ownStore && STORES[ownStore].url ? ownStore : null;
       web.textContent = TEXT.openWeb;
       const webUrl = STORES.web.url;
+      const trackWeb = () => track("store_click", { store: "web", origin: "header", platform: root.dataset.platform });
       if (webUrl) {
         web.href = webUrl;
-        web.addEventListener("click", () => track("store_click", { store: "web", origin: "header", platform: root.dataset.platform }));
+        web.addEventListener("click", trackWeb);
       }
       if (direct || (platform === "desktop" && live.length === 1 && !webUrl)) {
         const key = direct || live[0];
@@ -437,7 +441,7 @@
         button.hidden = false;
         button.href = webUrl;
         button.textContent = TEXT.openWeb;
-        button.addEventListener("click", () => track("store_click", { store: "web", origin: "header", platform: root.dataset.platform }));
+        button.addEventListener("click", trackWeb);
         menu.hidden = true;
         web.hidden = true;
       } else {
@@ -486,6 +490,8 @@
       location.replace(url);
     };
     track("store_redirect", { store, path, platform: root.dataset.platform, event_callback: leave, event_timeout: REDIRECT_WAIT_MS });
+    // gtag.js otherwise waits for the page's load event, which would often come after the redirect.
+    window.loadAnalytics?.();
     setTimeout(leave, REDIRECT_WAIT_MS);
   }
 

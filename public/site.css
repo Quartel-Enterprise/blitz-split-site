@@ -469,7 +469,7 @@ a.status .icon { width: 15px; height: 15px; }
 .store-note { margin-top: 24px; font-size: 15px; font-weight: 600; }
 .store-note a { color: var(--primary); text-decoration: none; }
 .store-note a:hover { text-decoration: underline; }
-.store-note + .hero-cta { margin-top: 12px; }
+.store-note:not([hidden]) + .hero-cta { margin-top: 12px; }
 .hero-note { margin-top: 16px; font-size: 14px; color: var(--muted-fg); display: flex; align-items: center; gap: 8px; }
 .hero-note .icon { width: 16px; height: 16px; }
 @media (min-width: 960px) {
