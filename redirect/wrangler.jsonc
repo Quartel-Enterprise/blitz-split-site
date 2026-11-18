@@ -11,6 +11,8 @@
     { "pattern": "vamosrachar.com", "custom_domain": true },
     { "pattern": "www.vamosrachar.com", "custom_domain": true },
     { "pattern": "vamorachar.com", "custom_domain": true },
-    { "pattern": "www.vamorachar.com", "custom_domain": true }
+    { "pattern": "www.vamorachar.com", "custom_domain": true },
+    { "pattern": "borarachar.com", "custom_domain": true },
+    { "pattern": "www.borarachar.com", "custom_domain": true }
   ]
 }
