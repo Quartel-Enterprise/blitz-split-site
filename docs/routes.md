@@ -28,5 +28,9 @@ Every path is in English, whatever the page's language. Any other path answers w
 a file the site doesn't have with a 404, so a crawler or an app that looks for one doesn't get the landing's HTML. `public/_headers`
 serves both `.well-known` files as `application/json`, which Android and Apple require, with a 200 and no redirect.
 
+`vamosrachar.com` and `vamorachar.com` (and their `www`) answer every path with a 301 to the same path and query on
+blitzsplit.com, `/.well-known/*` included, so neither domain can verify App Links or Universal Links: the apps claim
+only blitzsplit.com ([development.md](development.md#extra-domains)).
+
 The `.well-known` files are copies of `webApp/public/.well-known` in
 [blitz-split-client](https://github.com/Quartel-Enterprise/blitz-split-client): change both together.
