@@ -983,8 +983,8 @@ label.split-row { cursor: pointer; }
 .footer-grid { display: grid; gap: 28px; }
 .footer-grid p { margin-top: 10px; max-width: 30em; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 8px 24px; }
-.footer-links a { color: var(--fg-soft); text-decoration: none; }
-.footer-links a:hover { color: var(--fg); text-decoration: underline; }
+.footer-links a, .footer-mail { color: var(--fg-soft); text-decoration: none; }
+.footer-links a:hover, .footer-mail:hover { color: var(--fg); text-decoration: underline; }
 .footer-prefs { display: flex; flex-wrap: wrap; gap: 8px; }
 .footer-bottom { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; }
 .lang-switch { display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: var(--muted); }
@@ -1209,7 +1209,8 @@ label.split-row { cursor: pointer; }
 .beta-switch input:checked::before { transform: translateX(16px); }
 :root.motion .beta-switch input, :root.motion .beta-switch input::before { transition: background 0.15s, transform 0.15s; }
 @media (forced-colors: active) { .beta-switch input { border: 1px solid ButtonText; } .beta-switch input::before { background: ButtonText; } .beta-switch input:checked { background: Highlight; } }
-.releases { padding-top: 40px; padding-bottom: 80px; }
+/* Support keeps that hero and the legal pages' prose under it: the address to write to, then the other pages. */
+.releases, .support { padding-top: 40px; padding-bottom: 80px; }
 .releases > * { max-width: 70ch; }
 .releases-empty { color: var(--muted-fg); }
 .release { margin-bottom: 16px; padding: 24px; border: 1px solid var(--border); border-radius: var(--radius-card); background: var(--card); }

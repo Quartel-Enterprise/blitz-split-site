@@ -382,7 +382,8 @@
     }));
   }
 
-  // The rest of the links: the logo, the landing's sections, "back to top", the legal pages and the release notes.
+  // The rest of the links: the logo, the landing's sections, "back to top", the legal pages, the release notes and
+  // Support.
   document.querySelectorAll(".logo").forEach((a) => a.addEventListener("click", () => {
     track("logo_click", { origin: originOf(a) });
   }));
@@ -394,9 +395,11 @@
     "/privacy": { content_type: "legal", item_id: "privacy_policy" },
     "/terms": { content_type: "legal", item_id: "terms_of_service" },
     "/release-notes": { content_type: "release_notes", item_id: "release_notes" },
+    "/support": { content_type: "support", item_id: "support" },
   };
   // Not the language picker's rows, which link to the page they are on.
-  document.querySelectorAll(':is(a[href^="/privacy"], a[href^="/terms"], a[href^="/release-notes"]):not([data-set-lang])').forEach((a) => a.addEventListener("click", () => {
+  const toPages = Object.keys(PAGES).map((path) => `a[href^="${path}"]`).join(", ");
+  document.querySelectorAll(`:is(${toPages}):not([data-set-lang])`).forEach((a) => a.addEventListener("click", () => {
     track("select_content", { ...PAGES[new URL(a.href).pathname], origin: originOf(a) });
   }));
 })();
