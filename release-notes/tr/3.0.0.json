@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split baştan aşağı yenilendi: sıfırdan yeniden yapıldı; Android, iPhone, iPad, Mac ve web için.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hesabı eşit, tutarlara göre, yüzdeye göre, paylara göre veya kalemlere göre böl. Fişi tara ve kimin ne aldığını seç.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Çevrimdışı ve hesapsız çalışır. Gruplarını tüm cihazlarında eşitlenmiş tutmak için Google veya Apple ile giriş yap.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

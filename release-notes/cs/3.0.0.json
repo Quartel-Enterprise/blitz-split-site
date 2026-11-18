@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split je úplně nový: postavený znovu od základů, pro Android, iPhone, iPad, Mac i web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rozděl účet rovným dílem, podle částek, podle procent, podle podílů nebo podle položek. Naskenuj účtenku a vyber, kdo si co dal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Funguje offline a bez účtu. Přihlas se přes Google nebo Apple a měj skupiny synchronizované na všech svých zařízeních.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

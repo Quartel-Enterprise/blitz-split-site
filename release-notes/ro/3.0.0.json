@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split este complet nou: refăcut de la zero, pentru Android, iPhone, iPad, Mac și web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Împarte o notă în mod egal, pe sume, pe procente, pe părți sau pe produse. Scanează bonul și alege cine ce a consumat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Funcționează offline și fără cont. Conectează-te cu Google sau Apple ca să-ți păstrezi grupurile sincronizate pe toate dispozitivele tale.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

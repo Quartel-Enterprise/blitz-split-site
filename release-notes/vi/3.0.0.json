@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split hoàn toàn mới: được xây dựng lại từ đầu, cho Android, iPhone, iPad, Mac và web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chia hóa đơn đều, theo số tiền, theo phần trăm, theo phần hoặc theo món. Quét hóa đơn và chọn ai đã dùng món nào.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dùng được khi ngoại tuyến và không cần tài khoản. Đăng nhập bằng Google hoặc Apple để nhóm được đồng bộ trên mọi thiết bị của bạn.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

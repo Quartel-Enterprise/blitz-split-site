@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split is all new: rebuilt from the ground up, for Android, iPhone, iPad, Mac and the web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Split a bill equally, by amounts, by percentage, by shares or by items. Scan the receipt and pick who had what.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "It works offline and with no account. Sign in with Google or Apple to keep your groups in sync across your devices.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

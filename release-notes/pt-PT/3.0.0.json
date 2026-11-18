@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "O Blitz Split está de cara lavada: refeito de raiz, para Android, iPhone, iPad, Mac e web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Divide uma conta igualmente, por valores, por percentagem, por partes ou por itens. Lê o talão e escolhe quem consumiu o quê.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Funciona offline e sem conta. Inicia sessão com a Google ou a Apple para manteres os teus grupos sincronizados em todos os teus dispositivos.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

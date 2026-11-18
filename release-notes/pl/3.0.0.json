@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split jest zupełnie nowy: zbudowany od zera, na Androida, iPhone’a, iPada, Maca i w przeglądarce.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Podziel rachunek po równo, według kwot, procentowo, według udziałów lub według pozycji. Zeskanuj paragon i wybierz, kto co zamówił.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Działa offline i bez konta. Zaloguj się przez Google lub Apple, aby mieć grupy zsynchronizowane na wszystkich swoich urządzeniach.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
