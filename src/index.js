@@ -47,10 +47,22 @@ const CARD_TAGS = {
 // Why: a renamed group or a new member shows a few minutes later; an image's address changes with what it shows,
 // so it may stay a day.
 const WORDS_TTL = 300;
-// Why: the function's first answer after a quiet while (a cold start) takes past 3 s, and a page served with the
-// landing's own tags then stays the link's preview in WhatsApp, which keeps it by the link's address; crawlers wait
-// longer than that for a page.
-const WORDS_TIMEOUT_MS = 8000;
+// Why: a link-preview crawler reads the page once and keeps what it got (WhatsApp, by the link's address), so it waits
+// for the words: up to 5 s, past the function's first answer after a quiet while (a cold start took 3.2 s), and short
+// of the few seconds a preview fetcher gives a page before it shows none. A person sees the landing whatever its tags
+// say, so a browser never waits: it gets the words already kept, or the landing's own.
+const CRAWLER_WAIT_MS = 5000;
+// Why: the words are asked to the end in the background even after the page answered, so a slow cold start still
+// fills the cache for the next fetch of the link rather than being thrown away; a hung function is cut here.
+const WORDS_TIMEOUT_MS = 20000;
+// Why: a browser says Mozilla and none of these; anything else (a preview fetcher, a bot, no User-Agent at all) is
+// treated as a crawler, so a fetcher nobody listed still gets the link's tags.
+const BROWSER = /Mozilla\//;
+const NOT_A_PERSON = /bot|crawl|spider|preview|facebookexternalhit|facebot|whatsapp|telegram|slack|discord|skype|embed|fetch|vkshare|pinterest/i;
+const isCrawler = (request) => {
+  const agent = request.headers.get("User-Agent") || "";
+  return !BROWSER.test(agent) || NOT_A_PERSON.test(agent);
+};
 // Why: what a card's image depends on: who shared a personal link, the language asked and the card's version.
 const IMAGE_PARAMETERS = ["from", "lang", "v"];
 const IMAGE_TTL = 86400;
@@ -148,7 +160,7 @@ function targetOf(link, match, url) {
 async function previewPage(request, url, env, ctx, target) {
   const [landing, words] = await Promise.all([
     landingOf(request, url, env),
-    orNull(previewWords(url, env, ctx, target)),
+    orNull(previewWords(url, env, ctx, target, isCrawler(request) ? CRAWLER_WAIT_MS : 0)),
   ]);
   // Why: the landing with its own meta tags, the brand's, rather than no page.
   if (!words) return landing;
@@ -233,30 +245,35 @@ function orNull(promise) {
 }
 
 // The API answers a POST, which Cloudflare's cache doesn't keep, so its answers are kept under a GET of their own.
-async function cachedJson(url, ctx, path, load) {
-  const key = new Request(new URL(path, url));
+// The words already kept answer at once; otherwise the function is asked, in the background to the end (see
+// WORDS_TIMEOUT_MS), and the page waits for it up to `wait` ms: null past that, and the landing keeps its own tags.
+async function previewWords(url, env, ctx, target, wait) {
+  const subject = target.card ?? `${target.code}/${target.memberCode ?? ""}`;
+  const key = new Request(new URL(`/__preview/${target.link}/${subject}?from=${target.inviterCode ?? ""}&lang=${target.language ?? ""}`, url));
   const cached = await caches.default.match(key);
   if (cached) return cached.json();
-  const value = await load();
-  const kept = new Response(JSON.stringify(value), {
-    headers: { "Content-Type": "application/json", "Cache-Control": `public, max-age=${WORDS_TTL}` },
-  });
-  ctx.waitUntil(caches.default.put(key, kept));
-  return value;
-}
-
-function previewWords(url, env, ctx, target) {
-  const subject = target.card ?? `${target.code}/${target.memberCode ?? ""}`;
-  const path = `/__preview/${target.link}/${subject}?from=${target.inviterCode ?? ""}&lang=${target.language ?? ""}`;
-  return cachedJson(url, ctx, path, async () => {
-    const response = await askPreview(env, target, false);
-    if (!response.ok) throw new Error(`invite-preview answered ${response.status}`);
-    const words = await response.json();
-    // Why: a function deployed before it knew `link` reads a bill's code as an invite's, and would put a group's
-    // invite on a bill's link. Such an answer isn't kept, and the page keeps the landing's own tags.
-    if (!WORD_KINDS[target.link].includes(words.kind)) throw new Error(`invite-preview answered ${words.kind}`);
+  const loading = loadWords(env, target).then(async (words) => {
+    const kept = new Response(JSON.stringify(words), {
+      headers: { "Content-Type": "application/json", "Cache-Control": `public, max-age=${WORDS_TTL}` },
+    });
+    await caches.default.put(key, kept);
     return words;
   });
+  ctx.waitUntil(loading.catch((error) => console.error(error)));
+  if (wait <= 0) return null;
+  let timer;
+  const late = new Promise((resolve) => { timer = setTimeout(() => resolve(null), wait); });
+  return Promise.race([loading, late]).finally(() => clearTimeout(timer));
+}
+
+async function loadWords(env, target) {
+  const response = await askPreview(env, target, false);
+  if (!response.ok) throw new Error(`invite-preview answered ${response.status}`);
+  const words = await response.json();
+  // Why: a function deployed before it knew `link` reads a bill's code as an invite's, and would put a group's
+  // invite on a bill's link. Such an answer isn't kept, and the page keeps the landing's own tags.
+  if (!WORD_KINDS[target.link].includes(words.kind)) throw new Error(`invite-preview answered ${words.kind}`);
+  return words;
 }
 
 async function previewImage(request, url, env, ctx, target) {
@@ -303,7 +320,8 @@ function imageTtlOf(response) {
 function askPreview(env, target, image) {
   return fetch(env.INVITE_PREVIEW_URL, {
     method: "POST",
-    // Why: a page waits for its words, so a slow function gives way to the landing's own tags; a card may take its time.
+    // Why: only a hung function is cut (see WORDS_TIMEOUT_MS); a page stops waiting sooner on its own. A card may take
+    // its time.
     signal: image ? undefined : AbortSignal.timeout(WORDS_TIMEOUT_MS),
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ ...target, image }),
