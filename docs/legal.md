@@ -55,7 +55,8 @@ A paragraph, on one line, with **bold**, a [link](/terms#anchor) and <mark>what 
 ```
 
 - **Front matter**: `title` (the page's heading) and `updated` (`YYYY-MM-DD`, the same in every language). The page
-  writes the date in the language's own format; the reading time is the English text's.
+  writes the date in the language's own format and works out each language's reading time from its own text: the
+  characters it shows over that language's reading pace (`CHARACTERS_PER_MINUTE` in `scripts/build-legal.mjs`).
 - **Blocks**, one blank line between two: a section (`##`, numbered in order on the page), a heading (`###`), a
   paragraph, a list (`- `, one level), a callout (`>`: a `**Title**` line, a `>` line, then one paragraph, or one
   list for the summary) and a table (a header row, `| --- |`, rows; on a phone each row becomes a card, its first

@@ -49,8 +49,22 @@ const CHROME = {
   cs: { language: "Čeština", brand: "Blitz Split", locale: "cs", updated: "Aktualizováno {date}", read: "{n} min čtení", toc: "Na této stránce" },
   ro: { language: "Română", brand: "Blitz Split", locale: "ro", updated: "Actualizat la {date}", read: "{n} min de citit", toc: "Pe această pagină" },
 };
-// The reading time every language shows is the English text's, at this pace.
-const WORDS_PER_MINUTE = 180;
+// The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
+// Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
+const CHARACTERS_PER_MINUTE = {
+  ar: 612, de: 920, en: 987, es: 1025, fr: 998, he: 833, it: 950, ja: 357, nl: 978, pl: 916, pt: 913, "pt-PT": 913,
+  ru: 986, sv: 917, tr: 1054, zh: 255, "zh-Hant": 255,
+  // Why: the study has no Korean, and a Hangul block is one syllable, so this is its average of syllables per minute.
+  ko: 370,
+  // Why: the study has no Ukrainian, and Russian is the closest language it measured, in the same script.
+  uk: 986,
+};
+// The study's median without Chinese and Japanese, for a language it didn't measure. Why without them: a character of
+// theirs holds far more than a letter, so they would slow down every language written with letters.
+const DEFAULT_CHARACTERS_PER_MINUTE = 950;
+// The languages whose pace is per syllable or ideograph: the Latin letters and digits in their texts (the companies'
+// names, an address, a date) go at the default pace, since a reader doesn't take one Latin letter as long as a syllable.
+const SYLLABLE_PACED = new Set(["ja", "ko", "zh", "zh-Hant"]);
 
 // Each page's sections' anchors by language, read before any page is written, so a link to a section checks it exists.
 const ANCHORS = {};
@@ -76,7 +90,27 @@ function parse(file, source) {
   if (!isDate(meta.updated)) fail(file, 1, "the front matter needs updated: YYYY-MM-DD");
   if (Object.keys(meta).length !== 2) fail(file, 1, "the front matter takes only title and updated");
   const body = lines.slice(end + 1);
-  return { meta, blocks: parseBlocks(file, body, end + 2, false), words: body.join(" ").split(/\s+/).filter((word) => /\p{L}/u.test(word)).length };
+  return { meta, blocks: parseBlocks(file, body, end + 2, false) };
+}
+
+/** The texts a block shows, with the Markdown still in them. */
+function blockTexts(block) {
+  switch (block.kind) {
+    case "list": return block.items;
+    case "table": return [...block.header, ...block.rows.flat()];
+    case "callout": return [block.title, ...blockTexts(block.body)];
+    default: return [block.text];
+  }
+}
+
+/** The minutes a language's reader takes over a text: its letters, marks and digits, without the links' addresses. */
+function readingMinutes(lang, blocks) {
+  const shown = blocks.flatMap(blockTexts).join(" ").replace(/\]\([^)\s]+\)/g, "").replace(/<\/?mark>/g, "");
+  // Why NFC: a letter written as a base and a combining accent is still one letter to its reader. Why marks: a Hindi or
+  // Thai vowel sign is a vowel, which the languages the paces were measured in write as a letter.
+  const characters = shown.normalize("NFC").match(/[\p{L}\p{M}\p{N}]/gu) ?? [];
+  const latin = SYLLABLE_PACED.has(lang) ? characters.filter((character) => /[\p{Script=Latin}\p{Nd}]/u.test(character)).length : 0;
+  return Math.ceil((characters.length - latin) / (CHARACTERS_PER_MINUTE[lang] ?? DEFAULT_CHARACTERS_PER_MINUTE) + latin / DEFAULT_CHARACTERS_PER_MINUTE);
 }
 
 function parseBlocks(file, lines, firstLine, inCallout) {
@@ -204,8 +238,9 @@ function renderBlock(file, lang, block, pad) {
 }
 
 /** A language's block of a page: the hero, the sections' list and the text. */
-function renderLanguage(page, lang, file, doc, minutes) {
+function renderLanguage(page, lang, file, doc) {
   const chrome = CHROME[lang];
+  const minutes = String(readingMinutes(lang, doc.blocks));
   const [summary, ...rest] = doc.blocks;
   if (summary?.kind !== "callout" || summary.body.kind !== "list") fail(file, summary?.at ?? 1, "the text starts with its summary: a callout holding a list");
   if (rest[0]?.kind !== "section") fail(file, rest[0]?.at ?? 1, "a section (##) comes after the summary");
@@ -295,8 +330,7 @@ function loadPage(page) {
 }
 
 function renderPage(page, docs) {
-  const minutes = String(Math.ceil(docs.en.words / WORDS_PER_MINUTE));
-  return LANGS.flatMap((lang) => renderLanguage(page, lang, docs[lang].file, docs[lang], minutes)).join("\n");
+  return LANGS.flatMap((lang) => renderLanguage(page, lang, docs[lang].file, docs[lang])).join("\n");
 }
 
 function build(check) {
