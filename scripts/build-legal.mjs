@@ -56,9 +56,15 @@ const CHARACTERS_PER_MINUTE = {
   ru: 986, sv: 917, tr: 1054, zh: 255, "zh-Hant": 255,
   // Why: the study has no Korean, and a Hangul block is one syllable, so this is its average of syllables per minute.
   ko: 370,
+  // Why: the study has no Ukrainian, and Russian is the closest language it measured, in the same script.
+  uk: 986,
 };
-// The study's average over its languages, for a language it didn't measure.
-const DEFAULT_CHARACTERS_PER_MINUTE = 863;
+// The study's median without Chinese and Japanese, for a language it didn't measure. Why without them: a character of
+// theirs holds far more than a letter, so they would slow down every language written with letters.
+const DEFAULT_CHARACTERS_PER_MINUTE = 950;
+// The languages whose pace is per syllable or ideograph: the Latin letters and digits in their texts (the companies'
+// names, an address, a date) go at the default pace, since a reader doesn't take one Latin letter as long as a syllable.
+const SYLLABLE_PACED = new Set(["ja", "ko", "zh", "zh-Hant"]);
 
 // Each page's sections' anchors by language, read before any page is written, so a link to a section checks it exists.
 const ANCHORS = {};
@@ -100,9 +106,11 @@ function blockTexts(block) {
 /** The minutes a language's reader takes over a text: its letters, marks and digits, without the links' addresses. */
 function readingMinutes(lang, blocks) {
   const shown = blocks.flatMap(blockTexts).join(" ").replace(/\]\([^)\s]+\)/g, "").replace(/<\/?mark>/g, "");
-  // Why: a letter written as a base and a combining accent (NFD) is still one letter to its reader.
-  const characters = shown.normalize("NFC").match(/[\p{L}\p{M}\p{N}]/gu)?.length ?? 0;
-  return Math.ceil(characters / (CHARACTERS_PER_MINUTE[lang] ?? DEFAULT_CHARACTERS_PER_MINUTE));
+  // Why NFC: a letter written as a base and a combining accent is still one letter to its reader. Why marks: a Hindi or
+  // Thai vowel sign is a vowel, which the languages the paces were measured in write as a letter.
+  const characters = shown.normalize("NFC").match(/[\p{L}\p{M}\p{N}]/gu) ?? [];
+  const latin = SYLLABLE_PACED.has(lang) ? characters.filter((character) => /[\p{Script=Latin}\p{Nd}]/u.test(character)).length : 0;
+  return Math.ceil((characters.length - latin) / (CHARACTERS_PER_MINUTE[lang] ?? DEFAULT_CHARACTERS_PER_MINUTE) + latin / DEFAULT_CHARACTERS_PER_MINUTE);
 }
 
 function parseBlocks(file, lines, firstLine, inCallout) {
