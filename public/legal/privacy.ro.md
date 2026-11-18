@@ -1,13 +1,13 @@
 ---
 title: Politica de confidențialitate
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 
 > **Pe scurt**
 >
-> - Folosești aplicația fără să-ți creezi un cont. Google și Apple sunt opționale.
+> - Folosești aplicația fără să-ți creezi un cont. Google și Apple sunt opționale, dar fără ele datele tale se șterg după 30 de zile fără utilizare.
 > - Ce adaugi rămâne mai întâi pe dispozitivul tău și ajunge pe server doar ca să se sincronizeze și să ajungă la grupul tău.
-> - Persoanele dintr-un grup văd ce ține de grup. Nimeni nu îți vede adresa de e-mail.
+> - Persoanele dintr-un grup văd ce ține de grup, iar cine are un link pe care îl distribui vede acea cheltuială sau profilul tău. Nimeni nu îți vede adresa de e-mail.
 > - Statisticile de utilizare și rapoartele de erori nu conțin nume sau sume. Dacă ai cont, statisticile sunt legate de ID-ul lui. Nu folosim un ID de publicitate, iar statisticile le dezactivezi din Profil.
 > - Nu vindem date. Îți ștergi contul și datele chiar din aplicație.
 
@@ -24,9 +24,12 @@ Respectă Legea generală privind protecția datelor din Brazilia (Legea 13.709/
 - **Profil:** numele tău, o fotografie (opțional) și culoarea avatarului.
 - **Grupuri și cheltuieli:** numele și moneda grupului; descrierea, suma, data, categoria fiecărei cheltuieli, cine a plătit și cum a fost împărțită; articolele, comentariile și fotografiile atașate.
 - **Plățile** pe care le înregistrezi între membri.
-- **Cheile de plată** pe care le salvezi: o cheie Pix și o adresă Bitcoin.
+- **Cheile de plată** pe care le salvezi ca să primești bani: o cheie Pix și o adresă Bitcoin.
+- **Metodele de plată** cu care plătești (un card de credit sau de debit, Pix, un transfer bancar, Bitcoin, numerar sau alta): numele, tipul și culoarea lor, niciodată numărul unui card, și cu care dintre ele ai plătit fiecare cheltuială.
 - **Veniturile**, doar dacă împarți „După venit”.
 - **Persoanele pe care le adaugi** într-un grup înainte să aibă aplicația, sub numele pe care li-l dai.
+- **Comentariile** pe care le lași, sub numele tău, la o cheltuială pe care cineva ți-a distribuit-o prin link.
+- **Mesajele către asistență** pe care le trimiți prin e-mail din Profil › „Contactează asistența”. Aplicația adaugă versiunea ei, platforma, limba ei și tipul de cont, niciodată ID-ul contului tău.
 
 ### Contul tău
 
@@ -52,17 +55,24 @@ Aplicația funcționează **mai întâi offline**: ce adaugi se salvează într-
 >
 > Fotografia ajunge pe serverul nostru și este citită de un model de inteligență artificială de la Anthropic (Claude), care returnează articolele, prețurile și totalul. Nu păstrăm fotografia după ce o citim: rămâne pe cheltuială doar dacă o atașezi. Potrivit condițiilor comerciale ale Anthropic, acest conținut nu este folosit pentru antrenarea modelelor.
 
+> **Invită din contacte**
+>
+> Pe Android, iPhone, iPad și Mac, aplicația îți citește contactele din telefon, doar după ce îi permiți, ca să ți le arate când inviți pe cineva într-un grup. Ele rămân pe dispozitiv: niciun nume sau număr nu ajunge pe serverul nostru.
+
 ## Pentru ce le folosim {#use}
 
 | Scop | Date | Temei legal (LGPD) |
 | --- | --- | --- |
 | Stocare, sincronizare și afișare în grup | Profil, grupuri, cheltuieli, plăți, chei de plată | Executarea unui contract (art. 7, V) |
+| Păstrarea metodelor tale de plată pe dispozitivele tale | Metodele de plată și cheltuielile plătite cu fiecare | Executarea unui contract |
+| Afișarea a ceea ce distribui prin link | Cheltuiala distribuită sau numele și fotografia ta | Executarea unui contract |
 | Conectare și recuperarea accesului | ID anonim, cod de recuperare, cont Google sau Apple | Executarea unui contract |
 | Citirea bonurilor | Fotografia bonului, la cererea ta | Executarea unui contract |
 | Trimiterea notificărilor | Tokenul dispozitivului, evenimentele grupului | Executarea unui contract; alegi care din Profil › Notificări |
 | Îmbunătățirea aplicației | Statistici de utilizare | Interes legitim (art. 7, IX); te opui dezactivând „Trimite date de utilizare” din Profil |
 | Remedierea erorilor | Rapoarte de erori | Interes legitim (art. 7, IX); nu urmează această setare, iar te poți opune scriindu-ne |
 | Securitate și prevenirea abuzurilor | Date de conexiune | Interes legitim |
+| Răspunsul la mesajele către asistență | Mesajul tău și ce adaugă aplicația la el | Executarea unui contract |
 | Respectarea legii | Ce impune obligația | Obligație legală (art. 7, II) |
 
 Nu vindem date cu caracter personal, nu le folosim pentru publicitate și nu îți construim profiluri comportamentale.
@@ -71,7 +81,12 @@ Nu vindem date cu caracter personal, nu le folosim pentru publicitate și nu î�
 
 ### Persoanele din grupul tău
 
-Oricine dintr-un grup vede numele, fotografia și culoarea fiecărui membru; cheltuielile, articolele, comentariile, fotografiile și plățile acelui grup; și cheile de plată pe care un membru le arată ca să fie plătit. **Nimeni din grup nu îți vede adresa de e-mail.**
+Oricine dintr-un grup vede numele, fotografia și culoarea fiecărui membru; cheltuielile, articolele, comentariile, fotografiile și plățile acelui grup; și cheile de plată pe care un membru le arată ca să fie plătit. **Nimeni din grup nu îți vede adresa de e-mail**, nici metodele de plată: doar tu le vezi, pe propriile dispozitive.
+
+### Cine are un link pe care îl distribui
+
+- **„Distribuie cheltuiala”** creează un link către o singură cheltuială. Cu „Doar persoanele din cheltuială”, doar persoanele din ea îl deschid. Cu „Oricine are linkul”, oricine are linkul vede cheltuiala (descrierea, suma, data, categoria și numele grupului, cine a plătit și cum a fost împărțită, cu nume) cu fotografiile și comentariile ei, iar oricine e conectat în aplicație o poate comenta. Previzualizarea pe care o aplicație de chat o face din link arată descrierea, suma și cine a plătit. „Dezactivează linkul”, din „Distribuie cheltuiala”, îl face să nu mai funcționeze.
+- **„Distribuie profilul”** creează un link către profilul tău: oricine îl are îți vede numele și fotografia, inclusiv în previzualizarea linkului.
 
 ### Cine lucrează pentru noi
 
@@ -97,8 +112,9 @@ Unii dintre acești furnizori stochează sau prelucrează date în afara Brazili
 
 - Cât timp contul tău există, păstrăm ce îi trebuie aplicației ca să funcționeze.
 - **Deconectarea** șterge copia de pe dispozitiv. Cu Google sau Apple, datele tale rămân pe server pentru când te conectezi din nou.
-- **Fără cont**, „Șterge profilul și deconectează-te” golește dispozitivul, iar codul tău de recuperare continuă să funcționeze. Ca să ștergi și ce este pe server, contactează-ne (secțiunea 12).
-- **„Șterge contul și datele”**, din Profil, îți șterge pe loc profilul, fotografia, cheile de plată și codul de recuperare și revocă accesul acordat de Apple. Cheltuielile pe care le-ai adăugat în grupuri cu alte persoane rămân acolo pentru grup, fără numele tău, ca „Fost membru”.
+- **Fără cont**, „Șterge profilul și deconectează-te” golește dispozitivul, iar codul tău de recuperare continuă să funcționeze 30 de zile. Ca să ștergi imediat și ce este pe server, folosește „Șterge contul și datele”.
+- **Un cont fără Google sau Apple se șterge după 30 de zile fără utilizare:** când niciunul dintre dispozitivele lui nu se sincronizează timp de 30 de zile, serverul îl șterge la fel ca „Șterge contul și datele”, iar codul lui de recuperare nu mai funcționează.
+- **„Șterge contul și datele”**, din Profil, îți șterge pe loc profilul, fotografia, cheile de plată, metodele de plată și codul de recuperare și revocă accesul acordat de Apple. Cheltuielile pe care le-ai adăugat în grupuri cu alte persoane rămân acolo pentru grup, fără numele tău, ca „Fost membru”.
 - Datele de utilizare legate de un dispozitiv rămân în Google Analytics până la 14 luni. După aceea rămân doar cifre agregate, fără nimic care să identifice pe cineva. După ce contul tău e șters, ID-ul pe care îl conțin nu mai duce la tine.
 - Rapoartele de erori sunt păstrate până la 90 de zile și apoi șterse.
 
@@ -120,7 +136,7 @@ Multe dintre acestea le faci chiar în aplicație: îți editezi profilul, șter
 
 Datele circulă criptat (HTTPS). Pe server, regulile de acces asigură că fiecare persoană citește doar grupurile din care face parte. Niciun sistem nu e perfect, dar tratăm cu seriozitate orice incident și te anunțăm pe tine și ANPD atunci când legea o cere.
 
-Codul tău de recuperare funcționează ca o parolă: păstrează-l într-un loc sigur și nu-l da nimănui. Pe iPhone, iPad și Mac, aplicația îl salvează în aplicația Parole.
+Codul tău de recuperare, din 12 cuvinte, funcționează ca o parolă: păstrează-l într-un loc sigur și nu-l da nimănui. Nu păstrăm cuvintele, doar o amprentă a lor din care nu pot fi refăcute. Pe iPhone, iPad și Mac, aplicația îl salvează în aplicația Parole.
 
 ## Copiii {#children}
 

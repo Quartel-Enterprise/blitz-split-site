@@ -1,13 +1,13 @@
 ---
 title: Chính sách quyền riêng tư
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 
 > **Tóm tắt**
 >
-> - Bạn dùng ứng dụng mà không cần tạo tài khoản. Google và Apple là tùy chọn.
+> - Bạn dùng ứng dụng mà không cần tạo tài khoản. Google và Apple là tùy chọn, nhưng nếu không có chúng, dữ liệu của bạn sẽ bị xóa sau 30 ngày không sử dụng.
 > - Những gì bạn thêm được lưu trên thiết bị của bạn trước, và chỉ được gửi lên máy chủ để đồng bộ và đến được với nhóm của bạn.
-> - Những người trong một nhóm thấy những gì thuộc về nhóm. Không ai thấy email của bạn.
+> - Những người trong một nhóm thấy những gì thuộc về nhóm, và ai có liên kết bạn chia sẻ sẽ thấy khoản chi đó hoặc hồ sơ của bạn. Không ai thấy email của bạn.
 > - Số liệu sử dụng và báo cáo sự cố không chứa tên hay số tiền. Nếu có tài khoản, số liệu được gắn với ID của tài khoản đó. Chúng tôi không dùng ID quảng cáo, và bạn tắt số liệu trong Hồ sơ.
 > - Chúng tôi không bán dữ liệu. Bạn xóa tài khoản và dữ liệu của mình ngay trong ứng dụng.
 
@@ -24,9 +24,12 @@ Chính sách này tuân theo Luật Bảo vệ Dữ liệu Chung của Brazil (L
 - **Hồ sơ:** tên của bạn, một ảnh (tùy chọn) và màu ảnh đại diện của bạn.
 - **Nhóm và khoản chi:** tên và đơn vị tiền tệ của nhóm; mô tả, số tiền, ngày, danh mục của từng khoản chi, ai đã trả và cách chia; các món, bình luận và ảnh đính kèm.
 - **Khoản thanh toán** bạn ghi lại giữa các thành viên.
-- **Khóa nhận thanh toán** bạn lưu: một khóa Pix và một địa chỉ Bitcoin.
+- **Khóa nhận thanh toán** bạn lưu để nhận tiền: một khóa Pix và một địa chỉ Bitcoin.
+- **Phương thức thanh toán** bạn dùng để trả (thẻ tín dụng hoặc thẻ ghi nợ, Pix, chuyển khoản ngân hàng, Bitcoin, tiền mặt hoặc phương thức khác): tên, loại và màu của chúng, không bao giờ có số thẻ, và bạn đã trả từng khoản chi bằng phương thức nào.
 - **Thu nhập**, chỉ khi bạn chia “Theo thu nhập”.
 - **Những người bạn thêm** vào một nhóm trước khi họ có ứng dụng, dưới tên bạn đặt cho họ.
+- **Bình luận** bạn để lại, dưới tên bạn, trên một khoản chi mà ai đó đã chia sẻ với bạn qua liên kết.
+- **Tin nhắn gửi bộ phận hỗ trợ** mà bạn gửi qua email từ Hồ sơ › “Liên hệ hỗ trợ”. Ứng dụng thêm vào phiên bản của nó, nền tảng, ngôn ngữ và loại tài khoản, không bao giờ thêm ID tài khoản của bạn.
 
 ### Tài khoản của bạn
 
@@ -52,17 +55,24 @@ blitzsplit.com dùng Google Analytics để đếm lượt truy cập, trong m�
 >
 > Ảnh được gửi đến máy chủ của chúng tôi và được đọc bởi một mô hình AI của Anthropic (Claude), mô hình này trả về các món, giá và tổng tiền. Chúng tôi không giữ ảnh sau khi đọc: ảnh chỉ ở lại trong khoản chi nếu bạn đính kèm nó. Theo các điều khoản thương mại của Anthropic, nội dung này không được dùng để huấn luyện mô hình.
 
+> **Mời từ danh bạ**
+>
+> Trên Android, iPhone, iPad và Mac, ứng dụng đọc danh bạ trên điện thoại của bạn, chỉ sau khi bạn cho phép, để liệt kê chúng khi bạn mời ai đó vào một nhóm. Danh bạ ở lại trên thiết bị: không có tên hay số điện thoại nào được gửi lên máy chủ của chúng tôi.
+
 ## Chúng tôi dùng dữ liệu để làm gì {#use}
 
 | Mục đích | Dữ liệu | Cơ sở pháp lý (LGPD) |
 | --- | --- | --- |
 | Lưu trữ, đồng bộ và hiển thị cho nhóm | Hồ sơ, nhóm, khoản chi, khoản thanh toán, khóa nhận thanh toán | Thực hiện hợp đồng (điều 7, khoản V) |
+| Giữ các phương thức thanh toán trên thiết bị của bạn | Các phương thức thanh toán và các khoản chi đã trả bằng từng phương thức | Thực hiện hợp đồng |
+| Hiển thị những gì bạn chia sẻ qua liên kết | Khoản chi được chia sẻ, hoặc tên và ảnh của bạn | Thực hiện hợp đồng |
 | Đăng nhập và khôi phục quyền truy cập | ID ẩn danh, mã khôi phục, tài khoản Google hoặc Apple | Thực hiện hợp đồng |
 | Đọc hóa đơn | Ảnh hóa đơn, theo yêu cầu của bạn | Thực hiện hợp đồng |
 | Gửi thông báo | Token thiết bị, sự kiện của nhóm | Thực hiện hợp đồng; bạn chọn loại nào trong Hồ sơ › Thông báo |
 | Cải thiện ứng dụng | Số liệu sử dụng | Lợi ích hợp pháp (điều 7, khoản IX); bạn phản đối bằng cách tắt “Chia sẻ dữ liệu sử dụng” trong Hồ sơ |
 | Khắc phục sự cố | Báo cáo sự cố | Lợi ích hợp pháp (điều 7, khoản IX); báo cáo không theo cài đặt đó, và bạn phản đối bằng cách viết thư cho chúng tôi |
 | Bảo mật và ngăn chặn lạm dụng | Dữ liệu kết nối | Lợi ích hợp pháp |
+| Trả lời yêu cầu hỗ trợ | Tin nhắn của bạn và những gì ứng dụng thêm vào | Thực hiện hợp đồng |
 | Tuân thủ pháp luật | Những gì nghĩa vụ đó yêu cầu | Nghĩa vụ pháp lý (điều 7, khoản II) |
 
 Chúng tôi không bán dữ liệu cá nhân, không dùng dữ liệu đó cho quảng cáo và không xây dựng hồ sơ hành vi về bạn.
@@ -71,7 +81,12 @@ Chúng tôi không bán dữ liệu cá nhân, không dùng dữ liệu đó cho
 
 ### Những người trong nhóm của bạn
 
-Bất kỳ ai trong một nhóm đều thấy tên, ảnh và màu của từng thành viên; các khoản chi, món, bình luận, ảnh và khoản thanh toán của nhóm đó; và các khóa nhận thanh toán mà một thành viên hiển thị để được trả tiền. **Không ai trong nhóm thấy email của bạn.**
+Bất kỳ ai trong một nhóm đều thấy tên, ảnh và màu của từng thành viên; các khoản chi, món, bình luận, ảnh và khoản thanh toán của nhóm đó; và các khóa nhận thanh toán mà một thành viên hiển thị để được trả tiền. **Không ai trong nhóm thấy email của bạn**, cũng như các phương thức thanh toán của bạn: chỉ bạn thấy chúng, trên chính các thiết bị của bạn.
+
+### Ai có liên kết bạn chia sẻ
+
+- **Chia sẻ khoản chi** tạo một liên kết đến một khoản chi. Với “Chỉ người tham gia khoản chi”, chỉ những người trong khoản chi đó mở được. Với “Bất kỳ ai có liên kết”, ai có liên kết đều thấy khoản chi (mô tả, số tiền, ngày, danh mục và tên nhóm, ai đã trả và cách chia, theo tên) cùng ảnh và bình luận của nó, và bất kỳ ai đã đăng nhập vào ứng dụng đều có thể bình luận. Bản xem trước mà ứng dụng trò chuyện tạo từ liên kết hiển thị mô tả, số tiền và ai đã trả. “Tắt liên kết”, trong Chia sẻ khoản chi, khiến liên kết ngừng hoạt động.
+- **Chia sẻ hồ sơ** tạo một liên kết đến hồ sơ của bạn: ai có liên kết sẽ thấy tên và ảnh của bạn, kể cả trong bản xem trước của liên kết.
 
 ### Những bên làm việc cho chúng tôi
 
@@ -97,8 +112,9 @@ Một số nhà cung cấp này lưu trữ hoặc xử lý dữ liệu bên ngo�
 
 - Khi tài khoản của bạn còn tồn tại, chúng tôi giữ những gì ứng dụng cần để hoạt động.
 - **Đăng xuất** xóa bản sao trên thiết bị. Với Google hoặc Apple, dữ liệu của bạn vẫn ở trên máy chủ cho lần bạn đăng nhập lại.
-- **Không có tài khoản**, “Xóa hồ sơ và đăng xuất” xóa sạch thiết bị và mã khôi phục của bạn vẫn tiếp tục hoạt động. Để xóa cả những gì trên máy chủ, hãy liên hệ với chúng tôi (mục 12).
-- **“Xóa tài khoản và dữ liệu”**, trong Hồ sơ, xóa hồ sơ, ảnh, khóa nhận thanh toán và mã khôi phục của bạn cùng một lúc, và thu hồi quyền truy cập mà Apple đã cấp. Các khoản chi bạn đã thêm vào nhóm có người khác vẫn ở lại đó cho nhóm, không có tên bạn, dưới dạng “Cựu thành viên”.
+- **Không có tài khoản**, “Xóa hồ sơ và đăng xuất” xóa sạch thiết bị và mã khôi phục của bạn vẫn tiếp tục hoạt động trong 30 ngày. Để xóa ngay những gì trên máy chủ, hãy dùng “Xóa tài khoản và dữ liệu”.
+- **Tài khoản không có Google hoặc Apple sẽ bị xóa sau 30 ngày không sử dụng:** khi không thiết bị nào của tài khoản đồng bộ trong 30 ngày, máy chủ sẽ xóa tài khoản giống như “Xóa tài khoản và dữ liệu”, và mã khôi phục của nó ngừng hoạt động.
+- **“Xóa tài khoản và dữ liệu”**, trong Hồ sơ, xóa hồ sơ, ảnh, khóa nhận thanh toán, phương thức thanh toán và mã khôi phục của bạn cùng một lúc, và thu hồi quyền truy cập mà Apple đã cấp. Các khoản chi bạn đã thêm vào nhóm có người khác vẫn ở lại đó cho nhóm, không có tên bạn, dưới dạng “Cựu thành viên”.
 - Dữ liệu sử dụng gắn với một thiết bị được lưu trong Google Analytics tối đa 14 tháng. Sau đó, chỉ còn lại các con số tổng hợp, không có gì nhận dạng được bất kỳ ai. Khi tài khoản của bạn đã bị xóa, ID mà dữ liệu này mang không còn dẫn đến bạn nữa.
 - Báo cáo sự cố được giữ tối đa 90 ngày rồi bị xóa.
 
@@ -120,7 +136,7 @@ Bạn thực hiện phần lớn những điều này ngay trong ứng dụng: s
 
 Dữ liệu được truyền đi dưới dạng mã hóa (HTTPS). Trên máy chủ, các quy tắc truy cập bảo đảm mỗi người chỉ đọc được các nhóm mà họ là thành viên. Không hệ thống nào hoàn hảo, nhưng chúng tôi xem trọng mọi sự cố và thông báo cho bạn và ANPD khi pháp luật yêu cầu.
 
-Mã khôi phục của bạn hoạt động như một mật khẩu: hãy cất nó ở nơi an toàn và đừng chia sẻ. Trên iPhone, iPad và Mac, ứng dụng lưu mã trong ứng dụng Mật khẩu.
+Mã khôi phục của bạn, gồm 12 từ, hoạt động như một mật khẩu: hãy cất nó ở nơi an toàn và đừng chia sẻ. Chúng tôi không lưu các từ đó, chỉ lưu một dấu vân tay của chúng không thể chuyển ngược lại thành các từ. Trên iPhone, iPad và Mac, ứng dụng lưu mã trong ứng dụng Mật khẩu.
 
 ## Trẻ em {#children}
 

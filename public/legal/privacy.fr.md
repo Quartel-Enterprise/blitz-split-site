@@ -1,13 +1,13 @@
 ---
 title: Politique de confidentialité
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 
 > **En bref**
 >
-> - Vous utilisez l’app sans créer de compte. Google et Apple sont facultatifs.
+> - Vous utilisez l’app sans créer de compte. Google et Apple sont facultatifs, mais sans eux vos données sont supprimées après 30 jours sans utilisation.
 > - Ce que vous ajoutez reste d’abord sur votre appareil et ne va au serveur que pour se synchroniser et parvenir à votre groupe.
-> - Les membres d’un groupe voient ce qui appartient au groupe. Personne ne voit votre adresse e-mail.
+> - Les membres d’un groupe voient ce qui appartient au groupe, et quiconque a un lien que vous partagez voit cette dépense ou votre profil. Personne ne voit votre adresse e-mail.
 > - Les statistiques d’utilisation et les rapports de plantage ne contiennent ni noms ni montants. Avec un compte, les statistiques sont liées à son identifiant. Nous n’utilisons pas d’identifiant publicitaire, et vous désactivez les statistiques dans Profil.
 > - Nous ne vendons pas de données. Vous supprimez votre compte et vos données depuis l’app elle-même.
 
@@ -24,9 +24,12 @@ Elle respecte la loi générale brésilienne sur la protection des données (loi
 - **Profil :** votre nom, une photo (facultative) et la couleur de votre avatar.
 - **Groupes et dépenses :** le nom et la devise du groupe ; pour chaque dépense, la description, le montant, la date, la catégorie, qui a payé et comment elle a été partagée ; les articles, commentaires et photos jointes.
 - **Paiements** que vous enregistrez entre membres.
-- **Clés de paiement** que vous enregistrez : une clé Pix et une adresse Bitcoin.
+- **Clés de paiement** que vous enregistrez pour être payé : une clé Pix et une adresse Bitcoin.
+- **Moyens de paiement** avec lesquels vous payez (une carte de crédit ou de débit, Pix, un virement bancaire, Bitcoin, des espèces ou un autre) : leur nom, leur type et leur couleur, jamais le numéro d’une carte, et celui avec lequel vous avez payé chaque dépense.
 - **Revenus**, uniquement si vous partagez « Selon le revenu ».
 - **Personnes que vous ajoutez** à un groupe avant qu’elles n’aient l’app, sous le nom que vous leur donnez.
+- **Commentaires** que vous laissez sur une dépense qu’on vous a partagée par lien, sous votre nom.
+- **Messages à l’assistance** que vous envoyez depuis Profil › « Contacter l’assistance », par e-mail. L’app y ajoute sa version, la plateforme, sa langue et le type de compte, jamais l’identifiant de votre compte.
 
 ### Votre compte
 
@@ -52,17 +55,24 @@ L’app fonctionne **d’abord hors ligne** : ce que vous ajoutez est enregistr
 >
 > La photo est envoyée à notre serveur et lue par un modèle d’IA d’Anthropic (Claude), qui renvoie les articles, les prix et le total. Nous ne conservons pas la photo après lecture : elle ne reste sur la dépense que si vous la joignez. Selon les conditions commerciales d’Anthropic, ce contenu ne sert pas à entraîner des modèles.
 
+> **Inviter depuis les contacts**
+>
+> Sur Android, iPhone, iPad et Mac, l’app lit les contacts de votre téléphone, uniquement après votre autorisation, pour les lister quand vous invitez quelqu’un dans un groupe. Ils restent sur l’appareil : aucun nom ni numéro ne va à notre serveur.
+
 ## À quoi elles nous servent {#usage}
 
 | Finalité | Données | Base légale (LGPD) |
 | --- | --- | --- |
 | Enregistrer, synchroniser et montrer au groupe | Profil, groupes, dépenses, paiements, clés de paiement | Exécution d’un contrat (art. 7, V) |
+| Conserver vos moyens de paiement sur vos appareils | Moyens de paiement et les dépenses payées avec chacun | Exécution d’un contrat |
+| Afficher ce que vous partagez par lien | La dépense partagée, ou votre nom et votre photo | Exécution d’un contrat |
 | Se connecter et récupérer l’accès | Identifiant anonyme, code de récupération, compte Google ou Apple | Exécution d’un contrat |
 | Lire les reçus | La photo du reçu, à votre demande | Exécution d’un contrat |
 | Envoyer des notifications | Jeton de l’appareil, événements du groupe | Exécution d’un contrat ; vous choisissez lesquelles dans Profil › Notifications |
 | Améliorer l’app | Statistiques d’utilisation | Intérêt légitime (art. 7, IX) ; vous vous y opposez en désactivant « Partager les données d’utilisation » dans Profil |
 | Corriger les plantages | Rapports de plantage | Intérêt légitime (art. 7, IX) ; ils ne suivent pas ce réglage, et vous vous y opposez en nous écrivant |
 | Sécurité et prévention des abus | Données de connexion | Intérêt légitime |
+| Répondre aux demandes d’assistance | Votre message et ce que l’app y ajoute | Exécution d’un contrat |
 | Respecter la loi | Ce que l’obligation exige | Obligation légale (art. 7, II) |
 
 Nous ne vendons pas de données personnelles, ne les utilisons pas à des fins publicitaires et n’établissons pas de profil comportemental à votre sujet.
@@ -71,7 +81,12 @@ Nous ne vendons pas de données personnelles, ne les utilisons pas à des fins p
 
 ### Les membres de votre groupe
 
-Tout membre d’un groupe voit le nom, la photo et la couleur de chaque membre ; les dépenses, articles, commentaires, photos et paiements de ce groupe ; et les clés de paiement qu’un membre affiche pour être payé. **Personne dans le groupe ne voit votre adresse e-mail.**
+Tout membre d’un groupe voit le nom, la photo et la couleur de chaque membre ; les dépenses, articles, commentaires, photos et paiements de ce groupe ; et les clés de paiement qu’un membre affiche pour être payé. **Personne dans le groupe ne voit votre adresse e-mail**, ni vos moyens de paiement : vous seul les voyez, sur vos propres appareils.
+
+### Qui a un lien que vous partagez
+
+- **Partager la dépense** crée un lien vers une dépense. Avec « Seulement les personnes de la dépense », seules les personnes qui y figurent l’ouvrent. Avec « Toute personne ayant le lien », quiconque a le lien voit la dépense (sa description, son montant, sa date, sa catégorie et le nom du groupe, qui a payé et comment elle a été partagée, par nom) avec ses photos et ses commentaires, et toute personne connectée à l’app peut la commenter. L’aperçu qu’une messagerie affiche à partir du lien montre la description, le montant et qui a payé. « Désactiver le lien », dans Partager la dépense, le rend inutilisable.
+- **Partager le profil** crée un lien vers votre profil : quiconque l’a voit votre nom et votre photo, y compris dans l’aperçu du lien.
 
 ### Nos sous-traitants
 
@@ -97,8 +112,9 @@ Certains de ces fournisseurs stockent ou traitent des données hors du Brésil, 
 
 - Tant que votre compte existe, nous conservons ce dont l’app a besoin pour fonctionner.
 - **« Se déconnecter »** efface la copie de l’appareil. Avec Google ou Apple, vos données restent sur le serveur pour votre prochaine connexion.
-- **Sans compte**, « Effacer le profil et se déconnecter » vide l’appareil et votre code de récupération reste valable. Pour effacer aussi ce qui se trouve sur le serveur, contactez-nous (section 12).
-- **« Supprimer le compte et les données »**, dans Profil, supprime d’un coup votre profil, votre photo, vos clés de paiement et votre code de récupération, et révoque l’accès accordé par Apple. Les dépenses que vous avez ajoutées dans des groupes avec d’autres personnes y restent pour le groupe, sans votre nom, sous « Ancien membre ».
+- **Sans compte**, « Effacer le profil et se déconnecter » vide l’appareil et votre code de récupération reste valable 30 jours. Pour effacer tout de suite ce qui se trouve sur le serveur, utilisez « Supprimer le compte et les données ».
+- **Un compte sans Google ni Apple est supprimé après 30 jours sans utilisation :** quand aucun de ses appareils ne se synchronise pendant 30 jours, le serveur le supprime comme le fait « Supprimer le compte et les données », et son code de récupération cesse de fonctionner.
+- **« Supprimer le compte et les données »**, dans Profil, supprime d’un coup votre profil, votre photo, vos clés de paiement, vos moyens de paiement et votre code de récupération, et révoque l’accès accordé par Apple. Les dépenses que vous avez ajoutées dans des groupes avec d’autres personnes y restent pour le groupe, sans votre nom, sous « Ancien membre ».
 - Les données d’utilisation liées à un appareil restent dans Google Analytics jusqu’à 14 mois. Ensuite, il ne reste que des chiffres agrégés, sans rien qui permette d’identifier qui que ce soit. Une fois votre compte supprimé, l’identifiant qu’elles portent ne mène plus à vous.
 - Les rapports de plantage sont conservés jusqu’à 90 jours, puis supprimés.
 
@@ -120,7 +136,7 @@ Vous pouvez faire une bonne partie de tout cela dans l’app elle-même : modif
 
 Les données circulent chiffrées (HTTPS). Sur le serveur, des règles d’accès garantissent que chacun ne lit que les groupes dont il fait partie. Aucun système n’est infaillible, mais nous prenons tout incident au sérieux et vous en informons, ainsi que l’ANPD, lorsque la loi l’exige.
 
-Votre code de récupération vaut un mot de passe : gardez-le en lieu sûr et ne le communiquez à personne. Sur iPhone, iPad et Mac, l’app l’enregistre dans l’app Mots de passe.
+Votre code de récupération, de 12 mots, vaut un mot de passe : gardez-le en lieu sûr et ne le communiquez à personne. Nous ne conservons pas les mots, seulement une empreinte qui ne permet pas de les retrouver. Sur iPhone, iPad et Mac, l’app l’enregistre dans l’app Mots de passe.
 
 ## Enfants {#enfants}
 

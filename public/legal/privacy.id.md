@@ -1,13 +1,13 @@
 ---
 title: Kebijakan privasi
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 
 > **Singkatnya**
 >
-> - Kamu bisa memakai aplikasi tanpa membuat akun. Google dan Apple bersifat opsional.
+> - Kamu bisa memakai aplikasi tanpa membuat akun. Google dan Apple bersifat opsional, tetapi tanpa keduanya datamu dihapus setelah 30 hari tidak dipakai.
 > - Apa yang kamu tambahkan disimpan di perangkatmu terlebih dahulu, dan hanya dikirim ke server untuk disinkronkan dan sampai ke grupmu.
-> - Orang-orang dalam satu grup melihat apa yang menjadi milik grup. Tidak ada yang melihat emailmu.
+> - Orang-orang dalam satu grup melihat apa yang menjadi milik grup, dan siapa pun yang punya tautan yang kamu bagikan melihat tagihan itu atau profilmu. Tidak ada yang melihat emailmu.
 > - Metrik penggunaan dan laporan kerusakan tidak memuat nama atau jumlah uang. Jika kamu punya akun, metrik terkait dengan id akun itu. Kami tidak menggunakan id iklan, dan kamu bisa mematikan metrik di Profil.
 > - Kami tidak menjual data. Kamu menghapus akun dan datamu langsung dari aplikasi.
 
@@ -24,9 +24,12 @@ Kebijakan ini mengikuti Undang-Undang Umum Pelindungan Data Brasil (Undang-Undan
 - **Profil:** namamu, foto (opsional), dan warna avatarmu.
 - **Grup dan tagihan:** nama dan mata uang grup; deskripsi, jumlah, tanggal, kategori setiap tagihan, siapa yang membayar dan bagaimana pembagiannya; item, komentar, dan foto yang dilampirkan.
 - **Pembayaran** yang kamu catat antaranggota.
-- **Kunci pembayaran** yang kamu simpan: kunci Pix dan alamat Bitcoin.
+- **Kunci pembayaran** yang kamu simpan untuk menerima pembayaran: kunci Pix dan alamat Bitcoin.
+- **Metode pembayaran** yang kamu pakai untuk membayar (kartu kredit atau debit, Pix, transfer bank, Bitcoin, tunai, atau lainnya): nama, jenis, dan warnanya, tidak pernah nomor kartu, serta metode mana yang kamu pakai untuk membayar setiap tagihan.
 - **Penghasilan**, hanya jika kamu membagi “Sesuai penghasilan”.
 - **Orang yang kamu tambahkan** ke grup sebelum mereka punya aplikasinya, dengan nama yang kamu berikan.
+- **Komentar** yang kamu tinggalkan di tagihan yang dibagikan kepadamu lewat tautan, dengan namamu.
+- **Pesan ke dukungan** yang kamu kirim dari Profil › “Hubungi dukungan”, lewat email. Aplikasi menambahkan versinya, platform, bahasanya, dan jenis akun, tidak pernah id akunmu.
 
 ### Akunmu
 
@@ -52,17 +55,24 @@ Aplikasi ini **mengutamakan offline**: apa yang kamu tambahkan disimpan dalam ba
 >
 > Foto dikirim ke server kami dan dibaca oleh model AI dari Anthropic (Claude), yang mengembalikan item, harga, dan total. Kami tidak menyimpan foto setelah membacanya: foto hanya tetap ada di tagihan jika kamu melampirkannya. Berdasarkan ketentuan komersial Anthropic, konten ini tidak digunakan untuk melatih model.
 
+> **Undang dari kontak**
+>
+> Di Android, iPhone, iPad, dan Mac, aplikasi membaca kontak di ponselmu, hanya setelah kamu mengizinkannya, untuk menampilkannya saat kamu mengundang seseorang ke grup. Kontak tetap di perangkat: tidak ada nama atau nomor yang dikirim ke server kami.
+
 ## Untuk apa kami menggunakannya {#use}
 
 | Tujuan | Data | Dasar hukum (LGPD) |
 | --- | --- | --- |
 | Menyimpan, menyinkronkan, dan menampilkan kepada grup | Profil, grup, tagihan, pembayaran, kunci pembayaran | Pelaksanaan kontrak (pasal 7, V) |
+| Menyimpan metode pembayaranmu di perangkatmu | Metode pembayaran dan tagihan yang dibayar dengan masing-masing | Pelaksanaan kontrak |
+| Menampilkan apa yang kamu bagikan lewat tautan | Tagihan yang dibagikan, atau nama dan fotomu | Pelaksanaan kontrak |
 | Masuk dan memulihkan akses | Id anonim, kode pemulihan, akun Google atau Apple | Pelaksanaan kontrak |
 | Membaca struk | Foto struk, atas permintaanmu | Pelaksanaan kontrak |
 | Mengirim notifikasi | Token perangkat, peristiwa grup | Pelaksanaan kontrak; kamu memilih yang mana di Profil › Notifikasi |
 | Meningkatkan aplikasi | Metrik penggunaan | Kepentingan sah (pasal 7, IX); kamu menolaknya dengan mematikan “Bagikan data penggunaan” di Profil |
 | Memperbaiki kerusakan aplikasi | Laporan kerusakan | Kepentingan sah (pasal 7, IX); laporan ini tidak mengikuti setelan itu, dan kamu menolaknya dengan menulis kepada kami |
 | Keamanan dan pencegahan penyalahgunaan | Data koneksi | Kepentingan sah |
+| Menjawab permintaan dukungan | Pesanmu dan apa yang ditambahkan aplikasi ke dalamnya | Pelaksanaan kontrak |
 | Mematuhi hukum | Apa yang diwajibkan oleh kewajiban tersebut | Kewajiban hukum (pasal 7, II) |
 
 Kami tidak menjual data pribadi, tidak menggunakannya untuk iklan, dan tidak membuat profil perilaku tentang dirimu.
@@ -71,7 +81,12 @@ Kami tidak menjual data pribadi, tidak menggunakannya untuk iklan, dan tidak mem
 
 ### Orang-orang di grupmu
 
-Siapa pun dalam satu grup melihat nama, foto, dan warna setiap anggota; tagihan, item, komentar, foto, dan pembayaran grup tersebut; serta kunci pembayaran yang ditampilkan anggota agar bisa menerima pembayaran. **Tidak ada seorang pun di grup yang melihat emailmu.**
+Siapa pun dalam satu grup melihat nama, foto, dan warna setiap anggota; tagihan, item, komentar, foto, dan pembayaran grup tersebut; serta kunci pembayaran yang ditampilkan anggota agar bisa menerima pembayaran. **Tidak ada seorang pun di grup yang melihat emailmu**, begitu juga metode pembayaranmu: hanya kamu yang melihatnya, di perangkatmu sendiri.
+
+### Siapa pun yang punya tautan yang kamu bagikan
+
+- **Bagikan tagihan** membuat tautan ke satu tagihan. Dengan “Hanya yang ikut tagihan”, hanya orang-orang yang ikut di dalamnya yang bisa membukanya. Dengan “Siapa saja yang punya tautan”, siapa pun yang punya tautan melihat tagihan itu (deskripsi, jumlah, tanggal, kategori, dan nama grupnya, siapa yang membayar dan bagaimana pembagiannya, berdasarkan nama) beserta foto dan komentarnya, dan siapa pun yang sudah masuk ke aplikasi bisa mengomentarinya. Pratinjau yang dibuat aplikasi chat dari tautan itu menampilkan deskripsi, jumlah, dan siapa yang membayar. “Nonaktifkan tautan”, di Bagikan tagihan, menghentikan tautan itu.
+- **Bagikan profil** membuat tautan ke profilmu: siapa pun yang memilikinya melihat nama dan fotomu, juga di pratinjau tautan.
 
 ### Pihak yang bekerja untuk kami
 
@@ -97,8 +112,9 @@ Sebagian penyedia ini menyimpan atau memproses data di luar Brasil, sebagian bes
 
 - Selama akunmu ada, kami menyimpan apa yang dibutuhkan aplikasi agar berfungsi.
 - **“Keluar”** menghapus salinan di perangkat. Dengan Google atau Apple, datamu tetap ada di server untuk saat kamu masuk lagi.
-- **Tanpa akun**, “Hapus profil dan keluar” membersihkan perangkat dan kode pemulihanmu tetap berfungsi. Untuk menghapus juga apa yang ada di server, hubungi kami (bagian 12).
-- **“Hapus akun dan data”**, di Profil, menghapus profil, foto, kunci pembayaran, dan kode pemulihanmu sekaligus, serta mencabut akses yang diberikan Apple. Tagihan yang kamu tambahkan ke grup bersama orang lain tetap ada di sana untuk grup, tanpa namamu, sebagai “Mantan anggota”.
+- **Tanpa akun**, “Hapus profil dan keluar” membersihkan perangkat dan kode pemulihanmu tetap berfungsi selama 30 hari. Untuk langsung menghapus apa yang ada di server, gunakan “Hapus akun dan data”.
+- **Akun tanpa Google atau Apple dihapus setelah 30 hari tidak dipakai:** jika tidak ada perangkatnya yang tersinkron selama 30 hari, server menghapusnya seperti “Hapus akun dan data”, dan kode pemulihannya berhenti berfungsi.
+- **“Hapus akun dan data”**, di Profil, menghapus profil, foto, kunci pembayaran, metode pembayaran, dan kode pemulihanmu sekaligus, serta mencabut akses yang diberikan Apple. Tagihan yang kamu tambahkan ke grup bersama orang lain tetap ada di sana untuk grup, tanpa namamu, sebagai “Mantan anggota”.
 - Data penggunaan yang terkait dengan suatu perangkat disimpan di Google Analytics hingga 14 bulan. Setelah itu, hanya angka agregat yang tersisa, tanpa apa pun yang dapat mengidentifikasi seseorang. Setelah akunmu dihapus, id yang dimuatnya tidak lagi mengarah kepadamu.
 - Laporan kerusakan disimpan hingga 90 hari, lalu dihapus.
 
@@ -120,7 +136,7 @@ Sebagian besar hal ini bisa kamu lakukan langsung di aplikasi: mengedit profil, 
 
 Data dikirim dalam keadaan terenkripsi (HTTPS). Di server, aturan akses memastikan setiap orang hanya membaca grup tempat ia menjadi anggota. Tidak ada sistem yang sempurna, tetapi kami menanggapi setiap insiden dengan serius dan memberi tahu kamu serta ANPD jika diwajibkan oleh hukum.
 
-Kode pemulihanmu berfungsi seperti kata sandi: simpan di tempat yang aman dan jangan bagikan. Di iPhone, iPad, dan Mac, aplikasi menyimpannya di aplikasi Kata Sandi.
+Kode pemulihanmu, 12 kata, berfungsi seperti kata sandi: simpan di tempat yang aman dan jangan bagikan. Kami tidak menyimpan kata-katanya, hanya sidik jarinya, yang tidak bisa diubah kembali menjadi kata-kata itu. Di iPhone, iPad, dan Mac, aplikasi menyimpannya di aplikasi Kata Sandi.
 
 ## Anak-anak {#children}
 

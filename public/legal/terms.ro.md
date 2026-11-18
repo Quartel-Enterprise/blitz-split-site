@@ -1,12 +1,12 @@
 ---
 title: Termenii serviciului
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **Pe scurt**
 >
 > - Blitz Split ține socotelile grupului. Nu mută bani.
-> - O folosești fără cont. Păstrează-ți codul de recuperare: fără el, nu există nicio cale să-ți redăm accesul.
+> - O folosești fără cont. Păstrează-ți codul de recuperare: fără el, nu există nicio cale să-ți redăm accesul. Fără Google sau Apple, un cont nefolosit timp de 30 de zile se șterge.
 > - Ce adaugi îți aparține, iar tu răspunzi pentru asta.
 > - Verifică ce a completat cititorul de bonuri înainte să salvezi.
 
@@ -30,6 +30,7 @@ Soldurile sunt rezultatul a ceea ce a adăugat grupul. Nu sunt o factură, un in
 
 - Poți folosi aplicația fără cont. Conectarea Google sau Apple este opțională și servește la sincronizare și la recuperarea accesului.
 - Fără Google sau Apple, **codul tău de recuperare este singura cale de a reintra în cont**. Dacă îl pierzi, nu îți putem reda accesul.
+- Un cont fără Google sau Apple este **șters, împreună cu datele lui, după 30 de zile fără utilizare**: când niciunul dintre dispozitivele lui nu se sincronizează timp de 30 de zile. Atunci codul lui de recuperare nu mai funcționează. Conectează Google sau Apple ca să-l păstrezi.
 - Tu răspunzi pentru ce se face cu codul tău și cu conturile pe care le conectezi. Nu da codul nimănui.
 - Folosește un nume pe care grupul tău îl recunoaște și nu te da drept altcineva.
 
@@ -37,7 +38,7 @@ Soldurile sunt rezultatul a ceea ce a adăugat grupul. Nu sunt o factură, un in
 
 Cheltuielile, comentariile, fotografiile și cheile pe care le adaugi rămân ale tale. Ca aplicația să funcționeze, ne acorzi o licență gratuită, mondială și neexclusivă de a stoca, copia, sincroniza și arăta acest conținut persoanelor din grupurile tale, cât timp el există în serviciu.
 
-Adaugă doar persoane, fotografii și informații pe care ai dreptul să le împărtășești. Toată lumea dintr-un grup vede ce se adaugă în el.
+Adaugă doar persoane, fotografii și informații pe care ai dreptul să le împărtășești. Toată lumea dintr-un grup vede ce se adaugă în el, iar cine are un link pe care îl distribui vede ce deschide acesta ([Politica de confidențialitate](/privacy#sees)). Distribuie linkul unei cheltuieli cu „Oricine are linkul” doar persoanelor care pot vedea acea cheltuială.
 
 ## Utilizare acceptabilă {#rules}
 
@@ -82,6 +83,7 @@ Facem tot ce putem ca aplicația să fie corectă și online, dar este oferită 
 
 - înțelegerile și plățile dintre membrii unui grup;
 - datele pierdute odată cu codul de recuperare sau cu dispozitivul înainte de sincronizare;
+- datele unui cont fără Google sau Apple, șterse după 30 de zile fără utilizare;
 - greșelile din datele adăugate de persoane sau citite de pe bonuri și salvate fără verificare.
 
 Nimic de aici nu limitează drepturile pe care ți le dă Codul de protecție a consumatorului din Brazilia.

@@ -1,12 +1,12 @@
 ---
 title: Ketentuan penggunaan
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **Singkatnya**
 >
 > - Blitz Split mencatat keuangan grup. Aplikasi ini tidak memindahkan uang.
-> - Kamu memakainya tanpa akun. Simpan kode pemulihanmu: tanpa kode itu, tidak ada cara untuk mengembalikan aksesmu.
+> - Kamu memakainya tanpa akun. Simpan kode pemulihanmu: tanpa kode itu, tidak ada cara untuk mengembalikan aksesmu. Tanpa Google atau Apple, akun yang tidak dipakai selama 30 hari akan dihapus.
 > - Apa yang kamu tambahkan adalah milikmu, dan kamu bertanggung jawab atasnya.
 > - Periksa apa yang diisi oleh pembaca struk sebelum menyimpan.
 
@@ -30,6 +30,7 @@ Saldo adalah hasil dari apa yang ditambahkan grup. Saldo bukan tagihan resmi, in
 
 - Kamu bisa memakai aplikasi tanpa akun. Menghubungkan Google atau Apple bersifat opsional dan berguna untuk menyinkronkan serta memulihkan aksesmu.
 - Tanpa Google atau Apple, **kode pemulihanmu adalah satu-satunya cara untuk kembali ke akunmu**. Jika kamu kehilangannya, kami tidak bisa mengembalikan aksesmu.
+- Akun tanpa Google atau Apple **dihapus, beserta datanya, setelah 30 hari tidak dipakai**: jika tidak ada perangkatnya yang tersinkron selama 30 hari. Kode pemulihannya lalu berhenti berfungsi. Hubungkan Google atau Apple untuk mempertahankannya.
 - Kamu bertanggung jawab atas apa yang dilakukan dengan kodemu dan dengan akun yang kamu hubungkan. Jangan bagikan kode tersebut.
 - Gunakan nama yang dikenali grupmu, dan jangan berpura-pura menjadi orang lain.
 
@@ -37,7 +38,7 @@ Saldo adalah hasil dari apa yang ditambahkan grup. Saldo bukan tagihan resmi, in
 
 Tagihan, komentar, foto, dan kunci yang kamu tambahkan tetap menjadi milikmu. Agar aplikasi dapat berfungsi, kamu memberi kami lisensi gratis, berlaku di seluruh dunia, dan noneksklusif untuk menyimpan, menyalin, menyinkronkan, dan menampilkan konten tersebut kepada orang-orang di grupmu, selama konten itu ada di layanan.
 
-Hanya tambahkan orang, foto, dan informasi yang berhak kamu bagikan. Semua orang dalam satu grup melihat apa yang ditambahkan ke grup tersebut.
+Hanya tambahkan orang, foto, dan informasi yang berhak kamu bagikan. Semua orang dalam satu grup melihat apa yang ditambahkan ke grup tersebut, dan siapa pun yang punya tautan yang kamu bagikan melihat apa yang dibuka tautan itu ([Kebijakan privasi](/privacy#sees)). Bagikan tautan tagihan dengan “Siapa saja yang punya tautan” hanya kepada orang yang boleh melihat tagihan itu.
 
 ## Penggunaan yang diperbolehkan {#rules}
 
@@ -82,6 +83,7 @@ Kami berusaha sebaik mungkin agar aplikasi tetap benar dan online, tetapi aplika
 
 - kesepakatan dan pembayaran antaranggota grup;
 - data yang hilang bersama kode pemulihan, atau bersama perangkat sebelum data itu tersinkronkan;
+- data akun tanpa Google atau Apple, yang dihapus setelah 30 hari tidak dipakai;
 - kesalahan dalam data yang ditambahkan orang, atau yang dibaca dari struk dan disimpan tanpa diperiksa.
 
 Tidak ada ketentuan di sini yang membatasi hak-hak yang diberikan kepadamu oleh Kitab Undang-Undang Perlindungan Konsumen Brasil.

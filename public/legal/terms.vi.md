@@ -1,12 +1,12 @@
 ---
 title: Điều khoản dịch vụ
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **Tóm tắt**
 >
 > - Blitz Split ghi chép sổ sách chi tiêu của nhóm. Ứng dụng không chuyển tiền.
-> - Bạn dùng ứng dụng mà không cần tài khoản. Hãy giữ mã khôi phục của bạn: không có mã, không có cách nào trả lại quyền truy cập cho bạn.
+> - Bạn dùng ứng dụng mà không cần tài khoản. Hãy giữ mã khôi phục của bạn: không có mã, không có cách nào trả lại quyền truy cập cho bạn. Không có Google hoặc Apple, tài khoản không được sử dụng trong 30 ngày sẽ bị xóa.
 > - Những gì bạn thêm là của bạn, và bạn chịu trách nhiệm về chúng.
 > - Hãy kiểm tra những gì trình đọc hóa đơn đã điền trước khi lưu.
 
@@ -30,6 +30,7 @@ Số dư là kết quả của những gì nhóm đã thêm. Số dư không ph�
 
 - Bạn có thể dùng ứng dụng mà không cần tài khoản. Việc kết nối Google hoặc Apple là tùy chọn và dùng để đồng bộ và khôi phục quyền truy cập của bạn.
 - Không có Google hoặc Apple, **mã khôi phục là cách duy nhất để quay lại tài khoản của bạn**. Nếu bạn làm mất mã, chúng tôi không thể trả lại quyền truy cập cho bạn.
+- Tài khoản không có Google hoặc Apple sẽ **bị xóa, cùng với dữ liệu của nó, sau 30 ngày không sử dụng**: khi không thiết bị nào của tài khoản đồng bộ trong 30 ngày. Khi đó mã khôi phục của nó ngừng hoạt động. Hãy kết nối Google hoặc Apple để giữ tài khoản.
 - Bạn chịu trách nhiệm về những gì được thực hiện bằng mã của bạn và bằng các tài khoản bạn kết nối. Đừng chia sẻ mã.
 - Hãy dùng một cái tên mà nhóm của bạn nhận ra, và đừng giả làm người khác.
 
@@ -37,7 +38,7 @@ Số dư là kết quả của những gì nhóm đã thêm. Số dư không ph�
 
 Các khoản chi, bình luận, ảnh và khóa bạn thêm vẫn thuộc về bạn. Để ứng dụng hoạt động, bạn cấp cho chúng tôi một giấy phép miễn phí, toàn cầu, không độc quyền để lưu trữ, sao chép, đồng bộ và hiển thị nội dung đó cho những người trong các nhóm của bạn, trong suốt thời gian nội dung đó còn tồn tại trong dịch vụ.
 
-Chỉ thêm những người, ảnh và thông tin mà bạn có quyền chia sẻ. Mọi người trong một nhóm đều thấy những gì được thêm vào nhóm đó.
+Chỉ thêm những người, ảnh và thông tin mà bạn có quyền chia sẻ. Mọi người trong một nhóm đều thấy những gì được thêm vào nhóm đó, và ai có liên kết bạn chia sẻ sẽ thấy những gì liên kết đó mở ra ([Chính sách quyền riêng tư](/privacy#sees)). Chỉ chia sẻ liên kết của một khoản chi với “Bất kỳ ai có liên kết” cho những người được phép xem khoản chi đó.
 
 ## Sử dụng được chấp nhận {#rules}
 
@@ -82,6 +83,7 @@ Chúng tôi cố gắng hết sức để giữ ứng dụng chính xác và tr�
 
 - các thỏa thuận và khoản thanh toán giữa các thành viên của một nhóm;
 - dữ liệu bị mất cùng với mã khôi phục, hoặc cùng với thiết bị trước khi được đồng bộ;
+- dữ liệu của một tài khoản không có Google hoặc Apple, bị xóa sau 30 ngày không sử dụng;
 - sai sót trong dữ liệu do mọi người thêm vào, hoặc được đọc từ hóa đơn và lưu mà không kiểm tra.
 
 Không điều gì ở đây giới hạn các quyền mà Bộ luật Bảo vệ Người tiêu dùng của Brazil trao cho bạn.

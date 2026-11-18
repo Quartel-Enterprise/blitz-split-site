@@ -1,12 +1,12 @@
 ---
 title: Användarvillkor
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **Kort sagt**
 >
 > - Blitz Split håller ordning på gruppens ekonomi. Appen flyttar inga pengar.
-> - Du använder den utan konto. Spara din återställningskod: utan den finns det inget sätt att ge dig tillbaka din åtkomst.
+> - Du använder den utan konto. Spara din återställningskod: utan den finns det inget sätt att ge dig tillbaka din åtkomst. Utan Google eller Apple raderas ett konto som inte har använts på 30 dagar.
 > - Det du lägger till är ditt, och du ansvarar för det.
 > - Kontrollera det som kvittoläsaren fyllde i innan du sparar.
 
@@ -30,6 +30,7 @@ Saldon är resultatet av det som gruppen har lagt till. De är inte en faktura, 
 
 - Du kan använda appen utan konto. Att ansluta Google eller Apple är valfritt och används för att synkronisera och återställa din åtkomst.
 - Utan Google eller Apple är **din återställningskod det enda sättet att komma tillbaka till ditt konto**. Om du tappar bort den kan vi inte ge dig tillbaka din åtkomst.
+- Ett konto utan Google eller Apple **raderas, med sina data, efter 30 dagar utan användning**: när ingen av dess enheter har synkroniserat på 30 dagar. Då slutar dess återställningskod att fungera. Anslut Google eller Apple för att behålla det.
 - Du ansvarar för det som görs med din kod och med de konton du ansluter. Dela inte koden.
 - Använd ett namn som din grupp känner igen, och utge dig inte för att vara någon annan.
 
@@ -37,7 +38,7 @@ Saldon är resultatet av det som gruppen har lagt till. De är inte en faktura, 
 
 Utgifter, kommentarer, foton och nycklar som du lägger till förblir dina. För att appen ska fungera ger du oss en kostnadsfri, världsomfattande, icke-exklusiv licens att lagra, kopiera, synkronisera och visa detta innehåll för personerna i dina grupper, så länge det finns i tjänsten.
 
-Lägg bara till personer, foton och information som du har rätt att dela. Alla i en grupp ser det som läggs till i den.
+Lägg bara till personer, foton och information som du har rätt att dela. Alla i en grupp ser det som läggs till i den, och den som har en länk du delar ser det som länken öppnar ([Integritetspolicy](/privacy#sees)). Dela bara en utgifts länk med ”Alla med länken” med personer som får se den utgiften.
 
 ## Godtagbar användning {#rules}
 
@@ -82,6 +83,7 @@ Vi gör vårt bästa för att hålla appen korrekt och tillgänglig, men den til
 
 - överenskommelser och betalningar mellan medlemmarna i en grupp;
 - data som gått förlorade tillsammans med återställningskoden, eller med enheten innan den hann synkronisera;
+- data för ett konto utan Google eller Apple, raderade efter 30 dagar utan användning;
 - fel i uppgifter som personer har lagt till, eller som lästs från kvitton och sparats utan kontroll.
 
 Ingenting här begränsar de rättigheter som Brasiliens konsumentskyddslag ger dig.

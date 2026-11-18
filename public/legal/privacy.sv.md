@@ -1,13 +1,13 @@
 ---
 title: Integritetspolicy
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 
 > **Kort sagt**
 >
-> - Du använder appen utan att skapa ett konto. Google och Apple är valfria.
+> - Du använder appen utan att skapa ett konto. Google och Apple är valfria, men utan dem raderas dina data efter 30 dagar utan användning.
 > - Det du lägger till sparas först på din enhet och skickas bara till servern för att synkroniseras och nå din grupp.
-> - De som är med i en grupp ser det som hör till gruppen. Ingen ser din e-postadress.
+> - De som är med i en grupp ser det som hör till gruppen, och den som har en länk du delar ser den utgiften eller din profil. Ingen ser din e-postadress.
 > - Användningsstatistik och kraschrapporter innehåller inga namn eller belopp. Med ett konto kopplas statistiken till kontots id. Vi använder inget reklam-id, och du stänger av statistiken i Profil.
 > - Vi säljer inte data. Du raderar ditt konto och dina data direkt i appen.
 
@@ -24,9 +24,12 @@ Den följer Brasiliens allmänna dataskyddslag (lag 13.709/2018, LGPD). Genom at
 - **Profil:** ditt namn, ett foto (valfritt) och din avatarfärg.
 - **Grupper och utgifter:** gruppens namn och valuta; varje utgifts beskrivning, belopp, datum, kategori, vem som betalade och hur den delades upp; artiklar, kommentarer och bifogade foton.
 - **Betalningar** som du registrerar mellan medlemmar.
-- **Betalningsnycklar** som du sparar: en Pix-nyckel och en Bitcoin-adress.
+- **Betalningsnycklar** som du sparar för att ta emot betalningar: en Pix-nyckel och en Bitcoin-adress.
+- **Betalsätt** som du betalar med (ett kredit- eller betalkort, Pix, en banköverföring, Bitcoin, kontanter eller något annat): deras namn, typ och färg, aldrig ett korts nummer, och vilket du betalade varje utgift med.
 - **Inkomster**, bara om du delar upp ”Efter inkomst”.
 - **Personer du lägger till** i en grupp innan de har appen, under det namn du ger dem.
+- **Kommentarer** som du lämnar under ditt namn på en utgift som någon har delat med dig via länk.
+- **Meddelanden till supporten** som du skickar via e-post från Profil › ”Kontakta support”. Appen lägger till sin version, plattformen, sitt språk och kontotypen, aldrig ditt kontos id.
 
 ### Ditt konto
 
@@ -52,17 +55,24 @@ Appen är **offline först**: det du lägger till sparas i en databas på själv
 >
 > Fotot skickas till vår server och läses av en AI-modell från Anthropic (Claude), som returnerar artiklarna, priserna och totalsumman. Vi behåller inte fotot efter att det har lästs: det finns bara kvar på utgiften om du bifogar det. Enligt Anthropics kommersiella villkor används detta innehåll inte för att träna modeller.
 
+> **Bjud in från kontakter**
+>
+> På Android, iPhone, iPad och Mac läser appen telefonens kontakter, bara efter att du har tillåtit det, för att visa dem när du bjuder in någon till en grupp. De stannar på enheten: inget namn eller nummer skickas till vår server.
+
 ## Vad vi använder dem till {#use}
 
 | Ändamål | Uppgifter | Rättslig grund (LGPD) |
 | --- | --- | --- |
 | Lagra, synkronisera och visa för gruppen | Profil, grupper, utgifter, betalningar, betalningsnycklar | Fullgörande av avtal (art. 7, V) |
+| Spara dina betalsätt på dina enheter | Betalsätt och de utgifter som betalats med vart och ett | Fullgörande av avtal |
+| Visa det du delar via länk | Den delade utgiften, eller ditt namn och foto | Fullgörande av avtal |
 | Logga in och återställa åtkomst | Anonymt id, återställningskod, Google- eller Apple-konto | Fullgörande av avtal |
 | Läsa kvitton | Kvittots foto, på din begäran | Fullgörande av avtal |
 | Skicka aviseringar | Enhetens token, händelser i grupper | Fullgörande av avtal; du väljer vilka i Profil › Aviseringar |
 | Förbättra appen | Användningsstatistik | Berättigat intresse (art. 7, IX); du invänder genom att stänga av ”Dela användningsdata” i Profil |
 | Åtgärda krascher | Kraschrapporter | Berättigat intresse (art. 7, IX); de följer inte den inställningen, och du invänder genom att skriva till oss |
 | Säkerhet och förebyggande av missbruk | Anslutningsuppgifter | Berättigat intresse |
+| Svara på supportärenden | Ditt meddelande och det som appen lägger till | Fullgörande av avtal |
 | Följa lagen | Det som skyldigheten kräver | Rättslig förpliktelse (art. 7, II) |
 
 Vi säljer inte personuppgifter, använder dem inte för reklam och bygger inga beteendeprofiler av dig.
@@ -71,7 +81,12 @@ Vi säljer inte personuppgifter, använder dem inte för reklam och bygger inga 
 
 ### De som är med i din grupp
 
-Alla i en grupp ser varje medlems namn, foto och färg; gruppens utgifter, artiklar, kommentarer, foton och betalningar; och de betalningsnycklar en medlem visar för att få betalt. **Ingen i gruppen ser din e-postadress.**
+Alla i en grupp ser varje medlems namn, foto och färg; gruppens utgifter, artiklar, kommentarer, foton och betalningar; och de betalningsnycklar en medlem visar för att få betalt. **Ingen i gruppen ser din e-postadress**, och inte heller dina betalsätt: bara du ser dem, på dina egna enheter.
+
+### Den som har en länk du delar
+
+- **Dela utgift** skapar en länk till en utgift. Med ”Bara de som är med i utgiften” kan bara de som är med i den öppna den. Med ”Alla med länken” ser den som har länken utgiften (dess beskrivning, belopp, datum, kategori och gruppens namn, vem som betalade och hur den delades upp, med namn) med dess foton och kommentarer, och alla som är inloggade i appen kan kommentera den. Förhandsvisningen som en chattapp skapar av länken visar beskrivningen, beloppet och vem som betalade. ”Stäng av länken”, i Dela utgift, gör att länken slutar fungera.
+- **Dela profil** skapar en länk till din profil: den som har den ser ditt namn och foto, även i länkens förhandsvisning.
 
 ### De som arbetar för oss
 
@@ -97,8 +112,9 @@ Några av dessa leverantörer lagrar eller behandlar uppgifter utanför Brasilie
 
 - Så länge ditt konto finns sparar vi det som appen behöver för att fungera.
 - **Logga ut** raderar enhetens kopia. Med Google eller Apple finns dina data kvar på servern till nästa gång du loggar in.
-- **Utan konto** rensar ”Radera profilen och logga ut” enheten, och din återställningskod fortsätter att fungera. För att även radera det som finns på servern kontaktar du oss (avsnitt 12).
-- **”Radera konto och data”**, i Profil, raderar på en gång din profil, ditt foto, dina betalningsnycklar och din återställningskod, och återkallar den åtkomst som Apple har gett. Utgifter som du har lagt till i grupper med andra personer finns kvar där för gruppen, utan ditt namn, som ”Tidigare medlem”.
+- **Utan konto** rensar ”Radera profilen och logga ut” enheten, och din återställningskod fortsätter att fungera i 30 dagar. För att radera det som finns på servern direkt använder du ”Radera konto och data”.
+- **Ett konto utan Google eller Apple raderas efter 30 dagar utan användning:** när ingen av dess enheter har synkroniserat på 30 dagar raderar servern det på samma sätt som ”Radera konto och data”, och dess återställningskod slutar fungera.
+- **”Radera konto och data”**, i Profil, raderar på en gång din profil, ditt foto, dina betalningsnycklar, dina betalsätt och din återställningskod, och återkallar den åtkomst som Apple har gett. Utgifter som du har lagt till i grupper med andra personer finns kvar där för gruppen, utan ditt namn, som ”Tidigare medlem”.
 - Användningsdata som är kopplade till en enhet finns kvar i Google Analytics i upp till 14 månader. Därefter återstår bara sammanställda siffror, utan något som identifierar någon. När ditt konto har raderats leder id:t de bär inte längre till dig.
 - Kraschrapporter sparas i upp till 90 dagar och raderas sedan.
 
@@ -120,7 +136,7 @@ Mycket av detta gör du i själva appen: redigerar din profil, raderar en betaln
 
 Uppgifterna överförs krypterade (HTTPS). På servern ser åtkomstregler till att varje person bara kan läsa de grupper hen är med i. Inget system är felfritt, men vi tar varje incident på allvar och meddelar dig och ANPD när lagen kräver det.
 
-Din återställningskod fungerar som ett lösenord: förvara den på ett säkert ställe och dela den inte. På iPhone, iPad och Mac sparar appen den i appen Lösenord.
+Din återställningskod, 12 ord, fungerar som ett lösenord: förvara den på ett säkert ställe och dela den inte. Vi sparar inte orden, bara ett fingeravtryck av dem som inte kan göras om till orden igen. På iPhone, iPad och Mac sparar appen den i appen Lösenord.
 
 ## Barn {#children}
 

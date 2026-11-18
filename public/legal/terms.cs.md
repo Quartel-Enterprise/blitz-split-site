@@ -1,12 +1,12 @@
 ---
 title: Podmínky služby
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **Ve zkratce**
 >
 > - Aplikace Blitz Split vede účty skupiny. S penězi nehýbe.
-> - Používáš ji bez účtu. Uchovej si obnovovací kód: bez něj ti přístup vrátit nejde.
+> - Používáš ji bez účtu. Uchovej si obnovovací kód: bez něj ti přístup vrátit nejde. Bez Google nebo Apple se účet, který se 30 dní nepoužívá, smaže.
 > - Co přidáš, je tvoje a odpovídáš za to.
 > - Než uložíš, zkontroluj, co čtečka účtenek vyplnila.
 
@@ -30,6 +30,7 @@ Zůstatky jsou výsledkem toho, co skupina přidala. Nejsou fakturou, úvěrový
 
 - Aplikaci můžeš používat bez účtu. Propojení účtu Google nebo Apple je volitelné a slouží k synchronizaci a obnovení přístupu.
 - Bez účtu Google nebo Apple je **tvůj obnovovací kód jedinou cestou zpět k tvému účtu**. Pokud ho ztratíš, přístup ti vrátit nemůžeme.
+- Účet bez Google nebo Apple se **smaže i s daty po 30 dnech nepoužívání**: když se žádné z jeho zařízení 30 dní nesynchronizuje. Jeho obnovovací kód pak přestane fungovat. Aby zůstal zachován, propoj Google nebo Apple.
 - Odpovídáš za to, co se děje s tvým kódem a s účty, které propojíš. Kód s nikým nesdílej.
 - Používej jméno, které tvoje skupina pozná, a nevydávej se za někoho jiného.
 
@@ -37,7 +38,7 @@ Zůstatky jsou výsledkem toho, co skupina přidala. Nejsou fakturou, úvěrový
 
 Výdaje, komentáře, fotky a klíče, které přidáš, zůstávají tvoje. Aby aplikace fungovala, udělíš nám bezplatnou, celosvětovou, nevýhradní licenci tento obsah ukládat, kopírovat, synchronizovat a ukazovat lidem ve tvých skupinách, a to po dobu, kdy ve službě existuje.
 
-Přidávej jen lidi, fotky a informace, které máš právo sdílet. Všichni ve skupině vidí, co se do ní přidá.
+Přidávej jen lidi, fotky a informace, které máš právo sdílet. Všichni ve skupině vidí, co se do ní přidá, a kdo má odkaz, který sdílíš, vidí, co odkaz otevírá ([Zásady ochrany osobních údajů](/privacy#sees)). Odkaz na výdaj s volbou „Kdokoli s odkazem“ sdílej jen s lidmi, kteří ten výdaj smějí vidět.
 
 ## Přijatelné používání {#rules}
 
@@ -82,6 +83,7 @@ Děláme, co můžeme, aby aplikace fungovala správně a byla online, ale posky
 
 - dohody a platby mezi členy skupiny;
 - data ztracená spolu s obnovovacím kódem nebo se zařízením dřív, než se synchronizovala;
+- data účtu bez Google nebo Apple, smazaná po 30 dnech nepoužívání;
 - chyby v datech, která lidé přidali nebo která byla přečtena z účtenek a uložena bez kontroly.
 
 Nic z toho neomezuje práva, která ti dává brazilský zákoník na ochranu spotřebitele.

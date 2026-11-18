@@ -1,13 +1,13 @@
 ---
 title: Política de privacidade
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 
 > **Em resumo**
 >
-> - Você usa o app sem criar conta. Google e Apple são opcionais.
+> - Você usa o app sem criar conta. Google e Apple são opcionais, mas sem eles seus dados são apagados depois de 30 dias sem uso.
 > - O que você lança fica primeiro no seu aparelho e só vai ao servidor para sincronizar e chegar ao seu grupo.
-> - Quem está no grupo vê o que é do grupo. Ninguém vê o seu e-mail.
+> - Quem está no grupo vê o que é do grupo, e quem tem um link que você compartilha vê aquela conta ou o seu perfil. Ninguém vê o seu e-mail.
 > - Métricas de uso e relatórios de falha não levam nomes nem valores. Com uma conta, as métricas ficam ligadas ao ID dela. Não usamos ID de publicidade, e você desliga as métricas no Perfil.
 > - Não vendemos dados. Você exclui sua conta e seus dados pelo próprio app.
 
@@ -24,9 +24,12 @@ Ela segue a Lei Geral de Proteção de Dados (Lei 13.709/2018, a LGPD). Ao usar 
 - **Perfil:** nome, foto (opcional) e a cor do seu avatar.
 - **Grupos e contas:** nome e moeda do grupo; descrição, valor, data, categoria, quem pagou e como foi dividido; itens, comentários e fotos anexadas.
 - **Pagamentos** que você registra entre os membros.
-- **Chaves de pagamento** que você cadastra: chave Pix e endereço Bitcoin.
+- **Chaves de pagamento** que você cadastra para receber: chave Pix e endereço Bitcoin.
+- **Formas de pagamento** com que você paga (cartão de crédito ou débito, Pix, transferência bancária, Bitcoin, dinheiro ou outra): nome, tipo e cor, nunca o número de um cartão, e com qual delas você pagou cada conta.
 - **Rendas**, só se você usar a divisão “Por renda”.
 - **Pessoas que você adiciona** a um grupo antes de elas terem o app, pelo nome que você der.
+- **Comentários** que você deixa numa conta que alguém compartilhou com você por link, com o seu nome.
+- **Mensagens ao suporte** que você envia em Perfil › “Contatar suporte”, por e-mail. O app junta a versão dele, a plataforma, o idioma e o tipo de conta, nunca o ID da sua conta.
 
 ### Sua conta
 
@@ -52,17 +55,24 @@ O app é **offline primeiro**: o que você lança fica salvo num banco de dados 
 >
 > A foto vai para o nosso servidor e é lida por um modelo de inteligência artificial da Anthropic (Claude), que devolve os itens, os preços e o total. Não guardamos a foto depois da leitura: ela só fica na conta se você a anexar. Pelos termos comerciais da Anthropic, esse conteúdo não é usado para treinar modelos.
 
+> **Convidar da agenda**
+>
+> No Android, iPhone, iPad e Mac, o app lê os contatos do seu celular, só depois que você permitir, para listá-los quando você convida alguém para um grupo. Eles ficam no aparelho: nenhum nome ou número vai para o nosso servidor.
+
 ## Para que usamos {#uso}
 
 | Finalidade | Dados | Base legal (LGPD) |
 | --- | --- | --- |
 | Guardar, sincronizar e mostrar ao grupo | Perfil, grupos, contas, pagamentos, chaves de pagamento | Execução de contrato (art. 7º, V) |
+| Manter suas formas de pagamento nos seus aparelhos | Formas de pagamento e as contas pagas com cada uma | Execução de contrato |
+| Mostrar o que você compartilha por link | A conta compartilhada, ou o seu nome e a sua foto | Execução de contrato |
 | Entrar e recuperar o acesso | ID anônimo, código de recuperação, conta Google ou Apple | Execução de contrato |
 | Ler recibos | Foto do recibo, a seu pedido | Execução de contrato |
 | Enviar notificações | Token do aparelho, eventos do grupo | Execução de contrato; você escolhe quais em Perfil › Notificações |
 | Melhorar o app | Métricas de uso | Legítimo interesse (art. 7º, IX); você se opõe desligando “Compartilhar dados de uso” no Perfil |
 | Corrigir falhas | Relatórios de falha | Legítimo interesse (art. 7º, IX); eles não seguem esse ajuste, e você se opõe escrevendo para nós |
 | Segurança e prevenção de abuso | Dados de conexão | Legítimo interesse |
+| Responder ao suporte | Sua mensagem e o que o app junta a ela | Execução de contrato |
 | Cumprir a lei | O que a obrigação exigir | Obrigação legal (art. 7º, II) |
 
 Não vendemos dados pessoais, não os usamos para publicidade e não criamos perfis de comportamento sobre você.
@@ -71,7 +81,12 @@ Não vendemos dados pessoais, não os usamos para publicidade e não criamos per
 
 ### As pessoas do grupo
 
-Quem está num grupo vê o nome, a foto e a cor de cada membro; as contas, os itens, os comentários, as fotos e os pagamentos daquele grupo; e as chaves de pagamento que um membro mostrar para receber. **Ninguém do grupo vê o seu e-mail.**
+Quem está num grupo vê o nome, a foto e a cor de cada membro; as contas, os itens, os comentários, as fotos e os pagamentos daquele grupo; e as chaves de pagamento que um membro mostrar para receber. **Ninguém do grupo vê o seu e-mail**, nem as suas formas de pagamento: só você as vê, nos seus próprios aparelhos.
+
+### Quem tem um link que você compartilha
+
+- **Compartilhar conta** cria um link para uma conta. Com “Só quem está na conta”, só as pessoas dela o abrem. Com “Qualquer pessoa com o link”, quem tiver o link vê a conta (descrição, valor, data, categoria e o nome do grupo, quem pagou e como foi dividido, por nome) com as fotos e os comentários dela, e qualquer pessoa que tenha entrado no app pode comentar nela. A prévia que um app de mensagens mostra a partir do link traz a descrição, o valor e quem pagou. “Desativar link”, em Compartilhar conta, faz o link parar de funcionar.
+- **Compartilhar perfil** cria um link para o seu perfil: quem o tiver vê o seu nome e a sua foto, também na prévia do link.
 
 ### Quem trabalha para nós
 
@@ -97,8 +112,9 @@ Alguns desses provedores guardam ou processam dados fora do Brasil, principalmen
 
 - Enquanto sua conta existir, guardamos o que o app precisa para funcionar.
 - **Sair** apaga a cópia do aparelho. Com Google ou Apple, seus dados continuam no servidor para quando você entrar de novo.
-- **Sem conta**, “Apagar perfil e sair” limpa o aparelho e o código de recuperação continua valendo. Para apagar também o que está no servidor, fale com a gente (seção 12).
-- **“Excluir conta e dados”**, em Perfil, apaga na hora seu perfil, sua foto, suas chaves de pagamento e seu código de recuperação, e revoga o acesso dado pela Apple. As contas que você lançou em grupos com outras pessoas continuam lá para o grupo, sem o seu nome, como “Ex-membro”.
+- **Sem conta**, “Apagar perfil e sair” limpa o aparelho e o código de recuperação continua valendo por 30 dias. Para apagar na hora o que está no servidor, use “Excluir conta e dados”.
+- **Uma conta sem Google ou Apple é excluída depois de 30 dias sem uso:** quando nenhum dos aparelhos dela sincroniza por 30 dias, o servidor a exclui como “Excluir conta e dados” faz, e o código de recuperação dela deixa de valer.
+- **“Excluir conta e dados”**, em Perfil, apaga na hora seu perfil, sua foto, suas chaves de pagamento, suas formas de pagamento e seu código de recuperação, e revoga o acesso dado pela Apple. As contas que você lançou em grupos com outras pessoas continuam lá para o grupo, sem o seu nome, como “Ex-membro”.
 - Os dados de uso ligados a um aparelho ficam no Google Analytics por até 14 meses. Depois disso, só restam números agregados, sem nada que identifique alguém. Quando a sua conta é excluída, o ID que elas levam deixa de apontar para você.
 - Os relatórios de falha ficam guardados por até 90 dias e depois são apagados.
 
@@ -120,7 +136,7 @@ Boa parte disso você faz no próprio app: editar o perfil, apagar uma chave de 
 
 Os dados viajam com criptografia (HTTPS). No servidor, regras de acesso garantem que cada pessoa leia só os grupos de que faz parte. Nenhum sistema é infalível, mas tratamos qualquer incidente com seriedade e avisamos você e a ANPD quando a lei pedir.
 
-O código de recuperação vale como uma senha: guarde-o num lugar seguro e não o compartilhe. No iPhone, iPad e Mac, o app o salva no app Senhas.
+O código de recuperação, de 12 palavras, vale como uma senha: guarde-o num lugar seguro e não o compartilhe. Não guardamos as palavras, só uma impressão digital delas que não permite reconstituí-las. No iPhone, iPad e Mac, o app o salva no app Senhas.
 
 ## Crianças {#criancas}
 

@@ -1,12 +1,12 @@
 ---
 title: Warunki korzystania
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **W skrócie**
 >
 > - Blitz Split prowadzi rozliczenia grupy. Nie przesyła pieniędzy.
-> - Korzystasz bez konta. Zachowaj kod odzyskiwania: bez niego nie da się przywrócić ci dostępu.
+> - Korzystasz bez konta. Zachowaj kod odzyskiwania: bez niego nie da się przywrócić ci dostępu. Bez Google lub Apple konto nieużywane przez 30 dni jest usuwane.
 > - To, co dodajesz, należy do ciebie i ty za to odpowiadasz.
 > - Zanim zapiszesz, sprawdź, co uzupełnił odczyt paragonu.
 
@@ -30,6 +30,7 @@ Salda wynikają z tego, co dodała grupa. Nie są wezwaniem do zapłaty, papiere
 
 - Możesz korzystać z aplikacji bez konta. Połączenie z Google lub Apple jest opcjonalne i służy do synchronizacji oraz odzyskiwania dostępu.
 - Bez Google lub Apple **kod odzyskiwania to jedyny sposób, by wrócić na twoje konto**. Jeśli go zgubisz, nie będziemy w stanie przywrócić ci dostępu.
+- Konto bez Google lub Apple jest **usuwane wraz z danymi po 30 dniach nieużywania**: gdy żadne z jego urządzeń nie synchronizuje się przez 30 dni. Jego kod odzyskiwania przestaje wtedy działać. Połącz Google lub Apple, aby je zachować.
 - Odpowiadasz za to, co zostanie zrobione z twoim kodem i z kontami, które połączysz. Nie udostępniaj kodu.
 - Używaj imienia, które twoja grupa rozpozna, i nie podszywaj się pod nikogo.
 
@@ -37,7 +38,7 @@ Salda wynikają z tego, co dodała grupa. Nie są wezwaniem do zapłaty, papiere
 
 Wydatki, komentarze, zdjęcia i klucze, które dodajesz, pozostają twoje. Aby aplikacja mogła działać, udzielasz nam bezpłatnej, światowej, niewyłącznej licencji na przechowywanie, kopiowanie, synchronizowanie i pokazywanie tych treści osobom z twoich grup, dopóki istnieją w usłudze.
 
-Dodawaj tylko osoby, zdjęcia i informacje, którymi masz prawo się dzielić. Każdy w grupie widzi to, co zostało do niej dodane.
+Dodawaj tylko osoby, zdjęcia i informacje, którymi masz prawo się dzielić. Każdy w grupie widzi to, co zostało do niej dodane, a każdy, kto ma udostępniony przez ciebie link, widzi to, co ten link otwiera ([Polityka prywatności](/privacy#kto-widzi)). Link do wydatku z opcją „Każdy, kto ma link” udostępniaj tylko osobom, które mogą widzieć ten wydatek.
 
 ## Dozwolone korzystanie {#zasady}
 
@@ -82,6 +83,7 @@ Robimy wszystko, by aplikacja działała poprawnie i była dostępna, ale udost�
 
 - ustalenia i płatności między członkami grupy;
 - dane utracone wraz z kodem odzyskiwania lub z urządzeniem, zanim zostały zsynchronizowane;
+- dane konta bez Google lub Apple, usunięte po 30 dniach nieużywania;
 - błędy w danych dodanych przez użytkowników albo odczytanych z paragonów i zapisanych bez sprawdzenia.
 
 Nic w tych warunkach nie ogranicza praw, które przysługują ci na mocy brazylijskiego Kodeksu ochrony konsumentów.
