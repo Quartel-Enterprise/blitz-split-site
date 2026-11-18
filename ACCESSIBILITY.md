@@ -1,7 +1,7 @@
 # Accessibility
 
 The site at [blitzsplit.com](https://blitzsplit.com) is where many people meet Blitz Split (**Bora Rachar** in
-Portuguese) for the first time, and where they read its privacy policy and terms, so it aims to work for everyone,
+Brazil) for the first time, and where they read its privacy policy and terms, so it aims to work for everyone,
 whatever the device, the screen size or the way they use it.
 
 ## Supported environments

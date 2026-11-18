@@ -1,6 +1,6 @@
 # Contributing to the Blitz Split site
 
-Thanks for wanting to help with the site of Blitz Split (**Bora Rachar** in Portuguese)! Bug reports, ideas,
+Thanks for wanting to help with the site of Blitz Split (**Bora Rachar** in Brazil)! Bug reports, ideas,
 translations and code are all welcome.
 
 By contributing, you agree to follow the [code of conduct](CODE_OF_CONDUCT.md) and that your contribution is used

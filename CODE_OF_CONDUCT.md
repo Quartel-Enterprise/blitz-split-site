@@ -1,6 +1,6 @@
 # Code of conduct
 
-Blitz Split (Bora Rachar in Portuguese) is built in the open, and everyone who takes part in it, in issues, pull
+Blitz Split (Bora Rachar in Brazil) is built in the open, and everyone who takes part in it, in issues, pull
 requests, reviews and discussions, is expected to make that a welcoming place.
 
 ## Our pledge
