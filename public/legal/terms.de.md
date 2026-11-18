@@ -96,4 +96,4 @@ Diese Bedingungen unterliegen brasilianischem Recht. Für Streitigkeiten sind di
 
 Wenn sich diese Bedingungen ändern, aktualisieren wir das Datum oben und sagen dir, wenn die Änderung wichtig ist, in der App Bescheid, bevor sie gilt. Nutzt du die App danach weiter, nimmst du die neue Version an.
 
-Fragen: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Fragen: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

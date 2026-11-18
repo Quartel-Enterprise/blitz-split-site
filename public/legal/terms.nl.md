@@ -96,4 +96,4 @@ Op deze voorwaarden is het Braziliaanse recht van toepassing. Geschillen worden 
 
 Als deze voorwaarden veranderen, passen we de datum bovenaan aan en laten we het je, als de wijziging belangrijk is, in de app weten voordat die ingaat. Blijf je de app daarna gebruiken, dan aanvaard je de nieuwe versie.
 
-Vragen: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Vragen: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

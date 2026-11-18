@@ -96,4 +96,4 @@ Blitz Split과 Bora Rachar라는 이름, 아이콘, 앱의 디자인은 저희 �
 
 이 약관이 바뀌면 맨 위의 날짜를 업데이트하고, 중요한 변경이라면 시행 전에 앱에서 알려 드려요. 그 후에도 앱을 계속 사용하면 새 버전에 동의하는 것이에요.
 
-문의: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+문의: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

@@ -131,7 +131,7 @@ blitzsplit.com משתמש ב-Google Analytics כדי לספור ביקורים, 
 - לחזור מהסכמה ולהתנגד לעיבוד שמבוסס על אינטרס לגיטימי;
 - להגיש תלונה לרשות הלאומית להגנת מידע של ברזיל (ANPD).
 
-את רוב הדברים האלה אפשר לעשות באפליקציה עצמה: עריכת הפרופיל, מחיקת פרטי תשלום, מחיקת חשבון המשתמש. לכל השאר, אפשר לכתוב אל [quare.software@gmail.com](mailto:quare.software@gmail.com). אנו עונים תוך 15 יום.
+את רוב הדברים האלה אפשר לעשות באפליקציה עצמה: עריכת הפרופיל, מחיקת פרטי תשלום, מחיקת חשבון המשתמש. לכל השאר, אפשר לכתוב אל [appborarachar@gmail.com](mailto:appborarachar@gmail.com). אנו עונים תוך 15 יום.
 
 ## אבטחה {#security}
 
@@ -149,6 +149,6 @@ Blitz Split אינה מיועדת לילדים מתחת לגיל 13 ואינה �
 
 ## יצירת קשר {#contact}
 
-שאלות על מדיניות זו או בקשות לגבי המידע שלך: [quare.software@gmail.com](mailto:quare.software@gmail.com). זהו גם הערוץ של הממונה על הגנת המידע שלנו.
+שאלות על מדיניות זו או בקשות לגבי המידע שלך: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). זהו גם הערוץ של הממונה על הגנת המידע שלנו.
 
 בעלת השליטה במידע: PI Software LTDA (Quartel Enterprise).

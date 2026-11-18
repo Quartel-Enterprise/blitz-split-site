@@ -96,4 +96,4 @@ Ketentuan ini tunduk pada hukum Brasil. Setiap sengketa diselesaikan di pengadil
 
 Saat ketentuan ini berubah, kami memperbarui tanggal di bagian atas dan, jika perubahannya penting, memberitahumu di aplikasi sebelum perubahan itu berlaku. Jika kamu tetap memakai aplikasi setelah itu, berarti kamu menerima versi yang baru.
 
-Pertanyaan: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Pertanyaan: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

@@ -131,7 +131,7 @@ Nach der LGPD (Art. 18) kannst du:
 - eine Einwilligung widerrufen und einer Verarbeitung auf Grundlage berechtigten Interesses widersprechen;
 - dich bei der brasilianischen Datenschutzbehörde (ANPD) beschweren.
 
-Vieles davon erledigst du direkt in der App: dein Profil bearbeiten, Zahlungsdaten löschen, dein Konto löschen. Für alles andere schreib an [quare.software@gmail.com](mailto:quare.software@gmail.com). Wir antworten innerhalb von 15 Tagen.
+Vieles davon erledigst du direkt in der App: dein Profil bearbeiten, Zahlungsdaten löschen, dein Konto löschen. Für alles andere schreib an [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Wir antworten innerhalb von 15 Tagen.
 
 ## Sicherheit {#sicherheit}
 
@@ -149,6 +149,6 @@ Wenn sich diese Erklärung ändert, aktualisieren wir das Datum oben. Ist die Ä
 
 ## Kontakt {#kontakt}
 
-Fragen zu dieser Erklärung oder Anliegen zu deinen Daten: [quare.software@gmail.com](mailto:quare.software@gmail.com). Das ist auch der Kanal unseres Datenschutzbeauftragten.
+Fragen zu dieser Erklärung oder Anliegen zu deinen Daten: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Das ist auch der Kanal unseres Datenschutzbeauftragten.
 
 Verantwortlicher: PI Software LTDA (Quartel Enterprise).

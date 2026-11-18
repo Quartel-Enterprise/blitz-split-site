@@ -131,7 +131,7 @@ Enligt LGPD (art. 18) kan du:
 - återkalla samtycke och invända mot behandling som grundar sig på berättigat intresse;
 - klaga till Brasiliens nationella dataskyddsmyndighet (ANPD).
 
-Mycket av detta gör du i själva appen: redigerar din profil, raderar en betalningsnyckel, raderar ditt konto. För resten skriver du till [quare.software@gmail.com](mailto:quare.software@gmail.com). Vi svarar inom 15 dagar.
+Mycket av detta gör du i själva appen: redigerar din profil, raderar en betalningsnyckel, raderar ditt konto. För resten skriver du till [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Vi svarar inom 15 dagar.
 
 ## Säkerhet {#security}
 
@@ -149,6 +149,6 @@ När den här policyn ändras uppdaterar vi datumet högst upp. Om ändringen ä
 
 ## Kontakt {#contact}
 
-Frågor om den här policyn eller begäranden om dina uppgifter: [quare.software@gmail.com](mailto:quare.software@gmail.com). Det är också kanalen till vårt dataskyddsombud.
+Frågor om den här policyn eller begäranden om dina uppgifter: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Det är också kanalen till vårt dataskyddsombud.
 
 Personuppgiftsansvarig: PI Software LTDA (Quartel Enterprise).

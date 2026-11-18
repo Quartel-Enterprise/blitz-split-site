@@ -96,4 +96,4 @@ updated: 2026-11-17
 
 عند تغيير هذه الشروط، نحدّث التاريخ في الأعلى، وإن كان التغيير مهمًا، نخبرك في التطبيق قبل سريانه. استمرارك في استخدام التطبيق بعد ذلك يعني قبولك للنسخة الجديدة.
 
-الأسئلة: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+الأسئلة: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

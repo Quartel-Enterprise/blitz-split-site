@@ -96,4 +96,4 @@ Tyto podmínky se řídí právem Brazílie. Případné spory řeší soudy v m
 
 Když se tyto podmínky změní, aktualizujeme datum nahoře, a pokud je změna podstatná, dáme ti vědět v aplikaci dřív, než začne platit. Když budeš aplikaci používat i potom, přijímáš tím novou verzi.
 
-Dotazy: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Dotazy: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

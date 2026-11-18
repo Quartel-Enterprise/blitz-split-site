@@ -131,7 +131,7 @@ Potrivit LGPD (art. 18), poți:
 - să îți retragi consimțământul și să te opui prelucrării bazate pe interesul legitim;
 - să depui o plângere la Autoritatea Națională pentru Protecția Datelor din Brazilia (ANPD).
 
-Multe dintre acestea le faci chiar în aplicație: îți editezi profilul, ștergi o cheie de plată, îți ștergi contul. Pentru restul, scrie-ne la [quare.software@gmail.com](mailto:quare.software@gmail.com). Răspundem în 15 zile.
+Multe dintre acestea le faci chiar în aplicație: îți editezi profilul, ștergi o cheie de plată, îți ștergi contul. Pentru restul, scrie-ne la [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Răspundem în 15 zile.
 
 ## Securitate {#security}
 
@@ -149,6 +149,6 @@ Când această politică se schimbă, actualizăm data din partea de sus. Dacă 
 
 ## Contact {#contact}
 
-Întrebări despre această politică sau cereri privind datele tale: [quare.software@gmail.com](mailto:quare.software@gmail.com). Este și canalul responsabilului nostru cu protecția datelor.
+Întrebări despre această politică sau cereri privind datele tale: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Este și canalul responsabilului nostru cu protecția datelor.
 
 Operator: PI Software LTDA (Quartel Enterprise).

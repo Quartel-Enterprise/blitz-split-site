@@ -131,7 +131,7 @@ Theo LGPD (điều 18), bạn có thể:
 - rút lại sự đồng ý và phản đối việc xử lý dựa trên lợi ích hợp pháp;
 - khiếu nại với Cơ quan Bảo vệ Dữ liệu Quốc gia của Brazil (ANPD).
 
-Bạn thực hiện phần lớn những điều này ngay trong ứng dụng: sửa hồ sơ, xóa một khóa nhận thanh toán, xóa tài khoản. Với những việc còn lại, hãy viết thư đến [quare.software@gmail.com](mailto:quare.software@gmail.com). Chúng tôi trả lời trong vòng 15 ngày.
+Bạn thực hiện phần lớn những điều này ngay trong ứng dụng: sửa hồ sơ, xóa một khóa nhận thanh toán, xóa tài khoản. Với những việc còn lại, hãy viết thư đến [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Chúng tôi trả lời trong vòng 15 ngày.
 
 ## Bảo mật {#security}
 
@@ -149,6 +149,6 @@ Khi chính sách này thay đổi, chúng tôi cập nhật ngày ở đầu tra
 
 ## Liên hệ {#contact}
 
-Câu hỏi về chính sách này hoặc yêu cầu về dữ liệu của bạn: [quare.software@gmail.com](mailto:quare.software@gmail.com). Đây cũng là kênh liên hệ của nhân viên bảo vệ dữ liệu của chúng tôi.
+Câu hỏi về chính sách này hoặc yêu cầu về dữ liệu của bạn: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Đây cũng là kênh liên hệ của nhân viên bảo vệ dữ liệu của chúng tôi.
 
 Bên kiểm soát: PI Software LTDA (Quartel Enterprise).

@@ -96,4 +96,4 @@ Các điều khoản này tuân theo pháp luật Brazil. Mọi tranh chấp đ�
 
 Khi các điều khoản này thay đổi, chúng tôi cập nhật ngày ở đầu trang và, nếu thay đổi quan trọng, báo cho bạn trong ứng dụng trước khi thay đổi có hiệu lực. Việc tiếp tục sử dụng ứng dụng sau đó có nghĩa là bạn chấp nhận phiên bản mới.
 
-Câu hỏi: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Câu hỏi: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

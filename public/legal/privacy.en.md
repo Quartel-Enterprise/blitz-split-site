@@ -131,7 +131,7 @@ Under the LGPD (art. 18), you can:
 - withdraw consent and object to processing based on legitimate interest;
 - complain to Brazil's National Data Protection Authority (ANPD).
 
-You do much of this in the app itself: edit your profile, delete a payment key, delete your account. For the rest, write to [quare.software@gmail.com](mailto:quare.software@gmail.com). We answer within 15 days.
+You do much of this in the app itself: edit your profile, delete a payment key, delete your account. For the rest, write to [appborarachar@gmail.com](mailto:appborarachar@gmail.com). We answer within 15 days.
 
 ## Security {#security}
 
@@ -149,6 +149,6 @@ When this policy changes, we update the date at the top. If the change matters, 
 
 ## Contact {#contact}
 
-Questions about this policy or requests about your data: [quare.software@gmail.com](mailto:quare.software@gmail.com). It is also the channel of our data protection officer.
+Questions about this policy or requests about your data: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). It is also the channel of our data protection officer.
 
 Controller: PI Software LTDA (Quartel Enterprise).

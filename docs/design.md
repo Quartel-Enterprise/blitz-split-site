@@ -180,7 +180,7 @@ points at, which must show a way to reach the developer: the legal pages' header
 asking for the device and the app's version, and links to "What's new", the privacy policy and the terms. It promises
 nothing the rest of the site doesn't: no response time, no phone.
 
-The address is quare.software@gmail.com, the one the privacy policy and the terms publish (`public/legal/*.md`):
+The address is appborarachar@gmail.com, the one the privacy policy and the terms publish (`public/legal/*.md`):
 change it there, on Support, in the footers and in `public/llms.txt` together. `npm run check:translations` fails, as
 CI does, when one of them has another address ([ci.md](ci.md#translations)).
 

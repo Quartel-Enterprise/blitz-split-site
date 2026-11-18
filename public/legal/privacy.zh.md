@@ -131,7 +131,7 @@ blitzsplit.com使用Google Analytics统计访问量，它与应用使用的是�
 - 撤回同意，并反对基于正当利益的处理；
 - 向巴西国家数据保护局（ANPD）投诉。
 
-其中很多事你可以直接在应用中完成：编辑你的个人资料、删除收款密钥、删除你的账号。其他事项请写信至[quare.software@gmail.com](mailto:quare.software@gmail.com)。我们会在15天内答复。
+其中很多事你可以直接在应用中完成：编辑你的个人资料、删除收款密钥、删除你的账号。其他事项请写信至[appborarachar@gmail.com](mailto:appborarachar@gmail.com)。我们会在15天内答复。
 
 ## 安全 {#security}
 
@@ -149,6 +149,6 @@ Blitz Split并非为13岁以下的儿童设计，也不会在知情的情况下�
 
 ## 联系方式 {#contact}
 
-有关本政策的问题或关于你的数据的请求：[quare.software@gmail.com](mailto:quare.software@gmail.com)。这也是我们数据保护官的联系渠道。
+有关本政策的问题或关于你的数据的请求：[appborarachar@gmail.com](mailto:appborarachar@gmail.com)。这也是我们数据保护官的联系渠道。
 
 控制者：PI Software LTDA（Quartel Enterprise）。

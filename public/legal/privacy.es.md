@@ -131,7 +131,7 @@ Según la LGPD (art. 18), puedes:
 - retirar un consentimiento y oponerte a un tratamiento basado en el interés legítimo;
 - reclamar ante la Autoridad Nacional de Protección de Datos de Brasil (ANPD).
 
-Buena parte de esto lo haces en la propia app: editar tu perfil, borrar una clave de pago, eliminar tu cuenta. Para lo demás, escribe a [quare.software@gmail.com](mailto:quare.software@gmail.com). Respondemos en un plazo de 15 días.
+Buena parte de esto lo haces en la propia app: editar tu perfil, borrar una clave de pago, eliminar tu cuenta. Para lo demás, escribe a [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Respondemos en un plazo de 15 días.
 
 ## Seguridad {#seguridad}
 
@@ -149,6 +149,6 @@ Cuando esta política cambie, actualizamos la fecha de arriba. Si el cambio es i
 
 ## Contacto {#contacto}
 
-Dudas sobre esta política o pedidos sobre tus datos: [quare.software@gmail.com](mailto:quare.software@gmail.com). Es también el canal de nuestro encargado de protección de datos.
+Dudas sobre esta política o pedidos sobre tus datos: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Es también el canal de nuestro encargado de protección de datos.
 
 Responsable: PI Software LTDA (Quartel Enterprise).

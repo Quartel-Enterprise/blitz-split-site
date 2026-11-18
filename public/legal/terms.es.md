@@ -96,4 +96,4 @@ Estos términos se rigen por las leyes de Brasil. Cualquier disputa se resuelve 
 
 Cuando estos términos cambien, actualizamos la fecha de arriba y, si el cambio es importante, te avisamos en la app antes de que entre en vigor. Seguir usando la app después significa aceptar la nueva versión.
 
-Dudas: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Dudas: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

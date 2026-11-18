@@ -96,4 +96,4 @@ These terms follow the laws of Brazil. Any dispute is settled in the courts of y
 
 When these terms change, we update the date at the top and, if the change matters, tell you in the app before it takes effect. Keeping on using the app after that means you accept the new version.
 
-Questions: [quare.software@gmail.com](mailto:quare.software@gmail.com).
+Questions: [appborarachar@gmail.com](mailto:appborarachar@gmail.com).

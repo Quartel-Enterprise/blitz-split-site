@@ -131,7 +131,7 @@ Pela LGPD (art. 18), você pode:
 - revogar um consentimento e se opor a um tratamento feito por legítimo interesse;
 - reclamar à Autoridade Nacional de Proteção de Dados (ANPD).
 
-Boa parte disso você faz no próprio app: editar o perfil, apagar uma chave de pagamento, excluir a conta. Para o resto, escreva para [quare.software@gmail.com](mailto:quare.software@gmail.com). Respondemos em até 15 dias.
+Boa parte disso você faz no próprio app: editar o perfil, apagar uma chave de pagamento, excluir a conta. Para o resto, escreva para [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Respondemos em até 15 dias.
 
 ## Segurança {#seguranca}
 
@@ -149,6 +149,6 @@ Quando esta política mudar, atualizamos a data no topo. Se a mudança for impor
 
 ## Contato {#contato}
 
-Dúvidas sobre esta política ou pedidos sobre os seus dados: [quare.software@gmail.com](mailto:quare.software@gmail.com). É o canal do encarregado pelo tratamento de dados.
+Dúvidas sobre esta política ou pedidos sobre os seus dados: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). É o canal do encarregado pelo tratamento de dados.
 
 Controladora: PI Software LTDA (Quartel Enterprise).

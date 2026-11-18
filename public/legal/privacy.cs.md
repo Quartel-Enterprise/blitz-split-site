@@ -131,7 +131,7 @@ Podle LGPD (čl. 18) můžeš:
 - odvolat souhlas a vznést námitku proti zpracování založenému na oprávněném zájmu;
 - podat stížnost u brazilského Národního úřadu pro ochranu osobních údajů (ANPD).
 
-Velkou část z toho uděláš přímo v aplikaci: upravíš profil, smažeš platební klíč, smažeš účet. Se vším ostatním napiš na [quare.software@gmail.com](mailto:quare.software@gmail.com). Odpovíme do 15 dnů.
+Velkou část z toho uděláš přímo v aplikaci: upravíš profil, smažeš platební klíč, smažeš účet. Se vším ostatním napiš na [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Odpovíme do 15 dnů.
 
 ## Zabezpečení {#security}
 
@@ -149,6 +149,6 @@ Když se tyto zásady změní, aktualizujeme datum nahoře. Pokud je změna pods
 
 ## Kontakt {#contact}
 
-Dotazy k těmto zásadám nebo žádosti týkající se tvých údajů: [quare.software@gmail.com](mailto:quare.software@gmail.com). Je to také kontakt na našeho pověřence pro ochranu osobních údajů.
+Dotazy k těmto zásadám nebo žádosti týkající se tvých údajů: [appborarachar@gmail.com](mailto:appborarachar@gmail.com). Je to také kontakt na našeho pověřence pro ochranu osobních údajů.
 
 Správce: PI Software LTDA (Quartel Enterprise).
