@@ -1,5 +1,5 @@
 {
-  // A second, tiny Worker, apart from the site's: it only redirects the two extra domains to blitzsplit.com.
+  // A second, tiny Worker, apart from the site's: it only redirects the three extra domains to blitzsplit.com.
   // Deploy with `npm run deploy:redirect` (docs/development.md).
   "name": "blitzsplit-redirect",
   "main": "index.js",
