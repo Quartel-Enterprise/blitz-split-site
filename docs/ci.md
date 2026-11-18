@@ -49,10 +49,11 @@ pass again. A failed check leaves the pull request open with the label on; re-ru
 until they are marked ready, and pull requests from forks are never merged.
 
 `main`'s ruleset ("Protect main") only blocks deleting the branch and force pushing to it; it requires no check, no
-review and no resolved conversation, so the workflow itself holds the merge for review conversations: when everything is green and a
-conversation is still open, it removes the label and comments on the pull request. Fix each finding, or reply with why
-the code stays as it is, resolve the conversation, then add the label again (resolving one starts no workflow). A
-merge GitHub refuses with everything green (a conflict with `main`) also removes the label, with a comment.
+review and no resolved conversation, so the workflow itself holds the merge for review conversations: when everything
+is green and a conversation is still open, it removes the label and comments on the pull request. Fix each finding, or
+reply with why the code stays as it is, resolve the conversation, then add the label again (resolving one starts no
+workflow). A merge GitHub refuses with everything green (a conflict with `main`) also removes the label, with a
+comment.
 
 The merge uses the `MERGE_WHEN_GREEN_TOKEN` secret, not `GITHUB_TOKEN`: a merge made with `GITHUB_TOKEN` triggers no
 other workflow, so the push to `main` would run none of its checks. The merge shows up as made by the token's owner.
