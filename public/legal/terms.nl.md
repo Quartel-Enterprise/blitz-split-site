@@ -1,12 +1,12 @@
 ---
 title: Gebruiksvoorwaarden
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **In het kort**
 >
 > - Blitz Split houdt de rekeningen van de groep bij. Het verplaatst geen geld.
-> - Je gebruikt de app zonder account. Bewaar je herstelcode: zonder die code kunnen we je je toegang niet teruggeven.
+> - Je gebruikt de app zonder account. Bewaar je herstelcode: zonder die code kunnen we je je toegang niet teruggeven. Zonder Google of Apple wordt een account dat 30 dagen niet is gebruikt verwijderd.
 > - Wat je toevoegt, is van jou, en je bent er zelf verantwoordelijk voor.
 > - Controleer wat de bonnenlezer heeft ingevuld voordat je opslaat.
 
@@ -30,14 +30,15 @@ Saldi zijn het resultaat van wat de groep heeft ingevoerd. Ze zijn geen factuur,
 
 - Je kunt de app zonder account gebruiken. Google of Apple koppelen is optioneel en dient om te synchroniseren en je toegang te herstellen.
 - Zonder Google of Apple is **je herstelcode de enige manier om weer in je account te komen**. Raak je hem kwijt, dan kunnen we je je toegang niet teruggeven.
+- Een account zonder Google of Apple wordt **met zijn gegevens verwijderd na 30 dagen zonder gebruik**: als geen van zijn apparaten 30 dagen synchroniseert. De herstelcode werkt dan niet meer. Koppel Google of Apple om het te behouden.
 - Je bent verantwoordelijk voor wat er met je code en met de gekoppelde accounts gebeurt. Deel de code niet.
 - Gebruik een naam die je groep herkent, en doe je niet voor als iemand anders.
 
 ## Wat je toevoegt {#content}
 
-Rekeningen, opmerkingen, foto’s en sleutels die je toevoegt, blijven van jou. Zodat de app kan werken, geef je ons een kosteloze, wereldwijde, niet-exclusieve licentie om die inhoud op te slaan, te kopiëren, te synchroniseren en te tonen aan de mensen in je groepen, zolang die in de dienst bestaat.
+Rekeningen, opmerkingen, foto’s en sleutels die je toevoegt, blijven van jou. Zodat de app kan werken, geef je ons een kosteloze, wereldwijde, niet-exclusieve licentie om die inhoud op te slaan, te kopiëren, te synchroniseren en te tonen aan de mensen in je groepen en aan wie een link heeft die jij deelt, zolang die in de dienst bestaat.
 
-Voeg alleen mensen, foto’s en informatie toe die je mag delen. Iedereen in een groep ziet wat eraan wordt toegevoegd.
+Voeg alleen mensen, foto’s en informatie toe die je mag delen. Iedereen in een groep ziet wat eraan wordt toegevoegd, en wie een link heeft die jij deelt, ziet wat die link opent ([Privacybeleid](/privacy#sees)). Deel de link van een rekening met “Iedereen met de link” alleen met mensen die die rekening mogen zien.
 
 ## Toegestaan gebruik {#rules}
 
@@ -82,6 +83,7 @@ We doen ons best om de app correct en online te houden, maar hij wordt geleverd 
 
 - afspraken en betalingen tussen de leden van een groep;
 - gegevens die verloren zijn gegaan samen met de herstelcode, of met het apparaat voordat het gesynchroniseerd was;
+- gegevens van een account zonder Google of Apple, verwijderd na 30 dagen zonder gebruik;
 - fouten in gegevens die mensen hebben ingevoerd, of die van bonnen zijn gelezen en zonder controle zijn opgeslagen.
 
 Niets hierin beperkt de rechten die het Braziliaanse Wetboek voor Consumentenbescherming je geeft.

@@ -1,12 +1,12 @@
 ---
 title: Termos de uso
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **Em resumo**
 >
 > - O Bora Rachar organiza as contas do grupo. Ele não movimenta dinheiro.
-> - Você usa sem conta. Guarde o código de recuperação: sem ele, não há como devolver o acesso.
+> - Você usa sem conta. Guarde o código de recuperação: sem ele, não há como devolver o acesso. Sem Google ou Apple, uma conta sem uso por 30 dias é excluída.
 > - O que você lança é seu, e você responde por ele.
 > - Confira o que a leitura do recibo preencheu antes de salvar.
 
@@ -30,14 +30,15 @@ Os saldos são o resultado do que o grupo lançou. Eles não são cobrança, tí
 
 - Você pode usar o app sem conta. Conectar Google ou Apple é opcional e serve para sincronizar e recuperar o acesso.
 - Sem Google ou Apple, **o código de recuperação é a única forma de voltar à sua conta**. Se você o perder, não temos como devolver o acesso.
+- Uma conta sem Google ou Apple é **excluída, com os dados dela, depois de 30 dias sem uso**: quando nenhum dos aparelhos dela sincroniza por 30 dias. O código de recuperação dela deixa de valer então. Conecte Google ou Apple para mantê-la.
 - Você responde pelo que for feito com o seu código e com as contas que conectar. Não compartilhe o código.
 - Use um nome que as pessoas do grupo reconheçam e não se passe por outra pessoa.
 
 ## O que você lança {#conteudo}
 
-Contas, comentários, fotos e chaves que você lança continuam sendo seus. Para o app funcionar, você nos dá uma licença gratuita, mundial e não exclusiva para guardar, copiar, sincronizar e mostrar esse conteúdo às pessoas dos seus grupos, enquanto ele existir no serviço.
+Contas, comentários, fotos e chaves que você lança continuam sendo seus. Para o app funcionar, você nos dá uma licença gratuita, mundial e não exclusiva para guardar, copiar, sincronizar e mostrar esse conteúdo às pessoas dos seus grupos e a quem tiver um link que você compartilha, enquanto ele existir no serviço.
 
-Só adicione pessoas, fotos e informações que você tem o direito de compartilhar. Quem está num grupo vê o que é lançado nele.
+Só adicione pessoas, fotos e informações que você tem o direito de compartilhar. Quem está num grupo vê o que é lançado nele, e quem tem um link que você compartilha vê o que ele abre ([Política de privacidade](/privacy#quem-ve)). Compartilhe o link de uma conta com “Qualquer pessoa com o link” só com quem pode ver essa conta.
 
 ## Uso aceitável {#regras}
 
@@ -82,6 +83,7 @@ Fazemos o possível para o app estar correto e no ar, mas ele é oferecido como 
 
 - acordos e pagamentos entre os membros de um grupo;
 - dados perdidos com o código de recuperação, ou com o aparelho antes de sincronizar;
+- dados de uma conta sem Google ou Apple, excluída depois de 30 dias sem uso;
 - erros nos dados lançados pelas pessoas ou lidos de recibos e salvos sem conferir.
 
 Nada aqui limita os direitos que o Código de Defesa do Consumidor garante a você.

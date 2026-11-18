@@ -1,12 +1,12 @@
 ---
 title: Términos de uso
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **En resumen**
 >
 > - Blitz Split lleva las cuentas del grupo. No mueve dinero.
-> - La usas sin cuenta. Guarda tu código de recuperación: sin él, no hay forma de devolverte el acceso.
+> - La usas sin cuenta. Guarda tu código de recuperación: sin él, no hay forma de devolverte el acceso. Sin Google ni Apple, una cuenta sin uso durante 30 días se elimina.
 > - Lo que anotas es tuyo, y respondes por ello.
 > - Revisa lo que completó la lectura del recibo antes de guardar.
 
@@ -30,14 +30,15 @@ Los saldos son el resultado de lo que anotó el grupo. No son un cobro, un títu
 
 - Puedes usar la app sin cuenta. Conectar Google o Apple es opcional y sirve para sincronizar y recuperar el acceso.
 - Sin Google ni Apple, **tu código de recuperación es la única forma de volver a tu cuenta**. Si lo pierdes, no podemos devolverte el acceso.
+- Una cuenta sin Google ni Apple **se elimina, con sus datos, tras 30 días sin uso**: cuando ninguno de sus dispositivos se sincroniza durante 30 días. Su código de recuperación deja de valer entonces. Conecta Google o Apple para conservarla.
 - Respondes por lo que se haga con tu código y con las cuentas que conectes. No compartas el código.
 - Usa un nombre que tu grupo reconozca y no te hagas pasar por otra persona.
 
 ## Lo que anotas {#contenido}
 
-Las cuentas, comentarios, fotos y claves que anotas siguen siendo tuyos. Para que la app funcione, nos das una licencia gratuita, mundial y no exclusiva para guardar, copiar, sincronizar y mostrar ese contenido a las personas de tus grupos, mientras exista en el servicio.
+Las cuentas, comentarios, fotos y claves que anotas siguen siendo tuyos. Para que la app funcione, nos das una licencia gratuita, mundial y no exclusiva para guardar, copiar, sincronizar y mostrar ese contenido a las personas de tus grupos y a quien tenga un enlace que compartes, mientras exista en el servicio.
 
-Agrega solo personas, fotos e información que tengas derecho a compartir. Quien está en un grupo ve lo que se anota en él.
+Agrega solo personas, fotos e información que tengas derecho a compartir. Quien está en un grupo ve lo que se anota en él, y quien tiene un enlace que compartes ve lo que abre ([Política de privacidad](/privacy#quien-ve)). Comparte el enlace de una cuenta con “Cualquiera con el enlace” solo con quien pueda ver esa cuenta.
 
 ## Uso aceptable {#reglas}
 
@@ -82,6 +83,7 @@ Hacemos lo posible para que la app sea correcta y esté disponible, pero se ofre
 
 - acuerdos y pagos entre los miembros de un grupo;
 - datos perdidos junto con el código de recuperación, o con el dispositivo antes de sincronizarse;
+- datos de una cuenta sin Google ni Apple, eliminada tras 30 días sin uso;
 - errores en los datos anotados por las personas, o leídos de recibos y guardados sin revisar.
 
 Nada de esto limita los derechos que te da la ley de protección al consumidor que te corresponda.

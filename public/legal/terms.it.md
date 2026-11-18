@@ -1,12 +1,12 @@
 ---
 title: Termini di utilizzo
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **In breve**
 >
 > - Blitz Split tiene i conti del gruppo. Non muove denaro.
-> - Lo usi senza account. Conserva il tuo codice di recupero: senza di esso non c'è modo di restituirti l'accesso.
+> - Lo usi senza account. Conserva il tuo codice di recupero: senza di esso non c'è modo di restituirti l'accesso. Senza Google o Apple, un account inutilizzato per 30 giorni viene eliminato.
 > - Ciò che aggiungi è tuo e ne sei responsabile.
 > - Controlla ciò che ha compilato la lettura dello scontrino prima di salvare.
 
@@ -30,14 +30,15 @@ I saldi sono il risultato di ciò che il gruppo ha aggiunto. Non sono una fattur
 
 - Puoi usare l'app senza account. Collegare Google o Apple è facoltativo e serve a sincronizzare e recuperare l'accesso.
 - Senza Google o Apple, **il tuo codice di recupero è l'unico modo per rientrare nel tuo account**. Se lo perdi, non possiamo restituirti l'accesso.
+- Un account senza Google o Apple viene **eliminato, con i suoi dati, dopo 30 giorni di inutilizzo**: quando nessuno dei suoi dispositivi si sincronizza per 30 giorni. Il suo codice di recupero smette allora di funzionare. Collega Google o Apple per mantenerlo.
 - Sei responsabile di ciò che viene fatto con il tuo codice e con gli account che colleghi. Non condividere il codice.
 - Usa un nome che il tuo gruppo riconosca e non spacciarti per qualcun altro.
 
 ## Ciò che aggiungi {#contenuti}
 
-Le spese, i commenti, le foto e le chiavi che aggiungi restano tuoi. Perché l'app funzioni, ci concedi una licenza gratuita, valida in tutto il mondo e non esclusiva per conservare, copiare, sincronizzare e mostrare quei contenuti alle persone dei tuoi gruppi, finché esistono nel servizio.
+Le spese, i commenti, le foto e le chiavi che aggiungi restano tuoi. Perché l'app funzioni, ci concedi una licenza gratuita, valida in tutto il mondo e non esclusiva per conservare, copiare, sincronizzare e mostrare quei contenuti alle persone dei tuoi gruppi e a chi ha un link che condividi, finché esistono nel servizio.
 
-Aggiungi solo persone, foto e informazioni che hai il diritto di condividere. Chiunque sia in un gruppo vede ciò che vi viene aggiunto.
+Aggiungi solo persone, foto e informazioni che hai il diritto di condividere. Chiunque sia in un gruppo vede ciò che vi viene aggiunto, e chi ha un link che condividi vede ciò che apre ([Informativa sulla privacy](/privacy#chi-vede)). Condividi il link di una spesa con “Chiunque abbia il link” solo con chi può vedere quella spesa.
 
 ## Uso consentito {#regole}
 
@@ -82,6 +83,7 @@ Facciamo del nostro meglio perché l'app sia corretta e disponibile, ma è forni
 
 - accordi e pagamenti tra i membri di un gruppo;
 - dati persi insieme al codice di recupero, o con il dispositivo prima della sincronizzazione;
+- dati di un account senza Google o Apple, eliminato dopo 30 giorni di inutilizzo;
 - errori nei dati aggiunti dalle persone, o letti dagli scontrini e salvati senza controllarli.
 
 Nulla di quanto qui previsto limita i diritti che ti riconosce il Codice di tutela del consumatore brasiliano.

@@ -1,12 +1,12 @@
 ---
 title: Nutzungsbedingungen
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **Kurz gesagt**
 >
 > - Blitz Split führt die Abrechnung der Gruppe. Es bewegt kein Geld.
-> - Du nutzt die App ohne Konto. Bewahre deinen Wiederherstellungscode auf: Ohne ihn können wir dir den Zugriff nicht zurückgeben.
+> - Du nutzt die App ohne Konto. Bewahre deinen Wiederherstellungscode auf: Ohne ihn können wir dir den Zugriff nicht zurückgeben. Ohne Google oder Apple wird ein Konto, das 30 Tage nicht genutzt wurde, gelöscht.
 > - Was du einträgst, gehört dir, und du bist dafür verantwortlich.
 > - Prüf, was der Belegscanner ausgefüllt hat, bevor du speicherst.
 
@@ -30,14 +30,15 @@ Salden ergeben sich aus dem, was die Gruppe eingetragen hat. Sie sind keine Rech
 
 - Du kannst die App ohne Konto nutzen. Google oder Apple zu verbinden ist optional und dient dazu, zu synchronisieren und deinen Zugriff wiederherzustellen.
 - Ohne Google oder Apple ist **dein Wiederherstellungscode der einzige Weg zurück in dein Konto**. Wenn du ihn verlierst, können wir dir den Zugriff nicht zurückgeben.
+- Ein Konto ohne Google oder Apple wird **nach 30 Tagen ohne Nutzung samt seinen Daten gelöscht**: wenn sich 30 Tage lang keines seiner Geräte synchronisiert. Sein Wiederherstellungscode funktioniert dann nicht mehr. Verbinde Google oder Apple, um es zu behalten.
 - Du bist verantwortlich für das, was mit deinem Code und den verbundenen Konten geschieht. Gib den Code nicht weiter.
 - Verwende einen Namen, den deine Gruppe erkennt, und gib dich nicht als jemand anderes aus.
 
 ## Was du einträgst {#inhalte}
 
-Ausgaben, Kommentare, Fotos und Schlüssel, die du einträgst, bleiben deine. Damit die App funktioniert, räumst du uns eine unentgeltliche, weltweite, nicht ausschließliche Lizenz ein, diese Inhalte zu speichern, zu kopieren, zu synchronisieren und den Personen in deinen Gruppen zu zeigen, solange sie im Dienst bestehen.
+Ausgaben, Kommentare, Fotos und Schlüssel, die du einträgst, bleiben deine. Damit die App funktioniert, räumst du uns eine unentgeltliche, weltweite, nicht ausschließliche Lizenz ein, diese Inhalte zu speichern, zu kopieren, zu synchronisieren und den Personen in deinen Gruppen sowie allen, die einen Link haben, den du teilst, zu zeigen, solange sie im Dienst bestehen.
 
-Trag nur Personen, Fotos und Informationen ein, die du teilen darfst. Alle in einer Gruppe sehen, was dort eingetragen wird.
+Trag nur Personen, Fotos und Informationen ein, die du teilen darfst. Alle in einer Gruppe sehen, was dort eingetragen wird, und wer einen Link hat, den du teilst, sieht, was er öffnet ([Datenschutzerklärung](/privacy#empfaenger)). Teile den Link einer Ausgabe mit „Alle mit dem Link“ nur mit Personen, die diese Ausgabe sehen dürfen.
 
 ## Erlaubte Nutzung {#regeln}
 
@@ -82,6 +83,7 @@ Wir tun unser Bestes, damit die App korrekt und erreichbar ist, stellen sie aber
 
 - Vereinbarungen und Zahlungen zwischen den Mitgliedern einer Gruppe;
 - Daten, die mit dem Wiederherstellungscode verloren gehen oder mit dem Gerät, bevor sie synchronisiert wurden;
+- Daten eines Kontos ohne Google oder Apple, das nach 30 Tagen ohne Nutzung gelöscht wurde;
 - Fehler in Daten, die jemand eingetragen hat oder die von Belegen gelesen und ohne Prüfung gespeichert wurden.
 
 Nichts hier schränkt die Rechte ein, die dir das brasilianische Verbraucherschutzgesetzbuch gibt.

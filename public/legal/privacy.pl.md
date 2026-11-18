@@ -1,13 +1,13 @@
 ---
 title: Polityka prywatności
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 
 > **W skrócie**
 >
-> - Korzystasz z aplikacji bez zakładania konta. Google i Apple są opcjonalne.
+> - Korzystasz z aplikacji bez zakładania konta. Google i Apple są opcjonalne, ale bez nich twoje konto jest usuwane po 30 dniach nieużywania.
 > - To, co dodajesz, zapisuje się najpierw na twoim urządzeniu, a na serwer trafia tylko po to, by się zsynchronizować i dotrzeć do twojej grupy.
-> - Osoby w grupie widzą to, co należy do grupy. Nikt nie widzi twojego adresu e-mail.
+> - Osoby w grupie widzą to, co należy do grupy, a każdy, kto ma udostępniony przez ciebie link, widzi ten wydatek lub twój profil. Nikt nie widzi twojego adresu e-mail.
 > - Statystyki użytkowania i raporty o awariach nie zawierają imion ani kwot. Jeśli masz konto, statystyki są powiązane z jego identyfikatorem. Nie używamy identyfikatora reklamowego, a statystyki wyłączysz w Profilu.
 > - Nie sprzedajemy danych. Konto i dane usuwasz bezpośrednio w aplikacji.
 
@@ -24,9 +24,12 @@ Polityka jest zgodna z brazylijską ogólną ustawą o ochronie danych osobowych
 - **Profil:** twoje imię, zdjęcie (opcjonalnie) i kolor awatara.
 - **Grupy i wydatki:** nazwa i waluta grupy; opis, kwota, data i kategoria każdego wydatku, kto zapłacił i jak go podzielono; pozycje, komentarze i załączone zdjęcia.
 - **Płatności**, które zapisujesz między członkami grupy.
-- **Klucze płatnicze**, które zapisujesz: klucz Pix i adres Bitcoin.
+- **Klucze płatnicze**, które zapisujesz, by otrzymywać płatności: klucz Pix i adres Bitcoin.
+- **Metody płatności**, którymi płacisz (karta kredytowa lub debetowa, Pix, przelew bankowy, Bitcoin, gotówka lub inna): ich nazwa, rodzaj i kolor, nigdy numer karty, oraz to, którą z nich opłacono każdy wydatek.
 - **Dochody**, tylko jeśli dzielisz „Według dochodów”.
 - **Osoby, które dodajesz** do grupy, zanim zainstalują aplikację, pod imieniem, które im nadasz.
+- **Komentarze**, które zostawiasz pod swoim imieniem przy wydatku udostępnionym ci przez kogoś linkiem.
+- **Wiadomości do pomocy**, które wysyłasz e-mailem z Profil › „Skontaktuj się z pomocą”. Aplikacja dodaje do nich swoją wersję, platformę, język i rodzaj konta, nigdy identyfikatora twojego konta.
 
 ### Twoje konto
 
@@ -52,17 +55,24 @@ Aplikacja działa **przede wszystkim offline**: to, co dodajesz, zapisuje się w
 >
 > Zdjęcie trafia na nasz serwer, gdzie odczytuje je model sztucznej inteligencji firmy Anthropic (Claude), który zwraca pozycje, ceny i sumę. Po odczytaniu nie przechowujemy zdjęcia: zostaje przy wydatku tylko wtedy, gdy je załączysz. Zgodnie z warunkami handlowymi Anthropic te treści nie są używane do trenowania modeli.
 
+> **Zaproś z kontaktów**
+>
+> Na Androidzie, iPhonie, iPadzie i Macu aplikacja odczytuje kontakty z twojego urządzenia, tylko gdy na to pozwolisz, aby wyświetlić je, gdy zapraszasz kogoś do grupy. Pozostają na urządzeniu: żadne imię ani numer nie trafia na nasz serwer.
+
 ## Do czego ich używamy {#cele}
 
 | Cel | Dane | Podstawa prawna (LGPD) |
 | --- | --- | --- |
 | Przechowywanie, synchronizacja i pokazywanie grupie | Profil, grupy, wydatki, płatności, klucze płatnicze | Wykonanie umowy (art. 7 pkt V) |
+| Przechowywanie twoich metod płatności na twoich urządzeniach | Metody płatności i wydatki opłacone każdą z nich | Wykonanie umowy |
+| Pokazywanie tego, co udostępniasz linkiem | Udostępniony wydatek albo twoje imię i zdjęcie | Wykonanie umowy |
 | Logowanie i odzyskiwanie dostępu | Anonimowy identyfikator, kod odzyskiwania, konto Google lub Apple | Wykonanie umowy |
 | Odczytywanie paragonów | Zdjęcie paragonu, na twoją prośbę | Wykonanie umowy |
 | Wysyłanie powiadomień | Token urządzenia, zdarzenia w grupie | Wykonanie umowy; wybierasz je w sekcji Profil › Powiadomienia |
 | Ulepszanie aplikacji | Statystyki użytkowania | Prawnie uzasadniony interes (art. 7 pkt IX); sprzeciw zgłaszasz, wyłączając „Udostępniaj dane o użyciu” w Profilu |
 | Naprawianie awarii | Raporty o awariach | Prawnie uzasadniony interes (art. 7 pkt IX); nie zależą od tego ustawienia, a sprzeciw zgłaszasz, pisząc do nas |
 | Bezpieczeństwo i zapobieganie nadużyciom | Dane połączenia | Prawnie uzasadniony interes |
+| Odpowiadanie na wiadomości do pomocy | Twoja wiadomość i to, co dodaje do niej aplikacja | Wykonanie umowy |
 | Przestrzeganie prawa | To, czego wymaga dany obowiązek | Obowiązek prawny (art. 7 pkt II) |
 
 Nie sprzedajemy danych osobowych, nie wykorzystujemy ich do celów reklamowych i nie tworzymy twojego profilu behawioralnego.
@@ -71,7 +81,12 @@ Nie sprzedajemy danych osobowych, nie wykorzystujemy ich do celów reklamowych i
 
 ### Osoby w twojej grupie
 
-Każdy w grupie widzi imię, zdjęcie i kolor każdego członka; wydatki, pozycje, komentarze, zdjęcia i płatności tej grupy; a także klucze płatnicze, które członek pokazuje, by otrzymać zapłatę. **Nikt w grupie nie widzi twojego adresu e-mail.**
+Każdy w grupie widzi imię, zdjęcie i kolor każdego członka; wydatki, pozycje, komentarze, zdjęcia i płatności tej grupy; a także klucze płatnicze, które członek pokazuje, by otrzymać zapłatę. **Nikt w grupie nie widzi twojego adresu e-mail** ani twoich metod płatności: widzisz je tylko ty, na swoich urządzeniach.
+
+### Kto ma link, który udostępniasz
+
+- **„Udostępnij wydatek”** tworzy link do jednego wydatku. Przy „Tylko osoby w wydatku” otwierają go tylko osoby, które w nim są. Przy „Każdy, kto ma link” każdy, kto ma link, widzi wydatek (jego opis, kwotę, datę, kategorię i nazwę grupy, kto zapłacił i jak go podzielono, z imionami) wraz ze zdjęciami i komentarzami, a każdy zalogowany w aplikacji może go komentować. Podgląd, który komunikator tworzy z linku, pokazuje opis, kwotę, to, kto zapłacił, na ile osób podzielono wydatek, oraz nazwę grupy. „Wyłącz link” w „Udostępnij wydatek” sprawia, że link przestaje działać; podgląd, który komunikator już utworzył, zostaje w tej rozmowie, a jego obraz może pozostać w pamięci podręcznej do jednego dnia.
+- **„Udostępnij profil”** tworzy link do twojego profilu: każdy, kto go ma, widzi twoje imię i zdjęcie, także w podglądzie linku.
 
 ### Kto dla nas pracuje
 
@@ -80,11 +95,11 @@ Te firmy przetwarzają dane w naszym imieniu, wyłącznie w zakresie opisanym tu
 | Firma | W jakim celu |
 | --- | --- |
 | Supabase | Baza danych, logowanie i przechowywanie zdjęć |
-| Google (Firebase) | Statystyki użytkowania; raporty o awariach w aplikacjach na Androida, iPhone'a, iPada i Maca; powiadomienia na Androidzie; Google Analytics serwisu internetowego; logowanie przez Google |
+| Google (Firebase) | Statystyki użytkowania; raporty o awariach w aplikacjach na Androida, iPhone'a, iPada i Maca; powiadomienia na Androidzie; Google Analytics serwisu internetowego; logowanie przez Google; e-mail pomocy (Gmail) |
 | Apple | Powiadomienia na iPhonie, iPadzie i Macu; logowanie przez Apple |
 | Anthropic | Odczytywanie zdjęć paragonów |
 | Sentry | Raporty o awariach w przeglądarce |
-| Cloudflare | Hosting serwisu blitzsplit.com |
+| Cloudflare | Hosting serwisu blitzsplit.com i podglądów udostępnionych linków |
 | Google Play i App Store | Dystrybucja i aktualizacje aplikacji |
 
 Możemy też udostępnić dane, gdy wymaga tego prawo lub orzeczenie sądu.
@@ -97,8 +112,10 @@ Niektórzy z tych dostawców przechowują lub przetwarzają dane poza Brazylią,
 
 - Dopóki twoje konto istnieje, przechowujemy to, czego aplikacja potrzebuje do działania.
 - **„Wyloguj się”** usuwa kopię z urządzenia. Przy koncie Google lub Apple twoje dane czekają na serwerze, aż zalogujesz się ponownie.
-- **Bez konta** „Wymaż profil i wyloguj się” czyści urządzenie, a twój kod odzyskiwania nadal działa. Aby usunąć także to, co jest na serwerze, skontaktuj się z nami (sekcja 12).
-- **„Usuń konto i dane”** w sekcji Profil od razu usuwa twój profil, zdjęcie, klucze płatnicze i kod odzyskiwania oraz cofa dostęp przyznany przez Apple. Wydatki dodane przez ciebie w grupach z innymi osobami zostają w nich dla grupy, bez twojego imienia, jako „Były członek”.
+- **Bez konta** „Wymaż profil i wyloguj się” czyści urządzenie, a twój kod odzyskiwania działa, dopóki konto nie zostanie usunięte z powodu nieużywania (poniżej). Aby od razu usunąć także to, co jest na serwerze, użyj „Usuń konto i dane”.
+- **Konto bez Google lub Apple jest usuwane po 30 dniach nieużywania:** gdy żadne z jego urządzeń nie synchronizuje się przez 30 dni, serwer usuwa je tak jak „Usuń konto i dane”, a jego kod odzyskiwania przestaje działać.
+- **„Usuń konto i dane”** w sekcji Profil od razu usuwa twój profil, zdjęcie, klucze płatnicze, metody płatności i kod odzyskiwania oraz cofa dostęp przyznany przez Apple. Wydatki dodane przez ciebie w grupach z innymi osobami zostają w nich dla grupy, pod twoim imieniem z tej grupy, niepowiązane już z żadnym kontem. Tak samo zostają twoje komentarze, także przy wydatkach udostępnionych ci linkiem.
+- E-maile do pomocy przechowujemy, dopóki są nam potrzebne, by ci odpowiedzieć i zająć się tym, co zgłaszasz. Na twoją prośbę je usuwamy.
 - Dane o użytkowaniu powiązane z urządzeniem pozostają w Google Analytics do 14 miesięcy. Potem zostają tylko zbiorcze liczby, bez niczego, co pozwalałoby kogokolwiek zidentyfikować. Po usunięciu konta identyfikator, który zawierają, nie prowadzi już do ciebie.
 - Raporty o awariach przechowujemy do 90 dni, a potem je usuwamy.
 
@@ -118,9 +135,9 @@ Wiele z tego zrobisz w samej aplikacji: edytujesz profil, usuniesz klucz płatni
 
 ## Bezpieczeństwo {#bezpieczenstwo}
 
-Dane są przesyłane w postaci zaszyfrowanej (HTTPS). Na serwerze reguły dostępu sprawiają, że każda osoba może odczytać tylko grupy, do których należy. Żaden system nie jest bezbłędny, ale każdy incydent traktujemy poważnie i powiadamiamy ciebie oraz ANPD, gdy wymaga tego prawo.
+Dane są przesyłane w postaci zaszyfrowanej (HTTPS). Na serwerze reguły dostępu sprawiają, że każda osoba może odczytać tylko grupy, do których należy, i to, co otwiera otrzymany przez nią link. Żaden system nie jest bezbłędny, ale każdy incydent traktujemy poważnie i powiadamiamy ciebie oraz ANPD, gdy wymaga tego prawo.
 
-Twój kod odzyskiwania działa jak hasło: przechowuj go w bezpiecznym miejscu i nikomu go nie udostępniaj. Na iPhonie, iPadzie i Macu aplikacja zapisuje go w aplikacji Hasła.
+Twój kod odzyskiwania, 12 słów, działa jak hasło: przechowuj go w bezpiecznym miejscu i nikomu go nie udostępniaj. Nie przechowujemy tych słów, tylko ich odcisk, z którego nie da się ich odtworzyć. Na iPhonie, iPadzie i Macu aplikacja zapisuje go w aplikacji Hasła.
 
 ## Dzieci {#dzieci}
 

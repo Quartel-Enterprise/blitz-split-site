@@ -1,12 +1,12 @@
 ---
 title: Terms of use
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **In short**
 >
 > - Blitz Split keeps the group's accounts. It doesn't move money.
-> - You use it without an account. Keep your recovery code: without it, there's no way to give your access back.
+> - You use it without an account. Keep your recovery code: without it, there's no way to give your access back. Without Google or Apple, an account unused for 30 days is deleted.
 > - What you add is yours, and you're responsible for it.
 > - Check what the receipt reader filled in before saving.
 
@@ -30,14 +30,15 @@ Balances are the result of what the group added. They are not a bill, a credit i
 
 - You can use the app without an account. Connecting Google or Apple is optional and serves to sync and recover your access.
 - Without Google or Apple, **your recovery code is the only way back into your account**. If you lose it, we can't give your access back.
+- An account without Google or Apple is **deleted, with its data, after 30 days without use**: when none of its devices syncs for 30 days. Its recovery code stops working then. Connect Google or Apple to keep it.
 - You're responsible for what is done with your code and with the accounts you connect. Don't share the code.
 - Use a name your group recognizes, and don't pretend to be someone else.
 
 ## What you add {#content}
 
-Bills, comments, photos and keys you add remain yours. For the app to work, you give us a free, worldwide, non-exclusive license to store, copy, sync and show that content to the people in your groups, for as long as it exists in the service.
+Bills, comments, photos and keys you add remain yours. For the app to work, you give us a free, worldwide, non-exclusive license to store, copy, sync and show that content to the people in your groups and to whoever has a link you share, for as long as it exists in the service.
 
-Only add people, photos and information you have the right to share. Everyone in a group sees what is added to it.
+Only add people, photos and information you have the right to share. Everyone in a group sees what is added to it, and whoever has a link you share sees what it opens ([Privacy policy](/privacy#sees)). Share a bill's link with “Anyone with the link” only with people who may see that bill.
 
 ## Acceptable use {#rules}
 
@@ -82,6 +83,7 @@ We do our best to keep the app correct and online, but it is provided as is. As 
 
 - agreements and payments between the members of a group;
 - data lost along with the recovery code, or with the device before it synced;
+- data of an account without Google or Apple, deleted after 30 days without use;
 - mistakes in data people added, or read from receipts and saved without checking.
 
 Nothing here limits the rights Brazil's Consumer Protection Code gives you.

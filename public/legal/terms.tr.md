@@ -1,12 +1,12 @@
 ---
 title: Kullanım koşulları
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **Kısaca**
 >
 > - Blitz Split grubun hesabını tutar. Para aktarmaz.
-> - Uygulamayı hesap açmadan kullanırsın. Kurtarma kodunu sakla: o olmadan erişimini sana geri vermenin bir yolu yok.
+> - Uygulamayı hesap açmadan kullanırsın. Kurtarma kodunu sakla: o olmadan erişimini sana geri vermenin bir yolu yok. Google veya Apple olmadan, 30 gün kullanılmayan bir hesap silinir.
 > - Eklediklerin senindir ve onlardan sen sorumlusun.
 > - Kaydetmeden önce fiş okuyucunun doldurduklarını kontrol et.
 
@@ -30,14 +30,15 @@ Bakiyeler, grubun eklediklerinin sonucudur. Fatura, kredi aracı ya da borç kan
 
 - Uygulamayı hesap açmadan kullanabilirsin. Google veya Apple bağlamak isteğe bağlıdır ve eşitlemeye ve erişimini kurtarmaya yarar.
 - Google veya Apple olmadan, **kurtarma kodun hesabına geri dönmenin tek yoludur**. Onu kaybedersen, erişimini sana geri veremeyiz.
+- Google veya Apple'sız bir hesap, **30 gün kullanılmazsa verileriyle birlikte silinir**: cihazlarından hiçbiri 30 gün boyunca eşitlenmediğinde. Kurtarma kodu da o zaman çalışmaz olur. Hesabı korumak için Google veya Apple bağla.
 - Kodunla ve bağladığın hesaplarla yapılanlardan sen sorumlusun. Kodu kimseyle paylaşma.
 - Grubunun tanıdığı bir ad kullan ve başka biriymiş gibi davranma.
 
 ## Eklediklerin {#content}
 
-Eklediğin masraflar, yorumlar, fotoğraflar ve anahtarlar senin kalır. Uygulamanın çalışabilmesi için, bu içerik hizmette var olduğu sürece onu saklamamız, kopyalamamız, eşitlememiz ve gruplarındaki kişilere göstermemiz için bize ücretsiz, dünya çapında ve münhasır olmayan bir lisans verirsin.
+Eklediğin masraflar, yorumlar, fotoğraflar ve anahtarlar senin kalır. Uygulamanın çalışabilmesi için, bu içerik hizmette var olduğu sürece onu saklamamız, kopyalamamız, eşitlememiz ve gruplarındaki kişilere ve paylaştığın bir bağlantıya sahip olanlara göstermemiz için bize ücretsiz, dünya çapında ve münhasır olmayan bir lisans verirsin.
 
-Yalnızca paylaşma hakkına sahip olduğun kişileri, fotoğrafları ve bilgileri ekle. Bir gruptaki herkes o gruba eklenenleri görür.
+Yalnızca paylaşma hakkına sahip olduğun kişileri, fotoğrafları ve bilgileri ekle. Bir gruptaki herkes o gruba eklenenleri görür; paylaştığın bir bağlantıya sahip olan da bağlantının açtığını görür ([Gizlilik politikası](/privacy#sees)). Bir masrafın bağlantısını “Bağlantıya sahip herkes” ile yalnızca o masrafı görebilecek kişilerle paylaş.
 
 ## Kabul edilebilir kullanım {#rules}
 
@@ -82,6 +83,7 @@ Uygulamayı doğru ve çevrimiçi tutmak için elimizden geleni yaparız, ancak 
 
 - bir grubun üyeleri arasındaki anlaşmalar ve ödemeler;
 - kurtarma koduyla birlikte ya da eşitlenmeden önce cihazla birlikte kaybolan veriler;
+- Google veya Apple'sız bir hesabın, 30 gün kullanılmadığı için silinen verileri;
 - kişilerin eklediği verilerdeki ya da fişlerden okunup kontrol edilmeden kaydedilen hatalar.
 
 Buradaki hiçbir şey, Brezilya Tüketiciyi Koruma Kanunu'nun sana tanıdığı hakları sınırlamaz.

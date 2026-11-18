@@ -1,12 +1,12 @@
 ---
 title: Conditions d’utilisation
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **En bref**
 >
 > - Blitz Split tient les comptes du groupe. Il ne fait transiter aucun argent.
-> - Vous l’utilisez sans compte. Gardez votre code de récupération : sans lui, impossible de vous rendre l’accès.
+> - Vous l’utilisez sans compte. Gardez votre code de récupération : sans lui, impossible de vous rendre l’accès. Sans Google ni Apple, un compte inutilisé pendant 30 jours est supprimé.
 > - Ce que vous ajoutez vous appartient, et vous en êtes responsable.
 > - Vérifiez ce que la lecture du reçu a rempli avant d’enregistrer.
 
@@ -30,14 +30,15 @@ Les soldes découlent de ce que le groupe a saisi. Ce ne sont ni une facture, ni
 
 - Vous pouvez utiliser l’app sans compte. Associer Google ou Apple est facultatif et sert à synchroniser et à récupérer votre accès.
 - Sans Google ni Apple, **votre code de récupération est le seul moyen de revenir à votre compte**. Si vous le perdez, nous ne pouvons pas vous rendre l’accès.
+- Un compte sans Google ni Apple est **supprimé, avec ses données, après 30 jours sans utilisation** : quand aucun de ses appareils ne se synchronise pendant 30 jours. Son code de récupération cesse alors de fonctionner. Associez Google ou Apple pour le conserver.
 - Vous êtes responsable de l’usage fait de votre code et des comptes que vous associez. Ne communiquez pas votre code.
 - Utilisez un nom que votre groupe reconnaît et ne vous faites pas passer pour quelqu’un d’autre.
 
 ## Ce que vous ajoutez {#contenu}
 
-Les dépenses, commentaires, photos et clés que vous ajoutez restent les vôtres. Pour que l’app fonctionne, vous nous accordez une licence gratuite, mondiale et non exclusive pour stocker, copier, synchroniser et montrer ce contenu aux membres de vos groupes, tant qu’il existe dans le service.
+Les dépenses, commentaires, photos et clés que vous ajoutez restent les vôtres. Pour que l’app fonctionne, vous nous accordez une licence gratuite, mondiale et non exclusive pour stocker, copier, synchroniser et montrer ce contenu aux membres de vos groupes et à quiconque a un lien que vous partagez, tant qu’il existe dans le service.
 
-N’ajoutez que des personnes, des photos et des informations que vous avez le droit de partager. Tous les membres d’un groupe voient ce qui y est ajouté.
+N’ajoutez que des personnes, des photos et des informations que vous avez le droit de partager. Tous les membres d’un groupe voient ce qui y est ajouté, et quiconque a un lien que vous partagez voit ce qu’il ouvre ([Politique de confidentialité](/privacy#destinataires)). Ne partagez le lien d’une dépense avec « Toute personne ayant le lien » qu’avec des personnes qui peuvent voir cette dépense.
 
 ## Usage acceptable {#regles}
 
@@ -82,6 +83,7 @@ Nous faisons de notre mieux pour que l’app soit exacte et disponible, mais ell
 
 - des accords et paiements entre les membres d’un groupe ;
 - des données perdues avec le code de récupération, ou avec l’appareil avant leur synchronisation ;
+- des données d’un compte sans Google ni Apple, supprimé après 30 jours sans utilisation ;
 - des erreurs dans les données saisies par les utilisateurs, ou lues sur des reçus et enregistrées sans vérification.
 
 Rien ici ne limite les droits que vous accorde le Code brésilien de protection des consommateurs.

@@ -1,12 +1,12 @@
 ---
 title: Termos de utilização
-updated: 2026-11-05
+updated: 2026-11-17
 ---
 
 > **Em resumo**
 >
 > - O Blitz Split organiza as contas do grupo. Não movimenta dinheiro.
-> - Usas sem conta. Guarda o código de recuperação: sem ele, não há forma de te devolver o acesso.
+> - Usas sem conta. Guarda o código de recuperação: sem ele, não há forma de te devolver o acesso. Sem Google ou Apple, uma conta sem utilização durante 30 dias é eliminada.
 > - O que registas é teu, e respondes por isso.
 > - Confirma o que a leitura do talão preencheu antes de guardar.
 
@@ -30,14 +30,15 @@ Os saldos são o resultado do que o grupo registou. Não são uma cobrança, um 
 
 - Podes usar a app sem conta. Ligar o Google ou a Apple é opcional e serve para sincronizar e recuperar o acesso.
 - Sem Google ou Apple, **o código de recuperação é a única forma de voltares à tua conta**. Se o perderes, não temos como te devolver o acesso.
+- Uma conta sem Google ou Apple é **eliminada, com os seus dados, ao fim de 30 dias sem utilização**: quando nenhum dos seus aparelhos sincroniza durante 30 dias. O código de recuperação deixa então de funcionar. Liga o Google ou a Apple para a manter.
 - Respondes pelo que for feito com o teu código e com as contas que ligares. Não partilhes o código.
 - Usa um nome que as pessoas do grupo reconheçam e não te faças passar por outra pessoa.
 
 ## O que registas {#conteudo}
 
-As despesas, os comentários, as fotografias e as chaves que registas continuam a ser teus. Para a app funcionar, dás-nos uma licença gratuita, mundial e não exclusiva para guardar, copiar, sincronizar e mostrar esse conteúdo às pessoas dos teus grupos, enquanto ele existir no serviço.
+As despesas, os comentários, as fotografias e as chaves que registas continuam a ser teus. Para a app funcionar, dás-nos uma licença gratuita, mundial e não exclusiva para guardar, copiar, sincronizar e mostrar esse conteúdo às pessoas dos teus grupos e a quem tiver um link que partilhas, enquanto ele existir no serviço.
 
-Adiciona apenas pessoas, fotografias e informações que tenhas o direito de partilhar. Quem está num grupo vê o que é registado nele.
+Adiciona apenas pessoas, fotografias e informações que tenhas o direito de partilhar. Quem está num grupo vê o que é registado nele, e quem tem um link que partilhas vê o que ele abre ([Política de privacidade](/privacy#quem-ve)). Partilha o link de uma despesa com “Qualquer pessoa com o link” só com quem pode ver essa despesa.
 
 ## Utilização aceitável {#regras}
 
@@ -82,6 +83,7 @@ Fazemos o possível para que a app esteja correta e disponível, mas é oferecid
 
 - acordos e pagamentos entre os membros de um grupo;
 - dados perdidos com o código de recuperação, ou com o aparelho antes de sincronizar;
+- dados de uma conta sem Google ou Apple, eliminada ao fim de 30 dias sem utilização;
 - erros nos dados registados pelas pessoas ou lidos de talões e guardados sem confirmar.
 
 Nada aqui limita os direitos que o Código de Defesa do Consumidor do Brasil te garante.
