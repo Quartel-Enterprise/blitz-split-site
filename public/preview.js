@@ -603,9 +603,8 @@
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
-  // Turkish writes the percent sign first: %10.
-  // Turkish writes the sign first: %10. French, German, Russian, Swedish, Czech, Croatian and Serbian put a space before it, as the split card does.
-  const pct = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr"].includes(lang) ? `${n}\u00a0%` : lang === "tr" ? `%${n}` : `${n}%`);
+  // A percentage as the language writes it (%10, 10 %), as the split card does (money.js).
+  const pct = window.money.percent;
   // Amounts in the visitor's currency, as the app shows them (money.js).
   const money = window.money.format;
   // The demo's amounts below are in the dollar's cents; this gives them in the currency's own (money.js).

@@ -6,7 +6,8 @@
 // it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫ or NT$4,860 and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
 // koruna, the leu, the ringgit, the Philippine peso) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
-// preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč or 243 lei
+// preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč, 243 lei,
+// RM194.40 or ₱2,430
 // and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
 (function () {
   // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents,
@@ -76,5 +77,10 @@
   // amount is never rounded to a multiple of the factor.
   const cents = (amount) => amount * factor;
 
-  window.money = { format, plain, parse, cents, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
+  // A percentage, as the language writes it: Turkish puts the sign first (%10); French, German, Russian, Swedish, Czech,
+  // Croatian and Serbian put a space before it (10 %). The phone (preview.js) and the split card (split-modes.js) share it.
+  const lang = document.documentElement.dataset.lang;
+  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
+
+  window.money = { format, plain, parse, cents, percent, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
 })();

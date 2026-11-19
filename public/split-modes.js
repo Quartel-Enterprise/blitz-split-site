@@ -961,9 +961,8 @@
   // Amounts in the visitor's currency, as preview.js writes them (money.js).
   // The bills' amounts below are in the dollar's cents; cents gives them in the currency's own, so the splits and what
   // is typed work in those (money.js).
-  const { plain, format: money, parse: parseMoney, cents } = window.money;
-  // Turkish writes the sign first: %10. French, German, Russian, Swedish, Czech, Croatian and Serbian put a space before it.
-  const pct = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
+  // A percentage as the language writes it (money.js): 10 % in French, %10 in Turkish.
+  const { plain, format: money, parse: parseMoney, cents, percent: pct } = window.money;
 
   const PEOPLE = [
     { name: "Pedro", photo: "me", color: "blue" },
