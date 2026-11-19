@@ -463,6 +463,9 @@ a.status .icon { width: 15px; height: 15px; }
    and Bengali's titles get the room between their lines, and their gradient's painted box the room around them. */
 :root:is([lang="hi"], [lang="bn"]) .hero h1 { line-height: 1.25; }
 :root:is([lang="hi"], [lang="bn"]) .hero h1 .accent { padding-block: 0.12em 0.16em; }
+/* Urdu's Nastaliq, where the system draws it, is taller still and its letters step down each word: more room than Hindi's. */
+:root[lang="ur"] .hero h1 { line-height: 1.6; }
+:root[lang="ur"] .hero h1 .accent { padding-block: 0.2em 0.3em; }
 /* Thai stacks a vowel and a tone mark above its letters and hangs vowels below them, so its headings get the room
    between their lines that Latin's tight 1.15 (1.02 for the title) doesn't leave, and the title's gradient box too. */
 :root[lang="th"] :is(h1, h2, h3) { line-height: 1.35; }
@@ -1031,8 +1034,8 @@ label.split-row { cursor: pointer; }
 .lang-switch button { border: 0; background: transparent; cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 6px;
   padding: 4px 12px; border-radius: 999px; color: var(--fg-soft); font-size: 13px; font-weight: 500; }
 .lang-switch button .icon { width: 14px; height: 14px; }
-/* Greek's and Filipino's theme names are too wide for the footer on the narrowest phones: the words stay, the icons go. */
-@media (max-width: 360px) { :root:is([lang="el"], [lang="fil"]) .lang-switch[role="group"] button .icon { display: none; } }
+/* Some languages' theme names are too wide for the footer on the narrowest phones: the words stay, the icons go. */
+@media (max-width: 360px) { .lang-switch[role="group"] button .icon { display: none; } }
 /* The footer's language: the language shown, in its own name, opening the language picker. */
 .lang-switch button[data-lang-open] { color: var(--fg); }
 .lang-switch button[data-lang-open]:hover { background: var(--surface); }
