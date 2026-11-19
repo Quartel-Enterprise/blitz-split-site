@@ -2,7 +2,8 @@
 
 The site at blitzsplit.com of Blitz Split (Bora Rachar in Brazil's Portuguese; the site's languages
 are `SUPPORTED` in `public/boot.js`, plus its `VARIANTS`): the landing, the privacy policy, the terms of use, the release notes and the support page, served by a Cloudflare Worker with static assets (`public/`) and one
-script (`src/index.js`) for the invite links' previews. Plain HTML, CSS and JavaScript with no build. The apps live in
+script (`src/index.js`) for the invite links' previews. A second, tiny Worker (`redirect/`) sends vamosrachar.com, vamorachar.com and borarachar.com to blitzsplit.com; Workers
+Builds doesn't deploy it: run `npm run deploy:redirect` ([`docs/development.md`](docs/development.md#extra-domains)). Plain HTML, CSS and JavaScript with no build. The apps live in
 `blitz-split-client` and the backend in `blitz-split-api`.
 
 ## Documentation
