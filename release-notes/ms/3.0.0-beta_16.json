@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikasi kini tersedia dalam bahasa Korea: pilih “한국어” dalam Profil › Bahasa, atau biarkan ia mengikut peranti anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan kini boleh membahagi dalam won Korea Selatan (KRW), dan kumpulan yang dibuat di Korea Selatan bermula dengannya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Akaun dan penyegerakan” dalam Profil kini menunjukkan ID pengguna anda, yang boleh disalin dengan satu ketikan, supaya anda dapat memberitahu kami siapa anda apabila menjawab salah satu tinjauan kami.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Foto yang anda tambah pada bil kini dibuka dalam Laraskan foto dahulu, supaya anda dapat memilih petak yang akan dilampirkan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Ikut pendapatan” kini mengingatkan anda untuk memasukkan pendapatan bersih setiap orang, selepas cukai, dan “Pembahagian lalai” hanya menunjukkan peratusan setiap orang setelah pendapatan ditaip.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pengepala kumpulan kini lebih kemas: baris dengan bilangan ahli dan jumlah di bawah namanya telah tiada. Wajah menunjukkan siapa yang terlibat, dan Statistik menunjukkan jumlahnya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Foto kad atau penyata bank kini menyatakan perkara itu, dan mencadangkan bil diisi secara manual, dan bukan menyatakan resit tidak dapat dibaca.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategori dalam Statistik kini membuka Semua perbelanjaan dengan kumpulan, kategori dan tempoh yang sudah dipilih, supaya anda juga boleh mencari bil tersebut. Semua perbelanjaan juga mendapat penapis Tempoh.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dalam Mengikut orang di Statistik, ketikan di sebelah cincin atau di tengahnya melepaskan orang yang dipilih.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

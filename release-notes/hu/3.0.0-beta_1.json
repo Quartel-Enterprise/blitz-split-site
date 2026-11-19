@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "A Blitz Split egy új, az alapoktól újraépített alkalmazás: a Blitz Split 2.4.0 helyébe lép, és Androidon, iPhone-on, iPaden, Macen és a weben fut.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Oszd fel a kiadásokat egyenlően, összegek, százalékok, részek vagy tételek szerint, akár egy, akár több személy fizetett.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Olvass be egy nyugtát, és az alkalmazás kiolvassa belőle a tételeket és a végösszeget.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hozz létre csoportokat utazásokhoz, otthonra vagy eseményekre, és hívj meg másokat linkkel vagy QR-kóddal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nézd meg, ki kinek tartozik az egyes csoportokban és összesítve, rögzítsd a fizetéseket, és egyszerűsítsd a tartozásokat, hogy kevesebb fizetéssel minden rendeződjön.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Minden offline is működik: amit csinálsz, az eszközödön mentődik, és akkor megy ki, amikor újra online vagy.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A fiók nem kötelező: csatlakoztasd a Google-t vagy az Apple-t, vagy őrizz meg egy helyreállítási kódot, hogy másik eszközön is visszakapd a csoportjaidat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Szólj hozzá egy kiadáshoz, csatolj fotókat, kövesd az eseményeket a Tevékenységben, és nézd meg a Statisztikában, hová ment a pénz.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Minden kiadásnak és fizetésnek saját pénzneme van, az alkalmazás pedig angolul, portugálul, spanyolul és franciául érhető el.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

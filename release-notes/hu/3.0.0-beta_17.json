@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Az alkalmazás mostantól arabul is elérhető, jobbról balra olvasható elrendezéssel: válaszd az „العربية” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól szaúdi riálban (SAR), emírségekbeli dirhamban (AED), egyiptomi fontban (EGP) és marokkói dirhamban (MAD) is feloszthatnak kiadásokat, az ezekben az országokban létrehozott csoportok pedig a helyi pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az alkalmazás mostantól egyszerűsített kínai nyelven is elérhető: válaszd a „中文（简体）” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól kínai jüanban (CNY) is feloszthatnak kiadásokat, a szárazföldi Kínában létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az alkalmazás mostantól hagyományos kínai nyelven is elérhető: válaszd a „中文（繁體）” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól új tajvani dollárban (TWD) is feloszthatnak kiadásokat, a Tajvanon létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az alkalmazás mostantól csehül is elérhető: válaszd a „Čeština” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól cseh koronában (CZK) is feloszthatnak kiadásokat, a Csehországban létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Minden csoportnak saját rendezési emlékeztetője van: tartsd meg a heti emlékeztetőt hétfőn 10:00-kor, válassz a hét egy másik napját vagy a hónap egy napját és egy időpontot (például minden hónap 25-én 12:00-kor), vagy kapcsold ki a csoport létrehozásakor vagy a Csoport szerkesztése menüben. Az értesítést csak azok kapják meg, akiknek még van tartozásuk, és a csoportban egy bezárható szalagot is látnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az alkalmazás mostantól héberül is elérhető, jobbról balra olvasható elrendezéssel: válaszd az „עברית” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól izraeli új sékelben (ILS) is feloszthatnak kiadásokat, az Izraelben létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az alkalmazás mostantól hindiül is elérhető: válaszd a „हिन्दी” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól indiai rúpiában (INR) is feloszthatnak kiadásokat, az Indiában létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az alkalmazás mostantól románul is elérhető: válaszd a „Română” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól román lejben (RON) is feloszthatnak kiadásokat, a Romániában létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az alkalmazás mostantól svédül is elérhető: válaszd a „Svenska” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól svéd koronában (SEK) is feloszthatnak kiadásokat, a Svédországban létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az alkalmazás mostantól thaiul is elérhető: válaszd a „ไทย” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól thai bahtban (THB) is feloszthatnak kiadásokat, a Thaiföldön létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az alkalmazás mostantól vietnámiul is elérhető: válaszd a „Tiếng Việt” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól vietnámi dongban (VND) is feloszthatnak kiadásokat, a Vietnámban létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Koppints a csoport fotójára a kiadás felső sávjában, hogy nagyban lásd.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ha kétfős csoportban a halványított Tartozások egyszerűsítése kapcsolóra koppintasz, az alkalmazás jelzi, hogy a funkció 3 fős csoportnál válik elérhetővé.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Tartozások egyszerűsítése Hogyan működik részében a példa mostantól monogramok helyett személyek fotóit mutatja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Javítottuk, hogy a vissza kézmozdulat nem lépett ki a fizetési lapról megnyitott személyes profilból; mostantól visszatér a laphoz.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

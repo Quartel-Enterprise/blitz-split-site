@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Puwede nang hatiin ang gastos Ayon sa kita, at ibinabahagi sa mga miyembro ng grupo ang mga kitang tina-type mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "May menu na ang bawat isa sa Mga pinakabagong gastos sa Home: I-edit, I-duplicate, Ibahagi at Burahin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Binubuksan na ng Tingnan lahat sa Home ang Lahat ng gastos: bawat gastos na kasali ka, sa lahat ng grupo mo, may paghahanap, mga filter at pag-uuri.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mas malaki na ang larawan ng grupo sa itaas ng screen nito at lumiliit habang nag-i-scroll, at may animation mula sa hilera nito ang pagbubukas ng grupo.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Ipinapakita na ng Aktibidad ang mga larawan ng tao, ng Mga balanse › Ayon sa grupo ang larawan ng bawat grupo, at ng Pinakamalaking gastos sa Estadistika ang kategorya nito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ipinapakita na ng Profile › Account at sync ang logo ng Google o Apple at ang buo mong email, na ikaw lang ang nakakakita.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ipinapaliwanag na ng Burahin ang account kung ano ang mananatili sa mga grupo mo pagkatapos mawala ang account mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hindi na mukhang naka-off ang switch na Default na Pix key sa default mong key sa madilim na tema.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

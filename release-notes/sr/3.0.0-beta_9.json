@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Iznosi i oznake se više ne lome u nove redove niti se odsecaju na malim ekranima, preklopnim uređajima i s velikim tekstom.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tekst, dugmad i obrisi koji su bili teško čitljivi sada imaju veći kontrast, u svetloj i tamnoj temi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodir na polje u pregledaču na iPhone-u više ne zumira stranicu.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

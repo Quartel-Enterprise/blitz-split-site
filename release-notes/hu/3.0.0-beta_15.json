@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Ha a Névjegyekből vagy az Egyenlegekből megnyitsz valakit, a fotóval együtt a neve és az egyenlege is átkerül a profiljába, és visszatéréskor vissza is.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "A Statisztikában a „Személyenként” gyűrű közepén mostantól egyszerűen „Te” olvasható, ha a rész a tiéd, a hosszú név pedig „…” jelre végződik, és nem ér hozzá a gyűrűhöz.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ha a Csoportok képernyőről megnyitsz egy csoportot, a tagok arcai a sorból átkerülnek a csoport képernyőjére, kilépéskor pedig vissza.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Telefonon egy kiadás megnyitásakor mostantól több minden utazik vele: a Kezdőlap és az Összes kiadás sorából az, hogy ki fizetett, a csoport Kiadások sorából az időpont, a csoport képernyőjéről pedig a csoport fotója és neve. Kilépéskor visszautaznak.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A csoport neve mostantól megnyitáskor is átkerül a csoport képernyőjére, nem csak visszafelé.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

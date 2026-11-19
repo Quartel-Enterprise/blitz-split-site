@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikasi kini tersedia dalam bahasa Rusia dan Ukraine: pilih “Русский” atau “Українська” dalam Profil › Bahasa, atau biarkan ia mengikut peranti anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan kini boleh membahagi dalam rubel Rusia (RUB) dan hryvnia Ukraine (UAH), dan kumpulan yang dibuat di Rusia atau Ukraine bermula dalam mata wangnya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil mempunyai keutamaan baharu “Format masa”: ikut sistem, atau sentiasa tunjukkan masa dalam format 24 jam (14:30) atau 12 jam dengan AM dan PM (2:30 PM), dalam bil, Aktiviti, komen dan pemilih masa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dengan telefon dalam kedudukan melintang, dan pada tablet, “Bahagikan bil” kumpulan kini berada di bar atas dan tidak lagi terapung di atas bil.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dengan Warna dinamik dihidupkan, apa yang anda hutang kekal jingga dan tidak bertukar merah, supaya ia tidak sekali-kali kelihatan seperti hijau bagi apa yang akan anda terima.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dalam Aktiviti, setiap baris kini menunjukkan foto kumpulan di sebelah namanya, jika kumpulan itu mempunyai foto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Baki anda dalam kumpulan ini tidak lagi mengulang amaun pada baris kedua apabila anda hanya akan menerima atau hanya berhutang.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dalam Pembahagian lalai, bahagian setiap orang dalam bil contoh kini mempunyai warnanya sendiri, dengan titik sepadan sebelum nama mereka, supaya orang yang bersebelahan dalam senarai tidak sekali-kali kelihatan seperti satu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bar atas bil kini menunjukkan foto kumpulan, atau huruf awalnya, di sebelah nama kumpulan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mengetik foto seseorang kini membawanya ke dalam profil mereka, dan kembali semula apabila anda pulang.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Bil yang dibuka daripada Perbelanjaan kumpulan kini bergerak ke tempatnya seperti dari Utama, dan foto kumpulan pada bil di Utama terbang ke bar atas bil.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "“Bahagikan bil” kini juga berada di bahagian atas Baki dan Kenalan, dan pada skrin kumpulan ia berpindah ke bar atas dan tidak lagi terapung di atas senarai, dengan “Tambah orang” kini dalam menu ⋯. Ia bermula dengan namanya dan mengecil kepada ikonnya apabila anda menatal.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Dalam Kumpulan, mengetik kad Baki keseluruhan membuka Baki.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "“Jemput orang” dalam kumpulan kini dipanggil “Tambah orang”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pada iPad, tab dibuka dalam bar sisi, dan apabila tab berada di bar atas, seperti ketika iPad menegak, “Bahagikan bil” kekal kelihatan di situ manakala butang lain berpindah ke baris tepat di bawahnya.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Dalam “Bahagikan bil”, “Dibayar dengan” kini juga muncul apabila orang lain membayar bil, dalam keadaan malap: mengetiknya menerangkan bahawa hanya mereka yang membayar boleh menandakan kaedah yang digunakan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tanpa akaun, kod pemulihan anda kini terdiri daripada 12 perkataan bernombor, lebih mudah ditulis, dan pemulihan mengambil satu perkataan bagi setiap medan, dengan cadangan setiap perkataan semasa anda menaip. Kod yang disimpan sebelum versi ini tidak lagi berfungsi: simpan kod baharu, atau sambungkan Google atau Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dalam Perbelanjaan mengikut kategori, setiap bil kini mempunyai menu ⋮ yang sama seperti dalam Perbelanjaan kumpulan: edit, buat pendua, kongsi atau padamkannya tanpa membukanya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pada skrin lebar (telefon dalam kedudukan melintang, tablet, Mac dan web), Perbelanjaan mengikut kategori mengekalkan kategori dan jumlahnya dalam lajur di sebelah bil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dalam bahasa Jerman, Belanda dan Jepun, ayat dalam Aktiviti kini mengikut susunan kata semula jadi setiap bahasa, tanpa titik bertindih sebelum nama bil atau kumpulan.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Huruf pertama “Tambah foto” di bawah lampiran bil tidak lagi terpotong.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dalam Kumpulan, butang untuk mencipta kumpulan kini berbunyi “+ Kumpulan” dan tidak lagi terputus kepada dua baris.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Nota keluaran kini menunjukkan versi yang baru anda pasang, tanpa menunggu sehingga sehari untuk membawa notanya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dalam Statistik kumpulan, butang tempoh (“Sepanjang masa”) tidak lagi terputus kepada dua baris: tarikh berpindah ke bawahnya apabila kedua-duanya tidak muat.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Perbelanjaan kumpulan kini mempunyai “Lihat semua”, yang membuka Semua perbelanjaan yang sudah ditapis mengikut kumpulan itu, supaya anda boleh mencari, mengisih dan menapis bilnya. Kosongkan penapis untuk melihat semua kumpulan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dalam Kumpulan baharu, “Tambah ikut nama” kini mencadangkan orang daripada Kenalan anda semasa anda menaip, dengan foto mereka: ketik seorang untuk mencipta kumpulan dengan orang yang sama.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Semasa menatal kumpulan, bar atas yang terlipat hanya menunjukkan foto dan nama kumpulan, tanpa ahli dan jumlah yang terpotong di sebelahnya.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Anda kini boleh memuat turun 12 perkataan kod pemulihan anda sebagai fail teks.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Simpan kod pemulihan anda kini menyatakan bahawa kod itu mengembalikan data anda, dan bahawa data dipadamkan selepas 30 hari tidak digunakan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bahagikan bil kini juga mempunyai Imbas resit di bahagian atas, di sebelah Simpan, supaya papan kekunci tidak lagi menutupnya, dan Tambah kaedah bayaran kini kurang menonjol.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dalam Statistik kumpulan, Mengikut orang kini berbentuk donat bahagian setiap orang, dengan warna yang sama seperti dalam Pembahagian lalai, dan senarai nama serta amaun di bawahnya sebagai petunjuk. Digunakan dan Dibayar menukar apa yang ditunjukkan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Siapa yang terlibat” dalam Kumpulan baharu menunjukkan foto profil anda dan bukan huruf awal anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Menyegerak…” tidak lagi terus muncul di Utama dan Kumpulan apabila anda kembali ke aplikasi: penyegerakan berjalan secara senyap setelah kumpulan anda ada pada skrin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pada tablet dan dengan telefon dalam kedudukan melintang, bayang “Bahagikan bil” di bahagian atas bar sisi tidak lagi terpotong di tepinya.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

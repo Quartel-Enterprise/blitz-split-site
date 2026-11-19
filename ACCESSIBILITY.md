@@ -24,8 +24,8 @@ keyboard. The apps have their own statement in
 - **Motion.** With `prefers-reduced-motion` the landing shows still and complete: nothing slides, counts or loops.
 - **Language.** The site is in English, Portuguese (Brazil and Portugal), Spanish, French, German, Italian, Polish,
   Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified and Traditional Chinese,
-  Hebrew, Thai, Vietnamese, Swedish, Czech and Romanian. It follows the browser's language, sets the page's `lang`, and
-  reads right to left in Arabic and Hebrew.
+  Hebrew, Thai, Vietnamese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian and Serbian. It follows the browser's language, sets the page's `lang`, and
+  reads right to left in Arabic, Hebrew and Urdu.
 
 ## Known limitations
 

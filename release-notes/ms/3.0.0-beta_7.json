@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split kini tersedia dalam bahasa Belanda, Jepun, Turki dan Indonesia, dan senarai bahasa menamakan setiap bahasa dalam bahasanya sendiri.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan dan bil kini boleh menggunakan zloty Poland, lira Turki dan rupiah Indonesia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil mempunyai butang baharu, Kongsi profil: sesiapa yang membuka pautan anda melihat nama dan foto anda dan boleh menjemput anda ke dalam kumpulan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pautan jemputan kumpulan baharu sedia serta-merta, walaupun di luar talian, dan Ahli mempunyai butang baharu untuk menyalinnya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Menutup borang yang ada perubahan belum disimpan kini bertanya “Buang perubahan?” terlebih dahulu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dasar Privasi dan Terma Perkhidmatan kini dibuka di dalam aplikasi dan bukan dalam pelayar.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Pada telefon, bar atas dan bawah kini menyisih apabila anda menatal ke bawah dan kembali apabila anda menatal ke atas.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Dalam Bahagikan bil, memilih tarikh tidak lagi terus melompat ke jam: masa mempunyai butangnya sendiri.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ketik kumpulan di bahagian atas Bahagikan bil untuk membukanya; kembali semula membawa anda ke bil dengan semua yang telah anda taip.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perbelanjaan terkini di Utama kini menunjukkan kumpulan setiap bil dan foto orang yang membayar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix kini hanya ditunjukkan kepada orang yang mungkin menggunakannya, seperti mereka yang menggunakan aplikasi dalam bahasa Portugis, mempunyai kunci Pix atau berada dalam kumpulan yang menggunakan real Brazil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Menyegerak…” kini hanya muncul kali pertama akaun anda dimuatkan pada peranti, bukan pada setiap penyegerakan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil tidak lagi menawarkan pemutusan sambungan Google atau Apple daripada akaun anda: log keluar atau padam akaun sebagai gantinya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Edit profil kini dibuka sebagai helaian di atas Profil dan bukan sebagai skrin berasingan.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Jalur kosong antara borang dan papan kekunci dalam Bahagikan bil telah tiada.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kumpulan bersama bagi kenalan kini menunjukkan foto setiap kumpulan.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

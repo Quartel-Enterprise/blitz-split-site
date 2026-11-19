@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Otvaranje osobe iz Kontakata ili Salda sada uz fotografiju prenosi i njezino ime i saldo na njezin profil, i natrag kad se vratiš.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "U Statistici sredina prstena „Po osobi” sada jednostavno kaže „Ti” kad je udio tvoj, a dugo ime završava s „…” umjesto da dodiruje prsten.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pri otvaranju grupe iz Grupa lica članova sada putuju iz retka na zaslon grupe i natrag kad izađeš.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Na telefonu otvaranje troška sada prenosi više sadržaja: platitelj putuje iz retka na Početnoj i u Svim troškovima, vrijeme iz retka u Troškovima grupe, a fotografija i naziv grupe sa zaslona grupe. Vraćaju se natrag kad izađeš.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Naziv grupe sada putuje na zaslon grupe pri otvaranju, a ne samo pri povratku.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

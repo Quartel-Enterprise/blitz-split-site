@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Amaun dan label tidak lagi terputus baris atau terpotong pada skrin kecil, peranti boleh lipat dan dengan teks besar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Teks, butang dan garis luar yang sukar dibaca kini mempunyai kontras yang lebih tinggi, dalam tema cerah dan gelap.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mengetik medan dalam pelayar iPhone tidak lagi mengezum halaman.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Aplikacija sada govori arapski, s rasporedom koji se čita zdesna nalevo: izaberi „العربية“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u saudijskom rijalu (SAR), dirhamu UAE (AED), egipatskoj funti (EGP) i marokanskom dirhamu (MAD), a grupa napravljena u nekoj od tih zemalja počinje u njenoj valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori pojednostavljeni kineski: izaberi „中文（简体）“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u kineskom juanu (CNY), a grupa napravljena u kontinentalnoj Kini počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori tradicionalni kineski: izaberi „中文（繁體）“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u novom tajvanskom dolaru (TWD), a grupa napravljena na Tajvanu počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori češki: izaberi „Čeština“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u češkoj kruni (CZK), a grupa napravljena u Češkoj počinje u njoj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Svaka grupa sada ima sopstveni podsetnik za izmirenje: zadrži nedeljni ponedeljkom u 10:00, izaberi drugi dan u nedelji ili dan u mesecu i vreme (na primer, svakog 25. u 12:00) ili ga isključi, pri pravljenju grupe ili u „Izmeni grupu“. Obaveštenje dobijaju samo oni koji još duguju, a u grupi vide baner koji mogu da odbace.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori hebrejski, s rasporedom koji se čita zdesna nalevo: izaberi „עברית“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u izraelskom novom šekelu (ILS), a grupa napravljena u Izraelu počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori hindi: izaberi „हिन्दी“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u indijskoj rupiji (INR), a grupa napravljena u Indiji počinje u njoj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori rumunski: izaberi „Română“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u rumunskom leju (RON), a grupa napravljena u Rumuniji počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori švedski: izaberi „Svenska“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u švedskoj kruni (SEK), a grupa napravljena u Švedskoj počinje u njoj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori tajski: izaberi „ไทย“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u tajlandskom batu (THB), a grupa napravljena na Tajlandu počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori vijetnamski: izaberi „Tiếng Việt“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u vijetnamskom dongu (VND), a grupa napravljena u Vijetnamu počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodirni fotografiju grupe na gornjoj traci troška da je vidiš u velikom prikazu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodir na zatamnjeni prekidač Pojednostavi dugove u grupi od dve osobe sada objašnjava da postaje dostupan kad grupa ima 3 osobe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U odeljku Kako funkcioniše za Pojednostavi dugove primer sada prikazuje fotografije osoba umesto inicijala.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ispravljen je pokret za nazad koji nije izlazio iz profila osobe otvorenog iz prozora uplate; sada se vraća na taj prozor.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

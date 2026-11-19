@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Kartica Stanja više ne prikazuje red nula kad niko ništa ne duguje: samo piše Sve izmireno.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ispravljeno: Profil je prikazivao logotip Apple-a pored imejla naloga prijavljenog preko Google-a, ili logotip Google-a pored naloga prijavljenog preko Apple-a, kad nalog ima oba.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

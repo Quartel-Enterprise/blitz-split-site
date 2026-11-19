@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: … }
 // before this script, and blocks written per language carry data-lang with the language ("en", "pt", "fr"…).
 (function () {
   const params = new URLSearchParams(location.search);
@@ -69,6 +69,14 @@
     sv: { search: "Sök språk", clear: "Rensa sökningen", none: "Inget språk matchar ”{query}”", system: "System", systemDetail: "Enhetens språk", back: "Tillbaka", close: "Stäng" },
     cs: { search: "Hledat jazyk", clear: "Vymazat hledání", none: "Žádný jazyk neodpovídá „{query}“", system: "Systém", systemDetail: "Jazyk zařízení", back: "Zpět", close: "Zavřít" },
     ro: { search: "Caută o limbă", clear: "Șterge căutarea", none: "Nicio limbă nu corespunde cu „{query}”", system: "Sistem", systemDetail: "Limba dispozitivului", back: "Înapoi", close: "Închide" },
+    bn: { search: "ভাষা খুঁজুন", clear: "খোঁজা মুছুন", none: "“{query}” লিখে কোনো ভাষা পাওয়া যায়নি।", system: "সিস্টেম", systemDetail: "ডিভাইসের ভাষা", back: "ফিরে যান", close: "বন্ধ করুন" },
+    ms: { search: "Cari bahasa", clear: "Kosongkan carian", none: "Tiada bahasa yang sepadan dengan “{query}”", system: "Sistem", systemDetail: "Bahasa peranti", back: "Kembali", close: "Tutup" },
+    el: { search: "Αναζήτηση γλώσσας", clear: "Εκκαθάριση αναζήτησης", none: "Καμία γλώσσα δεν ταιριάζει με «{query}»", system: "Σύστημα", systemDetail: "Γλώσσα συσκευής", back: "Πίσω", close: "Κλείσιμο" },
+    hu: { search: "Nyelv keresése", clear: "Keresés törlése", none: "Nincs találat: „{query}”", system: "Rendszer", systemDetail: "Az eszköz nyelve", back: "Vissza", close: "Bezárás" },
+    fil: { search: "Maghanap ng wika", clear: "I-clear ang paghahanap", none: "Walang wikang tugma sa “{query}”", system: "System", systemDetail: "Wika ng device", back: "Bumalik", close: "Isara" },
+    ur: { search: "زبان تلاش کریں", clear: "تلاش صاف کریں", none: "کوئی زبان نہیں ملی: “{query}”", system: "سسٹم", systemDetail: "ڈیوائس کی زبان", back: "واپس", close: "بند کریں" },
+    hr: { search: "Pretraži jezike", clear: "Očisti pretragu", none: "Nijedan jezik ne odgovara upitu „{query}”", system: "Sustav", systemDetail: "Jezik uređaja", back: "Natrag", close: "Zatvori" },
+    sr: { search: "Pretraži jezike", clear: "Obriši pretragu", none: "Nijedan jezik ne odgovara upitu „{query}“", system: "Sistem", systemDetail: "Jezik uređaja", back: "Nazad", close: "Zatvori" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
   // Ukrainian by Ukraine's UA ("UK" reads as the United Kingdom) and the two Chinese by their scripts, as Chinese

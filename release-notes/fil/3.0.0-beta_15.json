@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Kapag nagbukas ng tao mula sa Mga contact o Mga balanse, dinadala na rin ang pangalan at balanse niya papunta sa profile niya kasama ang larawan, at pabalik muli kapag bumalik ka.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Sa Estadistika, “Ikaw” na lang ang sinasabi sa gitna ng singsing na “Ayon sa tao” kapag sa iyo ang bahagi, at nagtatapos sa “…” ang mahabang pangalan sa halip na sumagi sa singsing.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kapag nagbukas ng grupo mula sa Mga grupo, bumibiyahe na ang mga mukha ng mga miyembro nito mula sa hilera papunta sa screen ng grupo, at pabalik kapag umalis ka.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Sa phone, mas marami nang dinadala ang pagbubukas ng gastos: bumibiyahe ang nagbayad mula sa hilera nito sa Home at Lahat ng gastos, ang oras mula sa hilera nito sa Mga gastos ng grupo, at ang larawan at pangalan ng grupo mula sa screen ng grupo. Bumabalik ang mga ito kapag umalis ka.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Bumibiyahe na ang pangalan ng grupo papunta sa screen ng grupo habang nagbubukas ito, hindi lang pabalik.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

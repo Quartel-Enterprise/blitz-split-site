@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Trošak se sada može podijeliti Prema prihodu, a prihodi koje upišeš dijele se s članovima grupe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Svaki Najnoviji trošak na Početnoj sada ima izbornik: Uredi, Dupliciraj, Pošalji i Izbriši.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prikaži sve na Početnoj sada otvara Sve troškove: svaki trošak u kojem sudjeluješ, u svim tvojim grupama, s pretraživanjem, filtrima i razvrstavanjem.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotografija grupe sada je veća na vrhu zaslona i smanjuje se dok se pomičeš, a otvaranje grupe animirano kreće iz njezina retka.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktivnost sada prikazuje fotografije osoba, Salda › Po grupi prikazuju fotografiju svake grupe, a Najveći trošak u Statistici prikazuje svoju kategoriju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Korisnički račun i sinkronizacija sada prikazuje logotip Googlea ili Applea i cijelu tvoju e-adresu, koju vidiš samo ti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Izbriši korisnički račun sada objašnjava što ostaje u tvojim grupama nakon što korisničkog računa više nema.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prekidač Zadani Pix ključ više ne izgleda isključeno na tvom zadanom ključu u tamnoj temi.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

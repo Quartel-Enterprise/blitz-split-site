@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Hindi na nagpapakita ng hilera ng mga zero ang tab na Mga balanse kapag walang may utang: “Bayad na lahat” na lang ang sinasabi nito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Inayos ang Profile na nagpapakita ng logo ng Apple sa tabi ng email ng account na naka-sign in gamit ang Google, o ng logo ng Google sa account na naka-sign in gamit ang Apple, kapag parehong nakakonekta ang dalawa sa account.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

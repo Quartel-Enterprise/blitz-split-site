@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Sa Ano ang bago, i-tap ang bersyon para buksan ang release nito sa GitHub, o ang button ng GitHub para makita ang lahat ng release.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ipinapakita na ng pahina ng grupo, ng imbitasyon at ng mga detalye ng gastos ang larawan ng hanggang limang tao nang magkakatabi sa halip na dalawa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa iPad o bukas na iPhone Duo na nakahiga, ipinapakita na ng grupong sakop ang buong screen (binuksan mula sa Home, halimbawa) ang larawan, mga miyembro at balanse mo sa tabi ng mga gastos.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Binubuksan na ng pag-tap sa card na Kabuuang balanse sa Home ang tab na Mga balanse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa phone, kapag binuksan ang grupo o gastos mula sa Home, lumilipad na papunta sa screen nito ang balanse ng grupo, o ang icon, pamagat, kabuuan at bahagi mo sa gastos, at pabalik muli kapag bumalik ka.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dalawang beses nang nakalista ang Espanyol sa Profile › Wika, “Español (Latinoamérica)” at “Español (España)”, para mapili mo ang sinasalita mo saan man naroon ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kapag nakahiga ang phone o tablet, nagsisimula na sa itaas ng screen ang nasa tabi ng listahan sa Mga contact at Mga balanse, at nasa ibabaw ng listahan ang larawan ng profile mo.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Mas madali nang makita ang gilid ng button na “Magdagdag ng tao” sa Mga miyembro ng grupo.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Pinipili na ang kulay ng card sa “Mga paraan ng pagbabayad” mula sa parehong mga kulay ng mga kategorya: ang labindalawang kulay, ang sarili mong mga kulay at ang “Bagong kulay” para gumawa ng iba.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa “Hatiin ang gastos”, maliit na button na ang “Binayaran gamit ang” sa ilalim ng Hatiin, at kung wala ka pang paraan ng pagbabayad, gumagawa roon mismo ang “Magdagdag ng paraan ng pagbabayad” at pinipili ito para sa gastos. May sariling icon na rin ang mga debit card.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nagbubukas na sa ibabaw ng Profile ang pagdagdag o pag-edit ng paraan ng pagbabayad sa halip na sa hiwalay na screen.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Ipinapaliwanag na ng Dynamic na kulay na kinukuha ng app ang mga kulay ng system ng Android, na galing sa wallpaper mo o sa paletang pinili mo sa settings ng Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kapag naka-on ang Reduce Motion, agad nang ipinapakita ng Estadistika ng grupo ang mga chart nito, nang walang lumalaking bar o umiikot na singsing.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Inayos sa Portuges ng Brazil ang Aktibidad at ang history ng gastos, na nagsasabing “Você criaste” at mga katulad nito sa halip na “Você criou”.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Inayos ang mga petsa sa pagpili ng petsa ng Estadistika na nahahati nang isa o dalawang letra bawat linya; napupunta na sa ilalim ng petsa ng simula ang petsa ng pagtatapos kapag hindi magkasya ang dalawa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Inayos ang mga notification at ilang pangungusap na lumalabas sa Ingles, o bilang code gaya ng “push.bill_deleted”, sa Espanyol ng Spain at Portuges ng Portugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Inayos ang hilera ng mga tao sa Home sa Portuges ng Portugal, na nagsasabing “te deve” sa ilalim ng pangalan sa halip na “deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

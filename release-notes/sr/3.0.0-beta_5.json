@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split sada govori nemački, italijanski i poljski: prati jezik uređaja, a možeš i da izabereš jezik u Profil › Jezik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Svaka kategorija sada ima svoju boju, a Statistika crta svaku kategoriju i svaku osobu u njenoj boji.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Boju kategorije sada možeš da promeniš u obrascu kategorije ili u Mapi kategorija.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Meni troška u Troškovima ima novu opciju, Dupliraj: otvara novi trošak već popunjen kao original.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe i troškovi više ne nestaju na trenutak kad se vratiš u aplikaciju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pretraga se više ne zatvara odmah kad još nemaš grupu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nova grupa sada počinje kao Događaj, prvi tip na listi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kad još nemaš grupu, Pozovi linkom ili QR kodom sada prikazuje samo dugme Nova grupa umesto dugmadi koju ne možeš da koristiš.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Račun čije čitanje traje duže više se ne završava greškom veze.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Redovi kategorija u Statistici su čistiji: više ne navode iznos svake potkategorije.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

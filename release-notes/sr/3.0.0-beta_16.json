@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikacija sada govori korejski: izaberi „한국어“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u južnokorejskom vonu (KRW), a grupa napravljena u Južnoj Koreji počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Nalog i sinhronizacija“ u Profilu sada prikazuje tvoj ID korisnika, koji možeš da kopiraš jednim dodirom, da nam kažeš ko si kad odgovaraš na neku našu anketu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotografija koju dodaš trošku sada se prvo otvara u „Prilagodi fotografiju“, da kadriraš kvadrat koji se prilaže.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Po prihodima“ sada podseća da uneseš neto prihod svake osobe, posle poreza, a „Podrazumevana podela“ prikazuje procenat svake osobe tek kad se unese prihod.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zaglavlje grupe je čistije: nema više reda s brojem članova i ukupnim iznosom ispod naziva. Lica pokazuju ko učestvuje, a Statistika prikazuje ukupan iznos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotografije kartice ili bankovnog izvoda sada to i kažu i predlažu da trošak popuniš ručno, umesto poruke da račun nije mogao da se pročita.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategorija u Statistici sada otvara Sve troškove s već izabranom grupom, kategorijom i periodom, pa možeš da pretražuješ i te troškove. Svi troškovi su dobili i filter Period.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U prikazu Po osobi u Statistici, dodir pored prstena ili u njegovu sredinu poništava izbor osobe.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Iznosi i oznake više se ne prelamaju ni ne odsijecaju na malim zaslonima, preklopnim uređajima i uz veliki tekst.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tekst, gumbi i obrubi koji su bili teško čitljivi sada imaju veći kontrast, u svijetloj i tamnoj temi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodir polja u pregledniku na iPhoneu više ne povećava stranicu.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

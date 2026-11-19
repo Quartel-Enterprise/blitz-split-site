@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Kartica Salda više ne prikazuje redak nula kad nitko nikome ništa ne duguje: samo piše Sve podmireno.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ispravljeno je prikazivanje logotipa Applea pokraj e-adrese korisničkog računa prijavljenog putem Googlea, ili logotipa Googlea pokraj onog prijavljenog putem Applea, kad korisnički račun ima oba.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

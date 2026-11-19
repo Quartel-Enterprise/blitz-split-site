@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "A kiadások linkje mostantól a böngésző helyett az alkalmazásban nyílik meg, a fotóival és a hozzászólásaival együtt.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "A már nem megosztott vagy csak a kiadás résztvevői által megnyitható kiadáslink mostantól ezt közli, és nem jelenít meg hibát.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A profilok linkje mostantól akkor is megnyílik, ha nem jelentkeztél be.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Profil › Adatvédelem és névjegy menüben új kapcsoló található, a „Használati adatok megosztása”: kapcsold ki, ha nem szeretnéd elküldeni, hogyan használod az alkalmazást.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A profilodhoz, egy hozzászóláshoz és az alkalmazás letöltéséhez megosztott linkek előnézete mostantól a te nyelveden jelenik meg.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Link troška se sada otvara u aplikaciji umesto u pregledaču, s fotografijama i komentarima.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Link troška koji se više ne deli, ili koji mogu da otvore samo osobe u trošku, sada to i kaže umesto da prikaže grešku.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Link profila se sada otvara i bez prijave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Privatnost i informacije ima novi prekidač, „Deli podatke o korišćenju“: isključi ga da prestaneš da šalješ podatke o tome kako koristiš aplikaciju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Linkovi koje deliš do svog profila, do komentara i za preuzimanje aplikacije sada prikazuju pregled na tvom jeziku.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

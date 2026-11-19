@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Membuka seseorang daripada Kenalan atau Baki kini membawa nama dan baki mereka ke dalam profil mereka bersama foto, dan kembali semula apabila anda pulang.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Dalam Statistik, bahagian tengah cincin “Mengikut orang” kini hanya menyebut “Anda” apabila bahagian itu milik anda, dan nama panjang berakhir dengan “…” dan tidak lagi menyentuh cincin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Membuka kumpulan daripada Kumpulan kini membawa wajah ahlinya dari baris ke dalam skrin kumpulan, dan kembali apabila anda keluar.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Pada telefon, membuka bil kini membawa lebih banyak butirannya: siapa yang membayar bergerak dari barisnya di Utama dan Semua perbelanjaan, masa dari barisnya dalam Perbelanjaan kumpulan, dan foto serta nama kumpulan dari skrin kumpulan. Semuanya kembali apabila anda keluar.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Nama kumpulan kini bergerak ke dalam skrin kumpulan semasa ia dibuka, bukan hanya semasa kembali.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

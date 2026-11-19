@@ -5,12 +5,12 @@
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech and Romanian. The markup is in English; each page carries its other languages' strings in
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian and Serbian. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the language picker picks another, kept for the next visit, or "System" again, which forgets it and follows the
 browser (`boot.js` sets `data-lang-pref` to the language chosen or `system`);
-`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a twenty-fifth language: only the exact tag `pt-PT` (a browser's
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro|bn|ms|el|hu|fil|ur|hr|sr` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a thirty-third language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
 `pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
@@ -26,7 +26,7 @@ tracking; Turkish writes the percent sign first (%10). Russian and Ukrainian cou
 only between words (`word-break: keep-all`), drops the Latin headings' tracking, counts in one form (no `|`), and never
 glues a particle to a name or an amount filled in at run time ("결제: Ana", "Ana 님이"), as the app writes them.
 Arabic is Modern Standard Arabic for every `ar` tag and reads right to left: `boot.js` sets `dir="rtl"` on `<html>`
-(`RIGHT_TO_LEFT`, kept the same in `boot.js` and `src/index.js`, today `ar` and `he`), `site.css` writes every side
+(`RIGHT_TO_LEFT`, kept the same in `boot.js` and `src/index.js`, today `ar`, `he` and `ur`), `site.css` writes every side
 as start and end (`margin-inline-start`, `inset-inline-end`, `text-align: end`…) so the page mirrors by itself, and
 turns what points one way under `:root[dir="rtl"]` (the arrows and the back chevron, the bars that grow, the switch's
 knob, the header's scroll line). Like the app, it never says anyone's gender: a label ("الدافع: Ana"), a verbal noun
@@ -79,15 +79,24 @@ or an arrow where Czech would need its case; Romanian counts in one, few and oth
 (20 de cheltuieli), and writes ș and ț with the comma below, never the cedilla. Each uses the app's own words (grupp,
 utgift, saldo; skupina, výdaj, zůstatek; grup, cheltuială, sold). Geist's Latin Extended subset has their letters
 (č, ř, ů, ă, ș, ț), so they draw in Geist as Polish does.
+Bengali (`bn`), Malay (`ms`), Greek (`el`), Hungarian (`hu`), Filipino (`fil`), Urdu (`ur`), Croatian (`hr`) and Serbian
+(`sr`) are one variant each for every browser language of theirs. Bengali, Malay and Urdu talk to the reader
+respectfully (আপনি, anda, آپ), the others informally (εσύ, te, ikaw, ti). Every one writes the digits 0-9, so Bengali's and
+Urdu's dates are formatted with `-u-nu-latn`. Serbian is written in the Latin script: its code is `sr`, as the apps ask for its
+legal pages and notes, and the page's tag `sr-Latn`, so the browser and `Intl` never pick Cyrillic. Filipino's legacy code,
+`tl`, picks `fil` (`LEGACY`, kept the same in `boot.js` and `src/index.js`). Urdu reads right to left as Arabic does
+(`RIGHT_TO_LEFT`), with each amount a left-to-right isolate. Croatian and Serbian count in one, few and other forms and,
+as Czech, never decline a filled-in name; Hungarian never glues a suffix to one, as Turkish and Korean. Bengali, Malay and
+Urdu have fresh juice and a soft drink on the receipt and in the split card, where the others have beer, as Arabic does.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
 in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, grouped
 as India writes them (₹1,20,000), yuan in Simplified Chinese (¥, with its fen, so the demo's numbers stay as they are:
-¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The krona in Swedish, the koruna in Czech and the leu in Romanian keep their cents but are
+¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The krona in Swedish, the koruna in Czech, the leu in Romanian, the ringgit in Malay and the Philippine peso in Filipino keep their cents but are
 worth much less than the dollar, so the demo's own amounts are multiplied by a whole number before anything is split
-(`money.cents`: ten, 23 and five, so 486 kr, 1 117,80 Kč and 243 lei for the ride), and from there everything works in
-that currency's own cents: every split adds up exactly and an amount typed in the split card stays as typed. The demo keeps every amount in cents and the five with no cents in use show it scaled to whole
+(`money.cents`: ten, 23, five, four and 50, so 486 kr, 1 117,80 Kč, 243 lei, RM194.40 and ₱2,430 for the ride), and from there everything works in
+that currency's own cents: every split adds up exactly and an amount typed in the split card stays as typed. Greek and Croatian are in euros. The demo keeps every amount in cents and the nine with no cents in use (the five below, and the taka in Bengali and the Pakistani rupee in Urdu, grouped as India's, the forint in Hungarian and the dinar in Serbian, a cent being one of each) show it scaled to whole
 units (a cent is Rp100, ¥1, ₩10, 10 ₫ and NT$1, the smallest whole scale, which keeps every split exact), so a $48.60 ride reads Rp486.000, ¥4,860, ₩48,600, 48.600 ₫ or NT$4,860 and every split still adds
 up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫ or Rp100, and a field grows with what it
 holds. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way, by hand, so the
@@ -115,7 +124,7 @@ site picks a language from; each script's strings and formats still carry a key 
 
 The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the Latin and Latin Extended subsets Google
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
-`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese and Traditional Chinese fall back to the system's font, since neither subset has their
+`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Bengali, Greek and Urdu fall back to the system's font, since neither subset has their
 scripts (or, for Vietnamese, its Latin Extended Additional letters).
 
 ## Motion

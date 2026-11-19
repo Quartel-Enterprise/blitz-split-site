@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "A Blitz Split mostantól hollandul, japánul, törökül és indonézül is elérhető, a nyelvlista pedig minden nyelvet a saját nyelvén nevez meg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok és a kiadások mostantól lengyel zlotyt, török lírát és indonéz rúpiát is használhatnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Profilban új gomb található, a Profil megosztása: aki megnyitja a linkedet, látja a nevedet és a fotódat, és meghívhat egy csoportba.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az új csoport meghívólinkje azonnal elkészül, akár offline is, a Tagok részben pedig új gombbal másolhatod.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ha mentetlen módosításokkal zársz be egy űrlapot, az alkalmazás előbb megkérdezi: „Elveted a módosításokat?”",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az Adatvédelmi szabályzat és a Felhasználási feltételek mostantól az alkalmazáson belül nyílnak meg a böngésző helyett.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Telefonon a felső és az alsó sáv mostantól eltűnik lefelé görgetéskor, és felfelé görgetéskor visszatér.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "A Kiadás felosztása képernyőn a dátum kiválasztása után már nem ugrik azonnal az órára: az időnek saját gombja van.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Koppints a csoportra a Kiadás felosztása tetején a megnyitásához; visszatéréskor a kiadáshoz jutsz vissza mindazzal, amit beírtál.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Kezdőlap Legutóbbi kiadásai mostantól fotóként mutatják az egyes kiadások csoportját és azt, hogy ki fizetett.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Pix mostantól csak azoknak jelenik meg, akik valószínűleg használják, például a portugál nyelven használóknak, a Pix-kulccsal rendelkezőknek vagy a reálban vezetett csoportok tagjainak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A „Szinkronizálás…” mostantól csak akkor jelenik meg, amikor a fiókod először töltődik be egy eszközön, nem minden szinkronizáláskor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Profil már nem kínálja fel a Google vagy az Apple leválasztását a fiókodról: helyette jelentkezz ki, vagy töröld a fiókot.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Profil szerkesztése mostantól lapként nyílik meg a Profil fölött, nem külön képernyőn.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Eltűnt az üres sáv az űrlap és a billentyűzet között a Kiadás felosztása képernyőn.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A névjegyek Közös csoportjai mostantól az egyes csoportok fotóját is mutatják.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

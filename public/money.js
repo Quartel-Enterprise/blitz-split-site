@@ -1,10 +1,11 @@
 // The landing's amounts in the visitor's own currency, written the way their language writes it: the working phone
 // (preview.js) and the split card (split-modes.js) read window.money, and the receipt (scan.js) is printed the same
 // way by hand. The demo keeps every
-// amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar) shows
+// amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar, the
+// taka, the forint, the Pakistani rupee, the Serbian dinar) shows
 // it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫ or NT$4,860 and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
-// koruna, the leu) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
+// koruna, the leu, the ringgit, the Philippine peso) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
 // preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč or 243 lei
 // and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
 (function () {
@@ -25,6 +26,14 @@
     sv: ["", ",", "\u00a0", "\u00a0kr", 0, 3, 10],
     cs: ["", ",", "\u00a0", "\u00a0Kč", 0, 3, 23],
     ro: ["", ",", ".", "\u00a0lei", 0, 3, 5],
+    bn: ["৳", ".", ",", "", 1, 2],
+    ms: ["RM", ".", ",", "", 0, 3, 4],
+    el: ["", ",", ".", "\u00a0€"],
+    hu: ["", ",", "\u00a0", "\u00a0Ft", 1],
+    fil: ["₱", ".", ",", "", 0, 3, 50],
+    ur: ["Rs\u00a0", ".", ",", "", 1, 2],
+    hr: ["", ",", ".", "\u00a0€"],
+    sr: ["", ",", ".", "\u00a0RSD", 1],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");

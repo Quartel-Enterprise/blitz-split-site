@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Sa app na nagbubukas ang link ng gastos sa halip na sa browser, kasama ang mga larawan at komento nito.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Kapag hindi na ibinabahagi ang link ng gastos, o mga kasali lang sa gastos ang makakapagbukas nito, sinasabi na ito sa halip na magpakita ng error.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nagbubukas na ang link ng profile kahit hindi ka naka-sign in.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "May bagong switch ang Profile › Privacy at tungkol sa app, ang “Ibahagi ang data ng paggamit”: i-off ito para ihinto ang pagpapadala ng paraan ng paggamit mo ng app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nasa wika mo na ang preview ng mga link na ibinabahagi mo papunta sa profile mo, sa isang komento at para makuha ang app.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

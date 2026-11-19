@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split je potpuno nov: izgrađen od temelja za Android, iPhone, iPad, Mac i web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Podijeli trošak jednako, po iznosima, postocima, udjelima ili stavkama. Skeniraj račun i odaberi tko je što uzeo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Radi bez interneta i bez korisničkog računa. Prijavi se putem Googlea ili Applea kako bi tvoje grupe ostale sinkronizirane na svim uređajima.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

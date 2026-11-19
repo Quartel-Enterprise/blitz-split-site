@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split kini tersedia dalam bahasa Jerman, Itali dan Poland: ia mengikut bahasa peranti anda, atau anda boleh memilih bahasa dalam Profil › Bahasa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Setiap kategori kini mempunyai warnanya sendiri, dan Statistik melukis setiap kategori dan setiap orang dengan warna masing-masing.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Anda kini boleh menukar warna kategori, dalam borang kategori atau dalam Peta kategori.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Menu bil dalam Perbelanjaan mempunyai pilihan baharu, Pendua: ia membuka bil baharu yang sudah diisi seperti bil asal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan dan bil tidak lagi hilang seketika apabila anda kembali ke aplikasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Carian tidak lagi tertutup serta-merta apabila anda belum mempunyai kumpulan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan baharu kini bermula sebagai Acara, jenis pertama dalam senarai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Apabila belum ada kumpulan, Jemput dengan pautan atau QR kini hanya menunjukkan butang Kumpulan baharu dan bukan butang yang tidak dapat anda gunakan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Resit yang mengambil masa lebih lama untuk dibaca tidak lagi berakhir dengan ralat sambungan.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Baris kategori dalam Statistik kini lebih kemas: ia tidak lagi menyenaraikan amaun setiap subkategori.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

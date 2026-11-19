@@ -116,9 +116,10 @@ p { margin: 0; text-wrap: pretty; }
 /* Chinese has no spaces, so a heading would break anywhere: it breaks at its punctuation (，。) and where its words
    mark a <wbr>, keeping each phrase whole, as Japanese's auto-phrase does, and inside one only when it doesn't fit. */
 :root:is([lang="zh-Hans"], [lang="zh-Hant"]) :is(h1, h2, h3) { word-break: keep-all; overflow-wrap: break-word; }
-/* Russian and Ukrainian draw their Cyrillic, Korean its Hangul, Hindi its Devanagari and Thai its script in the system
+/* Russian and Ukrainian draw their Cyrillic, Greek its alphabet, Korean its Hangul, Hindi its Devanagari, Bengali its
+   script and Thai its own in the system
    font, as the bundled Geist subsets have none of them: the tracking tuned for Geist would cramp them. */
-:root:is([lang="ru"], [lang="uk"], [lang="ko"], [lang="hi"], [lang="th"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+:root:is([lang="ru"], [lang="uk"], [lang="el"], [lang="ko"], [lang="hi"], [lang="bn"], [lang="th"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
 /* Korean breaks lines between words (its spaces), never inside one, as Korean text does. */
 :root[lang="ko"] { word-break: keep-all; overflow-wrap: break-word; }
 /* Vietnamese writes with the Latin Extended Additional letters (U+1EA0-1EF9: ạ, ả, ụ as much as the stacked ể, ở, ặ),
@@ -127,10 +128,10 @@ p { margin: 0; text-wrap: pretty; }
 :root[lang="vi"], :root [lang="vi"] { --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 :root [lang="vi"] { font-family: var(--font); }
 :root[lang="vi"] .paper { --mono: ui-monospace, SFMono-Regular, Menlo, monospace; }
-/* Arabic, Hebrew and Vietnamese draw in the system font, as the bundled Geist subsets have none of Arabic and Hebrew
-   (nor Vietnamese's Latin Extended Additional letters): no Latin tracking, which would also break Arabic's joined letters apart. */
-:root:is([lang="ar"], [lang="he"], [lang="vi"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
-/* Right to left (boot.js sets dir="rtl" for Arabic and Hebrew): the sides are written as start and end, so the layout mirrors by
+/* Arabic, Urdu, Hebrew and Vietnamese draw in the system font, as the bundled Geist subsets have none of Arabic's and Hebrew's letters
+   (nor Vietnamese's Latin Extended Additional letters): no Latin tracking, which would also break Arabic's and Urdu's joined letters apart. */
+:root:is([lang="ar"], [lang="ur"], [lang="he"], [lang="vi"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+/* Right to left (boot.js sets dir="rtl" for Arabic, Hebrew and Urdu): the sides are written as start and end, so the layout mirrors by
    itself; what still points one way is turned here. Arrows and the back chevron point the reading way, bars grow from
    the start, and the switch's knob slides toward the end. */
 :root[dir="rtl"] .icon:not(.chev):has(use[href="#i-arrow"], use[href="#i-left"]) { transform: scaleX(-1); }
@@ -176,6 +177,14 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="sv"] body [data-lang]:not([data-lang="sv"]),
 :root[data-lang="cs"] body [data-lang]:not([data-lang="cs"]),
 :root[data-lang="ro"] body [data-lang]:not([data-lang="ro"]),
+:root[data-lang="bn"] body [data-lang]:not([data-lang="bn"]),
+:root[data-lang="ms"] body [data-lang]:not([data-lang="ms"]),
+:root[data-lang="el"] body [data-lang]:not([data-lang="el"]),
+:root[data-lang="hu"] body [data-lang]:not([data-lang="hu"]),
+:root[data-lang="fil"] body [data-lang]:not([data-lang="fil"]),
+:root[data-lang="ur"] body [data-lang]:not([data-lang="ur"]),
+:root[data-lang="hr"] body [data-lang]:not([data-lang="hr"]),
+:root[data-lang="sr"] body [data-lang]:not([data-lang="sr"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
 .skip:focus { inset-inline-start: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }
@@ -450,10 +459,10 @@ a.status .icon { width: 15px; height: 15px; }
   /* The descenders of "offline" stay inside the painted box. */
   padding-bottom: 0.08em;
 }
-/* Devanagari's marks reach above the headline and below the baseline further than Geist's Latin: Hindi's title
-   gets the room between its lines, and its gradient's painted box the room around them. */
-:root[lang="hi"] .hero h1 { line-height: 1.25; }
-:root[lang="hi"] .hero h1 .accent { padding-block: 0.12em 0.16em; }
+/* Devanagari's and Bengali's marks reach above the headline and below the baseline further than Geist's Latin: Hindi's
+   and Bengali's titles get the room between their lines, and their gradient's painted box the room around them. */
+:root:is([lang="hi"], [lang="bn"]) .hero h1 { line-height: 1.25; }
+:root:is([lang="hi"], [lang="bn"]) .hero h1 .accent { padding-block: 0.12em 0.16em; }
 /* Thai stacks a vowel and a tone mark above its letters and hangs vowels below them, so its headings get the room
    between their lines that Latin's tight 1.15 (1.02 for the title) doesn't leave, and the title's gradient box too. */
 :root[lang="th"] :is(h1, h2, h3) { line-height: 1.35; }
@@ -1022,6 +1031,8 @@ label.split-row { cursor: pointer; }
 .lang-switch button { border: 0; background: transparent; cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 6px;
   padding: 4px 12px; border-radius: 999px; color: var(--fg-soft); font-size: 13px; font-weight: 500; }
 .lang-switch button .icon { width: 14px; height: 14px; }
+/* Greek's and Filipino's theme names are too wide for the footer on the narrowest phones: the words stay, the icons go. */
+@media (max-width: 360px) { :root:is([lang="el"], [lang="fil"]) .lang-switch[role="group"] button .icon { display: none; } }
 /* The footer's language: the language shown, in its own name, opening the language picker. */
 .lang-switch button[data-lang-open] { color: var(--fg); }
 .lang-switch button[data-lang-open]:hover { background: var(--surface); }

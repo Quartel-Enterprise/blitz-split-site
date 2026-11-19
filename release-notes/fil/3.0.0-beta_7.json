@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Marunong na ng Dutch, Hapones, Turkish at Indonesian ang Blitz Split, at nakasulat na ang bawat wika sa listahan sa sarili nitong wika.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Magagamit na ng mga grupo at gastos ang Polish zloty, Turkish lira at Indonesian rupiah.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "May bagong button ang Profile, ang Ibahagi ang profile: makikita ng sinumang magbukas ng link mo ang pangalan at larawan mo at puwede ka niyang imbitahan sa isang grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Handa agad ang link ng imbitasyon ng bagong grupo, kahit offline, at may bagong button ang Mga miyembro para kopyahin ito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kapag isinara ang form na may hindi pa naka-save, itatanong muna ang “Itapon ang mga pagbabago?”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa loob na ng app nagbubukas ang Patakaran sa privacy at ang Mga tuntunin ng paggamit sa halip na sa browser.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Sa phone, umaalis na ang mga bar sa itaas at ibaba kapag nag-scroll pababa at bumabalik kapag nag-scroll pataas.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Sa Hatiin ang gastos, hindi na tumatalon sa orasan ang pagpili ng petsa: may sariling button na ang oras.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "I-tap ang grupo sa itaas ng Hatiin ang gastos para buksan ito; pagbalik mo, nasa gastos pa rin ang lahat ng na-type mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ipinapakita na ng Mga pinakabagong gastos sa Home ang grupo ng bawat gastos at kung sino ang nagbayad bilang mga larawan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lumalabas na lang ang Pix sa mga taong malamang na gagamit nito, gaya ng mga gumagamit ng app sa Portuges, may Pix key o nasa grupong naka-reais.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lumalabas na lang ang “Nagsi-sync…” sa unang pag-load ng account mo sa isang device, hindi sa bawat sync.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hindi na nag-aalok ang Profile na idiskonekta ang Google o Apple sa account mo: mag-sign out o burahin na lang ang account.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nagbubukas na ang I-edit ang profile bilang sheet sa ibabaw ng Profile sa halip na hiwalay na screen.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Wala na ang bakanteng espasyo sa pagitan ng form at ng keyboard sa Hatiin ang gastos.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ipinapakita na ng Mga grupong magkasama kayo ng isang contact ang larawan ng bawat grupo.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

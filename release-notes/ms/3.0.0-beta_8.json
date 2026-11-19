@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Bil kini boleh dibahagi Ikut pendapatan, dan pendapatan yang anda taip dikongsi dengan ahli kumpulan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Setiap bil dalam Perbelanjaan terkini di Utama kini mempunyai menu: Edit, Pendua, Kongsi dan Padam.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lihat semua di Utama kini membuka Semua perbelanjaan: setiap bil yang melibatkan anda, merentas kumpulan anda, dengan carian, penapis dan isihan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Foto kumpulan kini lebih besar di bahagian atas skrinnya dan mengecil apabila anda menatal, dan membuka kumpulan beranimasi daripada barisnya.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktiviti kini menunjukkan foto orang, Baki › Mengikut kumpulan menunjukkan foto setiap kumpulan, dan Perbelanjaan terbesar dalam Statistik menunjukkan kategorinya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Akaun dan penyegerakan kini menunjukkan logo Google atau Apple dan e-mel penuh anda, yang hanya dilihat oleh anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Padam akaun kini menerangkan apa yang kekal dalam kumpulan anda selepas akaun anda tiada.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Suis Kunci Pix lalai tidak lagi kelihatan dimatikan pada kunci lalai anda dalam tema gelap.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

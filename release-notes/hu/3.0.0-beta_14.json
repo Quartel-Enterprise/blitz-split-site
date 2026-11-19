@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "A csoport Kiadások részében mostantól ott az „Összes megtekintése”, amely az Összes kiadást a csoportra szűrve nyitja meg, így kereshetsz, rendezhetsz és szűrhetsz a kiadásai között. Töröld a szűrőt, hogy minden csoportot láss.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az Új csoport képernyőn a „Hozzáadás név alapján” mostantól gépelés közben fotóval együtt javasol személyeket a Névjegyeidből: koppints valakire, hogy ugyanazzal a személlyel hozd létre a csoportot.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Csoport görgetésekor az összecsukott felső sáv csak a csoport fotóját és nevét mutatja, a mellettük levágott tagok és végösszeg nélkül.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Mostantól szövegfájlként letöltheted a helyreállítási kódod 12 szavát.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "A „Mentsd el a helyreállítási kódodat” mostantól elmondja, hogy a kód visszahozza az adataidat, és hogy 30 nap használat nélkül az adatok törlődnek.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Kiadás felosztása képernyő tetején, a Mentés mellett mostantól ott a Nyugta beolvasása is, így a billentyűzet már nem takarja ki, a Fizetési mód hozzáadása pedig visszafogottabb lett.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoport Statisztikájában a Személyenként mostantól gyűrűdiagram, amely mindenki részét az Alapértelmezett felosztásban használt színével mutatja, alatta jelmagyarázatként a nevek és összegek listájával. A Fogyasztott és a Fizetett váltja, mit mutat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az Új csoport „Résztvevők” része a monogramod helyett a profilfotódat mutatja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A „Szinkronizálás…” már nem jelenik meg újra a Kezdőlapon és a Csoportokban, amikor visszatérsz az alkalmazásba: a szinkronizálás csendben fut, miután a csoportjaid megjelentek.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Táblagépen és fekvő helyzetű telefonon az oldalsáv tetején lévő „Kiadás felosztása” árnyéka már nem vágódik le a széleken.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

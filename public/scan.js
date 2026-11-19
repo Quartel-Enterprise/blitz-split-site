@@ -147,6 +147,46 @@
       lines: [["2 BERE LA HALBĂ", "140,00", 1], ["1 PLATOU CREVEȚI", "480,00", 2]],
       subtotal: ["SUBTOTAL", "620,00"], service: ["SERVICIU 10%", "62,00", 3], total: ["TOTAL", "682,00"],
     },
+    bn: {
+      store: "বন্দর ক্যাফে", address: "120, গাংচিল সড়ক", date: "08/11/2026  রাত 9:47",
+      lines: [["2 তাজা জুস", "2,800", 1], ["1 চিংড়ি প্ল্যাটার", "9,600", 2]],
+      subtotal: ["সাবটোটাল", "12,400"], service: ["সার্ভিস চার্জ 10%", "1,240", 3], total: ["মোট", "13,640"],
+    },
+    ms: {
+      store: "KAFE PELABUHAN", address: "120, Jalan Camar", date: "08/11/2026  21:47",
+      lines: [["2 JUS SEGAR", "112.00", 1], ["1 PLATTER UDANG", "384.00", 2]],
+      subtotal: ["SUBJUMLAH", "496.00"], service: ["CAJ SERVIS 10%", "49.60", 3], total: ["JUMLAH", "545.60"],
+    },
+    el: {
+      store: "ΜΠΑΡ ΤΟΥ ΛΙΜΑΝΙΟΥ", address: "Οδός Γλάρων 120", date: "08/11/2026  21:47",
+      lines: [["2 ΜΠΙΡΕΣ ΒΑΡΕΛΙ", "28,00", 1], ["1 ΠΙΑΤΕΛΑ ΓΑΡΙΔΕΣ", "96,00", 2]],
+      subtotal: ["ΜΕΡΙΚΟ ΣΥΝΟΛΟ", "124,00"], service: ["ΣΕΡΒΙΣ 10%", "12,40", 3], total: ["ΣΥΝΟΛΟ", "136,40"],
+    },
+    hu: {
+      store: "KIKÖTŐ BÁR", address: "Sirály u. 120.", date: "2026.11.08.  21:47",
+      lines: [["2 CSAPOLT SÖR", "2\u00a0800", 1], ["1 GARNÉLATÁL", "9\u00a0600", 2]],
+      subtotal: ["RÉSZÖSSZEG", "12\u00a0400"], service: ["SZERVIZDÍJ 10%", "1\u00a0240", 3], total: ["ÖSSZESEN", "13\u00a0640"],
+    },
+    fil: {
+      store: "BAR SA DAUNGAN", address: "120 Daungan St., Batangas City", date: "11/08/2026  9:47 PM",
+      lines: [["2 DRAFT BEER", "1,400.00", 1], ["1 PLATTER NG HIPON", "4,800.00", 2]],
+      subtotal: ["SUBTOTAL", "6,200.00"], service: ["SERVICE CHARGE 10%", "620.00", 3], total: ["KABUUAN", "6,820.00"],
+    },
+    ur: {
+      store: "بندرگاہ کیفے", address: "120 بوٹ بیسن، کراچی", date: "08/11/2026  21:47",
+      lines: [["2 تازہ جوس", "2,800", 1], ["1 جھینگوں کی پلیٹ", "9,600", 2]],
+      subtotal: ["ذیلی میزان", "12,400"], service: ["سروس چارج 10%", "1,240", 3], total: ["کل", "13,640"],
+    },
+    hr: {
+      store: "LUČKI BAR", address: "Galebova 120", date: "08.11.2026.  21:47",
+      lines: [["2 TOČENO PIVO", "28,00", 1], ["1 PLATA ŠKAMPA", "96,00", 2]],
+      subtotal: ["MEĐUZBROJ", "124,00"], service: ["USLUGA 10\u00a0%", "12,40", 3], total: ["UKUPNO", "136,40"],
+    },
+    sr: {
+      store: "BAR LUKA", address: "Galebova 120", date: "08.11.2026.  21:47",
+      lines: [["2 TOČENO PIVO", "2.800", 1], ["1 PLATA ŠKAMPA", "9.600", 2]],
+      subtotal: ["MEĐUZBIR", "12.400"], service: ["USLUGA 10 %", "1.240", 3], total: ["UKUPNO", "13.640"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

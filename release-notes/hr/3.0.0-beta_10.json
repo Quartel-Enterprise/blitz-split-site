@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Poveznica troška sada se otvara u aplikaciji umjesto u pregledniku, s fotografijama i komentarima.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Poveznica troška koja se više ne dijeli ili koju mogu otvoriti samo osobe u trošku sada to i kaže umjesto prikaza pogreške.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Poveznica profila sada se otvara i bez prijave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Privatnost i o aplikaciji ima novi prekidač, „Dijeli podatke o korištenju”: isključi ga da prestaneš slati podatke o tome kako koristiš aplikaciju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Poveznice koje dijeliš na svoj profil, na komentar i za preuzimanje aplikacije sada prikazuju pregled na tvom jeziku.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

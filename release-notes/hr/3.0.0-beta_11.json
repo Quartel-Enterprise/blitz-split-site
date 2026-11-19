@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Korisnički račun bez Googlea ili Applea sada se briše nakon 30 dana nekorištenja. To piše na zaslonu dobrodošlice i u Profilu, a povezivanjem Googlea ili Applea čuvaš svoje podatke.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikaciju sada možeš ocijeniti u Profil › Podrška i povratne informacije, opcijom „Ocijeni aplikaciju”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Trošak otvoren s Početne ili iz Svih troškova sada se vraća izravno onamo odakle je otvoren, bez prolaska kroz grupu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ispravljen je oblačić „+N” u nizu lica koji se prikazivao ispod prvog lica umjesto iznad njega.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

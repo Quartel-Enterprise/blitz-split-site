@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Az Egyenlegek lap már nem mutat nullákból álló sort, ha senki sem tartozik: egyszerűen azt írja, hogy Minden rendezve.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Javítottuk, hogy a Profil az Apple logóját mutatta a Google-lel bejelentkezett fiók e-mail-címe mellett, vagy a Google-ét az Apple-lel bejelentkezett fióké mellett, ha a fiókhoz mindkettő tartozik.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -81,10 +81,11 @@ const STATIC_IMAGE = /^\/og\/(comment|download|privacy|terms)\.png$/;
 // exact tag the apps share and the page picks.
 const LANGUAGE = /^(?:[a-z]{2,3}|pt-PT)$/;
 // Legacy language codes and the site's own: Hebrew's iw (Android's) is he, so ?lang=iw, /legal/<page>.iw.md and
-// /release-notes/iw.json answer in Hebrew rather than with English or a 404. Why: the same as LEGACY in public/boot.js.
-const LEGACY = { iw: "he" };
+// /release-notes/iw.json answer in Hebrew rather than with English or a 404, and Tagalog's tl in Filipino. Why: the same
+// as LEGACY in public/boot.js.
+const LEGACY = { iw: "he", tl: "fil" };
 const canonicalLanguage = (language) => LEGACY[language] || language;
-const LEGACY_FILE = /^(\/legal\/[a-z]+\.|\/release-notes\/)(iw)(\.md|\.json)$/;
+const LEGACY_FILE = /^(\/legal\/[a-z]+\.|\/release-notes\/)(iw|tl)(\.md|\.json)$/;
 
 // The folders whose files something other than a browser asks for by name: see fileOrNotFound.
 const FILE_OR_NOT_FOUND = ["/.well-known/", "/legal/", "/release-notes/"];
@@ -181,7 +182,7 @@ async function previewPage(request, url, env, ctx, target) {
 
 // The languages the site speaks written right to left: a page in one of them says dir="rtl" on <html>. Why: the same
 // list as RIGHT_TO_LEFT in public/boot.js, which runs alone in <head> and can't import it; change both together.
-const RIGHT_TO_LEFT = ["ar", "he"];
+const RIGHT_TO_LEFT = ["ar", "he", "ur"];
 const directionOf = (language) => (RIGHT_TO_LEFT.includes(canonicalLanguage(String(language).split("-")[0])) ? "rtl" : "ltr");
 
 // Why: the landing's own og tags give way to the link's, written once at the end of the head, and kept as briefly as

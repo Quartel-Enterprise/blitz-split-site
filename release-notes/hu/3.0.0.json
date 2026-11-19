@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "A Blitz Split teljesen megújult: az alapoktól újraépítettük Androidra, iPhone-ra, iPadre, Macre és a webre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Oszd fel a kiadásokat egyenlően, összegek, százalékok, részek vagy tételek szerint. Olvasd be a nyugtát, és válaszd ki, ki mit fogyasztott.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Offline és fiók nélkül is működik. Jelentkezz be Google-lel vagy Apple-lel, hogy a csoportjaid szinkronban maradjanak az eszközeiden.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

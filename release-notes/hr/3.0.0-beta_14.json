@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Troškovi grupe sada imaju „Prikaži sve”, što otvara Sve troškove već filtrirane po toj grupi, pa možeš pretraživati, razvrstavati i filtrirati njezine troškove. Očisti filtar da vidiš sve grupe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U Novoj grupi „Dodaj po imenu” sada dok tipkaš predlaže osobe iz tvojih Kontakata, s fotografijom: dodirni jednu da stvoriš grupu upravo s tom osobom.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pri pomicanju kroz grupu njezina sklopljena gornja traka prikazuje samo fotografiju i naziv grupe, bez odsječenih članova i ukupnog iznosa pokraj njih.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "12 riječi svojeg koda za oporavak sada možeš preuzeti kao tekstnu datoteku.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Spremi kôd za oporavak sada govori da vraća tvoje podatke i da se podaci brišu nakon 30 dana nekorištenja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Podijeli trošak sada ima Skeniraj račun i na vrhu, pokraj Spremi, pa ga tipkovnica više ne skriva, a Dodaj način plaćanja je nenametljiviji.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U Statistici grupe Po osobi sada je prsten s udjelom svake osobe, u istoj boji koju ta osoba ima u Zadanoj podjeli, a popis imena i iznosa ispod njega služi kao legenda. Potrošeno i Plaćeno mijenjaju prikaz.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Tko sudjeluje” u Novoj grupi prikazuje tvoju profilnu fotografiju umjesto inicijala.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sinkronizacija…” se više ne pojavljuje stalno na Početnoj i u Grupama kad se vratiš u aplikaciju: sinkronizacija teče tiho čim su tvoje grupe na zaslonu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na tabletima i kad je telefon u vodoravnom položaju sjena gumba „Podijeli trošak” na vrhu bočne trake više nije odsječena na rubovima.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
