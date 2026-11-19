@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Az alkalmazás mostantól koreaiul is elérhető: válaszd a „한국어” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól dél-koreai wonban (KRW) is feloszthatnak kiadásokat, a Dél-Koreában létrehozott csoportok pedig ezzel a pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Profil „Fiók és szinkronizálás” része mostantól mutatja a Felhasználói azonosítódat, amelyet egy koppintással másolhatsz, így megmondhatod, ki vagy, amikor kitöltöd valamelyik kérdőívünket.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A kiadáshoz adott fotó mostantól először a Fotó igazítása képernyőn nyílik meg, így te választod ki a csatolandó négyzetet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A „Jövedelem szerint” mostantól emlékeztet, hogy mindenki nettó, adózás utáni jövedelmét add meg, az „Alapértelmezett felosztás” pedig csak akkor mutatja az egyes személyek százalékát, ha már beírtál egy jövedelmet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoport fejléce letisztultabb: eltűnt a neve alatti sor a taglétszámmal és a végösszeggel. Az arcok mutatják, ki van benne, a végösszeget pedig a Statisztika.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A kártyáról vagy bankszámlakivonatról készült fotóknál az alkalmazás mostantól ezt jelzi, és azt javasolja, hogy kézzel töltsd ki a kiadást, ahelyett, hogy azt írná, nem sikerült beolvasni a nyugtát.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Statisztika kategóriái mostantól az Összes kiadást nyitják meg a csoport, a kategória és az időszak előre kiválasztásával, így azok között a kiadások között is kereshetsz. Az Összes kiadás Időszak szűrőt is kapott.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Statisztika Személyenként részében a gyűrű mellé vagy a közepére koppintva megszünteted a kiválasztott személy kijelölését.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

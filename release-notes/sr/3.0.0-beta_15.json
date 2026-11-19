@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Otvaranje osobe iz Kontakata ili Stanja sada prenosi njeno ime i stanje u njen profil zajedno s fotografijom, i nazad kad se vratiš.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "U Statistici, sredina prstena „Po osobi“ sada samo kaže „Ti“ kad je deo tvoj, a dugo ime se završava sa „…“ umesto da dodiruje prsten.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kad otvoriš grupu iz Grupa, lica njenih članova sada prelaze iz reda na ekran grupe i nazad kad izađeš.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Na telefonu, otvaranje troška sada prenosi više elemenata: ko je platio prelazi iz reda na Početnoj i u Svim troškovima, vreme iz reda u Troškovima grupe, a fotografija i naziv grupe sa ekrana grupe. Vraćaju se nazad kad izađeš.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Naziv grupe sada prelazi na ekran grupe i pri otvaranju, a ne samo pri povratku.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

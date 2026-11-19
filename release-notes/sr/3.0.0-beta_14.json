@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Troškovi grupe sada imaju „Prikaži sve“, što otvara Sve troškove već filtrirane po toj grupi, pa možeš da pretražuješ, sortiraš i filtriraš njene troškove. Obriši filter da vidiš sve grupe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U Novoj grupi, „Dodaj po imenu“ sada dok kucaš predlaže osobe iz tvojih Kontakata, s njihovom fotografijom: dodirni jednu da napraviš grupu baš s tom osobom.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dok skroluješ grupu, njena skupljena gornja traka prikazuje samo fotografiju i naziv grupe, bez odsečenih članova i ukupnog iznosa pored njih.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Sada možeš da preuzmeš 12 reči svog koda za oporavak kao tekstualnu datoteku.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "„Sačuvaj kod za oporavak“ sada kaže da on vraća tvoje podatke i da se podaci brišu posle 30 dana nekorišćenja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Podeli trošak“ sada ima „Skeniraj račun“ i na vrhu, pored „Sačuvaj“, pa ga tastatura više ne zaklanja, a „Dodaj način plaćanja“ je manje upadljivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U Statistici grupe, Po osobi je sada prsten s delom svake osobe, u istoj boji koju ta osoba ima u Podrazumevanoj podeli, a ispod njega je lista imena i iznosa kao legenda. Potrošeno i Plaćeno menjaju šta se prikazuje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Ko učestvuje“ u Novoj grupi prikazuje tvoju profilnu fotografiju umesto inicijala.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sinhronizacija…“ se više ne pojavljuje stalno na Početnoj i u Grupama kad se vratiš u aplikaciju: sinhronizacije se odvijaju tiho čim se tvoje grupe pojave na ekranu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na tabletima i kad je telefon u vodoravnom položaju, senka dugmeta „Podeli trošak“ na vrhu bočne trake više nije odsečena na ivicama.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

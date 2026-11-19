@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "A kiadások mostantól Jövedelem szerint is feloszthatók, a beírt jövedelmeket pedig megosztjuk a csoport tagjaival.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Kezdőlap Legutóbbi kiadásainál mostantól mindegyikhez tartozik menü: Szerkesztés, Duplikálás, Megosztás és Törlés.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Kezdőlap Összes megtekintése gombja mostantól az Összes kiadást nyitja meg: minden kiadást, amelyben részt veszel, az összes csoportodból, kereséssel, szűrőkkel és rendezéssel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoport fotója mostantól nagyobb a képernyője tetején, és görgetéskor zsugorodik, a csoport megnyitása pedig a sorából indulva animálódik.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "A Tevékenység mostantól az emberek fotóit mutatja, az Egyenlegek › Csoportonként az egyes csoportok fotóját, a Statisztika Legnagyobb kiadása pedig a kategóriáját.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Profil › Fiók és szinkronizálás mostantól a Google vagy az Apple logóját és a teljes e-mail-címedet mutatja, amelyet csak te látsz.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Fiók törlése mostantól elmagyarázza, mi marad a csoportjaidban a fiókod megszűnése után.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az Alapértelmezett Pix-kulcs kapcsoló már nem tűnik kikapcsoltnak az alapértelmezett kulcsodon a sötét témában.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

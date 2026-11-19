@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Az összegek és a feliratok már nem törnek több sorba, és nem vágódnak le kis képernyőkön, hajtható eszközökön és nagy szövegmérettel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A nehezen olvasható szövegek, gombok és körvonalak kontrasztja nagyobb lett a világos és a sötét témában.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az iPhone böngészőjében a mezőkre koppintva az oldal már nem nagyít rá.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

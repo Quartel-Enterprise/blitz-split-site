@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Az Újdonságok oldalon koppints egy verzióra, hogy megnyisd a GitHubon, vagy a GitHub gombra az összes verzió megtekintéséhez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoport oldala, a meghívók és a kiadások részletei mostantól kettő helyett legfeljebb öt személy fotóját mutatják egymás mellett.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPaden vagy fekvő helyzetben kinyitott iPhone Duón a képernyőt kitöltő csoport (például a Kezdőlapról megnyitva) mostantól a kiadások mellett mutatja a fotóját, a tagjait és az egyenlegedet.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "A Kezdőlap Teljes egyenleg kártyájára koppintva mostantól az Egyenlegek lap nyílik meg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefonon, ha a Kezdőlapról megnyitsz egy csoportot vagy kiadást, a csoport egyenlege, illetve a kiadás ikonja, címe, végösszege és a te részed mostantól átrepül a képernyőjére, és visszatéréskor vissza is.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A Profil › Nyelv menü mostantól kétszer sorolja fel a spanyolt, „Español (Latinoamérica)” és „Español (España)” néven, így azt választhatod, amelyiket beszéled, bárhol is van az eszközöd.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fekvő helyzetű telefonon vagy táblagépen a Névjegyek és az Egyenlegek listája melletti rész mostantól a képernyő tetején kezdődik, a profilfotód pedig a lista fölött van.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A csoport Tagok részében a „Személy hozzáadása” gomb széle jobban látható.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "A „Fizetési módok” kártyáinak színe mostantól ugyanazokból a színekből választható, mint a kategóriáké: a tizenkét szín, a saját színeid és az „Új szín”, amellyel újat hozhatsz létre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A „Kiadás felosztása” képernyőn a „Fizetve ezzel” mostantól kis gomb a Felosztás alatt, és ha még nincs fizetési módod, a „Fizetési mód hozzáadása” helyben létrehoz egyet, és kiválasztja a kiadáshoz. A betéti kártyáknak is saját ikonjuk van már.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Profilban a fizetési mód hozzáadása vagy szerkesztése mostantól a Profil fölött nyílik meg, nem külön képernyőn.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "A Dinamikus színek mostantól elmagyarázza, hogy az alkalmazás az Android rendszerszíneit használja, amelyek a háttérképedből vagy az Android beállításaiban választott palettából származnak.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Bekapcsolt Mozgás csökkentése mellett a csoport Statisztikája mostantól azonnal megjeleníti a diagramokat, az oszlopok növekedése és a gyűrű körbefutása nélkül.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "A brazil portugál nyelvű Tevékenységben és a kiadások előzményeiben „Você criaste” és hasonlók szerepeltek „Você criou” helyett.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Javítottuk, hogy a Statisztika dátumválasztójában a dátumok soronként egy-két betűre törtek; a záró dátum mostantól a kezdő dátum alá kerül, ha mindkettő nem fér el.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Javítottuk az értesítéseket és néhány mondatot, amelyek angolul vagy „push.bill_deleted” típusú kódként jelentek meg a spanyolországi spanyol és a portugáliai portugál nyelven.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Javítottuk a Kezdőlap személysorát a portugáliai portugál nyelven, amely a név alatt „te deve” szöveget mutatott „deve-te” helyett.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

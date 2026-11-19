@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Marunong na ng Koreano ang app: piliin ang “한국어” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa South Korean won (KRW), at ito ang unang currency ng grupong ginawa sa South Korea.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ipinapakita na ng “Account at sync” sa Profile ang User ID mo, na makokopya sa isang tap, para masabi mo sa amin kung sino ka kapag sumagot ka sa isa sa mga survey namin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nagbubukas muna sa Ayusin ang larawan ang larawang idinadagdag mo sa gastos, para ma-frame mo ang parisukat na ia-attach.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ipinapaalala na ng “Ayon sa kita” na ilagay ang netong kita ng bawat isa, pagkatapos ng buwis, at ipinapakita lang ng “Default na hatian” ang porsiyento ng bawat isa kapag may na-type nang kita.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mas malinis na ang header ng grupo: wala na ang linya ng bilang ng miyembro at kabuuan sa ilalim ng pangalan nito. Ipinapakita ng mga mukha kung sino ang kasali, at ng Estadistika ang kabuuan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kapag larawan ng card o bank statement ang na-scan, sinasabi na ito ng app at iminumungkahing punan nang mano-mano ang gastos, sa halip na sabihing hindi mabasa ang resibo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Binubuksan na ng kategorya sa Estadistika ang Lahat ng gastos na napili na ang grupo, kategorya at panahon, para mahanap mo rin ang mga gastos na iyon. May filter na rin na Panahon ang Lahat ng gastos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa Ayon sa tao ng Estadistika, binibitawan ng pag-tap sa tabi ng singsing o sa gitna nito ang napiling tao.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

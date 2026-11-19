@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Marunong na ng Aleman, Italyano at Polish ang Blitz Split: sinusundan nito ang wika ng device mo, o puwede kang pumili sa Profile › Wika.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "May sariling kulay na ang bawat kategorya, at iginuguhit ng Estadistika ang bawat kategorya at bawat tao sa kani-kanilang kulay.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede mo nang palitan ang kulay ng kategorya, sa form ng kategorya o sa Mapa ng kategorya.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "May bagong opsyon ang menu ng gastos sa Mga gastos, ang I-duplicate: nagbubukas ito ng bagong gastos na nakapuno na gaya ng orihinal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hindi na saglit na nawawala ang mga grupo at gastos pagbalik mo sa app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hindi na agad nagsasara ang paghahanap kapag wala ka pang grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nagsisimula na ngayon ang bagong grupo bilang Event, ang unang uri sa listahan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kapag wala pang grupo, ang button na Bagong grupo na lang ang ipinapakita ng Mag-imbita gamit ang link o QR sa halip na mga button na hindi mo magagamit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hindi na nauuwi sa error sa koneksyon ang resibong matagal basahin.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Mas malinis na ang mga hilera ng kategorya sa Estadistika: hindi na nila inililista ang halaga ng bawat subcategory.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

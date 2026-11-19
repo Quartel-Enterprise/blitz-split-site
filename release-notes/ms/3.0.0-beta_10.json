@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Pautan bil kini dibuka dalam aplikasi dan bukan dalam pelayar, bersama foto dan komennya.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Pautan bil yang tidak lagi dikongsi, atau yang hanya boleh dibuka oleh orang dalam bil, kini menyatakan perkara itu dan bukan menunjukkan ralat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pautan profil kini dibuka walaupun anda belum log masuk.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Privasi dan perihal mempunyai suis baharu, “Kongsi data penggunaan”: matikannya untuk berhenti menghantar cara anda menggunakan aplikasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pautan yang anda kongsi ke profil anda, ke komen dan untuk mendapatkan aplikasi kini menunjukkan pratonton dalam bahasa anda.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

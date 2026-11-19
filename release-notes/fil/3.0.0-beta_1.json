@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Bagong app ang Blitz Split, binuo mula sa simula: pinapalitan nito ang Blitz Split 2.4.0 at gumagana sa Android, iPhone, iPad, Mac at web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hatiin ang gastos nang pantay, ayon sa halaga, porsiyento, bahagi o bawat item, at puwedeng isa o maraming tao ang magbayad.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-scan ang resibo at babasahin ng app ang mga item at kabuuan nito para sa iyo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gumawa ng mga grupo para sa biyahe, bahay o event at mag-imbita ng mga tao gamit ang link o QR code.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tingnan kung sino ang may utang kanino sa bawat grupo at sa lahat ng grupo, itala ang mga bayad at pasimplehin ang mga utang para mas kaunting bayad ang kailangan para maayos ang lahat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gumagana ang lahat offline: naka-save sa device mo ang ginagawa mo at ipapadala ito pagbalik mo online.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Opsyonal ang account: ikonekta ang Google o Apple, o itabi ang recovery code, para mabawi ang mga grupo mo sa ibang device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Magkomento sa gastos, mag-attach ng mga larawan, subaybayan ang nangyari sa Aktibidad at tingnan kung saan napunta ang pera sa Estadistika.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "May sariling currency ang bawat gastos at bawat bayad, at available ang app sa Ingles, Portuges, Espanyol at Pranses.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

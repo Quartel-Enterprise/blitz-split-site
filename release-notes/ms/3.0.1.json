@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Tab Baki tidak lagi menunjukkan baris sifar apabila tiada sesiapa berhutang: ia hanya menyebut Semua selesai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Membaiki Profil yang menunjukkan logo Apple di sebelah e-mel akaun yang log masuk dengan Google, atau logo Google di sebelah akaun yang log masuk dengan Apple, apabila akaun mempunyai kedua-duanya.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

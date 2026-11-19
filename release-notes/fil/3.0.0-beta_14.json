@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "May “Tingnan lahat” na ang Mga gastos ng grupo, na nagbubukas ng Lahat ng gastos na naka-filter na sa grupong iyon, para mahanap, maiayos at ma-filter ang mga gastos nito. I-clear ang filter para makita ang bawat grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa Bagong grupo, nagmumungkahi na ang “Idagdag ayon sa pangalan” ng mga tao mula sa Mga contact mo habang nagta-type, kasama ang larawan nila: mag-tap ng isa para gumawa ng grupo kasama ang taong iyon.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kapag nag-scroll sa grupo, ang larawan at pangalan lang ng grupo ang ipinapakita ng nakatiklop na itaas na bar, nang walang mga miyembro at kabuuang naputol sa tabi nito.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Puwede mo nang i-download ang 12 salita ng recovery code mo bilang text file.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Sinasabi na ng I-save ang recovery code mo na ibinabalik nito ang data mo, at mabubura ang data kapag hindi ginamit sa loob ng 30 araw.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nasa itaas na rin ng Hatiin ang gastos ang I-scan ang resibo, sa tabi ng I-save, kaya hindi na ito natatakpan ng keyboard, at hindi na gaanong kapansin-pansin ang Magdagdag ng paraan ng pagbabayad.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa Estadistika ng grupo, donut na ng bahagi ng bawat isa ang Ayon sa tao, sa parehong kulay ng bawat tao sa Default na hatian, at nasa ilalim nito ang listahan ng mga pangalan at halaga bilang legend. Pinapalitan ng Nakonsumo at Nabayaran ang ipinapakita nito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ipinapakita na ng “Mga kasali” sa Bagong grupo ang larawan ng profile mo sa halip na ang inisyal mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hindi na palaging lumalabas ang “Nagsi-sync…” sa Home at Mga grupo pagbalik mo sa app: tahimik nang tumatakbo ang sync kapag nasa screen na ang mga grupo mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa mga tablet at kapag nakahiga ang phone, hindi na napuputol sa mga gilid ang anino ng “Hatiin ang gastos” sa itaas ng side bar.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

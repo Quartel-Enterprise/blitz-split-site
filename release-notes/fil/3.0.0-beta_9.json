@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Hindi na nahahati sa mga linya o napuputol ang mga halaga at label sa maliliit na screen, foldable at malalaking text.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mas malinaw na ang contrast ng mga text, button at outline na mahirap basahin, sa maliwanag at madilim na tema.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hindi na nag-zo-zoom ang pahina kapag nag-tap ng field sa browser ng iPhone.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

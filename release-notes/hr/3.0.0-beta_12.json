@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "U Bilješkama o izdanju dodirni verziju da otvoriš njezino izdanje na GitHubu ili gumb GitHub da vidiš sva izdanja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Stranica grupe, pozivnica i pojedinosti troška sada prikazuju fotografije do pet osoba jednu uz drugu umjesto dviju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPadu ili otvorenom iPhoneu Duo u vodoravnom položaju grupa koja ispunjava zaslon (npr. otvorena s Početne) sada prikazuje fotografiju, članove i tvoj saldo pokraj troškova.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Dodir kartice Ukupni saldo na Početnoj sada otvara karticu Salda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na telefonu otvaranje grupe ili troška s Početne sada animirano prenosi saldo grupe, odnosno ikonu, naslov, ukupan iznos i tvoj udio u trošku, na njegov zaslon i natrag kad se vratiš.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Jezik sada dvaput navodi španjolski, „Español (Latinoamérica)” i „Español (España)”, pa odabireš onaj kojim govoriš, gdje god bio tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kad je telefon ili tablet u vodoravnom položaju, ono što stoji pokraj popisa u Kontaktima i Saldima sada počinje na vrhu zaslona, a tvoja profilna fotografija je iznad popisa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Rub gumba „Dodaj osobu” u Članovima grupe sada je bolje vidljiv.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Boja kartice u opciji „Načini plaćanja” sada se bira među istim bojama kao i kategorije: dvanaest boja, tvoje vlastite i „Nova boja” za stvaranje još jedne.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U zaslonu „Podijeli trošak” opcija „Plaćeno s” sada je mali gumb ispod Podjele, a ako još nemaš način plaćanja, „Dodaj način plaćanja” stvara ga odmah i odabire za trošak. Debitne kartice sada imaju i vlastitu ikonu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodavanje ili uređivanje načina plaćanja u Profilu sada se otvara iznad njega umjesto na zasebnom zaslonu.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dinamične boje sada objašnjavaju da aplikacija preuzima sustavske boje Androida, koje dolaze iz tvoje pozadine ili iz palete odabrane u postavkama Androida.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Uz uključenu opciju Smanji kretanje Statistika grupe sada odmah prikazuje grafikone, bez rasta stupaca i kruženja prstena.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "U brazilskom portugalskom Aktivnost i povijest troška pisali su „Você criaste” i slično umjesto „Você criou”.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ispravljeni su datumi u biraču datuma u Statistici koji su se prelamali po slovo ili dva u retku; završni datum sada ide ispod početnog kad oba ne stanu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ispravljene su obavijesti i nekoliko rečenica koje su se prikazivale na engleskom ili kao kôd poput „push.bill_deleted” u španjolskom za Španjolsku i portugalskom za Portugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Ispravljen je redak s osobama na Početnoj u portugalskom za Portugal, u kojem je ispod imena pisalo „te deve” umjesto „deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikacija sada govori ruski i ukrajinski: izaberi „Русский“ ili „Українська“ u Profil › Jezik ili pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele troškove u ruskoj rublji (RUB) i ukrajinskoj grivni (UAH), a grupa napravljena u Rusiji ili Ukrajini počinje u svojoj valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil ima novo podešavanje „Format vremena“: prati sistem ili uvek prikazuj vreme u 24-časovnom (14:30) ili 12-časovnom formatu sa AM i PM (2:30 PM), u troškovima, Aktivnosti, komentarima i biračima vremena.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kad je telefon u vodoravnom položaju, i na tabletima, „Podeli trošak“ u grupi sada stoji na gornjoj traci umesto da lebdi iznad troškova.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kad su uključene Dinamičke boje, ono što duguješ ostaje narandžasto umesto da postane crveno, pa nikada ne liči na zelenu boju onoga što ti se vraća.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "U Aktivnosti svaki red sada prikazuje fotografiju grupe pored njenog naziva, kad grupa ima fotografiju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tvoje stanje u ovoj grupi više ne ponavlja iznos u drugom redu kad samo dobijaš nazad ili samo duguješ.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U Podrazumevanoj podeli deo svake osobe u primeru troška sada ima sopstvenu boju, s tačkom iste boje ispred imena, pa osobe jedna do druge na listi nikada ne izgledaju kao jedna.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gornja traka troška sada prikazuje fotografiju grupe ili njene inicijale pored naziva grupe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodir na nečiju fotografiju sada je prenosi u profil te osobe i nazad kad se vratiš.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Trošak otvoren iz Troškova grupe sada se pomera na mesto kao i sa Početne, a fotografija grupe na troškovima na Početnoj prelazi u gornju traku troška.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Podeli trošak“ je sada i na vrhu Stanja i Kontakata, a na ekranu grupe premešten je na gornju traku umesto da lebdi iznad liste, dok je „Dodaj osobe“ sada u meniju ⋯. Počinje s nazivom i smanjuje se na ikonu dok skroluješ.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "U Grupama dodir na karticu Ukupno stanje otvara Stanja.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "„Pozovi osobe“ u grupi sada se zove „Dodaj osobe“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPad-u se kartice otvaraju u bočnoj traci, a kad stoje na gornjoj traci, kao kad je iPad uspravan, „Podeli trošak“ ostaje na vidiku, dok se ostala dugmad premeštaju u red odmah ispod.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "U „Podeli trošak“, „Plaćeno sa“ se sada prikazuje zatamnjeno i kad je neko drugi platio trošak: dodir objašnjava da samo oni koji su platili mogu da označe čime su platili.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bez naloga, tvoj kod za oporavak sada ima 12 numerisanih reči, koje je lakše zapisati, a oporavak ih traži reč po reč u posebnim poljima, uz predloge dok kucaš. Kodovi sačuvani pre ove verzije više ne rade: sačuvaj novi ili poveži Google ili Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U Troškovima po kategoriji svaki trošak sada ima isti meni ⋮ kao u troškovima grupe: Izmeni, Dupliraj, Deli ili Izbriši, bez otvaranja troška.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na širokim ekranima (telefon u vodoravnom položaju, tableti, Mac i veb), Troškovi po kategoriji drže kategorije i ukupan iznos u koloni pored troškova.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na nemačkom, holandskom i japanskom, rečenice u Aktivnosti sada prate prirodan red reči svakog jezika, bez dvotačke ispred naziva troška ili grupe.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Prvo slovo u „Dodaj fotografiju“ ispod priloga troška više nije odsečeno.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "U Grupama dugme za pravljenje grupe sada glasi „+ Grupa“ i više se ne lomi u dva reda.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Novosti sada prikazuju upravo instaliranu verziju, umesto da se na njene beleške čeka do jedan dan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U Statistici grupe dugme za period („Sve vreme“) više se ne lomi u dva reda: datumi prelaze ispod njega kad oba ne staju.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

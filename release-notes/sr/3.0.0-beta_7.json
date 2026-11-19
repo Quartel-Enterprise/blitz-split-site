@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split sada govori holandski, japanski, turski i indonežanski, a lista jezika navodi svaki jezik na njemu samom.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe i troškovi sada mogu da koriste poljski zlot, tursku liru i indonežansku rupiju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil ima novo dugme, Deli profil: ko otvori tvoj link vidi tvoje ime i fotografiju i može da te pozove u grupu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Link za poziv u novu grupu spreman je odmah, čak i bez interneta, a Članovi imaju novo dugme za njegovo kopiranje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zatvaranje obrasca s nesačuvanim izmenama sada prvo pita „Odbaciti izmene?“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Politika privatnosti i Uslovi korišćenja sada se otvaraju u aplikaciji umesto u pregledaču.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Na telefonu se gornja i donja traka sada sklanjaju kad skroluješ nadole i vraćaju kad skroluješ nagore.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "U „Podeli trošak“, biranje datuma više ne skače odmah na sat: vreme ima svoje dugme.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dodirni grupu na vrhu ekrana „Podeli trošak“ da je otvoriš; povratak vodi na trošak sa svim što je upisano.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Najnoviji troškovi na Početnoj sada prikazuju grupu svakog troška i ko je platio kao fotografije.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix se sada prikazuje samo osobama koje će ga verovatno koristiti, na primer onima koji aplikaciju koriste na portugalskom, imaju Pix ključ ili su u grupi u realima.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sinhronizacija…“ se sada prikazuje samo pri prvom učitavanju naloga na uređaju, a ne pri svakoj sinhronizaciji.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil više ne nudi prekid veze Google-a ili Apple-a s nalogom: umesto toga odjavi se ili izbriši nalog.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Izmeni profil se sada otvara kao panel preko Profila umesto na zasebnom ekranu.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Prazna traka između obrasca i tastature u „Podeli trošak“ je nestala.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Zajedničke grupe kontakta sada prikazuju fotografiju svake grupe.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

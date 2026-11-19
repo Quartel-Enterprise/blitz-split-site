@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Binubura na ang account na walang Google o Apple pagkalipas ng 30 araw na hindi ginagamit. Sinasabi ito ng welcome screen at ng Profile, at mapapanatili ang data mo kapag ikinonekta ang Google o Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede mo nang i-rate ang app mula sa Profile › Suporta at feedback, gamit ang “I-rate ang app”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Ang gastos na binuksan mula sa Home o Lahat ng gastos ay bumabalik na mismo sa pinagbuksan mo, nang hindi dumadaan sa grupo nito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Inayos ang bubble na “+N” ng salansan ng mga mukha na lumalabas sa ilalim ng unang mukha sa halip na sa ibabaw nito.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

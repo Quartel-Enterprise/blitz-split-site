@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Akaun tanpa Google atau Apple kini dipadamkan selepas 30 hari tidak digunakan. Skrin selamat datang dan Profil menyatakan perkara ini, dan menyambungkan Google atau Apple mengekalkan data anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Anda kini boleh menilai aplikasi daripada Profil › Sokongan dan maklum balas, dengan “Nilaikan aplikasi”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Bil yang dibuka daripada Utama atau Semua perbelanjaan kini kembali terus ke tempat anda membukanya, tanpa melalui kumpulannya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Membaiki gelembung “+N” pada timbunan wajah yang muncul di bawah wajah pertama dan bukan di atasnya.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

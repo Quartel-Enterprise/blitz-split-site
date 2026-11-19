@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Bagong-bago ang Blitz Split: binuo mula sa simula, para sa Android, iPhone, iPad, Mac at web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hatiin ang gastos nang pantay, ayon sa halaga, porsiyento, bahagi o item. I-scan ang resibo at piliin kung sino ang kumuha ng alin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gumagana ito offline at walang account. Mag-sign in gamit ang Google o Apple para manatiling naka-sync ang mga grupo mo sa mga device mo.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

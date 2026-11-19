@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Marunong na ng Ruso at Ukrainian ang app: piliin ang “Русский” o “Українська” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Russian ruble (RUB) at Ukrainian hryvnia (UAH), at sa currency nito nagsisimula ang grupong ginawa sa Russia o Ukraine.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "May bagong preference ang Profile, ang “Format ng oras”: sundin ang system, o laging ipakita ang oras sa 24 na oras (14:30) o 12 oras na may AM at PM (2:30 PM), sa mga gastos, Aktibidad, komento at pagpili ng oras.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kapag nakahiga ang phone, at sa mga tablet, nasa itaas na bar na ang “Hatiin ang gastos” ng grupo sa halip na nakalutang sa ibabaw ng mga gastos.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kapag naka-on ang Dynamic na kulay, nananatiling orange ang utang mo sa halip na maging pula, kaya hindi ito maikakalito sa berde ng mababawi mo.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Sa Aktibidad, ipinapakita na ng bawat linya ang larawan ng grupo sa tabi ng pangalan nito, kung may larawan ang grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hindi na inuulit ng Balanse mo sa grupong ito ang halaga sa ikalawang linya kapag may mababawi ka lang o may utang ka lang.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa Default na hatian, may sariling kulay na ang bahagi ng bawat tao sa halimbawang gastos, may katugmang tuldok bago ang pangalan niya, para hindi magmukhang iisa ang magkakatabing tao sa listahan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ipinapakita na ng itaas na bar ng gastos ang larawan ng grupo, o ang mga inisyal nito, sa tabi ng pangalan ng grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dinadala na ng pag-tap sa larawan ng isang tao ang larawan papunta sa profile niya, at pabalik muli kapag bumalik ka.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Gumagalaw na sa puwesto ang gastos na binuksan mula sa Mga gastos ng grupo gaya ng mula sa Home, at lumilipad ang larawan ng grupo sa mga gastos ng Home papunta sa itaas na bar ng gastos.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Nasa itaas na rin ng Mga balanse at Mga contact ang “Hatiin ang gastos”, at sa screen ng grupo ay lumipat ito sa itaas na bar sa halip na nakalutang sa ibabaw ng listahan, at nasa menu na ⋯ na ang “Magdagdag ng tao”. Nagsisimula ito sa pangalan nito at lumiliit sa icon habang nag-i-scroll.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Sa Mga grupo, binubuksan ng pag-tap sa card na Kabuuang balanse ang Mga balanse.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Ang “Mag-imbita ng tao” sa grupo ay tinatawag na ngayong “Magdagdag ng tao”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa iPad, nagbubukas ang mga tab sa sidebar, at kapag nasa itaas na bar ang mga ito, gaya ng iPad na nakatayo, nananatiling nakikita roon ang “Hatiin ang gastos” habang lumilipat ang ibang button sa hilera sa ibaba lang nito.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Sa “Hatiin ang gastos”, lumalabas na rin nang malabo ang “Binayaran gamit ang” kapag ibang tao ang nagbayad ng gastos: ipinapaliwanag ng pag-tap dito na ang mga nagbayad lang ang makakapagmarka kung ano ang ginamit nila sa pagbabayad.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kung walang account, 12 salitang may numero na ang recovery code mo, mas madaling isulat, at isa-isang salita bawat field ang pagbabalik nito, na may mungkahi sa bawat salita habang nagta-type. Hindi na gagana ang mga code na na-save bago ang bersyong ito: i-save ang bago, o ikonekta ang Google o Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa Mga gastos ayon sa kategorya, may parehong menu na ⋮ na ang bawat gastos gaya ng sa mga gastos ng grupo: i-edit, i-duplicate, ibahagi o burahin ito nang hindi binubuksan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa malalapad na screen (phone na nakahiga, mga tablet, Mac at web), nasa column sa tabi ng mga gastos ang mga kategorya at kabuuan ng Mga gastos ayon sa kategorya.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa Aleman, Dutch at Hapones, sumusunod na sa natural na ayos ng salita ng bawat wika ang mga pangungusap sa Aktibidad, nang walang tutuldok bago ang pangalan ng gastos o grupo.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Hindi na napuputol ang unang letra ng “Magdagdag ng larawan” sa ilalim ng mga attachment ng gastos.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Sa Mga grupo, “+ Grupo” na ang nakasulat sa button na gumagawa ng grupo at hindi na ito nahahati sa dalawang linya.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ipinapakita na ng Ano ang bago ang bersyong kaka-install mo lang, sa halip na maghintay nang hanggang isang araw para makuha ang mga tala nito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa Estadistika ng grupo, hindi na nahahati sa dalawang linya ang button ng panahon (“Lahat ng panahon”): lumilipat sa ilalim nito ang mga petsa kapag hindi magkasya ang dalawa.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

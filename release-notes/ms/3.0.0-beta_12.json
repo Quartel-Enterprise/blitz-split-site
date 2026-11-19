@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Dalam Nota keluaran, ketik versi untuk membuka keluarannya di GitHub, atau butang GitHub untuk melihat semua keluaran.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Halaman kumpulan, jemputan dan butiran bil kini menunjukkan sehingga lima foto orang bersebelahan, bukan dua.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pada iPad atau iPhone Duo yang terbuka dalam kedudukan melintang, kumpulan yang memenuhi skrin (dibuka daripada Utama, contohnya) kini menunjukkan foto, ahli dan baki anda di sebelah bil.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Mengetik kad Baki keseluruhan di Utama kini membuka tab Baki.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pada telefon, membuka kumpulan atau bil daripada Utama kini menerbangkan baki kumpulan, atau ikon, tajuk, jumlah dan bahagian anda dalam bil, ke dalam skrinnya dan kembali semula apabila anda pulang.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Bahasa kini menyenaraikan bahasa Sepanyol dua kali, “Español (Latinoamérica)” dan “Español (España)”, supaya anda memilih yang anda tuturkan di mana-mana sahaja peranti anda berada.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dengan telefon atau tablet dalam kedudukan melintang, apa yang berada di sebelah senarai dalam Kenalan dan Baki kini bermula di bahagian atas skrin, dengan foto profil anda di atas senarai.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tepi butang “Tambah orang” dalam Ahli kumpulan lebih mudah dilihat.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Warna kad dalam “Kaedah pembayaran” kini dipilih daripada warna yang sama seperti kategori: dua belas warna, warna anda sendiri dan “Warna baharu” untuk mencipta warna lain.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dalam “Bahagikan bil”, “Dibayar dengan” kini butang kecil di bawah Pembahagian, dan jika anda belum mempunyai kaedah pembayaran, “Tambah kaedah bayaran” menciptanya terus di situ dan memilihnya untuk bil. Kad debit juga kini mempunyai ikonnya sendiri.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Menambah atau mengedit kaedah pembayaran dalam Profil kini dibuka di atasnya dan bukan pada skrin berasingan.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Warna dinamik kini menerangkan bahawa aplikasi mengambil warna sistem Android, yang datang daripada kertas dinding anda atau palet yang anda pilih dalam tetapan Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dengan Kurangkan Gerakan dihidupkan, Statistik kumpulan kini menunjukkan cartanya serta-merta, tanpa bar membesar atau cincin berpusing masuk.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Dalam bahasa Portugis Brazil, Aktiviti dan sejarah bil menyebut “Você criaste” dan seumpamanya dan bukan “Você criou”.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Membaiki tarikh dalam pemilih tarikh Statistik yang terputus satu atau dua huruf setiap baris; tarikh akhir kini berada di bawah tarikh mula apabila kedua-duanya tidak muat.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Membaiki pemberitahuan dan beberapa ayat yang muncul dalam bahasa Inggeris, atau sebagai kod seperti “push.bill_deleted”, dalam bahasa Sepanyol (Sepanyol) dan bahasa Portugis (Portugal).",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Membaiki baris orang di Utama dalam bahasa Portugis (Portugal), yang menyebut “te deve” di bawah nama dan bukan “deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

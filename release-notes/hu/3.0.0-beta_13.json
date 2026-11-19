@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Az alkalmazás mostantól oroszul és ukránul is elérhető: válaszd a „Русский” vagy az „Українська” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól orosz rubelben (RUB) és ukrán hrivnyában (UAH) is feloszthatnak kiadásokat, az Oroszországban vagy Ukrajnában létrehozott csoportok pedig a helyi pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Profilban új „Időformátum” beállítás található: kövesd a rendszert, vagy jelenítsd meg az időpontokat mindig 24 órás (14:30) vagy 12 órás, AM/PM formátumban (2:30 PM) a kiadásokban, a Tevékenységben, a hozzászólásokban és az időválasztókban.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fekvő helyzetű telefonon és táblagépen a csoport „Kiadás felosztása” gombja mostantól a felső sávban van, nem a kiadások fölött lebeg.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Bekapcsolt Dinamikus színek mellett az, amivel tartozol, narancssárga marad, és nem vált pirosra, így soha nem hasonlít annak zöldjére, ami neked visszajár.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A Tevékenységben minden sor mostantól a csoport fotóját is mutatja a neve mellett, ha a csoportnak van fotója.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az egyenleged ebben a csoportban már nem ismétli meg az összeget egy második sorban, ha csak visszakapsz vagy csak tartozol.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az Alapértelmezett felosztásban a példakiadás minden személyének része mostantól saját színt kapott, a neve előtt egy hozzá illő ponttal, így a listában egymás mellett lévők sosem tűnnek egynek.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A kiadás felső sávja mostantól a csoport fotóját vagy monogramját mutatja a csoport neve mellett.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ha valakinek a fotójára koppintasz, az mostantól átkerül a profiljába, és visszatéréskor vissza is.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "A csoport Kiadások részéből megnyitott kiadás mostantól ugyanúgy mozog a helyére, mint a Kezdőlapról, és a Kezdőlap kiadásain lévő csoportfotó a kiadás felső sávjába repül.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A „Kiadás felosztása” mostantól az Egyenlegek és a Névjegyek tetején is megtalálható, a csoport képernyőjén pedig a felső sávba került a lista fölötti lebegés helyett, a „Személyek hozzáadása” pedig a ⋯ menübe. A nevével indul, és görgetéskor az ikonjára zsugorodik.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "A Csoportok képernyőn a Teljes egyenleg kártyára koppintva megnyílnak az Egyenlegek.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "A csoport „Személyek meghívása” funkciójának új neve „Személyek hozzáadása”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPaden a lapok az oldalsávban nyílnak meg, és ha a felső sávban vannak, például álló iPaden, a „Kiadás felosztása” ott szem előtt marad, a többi gomb pedig egy közvetlenül alatta lévő sorba kerül.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "A „Kiadás felosztása” képernyőn a „Fizetve ezzel” mostantól akkor is megjelenik halványítva, ha a kiadást más fizette: koppintásra elmagyarázza, hogy csak a fizetők jelölhetik meg, mivel fizettek.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fiók nélkül a helyreállítási kódod mostantól 12 számozott szó, amelyet könnyebb leírni, a visszaállításnál pedig szavanként egy mezőbe kell beírni őket, és gépelés közben javaslatot kapsz minden szóra. Az e verzió előtt mentett kódok már nem működnek: mentsd el az újat, vagy csatlakoztasd a Google-t vagy az Apple-t.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Kiadások kategóriánként nézetben minden kiadásnak ugyanaz a ⋮ menüje van, mint a csoport kiadásaiban: megnyitás nélkül szerkesztheted, duplikálhatod, megoszthatod vagy törölheted.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Széles képernyőn (fekvő telefonon, táblagépen, Macen és a weben) a Kiadások kategóriánként a kategóriákat és a végösszeget egy oszlopban tartja a kiadások mellett.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Német, holland és japán nyelven a Tevékenység mondatai mostantól az adott nyelv természetes szórendjét követik, kettőspont nélkül a kiadás vagy a csoport neve előtt.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "A kiadás mellékletei alatti „Fotó hozzáadása” első betűje már nem vágódik le.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A Csoportok képernyőn a csoportlétrehozó gomb felirata mostantól „+ Csoport”, és nem törik két sorba.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Az Újdonságok mostantól a most telepített verziót mutatják, és nem kell akár egy napot várni a megjegyzéseire.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoport Statisztikájában az időszak gomb („Teljes időszak”) már nem törik két sorba: a dátumok alá kerülnek, ha mindkettő nem fér el.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

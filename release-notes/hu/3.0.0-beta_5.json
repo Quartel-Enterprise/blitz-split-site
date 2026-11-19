@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "A Blitz Split mostantól németül, olaszul és lengyelül is elérhető: az eszközöd nyelvét követi, vagy választhatsz a Profil › Nyelv menüben.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Minden kategóriának saját színe van, és a Statisztika minden kategóriát és személyt a saját színével rajzol.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mostantól megváltoztathatod egy kategória színét a kategória űrlapján vagy a Kategóriatérképen.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "A Kiadások képernyőn a kiadások menüjében új lehetőség található, a Duplikálás: új kiadást nyit meg az eredetihez hasonlóan kitöltve.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok és a kiadások már nem tűnnek el egy pillanatra, amikor visszatérsz az alkalmazásba.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A keresés már nem záródik be azonnal, ha még nincs csoportod.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az új csoport mostantól Esemény típussal indul, amely a lista első típusa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ha még nincs csoportod, a Meghívás linkkel vagy QR-kóddal mostantól csak az Új csoport gombot mutatja a nem használható gombok helyett.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A hosszabb ideig olvasott nyugta már nem végződik kapcsolati hibával.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A Statisztika kategóriasorai letisztultabbak: már nem sorolják fel az egyes alkategóriák összegét.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

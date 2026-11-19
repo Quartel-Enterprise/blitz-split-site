@@ -54,10 +54,10 @@
   // Store storefront: China's lists only apps with an ICP filing, so Apple takes the visitor's own.
   // Why iw: Google Play documents Hebrew by its legacy code, the one it has always honoured.
   const playUrl = CONFIG.googlePlayLive
-    ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional) and Hebrew's as Google Play writes them
+    ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's and Serbian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -331,6 +331,86 @@
       mismatchBody: "Folosești {platform}. Pentru cea mai bună experiență, descarcă aplicația {in}.",
       mismatchGo: "Mergi {to}", mismatchStay: "Continuă {to}", close: "Închide",
       in: { play: "din Google Play", appstore: "din App Store" }, to: { play: "la Google Play", appstore: "la App Store" },
+    },
+    bn: {
+      play: ["ডাউনলোড করুন", "শিগগিরই আসছে"], appstore: ["ডাউনলোড করুন", "শিগগিরই আসছে"], web: ["খুলুন", "শিগগিরই আসছে"], browser: "ব্রাউজার",
+      getApp: "অ্যাপটি নিন", openWeb: "ওয়েব অ্যাপ খুলুন", soon: "শিগগিরই আসছে",
+      noteStore: "{in} অ্যাপটি নিন।", noteApple: "{platform} ব্যবহার করছেন? অ্যাপটি App Store-এ না আসা পর্যন্ত ব্রাউজারে ব্যবহার করুন।", noteWeb: "ব্রাউজারে খুলুন, কিছু ইনস্টল করতে হবে না।",
+      playLive: "Google Play-তে পাওয়া যাচ্ছে", appStoreLive: "App Store-এ পাওয়া যাচ্ছে", webLive: "ওয়েব অ্যাপ খুলুন",
+      mismatchTitle: "আপনার স্টোর বেছে নিন",
+      mismatchBody: "আপনি {platform} ব্যবহার করছেন। সেরা অভিজ্ঞতার জন্য {in} অ্যাপটি নিন।",
+      mismatchGo: "{to} যান", mismatchStay: "{to} চালিয়ে যান", close: "বন্ধ করুন",
+      in: { play: "Google Play থেকে", appstore: "App Store থেকে" }, to: { play: "Google Play-তে", appstore: "App Store-এ" },
+    },
+    ms: {
+      play: ["Dapatkan di", "Akan datang ke"], appstore: ["Muat turun di", "Akan datang ke"], web: ["Buka dalam", "Akan datang ke"], browser: "Pelayar",
+      getApp: "Dapatkan aplikasi", openWeb: "Buka aplikasi web", soon: "Akan datang",
+      noteStore: "Dapatkan aplikasi {in}.", noteApple: "Menggunakan {platform}? Gunakannya dalam pelayar anda sehingga aplikasi tiba di App Store.", noteWeb: "Bukanya dalam pelayar anda, tiada apa-apa untuk dipasang.",
+      playLive: "Tersedia di Google Play", appStoreLive: "Tersedia di App Store", webLive: "Buka aplikasi web",
+      mismatchTitle: "Pilih gedung anda",
+      mismatchBody: "Anda menggunakan {platform}. Untuk pengalaman terbaik, dapatkan aplikasi {in}.",
+      mismatchGo: "Pergi {to}", mismatchStay: "Teruskan {to}", close: "Tutup",
+      in: { play: "daripada Google Play", appstore: "daripada App Store" }, to: { play: "ke Google Play", appstore: "ke App Store" },
+    },
+    el: {
+      play: ["Λήψη από το", "Σύντομα στο"], appstore: ["Λήψη από το", "Σύντομα στο"], web: ["Άνοιγμα στο", "Σύντομα στο"], browser: "Browser",
+      getApp: "Λήψη εφαρμογής", openWeb: "Άνοιγμα εφαρμογής web", soon: "Σύντομα",
+      noteStore: "Κατέβασε την εφαρμογή {in}.", noteApple: "Έχεις {platform}; Χρησιμοποίησέ την στο πρόγραμμα περιήγησης μέχρι να φτάσει η εφαρμογή στο App Store.", noteWeb: "Άνοιξέ την στο πρόγραμμα περιήγησης, χωρίς εγκατάσταση.",
+      playLive: "Διαθέσιμη στο Google Play", appStoreLive: "Διαθέσιμη στο App Store", webLive: "Άνοιγμα εφαρμογής web",
+      mismatchTitle: "Διάλεξε το κατάστημά σου",
+      mismatchBody: "Χρησιμοποιείς {platform}. Για την καλύτερη εμπειρία, κατέβασε την εφαρμογή {in}.",
+      mismatchGo: "Μετάβαση {to}", mismatchStay: "Συνέχεια {to}", close: "Κλείσιμο",
+      in: { play: "από το Google Play", appstore: "από το App Store" }, to: { play: "στο Google Play", appstore: "στο App Store" },
+    },
+    hu: {
+      play: ["Töltsd le innen:", "Hamarosan itt:"], appstore: ["Töltsd le innen:", "Hamarosan itt:"], web: ["Nyisd meg itt:", "Hamarosan itt:"], browser: "Böngésző",
+      getApp: "Alkalmazás letöltése", openWeb: "Webalkalmazás megnyitása", soon: "Hamarosan",
+      noteStore: "Töltsd le az alkalmazást {in}.", noteApple: "Eszközöd: {platform}. Használd a böngészőben, amíg az alkalmazás meg nem érkezik az App Store-ba.", noteWeb: "Nyisd meg a böngésződben, nem kell semmit telepíteni.",
+      playLive: "Elérhető a Google Playen", appStoreLive: "Elérhető az App Store-ban", webLive: "Webalkalmazás megnyitása",
+      mismatchTitle: "Válassz áruházat",
+      mismatchBody: "Eszközöd: {platform}. A legjobb élményért töltsd le az alkalmazást {in}.",
+      mismatchGo: "Tovább {to}", mismatchStay: "Mégis {to}", close: "Bezárás",
+      in: { play: "a Google Playről", appstore: "az App Store-ból" }, to: { play: "a Google Playre", appstore: "az App Store-ba" },
+    },
+    fil: {
+      play: ["Kunin sa", "Malapit na sa"], appstore: ["I-download sa", "Malapit na sa"], web: ["Buksan sa", "Malapit na sa"], browser: "Browser",
+      getApp: "Kunin ang app", openWeb: "Buksan ang web app", soon: "Malapit na",
+      noteStore: "Kunin ang app {in}.", noteApple: "Gumagamit ng {platform}? Gamitin muna ito sa browser hanggang dumating ang app sa App Store.", noteWeb: "Buksan ito sa browser, walang kailangang i-install.",
+      playLive: "Available sa Google Play", appStoreLive: "Available sa App Store", webLive: "Buksan ang web app",
+      mismatchTitle: "Piliin ang store mo",
+      mismatchBody: "Gumagamit ka ng {platform}. Para sa pinakamagandang karanasan, kunin ang app {in}.",
+      mismatchGo: "Pumunta {to}", mismatchStay: "Magpatuloy {to}", close: "Isara",
+      in: { play: "sa Google Play", appstore: "sa App Store" }, to: { play: "sa Google Play", appstore: "sa App Store" },
+    },
+    ur: {
+      play: ["ڈاؤن لوڈ کریں", "جلد دستیاب"], appstore: ["ڈاؤن لوڈ کریں", "جلد دستیاب"], web: ["کھولیں بذریعہ", "جلد دستیاب"], browser: "براؤزر",
+      getApp: "ایپ حاصل کریں", openWeb: "ویب ایپ کھولیں", soon: "جلد دستیاب",
+      noteStore: "ایپ {in} حاصل کریں۔", noteApple: "{platform} پر ہیں؟ جب تک ایپ App Store پر نہیں آتی، اسے اپنے براؤزر میں استعمال کریں۔", noteWeb: "اسے اپنے براؤزر میں کھولیں، کچھ انسٹال کرنے کی ضرورت نہیں۔",
+      playLive: "Google Play پر دستیاب", appStoreLive: "App Store پر دستیاب", webLive: "ویب ایپ کھولیں",
+      mismatchTitle: "اپنا اسٹور منتخب کریں",
+      mismatchBody: "آپ {platform} پر ہیں۔ بہترین تجربے کے لیے ایپ {in} حاصل کریں۔",
+      mismatchGo: "{to} جائیں", mismatchStay: "{to} جاری رکھیں", close: "بند کریں",
+      in: { play: "Google Play سے", appstore: "App Store سے" }, to: { play: "Google Play پر", appstore: "App Store پر" },
+    },
+    hr: {
+      play: ["Preuzmi na", "Uskoro na"], appstore: ["Preuzmi na", "Uskoro na"], web: ["Otvori u", "Uskoro u"], browser: "pregledniku",
+      getApp: "Preuzmi aplikaciju", openWeb: "Otvori web-aplikaciju", soon: "Uskoro",
+      noteStore: "Preuzmi aplikaciju {in}.", noteApple: "Koristiš {platform}? Koristi aplikaciju u pregledniku dok ne stigne u App Store.", noteWeb: "Otvori je u pregledniku, bez instalacije.",
+      playLive: "Dostupno u trgovini Google Play", appStoreLive: "Dostupno u trgovini App Store", webLive: "Otvori web-aplikaciju",
+      mismatchTitle: "Odaberi trgovinu",
+      mismatchBody: "Koristiš {platform}. Za najbolje iskustvo preuzmi aplikaciju {in}.",
+      mismatchGo: "Idi {to}", mismatchStay: "Ipak idi {to}", close: "Zatvori",
+      in: { play: "iz trgovine Google Play", appstore: "iz trgovine App Store" }, to: { play: "na Google Play", appstore: "u App Store" },
+    },
+    sr: {
+      play: ["Preuzmi na", "Uskoro na"], appstore: ["Preuzmi na", "Uskoro na"], web: ["Otvori u", "Uskoro u"], browser: "pregledaču",
+      getApp: "Preuzmi aplikaciju", openWeb: "Otvori veb-aplikaciju", soon: "Uskoro",
+      noteStore: "Preuzmi aplikaciju {in}.", noteApple: "Koristiš {platform}? Koristi je u pregledaču dok aplikacija ne stigne u App Store.", noteWeb: "Otvori je u pregledaču, ništa ne moraš da instaliraš.",
+      playLive: "Dostupna na Google Play", appStoreLive: "Dostupna na App Store", webLive: "Otvori veb-aplikaciju",
+      mismatchTitle: "Izaberi prodavnicu",
+      mismatchBody: "Koristiš {platform}. Za najbolje iskustvo preuzmi aplikaciju {in}.",
+      mismatchGo: "Idi {to}", mismatchStay: "Ipak idi {to}", close: "Zatvori",
+      in: { play: "iz prodavnice Google Play", appstore: "iz prodavnice App Store" }, to: { play: "u prodavnicu Google Play", appstore: "u prodavnicu App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

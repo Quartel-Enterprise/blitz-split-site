@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "A Google vagy Apple nélküli fiók mostantól 30 nap használat nélkül törlődik. Ezt az üdvözlőképernyő és a Profil is jelzi, a Google vagy az Apple csatlakoztatásával pedig megőrzöd az adataidat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mostantól értékelheted az alkalmazást a Profil › Támogatás és visszajelzés menüben, az „Alkalmazás értékelése” lehetőséggel.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "A Kezdőlapról vagy az Összes kiadásból megnyitott kiadás mostantól közvetlenül oda tér vissza, ahonnan megnyitottad, a csoportja érintése nélkül.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Javítottuk, hogy az egymásra rakott arcok „+N” buboréka az első arc alatt jelent meg, nem fölötte.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

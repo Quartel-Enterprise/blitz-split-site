@@ -48,6 +48,14 @@ const CHROME = {
   sv: { language: "Svenska", brand: "Blitz Split", locale: "sv", updated: "Uppdaterad {date}", read: "{n} min läsning", toc: "På den här sidan" },
   cs: { language: "Čeština", brand: "Blitz Split", locale: "cs", updated: "Aktualizováno {date}", read: "{n} min čtení", toc: "Na této stránce" },
   ro: { language: "Română", brand: "Blitz Split", locale: "ro", updated: "Actualizat la {date}", read: "{n} min de citit", toc: "Pe această pagină" },
+  bn: { language: "বাংলা", brand: "Blitz Split", locale: "bn-u-nu-latn", updated: "আপডেট: {date}", read: "পড়তে {n} মিনিট", toc: "এই পৃষ্ঠায়" },
+  ms: { language: "Bahasa Melayu", brand: "Blitz Split", locale: "ms", updated: "Dikemas kini pada {date}", read: "{n} min bacaan", toc: "Di halaman ini" },
+  el: { language: "Ελληνικά", brand: "Blitz Split", locale: "el", updated: "Ενημερώθηκε: {date}", read: "{n} λεπ. ανάγνωσης", toc: "Σε αυτή τη σελίδα" },
+  hu: { language: "Magyar", brand: "Blitz Split", locale: "hu", updated: "Frissítve: {date}", read: "{n} perc olvasás", toc: "Ezen az oldalon" },
+  fil: { language: "Filipino", brand: "Blitz Split", locale: "fil", updated: "Na-update: {date}", read: "Babasahin sa {n} min", toc: "Sa pahinang ito" },
+  ur: { language: "اردو", brand: "Blitz Split", locale: "ur-u-nu-latn", updated: "آخری تازہ کاری: {date}", read: "پڑھنے کا وقت: {n} منٹ", toc: "اس صفحے پر" },
+  hr: { language: "Hrvatski", brand: "Blitz Split", locale: "hr", updated: "Ažurirano {date}", read: "{n} min čitanja", toc: "Na ovoj stranici" },
+  sr: { language: "Srpski", brand: "Blitz Split", locale: "sr-Latn", updated: "Ažurirano {date}", read: "{n} min čitanja", toc: "Na ovoj stranici" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
@@ -58,6 +66,8 @@ const CHARACTERS_PER_MINUTE = {
   ko: 370,
   // Why: the study has no Ukrainian, and Russian is the closest language it measured, in the same script.
   uk: 986,
+  // Why: the study has no Urdu, and Arabic is the closest language it measured, in the same script.
+  ur: 612,
 };
 // The study's median without Chinese and Japanese, for a language it didn't measure. Why without them: a character of
 // theirs holds far more than a letter, so they would slow down every language written with letters.

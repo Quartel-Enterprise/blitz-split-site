@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Marunong na ng Arabe ang app, na nakaayos para basahin mula kanan pakaliwa: piliin ang “العربية” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Saudi riyal (SAR), UAE dirham (AED), Egyptian pound (EGP) at Moroccan dirham (MAD), at sa currency nito nagsisimula ang grupong ginawa sa isa sa mga bansang iyon.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Simplified Chinese ang app: piliin ang “中文（简体）” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Chinese yuan (CNY), at ito ang unang currency ng grupong ginawa sa mainland China.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Traditional Chinese ang app: piliin ang “中文（繁體）” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa New Taiwan dollar (TWD), at ito ang unang currency ng grupong ginawa sa Taiwan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Czech ang app: piliin ang “Čeština” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Czech koruna (CZK), at ito ang unang currency ng grupong ginawa sa Czechia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "May sariling paalala na sa pagbabayaran ang bawat grupo: panatilihin ang lingguhang paalala tuwing Lunes nang 10:00, pumili ng ibang araw ng linggo o araw ng buwan at oras (halimbawa, tuwing ika-25 nang 12:00), o i-off ito, kapag ginagawa ang grupo o sa I-edit ang grupo. Ang mga may utang pa lang ang makakatanggap ng notification, at makakakita sila ng banner sa grupo na puwede nilang isara.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Hebreo ang app, na nakaayos para basahin mula kanan pakaliwa: piliin ang “עברית” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Israeli new shekel (ILS), at ito ang unang currency ng grupong ginawa sa Israel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Hindi ang app: piliin ang “हिन्दी” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Indian rupee (INR), at ito ang unang currency ng grupong ginawa sa India.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Romanian ang app: piliin ang “Română” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Romanian leu (RON), at ito ang unang currency ng grupong ginawa sa Romania.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Swedish ang app: piliin ang “Svenska” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Swedish krona (SEK), at ito ang unang currency ng grupong ginawa sa Sweden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Thai ang app: piliin ang “ไทย” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Thai baht (THB), at ito ang unang currency ng grupong ginawa sa Thailand.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Vietnamese ang app: piliin ang “Tiếng Việt” sa Profile › Wika, o hayaang sundin nito ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Vietnamese dong (VND), at ito ang unang currency ng grupong ginawa sa Vietnam.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-tap ang larawan ng grupo sa itaas na bar ng gastos para makita ito nang malaki.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kapag na-tap ang malabong switch na Pasimplehin ang mga utang sa grupong may dalawang tao, sasabihin na nitong magagamit ito kapag may 3 tao na ang grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa Paano ito gumagana ng Pasimplehin ang mga utang, mga larawan ng tao na ang ipinapakita ng halimbawa sa halip na mga inisyal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Inayos ang back gesture na hindi umaalis sa profile ng taong binuksan mula sa sheet ng bayad; bumabalik na ito sa sheet.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

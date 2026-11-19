@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Nalog bez Google-a ili Apple-a sada se briše posle 30 dana nekorišćenja. To piše na ekranu dobrodošlice i u Profilu, a povezivanjem Google-a ili Apple-a čuvaš svoje podatke.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikaciju sada možeš da oceniš u Profil › Podrška i povratne informacije, opcijom „Oceni aplikaciju“.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Trošak otvoren sa Početne ili iz Svih troškova sada se vraća pravo tamo odakle je otvoren, bez prolaska kroz grupu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ispravljeno: oblačić „+N“ u nizu lica prikazivao se ispod prvog lica umesto preko njega.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}
