@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split på Apple Watch: koppla klockan till kontot på din iPhone, se dina saldon och öppna grupper, tryck på Jag har betalat i en grupp där du är skyldig och lägg till ditt totala saldo på en urtavla eller i Smart Stack; när den är kopplad fungerar klockan på egen hand.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Appen talar nu bengali, malajiska och grekiska: välj ”বাংলা”, ”Bahasa Melayu” eller ”Ελληνικά” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu använda bangladeshisk taka och malaysisk ringgit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu kroatiska: välj ”Hrvatski” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu filippinska: välj ”Filipino” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i filippinska pesos (PHP, ”₱”), och en grupp som skapas på Filippinerna börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu ungerska: välj ”Magyar” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu använda ungersk forint.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lägg till widgeten Saldon på iPhonens eller iPadens hemskärm eller låsskärm för att se ditt totala saldo och dina öppna grupper i en blick; tryck på den för att öppna Saldon.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupper kan nu använda valutorna i Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, Dominikanska republiken och Kuba, och en grupp som skapas där börjar i den lokala valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu serbiska: välj ”Srpski” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i serbiska dinarer (RSD), och en grupp som skapas i Serbien börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu urdu: välj ”اردو” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i pakistanska rupier (PKR), och en grupp som skapas i Pakistan börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trycker du på notisen om en ny utgift öppnas utgiften direkt: appen hämtar den så fort notisen kommer.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Välkomstskärmen på mobilen visar nu bara logotypen högst upp, så att knapparna får mer plats.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Gruppens banner \"Dags att göra upp\" visar inte längre ett påminnelsedatum från innan påminnelsen ställdes in eller ändrades: en påminnelse som flyttats till den 25:e väntar till den 25:e.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

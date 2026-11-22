@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split trên Apple Watch: kết nối với tài khoản trên iPhone, xem số dư và các nhóm còn mở, chạm Đã trả trong nhóm bạn còn nợ, và thêm số dư tổng vào mặt đồng hồ hoặc Ngăn xếp thông minh; sau khi kết nối, đồng hồ tự hoạt động.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Bengal, tiếng Mã Lai và tiếng Hy Lạp: chọn “বাংলা”, “Bahasa Melayu” hoặc “Ελληνικά” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Các nhóm giờ có thể dùng taka Bangladesh và ringgit Malaysia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Croatia: chọn “Hrvatski” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Filipino: chọn “Filipino” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng peso Philippines (PHP, “₱”), và nhóm được tạo ở Philippines sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Hungary: chọn “Magyar” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Các nhóm giờ có thể dùng forint Hungary.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Thêm tiện ích Số dư vào Màn hình chính hoặc Màn hình khóa của iPhone hoặc iPad để xem nhanh số dư tổng và các nhóm còn mở; chạm vào để mở Số dư.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Các nhóm giờ có thể dùng tiền tệ của Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, Cộng hòa Dominica và Cuba, và nhóm được tạo ở các nước này sẽ bắt đầu với đồng tiền địa phương.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Serbia: chọn “Srpski” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng dinar Serbia (RSD), và nhóm được tạo ở Serbia sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Urdu: chọn “اردو” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng rupee Pakistan (PKR), và nhóm được tạo ở Pakistan sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Chạm vào thông báo của một khoản chi mới sẽ mở khoản chi ngay: ứng dụng tải nó về ngay khi thông báo đến.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Màn hình chào mừng trên điện thoại giờ chỉ hiện logo ở trên cùng, chừa nhiều chỗ hơn cho các nút.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Biểu ngữ \"Đã đến lúc thanh toán nợ\" của nhóm không còn hiện ngày nhắc trước thời điểm đặt hoặc đổi lời nhắc: lời nhắc đổi sang ngày 25 sẽ đợi đến ngày 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

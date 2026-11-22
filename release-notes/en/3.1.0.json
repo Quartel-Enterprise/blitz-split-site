@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split on Apple Watch: connect it to your iPhone's account, see your balances and open groups, tap I paid in a group where you owe, and add your overall balance to a watch face or the Smart Stack; once connected, the watch works on its own.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "The app now speaks Bengali, Malay and Greek: pick \"বাংলা\", \"Bahasa Melayu\" or \"Ελληνικά\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now use the Bangladeshi taka and the Malaysian ringgit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Croatian: pick \"Hrvatski\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Filipino: pick \"Filipino\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Philippine peso (PHP, \"₱\"), and a group made in the Philippines starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Hungarian: pick \"Magyar\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now use the Hungarian forint.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Add the Balances widget to the Home Screen or Lock Screen of your iPhone or iPad to see your overall balance and your open groups at a glance; tap it to open Balances.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Groups can now use the currencies of Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, the Dominican Republic and Cuba, and a group created there starts in its own.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Serbian: pick \"Srpski\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Serbian dinar (RSD), and a group made in Serbia starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Urdu: pick \"اردو\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Pakistani rupee (PKR), and a group made in Pakistan starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tapping the notification of a new bill opens the bill right away: the app brings it in as soon as the notification arrives.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "The welcome screen on phones now shows just the logo at the top, leaving more room for the buttons.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "The group's \"Time to settle up\" banner no longer shows a reminder date from before the reminder was set or changed: a reminder changed to the 25th waits for the 25th.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

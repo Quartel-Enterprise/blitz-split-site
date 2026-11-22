@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split op de Apple Watch: koppel hem aan het account van je iPhone, bekijk je saldi en open groepen, tik op Ik heb betaald in een groep waarin je iets schuldig bent en zet je totaalsaldo op een wijzerplaat of in de Smart Stack; eenmaal gekoppeld werkt het horloge zelfstandig.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Bengaals, Maleis en Grieks: kies \"বাংলা\", \"Bahasa Melayu\" of \"Ελληνικά\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu de Bengalese taka en de Maleisische ringgit gebruiken.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Kroatisch: kies \"Hrvatski\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Filipijns: kies \"Filipino\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Filipijnse peso (PHP, \"₱\"), en een groep die op de Filipijnen wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Hongaars: kies \"Magyar\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu de Hongaarse forint gebruiken.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zet de widget Saldi op het beginscherm of toegangsscherm van je iPhone of iPad om je totaalsaldo en open groepen in één oogopslag te zien; tik erop om Saldi te openen.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu de valuta van Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, de Dominicaanse Republiek en Cuba gebruiken, en een groep die daar wordt gemaakt, start in de lokale valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Servisch: kies \"Srpski\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Servische dinar (RSD), en een groep die in Servië wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Urdu: kies \"اردو\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Pakistaanse roepie (PKR), en een groep die in Pakistan wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tik je op de melding van een nieuwe uitgave, dan opent de uitgave meteen: de app haalt hem op zodra de melding binnenkomt.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Het welkomstscherm op de telefoon toont bovenaan nu alleen het logo, zodat er meer ruimte is voor de knoppen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "De banner \"Tijd om af te rekenen\" van de groep toont geen herinneringsdatum meer van vóór het instellen of wijzigen van de herinnering: een herinnering die naar de 25e is verzet, wacht tot de 25e.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

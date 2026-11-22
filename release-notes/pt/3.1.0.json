@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Bora Rachar no Apple Watch: conecte o relógio à conta do iPhone, veja seus saldos e grupos em aberto, toque em Já paguei num grupo em que você deve e coloque o saldo geral num mostrador ou no Smart Stack; depois de conectado, o relógio funciona sozinho.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "O app agora fala bengali, malaio e grego: escolha \"বাংলা\", \"Bahasa Melayu\" ou \"Ελληνικά\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem usar o taka de Bangladesh e o ringgit malaio.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala croata: escolha \"Hrvatski\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala filipino: escolha \"Filipino\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem dividir em peso filipino (PHP, \"₱\"), e um grupo criado nas Filipinas já começa nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala húngaro: escolha \"Magyar\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem usar o florim húngaro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Adicione o widget Saldos à Tela de Início ou à Tela Bloqueada do iPhone ou do iPad para ver o saldo geral e os grupos em aberto de relance; toque nele para abrir Saldos.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem usar as moedas da Bolívia, Venezuela, Costa Rica, Guatemala, Honduras, Nicarágua, República Dominicana e Cuba, e um grupo criado nesses países já começa na moeda local.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala sérvio: escolha \"Srpski\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem dividir em dinar sérvio (RSD), e um grupo criado na Sérvia já começa nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala urdu: escolha \"اردو\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem dividir em rupia paquistanesa (PKR), e um grupo criado no Paquistão já começa nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar na notificação de uma conta nova abre a conta na hora: o app já traz a conta assim que a notificação chega.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "A tela de boas-vindas no celular agora mostra só a logo no topo, deixando mais espaço para os botões.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "O aviso \"Hora de acertar as contas\" do grupo não mostra mais uma data de lembrete de antes de o lembrete ser definido ou alterado: um lembrete mudado para o dia 25 espera o dia 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

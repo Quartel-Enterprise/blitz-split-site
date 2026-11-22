@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split no Apple Watch: liga o relógio à conta do iPhone, vê os teus saldos e grupos em aberto, toca em Já paguei num grupo em que deves e põe o saldo geral num mostrador ou no Smart Stack; depois de ligado, o relógio funciona sozinho.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "A app fala agora bengali, malaio e grego: escolhe \"বাংলা\", \"Bahasa Melayu\" ou \"Ελληνικά\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos já podem usar o taka do Bangladesh e o ringgit malaio.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora croata: escolhe \"Hrvatski\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora filipino: escolhe \"Filipino\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em peso filipino (PHP, \"₱\"), e um grupo criado nas Filipinas começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora húngaro: escolhe \"Magyar\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos já podem usar o florim húngaro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Adiciona o widget Saldos ao ecrã principal ou ao ecrã bloqueado do iPhone ou do iPad para veres o saldo geral e os grupos em aberto num relance; toca nele para abrir Saldos.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Os grupos já podem usar as moedas da Bolívia, Venezuela, Costa Rica, Guatemala, Honduras, Nicarágua, República Dominicana e Cuba, e um grupo criado nesses países começa logo na moeda local.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora sérvio: escolhe \"Srpski\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em dinar sérvio (RSD), e um grupo criado na Sérvia começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A app fala agora urdu: escolhe \"اردو\" em Perfil › Idioma, ou deixa seguir o telemóvel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos podem agora dividir em rupia paquistanesa (PKR), e um grupo criado no Paquistão começa logo nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar na notificação de uma conta nova abre logo a conta: a app vai buscá-la assim que a notificação chega.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "O ecrã de boas-vindas no telemóvel mostra agora só o logótipo no topo, deixando mais espaço para os botões.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "O aviso \"Hora de acertar as contas\" do grupo já não mostra uma data de lembrete anterior a teres definido ou alterado o lembrete: um lembrete mudado para o dia 25 espera pelo dia 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split pada Apple Watch: sambungkan jam kepada akaun iPhone anda, lihat baki dan kumpulan yang masih terbuka, ketik Sudah dibayar dalam kumpulan yang anda berhutang, dan tambahkan baki keseluruhan pada muka jam atau Smart Stack; selepas disambungkan, jam berfungsi sendiri.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Aplikasi ini kini tersedia dalam bahasa Bengali, Melayu dan Greek: pilih \"বাংলা\", \"Bahasa Melayu\" atau \"Ελληνικά\" di Profil › Bahasa, atau biarkan ia mengikut peranti anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan kini boleh menggunakan taka Bangladesh dan ringgit Malaysia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi ini kini tersedia dalam bahasa Croatia: pilih \"Hrvatski\" di Profil › Bahasa, atau biarkan ia mengikut peranti anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi ini kini tersedia dalam bahasa Filipina: pilih \"Filipino\" di Profil › Bahasa, atau biarkan ia mengikut peranti anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan kini boleh membahagi dalam peso Filipina (PHP, \"₱\"), dan kumpulan yang dibuat di Filipina bermula dengan mata wang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi ini kini tersedia dalam bahasa Hungary: pilih \"Magyar\" di Profil › Bahasa, atau biarkan ia mengikut peranti anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan kini boleh menggunakan forint Hungary.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tambahkan widget Baki pada Skrin Utama atau Skrin Kunci iPhone atau iPad anda untuk melihat baki keseluruhan dan kumpulan yang masih terbuka sepintas lalu; ketik untuk membuka Baki.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Kumpulan kini boleh menggunakan mata wang Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, Republik Dominica dan Cuba, dan kumpulan yang dibuat di sana bermula dengan mata wang tempatan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi ini kini tersedia dalam bahasa Serbia: pilih \"Srpski\" di Profil › Bahasa, atau biarkan ia mengikut peranti anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan kini boleh membahagi dalam dinar Serbia (RSD), dan kumpulan yang dibuat di Serbia bermula dengan mata wang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi ini kini tersedia dalam bahasa Urdu: pilih \"اردو\" di Profil › Bahasa, atau biarkan ia mengikut peranti anda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kumpulan kini boleh membahagi dalam rupee Pakistan (PKR), dan kumpulan yang dibuat di Pakistan bermula dengan mata wang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mengetik pemberitahuan bil baharu terus membuka bil itu: aplikasi mengambilnya sebaik sahaja pemberitahuan tiba.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Skrin alu-aluan pada telefon kini hanya menunjukkan logo di bahagian atas, memberi lebih ruang untuk butang.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Sepanduk \"Masa untuk menyelesaikan hutang\" kumpulan tidak lagi menunjukkan tarikh peringatan sebelum peringatan ditetapkan atau ditukar: peringatan yang ditukar ke 25 haribulan menunggu 25 haribulan.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

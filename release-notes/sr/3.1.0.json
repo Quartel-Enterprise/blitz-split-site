@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split na Apple Watch-u: poveži ga sa nalogom na iPhone-u, gledaj stanja i otvorene grupe, dodirni Platio/la sam u grupi u kojoj duguješ i dodaj ukupno stanje na brojčanik ili u Smart Stack; kad se poveže, sat radi samostalno.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori bengalski, malajski i grčki: izaberi „বাংলা“, „Bahasa Melayu“ ili „Ελληνικά“ u Profil › Jezik ili je pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da koriste bangladešku taku i malezijski ringit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori hrvatski: izaberi „Hrvatski“ u Profil › Jezik ili je pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori filipinski: izaberi „Filipino“ u Profil › Jezik ili je pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele u filipinskom pesu (PHP, „₱“), a grupa napravljena na Filipinima počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori mađarski: izaberi „Magyar“ u Profil › Jezik ili je pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da koriste mađarsku forintu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodaj vidžet Stanja na početni ekran ili zaključani ekran svog iPhone-a ili iPad-a da na prvi pogled vidiš ukupno stanje i otvorene grupe; dodirni ga da otvoriš Stanja.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da koriste valute Bolivije, Venecuele, Kostarike, Gvatemale, Hondurasa, Nikaragve, Dominikanske Republike i Kube, a grupa napravljena u tim zemljama počinje u svojoj lokalnoj valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori srpski: izaberi „Srpski“ u Profil › Jezik ili je pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele u srpskom dinaru (RSD), a grupa napravljena u Srbiji počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori urdu: izaberi „اردو“ u Profil › Jezik ili je pusti da prati tvoj uređaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu da dele u pakistanskoj rupiji (PKR), a grupa napravljena u Pakistanu počinje u njoj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodir na obaveštenje o novom računu odmah otvara taj račun: aplikacija ga preuzme čim obaveštenje stigne.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Ekran dobrodošlice na telefonima sada pri vrhu prikazuje samo logo, pa dugmad imaju više mesta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Baner „Vreme je za izmirenje dugova“ u grupi više ne prikazuje datum podsetnika od pre nego što je podsetnik postavljen ili izmenjen: podsetnik izmenjen na 25. čeka 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split sa Apple Watch: ikonekta ito sa account mo sa iPhone, tingnan ang mga balanse at bukas na grupo, i-tap ang Nagbayad ako sa grupong may utang ka, at idagdag ang kabuuang balanse mo sa watch face o sa Smart Stack; kapag konektado na, gumagana nang mag-isa ang watch.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Nagsasalita na ang app ng Bengali, Malay at Greek: piliin ang \"বাংলা\", \"Bahasa Melayu\" o \"Ελληνικά\" sa Profile › Wika, o hayaan itong sumunod sa device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede na ngayong gamitin ng mga grupo ang Bangladeshi taka at ang Malaysian ringgit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nagsasalita na ang app ng Croatian: piliin ang \"Hrvatski\" sa Profile › Wika, o hayaan itong sumunod sa device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Filipino ang app: piliin ang \"Filipino\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Philippine peso (PHP, \"₱\"), at ang grupong ginawa sa Pilipinas ay magsisimula rito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nagsasalita na ang app ng Hungarian: piliin ang \"Magyar\" sa Profile › Wika, o hayaan itong sumunod sa device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede na ngayong gamitin ng mga grupo ang Hungarian forint.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Idagdag ang Balances widget sa Home Screen o Lock Screen ng iPhone o iPad mo para makita agad ang kabuuang balanse mo at ang mga bukas na grupo; i-tap ito para buksan ang Mga balanse.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Puwede na ngayong gamitin ng mga grupo ang mga currency ng Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, Dominican Republic at Cuba, at ang grupong ginawa roon ay magsisimula sa sarili nitong currency.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Serbian ang app: piliin ang \"Srpski\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Serbian dinar (RSD), at ang grupong ginawa sa Serbia ay magsisimula rito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nagsasalita na ang app ng Urdu: piliin ang \"اردو\" sa Profile › Wika, o hayaan itong sumunod sa device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Pakistani rupee (PKR), at ang grupong ginawa sa Pakistan ay magsisimula rito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pag-tap sa notipikasyon ng bagong bill, agad na bubukas ang bill: kinukuha ito ng app sa sandaling dumating ang notipikasyon.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Logo na lang ang ipinapakita ng welcome screen sa mga phone sa itaas, kaya mas maluwag ang espasyo para sa mga button.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Hindi na nagpapakita ang banner na \"Oras na para magbayaran\" ng grupo ng petsa ng paalala mula bago itinakda o binago ang paalala: ang paalalang inilipat sa ika-25 ay maghihintay hanggang ika-25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

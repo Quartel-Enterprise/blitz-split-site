@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split na Apple Watch: połącz zegarek z kontem z iPhone’a, sprawdzaj salda i otwarte grupy, dotknij Już zapłacono w grupie, w której jesteś winien, i dodaj saldo ogólne do tarczy lub Smart Stacku; po połączeniu zegarek działa sam.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po bengalsku, malajsku i grecku: wybierz „বাংলা”, „Bahasa Melayu” lub „Ελληνικά” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz korzystać z bangladeskiej taki i malezyjskiego ringgita.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po chorwacku: wybierz „Hrvatski” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po filipińsku: wybierz „Filipino” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w pesos filipińskich (PHP, „₱”), a grupa założona na Filipinach startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po węgiersku: wybierz „Magyar” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz korzystać z węgierskiego forinta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodaj widżet Salda do ekranu początkowego lub blokady iPhone’a lub iPada, by od razu widzieć saldo ogólne i otwarte grupy; dotknij go, by otworzyć Salda.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz korzystać z walut Boliwii, Wenezueli, Kostaryki, Gwatemali, Hondurasu, Nikaragui, Dominikany i Kuby, a grupa założona w tych krajach startuje w lokalnej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po serbsku: wybierz „Srpski” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w dinarach serbskich (RSD), a grupa założona w Serbii startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz w urdu: wybierz „اردو” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w rupiach pakistańskich (PKR), a grupa założona w Pakistanie startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dotknięcie powiadomienia o nowym wydatku od razu otwiera ten wydatek: aplikacja pobiera go, gdy tylko przyjdzie powiadomienie.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Ekran powitalny na telefonie pokazuje teraz u góry tylko logo, więc zostaje więcej miejsca na przyciski.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Baner „Czas na rozliczenie” w grupie nie pokazuje już terminu przypomnienia sprzed jego ustawienia lub zmiany: przypomnienie zmienione na 25. czeka do 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
