@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Apple Watch'ta Blitz Split: saati iPhone'undaki hesaba bağla, bakiyelerini ve açık gruplarını gör, borçlu olduğun bir grupta Ödedim'e dokun ve genel bakiyeni bir saat kadranına ya da Akıllı Yığın'a ekle; bağlandıktan sonra saat kendi başına çalışır.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Uygulama artık Bengalce, Malayca ve Yunanca konuşuyor: Profil › Dil'den \"বাংলা\", \"Bahasa Melayu\" ya da \"Ελληνικά\"yı seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Bangladeş takası ve Malezya ringgiti kullanabilir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Hırvatça konuşuyor: Profil › Dil'den \"Hrvatski\"yi seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Filipince konuşuyor: Profil › Dil'den \"Filipino\"yu seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Filipin pesosu (PHP, \"₱\") ile bölebiliyor; Filipinler'de açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Macarca konuşuyor: Profil › Dil'den \"Magyar\"ı seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Macar forinti kullanabilir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Genel bakiyeni ve açık gruplarını bir bakışta görmek için Bakiyeler widget'ını iPhone'unun veya iPad'inin Ana Ekranına veya Kilitli Ekranına ekle; dokununca Bakiyeler açılır.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Gruplar artık Bolivya, Venezuela, Kosta Rika, Guatemala, Honduras, Nikaragua, Dominik Cumhuriyeti ve Küba'nın para birimlerini kullanabilir; bu ülkelerde açılan bir grup yerel para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Sırpça konuşuyor: Profil › Dil'den \"Srpski\"yi seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Sırp dinarı (RSD) ile bölebiliyor; Sırbistan'da açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Urduca konuşuyor: Profil › Dil'den \"اردو\"yu seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Pakistan rupisi (PKR) ile bölebiliyor; Pakistan'da açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni bir harcamanın bildirimine dokununca harcama hemen açılır: uygulama, bildirim gelir gelmez harcamayı getirir.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Telefondaki karşılama ekranı artık üstte yalnızca logoyu gösteriyor ve düğmelere daha fazla yer bırakıyor.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grubun \"Hesaplaşma zamanı\" bandı artık hatırlatıcı ayarlanmadan veya değiştirilmeden önceki bir tarihi göstermiyor: ayın 25'ine alınan bir hatırlatıcı 25'ini bekliyor.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

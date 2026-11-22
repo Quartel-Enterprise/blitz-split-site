@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split az Apple Watchon: kapcsold össze az iPhone-od fiókjával, nézd meg az egyenlegeidet és a nyitott csoportjaidat, koppints a Kifizettem gombra egy csoportban, ahol tartozol, és tedd ki a teljes egyenlegedet egy számlapra vagy az Intelligens köteg elemei közé; összekapcsolás után az óra önállóan működik.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Az app mostantól bengáli, maláj és görög nyelven is elérhető: válaszd a „বাংলা”, a „Bahasa Melayu” vagy az „Ελληνικά” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól bangladesi takát és maláj ringgitet is használhatnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól horvátul is beszél: válaszd a „Hrvatski” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól filippínóul is beszél: válaszd a „Filipino” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól fülöp-szigeteki pesót (PHP, „₱”) is használhatnak, és a Fülöp-szigeteken létrehozott csoport ebben indul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól magyarul is beszél: válaszd a „Magyar” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól forintot is használhatnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tedd ki az Egyenlegek widgetet az iPhone-od vagy iPaded Főképernyőjére vagy Zárolási képernyőjére, hogy egy pillantással lásd a teljes egyenlegedet és a nyitott csoportjaidat; koppints rá az Egyenlegek megnyitásához.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól Bolívia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, a Dominikai Köztársaság és Kuba pénznemét is használhatják, az ott létrehozott csoportok pedig a helyi pénznemmel indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól szerbül is beszél: válaszd a „Srpski” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól szerb dinárt (RSD) is használhatnak, és a Szerbiában létrehozott csoport ebben indul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól urduul is beszél: válaszd az „اردو” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól pakisztáni rúpiát (PKR) is használhatnak, és a Pakisztánban létrehozott csoport ebben indul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Egy új kiadás értesítésére koppintva a kiadás azonnal megnyílik: az app már az értesítés megérkezésekor letölti.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "A telefonon az üdvözlőképernyő tetején mostantól csak a logó látható, így több hely jut a gomboknak.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A csoport „Ideje elszámolni” sávja már nem mutat olyan emlékeztető-időpontot, amely az emlékeztető beállítása vagy módosítása előtt volt: a 25-ére állított emlékeztető 25-éig vár.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

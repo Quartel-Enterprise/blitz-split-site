@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split auf der Apple Watch: Verbinde sie mit dem Konto deines iPhones, sieh deine Salden und offenen Gruppen, tippe in einer Gruppe, in der du etwas schuldest, auf „Ich habe bezahlt“ und lege deinen Gesamtsaldo auf ein Zifferblatt oder in den Smart Stack; einmal verbunden, funktioniert die Uhr allein.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Bengalisch, Malaiisch und Griechisch: Wähle „বাংলা“, „Bahasa Melayu“ oder „Ελληνικά“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt den bangladeschischen Taka und den malaysischen Ringgit verwenden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Kroatisch: Wähle „Hrvatski“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Filipino: Wähle „Filipino“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Philippinischen Peso (PHP, „₱“) teilen, und eine auf den Philippinen erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Ungarisch: Wähle „Magyar“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt den ungarischen Forint verwenden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Füge das Widget „Salden“ zum Home-Bildschirm oder Sperrbildschirm deines iPhones oder iPads hinzu, um deinen Gesamtsaldo und deine offenen Gruppen auf einen Blick zu sehen; tippe darauf, um Salden zu öffnen.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt die Währungen von Bolivien, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, der Dominikanischen Republik und Kuba verwenden, und eine dort erstellte Gruppe startet in der Landeswährung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Serbisch: Wähle „Srpski“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Serbischen Dinar (RSD) teilen, und eine in Serbien erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die App spricht jetzt Urdu: Wähle „اردو“ unter Profil › Sprache oder lass sie deinem Gerät folgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppen können jetzt in Pakistanischer Rupie (PKR) teilen, und eine in Pakistan erstellte Gruppe startet in dieser Währung.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ein Tipp auf die Benachrichtigung einer neuen Ausgabe öffnet sie sofort: Die App holt sie, sobald die Benachrichtigung ankommt.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Der Willkommensbildschirm auf dem Handy zeigt oben jetzt nur noch das Logo und lässt so mehr Platz für die Schaltflächen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Das Banner „Zeit zum Abrechnen“ der Gruppe zeigt keinen Erinnerungstermin mehr, der vor dem Einrichten oder Ändern der Erinnerung lag: Eine auf den 25. geänderte Erinnerung wartet bis zum 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

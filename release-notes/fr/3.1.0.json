@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split sur l’Apple Watch : connecte-la au compte de ton iPhone, vois tes soldes et tes groupes ouverts, touche J’ai payé dans un groupe où tu dois, et ajoute ton solde global à un cadran ou à la Smart Stack ; une fois connectée, la montre fonctionne seule.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "L’app parle désormais bengali, malais et grec : choisis « বাংলা », « Bahasa Melayu » ou « Ελληνικά » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent désormais utiliser le taka bangladais et le ringgit malaisien.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais croate : choisis « Hrvatski » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais filipino : choisis « Filipino » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en peso philippin (PHP, « ₱ »), et un groupe créé aux Philippines démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais hongrois : choisis « Magyar » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent désormais utiliser le forint hongrois.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ajoute le widget Soldes à l’écran d’accueil ou à l’écran verrouillé de ton iPhone ou iPad pour voir ton solde global et tes groupes ouverts d’un coup d’œil ; touche-le pour ouvrir Soldes.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent désormais utiliser les monnaies de la Bolivie, du Venezuela, du Costa Rica, du Guatemala, du Honduras, du Nicaragua, de la République dominicaine et de Cuba, et un groupe créé dans ces pays démarre dans la monnaie locale.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais serbe : choisis « Srpski » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en dinar serbe (RSD), et un groupe créé en Serbie démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais ourdou : choisis « اردو » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en roupie pakistanaise (PKR), et un groupe créé au Pakistan démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toucher la notification d’une nouvelle dépense ouvre la dépense tout de suite : l’app la récupère dès que la notification arrive.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Sur téléphone, l’écran d’accueil n’affiche plus que le logo en haut, ce qui laisse plus de place aux boutons.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "La bannière « C’est l’heure de régler les comptes » du groupe n’affiche plus une date de rappel antérieure à sa création ou à sa modification : un rappel passé au 25 attend le 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

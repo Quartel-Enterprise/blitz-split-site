@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split pe Apple Watch: conectează ceasul la contul de pe iPhone, vezi soldurile și grupurile deschise, atinge Am plătit într-un grup în care datorezi și adaugă soldul total pe un cadran sau în Smart Stack; după conectare, ceasul funcționează singur.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum bengaleză, malaeză și greacă: alege „বাংলা”, „Bahasa Melayu” sau „Ελληνικά” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot folosi acum taka din Bangladesh și ringgitul malaezian.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum croată: alege „Hrvatski” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum filipineză: alege „Filipino” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în pesos filipinezi (PHP, „₱”), iar un grup creat în Filipine pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum maghiară: alege „Magyar” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot folosi acum forintul maghiar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Adaugă widgetul Solduri pe ecranul principal sau pe ecranul de blocare al iPhone-ului sau iPad-ului ca să vezi dintr-o privire soldul total și grupurile deschise; atinge-l ca să deschizi Solduri.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupurile pot folosi acum monedele din Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, Republica Dominicană și Cuba, iar un grup creat acolo pornește în moneda locală.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum sârbă: alege „Srpski” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în dinari sârbești (RSD), iar un grup creat în Serbia pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum urdu: alege „اردو” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în rupii pakistaneze (PKR), iar un grup creat în Pakistan pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Atingerea notificării unei cheltuieli noi deschide imediat cheltuiala: aplicația o aduce de îndată ce sosește notificarea.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Ecranul de bun venit de pe telefon afișează acum doar logoul în partea de sus, lăsând mai mult loc pentru butoane.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Bannerul „E timpul să achiți” al grupului nu mai arată o dată de memento dinainte ca mementoul să fie setat sau schimbat: un memento mutat pe 25 așteaptă ziua de 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

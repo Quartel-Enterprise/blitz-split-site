@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split di Apple Watch: hubungkan ke akun iPhone, lihat saldo dan grup yang masih terbuka, ketuk Sudah bayar di grup tempat kamu berutang, dan tambahkan saldo keseluruhan ke wajah jam atau Smart Stack; setelah terhubung, jam bekerja sendiri.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Bengali, Melayu, dan Yunani: pilih \"বাংলা\", \"Bahasa Melayu\", atau \"Ελληνικά\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa memakai taka Bangladesh dan ringgit Malaysia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Kroasia: pilih \"Hrvatski\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Filipino: pilih \"Filipino\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam peso Filipina (PHP, \"₱\"), dan grup yang dibuat di Filipina langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Hungaria: pilih \"Magyar\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa memakai forint Hungaria.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tambahkan widget Saldo ke Layar Utama atau Layar Terkunci iPhone atau iPad untuk melihat saldo keseluruhan dan grup yang masih terbuka sekilas; ketuk untuk membuka Saldo.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grup kini bisa memakai mata uang Bolivia, Venezuela, Kosta Rika, Guatemala, Honduras, Nikaragua, Republik Dominika, dan Kuba, dan grup yang dibuat di sana langsung memakai mata uang setempat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Serbia: pilih \"Srpski\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam dinar Serbia (RSD), dan grup yang dibuat di Serbia langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Urdu: pilih \"اردو\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam rupee Pakistan (PKR), dan grup yang dibuat di Pakistan langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mengetuk notifikasi tagihan baru langsung membuka tagihannya: aplikasi mengambilnya begitu notifikasi tiba.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Layar sambutan di ponsel kini hanya menampilkan logo di bagian atas, memberi lebih banyak ruang untuk tombol.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Banner \"Saatnya melunasi\" di grup tidak lagi menampilkan tanggal pengingat dari sebelum pengingat diatur atau diubah: pengingat yang diubah ke tanggal 25 menunggu tanggal 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

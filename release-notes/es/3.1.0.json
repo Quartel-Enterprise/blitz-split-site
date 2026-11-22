@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split en el Apple Watch: conéctalo a la cuenta de tu iPhone, mira tus saldos y grupos abiertos, toca Ya pagué en un grupo en el que debes y pon tu saldo general en una esfera o en el Smart Stack; una vez conectado, el reloj funciona solo.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "La app ahora habla bengalí, malayo y griego: elige \"বাংলা\", \"Bahasa Melayu\" o \"Ελληνικά\" en Perfil › Idioma, o deja que siga a tu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los grupos ahora pueden usar el taka bangladesí y el ringgit malayo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La app ahora habla croata: elige \"Hrvatski\" en Perfil › Idioma, o deja que siga a tu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La app ahora habla filipino: elige \"Filipino\" en Perfil › Idioma, o deja que siga a tu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los grupos ya pueden dividir en peso filipino (PHP, \"₱\"), y un grupo creado en Filipinas empieza en esa moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La app ahora habla húngaro: elige \"Magyar\" en Perfil › Idioma, o deja que siga a tu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los grupos ahora pueden usar el forinto húngaro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Añade el widget Saldos a la pantalla de inicio o a la pantalla bloqueada del iPhone o del iPad para ver tu saldo general y tus grupos abiertos de un vistazo; tócalo para abrir Saldos.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Los grupos ahora pueden usar las monedas de Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, República Dominicana y Cuba, y un grupo creado en esos países empieza en la moneda local.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La app ahora habla serbio: elige \"Srpski\" en Perfil › Idioma, o deja que siga a tu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los grupos ya pueden dividir en dinar serbio (RSD), y un grupo creado en Serbia empieza en esa moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La app ahora habla urdu: elige \"اردو\" en Perfil › Idioma, o deja que siga a tu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Los grupos ya pueden dividir en rupia pakistaní (PKR), y un grupo creado en Pakistán empieza en esa moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Al tocar la notificación de un gasto nuevo se abre el gasto al instante: la app lo trae en cuanto llega la notificación.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "La pantalla de bienvenida en el celular ahora muestra solo el logo arriba y deja más espacio para los botones.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "El aviso \"Es hora de saldar cuentas\" del grupo ya no muestra una fecha del recordatorio anterior a cuando se configuró o cambió: un recordatorio cambiado al día 25 espera al día 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

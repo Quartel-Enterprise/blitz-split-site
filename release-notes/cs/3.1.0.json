@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split na Apple Watch: propoj hodinky s účtem z iPhonu, sleduj zůstatky a otevřené skupiny, ve skupině, kde dlužíš, klepni na Už zaplaceno a přidej celkový zůstatek na ciferník nebo do Smart Stacku; po propojení fungují hodinky samy.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví bengálsky, malajsky a řecky: vyber „বাংলা“, „Bahasa Melayu“ nebo „Ελληνικά“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď mohou používat bangladéšskou taku a malajsijský ringgit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví chorvatsky: vyber „Hrvatski“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví filipínsky: vyber „Filipino“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit ve filipínském pesu (PHP, „₱“) a skupina založená na Filipínách začne v něm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví maďarsky: vyber „Magyar“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď mohou používat maďarský forint.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Přidej widget Zůstatky na plochu nebo zamčenou obrazovku iPhonu nebo iPadu a uvidíš celkový zůstatek a otevřené skupiny na první pohled; klepnutím otevřeš Zůstatky.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Skupiny teď mohou používat měny Bolívie, Venezuely, Kostariky, Guatemaly, Hondurasu, Nikaraguy, Dominikánské republiky a Kuby a skupina založená v těchto zemích začne v místní měně.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví srbsky: vyber „Srpski“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v srbském dináru (RSD) a skupina založená v Srbsku začne v něm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví urdsky: vyber „اردو“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v pákistánské rupii (PKR) a skupina založená v Pákistánu začne v ní.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Klepnutím na oznámení o novém výdaji se výdaj hned otevře: aplikace ho stáhne, jakmile oznámení dorazí.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Uvítací obrazovka na telefonu teď nahoře ukazuje jen logo, takže tlačítka mají víc místa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Banner „Čas se vyrovnat“ ve skupině už neukazuje termín připomenutí z doby před jeho nastavením nebo změnou: připomenutí změněné na 25. počká do 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
