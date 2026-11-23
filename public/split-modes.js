@@ -1090,6 +1090,36 @@
         less: "ஒரு பங்கு குறைக்கவும்: {name}", more: "ஒரு பங்கு கூட்டவும்: {name}", had: "யார் எடுத்தார்கள்: {item}",
       },
     },
+    // Bulgarian: a message with "|" holds its forms for {n}, "one|other|other" (1 дял, 2 дяла), and fill picks one. The
+    // aorist (плати, взе) has no gender, so the past never guesses one; a name never takes an article; "ти" for the user.
+    bg: {
+      bill: "Вечер с пица", paid: "Pedro плати", notIn: "Не участва в този разход",
+      each: "{a} на човек", among: "{a} между {n} души.", amongOne: "{a} за 1 човек.", out: "{name} е извън разхода.",
+      nobody: "Още няма никого в разхода", nobodyEqual: "Отметни поне един човек, за да разделиш {a}.",
+      checkAll: "Отметни всички", uncheckAll: "Махни отметките",
+      left: "Остават {a}", over: "{a} в повече", closed: "Сборът е точен: {a}",
+      progress: "Засега {a} от {b}.", closedMsg: "Частите правят общата сума.",
+      parts: "{a} на {n} дял|{a} на {n} дяла|{a} на {n} дяла", personParts: "{name} има {n} дяла.",
+      nobodyShares: "Дай дял поне на един човек, за да разделиш {a}.",
+      ofEach: "{p} от всеки разход", ofBill: "{p} от разхода", incomeDetail: "Частта на всеки следва дохода му.", perMonth: "/мес.",
+      service: "Обслужване ({p})", serviceSub: "Според това кой какво взе",
+      loose: "Отбележи кой какво взе", looseDetail: "Докосни лицата при всеки артикул, за да отбележиш кой го взе.",
+      itemsClosed: "{a} за артикули и {b} за обслужване.", nobodyItem: "Никой не е отметнат", eachItem: "{a} на човек",
+      items: { pizza: "Голяма пица", beer: "Бира", salad: "Салата", draft: "Наливна бира", shrimp: "Плато със скариди" },
+      receiptBill: "Пристанищен бар",
+      hint: {
+        equal: "Когато не се дели точно, остатъчните стотинки отиват при този, който плати.",
+        amounts: "Който остане на {zero}, е извън разхода.",
+        percent: "Само цели числа. Остатъчните стотинки отиват при този, който плати.",
+        shares: "Използвай дялове, когато някой има повече, например ако води придружител.",
+        income: "Доходите остават на устройството. Групата вижда само процентите.",
+        items: "Всеки артикул се дели между тези, които са го взели, а обслужването – според това кой какво взе.",
+      },
+      label: {
+        amount: "Сума: {name}", percent: "Процент: {name}", income: "Месечен доход: {name}",
+        less: "Един дял по-малко: {name}", more: "Един дял повече: {name}", had: "Кой взе: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

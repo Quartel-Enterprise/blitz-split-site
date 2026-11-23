@@ -61,6 +61,7 @@ const CHROME = {
   fa: { language: "فارسی", brand: "Blitz Split", locale: "fa-u-nu-latn-ca-gregory", updated: "آخرین به‌روزرسانی: {date}", read: "زمان مطالعه: {n} دقیقه", toc: "در این صفحه" },
   sw: { language: "Kiswahili", brand: "Blitz Split", locale: "sw", updated: "Imesasishwa {date}", read: "Dakika {n} za kusoma", toc: "Kwenye ukurasa huu" },
   ta: { language: "தமிழ்", brand: "Blitz Split", locale: "ta", updated: "புதுப்பிக்கப்பட்டது: {date}", read: "படிக்க {n} நிமிடம்", toc: "இந்தப் பக்கத்தில்" },
+  bg: { language: "Български", brand: "Blitz Split", locale: "bg", updated: "Обновено на {date}", read: "{n} мин. четене", toc: "На тази страница" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
@@ -71,6 +72,8 @@ const CHARACTERS_PER_MINUTE = {
   ko: 370,
   // Why: the study has no Ukrainian, and Russian is the closest language it measured, in the same script.
   uk: 986,
+  // Why: the study has no Bulgarian either, and Russian is the closest language it measured, in the same script.
+  bg: 986,
   // Why: the study has no Urdu, and Arabic is the closest language it measured, in the same script.
   ur: 612,
   // Why: the study has no Norwegian, and Swedish is the closest language it measured.
