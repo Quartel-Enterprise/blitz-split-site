@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikácia teraz hovorí po kórejsky: vyber „한국어“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v juhokórejskom wone (KRW) a skupina založená v Južnej Kórei v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Účet a synchronizácia“ v Profile teraz zobrazuje tvoje ID používateľa, ktoré skopíruješ jedným ťuknutím, a pri odpovedi na niektorý z našich prieskumov nám tak povieš, kto si.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotka, ktorú pridáš k výdavku, sa teraz najprv otvorí v Upraviť fotku, aby si orámoval(a) štvorec, ktorý sa pripojí.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Podľa príjmu“ ti teraz pripomenie zadať čistý príjem každého, po zdanení, a „Predvolené rozdelenie“ zobrazí percento každého až po zadaní príjmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hlavička skupiny je čistejšia: riadok s počtom členov a celkovou sumou pod názvom zmizol. Kto je v skupine, ukazujú tváre a celkovú sumu ukazujú Štatistiky.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotky karty alebo bankového výpisu to teraz povedia a navrhnú vyplniť výdavok ručne, namiesto hlásenia, že účtenku sa nepodarilo prečítať.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategória v Štatistikách teraz otvorí Všetky výdavky s už vybranou skupinou, kategóriou a obdobím, takže aj v týchto výdavkoch môžeš vyhľadávať. Všetky výdavky dostali aj filter Obdobie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V časti Podľa osoby v Štatistikách ťuknutie vedľa kruhu alebo do jeho stredu zruší výber osoby.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

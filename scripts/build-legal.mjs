@@ -56,6 +56,7 @@ const CHROME = {
   ur: { language: "اردو", brand: "Blitz Split", locale: "ur-u-nu-latn", updated: "آخری تازہ کاری: {date}", read: "پڑھنے کا وقت: {n} منٹ", toc: "اس صفحے پر" },
   hr: { language: "Hrvatski", brand: "Blitz Split", locale: "hr", updated: "Ažurirano {date}", read: "{n} min čitanja", toc: "Na ovoj stranici" },
   sr: { language: "Srpski", brand: "Blitz Split", locale: "sr-Latn", updated: "Ažurirano {date}", read: "{n} min čitanja", toc: "Na ovoj stranici" },
+  sk: { language: "Slovenčina", brand: "Blitz Split", locale: "sk", updated: "Aktualizované {date}", read: "{n} min čítania", toc: "Na tejto stránke" },
   fa: { language: "فارسی", brand: "Blitz Split", locale: "fa-u-nu-latn-ca-gregory", updated: "آخرین به‌روزرسانی: {date}", read: "زمان مطالعه: {n} دقیقه", toc: "در این صفحه" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
