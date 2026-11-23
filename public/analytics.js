@@ -45,17 +45,52 @@
   // the events queued meanwhile would leave with it unsent.
   const SETTLE_MS = 4000;
   const FIRST_INPUT = ["pointerdown", "keydown"];
-  let tagLoaded = false;
+  let tagAsked = false;
+  // gtag.js arrived, or failed to (blocked, offline): either way there is nothing left to wait for.
+  let tagSettled = false;
+  const waiting = [];
   function loadTag() {
-    if (tagLoaded) return;
-    tagLoaded = true;
+    if (tagAsked) return;
+    tagAsked = true;
     FIRST_INPUT.forEach((type) => removeEventListener(type, loadTag, true));
     const script = document.createElement("script");
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
+    const settled = () => {
+      tagSettled = true;
+      waiting.splice(0).forEach((go) => go());
+    };
+    script.addEventListener("load", settled);
+    script.addEventListener("error", settled);
     document.head.append(script);
   }
   window.loadAnalytics = loadTag;
+
+  // A link followed before gtag.js arrived (a store's badge, the web app, another page, a language picked, in the
+  // page's first seconds) would take the page view and its own event away unsent. It waits for gtag.js, which sends
+  // what it holds as the page is left, for LEAVE_WAIT_MS at most (a slow connection), then goes. Only a plain click on
+  // a link that leaves this page in this tab: a new tab, a download, mailto: or a place on this page leave nothing behind.
+  // Why on window: every other click listener has run by then, and may have cancelled the click or sent its event.
+  const LEAVE_WAIT_MS = 1000;
+  addEventListener("click", (event) => {
+    if (tagSettled || event.defaultPrevented || event.button !== 0) return;
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target instanceof Element ? event.target.closest("a[href]") : null;
+    if (!link || (link.target && link.target !== "_self") || link.hasAttribute("download")) return;
+    const to = new URL(link.href);
+    if (to.protocol !== "https:" && to.protocol !== "http:") return;
+    if (to.origin === location.origin && to.pathname === location.pathname && to.search === location.search) return;
+    event.preventDefault();
+    let left = false;
+    const leave = () => {
+      if (left) return;
+      left = true;
+      location.assign(to.href);
+    };
+    waiting.push(leave);
+    loadTag();
+    setTimeout(leave, LEAVE_WAIT_MS);
+  });
   FIRST_INPUT.forEach((type) => addEventListener(type, loadTag, { capture: true, passive: true }));
   function settle() {
     setTimeout(() => {

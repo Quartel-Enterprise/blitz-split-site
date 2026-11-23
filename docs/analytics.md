@@ -10,6 +10,9 @@ script never competes with what the visitor is waiting to see: at the visitor's 
 the browser's idle time four seconds after the page loaded (`SETTLE_MS`); a page about to leave asks for it right
 away with `window.loadAnalytics()`, as the `/download` redirect does. The page view and any event sent before it
 arrives wait in `dataLayer`, so a visit that leaves within those seconds without touching the page isn't counted.
+A link followed before `gtag.js` arrived (a store's badge or a language picked in the page's first seconds) waits
+for it, a second at most (`LEAVE_WAIT_MS`), so the page view and the click's own event are sent as the page is left;
+a new tab, a download or a place on the same page waits for nothing.
 Google Analytics' own events (`page_view`, `scroll`,
 outbound `click`, `first_visit`, `session_start`) stay as they are. An app link's group code, member, bill and comment
 ids, a profile's code and a bill link's code never reach Analytics, as the privacy policy promises: on `/g/…`, `/b/…`, `/u/…` and `/c/…`, `page_location` and `page_referrer`

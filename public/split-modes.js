@@ -1450,7 +1450,6 @@
     return moneyField(state.income[i], fill(TEXT.label.income, { name }), `<small>${TEXT.perMonth}</small>`);
   }
 
-  let built = false;
   function build() {
     panel.dataset.mode = mode;
     const people = mode === "items" ? "" : `
@@ -1475,15 +1474,15 @@
       <div class="split-bill"><span><b>${bill.title}</b><small>${TEXT.paid}</small></span><b class="num">${money(TOTAL)}</b></div>
       ${people}${items}
       <p class="split-hint">${fill(TEXT.hint[mode], { zero: money(0) })}</p>`;
+    // The rows' light grows from nothing to each one's part: laid out at 0 first, then set. Not on the first build
+    // (the panel still hidden) of a card that isn't in view yet, as the page loads: site.css holds its rows at nothing
+    // until it is, and laying the whole page out here, before its first paint, would hold that paint back.
+    const grow = !panel.hidden || demo.closest(".tile.in");
     panel.hidden = false;
-    // The rows' light grows from nothing to each one's part: laid out at 0 first, then set. Not on the first build,
-    // as the page loads: the card isn't in view yet (site.css holds its rows at nothing until it is), and laying the
-    // whole page out here, before its first paint, would hold that paint back.
-    if (built) {
+    if (grow) {
       panel.querySelectorAll(".split-row").forEach((row) => row.style.setProperty("--w", "0"));
       void panel.offsetWidth;
     }
-    built = true;
     update();
   }
 
