@@ -472,8 +472,11 @@ a.status .icon { width: 15px; height: 15px; }
 }
 /* Devanagari's, Bengali's, Tamil's and Telugu's marks reach above the headline and below the baseline further than
    Geist's Latin: their titles get the room between their lines, and their gradient's painted box the room around them. */
-:root:is([lang="hi"], [lang="bn"], [lang="ta"], [lang="te"]) .hero h1 { line-height: 1.25; }
-:root:is([lang="hi"], [lang="bn"], [lang="ta"], [lang="te"]) .hero h1 .accent { padding-block: 0.12em 0.16em; }
+:root:is([lang="hi"], [lang="bn"], [lang="ta"]) .hero h1 { line-height: 1.25; }
+:root:is([lang="hi"], [lang="bn"], [lang="ta"]) .hero h1 .accent { padding-block: 0.12em 0.16em; }
+/* Telugu's vowel signs above and its stacked consonants below reach further than Devanagari's. */
+:root[lang="te"] .hero h1 { line-height: 1.35; }
+:root[lang="te"] .hero h1 .accent { padding-block: 0.18em 0.24em; }
 /* Urdu's Nastaliq, where the system draws it, is taller still and its letters step down each word: more room than Hindi's. */
 :root[lang="ur"] .hero h1 { line-height: 1.6; }
 :root[lang="ur"] .hero h1 .accent { padding-block: 0.2em 0.3em; }
