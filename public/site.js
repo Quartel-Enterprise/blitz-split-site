@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, fa: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: … }
 // before this script, and blocks written per language carry data-lang with the language ("en", "pt", "fr"…).
 (function () {
   const params = new URLSearchParams(location.search);
@@ -78,6 +78,7 @@
     hr: { search: "Pretraži jezike", clear: "Očisti pretragu", none: "Nijedan jezik ne odgovara upitu „{query}”", system: "Sustav", systemDetail: "Jezik uređaja", back: "Natrag", close: "Zatvori" },
     sr: { search: "Pretraži jezike", clear: "Obriši pretragu", none: "Nijedan jezik ne odgovara upitu „{query}“", system: "Sistem", systemDetail: "Jezik uređaja", back: "Nazad", close: "Zatvori" },
     sk: { search: "Hľadať jazyk", clear: "Vymazať hľadanie", none: "Žiadny jazyk nezodpovedá „{query}“", system: "Systém", systemDetail: "Jazyk zariadenia", back: "Späť", close: "Zavrieť" },
+    nb: { search: "Søk etter språk", clear: "Tøm søket", none: "Ingen språk passer til «{query}»", system: "System", systemDetail: "Enhetens språk", back: "Tilbake", close: "Lukk" },
     fa: { search: "جستجوی زبان‌ها", clear: "پاک کردن جستجو", none: "هیچ زبانی با «{query}» مطابقت ندارد", system: "سیستم", systemDetail: "زبان دستگاه", back: "بازگشت", close: "بستن" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,

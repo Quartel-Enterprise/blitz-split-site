@@ -57,6 +57,7 @@ const CHROME = {
   hr: { language: "Hrvatski", brand: "Blitz Split", locale: "hr", updated: "Ažurirano {date}", read: "{n} min čitanja", toc: "Na ovoj stranici" },
   sr: { language: "Srpski", brand: "Blitz Split", locale: "sr-Latn", updated: "Ažurirano {date}", read: "{n} min čitanja", toc: "Na ovoj stranici" },
   sk: { language: "Slovenčina", brand: "Blitz Split", locale: "sk", updated: "Aktualizované {date}", read: "{n} min čítania", toc: "Na tejto stránke" },
+  nb: { language: "Norsk bokmål", brand: "Blitz Split", locale: "nb", updated: "Oppdatert {date}", read: "{n} min lesetid", toc: "På denne siden" },
   fa: { language: "فارسی", brand: "Blitz Split", locale: "fa-u-nu-latn-ca-gregory", updated: "آخرین به‌روزرسانی: {date}", read: "زمان مطالعه: {n} دقیقه", toc: "در این صفحه" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
@@ -70,6 +71,8 @@ const CHARACTERS_PER_MINUTE = {
   uk: 986,
   // Why: the study has no Urdu, and Arabic is the closest language it measured, in the same script.
   ur: 612,
+  // Why: the study has no Norwegian, and Swedish is the closest language it measured.
+  nb: 917,
   // Why: the study has no Persian, and Arabic is the closest language it measured, in the same script.
   fa: 612,
 };

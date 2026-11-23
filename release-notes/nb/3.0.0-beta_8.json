@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "En utgift kan nå deles Etter inntekt, og inntektene du skriver inn, deles med medlemmene i gruppen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hver utgift i Siste utgifter på Hjem har nå en meny: Rediger, Dupliser, Del og Slett.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Se alle på Hjem åpner nå Alle utgifter: alle utgiftene du er med i, på tvers av gruppene dine, med søk, filtre og sortering.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bildet til en gruppe er nå større øverst på skjermen og krymper når du ruller, og når du åpner en gruppe, animeres den fra raden sin.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktivitet viser nå bildene til folk, Saldoer › Per gruppe viser bildet til hver gruppe, og Største utgift i Statistikk viser kategorien sin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Konto og synkronisering viser nå Google- eller Apple-logoen og hele e-postadressen din, som bare du ser.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Slett konto forklarer nå hva som blir igjen i gruppene dine etter at kontoen din er borte.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bryteren Standard Pix-nøkkel ser ikke lenger avslått ut på standardnøkkelen din i mørkt tema.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

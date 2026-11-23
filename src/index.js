@@ -81,11 +81,11 @@ const STATIC_IMAGE = /^\/og\/(comment|download|privacy|terms)\.png$/;
 // exact tag the apps share and the page picks.
 const LANGUAGE = /^(?:[a-z]{2,3}|pt-PT)$/;
 // Legacy language codes and the site's own: Hebrew's iw (Android's) is he, so ?lang=iw, /legal/<page>.iw.md and
-// /release-notes/iw.json answer in Hebrew rather than with English or a 404, and Tagalog's tl in Filipino. Why: the same
-// as LEGACY in public/boot.js.
-const LEGACY = { iw: "he", tl: "fil" };
+// /release-notes/iw.json answer in Hebrew rather than with English or a 404, Tagalog's tl in Filipino, and Norwegian's
+// no and Nynorsk's nn in Bokmål, nb. Why: the same as LEGACY in public/boot.js.
+const LEGACY = { iw: "he", tl: "fil", no: "nb", nn: "nb" };
 const canonicalLanguage = (language) => LEGACY[language] || language;
-const LEGACY_FILE = /^(\/legal\/[a-z]+\.|\/release-notes\/)(iw|tl)(\.md|\.json)$/;
+const LEGACY_FILE = new RegExp(`^(/legal/[a-z]+\\.|/release-notes/)(${Object.keys(LEGACY).join("|")})(\\.md|\\.json)$`);
 
 // The folders whose files something other than a browser asks for by name: see fileOrNotFound.
 const FILE_OR_NOT_FOUND = ["/.well-known/", "/legal/", "/release-notes/"];
@@ -306,7 +306,8 @@ function imageKeyOf(url) {
   const key = new URL(url.pathname, url);
   for (const name of IMAGE_PARAMETERS) {
     const value = url.searchParams.get(name);
-    if (value !== null) key.searchParams.set(name, value);
+    // Why canonical: ?lang=no and ?lang=nb draw the same card, so they share one cached copy.
+    if (value !== null) key.searchParams.set(name, name === "lang" ? canonicalLanguage(value) : value);
   }
   return new Request(key);
 }

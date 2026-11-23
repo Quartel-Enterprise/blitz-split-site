@@ -5,11 +5,11 @@
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
 // Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese,
-// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak or Persian, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
+// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål) or Persian, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
 // the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
 // browser language (zh-Hant, zh-TW, zh-HK, zh-MO) picks Traditional Chinese, zh-Hant, as in the apps; every other zh-* stays zh.
 (function () {
-  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "fa"];
+  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "fa"];
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
   function stored(key) {
@@ -22,8 +22,9 @@
   const VARIANTS = ["pt-PT"];
   const variantOf = (tag) => VARIANTS.find((variant) => variant.toLowerCase() === String(tag).toLowerCase().replace("_", "-"));
   // Hebrew's legacy code, iw (Android's, and older browsers'), is Hebrew: iw and iw-* pick he. Tagalog's, tl, is how
-  // Android and older browsers name Filipino: tl and tl-* pick fil.
-  const LEGACY = { iw: "he", tl: "fil" };
+  // Android and older browsers name Filipino: tl and tl-* pick fil. Norwegian's macrolanguage, no, and Nynorsk, nn, pick
+  // Bokmål, nb, as the apps do: the site writes Bokmål, which answers every Norwegian tag.
+  const LEGACY = { iw: "he", tl: "fil", no: "nb", nn: "nb" };
   const canonical = (code) => LEGACY[code] || code;
   const known = (code) => SUPPORTED.includes(code) || VARIANTS.includes(code);
   // Traditional Chinese, as the apps tell it: by its script when the tag has one (zh-Hant-CN is Traditional, zh-Hans-HK

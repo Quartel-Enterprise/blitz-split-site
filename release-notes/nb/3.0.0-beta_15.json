@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Når du åpner noen fra Kontakter eller Saldoer, følger nå navnet og saldoen deres med inn i profilen sammen med bildet, og tilbake igjen når du går tilbake.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "I Statistikk står det nå bare «Du» midt i «Per person»-ringen når andelen er din, og et langt navn slutter med «…» i stedet for å berøre ringen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Når du åpner en gruppe fra Grupper, beveger ansiktene til medlemmene seg nå fra raden inn i gruppeskjermen, og tilbake når du går ut.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "På telefon følger mer av utgiften med når du åpner den: hvem som betalte, følger med fra raden i Hjem og Alle utgifter, klokkeslettet fra raden i gruppens Utgifter, og gruppens bilde og navn fra gruppeskjermen. De følger med tilbake når du går ut.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Navnet på en gruppe følger nå med inn i gruppeskjermen når den åpnes, ikke bare på vei tilbake.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
