@@ -15,7 +15,7 @@ updated: 2026-11-17
 
 Tieto zásady vysvetľujú, ako **Blitz Split** (v Brazílii Bora Rachar) zaobchádza s osobnými údajmi v aplikáciách pre Android, iPhone, iPad, Mac a prehliadač a na webe blitzsplit.com. Vyvíja ho spoločnosť **PI Software LTDA** (Quartel Enterprise), prevádzkovateľ údajov („my“).
 
-Riadia sa brazílskym všeobecným zákonom o ochrane údajov (zákon č. 13 709/2018, LGPD). Používaním aplikácie súhlasíš s [Podmienkami používania](/terms), ktorých sú tieto zásady súčasťou.
+Riadia sa brazílskym všeobecným zákonom o ochrane údajov (zákon č. 13.709/2018, LGPD). Používaním aplikácie súhlasíš s [Podmienkami používania](/terms), ktorých sú tieto zásady súčasťou.
 
 ## Údaje, ktoré spracúvame {#data}
 
