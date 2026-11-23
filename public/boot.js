@@ -75,6 +75,18 @@
   };
   window.localized = (table) => (variant && table[variant] ? merge(table[lang], table[variant]) : table[lang]);
 
+  // A page whose words in the other languages are files of their own (the landing, the support page) names them in
+  // this script's data-strings: public/strings/<name>/<language>.js, each adding its language to window.SITE_STRINGS,
+  // which site.js reads as it reads a page's inline one. Only the language picked is fetched, then its variant's
+  // words; English, the markup's own language, fetches nothing.
+  // Why document.write: the parser waits for a script written this way, so the words are there before the page is
+  // drawn and nobody sees it in English first; a script added to the DOM would load without holding the page.
+  const strings = document.currentScript && document.currentScript.dataset.strings;
+  if (strings && lang !== "en") {
+    const file = (code) => `<script src="/strings/${strings}/${code}.js"></script>`;
+    document.write(file(lang) + (variant ? file(variant) : ""));
+  }
+
   const theme = [params.get("theme"), stored("theme")].find((t) => ["light", "dark", "system"].includes(t)) || "system";
   const systemDark = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
   function applyTheme(pref) {

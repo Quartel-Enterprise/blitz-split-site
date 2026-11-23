@@ -81,7 +81,10 @@ release is the one `duplication.yml` pins.
 
 - Every key a page's `data-i18n`, `data-i18n-html` and `data-i18n-label` use (the pages of `public/` and the shells of
   `pages/`, whose text the deploy writes; the check writes the release notes' page first, so its blocks are counted too) has a value in each language of its
-  `window.SITE_STRINGS`, and no language keeps a key the page no longer uses. The legal pages (the ones with
+  `window.SITE_STRINGS`, and no language keeps a key the page no longer uses. A page whose `boot.js` names its strings
+  (`data-strings`, the landing and the support page) has them read from `public/strings/<name>/<language>.js`: every
+  language and variant must have its file there, each setting only its own language, and no folder may be left that
+  no page asks for ([design.md](design.md#a-pages-strings)). The legal pages (the ones with
   `data-lang` blocks) have one block of each language for every English one. `name` may
   be left out of a language: the markup's Blitz Split is its name everywhere but in Portuguese.
 - Every dictionary of the scripts keyed by language (`TEXT`, `PAPER`…) has each language with English's keys, shapes,

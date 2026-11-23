@@ -3,7 +3,9 @@
 //
 // - Each page's window.SITE_STRINGS has every translated language, each with a non-empty value for every key the
 //   page's data-i18n, data-i18n-html and data-i18n-label use, and no key the page no longer uses (title and
-//   description are read by site.js itself).
+//   description are read by site.js itself). A page sets it inline or, when its boot.js names them in data-strings,
+//   as one file per language, public/strings/<name>/<language>.js, which must be there for every language and
+//   variant boot.js may ask for, each setting only its own language.
 //   A legal page (one with blocks written per language, data-lang) has one block of each legal language for every
 //   English one.
 // - Every dictionary of the scripts keyed by language (const TEXT = { en: …, pt: … }, PAPER, CURRENCY…) has every
@@ -16,13 +18,15 @@
 // carry one, each of whose entries must match English's shape and placeholders, and none of whose keys may be unknown.
 // The languages come from SUPPORTED in public/boot.js, the one list the site picks a language from. Run it with
 // `npm run check:translations`; CI runs it on every pull request (.github/workflows/translations.yml).
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import vm from "node:vm";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC = join(ROOT, "public");
+// Where the pages that don't set their strings inline keep them, a folder each: strings/<name>/<language>.js.
+const STRINGS = join(PUBLIC, "strings");
 // Keys of SITE_STRINGS that site.js reads by name instead of from a data-i18n attribute.
 const PAGE_KEYS = ["title", "description"];
 // Keys whose English markup is right in every language but the ones that set them: the product's name is Blitz Split
@@ -113,6 +117,28 @@ function compare(file, path, english, other, partial = false) {
   }
 }
 
+// The folders of STRINGS a page asks for, to tell the ones no page does.
+const stringsUsed = new Set();
+
+// A page's strings kept as one file per language: what each file adds to window.SITE_STRINGS, by language. boot.js
+// asks for a language's file by its code, and the site answers a missing file with the landing (wrangler.jsonc's
+// not_found_handling), so every language and variant needs its file, even one with no word of its own.
+function stringsFiles(page, name) {
+  const dir = join(STRINGS, name);
+  const strings = {};
+  if (!existsSync(dir)) { fail(page, `asks for the strings of ${relative(ROOT, dir)}/, which isn't there`); return strings; }
+  for (const file of files(dir, ".js")) {
+    const lang = file.slice(dir.length + 1, -".js".length);
+    const sandbox = { window: {} };
+    vm.runInNewContext(readFileSync(file, "utf8"), sandbox);
+    const set = Object.keys(sandbox.window.SITE_STRINGS || {});
+    if (set.length !== 1 || set[0] !== lang) fail(file, `sets SITE_STRINGS.${set.join(", SITE_STRINGS.") || "(nothing)"}, but its name says ${lang}`);
+    else strings[lang] = sandbox.window.SITE_STRINGS[lang];
+  }
+  for (const variant of variants) if (!strings[variant]) fail(page, `${relative(ROOT, dir)}/${variant}.js is missing, and boot.js asks for it`);
+  return strings;
+}
+
 function checkPage(file) {
   const html = readFileSync(file, "utf8");
   const used = new Set([...html.matchAll(/\sdata-i18n(?:-html|-label)?="([^"]+)"/g)].map((m) => m[1]));
@@ -121,10 +147,13 @@ function checkPage(file) {
   const pageLangs = blocks.length > 0 ? LEGAL_LANGS.filter((lang) => lang !== "en" && !variants.includes(lang)) : translated;
 
   const at = html.indexOf("window.SITE_STRINGS = {");
-  if (used.size > 0 && at < 0) fail(file, "uses data-i18n keys but sets no window.SITE_STRINGS");
-  if (at >= 0) {
+  const name = html.match(/<script src="\/boot\.js" data-strings="([^"]+)">/)?.[1];
+  if (name) stringsUsed.add(name);
+  if (name && at >= 0) fail(file, `sets window.SITE_STRINGS inline and asks for the strings of ${name} too`);
+  if (used.size > 0 && at < 0 && !name) fail(file, "uses data-i18n keys but sets no window.SITE_STRINGS");
+  if (at >= 0 || name) {
     const open = html.indexOf("{", at);
-    const strings = evaluate(html.slice(open, closingBracket(html, open) + 1));
+    const strings = name ? stringsFiles(file, name) : evaluate(html.slice(open, closingBracket(html, open) + 1));
     for (const lang of Object.keys(strings)) if (!pageLangs.includes(lang) && !variants.includes(lang)) fail(file, `SITE_STRINGS.${lang} isn't a language of this page`);
     for (const lang of pageLangs) {
       const dict = strings[lang];
@@ -221,6 +250,11 @@ function checkContact(file, address) {
 const files = (dir, extension) => readdirSync(dir).filter((name) => name.endsWith(extension)).map((name) => join(dir, name));
 // Why pages/ too: a page whose text is written at deploy keeps its hand-written shell, with its strings, there.
 [...files(PUBLIC, ".html"), ...files(join(ROOT, "pages"), ".html")].forEach(checkPage);
+if (existsSync(STRINGS)) {
+  for (const entry of readdirSync(STRINGS, { withFileTypes: true })) {
+    if (entry.isDirectory() && !stringsUsed.has(entry.name)) fail(join(STRINGS, entry.name), "no page's boot.js asks for these strings (data-strings)");
+  }
+}
 [...files(PUBLIC, ".js"), ...files(join(ROOT, "src"), ".js")].forEach(checkScript);
 const address = legalAddress();
 if (address) [...files(PUBLIC, ".html"), ...files(join(ROOT, "pages"), ".html"), join(PUBLIC, "llms.txt")].forEach((file) => checkContact(file, address));
