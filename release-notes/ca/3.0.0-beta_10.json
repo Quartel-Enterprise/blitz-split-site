@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "L’enllaç d’una despesa ara s’obre a l’app en lloc del navegador, amb les seves fotos i comentaris.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "L’enllaç d’una despesa que ja no es comparteix, o que només poden obrir les persones de la despesa, ara ho diu en lloc de mostrar un error.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’enllaç d’un perfil ara s’obre encara que no hagis iniciat la sessió.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil › Privadesa i informació té un interruptor nou, «Compartir dades d’ús»: desactiva’l per deixar d’enviar com fas servir l’app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els enllaços que comparteixes al teu perfil, a un comentari i per obtenir l’app ara mostren la previsualització en el teu idioma.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

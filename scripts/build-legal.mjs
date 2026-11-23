@@ -58,6 +58,13 @@ const CHROME = {
   sr: { language: "Srpski", brand: "Blitz Split", locale: "sr-Latn", updated: "Ažurirano {date}", read: "{n} min čitanja", toc: "Na ovoj stranici" },
   sk: { language: "Slovenčina", brand: "Blitz Split", locale: "sk", updated: "Aktualizované {date}", read: "{n} min čítania", toc: "Na tejto stránke" },
   nb: { language: "Norsk bokmål", brand: "Blitz Split", locale: "nb", updated: "Oppdatert {date}", read: "{n} min lesetid", toc: "På denne siden" },
+  fa: { language: "فارسی", brand: "Blitz Split", locale: "fa-u-nu-latn-ca-gregory", updated: "آخرین به‌روزرسانی: {date}", read: "زمان مطالعه: {n} دقیقه", toc: "در این صفحه" },
+  sw: { language: "Kiswahili", brand: "Blitz Split", locale: "sw", updated: "Imesasishwa {date}", read: "Dakika {n} za kusoma", toc: "Kwenye ukurasa huu" },
+  ta: { language: "தமிழ்", brand: "Blitz Split", locale: "ta", updated: "புதுப்பிக்கப்பட்டது: {date}", read: "படிக்க {n} நிமிடம்", toc: "இந்தப் பக்கத்தில்" },
+  te: { language: "తెలుగు", brand: "Blitz Split", locale: "te", updated: "చివరి అప్‌డేట్: {date}", read: (n) => `చదవడానికి ${n} ${Number(n) === 1 ? "నిమిషం" : "నిమిషాలు"}`, toc: "ఈ పేజీలో" },
+  mr: { language: "मराठी", brand: "Blitz Split", locale: "mr-u-nu-latn", updated: "शेवटचे अपडेट: {date}", read: (n) => `वाचायला ${n} ${Number(n) === 1 ? "मिनिट" : "मिनिटे"}`, toc: "या पेजवर" },
+  bg: { language: "Български", brand: "Blitz Split", locale: "bg", updated: "Обновено на {date}", read: "{n} мин. четене", toc: "На тази страница" },
+  ca: { language: "Català", brand: "Blitz Split", locale: "ca", updated: "Actualitzat el {date}", read: "{n} min de lectura", toc: "En aquesta pàgina" },
   da: { language: "Dansk", brand: "Blitz Split", locale: "da", updated: "Opdateret {date}", read: "{n} min. læsetid", toc: "På denne side" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
@@ -69,10 +76,14 @@ const CHARACTERS_PER_MINUTE = {
   ko: 370,
   // Why: the study has no Ukrainian, and Russian is the closest language it measured, in the same script.
   uk: 986,
+  // Why: the study has no Bulgarian either, and Russian is the closest language it measured, in the same script.
+  bg: 986,
   // Why: the study has no Urdu, and Arabic is the closest language it measured, in the same script.
   ur: 612,
   // Why: the study has no Norwegian, and Swedish is the closest language it measured.
   nb: 917,
+  // Why: the study has no Persian, and Arabic is the closest language it measured, in the same script.
+  fa: 612,
   // Why: the study has no Danish, and Swedish is the closest language it measured.
   da: 917,
 };
@@ -124,8 +135,9 @@ function blockTexts(block) {
 function readingMinutes(lang, blocks) {
   const shown = blocks.flatMap(blockTexts).join(" ").replace(/\]\([^)\s]+\)/g, "").replace(/<\/?mark>/g, "");
   // Why NFC: a letter written as a base and a combining accent is still one letter to its reader. Why marks: a Hindi or
-  // Thai vowel sign is a vowel, which the languages the paces were measured in write as a letter.
-  const characters = shown.normalize("NFC").match(/[\p{L}\p{M}\p{N}]/gu) ?? [];
+  // Thai vowel sign is a vowel, which the languages the paces were measured in write as a letter. Why not an Indic virama
+  // (Hindi's halant, Bengali's hasanta, Tamil's pulli…): it takes the vowel away from a letter, and most words have one.
+  const characters = shown.normalize("NFC").match(/(?![\u094D\u09CD\u0A4D\u0ACD\u0B4D\u0BCD\u0C4D\u0CCD\u0D4D])[\p{L}\p{M}\p{N}]/gu) ?? [];
   const latin = SYLLABLE_PACED.has(lang) ? characters.filter((character) => /[\p{Script=Latin}\p{Nd}]/u.test(character)).length : 0;
   return Math.ceil((characters.length - latin) / (CHARACTERS_PER_MINUTE[lang] ?? DEFAULT_CHARACTERS_PER_MINUTE) + latin / DEFAULT_CHARACTERS_PER_MINUTE);
 }

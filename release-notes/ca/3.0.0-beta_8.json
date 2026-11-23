@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Ara una despesa es pot dividir Per ingressos, i els ingressos que escrius es comparteixen amb els membres del grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cadascuna de les Últimes despeses d’Inici ara té un menú: Editar, Duplicar, Compartir i Suprimir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Veure-ho tot a Inici ara obre Totes les despeses: cada despesa en què participes, de tots els teus grups, amb cerca, filtres i ordenació.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La foto d’un grup ara és més gran a la part superior de la seva pantalla i s’encongeix quan et desplaces, i obrir un grup s’anima des de la seva fila.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Activitat ara mostra les fotos de les persones, Saldos › Per grup mostra la foto de cada grup i la Despesa més gran d’Estadístiques mostra la seva categoria.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil › Compte i sincronització ara mostra el logotip de Google o d’Apple i el teu correu electrònic sencer, que només veus tu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Suprimir el compte ara explica què queda als teus grups un cop el compte ja no hi és.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’interruptor Clau Pix per defecte ja no sembla desactivat a la teva clau per defecte amb el tema fosc.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

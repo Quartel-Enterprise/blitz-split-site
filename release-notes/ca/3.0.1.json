@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "La pestanya Saldos ja no mostra una fila de zeros quan ningú no deu res: només diu «Tot liquidat».",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "S’ha corregit que Perfil mostrés el logotip d’Apple al costat del correu d’un compte amb la sessió iniciada amb Google, o el de Google al costat d’un amb la sessió iniciada amb Apple, quan el compte té tots dos.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

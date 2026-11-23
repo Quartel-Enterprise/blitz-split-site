@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Un compte sense Google ni Apple ara se suprimeix després de 30 dies sense ús. La pantalla de benvinguda i Perfil ho diuen, i si connectes Google o Apple, conserves les teves dades.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ara pots valorar l’app des de Perfil › Suport i comentaris, amb «Valorar l’app».",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Una despesa oberta des d’Inici o des de Totes les despeses ara torna directament on l’has oberta, sense passar pel seu grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "S’ha corregit la bombolla «+N» d’una pila de cares, que es mostrava sota la primera cara en lloc de damunt.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

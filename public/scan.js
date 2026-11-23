@@ -198,6 +198,43 @@
       lines: [["2 FATØL", "280,00", 1], ["1 REKEFAT", "960,00", 2]],
       subtotal: ["SUBTOTAL", "1 240,00"], service: ["SERVICE 10 %", "124,00", 3], total: ["TOTALT", "1 364,00"],
     },
+    // Persian: a café's receipt in Bandar Abbas, in rials as money.js counts Persian (no cents in use, a
+    // thousand to the cent), dated in the Gregorian calendar as Iran writes a date, year first, with fresh juice for the draft beer.
+    fa: {
+      store: "کافه بندر", address: "بندرعباس، خیابان ساحلی، پلاک 120", date: "2026/11/08  21:47",
+      lines: [["2 آب‌میوه تازه", "2,800,000", 1], ["1 دیس میگو", "9,600,000", 2]],
+      subtotal: ["جمع جزء", "12,400,000"], service: ["سرویس 10%", "1,240,000", 3], total: ["جمع کل", "13,640,000"],
+    },
+    sw: {
+      store: "MGAHAWA WA BANDARINI", address: "Barabara ya Shakwe 120", date: "08/11/2026  21:47",
+      lines: [["2 JUISI YA MATUNDA", "3,640.00", 1], ["1 SAHANI YA KAMBA", "12,480.00", 2]],
+      subtotal: ["JUMLA NDOGO", "16,120.00"], service: ["HUDUMA 10%", "1,612.00", 3], total: ["JUMLA", "17,732.00"],
+    },
+    ta: {
+      store: "ஹார்பர் பார்", address: "120, கடற்கரைச் சாலை", date: "08/11/2026  9:47 PM",
+      lines: [["2 டிராஃப்ட் பீர்", "28.00", 1], ["1 இறால் தட்டு", "96.00", 2]],
+      subtotal: ["துணைத் தொகை", "124.00"], service: ["சேவைக் கட்டணம் 10%", "12.40", 3], total: ["மொத்தம்", "136.40"],
+    },
+    te: {
+      store: "హార్బర్ బార్", address: "120, బీచ్ రోడ్", date: "08/11/2026  9:47 PM",
+      lines: [["2 డ్రాఫ్ట్ బీర్", "28.00", 1], ["1 రొయ్యల ప్లేటర్", "96.00", 2]],
+      subtotal: ["సబ్‌టోటల్", "124.00"], service: ["సర్వీస్ ఛార్జ్ 10%", "12.40", 3], total: ["మొత్తం", "136.40"],
+    },
+    mr: {
+      store: "हार्बर बार", address: "120, बीच रोड", date: "08/11/2026  9:47 PM",
+      lines: [["2 ड्राफ्ट बिअर", "28.00", 1], ["1 कोळंबी प्लॅटर", "96.00", 2]],
+      subtotal: ["सबटोटल", "124.00"], service: ["सर्व्हिस चार्ज 10%", "12.40", 3], total: ["एकूण", "136.40"],
+    },
+    bg: {
+      store: "ПРИСТАНИЩЕН БАР", address: "ул. „Чайка“ 120", date: "08.11.2026  21:47",
+      lines: [["2 НАЛИВНА БИРА", "28,00", 1], ["1 ПЛАТО СКАРИДИ", "96,00", 2]],
+      subtotal: ["МЕЖДИННА СУМА", "124,00"], service: ["ОБСЛУЖВАНЕ 10%", "12,40", 3], total: ["ОБЩО", "136,40"],
+    },
+    ca: {
+      store: "BAR DEL PORT", address: "C. de les Gavines, 120", date: "08/11/2026  21:47",
+      lines: [["2 CANYA", "28,00", 1], ["1 RACIÓ GAMBES", "96,00", 2]],
+      subtotal: ["SUBTOTAL", "124,00"], service: ["SERVEI 10 %", "12,40", 3], total: ["TOTAL", "136,40"],
+    },
     // Danish: a harbor bar's receipt, in kroner as money.js counts Danish (seven to the dollar).
     da: {
       store: "HAVNEBAREN", address: "Mågevej 120", date: "08.11.2026  21:47",

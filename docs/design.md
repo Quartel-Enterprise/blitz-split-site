@@ -5,12 +5,12 @@
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål) and Danish. The markup is in English; each page carries its other languages' strings in
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan and Danish. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the language picker picks another, kept for the next visit, or "System" again, which forgets it and follows the
 browser (`boot.js` sets `data-lang-pref` to the language chosen or `system`);
-`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro|bn|ms|el|hu|fil|ur|hr|sr|sk|nb|da` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a thirty-sixth language: only the exact tag `pt-PT` (a browser's
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro|bn|ms|el|hu|fil|ur|hr|sr|sk|nb|fa|sw|ta|te|mr|bg|ca|da` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a forty-third language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
 `pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
@@ -26,7 +26,7 @@ tracking; Turkish writes the percent sign first (%10). Russian and Ukrainian cou
 only between words (`word-break: keep-all`), drops the Latin headings' tracking, counts in one form (no `|`), and never
 glues a particle to a name or an amount filled in at run time ("결제: Ana", "Ana 님이"), as the app writes them.
 Arabic is Modern Standard Arabic for every `ar` tag and reads right to left: `boot.js` sets `dir="rtl"` on `<html>`
-(`RIGHT_TO_LEFT`, kept the same in `boot.js` and `src/index.js`, today `ar`, `he` and `ur`), `site.css` writes every side
+(`RIGHT_TO_LEFT`, kept the same in `boot.js` and `src/index.js`, today `ar`, `he`, `ur` and `fa`), `site.css` writes every side
 as start and end (`margin-inline-start`, `inset-inline-end`, `text-align: end`…) so the page mirrors by itself, and
 turns what points one way under `:root[dir="rtl"]` (the arrows and the back chevron, the bars that grow, the switch's
 knob, the header's scroll line). Like the app, it never says anyone's gender: a label ("الدافع: Ana"), a verbal noun
@@ -99,20 +99,79 @@ it, Bokmål's own `nb` as much as the macrolanguage's `no` and Nynorsk's `nn` (`
 pick it. It talks to the reader as "du", quotes with «…», counts in one and other forms as English does, and uses the
 app's own words (gruppe, utgift, del en utgift, saldo, gjør opp, gjenopprettingskode, kvittering, poster). Geist's Latin
 subsets have its letters (æ, ø, å), so it draws in Geist as Swedish does.
+Swahili (`sw`, labelled Kiswahili) is standard Swahili (Kiswahili sanifu), one variant for Kenya and Tanzania alike and
+for every `sw` browser language. It talks to the reader informally (wewe), reads left to right and draws in Geist, whose
+Latin subset has every letter it writes. As the app, it never glues a prefix or a suffix to a name or an amount filled
+in at run time ("Imelipwa na: Pedro", "Kiasi cha {name}"), counts in one and other forms, the noun changing class in
+the plural (mtu 1, watu 4), and builds who owes whom on kudaiwa ("unadaiwa", "Wanaodaiwa na wewe"). It has fresh juice
+and a soft drink on the receipt and in the split card, as Malay does.
+
+Tamil (`ta`) is one variant for every browser language of its own (India's, Sri Lanka's, Singapore's), in the Tamil
+script, as the apps write it: "நீங்கள்" and its respectful forms for the reader, plain everyday Tamil with the English
+loanwords Indian apps use (பேலன்ஸ், அக்கவுண்ட், லிங்க்), and the app's words (குழு, செலவு, கணக்கைத் தீர், மீட்புக்
+குறியீடு, ரசீது). It writes the digits 0-9, which `Intl`'s `ta` already uses, never Tamil digits. A case ending changes
+with the sound of the word it follows, so none is ever glued to a filled-in name or amount: the value stands as the
+subject, after a colon or an arrow, or before a noun that carries the ending ("{a} தொகையைப் பிரிக்க"). It counts in one
+and other forms, has rupees grouped as India writes them, as Hindi does, and draws in the system's font, its titles
+with the room between their lines that Hindi's and Bengali's get.
+
+Telugu (`te`) is one variant for every `te` tag, in the Telugu script, as the apps write it: "మీరు" and its respectful
+forms for the reader, the respectful "-ండి" on every button and instruction, plain everyday Telugu with the English
+loanwords Indian apps use (బ్యాలెన్స్, అకౌంట్, లింక్), and the app's words (గ్రూప్, ఖర్చు, లెక్క సెటిల్ చేయండి, రికవరీ
+కోడ్, రసీదు). It writes the digits 0-9, which `Intl`'s `te` already uses, never Telugu digits. As in Tamil, no case
+ending is ever glued to a filled-in name or amount: the value stands as the subject, after a colon or an arrow, or
+before a noun that carries the ending ("{a} మొత్తాన్ని పంచడానికి"). It counts in one and other forms, has rupees grouped
+as India writes them, as Hindi and Tamil do, and draws in the system's font, its titles with the room between their
+lines that Hindi's, Bengali's and Tamil's get.
+
+Marathi (`mr`) is one variant for every `mr` tag, in Devanagari, as the apps write it: "तुम्ही" and its plural verb
+forms for the reader, the respectful "-आ" imperative on every button and instruction ("सेव्ह करा", "निवडा"), plain
+everyday Marathi with the English loanwords Indian apps use (बॅलन्स, अकाउंट, लिंक), the app's words (ग्रुप, खर्च, हिशोब
+पूर्ण करा, रिकव्हरी कोड, पावती), and sentences that end in ".", never Hindi's danda. It writes the digits 0-9, never
+Devanagari digits, which `Intl`'s `mr` would pick: its dates and the phone's clock are formatted with `mr-u-nu-latn`, as
+Bengali's are with `bn-u-nu-latn`, and the split card reads Devanagari digits typed on a Marathi keyboard as the Latin
+ones (`latinDigits` in `money.js`). No case ending is ever glued to a filled-in value, not even written apart: a name
+takes the respectful pronoun written apart ("{name} यांनी पैसे दिले"), and any other value stands after a colon or before
+a noun that carries the ending ("{n} जणांमध्ये वाटले: {a}."). It counts in one and other forms, has rupees grouped as
+India writes them, as Hindi does, and draws in the system's font, with Hindi's Devanagari rules: no Geist tracking, and
+the room between its titles' lines that Hindi's gets.
+
+Persian (`fa`) is Iran's, one variant for every `fa` tag, as the apps write it: the respectful «شما», Persian's own ی
+and ک (never the Arabic letters), the zero-width non-joiner where Persian joins a prefix or a suffix (می‌, ‌ها), «»
+quotes, and no suffix glued to a filled-in name, which stands as the subject or after a colon ("Pedro پرداخت کرد",
+"مبلغ: Ana"). It reads right to left as Arabic and Urdu do (`RIGHT_TO_LEFT`), in the system font, and writes the digits
+0-9 and Gregorian dates, never its own digits nor the Solar Hijri calendar, which `Intl` would pick for `fa`: its dates are
+formatted with `fa-u-nu-latn-ca-gregory`, and the receipt is dated year first, as Iran writes a date. It has fresh juice
+and a soft drink where the others have beer, as Arabic does.
+
+Bulgarian (`bg`) is written in Cyrillic, as the apps write it: "ти" for the reader, „…“ quotes, a past in the aorist,
+which has no gender (Pedro плати), so the site never guesses the gender of someone it doesn't know, and the app's words
+(група, разход, баланс, уреди сметките, код за възстановяване). It counts in one and other forms, with the count form
+of a masculine noun after a number (1 разход, 2 разхода), never glues the definite article or any other suffix to a
+filled-in name, and writes the percent sign right after the number (10%), as `Intl` does. Bulgaria has used the euro
+since 1 January 2026, so its demo is in euros (1 200 €). Geist has no Cyrillic, so it draws in the system's font.
+Catalan (`ca`) is central standard Catalan, one variant for every `ca` tag (Valencian's `ca-ES-valencia` too), as the
+apps write it: "tu" for the reader, «…» quotes, the typographic apostrophe (l’app, d’una) and the punt volat of l·l, and
+the app's words (grup, despesa, saldo, liquidar comptes, codi de recuperació, tiquet). It never contracts "l’" or "d’"
+before a filled-in name, which stands after a noun or as the subject ("Pedro ha pagat", "Import: {name}"), avoids a
+gendered word for someone it doesn't know, counts in one and other forms as English does, and puts a space before the
+percent sign (10 %), as `Intl` does. Its demo is in euros, written 1.200 €, and the App Store link lets Apple open the
+visitor's own storefront, Catalan having no country of its own there. Geist's Latin subset has its letters (à, ç, ï, ·), so it draws in
+Geist.
 Danish (`da`) has one variant for every `da` tag, so it needs no `LEGACY` entry. It talks to the reader as "du", quotes
 with »…«, counts in one and other forms, and uses the app's own words (gruppe, udgift, del en udgift, saldo, gøre op,
 gendannelseskode, kvittering, poster); it draws in Geist too.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
-in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, grouped
+in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, Tamil, Telugu and Marathi, grouped
 as India writes them (₹1,20,000), yuan in Simplified Chinese (¥, with its fen, so the demo's numbers stay as they are:
 ¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The krona in Swedish, the krone in Norwegian and in Danish, the koruna in Czech, the leu in Romanian, the ringgit in Malay and the Philippine peso in Filipino keep their cents but are
 worth much less than the dollar, so the demo's own amounts are multiplied by a whole number before anything is split
-(`money.cents`: ten for the Swedish krona and the Norwegian krone, the krone being worth about the krona, seven for the Danish krone, worth about two thirds of them, then 23, five, four and 50, so 486 kr, 340,20 kr., 1 117,80 Kč, 243 lei, RM194.40 and ₱2,430 for the ride), and from there everything works in
-that currency's own cents: every split adds up exactly and an amount typed in the split card stays as typed. Greek, Croatian and Slovak are in euros. The demo keeps every amount in cents and the nine with no cents in use (the five below, and the taka in Bengali and the Pakistani rupee in Urdu, grouped as India's, the forint in Hungarian and the dinar in Serbian, a cent being one of each) show it scaled to whole
+(`money.cents`: ten for the Swedish krona and the Norwegian krone, the krone being worth about the krona, seven for the Danish krone, worth about two thirds of them, then 23, five, four, 50 and 130, so 486 kr, 340,20 kr., 1 117,80 Kč, 243 lei, RM194.40, ₱2,430 and Ksh 6,318 for the ride), and from there everything works in
+that currency's own cents: every split adds up exactly and an amount typed in the split card stays as typed. Greek, Croatian, Slovak, Bulgarian and Catalan are in euros. Swahili is in Kenyan shillings for every `sw` visitor, Tanzania's too (the apps also have the Tanzanian shilling, which has no cents in use). The demo keeps every amount in cents and the ten with no cents in use (the five below, and the taka in Bengali and the Pakistani rupee in Urdu, grouped as India's, the forint in Hungarian and the dinar in Serbian, a cent being one of each, and the Iranian rial in Persian, a cent being a thousand rials, so Persian's trip costs a tenth of the others' at a plausible million rials to the dollar and its amounts still fit a 320px phone, written ریال 4,860,000 for the ride (the phone's balance also shrinks with a narrow screen, `site.css`), the symbol first as `Intl` writes it, which reads after the number in the right-to-left line) show it scaled to whole
 units (a cent is Rp100, ¥1, ₩10, 10 ₫ and NT$1, the smallest whole scale, which keeps every split exact), so a $48.60 ride reads Rp486.000, ¥4,860, ₩48,600, 48.600 ₫ or NT$4,860 and every split still adds
-up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫ or Rp100, and a field grows with what it
+up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫, Rp100 or a thousand rials, and a field grows with what it
 holds. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way, by hand, so the
 first paint shows them before any script runs.
 
@@ -138,7 +197,7 @@ site picks a language from; each script's strings and formats still carry a key 
 
 The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the Latin and Latin Extended subsets Google
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
-`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Bengali, Greek and Urdu fall back to the system's font, since neither subset has their
+`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Bengali, Greek, Urdu, Persian, Tamil, Telugu, Marathi and Bulgarian fall back to the system's font, since neither subset has their
 scripts (or, for Vietnamese, its Latin Extended Additional letters).
 
 ## Motion
