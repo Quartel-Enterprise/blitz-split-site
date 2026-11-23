@@ -1060,6 +1060,36 @@
         less: "Punguza sehemu moja ya {name}", more: "Ongeza sehemu moja kwa {name}", had: "Waliotumia: {item}",
       },
     },
+    // Tamil: a message with "|" holds its forms for {n}, "one|few|other", of which Tamil uses one and other. A name or an
+    // amount never takes a case ending, so it stands after a colon or before a noun that carries it (தொகை); நீங்கள் for the user.
+    ta: {
+      bill: "பீட்சா இரவு", paid: "Pedro செலுத்தினார்", notIn: "இதில் இல்லை",
+      each: "ஒவ்வொருவருக்கும் {a}", among: "{n} நபர்களிடையே {a}.", amongOne: "1 நபருக்கு {a}.", out: "இதில் இல்லை: {name}.",
+      nobody: "இன்னும் யாரும் இல்லை", nobodyEqual: "{a} தொகையைப் பிரிக்க, குறைந்தது ஒருவரையாவது குறியுங்கள்.",
+      checkAll: "அனைத்தையும் குறிக்கவும்", uncheckAll: "அனைத்துக் குறிகளையும் நீக்கவும்",
+      left: "மீதம்: {a}", over: "அதிகம்: {a}", closed: "சரியாக உள்ளது: {a}",
+      progress: "இதுவரை: {a} / {b}.", closedMsg: "பகுதிகள் மொத்தத்துடன் சரியாகப் பொருந்துகின்றன.",
+      parts: "{a}: {n} பங்கு|{a}: {n} பங்குகள்|{a}: {n} பங்குகள்", personParts: "{name}: {n} பங்கு.|{name}: {n} பங்குகள்.|{name}: {n} பங்குகள்.",
+      nobodyShares: "{a} தொகையைப் பிரிக்க, குறைந்தது ஒருவருக்காவது ஒரு பங்கு கொடுங்கள்.",
+      ofEach: "ஒவ்வொரு செலவிலும் {p}", ofBill: "செலவில் {p}", incomeDetail: "ஒவ்வொருவரின் பங்கும் அவரவர் வருமானத்தைப் பின்பற்றும்.", perMonth: "/மாதம்",
+      service: "சேவைக் கட்டணம் ({p})", serviceSub: "ஒவ்வொருவரும் எடுத்ததன் விகிதத்தில்",
+      loose: "ஒவ்வொரு பொருளையும் யார் எடுத்தார்கள் என்று குறியுங்கள்", looseDetail: "யார் எடுத்தார்கள் என்று குறிக்க, ஒவ்வொரு பொருளிலும் முகங்களைத் தட்டுங்கள்.",
+      itemsClosed: "பொருட்கள்: {a}, சேவைக் கட்டணம்: {b}.", nobodyItem: "யாரும் குறிக்கப்படவில்லை", eachItem: "ஒவ்வொருவருக்கும் {a}",
+      items: { pizza: "பெரிய பீட்சா", beer: "பீர்", salad: "சாலட்", draft: "டிராஃப்ட் பீர்", shrimp: "இறால் தட்டு" },
+      receiptBill: "ஹார்பர் பார்",
+      hint: {
+        equal: "சமமாகப் பிரிக்க முடியாதபோது, மீதமுள்ள பைசா செலுத்தியவருக்குச் செல்லும்.",
+        amounts: "தொகை {zero} என்று உள்ளவர் இந்தச் செலவில் இல்லை.",
+        percent: "முழு எண்கள் மட்டும். மீதமுள்ள பைசா செலுத்தியவருக்குச் செல்லும்.",
+        shares: "ஒருவருக்கு அதிகம் இருக்கும்போது பங்குகளைப் பயன்படுத்துங்கள், உதாரணமாகக் கூட ஒருவரை அழைத்து வந்தவருக்கு.",
+        income: "வருமானங்கள் சாதனத்திலேயே இருக்கும். குழு சதவீதங்களை மட்டுமே பார்க்கும்.",
+        items: "ஒவ்வொரு பொருளும் அதை எடுத்தவர்களிடையே பிரிக்கப்படும், சேவைக் கட்டணம் ஒவ்வொருவரும் எடுத்ததன்படி.",
+      },
+      label: {
+        amount: "தொகை: {name}", percent: "சதவீதம்: {name}", income: "மாத வருமானம்: {name}",
+        less: "ஒரு பங்கு குறைக்கவும்: {name}", more: "ஒரு பங்கு கூட்டவும்: {name}", had: "யார் எடுத்தார்கள்: {item}",
+      },
+    },
     // Bulgarian: a message with "|" holds its forms for {n}, "one|other|other" (1 дял, 2 дяла), and fill picks one. The
     // aorist (плати, взе) has no gender, so the past never guesses one; a name never takes an article; "ти" for the user.
     bg: {
