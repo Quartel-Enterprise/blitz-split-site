@@ -38,7 +38,7 @@ Saldoene er resultatet av det gruppen har lagt inn. De er ikke en regning, et kr
 
 Utgifter, kommentarer, bilder og nøkler du legger inn, forblir dine. For at appen skal fungere, gir du oss en gratis, verdensomspennende, ikke-eksklusiv lisens til å lagre, kopiere, synkronisere og vise dette innholdet for personene i gruppene dine og for den som har en lenke du deler, så lenge det finnes i tjenesten.
 
-Legg bare inn personer, bilder og opplysninger du har rett til å dele. Alle i en gruppe ser det som legges inn i den, og den som har en lenke du deler, ser det lenken åpner ([Personvernerklæringen](/privacy#sees)). Del lenken til en utgift med «Alle med lenken» bare med personer som kan se den utgiften.
+Legg bare inn personer, bilder og opplysninger du har rett til å dele. Alle i en gruppe ser det som legges inn i den, og den som har en lenke du deler, ser det lenken åpner ([Personvernerklæringen](/privacy#sees)). Del lenken til en utgift med «Alle med lenken» bare med personer som får se den utgiften.
 
 ## Akseptabel bruk {#rules}
 

@@ -111,7 +111,7 @@ Noen av disse leverandørene lagrer eller behandler data utenfor Brasil, hovedsa
 ## Hvor lenge vi tar vare på dem {#keep}
 
 - Så lenge kontoen din finnes, tar vi vare på det appen trenger for å fungere.
-- **Logg ut** sletter kopien på enheten. Med Google eller Apple blir dataene dine liggende på serveren til du logger inn igjen.
+- **Logg ut** sletter kopien på enheten. Med Google eller Apple blir dataene dine liggende på serveren, slik at de er der når du logger inn igjen.
 - **Uten konto** tømmer «Slett profilen og logg ut» enheten, og gjenopprettingskoden din virker fortsatt til kontoen slettes fordi den ikke brukes (se nedenfor). For å slette det som ligger på serveren med en gang, bruk «Slett konto og data».
 - **En konto uten Google eller Apple slettes etter 30 dager uten bruk:** når ingen av enhetene dens synkroniserer på 30 dager, sletter serveren den slik «Slett konto og data» gjør, og gjenopprettingskoden slutter å virke.
 - **«Slett konto og data»** i Profil sletter profilen, bildet, betalingsnøklene, betalingsmåtene og gjenopprettingskoden din med en gang, og trekker tilbake tilgangen Apple ga. Utgifter du har lagt inn i grupper med andre personer, blir liggende der for gruppen, under navnet du hadde der, uten å være knyttet til noen konto. Det samme gjelder kommentarene du har skrevet, også på utgifter som er delt med deg via lenke.
