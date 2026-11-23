@@ -71,6 +71,8 @@ const CHARACTERS_PER_MINUTE = {
   ko: 370,
   // Why: the study has no Ukrainian, and Russian is the closest language it measured, in the same script.
   uk: 986,
+  // Why: the study has no Bulgarian either, and Russian is the closest language it measured, in the same script.
+  bg: 986,
   // Why: the study has no Urdu, and Arabic is the closest language it measured, in the same script.
   ur: 612,
   // Why: the study has no Norwegian, and Swedish is the closest language it measured.
