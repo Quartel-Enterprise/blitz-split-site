@@ -85,7 +85,7 @@ const LANGUAGE = /^(?:[a-z]{2,3}|pt-PT)$/;
 // no and Nynorsk's nn in Bokmål, nb. Why: the same as LEGACY in public/boot.js.
 const LEGACY = { iw: "he", tl: "fil", no: "nb", nn: "nb" };
 const canonicalLanguage = (language) => LEGACY[language] || language;
-const LEGACY_FILE = /^(\/legal\/[a-z]+\.|\/release-notes\/)(iw|tl|no|nn)(\.md|\.json)$/;
+const LEGACY_FILE = new RegExp(`^(/legal/[a-z]+\\.|/release-notes/)(${Object.keys(LEGACY).join("|")})(\\.md|\\.json)$`);
 
 // The folders whose files something other than a browser asks for by name: see fileOrNotFound.
 const FILE_OR_NOT_FOUND = ["/.well-known/", "/legal/", "/release-notes/"];
@@ -306,7 +306,8 @@ function imageKeyOf(url) {
   const key = new URL(url.pathname, url);
   for (const name of IMAGE_PARAMETERS) {
     const value = url.searchParams.get(name);
-    if (value !== null) key.searchParams.set(name, value);
+    // Why canonical: ?lang=no and ?lang=nb draw the same card, so they share one cached copy.
+    if (value !== null) key.searchParams.set(name, name === "lang" ? canonicalLanguage(value) : value);
   }
   return new Request(key);
 }
