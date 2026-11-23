@@ -653,6 +653,23 @@
       bills: (n) => `${n} هزینه`,
       titles: { b1: "مهمان‌خانه Lagoa", b2: "شام در Ribeirão", b3: "سفر تا ساحل", p1: "بستنی در ساحل", p2: "خرید هفتگی", p3: "پارکینگ" },
     },
+    sw: {
+      paid: "Imelipwa na: {name}", notIn: "Hayumo kwenye hii",
+      members: (people, bills) => `${people === 1 ? "mtu" : "watu"} ${people} · gharama ${bills}`,
+      toGet: "unadai", youOwe: "unadaiwa", settled: "hakuna deni", owesYou: "Wanaodaiwa na wewe", youOweTitle: "Unadaiwa",
+      eachOne: "Salio la kila mtu", getsBack: "anadai", owes: "anadaiwa", even: "hana deni",
+      toSettle: "Madeni ya kulipa", total: "Jumla ya kikundi", lodging: "Malazi", food: "Chakula", transport: "Usafiri",
+      sheetTitle: "Gawanya gharama", description: "Maelezo", amount: "Kiasi", whoPaid: "Aliyelipa",
+      splitAmong: "Gawanya sawa kati ya", each: "{value} kila mmoja", cancel: "Ghairi", save: "Hifadhi", close: "Funga",
+      queue: (n) => (n === 1 ? `Badiliko ${n} linasubiri` : `Mabadiliko ${n} yanasubiri`),
+      split: "Jinsi ilivyogawanywa", yourShare: "Sehemu yako", deleteBill: "Futa gharama",
+      recordPayment: "Rekodi malipo", record: "Rekodi", viaMethod: "kwa uhamisho", payment: "Malipo", deletePayment: "Futa malipo",
+      payLine: (from, to) => `${name(from)} amemlipa ${name(to)}`,
+      paidYou: (who, value) => `${who} amekulipa ${value}`,
+      paidTotal: "Jumla aliyolipa", shareTotal: "Sehemu ya gharama", balance: "Salio",
+      bills: (n) => `gharama ${n}`,
+      titles: { b1: "Nyumba ya wageni Lagoa", b2: "Chakula cha jioni: Ribeirão", b3: "Usafiri hadi ufukweni", p1: "Aiskrimu ufukweni", p2: "Manunuzi ya wiki", p3: "Maegesho" },
+    },
     // Tamil: a name or an amount never takes a case ending, so it stands as the subject, after a colon or an arrow.
     ta: {
       paid: "{name} செலுத்தினார்", notIn: "இதில் இல்லை",
@@ -1111,7 +1128,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", ta: "ta", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

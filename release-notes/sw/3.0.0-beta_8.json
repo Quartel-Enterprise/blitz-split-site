@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Gharama sasa inaweza kugawanywa Kwa kipato, na mapato unayoandika hushirikiwa na washiriki wa kikundi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kila moja ya Gharama za karibuni kwenye Mwanzo sasa ina menyu: Hariri, Nakili kama mpya, Shiriki na Futa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tazama zote kwenye Mwanzo sasa hufungua Gharama zote: kila gharama unayohusika nayo, katika vikundi vyako vyote, pamoja na utafutaji, vichujio na upangaji.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Picha ya kikundi sasa ni kubwa zaidi juu ya skrini yake na hupungua unaposogeza, na kufungua kikundi huhuishwa kuanzia safu yake.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Shughuli sasa huonyesha picha za watu, Salio › Kwa kikundi huonyesha picha ya kila kikundi, na Gharama kubwa zaidi ya Takwimu huonyesha aina yake.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Wasifu › Akaunti na usawazishaji sasa huonyesha nembo ya Google au Apple na barua pepe yako yote, ambayo ni wewe tu unayeiona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Futa akaunti sasa inaeleza kinachobaki kwenye vikundi vyako baada ya akaunti yako kuondoka.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Swichi ya Ufunguo chaguomsingi wa Pix haionekani tena imezimwa kwenye ufunguo wako chaguomsingi katika mandhari ya giza.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

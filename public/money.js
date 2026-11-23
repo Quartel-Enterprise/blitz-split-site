@@ -7,9 +7,9 @@
 // thousand rials to the cent: at a plausible million rials to the dollar, Persian's trip costs a tenth of the others', so
 // its amounts still fit a 320px phone) and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
-// koruna, the leu, the ringgit, the Philippine peso, the Norwegian krone) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
+// koruna, the leu, the ringgit, the Philippine peso, the Norwegian krone, the Kenyan shilling) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
 // preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč, 243 lei,
-// RM194.40 or ₱2,430 (and 486 kr in Norwegian too, the krone being worth about the krona)
+// RM194.40, ₱2,430 or Ksh 6,318 (and 486 kr in Norwegian too, the krone being worth about the krona)
 // and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
 (function () {
   // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents,
@@ -40,6 +40,7 @@
     sk: ["", ",", "\u00a0", "\u00a0€"],
     nb: ["", ",", "\u00a0", "\u00a0kr", 0, 3, 10],
     fa: ["ریال\u00a0", ".", ",", "", 1000],
+    sw: ["Ksh\u00a0", ".", ",", "", 0, 3, 130],
     ta: ["₹", ".", ",", "", 0, 2],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
