@@ -43,6 +43,7 @@
     sw: ["Ksh\u00a0", ".", ",", "", 0, 3, 130],
     ta: ["₹", ".", ",", "", 0, 2],
     te: ["₹", ".", ",", "", 0, 2],
+    bg: ["", ",", "\u00a0", "\u00a0€"],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
