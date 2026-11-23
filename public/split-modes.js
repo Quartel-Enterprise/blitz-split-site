@@ -1219,7 +1219,7 @@
       checkAll: "Markér alle", uncheckAll: "Fjern alle markeringer",
       left: "{a} mangler", over: "{a} for meget", closed: "Det passer: {a}",
       progress: "{a} af {b} indtil nu.", closedMsg: "Delene giver tilsammen totalen.",
-      parts: "{n} andele á {a}", personParts: "{name} har {n} andele.", nobodyShares: "Giv mindst én person en andel for at dele {a}.",
+      parts: "{a} fordelt på {n} andele", personParts: "{name} har {n} andele.", nobodyShares: "Giv mindst én person en andel for at dele {a}.",
       ofEach: "{p} af hver udgift", ofBill: "{p} af udgiften", incomeDetail: "Hver persons del følger vedkommendes indkomst.", perMonth: "/md.",
       service: "Service ({p})", serviceSub: "I forhold til, hvad hver person havde",
       loose: "Markér, hvem der havde hver post", looseDetail: "Tryk på ansigterne ved hver post for at markere, hvem der havde den.",

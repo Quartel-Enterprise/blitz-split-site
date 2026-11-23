@@ -765,7 +765,7 @@
       toGet: "til gode", youOwe: "du skylder", settled: "alt er gjort op", owesYou: "Skylder dig", youOweTitle: "Du skylder",
       eachOne: "Hver persons saldo", getsBack: "har til gode", owes: "skylder", even: "gjort op",
       toSettle: "At gøre op", total: "Gruppens total", lodging: "Overnatning", food: "Mad", transport: "Transport",
-      sheetTitle: "Del en udgift", description: "Beskrivelse", amount: "Beløb", whoPaid: "Hvem der betalte",
+      sheetTitle: "Del en udgift", description: "Beskrivelse", amount: "Beløb", whoPaid: "Hvem betalte",
       splitAmong: "Del ligeligt mellem", each: "{value} hver", cancel: "Annuller", save: "Gem", close: "Luk",
       queue: (n) => `${n} ${n === 1 ? "ændring" : "ændringer"} i køen`,
       split: "Sådan blev den delt", yourShare: "Din andel", deleteBill: "Slet udgift",
