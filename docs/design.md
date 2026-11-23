@@ -134,8 +134,8 @@ apps write it: "tu" for the reader, «…» quotes, the typographic apostrophe (
 the app's words (grup, despesa, saldo, liquidar comptes, codi de recuperació, tiquet). It never contracts "l’" or "d’"
 before a filled-in name, which stands after a noun or as the subject ("Pedro ha pagat", "Import: {name}"), avoids a
 gendered word for someone it doesn't know, counts in one and other forms as English does, and puts a space before the
-percent sign (10 %), as `Intl` does. Its demo is in euros, written 1.200 €, and the App Store link opens Spain's
-storefront, Catalan having no country of its own there. Geist's Latin subset has its letters (à, ç, ï, ·), so it draws in
+percent sign (10 %), as `Intl` does. Its demo is in euros, written 1.200 €, and the App Store link lets Apple open the
+visitor's own storefront, Catalan having no country of its own there. Geist's Latin subset has its letters (à, ç, ï, ·), so it draws in
 Geist.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
