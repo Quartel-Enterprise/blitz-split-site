@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Appen taler nu arabisk, med et layout, der læses fra højre mod venstre: vælg »العربية« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i saudiarabiske riyal (SAR), emiratiske dirham (AED), egyptiske pund (EGP) og marokkanske dirham (MAD), og en gruppe oprettet i et af de lande starter i landets valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu forenklet kinesisk: vælg »中文（简体）« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i kinesiske yuan (CNY), og en gruppe oprettet i Fastlandskina starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu traditionelt kinesisk: vælg »中文（繁體）« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i nye taiwanske dollar (TWD), og en gruppe oprettet i Taiwan starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu tjekkisk: vælg »Čeština« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i tjekkiske koruna (CZK), og en gruppe oprettet i Tjekkiet starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hver gruppe har nu sin egen påmindelse om at gøre op: behold den ugentlige mandag kl. 10.00, vælg en anden ugedag eller en dag i måneden og et klokkeslæt (for eksempel hver den 25. kl. 12.00), eller slå den fra, når du opretter gruppen eller i Redigér gruppe. Kun dem, der stadig skylder, får notifikationen, og de ser et banner i gruppen, som de kan lukke.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu hebraisk, med et layout, der læses fra højre mod venstre: vælg »עברית« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i israelske nye shekel (ILS), og en gruppe oprettet i Israel starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu hindi: vælg »हिन्दी« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i indiske rupier (INR), og en gruppe oprettet i Indien starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu rumænsk: vælg »Română« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i rumænske lei (RON), og en gruppe oprettet i Rumænien starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu svensk: vælg »Svenska« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i svenske kroner (SEK), og en gruppe oprettet i Sverige starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu thai: vælg »ไทย« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i thailandske baht (THB), og en gruppe oprettet i Thailand starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu vietnamesisk: vælg »Tiếng Việt« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i vietnamesiske dong (VND), og en gruppe oprettet i Vietnam starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tryk på gruppens foto i en udgifts topbjælke for at se det i stor størrelse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Når du trykker på den nedtonede kontakt Forenkle gæld i en gruppe med to personer, får du nu at vide, at den bliver tilgængelig, når gruppen har 3 personer.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I Sådan virker det under Forenkle gæld viser eksemplet nu fotos af personer i stedet for initialer.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rettet en fejl, hvor tilbagebevægelsen ikke forlod en persons profil, der var åbnet fra et betalingsark; nu går den tilbage til arket.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

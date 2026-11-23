@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "En gruppes Udgifter har nu »Se alle«, som åbner Alle udgifter allerede filtreret efter den gruppe, så du kan søge i, sortere og filtrere dens udgifter. Ryd filteret for at se alle grupper.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I Ny gruppe foreslår »Tilføj efter navn« nu personer fra dine Kontakter, mens du skriver, med deres foto: tryk på en for at oprette gruppen med den samme person.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Når du scroller i en gruppe, viser den sammenfoldede topbjælke kun gruppens foto og navn, uden medlemmerne og totalen afskåret ved siden af.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Du kan nu downloade de 12 ord i din gendannelseskode som en tekstfil.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Gem din gendannelseskode fortæller nu, at den bringer dine data tilbage, og at dataene slettes efter 30 dage uden brug.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Del en udgift har nu også Scan kvittering øverst, ved siden af Gem, så tastaturet ikke længere skjuler den, og Tilføj en betalingsmetode er mere diskret.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I en gruppes Statistik er Pr. person nu et ringdiagram over hver persons andel, i den samme farve, som hver person har i Standarddeling, med listen over navne og beløb nedenunder som forklaring. Forbrugt og Betalt skifter, hvad det viser.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "»Hvem er med« i Ny gruppe viser dit profilfoto i stedet for dit forbogstav.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "»Synkroniserer…« bliver ikke længere ved med at dukke op på Hjem og Grupper, når du vender tilbage til appen: synkroniseringer kører i stilhed, når dine grupper er på skærmen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "På tablets og med telefonen på tværs skæres skyggen af »Del en udgift« øverst i sidebjælken ikke længere af i kanterne.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

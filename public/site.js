@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: …, da: … }
 // before this script, and blocks written per language carry data-lang with the language ("en", "pt", "fr"…).
 (function () {
   const params = new URLSearchParams(location.search);
@@ -86,6 +86,7 @@
     mr: { search: "भाषा शोधा", clear: "शोध साफ करा", none: "जुळणारी भाषा नाही: “{query}”", system: "सिस्टम", systemDetail: "डिव्हाइसची भाषा", back: "मागे", close: "बंद करा" },
     bg: { search: "Търси езици", clear: "Изчисти търсенето", none: "Няма език, който да съвпада с „{query}“", system: "Системен", systemDetail: "Езикът на устройството", back: "Назад", close: "Затвори" },
     ca: { search: "Cerca idiomes", clear: "Esborrar la cerca", none: "Cap idioma coincideix amb «{query}»", system: "Sistema", systemDetail: "Idioma del dispositiu", back: "Enrere", close: "Tancar" },
+    da: { search: "Søg efter sprog", clear: "Ryd søgningen", none: "Intet sprog passer til »{query}«", system: "System", systemDetail: "Enhedens sprog", back: "Tilbage", close: "Luk" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
   // Ukrainian by Ukraine's UA ("UK" reads as the United Kingdom) and the two Chinese by their scripts, as Chinese

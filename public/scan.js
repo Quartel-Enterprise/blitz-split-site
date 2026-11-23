@@ -235,6 +235,12 @@
       lines: [["2 CANYA", "28,00", 1], ["1 RACIÓ GAMBES", "96,00", 2]],
       subtotal: ["SUBTOTAL", "124,00"], service: ["SERVEI 10 %", "12,40", 3], total: ["TOTAL", "136,40"],
     },
+    // Danish: a harbor bar's receipt, in kroner as money.js counts Danish (seven to the dollar).
+    da: {
+      store: "HAVNEBAREN", address: "Mågevej 120", date: "08.11.2026  21:47",
+      lines: [["2 FADØL", "196,00", 1], ["1 REJEPLATTE", "672,00", 2]],
+      subtotal: ["SUBTOTAL", "868,00"], service: ["SERVICE 10 %", "86,80", 3], total: ["I ALT", "954,80"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

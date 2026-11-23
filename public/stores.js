@@ -58,7 +58,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -502,6 +502,16 @@
       mismatchBody: "Fas servir un {platform}. Per a la millor experiència, descarrega l’app {in}.",
       mismatchGo: "Anar {to}", mismatchStay: "Continuar {to}", close: "Tancar",
       in: { play: "de Google Play", appstore: "de l’App Store" }, to: { play: "a Google Play", appstore: "a l’App Store" },
+    },
+    da: {
+      play: ["Nu på", "Kommer snart på"], appstore: ["Hent i", "Kommer snart i"], web: ["Åbn i", "Kommer snart i"], browser: "browseren",
+      getApp: "Hent appen", openWeb: "Åbn webappen", soon: "Kommer snart",
+      noteStore: "Hent appen {in}.", noteApple: "Bruger du {platform}? Brug den i browseren, indtil appen kommer i App Store.", noteWeb: "Åbn den i browseren, intet at installere.",
+      playLive: "Tilgængelig på Google Play", appStoreLive: "Tilgængelig i App Store", webLive: "Åbn webappen",
+      mismatchTitle: "Vælg din butik",
+      mismatchBody: "Du bruger {platform}. Hent appen {in} for at få den bedste oplevelse.",
+      mismatchGo: "Gå {to}", mismatchStay: "Fortsæt {to}", close: "Luk",
+      in: { play: "fra Google Play", appstore: "fra App Store" }, to: { play: "til Google Play", appstore: "til App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

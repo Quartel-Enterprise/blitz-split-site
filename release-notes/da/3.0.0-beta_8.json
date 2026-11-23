@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "En udgift kan nu deles Efter indkomst, og de indkomster, du indtaster, deles med gruppens medlemmer.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hver af Hjems Seneste udgifter har nu en menu: Redigér, Duplikér, Del og Slet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Se alle på Hjem åbner nu Alle udgifter: alle udgifter, du er med i, på tværs af dine grupper, med søgning, filtre og sortering.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En gruppes billede er nu større øverst på dens skærm og bliver mindre, når du scroller, og når du åbner en gruppe, animeres den fra sin række.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktivitet viser nu folks billeder, Saldi › Pr. gruppe viser hver gruppes billede, og Statistiks Største udgift viser sin kategori.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Konto og synkronisering viser nu Google- eller Apple-logoet og hele din e-mail, som kun du kan se.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Slet konto forklarer nu, hvad der bliver i dine grupper, når din konto er væk.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kontakten Standard-Pix-nøgle ser ikke længere slået fra ud på din standardnøgle i det mørke tema.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
