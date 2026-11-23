@@ -210,6 +210,11 @@
       lines: [["2 JUISI YA MATUNDA", "3,640.00", 1], ["1 SAHANI YA KAMBA", "12,480.00", 2]],
       subtotal: ["JUMLA NDOGO", "16,120.00"], service: ["HUDUMA 10%", "1,612.00", 3], total: ["JUMLA", "17,732.00"],
     },
+    ta: {
+      store: "ஹார்பர் பார்", address: "120, கடற்கரைச் சாலை", date: "08/11/2026  9:47 PM",
+      lines: [["2 டிராஃப்ட் பீர்", "28.00", 1], ["1 இறால் தட்டு", "96.00", 2]],
+      subtotal: ["துணைத் தொகை", "124.00"], service: ["சேவைக் கட்டணம் 10%", "12.40", 3], total: ["மொத்தம்", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

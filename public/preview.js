@@ -670,6 +670,24 @@
       bills: (n) => `gharama ${n}`,
       titles: { b1: "Nyumba ya wageni Lagoa", b2: "Chakula cha jioni: Ribeirão", b3: "Usafiri hadi ufukweni", p1: "Aiskrimu ufukweni", p2: "Manunuzi ya wiki", p3: "Maegesho" },
     },
+    // Tamil: a name or an amount never takes a case ending, so it stands as the subject, after a colon or an arrow.
+    ta: {
+      paid: "{name} செலுத்தினார்", notIn: "இதில் இல்லை",
+      members: (people, bills) => `${people} ${people === 1 ? "நபர்" : "நபர்கள்"} · ${bills} ${bills === 1 ? "செலவு" : "செலவுகள்"}`,
+      toGet: "உங்களுக்கு வர வேண்டும்", youOwe: "நீங்கள் தர வேண்டும்", settled: "கணக்கு தீர்ந்தது", owesYou: "யார் உங்களுக்குத் தர வேண்டும்", youOweTitle: "நீங்கள் தர வேண்டியது",
+      eachOne: "ஒவ்வொருவரின் பேலன்ஸ்", getsBack: "பெற வேண்டும்", owes: "தர வேண்டும்", even: "கணக்கு தீர்ந்தது",
+      toSettle: "தீர்க்க வேண்டியவை", total: "குழுவின் மொத்தம்", lodging: "தங்குமிடம்", food: "உணவு", transport: "போக்குவரத்து",
+      sheetTitle: "செலவைப் பிரிக்கவும்", description: "விளக்கம்", amount: "தொகை", whoPaid: "யார் செலுத்தினார்",
+      splitAmong: "இவர்களிடையே சமமாகப் பிரிக்கவும்", each: "ஒவ்வொருவருக்கும் {value}", cancel: "ரத்துசெய்யவும்", save: "சேமிக்கவும்", close: "மூடவும்",
+      queue: (n) => `${n} ${n === 1 ? "மாற்றம்" : "மாற்றங்கள்"} வரிசையில்`,
+      split: "எப்படிப் பிரிக்கப்பட்டது", yourShare: "உங்கள் பங்கு", deleteBill: "செலவை நீக்கவும்",
+      recordPayment: "பேமெண்ட்டைப் பதிவு செய்யவும்", record: "பதிவு செய்யவும்", viaMethod: "டிரான்ஸ்ஃபர் மூலம்", payment: "பேமெண்ட்", deletePayment: "பேமெண்ட்டை நீக்கவும்",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} உங்களுக்குச் செலுத்தினார்: ${value}`,
+      paidTotal: "மொத்தம் செலுத்தியது", shareTotal: "செலவுகளில் பங்கு", balance: "பேலன்ஸ்",
+      bills: (n) => `${n} ${n === 1 ? "செலவு" : "செலவுகள்"}`,
+      titles: { b1: "லகோவா விருந்தினர் இல்லம்", b2: "ரிபெய்ராவில் இரவு உணவு", b3: "கடற்கரைக்குப் பயணம்", p1: "கடற்கரையில் ஐஸ்கிரீம்", p2: "வார மளிகைப் பொருட்கள்", p3: "பார்க்கிங்" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1110,7 +1128,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

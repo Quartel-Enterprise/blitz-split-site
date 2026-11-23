@@ -60,6 +60,7 @@ const CHROME = {
   nb: { language: "Norsk bokmål", brand: "Blitz Split", locale: "nb", updated: "Oppdatert {date}", read: "{n} min lesetid", toc: "På denne siden" },
   fa: { language: "فارسی", brand: "Blitz Split", locale: "fa-u-nu-latn-ca-gregory", updated: "آخرین به‌روزرسانی: {date}", read: "زمان مطالعه: {n} دقیقه", toc: "در این صفحه" },
   sw: { language: "Kiswahili", brand: "Blitz Split", locale: "sw", updated: "Imesasishwa {date}", read: "Dakika {n} za kusoma", toc: "Kwenye ukurasa huu" },
+  ta: { language: "தமிழ்", brand: "Blitz Split", locale: "ta", updated: "புதுப்பிக்கப்பட்டது: {date}", read: "படிக்க {n} நிமிடம்", toc: "இந்தப் பக்கத்தில்" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
@@ -125,8 +126,9 @@ function blockTexts(block) {
 function readingMinutes(lang, blocks) {
   const shown = blocks.flatMap(blockTexts).join(" ").replace(/\]\([^)\s]+\)/g, "").replace(/<\/?mark>/g, "");
   // Why NFC: a letter written as a base and a combining accent is still one letter to its reader. Why marks: a Hindi or
-  // Thai vowel sign is a vowel, which the languages the paces were measured in write as a letter.
-  const characters = shown.normalize("NFC").match(/[\p{L}\p{M}\p{N}]/gu) ?? [];
+  // Thai vowel sign is a vowel, which the languages the paces were measured in write as a letter. Why not an Indic virama
+  // (Hindi's halant, Bengali's hasanta, Tamil's pulli…): it takes the vowel away from a letter, and most words have one.
+  const characters = shown.normalize("NFC").match(/(?![\u094D\u09CD\u0A4D\u0ACD\u0B4D\u0BCD\u0C4D\u0CCD\u0D4D])[\p{L}\p{M}\p{N}]/gu) ?? [];
   const latin = SYLLABLE_PACED.has(lang) ? characters.filter((character) => /[\p{Script=Latin}\p{Nd}]/u.test(character)).length : 0;
   return Math.ceil((characters.length - latin) / (CHARACTERS_PER_MINUTE[lang] ?? DEFAULT_CHARACTERS_PER_MINUTE) + latin / DEFAULT_CHARACTERS_PER_MINUTE);
 }
