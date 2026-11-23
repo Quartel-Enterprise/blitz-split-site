@@ -43,6 +43,7 @@
     sw: ["Ksh\u00a0", ".", ",", "", 0, 3, 130],
     ta: ["₹", ".", ",", "", 0, 2],
     te: ["₹", ".", ",", "", 0, 2],
+    mr: ["₹", ".", ",", "", 0, 2],
     bg: ["", ",", "\u00a0", "\u00a0€"],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
@@ -69,10 +70,11 @@
     if (!signed || cents === 0) return isolate(text);
     return isolate((cents > 0 ? "+" : "−") + text);
   }
-  // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), which \d doesn't match,
-  // so they are read as the Latin ones before anything else.
+  // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), and a Marathi or Hindi
+  // one may type Devanagari's (४८), which \d doesn't match, so they are read as the Latin ones before anything else.
   const latinDigits = (text) => text
     .replace(/[٠-٩۰-۹]/g, (d) => String(d.charCodeAt(0) & 0xf))
+    .replace(/[०-९]/g, (d) => String(d.charCodeAt(0) - 0x966))
     .replace(/٫/g, ".").replace(/٬/g, ",");
   // What someone types, in cents. The last "," or "." followed by one or two digits is the decimal point, whatever the
   // language, so "33,5", "33.50" and "6.000" all read as meant; a currency with no cents in use drops those decimals

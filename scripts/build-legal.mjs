@@ -62,6 +62,7 @@ const CHROME = {
   sw: { language: "Kiswahili", brand: "Blitz Split", locale: "sw", updated: "Imesasishwa {date}", read: "Dakika {n} za kusoma", toc: "Kwenye ukurasa huu" },
   ta: { language: "தமிழ்", brand: "Blitz Split", locale: "ta", updated: "புதுப்பிக்கப்பட்டது: {date}", read: "படிக்க {n} நிமிடம்", toc: "இந்தப் பக்கத்தில்" },
   te: { language: "తెలుగు", brand: "Blitz Split", locale: "te", updated: "చివరి అప్‌డేట్: {date}", read: (n) => `చదవడానికి ${n} ${Number(n) === 1 ? "నిమిషం" : "నిమిషాలు"}`, toc: "ఈ పేజీలో" },
+  mr: { language: "मराठी", brand: "Blitz Split", locale: "mr-u-nu-latn", updated: "शेवटचे अपडेट: {date}", read: (n) => `वाचायला ${n} ${Number(n) === 1 ? "मिनिट" : "मिनिटे"}`, toc: "या पेजवर" },
   bg: { language: "Български", brand: "Blitz Split", locale: "bg", updated: "Обновено на {date}", read: "{n} мин. четене", toc: "На тази страница" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and

@@ -58,7 +58,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", bg: "bg/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -472,6 +472,16 @@
       mismatchBody: "మీరు {platform} వాడుతున్నారు. ఉత్తమ అనుభవం కోసం, యాప్‌ను {in} పొందండి.",
       mismatchGo: "{to} వెళ్ళండి", mismatchStay: "అయినా {to} వెళ్ళండి", close: "మూసివేయండి",
       in: { play: "Google Play నుండి", appstore: "App Store నుండి" }, to: { play: "Google Playకి", appstore: "App Storeకి" },
+    },
+    mr: {
+      play: ["आत्ताच मिळवा", "लवकरच येत आहे"], appstore: ["डाउनलोड करा", "लवकरच येत आहे"], web: ["आत्ताच उघडा", "लवकरच येत आहे"], browser: "ब्राउझर",
+      getApp: "ॲप मिळवा", openWeb: "वेब ॲप उघडा", soon: "लवकरच येत आहे",
+      noteStore: "ॲप {in} मिळवा.", noteApple: "तुम्ही {platform} वापरता का? App Store वर ॲप येईपर्यंत ते ब्राउझरमध्ये वापरा.", noteWeb: "काहीही इंस्टॉल न करता ब्राउझरमध्ये उघडा.",
+      playLive: "Google Play वर उपलब्ध", appStoreLive: "App Store वर उपलब्ध", webLive: "वेब ॲप उघडा",
+      mismatchTitle: "तुमचे स्टोअर निवडा",
+      mismatchBody: "तुम्ही {platform} वापरत आहात. सर्वोत्तम अनुभवासाठी, ॲप {in} मिळवा.",
+      mismatchGo: "{to} जा", mismatchStay: "तरीही {to} जा", close: "बंद करा",
+      in: { play: "Google Play वरून", appstore: "App Store वरून" }, to: { play: "Google Play वर", appstore: "App Store वर" },
     },
     bg: {
       play: ["Изтегли от", "Скоро в"], appstore: ["Изтегли от", "Скоро в"], web: ["Отвори в", "Скоро в"], browser: "браузъра",
