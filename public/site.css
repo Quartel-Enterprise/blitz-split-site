@@ -131,6 +131,7 @@ p { margin: 0; text-wrap: pretty; }
 /* Arabic, Urdu, Persian, Hebrew and Vietnamese draw in the system font, as the bundled Geist subsets have none of Arabic's and Hebrew's letters
    (nor Vietnamese's Latin Extended Additional letters): no Latin tracking, which would also break Arabic's, Urdu's and Persian's joined letters apart. */
 :root:is([lang="ar"], [lang="ur"], [lang="fa"], [lang="he"], [lang="vi"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+:root:is([lang="ar"], [lang="ur"], [lang="fa"]) :is(.paper, .paper-store) { letter-spacing: 0; }
 /* Right to left (boot.js sets dir="rtl" for Arabic, Hebrew, Urdu and Persian): the sides are written as start and end, so the layout mirrors by
    itself; what still points one way is turned here. Arrows and the back chevron point the reading way, bars grow from
    the start, and the switch's knob slides toward the end. */

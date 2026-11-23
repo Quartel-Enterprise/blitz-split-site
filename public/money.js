@@ -62,11 +62,16 @@
     if (!signed || cents === 0) return isolate(text);
     return isolate((cents > 0 ? "+" : "−") + text);
   }
+  // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), which \d doesn't match,
+  // so they are read as the Latin ones before anything else.
+  const latinDigits = (text) => text
+    .replace(/[٠-٩۰-۹]/g, (d) => String(d.charCodeAt(0) & 0xf))
+    .replace(/٫/g, ".").replace(/٬/g, ",");
   // What someone types, in cents. The last "," or "." followed by one or two digits is the decimal point, whatever the
   // language, so "33,5", "33.50" and "6.000" all read as meant; a currency with no cents in use drops those decimals
   // ("Rp50.000,00" is Rp50.000) and reads the rest in whole units.
   function parse(text) {
-    const t = text.replace(/[^\d.,]/g, "");
+    const t = latinDigits(text).replace(/[^\d.,]/g, "");
     const sep = Math.max(t.lastIndexOf(","), t.lastIndexOf("."));
     const decimals = sep >= 0 && t.length - sep - 1 <= 2;
     const whole = Number((decimals ? t.slice(0, sep) : t).replace(/[.,]/g, "") || 0);
@@ -84,5 +89,5 @@
   const lang = document.documentElement.dataset.lang;
   const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
 
-  window.money = { format, plain, parse, cents, percent, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
+  window.money = { format, plain, parse, latinDigits, cents, percent, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
 })();

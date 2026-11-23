@@ -989,7 +989,7 @@
   // The bills' amounts below are in the dollar's cents; cents gives them in the currency's own, so the splits and what
   // is typed work in those (money.js).
   // A percentage as the language writes it (money.js): 10 % in French, %10 in Turkish.
-  const { plain, format: money, parse: parseMoney, cents, percent: pct } = window.money;
+  const { plain, format: money, parse: parseMoney, latinDigits, cents, percent: pct } = window.money;
 
   const PEOPLE = [
     { name: "Pedro", photo: "me", color: "blue" },
@@ -1233,7 +1233,7 @@
     if (!input.matches(".split-field input")) return;
     const i = [...panel.querySelectorAll(".split-field input")].indexOf(input);
     if (mode === "percent") {
-      input.value = input.value.replace(/\D/g, "");
+      input.value = latinDigits(input.value).replace(/\D/g, "");
       state.percent[i] = Math.min(100, Number(input.value || 0));
     } else {
       state[mode][i] = Math.min(mode === "income" ? 99999999 : 999999, parseMoney(input.value));
