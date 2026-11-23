@@ -617,6 +617,24 @@
       bills: (n) => `${n} ${countForm(n, "výdavok", "výdavky", "výdavkov")}`,
       titles: { b1: "Penzión v Lagoa", b2: "Večera v Ribeirão", b3: "Odvoz na pláž", p1: "Zmrzlina na pláži", p2: "Týždenný nákup", p3: "Parkovanie" },
     },
+    // Norwegian (Bokmål): "du" for the user, and the app's words (utgift, saldo, gjør opp, registrer betaling).
+    nb: {
+      paid: "{name} betalte", notIn: "Ikke med i denne",
+      members: (people, bills) => `${people} personer · ${bills} ${bills === 1 ? "utgift" : "utgifter"}`,
+      toGet: "å få tilbake", youOwe: "du skylder", settled: "alt er gjort opp", owesYou: "Skylder deg", youOweTitle: "Du skylder",
+      eachOne: "Saldoen til hver enkelt", getsBack: "får tilbake", owes: "skylder", even: "gjort opp",
+      toSettle: "Å gjøre opp", total: "Gruppens totalsum", lodging: "Overnatting", food: "Mat", transport: "Transport",
+      sheetTitle: "Del en utgift", description: "Beskrivelse", amount: "Beløp", whoPaid: "Hvem betalte",
+      splitAmong: "Del likt mellom", each: "{value} hver", cancel: "Avbryt", save: "Lagre", close: "Lukk",
+      queue: (n) => `${n} ${n === 1 ? "endring" : "endringer"} i køen`,
+      split: "Hvordan den ble delt", yourShare: "Din andel", deleteBill: "Slett utgiften",
+      recordPayment: "Registrer betaling", record: "Registrer", viaMethod: "via overføring", payment: "Betaling", deletePayment: "Slett betalingen",
+      payLine: (from, to) => `${name(from)} betalte ${name(to)}`,
+      paidYou: (who, value) => `${who} betalte deg ${value}`,
+      paidTotal: "Betalt totalt", shareTotal: "Andel av utgiftene", balance: "Saldo",
+      bills: (n) => `${n} ${n === 1 ? "utgift" : "utgifter"}`,
+      titles: { b1: "Gjestehus i Lagoa", b2: "Middag i Ribeirão", b3: "Skyss til stranden", p1: "Is på stranden", p2: "Ukens matinnkjøp", p3: "Parkering" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1057,7 +1075,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();
