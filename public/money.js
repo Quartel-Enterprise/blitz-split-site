@@ -35,6 +35,7 @@
     ur: ["Rs\u00a0", ".", ",", "", 1, 2],
     hr: ["", ",", ".", "\u00a0€"],
     sr: ["", ",", ".", "\u00a0RSD", 1],
+    sk: ["", ",", "\u00a0", "\u00a0€"],
     nb: ["", ",", "\u00a0", "\u00a0kr", 0, 3, 10],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
@@ -79,9 +80,9 @@
   const cents = (amount) => amount * factor;
 
   // A percentage, as the language writes it: Turkish puts the sign first (%10); French, German, Russian, Swedish, Czech,
-  // Croatian, Serbian and Norwegian put a space before it (10 %). The phone (preview.js) and the split card (split-modes.js) share it.
+  // Croatian, Serbian, Slovak and Norwegian put a space before it (10 %). The phone (preview.js) and the split card (split-modes.js) share it.
   const lang = document.documentElement.dataset.lang;
-  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "nb"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
+  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk", "nb"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
 
   window.money = { format, plain, parse, cents, percent, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
 })();
