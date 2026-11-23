@@ -617,6 +617,23 @@
       bills: (n) => `${n} ${countForm(n, "výdavok", "výdavky", "výdavkov")}`,
       titles: { b1: "Penzión v Lagoa", b2: "Večera v Ribeirão", b3: "Odvoz na pláž", p1: "Zmrzlina na pláži", p2: "Týždenný nákup", p3: "Parkovanie" },
     },
+    bg: {
+      paid: "{name} плати", notIn: "Не участва в този разход",
+      members: (people, bills) => `${people} ${people === 1 ? "човек" : "души"} · ${bills} ${bills === 1 ? "разход" : "разхода"}`,
+      toGet: "да получиш", youOwe: "дължиш", settled: "всичко е уредено", owesYou: "Кой ти дължи", youOweTitle: "Дължиш",
+      eachOne: "Балансът на всеки", getsBack: "получава", owes: "дължи", even: "уредено",
+      toSettle: "За уреждане", total: "Общо за групата", lodging: "Настаняване", food: "Храна", transport: "Транспорт",
+      sheetTitle: "Раздели разход", description: "Описание", amount: "Сума", whoPaid: "Кой плати",
+      splitAmong: "Раздели поравно между", each: "{value} на човек", cancel: "Отказ", save: "Запази", close: "Затвори",
+      queue: (n) => `${n} ${n === 1 ? "промяна" : "промени"} на опашката`,
+      split: "Как е разделен", yourShare: "Твоят дял", deleteBill: "Изтрий разхода",
+      recordPayment: "Запиши плащане", record: "Запиши", viaMethod: "с превод", payment: "Плащане", deletePayment: "Изтрий плащането",
+      payLine: (from, to) => `${name(from)} плати на ${name(to)}`,
+      paidYou: (who, value) => `${who} ти плати ${value}`,
+      paidTotal: "Платено общо", shareTotal: "Дял от разходите", balance: "Баланс",
+      bills: (n) => `${n} ${n === 1 ? "разход" : "разхода"}`,
+      titles: { b1: "Къща за гости в Лагоа", b2: "Вечеря в Рибейрао", b3: "Превоз до плажа", p1: "Сладолед на плажа", p2: "Седмично пазаруване", p3: "Паркинг" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1057,7 +1074,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", bg: "bg", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

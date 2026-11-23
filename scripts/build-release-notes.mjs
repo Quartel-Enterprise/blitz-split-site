@@ -65,6 +65,7 @@ const CHROME = {
   hr: { language: "Hrvatski", brand: "Blitz Split", locale: "hr", title: "Novosti", lead: "Što se promijenilo u svakoj verziji aplikacije.", showBeta: "Prikaži beta verzije", beta: "Beta", empty: "Još nema stabilne verzije. Uključi beta verzije da vidiš što se testira.", platforms: { android: "Android", ios: "iPhone i iPad", mac: "Mac", web: "Web" } },
   sr: { language: "Srpski", brand: "Blitz Split", locale: "sr-Latn", title: "Novosti", lead: "Šta se promenilo u svakoj verziji aplikacije.", showBeta: "Prikaži beta verzije", beta: "Beta", empty: "Stabilna verzija još ne postoji. Uključi beta verzije da vidiš šta se testira.", platforms: { android: "Android", ios: "iPhone i iPad", mac: "Mac", web: "Veb" } },
   sk: { language: "Slovenčina", brand: "Blitz Split", locale: "sk", title: "Novinky", lead: "Čo sa zmenilo v každej verzii aplikácie.", showBeta: "Zobraziť beta verzie", beta: "Beta", empty: "Zatiaľ neexistuje stabilná verzia. Zapni beta verzie a uvidíš, čo sa testuje.", platforms: { android: "Android", ios: "iPhone a iPad", mac: "Mac", web: "Web" } },
+  bg: { language: "Български", brand: "Blitz Split", locale: "bg", title: "Какво ново", lead: "Какво се промени във всяка версия на приложението.", showBeta: "Покажи бета версиите", beta: "Бета", empty: "Още няма стабилна версия. Включи бета версиите, за да видиш какво се тества.", platforms: { android: "Android", ios: "iPhone и iPad", mac: "Mac", web: "Уеб" } },
 };
 
 class NotesError extends Error {}

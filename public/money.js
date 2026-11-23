@@ -36,6 +36,7 @@
     hr: ["", ",", ".", "\u00a0€"],
     sr: ["", ",", ".", "\u00a0RSD", 1],
     sk: ["", ",", "\u00a0", "\u00a0€"],
+    bg: ["", ",", "\u00a0", "\u00a0€"],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
