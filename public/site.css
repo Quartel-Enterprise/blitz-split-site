@@ -116,10 +116,10 @@ p { margin: 0; text-wrap: pretty; }
 /* Chinese has no spaces, so a heading would break anywhere: it breaks at its punctuation (，。) and where its words
    mark a <wbr>, keeping each phrase whole, as Japanese's auto-phrase does, and inside one only when it doesn't fit. */
 :root:is([lang="zh-Hans"], [lang="zh-Hant"]) :is(h1, h2, h3) { word-break: keep-all; overflow-wrap: break-word; }
-/* Russian, Ukrainian and Bulgarian draw their Cyrillic, Greek its alphabet, Korean its Hangul, Hindi its Devanagari, Bengali
-   and Tamil their scripts and Thai its own in the system
+/* Russian, Ukrainian and Bulgarian draw their Cyrillic, Greek its alphabet, Korean its Hangul, Hindi its Devanagari, Bengali,
+   Tamil and Telugu their scripts and Thai its own in the system
    font, as the bundled Geist subsets have none of them: the tracking tuned for Geist would cramp them. */
-:root:is([lang="ru"], [lang="uk"], [lang="bg"], [lang="el"], [lang="ko"], [lang="hi"], [lang="bn"], [lang="ta"], [lang="th"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+:root:is([lang="ru"], [lang="uk"], [lang="bg"], [lang="el"], [lang="ko"], [lang="hi"], [lang="bn"], [lang="ta"], [lang="te"], [lang="th"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
 /* Korean breaks lines between words (its spaces), never inside one, as Korean text does. */
 :root[lang="ko"] { word-break: keep-all; overflow-wrap: break-word; }
 /* Vietnamese writes with the Latin Extended Additional letters (U+1EA0-1EF9: ạ, ả, ụ as much as the stacked ể, ở, ặ),
@@ -194,6 +194,7 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="fa"] body [data-lang]:not([data-lang="fa"]),
 :root[data-lang="sw"] body [data-lang]:not([data-lang="sw"]),
 :root[data-lang="ta"] body [data-lang]:not([data-lang="ta"]),
+:root[data-lang="te"] body [data-lang]:not([data-lang="te"]),
 :root[data-lang="bg"] body [data-lang]:not([data-lang="bg"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
@@ -469,10 +470,13 @@ a.status .icon { width: 15px; height: 15px; }
   /* The descenders of "offline" stay inside the painted box. */
   padding-bottom: 0.08em;
 }
-/* Devanagari's, Bengali's and Tamil's marks reach above the headline and below the baseline further than Geist's Latin:
-   their titles get the room between their lines, and their gradient's painted box the room around them. */
+/* Devanagari's, Bengali's, Tamil's and Telugu's marks reach above the headline and below the baseline further than
+   Geist's Latin: their titles get the room between their lines, and their gradient's painted box the room around them. */
 :root:is([lang="hi"], [lang="bn"], [lang="ta"]) .hero h1 { line-height: 1.25; }
 :root:is([lang="hi"], [lang="bn"], [lang="ta"]) .hero h1 .accent { padding-block: 0.12em 0.16em; }
+/* Telugu's vowel signs above and its stacked consonants below reach further than Devanagari's. */
+:root[lang="te"] .hero h1 { line-height: 1.35; }
+:root[lang="te"] .hero h1 .accent { padding-block: 0.18em 0.24em; }
 /* Urdu's Nastaliq, where the system draws it, is taller still and its letters step down each word: more room than Hindi's. */
 :root[lang="ur"] .hero h1 { line-height: 1.6; }
 :root[lang="ur"] .hero h1 .accent { padding-block: 0.2em 0.3em; }

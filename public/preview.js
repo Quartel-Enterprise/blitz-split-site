@@ -688,6 +688,24 @@
       bills: (n) => `${n} ${n === 1 ? "செலவு" : "செலவுகள்"}`,
       titles: { b1: "லகோவா விருந்தினர் இல்லம்", b2: "ரிபெய்ராவில் இரவு உணவு", b3: "கடற்கரைக்குப் பயணம்", p1: "கடற்கரையில் ஐஸ்கிரீம்", p2: "வார மளிகைப் பொருட்கள்", p3: "பார்க்கிங்" },
     },
+    // Telugu: a name or an amount never takes a case ending, so it stands as the subject, after a colon or an arrow.
+    te: {
+      paid: "{name} చెల్లించారు", notIn: "ఇందులో లేరు",
+      members: (people, bills) => `${people} ${people === 1 ? "వ్యక్తి" : "వ్యక్తులు"} · ${bills} ${bills === 1 ? "ఖర్చు" : "ఖర్చులు"}`,
+      toGet: "మీకు రావాలి", youOwe: "మీరు ఇవ్వాలి", settled: "లెక్క సెటిల్ అయింది", owesYou: "మీకు ఎవరు ఇవ్వాలి", youOweTitle: "మీరు ఇవ్వాల్సింది",
+      eachOne: "ఒక్కొక్కరి బ్యాలెన్స్", getsBack: "రావాలి", owes: "ఇవ్వాలి", even: "లెక్క సెటిల్ అయింది",
+      toSettle: "సెటిల్ చేయాల్సినవి", total: "గ్రూప్ మొత్తం", lodging: "వసతి", food: "ఆహారం", transport: "రవాణా",
+      sheetTitle: "ఖర్చును పంచండి", description: "వివరణ", amount: "మొత్తం", whoPaid: "ఎవరు చెల్లించారు",
+      splitAmong: "వీరి మధ్య సమానంగా పంచండి", each: "ఒక్కొక్కరికి {value}", cancel: "రద్దు చేయండి", save: "సేవ్ చేయండి", close: "మూసివేయండి",
+      queue: (n) => `${n} ${n === 1 ? "మార్పు" : "మార్పులు"} క్యూలో`,
+      split: "ఎలా పంచారు", yourShare: "మీ వాటా", deleteBill: "ఖర్చును తొలగించండి",
+      recordPayment: "చెల్లింపును నమోదు చేయండి", record: "నమోదు చేయండి", viaMethod: "ట్రాన్స్‌ఫర్ ద్వారా", payment: "చెల్లింపు", deletePayment: "చెల్లింపును తొలగించండి",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} మీకు చెల్లించారు: ${value}`,
+      paidTotal: "మొత్తం చెల్లించినది", shareTotal: "ఖర్చులలో వాటా", balance: "బ్యాలెన్స్",
+      bills: (n) => `${n} ${n === 1 ? "ఖర్చు" : "ఖర్చులు"}`,
+      titles: { b1: "లగోవా గెస్ట్‌హౌస్", b2: "రిబెయిరావ్‌లో డిన్నర్", b3: "బీచ్‌కు ప్రయాణం", p1: "బీచ్‌లో ఐస్‌క్రీమ్", p2: "వారపు కిరాణా", p3: "పార్కింగ్" },
+    },
     bg: {
       paid: "{name} плати", notIn: "Не участва в този разход",
       members: (people, bills) => `${people} ${people === 1 ? "човек" : "души"} · ${bills} ${bills === 1 ? "разход" : "разхода"}`,
@@ -1145,7 +1163,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", bg: "bg", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", bg: "bg", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();
