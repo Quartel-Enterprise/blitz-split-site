@@ -126,9 +126,9 @@ function blockTexts(block) {
 function readingMinutes(lang, blocks) {
   const shown = blocks.flatMap(blockTexts).join(" ").replace(/\]\([^)\s]+\)/g, "").replace(/<\/?mark>/g, "");
   // Why NFC: a letter written as a base and a combining accent is still one letter to its reader. Why marks: a Hindi or
-  // Thai vowel sign is a vowel, which the languages the paces were measured in write as a letter. Why not Tamil's pulli
-  // (U+0BCD): it takes the vowel away from a letter, and most Tamil words have one.
-  const characters = shown.normalize("NFC").match(/(?!\u0BCD)[\p{L}\p{M}\p{N}]/gu) ?? [];
+  // Thai vowel sign is a vowel, which the languages the paces were measured in write as a letter. Why not an Indic virama
+  // (Hindi's halant, Bengali's hasanta, Tamil's pulli…): it takes the vowel away from a letter, and most words have one.
+  const characters = shown.normalize("NFC").match(/(?![\u094D\u09CD\u0A4D\u0ACD\u0B4D\u0BCD\u0C4D\u0CCD\u0D4D])[\p{L}\p{M}\p{N}]/gu) ?? [];
   const latin = SYLLABLE_PACED.has(lang) ? characters.filter((character) => /[\p{Script=Latin}\p{Nd}]/u.test(character)).length : 0;
   return Math.ceil((characters.length - latin) / (CHARACTERS_PER_MINUTE[lang] ?? DEFAULT_CHARACTERS_PER_MINUTE) + latin / DEFAULT_CHARACTERS_PER_MINUTE);
 }
