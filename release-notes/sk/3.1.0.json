@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split na Apple Watch: pripoj hodinky k účtu z iPhonu, pozri si zostatky a otvorené skupiny, ťukni na Zaplatil(a) som v skupine, kde dlžíš, a pridaj si celkový zostatok na ciferník alebo do Smart Stacku; po pripojení fungujú hodinky samostatne.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po bengálsky, malajsky a grécky: vyber „বাংলা“, „Bahasa Melayu“ alebo „Ελληνικά“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu používať bangladéšsku taku a malajzijský ringgit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po chorvátsky: vyber „Hrvatski“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po filipínsky: vyber „Filipino“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť vo filipínskom pese (PHP, „₱“) a skupina založená na Filipínach v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po maďarsky: vyber „Magyar“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu používať maďarský forint.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pridaj si miniaplikáciu Zostatky na plochu alebo uzamknutú obrazovku iPhonu či iPadu a uvidíš celkový zostatok a otvorené skupiny na prvý pohľad; ťuknutím otvoríš Zostatky.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu používať meny Bolívie, Venezuely, Kostariky, Guatemaly, Hondurasu, Nikaraguy, Dominikánskej republiky a Kuby a skupina založená v týchto krajinách začína v ich mene.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po srbsky: vyber „Srpski“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v srbskom dinári (RSD) a skupina založená v Srbsku v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po urdsky: vyber „اردو“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v pakistanskej rupii (PKR) a skupina založená v Pakistane v nej začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ťuknutie na upozornenie o novom výdavku otvorí výdavok hneď: aplikácia si ho stiahne, len čo upozornenie príde.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Uvítacia obrazovka na telefónoch teraz zobrazuje hore len logo, takže tlačidlám zostane viac miesta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Banner skupiny „Čas sa vyrovnať“ už nezobrazuje dátum pripomienky spred jej nastavenia alebo zmeny: pripomienka zmenená na 25. čaká na 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

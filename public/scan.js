@@ -187,6 +187,11 @@
       lines: [["2 TOČENO PIVO", "2.800", 1], ["1 PLATA ŠKAMPA", "9.600", 2]],
       subtotal: ["MEĐUZBIR", "12.400"], service: ["USLUGA 10 %", "1.240", 3], total: ["UKUPNO", "13.640"],
     },
+    sk: {
+      store: "PRÍSTAVNÝ BAR", address: "Čajková 120", date: "08.11.2026  21:47",
+      lines: [["2 ČAPOVANÉ PIVO", "28,00", 1], ["1 TANIER KREVIET", "96,00", 2]],
+      subtotal: ["MEDZISÚČET", "124,00"], service: ["OBSLUHA 10 %", "12,40", 3], total: ["SPOLU", "136,40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikácia teraz hovorí po rusky a po ukrajinsky: vyber „Русский“ alebo „Українська“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v ruskom rubli (RUB) a ukrajinskej hrivne (UAH) a skupina založená v Rusku alebo na Ukrajine začína v jej mene.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil má novú predvoľbu „Formát času“: nasledovať systém, alebo vždy zobrazovať čas v 24-hodinovom (14:30) či 12-hodinovom formáte s AM a PM (2:30 PM), vo výdavkoch, Aktivite, komentároch aj vo výbere času.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Keď telefón leží, aj na tabletoch, je „Rozdeliť výdavok“ skupiny teraz v hornej lište namiesto toho, aby plávalo nad výdavkami.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "So zapnutými dynamickými farbami zostáva to, čo dlžíš, oranžové a nezmení sa na červené, takže to nikdy nevyzerá ako zelená toho, čo dostaneš späť.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "V Aktivite každý riadok teraz zobrazuje vedľa názvu skupiny jej fotku, ak ju skupina má.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tvoj zostatok v tejto skupine už neopakuje sumu na druhom riadku, keď len dostaneš späť alebo len dlžíš.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Predvolenom rozdelení má teraz podiel každej osoby na vzorovom výdavku vlastnú farbu, s rovnakou bodkou pred menom, takže ľudia vedľa seba v zozname nikdy nesplynú.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Horná lišta výdavku teraz zobrazuje vedľa názvu skupiny jej fotku alebo iniciály.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ťuknutie na niečiu fotku ju teraz prenesie do jeho profilu a pri návrate zase späť.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Výdavok otvorený z Výdavkov skupiny sa teraz presúva na miesto rovnako ako z Domova a fotka skupiny pri výdavkoch na Domove preletí do hornej lišty výdavku.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Rozdeliť výdavok“ je teraz aj hore v Zostatkoch a Kontaktoch a na obrazovke skupiny sa presunulo do hornej lišty namiesto plávania nad zoznamom, pričom „Pridať ľudí“ je teraz v ponuke ⋯. Začína s názvom a pri posúvaní sa zmenší na ikonu.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "V Skupinách ťuknutie na kartu Celkový zostatok otvorí Zostatky.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "„Pozvať ľudí“ v skupine sa teraz volá „Pridať ľudí“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPade sa karty otvárajú v bočnom paneli, a keď sú v hornej lište, napríklad pri iPade na výšku, „Rozdeliť výdavok“ tam zostáva na očiach, zatiaľ čo ostatné tlačidlá sa presunú do riadku hneď pod ňou.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "V „Rozdeliť výdavok“ sa „Zaplatené cez“ teraz zobrazuje stlmené aj vtedy, keď výdavok zaplatil niekto iný: ťuknutím sa dozvieš, že čím zaplatili, môžu označiť len tí, čo platili.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bez účtu je tvoj kód na obnovenie teraz 12 očíslovaných slov, ktoré sa ľahšie zapisujú, a pri obnovení sa zadávajú po jednom slove do políčka, pričom sa každé slovo počas písania navrhuje. Kódy uložené pred touto verziou už nefungujú: ulož si nový, alebo pripoj Google či Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vo Výdavkoch podľa kategórie má teraz každý výdavok rovnakú ponuku ⋮ ako vo výdavkoch skupiny: uprav, duplikuj, zdieľaj alebo odstráň ho bez otvorenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na širokých obrazovkách (telefón naležato, tablety, Mac a web) majú Výdavky podľa kategórie kategórie a celkovú sumu v stĺpci vedľa výdavkov.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V nemčine, holandčine a japončine sa vety v Aktivite teraz čítajú v prirodzenom slovoslede každého jazyka, bez dvojbodky pred názvom výdavku alebo skupiny.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Prvé písmeno „Pridať fotku“ pod prílohami výdavku už nie je odrezané.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "V Skupinách má tlačidlo na založenie skupiny teraz text „+ Skupina“ a už sa nezalamuje na dva riadky.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Poznámky k vydaniu teraz zobrazujú verziu, ktorú si práve nainštaloval(a), namiesto čakania až deň na jej poznámky.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Štatistikách skupiny sa tlačidlo obdobia („Celé obdobie“) už nezalamuje na dva riadky: dátumy sa presunú pod neho, keď sa oba nezmestia.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

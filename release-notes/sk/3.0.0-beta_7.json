@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split teraz hovorí po holandsky, japonsky, turecky a indonézsky a zoznam jazykov uvádza každý jazyk v jeho vlastnom jazyku.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny a výdavky teraz môžu používať poľský zlotý, tureckú líru a indonézsku rupiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil má nové tlačidlo, Zdieľať profil: kto otvorí tvoj odkaz, uvidí tvoje meno a fotku a môže ťa pozvať do skupiny.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Odkaz s pozvánkou novej skupiny je pripravený hneď, aj offline, a Členovia majú nové tlačidlo na jeho skopírovanie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zatvorenie formulára s niečím neuloženým sa teraz najprv opýta „Zahodiť zmeny?“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zásady ochrany osobných údajov a Podmienky používania sa teraz otvárajú v aplikácii namiesto prehliadača.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Na telefóne horná a dolná lišta teraz pri posúvaní nadol uhnú z cesty a pri posúvaní nahor sa vrátia.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "V Rozdeliť výdavok výber dátumu už neskočí rovno na hodiny: čas má vlastné tlačidlo.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ťukni na skupinu hore v Rozdeliť výdavok a otvoríš ju; návrat ťa vráti k výdavku so všetkým, čo si napísal(a).",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Posledné výdavky na Domove teraz zobrazujú skupinu každého výdavku a toho, kto platil, ako fotky.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix sa teraz zobrazuje len ľuďom, ktorí ho pravdepodobne používajú, napríklad tým, čo majú aplikáciu v portugalčine, majú kľúč Pix alebo sú v skupine v realoch.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Synchronizuje sa…“ sa teraz zobrazí len pri prvom načítaní tvojho účtu v zariadení, nie pri každej synchronizácii.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil už neponúka odpojenie Google alebo Apple od tvojho účtu: namiesto toho sa odhlás alebo účet odstráň.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Upraviť profil sa teraz otvorí ako panel nad Profilom namiesto samostatnej obrazovky.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Prázdny pruh medzi formulárom a klávesnicou v Rozdeliť výdavok zmizol.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Spoločné skupiny pri kontakte teraz zobrazujú fotku každej skupiny.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
