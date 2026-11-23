@@ -66,12 +66,13 @@ const CHROME = {
   bg: { language: "Български", brand: "Blitz Split", locale: "bg", updated: "Обновено на {date}", read: "{n} мин. четене", toc: "На тази страница" },
   ca: { language: "Català", brand: "Blitz Split", locale: "ca", updated: "Actualitzat el {date}", read: "{n} min de lectura", toc: "En aquesta pàgina" },
   da: { language: "Dansk", brand: "Blitz Split", locale: "da", updated: "Opdateret {date}", read: "{n} min. læsetid", toc: "På denne side" },
+  fi: { language: "Suomi", brand: "Blitz Split", locale: "fi", updated: "Päivitetty {date}", read: "Lukuaika {n} min", toc: "Tällä sivulla" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
 const CHARACTERS_PER_MINUTE = {
   ar: 612, de: 920, en: 987, es: 1025, fr: 998, he: 833, it: 950, ja: 357, nl: 978, pl: 916, pt: 913, "pt-PT": 913,
-  ru: 986, sv: 917, tr: 1054, zh: 255, "zh-Hant": 255,
+  ru: 986, sv: 917, tr: 1054, zh: 255, "zh-Hant": 255, fi: 1078,
   // Why: the study has no Korean, and a Hangul block is one syllable, so this is its average of syllables per minute.
   ko: 370,
   // Why: the study has no Ukrainian, and Russian is the closest language it measured, in the same script.

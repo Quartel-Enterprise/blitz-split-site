@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Kulun linkki avautuu nyt sovelluksessa selaimen sijaan, kuvineen ja kommentteineen.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Kulun linkki, jota ei enää jaeta tai jonka voivat avata vain kulun henkilöt, kertoo nyt tämän eikä näytä virhettä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiilin linkki avautuu nyt, vaikka et olisi kirjautunut sisään.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kohdassa Profiili › Tietosuoja ja tietoja on uusi kytkin, ”Jaa käyttötietoja”: poista se käytöstä, niin tietoja sovelluksen käytöstäsi ei enää lähetetä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jakamiesi profiili-, kommentti- ja sovelluksen latauslinkkien esikatselu näkyy nyt omalla kielelläsi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Summat ja tekstit eivät enää rivity tai leikkaudu pienillä näytöillä, taittuvilla laitteilla tai suurella tekstikoolla.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vaikealukuisilla teksteillä, painikkeilla ja ääriviivoilla on nyt enemmän kontrastia vaaleassa ja tummassa teemassa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kentän napauttaminen iPhonen selaimessa ei enää suurenna sivua.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Julkaisutiedoissa voit napauttaa versiota avataksesi sen julkaisun GitHubissa tai GitHub-painiketta nähdäksesi kaikki julkaisut.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmän sivu, kutsu ja kulun tiedot näyttävät nyt jopa viiden henkilön kuvat rinnakkain kahden sijaan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vaakatasossa olevalla iPadilla tai avatulla iPhone Duolla koko näytön täyttävä ryhmä (esimerkiksi Kodista avattuna) näyttää nyt kuvansa, jäsenensä ja saldosi kulujen vieressä.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Kodin Kokonaissaldo-kortin napauttaminen avaa nyt Saldot-välilehden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puhelimessa ryhmän tai kulun avaaminen Kodista lennättää nyt ryhmän saldon tai kulun kuvakkeen, otsikon, kokonaissumman ja osuutesi sen näkymään ja takaisin, kun palaat.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profiili › Kieli näyttää nyt espanjan kahdesti, ”Español (Latinoamérica)” ja ”Español (España)”, joten valitset puhumasi kielen riippumatta siitä, missä laitteesi on.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kun puhelin tai tabletti on vaakatasossa, Yhteystiedoissa ja Saldoissa listan vieressä oleva sisältö alkaa nyt näytön yläreunasta, ja profiilikuvasi on listan yläpuolella.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ryhmän Jäsenet-kohdan ”Lisää henkilö” -painikkeen reuna erottuu nyt paremmin.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Kortin väri kohdassa ”Maksutavat” valitaan nyt samoista väreistä kuin luokat: kahdestatoista väristä, omista väreistäsi ja valinnalla ”Uusi väri” voit luoda uuden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Näkymässä ”Jaa kulu” ”Maksutapa” on nyt pieni painike Jaon alla, ja jos sinulla ei vielä ole maksutapaa, ”Lisää maksutapa” luo sellaisen siinä paikassa ja valitsee sen kululle. Pankkikorteilla on nyt myös oma kuvakkeensa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Maksutavan lisääminen tai muokkaaminen Profiilissa avautuu nyt sen päälle erillisen näkymän sijaan.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dynaamiset värit kertoo nyt, että sovellus käyttää Androidin järjestelmävärejä, jotka tulevat taustakuvastasi tai Androidin asetuksissa valitsemastasi paletista.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kun Vähennä liikettä on päällä, ryhmän Tilastot näyttää nyt kaavionsa heti, ilman kasvavia palkkeja tai pyyhkäisevää rengasta.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Brasilian portugaliksi Toiminta ja kulun historia sanoivat ”Você criaste” ja vastaavia muodon ”Você criou” sijaan.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Korjattu Tilastojen päivämäärävalitsimen päivämäärät, jotka rivittyivät kirjain tai kaksi kerrallaan; loppupäivä siirtyy nyt alkupäivän alle, kun molemmat eivät mahdu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Korjattu ilmoitukset ja muutama lause, jotka näkyivät englanniksi tai koodina, kuten ”push.bill_deleted”, Espanjan espanjaksi ja Portugalin portugaliksi.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Korjattu Kodin henkilörivi Portugalin portugaliksi: se sanoi nimen alla ”te deve” eikä ”deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

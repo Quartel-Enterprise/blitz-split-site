@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split Apple Watchissa: yhdistä kello iPhonesi tiliin, näe saldosi ja avoimet ryhmät, napauta ”Maksoin” ryhmässä, jossa olet velkaa, ja lisää kokonaissaldosi kellotauluun tai Smart Stackiin; yhdistämisen jälkeen kello toimii itsenäisesti.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt bengalia, malaijia ja kreikkaa: valitse ”বাংলা”, ”Bahasa Melayu” tai ”Ελληνικά” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt käyttää Bangladeshin takaa ja Malesian ringgitiä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt kroatiaa: valitse ”Hrvatski” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt filipinoa: valitse ”Filipino” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Filippiinien pesoissa (PHP, ”₱”), ja Filippiineillä luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt unkaria: valitse ”Magyar” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt käyttää Unkarin forinttia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lisää Saldot-widget iPhonesi tai iPadisi Koti-valikkoon tai lukitulle näytölle, niin näet kokonaissaldosi ja avoimet ryhmäsi yhdellä silmäyksellä; napauta sitä avataksesi Saldot.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt käyttää Bolivian, Venezuelan, Costa Rican, Guatemalan, Hondurasin, Nicaraguan, Dominikaanisen tasavallan ja Kuuban valuuttoja, ja näissä maissa luotu ryhmä alkaa maan omassa valuutassa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt serbiaa: valitse ”Srpski” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Serbian dinaareissa (RSD), ja Serbiassa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt urdua: valitse ”اردو” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Pakistanin rupioissa (PKR), ja Pakistanissa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uuden kulun ilmoituksen napauttaminen avaa kulun heti: sovellus hakee sen heti, kun ilmoitus saapuu.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Puhelinten tervetulonäkymä näyttää nyt yläosassa vain logon, jolloin painikkeille jää enemmän tilaa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ryhmän ”Aika tasata” -banneri ei enää näytä muistutuspäivää ajalta ennen muistutuksen asettamista tai muuttamista: 25. päivään muutettu muistutus odottaa 25. päivää.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

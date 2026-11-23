@@ -1239,6 +1239,36 @@
         less: "Én andel mindre til {name}", more: "Én andel mere til {name}", had: "Hvem havde {item}",
       },
     },
+    // Finnish: like Danish, no message holds a "|" (one person has its own message, and a person's shares show only
+    // above one); "sinä" for the user and the app's words (tasan, osuudet, tulojen mukaan, tuotteet). A name, an item
+    // or an amount stands after a colon or as the subject, never with a case ending.
+    fi: {
+      bill: "Pizzailta", paid: "Pedro maksoi", notIn: "Ei mukana tässä",
+      each: "{a} kukin", among: "{a} jaettuna {n} henkilön kesken.", amongOne: "{a} yhdelle henkilölle.", out: "{name} ei ole mukana.",
+      nobody: "Kukaan ei ole vielä mukana", nobodyEqual: "Valitse vähintään yksi henkilö, niin voit jakaa summan {a}.",
+      checkAll: "Valitse kaikki", uncheckAll: "Poista kaikki valinnat",
+      left: "{a} jäljellä", over: "{a} liikaa", closed: "Täsmää: {a}",
+      progress: "{a}/{b} tähän mennessä.", closedMsg: "Osuudet täsmäävät kokonaissummaan.",
+      parts: "{a} jaettuna {n} osuuteen", personParts: "{name}: {n} osuutta.", nobodyShares: "Anna vähintään yhdelle henkilölle osuus, niin voit jakaa summan {a}.",
+      ofEach: "{p} jokaisesta kulusta", ofBill: "{p} kulusta", incomeDetail: "Kunkin osuus määräytyy tulojen mukaan.", perMonth: "/kk",
+      service: "Palvelumaksu ({p})", serviceSub: "Suhteessa siihen, mitä kukin otti",
+      loose: "Merkitse, kuka otti minkäkin", looseDetail: "Napauta kunkin tuotteen kohdalla kasvoja ja merkitse, kuka sen otti.",
+      itemsClosed: "Tuotteet {a} ja palvelumaksu {b}.", nobodyItem: "Ei ketään valittuna", eachItem: "{a} kukin",
+      items: { pizza: "Iso pizza", beer: "Olut", salad: "Salaatti", draft: "Hanaolut", shrimp: "Katkarapuvati" },
+      receiptBill: "Satamabaari",
+      hint: {
+        equal: "Kun summa ei jakaudu tasan, ylijäävät sentit menevät maksajalle.",
+        amounts: "Jos jonkun summaksi jää {zero}, hän ei ole mukana kulussa.",
+        percent: "Vain kokonaislukuja. Ylijäävät sentit menevät maksajalle.",
+        shares: "Käytä osuuksia, kun jollakulla on enemmän, esimerkiksi seuralainen mukana.",
+        income: "Tulot pysyvät laitteella. Ryhmä näkee vain prosentit.",
+        items: "Kukin tuote jaetaan sen ottajien kesken ja palvelumaksu sen mukaan, mitä kukin otti.",
+      },
+      label: {
+        amount: "Summa: {name}", percent: "Prosenttiosuus: {name}", income: "Kuukausitulot: {name}",
+        less: "Yksi osuus vähemmän: {name}", more: "Yksi osuus lisää: {name}", had: "Kuka otti: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

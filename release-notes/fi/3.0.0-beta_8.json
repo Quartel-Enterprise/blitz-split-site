@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Kulun voi nyt jakaa Tulojen mukaan, ja kirjoittamasi tulot jaetaan ryhmän jäsenille.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jokaisella Kodin Viimeisimmistä kuluista on nyt valikko: Muokkaa, Monista, Jaa ja Poista.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kodin Näytä kaikki avaa nyt Kaikki kulut: jokaisen kulun, jossa olet mukana, kaikista ryhmistäsi, hakuineen, suodattimineen ja lajitteluineen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmän kuva on nyt suurempi sen näkymän yläosassa ja kutistuu, kun vierität, ja ryhmän avaaminen animoituu sen riviltä.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Toiminta näyttää nyt henkilöiden kuvat, Saldot › Ryhmittäin näyttää kunkin ryhmän kuvan, ja Tilastojen Suurin kulu näyttää luokkansa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiili › Tili ja synkronointi näyttää nyt Googlen tai Applen logon ja koko sähköpostiosoitteesi, jonka vain sinä näet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Poista tili kertoo nyt, mitä ryhmiisi jää, kun tilisi on poistettu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Oletus-Pix-avain-kytkin ei enää näytä tummassa teemassa olevan pois päältä oletusavaimellasi.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

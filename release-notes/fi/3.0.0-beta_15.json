@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Kun avaat henkilön Yhteystiedoista tai Saldoista, hänen nimensä ja saldonsa siirtyvät nyt kuvan mukana hänen profiiliinsa ja takaisin, kun palaat.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Tilastoissa ”Henkilöittäin”-renkaan keskellä lukee nyt vain ”Sinä”, kun osuus on sinun, ja pitkä nimi päättyy merkkiin ”…” eikä kosketa rengasta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kun avaat ryhmän Ryhmistä, sen jäsenten kasvot siirtyvät riviltä ryhmän näkymään ja takaisin, kun poistut.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Puhelimessa kulun avaaminen tuo nyt mukanaan enemmän: maksaja siirtyy sen riviltä Kodissa ja Kaikissa kuluissa, aika sen riviltä ryhmän Kuluissa sekä ryhmän kuva ja nimi ryhmän näkymästä. Ne siirtyvät takaisin, kun poistut.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ryhmän nimi siirtyy nyt ryhmän näkymään sen avautuessa, ei vain paluumatkalla.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

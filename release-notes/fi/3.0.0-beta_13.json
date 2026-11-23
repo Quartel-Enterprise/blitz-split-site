@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Sovellus puhuu nyt venäjää ja ukrainaa: valitse ”Русский” tai ”Українська” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Venäjän ruplissa (RUB) ja Ukrainan hryvnioissa (UAH), ja Venäjällä tai Ukrainassa luotu ryhmä alkaa maan valuutassa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiilissa on uusi asetus ”Ajan muoto”: seuraa järjestelmää tai näytä ajat aina 24 tunnin muodossa (14:30) tai 12 tunnin muodossa AM- ja PM-merkinnöin (2:30 PM) kuluissa, Toiminnassa, kommenteissa ja ajanvalitsimissa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kun puhelin on vaakatasossa, ja tableteilla, ryhmän ”Jaa kulu” on nyt yläpalkissa eikä kellu kulujen päällä.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kun Dynaamiset värit on päällä, velkasi pysyy oranssina eikä muutu punaiseksi, joten se ei koskaan näytä samalta kuin vihreä summa, jonka saat takaisin.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Toiminnassa jokainen rivi näyttää nyt ryhmän kuvan sen nimen vieressä, kun ryhmällä on kuva.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saldosi tässä ryhmässä ei enää toista summaa toisella rivillä, kun vain saat takaisin tai vain olet velkaa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Oletusjaossa jokaisen osuudella esimerkkikulusta on nyt oma värinsä ja samanvärinen piste nimen edessä, joten listassa vierekkäin olevat henkilöt eivät koskaan näytä yhdeltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kulun yläpalkki näyttää nyt ryhmän kuvan tai nimikirjaimet ryhmän nimen vieressä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Henkilön kuvan napauttaminen vie nyt kuvan hänen profiiliinsa ja takaisin, kun palaat.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Ryhmän Kuluista avattu kulu siirtyy nyt paikalleen samoin kuin Kodista, ja Kodin kulujen ryhmäkuva lentää kulun yläpalkkiin.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "”Jaa kulu” on nyt myös Saldojen ja Yhteystietojen yläosassa, ja ryhmänäkymässä se siirtyi yläpalkkiin eikä enää kellu listan päällä; ”Lisää henkilöitä” on nyt ⋯-valikossa. Painike näyttää aluksi nimensä ja kutistuu kuvakkeeksi, kun vierität.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ryhmissä Kokonaissaldo-kortin napauttaminen avaa Saldot.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Ryhmän ”Kutsu henkilöitä” on nyt nimeltään ”Lisää henkilöitä”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPadilla välilehdet avautuvat sivupalkissa, ja kun ne ovat yläpalkissa, kuten pystyasentoisella iPadilla, ”Jaa kulu” pysyy siellä näkyvissä ja muut painikkeet siirtyvät riville aivan sen alle.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Näkymässä ”Jaa kulu” ”Maksutapa” näkyy nyt himmennettynä myös silloin, kun kulun maksoi joku muu: napauttamalla näet selityksen, että vain maksajat voivat merkitä, millä he maksoivat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ilman tiliä palautuskoodisi on nyt 12 numeroitua sanaa, jotka on helpompi kirjoittaa muistiin, ja palautuksessa ne syötetään sana kerrallaan omiin kenttiinsä, ja jokaista sanaa ehdotetaan kirjoittaessasi. Ennen tätä versiota tallennetut koodit eivät enää toimi: tallenna uusi koodi tai yhdistä Google tai Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Luokittaisissa kuluissa jokaisella kululla on nyt sama ⋮-valikko kuin ryhmän kuluissa: muokkaa, monista, jaa tai poista se avaamatta sitä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Leveillä näytöillä (vaakatasossa oleva puhelin, tabletit, Mac ja verkko) luokittaiset kulut pitävät luokat ja kokonaissumman sarakkeessa kulujen vieressä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saksaksi, hollanniksi ja japaniksi Toiminnan lauseet noudattavat nyt kunkin kielen luontevaa sanajärjestystä, eikä kulun tai ryhmän nimen edessä ole kaksoispistettä.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Kulun liitteiden alla olevan ”Lisää kuva” -tekstin ensimmäinen kirjain ei enää leikkaudu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ryhmissä ryhmän luontipainikkeessa lukee nyt ”+ Ryhmä”, eikä se enää rivity kahdelle riville.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Julkaisutiedot näyttävät nyt juuri asentamasi version eivätkä odota jopa vuorokautta sen tietojen hakemiseen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmän Tilastoissa jaksopainike (”Koko ajalta”) ei enää rivity kahdelle riville: päivämäärät siirtyvät sen alle, kun molemmat eivät mahdu.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

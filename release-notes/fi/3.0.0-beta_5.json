@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split puhuu nyt saksaa, italiaa ja puolaa: se seuraa laitteesi kieltä, tai voit valita kielen kohdassa Profiili › Kieli.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jokaisella luokalla on nyt oma värinsä, ja Tilastot piirtää jokaisen luokan ja jokaisen henkilön omalla värillään.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Voit nyt vaihtaa luokan värin luokan lomakkeessa tai Luokkakartassa.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Kulujen kulun valikossa on uusi vaihtoehto, Monista: se avaa uuden kulun, joka on valmiiksi täytetty alkuperäisen tavoin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät ja kulut eivät enää katoa hetkeksi, kun palaat sovellukseen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Haku ei enää sulkeudu heti, kun sinulla ei vielä ole ryhmää.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uusi ryhmä alkaa nyt tyypillä Tapahtuma, listan ensimmäisellä tyypillä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kun sinulla ei vielä ole ryhmää, Kutsu linkillä tai QR-koodilla näyttää nyt vain Uusi ryhmä -painikkeen eikä painikkeita, joita et voinut käyttää.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kuitti, jonka lukeminen kestää kauemmin, ei enää pääty yhteysvirheeseen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tilastojen luokkarivit ovat siistimpiä: ne eivät enää luettele kunkin alaluokan summaa.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
