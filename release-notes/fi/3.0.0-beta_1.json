@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split on uusi, alusta asti uudelleen rakennettu sovellus: se korvaa version Blitz Split 2.4.0 ja toimii Androidilla, iPhonella, iPadilla, Macilla ja verkossa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaa kulu tasan, summien, prosenttien tai osuuksien mukaan tai tuote kerrallaan, kun maksajia on yksi tai useampi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skannaa kuitti, niin sovellus lukee sen tuotteet ja kokonaissumman puolestasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Luo ryhmiä matkoille, kotiin tai tapahtumiin ja kutsu ihmisiä linkillä tai QR-koodilla.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Näe, kuka on velkaa kenellekin kussakin ryhmässä ja kaikissa yhteensä, kirjaa maksut ja yksinkertaista velat, jotta kaiken tasaamiseen riittää vähemmän maksuja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kaikki toimii offline-tilassa: tekemäsi muutokset tallentuvat laitteellesi ja lähtevät, kun olet taas verkossa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tili on valinnainen: yhdistä Google tai Apple tai säilytä palautuskoodi, niin saat ryhmäsi takaisin toisella laitteella.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kommentoi kuluja, liitä kuvia, seuraa tapahtumia Toiminnassa ja katso Tilastoista, mihin rahat menivät.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jokaisella kululla ja maksulla on oma valuuttansa, ja sovellus on saatavilla englanniksi, portugaliksi, espanjaksi ja ranskaksi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

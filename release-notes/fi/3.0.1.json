@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Saldot-välilehti ei enää näytä nollien riviä, kun kukaan ei ole velkaa mitään: siinä lukee vain Kaikki tasattu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Korjattu Profiili, joka näytti Applen logon Googlella kirjautuneen tilin sähköpostin vieressä tai Googlen logon Applella kirjautuneen vieressä, kun tilillä on molemmat.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

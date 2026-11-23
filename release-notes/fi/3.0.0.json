@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split on täysin uusi: alusta asti uudelleen rakennettu Androidille, iPhonelle, iPadille, Macille ja verkkoon.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaa kulu tasan, summien, prosenttien, osuuksien tai tuotteiden mukaan. Skannaa kuitti ja valitse, kuka otti mitäkin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Se toimii offline-tilassa ja ilman tiliä. Kirjaudu Googlella tai Applella, niin ryhmäsi pysyvät synkronoituina kaikilla laitteillasi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

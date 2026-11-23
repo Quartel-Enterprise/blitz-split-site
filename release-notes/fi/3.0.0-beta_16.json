@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Sovellus puhuu nyt koreaa: valitse ”한국어” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Etelä-Korean woneissa (KRW), ja Etelä-Koreassa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiilin ”Tili ja synkronointi” näyttää nyt käyttäjätunnuksesi, jonka voit kopioida yhdellä napautuksella, jotta voit kertoa meille, kuka olet, kun vastaat johonkin kyselyistämme.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kululle lisäämäsi kuva avautuu nyt ensin näkymässä Säädä kuvaa, joten rajaat itse liitettävän neliön.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "”Tulojen mukaan” muistuttaa nyt antamaan kunkin nettotulot verojen jälkeen, ja ”Oletusjako” näyttää kunkin prosenttiosuuden vasta, kun tulot on syötetty.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmän otsikkoalue on siistimpi: nimen alla ollut rivi jäsenmäärineen ja kokonaissummineen on poistettu. Kasvot näyttävät, ketkä ovat mukana, ja Tilastot näyttää kokonaissumman.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kortin tai tiliotteen kuvat tunnistetaan nyt sellaisiksi, ja sovellus ehdottaa kulun täyttämistä käsin sen sijaan, että sanoisi, ettei kuittia voitu lukea.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tilastojen luokka avaa nyt Kaikki kulut, jossa ryhmä, luokka ja jakso on jo valittu, joten voit hakea myös niitä kuluja. Kaikkiin kuluihin tuli myös Jakso-suodatin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tilastojen Henkilöittäin-kohdassa napautus renkaan vieressä tai sen keskellä poistaa valitun henkilön valinnan.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

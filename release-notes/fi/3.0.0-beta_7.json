@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split puhuu nyt hollantia, japania, turkkia ja indonesiaa, ja kielilista nimeää jokaisen kielen sen omalla kielellä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät ja kulut voivat nyt käyttää Puolan zlotya, Turkin liiraa ja Indonesian rupiaa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiilissa on uusi painike, Jaa profiili: linkkisi avaaja näkee nimesi ja kuvasi ja voi kutsua sinut ryhmään.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uuden ryhmän kutsulinkki on valmis heti, myös offline-tilassa, ja Jäsenissä on uusi painike sen kopioimiseen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lomakkeen sulkeminen tallentamattomien muutosten kanssa kysyy nyt ensin ”Hylätäänkö muutokset?”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tietosuojaseloste ja Käyttöehdot avautuvat nyt sovelluksessa selaimen sijaan.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Puhelimessa ylä- ja alapalkki väistyvät nyt, kun vierität alas, ja palaavat, kun vierität ylös.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Jaa kulu -näkymässä päivämäärän valitseminen ei enää hyppää suoraan kelloon: ajalla on oma painikkeensa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Napauta ryhmää Jaa kulu -näkymän yläosassa avataksesi sen; takaisin palaaminen vie kuluun kaikkine kirjoittamisinesi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kodin Viimeisimmät kulut näyttävät nyt kunkin kulun ryhmän ja maksajan kuvina.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix näkyy nyt vain niille, jotka todennäköisesti käyttävät sitä, kuten sovellusta portugaliksi käyttäville, Pix-avaimen omaaville tai realeissa olevan ryhmän jäsenille.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "”Synkronoidaan…” näkyy nyt vain, kun tilisi latautuu laitteelle ensimmäistä kertaa, eikä jokaisessa synkronoinnissa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiili ei enää tarjoa Googlen tai Applen irrottamista tilistäsi: kirjaudu ulos tai poista tili sen sijaan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiilin muokkaus avautuu nyt paneelina Profiilin päälle erillisen näkymän sijaan.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Jaa kulu -näkymän lomakkeen ja näppäimistön välinen tyhjä kaistale on poistettu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Yhteystiedon yhteiset ryhmät näyttävät nyt kunkin ryhmän kuvan.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

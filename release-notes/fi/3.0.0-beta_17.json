@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Sovellus puhuu nyt arabiaa, oikealta vasemmalle luettavana: valitse ”العربية” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Saudi-Arabian rialeissa (SAR), Arabiemiirikuntien dirhameissa (AED), Egyptin punnissa (EGP) ja Marokon dirhameissa (MAD), ja jossakin näistä maista luotu ryhmä alkaa maan valuutassa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt yksinkertaistettua kiinaa: valitse ”中文（简体）” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Kiinan juaneissa (CNY), ja Manner-Kiinassa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt perinteistä kiinaa: valitse ”中文（繁體）” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Taiwanin dollareissa (TWD), ja Taiwanissa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt tšekkiä: valitse ”Čeština” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Tšekin korunoissa (CZK), ja Tšekissä luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jokaisella ryhmällä on nyt oma tasausmuistutuksensa: pidä viikoittainen muistutus maanantaisin klo 10.00, valitse toinen viikonpäivä tai kuukauden päivä ja kellonaika (esimerkiksi joka kuun 25. päivä klo 12.00) tai poista se käytöstä, kun luot ryhmän tai kohdassa Muokkaa ryhmää. Ilmoituksen saavat vain ne, jotka ovat yhä velkaa, ja he näkevät ryhmässä bannerin, jonka voi sulkea.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt hepreaa, oikealta vasemmalle luettavana: valitse ”עברית” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Israelin uusissa sekeleissä (ILS), ja Israelissa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt hindiä: valitse ”हिन्दी” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Intian rupioissa (INR), ja Intiassa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt romaniaa: valitse ”Română” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Romanian leuissa (RON), ja Romaniassa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt ruotsia: valitse ”Svenska” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Ruotsin kruunuissa (SEK), ja Ruotsissa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt thaita: valitse ”ไทย” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Thaimaan bahteissa (THB), ja Thaimaassa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt vietnamia: valitse ”Tiếng Việt” kohdassa Profiili › Kieli tai anna sen seurata laitettasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kuluja Vietnamin dongeissa (VND), ja Vietnamissa luotu ryhmä alkaa niissä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Napauta ryhmän kuvaa kulun yläpalkissa nähdäksesi sen isona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Himmennetyn Yksinkertaista velat -kytkimen napauttaminen kahden hengen ryhmässä kertoo nyt, että asetus tulee käyttöön, kun ryhmässä on 3 henkilöä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yksinkertaista velat -kohdan Miten se toimii -esimerkki näyttää nyt henkilöiden kuvat nimikirjainten sijaan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Korjattu takaisin-ele, joka ei poistunut maksuikkunasta avatusta henkilön profiilista; nyt se palaa ikkunaan.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Ryhmän Kuluissa on nyt ”Näytä kaikki”, joka avaa Kaikki kulut valmiiksi kyseisellä ryhmällä suodatettuna, joten voit hakea, lajitella ja suodattaa sen kuluja. Poista suodatin nähdäksesi kaikki ryhmät.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uudessa ryhmässä ”Lisää nimellä” ehdottaa nyt kirjoittaessasi henkilöitä Yhteystiedoistasi kuvineen: napauta jotakuta luodaksesi ryhmän juuri hänen kanssaan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kun vierität ryhmää, sen kutistunut yläpalkki näyttää vain ryhmän kuvan ja nimen ilman vieressä katkeavia jäseniä ja kokonaissummaa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Voit nyt ladata palautuskoodisi 12 sanaa tekstitiedostona.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Tallenna palautuskoodisi kertoo nyt, että koodi palauttaa tietosi ja että tiedot poistetaan, kun sovellusta ei ole käytetty 30 päivään.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaa kulu -näkymän yläosassa on nyt myös Skannaa kuitti Tallenna-painikkeen vieressä, joten näppäimistö ei enää peitä sitä, ja Lisää maksutapa on hillitympi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmän Tilastoissa Henkilöittäin on nyt rengaskaavio kunkin osuudesta, samalla värillä, joka kullakin on Oletusjaossa, ja sen alla nimien ja summien lista selitteenä. Kulutettu ja Maksettu vaihtavat näytettävää tietoa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uuden ryhmän ”Kuka on mukana” näyttää profiilikuvasi nimikirjaimesi sijaan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "”Synkronoidaan…” ei enää näy jatkuvasti Kodissa ja Ryhmissä, kun palaat sovellukseen: synkronoinnit tapahtuvat hiljaa, kun ryhmäsi ovat näytöllä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tableteilla ja vaakatasossa olevalla puhelimella sivupalkin yläosan ”Jaa kulu” -painikkeen varjo ei enää leikkaudu reunoista.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

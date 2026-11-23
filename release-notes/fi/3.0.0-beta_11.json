@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Tili ilman Googlea tai Applea poistetaan nyt, kun sitä ei ole käytetty 30 päivään. Tervetulonäkymä ja Profiili kertovat siitä, ja Googlen tai Applen yhdistäminen säilyttää tietosi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Voit nyt arvioida sovelluksen kohdassa Profiili › Tuki ja palaute valinnalla ”Arvioi sovellus”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Kodista tai Kaikista kuluista avattu kulu palaa nyt suoraan sinne, mistä avasit sen, kulkematta ryhmänsä kautta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Korjattu kasvopinon ”+N”-kupla, joka näkyi ensimmäisen kasvon alla eikä sen päällä.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

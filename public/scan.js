@@ -241,6 +241,12 @@
       lines: [["2 FADØL", "196,00", 1], ["1 REJEPLATTE", "672,00", 2]],
       subtotal: ["SUBTOTAL", "868,00"], service: ["SERVICE 10 %", "86,80", 3], total: ["I ALT", "954,80"],
     },
+    // Finnish: a harbor bar's receipt, in euros, with Finland's dotted time.
+    fi: {
+      store: "SATAMABAARI", address: "Lokkikatu 120", date: "8.11.2026  21.47",
+      lines: [["2 HANAOLUT", "28,00", 1], ["1 KATKARAPUVATI", "96,00", 2]],
+      subtotal: ["VÄLISUMMA", "124,00"], service: ["PALVELU 10\u00a0%", "12,40", 3], total: ["YHTEENSÄ", "136,40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 
