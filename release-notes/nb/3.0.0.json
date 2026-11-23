@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split er helt nytt: bygget opp fra bunnen av, for Android, iPhone, iPad, Mac og nettet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Del en utgift likt, etter beløp, etter prosent, etter andeler eller på poster. Skann kvitteringen og velg hvem som hadde hva.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen fungerer uten nett og uten konto. Logg inn med Google eller Apple for å holde gruppene dine synkronisert på tvers av enhetene dine.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

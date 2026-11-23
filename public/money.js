@@ -2,12 +2,14 @@
 // (preview.js) and the split card (split-modes.js) read window.money, and the receipt (scan.js) is printed the same
 // way by hand. The demo keeps every
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar, the
-// taka, the forint, the Pakistani rupee, the Serbian dinar) shows
-// it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫ or NT$4,860 and every split
+// taka, the forint, the Pakistani rupee, the Serbian dinar, the Iranian rial) shows
+// it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫, NT$4,860 or ریال 4,860,000 (a
+// thousand rials to the cent: at a plausible million rials to the dollar, Persian's trip costs a tenth of the others', so
+// its amounts still fit a 320px phone) and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
-// koruna, the leu, the ringgit, the Philippine peso) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
+// koruna, the leu, the ringgit, the Philippine peso, the Norwegian krone, the Kenyan shilling) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
 // preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč, 243 lei,
-// RM194.40 or ₱2,430
+// RM194.40, ₱2,430 or Ksh 6,318 (and 486 kr in Norwegian too, the krone being worth about the krona)
 // and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
 (function () {
   // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents,
@@ -36,6 +38,9 @@
     hr: ["", ",", ".", "\u00a0€"],
     sr: ["", ",", ".", "\u00a0RSD", 1],
     sk: ["", ",", "\u00a0", "\u00a0€"],
+    nb: ["", ",", "\u00a0", "\u00a0kr", 0, 3, 10],
+    fa: ["ریال\u00a0", ".", ",", "", 1000],
+    sw: ["Ksh\u00a0", ".", ",", "", 0, 3, 130],
     bg: ["", ",", "\u00a0", "\u00a0€"],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
@@ -62,11 +67,16 @@
     if (!signed || cents === 0) return isolate(text);
     return isolate((cents > 0 ? "+" : "−") + text);
   }
+  // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), which \d doesn't match,
+  // so they are read as the Latin ones before anything else.
+  const latinDigits = (text) => text
+    .replace(/[٠-٩۰-۹]/g, (d) => String(d.charCodeAt(0) & 0xf))
+    .replace(/٫/g, ".").replace(/٬/g, ",");
   // What someone types, in cents. The last "," or "." followed by one or two digits is the decimal point, whatever the
   // language, so "33,5", "33.50" and "6.000" all read as meant; a currency with no cents in use drops those decimals
   // ("Rp50.000,00" is Rp50.000) and reads the rest in whole units.
   function parse(text) {
-    const t = text.replace(/[^\d.,]/g, "");
+    const t = latinDigits(text).replace(/[^\d.,]/g, "");
     const sep = Math.max(t.lastIndexOf(","), t.lastIndexOf("."));
     const decimals = sep >= 0 && t.length - sep - 1 <= 2;
     const whole = Number((decimals ? t.slice(0, sep) : t).replace(/[.,]/g, "") || 0);
@@ -80,9 +90,9 @@
   const cents = (amount) => amount * factor;
 
   // A percentage, as the language writes it: Turkish puts the sign first (%10); French, German, Russian, Swedish, Czech,
-  // Croatian, Serbian and Slovak put a space before it (10 %). The phone (preview.js) and the split card (split-modes.js) share it.
+  // Croatian, Serbian, Slovak and Norwegian put a space before it (10 %). The phone (preview.js) and the split card (split-modes.js) share it.
   const lang = document.documentElement.dataset.lang;
-  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
+  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk", "nb"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
 
-  window.money = { format, plain, parse, cents, percent, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
+  window.money = { format, plain, parse, latinDigits, cents, percent, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
 })();

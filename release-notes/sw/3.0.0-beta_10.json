@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Kiungo cha gharama sasa hufunguka kwenye programu badala ya kivinjari, pamoja na picha na maoni yake.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Kiungo cha gharama ambacho hakishirikiwi tena, au ambacho ni walio kwenye gharama tu wanaoweza kukifungua, sasa husema hivyo badala ya kuonyesha hitilafu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kiungo cha wasifu sasa hufunguka hata kama hujaingia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Wasifu › Faragha na kuhusu ina swichi mpya, \"Shiriki data ya matumizi\": izime ili kuacha kutuma jinsi unavyotumia programu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Viungo unavyoshiriki vya wasifu wako, vya maoni na vya kupata programu sasa huonyesha onyesho lao la kukagua kwa lugha yako.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

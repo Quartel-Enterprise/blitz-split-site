@@ -617,6 +617,59 @@
       bills: (n) => `${n} ${countForm(n, "výdavok", "výdavky", "výdavkov")}`,
       titles: { b1: "Penzión v Lagoa", b2: "Večera v Ribeirão", b3: "Odvoz na pláž", p1: "Zmrzlina na pláži", p2: "Týždenný nákup", p3: "Parkovanie" },
     },
+    // Norwegian (Bokmål): "du" for the user, and the app's words (utgift, saldo, gjør opp, registrer betaling).
+    nb: {
+      paid: "{name} betalte", notIn: "Ikke med i denne",
+      members: (people, bills) => `${people} personer · ${bills} ${bills === 1 ? "utgift" : "utgifter"}`,
+      toGet: "å få tilbake", youOwe: "du skylder", settled: "alt er gjort opp", owesYou: "Skylder deg", youOweTitle: "Du skylder",
+      eachOne: "Saldoen til hver enkelt", getsBack: "får tilbake", owes: "skylder", even: "gjort opp",
+      toSettle: "Å gjøre opp", total: "Gruppens totalsum", lodging: "Overnatting", food: "Mat", transport: "Transport",
+      sheetTitle: "Del en utgift", description: "Beskrivelse", amount: "Beløp", whoPaid: "Hvem betalte",
+      splitAmong: "Del likt mellom", each: "{value} hver", cancel: "Avbryt", save: "Lagre", close: "Lukk",
+      queue: (n) => `${n} ${n === 1 ? "endring" : "endringer"} i køen`,
+      split: "Hvordan den ble delt", yourShare: "Din andel", deleteBill: "Slett utgiften",
+      recordPayment: "Registrer betaling", record: "Registrer", viaMethod: "via overføring", payment: "Betaling", deletePayment: "Slett betalingen",
+      payLine: (from, to) => `${name(from)} betalte ${name(to)}`,
+      paidYou: (who, value) => `${who} betalte deg ${value}`,
+      paidTotal: "Betalt totalt", shareTotal: "Andel av utgiftene", balance: "Saldo",
+      bills: (n) => `${n} ${n === 1 ? "utgift" : "utgifter"}`,
+      titles: { b1: "Gjestehus i Lagoa", b2: "Middag i Ribeirão", b3: "Skyss til stranden", p1: "Is på stranden", p2: "Ukens matinnkjøp", p3: "Parkering" },
+    },
+    fa: {
+      paid: "{name} پرداخت کرد", notIn: "در این هزینه نیست",
+      members: (people, bills) => `${people} نفر · ${bills} هزینه`,
+      toGet: "طلب شما", youOwe: "بدهی شما", settled: "همه تسویه شد", owesYou: "چه کسی به شما بدهکار است", youOweTitle: "بدهی شما",
+      eachOne: "تراز هر نفر", getsBack: "طلبکار", owes: "بدهکار", even: "تسویه شد",
+      toSettle: "برای تسویه", total: "جمع کل گروه", lodging: "اقامت", food: "غذا", transport: "حمل‌ونقل",
+      sheetTitle: "تقسیم هزینه", description: "توضیحات", amount: "مبلغ", whoPaid: "چه کسی پرداخت کرد",
+      splitAmong: "تقسیم مساوی بین", each: "هر نفر {value}", cancel: "لغو", save: "ذخیره", close: "بستن",
+      queue: (n) => `${n} تغییر در صف`,
+      split: "نحوه تقسیم", yourShare: "سهم شما", deleteBill: "حذف هزینه",
+      recordPayment: "ثبت پرداخت", record: "ثبت", viaMethod: "با انتقال وجه", payment: "پرداخت", deletePayment: "حذف پرداخت",
+      // Why "→": the names are Latin, so the line runs left to right even in a right-to-left page, as the Balances tab's does.
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} به شما ${value} پرداخت کرد`,
+      paidTotal: "جمع پرداختی", shareTotal: "سهم از هزینه‌ها", balance: "تراز",
+      bills: (n) => `${n} هزینه`,
+      titles: { b1: "مهمان‌خانه Lagoa", b2: "شام در Ribeirão", b3: "سفر تا ساحل", p1: "بستنی در ساحل", p2: "خرید هفتگی", p3: "پارکینگ" },
+    },
+    sw: {
+      paid: "Imelipwa na: {name}", notIn: "Hayumo kwenye hii",
+      members: (people, bills) => `${people === 1 ? "mtu" : "watu"} ${people} · gharama ${bills}`,
+      toGet: "unadai", youOwe: "unadaiwa", settled: "hakuna deni", owesYou: "Wanaodaiwa na wewe", youOweTitle: "Unadaiwa",
+      eachOne: "Salio la kila mtu", getsBack: "anadai", owes: "anadaiwa", even: "hana deni",
+      toSettle: "Madeni ya kulipa", total: "Jumla ya kikundi", lodging: "Malazi", food: "Chakula", transport: "Usafiri",
+      sheetTitle: "Gawanya gharama", description: "Maelezo", amount: "Kiasi", whoPaid: "Aliyelipa",
+      splitAmong: "Gawanya sawa kati ya", each: "{value} kila mmoja", cancel: "Ghairi", save: "Hifadhi", close: "Funga",
+      queue: (n) => (n === 1 ? `Badiliko ${n} linasubiri` : `Mabadiliko ${n} yanasubiri`),
+      split: "Jinsi ilivyogawanywa", yourShare: "Sehemu yako", deleteBill: "Futa gharama",
+      recordPayment: "Rekodi malipo", record: "Rekodi", viaMethod: "kwa uhamisho", payment: "Malipo", deletePayment: "Futa malipo",
+      payLine: (from, to) => `${name(from)} amemlipa ${name(to)}`,
+      paidYou: (who, value) => `${who} amekulipa ${value}`,
+      paidTotal: "Jumla aliyolipa", shareTotal: "Sehemu ya gharama", balance: "Salio",
+      bills: (n) => `gharama ${n}`,
+      titles: { b1: "Nyumba ya wageni Lagoa", b2: "Chakula cha jioni: Ribeirão", b3: "Usafiri hadi ufukweni", p1: "Aiskrimu ufukweni", p2: "Manunuzi ya wiki", p3: "Maegesho" },
+    },
     bg: {
       paid: "{name} плати", notIn: "Не участва в този разход",
       members: (people, bills) => `${people} ${people === 1 ? "човек" : "души"} · ${bills} ${bills === 1 ? "разход" : "разхода"}`,
@@ -1074,7 +1127,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", bg: "bg", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", bg: "bg", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

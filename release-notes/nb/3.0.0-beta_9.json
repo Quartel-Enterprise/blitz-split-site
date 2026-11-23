@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Beløp og etiketter brytes ikke lenger over flere linjer eller kuttes av på små skjermer, sammenleggbare telefoner og med stor tekst.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tekst, knapper og omriss som var vanskelige å lese, har nå mer kontrast, i både lyst og mørkt tema.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Når du trykker på et felt i nettleseren på en iPhone, zoomer ikke siden lenger inn.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

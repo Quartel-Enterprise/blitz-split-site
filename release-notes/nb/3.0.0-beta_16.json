@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Appen snakker nå koreansk: velg «한국어» under Profil › Språk, eller la den følge enheten din.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nå dele i sørkoreanske won (KRW), og en gruppe som opprettes i Sør-Korea, starter med den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Konto og synkronisering» i Profil viser nå Bruker-ID-en din, som du kan kopiere med ett trykk, så du kan fortelle oss hvem du er når du svarer på en av undersøkelsene våre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Et bilde du legger til en utgift, åpnes nå først i Juster bildet, så du kan ramme inn kvadratet som legges ved.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Etter inntekt» minner deg nå på å legge inn hver persons nettoinntekt, etter skatt, og «Standarddeling» viser bare hver persons prosentandel når en inntekt er skrevet inn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toppen av en gruppe er ryddigere: linjen med antall medlemmer og totalen under navnet er borte. Ansiktene viser hvem som er med, og Statistikk viser totalen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bilder av et kort eller en kontoutskrift sier nå ifra om det og foreslår at du fyller inn utgiften for hånd, i stedet for å si at kvitteringen ikke kunne leses.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En kategori i Statistikk åpner nå Alle utgifter med gruppen, kategorien og perioden allerede valgt, så du kan søke i de utgiftene også. Alle utgifter har også fått et Periode-filter.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Under Per person i Statistikk kan du trykke ved siden av ringen eller midt i den for å fjerne valget av personen.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
