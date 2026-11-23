@@ -3,8 +3,9 @@
 // way by hand. The demo keeps every
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar, the
 // taka, the forint, the Pakistani rupee, the Serbian dinar, the Iranian rial) shows
-// it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫, NT$4,860 or ریال 48,600,000 (a
-// round million rials to the dollar, as the apps' store screenshots count it) and every split
+// it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫, NT$4,860 or ریال 4,860,000 (a
+// thousand rials to the cent: at a plausible million rials to the dollar, Persian's trip costs a tenth of the others', so
+// its amounts still fit a 320px phone) and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
 // koruna, the leu, the ringgit, the Philippine peso) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
 // preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč, 243 lei,
@@ -37,7 +38,7 @@
     hr: ["", ",", ".", "\u00a0€"],
     sr: ["", ",", ".", "\u00a0RSD", 1],
     sk: ["", ",", "\u00a0", "\u00a0€"],
-    fa: ["ریال\u00a0", ".", ",", "", 10000],
+    fa: ["ریال\u00a0", ".", ",", "", 1000],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");

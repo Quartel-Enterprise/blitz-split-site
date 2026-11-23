@@ -192,12 +192,12 @@
       lines: [["2 ČAPOVANÉ PIVO", "28,00", 1], ["1 TANIER KREVIET", "96,00", 2]],
       subtotal: ["MEDZISÚČET", "124,00"], service: ["OBSLUHA 10 %", "12,40", 3], total: ["SPOLU", "136,40"],
     },
-    // Persian: a café's receipt in Bandar Abbas, in rials as money.js counts Persian (no cents in use, a round ten
+    // Persian: a café's receipt in Bandar Abbas, in rials as money.js counts Persian (no cents in use, a
     // thousand to the cent), dated in the Gregorian calendar as Iran writes a date, year first, with fresh juice for the draft beer.
     fa: {
       store: "کافه بندر", address: "بندرعباس، خیابان ساحلی، پلاک 120", date: "2026/11/08  21:47",
-      lines: [["2 آب‌میوه تازه", "28,000,000", 1], ["1 دیس میگو", "96,000,000", 2]],
-      subtotal: ["جمع جزء", "124,000,000"], service: ["سرویس 10%", "12,400,000", 3], total: ["جمع کل", "136,400,000"],
+      lines: [["2 آب‌میوه تازه", "2,800,000", 1], ["1 دیس میگو", "9,600,000", 2]],
+      subtotal: ["جمع جزء", "12,400,000"], service: ["سرویس 10%", "1,240,000", 3], total: ["جمع کل", "13,640,000"],
     },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
