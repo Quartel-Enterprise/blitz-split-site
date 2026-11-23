@@ -187,6 +187,12 @@
       lines: [["2 TOČENO PIVO", "2.800", 1], ["1 PLATA ŠKAMPA", "9.600", 2]],
       subtotal: ["MEĐUZBIR", "12.400"], service: ["USLUGA 10 %", "1.240", 3], total: ["UKUPNO", "13.640"],
     },
+    // Norwegian (Bokmål): a harbor bar's receipt, in kroner as money.js counts Norwegian (ten to the dollar, as Swedish).
+    nb: {
+      store: "HAVNEBAREN", address: "Måkeveien 120", date: "08.11.2026  21:47",
+      lines: [["2 FATØL", "280,00", 1], ["1 REKEFAT", "960,00", 2]],
+      subtotal: ["SUBTOTAL", "1 240,00"], service: ["SERVICE 10 %", "124,00", 3], total: ["TOTALT", "1 364,00"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

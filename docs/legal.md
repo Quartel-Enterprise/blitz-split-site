@@ -2,7 +2,7 @@
 
 The privacy policy and the terms of use are written once, in Markdown, one file per page and language:
 `public/legal/<page>.<language>.md` (`privacy` and `terms`; English, Portuguese (Brazil), Portuguese (Portugal, `pt-PT`), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian and Serbian). Two readers take those files:
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian and Norwegian (Bokmål)). Two readers take those files:
 
 - **The site.** `npm run build:legal` (`scripts/build-legal.mjs`) writes each language's block, between `<main>` and
   `</main>` of `public/privacy.html` and `public/terms.html`, from them. The pages stay plain HTML in git, so the

@@ -5,12 +5,12 @@
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian and Serbian. The markup is in English; each page carries its other languages' strings in
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian and Norwegian (Bokmål). The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the language picker picks another, kept for the next visit, or "System" again, which forgets it and follows the
 browser (`boot.js` sets `data-lang-pref` to the language chosen or `system`);
-`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro|bn|ms|el|hu|fil|ur|hr|sr` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a thirty-third language: only the exact tag `pt-PT` (a browser's
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro|bn|ms|el|hu|fil|ur|hr|sr|nb` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a thirty-fourth language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
 `pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
@@ -88,14 +88,20 @@ legal pages and notes, and the page's tag `sr-Latn`, so the browser and `Intl` n
 (`RIGHT_TO_LEFT`), with each amount a left-to-right isolate. Croatian and Serbian count in one, few and other forms and,
 as Czech, never decline a filled-in name; Hungarian never glues a suffix to one, as Turkish and Korean. Bengali, Malay and
 Urdu have fresh juice and a soft drink on the receipt and in the split card, where the others have beer, as Arabic does.
+Norwegian is Bokmål (`nb`), the code the apps ask for its legal pages and notes: every Norwegian browser language picks
+it, Bokmål's own `nb` as much as the macrolanguage's `no` and Nynorsk's `nn` (`LEGACY`, kept the same in `boot.js` and
+`src/index.js`, so `?lang=no`, `/legal/<page>.no.md` and `/release-notes/nn.json` answer in Bokmål too), as the apps
+pick it. It talks to the reader as "du", quotes with «…», counts in one and other forms as English does, and uses the
+app's own words (gruppe, utgift, del en utgift, saldo, gjør opp, gjenopprettingskode, kvittering, poster). Geist's Latin
+subsets have its letters (æ, ø, å), so it draws in Geist as Swedish does.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
 in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, grouped
 as India writes them (₹1,20,000), yuan in Simplified Chinese (¥, with its fen, so the demo's numbers stay as they are:
-¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The krona in Swedish, the koruna in Czech, the leu in Romanian, the ringgit in Malay and the Philippine peso in Filipino keep their cents but are
+¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The krona in Swedish, the krone in Norwegian, the koruna in Czech, the leu in Romanian, the ringgit in Malay and the Philippine peso in Filipino keep their cents but are
 worth much less than the dollar, so the demo's own amounts are multiplied by a whole number before anything is split
-(`money.cents`: ten, 23, five, four and 50, so 486 kr, 1 117,80 Kč, 243 lei, RM194.40 and ₱2,430 for the ride), and from there everything works in
+(`money.cents`: ten for both kronor, the krone being worth about the krona, then 23, five, four and 50, so 486 kr, 1 117,80 Kč, 243 lei, RM194.40 and ₱2,430 for the ride), and from there everything works in
 that currency's own cents: every split adds up exactly and an amount typed in the split card stays as typed. Greek and Croatian are in euros. The demo keeps every amount in cents and the nine with no cents in use (the five below, and the taka in Bengali and the Pakistani rupee in Urdu, grouped as India's, the forint in Hungarian and the dinar in Serbian, a cent being one of each) show it scaled to whole
 units (a cent is Rp100, ¥1, ₩10, 10 ₫ and NT$1, the smallest whole scale, which keeps every split exact), so a $48.60 ride reads Rp486.000, ¥4,860, ₩48,600, 48.600 ₫ or NT$4,860 and every split still adds
 up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫ or Rp100, and a field grows with what it

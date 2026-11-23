@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split snakker nå tysk, italiensk og polsk: appen følger språket på enheten din, eller du kan velge et i Profil › Språk.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hver kategori har nå sin egen farge, og Statistikk tegner hver kategori og hver person i sin farge.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nå kan du endre fargen på en kategori, i skjemaet til kategorien eller i Kategorikart.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Menyen til en utgift i Utgifter har et nytt valg, Dupliser: det åpner en ny utgift som allerede er fylt ut som originalen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper og utgifter forsvinner ikke lenger et øyeblikk når du kommer tilbake til appen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Søket lukkes ikke lenger med en gang når du ikke har noen gruppe ennå.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En ny gruppe starter nå som Arrangement, den første typen i listen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Når du ikke har noen gruppe ennå, viser Inviter med lenke eller QR nå bare knappen Ny gruppe i stedet for knapper du ikke kunne bruke.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En kvittering som tar lengre tid å lese, ender ikke lenger med en tilkoblingsfeil.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kategoriradene i Statistikk er ryddigere: de viser ikke lenger beløpet for hver underkategori.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
