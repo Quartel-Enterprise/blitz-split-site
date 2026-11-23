@@ -5,11 +5,11 @@
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
 // Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese,
-// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak or Norwegian (Bokmål), or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
+// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål) or Persian, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
 // the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
 // browser language (zh-Hant, zh-TW, zh-HK, zh-MO) picks Traditional Chinese, zh-Hant, as in the apps; every other zh-* stays zh.
 (function () {
-  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "sw"];
+  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "fa", "sw"];
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
   function stored(key) {
@@ -58,11 +58,11 @@
   // Every language's tag is its code (Traditional Chinese's, zh-Hant, too), but Brazil's Portuguese, pt-BR, Simplified
   // Chinese, zh-Hans, and Serbian, sr-Latn, which the site writes in the Latin script.
   root.lang = variant || { pt: "pt-BR", zh: "zh-Hans", sr: "sr-Latn" }[lang] || lang;
-  // Arabic, Hebrew and Urdu (and any later right-to-left language) read right to left: the page mirrors, as site.css writes its sides
+  // Arabic, Hebrew, Urdu and Persian (and any later right-to-left language) read right to left: the page mirrors, as site.css writes its sides
   // as start and end; src/index.js says the same of a link preview's page.
   // Why: its own copy of src/index.js's RIGHT_TO_LEFT, since this script runs alone in <head>, before any module, and
   // the Worker can't import a page's script; add a right-to-left language to both, and only once SUPPORTED has it.
-  const RIGHT_TO_LEFT = ["ar", "he", "ur"];
+  const RIGHT_TO_LEFT = ["ar", "he", "ur", "fa"];
   root.dir = RIGHT_TO_LEFT.includes(lang) ? "rtl" : "ltr";
   // A table keyed by language, with the variant's own entries over its language's, objects merged key by key: the words Portugal says
   // differently, the rest falling back to pt. A table without the variant is returned as the language's.

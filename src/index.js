@@ -182,7 +182,7 @@ async function previewPage(request, url, env, ctx, target) {
 
 // The languages the site speaks written right to left: a page in one of them says dir="rtl" on <html>. Why: the same
 // list as RIGHT_TO_LEFT in public/boot.js, which runs alone in <head> and can't import it; change both together.
-const RIGHT_TO_LEFT = ["ar", "he", "ur"];
+const RIGHT_TO_LEFT = ["ar", "he", "ur", "fa"];
 const directionOf = (language) => (RIGHT_TO_LEFT.includes(canonicalLanguage(String(language).split("-")[0])) ? "rtl" : "ltr");
 
 // Why: the landing's own og tags give way to the link's, written once at the end of the head, and kept as briefly as
