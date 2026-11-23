@@ -428,7 +428,7 @@
       noteStore: "Last ned appen {in}.", noteApple: "Bruker du {platform}? Bruk den i nettleseren til appen er på App Store.", noteWeb: "Åpne den i nettleseren, ingenting å installere.",
       playLive: "Tilgjengelig på Google Play", appStoreLive: "Tilgjengelig på App Store", webLive: "Åpne nettappen",
       mismatchTitle: "Velg butikk",
-      mismatchBody: "Du bruker {platform}. For den beste opplevelsen, last ned appen {in}.",
+      mismatchBody: "Du bruker {platform}. Last ned appen {in} for den beste opplevelsen.",
       mismatchGo: "Gå {to}", mismatchStay: "Fortsett {to}", close: "Lukk",
       in: { play: "fra Google Play", appstore: "fra App Store" }, to: { play: "til Google Play", appstore: "til App Store" },
     },
