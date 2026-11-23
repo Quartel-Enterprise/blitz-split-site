@@ -116,7 +116,7 @@ Baadhi ya watoa huduma hawa huhifadhi au kuchakata data nje ya Brazili, hasa nch
 - **Akaunti isiyo na Google au Apple hufutwa baada ya siku 30 bila kutumika:** pale ambapo hakuna kifaa chake kinachosawazisha kwa siku 30, seva huifuta kama “Futa akaunti na data” inavyofanya, na msimbo wake wa kurejesha huacha kufanya kazi.
 - **“Futa akaunti na data”**, kwenye Wasifu, hufuta wasifu wako, picha, funguo za malipo, njia za malipo na msimbo wa kurejesha mara moja, na hubatilisha ufikiaji ambao Apple ilitoa. Gharama ulizoongeza kwenye vikundi pamoja na watu wengine hubaki huko kwa ajili ya kikundi, kwa jina uliokuwa nalo humo, bila kuunganishwa tena na akaunti yoyote. Vivyo hivyo maoni uliyoacha, hata kwenye gharama ulizoshirikishwa kwa kiungo.
 - Barua pepe za usaidizi huhifadhiwa wakati tunazihitaji ili kukujibu na kufuatilia ulichoripoti. Tuombe na tutazifuta.
-- Data ya matumizi inayohusishwa na kifaa hukaa kwenye Google Analytics hadi miezi 14. Baada ya hapo, hubaki takwimu za jumla tu, bila chochote kinachomtambulisha mtu. Akaunti yako ikishafutwa, kitambulisho walichonacho hakielekezi tena kwako.
+- Data ya matumizi inayohusishwa na kifaa hukaa kwenye Google Analytics hadi miezi 14. Baada ya hapo, hubaki takwimu za jumla tu, bila chochote kinachomtambulisha mtu. Akaunti yako ikishafutwa, kitambulisho ilichonacho hakielekezi tena kwako.
 - Ripoti za hitilafu huhifadhiwa hadi siku 90 kisha hufutwa.
 
 ## Haki zako {#rights}
