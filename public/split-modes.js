@@ -1450,6 +1450,7 @@
     return moneyField(state.income[i], fill(TEXT.label.income, { name }), `<small>${TEXT.perMonth}</small>`);
   }
 
+  let built = false;
   function build() {
     panel.dataset.mode = mode;
     const people = mode === "items" ? "" : `
@@ -1475,9 +1476,14 @@
       ${people}${items}
       <p class="split-hint">${fill(TEXT.hint[mode], { zero: money(0) })}</p>`;
     panel.hidden = false;
-    // The rows' light grows from nothing to each one's part: laid out at 0 first, then set.
-    panel.querySelectorAll(".split-row").forEach((row) => row.style.setProperty("--w", "0"));
-    void panel.offsetWidth;
+    // The rows' light grows from nothing to each one's part: laid out at 0 first, then set. Not on the first build,
+    // as the page loads: the card isn't in view yet (site.css holds its rows at nothing until it is), and laying the
+    // whole page out here, before its first paint, would hold that paint back.
+    if (built) {
+      panel.querySelectorAll(".split-row").forEach((row) => row.style.setProperty("--w", "0"));
+      void panel.offsetWidth;
+    }
+    built = true;
     update();
   }
 

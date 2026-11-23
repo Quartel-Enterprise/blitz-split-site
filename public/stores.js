@@ -686,7 +686,7 @@
       location.replace(url);
     };
     track("store_redirect", { store, path, platform: root.dataset.platform, event_callback: leave, event_timeout: REDIRECT_WAIT_MS });
-    // gtag.js otherwise waits for the page's load event, which would often come after the redirect.
+    // gtag.js otherwise waits for the page to settle (analytics.js), which would come after the redirect.
     window.loadAnalytics?.();
     setTimeout(leave, REDIRECT_WAIT_MS);
   }

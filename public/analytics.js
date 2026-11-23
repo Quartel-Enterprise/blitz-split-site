@@ -1,8 +1,8 @@
 // Google Analytics of the site's own Firebase project (blitzsplit-site), apart from the app's (blitz-split). Every page
 // loads this script with defer, so it runs once the page is parsed, before the page's other deferred scripts and
 // DOMContentLoaded; the others send their events with window.track(). docs/analytics.md lists every event.
-// gtag.js itself, the heaviest script of the page, comes only once the page has loaded: what was queued meanwhile
-// (the page view, the events) is sent when it arrives.
+// gtag.js itself, the heaviest script of the page, comes only once the page has settled, so it never competes with the
+// first paint or the page's own scripts: what was queued meanwhile (the page view, the events) is sent when it arrives.
 (function () {
   const MEASUREMENT_ID = "G-JD94WD10FJ";
   window.dataLayer = window.dataLayer || [];
@@ -39,20 +39,33 @@
     window.gtag("event", name, params);
   };
 
+  // gtag.js comes at the visitor's first tap, click or key, so what they do next is counted, or else in the browser's
+  // idle time once the page has been loaded for SETTLE_MS. A visit that leaves before either sends nothing.
   // A page about to leave (stores.js's /download redirect) asks for gtag.js right away with window.loadAnalytics(), or
   // the events queued meanwhile would leave with it unsent.
+  const SETTLE_MS = 4000;
+  const FIRST_INPUT = ["pointerdown", "keydown"];
   let tagLoaded = false;
   function loadTag() {
     if (tagLoaded) return;
     tagLoaded = true;
+    FIRST_INPUT.forEach((type) => removeEventListener(type, loadTag, true));
     const script = document.createElement("script");
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
     document.head.append(script);
   }
   window.loadAnalytics = loadTag;
-  if (document.readyState === "complete") loadTag();
-  else window.addEventListener("load", loadTag, { once: true });
+  FIRST_INPUT.forEach((type) => addEventListener(type, loadTag, { capture: true, passive: true }));
+  function settle() {
+    setTimeout(() => {
+      // Safari has no requestIdleCallback: there the wait alone decides.
+      if (window.requestIdleCallback) requestIdleCallback(loadTag, { timeout: 2000 });
+      else loadTag();
+    }, SETTLE_MS);
+  }
+  if (document.readyState === "complete") settle();
+  else addEventListener("load", settle, { once: true });
 
   const kind = appLink(here);
   if (kind) window.track("app_link_view", { kind });
