@@ -16,7 +16,7 @@
     appStoreId: "",
     // The web app: open to the public.
     webAppLive: true,
-    webAppUrl: "https://app.blitzsplit.com",
+    webAppUrl: "https://web.blitzsplit.com",
   };
 
   const root = document.documentElement;
