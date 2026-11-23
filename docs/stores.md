@@ -7,7 +7,7 @@ yet shows as "Coming soon" with no link, and the web app stands out instead; tur
 listing is public (Google Play's `googlePlayLive` and the web app's `webAppLive` are on; the App Store's `appStoreId` is
 empty), in step with the client's `stores.properties`. While nothing is on, every button reads "Coming soon" and the
 header shows no download button. `?platform=android|ios|mac|desktop` pins one. The web app lives at
-[app.blitzsplit.com](https://app.blitzsplit.com), which serves `webApp/dist` of the client once it is deployed there.
+[web.blitzsplit.com](https://web.blitzsplit.com), which serves `webApp/dist` of the client once it is deployed there.
 
 A phone or a Mac sees the other platform's store only once both stores offer the app, when "Choose your store" can
 stand in front of it. On a computer the header's main button is the web app. A line over the hero's badges says what

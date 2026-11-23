@@ -8,7 +8,7 @@ Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simpli
 - **The apps' feed.** `public/release-notes/<language>.json`, at
   `https://blitzsplit.com/release-notes/<language>.json`: every version of that language, newest first. A language
   the site doesn't have answers 404 (`src/index.js`), and the app reads English. `public/_headers` lets any origin
-  read it, since the web app (`app.blitzsplit.com`) asks from another one.
+  read it, since the web app (`web.blitzsplit.com`) asks from another one.
 - **The page.** [`/release-notes`](https://blitzsplit.com/release-notes), "What's new", which the footer of every
   page links: `public/release-notes.html`, a block per language as the legal pages, written into the page's shell,
   `pages/release-notes.html` (the header, the footer and `window.SITE_STRINGS`, written by hand).
