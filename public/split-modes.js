@@ -976,6 +976,35 @@
         less: "O podiel menej: {name}", more: "O podiel viac: {name}", had: "Kto mal: {item}",
       },
     },
+    // Norwegian (Bokmål): like English and Swedish, no message holds a "|" (one person has its own message, and a
+    // person's shares show only above one); "du" for the user and the app's words (likt, andeler, etter inntekt, poster).
+    nb: {
+      bill: "Pizzakveld", paid: "Pedro betalte", notIn: "Ikke med i denne",
+      each: "{a} hver", among: "{a} delt på {n} personer.", amongOne: "{a} på 1 person.", out: "{name} er ikke med.",
+      nobody: "Ingen er med ennå", nobodyEqual: "Velg minst én person for å dele {a}.",
+      checkAll: "Velg alle", uncheckAll: "Fjern alle",
+      left: "{a} igjen", over: "{a} for mye", closed: "Det går opp: {a}",
+      progress: "{a} av {b} så langt.", closedMsg: "Delene blir til sammen totalsummen.",
+      parts: "{n} andeler på {a}", personParts: "{name} har {n} andeler.", nobodyShares: "Gi minst én person en andel for å dele {a}.",
+      ofEach: "{p} av hver utgift", ofBill: "{p} av utgiften", incomeDetail: "Hver enkelts del følger inntekten deres.", perMonth: "/mnd.",
+      service: "Service ({p})", serviceSub: "I forhold til hva hver enkelt hadde",
+      loose: "Marker hvem som hadde hver post", looseDetail: "Trykk på ansiktene ved hver post for å markere hvem som hadde den.",
+      itemsClosed: "{a} i poster og {b} i service.", nobodyItem: "Ingen valgt", eachItem: "{a} hver",
+      items: { pizza: "Stor pizza", beer: "Øl", salad: "Salat", draft: "Fatøl", shrimp: "Rekefat" },
+      receiptBill: "Havnebaren",
+      hint: {
+        equal: "Når det ikke går opp, går de resterende øre til den som betalte.",
+        amounts: "Den som står på {zero}, er ikke med i utgiften.",
+        percent: "Bare hele tall. De resterende øre går til den som betalte.",
+        shares: "Bruk andeler når noen har mer, for eksempel den som tok med seg en følgesvenn.",
+        income: "Inntektene blir på enheten. Gruppen ser bare prosentene.",
+        items: "Hver post deles mellom dem som hadde den, og servicen etter hva hver enkelt hadde.",
+      },
+      label: {
+        amount: "Beløp for {name}", percent: "Prosent for {name}", income: "Månedsinntekt for {name}",
+        less: "Én andel mindre for {name}", more: "Én andel til for {name}", had: "Hvem hadde {item}",
+      },
+    },
     sw: {
       bill: "Usiku wa pizza", paid: "Imelipwa na: Pedro", notIn: "Hayumo kwenye hii",
       each: "{a} kila mmoja", among: "{a} kwa watu {n}.", amongOne: "{a} kwa mtu 1.", out: "{name} hayumo.",

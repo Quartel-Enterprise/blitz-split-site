@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split snakker nå nederlandsk, japansk, tyrkisk og indonesisk, og språklisten viser hvert språk på sitt eget språk.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper og utgifter kan nå bruke polsk zloty, tyrkisk lira og indonesisk rupiah.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil har en ny knapp, Del profilen: den som åpner lenken din, ser navnet og bildet ditt og kan invitere deg til en gruppe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Invitasjonslenken til en ny gruppe er klar med en gang, også uten nett, og Medlemmer har en ny knapp for å kopiere den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Når du lukker et skjema med noe du ikke har lagret, spør appen nå «Forkaste endringene?» først.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Personvernerklæringen og vilkårene for bruk åpnes nå inne i appen i stedet for i nettleseren.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "På en telefon trekker topp- og bunnlinjen seg nå unna når du ruller ned, og kommer tilbake når du ruller opp.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "I Del en utgift hopper ikke valget av dato lenger rett til klokken: klokkeslettet har sin egen knapp.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Trykk på gruppen øverst i Del en utgift for å åpne den; når du går tilbake, kommer du til utgiften med alt du har skrevet inn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Siste utgifter på Hjem viser nå gruppen til hver utgift og hvem som betalte, som bilder.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix vises nå bare for dem som sannsynligvis bruker det, for eksempel de som bruker appen på portugisisk, har en Pix-nøkkel eller er med i en gruppe i brasilianske real.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Synkroniserer…» vises nå bare første gang kontoen din lastes inn på en enhet, ikke ved hver synkronisering.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil tilbyr ikke lenger å koble Google eller Apple fra kontoen din: logg ut eller slett kontoen i stedet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rediger profil åpnes nå som et ark over Profil i stedet for på en egen skjerm.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Det tomme feltet mellom skjemaet og tastaturet i Del en utgift er borte.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Felles grupper på profilen til en kontakt viser nå bildet til hver gruppe.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

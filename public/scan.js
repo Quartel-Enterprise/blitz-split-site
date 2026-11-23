@@ -192,6 +192,12 @@
       lines: [["2 ČAPOVANÉ PIVO", "28,00", 1], ["1 TANIER KREVIET", "96,00", 2]],
       subtotal: ["MEDZISÚČET", "124,00"], service: ["OBSLUHA 10 %", "12,40", 3], total: ["SPOLU", "136,40"],
     },
+    // Norwegian (Bokmål): a harbor bar's receipt, in kroner as money.js counts Norwegian (ten to the dollar, as Swedish).
+    nb: {
+      store: "HAVNEBAREN", address: "Måkeveien 120", date: "08.11.2026  21:47",
+      lines: [["2 FATØL", "280,00", 1], ["1 REKEFAT", "960,00", 2]],
+      subtotal: ["SUBTOTAL", "1 240,00"], service: ["SERVICE 10 %", "124,00", 3], total: ["TOTALT", "1 364,00"],
+    },
     sw: {
       store: "MGAHAWA WA BANDARINI", address: "Barabara ya Shakwe 120", date: "08/11/2026  21:47",
       lines: [["2 JUISI YA MATUNDA", "3,640.00", 1], ["1 SAHANI YA KAMBA", "12,480.00", 2]],

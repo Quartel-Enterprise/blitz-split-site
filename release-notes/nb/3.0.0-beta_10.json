@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "En lenke til en utgift åpnes nå i appen i stedet for i nettleseren, med bildene og kommentarene.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "En lenke til en utgift som ikke lenger er delt, eller som bare de som er med i utgiften kan åpne, sier nå fra om det i stedet for å vise en feil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En lenke til en profil åpnes nå selv om du ikke har logget inn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Personvern og om appen har en ny bryter, «Del bruksdata»: slå den av for å slutte å sende hvordan du bruker appen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lenkene du deler til profilen din, til en kommentar og for å laste ned appen, viser nå forhåndsvisningen på ditt språk.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
