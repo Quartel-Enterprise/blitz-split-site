@@ -57,7 +57,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's and Serbian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", ta: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -421,6 +421,16 @@
       mismatchBody: "Používaš {platform}. Najlepšie si aplikáciu stiahni {in}.",
       mismatchGo: "Prejsť {to}", mismatchStay: "Aj tak pokračovať {to}", close: "Zavrieť",
       in: { play: "z Google Play", appstore: "z App Store" }, to: { play: "na Google Play", appstore: "do App Store" },
+    },
+    ta: {
+      play: ["இப்போதே பெறுங்கள்", "விரைவில் வருகிறது"], appstore: ["பதிவிறக்குங்கள்", "விரைவில் வருகிறது"], web: ["இப்போதே திறங்கள்", "விரைவில் வருகிறது"], browser: "பிரவுசர்",
+      getApp: "ஆப்பைப் பெறவும்", openWeb: "வெப் ஆப்பைத் திறக்கவும்", soon: "விரைவில் வருகிறது",
+      noteStore: "ஆப்பை {in} பெறுங்கள்.", noteApple: "{platform} பயன்படுத்துகிறீர்களா? App Store-இல் ஆப் வரும் வரை பிரவுசரில் பயன்படுத்துங்கள்.", noteWeb: "எதையும் நிறுவாமல் பிரவுசரில் திறங்கள்.",
+      playLive: "Google Play-இல் கிடைக்கிறது", appStoreLive: "App Store-இல் கிடைக்கிறது", webLive: "வெப் ஆப்பைத் திறக்கவும்",
+      mismatchTitle: "உங்கள் ஸ்டோரைத் தேர்ந்தெடுங்கள்",
+      mismatchBody: "நீங்கள் {platform} பயன்படுத்துகிறீர்கள். சிறந்த அனுபவத்துக்கு, ஆப்பை {in} பெறுங்கள்.",
+      mismatchGo: "{to} செல்லவும்", mismatchStay: "இருந்தாலும் {to} செல்லவும்", close: "மூடவும்",
+      in: { play: "Google Play-இலிருந்து", appstore: "App Store-இலிருந்து" }, to: { play: "Google Play-க்கு", appstore: "App Store-க்கு" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
