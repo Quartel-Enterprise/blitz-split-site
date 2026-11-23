@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Aplikácia teraz hovorí po arabsky, s rozložením sprava doľava: vyber „العربية“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v saudskom riale (SAR), dirhame SAE (AED), egyptskej libre (EGP) a marockom dirhame (MAD) a skupina založená v jednej z týchto krajín začína v jej mene.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po čínsky (zjednodušene): vyber „中文（简体）“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v čínskom jüane (CNY) a skupina založená v pevninskej Číne v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po čínsky (tradične): vyber „中文（繁體）“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v novom taiwanskom dolári (TWD) a skupina založená na Taiwane v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po česky: vyber „Čeština“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v českej korune (CZK) a skupina založená v Česku v nej začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Každá skupina má teraz vlastnú pripomienku na vyrovnanie: nechaj týždennú v pondelok o 10:00, vyber iný deň v týždni alebo deň v mesiaci a čas (napríklad každého 25. o 12:00), alebo ju vypni, pri zakladaní skupiny alebo v Upraviť skupinu. Upozornenie dostanú len tí, čo ešte dlžia, a v skupine uvidia banner, ktorý môžu zavrieť.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po hebrejsky, s rozložením sprava doľava: vyber „עברית“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v novom izraelskom šekele (ILS) a skupina založená v Izraeli v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po hindsky: vyber „हिन्दी“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v indickej rupii (INR) a skupina založená v Indii v nej začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po rumunsky: vyber „Română“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v rumunskom leu (RON) a skupina založená v Rumunsku v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po švédsky: vyber „Svenska“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť vo švédskej korune (SEK) a skupina založená vo Švédsku v nej začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po thajsky: vyber „ไทย“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v thajskom bahte (THB) a skupina založená v Thajsku v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po vietnamsky: vyber „Tiếng Việt“ v Profil › Jazyk, alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť vo vietnamskom dongu (VND) a skupina založená vo Vietname v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ťukni na fotku skupiny v hornej lište výdavku a uvidíš ju vo veľkom.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ťuknutie na stlmený prepínač Zjednodušiť dlhy v skupine dvoch ti teraz povie, že bude dostupný, keď bude mať skupina 3 ľudí.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V časti Ako to funguje pri Zjednodušiť dlhy teraz príklad zobrazuje fotky ľudí namiesto iniciál.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Opravili sme gesto späť, ktoré neopustilo profil osoby otvorený z okna platby; teraz sa vráti do okna.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Sumy a popisy sa už nezalamujú ani neorezávajú na malých obrazovkách, skladacích telefónoch a pri veľkom písme.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Text, tlačidlá a obrysy, ktoré sa ťažko čítali, majú teraz vyšší kontrast vo svetlom aj tmavom vzhľade.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ťuknutie na políčko v prehliadači iPhonu už nepribližuje stránku.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

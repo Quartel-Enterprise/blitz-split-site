@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "V Poznámkach k vydaniu ťukni na verziu a otvoríš jej vydanie na GitHube, alebo na tlačidlo GitHub a uvidíš všetky vydania.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Stránka skupiny, pozvánka a podrobnosti výdavku teraz zobrazujú vedľa seba fotky až piatich ľudí namiesto dvoch.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPade alebo na otvorenom iPhone Duo naležato teraz skupina na celú obrazovku (otvorená napríklad z Domova) zobrazuje vedľa výdavkov svoju fotku, členov a tvoj zostatok.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ťuknutie na kartu Celkový zostatok na Domove teraz otvorí kartu Zostatky.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Keď na telefóne otvoríš skupinu alebo výdavok z Domova, zostatok skupiny alebo ikona, názov, celková suma a tvoj podiel výdavku teraz preletia do jeho obrazovky a pri návrate zase späť.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Jazyk teraz uvádza španielčinu dvakrát, „Español (Latinoamérica)“ a „Español (España)“, aby si si vybral(a) tú, ktorou hovoríš, nech je tvoje zariadenie kdekoľvek.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Keď telefón alebo tablet leží, to, čo je v Kontaktoch a Zostatkoch vedľa zoznamu, teraz začína hore na obrazovke, s tvojou profilovou fotkou nad zoznamom.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Okraj tlačidla „Pridať osobu“ v Členoch skupiny je lepšie vidieť.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Farba karty v „Spôsoby platby“ sa teraz vyberá z tých istých farieb ako kategórie: dvanásť farieb, tvoje vlastné a „Nová farba“ na vytvorenie ďalšej.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V „Rozdeliť výdavok“ je „Zaplatené cez“ teraz malé tlačidlo pod Rozdelením a ak ešte nemáš žiadny spôsob platby, „Pridať spôsob platby“ ho vytvorí priamo tam a vyberie ho pre výdavok. Debetné karty majú teraz aj vlastnú ikonu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pridanie alebo úprava spôsobu platby v Profile sa teraz otvorí nad ním namiesto samostatnej obrazovky.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dynamické farby teraz vysvetľujú, že aplikácia preberá systémové farby Androidu, ktoré pochádzajú z tvojej tapety alebo z palety, ktorú si vybral(a) v nastaveniach Androidu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "So zapnutým obmedzením pohybu teraz Štatistiky skupiny zobrazia grafy hneď, bez rastúcich stĺpcov a dobiehajúceho kruhu.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "V brazílskej portugalčine Aktivita a história výdavku písali „Você criaste“ a podobne namiesto „Você criou“.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Opravili sme dátumy vo výbere dátumu v Štatistikách, ktoré sa lámali po jednom či dvoch písmenách na riadok; koncový dátum sa teraz presunie pod začiatočný, keď sa oba nezmestia.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Opravili sme upozornenia a niekoľko viet, ktoré sa v španielčine zo Španielska a portugalčine z Portugalska zobrazovali po anglicky alebo ako kód, napríklad „push.bill_deleted“.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Opravili sme rad ľudí na Domove v portugalčine z Portugalska, kde pod menom stálo „te deve“ namiesto „deve-te“.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
