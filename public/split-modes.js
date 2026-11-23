@@ -1090,6 +1090,36 @@
         less: "Един дял по-малко: {name}", more: "Един дял повече: {name}", had: "Кой взе: {item}",
       },
     },
+    // Catalan: a message with "|" holds its forms for {n}, "one|other|other" (1 part, 2 parts), and fill picks one. A
+    // filled-in name never takes a contracted article (l’, d’): it stands as the subject or after a colon; "tu" for the user.
+    ca: {
+      bill: "Nit de pizza", paid: "Pedro ha pagat", notIn: "No hi participa",
+      each: "{a} cadascú", among: "{a} entre {n} persones.", amongOne: "{a} per a 1 persona.", out: "{name} no hi participa.",
+      nobody: "Encara no hi ha ningú", nobodyEqual: "Marca almenys una persona per dividir {a}.",
+      checkAll: "Marcar tots", uncheckAll: "Desmarcar tots",
+      left: "Falten {a}", over: "Sobren {a}", closed: "Quadra: {a}",
+      progress: "{a} de {b} de moment.", closedMsg: "Les parts sumen el total.",
+      parts: "{n} part de {a}|{n} parts de {a}|{n} parts de {a}", personParts: "{name} té {n} parts.",
+      nobodyShares: "Dona almenys una part a una persona per dividir {a}.",
+      ofEach: "{p} de cada despesa", ofBill: "{p} de la despesa", incomeDetail: "La part de cadascú segueix els seus ingressos.", perMonth: "/mes",
+      service: "Servei ({p})", serviceSub: "Segons el que ha pres cadascú",
+      loose: "Marca qui ha pres cada article", looseDetail: "Toca les cares de cada article per marcar qui l’ha pres.",
+      itemsClosed: "{a} en articles i {b} de servei.", nobodyItem: "No hi ha ningú marcat", eachItem: "{a} cadascú",
+      items: { pizza: "Pizza gran", beer: "Cervesa", salad: "Amanida", draft: "Canya", shrimp: "Ració de gambes" },
+      receiptBill: "Bar del Port",
+      hint: {
+        equal: "Quan no es pot dividir exactament, els cèntims que sobren són per a qui ha pagat.",
+        amounts: "Qui es quedi a {zero} queda fora de la despesa.",
+        percent: "Només nombres enters. Els cèntims que sobren són per a qui ha pagat.",
+        shares: "Fes servir parts quan algú té més, com qui ha portat un acompanyant.",
+        income: "Els ingressos es queden al dispositiu. El grup només veu els percentatges.",
+        items: "Cada article es divideix entre qui l’ha pres, i el servei, segons el que ha pres cadascú.",
+      },
+      label: {
+        amount: "Import: {name}", percent: "Percentatge: {name}", income: "Ingressos mensuals: {name}",
+        less: "Una part menys: {name}", more: "Una part més: {name}", had: "Qui ha pres: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split ara parla neerlandès, japonès, turc i indonesi, i la llista d’idiomes mostra cada idioma en la seva pròpia llengua.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups i les despeses ara poden fer servir el zloty polonès, la lira turca i la rupia indonèsia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil té un botó nou, Compartir el perfil: qui obre el teu enllaç veu el teu nom i la teva foto i et pot convidar a un grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’enllaç d’invitació d’un grup nou està a punt de seguida, fins i tot sense connexió, i Membres té un botó nou per copiar-lo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Si tanques un formulari amb alguna cosa sense desar, ara primer et pregunta «Vols descartar els canvis?».",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La Política de privadesa i les Condicions d’ús ara s’obren dins de l’app en lloc del navegador.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Al telèfon, les barres superior i inferior ara s’amaguen quan et desplaces cap avall i tornen quan et desplaces cap amunt.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "A Dividir una despesa, triar una data ja no salta directament al rellotge: l’hora té el seu propi botó.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Toca el grup a la part superior de Dividir una despesa per obrir-lo; quan tornes enrere, tornes a la despesa amb tot el que havies escrit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les Últimes despeses d’Inici ara mostren el grup de cada despesa i qui ha pagat amb fotos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix ara només apareix a qui és probable que el faci servir, com qui usa l’app en portuguès, té una clau Pix o és en un grup en reals.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Sincronitzant…» ara només apareix la primera vegada que el teu compte es carrega en un dispositiu, no a cada sincronització.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil ja no ofereix desconnectar Google o Apple del teu compte: en lloc d’això, tanca la sessió o suprimeix el compte.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Editar el perfil ara s’obre en un full damunt de Perfil en lloc d’una pantalla a part.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "La franja en blanc entre el formulari i el teclat a Dividir una despesa ha desaparegut.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Els Grups en comú d’un contacte ara mostren la foto de cada grup.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -687,6 +687,23 @@
       bills: (n) => `${n} ${n === 1 ? "разход" : "разхода"}`,
       titles: { b1: "Къща за гости в Лагоа", b2: "Вечеря в Рибейрао", b3: "Превоз до плажа", p1: "Сладолед на плажа", p2: "Седмично пазаруване", p3: "Паркинг" },
     },
+    ca: {
+      paid: "{name} ha pagat", notIn: "No hi participes",
+      members: (people, bills) => `${people} ${people === 1 ? "persona" : "persones"} · ${bills} ${bills === 1 ? "despesa" : "despeses"}`,
+      toGet: "per cobrar", youOwe: "deus", settled: "tot liquidat", owesYou: "Et deuen", youOweTitle: "Deus",
+      eachOne: "Saldo de cadascú", getsBack: "cobra", owes: "deu", even: "comptes liquidats",
+      toSettle: "Per liquidar", total: "Total del grup", lodging: "Allotjament", food: "Menjar", transport: "Transport",
+      sheetTitle: "Dividir una despesa", description: "Descripció", amount: "Import", whoPaid: "Qui ha pagat",
+      splitAmong: "Dividir a parts iguals entre", each: "{value} cadascú", cancel: "Cancel·lar", save: "Desar", close: "Tancar",
+      queue: (n) => `${n} ${n === 1 ? "canvi" : "canvis"} a la cua`,
+      split: "Com s’ha dividit", yourShare: "La teva part", deleteBill: "Suprimir la despesa",
+      recordPayment: "Registrar un pagament", record: "Registrar", viaMethod: "per transferència", payment: "Pagament", deletePayment: "Suprimir el pagament",
+      payLine: (from, to) => `${name(from)} ha pagat a ${name(to)}`,
+      paidYou: (who, value) => `${who} t’ha pagat ${value}`,
+      paidTotal: "Pagat en total", shareTotal: "Part de les despeses", balance: "Saldo",
+      bills: (n) => `${n} ${n === 1 ? "despesa" : "despeses"}`,
+      titles: { b1: "Pensió a Lagoa", b2: "Sopar a Ribeirão", b3: "Trajecte a la platja", p1: "Gelat a la platja", p2: "Compra de la setmana", p3: "Aparcament" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1127,7 +1144,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", bg: "bg", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", bg: "bg", ca: "ca", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

@@ -61,6 +61,7 @@ const CHROME = {
   fa: { language: "فارسی", brand: "Blitz Split", locale: "fa-u-nu-latn-ca-gregory", updated: "آخرین به‌روزرسانی: {date}", read: "زمان مطالعه: {n} دقیقه", toc: "در این صفحه" },
   sw: { language: "Kiswahili", brand: "Blitz Split", locale: "sw", updated: "Imesasishwa {date}", read: "Dakika {n} za kusoma", toc: "Kwenye ukurasa huu" },
   bg: { language: "Български", brand: "Blitz Split", locale: "bg", updated: "Обновено на {date}", read: "{n} мин. четене", toc: "На тази страница" },
+  ca: { language: "Català", brand: "Blitz Split", locale: "ca", updated: "Actualitzat el {date}", read: "{n} min de lectura", toc: "En aquesta pàgina" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.

@@ -215,6 +215,11 @@
       lines: [["2 НАЛИВНА БИРА", "28,00", 1], ["1 ПЛАТО СКАРИДИ", "96,00", 2]],
       subtotal: ["МЕЖДИННА СУМА", "124,00"], service: ["ОБСЛУЖВАНЕ 10%", "12,40", 3], total: ["ОБЩО", "136,40"],
     },
+    ca: {
+      store: "BAR DEL PORT", address: "C. de les Gavines, 120", date: "08/11/2026  21:47",
+      lines: [["2 CANYA", "28,00", 1], ["1 RACIÓ GAMBES", "96,00", 2]],
+      subtotal: ["SUBTOTAL", "124,00"], service: ["SERVEI 10 %", "12,40", 3], total: ["TOTAL", "136,40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

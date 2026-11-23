@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split ara parla alemany, italià i polonès: segueix l’idioma del dispositiu, o en pots triar un a Perfil › Idioma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ara cada categoria té el seu color, i Estadístiques dibuixa cada categoria i cada persona amb el seu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ara pots canviar el color d’una categoria, al formulari de la categoria o a Mapa de categories.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "El menú d’una despesa a Despeses té una opció nova, Duplicar: obre una despesa nova ja emplenada com l’original.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups i les despeses ja no desapareixen un moment quan tornes a l’app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La cerca ja no es tanca de seguida quan encara no tens cap grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ara un grup nou comença com a Esdeveniment, el primer tipus de la llista.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sense cap grup encara, Convidar amb enllaç o QR ara només mostra el botó Grup nou en lloc de botons que no podies fer servir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Un tiquet que triga més a llegir-se ja no acaba amb un error de connexió.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Les files de categoria d’Estadístiques són més netes: ja no mostren l’import de cada subcategoria.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

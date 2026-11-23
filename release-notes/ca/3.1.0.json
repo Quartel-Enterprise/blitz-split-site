@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split a l’Apple Watch: connecta’l al compte del teu iPhone, consulta els teus saldos i els grups oberts, toca «He pagat» en un grup on deus i afegeix el teu saldo total a una esfera del rellotge o a la Pila intel·ligent; un cop connectat, el rellotge funciona tot sol.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "L’app ara parla bengalí, malai i grec: tria «বাংলা», «Bahasa Melayu» o «Ελληνικά» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden fer servir el taka de Bangladesh i el ringgit malaisi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla croat: tria «Hrvatski» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla filipí: tria «Filipino» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en peso filipí (PHP, «₱»), i un grup creat a les Filipines comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla hongarès: tria «Magyar» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden fer servir el fòrint hongarès.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Afegeix el widget Saldos a la pantalla d’inici o a la pantalla de bloqueig del teu iPhone o iPad per veure d’un cop d’ull el teu saldo total i els teus grups oberts; toca’l per obrir Saldos.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Els grups ara poden fer servir les monedes de Bolívia, Veneçuela, Costa Rica, Guatemala, Hondures, Nicaragua, la República Dominicana i Cuba, i un grup creat en aquests països comença en la moneda local.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla serbi: tria «Srpski» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en dinar serbi (RSD), i un grup creat a Sèrbia comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla urdú: tria «اردو» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en rupia pakistanesa (PKR), i un grup creat al Pakistan comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Si toques la notificació d’una despesa nova, la despesa s’obre de seguida: l’app la porta tan bon punt arriba la notificació.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "La pantalla de benvinguda dels telèfons ara mostra només el logotip a dalt, i deixa més espai per als botons.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "L’avís «És hora de liquidar comptes» del grup ja no mostra una data de recordatori d’abans que es configurés o es canviés el recordatori: un recordatori canviat al dia 25 espera fins al dia 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

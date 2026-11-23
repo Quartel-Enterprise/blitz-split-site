@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split és completament nou: refet des de zero, per a Android, iPhone, iPad, Mac i el web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Divideix una despesa a parts iguals, per imports, per percentatge, per parts o per articles. Escaneja el tiquet i tria qui ha pres què.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Funciona sense connexió i sense compte. Inicia la sessió amb Google o Apple per mantenir els teus grups sincronitzats entre els teus dispositius.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

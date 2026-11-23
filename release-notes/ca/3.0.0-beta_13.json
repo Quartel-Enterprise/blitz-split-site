@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "L’app ara parla rus i ucraïnès: tria «Русский» o «Українська» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en ruble rus (RUB) i en hrívnia ucraïnesa (UAH), i un grup creat a Rússia o a Ucraïna comença en la seva moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil té una preferència nova, «Format de l’hora»: segueix el sistema o mostra sempre les hores en format de 24 hores (14:30) o de 12 hores amb AM i PM (2:30 PM), a les despeses, a Activitat, als comentaris i als selectors d’hora.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amb el telèfon en horitzontal, i a les tauletes, «Dividir una despesa» d’un grup ara és a la barra superior en lloc de flotar sobre les despeses.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Amb Colors dinàmics activat, el que deus es manté en taronja en lloc de tornar-se vermell, perquè mai no s’assembli al verd del que et tornen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A Activitat, cada línia ara mostra la foto del grup al costat del nom, quan el grup en té.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "El teu saldo en aquest grup ja no repeteix l’import en una segona línia quan només et deuen o només deus.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Divisió per defecte, la part de cada persona a la despesa d’exemple ara té un color propi, amb un punt del mateix color davant del nom, perquè les persones que són una al costat de l’altra a la llista no semblin una de sola.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La barra superior d’una despesa ara mostra la foto del grup, o les seves inicials, al costat del nom del grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Quan toques la foto d’algú, ara viatja fins al seu perfil, i torna quan tornes enrere.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Una despesa oberta des de Despeses d’un grup ara es col·loca al seu lloc igual que des d’Inici, i la foto del grup a les despeses d’Inici vola fins a la barra superior de la despesa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "«Dividir una despesa» ara també és a dalt de tot de Saldos i Contactes, i a la pantalla del grup ha passat a la barra superior en lloc de flotar sobre la llista, amb «Afegir persones» ara al menú ⋯. Comença amb el nom i s’encongeix fins a la icona quan et desplaces.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "A Grups, tocar la targeta Saldo total obre Saldos.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "«Convidar persones» d’un grup ara es diu «Afegir persones».",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A l’iPad, les pestanyes s’obren a la barra lateral, i quan són a la barra superior, com amb l’iPad en vertical, «Dividir una despesa» continua a la vista allà mentre els altres botons passen a una fila just a sota.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "A «Dividir una despesa», «Pagat amb» ara també apareix, atenuat, quan ha pagat la despesa una altra persona: si el toques, explica que només qui ha pagat pot indicar amb què ha pagat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sense compte, el teu codi de recuperació ara són 12 paraules numerades, més fàcils d’apuntar, i per restaurar-lo s’escriu una paraula per camp, amb suggeriments de cada paraula mentre escrius. Els codis desats abans d’aquesta versió ja no funcionen: desa el nou o connecta Google o Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Despeses per categoria, cada despesa ara té el mateix menú ⋮ que a les despeses d’un grup: edita-la, duplica-la, comparteix-la o suprimeix-la sense obrir-la.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A les pantalles amples (un telèfon en horitzontal, les tauletes, el Mac i el web), Despeses per categoria manté les categories i el total en una columna al costat de les despeses.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En alemany, neerlandès i japonès, les frases d’Activitat ara segueixen l’ordre natural de les paraules de cada idioma, sense dos punts davant del nom de la despesa o del grup.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "La primera lletra d’«Afegir una foto», sota els adjunts d’una despesa, ja no queda tallada.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "A Grups, el botó per crear un grup ara diu «+ Grup» i ja no es parteix en dues línies.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Les notes de la versió ara mostren la versió que acabes d’instal·lar, en lloc d’esperar fins a un dia per portar-ne les notes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Estadístiques d’un grup, el botó del període («Des del principi») ja no es parteix en dues línies: les dates passen a sota quan no hi caben totes dues.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}
