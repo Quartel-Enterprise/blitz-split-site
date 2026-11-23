@@ -33,7 +33,9 @@ Builds doesn't deploy it: run `npm run deploy:redirect` ([`docs/development.md`]
 - The markup is in English. Every string a page shows has a `data-i18n` key with its words in every other language of
   the site in the page's `window.SITE_STRINGS`, or, for words a script shows on every page (the language picker, the
   store dialog), a dictionary keyed by language in that script; the legal pages write every language in full in
-  `data-lang` blocks, generated from `public/legal/*.md`. The languages are `SUPPORTED` in `public/boot.js`, the one
+  `data-lang` blocks, generated from `public/legal/*.md`. The landing and the support page keep their
+  `SITE_STRINGS` out of the HTML, one file per language (`public/strings/<page>/<language>.js`), and `boot.js` loads
+  only the one it picks: never set them inline there, and give a new language (and a variant) its file in both. The languages are `SUPPORTED` in `public/boot.js`, the one
   list, and a variant in its `VARIANTS` (`pt-PT`) holds only the words it says differently
   ([`docs/design.md`](docs/design.md)). Add every language in the same change: `npm run check:translations` fails on a
   missing one, as CI does.

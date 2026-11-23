@@ -6,7 +6,7 @@ Plain HTML with no build: `public/site.css` holds the design system's tokens (th
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
 Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish and Finnish. The markup is in English; each page carries its other languages' strings in
-`window.SITE_STRINGS`, and the legal pages write each language in full, in blocks marked `data-lang` (every
+`window.SITE_STRINGS` ([where they are written](#a-pages-strings)), and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the language picker picks another, kept for the next visit, or "System" again, which forgets it and follows the
 browser (`boot.js` sets `data-lang-pref` to the language chosen or `system`);
@@ -178,7 +178,7 @@ worth much less than the dollar, so the demo's own amounts are multiplied by a w
 that currency's own cents: every split adds up exactly and an amount typed in the split card stays as typed. Greek, Croatian, Slovak, Bulgarian, Catalan and Finnish are in euros. Swahili is in Kenyan shillings for every `sw` visitor, Tanzania's too (the apps also have the Tanzanian shilling, which has no cents in use). The demo keeps every amount in cents and the ten with no cents in use (the five below, and the taka in Bengali and the Pakistani rupee in Urdu, grouped as India's, the forint in Hungarian and the dinar in Serbian, a cent being one of each, and the Iranian rial in Persian, a cent being a thousand rials, so Persian's trip costs a tenth of the others' at a plausible million rials to the dollar and its amounts still fit a 320px phone, written ریال 4,860,000 for the ride (the phone's balance also shrinks with a narrow screen, `site.css`), the symbol first as `Intl` writes it, which reads after the number in the right-to-left line) show it scaled to whole
 units (a cent is Rp100, ¥1, ₩10, 10 ₫ and NT$1, the smallest whole scale, which keeps every split exact), so a $48.60 ride reads Rp486.000, ¥4,860, ₩48,600, 48.600 ₫ or NT$4,860 and every split still adds
 up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫, Rp100 or a thousand rials, and a field grows with what it
-holds. The page's own amounts in `SITE_STRINGS` and each receipt in `scan.js` are written the same way, by hand, so the
+holds. The page's own amounts in `SITE_STRINGS` (`public/strings/index/`) and each receipt in `scan.js` are written the same way, by hand, so the
 first paint shows them before any script runs.
 
 The language picker is the apps' Profile › Language: the header's translate button (with the code of the language
@@ -205,6 +205,25 @@ The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the 
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
 `geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Bengali, Greek, Urdu, Persian, Tamil, Telugu, Marathi and Bulgarian fall back to the system's font, since neither subset has their
 scripts (or, for Vietnamese, its Latin Extended Additional letters).
+
+### A page's strings
+
+`site.js` reads a page's words in the language `boot.js` picked from `window.SITE_STRINGS`, keyed by language, each
+language keyed by the page's `data-i18n` keys. A page sets it one of two ways:
+
+- **One file per language**, on the landing and the support page, whose words would otherwise be nine tenths of the
+  HTML every visitor downloads (43 languages of the landing were 418 KB of its 459 KB): `public/strings/index/<language>.js`
+  and `public/strings/support/<language>.js`, written by hand, each adding its own language
+  (`(window.SITE_STRINGS = window.SITE_STRINGS || {})["pt"] = { … }`). The page's `boot.js` names the folder,
+  `<script src="/boot.js" data-strings="index">`, and `boot.js` writes the picked language's `<script>` into `<head>`
+  with `document.write`, then the variant's (`pt-PT.js`, only the words it says differently) when it picked one. The
+  parser waits for a script written that way, so the words are there before the page is drawn and nobody sees it in
+  English first; an English visitor fetches none. Every language of `SUPPORTED` but English and every variant of
+  `VARIANTS` needs its file in each folder, even with no word of its own: the site answers a file that isn't there
+  with the landing's HTML (`not_found_handling` in `wrangler.jsonc`), which `npm run check:translations` keeps from
+  happening.
+- **Inline**, in a `<script>` before `site.js`, on the legal pages and the release notes, where the strings are only
+  the header's and the footer's, small beside the text those pages write in every language.
 
 ## Motion
 
@@ -275,7 +294,8 @@ CI does, when one of them has another address ([ci.md](ci.md#translations)).
 Every page's footer links Support among its links and shows the address under the tagline, as a `mailto:` link. The
 footer is written in each page, since the site has no build: `public/index.html`, `public/privacy.html`,
 `public/terms.html`, `public/support.html` and the release notes' shell, `pages/release-notes.html`. Change all five
-the same way, each with its own `SITE_STRINGS`.
+the same way, each with its own `SITE_STRINGS` (the landing's and the support page's in `public/strings/`, the
+others' inline: [a page's strings](#a-pages-strings)).
 
 The copyright line's year is the current one: each footer marks it (`<span data-year>2026</span>`) and `site.js`
 fills it when the page loads, so it moves on by itself when the year turns. The year in the markup is what shows

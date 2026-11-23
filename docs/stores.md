@@ -12,7 +12,7 @@ header shows no download button. `?platform=android|ios|mac|desktop` pins one. T
 A phone or a Mac sees the other platform's store only once both stores offer the app, when "Choose your store" can
 stand in front of it. On a computer the header's main button is the web app. A line over the hero's badges says what
 this visitor can do right now (`noteStore`, `noteApple`, `noteWeb` in `stores.js`). When the App Store goes live, also
-rewrite the FAQ's `q5a` in `public/index.html` and the first paragraph of `public/llms.txt`, which say iPhone, iPad and
+rewrite the FAQ's `q5a` in `public/index.html` (and in every language of `public/strings/index/`) and the first paragraph of `public/llms.txt`, which say iPhone, iPad and
 Mac use the browser for now.
 
 The Google Play links carry the visit's `utm_*` values in `referrer`, so an install can be traced to its campaign.
