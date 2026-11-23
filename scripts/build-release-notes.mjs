@@ -67,6 +67,7 @@ const CHROME = {
   sk: { language: "Slovenčina", brand: "Blitz Split", locale: "sk", title: "Novinky", lead: "Čo sa zmenilo v každej verzii aplikácie.", showBeta: "Zobraziť beta verzie", beta: "Beta", empty: "Zatiaľ neexistuje stabilná verzia. Zapni beta verzie a uvidíš, čo sa testuje.", platforms: { android: "Android", ios: "iPhone a iPad", mac: "Mac", web: "Web" } },
   nb: { language: "Norsk bokmål", brand: "Blitz Split", locale: "nb", title: "Versjonsmerknader", lead: "Hva som er endret i hver versjon av appen.", showBeta: "Vis betaversjoner", beta: "Beta", empty: "Det finnes ingen stabil versjon ennå. Slå på betaversjoner for å se hva som testes.", platforms: { android: "Android", ios: "iPhone og iPad", mac: "Mac", web: "Nett" } },
   fa: { language: "فارسی", brand: "Blitz Split", locale: "fa-u-nu-latn-ca-gregory", title: "تازه‌ها", lead: "آنچه در هر نسخه از برنامه تغییر کرد.", showBeta: "نمایش نسخه‌های بتا", beta: "بتا", empty: "هنوز نسخه پایداری وجود ندارد. برای دیدن آنچه در حال آزمایش است، نسخه‌های بتا را روشن کنید.", platforms: { android: "Android", ios: "iPhone و iPad", mac: "Mac", web: "وب" } },
+  sw: { language: "Kiswahili", brand: "Blitz Split", locale: "sw", title: "Kipya ni nini", lead: "Kilichobadilika katika kila toleo la programu.", showBeta: "Onyesha matoleo ya beta", beta: "Beta", empty: "Bado hakuna toleo thabiti. Washa matoleo ya beta ili uone kinachojaribiwa.", platforms: { android: "Android", ios: "iPhone na iPad", mac: "Mac", web: "Wavuti" } },
 };
 
 class NotesError extends Error {}

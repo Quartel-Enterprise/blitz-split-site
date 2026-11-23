@@ -1032,6 +1032,34 @@
         less: "یک سهم کمتر: {name}", more: "یک سهم بیشتر: {name}", had: "چه کسی گرفت: {item}",
       },
     },
+    sw: {
+      bill: "Usiku wa pizza", paid: "Imelipwa na: Pedro", notIn: "Hayumo kwenye hii",
+      each: "{a} kila mmoja", among: "{a} kwa watu {n}.", amongOne: "{a} kwa mtu 1.", out: "{name} hayumo.",
+      nobody: "Bado hakuna aliyemo", nobodyEqual: "Chagua angalau mtu mmoja ili kugawanya {a}.",
+      checkAll: "Chagua wote", uncheckAll: "Ondoa wote",
+      left: "Imebaki {a}", over: "Imezidi {a}", closed: "Imetimia: {a}",
+      progress: "{a} kati ya {b} hadi sasa.", closedMsg: "Sehemu zinalingana na jumla.",
+      parts: "Sehemu {n} za {a}", personParts: "{name} ana sehemu {n}.",
+      nobodyShares: "Mpe angalau mtu mmoja sehemu ili kugawanya {a}.",
+      ofEach: "{p} ya kila gharama", ofBill: "{p} ya gharama", incomeDetail: "Sehemu ya kila mtu inafuata kipato chake.", perMonth: "/mwezi",
+      service: "Huduma ({p})", serviceSub: "Kulingana na alichotumia kila mtu",
+      loose: "Weka alama kwa aliyetumia kila bidhaa", looseDetail: "Gusa nyuso kwenye kila bidhaa ili kuweka alama kwa aliyeitumia.",
+      itemsClosed: "{a} kwa bidhaa na {b} kwa huduma.", nobodyItem: "Hakuna aliyechaguliwa", eachItem: "{a} kila mmoja",
+      items: { pizza: "Pizza kubwa", beer: "Soda", salad: "Saladi", draft: "Juisi ya matunda", shrimp: "Sahani ya kamba" },
+      receiptBill: "Mgahawa wa Bandarini",
+      hint: {
+        equal: "Isipogawanyika sawa, senti zinazobaki zinaenda kwa aliyelipa.",
+        amounts: "Aliyebaki na {zero} hayumo kwenye gharama.",
+        percent: "Namba kamili tu. Senti zinazobaki zinaenda kwa aliyelipa.",
+        shares: "Tumia sehemu mtu anapotumia zaidi, kama aliyekuja na mgeni.",
+        income: "Vipato vinabaki kwenye kifaa. Kikundi kinaona asilimia tu.",
+        items: "Kila bidhaa inagawanywa kati ya walioitumia, na huduma kulingana na alichotumia kila mtu.",
+      },
+      label: {
+        amount: "Kiasi cha {name}", percent: "Asilimia ya {name}", income: "Kipato cha mwezi cha {name}",
+        less: "Punguza sehemu moja ya {name}", more: "Ongeza sehemu moja kwa {name}", had: "Waliotumia: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

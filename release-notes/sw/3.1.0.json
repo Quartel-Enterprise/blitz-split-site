@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split kwenye Apple Watch: iunganishe na akaunti ya iPhone yako, ona salio lako na vikundi vilivyo wazi, gusa Nimelipa kwenye kikundi unachodaiwa, na ongeza salio lako la jumla kwenye uso wa saa au Smart Stack; ikishaunganishwa, saa hufanya kazi yenyewe.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Programu sasa inazungumza Kibengali, Kimalei na Kigiriki: chagua \"বাংলা\", \"Bahasa Melayu\" au \"Ελληνικά\" katika Wasifu › Lugha, au iache ifuate kifaa chako.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vikundi sasa vinaweza kutumia taka ya Bangladesh na ringgit ya Malaysia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programu sasa inazungumza Kikroeshia: chagua \"Hrvatski\" katika Wasifu › Lugha, au iache ifuate kifaa chako.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programu sasa inazungumza Kifilipino: chagua \"Filipino\" katika Wasifu › Lugha, au iache ifuate kifaa chako.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vikundi sasa vinaweza kugawanya kwa peso ya Ufilipino (PHP, \"₱\"), na kikundi kilichoundwa Ufilipino huanza nayo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programu sasa inazungumza Kihungaria: chagua \"Magyar\" katika Wasifu › Lugha, au iache ifuate kifaa chako.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vikundi sasa vinaweza kutumia forint ya Hungaria.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ongeza wijeti ya Salio kwenye Skrini ya Mwanzo au Skrini iliyofungwa ya iPhone au iPad yako ili uone salio lako la jumla na vikundi vyako vilivyo wazi kwa mtazamo mmoja; igusa ili ufungue Salio.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Vikundi sasa vinaweza kutumia sarafu za Bolivia, Venezuela, Kosta Rika, Guatemala, Honduras, Nikaragua, Jamhuri ya Dominika na Kuba, na kikundi kilichoundwa huko huanza kwa sarafu yake.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programu sasa inazungumza Kiserbia: chagua \"Srpski\" katika Wasifu › Lugha, au iache ifuate kifaa chako.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vikundi sasa vinaweza kugawanya kwa dinari ya Serbia (RSD), na kikundi kilichoundwa Serbia huanza nayo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programu sasa inazungumza Kiurdu: chagua \"اردو\" katika Wasifu › Lugha, au iache ifuate kifaa chako.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vikundi sasa vinaweza kugawanya kwa rupia ya Pakistani (PKR), na kikundi kilichoundwa Pakistani huanza nayo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kugusa arifa ya gharama mpya hufungua gharama hiyo papo hapo: programu huileta mara tu arifa inapofika.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Skrini ya kukaribisha kwenye simu sasa huonyesha nembo tu juu, ikiacha nafasi zaidi kwa vitufe.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Bango la kikundi la \"Wakati wa kulipa deni\" halionyeshi tena tarehe ya kikumbusho ya kabla kikumbusho hakijawekwa au kubadilishwa: kikumbusho kilichobadilishwa kuwa tarehe 25 husubiri tarehe 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

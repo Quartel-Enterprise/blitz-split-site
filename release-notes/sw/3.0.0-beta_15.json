@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Kumfungua mtu kutoka Waasiliani au Salio sasa hupeleka jina na salio lake hadi kwenye wasifu wake pamoja na picha, na kurudi tena unaporudi.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Katika Takwimu, katikati ya pete ya \"Kwa mtu\" sasa husema tu \"Wewe\" sehemu hiyo ikiwa yako, na jina refu huishia kwa \"…\" badala ya kugusa pete.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Unapofungua kikundi kutoka Vikundi, nyuso za washiriki wake sasa husafiri kutoka kwenye safu hadi kwenye skrini ya kikundi, na kurudi unapoondoka.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Kwenye simu, kufungua gharama sasa hubeba zaidi ya vitu vyake: aliyelipa husafiri kutoka kwenye safu yake kwenye Mwanzo na Gharama zote, saa kutoka kwenye safu yake kwenye Gharama za kikundi, na picha na jina la kikundi kutoka kwenye skrini ya kikundi. Husafiri kurudi unapoondoka.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Jina la kikundi sasa husafiri hadi kwenye skrini ya kikundi inapofunguka, si wakati wa kurudi tu.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Akaunti isiyo na Google au Apple sasa hufutwa baada ya siku 30 bila kutumika. Skrini ya kukaribisha na Wasifu husema hivyo, na kuunganisha Google au Apple huhifadhi data yako.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sasa unaweza kukadiria programu kutoka Wasifu › Usaidizi na maoni, kwa \"Kadiria programu\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Gharama iliyofunguliwa kutoka Mwanzo au Gharama zote sasa hurudi moja kwa moja ulipoifungulia, bila kupitia kikundi chake.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Imerekebishwa: kiputo cha \"+N\" cha rundo la nyuso kilionekana chini ya uso wa kwanza badala ya juu yake.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}
