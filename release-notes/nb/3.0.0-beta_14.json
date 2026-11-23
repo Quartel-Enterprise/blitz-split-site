@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "En gruppes Utgifter har nå «Se alle», som åpner Alle utgifter allerede filtrert på den gruppen, så du kan søke i, sortere og filtrere utgiftene. Fjern filteret for å se alle gruppene.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I Ny gruppe foreslår «Legg til med navn» nå personer fra Kontakter mens du skriver, med bildet deres: trykk på en for å opprette gruppen med akkurat den personen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Når du blar i en gruppe, viser den sammenfoldede topplinjen bare gruppens bilde og navn, uten medlemmene og totalen avkuttet ved siden av.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Du kan nå laste ned de 12 ordene i gjenopprettingskoden din som en tekstfil.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Lagre gjenopprettingskoden sier nå at koden henter tilbake dataene dine, og at dataene slettes etter 30 dager uten bruk.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Del en utgift har nå også Skann kvittering øverst, ved siden av Lagre, så tastaturet ikke lenger skjuler den, og Legg til en betalingsmåte er mer diskret.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I en gruppes Statistikk er Per person nå et smultringdiagram over hver persons andel, i samme farge som hver person har i Standarddeling, med listen over navn og beløp under som forklaring. Forbrukt og Betalt bytter hva det viser.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Hvem er med» i Ny gruppe viser profilbildet ditt i stedet for initialen din.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Synkroniserer…» dukker ikke lenger opp i Hjem og Grupper hver gang du kommer tilbake til appen: synkroniseringen går stille når gruppene dine er på skjermen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "På nettbrett og med telefonen på tvers blir skyggen til «Del en utgift» øverst i sidefeltet ikke lenger kuttet av i kantene.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

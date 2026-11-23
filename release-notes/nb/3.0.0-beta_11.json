@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "En konto uten Google eller Apple slettes nå etter 30 dager uten bruk. Velkomstskjermen og Profil sier fra om det, og kobler du til Google eller Apple, beholder du dataene dine.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nå kan du vurdere appen fra Profil › Støtte og tilbakemelding, med «Vurder appen».",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "En utgift som er åpnet fra Hjem eller Alle utgifter, går nå rett tilbake dit du åpnet den, uten å gå via gruppen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rettet at «+N»-boblen i en stabel med ansikter ble vist under det første ansiktet i stedet for over det.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

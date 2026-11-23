@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Fanen Saldoer viser ikke lenger en rad med nuller når ingen skylder noe: der står det bare Alt er gjort opp.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rettet en feil der Profil viste Apples logo ved siden av e-posten til en konto logget inn med Google, eller Googles ved siden av en konto logget inn med Apple, når kontoen har begge.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

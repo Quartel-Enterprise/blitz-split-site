@@ -186,6 +186,7 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="hr"] body [data-lang]:not([data-lang="hr"]),
 :root[data-lang="sr"] body [data-lang]:not([data-lang="sr"]),
 :root[data-lang="sk"] body [data-lang]:not([data-lang="sk"]),
+:root[data-lang="nb"] body [data-lang]:not([data-lang="nb"]),
 :root[data-lang="ta"] body [data-lang]:not([data-lang="ta"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
