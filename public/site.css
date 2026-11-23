@@ -128,10 +128,10 @@ p { margin: 0; text-wrap: pretty; }
 :root[lang="vi"], :root [lang="vi"] { --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 :root [lang="vi"] { font-family: var(--font); }
 :root[lang="vi"] .paper { --mono: ui-monospace, SFMono-Regular, Menlo, monospace; }
-/* Arabic, Urdu, Hebrew and Vietnamese draw in the system font, as the bundled Geist subsets have none of Arabic's and Hebrew's letters
-   (nor Vietnamese's Latin Extended Additional letters): no Latin tracking, which would also break Arabic's and Urdu's joined letters apart. */
-:root:is([lang="ar"], [lang="ur"], [lang="he"], [lang="vi"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
-/* Right to left (boot.js sets dir="rtl" for Arabic, Hebrew and Urdu): the sides are written as start and end, so the layout mirrors by
+/* Arabic, Urdu, Persian, Hebrew and Vietnamese draw in the system font, as the bundled Geist subsets have none of Arabic's and Hebrew's letters
+   (nor Vietnamese's Latin Extended Additional letters): no Latin tracking, which would also break Arabic's, Urdu's and Persian's joined letters apart. */
+:root:is([lang="ar"], [lang="ur"], [lang="fa"], [lang="he"], [lang="vi"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .logo, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+/* Right to left (boot.js sets dir="rtl" for Arabic, Hebrew, Urdu and Persian): the sides are written as start and end, so the layout mirrors by
    itself; what still points one way is turned here. Arrows and the back chevron point the reading way, bars grow from
    the start, and the switch's knob slides toward the end. */
 :root[dir="rtl"] .icon:not(.chev):has(use[href="#i-arrow"], use[href="#i-left"]) { transform: scaleX(-1); }
@@ -185,6 +185,7 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="ur"] body [data-lang]:not([data-lang="ur"]),
 :root[data-lang="hr"] body [data-lang]:not([data-lang="hr"]),
 :root[data-lang="sr"] body [data-lang]:not([data-lang="sr"]),
+:root[data-lang="fa"] body [data-lang]:not([data-lang="fa"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
 .skip:focus { inset-inline-start: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }

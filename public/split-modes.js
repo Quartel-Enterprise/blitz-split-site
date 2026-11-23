@@ -946,6 +946,33 @@
         less: "Udeo manje: {name}", more: "Udeo više: {name}", had: "Ko je uzeo: {item}",
       },
     },
+    fa: {
+      bill: "شب پیتزا", paid: "Pedro پرداخت کرد", notIn: "در این هزینه نیست",
+      each: "هر نفر {a}", among: "{a} بین {n} نفر.", amongOne: "{a} برای 1 نفر.", out: "{name} در این هزینه نیست.",
+      nobody: "هنوز کسی انتخاب نشده", nobodyEqual: "برای تقسیم {a} دست‌کم یک نفر را انتخاب کنید.",
+      checkAll: "انتخاب همه", uncheckAll: "لغو انتخاب همه",
+      left: "باقی‌مانده: {a}", over: "اضافه: {a}", closed: "جمع درست است: {a}",
+      progress: "تا اینجا {a} از {b}.", closedMsg: "جمع سهم‌ها با مبلغ کل برابر است.",
+      parts: "{n} سهم از {a}", personParts: "{name}: {n} سهم.", nobodyShares: "برای تقسیم {a} دست‌کم به یک نفر سهم بدهید.",
+      ofEach: "{p} از هر هزینه", ofBill: "{p} از هزینه", incomeDetail: "سهم هر نفر به نسبت درآمد اوست.", perMonth: "/ماه",
+      service: "سرویس ({p})", serviceSub: "به نسبت سفارش هر نفر",
+      loose: "مشخص کنید هر قلم را چه کسی گرفت", looseDetail: "روی چهره‌های هر قلم بزنید تا مشخص شود چه کسی آن را گرفت.",
+      itemsClosed: "{a} برای اقلام و {b} برای سرویس.", nobodyItem: "کسی انتخاب نشده", eachItem: "هر نفر {a}",
+      items: { pizza: "پیتزای بزرگ", beer: "نوشابه", salad: "سالاد", draft: "آب‌میوه تازه", shrimp: "دیس میگو" },
+      receiptBill: "کافه بندر",
+      hint: {
+        equal: "وقتی مبلغ مساوی تقسیم نشود، باقی‌مانده به کسی می‌رسد که پرداخت کرده است.",
+        amounts: "هر کس مبلغش {zero} بماند، در این هزینه نیست.",
+        percent: "فقط اعداد صحیح. باقی‌مانده به کسی می‌رسد که پرداخت کرده است.",
+        shares: "وقتی سهم کسی بیشتر است، مثلاً کسی که مهمان آورده، از سهم استفاده کنید.",
+        income: "درآمدها روی دستگاه می‌مانند. گروه فقط درصدها را می‌بیند.",
+        items: "هر قلم بین کسانی که آن را گرفته‌اند تقسیم می‌شود و سرویس به نسبت سفارش هر نفر.",
+      },
+      label: {
+        amount: "مبلغ: {name}", percent: "درصد: {name}", income: "درآمد ماهانه: {name}",
+        less: "یک سهم کمتر: {name}", more: "یک سهم بیشتر: {name}", had: "چه کسی گرفت: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

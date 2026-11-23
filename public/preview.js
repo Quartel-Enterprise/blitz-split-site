@@ -600,6 +600,24 @@
       bills: (n) => `${n} ${countForm(n, "trošak", "troška", "troškova")}`,
       titles: { b1: "Pansion Lagoa", b2: "Večera: Ribeirão", b3: "Prevoz do plaže", p1: "Sladoled na plaži", p2: "Nedeljna kupovina", p3: "Parking" },
     },
+    fa: {
+      paid: "{name} پرداخت کرد", notIn: "در این هزینه نیست",
+      members: (people, bills) => `${people} نفر · ${bills} هزینه`,
+      toGet: "طلب شما", youOwe: "بدهی شما", settled: "همه تسویه شد", owesYou: "چه کسی به شما بدهکار است", youOweTitle: "بدهی شما",
+      eachOne: "تراز هر نفر", getsBack: "طلبکار", owes: "بدهکار", even: "تسویه شد",
+      toSettle: "برای تسویه", total: "جمع کل گروه", lodging: "اقامت", food: "غذا", transport: "حمل‌ونقل",
+      sheetTitle: "تقسیم هزینه", description: "توضیحات", amount: "مبلغ", whoPaid: "چه کسی پرداخت کرد",
+      splitAmong: "تقسیم مساوی بین", each: "هر نفر {value}", cancel: "لغو", save: "ذخیره", close: "بستن",
+      queue: (n) => `${n} تغییر در صف`,
+      split: "نحوه تقسیم", yourShare: "سهم شما", deleteBill: "حذف هزینه",
+      recordPayment: "ثبت پرداخت", record: "ثبت", viaMethod: "با انتقال وجه", payment: "پرداخت", deletePayment: "حذف پرداخت",
+      // Why "→": the names are Latin, so the line runs left to right even in a right-to-left page, as the Balances tab's does.
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} به شما ${value} پرداخت کرد`,
+      paidTotal: "جمع پرداختی", shareTotal: "سهم از هزینه‌ها", balance: "تراز",
+      bills: (n) => `${n} هزینه`,
+      titles: { b1: "مهمان‌خانه Lagoa", b2: "شام در Ribeirão", b3: "سفر تا ساحل", p1: "بستنی در ساحل", p2: "خرید هفتگی", p3: "پارکینگ" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1040,7 +1058,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", fa: "fa-u-nu-latn-ca-gregory", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

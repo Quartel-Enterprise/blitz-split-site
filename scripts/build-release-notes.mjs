@@ -64,6 +64,7 @@ const CHROME = {
   ur: { language: "اردو", brand: "Blitz Split", locale: "ur-u-nu-latn", title: "نیا کیا ہے", lead: "ایپ کے ہر ورژن میں کیا بدلا۔", showBeta: "بیٹا ورژن دکھائیں", beta: "بیٹا", empty: "ابھی کوئی مستحکم ورژن نہیں۔ جانچ میں موجود چیزیں دیکھنے کے لیے بیٹا ورژن آن کریں۔", platforms: { android: "Android", ios: "iPhone اور iPad", mac: "Mac", web: "ویب" } },
   hr: { language: "Hrvatski", brand: "Blitz Split", locale: "hr", title: "Novosti", lead: "Što se promijenilo u svakoj verziji aplikacije.", showBeta: "Prikaži beta verzije", beta: "Beta", empty: "Još nema stabilne verzije. Uključi beta verzije da vidiš što se testira.", platforms: { android: "Android", ios: "iPhone i iPad", mac: "Mac", web: "Web" } },
   sr: { language: "Srpski", brand: "Blitz Split", locale: "sr-Latn", title: "Novosti", lead: "Šta se promenilo u svakoj verziji aplikacije.", showBeta: "Prikaži beta verzije", beta: "Beta", empty: "Stabilna verzija još ne postoji. Uključi beta verzije da vidiš šta se testira.", platforms: { android: "Android", ios: "iPhone i iPad", mac: "Mac", web: "Veb" } },
+  fa: { language: "فارسی", brand: "Blitz Split", locale: "fa-u-nu-latn-ca-gregory", title: "تازه‌ها", lead: "آنچه در هر نسخه از برنامه تغییر کرد.", showBeta: "نمایش نسخه‌های بتا", beta: "بتا", empty: "هنوز نسخه پایداری وجود ندارد. برای دیدن آنچه در حال آزمایش است، نسخه‌های بتا را روشن کنید.", platforms: { android: "Android", ios: "iPhone و iPad", mac: "Mac", web: "وب" } },
 };
 
 class NotesError extends Error {}
