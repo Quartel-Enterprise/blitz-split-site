@@ -1,5 +1,5 @@
 {
-  // A second, tiny Worker, apart from the site's: it only redirects the three extra domains to blitzsplit.com.
+  // A second, tiny Worker, apart from the site's: it only redirects the three extra domains to blitzsplit.com, and the web app's old address, app.blitzsplit.com, to web.blitzsplit.com.
   // Deploy with `npm run deploy:redirect` (docs/development.md).
   "name": "blitzsplit-redirect",
   "main": "index.js",
@@ -16,6 +16,7 @@
     { "pattern": "www.borarachar.com", "custom_domain": true },
     { "pattern": "app.vamosrachar.com", "custom_domain": true },
     { "pattern": "app.vamorachar.com", "custom_domain": true },
-    { "pattern": "app.borarachar.com", "custom_domain": true }
+    { "pattern": "app.borarachar.com", "custom_domain": true },
+    { "pattern": "app.blitzsplit.com", "custom_domain": true }
   ]
 }
