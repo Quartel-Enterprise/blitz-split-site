@@ -1090,6 +1090,36 @@
         less: "ஒரு பங்கு குறைக்கவும்: {name}", more: "ஒரு பங்கு கூட்டவும்: {name}", had: "யார் எடுத்தார்கள்: {item}",
       },
     },
+    // Marathi: a message with "|" holds its forms for {n}, "one|few|other", of which Marathi uses one and other (1 वाटा,
+    // 2 वाटे). A name or an amount never takes a case ending, so it stands after a colon; तुम्ही for the user.
+    mr: {
+      bill: "पिझ्झा नाइट", paid: "Pedro यांनी पैसे दिले", notIn: "यात सहभागी नाहीत",
+      each: "प्रत्येकी {a}", among: "{n} जणांमध्ये वाटले: {a}.", amongOne: "फक्त 1 व्यक्तीवर: {a}.", out: "सहभागी नाहीत: {name}.",
+      nobody: "अजून कोणीही नाही", nobodyEqual: "ही रक्कम वाटण्यासाठी किमान एक व्यक्ती निवडा: {a}.",
+      checkAll: "सर्वांना निवडा", uncheckAll: "सर्वांची निवड काढा",
+      left: "बाकी: {a}", over: "जास्त: {a}", closed: "जुळले: {a}",
+      progress: "आतापर्यंत: {a} / {b}.", closedMsg: "सर्व भाग मिळून एकूण रकमेइतके आहेत.",
+      parts: "{a}: {n} वाटा|{a}: {n} वाटे|{a}: {n} वाटे", personParts: "{name}: {n} वाटा.|{name}: {n} वाटे.|{name}: {n} वाटे.",
+      nobodyShares: "ही रक्कम वाटण्यासाठी किमान एका व्यक्तीला वाटा द्या: {a}.",
+      ofEach: "प्रत्येक खर्चाचे {p}", ofBill: "खर्चाचे {p}", incomeDetail: "प्रत्येकाचा भाग त्यांच्या उत्पन्नानुसार ठरतो.", perMonth: "/महिना",
+      service: "सर्व्हिस चार्ज ({p})", serviceSub: "प्रत्येकाने जे घेतले त्या प्रमाणात",
+      loose: "प्रत्येक आयटम कोणी घेतला ते मार्क करा", looseDetail: "कोणी घेतला ते मार्क करण्यासाठी, प्रत्येक आयटमवरील चेहऱ्यांवर टॅप करा.",
+      itemsClosed: "आयटम: {a}, सर्व्हिस चार्ज: {b}.", nobodyItem: "कोणालाही निवडले नाही", eachItem: "प्रत्येकी {a}",
+      items: { pizza: "लार्ज पिझ्झा", beer: "बिअर", salad: "सॅलड", draft: "ड्राफ्ट बिअर", shrimp: "कोळंबी प्लॅटर" },
+      receiptBill: "हार्बर बार",
+      hint: {
+        equal: "रक्कम अचूक वाटता येत नसेल, तर उरलेले पैसे, पैसे देणाऱ्यांना मिळतात.",
+        amounts: "ज्यांची रक्कम {zero} राहते, ते या खर्चात सहभागी नाहीत.",
+        percent: "फक्त पूर्ण संख्या. उरलेले पैसे, पैसे देणाऱ्यांना मिळतात.",
+        shares: "एखाद्याचा भाग जास्त असेल तेव्हा वाटे वापरा, उदाहरणार्थ जे सोबत पाहुणे आणतात त्यांच्यासाठी.",
+        income: "उत्पन्न डिव्हाइसवरच राहते. ग्रुपला फक्त टक्केवारी दिसते.",
+        items: "प्रत्येक आयटम तो घेणाऱ्यांमध्ये वाटला जातो, आणि सर्व्हिस चार्ज प्रत्येकाने जे घेतले त्यानुसार.",
+      },
+      label: {
+        amount: "रक्कम: {name}", percent: "टक्केवारी: {name}", income: "मासिक उत्पन्न: {name}",
+        less: "एक वाटा कमी करा: {name}", more: "एक वाटा वाढवा: {name}", had: "कोणी घेतले: {item}",
+      },
+    },
     // Bulgarian: a message with "|" holds its forms for {n}, "one|other|other" (1 дял, 2 дяла), and fill picks one. The
     // aorist (плати, взе) has no gender, so the past never guesses one; a name never takes an article; "ти" for the user.
     bg: {

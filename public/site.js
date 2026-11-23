@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, bg: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, mr: …, bg: … }
 // before this script, and blocks written per language carry data-lang with the language ("en", "pt", "fr"…).
 (function () {
   const params = new URLSearchParams(location.search);
@@ -82,6 +82,7 @@
     fa: { search: "جستجوی زبان‌ها", clear: "پاک کردن جستجو", none: "هیچ زبانی با «{query}» مطابقت ندارد", system: "سیستم", systemDetail: "زبان دستگاه", back: "بازگشت", close: "بستن" },
     sw: { search: "Tafuta lugha", clear: "Futa utafutaji", none: "Hakuna lugha inayolingana na “{query}”", system: "Mfumo", systemDetail: "Lugha ya kifaa", back: "Rudi", close: "Funga" },
     ta: { search: "மொழியைத் தேடவும்", clear: "தேடலை அழிக்கவும்", none: "பொருந்தும் மொழி எதுவும் இல்லை: “{query}”", system: "சிஸ்டம்", systemDetail: "சாதனத்தின் மொழி", back: "பின்செல்லவும்", close: "மூடவும்" },
+    mr: { search: "भाषा शोधा", clear: "शोध साफ करा", none: "जुळणारी भाषा नाही: “{query}”", system: "सिस्टम", systemDetail: "डिव्हाइसची भाषा", back: "मागे", close: "बंद करा" },
     bg: { search: "Търси езици", clear: "Изчисти търсенето", none: "Няма език, който да съвпада с „{query}“", system: "Системен", systemDetail: "Езикът на устройството", back: "Назад", close: "Затвори" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
