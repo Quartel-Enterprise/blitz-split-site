@@ -14,7 +14,8 @@
     // App Store: the numeric Apple ID of the listing (apps.apple.com/app/id<id>), empty until there is one. The iPhone,
     // iPad and Mac apps are one listing.
     appStoreId: "",
-    // The web app: open to the public.
+    // The web app: open to the public. Its address is also written in the three fallback hrefs of public/index.html
+    // (used without JavaScript) and in redirect/index.js: change them together.
     webAppLive: true,
     webAppUrl: "https://web.blitzsplit.com",
   };
