@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Fanen Saldi viser ikke længere en række nuller, når ingen skylder noget: der står bare Alt er gjort op.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rettet en fejl, hvor Profil viste Apples logo ved siden af e-mailen for en konto logget ind med Google, eller Googles ved siden af en konto logget ind med Apple, når kontoen har begge.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

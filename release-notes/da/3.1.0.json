@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split på Apple Watch: forbind uret med din iPhones konto, se dine saldi og åbne grupper, tryk på Jeg betalte i en gruppe, hvor du skylder, og føj din samlede saldo til en urskive eller Smart Stack; når uret er forbundet, fungerer det på egen hånd.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Appen taler nu bengali, malajisk og græsk: vælg »বাংলা«, »Bahasa Melayu« eller »Ελληνικά« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu bruge bangladeshiske taka og malaysiske ringgit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu kroatisk: vælg »Hrvatski« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu filippinsk: vælg »Filipino« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i filippinske pesos (PHP, »₱«), og en gruppe oprettet i Filippinerne starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu ungarsk: vælg »Magyar« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu bruge ungarske forint.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Føj widgetten Saldi til hjemmeskærmen eller den låste skærm på din iPhone eller iPad for at se din samlede saldo og dine åbne grupper med ét blik; tryk på den for at åbne Saldi.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupper kan nu bruge valutaerne i Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, Den Dominikanske Republik og Cuba, og en gruppe oprettet dér starter i landets egen valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu serbisk: vælg »Srpski« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i serbiske dinarer (RSD), og en gruppe oprettet i Serbien starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen taler nu urdu: vælg »اردو« i Profil › Sprog, eller lad den følge din enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dele i pakistanske rupier (PKR), og en gruppe oprettet i Pakistan starter i den.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Et tryk på notifikationen om en ny udgift åbner udgiften med det samme: appen henter den, så snart notifikationen ankommer.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Velkomstskærmen på telefoner viser nu kun logoet øverst, så der er mere plads til knapperne.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Gruppens banner »Tid til at gøre op« viser ikke længere en påmindelsesdato fra før påmindelsen blev sat op eller ændret: en påmindelse, der er ændret til den 25., venter til den 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

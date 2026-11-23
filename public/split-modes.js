@@ -1005,6 +1005,35 @@
         less: "Én andel mindre for {name}", more: "Én andel til for {name}", had: "Hvem hadde {item}",
       },
     },
+    // Danish: like English and Norwegian, no message holds a "|" (one person has its own message, and a person's
+    // shares show only above one); "du" for the user and the app's words (ligeligt, andele, efter indkomst, poster).
+    da: {
+      bill: "Pizzaaften", paid: "Pedro betalte", notIn: "Ikke med i denne",
+      each: "{a} hver", among: "{a} mellem {n} personer.", amongOne: "{a} til 1 person.", out: "{name} er ikke med.",
+      nobody: "Ingen er med endnu", nobodyEqual: "Markér mindst én person for at dele {a}.",
+      checkAll: "Markér alle", uncheckAll: "Fjern alle markeringer",
+      left: "{a} mangler", over: "{a} for meget", closed: "Det passer: {a}",
+      progress: "{a} af {b} indtil nu.", closedMsg: "Delene giver tilsammen totalen.",
+      parts: "{n} andele á {a}", personParts: "{name} har {n} andele.", nobodyShares: "Giv mindst én person en andel for at dele {a}.",
+      ofEach: "{p} af hver udgift", ofBill: "{p} af udgiften", incomeDetail: "Hver persons del følger vedkommendes indkomst.", perMonth: "/md.",
+      service: "Service ({p})", serviceSub: "I forhold til, hvad hver person havde",
+      loose: "Markér, hvem der havde hver post", looseDetail: "Tryk på ansigterne ved hver post for at markere, hvem der havde den.",
+      itemsClosed: "{a} i poster og {b} i service.", nobodyItem: "Ingen markeret", eachItem: "{a} hver",
+      items: { pizza: "Stor pizza", beer: "Øl", salad: "Salat", draft: "Fadøl", shrimp: "Rejeplatte" },
+      receiptBill: "Havnebaren",
+      hint: {
+        equal: "Når det ikke går op, går de overskydende øre til den, der betalte.",
+        amounts: "Den, der står på {zero}, er ikke med i udgiften.",
+        percent: "Kun hele tal. De overskydende øre går til den, der betalte.",
+        shares: "Brug andele, når nogen har mere, f.eks. hvis nogen tog en gæst med.",
+        income: "Indkomsterne bliver på enheden. Gruppen ser kun procenterne.",
+        items: "Hver post deles mellem dem, der havde den, og servicen efter, hvad hver person havde.",
+      },
+      label: {
+        amount: "Beløb for {name}", percent: "Procentdel for {name}", income: "Månedlig indkomst for {name}",
+        less: "Én andel mindre til {name}", more: "Én andel mere til {name}", had: "Hvem havde {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

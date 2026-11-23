@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Når du åbner en person fra Kontakter eller Saldi, følger personens navn og saldo nu med ind i profilen sammen med fotoet og tilbage igen, når du vender tilbage.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "I Statistik står der nu bare »Du« midt i ringen »Pr. person«, når andelen er din, og et langt navn ender på »…« i stedet for at røre ringen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Når du åbner en gruppe fra Grupper, følger medlemmernes ansigter nu med fra rækken ind på gruppens skærm og tilbage, når du går.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "På en telefon følger mere med, når du åbner en udgift: hvem der betalte, følger med fra rækken på Hjem og Alle udgifter, klokkeslættet fra rækken i gruppens Udgifter, og gruppens foto og navn fra gruppens skærm. De følger med tilbage, når du går.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "En gruppes navn følger nu med ind på gruppens skærm, når den åbner, ikke kun på vej tilbage.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

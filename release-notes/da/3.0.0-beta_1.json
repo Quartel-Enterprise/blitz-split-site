@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split er en ny app, bygget op fra bunden: den erstatter Blitz Split 2.4.0 og kører på Android, iPhone, iPad, Mac og nettet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Del en udgift ligeligt, efter beløb, efter procent, efter andele eller post for post, med én eller flere betalere.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Scan en kvittering, så læser appen posterne og totalen for dig.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Opret grupper til rejser, hjemmet eller begivenheder, og invitér folk med et link eller en QR-kode.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Se, hvem der skylder hvem i hver gruppe og på tværs af dem alle, registrér betalinger og forenkl gælden, så færre betalinger gør alt op.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Alt virker offline: det, du gør, gemmes på din enhed og sendes, når du er online igen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En konto er valgfri: forbind Google eller Apple, eller gem en gendannelseskode, for at få dine grupper tilbage på en anden enhed.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kommentér en udgift, vedhæft billeder, følg med i, hvad der skete, i Aktivitet, og se, hvor pengene gik hen, i Statistik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hver udgift og hver betaling har sin egen valuta, og appen findes på engelsk, portugisisk, spansk og fransk.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
