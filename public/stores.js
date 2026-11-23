@@ -51,13 +51,14 @@
   const referrer = campaignReferrer();
 
   // Each store's link in the visitor's language, or none while the store doesn't offer the app. Chinese names no App
-  // Store storefront: China's lists only apps with an ICP filing, so Apple takes the visitor's own.
+  // Store storefront: China's lists only apps with an ICP filing, so Apple takes the visitor's own. Neither does Persian:
+  // the App Store has no storefront in Iran.
   // Why iw: Google Play documents Hebrew by its legacy code, the one it has always honoured.
   const playUrl = CONFIG.googlePlayLive
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", ta: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", ta: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -431,6 +432,16 @@
       mismatchBody: "Du bruker {platform}. Last ned appen {in} for den beste opplevelsen.",
       mismatchGo: "Gå {to}", mismatchStay: "Fortsett {to}", close: "Lukk",
       in: { play: "fra Google Play", appstore: "fra App Store" }, to: { play: "til Google Play", appstore: "til App Store" },
+    },
+    fa: {
+      play: ["دریافت از", "به‌زودی در"], appstore: ["دانلود از", "به‌زودی در"], web: ["باز کردن در", "به‌زودی در"], browser: "مرورگر",
+      getApp: "دریافت برنامه", openWeb: "باز کردن نسخه وب", soon: "به‌زودی",
+      noteStore: "برنامه را {in} دریافت کنید.", noteApple: "از {platform} استفاده می‌کنید؟ تا وقتی برنامه به App Store برسد، از آن در مرورگر خود استفاده کنید.", noteWeb: "آن را در مرورگر خود باز کنید، بدون نیاز به نصب.",
+      playLive: "در Google Play موجود است", appStoreLive: "در App Store موجود است", webLive: "باز کردن نسخه وب",
+      mismatchTitle: "فروشگاه خود را انتخاب کنید",
+      mismatchBody: "شما از {platform} استفاده می‌کنید. برای بهترین تجربه، برنامه را {in} دریافت کنید.",
+      mismatchGo: "رفتن {to}", mismatchStay: "ادامه و رفتن {to}", close: "بستن",
+      in: { play: "از Google Play", appstore: "از App Store" }, to: { play: "به Google Play", appstore: "به App Store" },
     },
     ta: {
       play: ["இப்போதே பெறுங்கள்", "விரைவில் வருகிறது"], appstore: ["பதிவிறக்குங்கள்", "விரைவில் வருகிறது"], web: ["இப்போதே திறங்கள்", "விரைவில் வருகிறது"], browser: "பிரவுசர்",
