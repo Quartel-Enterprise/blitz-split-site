@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "En obrir algú des de Contactes o Saldos, ara el seu nom i el seu saldo viatgen fins al perfil juntament amb la foto, i tornen quan tornes enrere.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "A Estadístiques, el centre de l’anell «Per persona» ara només diu «Tu» quan la part és teva, i un nom llarg acaba en «…» en lloc de tocar l’anell.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En obrir un grup des de Grups, les cares dels membres ara viatgen des de la fila fins a la pantalla del grup, i tornen quan en surts.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "En un telèfon, en obrir una despesa ara n’hi viatgen més elements: qui ha pagat, des de la seva fila a Inici i a Totes les despeses; l’hora, des de la seva fila a Despeses del grup; i la foto i el nom del grup, des de la pantalla del grup. Tornen quan en surts.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "El nom d’un grup ara viatja fins a la pantalla del grup quan s’obre, no només en tornar.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

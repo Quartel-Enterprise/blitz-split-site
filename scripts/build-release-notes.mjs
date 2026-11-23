@@ -72,6 +72,7 @@ const CHROME = {
   te: { language: "తెలుగు", brand: "Blitz Split", locale: "te", title: "విడుదల గమనికలు", lead: "యాప్ ప్రతి వెర్షన్‌లో ఏమి మారిందో.", showBeta: "బీటా వెర్షన్‌లను చూపించండి", beta: "బీటా", empty: "ఇంకా స్థిరమైన వెర్షన్ లేదు. ఏమి పరీక్షించబడుతోందో చూడటానికి బీటా వెర్షన్‌లను ఆన్ చేయండి.", platforms: { android: "Android", ios: "iPhone, iPad", mac: "Mac", web: "వెబ్" } },
   mr: { language: "मराठी", brand: "Blitz Split", locale: "mr-u-nu-latn", title: "काय नवीन आहे", lead: "ॲपच्या प्रत्येक व्हर्जनमध्ये काय बदलले.", showBeta: "बीटा व्हर्जन दाखवा", beta: "बीटा", empty: "अजून कोणतेही स्थिर व्हर्जन नाही. काय चाचणीत आहे ते पाहण्यासाठी बीटा व्हर्जन चालू करा.", platforms: { android: "Android", ios: "iPhone आणि iPad", mac: "Mac", web: "वेब" } },
   bg: { language: "Български", brand: "Blitz Split", locale: "bg", title: "Какво ново", lead: "Какво се промени във всяка версия на приложението.", showBeta: "Покажи бета версиите", beta: "Бета", empty: "Още няма стабилна версия. Включи бета версиите, за да видиш какво се тества.", platforms: { android: "Android", ios: "iPhone и iPad", mac: "Mac", web: "Уеб" } },
+  ca: { language: "Català", brand: "Blitz Split", locale: "ca", title: "Novetats", lead: "Què ha canviat a cada versió de l’app.", showBeta: "Mostrar les versions beta", beta: "Beta", empty: "Encara no hi ha cap versió estable. Activa les versions beta per veure què s’està provant.", platforms: { android: "Android", ios: "iPhone i iPad", mac: "Mac", web: "Web" } },
 };
 
 class NotesError extends Error {}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Despeses d’un grup ara té «Veure-ho tot», que obre Totes les despeses ja filtrat per aquell grup, perquè puguis cercar, ordenar i filtrar-ne les despeses. Treu el filtre per veure tots els grups.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Grup nou, «Afegir per nom» ara suggereix persones dels teus Contactes mentre escrius, amb la seva foto: toca’n una per crear el grup amb aquella mateixa persona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En desplaçar-te per un grup, la barra superior plegada mostra només la foto i el nom del grup, sense els membres i el total tallats al costat.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ara pots baixar les 12 paraules del teu codi de recuperació en un fitxer de text.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "«Desa el codi de recuperació» ara explica que et retorna les dades i que, si no les fas servir durant 30 dies, se suprimeixen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Dividir una despesa» ara també té «Escanejar el tiquet» a dalt, al costat de «Desar», perquè el teclat ja no l’amagui, i «Afegir un mètode de pagament» és més discret.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A Estadístiques d’un grup, «Per persona» ara és un gràfic d’anell amb la part de cadascú, amb el mateix color que cada persona té a Divisió per defecte, i a sota la llista de noms i imports fa de llegenda. «Consumit» i «Pagat» canvien el que mostra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Qui hi és» de Grup nou mostra la teva foto de perfil en lloc de la teva inicial.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Sincronitzant…» ja no apareix una vegada i una altra a Inici i Grups quan tornes a l’app: les sincronitzacions es fan en silenci un cop els teus grups són a la pantalla.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A les tauletes i amb el telèfon en horitzontal, l’ombra de «Dividir una despesa» a dalt de la barra lateral ja no queda tallada per les vores.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

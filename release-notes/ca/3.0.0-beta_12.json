@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "A Notes de la versió, toca una versió per obrir-ne la publicació a GitHub, o el botó de GitHub per veure-les totes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La pàgina d’un grup, una invitació i els detalls d’una despesa ara mostren les fotos de fins a cinc persones una al costat de l’altra en lloc de dues.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En un iPad o en un iPhone Duo obert i en horitzontal, un grup que ocupa tota la pantalla (obert des d’Inici, per exemple) ara mostra la seva foto, els membres i el teu saldo al costat de les despeses.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Tocar la targeta Saldo total d’Inici ara obre la pestanya Saldos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Al telèfon, quan obres un grup o una despesa des d’Inici, el saldo del grup, o la icona, el títol, el total i la teva part de la despesa, ara volen cap a la seva pantalla i tornen quan hi tornes.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Perfil › Idioma ara mostra l’espanyol dues vegades, «Español (Latinoamérica)» i «Español (España)», perquè triïs el que parles sigui on sigui el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amb el telèfon o una tauleta en horitzontal, el que hi ha al costat de la llista a Contactes i Saldos ara comença a dalt de tot de la pantalla, amb la teva foto de perfil damunt de la llista.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "La vora del botó «Afegir una persona» a Membres d’un grup es veu millor.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "El color d’una targeta a «Mètodes de pagament» ara es tria entre els mateixos colors que les categories: els dotze colors, els teus propis i «Nou color» per crear-ne un altre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A «Dividir una despesa», «Pagat amb» ara és un botó petit sota Divisió, i si encara no tens cap mètode de pagament, «Afegir un mètode de pagament» en crea un allà mateix i el tria per a la despesa. Les targetes de dèbit ara també tenen la seva pròpia icona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Afegir o editar un mètode de pagament a Perfil ara s’obre a sobre en lloc d’una pantalla a part.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Colors dinàmics ara explica que l’app agafa els colors del sistema d’Android, que provenen del fons de pantalla o de la paleta que has triat a la configuració d’Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Amb Reduir moviment activat, les Estadístiques d’un grup ara mostren els gràfics de cop, sense que les barres creixin ni l’anell s’ompli.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "En portuguès del Brasil, Activitat i l’historial d’una despesa deien «Você criaste» i similars en lloc de «Você criou».",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "S’han corregit les dates del selector de dates d’Estadístiques, que es partien amb una o dues lletres per línia; ara la data final va sota la d’inici quan no hi caben totes dues.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "S’han corregit notificacions i algunes frases que es mostraven en anglès, o com un codi del tipus «push.bill_deleted», en espanyol d’Espanya i en portuguès de Portugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "S’ha corregit la fila de persones d’Inici en portuguès de Portugal, que deia «te deve» sota un nom en lloc de «deve-te».",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Els imports i les etiquetes ja no es parteixen en diverses línies ni queden tallats en pantalles petites, en plegables i amb el text gran.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els textos, botons i contorns que costava llegir ara tenen més contrast, amb el tema clar i el fosc.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar un camp al navegador d’un iPhone ja no amplia la pàgina.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

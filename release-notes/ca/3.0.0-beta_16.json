@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "L’app ara parla coreà: tria «한국어» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en won sud-coreà (KRW), i un grup creat a Corea del Sud comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Compte i sincronització» de Perfil ara mostra el teu ID d’usuari, que pots copiar amb un toc, perquè ens puguis dir qui ets quan responguis alguna de les nostres enquestes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Una foto que afegeixes a una despesa ara s’obre primer a «Ajustar la foto», perquè enquadris el quadrat que s’hi adjunta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "«Per ingressos» ara et recorda que escriguis els ingressos nets de cadascú, després d’impostos, i «Divisió per defecte» només mostra el percentatge de cadascú quan s’ha escrit algun ingrés.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La capçalera d’un grup és més neta: ja no hi ha la línia amb el nombre de membres i el total sota el nom. Les cares mostren qui hi és, i Estadístiques mostra el total.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les fotos d’una targeta o d’un extracte bancari ara ho indiquen i suggereixen omplir la despesa a mà, en lloc de dir que no s’ha pogut llegir el tiquet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Una categoria a Estadístiques ara obre Totes les despeses amb el grup, la categoria i el període ja triats, perquè també puguis cercar aquestes despeses. Totes les despeses també té un filtre nou de Període.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A «Per persona» d’Estadístiques, un toc al costat de l’anell o al seu centre desselecciona la persona triada.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

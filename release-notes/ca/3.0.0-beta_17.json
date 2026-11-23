@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "L’app ara parla àrab, amb un disseny que es llegeix de dreta a esquerra: tria «العربية» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en riyal saudita (SAR), dírham dels Emirats Àrabs Units (AED), lliura egípcia (EGP) i dírham marroquí (MAD), i un grup creat en un d’aquests països comença en la seva moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla xinès simplificat: tria «中文（简体）» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en iuan xinès (CNY), i un grup creat a la Xina continental comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla xinès tradicional: tria «中文（繁體）» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en nou dòlar de Taiwan (TWD), i un grup creat a Taiwan comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla txec: tria «Čeština» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en corona txeca (CZK), i un grup creat a Txèquia comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada grup ara té el seu propi recordatori per liquidar comptes: mantén el setmanal, els dilluns a les 10:00, tria un altre dia de la setmana o un dia del mes i una hora (per exemple, cada dia 25 a les 12:00), o desactiva’l, en crear el grup o a Editar el grup. Només rep la notificació qui encara deu, i al grup veu un avís que pot tancar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla hebreu, amb un disseny que es llegeix de dreta a esquerra: tria «עברית» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en nou xéquel israelià (ILS), i un grup creat a Israel comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla hindi: tria «हिन्दी» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en rupia índia (INR), i un grup creat a l’Índia comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla romanès: tria «Română» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en leu romanès (RON), i un grup creat a Romania comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla suec: tria «Svenska» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en corona sueca (SEK), i un grup creat a Suècia comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla tai: tria «ไทย» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en baht tailandès (THB), i un grup creat a Tailàndia comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla vietnamita: tria «Tiếng Việt» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en dong vietnamita (VND), i un grup creat al Vietnam comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toca la foto del grup a la barra superior d’una despesa per veure-la en gran.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Si toques l’interruptor atenuat de Simplificar deutes en un grup de dues persones, ara t’explica que estarà disponible quan el grup tingui 3 persones.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A «Com funciona» de Simplificar deutes, l’exemple ara mostra fotos de persones en lloc d’inicials.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "S’ha corregit que el gest d’enrere no sortís del perfil d’una persona obert des d’un full de pagament; ara torna al full.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

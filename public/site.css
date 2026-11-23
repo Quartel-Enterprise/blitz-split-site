@@ -197,6 +197,7 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="te"] body [data-lang]:not([data-lang="te"]),
 :root[data-lang="mr"] body [data-lang]:not([data-lang="mr"]),
 :root[data-lang="bg"] body [data-lang]:not([data-lang="bg"]),
+:root[data-lang="ca"] body [data-lang]:not([data-lang="ca"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
 .skip:focus { inset-inline-start: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }
