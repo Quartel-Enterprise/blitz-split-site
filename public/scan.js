@@ -187,6 +187,11 @@
       lines: [["2 TOČENO PIVO", "2.800", 1], ["1 PLATA ŠKAMPA", "9.600", 2]],
       subtotal: ["MEĐUZBIR", "12.400"], service: ["USLUGA 10 %", "1.240", 3], total: ["UKUPNO", "13.640"],
     },
+    sw: {
+      store: "MGAHAWA WA BANDARINI", address: "Barabara ya Shakwe 120", date: "08/11/2026  21:47",
+      lines: [["2 JUISI YA MATUNDA", "3,640.00", 1], ["1 SAHANI YA KAMBA", "12,480.00", 2]],
+      subtotal: ["JUMLA NDOGO", "16,120.00"], service: ["HUDUMA 10%", "1,612.00", 3], total: ["JUMLA", "17,732.00"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Katika Maelezo ya toleo, gusa toleo ili ufungue toleo lake kwenye GitHub, au kitufe cha GitHub ili uone matoleo yote.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ukurasa wa kikundi, mwaliko na maelezo ya gharama sasa huonyesha picha za hadi watu watano kando kwa kando badala ya wawili.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kwenye iPad au iPhone Duo iliyofunguliwa na kulazwa, kikundi kinachojaza skrini (kilichofunguliwa kutoka Mwanzo, kwa mfano) sasa huonyesha picha yake, washiriki na salio lako kando ya gharama.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Kugusa kadi ya Salio la jumla kwenye Mwanzo sasa hufungua kichupo cha Salio.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kwenye simu, kufungua kikundi au gharama kutoka Mwanzo sasa hupeperusha salio la kikundi, au ikoni, kichwa, jumla na sehemu yako ya gharama, hadi kwenye skrini yake na kurudi tena unaporudi.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Wasifu › Lugha sasa huorodhesha Kihispania mara mbili, \"Español (Latinoamérica)\" na \"Español (España)\", ili uchague unachozungumza popote kifaa chako kilipo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Simu au kompyuta kibao ikiwa imelazwa, kilicho kando ya orodha kwenye Waasiliani na Salio sasa huanzia juu ya skrini, pamoja na picha yako ya wasifu juu ya orodha.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ukingo wa kitufe cha \"Ongeza mtu\" kwenye Washiriki wa kikundi unaonekana kwa urahisi zaidi.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Rangi ya kadi kwenye \"Njia za malipo\" sasa huchaguliwa kutoka rangi zile zile za aina: rangi kumi na mbili, rangi zako mwenyewe na \"Rangi mpya\" ili kuunda nyingine.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Katika \"Gawanya gharama\", \"Imelipwa kwa\" sasa ni kitufe kidogo chini ya Gawanya, na ikiwa bado huna njia ya malipo, \"Ongeza njia ya malipo\" huunda moja hapo hapo na kuichagua kwa gharama hiyo. Kadi za benki pia sasa zina ikoni yake.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kuongeza au kuhariri njia ya malipo kwenye Wasifu sasa hufunguka juu yake badala ya skrini tofauti.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Rangi badilifu sasa inaeleza kwamba programu huchukua rangi za mfumo wa Android, zinazotoka kwenye mandhari ya skrini yako au kwenye rangi ulizochagua katika mipangilio ya Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Reduce Motion ikiwa imewashwa, Takwimu za kikundi sasa huonyesha chati zake mara moja, bila pau kukua wala pete kuzunguka.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Kwa Kireno cha Brazili, Shughuli na historia ya gharama zilisema \"Você criaste\" na mfano wake badala ya \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Imerekebishwa: tarehe kwenye kichagua tarehe cha Takwimu zilivunjika herufi moja au mbili kwa kila mstari; tarehe ya mwisho sasa huenda chini ya tarehe ya kuanza zisipotosha zote mbili.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Imerekebishwa: arifa na sentensi chache zilizoonekana kwa Kiingereza, au kama msimbo kama \"push.bill_deleted\", kwa Kihispania cha Hispania na Kireno cha Ureno.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Imerekebishwa: safu ya watu kwenye Mwanzo kwa Kireno cha Ureno, iliyosema \"te deve\" chini ya jina badala ya \"deve-te\".",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

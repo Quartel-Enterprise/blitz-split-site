@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sw: … }
 // before this script, and blocks written per language carry data-lang with the language ("en", "pt", "fr"…).
 (function () {
   const params = new URLSearchParams(location.search);
@@ -77,6 +77,7 @@
     ur: { search: "زبان تلاش کریں", clear: "تلاش صاف کریں", none: "کوئی زبان نہیں ملی: “{query}”", system: "سسٹم", systemDetail: "ڈیوائس کی زبان", back: "واپس", close: "بند کریں" },
     hr: { search: "Pretraži jezike", clear: "Očisti pretragu", none: "Nijedan jezik ne odgovara upitu „{query}”", system: "Sustav", systemDetail: "Jezik uređaja", back: "Natrag", close: "Zatvori" },
     sr: { search: "Pretraži jezike", clear: "Obriši pretragu", none: "Nijedan jezik ne odgovara upitu „{query}“", system: "Sistem", systemDetail: "Jezik uređaja", back: "Nazad", close: "Zatvori" },
+    sw: { search: "Tafuta lugha", clear: "Futa utafutaji", none: "Hakuna lugha inayolingana na “{query}”", system: "Mfumo", systemDetail: "Lugha ya kifaa", back: "Rudi", close: "Funga" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
   // Ukrainian by Ukraine's UA ("UK" reads as the United Kingdom) and the two Chinese by their scripts, as Chinese

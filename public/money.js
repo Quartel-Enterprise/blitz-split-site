@@ -5,9 +5,9 @@
 // taka, the forint, the Pakistani rupee, the Serbian dinar) shows
 // it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫ or NT$4,860 and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
-// koruna, the leu, the ringgit, the Philippine peso) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
+// koruna, the leu, the ringgit, the Philippine peso, the Kenyan shilling) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
 // preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč, 243 lei,
-// RM194.40 or ₱2,430
+// RM194.40, ₱2,430 or Ksh 6,318
 // and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
 (function () {
   // [before the number, decimal separator, thousands separator, after the number, units per cent when there are no cents,
@@ -35,6 +35,7 @@
     ur: ["Rs\u00a0", ".", ",", "", 1, 2],
     hr: ["", ",", ".", "\u00a0€"],
     sr: ["", ",", ".", "\u00a0RSD", 1],
+    sw: ["Ksh\u00a0", ".", ",", "", 0, 3, 130],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");

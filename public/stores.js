@@ -57,7 +57,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's and Serbian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sw: "ke/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -411,6 +411,16 @@
       mismatchBody: "Koristiš {platform}. Za najbolje iskustvo preuzmi aplikaciju {in}.",
       mismatchGo: "Idi {to}", mismatchStay: "Ipak idi {to}", close: "Zatvori",
       in: { play: "iz prodavnice Google Play", appstore: "iz prodavnice App Store" }, to: { play: "u prodavnicu Google Play", appstore: "u prodavnicu App Store" },
+    },
+    sw: {
+      play: ["Ipate kwenye", "Inakuja hivi karibuni kwenye"], appstore: ["Pakua kwenye", "Inakuja hivi karibuni kwenye"], web: ["Fungua kwenye", "Inakuja hivi karibuni kwenye"], browser: "kivinjari chako",
+      getApp: "Pata programu", openWeb: "Fungua programu ya wavuti", soon: "Inakuja hivi karibuni",
+      noteStore: "Pata programu {in}.", noteApple: "Unatumia {platform}? Itumie kwenye kivinjari chako hadi programu ifike kwenye App Store.", noteWeb: "Ifungue kwenye kivinjari chako, hakuna cha kusakinisha.",
+      playLive: "Inapatikana kwenye Google Play", appStoreLive: "Inapatikana kwenye App Store", webLive: "Fungua programu ya wavuti",
+      mismatchTitle: "Chagua duka lako",
+      mismatchBody: "Unatumia {platform}. Kwa matumizi bora, pata programu {in}.",
+      mismatchGo: "Nenda {to}", mismatchStay: "Endelea {to}", close: "Funga",
+      in: { play: "kutoka Google Play", appstore: "kutoka App Store" }, to: { play: "kwenye Google Play", appstore: "kwenye App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
