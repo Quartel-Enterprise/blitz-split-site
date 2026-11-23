@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Keď otvoríš niekoho z Kontaktov alebo Zostatkov, do jeho profilu sa teraz spolu s fotkou prenesie aj meno a zostatok, a pri návrate zase späť.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "V Štatistikách stred kruhu „Podľa osoby“ teraz hovorí len „Ty“, keď je podiel tvoj, a dlhé meno končí „…“ namiesto toho, aby sa dotýkalo kruhu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Keď otvoríš skupinu zo Skupín, tváre jej členov teraz prejdú z riadku do obrazovky skupiny a pri odchode späť.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Keď na telefóne otvoríš výdavok, prenesie sa s ním viac: kto platil prejde z jeho riadku na Domove a vo Všetkých výdavkoch, čas z jeho riadku vo Výdavkoch skupiny a fotka a názov skupiny z obrazovky skupiny. Pri odchode sa vrátia späť.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Názov skupiny teraz prejde do obrazovky skupiny už pri jej otváraní, nielen pri návrate.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

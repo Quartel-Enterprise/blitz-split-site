@@ -946,6 +946,36 @@
         less: "Udeo manje: {name}", more: "Udeo više: {name}", had: "Ko je uzeo: {item}",
       },
     },
+    // Slovak: a message with "|" holds its forms for {n}, "one|few|other" or "few|other" (2 osoby, 5 osôb), and fill picks
+    // one. A name is never declined, so where Slovak would need its case it stands after a colon; "ty" for the user.
+    sk: {
+      bill: "Večer s pizzou", paid: "Pedro zaplatil(a)", notIn: "Nie je v tomto výdavku",
+      each: "{a} na osobu", among: "{a} na {n} osoby.|{a} na {n} osôb.", amongOne: "{a} pre 1 osobu.", out: "{name} nie je vo výdavku.",
+      nobody: "Zatiaľ nikto nie je vo výdavku", nobodyEqual: "Označ aspoň jednu osobu, aby sa dalo rozdeliť {a}.",
+      checkAll: "Označiť všetkých", uncheckAll: "Zrušiť označenie",
+      left: "Zostáva {a}", over: "{a} navyše", closed: "Sedí to: {a}",
+      progress: "Zatiaľ {a} z {b}.", closedMsg: "Časti dávajú dokopy celú sumu.",
+      parts: "{a} na {n} podiel|{a} na {n} podiely|{a} na {n} podielov", personParts: "{name} má {n} podiely.|{name} má {n} podielov.",
+      nobodyShares: "Daj aspoň jednej osobe podiel, aby sa dalo rozdeliť {a}.",
+      ofEach: "{p} z každého výdavku", ofBill: "{p} z výdavku", incomeDetail: "Časť každého zodpovedá jeho príjmu.", perMonth: "/mes.",
+      service: "Obsluha ({p})", serviceSub: "Podľa toho, kto čo mal",
+      loose: "Označ, kto čo mal", looseDetail: "Ťukni na tváre pri každej položke a označ, kto ju mal.",
+      itemsClosed: "{a} za položky a {b} za obsluhu.", nobodyItem: "Nikto nie je označený", eachItem: "{a} na osobu",
+      items: { pizza: "Veľká pizza", beer: "Pivo", salad: "Šalát", draft: "Čapované pivo", shrimp: "Tanier kreviet" },
+      receiptBill: "Prístavný bar",
+      hint: {
+        equal: "Keď sa to nedá rozdeliť presne, zvyšné centy dostane ten, kto platil.",
+        amounts: "Kto zostane na {zero}, nie je vo výdavku.",
+        percent: "Iba celé čísla. Zvyšné centy dostane ten, kto platil.",
+        shares: "Podiely použi, keď má niekto viac, napríklad ak niekto priviedol doprovod.",
+        income: "Príjmy zostávajú v zariadení. Skupina vidí iba percentá.",
+        items: "Každá položka sa delí medzi tých, ktorí ju mali, a obsluha podľa toho, kto čo mal.",
+      },
+      label: {
+        amount: "Suma: {name}", percent: "Percento: {name}", income: "Mesačný príjem: {name}",
+        less: "O podiel menej: {name}", more: "O podiel viac: {name}", had: "Kto mal: {item}",
+      },
+    },
     sw: {
       bill: "Usiku wa pizza", paid: "Imelipwa na: Pedro", notIn: "Hayumo kwenye hii",
       each: "{a} kila mmoja", among: "{a} kwa watu {n}.", amongOne: "{a} kwa mtu 1.", out: "{name} hayumo.",

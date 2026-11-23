@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Výdavky skupiny majú teraz „Zobraziť všetky“, čo otvorí Všetky výdavky už vyfiltrované podľa tej skupiny, takže v jej výdavkoch môžeš vyhľadávať, triediť ich a filtrovať. Zruš filter a uvidíš všetky skupiny.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Novej skupine „Pridať podľa mena“ teraz počas písania navrhuje ľudí z tvojich Kontaktov aj s fotkou: ťukni na niekoho a skupina sa založí s tou istou osobou.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pri posúvaní skupiny zobrazuje jej zbalená horná lišta len fotku a názov skupiny, bez orezaných členov a celkovej sumy vedľa nich.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Teraz si môžeš 12 slov svojho kódu na obnovenie stiahnuť ako textový súbor.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "„Ulož si kód na obnovenie“ teraz hovorí, že ti vráti tvoje údaje a že po 30 dňoch nepoužívania sa údaje vymažú.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rozdeliť výdavok má teraz Naskenovať účtenku aj hore, vedľa Uložiť, takže ho klávesnica už neskryje, a Pridať spôsob platby je nenápadnejší.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Štatistikách skupiny je Podľa osoby teraz prstencový graf podielu každého, v tej istej farbe, akú má každá osoba v Predvolenom rozdelení, so zoznamom mien a súm pod ním ako legendou. Spotrebované a Zaplatené prepínajú, čo zobrazuje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Kto je v nej“ v Novej skupine zobrazuje tvoju profilovú fotku namiesto iniciály.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Synchronizuje sa…“ sa už neukazuje stále na Domove a v Skupinách, keď sa vrátiš do aplikácie: synchronizácia beží potichu, keď už máš skupiny na obrazovke.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na tabletoch a keď telefón leží, už nie je odrezaný tieň „Rozdeliť výdavok“ hore v bočnom paneli.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

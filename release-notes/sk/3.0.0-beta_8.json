@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Výdavok sa teraz dá rozdeliť Podľa príjmu a príjmy, ktoré zadáš, sa zdieľajú s členmi skupiny.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Každý z Posledných výdavkov na Domove má teraz ponuku: Upraviť, Duplikovať, Zdieľať a Odstrániť.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zobraziť všetky na Domove teraz otvorí Všetky výdavky: každý výdavok, ktorého si súčasťou, naprieč tvojimi skupinami, s vyhľadávaním, filtrami a triedením.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotka skupiny je teraz hore na jej obrazovke väčšia a pri posúvaní sa zmenšuje a otvorenie skupiny sa animuje z jej riadku.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktivita teraz zobrazuje fotky ľudí, Zostatky › Podľa skupiny zobrazujú fotku každej skupiny a Najväčší výdavok v Štatistikách zobrazuje svoju kategóriu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Účet a synchronizácia teraz zobrazuje logo Google alebo Apple a celý tvoj e-mail, ktorý vidíš len ty.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Odstrániť účet teraz vysvetľuje, čo zostane v tvojich skupinách po odstránení tvojho účtu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prepínač Predvolený kľúč Pix už pri tvojom predvolenom kľúči v tmavom vzhľade nevyzerá vypnutý.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
