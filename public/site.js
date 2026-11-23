@@ -78,7 +78,7 @@
     hr: { search: "Pretraži jezike", clear: "Očisti pretragu", none: "Nijedan jezik ne odgovara upitu „{query}”", system: "Sustav", systemDetail: "Jezik uređaja", back: "Natrag", close: "Zatvori" },
     sr: { search: "Pretraži jezike", clear: "Obriši pretragu", none: "Nijedan jezik ne odgovara upitu „{query}“", system: "Sistem", systemDetail: "Jezik uređaja", back: "Nazad", close: "Zatvori" },
     sk: { search: "Hľadať jazyk", clear: "Vymazať hľadanie", none: "Žiadny jazyk nezodpovedá „{query}“", system: "Systém", systemDetail: "Jazyk zariadenia", back: "Späť", close: "Zavrieť" },
-    ta: { search: "மொழியைத் தேடவும்", clear: "தேடலை அழிக்கவும்", none: "பொருந்தும் மொழி எதுவும் இல்லை: “{query}”", system: "சிஸ்டம்", systemDetail: "சாதனத்தின் மொழி", back: "பின்செல்", close: "மூடவும்" },
+    ta: { search: "மொழியைத் தேடவும்", clear: "தேடலை அழிக்கவும்", none: "பொருந்தும் மொழி எதுவும் இல்லை: “{query}”", system: "சிஸ்டம்", systemDetail: "சாதனத்தின் மொழி", back: "பின்செல்லவும்", close: "மூடவும்" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
   // Ukrainian by Ukraine's UA ("UK" reads as the United Kingdom) and the two Chinese by their scripts, as Chinese
