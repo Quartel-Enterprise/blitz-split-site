@@ -81,6 +81,7 @@ const CHROME = {
   sl: { language: "Slovenščina", brand: "Blitz Split", locale: "sl", title: "Novosti", lead: "Kaj se je spremenilo v vsaki različici aplikacije.", showBeta: "Prikaži različice beta", beta: "Beta", empty: "Stabilne različice še ni. Vklopi različice beta, da vidiš, kaj se preizkuša.", platforms: { android: "Android", ios: "iPhone in iPad", mac: "Mac", web: "Splet" } },
   gu: { language: "ગુજરાતી", brand: "Blitz Split", locale: "gu-u-nu-latn", title: "નવું શું છે", lead: "ઍપના દરેક વર્ઝનમાં શું બદલાયું.", showBeta: "બીટા વર્ઝન બતાવો", beta: "બીટા", empty: "હજી કોઈ સ્ટેબલ વર્ઝન નથી. શું ટેસ્ટ થઈ રહ્યું છે તે જોવા બીટા વર્ઝન ચાલુ કરો.", platforms: { android: "Android", ios: "iPhone અને iPad", mac: "Mac", web: "વેબ" } },
   ml: { language: "മലയാളം", brand: "Blitz Split", locale: "ml-u-nu-latn", title: "പുതിയ മാറ്റങ്ങൾ", lead: "ആപ്പിന്റെ ഓരോ പതിപ്പിലും എന്താണ് മാറിയത്.", showBeta: "ബീറ്റ പതിപ്പുകൾ കാണിക്കുക", beta: "ബീറ്റ", empty: "ഇതുവരെ സ്റ്റേബിൾ പതിപ്പൊന്നുമില്ല. എന്താണ് ടെസ്റ്റ് ചെയ്യുന്നതെന്ന് കാണാൻ ബീറ്റ പതിപ്പുകൾ ഓണാക്കുക.", platforms: { android: "Android", ios: "iPhone, iPad", mac: "Mac", web: "വെബ്" } },
+  pa: { language: "ਪੰਜਾਬੀ", brand: "Blitz Split", locale: "pa-u-nu-latn", title: "ਨਵਾਂ ਕੀ ਹੈ", lead: "ਐਪ ਦੇ ਹਰ ਵਰਜ਼ਨ ਵਿੱਚ ਕੀ ਬਦਲਿਆ।", showBeta: "ਬੀਟਾ ਵਰਜ਼ਨ ਦਿਖਾਓ", beta: "ਬੀਟਾ", empty: "ਹਾਲੇ ਕੋਈ ਸਥਿਰ ਵਰਜ਼ਨ ਨਹੀਂ ਹੈ। ਕੀ ਟੈਸਟ ਹੋ ਰਿਹਾ ਹੈ, ਇਹ ਦੇਖਣ ਲਈ ਬੀਟਾ ਵਰਜ਼ਨ ਚਾਲੂ ਕਰੋ।", platforms: { android: "Android", ios: "iPhone ਅਤੇ iPad", mac: "Mac", web: "ਵੈੱਬ" } },
 };
 
 class NotesError extends Error {}

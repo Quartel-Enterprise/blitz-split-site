@@ -117,9 +117,9 @@ p { margin: 0; text-wrap: pretty; }
    mark a <wbr>, keeping each phrase whole, as Japanese's auto-phrase does, and inside one only when it doesn't fit. */
 :root:is([lang="zh-Hans"], [lang="zh-Hant"]) :is(h1, h2, h3) { word-break: keep-all; overflow-wrap: break-word; }
 /* Russian, Ukrainian and Bulgarian draw their Cyrillic, Greek its alphabet, Korean its Hangul, Hindi and Marathi their Devanagari,
-   Gujarati, Bengali, Tamil, Telugu and Malayalam their scripts and Thai its own in the system
+   Gujarati, Bengali, Tamil, Telugu and Malayalam their scripts, Punjabi its Gurmukhi, and Thai its own in the system
    font, as the bundled Geist subsets have none of them: the tracking tuned for Geist would cramp them. */
-:root:is([lang="ru"], [lang="uk"], [lang="bg"], [lang="el"], [lang="ko"], [lang="hi"], [lang="mr"], [lang="gu"], [lang="bn"], [lang="ta"], [lang="te"], [lang="ml"], [lang="th"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
+:root:is([lang="ru"], [lang="uk"], [lang="bg"], [lang="el"], [lang="ko"], [lang="hi"], [lang="mr"], [lang="gu"], [lang="bn"], [lang="ta"], [lang="te"], [lang="ml"], [lang="pa"], [lang="th"]) :is(h1, h2, h3, h4, .kicker, .eyebrow, .screen-head .title, .balance strong, .amount) { letter-spacing: 0; }
 /* Korean breaks lines between words (its spaces), never inside one, as Korean text does. */
 :root[lang="ko"] { word-break: keep-all; overflow-wrap: break-word; }
 /* Vietnamese writes with the Latin Extended Additional letters (U+1EA0-1EF9: ạ, ả, ụ as much as the stacked ể, ở, ặ),
@@ -206,6 +206,7 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="sl"] body [data-lang]:not([data-lang="sl"]),
 :root[data-lang="gu"] body [data-lang]:not([data-lang="gu"]),
 :root[data-lang="ml"] body [data-lang]:not([data-lang="ml"]),
+:root[data-lang="pa"] body [data-lang]:not([data-lang="pa"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }
 .skip:focus { inset-inline-start: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: var(--radius); }
@@ -480,10 +481,10 @@ a.status .icon { width: 15px; height: 15px; }
   /* The descenders of "offline" stay inside the painted box. */
   padding-bottom: 0.08em;
 }
-/* Devanagari's (Hindi's and Marathi's), Gujarati's, Bengali's, Tamil's, Malayalam's and Telugu's marks reach above the headline and below the baseline further than
+/* Devanagari's (Hindi's and Marathi's), Gujarati's, Bengali's, Tamil's, Malayalam's, Gurmukhi's (Punjabi's) and Telugu's marks reach above the headline and below the baseline further than
    Geist's Latin: their titles get the room between their lines, and their gradient's painted box the room around them. */
-:root:is([lang="hi"], [lang="mr"], [lang="gu"], [lang="bn"], [lang="ta"], [lang="ml"]) .hero h1 { line-height: 1.25; }
-:root:is([lang="hi"], [lang="mr"], [lang="gu"], [lang="bn"], [lang="ta"], [lang="ml"]) .hero h1 .accent { padding-block: 0.12em 0.16em; }
+:root:is([lang="hi"], [lang="mr"], [lang="gu"], [lang="bn"], [lang="ta"], [lang="ml"], [lang="pa"]) .hero h1 { line-height: 1.25; }
+:root:is([lang="hi"], [lang="mr"], [lang="gu"], [lang="bn"], [lang="ta"], [lang="ml"], [lang="pa"]) .hero h1 .accent { padding-block: 0.12em 0.16em; }
 /* Telugu's vowel signs above and its stacked consonants below reach further than Devanagari's. */
 :root[lang="te"] .hero h1 { line-height: 1.35; }
 :root[lang="te"] .hero h1 .accent { padding-block: 0.18em 0.24em; }
