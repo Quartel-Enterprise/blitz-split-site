@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Kellegi avamine jaotisest Kontaktid või Saldod viib nüüd koos fotoga tema profiilile ka tema nime ja saldo ning tagasi, kui naased.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Statistikas ütleb „Inimeste kaupa“ rõnga keskosa nüüd lihtsalt „Sina“, kui osa on sinu oma, ja pikk nimi lõpeb kolme punktiga (…), selle asemel et rõngast puudutada.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kui avad grupi jaotisest Grupid, liiguvad selle liikmete näod realt grupi ekraanile ja tagasi, kui lahkud.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Telefonis viib kulu avamine nüüd rohkem sellest kaasa: maksja liigub selle realt avalehel ja vaates „Kõik kulud“, kellaaeg selle realt grupi jaotises Kulud ning grupi foto ja nimi grupi ekraanilt. Need liiguvad tagasi, kui lahkud.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grupi nimi liigub nüüd grupi ekraanile selle avanemisel, mitte ainult tagasiteel.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

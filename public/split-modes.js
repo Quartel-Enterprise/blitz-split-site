@@ -1269,6 +1269,37 @@
         less: "Yksi osuus vähemmän: {name}", more: "Yksi osuus lisää: {name}", had: "Kuka otti: {item}",
       },
     },
+    // Estonian: like Finnish, no message holds a "|" (one person has its own message, a person's shares show only above
+    // one, and a number above one takes the same form whatever it is); "sina" for the user and the app's words
+    // (võrdselt, osad, sissetuleku järgi, tooted). A name, an item or an amount stands after a colon, after a noun that
+    // carries the case or as the subject, never with a case ending.
+    et: {
+      bill: "Pitsaõhtu", paid: "Pedro maksis", notIn: "Pole osaline",
+      each: "{a} igaühele", among: "{a} {n} inimese vahel.", amongOne: "{a} 1 inimesele.", out: "{name} pole osaline.",
+      nobody: "Keegi pole veel osaline", nobodyEqual: "Summa {a} jagamiseks märgi vähemalt üks inimene.",
+      checkAll: "Märgi kõik", uncheckAll: "Eemalda kõik märgid",
+      left: "{a} jäänud", over: "{a} üle", closed: "Klapib: {a}",
+      progress: "Seni {a}/{b}.", closedMsg: "Osad annavad kokku kogusumma.",
+      parts: "{a} jagatud {n} osaks", personParts: "Isikul {name} on {n} osa.", nobodyShares: "Summa {a} jagamiseks anna vähemalt ühele inimesele osa.",
+      ofEach: "{p} igast kulust", ofBill: "{p} kulust", incomeDetail: "Igaühe osa järgib tema sissetulekut.", perMonth: "/kuus",
+      service: "Teenustasu ({p})", serviceSub: "Proportsionaalselt sellega, mida igaüks tarbis",
+      loose: "Märgi, kes mida tarbis", looseDetail: "Puuduta iga toote juures nägusid ja märgi, kes seda tarbis.",
+      itemsClosed: "{a} tooteid ja {b} teenustasu.", nobodyItem: "Keegi pole märgitud", eachItem: "{a} igaühele",
+      items: { pizza: "Suur pitsa", beer: "Õlu", salad: "Salat", draft: "Vaadiõlu", shrimp: "Krevetivaagen" },
+      receiptBill: "Sadamabaar",
+      hint: {
+        equal: "Kui summa ei jagu võrdselt, lähevad üle jäänud sendid maksjale.",
+        amounts: "Kes jääb summale {zero}, pole kulus osaline.",
+        percent: "Ainult täisarvud. Üle jäänud sendid lähevad maksjale.",
+        shares: "Kasuta osi, kui kellelgi on rohkem, näiteks kui keegi tõi kaaslase kaasa.",
+        income: "Sissetulekud jäävad seadmesse. Grupp näeb ainult protsente.",
+        items: "Iga toode jagatakse nende vahel, kes seda tarbisid, ja teenustasu selle järgi, mida igaüks tarbis.",
+      },
+      label: {
+        amount: "Summa: {name}", percent: "Protsent: {name}", income: "Kuusissetulek: {name}",
+        less: "Üks osa vähem: {name}", more: "Üks osa rohkem: {name}", had: "Kes tarbis: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

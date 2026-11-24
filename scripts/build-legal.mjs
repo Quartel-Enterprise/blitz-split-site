@@ -67,6 +67,7 @@ const CHROME = {
   ca: { language: "Català", brand: "Blitz Split", locale: "ca", updated: "Actualitzat el {date}", read: "{n} min de lectura", toc: "En aquesta pàgina" },
   da: { language: "Dansk", brand: "Blitz Split", locale: "da", updated: "Opdateret {date}", read: "{n} min. læsetid", toc: "På denne side" },
   fi: { language: "Suomi", brand: "Blitz Split", locale: "fi", updated: "Päivitetty {date}", read: "Lukuaika {n} min", toc: "Tällä sivulla" },
+  et: { language: "Eesti", brand: "Blitz Split", locale: "et", updated: "Uuendatud {date}", read: "Lugemisaeg {n} min", toc: "Sellel lehel" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
@@ -87,6 +88,8 @@ const CHARACTERS_PER_MINUTE = {
   fa: 612,
   // Why: the study has no Danish, and Swedish is the closest language it measured.
   da: 917,
+  // Why: the study has no Estonian, and Finnish is the closest language it measured, of the same family.
+  et: 1078,
 };
 // The study's median without Chinese and Japanese, for a language it didn't measure. Why without them: a character of
 // theirs holds far more than a letter, so they would slow down every language written with letters.

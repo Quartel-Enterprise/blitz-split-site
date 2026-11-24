@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Kulu saab nüüd jagada „Sissetuleku järgi“ ning sisestatud sissetulekuid jagatakse grupi liikmetega.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Igal kulul avalehe jaotises „Viimased kulud“ on nüüd menüü: Muuda, Tee koopia, Jaga ja Kustuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Avalehe „Vaata kõiki“ avab nüüd vaate „Kõik kulud“: iga kulu, milles sa osaled, kõigis sinu gruppides, koos otsingu, filtrite ja sortimisega.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupi foto on nüüd selle ekraani ülaosas suurem ja kahaneb kerimisel ning grupi avamine animeerub selle realt.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Tegevus näitab nüüd inimeste fotosid, Saldod › Grupiti näitab iga grupi fotot ja Statistika „Suurim kulu“ näitab selle kategooriat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiil › Konto ja sünkroonimine näitab nüüd Google’i või Apple’i logo ja sinu täielikku e-posti aadressi, mida näed ainult sina.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Kustuta konto“ selgitab nüüd, mis jääb sinu gruppidesse pärast seda, kui su konto on kustutatud.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lüliti „Pixi vaikevõti“ ei paista tumedas teemas sinu vaikevõtme juures enam väljalülitatuna.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
