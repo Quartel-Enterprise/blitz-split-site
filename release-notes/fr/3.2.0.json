@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "L’app parle désormais bulgare : choisis « Български » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais catalan : choisis « Català » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais danois : choisis « Dansk » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en couronne danoise (DKK), et un groupe créé au Danemark, au Groenland ou aux îles Féroé démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais finnois : choisis « Suomi » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais marathi : choisis « मराठी » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais norvégien : choisis « Norsk bokmål » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en couronne norvégienne (NOK), et un groupe créé en Norvège démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais persan : choisis « فارسی » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Les groupes peuvent maintenant partager en rial iranien (IRR), et un groupe créé en Iran démarre dans cette devise.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais slovaque : choisis « Slovenčina » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais swahili : choisis « Kiswahili » dans Profil › Langue, ou laisse-la suivre ton appareil. Les nouveaux groupes au Kenya et en Tanzanie démarrent en shilling kényan ou tanzanien.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais tamoul : choisis « தமிழ் » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app parle désormais télougou : choisis « తెలుగు » dans Profil › Langue, ou laisse-la suivre ton appareil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sur iPhone, iPad et Mac, les dates en thaï et en persan affichent désormais l’année grégorienne, comme sur Android et le web, quel que soit le calendrier de l’appareil.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

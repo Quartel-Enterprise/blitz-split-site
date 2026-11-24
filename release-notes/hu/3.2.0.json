@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Az app mostantól bolgárul is beszél: válaszd a „Български” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól katalánul is beszél: válaszd a „Català” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól dánul is beszél: válaszd a „Dansk” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól dán koronát (DKK) is használhatnak, és a Dániában, Grönlandon vagy a Feröer-szigeteken létrehozott csoport ebben indul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól finnül is beszél: válaszd a „Suomi” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól maráthi nyelven is beszél: válaszd a „मराठी” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól norvégül is beszél: válaszd a „Norsk bokmål” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól norvég koronát (NOK) is használhatnak, és a Norvégiában létrehozott csoport ebben indul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól perzsául is beszél: válaszd a „فارسی” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A csoportok mostantól iráni riált (IRR) is használhatnak, és az Iránban létrehozott csoport ebben indul.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól szlovákul is beszél: válaszd a „Slovenčina” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól szuahéliül is beszél: válaszd a „Kiswahili” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse. A Kenyában és Tanzániában létrehozott új csoportok kenyai vagy tanzániai shillingben indulnak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól tamilul is beszél: válaszd a „தமிழ்” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Az app mostantól telugu nyelven is beszél: válaszd a „తెలుగు” lehetőséget a Profil › Nyelv menüben, vagy hagyd, hogy az eszközöd nyelvét kövesse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPhone-on, iPaden és Macen a thai és perzsa dátumok mostantól a Gergely-naptári évet mutatják, mint Androidon és a weben, bármilyen naptárat használ az eszköz.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

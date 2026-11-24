@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Marunong na ng Bulgarian ang app: piliin ang \"Български\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Catalan ang app: piliin ang \"Català\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Danish ang app: piliin ang \"Dansk\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Danish krone (DKK), at ang grupong ginawa sa Denmark, Greenland o Faroe Islands ay magsisimula rito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Finnish ang app: piliin ang \"Suomi\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Marathi ang app: piliin ang \"मराठी\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Norwegian ang app: piliin ang \"Norsk bokmål\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Norwegian krone (NOK), at ang grupong ginawa sa Norway ay magsisimula rito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Persian ang app: piliin ang \"فارسی\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Puwede nang maghati ang mga grupo sa Iranian rial (IRR), at ang grupong ginawa sa Iran ay magsisimula rito.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Slovak ang app: piliin ang \"Slovenčina\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Swahili ang app: piliin ang \"Kiswahili\" sa Profile › Wika, o hayaan itong sundin ang device mo. Ang mga bagong grupo sa Kenya at Tanzania ay magsisimula sa Kenyan o Tanzanian shilling.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Tamil ang app: piliin ang \"தமிழ்\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Marunong na ng Telugu ang app: piliin ang \"తెలుగు\" sa Profile › Wika, o hayaan itong sundin ang device mo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sa iPhone, iPad at Mac, ipinapakita na ng mga petsa sa Thai at Persian ang taong Gregorian, gaya sa Android at web, anuman ang kalendaryo ng device.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

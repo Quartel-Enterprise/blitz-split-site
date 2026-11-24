@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Ứng dụng giờ đã có tiếng Bulgaria: chọn “Български” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Catalan: chọn “Català” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Đan Mạch: chọn “Dansk” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng krone Đan Mạch (DKK), và nhóm được tạo ở Đan Mạch, Greenland hoặc Quần đảo Faroe sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Phần Lan: chọn “Suomi” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Marathi: chọn “मराठी” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Na Uy: chọn “Norsk bokmål” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng krone Na Uy (NOK), và nhóm được tạo ở Na Uy sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Ba Tư: chọn “فارسی” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nhóm giờ có thể chia bằng rial Iran (IRR), và nhóm được tạo ở Iran sẽ bắt đầu với đồng tiền này.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Slovak: chọn “Slovenčina” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Swahili: chọn “Kiswahili” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị. Nhóm mới ở Kenya và Tanzania sẽ bắt đầu với đồng shilling Kenya hoặc Tanzania.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Tamil: chọn “தமிழ்” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ứng dụng giờ đã có tiếng Telugu: chọn “తెలుగు” trong Hồ sơ › Ngôn ngữ, hoặc để ứng dụng theo ngôn ngữ của thiết bị.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Trên iPhone, iPad và Mac, ngày tháng bằng tiếng Thái và tiếng Ba Tư giờ hiển thị năm dương lịch, như trên Android và web, dù thiết bị dùng lịch nào.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

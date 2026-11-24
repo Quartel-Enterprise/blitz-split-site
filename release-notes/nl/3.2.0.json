@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "De app spreekt nu Bulgaars: kies \"Български\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Catalaans: kies \"Català\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Deens: kies \"Dansk\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Deense kronen (DKK), en een groep die in Denemarken, Groenland of op de Faeröer wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Fins: kies \"Suomi\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Marathi: kies \"मराठी\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Noors: kies \"Norsk bokmål\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Noorse kronen (NOK), en een groep die in Noorwegen wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Perzisch: kies \"فارسی\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepen kunnen nu verdelen in Iraanse rial (IRR), en een groep die in Iran wordt gemaakt, start in die valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Slowaaks: kies \"Slovenčina\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Swahili: kies \"Kiswahili\" in Profiel › Taal, of laat hem je toestel volgen. Nieuwe groepen in Kenia en Tanzania starten in de Keniaanse of Tanzaniaanse shilling.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Tamil: kies \"தமிழ்\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "De app spreekt nu Telugu: kies \"తెలుగు\" in Profiel › Taal, of laat hem je toestel volgen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op iPhone, iPad en Mac tonen datums in het Thai en Perzisch nu het gregoriaanse jaar, zoals op Android en het web, welke kalender het toestel ook gebruikt.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

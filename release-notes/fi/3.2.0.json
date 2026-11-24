@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Sovellus puhuu nyt bulgariaa: valitse ”Български” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt katalaania: valitse ”Català” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt tanskaa: valitse ”Dansk” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kulut Tanskan kruunuina (DKK), ja Tanskassa, Grönlannissa tai Färsaarilla luotu ryhmä käyttää sitä alusta alkaen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt suomea: valitse ”Suomi” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt marathia: valitse ”मराठी” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt norjaa: valitse ”Norsk bokmål” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kulut Norjan kruunuina (NOK), ja Norjassa luotu ryhmä käyttää sitä alusta alkaen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt persiaa: valitse ”فارسی” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ryhmät voivat nyt jakaa kulut Iranin riaaleina (IRR), ja Iranissa luotu ryhmä käyttää sitä alusta alkaen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt slovakkia: valitse ”Slovenčina” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt swahilia: valitse ”Kiswahili” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä. Uudet ryhmät Keniassa ja Tansaniassa käyttävät alusta alkaen Kenian tai Tansanian šillinkiä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt tamilia: valitse ”தமிழ்” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sovellus puhuu nyt telugua: valitse ”తెలుగు” kohdassa Profiili › Kieli tai anna sen seurata laitteesi kieltä.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPhonessa, iPadissa ja Macissa thain- ja persiankieliset päivämäärät näyttävät nyt gregoriaanisen vuoden, kuten Androidissa ja verkossa, käytti laite mitä kalenteria tahansa.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

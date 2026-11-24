@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "The app now speaks Bulgarian: pick \"Български\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Catalan: pick \"Català\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Danish: pick \"Dansk\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Danish krone (DKK), and a group made in Denmark, Greenland or the Faroe Islands starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Finnish: pick \"Suomi\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Marathi: pick \"मराठी\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Norwegian: pick \"Norsk bokmål\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Norwegian krone (NOK), and a group made in Norway starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Persian: pick \"فارسی\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groups can now split in the Iranian rial (IRR), and a group made in Iran starts in it.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Slovak: pick \"Slovenčina\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Swahili: pick \"Kiswahili\" in Profile › Language, or let it follow your device. New groups in Kenya and Tanzania start in the Kenyan or Tanzanian shilling.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Tamil: pick \"தமிழ்\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "The app now speaks Telugu: pick \"తెలుగు\" in Profile › Language, or let it follow your device.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "On iPhone, iPad and Mac, dates in Thai and Persian now show the Gregorian year, as on Android and the web, whatever calendar the device uses.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}
