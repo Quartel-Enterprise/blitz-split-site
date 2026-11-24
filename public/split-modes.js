@@ -1393,6 +1393,35 @@
         less: "En delež manj: {name}", more: "En delež več: {name}", had: "Kdo je imel: {item}",
       },
     },
+    // Gujarati: a noun after a number stays singular (2 શેર), so no message holds a "|" (one person has its own message).
+    // A name, an item or an amount never takes a case ending: it stands after a colon. તમે for the user.
+    gu: {
+      bill: "પિઝા નાઇટ", paid: "ચૂકવનાર: Pedro", notIn: "આ ખર્ચમાં નથી",
+      each: "દરેકના {a}", among: "{n} લોકોમાં વહેંચાયા: {a}.", amongOne: "ફક્ત 1 વ્યક્તિ પર: {a}.", out: "સામેલ નથી: {name}.",
+      nobody: "હજી કોઈ નહીં", nobodyEqual: "આ રકમ વહેંચવા માટે ઓછામાં ઓછી એક વ્યક્તિ પસંદ કરો: {a}.",
+      checkAll: "બધા પસંદ કરો", uncheckAll: "બધાની પસંદગી હટાવો",
+      left: "બાકી: {a}", over: "વધારે: {a}", closed: "મેળ ખાય છે: {a}",
+      progress: "અત્યાર સુધી: {a} / {b}.", closedMsg: "બધા ભાગ મળીને કુલ રકમ જેટલા થાય છે.",
+      parts: "{a}: {n} શેર", personParts: "{name}: {n} શેર.", nobodyShares: "આ રકમ વહેંચવા માટે ઓછામાં ઓછી એક વ્યક્તિને શેર આપો: {a}.",
+      ofEach: "દરેક ખર્ચના {p}", ofBill: "ખર્ચના {p}", incomeDetail: "દરેકનો ભાગ તેમની આવક મુજબ નક્કી થાય છે.", perMonth: "/મહિને",
+      service: "સર્વિસ ચાર્જ ({p})", serviceSub: "દરેકે જે લીધું તેના પ્રમાણમાં",
+      loose: "દરેક આઇટમ કોણે લીધી તે માર્ક કરો", looseDetail: "કોણે લીધું તે માર્ક કરવા, દરેક આઇટમ પરના ચહેરાઓ પર ટૅપ કરો.",
+      itemsClosed: "આઇટમ્સ: {a}, સર્વિસ ચાર્જ: {b}.", nobodyItem: "કોઈ પસંદ નથી", eachItem: "દરેકના {a}",
+      items: { pizza: "લાર્જ પિઝા", beer: "બિયર", salad: "સલાડ", draft: "ડ્રાફ્ટ બિયર", shrimp: "ઝીંગા પ્લેટર" },
+      receiptBill: "હાર્બર બાર",
+      hint: {
+        equal: "રકમ બરાબર ન વહેંચાય ત્યારે, વધેલા પૈસા ચૂકવનારને મળે છે.",
+        amounts: "જેની રકમ {zero} રહે છે, તે આ ખર્ચમાં સામેલ નથી.",
+        percent: "ફક્ત પૂર્ણ સંખ્યાઓ. વધેલા પૈસા ચૂકવનારને મળે છે.",
+        shares: "કોઈનો ભાગ વધારે હોય ત્યારે શેર વાપરો, જેમ કે જે કોઈ મહેમાનને સાથે લાવ્યા હોય.",
+        income: "આવક ડિવાઇસ પર જ રહે છે. ગ્રુપને ફક્ત ટકાવારી દેખાય છે.",
+        items: "દરેક આઇટમ તે લેનારાઓમાં વહેંચાય છે, અને સર્વિસ ચાર્જ દરેકે જે લીધું તે મુજબ.",
+      },
+      label: {
+        amount: "રકમ: {name}", percent: "ટકાવારી: {name}", income: "માસિક આવક: {name}",
+        less: "એક શેર ઓછો: {name}", more: "એક શેર વધારે: {name}", had: "કોણે લીધું: {item}",
+      },
+    },
     // Punjabi: a noun after a number takes one and other forms, as Intl.PluralRules tells them (1 ਹਿੱਸਾ, 2 ਹਿੱਸੇ). A
     // name, an item or an amount never takes a case ending: it stands after a colon. ਤੁਸੀਂ for the user.
     pa: {

@@ -71,6 +71,7 @@ const CHROME = {
   et: { language: "Eesti", brand: "Blitz Split", locale: "et", updated: "Uuendatud {date}", read: "Lugemisaeg {n} min", toc: "Sellel lehel" },
   lt: { language: "Lietuvių", brand: "Blitz Split", locale: "lt", updated: "Atnaujinta {date}", read: "Skaitymo laikas: {n} min.", toc: "Šiame puslapyje" },
   sl: { language: "Slovenščina", brand: "Blitz Split", locale: "sl", updated: "Posodobljeno {date}", read: "{n} min branja", toc: "Na tej strani" },
+  gu: { language: "ગુજરાતી", brand: "Blitz Split", locale: "gu-u-nu-latn", updated: "છેલ્લે અપડેટ: {date}", read: "વાંચવામાં {n} મિનિટ", toc: "આ પેજ પર" },
   pa: { language: "ਪੰਜਾਬੀ", brand: "Blitz Split", locale: "pa-u-nu-latn", updated: "ਆਖਰੀ ਅੱਪਡੇਟ: {date}", read: "ਪੜ੍ਹਨ ਲਈ {n} ਮਿੰਟ", toc: "ਇਸ ਪੰਨੇ ’ਤੇ" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
