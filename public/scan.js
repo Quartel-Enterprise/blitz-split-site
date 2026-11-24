@@ -289,6 +289,12 @@
       lines: [["2 ਡ੍ਰਾਫ਼ਟ ਬੀਅਰ", "28.00", 1], ["1 ਝੀਂਗਾ ਪਲੇਟਰ", "96.00", 2]],
       subtotal: ["ਸਬਟੋਟਲ", "124.00"], service: ["ਸਰਵਿਸ ਚਾਰਜ 10%", "12.40", 3], total: ["ਕੁੱਲ", "136.40"],
     },
+    // Kannada: a harbor bar's receipt, in rupees, as India prints it.
+    kn: {
+      store: "ಹಾರ್ಬರ್ ಬಾರ್", address: "120, ಬೀಚ್ ರೋಡ್", date: "08/11/2026  9:47 PM",
+      lines: [["2 ಡ್ರಾಫ್ಟ್ ಬಿಯರ್", "28.00", 1], ["1 ಸೀಗಡಿ ಪ್ಲ್ಯಾಟರ್", "96.00", 2]],
+      subtotal: ["ಉಪಮೊತ್ತ", "124.00"], service: ["ಸೇವಾ ಶುಲ್ಕ 10%", "12.40", 3], total: ["ಒಟ್ಟು", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

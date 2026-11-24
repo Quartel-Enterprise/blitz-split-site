@@ -55,6 +55,7 @@
     gu: ["₹", ".", ",", "", 0, 2],
     ml: ["₹", ".", ",", "", 0, 2],
     pa: ["₹", ".", ",", "", 0, 2],
+    kn: ["₹", ".", ",", "", 0, 2],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
@@ -81,9 +82,10 @@
     return isolate((cents > 0 ? "+" : "−") + text);
   }
   // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), and a Hindi, Marathi,
-  // Bengali, Punjabi, Gujarati, Tamil, Telugu, Malayalam or Thai one may type its script's (४८, ৪৮, ੪੮, ૪૮, ௪௮, ౪౮, ൪൮, ๔๘), which \d doesn't match,
-  // so they are read as the Latin ones before anything else: each script's zero, and the nine digits after it.
-  const DIGIT_ZEROS = [0x660, 0x6f0, 0x966, 0x9e6, 0xa66, 0xae6, 0xbe6, 0xc66, 0xd66, 0xe50];
+  // Bengali, Punjabi, Gujarati, Tamil, Telugu, Malayalam, Kannada or Thai one may type its script's (४८, ৪৮, ੪੮, ૪૮, ௪௮, ౪౮,
+  // ൪൮, ೪೮, ๔๘), which \d doesn't match, so they are read as the Latin ones before anything else: each script's zero, and
+  // the nine digits after it.
+  const DIGIT_ZEROS = [0x660, 0x6f0, 0x966, 0x9e6, 0xa66, 0xae6, 0xbe6, 0xc66, 0xd66, 0xce6, 0xe50];
   const latinDigits = (text) => text
     .replace(/\p{Nd}/gu, (d) => {
       const code = d.codePointAt(0);
