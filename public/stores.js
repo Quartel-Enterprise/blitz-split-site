@@ -527,7 +527,7 @@
     },
     // Latvian: "Google Play" and "App Store" are never declined; "no" and "uz" before them need no ending.
     lv: {
-      play: ["Lejupielādē no", "Drīzumā"], appstore: ["Lejupielādē no", "Drīzumā"], web: ["Atver", "Drīzumā"], browser: "pārlūkā",
+      play: ["Lejupielādē no", "Drīzumā pieejama"], appstore: ["Lejupielādē no", "Drīzumā pieejama"], web: ["Atver", "Drīzumā"], browser: "pārlūkā",
       getApp: "Iegūt lietotni", openWeb: "Atvērt tīmekļa lietotni", soon: "Drīzumā",
       noteStore: "Iegūsti lietotni {in}.", noteApple: "Tev ir {platform}? Lieto lietotni pārlūkā, līdz tā būs pieejama App Store.", noteWeb: "Atver to pārlūkā, nekas nav jāinstalē.",
       playLive: "Pieejama Google Play", appStoreLive: "Pieejama App Store", webLive: "Atvērt tīmekļa lietotni",
