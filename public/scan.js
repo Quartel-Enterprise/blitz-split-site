@@ -247,6 +247,12 @@
       lines: [["2 HANAOLUT", "28,00", 1], ["1 KATKARAPUVATI", "96,00", 2]],
       subtotal: ["VÄLISUMMA", "124,00"], service: ["PALVELU 10\u00a0%", "12,40", 3], total: ["YHTEENSÄ", "136,40"],
     },
+    // Latvian: a harbor bar's receipt, in euros, with Latvia's dotted date.
+    lv: {
+      store: "OSTAS BĀRS", address: "Kaiju iela 120", date: "08.11.2026  21:47",
+      lines: [["2 LĒJAMAIS ALUS", "28,00", 1], ["1 GARNEĻU PLATE", "96,00", 2]],
+      subtotal: ["STARPSUMMA", "124,00"], service: ["APKALPOŠANA 10%", "12,40", 3], total: ["KOPĀ", "136,40"],
+    },
     // Slovenian: a harbor bar's receipt, in euros, with Slovenia's dotted date.
     sl: {
       store: "PRISTANIŠKI BAR", address: "Galebova ulica 120", date: "8. 11. 2026  21:47",

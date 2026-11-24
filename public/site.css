@@ -200,6 +200,7 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="ca"] body [data-lang]:not([data-lang="ca"]),
 :root[data-lang="da"] body [data-lang]:not([data-lang="da"]),
 :root[data-lang="fi"] body [data-lang]:not([data-lang="fi"]),
+:root[data-lang="lv"] body [data-lang]:not([data-lang="lv"]),
 :root[data-lang="sl"] body [data-lang]:not([data-lang="sl"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }

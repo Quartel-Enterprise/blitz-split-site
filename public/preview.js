@@ -16,7 +16,8 @@
 
   // Polish, Russian, Ukrainian, Czech, Slovak and Romanian counts take one form for 1 (and, in Russian and Ukrainian, 21, 31…),
   // another for a few and a third for the rest, as Intl.PluralRules tells them: the few are 2–4 in Czech and Slovak, 2–4
-  // and 22–24… in the others, and 2–19 in Romanian, whose rest takes "de" (20 de cheltuieli).
+  // and 22–24… in the others, and 2–19 in Romanian, whose rest takes "de" (20 de cheltuieli). Latvian has no few: its
+  // one is 1, 21, 31… and its zero and other both take the plural, the third form.
   const plural = new Intl.PluralRules(lang);
   // Slovenian's forms add a two for 2, 102…, its few being 3–4, 103–104…. The form of the count's category, or the
   // rest's (other), for a category a language leaves out.
@@ -797,6 +798,26 @@
       bills: (n) => `${n} ${n === 1 ? "kulu" : "kulua"}`,
       titles: { b1: "Majatalo Lagoassa", b2: "Illallinen Ribeirãossa", b3: "Kyyti rannalle", p1: "Jäätelöt rannalla", p2: "Viikon ruokaostokset", p3: "Pysäköinti" },
     },
+    // Latvian: "tu" for the user, and the app's words (rēķins, bilance, norēķināties, reģistrēt maksājumu). A name is
+    // the subject or stands after a noun that carries the case ("personai {name}"), never declined itself; a count
+    // takes the singular after 1, 21, 31… (countForm, as Intl.PluralRules tells it), the plural after the rest.
+    lv: {
+      paid: "{name} samaksāja", notIn: "Šoreiz nepiedalās",
+      members: (people, bills) => `${people} ${countForm(people, "cilvēks", undefined, "cilvēki")} · ${bills} ${countForm(bills, "rēķins", undefined, "rēķini")}`,
+      toGet: "jāsaņem", youOwe: "tu esi parādā", settled: "viss nokārtots", owesYou: "Tev ir parādā", youOweTitle: "Tu esi parādā",
+      eachOne: "Katra bilance", getsBack: "saņems atpakaļ", owes: "ir parādā", even: "norēķins pabeigts",
+      toSettle: "Jānorēķinās", total: "Grupas kopsumma", lodging: "Naktsmītne", food: "Ēdiens", transport: "Transports",
+      sheetTitle: "Sadalīt rēķinu", description: "Apraksts", amount: "Summa", whoPaid: "Kas maksāja",
+      splitAmong: "Sadalīt vienādi starp", each: "{value} katram", cancel: "Atcelt", save: "Saglabāt", close: "Aizvērt",
+      queue: (n) => `${n} ${countForm(n, "izmaiņa", undefined, "izmaiņas")} rindā`,
+      split: "Kā tas tika sadalīts", yourShare: "Tava daļa", deleteBill: "Dzēst rēķinu",
+      recordPayment: "Reģistrēt maksājumu", record: "Reģistrēt", viaMethod: "ar pārskaitījumu", payment: "Maksājums", deletePayment: "Dzēst maksājumu",
+      payLine: (from, to) => `${name(from)} samaksāja personai ${name(to)}`,
+      paidYou: (who, value) => `${who} tev samaksāja ${value}`,
+      paidTotal: "Samaksāts kopā", shareTotal: "Daļa no rēķiniem", balance: "Bilance",
+      bills: (n) => `${n} ${countForm(n, "rēķins", undefined, "rēķini")}`,
+      titles: { b1: "Lagoas viesu māja", b2: "Vakariņas Ribeirão", b3: "Brauciens uz pludmali", p1: "Saldējums pludmalē", p2: "Nedēļas iepirkumi", p3: "Stāvvieta" },
+    },
     // Slovenian: "ti" for the user, and the app's words (strošek, stanje, poravnaj, zabeleži plačilo). A count takes
     // four forms (countForm: 1 oseba, 2 osebi, 3 osebe, 5 oseb), and a name stands after a colon or an arrow, never
     // declined, and no verb guesses anyone's gender.
@@ -1257,7 +1278,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", mr: "mr-u-nu-latn", bg: "bg", ca: "ca", da: "da", fi: "fi", sl: "sl", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", mr: "mr-u-nu-latn", bg: "bg", ca: "ca", da: "da", fi: "fi", lv: "lv", sl: "sl", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();
