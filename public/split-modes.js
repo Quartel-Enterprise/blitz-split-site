@@ -1422,6 +1422,36 @@
         less: "એક શેર ઓછો: {name}", more: "એક શેર વધારે: {name}", had: "કોણે લીધું: {item}",
       },
     },
+    // Malayalam: a message with "|" holds its forms for {n}, "one|few|other", of which Malayalam uses one and other (1 ഓഹരി,
+    // 2 ഓഹരികൾ). A name, an item or an amount never takes a case ending, so it stands after a colon; നിങ്ങൾ for the user.
+    ml: {
+      bill: "പിസ്സ നൈറ്റ്", paid: "Pedro പണം നൽകി", notIn: "ഇതിൽ ഉൾപ്പെടുന്നില്ല",
+      each: "ഓരോരുത്തർക്കും {a}", among: "{n} പേർക്കിടയിൽ വിഭജിച്ചു: {a}.", amongOne: "1 ആൾക്ക് മാത്രം: {a}.", out: "ഉൾപ്പെടുന്നില്ല: {name}.",
+      nobody: "ഇതുവരെ ആരുമില്ല", nobodyEqual: "ഈ തുക വിഭജിക്കാൻ കുറഞ്ഞത് ഒരാളെയെങ്കിലും തിരഞ്ഞെടുക്കുക: {a}.",
+      checkAll: "എല്ലാവരെയും തിരഞ്ഞെടുക്കുക", uncheckAll: "എല്ലാ തിരഞ്ഞെടുപ്പും മാറ്റുക",
+      left: "ബാക്കി: {a}", over: "അധികം: {a}", closed: "ശരിയായി: {a}",
+      progress: "ഇതുവരെ: {a} / {b}.", closedMsg: "ഭാഗങ്ങൾ എല്ലാം ചേർന്നാൽ ആകെ തുകയാകും.",
+      parts: "{a}: {n} ഓഹരി|{a}: {n} ഓഹരികൾ|{a}: {n} ഓഹരികൾ", personParts: "{name}: {n} ഓഹരി.|{name}: {n} ഓഹരികൾ.|{name}: {n} ഓഹരികൾ.",
+      nobodyShares: "ഈ തുക വിഭജിക്കാൻ കുറഞ്ഞത് ഒരാൾക്കെങ്കിലും ഒരു ഓഹരി നൽകുക: {a}.",
+      ofEach: "ഓരോ ചെലവിന്റെയും {p}", ofBill: "ചെലവിന്റെ {p}", incomeDetail: "ഓരോരുത്തരുടെയും ഭാഗം അവരുടെ വരുമാനം അനുസരിച്ചാണ്.", perMonth: "/മാസം",
+      service: "സർവീസ് ചാർജ് ({p})", serviceSub: "ഓരോരുത്തരും എടുത്തതിന് ആനുപാതികമായി",
+      loose: "ഓരോ ഇനവും ആരൊക്കെ എടുത്തെന്ന് അടയാളപ്പെടുത്തുക", looseDetail: "ആരാണ് എടുത്തതെന്ന് അടയാളപ്പെടുത്താൻ, ഓരോ ഇനത്തിലെയും മുഖങ്ങളിൽ ടാപ്പ് ചെയ്യുക.",
+      itemsClosed: "ഇനങ്ങൾ: {a}, സർവീസ് ചാർജ്: {b}.", nobodyItem: "ആരെയും തിരഞ്ഞെടുത്തിട്ടില്ല", eachItem: "ഓരോരുത്തർക്കും {a}",
+      items: { pizza: "വലിയ പിസ്സ", beer: "ബിയർ", salad: "സാലഡ്", draft: "ഡ്രാഫ്റ്റ് ബിയർ", shrimp: "ചെമ്മീൻ പ്ലാറ്റർ" },
+      receiptBill: "ഹാർബർ ബാർ",
+      hint: {
+        equal: "തുല്യമായി വിഭജിക്കാൻ കഴിയാത്തപ്പോൾ, ബാക്കി വരുന്ന പൈസ പണം നൽകിയ ആൾക്ക് ലഭിക്കും.",
+        amounts: "തുക {zero} ആയി തുടരുന്നവർ ഈ ചെലവിൽ ഉൾപ്പെടുന്നില്ല.",
+        percent: "പൂർണ്ണ സംഖ്യകൾ മാത്രം. ബാക്കി വരുന്ന പൈസ പണം നൽകിയ ആൾക്ക് ലഭിക്കും.",
+        shares: "ആർക്കെങ്കിലും കൂടുതൽ ഉള്ളപ്പോൾ ഓഹരികൾ ഉപയോഗിക്കുക, ഉദാഹരണത്തിന് ഒപ്പം ഒരാളെ കൂട്ടിക്കൊണ്ടുവന്നവർക്ക്.",
+        income: "വരുമാനം ഉപകരണത്തിൽ മാത്രം നിലനിൽക്കും. ഗ്രൂപ്പ് ശതമാനങ്ങൾ മാത്രമേ കാണൂ.",
+        items: "ഓരോ ഇനവും അത് എടുത്തവർക്കിടയിൽ വിഭജിക്കും, സർവീസ് ചാർജ് ഓരോരുത്തരും എടുത്തതനുസരിച്ചും.",
+      },
+      label: {
+        amount: "തുക: {name}", percent: "ശതമാനം: {name}", income: "പ്രതിമാസ വരുമാനം: {name}",
+        less: "ഒരു ഓഹരി കുറയ്ക്കുക: {name}", more: "ഒരു ഓഹരി കൂട്ടുക: {name}", had: "ആരൊക്കെ എടുത്തു: {item}",
+      },
+    },
     // Kannada: a message with "|" holds its forms for {n}, "one|few|other", of which Kannada uses one (0 and 1) and other.
     // A name, an item or an amount never takes a case ending: it stands after a colon. ನೀವು for the user.
     kn: {
