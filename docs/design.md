@@ -175,8 +175,8 @@ never Hindi's danda. It writes the digits 0-9, never Gujarati digits: its dates 
 (`latinDigits` in `money.js`). No case ending is ever glued to a filled-in value: a name takes its postposition written
 apart ("{who} એ તમને ચૂકવ્યા") or stands after a colon, as the app's "ચૂકવનાર: {name}", and any other value stands after
 a colon ("{n} લોકોમાં વહેંચાયા: {a}."). A noun after a number stays singular, so it counts in one and other forms
-without a "|"; it has rupees grouped as India writes them, as Hindi does, and draws in the system's font, with
-Devanagari's rules: no Geist tracking, and the room between its titles' lines that Hindi's gets.
+without a "|"; it has rupees grouped as India writes them, as Hindi does, and draws in the system's font, with the
+rules Hindi's Devanagari has: no Geist tracking, and the room between its titles' lines that Hindi's gets.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
