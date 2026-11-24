@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Skirtukas Balansai neberodo nulių eilutės, kai niekas nieko neturi grąžinti: jame tiesiog parašyta „Viskas atsiskaityta“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ištaisyta: kai paskyra turi abu prisijungimus, Profilis šalia su „Google“ prisijungusios paskyros el. pašto adreso rodė „Apple“ logotipą, o šalia su „Apple“ prisijungusios – „Google“ logotipą.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

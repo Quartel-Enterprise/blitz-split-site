@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split dabar kalba vokiškai, itališkai ir lenkiškai: programėlė naudoja tavo įrenginio kalbą, arba gali pasirinkti kalbą skiltyje Profilis › Kalba.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kiekviena kategorija dabar turi savo spalvą, o Statistika kiekvieną kategoriją ir kiekvieną žmogų piešia jų spalva.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dabar gali pakeisti kategorijos spalvą kategorijos formoje arba Kategorijų žemėlapyje.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Išlaidos meniu skiltyje Išlaidos yra nauja parinktis „Dubliuoti“: ji atidaro naują išlaidą, jau užpildytą kaip originali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupės ir išlaidos nebedingsta akimirkai, kai grįžti į programėlę.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Paieška nebeužsidaro iš karto, kai dar neturi grupės.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nauja grupė dabar pradedama kaip Renginys – pirmasis sąrašo tipas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kai dar neturi grupės, „Pakviesti nuoroda arba QR kodu“ dabar rodo tik mygtuką „Nauja grupė“, o ne mygtukus, kurių negalėjai naudoti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ilgiau nuskaitomas kvitas nebesibaigia ryšio klaida.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Statistikos kategorijų eilutės paprastesnės: jose nebenurodoma kiekvienos subkategorijos suma.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
