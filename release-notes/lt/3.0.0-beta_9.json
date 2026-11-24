@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Sumos ir užrašai nebelūžta į kelias eilutes ir nebėra nukerpami mažuose ekranuose, sulankstomuose įrenginiuose ir naudojant didelį tekstą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sunkiai įskaitomas tekstas, mygtukai ir kontūrai dabar kontrastingesni šviesioje ir tamsioje temose.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Palietus laukelį iPhone naršyklėje puslapis nebedidinamas.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

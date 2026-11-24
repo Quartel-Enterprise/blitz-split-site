@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikacija zdaj govori korejsko: v Profil › Jezik izberi „한국어“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj delijo stroške v južnokorejskem wonu (KRW), skupina, ustvarjena v Južni Koreji, pa se začne v njem.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Račun in sinhronizacija“ v Profilu zdaj prikaže tvoj ID uporabnika, ki ga kopiraš z enim tapom, da nam lahko poveš, kdo si, ko odgovoriš na eno od naših anket.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotografija, ki jo dodaš strošku, se zdaj najprej odpre v „Prilagodi fotografijo“, da izbereš kvadrat, ki bo priložen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Po dohodku“ te zdaj opomni, da vpišeš neto dohodek vsakega, po davkih, „Privzeta razdelitev“ pa odstotek vsakega prikaže šele, ko je dohodek vpisan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Glava skupine je preglednejša: vrstica s številom članov in skupnim zneskom pod imenom je izginila. Obrazi pokažejo, kdo sodeluje, Statistika pa skupni znesek.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotografije kartice ali bančnega izpiska zdaj to povedo in predlagajo ročno izpolnitev stroška, namesto da bi pisalo, da potrdila ni bilo mogoče prebrati.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategorija v Statistiki zdaj odpre Vse stroške z že izbrano skupino, kategorijo in obdobjem, da lahko iščeš tudi med temi stroški. Vsi stroški so dobili tudi filter Obdobje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V razdelku Po osebah v Statistiki tap ob obroču ali v njegovi sredini prekliče izbiro osebe.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

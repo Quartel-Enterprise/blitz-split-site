@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Programėlė dabar prieinama rusų ir ukrainiečių kalbomis: pasirink „Русский“ arba „Українська“ skiltyje Profilis › Kalba arba palik įrenginio kalbą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupėse dabar galima dalyti išlaidas Rusijos rubliais (RUB) ir Ukrainos grivinomis (UAH), o Rusijoje ar Ukrainoje sukurta grupė iš karto naudoja savo šalies valiutą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilyje yra nauja nuostata „Laiko formatas“: naudok sistemos nustatymą arba visada rodyk laiką 24 valandų (14:30) ar 12 valandų formatu su AM ir PM (2:30 PM) – išlaidose, Veikloje, komentaruose ir laiko parinkikliuose.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefoną pasukus gulsčiai ir planšetėse grupės mygtukas „Padalyti išlaidą“ dabar yra viršutinėje juostoje, o ne plūduriuoja virš išlaidų.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kai įjungtos dinaminės spalvos, suma, kurią turi grąžinti, lieka oranžinė, o ne tampa raudona, kad niekada nebūtų panaši į žalią sumą, kurią turi atgauti.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Veikloje kiekvienoje eilutėje dabar šalia grupės pavadinimo rodoma jos nuotrauka, jei grupė ją turi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tavo balansas šioje grupėje nebekartoja sumos antroje eilutėje, kai tik atgauni arba tik turi grąžinti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Numatytajame padalijime kiekvieno žmogaus pavyzdinės išlaidos dalis dabar turi savo spalvą, o prieš vardą – tos pačios spalvos tašką, kad sąraše greta esantys žmonės niekada neatrodytų kaip vienas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Išlaidos viršutinėje juostoje dabar šalia grupės pavadinimo rodoma grupės nuotrauka arba inicialai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Palietus kieno nors nuotrauką, ji dabar perkeliama į to žmogaus profilį ir grąžinama atgal, kai grįžti.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Iš grupės Išlaidų atidaryta išlaida dabar į vietą atslenka taip pat kaip iš Pradžios, o grupės nuotrauka Pradžios išlaidose nuskrieja į išlaidos viršutinę juostą.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Mygtukas „Padalyti išlaidą“ dabar yra ir Balansų bei Kontaktų viršuje, o grupės ekrane jis perkeltas į viršutinę juostą, užuot plūduriavęs virš sąrašo, o „Pridėti žmonių“ dabar yra meniu ⋯. Iš pradžių rodomas jo pavadinimas, o slenkant jis susitraukia iki piktogramos.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Skiltyje Grupės palietus kortelę „Bendras balansas“ atsidaro Balansai.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupės mygtukas „Pakviesti žmonių“ dabar vadinasi „Pridėti žmonių“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPad skirtukai atsidaro šoninėje juostoje, o kai jie yra viršutinėje juostoje, pavyzdžiui, laikant iPad stačiai, mygtukas „Padalyti išlaidą“ lieka matomas ten, o kiti mygtukai persikelia į eilutę tiesiai po ja.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Lange „Padalyti išlaidą“ laukas „Kuo mokėta“ dabar rodomas ir tada, kai išlaidą sumokėjo kažkas kitas, tik pritemdytas: jį palietus paaiškinama, kad tik mokėję žmonės gali pažymėti, kuo mokėjo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Be paskyros tavo atkūrimo kodas dabar yra 12 sunumeruotų žodžių, kuriuos lengviau užsirašyti, o atkuriant jie įvedami po vieną žodį kiekviename laukelyje, kiekvieną žodį siūlant jau rašant. Iki šios versijos išsaugoti kodai nebeveikia: išsaugok naująjį arba susiek „Google“ ar „Apple“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skiltyje Išlaidos pagal kategorijas kiekviena išlaida dabar turi tą patį meniu ⋮ kaip grupės išlaidose: redaguok, dubliuok, bendrink ar ištrink ją jos neatidarius.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Plačiuose ekranuose (gulsčiai pasuktame telefone, planšetėse, Mac ir internete) Išlaidos pagal kategorijas rodo kategorijas ir bendrą sumą stulpelyje šalia išlaidų.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vokiečių, olandų ir japonų kalbomis Veiklos sakiniai dabar skamba natūralia kiekvienos kalbos žodžių tvarka, be dvitaškio prieš išlaidos ar grupės pavadinimą.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Pirmoji mygtuko „Pridėti nuotrauką“ po išlaidos priedais raidė nebėra nukirpta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Skiltyje Grupės grupės kūrimo mygtukas dabar vadinasi „+ Grupė“ ir nebelūžta į dvi eilutes.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Versijų naujienos dabar parodo ką tik įdiegtą versiją, užuot laukusios iki paros, kol atsiras jos naujienos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupės Statistikoje laikotarpio mygtukas („Visas laikas“) nebelūžta į dvi eilutes: kai abi datos netelpa, jos perkeliamos po juo.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}
