@@ -28,10 +28,17 @@
   const LEGACY = { iw: "he", tl: "fil", no: "nb", nn: "nb" };
   const canonical = (code) => LEGACY[code] || code;
   const known = (code) => SUPPORTED.includes(code) || VARIANTS.includes(code);
+  // A tag's subtags, lowercase, up to its first extension or private use (pa-IN-u-nu-arab is pa-IN): an extension's
+  // own subtags ("arab", a numbering system) would otherwise read as a script or a region.
+  const subtags = (tag) => {
+    const parts = String(tag).toLowerCase().split(/[-_]/);
+    const singleton = parts.findIndex((part, i) => i > 0 && part.length === 1);
+    return singleton < 0 ? parts : parts.slice(0, singleton);
+  };
   // Traditional Chinese, as the apps tell it: by its script when the tag has one (zh-Hant-CN is Traditional, zh-Hans-HK
   // Simplified), else by a region that writes it (Taiwan, Hong Kong, Macau).
   const traditional = (tag) => {
-    const [language, ...rest] = String(tag).toLowerCase().split(/[-_]/);
+    const [language, ...rest] = subtags(tag);
     if (language !== "zh") return false;
     const script = rest.find((part) => part.length === 4);
     return script ? script === "hant" : rest.some((part) => ["tw", "hk", "mo"].includes(part));
@@ -39,7 +46,7 @@
   // Punjabi, as the site writes it, is Gurmukhi: a tag's script, when it has one, must be Guru; with none, any region
   // but Pakistan's, whose Punjabi is Shahmukhi (pa-PK, pa-Arab, pa-Arab-PK), which the site doesn't write.
   const shahmukhi = (tag) => {
-    const [language, ...rest] = String(tag).toLowerCase().split(/[-_]/);
+    const [language, ...rest] = subtags(tag);
     if (language !== "pa") return false;
     const script = rest.find((part) => part.length === 4);
     return script ? script !== "guru" : rest.includes("pk");
@@ -53,7 +60,7 @@
   const normalize = (tag) => {
     if (traditional(tag)) return TRADITIONAL;
     if (shahmukhi(tag)) return "";
-    return variantOf(tag) || canonical(String(tag).toLowerCase().split(/[-_]/)[0]);
+    return variantOf(tag) || canonical(subtags(tag)[0]);
   };
 
   // First, so the scripts that read data-lang have it even if the theme below fails.
