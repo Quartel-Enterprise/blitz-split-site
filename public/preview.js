@@ -877,6 +877,25 @@
       bills: (n) => `${n} ${countForm(n, { one: "strošek", two: "stroška", few: "stroški", other: "stroškov" })}`,
       titles: { b1: "Penzion v Lagoi", b2: "Večerja v Ribeirãu", b3: "Prevoz na plažo", p1: "Sladoled na plaži", p2: "Tedenska nabava", p3: "Parkiranje" },
     },
+    // Gujarati: the app's own "ચૂકવનાર: {name}", so a name stands after a colon, and the agent એ written apart after it;
+    // an amount stands after a colon, never with an ending. તમે for the user.
+    gu: {
+      paid: "ચૂકવનાર: {name}", notIn: "આ ખર્ચમાં નથી",
+      members: (people, bills) => `${people} ${people === 1 ? "વ્યક્તિ" : "લોકો"} · ${bills} ખર્ચ`,
+      toGet: "પાછા મળવાના છે", youOwe: "તમારે આપવાના છે", settled: "હિસાબ પતી ગયો", owesYou: "તમને કોની પાસેથી મળવાના છે", youOweTitle: "તમારે કોને આપવાના છે",
+      eachOne: "દરેકનું બેલેન્સ", getsBack: "પાછા મળવાના છે", owes: "આપવાના છે", even: "હિસાબ પતી ગયો",
+      toSettle: "પતાવવાનો હિસાબ", total: "ગ્રુપનો કુલ ખર્ચ", lodging: "રહેઠાણ", food: "ખોરાક", transport: "વાહનવ્યવહાર",
+      sheetTitle: "ખર્ચ વહેંચો", description: "વર્ણન", amount: "રકમ", whoPaid: "કોણે ચૂકવ્યું",
+      splitAmong: "આ લોકો વચ્ચે સરખા ભાગે", each: "દરેકના {value}", cancel: "રદ કરો", save: "સેવ કરો", close: "બંધ કરો",
+      queue: (n) => `${n} ફેરફાર કતારમાં`,
+      split: "કેવી રીતે વહેંચાયો", yourShare: "તમારો ભાગ", deleteBill: "ખર્ચ ડિલીટ કરો",
+      recordPayment: "ચુકવણી નોંધો", record: "નોંધો", viaMethod: "ટ્રાન્સફર દ્વારા", payment: "ચુકવણી", deletePayment: "ચુકવણી ડિલીટ કરો",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} એ તમને ચૂકવ્યા: ${value}`,
+      paidTotal: "કુલ ચૂકવેલા", shareTotal: "ખર્ચમાં ભાગ", balance: "બેલેન્સ",
+      bills: (n) => `${n} ખર્ચ`,
+      titles: { b1: "લાગોઆ ગેસ્ટહાઉસ", b2: "રિબેરાઓમાં ડિનર", b3: "બીચ સુધીની રાઇડ", p1: "બીચ પર આઇસક્રીમ", p2: "અઠવાડિયાનું કરિયાણું", p3: "પાર્કિંગ" },
+    },
     // Kannada: a name stands as the subject ("{name} ಪಾವತಿಸಿದರು", the app's own) and an amount after a colon, never with
     // a case ending; a count takes its one form for 0 and 1, as Intl.PluralRules tells it. ನೀವು for the user.
     kn: {
@@ -1338,7 +1357,7 @@
   if (clock) {
     // Why: only the languages whose clock differs from the page's own tag (Latin digits, Taiwan's Traditional Chinese,
     // the US's English); any other uses the page's tag, which boot.js sets for every language.
-    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", gu: "gu-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

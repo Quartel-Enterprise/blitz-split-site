@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: …, da: …, fi: …, lv: …, et: …, lt: …, sl: …, kn: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: …, da: …, fi: …, lv: …, et: …, lt: …, sl: …, gu: …, kn: … }
 // before this script, inline or, on the landing and the support page, as one file per language of which boot.js loads
 // the one it picked (public/strings/<page>/<language>.js); blocks written per language carry data-lang with the
 // language ("en", "pt", "fr"…).
@@ -94,6 +94,7 @@
     et: { search: "Otsi keeli", clear: "Tühjenda otsing", none: "Päringule „{query}“ ei vasta ükski keel", system: "Süsteem", systemDetail: "Seadme keel", back: "Tagasi", close: "Sulge" },
     lt: { search: "Ieškoti kalbų", clear: "Išvalyti paiešką", none: "Nėra kalbos, atitinkančios „{query}“", system: "Sistemos", systemDetail: "Įrenginio kalba", back: "Atgal", close: "Uždaryti" },
     sl: { search: "Išči jezike", clear: "Počisti iskanje", none: "Noben jezik se ne ujema z „{query}“", system: "Sistem", systemDetail: "Jezik naprave", back: "Nazaj", close: "Zapri" },
+    gu: { search: "ભાષાઓ શોધો", clear: "શોધ સાફ કરો", none: "કોઈ ભાષા મળતી નથી: “{query}”", system: "સિસ્ટમ", systemDetail: "ડિવાઇસની ભાષા", back: "પાછળ", close: "બંધ કરો" },
     kn: { search: "ಭಾಷೆಗಳನ್ನು ಹುಡುಕಿ", clear: "ಹುಡುಕಾಟವನ್ನು ತೆರವುಗೊಳಿಸಿ", none: "ಯಾವುದೇ ಭಾಷೆ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ: “{query}”", system: "ಸಿಸ್ಟಮ್", systemDetail: "ಸಾಧನದ ಭಾಷೆ", back: "ಹಿಂದೆ", close: "ಮುಚ್ಚಿ" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,

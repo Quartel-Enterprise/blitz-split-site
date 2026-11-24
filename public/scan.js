@@ -271,6 +271,12 @@
       lines: [["2 TOČENO PIVO", "28,00", 1], ["1 KROŽNIK KOZIC", "96,00", 2]],
       subtotal: ["VMESNI SEŠTEVEK", "124,00"], service: ["POSTREŽBA 10\u00a0%", "12,40", 3], total: ["SKUPAJ", "136,40"],
     },
+    // Gujarati: a harbor bar's receipt, in rupees, as India prints it.
+    gu: {
+      store: "હાર્બર બાર", address: "120, બીચ રોડ", date: "08/11/2026  9:47 PM",
+      lines: [["2 ડ્રાફ્ટ બિયર", "28.00", 1], ["1 ઝીંગા પ્લેટર", "96.00", 2]],
+      subtotal: ["સબટોટલ", "124.00"], service: ["સર્વિસ ચાર્જ 10%", "12.40", 3], total: ["કુલ", "136.40"],
+    },
     // Kannada: a harbor bar's receipt, in rupees, as India prints it.
     kn: {
       store: "ಹಾರ್ಬರ್ ಬಾರ್", address: "120, ಬೀಚ್ ರೋಡ್", date: "08/11/2026  9:47 PM",

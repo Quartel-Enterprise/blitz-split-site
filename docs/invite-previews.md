@@ -21,8 +21,8 @@ that link's title, description and image.
 An invite and a bill speak the language of their currency. A profile, which has none, a comment's link and the
 download paths speak the language their link asks for, `?lang=`: the apps add their own language to those links when
 they share them, and the pages read the same parameter (`boot.js`), so the page that opens speaks it too. Twelve of
-the apps' forty-eight languages are written (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
-Turkish, Indonesian and Japanese); Russian, Ukrainian, Korean, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian and Kannada, which the site speaks, read English here until the API's
+the apps' forty-nine languages are written (English, Portuguese, Spanish, French, German, Italian, Polish, Dutch,
+Turkish, Indonesian and Japanese); Russian, Ukrainian, Korean, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian, Gujarati and Kannada, which the site speaks, read English here until the API's
 function has their words, as does any other language, or none. The twelfth, Arabic, came with blitz-split-api#83 (a group in
 riyals, dirhams or Egyptian pounds), and the Worker sets the preview page's `<html>` to the words' `language`, with
 `dir="rtl"` for a right-to-left one (`directionOf` in `src/index.js`, which already counts Hebrew, `he`, Urdu, `ur`, and Persian, `fa`,
