@@ -67,7 +67,7 @@ const CHROME = {
   ca: { language: "Català", brand: "Blitz Split", locale: "ca", updated: "Actualitzat el {date}", read: "{n} min de lectura", toc: "En aquesta pàgina" },
   da: { language: "Dansk", brand: "Blitz Split", locale: "da", updated: "Opdateret {date}", read: "{n} min. læsetid", toc: "På denne side" },
   fi: { language: "Suomi", brand: "Blitz Split", locale: "fi", updated: "Päivitetty {date}", read: "Lukuaika {n} min", toc: "Tällä sivulla" },
-  lv: { language: "Latviešu", brand: "Blitz Split", locale: "lv", updated: "Atjaunināts {date}", read: "Lasīšanas laiks: {n} min", toc: "Šajā lapā" },
+  lv: { language: "Latviešu", brand: "Blitz Split", locale: "lv", updated: "Atjaunināts: {date}", read: "Lasīšanas laiks: {n} min", toc: "Šajā lapā" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.

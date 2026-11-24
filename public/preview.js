@@ -16,7 +16,8 @@
 
   // Polish, Russian, Ukrainian, Czech, Slovak and Romanian counts take one form for 1 (and, in Russian and Ukrainian, 21, 31…),
   // another for a few and a third for the rest, as Intl.PluralRules tells them: the few are 2–4 in Czech and Slovak, 2–4
-  // and 22–24… in the others, and 2–19 in Romanian, whose rest takes "de" (20 de cheltuieli).
+  // and 22–24… in the others, and 2–19 in Romanian, whose rest takes "de" (20 de cheltuieli). Latvian has no few: its
+  // one is 1, 21, 31… and its zero and other both take the plural, the third form.
   const plural = new Intl.PluralRules(lang);
   const countForm = (n, one, few, many) => ({ one, few }[plural.select(n)] ?? many);
   const TEXT = window.localized({
