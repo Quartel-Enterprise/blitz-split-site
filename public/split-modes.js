@@ -1331,6 +1331,36 @@
         less: "Üks osa vähem: {name}", more: "Üks osa rohkem: {name}", had: "Kes tarbis: {item}",
       },
     },
+    // Lithuanian: a message with a count holds three forms, one|few|other (1 and 21, 2–9, 0 and 10–20), as
+    // Intl.PluralRules tells them; "tu" for the user and the app's words (po lygiai, dalys, pagal pajamas, prekės).
+    // A name, an item or an amount stands after a colon or as the subject, never with a case ending.
+    lt: {
+      bill: "Picos vakaras", paid: "Pedro sumokėjo", notIn: "Nedalyvauja",
+      each: "po {a}", among: "{a} padalyta {n} žmogui.|{a} padalyta {n} žmonėms.|{a} padalyta {n} žmonių.", amongOne: "{a} vienam žmogui.", out: "{name} nedalyvauja.",
+      nobody: "Dar niekas nedalyvauja", nobodyEqual: "Pažymėk bent vieną žmogų, kad padalytum {a}.",
+      checkAll: "Pažymėti visus", uncheckAll: "Atžymėti visus",
+      left: "Liko {a}", over: "{a} per daug", closed: "Sutampa: {a}",
+      progress: "Kol kas {a} iš {b}.", closedMsg: "Dalys sudaro visą sumą.",
+      parts: "{a} padalyta į {n} dalį|{a} padalyta į {n} dalis|{a} padalyta į {n} dalių", personParts: "{name}: {n} dalis.|{name}: {n} dalys.|{name}: {n} dalių.", nobodyShares: "Duok bent vienam žmogui dalį, kad padalytum {a}.",
+      ofEach: "{p} kiekvienos išlaidos", ofBill: "{p} išlaidos", incomeDetail: "Kiekvieno dalis atitinka pajamas.", perMonth: "/mėn.",
+      service: "Aptarnavimas ({p})", serviceSub: "Proporcingai tam, kas ką užsisakė",
+      loose: "Pažymėk, kas ką užsisakė", looseDetail: "Bakstelėk veidus prie kiekvienos prekės, kad pažymėtum, kas ją užsisakė.",
+      itemsClosed: "Prekės: {a}, aptarnavimas: {b}.", nobodyItem: "Niekas nepažymėtas", eachItem: "po {a}",
+      items: { pizza: "Didelė pica", beer: "Alus", salad: "Salotos", draft: "Pilstomas alus", shrimp: "Krevečių lėkštė" },
+      receiptBill: "Uosto baras",
+      hint: {
+        equal: "Kai suma nepasidalija lygiai, likę centai atitenka mokėtojui.",
+        amounts: "Kam lieka {zero}, tas išlaidoje nedalyvauja.",
+        percent: "Tik sveikieji skaičiai. Likę centai atitenka mokėtojui.",
+        shares: "Naudok dalis, kai kam nors tenka daugiau, pavyzdžiui, kas nors atsivedė svečią.",
+        income: "Pajamos lieka įrenginyje. Grupė mato tik procentus.",
+        items: "Kiekviena prekė dalijama tarp tų, kas ją užsisakė, o aptarnavimas – pagal tai, kas ką užsisakė.",
+      },
+      label: {
+        amount: "Suma: {name}", percent: "Procentai: {name}", income: "Mėnesio pajamos: {name}",
+        less: "Viena dalimi mažiau: {name}", more: "Viena dalimi daugiau: {name}", had: "Kas užsisakė: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

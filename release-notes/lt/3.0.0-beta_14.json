@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Grupės Išlaidose dabar yra „Rodyti viską“ – atsidaro Visos išlaidos, jau atfiltruotos pagal tą grupę, kad galėtum ieškoti, rikiuoti ir filtruoti jos išlaidas. Išvalyk filtrą, kad matytum visas grupes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lange Nauja grupė „Pridėti pagal vardą“ dabar rašant siūlo žmones iš tavo Kontaktų su jų nuotrauka: paliesk vieną, kad sukurtum grupę būtent su tuo žmogumi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Slenkant grupę, jos suskleista viršutinė juosta rodo tik grupės nuotrauką ir pavadinimą, be šalia nukirptų narių ir sumos.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dabar gali atsisiųsti 12 savo atkūrimo kodo žodžių kaip tekstinį failą.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Langas „Išsaugoti atkūrimo kodą“ dabar nurodo, kad kodas grąžina tavo duomenis ir kad po 30 dienų nenaudojimo duomenys ištrinami.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lango „Padalyti išlaidą“ viršuje, šalia „Išsaugoti“, dabar yra ir „Nuskenuoti kvitą“, todėl klaviatūra jo nebeuždengia, o „Pridėti mokėjimo būdą“ tapo mažiau ryškus.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupės Statistikoje „Pagal žmones“ dabar yra spurgos diagrama, rodanti kiekvieno dalį ta pačia spalva, kurią žmogus turi Numatytajame padalijime, o po ja – vardų ir sumų sąrašas kaip legenda. „Suvartota“ ir „Sumokėta“ perjungia, kas rodoma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lango Nauja grupė skiltis „Kas dalyvauja“ rodo tavo profilio nuotrauką, o ne inicialą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grįžus į programėlę, „Sinchronizuojama…“ nebesirodo vis iš naujo Pradžioje ir Grupėse: sinchronizavimas vyksta tyliai, kai tavo grupės jau ekrane.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Planšetėse ir gulsčiai pasuktame telefone mygtuko „Padalyti išlaidą“ šoninės juostos viršuje šešėlis nebėra nukirptas kraštuose.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

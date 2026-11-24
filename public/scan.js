@@ -259,6 +259,12 @@
       lines: [["2 VAADIÕLU", "28,00", 1], ["1 KREVETIVAAGEN", "96,00", 2]],
       subtotal: ["VAHESUMMA", "124,00"], service: ["TEENUSTASU 10%", "12,40", 3], total: ["KOKKU", "136,40"],
     },
+    // Lithuanian: a harbor bar's receipt, in euros, with Lithuania's ISO date.
+    lt: {
+      store: "UOSTO BARAS", address: "Žuvėdrų g. 120", date: "2026-11-08  21:47",
+      lines: [["2 PILSTOMAS ALUS", "28,00", 1], ["1 KREVEČIŲ LĖKŠTĖ", "96,00", 2]],
+      subtotal: ["TARPINĖ SUMA", "124,00"], service: ["APTARNAVIMAS 10\u00a0%", "12,40", 3], total: ["IŠ VISO", "136,40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

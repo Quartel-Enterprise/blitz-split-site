@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Programėlė dabar prieinama korėjiečių kalba: pasirink „한국어“ skiltyje Profilis › Kalba arba palik įrenginio kalbą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupėse dabar galima dalyti išlaidas Pietų Korėjos vonais (KRW), o Pietų Korėjoje sukurta grupė iš karto naudoja šią valiutą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilio skiltis „Paskyra ir sinchronizavimas“ dabar rodo tavo naudotojo ID, kurį gali nukopijuoti vienu palietimu, kad galėtum mums pasakyti, kas esi, kai atsakai į vieną iš mūsų apklausų.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prie išlaidos pridedama nuotrauka dabar pirmiausia atsidaro lange „Koreguoti nuotrauką“, kad pasirinktum, kokį kvadratą prisegti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Pagal pajamas“ dabar primena įvesti kiekvieno grynąsias pajamas, atskaičius mokesčius, o „Numatytasis padalijimas“ rodo kiekvieno procentą tik įvedus pajamas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupės antraštė paprastesnė: po pavadinimu nebėra eilutės su narių skaičiumi ir bendra suma. Veidai rodo, kas dalyvauja, o Statistika – bendrą sumą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kortelės ar banko išrašo nuotraukos dabar taip ir atpažįstamos, ir siūloma išlaidą įvesti ranka, užuot sakius, kad kvito nepavyko nuskaityti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategorija Statistikoje dabar atidaro Visas išlaidas su jau pasirinkta grupe, kategorija ir laikotarpiu, kad galėtum ieškoti ir tarp šių išlaidų. Visose išlaidose taip pat atsirado filtras Laikotarpis.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Statistikos skiltyje „Pagal žmones“ palietus šalia žiedo ar jo viduryje pasirinktas žmogus atžymimas.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
