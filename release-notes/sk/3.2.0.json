@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Aplikácia teraz hovorí po bulharsky: vyber „Български“ v Profil › Jazyk, alebo nechaj jazyk zariadenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po katalánsky: vyber „Català“ v Profil › Jazyk, alebo nechaj jazyk zariadenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po dánsky: vyber si „Dansk“ v Profil › Jazyk alebo nechaj, nech sa riadi tvojím zariadením.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v dánskych korunách (DKK) a skupina vytvorená v Dánsku, Grónsku alebo na Faerských ostrovoch v nich začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po fínsky: vyber „Suomi“ v Profil › Jazyk, alebo nechaj jazyk zariadenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po maráthsky: vyber „मराठी“ v Profil › Jazyk alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po nórsky: vyber si „Norsk bokmål“ v Profil › Jazyk alebo nechaj, nech sa riadi tvojím zariadením.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v nórskych korunách (NOK) a skupina vytvorená v Nórsku v nich začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po perzsky: vyber „فارسی“ v Profil › Jazyk, alebo nechaj jazyk zariadenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teraz môžu deliť v iránskom riáli (IRR) a skupina vytvorená v Iráne v ňom začína.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po slovensky: vyber „Slovenčina“ v Profil › Jazyk, alebo nechaj jazyk zariadenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po svahilsky: vyber „Kiswahili“ v Profil › Jazyk, alebo nechaj jazyk zariadenia. Nové skupiny v Keni a Tanzánii začnú v kenskom alebo tanzánskom šilingu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po tamilsky: vyber „தமிழ்“ v Profil › Jazyk alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikácia teraz hovorí po telugsky: vyber „తెలుగు“ v Profil › Jazyk alebo ju nechaj nasledovať tvoje zariadenie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPhone, iPade a Macu teraz dátumy v thajčine a perzštine ukazujú gregoriánsky rok, ako na Androide a na webe, nech zariadenie používa akýkoľvek kalendár.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

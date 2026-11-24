@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Aplikace teď mluví bulharsky: vyber „Български“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví katalánsky: vyber „Català“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví dánsky: vyber „Dansk“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v dánských korunách (DKK) a skupina založená v Dánsku, Grónsku nebo na Faerských ostrovech začne v nich.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví finsky: vyber „Suomi“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví maráthsky: vyber „मराठी“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví norsky: vyber „Norsk bokmål“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v norských korunách (NOK) a skupina založená v Norsku začne v nich.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví persky: vyber „فارسی“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupiny teď můžou dělit v íránském riálu (IRR) a skupina založená v Íránu začne v něm.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví slovensky: vyber „Slovenčina“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví svahilsky: vyber „Kiswahili“ v Profil › Jazyk, nebo nech jazyk zařízení. Nové skupiny v Keni a Tanzanii začnou v keňském nebo tanzanském šilinku.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví tamilsky: vyber „தமிழ்“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikace teď mluví telugsky: vyber „తెలుగు“ v Profil › Jazyk, nebo nech jazyk zařízení.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPhonu, iPadu a Macu teď data v thajštině a perštině ukazují gregoriánský rok, jako na Androidu a na webu, ať zařízení používá jakýkoli kalendář.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

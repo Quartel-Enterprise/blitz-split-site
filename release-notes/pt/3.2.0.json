@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "O app agora fala búlgaro: escolha \"Български\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala catalão: escolha \"Català\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala dinamarquês: escolha \"Dansk\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem dividir em coroa dinamarquesa (DKK), e um grupo criado na Dinamarca, na Groenlândia ou nas Ilhas Faroé já começa nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala finlandês: escolha \"Suomi\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala marati: escolha \"मराठी\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala norueguês: escolha \"Norsk bokmål\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem dividir em coroa norueguesa (NOK), e um grupo criado na Noruega já começa nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala persa: escolha \"فارسی\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos agora podem dividir em rial iraniano (IRR), e um grupo criado no Irã já começa nessa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala eslovaco: escolha \"Slovenčina\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala suaíli: escolha \"Kiswahili\" em Perfil › Idioma, ou deixe seguir o aparelho. Grupos novos no Quênia e na Tanzânia já começam no xelim queniano ou tanzaniano.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala tâmil: escolha \"தமிழ்\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O app agora fala télugo: escolha \"తెలుగు\" em Perfil › Idioma, ou deixe seguir o aparelho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "No iPhone, iPad e Mac, as datas em tailandês e persa agora mostram o ano gregoriano, como no Android e na web, seja qual for o calendário do aparelho.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

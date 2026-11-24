@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Uygulama artık Bulgarca konuşuyor: Profil › Dil'den \"Български\"yi seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Katalanca konuşuyor: Profil › Dil'den \"Català\"yı seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Danca konuşuyor: Profil › Dil'de \"Dansk\" seçeneğini seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Danimarka kronu (DKK) ile bölebiliyor; Danimarka, Grönland veya Faroe Adaları'nda açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Fince konuşuyor: Profil › Dil'de \"Suomi\" seçeneğini seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Marathi dilinde konuşuyor: Profil › Dil'den \"मराठी\" seçeneğini seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Norveççe konuşuyor: Profil › Dil'de \"Norsk bokmål\" seçeneğini seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık Norveç kronu (NOK) ile bölebiliyor; Norveç'te açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Farsça konuşuyor: Profil › Dil'den \"فارسی\" seçeneğini seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruplar artık İran riyali (IRR) ile bölebiliyor; İran'da açılan bir grup bu para birimiyle başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Slovakça konuşuyor: Profil › Dil'den \"Slovenčina\"yı seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Svahili konuşuyor: Profil › Dil'den \"Kiswahili\"yi seç veya cihazının dilini izlesin. Kenya ve Tanzanya'da açılan yeni gruplar Kenya veya Tanzanya şilini ile başlıyor.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Tamilce konuşuyor: Profil › Dil'den \"தமிழ்\" seçeneğini seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uygulama artık Telugu dilinde konuşuyor: Profil › Dil'den \"తెలుగు\" seçeneğini seç veya cihazının dilini izlesin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPhone, iPad ve Mac'te Tayca ve Farsça tarihler artık cihazın takvimi ne olursa olsun Android ve web'deki gibi Miladi yılı gösteriyor.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

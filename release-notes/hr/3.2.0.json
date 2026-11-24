@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Aplikacija sada govori bugarski: odaberi „Български“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori katalonski: odaberi „Català“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori danski: odaberi „Dansk“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu dijeliti u danskim krunama (DKK), a grupa napravljena u Danskoj, na Grenlandu ili na Farskim otocima počinje u njima.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori finski: odaberi „Suomi“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori marathski: odaberi „मराठी“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori norveški: odaberi „Norsk bokmål“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu dijeliti u norveškim krunama (NOK), a grupa napravljena u Norveškoj počinje u njima.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori perzijski: odaberi „فارسی“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupe sada mogu dijeliti u iranskom rijalu (IRR), a grupa napravljena u Iranu počinje u njemu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori slovački: odaberi „Slovenčina“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori svahili: odaberi „Kiswahili“ u Profil › Jezik ili ostavi jezik svog uređaja. Nove grupe u Keniji i Tanzaniji počinju u kenijskom ili tanzanijskom šilingu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori tamilski: odaberi „தமிழ்“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija sada govori teluški: odaberi „తెలుగు“ u Profil › Jezik ili ostavi jezik svog uređaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPhoneu, iPadu i Macu datumi na tajlandskom i perzijskom sad prikazuju gregorijansku godinu, kao na Androidu i webu, bez obzira na kalendar uređaja.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

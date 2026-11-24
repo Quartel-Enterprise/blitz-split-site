@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Aplicația vorbește acum bulgară: alege „Български” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum catalană: alege „Català” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum daneză: alege „Dansk” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în coroane daneze (DKK), iar un grup creat în Danemarca, Groenlanda sau Insulele Feroe pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum finlandeză: alege „Suomi” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum marathi: alege „मराठी” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum norvegiană: alege „Norsk bokmål” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în coroane norvegiene (NOK), iar un grup creat în Norvegia pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum persană: alege „فارسی” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupurile pot împărți acum în riali iranieni (IRR), iar un grup creat în Iran pornește în această monedă.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum slovacă: alege „Slovenčina” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum swahili: alege „Kiswahili” în Profil › Limbă sau las-o să urmeze dispozitivul tău. Grupurile noi din Kenya și Tanzania pornesc în șiling kenyan sau tanzanian.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum tamilă: alege „தமிழ்” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplicația vorbește acum telugu: alege „తెలుగు” în Profil › Limbă sau las-o să urmeze dispozitivul tău.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pe iPhone, iPad și Mac, datele în thailandeză și persană arată acum anul gregorian, ca pe Android și pe web, indiferent de calendarul dispozitivului.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

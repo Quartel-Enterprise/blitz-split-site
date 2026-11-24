@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Aplikasi kini berbahasa Bulgaria: pilih \"Български\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Katalan: pilih \"Català\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Denmark: pilih \"Dansk\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam krone Denmark (DKK), dan grup yang dibuat di Denmark, Greenland, atau Kepulauan Faroe langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Finlandia: pilih \"Suomi\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Marathi: pilih \"मराठी\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Norwegia: pilih \"Norsk bokmål\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam krone Norwegia (NOK), dan grup yang dibuat di Norwegia langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Persia: pilih \"فارسی\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grup kini bisa membagi dalam rial Iran (IRR), dan grup yang dibuat di Iran langsung memakai mata uang itu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Slovakia: pilih \"Slovenčina\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Swahili: pilih \"Kiswahili\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu. Grup baru di Kenya dan Tanzania langsung memakai shilling Kenya atau Tanzania.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Tamil: pilih \"தமிழ்\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikasi kini berbahasa Telugu: pilih \"తెలుగు\" di Profil › Bahasa, atau biarkan mengikuti perangkatmu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Di iPhone, iPad, dan Mac, tanggal dalam bahasa Thai dan Persia kini menampilkan tahun Masehi, seperti di Android dan web, apa pun kalender perangkatnya.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

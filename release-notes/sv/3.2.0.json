@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Appen talar nu bulgariska: välj ”Български” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu katalanska: välj ”Català” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu danska: välj ”Dansk” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i danska kronor (DKK), och en grupp som skapas i Danmark, på Grönland eller på Färöarna börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu finska: välj ”Suomi” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu marathi: välj ”मराठी” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu norska: välj ”Norsk bokmål” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i norska kronor (NOK), och en grupp som skapas i Norge börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu persiska: välj ”فارسی” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupper kan nu dela upp i iranska rial (IRR), och en grupp som skapas i Iran börjar i den valutan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu slovakiska: välj ”Slovenčina” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu swahili: välj ”Kiswahili” i Profil › Språk, eller låt den följa din enhet. Nya grupper i Kenya och Tanzania börjar i kenyansk eller tanzanisk shilling.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu tamil: välj ”தமிழ்” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Appen talar nu telugu: välj ”తెలుగు” i Profil › Språk, eller låt den följa din enhet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "På iPhone, iPad och Mac visar datum på thailändska och persiska nu det gregorianska året, som på Android och webben, oavsett enhetens kalender.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

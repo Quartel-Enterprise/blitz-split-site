@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Aplikacja mówi teraz po bułgarsku: wybierz „Български” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po katalońsku: wybierz „Català” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po duńsku: wybierz „Dansk” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w koronach duńskich (DKK), a grupa założona w Danii, na Grenlandii lub na Wyspach Owczych startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po fińsku: wybierz „Suomi” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz w języku marathi: wybierz „मराठी” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po norwesku: wybierz „Norsk bokmål” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w koronach norweskich (NOK), a grupa założona w Norwegii startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po persku: wybierz „فارسی” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupy mogą teraz dzielić w rialach irańskich (IRR), a grupa założona w Iranie startuje w tej walucie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po słowacku: wybierz „Slovenčina” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz w suahili: wybierz „Kiswahili” w Profil › Język albo zostaw język urządzenia. Nowe grupy w Kenii i Tanzanii startują w szylingu kenijskim lub tanzańskim.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz po tamilsku: wybierz „தமிழ்” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacja mówi teraz w języku telugu: wybierz „తెలుగు” w Profil › Język albo zostaw język urządzenia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPhonie, iPadzie i Macu daty po tajsku i persku pokazują teraz rok gregoriański, jak na Androidzie i w sieci, niezależnie od kalendarza urządzenia.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}
