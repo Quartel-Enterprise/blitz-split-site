@@ -877,6 +877,25 @@
       bills: (n) => `${n} ${countForm(n, { one: "strošek", two: "stroška", few: "stroški", other: "stroškov" })}`,
       titles: { b1: "Penzion v Lagoi", b2: "Večerja v Ribeirãu", b3: "Prevoz na plažo", p1: "Sladoled na plaži", p2: "Tedenska nabava", p3: "Parkiranje" },
     },
+    // Punjabi: a name stands after a colon (the app's "ਭੁਗਤਾਨ ਕੀਤਾ: {name}") or takes its postposition written apart
+    // ("{who} ਨੇ"); an amount stands after a colon, never with an ending. ਤੁਸੀਂ for the user.
+    pa: {
+      paid: "ਭੁਗਤਾਨ ਕੀਤਾ: {name}", notIn: "ਇਸ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ",
+      members: (people, bills) => `${people} ${people === 1 ? "ਵਿਅਕਤੀ" : "ਲੋਕ"} · ${bills} ${bills === 1 ? "ਖਰਚਾ" : "ਖਰਚੇ"}`,
+      toGet: "ਵਾਪਸ ਮਿਲਣੇ ਹਨ", youOwe: "ਤੁਸੀਂ ਦੇਣੇ ਹਨ", settled: "ਹਿਸਾਬ ਬਰਾਬਰ", owesYou: "ਤੁਹਾਨੂੰ ਕਿਸ ਤੋਂ ਮਿਲਣੇ ਹਨ", youOweTitle: "ਤੁਸੀਂ ਕਿਸ ਨੂੰ ਦੇਣੇ ਹਨ",
+      eachOne: "ਹਰ ਇੱਕ ਦਾ ਬੈਲੇਂਸ", getsBack: "ਵਾਪਸ ਮਿਲਣੇ ਹਨ", owes: "ਦੇਣੇ ਹਨ", even: "ਹਿਸਾਬ ਬਰਾਬਰ",
+      toSettle: "ਹਿਸਾਬ ਬਰਾਬਰ ਕਰਨ ਲਈ", total: "ਗਰੁੱਪ ਦਾ ਕੁੱਲ ਖਰਚਾ", lodging: "ਰਿਹਾਇਸ਼", food: "ਖਾਣਾ", transport: "ਆਵਾਜਾਈ",
+      sheetTitle: "ਖਰਚਾ ਵੰਡੋ", description: "ਵੇਰਵਾ", amount: "ਰਕਮ", whoPaid: "ਕਿਸ ਨੇ ਭੁਗਤਾਨ ਕੀਤਾ",
+      splitAmong: "ਇਨ੍ਹਾਂ ਵਿੱਚ ਬਰਾਬਰ ਵੰਡੋ", each: "ਹਰ ਇੱਕ ਦੇ {value}", cancel: "ਰੱਦ ਕਰੋ", save: "ਸੇਵ ਕਰੋ", close: "ਬੰਦ ਕਰੋ",
+      queue: (n) => `${n} ਬਦਲਾਅ ਕਤਾਰ ਵਿੱਚ`,
+      split: "ਕਿਵੇਂ ਵੰਡਿਆ ਗਿਆ", yourShare: "ਤੁਹਾਡਾ ਹਿੱਸਾ", deleteBill: "ਖਰਚਾ ਮਿਟਾਓ",
+      recordPayment: "ਭੁਗਤਾਨ ਦਰਜ ਕਰੋ", record: "ਦਰਜ ਕਰੋ", viaMethod: "ਟ੍ਰਾਂਸਫ਼ਰ ਰਾਹੀਂ", payment: "ਭੁਗਤਾਨ", deletePayment: "ਭੁਗਤਾਨ ਮਿਟਾਓ",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} ਨੇ ਤੁਹਾਨੂੰ ਭੁਗਤਾਨ ਕੀਤਾ: ${value}`,
+      paidTotal: "ਕੁੱਲ ਭੁਗਤਾਨ", shareTotal: "ਖਰਚਿਆਂ ਵਿੱਚ ਹਿੱਸਾ", balance: "ਬੈਲੇਂਸ",
+      bills: (n) => `${n} ${n === 1 ? "ਖਰਚਾ" : "ਖਰਚੇ"}`,
+      titles: { b1: "ਲਾਗੋਆ ਗੈਸਟਹਾਊਸ", b2: "ਰਿਬੇਰਾਓ ਵਿੱਚ ਡਿਨਰ", b3: "ਬੀਚ ਤੱਕ ਦੀ ਰਾਈਡ", p1: "ਬੀਚ ’ਤੇ ਆਈਸਕ੍ਰੀਮ", p2: "ਹਫ਼ਤੇ ਦਾ ਰਾਸ਼ਨ", p3: "ਪਾਰਕਿੰਗ" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1319,7 +1338,7 @@
   if (clock) {
     // Why: only the languages whose clock differs from the page's own tag (Latin digits, Taiwan's Traditional Chinese,
     // the US's English); any other uses the page's tag, which boot.js sets for every language.
-    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", pa: "pa-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

@@ -5,11 +5,12 @@
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
 // Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese,
-// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian or Slovenian, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
+// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian or Punjabi, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
 // the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
 // browser language (zh-Hant, zh-TW, zh-HK, zh-MO) picks Traditional Chinese, zh-Hant, as in the apps; every other zh-* stays zh.
+// Punjabi is written in Gurmukhi only: pa, pa-Guru and pa-IN pick it, while pa-Arab and pa-PK (Shahmukhi) don't.
 (function () {
-  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "fa", "sw", "ta", "te", "mr", "bg", "ca", "da", "fi", "lv", "et", "lt", "sl"];
+  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "fa", "sw", "ta", "te", "mr", "bg", "ca", "da", "fi", "lv", "et", "lt", "sl", "pa"];
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
   function stored(key) {
@@ -35,12 +36,25 @@
     const script = rest.find((part) => part.length === 4);
     return script ? script === "hant" : rest.some((part) => ["tw", "hk", "mo"].includes(part));
   };
+  // Punjabi, as the site writes it, is Gurmukhi: a tag's script, when it has one, must be Guru; with none, any region
+  // but Pakistan's, whose Punjabi is Shahmukhi (pa-PK, pa-Arab, pa-Arab-PK), which the site doesn't write.
+  const shahmukhi = (tag) => {
+    const [language, ...rest] = String(tag).toLowerCase().split(/[-_]/);
+    if (language !== "pa") return false;
+    const script = rest.find((part) => part.length === 4);
+    return script ? script !== "guru" : rest.includes("pk");
+  };
   // Why: Traditional Chinese is a language of its own, with its whole tag as its code, "zh-Hant", as the apps' legal
   // pages and release notes ask for it; the bare "zh" is Simplified's.
   const TRADITIONAL = "zh-Hant";
   // A tag as the site reads it, from the browser or from ?lang= alike: Traditional Chinese or a variant (pt-PT) by
-  // the whole tag, every other language by its first subtag (zh-CN is zh, EN is en).
-  const normalize = (tag) => (traditional(tag) ? TRADITIONAL : variantOf(tag) || canonical(String(tag).toLowerCase().split(/[-_]/)[0]));
+  // the whole tag, every other language by its first subtag (zh-CN is zh, EN is en). A Shahmukhi Punjabi tag is none
+  // of ours, so the next of the browser's languages is tried.
+  const normalize = (tag) => {
+    if (traditional(tag)) return TRADITIONAL;
+    if (shahmukhi(tag)) return "";
+    return variantOf(tag) || canonical(String(tag).toLowerCase().split(/[-_]/)[0]);
+  };
 
   // First, so the scripts that read data-lang have it even if the theme below fails.
   const preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""])
