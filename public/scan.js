@@ -247,6 +247,12 @@
       lines: [["2 HANAOLUT", "28,00", 1], ["1 KATKARAPUVATI", "96,00", 2]],
       subtotal: ["VÄLISUMMA", "124,00"], service: ["PALVELU 10\u00a0%", "12,40", 3], total: ["YHTEENSÄ", "136,40"],
     },
+    // Malayalam: a harbor bar's receipt, in rupees, as India prints it.
+    ml: {
+      store: "ഹാർബർ ബാർ", address: "120, ബീച്ച് റോഡ്", date: "08/11/2026  9:47 PM",
+      lines: [["2 ഡ്രാഫ്റ്റ് ബിയർ", "28.00", 1], ["1 ചെമ്മീൻ പ്ലാറ്റർ", "96.00", 2]],
+      subtotal: ["സബ്ടോട്ടൽ", "124.00"], service: ["സർവീസ് ചാർജ് 10%", "12.40", 3], total: ["ആകെ", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

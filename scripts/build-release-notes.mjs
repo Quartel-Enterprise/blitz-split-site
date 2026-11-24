@@ -75,6 +75,7 @@ const CHROME = {
   ca: { language: "Català", brand: "Blitz Split", locale: "ca", title: "Novetats", lead: "Què ha canviat a cada versió de l’app.", showBeta: "Mostrar les versions beta", beta: "Beta", empty: "Encara no hi ha cap versió estable. Activa les versions beta per veure què s’està provant.", platforms: { android: "Android", ios: "iPhone i iPad", mac: "Mac", web: "Web" } },
   da: { language: "Dansk", brand: "Blitz Split", locale: "da", title: "Nyheder i versionen", lead: "Hvad der er ændret i hver version af appen.", showBeta: "Vis betaversioner", beta: "Beta", empty: "Der er ingen stabil version endnu. Slå betaversioner til for at se, hvad der bliver testet.", platforms: { android: "Android", ios: "iPhone og iPad", mac: "Mac", web: "Web" } },
   fi: { language: "Suomi", brand: "Blitz Split", locale: "fi", title: "Uutta versiossa", lead: "Mitä sovelluksen kussakin versiossa muuttui.", showBeta: "Näytä beetaversiot", beta: "Beeta", empty: "Vakaata versiota ei ole vielä. Ota beetaversiot käyttöön, niin näet, mitä testataan.", platforms: { android: "Android", ios: "iPhone ja iPad", mac: "Mac", web: "Verkko" } },
+  ml: { language: "മലയാളം", brand: "Blitz Split", locale: "ml-u-nu-latn", title: "പുതിയ മാറ്റങ്ങൾ", lead: "ആപ്പിന്റെ ഓരോ പതിപ്പിലും എന്താണ് മാറിയത്.", showBeta: "ബീറ്റ പതിപ്പുകൾ കാണിക്കുക", beta: "ബീറ്റ", empty: "ഇതുവരെ സ്റ്റേബിൾ പതിപ്പൊന്നുമില്ല. എന്താണ് ടെസ്റ്റ് ചെയ്യുന്നതെന്ന് കാണാൻ ബീറ്റ പതിപ്പുകൾ ഓണാക്കുക.", platforms: { android: "Android", ios: "iPhone, iPad", mac: "Mac", web: "വെബ്" } },
 };
 
 class NotesError extends Error {}
