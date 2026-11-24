@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split räägib nüüd hollandi, jaapani, türgi ja indoneesia keelt ning keelte loend näitab iga keele nime selles keeles endas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid ja kulud saavad nüüd kasutada Poola zlotti, Türgi liiri ja Indoneesia ruupiat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaotises Profiil on uus nupp „Jaga profiili“: kes sinu lingi avab, näeb sinu nime ja fotot ning saab sind gruppi kutsuda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uue grupi kutselink on kohe valmis, isegi ilma internetita, ja jaotises Liikmed on uus nupp selle kopeerimiseks.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kui sulged vormi, milles on salvestamata muudatusi, küsitakse nüüd kõigepealt „Kas loobuda muudatustest?“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Privaatsuspoliitika“ ja „Kasutustingimused“ avanevad nüüd rakenduses, mitte brauseris.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Telefonis liiguvad ülemine ja alumine riba nüüd allapoole kerides eest ära ning tulevad tagasi, kui kerid üles.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Vaates „Jaga kulu“ ei hüppa kuupäeva valimine enam otse kella juurde: kellaajal on oma nupp.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Puuduta vaate „Jaga kulu“ ülaosas olevat gruppi, et see avada; tagasi minnes jõuad kulu juurde tagasi koos kõigega, mis sisestasid.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Avalehe „Viimased kulud“ näitavad nüüd iga kulu gruppi ja maksjaid fotodena.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix kuvatakse nüüd ainult inimestele, kes seda tõenäoliselt kasutavad, näiteks neile, kes kasutavad rakendust portugali keeles, kellel on Pixi võti või kes on grupis, mis kasutab Brasiilia reaale.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sünkroonimine…“ kuvatakse nüüd ainult siis, kui su konto laaditakse seadmes esimest korda, mitte iga sünkroonimise ajal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiil ei paku enam võimalust Google’it või Apple’it oma kontost lahti ühendada: logi selle asemel välja või kustuta konto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Muuda profiili“ avaneb nüüd lehena vaate Profiil kohal, mitte eraldi ekraanil.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Tühi riba vormi ja klaviatuuri vahel vaates „Jaga kulu“ on kadunud.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kontakti „Ühised grupid“ näitavad nüüd iga grupi fotot.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split on uus rakendus, mis on nullist uuesti ehitatud: see asendab Blitz Split 2.4.0 ja töötab Androidis, iPhone’is, iPadis, Macis ja veebis.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaga kulu võrdselt, summade, protsentide, osade või toodete kaupa, kui maksab üks inimene või mitu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skanni tšekk ja rakendus loeb sinu eest selle tooted ja kogusumma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Loo grupid reisideks, koduks või üritusteks ja kutsu inimesi lingi või QR-koodiga.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vaata, kes kellele võlgneb igas grupis ja kõigis kokku, registreeri makseid ja lihtsusta võlgu, et kõik saaks arveldatud vähemate maksetega.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kõik töötab ilma internetita: see, mida teed, salvestatakse sinu seadmesse ja saadetakse teele, kui oled jälle võrgus.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Konto pole kohustuslik: ühenda Google või Apple või hoia alles taastekood, et saada oma grupid teises seadmes tagasi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kommenteeri kulu, lisa fotosid, jälgi toimunut jaotises Tegevus ja vaata jaotises Statistika, kuhu raha läks.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Igal kulul ja igal maksel on oma valuuta ning rakendus on saadaval inglise, portugali, hispaania ja prantsuse keeles.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

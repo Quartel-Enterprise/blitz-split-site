@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Summas un uzraksti vairs nelūst rindās un netiek nogriezti mazos ekrānos, salokāmās ierīcēs un ar lielu tekstu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Teksts, pogas un kontūras, kas bija grūti salasāmas, tagad ir kontrastainākas gan gaišajā, gan tumšajā režīmā.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pieskaroties laukam iPhone pārlūkā, lapa vairs netiek palielināta.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

@@ -247,6 +247,36 @@
       lines: [["2 HANAOLUT", "28,00", 1], ["1 KATKARAPUVATI", "96,00", 2]],
       subtotal: ["VÄLISUMMA", "124,00"], service: ["PALVELU 10\u00a0%", "12,40", 3], total: ["YHTEENSÄ", "136,40"],
     },
+    // Latvian: a harbor bar's receipt, in euros, with Latvia's dotted date.
+    lv: {
+      store: "OSTAS BĀRS", address: "Kaiju iela 120", date: "08.11.2026  21:47",
+      lines: [["2 LĒJAMAIS ALUS", "28,00", 1], ["1 GARNEĻU PLATE", "96,00", 2]],
+      subtotal: ["STARPSUMMA", "124,00"], service: ["APKALPOŠANA 10%", "12,40", 3], total: ["KOPĀ", "136,40"],
+    },
+    // Estonian: a harbor bar's receipt, in euros, with Estonia's dotted date.
+    et: {
+      store: "SADAMABAAR", address: "Kajaka 120", date: "8.11.2026  21:47",
+      lines: [["2 VAADIÕLU", "28,00", 1], ["1 KREVETIVAAGEN", "96,00", 2]],
+      subtotal: ["VAHESUMMA", "124,00"], service: ["TEENUSTASU 10%", "12,40", 3], total: ["KOKKU", "136,40"],
+    },
+    // Lithuanian: a harbor bar's receipt, in euros, with Lithuania's ISO date.
+    lt: {
+      store: "UOSTO BARAS", address: "Žuvėdrų g. 120", date: "2026-11-08  21:47",
+      lines: [["2 PILSTOMAS ALUS", "28,00", 1], ["1 KREVEČIŲ LĖKŠTĖ", "96,00", 2]],
+      subtotal: ["TARPINĖ SUMA", "124,00"], service: ["APTARNAVIMAS 10\u00a0%", "12,40", 3], total: ["IŠ VISO", "136,40"],
+    },
+    // Slovenian: a harbor bar's receipt, in euros, with Slovenia's dotted date.
+    sl: {
+      store: "PRISTANIŠKI BAR", address: "Galebova ulica 120", date: "8. 11. 2026  21:47",
+      lines: [["2 TOČENO PIVO", "28,00", 1], ["1 KROŽNIK KOZIC", "96,00", 2]],
+      subtotal: ["VMESNI SEŠTEVEK", "124,00"], service: ["POSTREŽBA 10\u00a0%", "12,40", 3], total: ["SKUPAJ", "136,40"],
+    },
+    // Gujarati: a harbor bar's receipt, in rupees, as India prints it.
+    gu: {
+      store: "હાર્બર બાર", address: "120, બીચ રોડ", date: "08/11/2026  9:47 PM",
+      lines: [["2 ડ્રાફ્ટ બિયર", "28.00", 1], ["1 ઝીંગા પ્લેટર", "96.00", 2]],
+      subtotal: ["સબટોટલ", "124.00"], service: ["સર્વિસ ચાર્જ 10%", "12.40", 3], total: ["કુલ", "136.40"],
+    },
     // Malayalam: a harbor bar's receipt, in rupees, as India prints it.
     ml: {
       store: "ഹാർബർ ബാർ", address: "120, ബീച്ച് റോഡ്", date: "08/11/2026  9:47 PM",

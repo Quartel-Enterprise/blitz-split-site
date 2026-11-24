@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Konts bez Google vai Apple tagad tiek izdzēsts pēc 30 dienām bez lietošanas. Sveiciena ekrāns un sadaļa „Profils” to norāda, un, pievienojot Google vai Apple, tavi dati tiek saglabāti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tagad vari novērtēt lietotni sadaļā „Profils › Atbalsts un atsauksmes”, ar „Novērtēt lietotni”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Rēķins, kas atvērts no cilnes „Sākums” vai ekrāna „Visi izdevumi”, tagad atgriežas tieši tur, kur to atvēri, neejot cauri tā grupai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Labots seju kaudzes burbulis „+N”, kas tika rādīts zem pirmās sejas, nevis virs tās.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

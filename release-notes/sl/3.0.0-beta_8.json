@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Strošek lahko zdaj razdeliš Po dohodku, dohodki, ki jih vneseš, pa so vidni članom skupine.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vsak strošek v razdelku Zadnji stroški na zaslonu Domov ima zdaj meni: Uredi, Podvoji, Deli in Izbriši.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Poglej vse na zaslonu Domov zdaj odpre zaslon Vsi stroški: vsak strošek, pri katerem sodeluješ, iz vseh tvojih skupin, z iskanjem, filtri in razvrščanjem.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotografija skupine je zdaj na vrhu njenega zaslona večja in se med pomikanjem pomanjša, odpiranje skupine pa se animira iz njene vrstice.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Dejavnost zdaj prikazuje fotografije ljudi, Stanja › Po skupinah prikazujejo fotografijo vsake skupine, Največji strošek v Statistiki pa prikazuje svojo kategorijo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Račun in sinhronizacija zdaj prikazuje logotip Google ali Apple in tvoj celoten e-poštni naslov, ki ga vidiš samo ti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Izbriši račun zdaj pojasni, kaj ostane v tvojih skupinah, ko tvojega računa ni več.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Stikalo Privzeti ključ Pix pri tvojem privzetem ključu v temni temi ni več videti izklopljeno.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -48,6 +48,11 @@
     ca: ["", ",", ".", "\u00a0€"],
     da: ["", ",", ".", "\u00a0kr.", 0, 3, 7],
     fi: ["", ",", "\u00a0", "\u00a0€"],
+    lv: ["", ",", "\u00a0", "\u00a0€"],
+    et: ["", ",", "\u00a0", "\u00a0€"],
+    lt: ["", ",", "\u00a0", "\u00a0€"],
+    sl: ["", ",", ".", "\u00a0€"],
+    gu: ["₹", ".", ",", "", 0, 2],
     ml: ["₹", ".", ",", "", 0, 2],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
@@ -75,9 +80,9 @@
     return isolate((cents > 0 ? "+" : "−") + text);
   }
   // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), and a Hindi, Marathi,
-  // Bengali, Tamil, Telugu, Malayalam or Thai one may type its script's (४८, ৪৮, ௪௮, ౪౮, ൪൮, ๔๘), which \d doesn't match,
+  // Bengali, Gujarati, Tamil, Telugu, Malayalam or Thai one may type its script's (४८, ৪৮, ૪૮, ௪௮, ౪౮, ൪൮, ๔๘), which \d doesn't match,
   // so they are read as the Latin ones before anything else: each script's zero, and the nine digits after it.
-  const DIGIT_ZEROS = [0x660, 0x6f0, 0x966, 0x9e6, 0xbe6, 0xc66, 0xd66, 0xe50];
+  const DIGIT_ZEROS = [0x660, 0x6f0, 0x966, 0x9e6, 0xae6, 0xbe6, 0xc66, 0xd66, 0xe50];
   const latinDigits = (text) => text
     .replace(/\p{Nd}/gu, (d) => {
       const code = d.codePointAt(0);
@@ -103,9 +108,9 @@
   const cents = (amount) => amount * factor;
 
   // A percentage, as the language writes it: Turkish puts the sign first (%10); French, German, Russian, Swedish, Czech,
-  // Croatian, Serbian, Slovak, Norwegian, Catalan, Danish and Finnish put a space before it (10 %). The phone (preview.js) and the split card (split-modes.js) share it.
+  // Croatian, Serbian, Slovak, Norwegian, Catalan, Danish, Finnish, Lithuanian and Slovenian put a space before it (10 %). The phone (preview.js) and the split card (split-modes.js) share it.
   const lang = document.documentElement.dataset.lang;
-  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk", "nb", "ca", "da", "fi"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
+  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk", "nb", "ca", "da", "fi", "lt", "sl"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
 
   window.money = { format, plain, parse, latinDigits, cents, percent, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
 })();

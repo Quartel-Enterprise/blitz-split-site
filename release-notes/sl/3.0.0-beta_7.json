@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split zdaj govori nizozemsko, japonsko, turško in indonezijsko, seznam jezikov pa vsak jezik imenuje v njem samem.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine in stroški lahko zdaj uporabljajo poljski zlot, turško liro in indonezijsko rupijo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil ima nov gumb Deli profil: kdor odpre tvojo povezavo, vidi tvoje ime in fotografijo ter te lahko povabi v skupino.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Povezava za povabilo nove skupine je pripravljena takoj, tudi brez povezave, Člani pa imajo nov gumb, s katerim jo kopiraš.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ko zapreš obrazec z nečim, česar nisi shranil(a), te aplikacija najprej vpraša „Zavreči spremembe?“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pravilnik o zasebnosti in Pogoji uporabe se zdaj odprejo v aplikaciji namesto v brskalniku.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Na telefonu se zgornja in spodnja vrstica zdaj umakneta, ko se pomikaš navzdol, in vrneta, ko se pomikaš navzgor.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Na zaslonu Razdeli strošek izbira datuma ne skoči več takoj na uro: čas ima svoj gumb.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tapni skupino na vrhu zaslona Razdeli strošek, da jo odpreš; ko se vrneš, te strošek čaka z vsem, kar si vnesel(a).",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zadnji stroški na zaslonu Domov zdaj pri vsakem strošku pokažejo njegovo skupino in fotografije tistih, ki so plačali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix se zdaj prikaže le tistim, ki ga bodo verjetno uporabljali, na primer tistim, ki aplikacijo uporabljajo v portugalščini, imajo ključ Pix ali so v skupini v realih.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sinhronizacija…“ se zdaj prikaže le, ko se tvoj račun na napravi nalaga prvič, ne ob vsaki sinhronizaciji.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil ne ponuja več, da od svojega računa odklopiš Google ali Apple: namesto tega se odjavi ali izbriši račun.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uredi profil se zdaj odpre kot plošča nad zaslonom Profil namesto na ločenem zaslonu.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Prazen pas med obrazcem in tipkovnico na zaslonu Razdeli strošek je izginil.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Skupne skupine pri stiku zdaj pokažejo fotografijo vsake skupine.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

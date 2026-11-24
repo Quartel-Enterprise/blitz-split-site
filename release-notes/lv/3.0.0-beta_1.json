@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split ir jauna lietotne, veidota no nulles: tā aizstāj Blitz Split 2.4.0 un darbojas Android ierīcēs, iPhone, iPad, Mac un tīmeklī.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadali rēķinu vienādi, pēc summām, pēc procentiem, pēc daļām vai pa pozīcijām, kad maksā viens cilvēks vai vairāki.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Noskenē čeku, un lietotne pati nolasīs tā pozīcijas un kopsummu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Izveido grupas ceļojumiem, mājai vai pasākumiem un uzaicini cilvēkus ar saiti vai QR kodu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Redzi, kurš kuram ir parādā katrā grupā un visās kopā, reģistrē maksājumus un vienkāršo parādus, lai ar mazāk maksājumiem viss būtu nokārtots.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Viss darbojas bezsaistē: tas, ko dari, tiek saglabāts tavā ierīcē un tiek nosūtīts, kad atkal esi tiešsaistē.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Konts nav obligāts: pievieno Google vai Apple vai saglabā atkopšanas kodu, lai atgūtu savas grupas citā ierīcē.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Komentē rēķinu, pievieno fotoattēlus, seko notikumiem cilnē „Aktivitāte” un skaties sadaļā „Statistika”, kur aizgāja nauda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Katram rēķinam un katram maksājumam ir sava valūta, un lietotne ir pieejama angļu, portugāļu, spāņu un franču valodā.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

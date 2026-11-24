@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Povezava do stroška se zdaj odpre v aplikaciji namesto v brskalniku, s fotografijami in komentarji.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Povezava do stroška, ki ni več deljen ali ga lahko odprejo le ljudje, ki sodelujejo pri njem, zdaj to pove namesto prikaza napake.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Povezava do profila se zdaj odpre, tudi če nisi prijavljen(a).",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Zasebnost in o aplikaciji ima novo stikalo „Deli podatke o uporabi“: izklopi ga, da ne pošiljaš več podatkov o tem, kako uporabljaš aplikacijo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Povezave, ki jih deliš do svojega profila, do komentarja in za prenos aplikacije, zdaj prikažejo predogled v tvojem jeziku.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

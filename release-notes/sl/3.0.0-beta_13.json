@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikacija zdaj govori rusko in ukrajinsko: v Profil › Jezik izberi „Русский“ ali „Українська“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj delijo stroške v ruskem rublju (RUB) in ukrajinski grivni (UAH), skupina, ustvarjena v Rusiji ali Ukrajini, pa se začne v njeni valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil ima novo nastavitev „Oblika časa“: sledi sistemu ali vedno prikazuj čas v 24-urni obliki (14:30) ali 12-urni z AM in PM (2:30 PM), v stroških, Dejavnosti, komentarjih in izbirnikih časa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "S telefonom v ležečem položaju in na tablicah je „Razdeli strošek“ v skupini zdaj v zgornji vrstici, namesto da bi lebdel nad stroški.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ko so vklopljene Dinamične barve, ostane to, kar dolguješ, oranžno, namesto da bi postalo rdeče, zato nikoli ni videti kot zelena barva tega, kar dobiš nazaj.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "V Dejavnosti vsaka vrstica zdaj prikaže fotografijo skupine poleg njenega imena, če jo skupina ima.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tvoje stanje v tej skupini ne ponavlja več zneska v drugi vrstici, ko samo dobiš nazaj ali samo dolguješ.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Privzeti razdelitvi ima del vsake osebe v primeru stroška zdaj svojo barvo, z ujemajočo se piko pred imenom, zato sosednji ljudje na seznamu nikoli niso videti kot eden.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zgornja vrstica stroška zdaj prikaže fotografijo skupine ali njene začetnice poleg imena skupine.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tap na fotografijo osebe jo zdaj prenese v njen profil in nazaj, ko se vrneš.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Strošek, odprt iz Stroškov skupine, se zdaj premakne na svoje mesto tako kot z zaslona Domov, fotografija skupine na stroških zaslona Domov pa odleti v zgornjo vrstico stroška.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Razdeli strošek“ je zdaj tudi na vrhu Stanj in Stikov, na zaslonu skupine pa se je premaknil v zgornjo vrstico, namesto da bi lebdel nad seznamom, „Dodaj ljudi“ pa je zdaj v meniju ⋯. Začne se z imenom in se med pomikanjem skrči na ikono.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "V Skupinah tap na kartico Skupno stanje odpre Stanja.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "„Povabi ljudi“ v skupini se zdaj imenuje „Dodaj ljudi“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPadu se zavihki odprejo v stranski vrstici, in ko so v zgornji vrstici, kot pri pokončnem iPadu, ostane „Razdeli strošek“ tam na vidnem mestu, drugi gumbi pa se premaknejo v vrstico tik pod njo.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "V „Razdeli strošek“ je „Plačano z“ zdaj prikazano tudi, ko je strošek plačal nekdo drug, zatemnjeno: tap nanj pojasni, da lahko samo tisti, ki so plačali, označijo, s čim so plačali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Brez računa je tvoja obnovitvena koda zdaj 12 oštevilčenih besed, ki jih je lažje zapisati, obnovitev pa jih sprejme po eno besedo na polje in med tipkanjem predlaga vsako besedo. Kode, shranjene pred to različico, ne delujejo več: shrani novo ali poveži Google ali Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Stroških po kategoriji ima vsak strošek zdaj enak meni ⋮ kot v stroških skupine: uredi, podvoji, deli ali izbriši ga brez odpiranja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na širokih zaslonih (telefon v ležečem položaju, tablice, Mac in splet) Stroški po kategoriji ohranijo kategorije in skupni znesek v stolpcu ob stroških.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V nemščini, nizozemščini in japonščini se stavki v Dejavnosti zdaj berejo v naravnem besednem redu vsakega jezika, brez dvopičja pred imenom stroška ali skupine.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Prva črka „Dodaj fotografijo“ pod prilogami stroška ni več odrezana.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "V Skupinah gumb za ustvarjanje skupine zdaj piše „+ Skupina“ in se ne lomi več v dve vrstici.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Opombe ob izdaji zdaj prikažejo pravkar nameščeno različico, namesto da bi do enega dne čakale na njene opombe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Statistiki skupine se gumb obdobja („Ves čas“) ne lomi več v dve vrstici: datumi se premaknejo podenj, ko oboje ne gre v vrstico.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

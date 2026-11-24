@@ -14,11 +14,14 @@
   // analytics.js, in <head>, sends the events; docs/analytics.md lists them.
   const track = (name, params) => window.track?.(name, params);
 
-  // Polish, Russian, Ukrainian, Czech, Slovak and Romanian counts take one form for 1 (and, in Russian and Ukrainian, 21, 31…),
-  // another for a few and a third for the rest, as Intl.PluralRules tells them: the few are 2–4 in Czech and Slovak, 2–4
-  // and 22–24… in the others, and 2–19 in Romanian, whose rest takes "de" (20 de cheltuieli).
+  // Polish, Russian, Ukrainian, Czech, Slovak, Romanian and Lithuanian counts take one form for 1 (and, in Russian, Ukrainian and Lithuanian, 21, 31…),
+  // another for a few and a third for the rest, as Intl.PluralRules tells them: the few are 2–4 in Czech and Slovak, 2–9 and 22–29… in Lithuanian, 2–4
+  // and 22–24… in the others, and 2–19 in Romanian, whose rest takes "de" (20 de cheltuieli). Latvian has no few: its
+  // one is 1, 21, 31… and its zero and other both take the plural, the third form.
   const plural = new Intl.PluralRules(lang);
-  const countForm = (n, one, few, many) => ({ one, few }[plural.select(n)] ?? many);
+  // Slovenian's forms add a two for 2, 102…, its few being 3–4, 103–104…. The form of the count's category, or the
+  // rest's (other), for a category a language leaves out.
+  const countForm = (n, forms) => forms[plural.select(n)] ?? forms.other;
   const TEXT = window.localized({
     en: {
       paid: "{name} paid", notIn: "Not in this one",
@@ -136,20 +139,20 @@
     },
     pl: {
       paid: "{name} zapłacił(a)", notIn: "Bez ciebie",
-      members: (people, bills) => `${people} ${countForm(people, "osoba", "osoby", "osób")} · ${bills} ${countForm(bills, "wydatek", "wydatki", "wydatków")}`,
+      members: (people, bills) => `${people} ${countForm(people, { one: "osoba", few: "osoby", other: "osób" })} · ${bills} ${countForm(bills, { one: "wydatek", few: "wydatki", other: "wydatków" })}`,
       toGet: "do odzyskania", youOwe: "do oddania", settled: "wszystko rozliczone", owesYou: "Do odzyskania", youOweTitle: "Do oddania",
       eachOne: "Saldo każdej osoby", getsBack: "do odzyskania", owes: "do oddania", even: "na czysto",
       toSettle: "Do rozliczenia", total: "Suma w grupie", lodging: "Nocleg", food: "Jedzenie", transport: "Transport",
       sheetTitle: "Podziel wydatek", description: "Opis", amount: "Kwota", whoPaid: "Kto zapłacił",
       splitAmong: "Podziel po równo między", each: "{value} na osobę", cancel: "Anuluj", save: "Zapisz", close: "Zamknij",
-      queue: (n) => `${n} ${countForm(n, "zmiana", "zmiany", "zmian")} w kolejce`,
+      queue: (n) => `${n} ${countForm(n, { one: "zmiana", few: "zmiany", other: "zmian" })} w kolejce`,
       split: "Jak podzielono", yourShare: "Twoja część", deleteBill: "Usuń wydatek",
       recordPayment: "Zapisz płatność", record: "Zapisz", viaMethod: "przelewem", payment: "Płatność", deletePayment: "Usuń płatność",
       // A name is never declined: who paid whom as an arrow, as the Balances tab writes it.
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `${who} zapłacił(a) ci ${value}`,
       paidTotal: "Zapłacono łącznie", shareTotal: "Udział w wydatkach", balance: "Saldo",
-      bills: (n) => `${n} ${countForm(n, "wydatek", "wydatki", "wydatków")}`,
+      bills: (n) => `${n} ${countForm(n, { one: "wydatek", few: "wydatki", other: "wydatków" })}`,
       titles: { b1: "Pensjonat w Lagoa", b2: "Kolacja w Ribeirão", b3: "Przejazd na plażę", p1: "Lody na plaży", p2: "Zakupy na tydzień", p3: "Parking" },
     },
     nl: {
@@ -226,36 +229,36 @@
     // past tense about anyone writes both endings.
     ru: {
       paid: "{name} оплатил(а)", notIn: "Не участвует",
-      members: (people, bills) => `${people} ${countForm(people, "человек", "человека", "человек")} · ${bills} ${countForm(bills, "расход", "расхода", "расходов")}`,
+      members: (people, bills) => `${people} ${countForm(people, { one: "человек", few: "человека", other: "человек" })} · ${bills} ${countForm(bills, { one: "расход", few: "расхода", other: "расходов" })}`,
       toGet: "к получению", youOwe: "ты должен(-на)", settled: "всё оплачено", owesYou: "Тебе должны", youOweTitle: "Ты должен(-на)",
       eachOne: "Баланс каждого", getsBack: "получит", owes: "должен(-на)", even: "без долгов",
       toSettle: "Чтобы рассчитаться", total: "Всего в группе", lodging: "Жильё", food: "Еда", transport: "Транспорт",
       sheetTitle: "Разделить счёт", description: "Описание", amount: "Сумма", whoPaid: "Кто платил",
       splitAmong: "Разделить поровну между", each: "{value} с каждого", cancel: "Отмена", save: "Сохранить", close: "Закрыть",
-      queue: (n) => `${n} ${countForm(n, "изменение", "изменения", "изменений")} в очереди`,
+      queue: (n) => `${n} ${countForm(n, { one: "изменение", few: "изменения", other: "изменений" })} в очереди`,
       split: "Как разделено", yourShare: "Твоя доля", deleteBill: "Удалить расход",
       recordPayment: "Записать платёж", record: "Записать", viaMethod: "переводом", payment: "Платёж", deletePayment: "Удалить платёж",
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `${who} заплатил(а) тебе ${value}`,
       paidTotal: "Заплачено всего", shareTotal: "Доля в расходах", balance: "Баланс",
-      bills: (n) => `${n} ${countForm(n, "расход", "расхода", "расходов")}`,
+      bills: (n) => `${n} ${countForm(n, { one: "расход", few: "расхода", other: "расходов" })}`,
       titles: { b1: "Гостевой дом в Лагоа", b2: "Ужин в Рибейране", b3: "Дорога на пляж", p1: "Мороженое на пляже", p2: "Продукты на неделю", p3: "Парковка" },
     },
     uk: {
       paid: "{name} сплатив(-ла)", notIn: "Не бере участі",
-      members: (people, bills) => `${people} ${countForm(people, "людина", "людини", "людей")} · ${bills} ${countForm(bills, "витрата", "витрати", "витрат")}`,
+      members: (people, bills) => `${people} ${countForm(people, { one: "людина", few: "людини", other: "людей" })} · ${bills} ${countForm(bills, { one: "витрата", few: "витрати", other: "витрат" })}`,
       toGet: "до отримання", youOwe: "ти винен(-на)", settled: "усе сплачено", owesYou: "Тобі винні", youOweTitle: "Ти винен(-на)",
       eachOne: "Баланс кожного", getsBack: "отримає", owes: "винен(-на)", even: "без боргів",
       toSettle: "Щоб розрахуватися", total: "Усього в групі", lodging: "Житло", food: "Їжа", transport: "Транспорт",
       sheetTitle: "Розділити рахунок", description: "Опис", amount: "Сума", whoPaid: "Хто платив",
       splitAmong: "Розділити порівну між", each: "{value} з кожного", cancel: "Скасувати", save: "Зберегти", close: "Закрити",
-      queue: (n) => `${n} ${countForm(n, "зміна", "зміни", "змін")} у черзі`,
+      queue: (n) => `${n} ${countForm(n, { one: "зміна", few: "зміни", other: "змін" })} у черзі`,
       split: "Як розділено", yourShare: "Твоя частка", deleteBill: "Видалити витрату",
       recordPayment: "Записати платіж", record: "Записати", viaMethod: "переказом", payment: "Платіж", deletePayment: "Видалити платіж",
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `${who} заплатив(-ла) тобі ${value}`,
       paidTotal: "Сплачено загалом", shareTotal: "Частка у витратах", balance: "Баланс",
-      bills: (n) => `${n} ${countForm(n, "витрата", "витрати", "витрат")}`,
+      bills: (n) => `${n} ${countForm(n, { one: "витрата", few: "витрати", other: "витрат" })}`,
       titles: { b1: "Гостьовий будинок у Лагоа", b2: "Вечеря в Рібейрані", b3: "Дорога на пляж", p1: "Морозиво на пляжі", p2: "Продукти на тиждень", p3: "Паркування" },
     },
     // Korean: a particle follows the sound of the word before it, so it never follows a name or an amount filled in
@@ -429,38 +432,38 @@
     // declined: who paid whom as an arrow, as the Balances tab writes it.
     cs: {
       paid: "{name} zaplatil(a)", notIn: "Není v tomto výdaji",
-      members: (people, bills) => `${people} ${countForm(people, "člověk", "lidé", "lidí")} · ${bills} ${countForm(bills, "výdaj", "výdaje", "výdajů")}`,
+      members: (people, bills) => `${people} ${countForm(people, { one: "člověk", few: "lidé", other: "lidí" })} · ${bills} ${countForm(bills, { one: "výdaj", few: "výdaje", other: "výdajů" })}`,
       toGet: "dostaneš zpět", youOwe: "dlužíš", settled: "vše vyrovnáno", owesYou: "Dluží ti", youOweTitle: "Dlužíš",
       eachOne: "Zůstatek každého", getsBack: "dostane zpět", owes: "dluží", even: "vyrovnáno",
       toSettle: "K vyrovnání", total: "Celkem ve skupině", lodging: "Ubytování", food: "Jídlo", transport: "Doprava",
       sheetTitle: "Rozdělit výdaj", description: "Popis", amount: "Částka", whoPaid: "Kdo platil",
       splitAmong: "Rozdělit rovným dílem mezi", each: "{value} na osobu", cancel: "Zrušit", save: "Uložit", close: "Zavřít",
-      queue: (n) => `${n} ${countForm(n, "změna", "změny", "změn")} ve frontě`,
+      queue: (n) => `${n} ${countForm(n, { one: "změna", few: "změny", other: "změn" })} ve frontě`,
       split: "Jak se dělilo", yourShare: "Tvůj podíl", deleteBill: "Smazat výdaj",
       recordPayment: "Zaznamenat platbu", record: "Zaznamenat", viaMethod: "převodem", payment: "Platba", deletePayment: "Smazat platbu",
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `${who} ti zaplatil(a) ${value}`,
       paidTotal: "Zaplaceno celkem", shareTotal: "Podíl na výdajích", balance: "Zůstatek",
-      bills: (n) => `${n} ${countForm(n, "výdaj", "výdaje", "výdajů")}`,
+      bills: (n) => `${n} ${countForm(n, { one: "výdaj", few: "výdaje", other: "výdajů" })}`,
       titles: { b1: "Penzion v Lagoa", b2: "Večeře v Ribeirão", b3: "Odvoz na pláž", p1: "Zmrzlina na pláži", p2: "Týdenní nákup", p3: "Parkování" },
     },
     // Romanian: "tu" for the user, counts in one, few and other forms, other with "de" (20 de cheltuieli), and the
     // app's words (cheltuială, sold, achită, înregistrează plata).
     ro: {
       paid: "A plătit {name}", notIn: "Nu participă la aceasta",
-      members: (people, bills) => `${people} ${countForm(people, "persoană", "persoane", "de persoane")} · ${bills} ${countForm(bills, "cheltuială", "cheltuieli", "de cheltuieli")}`,
+      members: (people, bills) => `${people} ${countForm(people, { one: "persoană", few: "persoane", other: "de persoane" })} · ${bills} ${countForm(bills, { one: "cheltuială", few: "cheltuieli", other: "de cheltuieli" })}`,
       toGet: "de primit", youOwe: "datorezi", settled: "totul achitat", owesYou: "Îți datorează", youOweTitle: "Datorezi",
       eachOne: "Soldul fiecăruia", getsBack: "primește înapoi", owes: "datorează", even: "achitat",
       toSettle: "De achitat", total: "Totalul grupului", lodging: "Cazare", food: "Mâncare", transport: "Transport",
       sheetTitle: "Împarte o cheltuială", description: "Descriere", amount: "Sumă", whoPaid: "Cine a plătit",
       splitAmong: "Împărțit în mod egal între", each: "câte {value} fiecare", cancel: "Anulează", save: "Salvează", close: "Închide",
-      queue: (n) => `${n} ${countForm(n, "modificare", "modificări", "de modificări")} în coadă`,
+      queue: (n) => `${n} ${countForm(n, { one: "modificare", few: "modificări", other: "de modificări" })} în coadă`,
       split: "Cum s-a împărțit", yourShare: "Partea ta", deleteBill: "Șterge cheltuiala",
       recordPayment: "Înregistrează plata", record: "Înregistrează", viaMethod: "prin transfer", payment: "Plată", deletePayment: "Șterge plata",
       payLine: (from, to) => `${name(from)} i-a plătit lui ${name(to)}`,
       paidYou: (who, value) => `${who} ți-a plătit ${value}`,
       paidTotal: "Plătit în total", shareTotal: "Partea din cheltuieli", balance: "Sold",
-      bills: (n) => `${n} ${countForm(n, "cheltuială", "cheltuieli", "de cheltuieli")}`,
+      bills: (n) => `${n} ${countForm(n, { one: "cheltuială", few: "cheltuieli", other: "de cheltuieli" })}`,
       titles: { b1: "Pensiune în Lagoa", b2: "Cină în Ribeirão", b3: "Drum până la plajă", p1: "Înghețată pe plajă", p2: "Cumpărăturile săptămânii", p3: "Parcare" },
     },
     bn: {
@@ -568,53 +571,53 @@
     },
     hr: {
       paid: "Platitelj: {name}", notIn: "Ne sudjeluje u ovome",
-      members: (people, bills) => `${people} ${countForm(people, "osoba", "osobe", "osoba")} · ${bills} ${countForm(bills, "trošak", "troška", "troškova")}`,
+      members: (people, bills) => `${people} ${countForm(people, { one: "osoba", few: "osobe", other: "osoba" })} · ${bills} ${countForm(bills, { one: "trošak", few: "troška", other: "troškova" })}`,
       toGet: "dobivaš natrag", youOwe: "duguješ", settled: "sve podmireno", owesYou: "Tko ti duguje", youOweTitle: "Duguješ",
       eachOne: "Saldo svake osobe", getsBack: "dobiva natrag", owes: "duguje", even: "podmireno",
       toSettle: "Za podmirenje", total: "Ukupno u grupi", lodging: "Smještaj", food: "Hrana", transport: "Prijevoz",
       sheetTitle: "Podijeli trošak", description: "Opis", amount: "Iznos", whoPaid: "Platitelj",
       splitAmong: "Podijeli jednako među", each: "{value} po osobi", cancel: "Odustani", save: "Spremi", close: "Zatvori",
-      queue: (n) => `${n} ${countForm(n, "promjena", "promjene", "promjena")} u redu čekanja`,
+      queue: (n) => `${n} ${countForm(n, { one: "promjena", few: "promjene", other: "promjena" })} u redu čekanja`,
       split: "Kako je podijeljeno", yourShare: "Tvoj udio", deleteBill: "Izbriši trošak",
       recordPayment: "Zabilježi uplatu", record: "Zabilježi", viaMethod: "prijenosom", payment: "Uplata", deletePayment: "Izbriši uplatu",
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `Primljena uplata: ${who} · ${value}`,
       paidTotal: "Ukupno plaćeno", shareTotal: "Udio u troškovima", balance: "Saldo",
-      bills: (n) => `${n} ${countForm(n, "trošak", "troška", "troškova")}`,
+      bills: (n) => `${n} ${countForm(n, { one: "trošak", few: "troška", other: "troškova" })}`,
       titles: { b1: "Pansion Lagoa", b2: "Večera, Ribeirão", b3: "Prijevoz do plaže", p1: "Sladoled na plaži", p2: "Tjedna kupovina", p3: "Parkiranje" },
     },
     sr: {
       paid: "Platilac: {name}", notIn: "Ne učestvuje",
-      members: (people, bills) => `${people} ${countForm(people, "osoba", "osobe", "osoba")} · ${bills} ${countForm(bills, "trošak", "troška", "troškova")}`,
+      members: (people, bills) => `${people} ${countForm(people, { one: "osoba", few: "osobe", other: "osoba" })} · ${bills} ${countForm(bills, { one: "trošak", few: "troška", other: "troškova" })}`,
       toGet: "dobijaš nazad", youOwe: "duguješ", settled: "sve izmireno", owesYou: "Duguju ti", youOweTitle: "Duguješ",
       eachOne: "Stanje svake osobe", getsBack: "dobija nazad", owes: "duguje", even: "izmireno",
       toSettle: "Za izmirenje", total: "Ukupno u grupi", lodging: "Smeštaj", food: "Hrana", transport: "Prevoz",
       sheetTitle: "Podeli trošak", description: "Opis", amount: "Iznos", whoPaid: "Ko je platio",
       splitAmong: "Podeli jednako između", each: "{value} po osobi", cancel: "Otkaži", save: "Sačuvaj", close: "Zatvori",
-      queue: (n) => `${n} ${countForm(n, "izmena", "izmene", "izmena")} na čekanju`,
+      queue: (n) => `${n} ${countForm(n, { one: "izmena", few: "izmene", other: "izmena" })} na čekanju`,
       split: "Kako je podeljeno", yourShare: "Tvoj deo", deleteBill: "Izbriši trošak",
       recordPayment: "Zabeleži uplatu", record: "Zabeleži", viaMethod: "putem prenosa", payment: "Uplata", deletePayment: "Izbriši uplatu",
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `Primljena uplata: ${value} · ${who}`,
       paidTotal: "Ukupno plaćeno", shareTotal: "Deo troškova", balance: "Stanje",
-      bills: (n) => `${n} ${countForm(n, "trošak", "troška", "troškova")}`,
+      bills: (n) => `${n} ${countForm(n, { one: "trošak", few: "troška", other: "troškova" })}`,
       titles: { b1: "Pansion Lagoa", b2: "Večera: Ribeirão", b3: "Prevoz do plaže", p1: "Sladoled na plaži", p2: "Nedeljna kupovina", p3: "Parking" },
     },
     sk: {
       paid: "{name} zaplatil(a)", notIn: "Nie je v tomto výdavku",
-      members: (people, bills) => `${people} ${countForm(people, "človek", "ľudia", "ľudí")} · ${bills} ${countForm(bills, "výdavok", "výdavky", "výdavkov")}`,
+      members: (people, bills) => `${people} ${countForm(people, { one: "človek", few: "ľudia", other: "ľudí" })} · ${bills} ${countForm(bills, { one: "výdavok", few: "výdavky", other: "výdavkov" })}`,
       toGet: "dostaneš späť", youOwe: "dlžíš", settled: "všetko vyrovnané", owesYou: "Kto ti dlží", youOweTitle: "Dlžíš",
       eachOne: "Zostatok každého", getsBack: "dostane späť", owes: "dlží", even: "vyrovnané",
       toSettle: "Na vyrovnanie", total: "Spolu v skupine", lodging: "Ubytovanie", food: "Jedlo", transport: "Doprava",
       sheetTitle: "Rozdeliť výdavok", description: "Popis", amount: "Suma", whoPaid: "Kto platil",
       splitAmong: "Rozdeliť rovným dielom medzi", each: "{value} na osobu", cancel: "Zrušiť", save: "Uložiť", close: "Zavrieť",
-      queue: (n) => `${n} ${countForm(n, "zmena", "zmeny", "zmien")} vo fronte`,
+      queue: (n) => `${n} ${countForm(n, { one: "zmena", few: "zmeny", other: "zmien" })} vo fronte`,
       split: "Ako sa delilo", yourShare: "Tvoj podiel", deleteBill: "Odstrániť výdavok",
       recordPayment: "Zaznamenať platbu", record: "Zaznamenať", viaMethod: "prevodom", payment: "Platba", deletePayment: "Odstrániť platbu",
       payLine: (from, to) => `${name(from)} → ${name(to)}`,
       paidYou: (who, value) => `${who} ti zaplatil(a) ${value}`,
       paidTotal: "Zaplatené spolu", shareTotal: "Podiel na výdavkoch", balance: "Zostatok",
-      bills: (n) => `${n} ${countForm(n, "výdavok", "výdavky", "výdavkov")}`,
+      bills: (n) => `${n} ${countForm(n, { one: "výdavok", few: "výdavky", other: "výdavkov" })}`,
       titles: { b1: "Penzión v Lagoa", b2: "Večera v Ribeirão", b3: "Odvoz na pláž", p1: "Zmrzlina na pláži", p2: "Týždenný nákup", p3: "Parkovanie" },
     },
     // Norwegian (Bokmål): "du" for the user, and the app's words (utgift, saldo, gjør opp, registrer betaling).
@@ -794,6 +797,104 @@
       paidTotal: "Maksanut yhteensä", shareTotal: "Osuus kuluista", balance: "Saldo",
       bills: (n) => `${n} ${n === 1 ? "kulu" : "kulua"}`,
       titles: { b1: "Majatalo Lagoassa", b2: "Illallinen Ribeirãossa", b3: "Kyyti rannalle", p1: "Jäätelöt rannalla", p2: "Viikon ruokaostokset", p3: "Pysäköinti" },
+    },
+    // Latvian: "tu" for the user, and the app's words (rēķins, bilance, norēķināties, reģistrēt maksājumu). A name is
+    // the subject or stands after a noun that carries the case ("personai {name}"), never declined itself; a count
+    // takes the singular after 1, 21, 31… (countForm, as Intl.PluralRules tells it), the plural after the rest.
+    lv: {
+      paid: "{name} samaksāja", notIn: "Šoreiz nepiedalās",
+      members: (people, bills) => `${people} ${countForm(people, "cilvēks", undefined, "cilvēki")} · ${bills} ${countForm(bills, "rēķins", undefined, "rēķini")}`,
+      toGet: "jāsaņem", youOwe: "tu esi parādā", settled: "viss nokārtots", owesYou: "Tev ir parādā", youOweTitle: "Tu esi parādā",
+      eachOne: "Katra bilance", getsBack: "saņems atpakaļ", owes: "ir parādā", even: "norēķins pabeigts",
+      toSettle: "Jānorēķinās", total: "Grupas kopsumma", lodging: "Naktsmītne", food: "Ēdiens", transport: "Transports",
+      sheetTitle: "Sadalīt rēķinu", description: "Apraksts", amount: "Summa", whoPaid: "Kas maksāja",
+      splitAmong: "Sadalīt vienādi starp", each: "{value} katram", cancel: "Atcelt", save: "Saglabāt", close: "Aizvērt",
+      queue: (n) => `${n} ${countForm(n, "izmaiņa", undefined, "izmaiņas")} rindā`,
+      split: "Kā tas tika sadalīts", yourShare: "Tava daļa", deleteBill: "Dzēst rēķinu",
+      recordPayment: "Reģistrēt maksājumu", record: "Reģistrēt", viaMethod: "ar pārskaitījumu", payment: "Maksājums", deletePayment: "Dzēst maksājumu",
+      payLine: (from, to) => `${name(from)} samaksāja personai ${name(to)}`,
+      paidYou: (who, value) => `${who} tev samaksāja ${value}`,
+      paidTotal: "Samaksāts kopā", shareTotal: "Daļa no rēķiniem", balance: "Bilance",
+      bills: (n) => `${n} ${countForm(n, "rēķins", undefined, "rēķini")}`,
+      titles: { b1: "Lagoas viesu māja", b2: "Vakariņas Ribeirão", b3: "Brauciens uz pludmali", p1: "Saldējums pludmalē", p2: "Nedēļas iepirkumi", p3: "Stāvvieta" },
+    },
+    // Estonian: "sina" for the user, and the app's words (kulu, saldo, arvelda, registreeri makse). A name or an amount
+    // is the subject or stands after a noun that carries the case ("isikule {name}"), never with an ending of its own.
+    et: {
+      paid: "{name} maksis", notIn: "Pole osaline",
+      members: (people, bills) => `${people} inimest · ${bills} kulu`,
+      toGet: "tagasi saada", youOwe: "sa võlgned", settled: "kõik on arveldatud", owesYou: "Kes sulle võlgneb", youOweTitle: "Sa võlgned",
+      eachOne: "Igaühe saldo", getsBack: "saab tagasi", owes: "võlgneb", even: "tasa",
+      toSettle: "Arveldada", total: "Grupi kulud kokku", lodging: "Majutus", food: "Toit", transport: "Transport",
+      sheetTitle: "Jaga kulu", description: "Kirjeldus", amount: "Summa", whoPaid: "Kes maksis",
+      splitAmong: "Jaga võrdselt", each: "{value} igaühele", cancel: "Tühista", save: "Salvesta", close: "Sulge",
+      queue: (n) => `${n} ${n === 1 ? "muudatus" : "muudatust"} järjekorras`,
+      split: "Kuidas jagati", yourShare: "Sinu osa", deleteBill: "Kustuta kulu",
+      recordPayment: "Registreeri makse", record: "Registreeri", viaMethod: "ülekandega", payment: "Makse", deletePayment: "Kustuta makse",
+      payLine: (from, to) => `${name(from)} maksis isikule ${name(to)}`,
+      paidYou: (who, value) => `${who} maksis sulle ${value}`,
+      paidTotal: "Kokku makstud", shareTotal: "Osa kuludest", balance: "Saldo",
+      bills: (n) => `${n} kulu`,
+      titles: { b1: "Lagoa külalistemaja", b2: "Õhtusöök Ribeirãos", b3: "Sõit randa", p1: "Jäätis rannas", p2: "Nädala toidukaubad", p3: "Parkimine" },
+    },
+    // Lithuanian: "tu" for the user, and the app's words (išlaida, balansas, atsiskaityti, užregistruoti mokėjimą).
+    // Counts take one, few and other forms (countForm). A name is never declined: who paid whom as an arrow, as the
+    // Balances tab writes it, and a name or an amount is the subject.
+    lt: {
+      paid: "{name} sumokėjo", notIn: "Nedalyvauja",
+      members: (people, bills) => `${people} ${countForm(people, "žmogus", "žmonės", "žmonių")} · ${bills} ${countForm(bills, "išlaida", "išlaidos", "išlaidų")}`,
+      toGet: "atgausi", youOwe: "turi grąžinti", settled: "viskas atsiskaityta", owesYou: "Kas tau turi grąžinti", youOweTitle: "Turi grąžinti",
+      eachOne: "Kiekvieno balansas", getsBack: "atgaus", owes: "turi grąžinti", even: "atsiskaityta",
+      toSettle: "Reikia atsiskaityti", total: "Grupės išlaidos iš viso", lodging: "Apgyvendinimas", food: "Maistas", transport: "Transportas",
+      sheetTitle: "Padalyti išlaidą", description: "Aprašymas", amount: "Suma", whoPaid: "Kas mokėjo",
+      splitAmong: "Po lygiai tarp", each: "po {value}", cancel: "Atšaukti", save: "Išsaugoti", close: "Uždaryti",
+      queue: (n) => `${n} ${countForm(n, "pakeitimas", "pakeitimai", "pakeitimų")} eilėje`,
+      split: "Kaip padalyta", yourShare: "Tavo dalis", deleteBill: "Ištrinti išlaidą",
+      recordPayment: "Užregistruoti mokėjimą", record: "Užregistruoti", viaMethod: "pavedimu", payment: "Mokėjimas", deletePayment: "Ištrinti mokėjimą",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} tau sumokėjo ${value}`,
+      paidTotal: "Iš viso sumokėta", shareTotal: "Dalis išlaidose", balance: "Balansas",
+      bills: (n) => `${n} ${countForm(n, "išlaida", "išlaidos", "išlaidų")}`,
+      titles: { b1: "Svečių namai Lagoa", b2: "Vakarienė Ribeirão", b3: "Kelionė į paplūdimį", p1: "Ledai paplūdimyje", p2: "Savaitės pirkiniai", p3: "Automobilio stovėjimas" },
+    },
+    // Slovenian: "ti" for the user, and the app's words (strošek, stanje, poravnaj, zabeleži plačilo). A count takes
+    // four forms (countForm: 1 oseba, 2 osebi, 3 osebe, 5 oseb), and a name stands after a colon or an arrow, never
+    // declined, and no verb guesses anyone's gender.
+    sl: {
+      paid: "Plačnik: {name}", notIn: "Ni v tem strošku",
+      members: (people, bills) => `${people} ${countForm(people, { one: "oseba", two: "osebi", few: "osebe", other: "oseb" })} · ${bills} ${countForm(bills, { one: "strošek", two: "stroška", few: "stroški", other: "stroškov" })}`,
+      toGet: "dobiš nazaj", youOwe: "dolguješ", settled: "vse poravnano", owesYou: "Kdo ti dolguje", youOweTitle: "Dolguješ",
+      eachOne: "Stanje vsakega", getsBack: "dobi nazaj", owes: "dolguje", even: "poravnano",
+      toSettle: "Za poravnavo", total: "Skupaj v skupini", lodging: "Nastanitev", food: "Hrana", transport: "Prevoz",
+      sheetTitle: "Razdeli strošek", description: "Opis", amount: "Znesek", whoPaid: "Kdo je plačal",
+      splitAmong: "Razdeli enakomerno med", each: "{value} na osebo", cancel: "Prekliči", save: "Shrani", close: "Zapri",
+      queue: (n) => `${n} ${countForm(n, { one: "sprememba", two: "spremembi", few: "spremembe", other: "sprememb" })} v čakalni vrsti`,
+      split: "Kako je bil razdeljen", yourShare: "Tvoj delež", deleteBill: "Izbriši strošek",
+      recordPayment: "Zabeleži plačilo", record: "Zabeleži", viaMethod: "z nakazilom", payment: "Plačilo", deletePayment: "Izbriši plačilo",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `Prejeto plačilo: ${who} · ${value}`,
+      paidTotal: "Skupaj plačano", shareTotal: "Delež stroškov", balance: "Stanje",
+      bills: (n) => `${n} ${countForm(n, { one: "strošek", two: "stroška", few: "stroški", other: "stroškov" })}`,
+      titles: { b1: "Penzion v Lagoi", b2: "Večerja v Ribeirãu", b3: "Prevoz na plažo", p1: "Sladoled na plaži", p2: "Tedenska nabava", p3: "Parkiranje" },
+    },
+    // Gujarati: the app's own "ચૂકવનાર: {name}", so a name stands after a colon, and the agent એ written apart after it;
+    // an amount stands after a colon, never with an ending. તમે for the user.
+    gu: {
+      paid: "ચૂકવનાર: {name}", notIn: "આ ખર્ચમાં નથી",
+      members: (people, bills) => `${people} ${people === 1 ? "વ્યક્તિ" : "લોકો"} · ${bills} ખર્ચ`,
+      toGet: "પાછા મળવાના છે", youOwe: "તમારે આપવાના છે", settled: "હિસાબ પતી ગયો", owesYou: "તમને કોની પાસેથી મળવાના છે", youOweTitle: "તમારે કોને આપવાના છે",
+      eachOne: "દરેકનું બેલેન્સ", getsBack: "પાછા મળવાના છે", owes: "આપવાના છે", even: "હિસાબ પતી ગયો",
+      toSettle: "પતાવવાનો હિસાબ", total: "ગ્રુપનો કુલ ખર્ચ", lodging: "રહેઠાણ", food: "ખોરાક", transport: "વાહનવ્યવહાર",
+      sheetTitle: "ખર્ચ વહેંચો", description: "વર્ણન", amount: "રકમ", whoPaid: "કોણે ચૂકવ્યું",
+      splitAmong: "આ લોકો વચ્ચે સરખા ભાગે", each: "દરેકના {value}", cancel: "રદ કરો", save: "સેવ કરો", close: "બંધ કરો",
+      queue: (n) => `${n} ફેરફાર કતારમાં`,
+      split: "કેવી રીતે વહેંચાયો", yourShare: "તમારો ભાગ", deleteBill: "ખર્ચ ડિલીટ કરો",
+      recordPayment: "ચુકવણી નોંધો", record: "નોંધો", viaMethod: "ટ્રાન્સફર દ્વારા", payment: "ચુકવણી", deletePayment: "ચુકવણી ડિલીટ કરો",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} એ તમને ચૂકવ્યા: ${value}`,
+      paidTotal: "કુલ ચૂકવેલા", shareTotal: "ખર્ચમાં ભાગ", balance: "બેલેન્સ",
+      bills: (n) => `${n} ખર્ચ`,
+      titles: { b1: "લાગોઆ ગેસ્ટહાઉસ", b2: "રિબેરાઓમાં ડિનર", b3: "બીચ સુધીની રાઇડ", p1: "બીચ પર આઇસક્રીમ", p2: "અઠવાડિયાનું કરિયાણું", p3: "પાર્કિંગ" },
     },
     // Malayalam: a name stands bare as the subject ("{name} പണം നൽകി", as the app writes it), and an amount stands after a
     // colon or an arrow, never with a case ending. നിങ്ങൾ for the user.
@@ -1254,7 +1355,9 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", mr: "mr-u-nu-latn", bg: "bg", ca: "ca", da: "da", fi: "fi", ml: "ml-u-nu-latn", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    // Why: only the languages whose clock differs from the page's own tag (Latin digits, Taiwan's Traditional Chinese,
+    // the US's English); any other uses the page's tag, which boot.js sets for every language.
+    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", gu: "gu-u-nu-latn", ml: "ml-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

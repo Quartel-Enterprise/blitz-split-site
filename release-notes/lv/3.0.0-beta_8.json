@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Rēķinu tagad var sadalīt „Pēc ienākumiem”, un ievadītie ienākumi tiek kopīgoti ar grupas dalībniekiem.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Katram izdevumam sadaļā „Jaunākie izdevumi” cilnē „Sākums” tagad ir izvēlne: „Rediģēt”, „Dublēt”, „Kopīgot” un „Dzēst”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Skatīt visus” cilnē „Sākums” tagad atver „Visi izdevumi”: katru rēķinu, kurā piedalies, visās tavās grupās, ar meklēšanu, filtriem un kārtošanu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupas fotoattēls tagad ir lielāks tās ekrāna augšā un, ritinot, sarūk, un grupa atveras ar animāciju no savas rindas.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Cilne „Aktivitāte” tagad rāda cilvēku fotoattēlus, „Bilances › Pa grupām” rāda katras grupas fotoattēlu, un statistikas „Lielākais izdevums” rāda tā kategoriju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadaļā „Profils › Konts un sinhronizācija” tagad redzams Google vai Apple logotips un visa tava e-pasta adrese, ko redzi tikai tu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Dzēst kontu” tagad paskaidro, kas paliek tavās grupās pēc konta dzēšanas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Slēdzis „Noklusējuma Pix atslēga” tumšajā režīmā vairs neizskatās izslēgts pie tavas noklusējuma atslēgas.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

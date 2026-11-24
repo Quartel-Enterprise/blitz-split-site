@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split Apple Watch pulkstenī: savieno to ar sava iPhone kontu, skaties savas bilances un nenokārtotās grupas, pieskaries „Es samaksāju” grupā, kurā esi parādā, un pievieno savu kopējo bilanci pulksteņa ciparnīcai vai Smart Stack; pēc savienošanas pulkstenis darbojas patstāvīgi.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Lietotne tagad runā bengāļu, malajiešu un grieķu valodā: izvēlies „বাংলা”, „Bahasa Melayu” vai „Ελληνικά” sadaļā „Profils › Valoda” vai ļauj tai sekot ierīces valodai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupās tagad var izmantot Bangladešas taku un Malaizijas ringitu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lietotne tagad runā horvātu valodā: izvēlies „Hrvatski” sadaļā „Profils › Valoda” vai ļauj tai sekot ierīces valodai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lietotne tagad runā filipīniešu valodā: izvēlies „Filipino” sadaļā „Profils › Valoda” vai ļauj tai sekot ierīces valodai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupās tagad var dalīt rēķinus Filipīnu peso (PHP, „₱”), un grupa, kas izveidota Filipīnās, sākas ar to.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lietotne tagad runā ungāru valodā: izvēlies „Magyar” sadaļā „Profils › Valoda” vai ļauj tai sekot ierīces valodai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupās tagad var izmantot Ungārijas forintu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pievieno logrīku „Bilances” sava iPhone vai iPad sākuma ekrānam vai bloķēšanas ekrānam, lai vienā mirklī redzētu savu kopējo bilanci un nenokārtotās grupas; pieskaries tam, lai atvērtu „Bilances”.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupās tagad var izmantot Bolīvijas, Venecuēlas, Kostarikas, Gvatemalas, Hondurasas, Nikaragvas, Dominikānas Republikas un Kubas valūtas, un tur izveidota grupa sākas ar savas valsts valūtu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lietotne tagad runā serbu valodā: izvēlies „Srpski” sadaļā „Profils › Valoda” vai ļauj tai sekot ierīces valodai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupās tagad var dalīt rēķinus Serbijas dināros (RSD), un grupa, kas izveidota Serbijā, sākas ar to.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lietotne tagad runā urdu valodā: izvēlies „اردو” sadaļā „Profils › Valoda” vai ļauj tai sekot ierīces valodai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupās tagad var dalīt rēķinus Pakistānas rūpijās (PKR), un grupa, kas izveidota Pakistānā, sākas ar to.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pieskaroties paziņojumam par jaunu rēķinu, rēķins atveras uzreiz: lietotne to ielādē, tiklīdz pienāk paziņojums.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Sveiciena ekrāns tālruņos tagad augšā rāda tikai logotipu, atstājot vairāk vietas pogām.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grupas josla „Laiks norēķināties” vairs nerāda atgādinājuma datumu no laika pirms atgādinājuma iestatīšanas vai maiņas: atgādinājums, kas mainīts uz 25. datumu, gaida 25. datumu.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

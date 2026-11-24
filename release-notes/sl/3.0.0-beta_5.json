@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split zdaj govori nemško, italijansko in poljsko: sledi jeziku tvoje naprave, lahko pa jezik izbereš v Profil › Jezik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vsaka kategorija ima zdaj svojo barvo, Statistika pa vsako kategorijo in vsako osebo nariše v njeni barvi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Barvo kategorije lahko zdaj spremeniš v obrazcu kategorije ali v Zemljevidu kategorij.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Meni stroška v Stroških ima novo možnost, Podvoji: odpre nov strošek, že izpolnjen kot izvirnik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine in stroški ne izginejo več za trenutek, ko se vrneš v aplikacijo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Iskanje se ne zapre več takoj, ko še nimaš nobene skupine.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nova skupina se zdaj začne kot Dogodek, prva vrsta na seznamu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ko še nimaš skupine, Povabi s povezavo ali kodo QR zdaj prikaže samo gumb Nova skupina namesto gumbov, ki jih ne moreš uporabiti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Potrdilo, katerega branje traja dlje, se ne konča več z napako povezave.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Vrstice kategorij v Statistiki so preglednejše: ne navajajo več zneska vsake podkategorije.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

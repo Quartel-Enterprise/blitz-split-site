@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Paskyra be „Google“ ar „Apple“ dabar ištrinama po 30 dienų nenaudojimo. Tai nurodoma pasveikinimo ekrane ir Profilyje, o susiejus „Google“ ar „Apple“ tavo duomenys išsaugomi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dabar gali įvertinti programėlę skiltyje Profilis › Pagalba ir atsiliepimai mygtuku „Įvertinti programėlę“.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Išlaida, atidaryta iš Pradžios ar Visų išlaidų, dabar grąžina tiesiai ten, iš kur ją atidarei, nepereinant per jos grupę.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ištaisyta: veidų krūvelės burbulas „+N“ buvo rodomas po pirmuoju veidu, o ne virš jo.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

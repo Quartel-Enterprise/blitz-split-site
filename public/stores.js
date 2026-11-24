@@ -59,7 +59,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", ml: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", gu: "in/", ml: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -524,6 +524,62 @@
       mismatchBody: "Käytät laitetta {platform}. Saat parhaan kokemuksen, kun hankit sovelluksen {in}.",
       mismatchGo: "Siirry {to}", mismatchStay: "Jatka silti {to}", close: "Sulje",
       in: { play: "Google Play -kaupasta", appstore: "App Store -kaupasta" }, to: { play: "Google Play -kauppaan", appstore: "App Store -kauppaan" },
+    },
+    // Latvian: "Google Play" and "App Store" are never declined; "no" and "uz" before them need no ending.
+    lv: {
+      play: ["Lejupielādē no", "Drīzumā pieejama"], appstore: ["Lejupielādē no", "Drīzumā pieejama"], web: ["Atver", "Drīzumā"], browser: "pārlūkā",
+      getApp: "Iegūt lietotni", openWeb: "Atvērt tīmekļa lietotni", soon: "Drīzumā",
+      noteStore: "Iegūsti lietotni {in}.", noteApple: "Tev ir {platform}? Lieto lietotni pārlūkā, līdz tā būs pieejama App Store.", noteWeb: "Atver to pārlūkā, nekas nav jāinstalē.",
+      playLive: "Pieejama Google Play", appStoreLive: "Pieejama App Store", webLive: "Atvērt tīmekļa lietotni",
+      mismatchTitle: "Izvēlies savu veikalu",
+      mismatchBody: "Tu izmanto ierīci {platform}. Labākai pieredzei iegūsti lietotni {in}.",
+      mismatchGo: "Doties {to}", mismatchStay: "Turpināt {to}", close: "Aizvērt",
+      in: { play: "no Google Play", appstore: "no App Store" }, to: { play: "uz Google Play", appstore: "uz App Store" },
+    },
+    // Estonian: "Google Play" and "App Store" take no ending; "pood" after them carries the case.
+    et: {
+      play: ["Laadi alla poest", "Peagi poes"], appstore: ["Laadi alla poest", "Peagi poes"], web: ["Ava", "Peagi saadaval"], browser: "brauseris",
+      getApp: "Hangi rakendus", openWeb: "Ava veebirakendus", soon: "Peagi saadaval",
+      noteStore: "Hangi rakendus {in}.", noteApple: "Kasutad seadet {platform}? Kasuta rakendust brauseris, kuni see jõuab App Store poodi.", noteWeb: "Ava see brauseris, midagi pole vaja paigaldada.",
+      playLive: "Saadaval Google Play poes", appStoreLive: "Saadaval App Store poes", webLive: "Ava veebirakendus",
+      mismatchTitle: "Vali oma pood",
+      mismatchBody: "Kasutad seadet {platform}. Parima kogemuse saamiseks hangi rakendus {in}.",
+      mismatchGo: "Mine {to}", mismatchStay: "Jätka siiski {to}", close: "Sulge",
+      in: { play: "Google Play poest", appstore: "App Store poest" }, to: { play: "Google Play poodi", appstore: "App Store poodi" },
+    },
+    // Lithuanian: "Google Play" and "App Store" are never declined; a preposition before them, or "parduotuvėje" after
+    // them, carries the case.
+    lt: {
+      play: ["Atsisiųsk iš", "Netrukus"], appstore: ["Atsisiųsk iš", "Netrukus"], web: ["Atidaryk", "Netrukus"], browser: "naršyklėje",
+      getApp: "Gauk programėlę", openWeb: "Atidaryti žiniatinklio programėlę", soon: "Netrukus",
+      noteStore: "Gauk programėlę {in}.", noteApple: "Naudoji {platform}? Naudokis programėle naršyklėje, kol ji pasirodys „App Store“ parduotuvėje.", noteWeb: "Atidaryk ją naršyklėje – nieko diegti nereikia.",
+      playLive: "Galima gauti iš „Google Play“", appStoreLive: "Galima gauti iš „App Store“", webLive: "Atidaryti žiniatinklio programėlę",
+      mismatchTitle: "Pasirink parduotuvę",
+      mismatchBody: "Naudoji {platform}. Geriausiai veiks, jei programėlę gausi {in}.",
+      mismatchGo: "Eiti {to}", mismatchStay: "Vis tiek tęsti {to}", close: "Uždaryti",
+      in: { play: "iš „Google Play“", appstore: "iš „App Store“" }, to: { play: "į „Google Play“", appstore: "į „App Store“" },
+    },
+    // Slovenian: "Google Play" and "App Store" are never declined; "trgovina" before them carries the case.
+    sl: {
+      play: ["Prenesi iz trgovine", "Kmalu v trgovini"], appstore: ["Prenesi iz trgovine", "Kmalu v trgovini"], web: ["Odpri v", "Kmalu v"], browser: "brskalniku",
+      getApp: "Prenesi aplikacijo", openWeb: "Odpri spletno aplikacijo", soon: "Kmalu",
+      noteStore: "Prenesi aplikacijo {in}.", noteApple: "Uporabljaš napravo {platform}? Uporabljaj aplikacijo v brskalniku, dokler ne pride v trgovino App Store.", noteWeb: "Odpri jo v brskalniku, ničesar ni treba namestiti.",
+      playLive: "Na voljo v trgovini Google Play", appStoreLive: "Na voljo v trgovini App Store", webLive: "Odpri spletno aplikacijo",
+      mismatchTitle: "Izberi svojo trgovino",
+      mismatchBody: "Uporabljaš napravo {platform}. Za najboljšo izkušnjo prenesi aplikacijo {in}.",
+      mismatchGo: "Pojdi {to}", mismatchStay: "Vseeno nadaljuj {to}", close: "Zapri",
+      in: { play: "iz trgovine Google Play", appstore: "iz trgovine App Store" }, to: { play: "v trgovino Google Play", appstore: "v trgovino App Store" },
+    },
+    // Gujarati: "Google Play" and "App Store" take their postposition written apart (પર, પરથી).
+    gu: {
+      play: ["હમણાં મેળવો", "જલ્દી આવી રહી છે"], appstore: ["ડાઉનલોડ કરો", "જલ્દી આવી રહી છે"], web: ["હમણાં ખોલો", "જલ્દી આવી રહી છે"], browser: "બ્રાઉઝર",
+      getApp: "ઍપ મેળવો", openWeb: "વેબ ઍપ ખોલો", soon: "જલ્દી આવી રહી છે",
+      noteStore: "ઍપ {in} મેળવો.", noteApple: "તમે {platform} વાપરો છો? App Store પર ઍપ આવે ત્યાં સુધી તેને બ્રાઉઝરમાં વાપરો.", noteWeb: "કંઈ ઇન્સ્ટૉલ કર્યા વગર બ્રાઉઝરમાં ખોલો.",
+      playLive: "Google Play પર ઉપલબ્ધ", appStoreLive: "App Store પર ઉપલબ્ધ", webLive: "વેબ ઍપ ખોલો",
+      mismatchTitle: "તમારો સ્ટોર પસંદ કરો",
+      mismatchBody: "તમે {platform} વાપરો છો. શ્રેષ્ઠ અનુભવ માટે, ઍપ {in} મેળવો.",
+      mismatchGo: "{to} જાઓ", mismatchStay: "તો પણ {to} જાઓ", close: "બંધ કરો",
+      in: { play: "Google Play પરથી", appstore: "App Store પરથી" }, to: { play: "Google Play પર", appstore: "App Store પર" },
     },
     // Malayalam: "Google Play" and "App Store" take their case ending after a hyphen (-ൽ, -ൽ നിന്ന്, -ലേക്ക്), as Tamil's do.
     ml: {

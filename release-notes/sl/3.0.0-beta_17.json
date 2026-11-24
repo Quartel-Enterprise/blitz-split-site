@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Aplikacija zdaj govori arabsko, z razporeditvijo za branje od desne proti levi: v Profil › Jezik izberi „العربية“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo saudski rial (SAR), dirham ZAE (AED), egiptovski funt (EGP) in maroški dirham (MAD), nova skupina, ustvarjena v eni od teh držav, pa začne v njeni valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori kitajsko v poenostavljeni pisavi: v Profil › Jezik izberi „中文（简体）“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo kitajski juan (CNY), nova skupina, ustvarjena v celinski Kitajski, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori kitajsko v tradicionalni pisavi: v Profil › Jezik izberi „中文（繁體）“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo novi tajvanski dolar (TWD), nova skupina, ustvarjena na Tajvanu, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori češko: v Profil › Jezik izberi „Čeština“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo češko krono (CZK), nova skupina, ustvarjena na Češkem, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vsaka skupina ima zdaj svoj opomnik za poravnavo: obdrži tedenskega ob ponedeljkih ob 10:00, izberi drug dan v tednu ali dan v mesecu in uro (na primer vsakega 25. ob 12:00) ali ga izklopi, ko ustvariš skupino ali v Uredi skupino. Obvestilo dobijo le tisti, ki še dolgujejo, v skupini pa vidijo pasico, ki jo lahko zaprejo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori hebrejsko, z razporeditvijo za branje od desne proti levi: v Profil › Jezik izberi „עברית“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo izraelski novi šekel (ILS), nova skupina, ustvarjena v Izraelu, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori hindijsko: v Profil › Jezik izberi „हिन्दी“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo indijsko rupijo (INR), nova skupina, ustvarjena v Indiji, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori romunsko: v Profil › Jezik izberi „Română“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo romunski lev (RON), nova skupina, ustvarjena v Romuniji, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori švedsko: v Profil › Jezik izberi „Svenska“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo švedsko krono (SEK), nova skupina, ustvarjena na Švedskem, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori tajsko: v Profil › Jezik izberi „ไทย“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo tajski baht (THB), nova skupina, ustvarjena na Tajskem, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori vietnamsko: v Profil › Jezik izberi „Tiếng Việt“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo vietnamski dong (VND), nova skupina, ustvarjena v Vietnamu, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tapni fotografijo skupine v zgornji vrstici stroška, da jo vidiš povečano.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ko v skupini dveh tapneš zatemnjeno stikalo Poenostavi dolgove, ti aplikacija pove, da postane na voljo, ko ima skupina 3 ljudi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V razdelku Kako deluje pri Poenostavi dolgove primer zdaj prikazuje fotografije ljudi namesto začetnic.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Popravljena kretnja za nazaj, ki ni zapustila profila osebe, odprtega s plošče plačila; zdaj se vrne na ploščo.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
