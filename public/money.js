@@ -52,6 +52,7 @@
     et: ["", ",", "\u00a0", "\u00a0€"],
     lt: ["", ",", "\u00a0", "\u00a0€"],
     sl: ["", ",", ".", "\u00a0€"],
+    kn: ["₹", ".", ",", "", 0, 2],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
@@ -77,11 +78,16 @@
     if (!signed || cents === 0) return isolate(text);
     return isolate((cents > 0 ? "+" : "−") + text);
   }
-  // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), and a Marathi or Hindi
-  // one may type Devanagari's (४८), which \d doesn't match, so they are read as the Latin ones before anything else.
+  // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), and a Hindi, Marathi,
+  // Bengali, Tamil, Telugu, Kannada or Thai one may type its script's (४८, ৪৮, ௪௮, ౪౮, ೪೮, ๔๘), which \d doesn't match,
+  // so they are read as the Latin ones before anything else: each script's zero, and the nine digits after it.
+  const DIGIT_ZEROS = [0x660, 0x6f0, 0x966, 0x9e6, 0xbe6, 0xc66, 0xce6, 0xe50];
   const latinDigits = (text) => text
-    .replace(/[٠-٩۰-۹]/g, (d) => String(d.charCodeAt(0) & 0xf))
-    .replace(/[०-९]/g, (d) => String(d.charCodeAt(0) - 0x966))
+    .replace(/\p{Nd}/gu, (d) => {
+      const code = d.codePointAt(0);
+      const zero = DIGIT_ZEROS.find((z) => code >= z && code <= z + 9);
+      return zero === undefined ? d : String(code - zero);
+    })
     .replace(/٫/g, ".").replace(/٬/g, ",");
   // What someone types, in cents. The last "," or "." followed by one or two digits is the decimal point, whatever the
   // language, so "33,5", "33.50" and "6.000" all read as meant; a currency with no cents in use drops those decimals

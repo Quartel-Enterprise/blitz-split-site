@@ -877,6 +877,25 @@
       bills: (n) => `${n} ${countForm(n, { one: "strošek", two: "stroška", few: "stroški", other: "stroškov" })}`,
       titles: { b1: "Penzion v Lagoi", b2: "Večerja v Ribeirãu", b3: "Prevoz na plažo", p1: "Sladoled na plaži", p2: "Tedenska nabava", p3: "Parkiranje" },
     },
+    // Kannada: a name stands as the subject ("{name} ಪಾವತಿಸಿದರು", the app's own) and an amount after a colon, never with
+    // a case ending; a count takes its one form for 0 and 1, as Intl.PluralRules tells it. ನೀವು for the user.
+    kn: {
+      paid: "{name} ಪಾವತಿಸಿದರು", notIn: "ಇದರಲ್ಲಿ ಇಲ್ಲ",
+      members: (people, bills) => `${people} ${countForm(people, { one: "ವ್ಯಕ್ತಿ", other: "ಜನರು" })} · ${bills} ${countForm(bills, { one: "ಖರ್ಚು", other: "ಖರ್ಚುಗಳು" })}`,
+      toGet: "ನಿಮಗೆ ಬರಬೇಕು", youOwe: "ನೀವು ಕೊಡಬೇಕು", settled: "ಲೆಕ್ಕ ಚುಕ್ತಾ ಆಗಿದೆ", owesYou: "ನಿಮಗೆ ಯಾರು ಕೊಡಬೇಕು", youOweTitle: "ನೀವು ಕೊಡಬೇಕಾದದ್ದು",
+      eachOne: "ಪ್ರತಿಯೊಬ್ಬರ ಬ್ಯಾಲೆನ್ಸ್", getsBack: "ಬರಬೇಕು", owes: "ಕೊಡಬೇಕು", even: "ಲೆಕ್ಕ ಚುಕ್ತಾ ಆಗಿದೆ",
+      toSettle: "ಚುಕ್ತಾ ಮಾಡಬೇಕಾದವು", total: "ಗುಂಪಿನ ಒಟ್ಟು", lodging: "ವಸತಿ", food: "ಆಹಾರ", transport: "ಸಾರಿಗೆ",
+      sheetTitle: "ಖರ್ಚನ್ನು ಹಂಚಿ", description: "ವಿವರಣೆ", amount: "ಮೊತ್ತ", whoPaid: "ಯಾರು ಪಾವತಿಸಿದರು",
+      splitAmong: "ಇವರ ನಡುವೆ ಸಮವಾಗಿ ಹಂಚಿ", each: "ತಲಾ {value}", cancel: "ರದ್ದುಮಾಡಿ", save: "ಸೇವ್ ಮಾಡಿ", close: "ಮುಚ್ಚಿ",
+      queue: (n) => `ಸರದಿಯಲ್ಲಿ ${n} ${countForm(n, { one: "ಬದಲಾವಣೆ", other: "ಬದಲಾವಣೆಗಳು" })}`,
+      split: "ಹೇಗೆ ಹಂಚಲಾಯಿತು", yourShare: "ನಿಮ್ಮ ಪಾಲು", deleteBill: "ಖರ್ಚನ್ನು ಅಳಿಸಿ",
+      recordPayment: "ಪಾವತಿಯನ್ನು ದಾಖಲಿಸಿ", record: "ದಾಖಲಿಸಿ", viaMethod: "ವರ್ಗಾವಣೆ ಮೂಲಕ", payment: "ಪಾವತಿ", deletePayment: "ಪಾವತಿಯನ್ನು ಅಳಿಸಿ",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} ನಿಮಗೆ ಪಾವತಿಸಿದರು: ${value}`,
+      paidTotal: "ಒಟ್ಟು ಪಾವತಿಸಿದ್ದು", shareTotal: "ಖರ್ಚುಗಳಲ್ಲಿ ಪಾಲು", balance: "ಬ್ಯಾಲೆನ್ಸ್",
+      bills: (n) => `${n} ${countForm(n, { one: "ಖರ್ಚು", other: "ಖರ್ಚುಗಳು" })}`,
+      titles: { b1: "ಲಾಗೋವಾ ಗೆಸ್ಟ್‌ಹೌಸ್", b2: "ರಿಬೇರಾವ್‌ನಲ್ಲಿ ಊಟ", b3: "ಬೀಚ್‌ಗೆ ಪ್ರಯಾಣ", p1: "ಬೀಚ್‌ನಲ್ಲಿ ಐಸ್‌ಕ್ರೀಮ್", p2: "ವಾರದ ದಿನಸಿ", p3: "ಪಾರ್ಕಿಂಗ್" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 

@@ -59,7 +59,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", kn: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -569,6 +569,17 @@
       mismatchBody: "Uporabljaš napravo {platform}. Za najboljšo izkušnjo prenesi aplikacijo {in}.",
       mismatchGo: "Pojdi {to}", mismatchStay: "Vseeno nadaljuj {to}", close: "Zapri",
       in: { play: "iz trgovine Google Play", appstore: "iz trgovine App Store" }, to: { play: "v trgovino Google Play", appstore: "v trgovino App Store" },
+    },
+    // Kannada: "Google Play" and "App Store" stay in Latin letters, so their case ending is written apart (ನಲ್ಲಿ, ನಿಂದ, ಗೆ).
+    kn: {
+      play: ["ಈಗಲೇ ಪಡೆಯಿರಿ", "ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ"], appstore: ["ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ", "ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ"], web: ["ಈಗಲೇ ತೆರೆಯಿರಿ", "ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ"], browser: "ಬ್ರೌಸರ್",
+      getApp: "ಆ್ಯಪ್ ಪಡೆಯಿರಿ", openWeb: "ವೆಬ್ ಆ್ಯಪ್ ತೆರೆಯಿರಿ", soon: "ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ",
+      noteStore: "ಆ್ಯಪ್ ಅನ್ನು {in} ಪಡೆಯಿರಿ.", noteApple: "ನೀವು {platform} ಬಳಸುತ್ತೀರಾ? App Store ನಲ್ಲಿ ಆ್ಯಪ್ ಬರುವವರೆಗೆ ಅದನ್ನು ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಬಳಸಿ.", noteWeb: "ಏನನ್ನೂ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡದೆ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ.",
+      playLive: "Google Play ನಲ್ಲಿ ಲಭ್ಯವಿದೆ", appStoreLive: "App Store ನಲ್ಲಿ ಲಭ್ಯವಿದೆ", webLive: "ವೆಬ್ ಆ್ಯಪ್ ತೆರೆಯಿರಿ",
+      mismatchTitle: "ನಿಮ್ಮ ಸ್ಟೋರ್ ಆಯ್ಕೆಮಾಡಿ",
+      mismatchBody: "ನೀವು {platform} ಬಳಸುತ್ತಿದ್ದೀರಿ. ಅತ್ಯುತ್ತಮ ಅನುಭವಕ್ಕಾಗಿ, ಆ್ಯಪ್ ಅನ್ನು {in} ಪಡೆಯಿರಿ.",
+      mismatchGo: "{to} ಹೋಗಿ", mismatchStay: "ಆದರೂ {to} ಮುಂದುವರಿಯಿರಿ", close: "ಮುಚ್ಚಿ",
+      in: { play: "Google Play ನಿಂದ", appstore: "App Store ನಿಂದ" }, to: { play: "Google Play ಗೆ", appstore: "App Store ಗೆ" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

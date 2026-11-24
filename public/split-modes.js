@@ -1393,6 +1393,37 @@
         less: "En delež manj: {name}", more: "En delež več: {name}", had: "Kdo je imel: {item}",
       },
     },
+    // Kannada: a message with "|" holds its forms for {n}, "one|few|other", of which Kannada uses one (0 and 1) and other.
+    // A name, an item or an amount never takes a case ending: it stands after a colon. ನೀವು for the user.
+    kn: {
+      bill: "ಪಿಜ್ಜಾ ರಾತ್ರಿ", paid: "Pedro ಪಾವತಿಸಿದರು", notIn: "ಇದರಲ್ಲಿ ಇಲ್ಲ",
+      each: "ತಲಾ {a}", among: "{n} ಜನರ ನಡುವೆ ಹಂಚಲಾಗಿದೆ: {a}.", amongOne: "1 ವ್ಯಕ್ತಿಗೆ ಮಾತ್ರ: {a}.", out: "ಇದರಲ್ಲಿ ಇಲ್ಲ: {name}.",
+      nobody: "ಇನ್ನೂ ಯಾರೂ ಇಲ್ಲ", nobodyEqual: "ಈ ಮೊತ್ತವನ್ನು ಹಂಚಲು ಕನಿಷ್ಠ ಒಬ್ಬರನ್ನು ಆಯ್ಕೆಮಾಡಿ: {a}.",
+      checkAll: "ಎಲ್ಲರನ್ನೂ ಆಯ್ಕೆಮಾಡಿ", uncheckAll: "ಎಲ್ಲರ ಆಯ್ಕೆಯನ್ನು ತೆಗೆಯಿರಿ",
+      left: "ಉಳಿದಿದೆ: {a}", over: "ಹೆಚ್ಚಾಗಿದೆ: {a}", closed: "ಸರಿಯಾಗಿದೆ: {a}",
+      progress: "ಇಲ್ಲಿಯವರೆಗೆ: {a} / {b}.", closedMsg: "ಭಾಗಗಳು ಒಟ್ಟು ಮೊತ್ತಕ್ಕೆ ಸರಿಹೊಂದುತ್ತವೆ.",
+      parts: "{n} ಪಾಲು, ಪ್ರತಿಯೊಂದೂ {a}|{n} ಪಾಲುಗಳು, ಪ್ರತಿಯೊಂದೂ {a}|{n} ಪಾಲುಗಳು, ಪ್ರತಿಯೊಂದೂ {a}",
+      personParts: "{name}: {n} ಪಾಲು.|{name}: {n} ಪಾಲುಗಳು.|{name}: {n} ಪಾಲುಗಳು.",
+      nobodyShares: "ಈ ಮೊತ್ತವನ್ನು ಹಂಚಲು ಕನಿಷ್ಠ ಒಬ್ಬರಿಗೆ ಒಂದು ಪಾಲು ಕೊಡಿ: {a}.",
+      ofEach: "ಪ್ರತಿ ಖರ್ಚಿನ {p}", ofBill: "ಖರ್ಚಿನ {p}", incomeDetail: "ಪ್ರತಿಯೊಬ್ಬರ ಪಾಲು ಅವರವರ ಆದಾಯವನ್ನು ಅನುಸರಿಸುತ್ತದೆ.", perMonth: "/ತಿಂಗಳು",
+      service: "ಸೇವಾ ಶುಲ್ಕ ({p})", serviceSub: "ಪ್ರತಿಯೊಬ್ಬರು ತೆಗೆದುಕೊಂಡದ್ದರ ಅನುಪಾತದಲ್ಲಿ",
+      loose: "ಪ್ರತಿ ಐಟಂ ಅನ್ನು ಯಾರು ತೆಗೆದುಕೊಂಡರು ಎಂದು ಗುರುತಿಸಿ", looseDetail: "ಯಾರು ತೆಗೆದುಕೊಂಡರು ಎಂದು ಗುರುತಿಸಲು, ಪ್ರತಿ ಐಟಂನಲ್ಲಿರುವ ಮುಖಗಳನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.",
+      itemsClosed: "ಐಟಂಗಳು: {a}, ಸೇವಾ ಶುಲ್ಕ: {b}.", nobodyItem: "ಯಾರನ್ನೂ ಆಯ್ಕೆಮಾಡಿಲ್ಲ", eachItem: "ತಲಾ {a}",
+      items: { pizza: "ದೊಡ್ಡ ಪಿಜ್ಜಾ", beer: "ಬಿಯರ್", salad: "ಸಲಾಡ್", draft: "ಡ್ರಾಫ್ಟ್ ಬಿಯರ್", shrimp: "ಸೀಗಡಿ ಪ್ಲ್ಯಾಟರ್" },
+      receiptBill: "ಹಾರ್ಬರ್ ಬಾರ್",
+      hint: {
+        equal: "ಸಮವಾಗಿ ಹಂಚಲು ಆಗದಿದ್ದಾಗ, ಉಳಿದ ಪೈಸೆ ಪಾವತಿಸಿದವರಿಗೆ ಹೋಗುತ್ತದೆ.",
+        amounts: "ಮೊತ್ತ {zero} ಆಗಿಯೇ ಉಳಿದವರು ಈ ಖರ್ಚಿನಲ್ಲಿ ಇರುವುದಿಲ್ಲ.",
+        percent: "ಪೂರ್ಣ ಸಂಖ್ಯೆಗಳು ಮಾತ್ರ. ಉಳಿದ ಪೈಸೆ ಪಾವತಿಸಿದವರಿಗೆ ಹೋಗುತ್ತದೆ.",
+        shares: "ಯಾರಿಗಾದರೂ ಹೆಚ್ಚು ಇದ್ದಾಗ ಪಾಲುಗಳನ್ನು ಬಳಸಿ, ಉದಾಹರಣೆಗೆ ಜೊತೆಗೆ ಇನ್ನೊಬ್ಬರನ್ನು ಕರೆತಂದವರಿಗೆ.",
+        income: "ಆದಾಯಗಳು ಸಾಧನದಲ್ಲೇ ಉಳಿಯುತ್ತವೆ. ಗುಂಪಿಗೆ ಶೇಕಡಾವಾರು ಮಾತ್ರ ಕಾಣಿಸುತ್ತದೆ.",
+        items: "ಪ್ರತಿ ಐಟಂ ಅದನ್ನು ತೆಗೆದುಕೊಂಡವರ ನಡುವೆ ಹಂಚಲಾಗುತ್ತದೆ, ಮತ್ತು ಸೇವಾ ಶುಲ್ಕ ಪ್ರತಿಯೊಬ್ಬರು ತೆಗೆದುಕೊಂಡದ್ದರ ಪ್ರಕಾರ.",
+      },
+      label: {
+        amount: "ಮೊತ್ತ: {name}", percent: "ಶೇಕಡಾವಾರು: {name}", income: "ತಿಂಗಳ ಆದಾಯ: {name}",
+        less: "ಒಂದು ಪಾಲು ಕಡಿಮೆ: {name}", more: "ಒಂದು ಪಾಲು ಹೆಚ್ಚು: {name}", had: "ಯಾರು ತೆಗೆದುಕೊಂಡರು: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
