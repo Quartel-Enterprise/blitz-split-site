@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Rakendus räägib nüüd bulgaaria keelt: vali „Български“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd katalaani keelt: vali „Català“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd taani keelt: vali „Dansk“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd jagada Taani kroonides (DKK) ja Taanis, Gröönimaal või Fääri saartel loodud grupp algab selles valuutas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd soome keelt: vali „Suomi“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd marathi keelt: vali „मराठी“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd norra keelt: vali „Norsk bokmål“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd jagada Norra kroonides (NOK) ja Norras loodud grupp algab selles valuutas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd pärsia keelt: vali „فارسی“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd jagada Iraani riaalides (IRR) ja Iraanis loodud grupp algab selles valuutas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd slovaki keelt: vali „Slovenčina“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd suahiili keelt: vali „Kiswahili“ jaotises Profiil › Keel või lase sel järgida su seadet. Keenias ja Tansaanias loodud uued grupid algavad Keenia või Tansaania šillingis.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd tamili keelt: vali „தமிழ்“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd telugu keelt: vali „తెలుగు“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPhone’is, iPadis ja Macis näitavad tai ja pärsia keele kuupäevad nüüd Gregoriuse kalendri aastat, nagu Androidis ja veebis, olenemata seadme kalendrist.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

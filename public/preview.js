@@ -816,6 +816,25 @@
       bills: (n) => `${n} ${countForm(n, "rēķins", undefined, "rēķini")}`,
       titles: { b1: "Lagoas viesu māja", b2: "Vakariņas Ribeirão", b3: "Brauciens uz pludmali", p1: "Saldējums pludmalē", p2: "Nedēļas iepirkumi", p3: "Stāvvieta" },
     },
+    // Estonian: "sina" for the user, and the app's words (kulu, saldo, arvelda, registreeri makse). A name or an amount
+    // is the subject or stands after a noun that carries the case ("isikule {name}"), never with an ending of its own.
+    et: {
+      paid: "{name} maksis", notIn: "Pole osaline",
+      members: (people, bills) => `${people} inimest · ${bills} kulu`,
+      toGet: "tagasi saada", youOwe: "sa võlgned", settled: "kõik on arveldatud", owesYou: "Kes sulle võlgneb", youOweTitle: "Sa võlgned",
+      eachOne: "Igaühe saldo", getsBack: "saab tagasi", owes: "võlgneb", even: "tasa",
+      toSettle: "Arveldada", total: "Grupi kulud kokku", lodging: "Majutus", food: "Toit", transport: "Transport",
+      sheetTitle: "Jaga kulu", description: "Kirjeldus", amount: "Summa", whoPaid: "Kes maksis",
+      splitAmong: "Jaga võrdselt", each: "{value} igaühele", cancel: "Tühista", save: "Salvesta", close: "Sulge",
+      queue: (n) => `${n} ${n === 1 ? "muudatus" : "muudatust"} järjekorras`,
+      split: "Kuidas jagati", yourShare: "Sinu osa", deleteBill: "Kustuta kulu",
+      recordPayment: "Registreeri makse", record: "Registreeri", viaMethod: "ülekandega", payment: "Makse", deletePayment: "Kustuta makse",
+      payLine: (from, to) => `${name(from)} maksis isikule ${name(to)}`,
+      paidYou: (who, value) => `${who} maksis sulle ${value}`,
+      paidTotal: "Kokku makstud", shareTotal: "Osa kuludest", balance: "Saldo",
+      bills: (n) => `${n} kulu`,
+      titles: { b1: "Lagoa külalistemaja", b2: "Õhtusöök Ribeirãos", b3: "Sõit randa", p1: "Jäätis rannas", p2: "Nädala toidukaubad", p3: "Parkimine" },
+    },
     // Lithuanian: "tu" for the user, and the app's words (išlaida, balansas, atsiskaityti, užregistruoti mokėjimą).
     // Counts take one, few and other forms (countForm). A name is never declined: who paid whom as an arrow, as the
     // Balances tab writes it, and a name or an amount is the subject.

@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Konto, millel pole Google’it ega Apple’it, kustutatakse nüüd pärast 30 päeva kasutamata olekut. Tervitusekraan ja Profiil ütlevad seda ning Google’i või Apple’i ühendamine hoiab su andmed alles.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nüüd saad rakendust hinnata jaotises Profiil › Tugi ja tagasiside, valikuga „Hinda rakendust“.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Avalehelt või vaatest „Kõik kulud“ avatud kulu viib nüüd tagasi otse sinna, kust selle avasid, ilma oma grupist läbi minemata.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Parandatud nägude virna „+N“ mull, mis kuvati esimese näo all, mitte selle peal.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}
