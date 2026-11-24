@@ -1308,7 +1308,7 @@
     if (forms.length > 1) {
       const kind = plural.select(values.n);
       text = forms.length === 6 ? forms[["zero", "one", "two", "few", "many", "other"].indexOf(kind)]
-        : forms.length === 4 ? forms[["one", "two", "few", "other"].indexOf(kind)]
+        : forms.length === 4 ? forms[{ one: 0, two: 1, few: 2 }[kind] ?? 3]
         : forms.length === 3 ? forms[{ one: 0, few: 1, two: 1 }[kind] ?? 2] : forms[kind === "few" ? 0 : 1];
     }
     return text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

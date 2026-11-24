@@ -529,7 +529,7 @@
     sl: {
       play: ["Prenesi iz trgovine", "Kmalu v trgovini"], appstore: ["Prenesi iz trgovine", "Kmalu v trgovini"], web: ["Odpri v", "Kmalu v"], browser: "brskalniku",
       getApp: "Prenesi aplikacijo", openWeb: "Odpri spletno aplikacijo", soon: "Kmalu",
-      noteStore: "Prenesi aplikacijo {in}.", noteApple: "Uporabljaš napravo {platform}? Uporabljaj jo v brskalniku, dokler aplikacija ne pride v trgovino App Store.", noteWeb: "Odpri jo v brskalniku, ničesar ni treba namestiti.",
+      noteStore: "Prenesi aplikacijo {in}.", noteApple: "Uporabljaš napravo {platform}? Uporabljaj aplikacijo v brskalniku, dokler ne pride v trgovino App Store.", noteWeb: "Odpri jo v brskalniku, ničesar ni treba namestiti.",
       playLive: "Na voljo v trgovini Google Play", appStoreLive: "Na voljo v trgovini App Store", webLive: "Odpri spletno aplikacijo",
       mismatchTitle: "Izberi svojo trgovino",
       mismatchBody: "Uporabljaš napravo {platform}. Za najboljšo izkušnjo prenesi aplikacijo {in}.",
