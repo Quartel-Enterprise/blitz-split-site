@@ -79,6 +79,7 @@ const CHROME = {
   et: { language: "Eesti", brand: "Blitz Split", locale: "et", title: "Mis on uut", lead: "Mis on rakenduse igas versioonis muutunud.", showBeta: "Näita beetaversioone", beta: "Beeta", empty: "Stabiilset versiooni veel pole. Lülita beetaversioonid sisse, et näha, mida testitakse.", platforms: { android: "Android", ios: "iPhone ja iPad", mac: "Mac", web: "Veeb" } },
   lt: { language: "Lietuvių", brand: "Blitz Split", locale: "lt", title: "Kas naujo", lead: "Kas pasikeitė kiekvienoje programėlės versijoje.", showBeta: "Rodyti beta versijas", beta: "Beta", empty: "Stabilios versijos dar nėra. Įjunk beta versijas, kad matytum, kas testuojama.", platforms: { android: "Android", ios: "iPhone ir iPad", mac: "Mac", web: "Žiniatinklis" } },
   sl: { language: "Slovenščina", brand: "Blitz Split", locale: "sl", title: "Novosti", lead: "Kaj se je spremenilo v vsaki različici aplikacije.", showBeta: "Prikaži različice beta", beta: "Beta", empty: "Stabilne različice še ni. Vklopi različice beta, da vidiš, kaj se preizkuša.", platforms: { android: "Android", ios: "iPhone in iPad", mac: "Mac", web: "Splet" } },
+  gu: { language: "ગુજરાતી", brand: "Blitz Split", locale: "gu-u-nu-latn", title: "નવું શું છે", lead: "ઍપના દરેક વર્ઝનમાં શું બદલાયું.", showBeta: "બીટા વર્ઝન બતાવો", beta: "બીટા", empty: "હજી કોઈ સ્ટેબલ વર્ઝન નથી. શું ટેસ્ટ થઈ રહ્યું છે તે જોવા બીટા વર્ઝન ચાલુ કરો.", platforms: { android: "Android", ios: "iPhone અને iPad", mac: "Mac", web: "વેબ" } },
 };
 
 class NotesError extends Error {}
