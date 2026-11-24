@@ -247,6 +247,12 @@
       lines: [["2 HANAOLUT", "28,00", 1], ["1 KATKARAPUVATI", "96,00", 2]],
       subtotal: ["VÄLISUMMA", "124,00"], service: ["PALVELU 10\u00a0%", "12,40", 3], total: ["YHTEENSÄ", "136,40"],
     },
+    // Slovenian: a harbor bar's receipt, in euros, with Slovenia's dotted date.
+    sl: {
+      store: "PRISTANIŠKI BAR", address: "Galebova ulica 120", date: "8. 11. 2026  21:47",
+      lines: [["2 TOČENO PIVO", "28,00", 1], ["1 KROŽNIK KOZIC", "96,00", 2]],
+      subtotal: ["VMESNI SEŠTEVEK", "124,00"], service: ["POSTREŽBA 10\u00a0%", "12,40", 3], total: ["SKUPAJ", "136,40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

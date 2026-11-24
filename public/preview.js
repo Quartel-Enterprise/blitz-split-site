@@ -19,6 +19,8 @@
   // and 22–24… in the others, and 2–19 in Romanian, whose rest takes "de" (20 de cheltuieli).
   const plural = new Intl.PluralRules(lang);
   const countForm = (n, one, few, many) => ({ one, few }[plural.select(n)] ?? many);
+  // Slovenian's four forms: one for 1, 101…, two for 2, 102…, few for 3–4, 103–104…, and the rest.
+  const dualForm = (n, one, two, few, other) => ({ one, two, few }[plural.select(n)] ?? other);
   const TEXT = window.localized({
     en: {
       paid: "{name} paid", notIn: "Not in this one",
@@ -795,6 +797,26 @@
       bills: (n) => `${n} ${n === 1 ? "kulu" : "kulua"}`,
       titles: { b1: "Majatalo Lagoassa", b2: "Illallinen Ribeirãossa", b3: "Kyyti rannalle", p1: "Jäätelöt rannalla", p2: "Viikon ruokaostokset", p3: "Pysäköinti" },
     },
+    // Slovenian: "ti" for the user, and the app's words (strošek, stanje, poravnaj, zabeleži plačilo). A count takes
+    // four forms (dualForm: 1 oseba, 2 osebi, 3 osebe, 5 oseb), and a name stands after a colon or an arrow, never
+    // declined, and no verb guesses anyone's gender.
+    sl: {
+      paid: "Plačnik: {name}", notIn: "Ni v tem strošku",
+      members: (people, bills) => `${people} ${dualForm(people, "oseba", "osebi", "osebe", "oseb")} · ${bills} ${dualForm(bills, "strošek", "stroška", "stroški", "stroškov")}`,
+      toGet: "dobiš nazaj", youOwe: "dolguješ", settled: "vse poravnano", owesYou: "Kdo ti dolguje", youOweTitle: "Dolguješ",
+      eachOne: "Stanje vsakega", getsBack: "dobi nazaj", owes: "dolguje", even: "poravnano",
+      toSettle: "Za poravnavo", total: "Skupaj v skupini", lodging: "Nastanitev", food: "Hrana", transport: "Prevoz",
+      sheetTitle: "Razdeli strošek", description: "Opis", amount: "Znesek", whoPaid: "Kdo je plačal",
+      splitAmong: "Razdeli enakomerno med", each: "{value} na osebo", cancel: "Prekliči", save: "Shrani", close: "Zapri",
+      queue: (n) => `${n} ${dualForm(n, "sprememba", "spremembi", "spremembe", "sprememb")} v čakalni vrsti`,
+      split: "Kako je bil razdeljen", yourShare: "Tvoj delež", deleteBill: "Izbriši strošek",
+      recordPayment: "Zabeleži plačilo", record: "Zabeleži", viaMethod: "z nakazilom", payment: "Plačilo", deletePayment: "Izbriši plačilo",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `Prejeto plačilo: ${who} · ${value}`,
+      paidTotal: "Skupaj plačano", shareTotal: "Delež stroškov", balance: "Stanje",
+      bills: (n) => `${n} ${dualForm(n, "strošek", "stroška", "stroški", "stroškov")}`,
+      titles: { b1: "Penzion v Lagoi", b2: "Večerja v Ribeirãu", b3: "Prevoz na plažo", p1: "Sladoled na plaži", p2: "Tedenska nabava", p3: "Parkiranje" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1235,7 +1257,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", mr: "mr-u-nu-latn", bg: "bg", ca: "ca", da: "da", fi: "fi", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", mr: "mr-u-nu-latn", bg: "bg", ca: "ca", da: "da", fi: "fi", sl: "sl", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split je nova aplikacija, zgrajena od začetka: nadomešča Blitz Split 2.4.0 in deluje na Androidu, iPhonu, iPadu, Macu in v spletu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Razdeli strošek na enake dele, po zneskih, po odstotkih, po deležih ali po postavkah, ne glede na to, ali plača ena oseba ali več.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skeniraj potrdilo in aplikacija namesto tebe prebere njegove postavke in skupni znesek.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ustvari skupine za potovanja, dom ali dogodke in povabi ljudi s povezavo ali kodo QR.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Poglej, kdo komu dolguje v vsaki skupini in v vseh skupaj, beleži plačila in poenostavi dolgove, da vse poravna manj plačil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vse deluje brez povezave: kar narediš, se shrani v tvoji napravi in se pošlje, ko je povezava spet vzpostavljena.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Račun ni obvezen: poveži Google ali Apple ali shrani obnovitveno kodo, da svoje skupine dobiš nazaj v drugi napravi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Komentiraj strošek, priloži fotografije, spremljaj dogajanje v Dejavnosti in v Statistiki poglej, kam je šel denar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vsak strošek in vsako plačilo ima svojo valuto, aplikacija pa je na voljo v angleščini, portugalščini, španščini in francoščini.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

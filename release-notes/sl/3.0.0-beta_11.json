@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Račun, ki ni povezan z Googlom ali Applom, se zdaj izbriše po 30 dneh neuporabe. To povesta pozdravni zaslon in Profil, povezava z Googlom ali Applom pa ohrani tvoje podatke.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacijo lahko zdaj oceniš v Profil › Podpora in povratne informacije, z gumbom „Oceni aplikacijo“.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Strošek, odprt z zaslona Domov ali Vsi stroški, se zdaj vrne naravnost tja, kjer si ga odprl(a), ne da bi šel skozi svojo skupino.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Popravljen mehurček „+N“ v kupu obrazov, ki se je prikazoval pod prvim obrazom namesto nad njim.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

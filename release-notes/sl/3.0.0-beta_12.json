@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "V Opombah ob izdaji tapni različico, da odpreš njeno izdajo na GitHubu, ali gumb GitHub, da vidiš vse izdaje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Stran skupine, povabilo in podrobnosti stroška zdaj prikažejo fotografije do petih ljudi drugo ob drugi namesto dveh.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPadu ali odprtem iPhonu Duo v ležečem položaju skupina, ki zapolni zaslon (na primer odprta z zaslona Domov), zdaj ob stroških prikaže svojo fotografijo, člane in tvoje stanje.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Tap na kartico Skupno stanje na zaslonu Domov zdaj odpre zavihek Stanja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ko na telefonu odpreš skupino ali strošek z zaslona Domov, stanje skupine oziroma ikona, naslov, skupni znesek in tvoj delež stroška zdaj preletijo na njegov zaslon in nazaj, ko se vrneš.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Jezik zdaj španščino navaja dvakrat, „Español (Latinoamérica)“ in „Español (España)“, da izbereš tisto, ki jo govoriš, ne glede na to, kje je tvoja naprava.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ko je telefon ali tablica v ležečem položaju, se to, kar je ob seznamu v Stikih in Stanjih, zdaj začne na vrhu zaslona, tvoja profilna fotografija pa je nad seznamom.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Rob gumba „Dodaj osebo“ v Članih skupine je bolje viden.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Barva kartice v „Načini plačila“ se zdaj izbira med istimi barvami kot pri kategorijah: dvanajst barv, tvoje lastne in „Nova barva“ za ustvarjanje nove.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V „Razdeli strošek“ je „Plačano z“ zdaj majhen gumb pod Razdeli, in če še nimaš načina plačila, ga „Dodaj način plačila“ ustvari kar tam in ga izbere za strošek. Debetne kartice imajo zdaj tudi svojo ikono.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodajanje ali urejanje načina plačila v Profilu se zdaj odpre nad Profilom namesto na ločenem zaslonu.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dinamične barve zdaj pojasnijo, da aplikacija prevzame sistemske barve Androida, ki izhajajo iz tvojega ozadja ali iz palete, izbrane v nastavitvah Androida.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ko je vklopljeno „Zmanjšaj gibanje“, Statistika skupine prikaže grafe takoj, brez rasti stolpcev in vrtenja obroča.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "V brazilski portugalščini sta Dejavnost in zgodovina stroška pisali „Você criaste“ in podobno namesto „Você criou“.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Popravljeno: datumi v izbirniku datumov v Statistiki so se lomili po črko ali dve na vrstico; končni datum gre zdaj pod začetnega, ko oba ne gresta v vrstico.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Popravljena so obvestila in nekaj stavkov, ki so se v španščini iz Španije in portugalščini iz Portugalske prikazovali v angleščini ali kot koda, na primer „push.bill_deleted“.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Popravljena je vrstica oseb na zaslonu Domov v portugalščini iz Portugalske, ki je pod imenom pisala „te deve“ namesto „deve-te“.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

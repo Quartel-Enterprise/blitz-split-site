@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Zavihek Stanja ne prikazuje več vrstice ničel, ko nihče nikomur nič ne dolguje: napiše le „Vse je poravnano“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Popravljen Profil, ki je ob e-poštnem naslovu računa, prijavljenega z Googlom, prikazoval logotip Apple ali ob računu, prijavljenem z Applom, logotip Google, kadar ima račun oba.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
