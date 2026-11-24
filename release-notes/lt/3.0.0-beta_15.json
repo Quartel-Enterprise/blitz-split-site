@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Atidarant žmogų iš Kontaktų ar Balansų, į jo profilį kartu su nuotrauka dabar perkeliamas ir vardas bei balansas, o grįžus – atgal.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Statistikoje žiedo „Pagal žmones“ viduryje dabar tiesiog parašyta „Tu“, kai dalis tavo, o ilgas vardas baigiasi „…“, užuot liesdamas žiedą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Atidarant grupę iš Grupių, jos narių veidai dabar keliauja iš eilutės į grupės ekraną ir atgal, kai išeini.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Telefone atidarant išlaidą, kartu su ja dabar keliauja daugiau: kas mokėjo – iš jos eilutės Pradžioje ir Visose išlaidose, laikas – iš eilutės grupės Išlaidose, o grupės nuotrauka ir pavadinimas – iš grupės ekrano. Išeinant jie keliauja atgal.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grupės pavadinimas dabar keliauja į grupės ekraną jį atidarant, o ne tik grįžtant.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

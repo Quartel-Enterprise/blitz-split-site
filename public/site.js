@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: …, da: …, fi: …, lv: …, sl: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: …, da: …, fi: …, lv: …, et: …, lt: …, sl: … }
 // before this script, inline or, on the landing and the support page, as one file per language of which boot.js loads
 // the one it picked (public/strings/<page>/<language>.js); blocks written per language carry data-lang with the
 // language ("en", "pt", "fr"…).
@@ -91,6 +91,8 @@
     da: { search: "Søg efter sprog", clear: "Ryd søgningen", none: "Intet sprog passer til »{query}«", system: "System", systemDetail: "Enhedens sprog", back: "Tilbage", close: "Luk" },
     fi: { search: "Hae kieliä", clear: "Tyhjennä haku", none: "Mikään kieli ei vastaa hakua ”{query}”", system: "Järjestelmä", systemDetail: "Laitteen kieli", back: "Takaisin", close: "Sulje" },
     lv: { search: "Meklēt valodas", clear: "Notīrīt meklēšanu", none: "Neviena valoda neatbilst vaicājumam „{query}”", system: "Sistēmas", systemDetail: "Ierīces valoda", back: "Atpakaļ", close: "Aizvērt" },
+    et: { search: "Otsi keeli", clear: "Tühjenda otsing", none: "Päringule „{query}“ ei vasta ükski keel", system: "Süsteem", systemDetail: "Seadme keel", back: "Tagasi", close: "Sulge" },
+    lt: { search: "Ieškoti kalbų", clear: "Išvalyti paiešką", none: "Nėra kalbos, atitinkančios „{query}“", system: "Sistemos", systemDetail: "Įrenginio kalba", back: "Atgal", close: "Uždaryti" },
     sl: { search: "Išči jezike", clear: "Počisti iskanje", none: "Noben jezik se ne ujema z „{query}“", system: "Sistem", systemDetail: "Jezik naprave", back: "Nazaj", close: "Zapri" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,

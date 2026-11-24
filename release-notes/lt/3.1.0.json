@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split Apple Watch laikrodyje: susiek jį su savo iPhone paskyra, matyk balansus ir atviras grupes, grupėje, kurioje turi grąžinti, paliesk „Sumokėjau“ ir pridėk bendrą balansą prie laikrodžio ciferblato ar Smart Stack; susietas laikrodis veikia savarankiškai.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Programėlė dabar prieinama bengalų, malajų ir graikų kalbomis: pasirink „বাংলা“, „Bahasa Melayu“ arba „Ελληνικά“ skiltyje Profilis › Kalba arba palik įrenginio kalbą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupės dabar gali naudoti Bangladešo taką ir Malaizijos ringitą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programėlė dabar prieinama kroatų kalba: pasirink „Hrvatski“ skiltyje Profilis › Kalba arba palik įrenginio kalbą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programėlė dabar prieinama filipiniečių kalba: pasirink „Filipino“ skiltyje Profilis › Kalba arba palik įrenginio kalbą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupėse dabar galima dalyti išlaidas Filipinų pesais (PHP, „₱“), o Filipinuose sukurta grupė iš karto naudoja šią valiutą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programėlė dabar prieinama vengrų kalba: pasirink „Magyar“ skiltyje Profilis › Kalba arba palik įrenginio kalbą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupės dabar gali naudoti Vengrijos forintą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pridėk valdiklį Balansai prie savo iPhone ar iPad pradžios ar užrakinimo ekrano, kad iš karto matytum bendrą balansą ir atviras grupes; paliesk jį, kad atidarytum Balansus.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupės dabar gali naudoti Bolivijos, Venesuelos, Kosta Rikos, Gvatemalos, Hondūro, Nikaragvos, Dominikos Respublikos ir Kubos valiutas, o ten sukurta grupė iš karto naudoja vietinę valiutą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programėlė dabar prieinama serbų kalba: pasirink „Srpski“ skiltyje Profilis › Kalba arba palik įrenginio kalbą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupėse dabar galima dalyti išlaidas Serbijos dinarais (RSD), o Serbijoje sukurta grupė iš karto naudoja šią valiutą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Programėlė dabar prieinama urdu kalba: pasirink „اردو“ skiltyje Profilis › Kalba arba palik įrenginio kalbą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupėse dabar galima dalyti išlaidas Pakistano rupijomis (PKR), o Pakistane sukurta grupė iš karto naudoja šią valiutą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Palietus pranešimą apie naują išlaidą, išlaida atsidaro iš karto: programėlė ją parsisiunčia vos gavusi pranešimą.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Pasveikinimo ekranas telefonuose dabar viršuje rodo tik logotipą, todėl mygtukams lieka daugiau vietos.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grupės juostoje „Laikas atsiskaityti“ nebėra priminimo datos, buvusios prieš nustatant ar pakeičiant priminimą: į 25 d. pakeistas priminimas laukia 25 dienos.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

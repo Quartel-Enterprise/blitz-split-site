@@ -1300,6 +1300,67 @@
         less: "Par vienu daļu mazāk: {name}", more: "Par vienu daļu vairāk: {name}", had: "Kas patērēja: {item}",
       },
     },
+    // Estonian: like Finnish, no message holds a "|" (one person has its own message, a person's shares show only above
+    // one, and a number above one takes the same form whatever it is); "sina" for the user and the app's words
+    // (võrdselt, osad, sissetuleku järgi, tooted). A name, an item or an amount stands after a colon, after a noun that
+    // carries the case or as the subject, never with a case ending.
+    et: {
+      bill: "Pitsaõhtu", paid: "Pedro maksis", notIn: "Pole osaline",
+      each: "{a} igaühele", among: "{a} {n} inimese vahel.", amongOne: "{a} 1 inimesele.", out: "{name} pole osaline.",
+      nobody: "Keegi pole veel osaline", nobodyEqual: "Summa {a} jagamiseks märgi vähemalt üks inimene.",
+      checkAll: "Märgi kõik", uncheckAll: "Eemalda kõik märgid",
+      left: "{a} jäänud", over: "{a} üle", closed: "Klapib: {a}",
+      progress: "Seni {a}/{b}.", closedMsg: "Osad annavad kokku kogusumma.",
+      parts: "{a} jagatud {n} osaks", personParts: "Isikul {name} on {n} osa.", nobodyShares: "Summa {a} jagamiseks anna vähemalt ühele inimesele osa.",
+      ofEach: "{p} igast kulust", ofBill: "{p} kulust", incomeDetail: "Igaühe osa järgib tema sissetulekut.", perMonth: "/kuus",
+      service: "Teenustasu ({p})", serviceSub: "Proportsionaalselt sellega, mida igaüks tarbis",
+      loose: "Märgi, kes mida tarbis", looseDetail: "Puuduta iga toote juures nägusid ja märgi, kes seda tarbis.",
+      itemsClosed: "{a} tooteid ja {b} teenustasu.", nobodyItem: "Keegi pole märgitud", eachItem: "{a} igaühele",
+      items: { pizza: "Suur pitsa", beer: "Õlu", salad: "Salat", draft: "Vaadiõlu", shrimp: "Krevetivaagen" },
+      receiptBill: "Sadamabaar",
+      hint: {
+        equal: "Kui summa ei jagu võrdselt, lähevad üle jäänud sendid maksjale.",
+        amounts: "Kes jääb summale {zero}, pole kulus osaline.",
+        percent: "Ainult täisarvud. Üle jäänud sendid lähevad maksjale.",
+        shares: "Kasuta osi, kui kellelgi on rohkem, näiteks kui keegi tõi kaaslase kaasa.",
+        income: "Sissetulekud jäävad seadmesse. Grupp näeb ainult protsente.",
+        items: "Iga toode jagatakse nende vahel, kes seda tarbisid, ja teenustasu selle järgi, mida igaüks tarbis.",
+      },
+      label: {
+        amount: "Summa: {name}", percent: "Protsent: {name}", income: "Kuusissetulek: {name}",
+        less: "Üks osa vähem: {name}", more: "Üks osa rohkem: {name}", had: "Kes tarbis: {item}",
+      },
+    },
+    // Lithuanian: a message with a count holds three forms, one|few|other (1 and 21, 2–9, 0 and 10–20), as
+    // Intl.PluralRules tells them; "tu" for the user and the app's words (po lygiai, dalys, pagal pajamas, prekės).
+    // A name, an item or an amount stands after a colon or as the subject, never with a case ending.
+    lt: {
+      bill: "Picos vakaras", paid: "Pedro sumokėjo", notIn: "Nedalyvauja",
+      each: "po {a}", among: "{a} padalyta {n} žmogui.|{a} padalyta {n} žmonėms.|{a} padalyta {n} žmonių.", amongOne: "{a} vienam žmogui.", out: "{name} nedalyvauja.",
+      nobody: "Dar niekas nedalyvauja", nobodyEqual: "Pažymėk bent vieną žmogų, kad padalytum {a}.",
+      checkAll: "Pažymėti visus", uncheckAll: "Atžymėti visus",
+      left: "Liko {a}", over: "{a} per daug", closed: "Sutampa: {a}",
+      progress: "Kol kas {a} iš {b}.", closedMsg: "Dalys sudaro visą sumą.",
+      parts: "{a} padalyta į {n} dalį|{a} padalyta į {n} dalis|{a} padalyta į {n} dalių", personParts: "{name}: {n} dalis.|{name}: {n} dalys.|{name}: {n} dalių.", nobodyShares: "Duok bent vienam žmogui dalį, kad padalytum {a}.",
+      ofEach: "{p} kiekvienos išlaidos", ofBill: "{p} išlaidos", incomeDetail: "Kiekvieno dalis atitinka pajamas.", perMonth: "/mėn.",
+      service: "Aptarnavimas ({p})", serviceSub: "Proporcingai tam, kas ką užsisakė",
+      loose: "Pažymėk, kas ką užsisakė", looseDetail: "Bakstelėk veidus prie kiekvienos prekės, kad pažymėtum, kas ją užsisakė.",
+      itemsClosed: "Prekės: {a}, aptarnavimas: {b}.", nobodyItem: "Niekas nepažymėtas", eachItem: "po {a}",
+      items: { pizza: "Didelė pica", beer: "Alus", salad: "Salotos", draft: "Pilstomas alus", shrimp: "Krevečių lėkštė" },
+      receiptBill: "Uosto baras",
+      hint: {
+        equal: "Kai suma nepasidalija lygiai, likę centai atitenka mokėtojui.",
+        amounts: "Kam lieka {zero}, tas išlaidoje nedalyvauja.",
+        percent: "Tik sveikieji skaičiai. Likę centai atitenka mokėtojui.",
+        shares: "Naudok dalis, kai kam nors tenka daugiau, pavyzdžiui, kas nors atsivedė svečią.",
+        income: "Pajamos lieka įrenginyje. Grupė mato tik procentus.",
+        items: "Kiekviena prekė dalijama tarp tų, kas ją užsisakė, o aptarnavimas – pagal tai, kas ką užsisakė.",
+      },
+      label: {
+        amount: "Suma: {name}", percent: "Procentai: {name}", income: "Mėnesio pajamos: {name}",
+        less: "Viena dalimi mažiau: {name}", more: "Viena dalimi daugiau: {name}", had: "Kas užsisakė: {item}",
+      },
+    },
     // Slovenian: a message with "|" holds its four forms for {n}, "one|two|few|other" (1 delež, 2 deleža, 3 deleži,
     // 5 deležev), and fill picks one. A name is never declined, so where Slovenian would need its case it stands after
     // a colon, and no verb guesses anyone's gender; "ti" for the user.

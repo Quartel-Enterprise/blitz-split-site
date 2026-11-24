@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split – visiškai nauja programėlė, sukurta iš pagrindų Android, iPhone, iPad, Mac įrenginiams ir internetui.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Padalyk išlaidą po lygiai, pagal sumas, pagal procentus, pagal dalis arba pagal prekes. Nuskenuok kvitą ir pasirink, kas ką vartojo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Veikia be interneto ir be paskyros. Prisijunk su „Google“ arba „Apple“, kad tavo grupės būtų sinchronizuojamos visuose tavo įrenginiuose.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

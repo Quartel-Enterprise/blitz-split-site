@@ -1,7 +1,15 @@
 // What the scripts that write a page's text share: build-legal.mjs and build-release-notes.mjs.
 
-/** The languages a page's blocks are written in, in their order. English is what every other language is checked against. */
-export const LANGS = ["pt", "pt-PT", "en", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "fa", "sw", "ta", "te", "mr", "bg", "ca", "da", "fi", "lv", "sl"];
+import { readFileSync } from "node:fs";
+
+// Why: public/boot.js's SUPPORTED and VARIANTS are the one list the site picks a language from, so the pages are built
+// in the same languages, read from there as check-translations.mjs does.
+const boot = readFileSync(new URL("../../public/boot.js", import.meta.url), "utf8");
+const listOf = (name) => JSON.parse(boot.match(new RegExp(`const ${name} = (\\[[^\\]]*\\])`))[1]);
+
+/** The languages a page's blocks are written in, in their order: Portuguese and its variants, English, which every other
+ * language is checked against, then the rest in SUPPORTED's order. */
+export const LANGS = ["pt", ...listOf("VARIANTS"), "en", ...listOf("SUPPORTED").filter((lang) => lang !== "pt" && lang !== "en")];
 
 export const escapeHtml = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 

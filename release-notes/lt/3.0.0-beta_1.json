@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split – nauja, iš pagrindų perkurta programėlė: ji pakeičia Blitz Split 2.4.0 ir veikia Android, iPhone, iPad ir Mac įrenginiuose bei internete.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Padalyk išlaidą po lygiai, pagal sumas, pagal procentus, pagal dalis arba pagal prekes, kai moka vienas ar keli žmonės.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nuskenuok kvitą, ir programėlė pati nuskaitys jo prekes ir bendrą sumą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kurk grupes kelionėms, namams ar renginiams ir kviesk žmones nuoroda arba QR kodu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Matyk, kas kam turi grąžinti kiekvienoje grupėje ir visose kartu, registruok mokėjimus ir supaprastink skolas, kad viskam atsiskaityti užtektų mažiau mokėjimų.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Viskas veikia ir be interneto: tai, ką darai, išsaugoma tavo įrenginyje ir išsiunčiama, kai vėl prisijungi prie interneto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Paskyra neprivaloma: susiek „Google“ arba „Apple“ paskyrą arba išsisaugok atkūrimo kodą, kad atgautum savo grupes kitame įrenginyje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Komentuok išlaidas, prisek nuotraukų, sek, kas vyko, skiltyje Veikla ir žiūrėk, kur nukeliavo pinigai, skiltyje Statistika.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kiekviena išlaida ir kiekvienas mokėjimas turi savo valiutą, o programėlė prieinama anglų, portugalų, ispanų ir prancūzų kalbomis.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

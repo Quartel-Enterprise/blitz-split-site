@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Kulu link avaneb nüüd rakenduses, mitte brauseris, koos selle fotode ja kommentaaridega.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Kulu link, mida enam ei jagata või mida saavad avada ainult kulus osalejad, ütleb nüüd seda, selle asemel et näidata viga.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiili link avaneb nüüd ka siis, kui sa pole sisse loginud.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaotises Profiil › Privaatsus ja teave on uus lüliti „Jaga kasutusandmeid“: lülita see välja, et lõpetada andmete saatmine selle kohta, kuidas sa rakendust kasutad.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lingid, mida jagad oma profiilile, kommentaarile ja rakenduse hankimiseks, näitavad nüüd eelvaadet sinu keeles.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

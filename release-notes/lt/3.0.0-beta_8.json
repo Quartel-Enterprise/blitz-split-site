@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Išlaidą dabar galima padalyti „Pagal pajamas“, o įvestos pajamos bendrinamos su grupės nariais.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kiekviena išlaida Pradžios skiltyje Naujausios išlaidos dabar turi meniu: Redaguoti, Dubliuoti, Bendrinti ir Ištrinti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Rodyti viską“ Pradžioje dabar atidaro Visas išlaidas: visas išlaidas, kuriose dalyvauji, iš visų tavo grupių, su paieška, filtrais ir rikiavimu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupės nuotrauka jos ekrano viršuje dabar didesnė ir mažėja slenkant, o grupė atsidaro su animacija iš savo eilutės.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Veikla dabar rodo žmonių nuotraukas, Balansai › Pagal grupes – kiekvienos grupės nuotrauką, o Statistikos „Didžiausia išlaida“ – jos kategoriją.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilis › Paskyra ir sinchronizavimas dabar rodo „Google“ ar „Apple“ logotipą ir visą tavo el. pašto adresą, kurį matai tik tu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Ištrinti paskyrą“ dabar paaiškina, kas lieka tavo grupėse, kai paskyros nebėra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jungiklis „Numatytasis Pix raktas“ tamsioje temoje nebeatrodo išjungtas ties tavo numatytuoju raktu.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

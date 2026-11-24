@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split dabar kalba olandiškai, japoniškai, turkiškai ir indonezietiškai, o kalbų sąraše kiekviena kalba pavadinta jos pačios kalba.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupės ir išlaidos dabar gali naudoti Lenkijos zlotą, Turkijos lirą ir Indonezijos rupiją.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilyje yra naujas mygtukas „Bendrinti profilį“: kas atidaro tavo nuorodą, mato tavo vardą ir nuotrauką ir gali pakviesti tave į grupę.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Naujos grupės pakvietimo nuoroda paruošta iš karto, net be interneto, o skiltyje Nariai yra naujas mygtukas jai nukopijuoti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uždarant formą su neišsaugotais pakeitimais dabar pirmiausia paklausiama „Atmesti pakeitimus?“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Privatumo politika ir Paslaugų teikimo sąlygos dabar atsidaro programėlėje, o ne naršyklėje.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Telefone viršutinė ir apatinė juostos dabar pasitraukia, kai slenki žemyn, ir grįžta, kai slenki aukštyn.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Lange „Padalyti išlaidą“ pasirinkus datą nebeperšokama tiesiai į laikrodį: laikas turi savo mygtuką.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Paliesk grupę lango „Padalyti išlaidą“ viršuje, kad ją atidarytum; grįžus vėl matysi išlaidą su viskuo, ką įvedei.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pradžios skiltyje Naujausios išlaidos dabar nuotraukomis rodoma kiekvienos išlaidos grupė ir kas mokėjo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix dabar rodomas tik tiems, kas greičiausiai juo naudosis: pavyzdžiui, kas naudoja programėlę portugalų kalba, turi Pix raktą ar yra grupėje, kurioje naudojami realai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sinchronizuojama…“ dabar rodoma tik pirmą kartą įkeliant tavo paskyrą įrenginyje, o ne per kiekvieną sinchronizavimą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilis nebesiūlo atsieti „Google“ ar „Apple“ nuo tavo paskyros: vietoj to atsijunk arba ištrink paskyrą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Langas „Redaguoti profilį“ dabar atsidaro kaip lapas virš Profilio, o ne atskirame ekrane.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Tuščio tarpo tarp formos ir klaviatūros lange „Padalyti išlaidą“ nebėra.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kontakto skiltyje Bendros grupės dabar rodoma kiekvienos grupės nuotrauka.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
