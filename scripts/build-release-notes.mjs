@@ -78,6 +78,7 @@ const CHROME = {
   lv: { language: "Latviešu", brand: "Blitz Split", locale: "lv", title: "Jaunumi", lead: "Kas mainījās katrā lietotnes versijā.", showBeta: "Rādīt beta versijas", beta: "Beta", empty: "Stabilas versijas vēl nav. Ieslēdz beta versijas, lai redzētu, kas tiek testēts.", platforms: { android: "Android", ios: "iPhone un iPad", mac: "Mac", web: "Tīmeklis" } },
   et: { language: "Eesti", brand: "Blitz Split", locale: "et", title: "Mis on uut", lead: "Mis on rakenduse igas versioonis muutunud.", showBeta: "Näita beetaversioone", beta: "Beeta", empty: "Stabiilset versiooni veel pole. Lülita beetaversioonid sisse, et näha, mida testitakse.", platforms: { android: "Android", ios: "iPhone ja iPad", mac: "Mac", web: "Veeb" } },
   lt: { language: "Lietuvių", brand: "Blitz Split", locale: "lt", title: "Kas naujo", lead: "Kas pasikeitė kiekvienoje programėlės versijoje.", showBeta: "Rodyti beta versijas", beta: "Beta", empty: "Stabilios versijos dar nėra. Įjunk beta versijas, kad matytum, kas testuojama.", platforms: { android: "Android", ios: "iPhone ir iPad", mac: "Mac", web: "Žiniatinklis" } },
+  sl: { language: "Slovenščina", brand: "Blitz Split", locale: "sl", title: "Novosti", lead: "Kaj se je spremenilo v vsaki različici aplikacije.", showBeta: "Prikaži različice beta", beta: "Beta", empty: "Stabilne različice še ni. Vklopi različice beta, da vidiš, kaj se preizkuša.", platforms: { android: "Android", ios: "iPhone in iPad", mac: "Mac", web: "Splet" } },
 };
 
 class NotesError extends Error {}

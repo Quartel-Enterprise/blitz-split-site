@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Stroški skupine imajo zdaj „Poglej vse“, ki odpre Vse stroške, že filtrirane po tej skupini, da lahko iščeš, razvrščaš in filtriraš njene stroške. Počisti filter, da vidiš vse skupine.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Novi skupini „Dodaj po imenu“ med tipkanjem predlaga ljudi iz tvojih Stikov, z njihovo fotografijo: tapni enega, da ustvariš skupino s to isto osebo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Med pomikanjem po skupini njena strnjena zgornja vrstica prikaže samo fotografijo in ime skupine, brez odrezanih članov in skupnega zneska ob njih.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "12 besed svoje obnovitvene kode lahko zdaj preneseš kot besedilno datoteko.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "„Shrani svojo obnovitveno kodo“ zdaj pove, da ti vrne tvoje podatke in da se podatki po 30 dneh neuporabe izbrišejo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Razdeli strošek“ ima zdaj „Skeniraj potrdilo“ tudi na vrhu, ob „Shrani“, da ga tipkovnica ne skrije več, „Dodaj način plačila“ pa je bolj neopazen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "V Statistiki skupine je Po osebah zdaj kolobar deleža vsakega, v isti barvi, kot jo ima vsaka oseba v Privzeti razdelitvi, s seznamom imen in zneskov pod njim kot legendo. Porabljeno in Plačano preklapljata, kaj prikazuje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Kdo sodeluje“ v Novi skupini prikaže tvojo profilno fotografijo namesto tvoje začetnice.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sinhronizacija…“ se ne prikazuje več na zaslonih Domov in Skupine, ko se vrneš v aplikacijo: sinhronizacija poteka tiho, ko so tvoje skupine na zaslonu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na tablicah in s telefonom v ležečem položaju senca gumba „Razdeli strošek“ na vrhu stranske vrstice ni več odrezana ob robovih.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

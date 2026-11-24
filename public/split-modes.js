@@ -1361,6 +1361,38 @@
         less: "Viena dalimi mažiau: {name}", more: "Viena dalimi daugiau: {name}", had: "Kas užsisakė: {item}",
       },
     },
+    // Slovenian: a message with "|" holds its four forms for {n}, "one|two|few|other" (1 delež, 2 deleža, 3 deleži,
+    // 5 deležev), and fill picks one. A name is never declined, so where Slovenian would need its case it stands after
+    // a colon, and no verb guesses anyone's gender; "ti" for the user.
+    sl: {
+      bill: "Večer pice", paid: "Plačnik: Pedro", notIn: "Ni v tem strošku",
+      each: "{a} na osebo", among: "{a} za {n} osebo.|{a} za {n} osebi.|{a} za {n} osebe.|{a} za {n} oseb.", amongOne: "{a} za 1 osebo.", out: "Ni v strošku: {name}.",
+      nobody: "V strošku še ni nikogar", nobodyEqual: "Označi vsaj eno osebo, da razdeliš {a}.",
+      checkAll: "Označi vse", uncheckAll: "Odznači vse",
+      left: "Manjka še {a}", over: "{a} preveč", closed: "Se ujema: {a}",
+      progress: "Zaenkrat {a} od {b}.", closedMsg: "Deli se seštejejo v skupni znesek.",
+      parts: "{a} na {n} delež|{a} na {n} deleža|{a} na {n} deleže|{a} na {n} deležev",
+      personParts: "{name}: {n} delež.|{name}: {n} deleža.|{name}: {n} deleži.|{name}: {n} deležev.",
+      nobodyShares: "Daj vsaj eni osebi delež, da razdeliš {a}.",
+      ofEach: "{p} vsakega stroška", ofBill: "{p} stroška", incomeDetail: "Del vsakega sledi njegovemu dohodku.", perMonth: "/mes.",
+      service: "Postrežba ({p})", serviceSub: "Glede na to, kaj je kdo imel",
+      loose: "Označi, kdo je imel kaj", looseDetail: "Tapni obraze pri vsaki postavki in označi, kdo jo je imel.",
+      itemsClosed: "{a} za postavke in {b} za postrežbo.", nobodyItem: "Nihče ni označen", eachItem: "{a} na osebo",
+      items: { pizza: "Velika pica", beer: "Pivo", salad: "Solata", draft: "Točeno pivo", shrimp: "Krožnik kozic" },
+      receiptBill: "Pristaniški bar",
+      hint: {
+        equal: "Ko se ne razdeli natančno, preostali centi pripadejo tistemu, ki je plačal.",
+        amounts: "Kdor ostane pri {zero}, ni v strošku.",
+        percent: "Samo cela števila. Preostali centi pripadejo tistemu, ki je plačal.",
+        shares: "Deleže uporabi, ko ima kdo več, na primer če je kdo pripeljal spremljevalca.",
+        income: "Dohodki ostanejo v napravi. Skupina vidi samo odstotke.",
+        items: "Vsaka postavka se razdeli med tiste, ki so jo imeli, postrežba pa glede na to, kaj je kdo imel.",
+      },
+      label: {
+        amount: "Znesek: {name}", percent: "Odstotek: {name}", income: "Mesečni dohodek: {name}",
+        less: "En delež manj: {name}", more: "En delež več: {name}", had: "Kdo je imel: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
@@ -1368,6 +1400,7 @@
     if (forms.length > 1) {
       const kind = plural.select(values.n);
       text = forms.length === 6 ? forms[["zero", "one", "two", "few", "many", "other"].indexOf(kind)]
+        : forms.length === 4 ? forms[{ one: 0, two: 1, few: 2 }[kind] ?? 3]
         : forms.length === 3 ? forms[{ one: 0, few: 1, two: 1 }[kind] ?? 2] : forms[kind === "few" ? 0 : 1];
     }
     return text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

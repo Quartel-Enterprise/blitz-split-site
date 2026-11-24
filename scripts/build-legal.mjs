@@ -70,12 +70,13 @@ const CHROME = {
   lv: { language: "Latviešu", brand: "Blitz Split", locale: "lv", updated: "Atjaunināts: {date}", read: "Lasīšanas laiks: {n} min", toc: "Šajā lapā" },
   et: { language: "Eesti", brand: "Blitz Split", locale: "et", updated: "Uuendatud {date}", read: "Lugemisaeg {n} min", toc: "Sellel lehel" },
   lt: { language: "Lietuvių", brand: "Blitz Split", locale: "lt", updated: "Atnaujinta {date}", read: "Skaitymo laikas: {n} min.", toc: "Šiame puslapyje" },
+  sl: { language: "Slovenščina", brand: "Blitz Split", locale: "sl", updated: "Posodobljeno {date}", read: "{n} min branja", toc: "Na tej strani" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
 const MEASURED_CHARACTERS_PER_MINUTE = {
   ar: 612, de: 920, en: 987, es: 1025, fr: 998, he: 833, it: 950, ja: 357, nl: 978, pl: 916, pt: 913, "pt-PT": 913,
-  ru: 986, sv: 917, tr: 1054, zh: 255, "zh-Hant": 255, fi: 1078,
+  ru: 986, sv: 917, tr: 1054, zh: 255, "zh-Hant": 255, fi: 1078, sl: 885,
 };
 // Why each borrowed pace names the language it comes from: a correction to that language's number reaches it too.
 const CHARACTERS_PER_MINUTE = {
