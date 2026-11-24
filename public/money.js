@@ -48,6 +48,7 @@
     ca: ["", ",", ".", "\u00a0€"],
     da: ["", ",", ".", "\u00a0kr.", 0, 3, 7],
     fi: ["", ",", "\u00a0", "\u00a0€"],
+    lv: ["", ",", "\u00a0", "\u00a0€"],
     lt: ["", ",", "\u00a0", "\u00a0€"],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;

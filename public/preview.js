@@ -16,7 +16,8 @@
 
   // Polish, Russian, Ukrainian, Czech, Slovak, Romanian and Lithuanian counts take one form for 1 (and, in Russian, Ukrainian and Lithuanian, 21, 31…),
   // another for a few and a third for the rest, as Intl.PluralRules tells them: the few are 2–4 in Czech and Slovak, 2–9 and 22–29… in Lithuanian, 2–4
-  // and 22–24… in the others, and 2–19 in Romanian, whose rest takes "de" (20 de cheltuieli).
+  // and 22–24… in the others, and 2–19 in Romanian, whose rest takes "de" (20 de cheltuieli). Latvian has no few: its
+  // one is 1, 21, 31… and its zero and other both take the plural, the third form.
   const plural = new Intl.PluralRules(lang);
   const countForm = (n, one, few, many) => ({ one, few }[plural.select(n)] ?? many);
   const TEXT = window.localized({
@@ -794,6 +795,26 @@
       paidTotal: "Maksanut yhteensä", shareTotal: "Osuus kuluista", balance: "Saldo",
       bills: (n) => `${n} ${n === 1 ? "kulu" : "kulua"}`,
       titles: { b1: "Majatalo Lagoassa", b2: "Illallinen Ribeirãossa", b3: "Kyyti rannalle", p1: "Jäätelöt rannalla", p2: "Viikon ruokaostokset", p3: "Pysäköinti" },
+    },
+    // Latvian: "tu" for the user, and the app's words (rēķins, bilance, norēķināties, reģistrēt maksājumu). A name is
+    // the subject or stands after a noun that carries the case ("personai {name}"), never declined itself; a count
+    // takes the singular after 1, 21, 31… (countForm, as Intl.PluralRules tells it), the plural after the rest.
+    lv: {
+      paid: "{name} samaksāja", notIn: "Šoreiz nepiedalās",
+      members: (people, bills) => `${people} ${countForm(people, "cilvēks", undefined, "cilvēki")} · ${bills} ${countForm(bills, "rēķins", undefined, "rēķini")}`,
+      toGet: "jāsaņem", youOwe: "tu esi parādā", settled: "viss nokārtots", owesYou: "Tev ir parādā", youOweTitle: "Tu esi parādā",
+      eachOne: "Katra bilance", getsBack: "saņems atpakaļ", owes: "ir parādā", even: "norēķins pabeigts",
+      toSettle: "Jānorēķinās", total: "Grupas kopsumma", lodging: "Naktsmītne", food: "Ēdiens", transport: "Transports",
+      sheetTitle: "Sadalīt rēķinu", description: "Apraksts", amount: "Summa", whoPaid: "Kas maksāja",
+      splitAmong: "Sadalīt vienādi starp", each: "{value} katram", cancel: "Atcelt", save: "Saglabāt", close: "Aizvērt",
+      queue: (n) => `${n} ${countForm(n, "izmaiņa", undefined, "izmaiņas")} rindā`,
+      split: "Kā tas tika sadalīts", yourShare: "Tava daļa", deleteBill: "Dzēst rēķinu",
+      recordPayment: "Reģistrēt maksājumu", record: "Reģistrēt", viaMethod: "ar pārskaitījumu", payment: "Maksājums", deletePayment: "Dzēst maksājumu",
+      payLine: (from, to) => `${name(from)} samaksāja personai ${name(to)}`,
+      paidYou: (who, value) => `${who} tev samaksāja ${value}`,
+      paidTotal: "Samaksāts kopā", shareTotal: "Daļa no rēķiniem", balance: "Bilance",
+      bills: (n) => `${n} ${countForm(n, "rēķins", undefined, "rēķini")}`,
+      titles: { b1: "Lagoas viesu māja", b2: "Vakariņas Ribeirão", b3: "Brauciens uz pludmali", p1: "Saldējums pludmalē", p2: "Nedēļas iepirkumi", p3: "Stāvvieta" },
     },
     // Lithuanian: "tu" for the user, and the app's words (išlaida, balansas, atsiskaityti, užregistruoti mokėjimą).
     // Counts take one, few and other forms (countForm). A name is never declined: who paid whom as an arrow, as the

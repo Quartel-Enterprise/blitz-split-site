@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split ir pilnīgi jauns: pārbūvēts no pašiem pamatiem Android, iPhone, iPad, Mac un tīmeklim.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadali rēķinu vienādi, pēc summām, pēc procentiem, pēc daļām vai pēc pozīcijām. Noskenē čeku un izvēlies, kurš ko ņēma.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Darbojas bezsaistē un bez konta. Pieraksties ar Google vai Apple, lai tavas grupas būtu sinhronizētas visās tavās ierīcēs.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
