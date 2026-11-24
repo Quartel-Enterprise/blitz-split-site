@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Rēķina saite tagad atveras lietotnē, nevis pārlūkā, kopā ar tā fotoattēliem un komentāriem.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Rēķina saite, kas vairs netiek kopīgota vai kuru var atvērt tikai rēķina dalībnieki, tagad to norāda, nevis rāda kļūdu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profila saite tagad atveras arī bez pierakstīšanās.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadaļā „Profils › Privātums un par lietotni” ir jauns slēdzis „Kopīgot lietošanas datus”: izslēdz to, lai vairs nesūtītu datus par to, kā lieto lietotni.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saites, ko kopīgo uz savu profilu, uz komentāru un lietotnes iegūšanai, tagad rāda priekšskatījumu tavā valodā.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Cilne „Bilances” vairs nerāda nuļļu rindu, kad neviens nevienam nav parādā: tajā vienkārši rakstīts „Viss nokārtots”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Labots: sadaļā „Profils” blakus e-pasta adresei bija redzams Apple logotips, lai gan pierakstīšanās notika ar Google, vai Google logotips, lai gan ar Apple, ja kontam ir abi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

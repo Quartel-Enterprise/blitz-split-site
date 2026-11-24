@@ -1269,6 +1269,37 @@
         less: "Yksi osuus vähemmän: {name}", more: "Yksi osuus lisää: {name}", had: "Kuka otti: {item}",
       },
     },
+    // Latvian: a message with "|" holds three forms for {n}, "one|other|other" (fill reads three forms as one, few and
+    // the rest, and Latvian has no few): 1, 21, 31… take the singular, the rest (0, 2–20…) the plural. "tu" for the
+    // user and the app's words (vienādi, daļas, pēc ienākumiem, pozīcijas). A name, an item or an amount stands after a
+    // colon or as the subject, never declined.
+    lv: {
+      bill: "Picu vakars", paid: "Pedro samaksāja", notIn: "Šoreiz nepiedalās",
+      each: "{a} katram", among: "{a} starp {n} cilvēku.|{a} starp {n} cilvēkiem.|{a} starp {n} cilvēkiem.", amongOne: "{a} vienam cilvēkam.", out: "{name} nepiedalās.",
+      nobody: "Vēl neviens nepiedalās", nobodyEqual: "Atzīmē vismaz vienu cilvēku, lai sadalītu {a}.",
+      checkAll: "Atzīmēt visus", uncheckAll: "Noņemt visas atzīmes",
+      left: "Atlikums: {a}", over: "Pārsniegums: {a}", closed: "Sakrīt: {a}",
+      progress: "Pagaidām {a} no {b}.", closedMsg: "Daļas kopā veido kopsummu.",
+      parts: "{n} daļa no {a}|{n} daļas no {a}|{n} daļas no {a}", personParts: "{name}: {n} daļa.|{name}: {n} daļas.|{name}: {n} daļas.", nobodyShares: "Piešķir daļu vismaz vienam cilvēkam, lai sadalītu {a}.",
+      ofEach: "{p} no katra rēķina", ofBill: "{p} no rēķina", incomeDetail: "Katra daļa atbilst ienākumiem.", perMonth: "/mēn.",
+      service: "Apkalpošana ({p})", serviceSub: "Proporcionāli tam, ko katrs patērēja",
+      loose: "Atzīmē, kas ko patērēja", looseDetail: "Pieskaries sejām pie katras pozīcijas, lai atzīmētu, kas to patērēja.",
+      itemsClosed: "Pozīcijas: {a}, apkalpošana: {b}.", nobodyItem: "Neviens nav atzīmēts", eachItem: "{a} katram",
+      items: { pizza: "Liela pica", beer: "Alus", salad: "Salāti", draft: "Lējamais alus", shrimp: "Garneļu plate" },
+      receiptBill: "Ostas bārs",
+      hint: {
+        equal: "Ja summa nedalās vienādi, atlikušie centi paliek tam, kas maksāja.",
+        amounts: "Kam paliek {zero}, tas rēķinā nepiedalās.",
+        percent: "Tikai veseli skaitļi. Atlikušie centi paliek tam, kas maksāja.",
+        shares: "Izmanto daļas, ja kāds patērē vairāk, piemēram, atved līdzi pavadoni.",
+        income: "Ienākumi paliek ierīcē. Grupa redz tikai procentus.",
+        items: "Katru pozīciju sadala starp tiem, kas to patērēja, un apkalpošanu — pēc tā, ko katrs patērēja.",
+      },
+      label: {
+        amount: "Summa: {name}", percent: "Procenti: {name}", income: "Mēneša ienākumi: {name}",
+        less: "Par vienu daļu mazāk: {name}", more: "Par vienu daļu vairāk: {name}", had: "Kas patērēja: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
