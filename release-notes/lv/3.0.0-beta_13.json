@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Lietotne tagad runā krievu un ukraiņu valodā: izvēlies „Русский” vai „Українська” sadaļā „Profils › Valoda” vai ļauj tai sekot ierīces valodai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupās tagad var dalīt rēķinus Krievijas rubļos (RUB) un Ukrainas grivnās (UAH), un grupa, kas izveidota Krievijā vai Ukrainā, sākas ar tās valūtu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadaļā „Profils” ir jauns iestatījums „Laika formāts”: sekot sistēmai vai vienmēr rādīt laiku 24 stundu (14:30) vai 12 stundu formātā ar AM un PM (2:30 PM) rēķinos, cilnē „Aktivitāte”, komentāros un laika atlasītājos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kad tālrunis ir guļus, un planšetdatoros grupas poga „Sadalīt rēķinu” tagad atrodas augšējā joslā, nevis peld virs rēķiniem.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ja ieslēgtas „Dinamiskās krāsas”, tas, ko esi parādā, paliek oranžs, nevis kļūst sarkans, tāpēc tas nekad neizskatās pēc zaļās krāsas, kas nozīmē to, kas tev atgriežas.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Cilnē „Aktivitāte” katrā rindā tagad blakus grupas nosaukumam redzams tās fotoattēls, ja grupai tāds ir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Tava bilance šajā grupā” vairs neatkārto summu otrā rindā, ja tu tikai saņem atpakaļ vai tikai esi parādā.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadaļā „Noklusējuma sadalījums” katras personas daļai parauga rēķinā tagad ir sava krāsa ar atbilstošu punktu pirms vārda, lai blakus esoši cilvēki sarakstā nekad neizskatītos kā viens.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rēķina augšējā joslā tagad blakus grupas nosaukumam redzams grupas fotoattēls vai tās iniciāļi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pieskaroties kāda fotoattēlam, tas tagad pārceļas uz šīs personas profilu un atpakaļ, kad atgriezies.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Rēķins, kas atvērts no grupas cilnes „Izdevumi”, tagad ieslīd vietā tāpat kā no cilnes „Sākums”, un grupas fotoattēls pie rēķiniem cilnē „Sākums” aizlido uz rēķina augšējo joslu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Sadalīt rēķinu” tagad ir arī cilņu „Bilances” un „Kontakti” augšā, un grupas ekrānā tas pārvietots uz augšējo joslu, nevis peld virs saraksta, bet „Pievienot cilvēkus” tagad ir izvēlnē ⋯. Sākumā tas rāda nosaukumu un, ritinot, sarūk līdz ikonai.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Cilnē „Grupas”, pieskaroties kartītei „Kopējā bilance”, atveras „Bilances”.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "„Uzaicināt cilvēkus” grupā tagad saucas „Pievienot cilvēkus”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPad cilnes atveras sānjoslā, un, kad tās ir augšējā joslā, piemēram, ar vertikāli novietotu iPad, „Sadalīt rēķinu” paliek tur redzams, bet pārējās pogas pārceļas uz rindu tieši zem tās.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ekrānā „Sadalīt rēķinu” „Samaksāts ar” tagad redzams pelēkots arī tad, ja rēķinu samaksāja kāds cits: pieskaroties tas paskaidro, ka tikai tie, kas maksāja, var atzīmēt, ar ko samaksāja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bez konta tavs atkopšanas kods tagad ir 12 numurēti vārdi, kurus vieglāk pierakstīt, un atjaunojot tos ievada pa vienam vārdam katrā laukā, ar ieteikumiem rakstīšanas laikā. Pirms šīs versijas saglabātie kodi vairs nedarbojas: saglabā jauno vai pievieno Google vai Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadaļā „Izdevumi pa kategorijām” katram rēķinam tagad ir tā pati ⋮ izvēlne kā grupas izdevumos: rediģē, dublē, kopīgo vai dzēs to, neatverot.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Platos ekrānos (guļus tālrunī, planšetdatoros, Mac un tīmeklī) sadaļa „Izdevumi pa kategorijām” rāda kategorijas un kopsummu kolonnā blakus rēķiniem.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vācu, nīderlandiešu un japāņu valodā cilnes „Aktivitāte” teikumi tagad ir katras valodas dabiskajā vārdu secībā, bez kola pirms rēķina vai grupas nosaukuma.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Pirmais burts tekstā „Pievienot fotoattēlu” zem rēķina pielikumiem vairs netiek nogriezts.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Cilnē „Grupas” poga grupas izveidei tagad ir „+ Grupa” un vairs nelūst divās rindās.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "„Jaunumi” tagad rāda tikko instalēto versiju, nevis gaida līdz pat dienai, lai ielādētu tās jaunumus.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupas statistikā perioda poga („Viss laiks”) vairs nelūst divās rindās: datumi pāriet zem tās, ja abi nesatilpst.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

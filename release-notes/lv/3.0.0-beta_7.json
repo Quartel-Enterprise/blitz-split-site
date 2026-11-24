@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split tagad runā nīderlandiešu, japāņu, turku un indonēziešu valodā, un valodu sarakstā katra valoda nosaukta savā valodā.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupās un rēķinos tagad var izmantot Polijas zlotu, Turcijas liru un Indonēzijas rūpiju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadaļā „Profils” ir jauna poga „Kopīgot profilu”: ikviens, kas atver tavu saiti, redz tavu vārdu un fotoattēlu un var tevi uzaicināt grupā.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaunas grupas uzaicinājuma saite ir gatava uzreiz, pat bezsaistē, un sadaļā „Dalībnieki” ir jauna poga tās kopēšanai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aizverot formu ar nesaglabātām izmaiņām, tagad vispirms tiek jautāts „Atmest izmaiņas?”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Privātuma politika un lietošanas noteikumi tagad atveras lietotnē, nevis pārlūkā.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Tālrunī augšējā un apakšējā josla tagad paslēpjas, ritinot uz leju, un atgriežas, ritinot uz augšu.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Ekrānā „Sadalīt rēķinu” datuma izvēle vairs uzreiz nepāriet uz pulksteni: laikam ir sava poga.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Pieskaries grupai ekrāna „Sadalīt rēķinu” augšā, lai to atvērtu; atgriežoties rēķinā saglabājas viss, ko ievadīji.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cilnes „Sākums” sadaļā „Jaunākie izdevumi” tagad katra rēķina grupa un maksātājs redzami kā fotoattēli.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix tagad redzams tikai tiem, kas to, visticamāk, izmantos, piemēram, tiem, kas lieto lietotni portugāļu valodā, kam ir Pix atslēga vai kas ir grupā ar valūtu reāls.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sinhronizē…” tagad redzams tikai pirmo reizi, kad tavs konts ielādējas ierīcē, nevis katrā sinhronizācijā.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadaļā „Profils” vairs nav iespējas atvienot Google vai Apple no konta: tā vietā izraksties vai dzēs kontu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Rediģēt profilu” tagad atveras kā lapa virs sadaļas „Profils”, nevis atsevišķā ekrānā.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Tukšā josla starp formu un tastatūru ekrānā „Sadalīt rēķinu” ir novērsta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kontakta sadaļā „Kopīgās grupas” tagad redzams katras grupas fotoattēls.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

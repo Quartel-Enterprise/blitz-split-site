@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split tagad runā vācu, itāļu un poļu valodā: tā seko tavas ierīces valodai, vai arī vari to izvēlēties sadaļā „Profils › Valoda”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Katrai kategorijai tagad ir sava krāsa, un „Statistika” attēlo katru kategoriju un katru personu tās krāsā.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tagad vari mainīt kategorijas krāsu kategorijas formā vai sadaļā „Kategoriju karte”.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Rēķina izvēlnē cilnē „Izdevumi” ir jauna opcija „Dublēt”: tā atver jaunu rēķinu, kas jau aizpildīts tāpat kā oriģināls.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupas un rēķini vairs uz brīdi nepazūd, kad atgriezies lietotnē.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Meklēšana vairs uzreiz neaizveras, ja tev vēl nav nevienas grupas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jauna grupa tagad sākas ar veidu „Pasākums”, pirmo sarakstā.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ja vēl nav nevienas grupas, „Uzaicināt ar saiti vai QR” tagad rāda tikai pogu „Jauna grupa”, nevis pogas, kuras nevarēji izmantot.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Čeks, kura nolasīšana aizņem ilgāku laiku, vairs nebeidzas ar savienojuma kļūdu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Statistikas kategoriju rindas ir tīrākas: tajās vairs nav katras apakškategorijas summas.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

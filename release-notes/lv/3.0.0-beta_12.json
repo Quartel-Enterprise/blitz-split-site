@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Sadaļā „Jaunumi” pieskaries versijai, lai atvērtu tās laidienu GitHub, vai pogai GitHub, lai redzētu visus laidienus.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupas lapa, uzaicinājums un rēķina informācija tagad rāda blakus līdz piecu cilvēku fotoattēliem, nevis divu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPad vai atvērtā iPhone Duo guļus stāvoklī grupa, kas aizņem visu ekrānu (piemēram, atvērta no cilnes „Sākums”), tagad rāda savu fotoattēlu, dalībniekus un tavu bilanci blakus izdevumiem.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Pieskaroties kartītei „Kopējā bilance” cilnē „Sākums”, tagad atveras cilne „Bilances”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tālrunī, atverot grupu vai rēķinu no cilnes „Sākums”, grupas bilance vai rēķina ikona, nosaukums, kopsumma un tava daļa tagad aizlido uz tā ekrānu un atpakaļ, kad atgriezies.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Sadaļā „Profils › Valoda” spāņu valoda tagad ir divreiz, „Español (Latinoamérica)” un „Español (España)”, lai tu izvēlētos to, kurā runā, neatkarīgi no tā, kur atrodas tava ierīce.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kad tālrunis vai planšetdators ir guļus, tas, kas atrodas blakus sarakstam cilnēs „Kontakti” un „Bilances”, tagad sākas ekrāna augšā, ar tavu profila fotoattēlu virs saraksta.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Pogas „Pievienot personu” mala grupas sadaļā „Dalībnieki” ir labāk saskatāma.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Kartes krāsu sadaļā „Maksājumu veidi” tagad var izvēlēties no tām pašām krāsām, kas kategorijām: divpadsmit krāsas, tavas pašas krāsas un „Jauna krāsa”, lai izveidotu vēl vienu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ekrānā „Sadalīt rēķinu” „Samaksāts ar” tagad ir neliela poga zem „Sadalīt”, un, ja tev vēl nav maksājuma veida, „Pievienot maksājuma veidu” to izveido turpat un izvēlas rēķinam. Debetkartēm tagad ir arī sava ikona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Maksājuma veida pievienošana vai rediģēšana sadaļā „Profils” tagad atveras virs tās, nevis atsevišķā ekrānā.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "„Dinamiskās krāsas” tagad paskaidro, ka lietotne izmanto Android sistēmas krāsas, kas nāk no tava fona attēla vai no paletes, kas izvēlēta Android iestatījumos.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ja ieslēgts „Samazināt kustību”, grupas statistika tagad uzreiz rāda diagrammas, bez joslu augšanas vai gredzena ieslīdēšanas.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Brazīlijas portugāļu valodā cilnē „Aktivitāte” un rēķina vēsturē bija rakstīts „Você criaste” un tamlīdzīgi, nevis „Você criou”.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Labots: datumi statistikas datuma atlasītājā lūza pa vienam vai diviem burtiem rindā; beigu datums tagad pāriet zem sākuma datuma, ja abi nesatilpst.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Laboti paziņojumi un daži teikumi, kas Spānijas spāņu un Portugāles portugāļu valodā tika rādīti angliski vai kā kods, piemēram, „push.bill_deleted”.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Labota cilvēku rinda cilnē „Sākums” Portugāles portugāļu valodā, kur zem vārda bija rakstīts „te deve”, nevis „deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
