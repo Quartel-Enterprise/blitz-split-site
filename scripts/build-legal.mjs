@@ -71,25 +71,29 @@ const CHROME = {
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
-const CHARACTERS_PER_MINUTE = {
+const MEASURED_CHARACTERS_PER_MINUTE = {
   ar: 612, de: 920, en: 987, es: 1025, fr: 998, he: 833, it: 950, ja: 357, nl: 978, pl: 916, pt: 913, "pt-PT": 913,
   ru: 986, sv: 917, tr: 1054, zh: 255, "zh-Hant": 255, fi: 1078,
+};
+// Why each borrowed pace names the language it comes from: a correction to that language's number reaches it too.
+const CHARACTERS_PER_MINUTE = {
+  ...MEASURED_CHARACTERS_PER_MINUTE,
   // Why: the study has no Korean, and a Hangul block is one syllable, so this is its average of syllables per minute.
   ko: 370,
   // Why: the study has no Ukrainian, and Russian is the closest language it measured, in the same script.
-  uk: 986,
+  uk: MEASURED_CHARACTERS_PER_MINUTE.ru,
   // Why: the study has no Bulgarian either, and Russian is the closest language it measured, in the same script.
-  bg: 986,
+  bg: MEASURED_CHARACTERS_PER_MINUTE.ru,
   // Why: the study has no Urdu, and Arabic is the closest language it measured, in the same script.
-  ur: 612,
+  ur: MEASURED_CHARACTERS_PER_MINUTE.ar,
   // Why: the study has no Norwegian, and Swedish is the closest language it measured.
-  nb: 917,
+  nb: MEASURED_CHARACTERS_PER_MINUTE.sv,
   // Why: the study has no Persian, and Arabic is the closest language it measured, in the same script.
-  fa: 612,
+  fa: MEASURED_CHARACTERS_PER_MINUTE.ar,
   // Why: the study has no Danish, and Swedish is the closest language it measured.
-  da: 917,
+  da: MEASURED_CHARACTERS_PER_MINUTE.sv,
   // Why: the study has no Estonian, and Finnish is the closest language it measured, of the same family.
-  et: 1078,
+  et: MEASURED_CHARACTERS_PER_MINUTE.fi,
 };
 // The study's median without Chinese and Japanese, for a language it didn't measure. Why without them: a character of
 // theirs holds far more than a letter, so they would slow down every language written with letters.
