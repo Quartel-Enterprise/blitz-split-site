@@ -5,12 +5,12 @@
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian, Gujarati and Punjabi. The markup is in English; each page carries its other languages' strings in
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian, Gujarati, Malayalam and Punjabi. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS` ([where they are written](#a-pages-strings)), and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the language picker picks another, kept for the next visit, or "System" again, which forgets it and follows the
 browser (`boot.js` sets `data-lang-pref` to the language chosen or `system`);
-`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro|bn|ms|el|hu|fil|ur|hr|sr|sk|nb|fa|sw|ta|te|mr|bg|ca|da|fi|lv|et|lt|sl|gu|pa` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a fiftieth language: only the exact tag `pt-PT` (a browser's
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro|bn|ms|el|hu|fil|ur|hr|sr|sk|nb|fa|sw|ta|te|mr|bg|ca|da|fi|lv|et|lt|sl|gu|ml|pa` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a fifty-first language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
 `pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
@@ -207,6 +207,17 @@ apart ("{who} એ તમને ચૂકવ્યા") or stands after a colon, 
 a colon ("{n} લોકોમાં વહેંચાયા: {a}."). A noun after a number stays singular, so it counts in one and other forms
 without a "|"; it has rupees grouped as India writes them, as Hindi does, and draws in the system's font, with the
 rules Hindi's Devanagari has: no Geist tracking, and the room between its titles' lines that Hindi's gets.
+Malayalam (`ml`) is one variant for every `ml` tag, in the Malayalam script, as the apps write it: "നിങ്ങൾ" and its
+forms for the reader, the polite "-ുക" on every button and instruction ("സേവ് ചെയ്യുക", "തിരഞ്ഞെടുക്കുക"), plain
+everyday Malayalam with the English loanwords Indian apps use (ബാലൻസ്, അക്കൗണ്ട്, ലിങ്ക്), the app's words (ഗ്രൂപ്പ്,
+ചെലവ്, ചെലവ് വിഭജിക്കുക, സെറ്റിൽ ചെയ്യുക, റിക്കവറി കോഡ്, രസീത്, ഇനങ്ങൾ), and sentences that end in ".". It writes the
+digits 0-9, never Malayalam digits: its dates and the phone's clock are formatted with `ml-u-nu-latn`, as Marathi's
+are, and the split card reads Malayalam digits typed on a Malayalam keyboard as the Latin ones (`latinDigits` in
+`money.js`). As in Tamil and Telugu, no case ending is ever glued to a filled-in name or amount: the value stands as the
+subject ("{name} പണം നൽകി", as the app writes it) or after a colon or an arrow ("ബാക്കി: {a}"), and "Google Play" and
+"App Store" take theirs after a hyphen ("Google Play-ൽ നിന്ന്"). It counts in one and other forms, has rupees grouped
+as India writes them, as Hindi, Tamil and Telugu do, and draws in the system's font, its titles with the room between
+their lines that Hindi's, Bengali's and Tamil's get.
 Punjabi (`pa`) is written in Gurmukhi only, never in Shahmukhi, so `boot.js` picks it only for a Gurmukhi tag: a tag's
 script, when it has one, must be `Guru` (`pa-Guru`, `pa-Guru-IN`), and with none any region but Pakistan's (`pa`,
 `pa-IN`); `pa-Arab`, `pa-Arab-PK` and `pa-PK` are none of the site's languages, so the next of the browser's languages
@@ -224,7 +235,7 @@ Geist tracking, and the room between its titles' lines that Hindi's gets.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
-in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, Tamil, Telugu, Marathi, Gujarati and Punjabi, grouped
+in Portugal's Portuguese, French, German, Italian and Dutch, złoty, lira, rubles, hryvnias, rupees in Hindi, Tamil, Telugu, Marathi, Gujarati, Malayalam and Punjabi, grouped
 as India writes them (₹1,20,000), yuan in Simplified Chinese (¥, with its fen, so the demo's numbers stay as they are:
 ¥48.60, ¥1,200), shekels in Hebrew (₪, with its agorot, the same numbers), baht in Thai (฿, with its satang, the same numbers: ฿48.60, ฿1,200), and the rupiah, the yen, the won, the dong (in Vietnamese, after the number as Vietnamese writes it: 1.200.000 ₫) and the New Taiwan dollar in Traditional Chinese (NT$), which have no cents in use. The krona in Swedish, the krone in Norwegian and in Danish, the koruna in Czech, the leu in Romanian, the ringgit in Malay and the Philippine peso in Filipino keep their cents but are
 worth much less than the dollar, so the demo's own amounts are multiplied by a whole number before anything is split
@@ -257,7 +268,7 @@ site picks a language from; each script's strings and formats still carry a key 
 
 The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the Latin and Latin Extended subsets Google
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
-`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Bengali, Greek, Urdu, Persian, Tamil, Telugu, Marathi, Gujarati, Punjabi and Bulgarian fall back to the system's font, since neither subset has their
+`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Bengali, Greek, Urdu, Persian, Tamil, Telugu, Marathi, Gujarati, Malayalam, Punjabi and Bulgarian fall back to the system's font, since neither subset has their
 scripts (or, for Vietnamese, its Latin Extended Additional letters).
 
 ### A page's strings
