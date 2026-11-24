@@ -896,6 +896,25 @@
       bills: (n) => `${n} ખર્ચ`,
       titles: { b1: "લાગોઆ ગેસ્ટહાઉસ", b2: "રિબેરાઓમાં ડિનર", b3: "બીચ સુધીની રાઇડ", p1: "બીચ પર આઇસક્રીમ", p2: "અઠવાડિયાનું કરિયાણું", p3: "પાર્કિંગ" },
     },
+    // Malayalam: a name stands bare as the subject ("{name} പണം നൽകി", as the app writes it), and an amount stands after a
+    // colon or an arrow, never with a case ending. നിങ്ങൾ for the user.
+    ml: {
+      paid: "{name} പണം നൽകി", notIn: "ഇതിൽ ഉൾപ്പെടുന്നില്ല",
+      members: (people, bills) => `${people} ${people === 1 ? "ആൾ" : "പേർ"} · ${bills} ${bills === 1 ? "ചെലവ്" : "ചെലവുകൾ"}`,
+      toGet: "തിരികെ ലഭിക്കാനുണ്ട്", youOwe: "നിങ്ങൾ നൽകാനുണ്ട്", settled: "എല്ലാം സെറ്റിൽ ആയി", owesYou: "നിങ്ങൾക്ക് നൽകാനുള്ളവർ", youOweTitle: "നിങ്ങൾ നൽകാനുള്ളത്",
+      eachOne: "ഓരോരുത്തരുടെയും ബാലൻസ്", getsBack: "തിരികെ ലഭിക്കാനുണ്ട്", owes: "നൽകാനുണ്ട്", even: "സെറ്റിൽ ആയി",
+      toSettle: "സെറ്റിൽ ചെയ്യാനുള്ളവ", total: "ഗ്രൂപ്പിന്റെ ആകെ", lodging: "താമസം", food: "ഭക്ഷണം", transport: "ഗതാഗതം",
+      sheetTitle: "ചെലവ് വിഭജിക്കുക", description: "വിവരണം", amount: "തുക", whoPaid: "ആരാണ് പണം നൽകിയത്",
+      splitAmong: "ഇവർക്കിടയിൽ തുല്യമായി വിഭജിക്കുക", each: "ഓരോരുത്തർക്കും {value}", cancel: "റദ്ദാക്കുക", save: "സേവ് ചെയ്യുക", close: "അടയ്ക്കുക",
+      queue: (n) => `ക്യൂവിൽ ${n} ${n === 1 ? "മാറ്റം" : "മാറ്റങ്ങൾ"}`,
+      split: "എങ്ങനെ വിഭജിച്ചു", yourShare: "നിങ്ങളുടെ വിഹിതം", deleteBill: "ചെലവ് ഡിലീറ്റ് ചെയ്യുക",
+      recordPayment: "പേയ്‌മെന്റ് രേഖപ്പെടുത്തുക", record: "രേഖപ്പെടുത്തുക", viaMethod: "ട്രാൻസ്ഫർ വഴി", payment: "പേയ്‌മെന്റ്", deletePayment: "പേയ്‌മെന്റ് ഡിലീറ്റ് ചെയ്യുക",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} നിങ്ങൾക്ക് പണം നൽകി: ${value}`,
+      paidTotal: "ആകെ നൽകിയത്", shareTotal: "ചെലവുകളിലെ വിഹിതം", balance: "ബാലൻസ്",
+      bills: (n) => `${n} ${n === 1 ? "ചെലവ്" : "ചെലവുകൾ"}`,
+      titles: { b1: "ലഗോവ ഗസ്റ്റ്‌ഹൗസ്", b2: "റിബെയ്‌റാവോയിലെ ഡിന്നർ", b3: "ബീച്ചിലേക്കുള്ള യാത്ര", p1: "ബീച്ചിലെ ഐസ്ക്രീം", p2: "ആഴ്ചയിലെ പലചരക്ക്", p3: "പാർക്കിംഗ്" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1338,7 +1357,7 @@
   if (clock) {
     // Why: only the languages whose clock differs from the page's own tag (Latin digits, Taiwan's Traditional Chinese,
     // the US's English); any other uses the page's tag, which boot.js sets for every language.
-    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", gu: "gu-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", gu: "gu-u-nu-latn", ml: "ml-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();
