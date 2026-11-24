@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Atverot kādu no cilnes „Kontakti” vai „Bilances”, šīs personas vārds un bilance tagad kopā ar fotoattēlu pārceļas uz profilu un atpakaļ, kad atgriezies.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Statistikā gredzena „Pa personām” vidū tagad vienkārši rakstīts „Tu”, ja daļa ir tava, un garš vārds beidzas ar „…”, nevis pieskaras gredzenam.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Atverot grupu no cilnes „Grupas”, tās dalībnieku sejas tagad pārceļas no rindas uz grupas ekrānu un atpakaļ, kad to aizver.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Tālrunī, atverot rēķinu, līdzi pārceļas vairāk no tā: kas maksāja – no tā rindas cilnē „Sākums” un ekrānā „Visi izdevumi”, laiks – no tā rindas grupas cilnē „Izdevumi”, un grupas fotoattēls un nosaukums – no grupas ekrāna. Tie pārceļas atpakaļ, kad to aizver.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grupas nosaukums tagad pārceļas uz grupas ekrānu jau tā atvēršanas laikā, ne tikai atpakaļceļā.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
