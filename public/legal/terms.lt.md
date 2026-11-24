@@ -75,7 +75,7 @@ Pavadinimai Blitz Split ir Bora Rachar, piktograma ir programėlės išvaizda pr
 
 Gali bet kada nustoti naudotis programėle ir ištrinti savo paskyrą skiltyje „Profilis“ › „Ištrinti paskyrą ir duomenis“. Kas nutinka tavo duomenims, aprašyta [Privatumo politikoje](/privacy#keep).
 
-Galime sustabdyti ar uždaryti paskyrą, kuri pažeidžia šias sąlygas, kai tik įmanoma, apie tai iš anksto įspėję.
+Galime sustabdyti ar uždaryti paskyrą, kuri pažeidžia šias sąlygas. Visada, kai įmanoma, apie tai įspėjame iš anksto.
 
 ## Atsakomybė {#liability}
 

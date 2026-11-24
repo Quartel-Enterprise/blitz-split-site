@@ -525,12 +525,13 @@
       mismatchGo: "Siirry {to}", mismatchStay: "Jatka silti {to}", close: "Sulje",
       in: { play: "Google Play -kaupasta", appstore: "App Store -kaupasta" }, to: { play: "Google Play -kauppaan", appstore: "App Store -kauppaan" },
     },
-    // Lithuanian: "Google Play" and "App Store" are never declined; a preposition before them carries the case.
+    // Lithuanian: "Google Play" and "App Store" are never declined; a preposition before them, or "parduotuvėje" after
+    // them, carries the case.
     lt: {
       play: ["Atsisiųsk iš", "Netrukus"], appstore: ["Atsisiųsk iš", "Netrukus"], web: ["Atidaryk", "Netrukus"], browser: "naršyklėje",
       getApp: "Gauk programėlę", openWeb: "Atidaryti žiniatinklio programėlę", soon: "Netrukus",
-      noteStore: "Gauk programėlę {in}.", noteApple: "Naudoji {platform}? Naudokis programėle naršyklėje, kol ji pasirodys „App Store“.", noteWeb: "Atidaryk ją naršyklėje – nieko diegti nereikia.",
-      playLive: "Galima gauti „Google Play“", appStoreLive: "Galima gauti „App Store“", webLive: "Atidaryti žiniatinklio programėlę",
+      noteStore: "Gauk programėlę {in}.", noteApple: "Naudoji {platform}? Naudokis programėle naršyklėje, kol ji pasirodys „App Store“ parduotuvėje.", noteWeb: "Atidaryk ją naršyklėje – nieko diegti nereikia.",
+      playLive: "Galima gauti iš „Google Play“", appStoreLive: "Galima gauti iš „App Store“", webLive: "Atidaryti žiniatinklio programėlę",
       mismatchTitle: "Pasirink parduotuvę",
       mismatchBody: "Naudoji {platform}. Geriausiai veiks, jei programėlę gausi {in}.",
       mismatchGo: "Eiti {to}", mismatchStay: "Vis tiek tęsti {to}", close: "Uždaryti",
