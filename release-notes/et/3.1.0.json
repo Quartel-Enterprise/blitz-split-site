@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split Apple Watchis: ühenda see oma iPhone’i kontoga, vaata oma saldosid ja arveldamata gruppe, puuduta grupis, kus sa võlgned, nuppu „Maksin“ ning lisa oma üldsaldo kellaekraanile või Smart Stacki; kui kell on ühendatud, töötab see iseseisvalt.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd bengali, malai ja kreeka keelt: vali „বাংলা“, „Bahasa Melayu“ või „Ελληνικά“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd kasutada Bangladeshi takat ja Malaisia ringgitit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd horvaadi keelt: vali „Hrvatski“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd filipiini keelt: vali „Filipino“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd jagada Filipiini peesodes (PHP, „₱“) ja Filipiinidel loodud grupp algab selles valuutas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd ungari keelt: vali „Magyar“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd kasutada Ungari forintit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lisa vidin Saldod oma iPhone’i või iPadi avakuvale või lukustuskuvale, et näha oma üldsaldot ja arveldamata gruppe ühe pilguga; puuduta seda, et avada Saldod.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd kasutada Boliivia, Venezuela, Costa Rica, Guatemala, Hondurase, Nicaragua, Dominikaani Vabariigi ja Kuuba valuutasid ning seal loodud grupp algab oma riigi valuutas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd serbia keelt: vali „Srpski“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd jagada Serbia dinaarides (RSD) ja Serbias loodud grupp algab selles valuutas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rakendus räägib nüüd urdu keelt: vali „اردو“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd jagada Pakistani ruupiates (PKR) ja Pakistanis loodud grupp algab selles valuutas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uue kulu teavituse puudutamine avab kulu kohe: rakendus toob selle sisse niipea, kui teavitus saabub.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Tervitusekraan näitab telefonides nüüd ülaosas ainult logo, jättes nuppudele rohkem ruumi.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grupi bänner „Aeg arveldada“ ei näita enam meeldetuletuse kuupäeva ajast enne meeldetuletuse määramist või muutmist: 25. kuupäevale muudetud meeldetuletus ootab 25. kuupäeva.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

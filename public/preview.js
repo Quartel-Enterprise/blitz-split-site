@@ -816,6 +816,25 @@
       bills: (n) => `${n} ${countForm(n, "rēķins", undefined, "rēķini")}`,
       titles: { b1: "Lagoas viesu māja", b2: "Vakariņas Ribeirão", b3: "Brauciens uz pludmali", p1: "Saldējums pludmalē", p2: "Nedēļas iepirkumi", p3: "Stāvvieta" },
     },
+    // Estonian: "sina" for the user, and the app's words (kulu, saldo, arvelda, registreeri makse). A name or an amount
+    // is the subject or stands after a noun that carries the case ("isikule {name}"), never with an ending of its own.
+    et: {
+      paid: "{name} maksis", notIn: "Pole osaline",
+      members: (people, bills) => `${people} inimest · ${bills} kulu`,
+      toGet: "tagasi saada", youOwe: "sa võlgned", settled: "kõik on arveldatud", owesYou: "Kes sulle võlgneb", youOweTitle: "Sa võlgned",
+      eachOne: "Igaühe saldo", getsBack: "saab tagasi", owes: "võlgneb", even: "tasa",
+      toSettle: "Arveldada", total: "Grupi kulud kokku", lodging: "Majutus", food: "Toit", transport: "Transport",
+      sheetTitle: "Jaga kulu", description: "Kirjeldus", amount: "Summa", whoPaid: "Kes maksis",
+      splitAmong: "Jaga võrdselt", each: "{value} igaühele", cancel: "Tühista", save: "Salvesta", close: "Sulge",
+      queue: (n) => `${n} ${n === 1 ? "muudatus" : "muudatust"} järjekorras`,
+      split: "Kuidas jagati", yourShare: "Sinu osa", deleteBill: "Kustuta kulu",
+      recordPayment: "Registreeri makse", record: "Registreeri", viaMethod: "ülekandega", payment: "Makse", deletePayment: "Kustuta makse",
+      payLine: (from, to) => `${name(from)} maksis isikule ${name(to)}`,
+      paidYou: (who, value) => `${who} maksis sulle ${value}`,
+      paidTotal: "Kokku makstud", shareTotal: "Osa kuludest", balance: "Saldo",
+      bills: (n) => `${n} kulu`,
+      titles: { b1: "Lagoa külalistemaja", b2: "Õhtusöök Ribeirãos", b3: "Sõit randa", p1: "Jäätis rannas", p2: "Nädala toidukaubad", p3: "Parkimine" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1256,7 +1275,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", mr: "mr-u-nu-latn", bg: "bg", ca: "ca", da: "da", fi: "fi", lv: "lv", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", mr: "mr-u-nu-latn", bg: "bg", ca: "ca", da: "da", fi: "fi", lv: "lv", et: "et", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

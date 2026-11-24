@@ -253,6 +253,12 @@
       lines: [["2 LĒJAMAIS ALUS", "28,00", 1], ["1 GARNEĻU PLATE", "96,00", 2]],
       subtotal: ["STARPSUMMA", "124,00"], service: ["APKALPOŠANA 10%", "12,40", 3], total: ["KOPĀ", "136,40"],
     },
+    // Estonian: a harbor bar's receipt, in euros, with Estonia's dotted date.
+    et: {
+      store: "SADAMABAAR", address: "Kajaka 120", date: "8.11.2026  21:47",
+      lines: [["2 VAADIÕLU", "28,00", 1], ["1 KREVETIVAAGEN", "96,00", 2]],
+      subtotal: ["VAHESUMMA", "124,00"], service: ["TEENUSTASU 10%", "12,40", 3], total: ["KOKKU", "136,40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

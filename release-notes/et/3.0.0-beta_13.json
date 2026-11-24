@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Rakendus räägib nüüd vene ja ukraina keelt: vali „Русский“ või „Українська“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd jagada Venemaa rublades (RUB) ja Ukraina grivnades (UAH) ning Venemaal või Ukrainas loodud grupp algab selle riigi valuutas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaotises Profiil on uus eelistus „Kellaaja vorming“: järgi süsteemi või näita kellaaegu alati 24-tunnises (14:30) või 12-tunnises vormingus koos AM ja PM tähisega (2:30 PM) kuludes, jaotises Tegevus, kommentaarides ja kellaajavalijates.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kui telefon on rõhtpaigutuses, ja tahvelarvutites, on grupi „Jaga kulu“ nüüd ülemisel ribal, mitte kulude kohal hõljumas.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kui „Dünaamilised värvid“ on sees, jääb see, mida sa võlgned, oranžiks, mitte ei muutu punaseks, nii et see ei näe kunagi välja nagu roheline, mis sulle tagasi tuleb.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Jaotises Tegevus näitab iga rida nüüd grupi nime kõrval grupi fotot, kui grupil see on.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sinu saldo selles grupis“ ei korda enam summat teisel real, kui sa ainult saad tagasi või ainult võlgned.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaotises „Vaikimisi jaotus“ on näidiskulus iga inimese osal nüüd oma värv ja sama värvi täpp tema nime ees, nii et loendis kõrvuti olevad inimesed ei näe kunagi välja nagu üks.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kulu ülemine riba näitab nüüd grupi nime kõrval grupi fotot või selle initsiaale.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kellegi foto puudutamine viib selle nüüd tema profiilile ja tagasi, kui naased.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Grupi jaotisest Kulud avatud kulu liigub nüüd paika samamoodi nagu avalehelt ning avalehe kulude grupifoto lendab kulu ülemisele ribale.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "„Jaga kulu“ on nüüd ka jaotiste Saldod ja Kontaktid ülaosas ning grupi ekraanil liikus see loendi kohal hõljumise asemel ülemisele ribale, kusjuures „Lisa inimesi“ on nüüd menüüs ⋯. See algab oma nimega ja kahaneb kerimisel ikooniks.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Jaotises Grupid avab kaardi „Üldsaldo“ puudutamine vaate Saldod.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupi nupp „Kutsu inimesi“ kannab nüüd nime „Lisa inimesi“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPadis avanevad vahekaardid külgribal ning kui need on ülemisel ribal, nagu püsti iPadis, jääb „Jaga kulu“ seal nähtavale, samal ajal kui teised nupud liiguvad otse selle alla ritta.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Vaates „Jaga kulu“ kuvatakse „Makstud“ nüüd tuhmilt ka siis, kui kulu maksis keegi teine: selle puudutamine selgitab, et ainult maksjad saavad märkida, millega nad maksid.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ilma kontota on sinu taastekood nüüd 12 nummerdatud sõna, mida on lihtsam üles kirjutada, ning taastamisel sisestatakse need üks sõna välja kohta, pakkudes trükkimise ajal iga sõna. Enne seda versiooni salvestatud koodid enam ei tööta: salvesta uus või ühenda Google või Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vaates „Kulud kategooriate kaupa“ on igal kulul nüüd sama menüü ⋮ nagu grupi kuludes: muuda, tee koopia, jaga või kustuta see seda avamata.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Laiadel ekraanidel (rõhtpaigutuses telefon, tahvelarvutid, Mac ja veeb) hoiab „Kulud kategooriate kaupa“ oma kategooriaid ja kogusummat kulude kõrval eraldi veerus.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Saksa, hollandi ja jaapani keeles loetakse jaotise Tegevus lauseid nüüd iga keele loomulikus sõnajärjes, ilma koolonita enne kulu või grupi nime.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Kulu manuste all oleva nupu „Lisa foto“ esimest tähte ei lõigata enam ära.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Jaotises Grupid on grupi loomise nupul nüüd kiri „+ Grupp“ ja see ei murdu enam kahele reale.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Väljalaskemärkmed näitavad nüüd versiooni, mille just installisid, selle asemel et oodata selle märkmeid kuni päev.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupi Statistikas ei murdu perioodi nupp („Kogu aeg“) enam kahele reale: kuupäevad liiguvad selle alla, kui mõlemad ei mahu.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

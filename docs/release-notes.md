@@ -2,7 +2,7 @@
 
 What each version of the app changed is written once, in JSON, one file per language and version:
 `release-notes/<language>/<version>.json` (English, Portuguese (Brazil), Portuguese (Portugal, `pt-PT`), Spanish, French, German, Italian, Polish, Dutch,
-Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish and Latvian). The folder is outside `public/`, so nobody reads those files as they are:
+Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian and Estonian). The folder is outside `public/`, so nobody reads those files as they are:
 `scripts/build-release-notes.mjs` writes from them the two things that are read.
 
 - **The apps' feed.** `public/release-notes/<language>.json`, at

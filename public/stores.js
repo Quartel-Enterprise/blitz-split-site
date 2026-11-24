@@ -59,7 +59,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -535,6 +535,17 @@
       mismatchBody: "Tu izmanto ierīci {platform}. Labākai pieredzei iegūsti lietotni {in}.",
       mismatchGo: "Doties {to}", mismatchStay: "Turpināt {to}", close: "Aizvērt",
       in: { play: "no Google Play", appstore: "no App Store" }, to: { play: "uz Google Play", appstore: "uz App Store" },
+    },
+    // Estonian: "Google Play" and "App Store" take no ending; "pood" after them carries the case.
+    et: {
+      play: ["Laadi alla poest", "Peagi poes"], appstore: ["Laadi alla poest", "Peagi poes"], web: ["Ava", "Peagi saadaval"], browser: "brauseris",
+      getApp: "Hangi rakendus", openWeb: "Ava veebirakendus", soon: "Peagi saadaval",
+      noteStore: "Hangi rakendus {in}.", noteApple: "Kasutad seadet {platform}? Kasuta rakendust brauseris, kuni see jõuab App Store poodi.", noteWeb: "Ava see brauseris, midagi pole vaja paigaldada.",
+      playLive: "Saadaval Google Play poes", appStoreLive: "Saadaval App Store poes", webLive: "Ava veebirakendus",
+      mismatchTitle: "Vali oma pood",
+      mismatchBody: "Kasutad seadet {platform}. Parima kogemuse saamiseks hangi rakendus {in}.",
+      mismatchGo: "Mine {to}", mismatchStay: "Jätka siiski {to}", close: "Sulge",
+      in: { play: "Google Play poest", appstore: "App Store poest" }, to: { play: "Google Play poodi", appstore: "App Store poodi" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

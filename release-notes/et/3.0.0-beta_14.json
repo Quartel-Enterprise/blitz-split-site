@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Grupi jaotises Kulud on nüüd „Vaata kõiki“, mis avab vaate „Kõik kulud“ juba selle grupi järgi filtreerituna, nii et saad selle kulusid otsida, sortida ja filtreerida. Eemalda filter, et näha kõiki gruppe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vaates „Uus grupp“ pakub „Lisa nime järgi“ nüüd trükkimise ajal inimesi jaotisest Kontaktid koos nende fotoga: puuduta ühte, et luua grupp just selle inimesega.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupi kerimisel näitab selle kokkuvolditud ülemine riba ainult grupi fotot ja nime, ilma kõrvale ära lõigatud liikmete ja kogusummata.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Nüüd saad oma taastekoodi 12 sõna tekstifailina alla laadida.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "„Salvesta oma taastekood“ ütleb nüüd, et see toob su andmed tagasi ja et 30 päeva kasutamata oleku järel andmed kustutatakse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vaates „Jaga kulu“ on „Skanni tšekk“ nüüd ka ülaosas nupu Salvesta kõrval, nii et klaviatuur seda enam ei peida, ja „Lisa makseviis“ on tagasihoidlikum.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupi Statistikas on „Inimeste kaupa“ nüüd sõõrikdiagramm igaühe osast, igal inimesel sama värv nagu jaotises „Vaikimisi jaotus“, ning selle all on legendina nimede ja summade loend. „Tarbitud“ ja „Makstud“ vahetavad, mida see näitab.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vaates „Uus grupp“ näitab „Kes osalevad“ nüüd sinu initsiaali asemel su profiilifotot.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sünkroonimine…“ ei ilmu enam ikka ja jälle avalehel ja jaotises Grupid, kui rakendusse naased: sünkroonimised käivad vaikselt, kui su grupid on ekraanil.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tahvelarvutites ja rõhtpaigutuses telefonis ei lõigata külgriba ülaosas oleva „Jaga kulu“ varju servadest enam ära.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
