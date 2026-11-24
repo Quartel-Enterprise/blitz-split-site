@@ -201,6 +201,7 @@ p { margin: 0; text-wrap: pretty; }
 :root[data-lang="da"] body [data-lang]:not([data-lang="da"]),
 :root[data-lang="fi"] body [data-lang]:not([data-lang="fi"]),
 :root[data-lang="lv"] body [data-lang]:not([data-lang="lv"]),
+:root[data-lang="et"] body [data-lang]:not([data-lang="et"]),
 :root[data-lang="gu"] body [data-lang]:not([data-lang="gu"]),
 :root:is([data-lang="en"], :not([data-lang])) body [data-lang]:not([data-lang="en"]) { display: none !important; }
 .skip { position: absolute; inset-inline-start: -9999px; }

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split räägib nüüd saksa, itaalia ja poola keelt: see järgib sinu seadme keelt või saad keele valida jaotises Profiil › Keel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Igal kategoorial on nüüd oma värv ning Statistika näitab iga kategooriat ja iga inimest tema enda värviga.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nüüd saad muuta kategooria värvi kategooria vormis või jaotises Kategooriate kaart.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Kulu menüüs jaotises Kulud on uus valik „Tee koopia“: see avab uue kulu, mis on juba täidetud nagu originaal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid ja kulud ei kao enam hetkeks, kui rakendusse tagasi tuled.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Otsing ei sulgu enam kohe, kui sul pole veel ühtegi gruppi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Uus grupp algab nüüd tüübiga Üritus, mis on loendis esimene.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kui sul pole veel gruppi, näitab „Kutsu lingi või QR-koodiga“ nüüd ainult nuppu „Uus grupp“, mitte nuppe, mida sa kasutada ei saanud.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tšekk, mille lugemine võtab kauem aega, ei lõpe enam ühendusveaga.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Statistika kategooriaread on puhtamad: need ei loetle enam iga alamkategooria summat.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

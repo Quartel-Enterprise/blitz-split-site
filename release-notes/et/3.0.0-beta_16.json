@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Rakendus räägib nüüd korea keelt: vali „한국어“ jaotises Profiil › Keel või lase sel järgida su seadet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupid saavad nüüd jagada Lõuna-Korea vonnides (KRW) ja Lõuna-Koreas loodud grupp algab selles valuutas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jaotis „Konto ja sünkroonimine“ profiilis näitab nüüd sinu kasutaja ID-d, mille saad ühe puudutusega kopeerida, et saaksid meile öelda, kes sa oled, kui vastad mõnele meie küsitlusele.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kulule lisatud foto avaneb nüüd esmalt vaates „Kohanda fotot“, et saaksid sättida ruudu, mis lisatakse.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sissetuleku järgi“ tuletab nüüd meelde sisestada igaühe netosissetulek pärast makse ja „Vaikimisi jaotus“ näitab igaühe protsenti alles siis, kui sissetulek on sisestatud.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupi päis on puhtam: nime all olnud rida liikmete arvu ja kogusummaga on kadunud. Näod näitavad, kes osalevad, ja Statistika näitab kogusummat.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kaardi või pangaväljavõtte fotod ütlevad nüüd seda ja soovitavad kulu käsitsi täita, selle asemel et öelda, et tšekki ei õnnestunud lugeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategooria Statistikas avab nüüd vaate „Kõik kulud“, kus grupp, kategooria ja periood on juba valitud, nii et saad ka neid kulusid otsida. „Kõik kulud“ sai ka filtri Periood.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Statistika jaotises „Inimeste kaupa“ vabastab puudutus rõnga kõrval või selle keskel valitud inimese.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
