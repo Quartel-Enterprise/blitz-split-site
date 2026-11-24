@@ -1452,6 +1452,35 @@
         less: "ഒരു ഓഹരി കുറയ്ക്കുക: {name}", more: "ഒരു ഓഹരി കൂട്ടുക: {name}", had: "ആരൊക്കെ എടുത്തു: {item}",
       },
     },
+    // Punjabi: a noun after a number takes one and other forms, as Intl.PluralRules tells them (1 ਹਿੱਸਾ, 2 ਹਿੱਸੇ). A
+    // name, an item or an amount never takes a case ending: it stands after a colon. ਤੁਸੀਂ for the user.
+    pa: {
+      bill: "ਪੀਜ਼ਾ ਨਾਈਟ", paid: "ਭੁਗਤਾਨ ਕੀਤਾ: Pedro", notIn: "ਇਸ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ",
+      each: "ਹਰ ਇੱਕ ਦੇ {a}", among: "{n} ਲੋਕਾਂ ਵਿੱਚ ਵੰਡਿਆ: {a}।", amongOne: "ਸਿਰਫ਼ 1 ਵਿਅਕਤੀ ’ਤੇ: {a}।", out: "ਸ਼ਾਮਲ ਨਹੀਂ: {name}।",
+      nobody: "ਹਾਲੇ ਕੋਈ ਸ਼ਾਮਲ ਨਹੀਂ", nobodyEqual: "ਇਹ ਰਕਮ ਵੰਡਣ ਲਈ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਵਿਅਕਤੀ ਚੁਣੋ: {a}।",
+      checkAll: "ਸਾਰੇ ਚੁਣੋ", uncheckAll: "ਸਾਰਿਆਂ ਦੀ ਚੋਣ ਹਟਾਓ",
+      left: "ਬਾਕੀ: {a}", over: "ਵੱਧ: {a}", closed: "ਹਿਸਾਬ ਮਿਲ ਗਿਆ: {a}",
+      progress: "ਹੁਣ ਤੱਕ: {a} / {b}।", closedMsg: "ਸਾਰੇ ਹਿੱਸੇ ਮਿਲ ਕੇ ਕੁੱਲ ਰਕਮ ਦੇ ਬਰਾਬਰ ਹਨ।",
+      parts: "{a}: {n} ਹਿੱਸਾ|{a}: {n} ਹਿੱਸੇ|{a}: {n} ਹਿੱਸੇ", personParts: "{name}: {n} ਹਿੱਸਾ।|{name}: {n} ਹਿੱਸੇ।|{name}: {n} ਹਿੱਸੇ।", nobodyShares: "ਇਹ ਰਕਮ ਵੰਡਣ ਲਈ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਵਿਅਕਤੀ ਨੂੰ ਹਿੱਸਾ ਦਿਓ: {a}।",
+      ofEach: "ਹਰ ਖਰਚੇ ਦਾ {p}", ofBill: "ਖਰਚੇ ਦਾ {p}", incomeDetail: "ਹਰ ਇੱਕ ਦਾ ਹਿੱਸਾ ਉਸ ਦੀ ਆਮਦਨ ਮੁਤਾਬਕ ਹੁੰਦਾ ਹੈ।", perMonth: "/ਮਹੀਨਾ",
+      service: "ਸਰਵਿਸ ਚਾਰਜ ({p})", serviceSub: "ਹਰ ਕਿਸੇ ਨੇ ਜੋ ਲਿਆ, ਉਸ ਦੇ ਅਨੁਪਾਤ ਵਿੱਚ",
+      loose: "ਮਾਰਕ ਕਰੋ ਕਿ ਹਰ ਆਈਟਮ ਕਿਸ ਨੇ ਲਈ", looseDetail: "ਕਿਸ ਨੇ ਲਈ, ਇਹ ਮਾਰਕ ਕਰਨ ਲਈ ਹਰ ਆਈਟਮ ’ਤੇ ਚਿਹਰਿਆਂ ਨੂੰ ਟੈਪ ਕਰੋ।",
+      itemsClosed: "ਆਈਟਮ: {a}, ਸਰਵਿਸ ਚਾਰਜ: {b}।", nobodyItem: "ਕੋਈ ਨਹੀਂ ਚੁਣਿਆ", eachItem: "ਹਰ ਇੱਕ ਦੇ {a}",
+      items: { pizza: "ਲਾਰਜ ਪੀਜ਼ਾ", beer: "ਬੀਅਰ", salad: "ਸਲਾਦ", draft: "ਡ੍ਰਾਫ਼ਟ ਬੀਅਰ", shrimp: "ਝੀਂਗਾ ਪਲੇਟਰ" },
+      receiptBill: "ਹਾਰਬਰ ਬਾਰ",
+      hint: {
+        equal: "ਜਦੋਂ ਰਕਮ ਬਰਾਬਰ ਨਾ ਵੰਡੀ ਜਾਵੇ, ਤਾਂ ਬਚੇ ਪੈਸੇ ਭੁਗਤਾਨ ਕਰਨ ਵਾਲੇ ਨੂੰ ਜਾਂਦੇ ਹਨ।",
+        amounts: "ਜਿਸ ਦੀ ਰਕਮ {zero} ਰਹਿੰਦੀ ਹੈ, ਉਹ ਇਸ ਖਰਚੇ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ।",
+        percent: "ਸਿਰਫ਼ ਪੂਰੀਆਂ ਸੰਖਿਆਵਾਂ। ਬਚੇ ਪੈਸੇ ਭੁਗਤਾਨ ਕਰਨ ਵਾਲੇ ਨੂੰ ਜਾਂਦੇ ਹਨ।",
+        shares: "ਜਦੋਂ ਕਿਸੇ ਦਾ ਹਿੱਸਾ ਵੱਧ ਹੋਵੇ ਤਾਂ ਹਿੱਸੇ ਵਰਤੋ, ਜਿਵੇਂ ਜਦੋਂ ਕੋਈ ਮਹਿਮਾਨ ਨਾਲ ਲੈ ਕੇ ਆਵੇ।",
+        income: "ਆਮਦਨ ਡਿਵਾਈਸ ’ਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ। ਗਰੁੱਪ ਨੂੰ ਸਿਰਫ਼ ਪ੍ਰਤੀਸ਼ਤ ਦਿਖਦੇ ਹਨ।",
+        items: "ਹਰ ਆਈਟਮ ਉਨ੍ਹਾਂ ਵਿੱਚ ਵੰਡੀ ਜਾਂਦੀ ਹੈ ਜਿਨ੍ਹਾਂ ਨੇ ਉਹ ਲਈ, ਅਤੇ ਸਰਵਿਸ ਚਾਰਜ ਇਸ ਮੁਤਾਬਕ ਕਿ ਹਰ ਕਿਸੇ ਨੇ ਕੀ ਲਿਆ।",
+      },
+      label: {
+        amount: "ਰਕਮ: {name}", percent: "ਪ੍ਰਤੀਸ਼ਤ: {name}", income: "ਮਹੀਨਾਵਾਰ ਆਮਦਨ: {name}",
+        less: "ਇੱਕ ਹਿੱਸਾ ਘੱਟ: {name}", more: "ਇੱਕ ਹਿੱਸਾ ਵੱਧ: {name}", had: "ਕਿਸ ਨੇ ਲਈ: {item}",
+      },
+    },
     // Kannada: a message with "|" holds its forms for {n}, "one|few|other", of which Kannada uses one (0 and 1) and other.
     // A name, an item or an amount never takes a case ending: it stands after a colon. ನೀವು for the user.
     kn: {

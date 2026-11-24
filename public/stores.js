@@ -59,7 +59,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", gu: "in/", ml: "in/", kn: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", gu: "in/", ml: "in/", pa: "in/", kn: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -591,6 +591,17 @@
       mismatchBody: "നിങ്ങൾ {platform} ഉപയോഗിക്കുന്നു. മികച്ച അനുഭവത്തിന്, ആപ്പ് {in} നേടുക.",
       mismatchGo: "{to} പോകുക", mismatchStay: "എന്നിട്ടും {to} തുടരുക", close: "അടയ്ക്കുക",
       in: { play: "Google Play-ൽ നിന്ന്", appstore: "App Store-ൽ നിന്ന്" }, to: { play: "Google Play-ലേക്ക്", appstore: "App Store-ലേക്ക്" },
+    },
+    // Punjabi: "Google Play" and "App Store" take their postposition written apart (ਤੋਂ, ’ਤੇ).
+    pa: {
+      play: ["ਹੁਣੇ ਲਓ", "ਜਲਦੀ ਆ ਰਹੀ ਹੈ"], appstore: ["ਡਾਊਨਲੋਡ ਕਰੋ", "ਜਲਦੀ ਆ ਰਹੀ ਹੈ"], web: ["ਹੁਣੇ ਖੋਲ੍ਹੋ", "ਜਲਦੀ ਆ ਰਹੀ ਹੈ"], browser: "ਬ੍ਰਾਊਜ਼ਰ",
+      getApp: "ਐਪ ਲਓ", openWeb: "ਵੈੱਬ ਐਪ ਖੋਲ੍ਹੋ", soon: "ਜਲਦੀ ਆ ਰਹੀ ਹੈ",
+      noteStore: "ਐਪ {in} ਲਓ।", noteApple: "ਕੀ ਤੁਸੀਂ {platform} ਵਰਤਦੇ ਹੋ? App Store ’ਤੇ ਐਪ ਆਉਣ ਤੱਕ ਇਸ ਨੂੰ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਵਰਤੋ।", noteWeb: "ਕੁਝ ਵੀ ਇੰਸਟਾਲ ਕੀਤੇ ਬਿਨਾਂ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਖੋਲ੍ਹੋ।",
+      playLive: "Google Play ’ਤੇ ਉਪਲਬਧ", appStoreLive: "App Store ’ਤੇ ਉਪਲਬਧ", webLive: "ਵੈੱਬ ਐਪ ਖੋਲ੍ਹੋ",
+      mismatchTitle: "ਆਪਣਾ ਸਟੋਰ ਚੁਣੋ",
+      mismatchBody: "ਤੁਸੀਂ {platform} ਵਰਤ ਰਹੇ ਹੋ। ਸਭ ਤੋਂ ਵਧੀਆ ਅਨੁਭਵ ਲਈ, ਐਪ {in} ਲਓ।",
+      mismatchGo: "{to} ਜਾਓ", mismatchStay: "ਫਿਰ ਵੀ {to} ਜਾਓ", close: "ਬੰਦ ਕਰੋ",
+      in: { play: "Google Play ਤੋਂ", appstore: "App Store ਤੋਂ" }, to: { play: "Google Play ’ਤੇ", appstore: "App Store ’ਤੇ" },
     },
     // Kannada: "Google Play" and "App Store" stay in Latin letters, so their case ending is written apart (ನಲ್ಲಿ, ನಿಂದ, ಗೆ).
     kn: {
