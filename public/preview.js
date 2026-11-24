@@ -795,6 +795,25 @@
       bills: (n) => `${n} ${n === 1 ? "kulu" : "kulua"}`,
       titles: { b1: "Majatalo Lagoassa", b2: "Illallinen Ribeirãossa", b3: "Kyyti rannalle", p1: "Jäätelöt rannalla", p2: "Viikon ruokaostokset", p3: "Pysäköinti" },
     },
+    // Gujarati: the app's own "ચૂકવનાર: {name}", so a name stands after a colon, and the agent એ written apart after it;
+    // an amount stands after a colon, never with an ending. તમે for the user.
+    gu: {
+      paid: "ચૂકવનાર: {name}", notIn: "આ ખર્ચમાં નથી",
+      members: (people, bills) => `${people} ${people === 1 ? "વ્યક્તિ" : "લોકો"} · ${bills} ખર્ચ`,
+      toGet: "પાછા મળવાના છે", youOwe: "તમારે આપવાના છે", settled: "હિસાબ પતી ગયો", owesYou: "તમને કોની પાસેથી મળવાના છે", youOweTitle: "તમારે કોને આપવાના છે",
+      eachOne: "દરેકનું બેલેન્સ", getsBack: "પાછા મળવાના છે", owes: "આપવાના છે", even: "હિસાબ પતી ગયો",
+      toSettle: "પતાવવાનો હિસાબ", total: "ગ્રુપનો કુલ ખર્ચ", lodging: "રહેઠાણ", food: "ખોરાક", transport: "વાહનવ્યવહાર",
+      sheetTitle: "ખર્ચ વહેંચો", description: "વર્ણન", amount: "રકમ", whoPaid: "કોણે ચૂકવ્યું",
+      splitAmong: "આ લોકો વચ્ચે સરખા ભાગે", each: "દરેકના {value}", cancel: "રદ કરો", save: "સેવ કરો", close: "બંધ કરો",
+      queue: (n) => `${n} ફેરફાર કતારમાં`,
+      split: "કેવી રીતે વહેંચાયો", yourShare: "તમારો ભાગ", deleteBill: "ખર્ચ ડિલીટ કરો",
+      recordPayment: "ચુકવણી નોંધો", record: "નોંધો", viaMethod: "ટ્રાન્સફર દ્વારા", payment: "ચુકવણી", deletePayment: "ચુકવણી ડિલીટ કરો",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} એ તમને ચૂકવ્યા: ${value}`,
+      paidTotal: "કુલ ચૂકવેલા", shareTotal: "ખર્ચમાં ભાગ", balance: "બેલેન્સ",
+      bills: (n) => `${n} ખર્ચ`,
+      titles: { b1: "લાગોઆ ગેસ્ટહાઉસ", b2: "રિબેરાઓમાં ડિનર", b3: "બીચ સુધીની રાઇડ", p1: "બીચ પર આઇસક્રીમ", p2: "અઠવાડિયાનું કરિયાણું", p3: "પાર્કિંગ" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1235,7 +1254,7 @@
   // The status bar's clock: the device's time, as an iPhone's status bar writes it (no AM or PM), every minute.
   const clock = screen.querySelector('[data-pv="clock"]');
   if (clock) {
-    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", mr: "mr-u-nu-latn", bg: "bg", ca: "ca", da: "da", fi: "fi", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ "pt-PT": "pt-PT", pt: "pt-BR", es: "es", fr: "fr", de: "de", it: "it", pl: "pl", nl: "nl", tr: "tr", id: "id", ja: "ja", ru: "ru", uk: "uk", ko: "ko", ar: "ar-u-nu-latn", hi: "hi", zh: "zh-Hans", he: "he", th: "th", vi: "vi", "zh-Hant": "zh-Hant-TW", sv: "sv", cs: "cs", ro: "ro", bn: "bn-u-nu-latn", ms: "ms", el: "el", hu: "hu", fil: "fil", ur: "ur-u-nu-latn", hr: "hr", sr: "sr-Latn", sk: "sk", nb: "nb", fa: "fa-u-nu-latn-ca-gregory", sw: "sw", ta: "ta", te: "te", mr: "mr-u-nu-latn", bg: "bg", ca: "ca", da: "da", fi: "fi", gu: "gu-u-nu-latn", en: "en-US" }), { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

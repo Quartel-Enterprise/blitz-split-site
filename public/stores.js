@@ -59,7 +59,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", gu: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -524,6 +524,17 @@
       mismatchBody: "Käytät laitetta {platform}. Saat parhaan kokemuksen, kun hankit sovelluksen {in}.",
       mismatchGo: "Siirry {to}", mismatchStay: "Jatka silti {to}", close: "Sulje",
       in: { play: "Google Play -kaupasta", appstore: "App Store -kaupasta" }, to: { play: "Google Play -kauppaan", appstore: "App Store -kauppaan" },
+    },
+    // Gujarati: "Google Play" and "App Store" take their postposition written apart (પર, પરથી).
+    gu: {
+      play: ["હમણાં મેળવો", "જલ્દી આવી રહી છે"], appstore: ["ડાઉનલોડ કરો", "જલ્દી આવી રહી છે"], web: ["હમણાં ખોલો", "જલ્દી આવી રહી છે"], browser: "બ્રાઉઝર",
+      getApp: "ઍપ મેળવો", openWeb: "વેબ ઍપ ખોલો", soon: "જલ્દી આવી રહી છે",
+      noteStore: "ઍપ {in} મેળવો.", noteApple: "તમે {platform} વાપરો છો? App Store પર ઍપ આવે ત્યાં સુધી તેને બ્રાઉઝરમાં વાપરો.", noteWeb: "કંઈ ઇન્સ્ટૉલ કર્યા વગર બ્રાઉઝરમાં ખોલો.",
+      playLive: "Google Play પર ઉપલબ્ધ", appStoreLive: "App Store પર ઉપલબ્ધ", webLive: "વેબ ઍપ ખોલો",
+      mismatchTitle: "તમારો સ્ટોર પસંદ કરો",
+      mismatchBody: "તમે {platform} વાપરો છો. શ્રેષ્ઠ અનુભવ માટે, ઍપ {in} મેળવો.",
+      mismatchGo: "{to} જાઓ", mismatchStay: "તો પણ {to} જાઓ", close: "બંધ કરો",
+      in: { play: "Google Play પરથી", appstore: "App Store પરથી" }, to: { play: "Google Play પર", appstore: "App Store પર" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

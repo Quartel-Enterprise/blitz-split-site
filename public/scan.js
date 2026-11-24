@@ -247,6 +247,12 @@
       lines: [["2 HANAOLUT", "28,00", 1], ["1 KATKARAPUVATI", "96,00", 2]],
       subtotal: ["VÄLISUMMA", "124,00"], service: ["PALVELU 10\u00a0%", "12,40", 3], total: ["YHTEENSÄ", "136,40"],
     },
+    // Gujarati: a harbor bar's receipt, in rupees, as India prints it.
+    gu: {
+      store: "હાર્બર બાર", address: "120, બીચ રોડ", date: "08/11/2026  9:47 PM",
+      lines: [["2 ડ્રાફ્ટ બિયર", "28.00", 1], ["1 ઝીંગા પ્લેટર", "96.00", 2]],
+      subtotal: ["સબટોટલ", "124.00"], service: ["સર્વિસ ચાર્જ 10%", "12.40", 3], total: ["કુલ", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 
