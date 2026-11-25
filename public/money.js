@@ -2,8 +2,9 @@
 // (preview.js) and the split card (split-modes.js) read window.money, and the receipt (scan.js) is printed the same
 // way by hand. The demo keeps every
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar, the
-// taka, the forint, the Pakistani rupee, the Serbian dinar, the Iranian rial) shows
-// it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫, NT$4,860 or ریال 4,860,000 (a
+// taka, the forint, the Pakistani rupee, the Serbian dinar, the Iranian rial, the kyat, the riel) shows
+// it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫, NT$4,860, 102,060 K (about
+// 2,100 kyat to the dollar), 194,400៛ (about 4,000 riels to the dollar) or ریال 4,860,000 (a
 // thousand rials to the cent: at a plausible million rials to the dollar, Persian's trip costs a tenth of the others', so
 // its amounts still fit a 320px phone) and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
@@ -56,6 +57,8 @@
     ml: ["₹", ".", ",", "", 0, 2],
     pa: ["₹", ".", ",", "", 0, 2],
     kn: ["₹", ".", ",", "", 0, 2],
+    my: ["", ".", ",", "\u00a0K", 21],
+    km: ["", ".", ",", "៛", 40],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
@@ -82,10 +85,10 @@
     return isolate((cents > 0 ? "+" : "−") + text);
   }
   // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), and a Hindi, Marathi,
-  // Bengali, Punjabi, Gujarati, Tamil, Telugu, Malayalam, Kannada or Thai one may type its script's (४८, ৪৮, ੪੮, ૪૮, ௪௮, ౪౮,
-  // ൪൮, ೪೮, ๔๘), which \d doesn't match, so they are read as the Latin ones before anything else: each script's zero, and
-  // the nine digits after it.
-  const DIGIT_ZEROS = [0x660, 0x6f0, 0x966, 0x9e6, 0xa66, 0xae6, 0xbe6, 0xc66, 0xd66, 0xce6, 0xe50];
+  // Bengali, Punjabi, Gujarati, Tamil, Telugu, Malayalam, Kannada, Thai, Burmese or Khmer one may type its script's (४८,
+  // ৪৮, ੪੮, ૪૮, ௪௮, ౪౮, ൪൮, ೪೮, ๔๘, ၄၈, ៤៨), which \d doesn't match, so they are read as the Latin ones before anything
+  // else: each script's zero, and the nine digits after it.
+  const DIGIT_ZEROS = [0x660, 0x6f0, 0x966, 0x9e6, 0xa66, 0xae6, 0xbe6, 0xc66, 0xd66, 0xce6, 0xe50, 0x1040, 0x17e0];
   const latinDigits = (text) => text
     .replace(/\p{Nd}/gu, (d) => {
       const code = d.codePointAt(0);

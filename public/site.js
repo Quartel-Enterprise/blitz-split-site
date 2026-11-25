@@ -98,6 +98,8 @@
     ml: { search: "ഭാഷകൾ തിരയുക", clear: "തിരയൽ മായ്ക്കുക", none: "ഒരു ഭാഷയും യോജിക്കുന്നില്ല: “{query}”", system: "സിസ്റ്റം", systemDetail: "ഉപകരണത്തിന്റെ ഭാഷ", back: "തിരികെ", close: "അടയ്ക്കുക" },
     pa: { search: "ਭਾਸ਼ਾਵਾਂ ਖੋਜੋ", clear: "ਖੋਜ ਸਾਫ਼ ਕਰੋ", none: "ਕੋਈ ਭਾਸ਼ਾ ਨਹੀਂ ਮਿਲੀ: “{query}”", system: "ਸਿਸਟਮ", systemDetail: "ਡਿਵਾਈਸ ਦੀ ਭਾਸ਼ਾ", back: "ਪਿੱਛੇ", close: "ਬੰਦ ਕਰੋ" },
     kn: { search: "ಭಾಷೆಗಳನ್ನು ಹುಡುಕಿ", clear: "ಹುಡುಕಾಟವನ್ನು ತೆರವುಗೊಳಿಸಿ", none: "ಯಾವುದೇ ಭಾಷೆ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ: “{query}”", system: "ಸಿಸ್ಟಮ್", systemDetail: "ಸಾಧನದ ಭಾಷೆ", back: "ಹಿಂದೆ", close: "ಮುಚ್ಚಿ" },
+    my: { search: "ဘာသာစကား ရှာရန်", clear: "ရှာဖွေမှု ရှင်းရန်", none: "“{query}” နှင့် ကိုက်ညီသော ဘာသာစကား မရှိပါ", system: "စနစ်", systemDetail: "စက်၏ ဘာသာစကား", back: "နောက်သို့", close: "ပိတ်ရန်" },
+    km: { search: "ស្វែងរកភាសា", clear: "សម្អាតការស្វែងរក", none: "គ្មានភាសាណាត្រូវនឹង “{query}” ទេ", system: "ប្រព័ន្ធ", systemDetail: "ភាសាឧបករណ៍", back: "ថយក្រោយ", close: "បិទ" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
   // Ukrainian by Ukraine's UA ("UK" reads as the United Kingdom) and the two Chinese by their scripts, as Chinese

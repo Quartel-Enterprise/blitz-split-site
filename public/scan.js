@@ -295,6 +295,18 @@
       lines: [["2 ಡ್ರಾಫ್ಟ್ ಬಿಯರ್", "28.00", 1], ["1 ಸೀಗಡಿ ಪ್ಲ್ಯಾಟರ್", "96.00", 2]],
       subtotal: ["ಉಪಮೊತ್ತ", "124.00"], service: ["ಸೇವಾ ಶುಲ್ಕ 10%", "12.40", 3], total: ["ಒಟ್ಟು", "136.40"],
     },
+    // Burmese: a harbor bar's receipt, in kyat as money.js counts Burmese (no decimals in use, so the amounts scaled).
+    my: {
+      store: "ဆိပ်ကမ်းဘား", address: "အမှတ် 120၊ ဇင်ယော်လမ်း", date: "08/11/2026  21:47",
+      lines: [["2 စည်ဘီယာ", "58,800", 1], ["1 ပုစွန်ပွဲ", "201,600", 2]],
+      subtotal: ["ကြားစုစုပေါင်း", "260,400"], service: ["ဝန်ဆောင်ခ 10%", "26,040", 3], total: ["စုစုပေါင်း", "286,440"],
+    },
+    // Khmer: a harbor bar's receipt, in riel as money.js counts Khmer (no decimals in use, so the amounts scaled).
+    km: {
+      store: "បារកំពង់ផែ", address: "ផ្លូវក្អែកសមុទ្រ លេខ 120", date: "08/11/2026  21:47",
+      lines: [["2 ស្រាបៀរស្រស់", "112,000", 1], ["1 ចានបង្គា", "384,000", 2]],
+      subtotal: ["សរុបរង", "496,000"], service: ["សេវា 10%", "49,600", 3], total: ["សរុប", "545,600"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 
