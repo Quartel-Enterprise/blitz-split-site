@@ -501,9 +501,10 @@ a.status .icon { width: 15px; height: 15px; }
 :root[lang="th"] :is(h1, h2, h3) { line-height: 1.35; }
 :root[lang="th"] .hero h1 { line-height: 1.3; }
 :root[lang="th"] .hero h1 .accent { padding-block: 0.16em 0.12em; }
-/* Burmese and Khmer stack their marks above and below as Thai does, a little further: their other headings get Thai's
-   room between their lines too (the title keeps Telugu's, above). */
-:root:is([lang="my"], [lang="km"]) :is(h2, h3) { line-height: 1.35; }
+/* Burmese and Khmer stack their marks above and below as Thai does, a little further: their headings get Thai's room
+   between their lines too, a legal page's or the support page's title as well (the landing's keeps Telugu's, above,
+   whose .hero outweighs this). */
+:root:is([lang="my"], [lang="km"]) :is(h1, h2, h3) { line-height: 1.35; }
 /* Vietnamese's stacked marks (ể, ở) reach above Latin's capitals and its dots below (ạ, ợ) under the baseline: its
    headings get a little more room between their lines, and the title's gradient box the room for both. */
 :root[lang="vi"] :is(h1, h2, h3) { line-height: 1.25; }

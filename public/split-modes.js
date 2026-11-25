@@ -1512,8 +1512,8 @@
         less: "ಒಂದು ಪಾಲು ಕಡಿಮೆ: {name}", more: "ಒಂದು ಪಾಲು ಹೆಚ್ಚು: {name}", had: "ಯಾರು ತೆಗೆದುಕೊಂಡರು: {item}",
       },
     },
-    // Burmese: a message with "|" holds its forms for {n}, "one|few|other", of which Burmese uses one, so all three read
-    // the same, with the counter (ဦး for people, ခု for shares). The leftover is ကျန်ငွေ, as the kyat has no cents in use. သင် for the user.
+    // Burmese: one form for every {n}, so no message holds "|", a count taking its counter (ဦး for people, ခု for
+    // shares). The leftover is ကျန်ငွေ, as the kyat has no cents in use. သင် for the user.
     my: {
       bill: "ပီဇာညစာ", paid: "Pedro ပေးချေခဲ့သည်", notIn: "ဤစရိတ်တွင် မပါ",
       each: "တစ်ဦးလျှင် {a}", among: "လူ {n} ဦးကြား {a} ခွဲဝေထားသည်။", amongOne: "လူ 1 ဦးအတွက် {a}။", out: "{name} မပါဝင်ပါ။",
@@ -1521,8 +1521,8 @@
       checkAll: "အားလုံး အမှတ်ခြစ်ရန်", uncheckAll: "အားလုံး အမှတ်ဖြုတ်ရန်",
       left: "{a} ကျန်သည်", over: "{a} ပိုနေသည်", closed: "ကိုက်ညီသည်: {a}",
       progress: "ယခုအထိ {b} အနက် {a}။", closedMsg: "အစိတ်အပိုင်းများ ပေါင်းလဒ်သည် စုစုပေါင်းနှင့် ကိုက်ညီသည်။",
-      parts: "ဝေစု {n} ခု၊ တစ်ခုလျှင် {a}|ဝေစု {n} ခု၊ တစ်ခုလျှင် {a}|ဝေစု {n} ခု၊ တစ်ခုလျှင် {a}",
-      personParts: "{name} တွင် ဝေစု {n} ခု ရှိသည်။|{name} တွင် ဝေစု {n} ခု ရှိသည်။|{name} တွင် ဝေစု {n} ခု ရှိသည်။",
+      parts: "စုစုပေါင်း {a}၊ ဝေစု {n} ခု",
+      personParts: "{name} တွင် ဝေစု {n} ခု ရှိသည်။",
       nobodyShares: "{a} ကို ခွဲဝေရန် အနည်းဆုံး တစ်ဦးကို ဝေစု ပေးပါ။",
       ofEach: "စရိတ်တိုင်း၏ {p}", ofBill: "စရိတ်၏ {p}", incomeDetail: "တစ်ဦးစီ၏ အစိတ်အပိုင်းသည် ၎င်း၏ ဝင်ငွေအလိုက် ဖြစ်သည်။", perMonth: "/လ",
       service: "ဝန်ဆောင်ခ ({p})", serviceSub: "တစ်ဦးစီ စားသောက်ခဲ့သည့် အချိုးအလိုက်",
@@ -1543,8 +1543,7 @@
         less: "{name} အတွက် ဝေစု တစ်ခု လျှော့ရန်", more: "{name} အတွက် ဝေစု တစ်ခု တိုးရန်", had: "{item} ကို စားသောက်ခဲ့သူ",
       },
     },
-    // Khmer: a message with "|" holds its forms for {n}, "one|few|other", all three the same, Khmer having one form.
-    // No space between words but one around a name, an item or an amount; the riel has no decimals in use, so the
+    // Khmer: one form for every {n}, so no message holds "|". No space between words but one around a name, an item or an amount; the riel has no decimals in use, so the
     // leftover is an amount, not cents. អ្នក for the user.
     km: {
       bill: "យប់ភីហ្សា", paid: "Pedro បានបង់", notIn: "មិននៅក្នុងចំណាយនេះទេ",
@@ -1553,8 +1552,8 @@
       checkAll: "ធីកទាំងអស់", uncheckAll: "ដោះធីកទាំងអស់",
       left: "នៅសល់ {a}", over: "លើស {a}", closed: "គ្រប់ចំនួន៖ {a}",
       progress: "រហូតមកដល់ពេលនេះ {a} នៃ {b}។", closedMsg: "ផ្នែកនានាបូកគ្នាស្មើនឹងសរុប។",
-      parts: "{n} ចំណែក ចំណែកនីមួយៗ {a}|{n} ចំណែក ចំណែកនីមួយៗ {a}|{n} ចំណែក ចំណែកនីមួយៗ {a}",
-      personParts: "{name} មាន {n} ចំណែក។|{name} មាន {n} ចំណែក។|{name} មាន {n} ចំណែក។",
+      parts: "{a} ចែកជា {n} ចំណែក",
+      personParts: "{name} មាន {n} ចំណែក។",
       nobodyShares: "សូមផ្ដល់ចំណែកឱ្យយ៉ាងហោចណាស់ម្នាក់ ដើម្បីចែក {a}។",
       ofEach: "{p} នៃចំណាយនីមួយៗ", ofBill: "{p} នៃចំណាយ", incomeDetail: "ផ្នែករបស់ម្នាក់ៗអាស្រ័យលើប្រាក់ចំណូលរបស់ពួកគេ។", perMonth: "/ខែ",
       service: "សេវា ({p})", serviceSub: "តាមសមាមាត្រនៃអ្វីដែលម្នាក់ៗបានញ៉ាំ",

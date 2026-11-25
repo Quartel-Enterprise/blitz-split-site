@@ -249,8 +249,8 @@ and clauses parted by "၊", and no full stop on a title, a label or a button. K
 tag, as the apps write it: the respectful, gender-free "អ្នក" (and "របស់អ្នក") for the reader, "សូម" before a request,
 the app's words (ក្រុម, ចំណាយ, ចែក, សមតុល្យ, ទូទាត់បំណុល, ការទូទាត់, បង្កាន់ដៃ, មុខទំនិញ), and sentences that end in "។".
 As in Thai, both write no space between words but one between phrases and around a name, a number, a placeholder or a
-Latin word ("Ana က", "4 នាក់"), and the browser breaks their lines by its own dictionary; both count in one form (a `|`
-message holds the same words three times) with their counters (ဦး and ခု, នាក់). Both write the digits 0-9 and the
+Latin word ("Ana က", "4 នាក់"), and the browser breaks their lines by its own dictionary; both count in one form (a split
+card message holds no `|`, as Thai's) with their counters (ဦး and ခု, នាក់). Both write the digits 0-9 and the
 Gregorian calendar: `Intl`'s `my` uses Myanmar digits, so every format the site asks of it says `my-u-nu-latn` (and
 `km-u-nu-latn` for Khmer, whose default is already Latin), and the split card reads Myanmar or Khmer digits typed on
 their keyboards as the Latin ones (`latinDigits` in `money.js`). Burmese is in kyat and Khmer in riels (below). Google
