@@ -75,6 +75,8 @@ const CHROME = {
   ml: { language: "മലയാളം", brand: "Blitz Split", locale: "ml-u-nu-latn", updated: "അവസാനം അപ്‌ഡേറ്റ് ചെയ്തത്: {date}", read: "വായിക്കാൻ {n} മിനിറ്റ്", toc: "ഈ പേജിൽ" },
   pa: { language: "ਪੰਜਾਬੀ", brand: "Blitz Split", locale: "pa-u-nu-latn", updated: "ਆਖਰੀ ਅੱਪਡੇਟ: {date}", read: "ਪੜ੍ਹਨ ਲਈ {n} ਮਿੰਟ", toc: "ਇਸ ਪੰਨੇ ’ਤੇ" },
   kn: { language: "ಕನ್ನಡ", brand: "Blitz Split", locale: "kn", updated: "ಕೊನೆಯದಾಗಿ ಅಪ್‌ಡೇಟ್ ಮಾಡಿದ್ದು: {date}", read: "ಓದಲು {n} ನಿಮಿಷ", toc: "ಈ ಪುಟದಲ್ಲಿ" },
+  my: { language: "မြန်မာ", brand: "Blitz Split", locale: "my-u-nu-latn", updated: "{date} တွင် အပ်ဒိတ်လုပ်ခဲ့သည်", read: "ဖတ်ရန် {n} မိနစ်", toc: "ဤစာမျက်နှာတွင်" },
+  km: { language: "ខ្មែរ", brand: "Blitz Split", locale: "km-u-nu-latn", updated: "ធ្វើបច្ចុប្បន្នភាពនៅ {date}", read: "អាន {n} នាទី", toc: "នៅលើទំព័រនេះ" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.

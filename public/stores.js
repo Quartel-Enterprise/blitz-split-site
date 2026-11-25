@@ -59,7 +59,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", gu: "in/", ml: "in/", pa: "in/", kn: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", gu: "in/", ml: "in/", pa: "in/", kn: "in/", my: "mm/", km: "kh/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -613,6 +613,29 @@
       mismatchBody: "ನೀವು {platform} ಬಳಸುತ್ತಿದ್ದೀರಿ. ಅತ್ಯುತ್ತಮ ಅನುಭವಕ್ಕಾಗಿ, ಆ್ಯಪ್ ಅನ್ನು {in} ಪಡೆಯಿರಿ.",
       mismatchGo: "{to} ಹೋಗಿ", mismatchStay: "ಆದರೂ {to} ಮುಂದುವರಿಯಿರಿ", close: "ಮುಚ್ಚಿ",
       in: { play: "Google Play ನಿಂದ", appstore: "App Store ನಿಂದ" }, to: { play: "Google Play ಗೆ", appstore: "App Store ಗೆ" },
+    },
+    // Burmese: "Google Play" and "App Store" stay in Latin letters, so their particle is written apart (မှ, သို့, တွင်).
+    my: {
+      play: ["ရယူရန်", "မကြာမီ ရောက်လာမည်"], appstore: ["ဒေါင်းလုဒ်လုပ်ရန်", "မကြာမီ ရောက်လာမည်"], web: ["ဖွင့်ရန်", "မကြာမီ ရောက်လာမည်"], browser: "ဘရောက်ဇာ",
+      getApp: "အက်ပ် ရယူရန်", openWeb: "ဝဘ်အက်ပ် ဖွင့်ရန်", soon: "မကြာမီ ရောက်လာမည်",
+      noteStore: "အက်ပ်ကို {in} ရယူပါ။", noteApple: "{platform} သုံးနေပါသလား? အက်ပ် App Store သို့ မရောက်မချင်း ဘရောက်ဇာတွင် သုံးပါ။", noteWeb: "ဘာမှ ထည့်သွင်းရန် မလိုဘဲ ဘရောက်ဇာတွင် ဖွင့်ပါ။",
+      playLive: "Google Play တွင် ရနိုင်သည်", appStoreLive: "App Store တွင် ရနိုင်သည်", webLive: "ဝဘ်အက်ပ် ဖွင့်ရန်",
+      mismatchTitle: "သင့်စတိုးကို ရွေးပါ",
+      mismatchBody: "သင် {platform} သုံးနေပါသည်။ အကောင်းဆုံး အတွေ့အကြုံအတွက် အက်ပ်ကို {in} ရယူပါ။",
+      mismatchGo: "{to} သွားရန်", mismatchStay: "{to} ဆက်သွားရန်", close: "ပိတ်ရန်",
+      in: { play: "Google Play မှ", appstore: "App Store မှ" }, to: { play: "Google Play သို့", appstore: "App Store သို့" },
+    },
+    // Khmer: "Google Play" and "App Store" stay in Latin letters, with a space on each side, after the word that leads
+    // to them (នៅលើ, ពី). អ្នក for the user.
+    km: {
+      play: ["ទាញយកនៅលើ", "នឹងមានឆាប់ៗនៅលើ"], appstore: ["ទាញយកនៅលើ", "នឹងមានឆាប់ៗនៅលើ"], web: ["បើកនៅក្នុង", "នឹងមានឆាប់ៗនៅក្នុង"], browser: "កម្មវិធីរុករក",
+      getApp: "ទាញយកកម្មវិធី", openWeb: "បើកកម្មវិធីវេប", soon: "នឹងមានឆាប់ៗ",
+      noteStore: "ទាញយកកម្មវិធី {in}។", noteApple: "ប្រើ {platform} មែនទេ? សូមប្រើវានៅក្នុងកម្មវិធីរុករក រហូតដល់កម្មវិធីមកដល់ App Store។", noteWeb: "បើកវានៅក្នុងកម្មវិធីរុករក មិនចាំបាច់ដំឡើងអ្វីទេ។",
+      playLive: "មាននៅលើ Google Play", appStoreLive: "មាននៅលើ App Store", webLive: "បើកកម្មវិធីវេប",
+      mismatchTitle: "ជ្រើសរើសហាងរបស់អ្នក",
+      mismatchBody: "អ្នកកំពុងប្រើ {platform}។ ដើម្បីបទពិសោធន៍ល្អបំផុត សូមទាញយកកម្មវិធី {in}។",
+      mismatchGo: "ទៅ {to}", mismatchStay: "បន្តទៅ {to}", close: "បិទ",
+      in: { play: "ពី Google Play", appstore: "ពី App Store" }, to: { play: "Google Play", appstore: "App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

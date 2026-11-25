@@ -953,6 +953,44 @@
       bills: (n) => `${n} ${countForm(n, { one: "ಖರ್ಚು", other: "ಖರ್ಚುಗಳು" })}`,
       titles: { b1: "ಲಾಗೋವಾ ಗೆಸ್ಟ್‌ಹೌಸ್", b2: "ರಿಬೇರಾವ್‌ನಲ್ಲಿ ಊಟ", b3: "ಬೀಚ್‌ಗೆ ಪ್ರಯಾಣ", p1: "ಬೀಚ್‌ನಲ್ಲಿ ಐಸ್‌ಕ್ರೀಮ್", p2: "ವಾರದ ದಿನಸಿ", p3: "ಪಾರ್ಕಿಂಗ್" },
     },
+    // Burmese: a name stands as the subject ("{name} ပေးချေခဲ့သည်", the app's own), with a space around a name or an amount,
+    // and every count takes its one form with its counter (ဦး for people, ခု for bills and changes). သင် for the user.
+    my: {
+      paid: "{name} ပေးချေခဲ့သည်", notIn: "ဤစရိတ်တွင် မပါ",
+      members: (people, bills) => `လူ ${people} ဦး · စရိတ် ${bills} ခု`,
+      toGet: "ပြန်ရရန်", youOwe: "သင် ပေးရန်", settled: "အားလုံး ကြွေးရှင်းပြီး", owesYou: "သင့်ကို ပေးရန် ရှိသူများ", youOweTitle: "သင် ပေးရန်",
+      eachOne: "တစ်ဦးစီ၏ လက်ကျန်", getsBack: "ပြန်ရရန်", owes: "ပေးရန်", even: "ကြွေးရှင်းပြီး",
+      toSettle: "ကြွေးရှင်းရန်", total: "အဖွဲ့ စုစုပေါင်း", lodging: "တည်းခိုခန်း", food: "အစားအသောက်", transport: "သယ်ယူပို့ဆောင်ရေး",
+      sheetTitle: "စရိတ် ခွဲဝေရန်", description: "ဖော်ပြချက်", amount: "ပမာဏ", whoPaid: "ပေးချေသူ",
+      splitAmong: "အောက်ပါသူများကြား အညီအမျှ ခွဲဝေရန်", each: "တစ်ဦးလျှင် {value}", cancel: "မလုပ်တော့ပါ", save: "သိမ်းရန်", close: "ပိတ်ရန်",
+      queue: (n) => `တန်းစီထားသော ပြောင်းလဲမှု ${n} ခု`,
+      split: "ခွဲဝေပုံ", yourShare: "သင့်ဝေစု", deleteBill: "စရိတ် ဖျက်ရန်",
+      recordPayment: "ငွေပေးချေမှု မှတ်တမ်းတင်ရန်", record: "မှတ်တမ်းတင်ရန်", viaMethod: "ငွေလွှဲဖြင့်", payment: "ငွေပေးချေမှု", deletePayment: "ငွေပေးချေမှု ဖျက်ရန်",
+      payLine: (from, to) => `${name(from)} က ${name(to)} ကို ပေးချေခဲ့သည်`,
+      paidYou: (who, value) => `${who} က သင့်ကို ${value} ပေးချေခဲ့သည်`,
+      paidTotal: "စုစုပေါင်း ပေးချေခဲ့သည်", shareTotal: "စရိတ်များတွင် ဝေစု", balance: "လက်ကျန်",
+      bills: (n) => `စရိတ် ${n} ခု`,
+      titles: { b1: "Lagoa တည်းခိုခန်း", b2: "Ribeirão တွင် ညစာ", b3: "ကမ်းခြေသို့ ကားခ", p1: "ကမ်းခြေတွင် ရေခဲမုန့်", p2: "အပတ်စဉ် ကုန်စုံ", p3: "ကားရပ်ခ" },
+    },
+    // Khmer: a name stands as the subject ("{name} បានបង់", the app's own) and a count is written with its counter
+    // (នាក់ for people) in its one form; no space between words but one around a name or an amount. អ្នក for the user.
+    km: {
+      paid: "{name} បានបង់", notIn: "មិននៅក្នុងចំណាយនេះទេ",
+      members: (people, bills) => `${people} នាក់ · ចំណាយ ${bills}`,
+      toGet: "ត្រូវទទួលវិញ", youOwe: "អ្នកជំពាក់", settled: "បានទូទាត់រួចទាំងអស់", owesYou: "អ្នកណាជំពាក់អ្នក", youOweTitle: "អ្នកជំពាក់",
+      eachOne: "សមតុល្យរបស់ម្នាក់ៗ", getsBack: "ត្រូវទទួលវិញ", owes: "ជំពាក់", even: "បានទូទាត់រួច",
+      toSettle: "ត្រូវទូទាត់បំណុល", total: "សរុបរបស់ក្រុម", lodging: "កន្លែងស្នាក់នៅ", food: "អាហារ", transport: "ការធ្វើដំណើរ",
+      sheetTitle: "ចែកចំណាយ", description: "ការពិពណ៌នា", amount: "ចំនួនទឹកប្រាក់", whoPaid: "អ្នកណាបង់",
+      splitAmong: "ចែកស្មើៗគ្នាក្នុងចំណោម", each: "ម្នាក់ {value}", cancel: "បោះបង់", save: "រក្សាទុក", close: "បិទ",
+      queue: (n) => `ការផ្លាស់ប្ដូរ ${n} ក្នុងជួរ`,
+      split: "របៀបដែលបានចែក", yourShare: "ចំណែករបស់អ្នក", deleteBill: "លុបចំណាយ",
+      recordPayment: "កត់ត្រាការទូទាត់", record: "កត់ត្រា", viaMethod: "តាមការផ្ទេរប្រាក់", payment: "ការទូទាត់", deletePayment: "លុបការទូទាត់",
+      payLine: (from, to) => `${name(from)} បានបង់ឱ្យ ${name(to)}`,
+      paidYou: (who, value) => `${who} បានបង់ឱ្យអ្នក ${value}`,
+      paidTotal: "បានបង់សរុប", shareTotal: "ចំណែកក្នុងចំណាយ", balance: "សមតុល្យ",
+      bills: (n) => `ចំណាយ ${n}`,
+      titles: { b1: "ផ្ទះសំណាក់ Lagoa", b2: "អាហារពេលល្ងាចនៅ Ribeirão", b3: "ជិះឡានទៅឆ្នេរ", p1: "ការ៉េមនៅឆ្នេរ", p2: "គ្រឿងទេសប្រចាំសប្ដាហ៍", p3: "ចំណតរថយន្ត" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
@@ -1395,7 +1433,7 @@
   if (clock) {
     // Why: only the languages whose clock differs from the page's own tag (Latin digits, Taiwan's Traditional Chinese,
     // the US's English); any other uses the page's tag, which boot.js sets for every language.
-    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", gu: "gu-u-nu-latn", ml: "ml-u-nu-latn", pa: "pa-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", gu: "gu-u-nu-latn", ml: "ml-u-nu-latn", pa: "pa-u-nu-latn", my: "my-u-nu-latn", km: "km-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();
