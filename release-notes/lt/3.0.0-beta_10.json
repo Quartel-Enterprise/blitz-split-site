@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Išlaidos nuoroda dabar atsidaro programėlėje, o ne naršyklėje, su jos nuotraukomis ir komentarais.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Išlaidos nuoroda, kuri nebebendrinama arba kurią gali atidaryti tik išlaidoje dalyvaujantys žmonės, dabar tai ir praneša, o ne rodo klaidą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilio nuoroda dabar atsidaro, net jei neprisijungei.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skiltyje Profilis › Privatumas ir informacija yra naujas jungiklis „Bendrinti naudojimo duomenis“: išjunk jį, kad nebesiųstum duomenų apie tai, kaip naudojiesi programėle.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nuorodos, kuriomis bendrini savo profilį, komentarą ar programėlės atsisiuntimą, dabar rodo peržiūrą tavo kalba.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Zneski in oznake se na majhnih zaslonih, zložljivih napravah in pri veliki pisavi ne prelamljajo več v več vrstic in niso več odrezani.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Besedilo, gumbi in obrobe, ki so bili težko berljivi, imajo zdaj večji kontrast, v svetli in temni temi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ko tapneš polje v brskalniku na iPhonu, se stran ne poveča več.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

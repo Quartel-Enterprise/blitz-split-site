@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Skiltyje Versijų naujienos paliesk versiją, kad atidarytum jos leidimą „GitHub“, arba mygtuką „GitHub“, kad pamatytum visus leidimus.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupės puslapyje, pakvietime ir išlaidos informacijoje dabar greta rodomos iki penkių žmonių nuotraukos, o ne dvi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gulsčiai pasuktame iPad ar atverstame iPhone Duo grupė, užimanti visą ekraną (pavyzdžiui, atidaryta iš Pradžios), dabar šalia išlaidų rodo savo nuotrauką, narius ir tavo balansą.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Palietus Pradžios kortelę „Bendras balansas“ dabar atsidaro skirtukas Balansai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefone atidarant grupę ar išlaidą iš Pradžios, grupės balansas arba išlaidos piktograma, pavadinimas, suma ir tavo dalis dabar nuskrieja į jos ekraną ir sugrįžta atgal, kai grįžti.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Skiltyje Profilis › Kalba ispanų kalba dabar pateikiama du kartus – „Español (Latinoamérica)“ ir „Español (España)“, kad pasirinktum tą, kuria kalbi, kad ir kur būtų tavo įrenginys.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefoną ar planšetę pasukus gulsčiai, tai, kas yra šalia sąrašo skiltyse Kontaktai ir Balansai, dabar prasideda ekrano viršuje, o tavo profilio nuotrauka – virš sąrašo.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Mygtuko „Pridėti žmogų“ kraštą grupės skiltyje Nariai lengviau matyti.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Kortelės spalva skiltyje „Mokėjimo būdai“ dabar renkama iš tų pačių spalvų kaip kategorijų: dvylika spalvų, tavo sukurtos spalvos ir „Nauja spalva“, kad sukurtum kitą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lange „Padalyti išlaidą“ laukas „Kuo mokėta“ dabar yra mažas mygtukas po padalijimu, o jei dar neturi mokėjimo būdo, „Pridėti mokėjimo būdą“ jį sukuria čia pat ir pasirenka šiai išlaidai. Debeto kortelės dabar taip pat turi savo piktogramą.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mokėjimo būdo pridėjimas ar redagavimas Profilyje dabar atsidaro virš jo, o ne atskirame ekrane.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dinaminių spalvų aprašyme dabar paaiškinta, kad programėlė naudoja Android sistemos spalvas, kurios paimamos iš tavo ekrano fono arba iš paletės, kurią pasirinkai Android nustatymuose.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kai įjungta „Sumažinti judėjimą“, grupės Statistika dabar parodo diagramas iš karto, be augančių stulpelių ir besisukančio žiedo.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Brazilijos portugalų kalba Veikla ir išlaidos istorija rodė „Você criaste“ ir panašiai vietoj „Você criou“.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ištaisyta: Statistikos datos parinkiklyje datos lūždavo po vieną ar dvi raides eilutėje; dabar pabaigos data perkeliama po pradžios data, kai abi netelpa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ištaisyta: Ispanijos ispanų ir Portugalijos portugalų kalbomis kai kurie pranešimai ir sakiniai buvo rodomi angliškai arba kaip kodas, pvz., „push.bill_deleted“.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Ištaisyta: Portugalijos portugalų kalba Pradžios žmonių eilutėje po vardu buvo rašoma „te deve“ vietoj „deve-te“.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

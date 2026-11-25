@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Grupas cilnē „Izdevumi” tagad ir „Skatīt visus”, kas atver „Visi izdevumi” jau filtrētu pēc šīs grupas, lai tu varētu meklēt, kārtot un filtrēt tās rēķinus. Notīri filtru, lai redzētu visas grupas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ekrānā „Jauna grupa” lauks „Pievienot pēc vārda” tagad rakstīšanas laikā iesaka cilvēkus no taviem kontaktiem ar viņu fotoattēlu: pieskaries kādam, lai izveidotu grupu tieši ar šo personu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ritinot grupu, tās sakļautā augšējā josla rāda tikai grupas fotoattēlu un nosaukumu, bez blakus nogrieztajiem dalībniekiem un kopsummas.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tagad vari lejupielādēt sava atkopšanas koda 12 vārdus kā teksta failu.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "„Saglabā savu atkopšanas kodu” tagad norāda, ka tas atgūst tavus datus un ka pēc 30 dienām bez lietošanas dati tiek izdzēsti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ekrānā „Sadalīt rēķinu” tagad augšā blakus „Saglabāt” ir arī „Skenēt čeku”, tāpēc tastatūra to vairs neaizsedz, un „Pievienot maksājuma veidu” ir mazāk uzkrītošs.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupas statistikā „Pa personām” tagad ir gredzenveida diagramma ar katra daļu, tajā pašā krāsā, kas katrai personai ir sadaļā „Noklusējuma sadalījums”, ar vārdu un summu sarakstu zem tās kā leģendu. „Patērēts” un „Samaksāts” pārslēdz, ko tā rāda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ekrāna „Jauna grupa” sadaļā „Kas piedalās” tagad redzams tavs profila fotoattēls, nevis iniciālis.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Sinhronizē…” vairs neparādās cilnēs „Sākums” un „Grupas”, kad atgriezies lietotnē: sinhronizācija notiek klusi, kad tavas grupas jau ir ekrānā.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Planšetdatoros un guļus tālrunī pogas „Sadalīt rēķinu” ēna sānjoslas augšā vairs netiek nogriezta malās.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

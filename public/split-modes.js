@@ -1269,6 +1269,311 @@
         less: "Yksi osuus vähemmän: {name}", more: "Yksi osuus lisää: {name}", had: "Kuka otti: {item}",
       },
     },
+    // Latvian: a message with "|" holds three forms for {n}, "one|other|other" (fill reads three forms as one, few and
+    // the rest, and Latvian has no few): 1, 21, 31… take the singular, the rest (0, 2–20…) the plural. "tu" for the
+    // user and the app's words (vienādi, daļas, pēc ienākumiem, pozīcijas). A name, an item or an amount stands after a
+    // colon or as the subject, never declined.
+    lv: {
+      bill: "Picu vakars", paid: "Pedro samaksāja", notIn: "Šoreiz nepiedalās",
+      each: "{a} katram", among: "{a} starp {n} cilvēku.|{a} starp {n} cilvēkiem.|{a} starp {n} cilvēkiem.", amongOne: "{a} vienam cilvēkam.", out: "{name} nepiedalās.",
+      nobody: "Vēl neviens nepiedalās", nobodyEqual: "Atzīmē vismaz vienu cilvēku, lai sadalītu {a}.",
+      checkAll: "Atzīmēt visus", uncheckAll: "Noņemt visas atzīmes",
+      left: "Atlikums: {a}", over: "Pārsniegums: {a}", closed: "Sakrīt: {a}",
+      progress: "Pagaidām {a} no {b}.", closedMsg: "Daļas kopā veido kopsummu.",
+      parts: "{n} daļa no {a}|{n} daļas no {a}|{n} daļas no {a}", personParts: "{name}: {n} daļa.|{name}: {n} daļas.|{name}: {n} daļas.", nobodyShares: "Piešķir daļu vismaz vienam cilvēkam, lai sadalītu {a}.",
+      ofEach: "{p} no katra rēķina", ofBill: "{p} no rēķina", incomeDetail: "Katra daļa atbilst ienākumiem.", perMonth: "/mēn.",
+      service: "Apkalpošana ({p})", serviceSub: "Proporcionāli tam, ko katrs patērēja",
+      loose: "Atzīmē, kas ko patērēja", looseDetail: "Pieskaries sejām pie katras pozīcijas, lai atzīmētu, kas to patērēja.",
+      itemsClosed: "Pozīcijas: {a}, apkalpošana: {b}.", nobodyItem: "Neviens nav atzīmēts", eachItem: "{a} katram",
+      items: { pizza: "Liela pica", beer: "Alus", salad: "Salāti", draft: "Lējamais alus", shrimp: "Garneļu plate" },
+      receiptBill: "Ostas bārs",
+      hint: {
+        equal: "Ja summa nedalās vienādi, atlikušie centi paliek tam, kas maksāja.",
+        amounts: "Kam paliek {zero}, tas rēķinā nepiedalās.",
+        percent: "Tikai veseli skaitļi. Atlikušie centi paliek tam, kas maksāja.",
+        shares: "Izmanto daļas, ja kāds patērē vairāk, piemēram, atved līdzi pavadoni.",
+        income: "Ienākumi paliek ierīcē. Grupa redz tikai procentus.",
+        items: "Katru pozīciju sadala starp tiem, kas to patērēja, un apkalpošanu — pēc tā, ko katrs patērēja.",
+      },
+      label: {
+        amount: "Summa: {name}", percent: "Procenti: {name}", income: "Mēneša ienākumi: {name}",
+        less: "Par vienu daļu mazāk: {name}", more: "Par vienu daļu vairāk: {name}", had: "Kas patērēja: {item}",
+      },
+    },
+    // Estonian: like Finnish, no message holds a "|" (one person has its own message, a person's shares show only above
+    // one, and a number above one takes the same form whatever it is); "sina" for the user and the app's words
+    // (võrdselt, osad, sissetuleku järgi, tooted). A name, an item or an amount stands after a colon, after a noun that
+    // carries the case or as the subject, never with a case ending.
+    et: {
+      bill: "Pitsaõhtu", paid: "Pedro maksis", notIn: "Pole osaline",
+      each: "{a} igaühele", among: "{a} {n} inimese vahel.", amongOne: "{a} 1 inimesele.", out: "{name} pole osaline.",
+      nobody: "Keegi pole veel osaline", nobodyEqual: "Summa {a} jagamiseks märgi vähemalt üks inimene.",
+      checkAll: "Märgi kõik", uncheckAll: "Eemalda kõik märgid",
+      left: "{a} jäänud", over: "{a} üle", closed: "Klapib: {a}",
+      progress: "Seni {a}/{b}.", closedMsg: "Osad annavad kokku kogusumma.",
+      parts: "{a} jagatud {n} osaks", personParts: "Isikul {name} on {n} osa.", nobodyShares: "Summa {a} jagamiseks anna vähemalt ühele inimesele osa.",
+      ofEach: "{p} igast kulust", ofBill: "{p} kulust", incomeDetail: "Igaühe osa järgib tema sissetulekut.", perMonth: "/kuus",
+      service: "Teenustasu ({p})", serviceSub: "Proportsionaalselt sellega, mida igaüks tarbis",
+      loose: "Märgi, kes mida tarbis", looseDetail: "Puuduta iga toote juures nägusid ja märgi, kes seda tarbis.",
+      itemsClosed: "{a} tooteid ja {b} teenustasu.", nobodyItem: "Keegi pole märgitud", eachItem: "{a} igaühele",
+      items: { pizza: "Suur pitsa", beer: "Õlu", salad: "Salat", draft: "Vaadiõlu", shrimp: "Krevetivaagen" },
+      receiptBill: "Sadamabaar",
+      hint: {
+        equal: "Kui summa ei jagu võrdselt, lähevad üle jäänud sendid maksjale.",
+        amounts: "Kes jääb summale {zero}, pole kulus osaline.",
+        percent: "Ainult täisarvud. Üle jäänud sendid lähevad maksjale.",
+        shares: "Kasuta osi, kui kellelgi on rohkem, näiteks kui keegi tõi kaaslase kaasa.",
+        income: "Sissetulekud jäävad seadmesse. Grupp näeb ainult protsente.",
+        items: "Iga toode jagatakse nende vahel, kes seda tarbisid, ja teenustasu selle järgi, mida igaüks tarbis.",
+      },
+      label: {
+        amount: "Summa: {name}", percent: "Protsent: {name}", income: "Kuusissetulek: {name}",
+        less: "Üks osa vähem: {name}", more: "Üks osa rohkem: {name}", had: "Kes tarbis: {item}",
+      },
+    },
+    // Lithuanian: a message with a count holds three forms, one|few|other (1 and 21, 2–9, 0 and 10–20), as
+    // Intl.PluralRules tells them; "tu" for the user and the app's words (po lygiai, dalys, pagal pajamas, prekės).
+    // A name, an item or an amount stands after a colon or as the subject, never with a case ending.
+    lt: {
+      bill: "Picos vakaras", paid: "Pedro sumokėjo", notIn: "Nedalyvauja",
+      each: "po {a}", among: "{a} padalyta {n} žmogui.|{a} padalyta {n} žmonėms.|{a} padalyta {n} žmonių.", amongOne: "{a} vienam žmogui.", out: "{name} nedalyvauja.",
+      nobody: "Dar niekas nedalyvauja", nobodyEqual: "Pažymėk bent vieną žmogų, kad padalytum {a}.",
+      checkAll: "Pažymėti visus", uncheckAll: "Atžymėti visus",
+      left: "Liko {a}", over: "{a} per daug", closed: "Sutampa: {a}",
+      progress: "Kol kas {a} iš {b}.", closedMsg: "Dalys sudaro visą sumą.",
+      parts: "{a} padalyta į {n} dalį|{a} padalyta į {n} dalis|{a} padalyta į {n} dalių", personParts: "{name}: {n} dalis.|{name}: {n} dalys.|{name}: {n} dalių.", nobodyShares: "Duok bent vienam žmogui dalį, kad padalytum {a}.",
+      ofEach: "{p} kiekvienos išlaidos", ofBill: "{p} išlaidos", incomeDetail: "Kiekvieno dalis atitinka pajamas.", perMonth: "/mėn.",
+      service: "Aptarnavimas ({p})", serviceSub: "Proporcingai tam, kas ką užsisakė",
+      loose: "Pažymėk, kas ką užsisakė", looseDetail: "Bakstelėk veidus prie kiekvienos prekės, kad pažymėtum, kas ją užsisakė.",
+      itemsClosed: "Prekės: {a}, aptarnavimas: {b}.", nobodyItem: "Niekas nepažymėtas", eachItem: "po {a}",
+      items: { pizza: "Didelė pica", beer: "Alus", salad: "Salotos", draft: "Pilstomas alus", shrimp: "Krevečių lėkštė" },
+      receiptBill: "Uosto baras",
+      hint: {
+        equal: "Kai suma nepasidalija lygiai, likę centai atitenka mokėtojui.",
+        amounts: "Kam lieka {zero}, tas išlaidoje nedalyvauja.",
+        percent: "Tik sveikieji skaičiai. Likę centai atitenka mokėtojui.",
+        shares: "Naudok dalis, kai kam nors tenka daugiau, pavyzdžiui, kas nors atsivedė svečią.",
+        income: "Pajamos lieka įrenginyje. Grupė mato tik procentus.",
+        items: "Kiekviena prekė dalijama tarp tų, kas ją užsisakė, o aptarnavimas – pagal tai, kas ką užsisakė.",
+      },
+      label: {
+        amount: "Suma: {name}", percent: "Procentai: {name}", income: "Mėnesio pajamos: {name}",
+        less: "Viena dalimi mažiau: {name}", more: "Viena dalimi daugiau: {name}", had: "Kas užsisakė: {item}",
+      },
+    },
+    // Slovenian: a message with "|" holds its four forms for {n}, "one|two|few|other" (1 delež, 2 deleža, 3 deleži,
+    // 5 deležev), and fill picks one. A name is never declined, so where Slovenian would need its case it stands after
+    // a colon, and no verb guesses anyone's gender; "ti" for the user.
+    sl: {
+      bill: "Večer pice", paid: "Plačnik: Pedro", notIn: "Ni v tem strošku",
+      each: "{a} na osebo", among: "{a} za {n} osebo.|{a} za {n} osebi.|{a} za {n} osebe.|{a} za {n} oseb.", amongOne: "{a} za 1 osebo.", out: "Ni v strošku: {name}.",
+      nobody: "V strošku še ni nikogar", nobodyEqual: "Označi vsaj eno osebo, da razdeliš {a}.",
+      checkAll: "Označi vse", uncheckAll: "Odznači vse",
+      left: "Manjka še {a}", over: "{a} preveč", closed: "Se ujema: {a}",
+      progress: "Zaenkrat {a} od {b}.", closedMsg: "Deli se seštejejo v skupni znesek.",
+      parts: "{a} na {n} delež|{a} na {n} deleža|{a} na {n} deleže|{a} na {n} deležev",
+      personParts: "{name}: {n} delež.|{name}: {n} deleža.|{name}: {n} deleži.|{name}: {n} deležev.",
+      nobodyShares: "Daj vsaj eni osebi delež, da razdeliš {a}.",
+      ofEach: "{p} vsakega stroška", ofBill: "{p} stroška", incomeDetail: "Del vsakega sledi njegovemu dohodku.", perMonth: "/mes.",
+      service: "Postrežba ({p})", serviceSub: "Glede na to, kaj je kdo imel",
+      loose: "Označi, kdo je imel kaj", looseDetail: "Tapni obraze pri vsaki postavki in označi, kdo jo je imel.",
+      itemsClosed: "{a} za postavke in {b} za postrežbo.", nobodyItem: "Nihče ni označen", eachItem: "{a} na osebo",
+      items: { pizza: "Velika pica", beer: "Pivo", salad: "Solata", draft: "Točeno pivo", shrimp: "Krožnik kozic" },
+      receiptBill: "Pristaniški bar",
+      hint: {
+        equal: "Ko se ne razdeli natančno, preostali centi pripadejo tistemu, ki je plačal.",
+        amounts: "Kdor ostane pri {zero}, ni v strošku.",
+        percent: "Samo cela števila. Preostali centi pripadejo tistemu, ki je plačal.",
+        shares: "Deleže uporabi, ko ima kdo več, na primer če je kdo pripeljal spremljevalca.",
+        income: "Dohodki ostanejo v napravi. Skupina vidi samo odstotke.",
+        items: "Vsaka postavka se razdeli med tiste, ki so jo imeli, postrežba pa glede na to, kaj je kdo imel.",
+      },
+      label: {
+        amount: "Znesek: {name}", percent: "Odstotek: {name}", income: "Mesečni dohodek: {name}",
+        less: "En delež manj: {name}", more: "En delež več: {name}", had: "Kdo je imel: {item}",
+      },
+    },
+    // Gujarati: a noun after a number stays singular (2 શેર), so no message holds a "|" (one person has its own message).
+    // A name, an item or an amount never takes a case ending: it stands after a colon. તમે for the user.
+    gu: {
+      bill: "પિઝા નાઇટ", paid: "ચૂકવનાર: Pedro", notIn: "આ ખર્ચમાં નથી",
+      each: "દરેકના {a}", among: "{n} લોકોમાં વહેંચાયા: {a}.", amongOne: "ફક્ત 1 વ્યક્તિ પર: {a}.", out: "સામેલ નથી: {name}.",
+      nobody: "હજી કોઈ નહીં", nobodyEqual: "આ રકમ વહેંચવા માટે ઓછામાં ઓછી એક વ્યક્તિ પસંદ કરો: {a}.",
+      checkAll: "બધા પસંદ કરો", uncheckAll: "બધાની પસંદગી હટાવો",
+      left: "બાકી: {a}", over: "વધારે: {a}", closed: "મેળ ખાય છે: {a}",
+      progress: "અત્યાર સુધી: {a} / {b}.", closedMsg: "બધા ભાગ મળીને કુલ રકમ જેટલા થાય છે.",
+      parts: "{a}: {n} શેર", personParts: "{name}: {n} શેર.", nobodyShares: "આ રકમ વહેંચવા માટે ઓછામાં ઓછી એક વ્યક્તિને શેર આપો: {a}.",
+      ofEach: "દરેક ખર્ચના {p}", ofBill: "ખર્ચના {p}", incomeDetail: "દરેકનો ભાગ તેમની આવક મુજબ નક્કી થાય છે.", perMonth: "/મહિને",
+      service: "સર્વિસ ચાર્જ ({p})", serviceSub: "દરેકે જે લીધું તેના પ્રમાણમાં",
+      loose: "દરેક આઇટમ કોણે લીધી તે માર્ક કરો", looseDetail: "કોણે લીધું તે માર્ક કરવા, દરેક આઇટમ પરના ચહેરાઓ પર ટૅપ કરો.",
+      itemsClosed: "આઇટમ્સ: {a}, સર્વિસ ચાર્જ: {b}.", nobodyItem: "કોઈ પસંદ નથી", eachItem: "દરેકના {a}",
+      items: { pizza: "લાર્જ પિઝા", beer: "બિયર", salad: "સલાડ", draft: "ડ્રાફ્ટ બિયર", shrimp: "ઝીંગા પ્લેટર" },
+      receiptBill: "હાર્બર બાર",
+      hint: {
+        equal: "રકમ બરાબર ન વહેંચાય ત્યારે, વધેલા પૈસા ચૂકવનારને મળે છે.",
+        amounts: "જેની રકમ {zero} રહે છે, તે આ ખર્ચમાં સામેલ નથી.",
+        percent: "ફક્ત પૂર્ણ સંખ્યાઓ. વધેલા પૈસા ચૂકવનારને મળે છે.",
+        shares: "કોઈનો ભાગ વધારે હોય ત્યારે શેર વાપરો, જેમ કે જે કોઈ મહેમાનને સાથે લાવ્યા હોય.",
+        income: "આવક ડિવાઇસ પર જ રહે છે. ગ્રુપને ફક્ત ટકાવારી દેખાય છે.",
+        items: "દરેક આઇટમ તે લેનારાઓમાં વહેંચાય છે, અને સર્વિસ ચાર્જ દરેકે જે લીધું તે મુજબ.",
+      },
+      label: {
+        amount: "રકમ: {name}", percent: "ટકાવારી: {name}", income: "માસિક આવક: {name}",
+        less: "એક શેર ઓછો: {name}", more: "એક શેર વધારે: {name}", had: "કોણે લીધું: {item}",
+      },
+    },
+    // Malayalam: a message with "|" holds its forms for {n}, "one|few|other", of which Malayalam uses one and other (1 ഓഹരി,
+    // 2 ഓഹരികൾ). A name, an item or an amount never takes a case ending, so it stands after a colon; നിങ്ങൾ for the user.
+    ml: {
+      bill: "പിസ്സ നൈറ്റ്", paid: "Pedro പണം നൽകി", notIn: "ഇതിൽ ഉൾപ്പെടുന്നില്ല",
+      each: "ഓരോരുത്തർക്കും {a}", among: "{n} പേർക്കിടയിൽ വിഭജിച്ചു: {a}.", amongOne: "1 ആൾക്ക് മാത്രം: {a}.", out: "ഉൾപ്പെടുന്നില്ല: {name}.",
+      nobody: "ഇതുവരെ ആരുമില്ല", nobodyEqual: "ഈ തുക വിഭജിക്കാൻ കുറഞ്ഞത് ഒരാളെയെങ്കിലും തിരഞ്ഞെടുക്കുക: {a}.",
+      checkAll: "എല്ലാവരെയും തിരഞ്ഞെടുക്കുക", uncheckAll: "എല്ലാ തിരഞ്ഞെടുപ്പും മാറ്റുക",
+      left: "ബാക്കി: {a}", over: "അധികം: {a}", closed: "ശരിയായി: {a}",
+      progress: "ഇതുവരെ: {a} / {b}.", closedMsg: "ഭാഗങ്ങൾ എല്ലാം ചേർന്നാൽ ആകെ തുകയാകും.",
+      parts: "{a}: {n} ഓഹരി|{a}: {n} ഓഹരികൾ|{a}: {n} ഓഹരികൾ", personParts: "{name}: {n} ഓഹരി.|{name}: {n} ഓഹരികൾ.|{name}: {n} ഓഹരികൾ.",
+      nobodyShares: "ഈ തുക വിഭജിക്കാൻ കുറഞ്ഞത് ഒരാൾക്കെങ്കിലും ഒരു ഓഹരി നൽകുക: {a}.",
+      ofEach: "ഓരോ ചെലവിന്റെയും {p}", ofBill: "ചെലവിന്റെ {p}", incomeDetail: "ഓരോരുത്തരുടെയും ഭാഗം അവരുടെ വരുമാനം അനുസരിച്ചാണ്.", perMonth: "/മാസം",
+      service: "സർവീസ് ചാർജ് ({p})", serviceSub: "ഓരോരുത്തരും എടുത്തതിന് ആനുപാതികമായി",
+      loose: "ഓരോ ഇനവും ആരൊക്കെ എടുത്തെന്ന് അടയാളപ്പെടുത്തുക", looseDetail: "ആരാണ് എടുത്തതെന്ന് അടയാളപ്പെടുത്താൻ, ഓരോ ഇനത്തിലെയും മുഖങ്ങളിൽ ടാപ്പ് ചെയ്യുക.",
+      itemsClosed: "ഇനങ്ങൾ: {a}, സർവീസ് ചാർജ്: {b}.", nobodyItem: "ആരെയും തിരഞ്ഞെടുത്തിട്ടില്ല", eachItem: "ഓരോരുത്തർക്കും {a}",
+      items: { pizza: "വലിയ പിസ്സ", beer: "ബിയർ", salad: "സാലഡ്", draft: "ഡ്രാഫ്റ്റ് ബിയർ", shrimp: "ചെമ്മീൻ പ്ലാറ്റർ" },
+      receiptBill: "ഹാർബർ ബാർ",
+      hint: {
+        equal: "തുല്യമായി വിഭജിക്കാൻ കഴിയാത്തപ്പോൾ, ബാക്കി വരുന്ന പൈസ പണം നൽകിയ ആൾക്ക് ലഭിക്കും.",
+        amounts: "തുക {zero} ആയി തുടരുന്നവർ ഈ ചെലവിൽ ഉൾപ്പെടുന്നില്ല.",
+        percent: "പൂർണ്ണ സംഖ്യകൾ മാത്രം. ബാക്കി വരുന്ന പൈസ പണം നൽകിയ ആൾക്ക് ലഭിക്കും.",
+        shares: "ആർക്കെങ്കിലും കൂടുതൽ ഉള്ളപ്പോൾ ഓഹരികൾ ഉപയോഗിക്കുക, ഉദാഹരണത്തിന് ഒപ്പം ഒരാളെ കൂട്ടിക്കൊണ്ടുവന്നവർക്ക്.",
+        income: "വരുമാനം ഉപകരണത്തിൽ മാത്രം നിലനിൽക്കും. ഗ്രൂപ്പ് ശതമാനങ്ങൾ മാത്രമേ കാണൂ.",
+        items: "ഓരോ ഇനവും അത് എടുത്തവർക്കിടയിൽ വിഭജിക്കും, സർവീസ് ചാർജ് ഓരോരുത്തരും എടുത്തതനുസരിച്ചും.",
+      },
+      label: {
+        amount: "തുക: {name}", percent: "ശതമാനം: {name}", income: "പ്രതിമാസ വരുമാനം: {name}",
+        less: "ഒരു ഓഹരി കുറയ്ക്കുക: {name}", more: "ഒരു ഓഹരി കൂട്ടുക: {name}", had: "ആരൊക്കെ എടുത്തു: {item}",
+      },
+    },
+    // Punjabi: a noun after a number takes one and other forms, as Intl.PluralRules tells them (1 ਹਿੱਸਾ, 2 ਹਿੱਸੇ). A
+    // name, an item or an amount never takes a case ending: it stands after a colon. ਤੁਸੀਂ for the user.
+    pa: {
+      bill: "ਪੀਜ਼ਾ ਨਾਈਟ", paid: "ਭੁਗਤਾਨ ਕੀਤਾ: Pedro", notIn: "ਇਸ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ",
+      each: "ਹਰ ਇੱਕ ਦੇ {a}", among: "{n} ਲੋਕਾਂ ਵਿੱਚ ਵੰਡਿਆ: {a}।", amongOne: "ਸਿਰਫ਼ 1 ਵਿਅਕਤੀ ’ਤੇ: {a}।", out: "ਸ਼ਾਮਲ ਨਹੀਂ: {name}।",
+      nobody: "ਹਾਲੇ ਕੋਈ ਸ਼ਾਮਲ ਨਹੀਂ", nobodyEqual: "ਇਹ ਰਕਮ ਵੰਡਣ ਲਈ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਵਿਅਕਤੀ ਚੁਣੋ: {a}।",
+      checkAll: "ਸਾਰੇ ਚੁਣੋ", uncheckAll: "ਸਾਰਿਆਂ ਦੀ ਚੋਣ ਹਟਾਓ",
+      left: "ਬਾਕੀ: {a}", over: "ਵੱਧ: {a}", closed: "ਹਿਸਾਬ ਮਿਲ ਗਿਆ: {a}",
+      progress: "ਹੁਣ ਤੱਕ: {a} / {b}।", closedMsg: "ਸਾਰੇ ਹਿੱਸੇ ਮਿਲ ਕੇ ਕੁੱਲ ਰਕਮ ਦੇ ਬਰਾਬਰ ਹਨ।",
+      parts: "{a}: {n} ਹਿੱਸਾ|{a}: {n} ਹਿੱਸੇ|{a}: {n} ਹਿੱਸੇ", personParts: "{name}: {n} ਹਿੱਸਾ।|{name}: {n} ਹਿੱਸੇ।|{name}: {n} ਹਿੱਸੇ।", nobodyShares: "ਇਹ ਰਕਮ ਵੰਡਣ ਲਈ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਵਿਅਕਤੀ ਨੂੰ ਹਿੱਸਾ ਦਿਓ: {a}।",
+      ofEach: "ਹਰ ਖਰਚੇ ਦਾ {p}", ofBill: "ਖਰਚੇ ਦਾ {p}", incomeDetail: "ਹਰ ਇੱਕ ਦਾ ਹਿੱਸਾ ਉਸ ਦੀ ਆਮਦਨ ਮੁਤਾਬਕ ਹੁੰਦਾ ਹੈ।", perMonth: "/ਮਹੀਨਾ",
+      service: "ਸਰਵਿਸ ਚਾਰਜ ({p})", serviceSub: "ਹਰ ਕਿਸੇ ਨੇ ਜੋ ਲਿਆ, ਉਸ ਦੇ ਅਨੁਪਾਤ ਵਿੱਚ",
+      loose: "ਮਾਰਕ ਕਰੋ ਕਿ ਹਰ ਆਈਟਮ ਕਿਸ ਨੇ ਲਈ", looseDetail: "ਕਿਸ ਨੇ ਲਈ, ਇਹ ਮਾਰਕ ਕਰਨ ਲਈ ਹਰ ਆਈਟਮ ’ਤੇ ਚਿਹਰਿਆਂ ਨੂੰ ਟੈਪ ਕਰੋ।",
+      itemsClosed: "ਆਈਟਮ: {a}, ਸਰਵਿਸ ਚਾਰਜ: {b}।", nobodyItem: "ਕੋਈ ਨਹੀਂ ਚੁਣਿਆ", eachItem: "ਹਰ ਇੱਕ ਦੇ {a}",
+      items: { pizza: "ਲਾਰਜ ਪੀਜ਼ਾ", beer: "ਬੀਅਰ", salad: "ਸਲਾਦ", draft: "ਡ੍ਰਾਫ਼ਟ ਬੀਅਰ", shrimp: "ਝੀਂਗਾ ਪਲੇਟਰ" },
+      receiptBill: "ਹਾਰਬਰ ਬਾਰ",
+      hint: {
+        equal: "ਜਦੋਂ ਰਕਮ ਬਰਾਬਰ ਨਾ ਵੰਡੀ ਜਾਵੇ, ਤਾਂ ਬਚੇ ਪੈਸੇ ਭੁਗਤਾਨ ਕਰਨ ਵਾਲੇ ਨੂੰ ਜਾਂਦੇ ਹਨ।",
+        amounts: "ਜਿਸ ਦੀ ਰਕਮ {zero} ਰਹਿੰਦੀ ਹੈ, ਉਹ ਇਸ ਖਰਚੇ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ।",
+        percent: "ਸਿਰਫ਼ ਪੂਰੀਆਂ ਸੰਖਿਆਵਾਂ। ਬਚੇ ਪੈਸੇ ਭੁਗਤਾਨ ਕਰਨ ਵਾਲੇ ਨੂੰ ਜਾਂਦੇ ਹਨ।",
+        shares: "ਜਦੋਂ ਕਿਸੇ ਦਾ ਹਿੱਸਾ ਵੱਧ ਹੋਵੇ ਤਾਂ ਹਿੱਸੇ ਵਰਤੋ, ਜਿਵੇਂ ਜਦੋਂ ਕੋਈ ਮਹਿਮਾਨ ਨਾਲ ਲੈ ਕੇ ਆਵੇ।",
+        income: "ਆਮਦਨ ਡਿਵਾਈਸ ’ਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ। ਗਰੁੱਪ ਨੂੰ ਸਿਰਫ਼ ਪ੍ਰਤੀਸ਼ਤ ਦਿਖਦੇ ਹਨ।",
+        items: "ਹਰ ਆਈਟਮ ਉਨ੍ਹਾਂ ਵਿੱਚ ਵੰਡੀ ਜਾਂਦੀ ਹੈ ਜਿਨ੍ਹਾਂ ਨੇ ਉਹ ਲਈ, ਅਤੇ ਸਰਵਿਸ ਚਾਰਜ ਇਸ ਮੁਤਾਬਕ ਕਿ ਹਰ ਕਿਸੇ ਨੇ ਕੀ ਲਿਆ।",
+      },
+      label: {
+        amount: "ਰਕਮ: {name}", percent: "ਪ੍ਰਤੀਸ਼ਤ: {name}", income: "ਮਹੀਨਾਵਾਰ ਆਮਦਨ: {name}",
+        less: "ਇੱਕ ਹਿੱਸਾ ਘੱਟ: {name}", more: "ਇੱਕ ਹਿੱਸਾ ਵੱਧ: {name}", had: "ਕਿਸ ਨੇ ਲਈ: {item}",
+      },
+    },
+    // Kannada: a message with "|" holds its forms for {n}, "one|few|other", of which Kannada uses one (0 and 1) and other.
+    // A name, an item or an amount never takes a case ending: it stands after a colon. ನೀವು for the user.
+    kn: {
+      bill: "ಪಿಜ್ಜಾ ರಾತ್ರಿ", paid: "Pedro ಪಾವತಿಸಿದರು", notIn: "ಇದರಲ್ಲಿ ಇಲ್ಲ",
+      each: "ತಲಾ {a}", among: "{n} ಜನರ ನಡುವೆ ಹಂಚಲಾಗಿದೆ: {a}.", amongOne: "1 ವ್ಯಕ್ತಿಗೆ ಮಾತ್ರ: {a}.", out: "ಇದರಲ್ಲಿ ಇಲ್ಲ: {name}.",
+      nobody: "ಇನ್ನೂ ಯಾರೂ ಇಲ್ಲ", nobodyEqual: "ಈ ಮೊತ್ತವನ್ನು ಹಂಚಲು ಕನಿಷ್ಠ ಒಬ್ಬರನ್ನು ಆಯ್ಕೆಮಾಡಿ: {a}.",
+      checkAll: "ಎಲ್ಲರನ್ನೂ ಆಯ್ಕೆಮಾಡಿ", uncheckAll: "ಎಲ್ಲರ ಆಯ್ಕೆಯನ್ನು ತೆಗೆಯಿರಿ",
+      left: "ಉಳಿದಿದೆ: {a}", over: "ಹೆಚ್ಚಾಗಿದೆ: {a}", closed: "ಸರಿಯಾಗಿದೆ: {a}",
+      progress: "ಇಲ್ಲಿಯವರೆಗೆ: {a} / {b}.", closedMsg: "ಭಾಗಗಳು ಒಟ್ಟು ಮೊತ್ತಕ್ಕೆ ಸರಿಹೊಂದುತ್ತವೆ.",
+      parts: "{n} ಪಾಲು, ಪ್ರತಿಯೊಂದೂ {a}|{n} ಪಾಲುಗಳು, ಪ್ರತಿಯೊಂದೂ {a}|{n} ಪಾಲುಗಳು, ಪ್ರತಿಯೊಂದೂ {a}",
+      personParts: "{name}: {n} ಪಾಲು.|{name}: {n} ಪಾಲುಗಳು.|{name}: {n} ಪಾಲುಗಳು.",
+      nobodyShares: "ಈ ಮೊತ್ತವನ್ನು ಹಂಚಲು ಕನಿಷ್ಠ ಒಬ್ಬರಿಗೆ ಒಂದು ಪಾಲು ಕೊಡಿ: {a}.",
+      ofEach: "ಪ್ರತಿ ಖರ್ಚಿನ {p}", ofBill: "ಖರ್ಚಿನ {p}", incomeDetail: "ಪ್ರತಿಯೊಬ್ಬರ ಪಾಲು ಅವರವರ ಆದಾಯವನ್ನು ಅನುಸರಿಸುತ್ತದೆ.", perMonth: "/ತಿಂಗಳು",
+      service: "ಸೇವಾ ಶುಲ್ಕ ({p})", serviceSub: "ಪ್ರತಿಯೊಬ್ಬರು ತೆಗೆದುಕೊಂಡದ್ದರ ಅನುಪಾತದಲ್ಲಿ",
+      loose: "ಪ್ರತಿ ಐಟಂ ಅನ್ನು ಯಾರು ತೆಗೆದುಕೊಂಡರು ಎಂದು ಗುರುತಿಸಿ", looseDetail: "ಯಾರು ತೆಗೆದುಕೊಂಡರು ಎಂದು ಗುರುತಿಸಲು, ಪ್ರತಿ ಐಟಂನಲ್ಲಿರುವ ಮುಖಗಳನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.",
+      itemsClosed: "ಐಟಂಗಳು: {a}, ಸೇವಾ ಶುಲ್ಕ: {b}.", nobodyItem: "ಯಾರನ್ನೂ ಆಯ್ಕೆಮಾಡಿಲ್ಲ", eachItem: "ತಲಾ {a}",
+      items: { pizza: "ದೊಡ್ಡ ಪಿಜ್ಜಾ", beer: "ಬಿಯರ್", salad: "ಸಲಾಡ್", draft: "ಡ್ರಾಫ್ಟ್ ಬಿಯರ್", shrimp: "ಸೀಗಡಿ ಪ್ಲ್ಯಾಟರ್" },
+      receiptBill: "ಹಾರ್ಬರ್ ಬಾರ್",
+      hint: {
+        equal: "ಸಮವಾಗಿ ಹಂಚಲು ಆಗದಿದ್ದಾಗ, ಉಳಿದ ಪೈಸೆ ಪಾವತಿಸಿದವರಿಗೆ ಹೋಗುತ್ತದೆ.",
+        amounts: "ಮೊತ್ತ {zero} ಆಗಿಯೇ ಉಳಿದವರು ಈ ಖರ್ಚಿನಲ್ಲಿ ಇರುವುದಿಲ್ಲ.",
+        percent: "ಪೂರ್ಣ ಸಂಖ್ಯೆಗಳು ಮಾತ್ರ. ಉಳಿದ ಪೈಸೆ ಪಾವತಿಸಿದವರಿಗೆ ಹೋಗುತ್ತದೆ.",
+        shares: "ಯಾರಿಗಾದರೂ ಹೆಚ್ಚು ಇದ್ದಾಗ ಪಾಲುಗಳನ್ನು ಬಳಸಿ, ಉದಾಹರಣೆಗೆ ಜೊತೆಗೆ ಇನ್ನೊಬ್ಬರನ್ನು ಕರೆತಂದವರಿಗೆ.",
+        income: "ಆದಾಯಗಳು ಸಾಧನದಲ್ಲೇ ಉಳಿಯುತ್ತವೆ. ಗುಂಪಿಗೆ ಶೇಕಡಾವಾರು ಮಾತ್ರ ಕಾಣಿಸುತ್ತದೆ.",
+        items: "ಪ್ರತಿ ಐಟಂ ಅದನ್ನು ತೆಗೆದುಕೊಂಡವರ ನಡುವೆ ಹಂಚಲಾಗುತ್ತದೆ, ಮತ್ತು ಸೇವಾ ಶುಲ್ಕ ಪ್ರತಿಯೊಬ್ಬರು ತೆಗೆದುಕೊಂಡದ್ದರ ಪ್ರಕಾರ.",
+      },
+      label: {
+        amount: "ಮೊತ್ತ: {name}", percent: "ಶೇಕಡಾವಾರು: {name}", income: "ತಿಂಗಳ ಆದಾಯ: {name}",
+        less: "ಒಂದು ಪಾಲು ಕಡಿಮೆ: {name}", more: "ಒಂದು ಪಾಲು ಹೆಚ್ಚು: {name}", had: "ಯಾರು ತೆಗೆದುಕೊಂಡರು: {item}",
+      },
+    },
+    // Burmese: one form for every {n}, so no message holds "|", a count taking its counter (ဦး for people, ခု for
+    // shares). The leftover is ကျန်ငွေ, as the kyat has no cents in use. သင် for the user.
+    my: {
+      bill: "ပီဇာညစာ", paid: "Pedro ပေးချေခဲ့သည်", notIn: "ဤစရိတ်တွင် မပါ",
+      each: "တစ်ဦးလျှင် {a}", among: "လူ {n} ဦးကြား {a} ခွဲဝေထားသည်။", amongOne: "လူ 1 ဦးအတွက် {a}။", out: "{name} မပါဝင်ပါ။",
+      nobody: "မည်သူမျှ မပါဝင်သေးပါ", nobodyEqual: "{a} ကို ခွဲဝေရန် အနည်းဆုံး တစ်ဦးကို အမှတ်ခြစ်ပါ။",
+      checkAll: "အားလုံး အမှတ်ခြစ်ရန်", uncheckAll: "အားလုံး အမှတ်ဖြုတ်ရန်",
+      left: "{a} ကျန်သည်", over: "{a} ပိုနေသည်", closed: "ကိုက်ညီသည်: {a}",
+      progress: "ယခုအထိ {b} အနက် {a}။", closedMsg: "အစိတ်အပိုင်းများ ပေါင်းလဒ်သည် စုစုပေါင်းနှင့် ကိုက်ညီသည်။",
+      parts: "စုစုပေါင်း {a}၊ ဝေစု {n} ခု",
+      personParts: "{name} တွင် ဝေစု {n} ခု ရှိသည်။",
+      nobodyShares: "{a} ကို ခွဲဝေရန် အနည်းဆုံး တစ်ဦးကို ဝေစု ပေးပါ။",
+      ofEach: "စရိတ်တိုင်း၏ {p}", ofBill: "စရိတ်၏ {p}", incomeDetail: "တစ်ဦးစီ၏ အစိတ်အပိုင်းသည် ၎င်း၏ ဝင်ငွေအလိုက် ဖြစ်သည်။", perMonth: "/လ",
+      service: "ဝန်ဆောင်ခ ({p})", serviceSub: "တစ်ဦးစီ စားသောက်ခဲ့သည့် အချိုးအလိုက်",
+      loose: "ပစ္စည်းတစ်ခုစီကို မည်သူ စားသောက်ခဲ့သည်ကို အမှတ်ခြစ်ပါ", looseDetail: "မည်သူ စားသောက်ခဲ့သည်ကို အမှတ်ခြစ်ရန် ပစ္စည်းတစ်ခုစီရှိ မျက်နှာများကို နှိပ်ပါ။",
+      itemsClosed: "ပစ္စည်းများ {a} နှင့် ဝန်ဆောင်ခ {b}။", nobodyItem: "မည်သူမျှ အမှတ်မခြစ်ရသေး", eachItem: "တစ်ဦးလျှင် {a}",
+      items: { pizza: "ပီဇာ အကြီး", beer: "ဘီယာ", salad: "အသုပ်", draft: "စည်ဘီယာ", shrimp: "ပုစွန်ပွဲ" },
+      receiptBill: "ဆိပ်ကမ်းဘား",
+      hint: {
+        equal: "အညီအမျှ မခွဲနိုင်သည့်အခါ ကျန်ငွေကို ပေးချေသူထံ ပေးပါသည်။",
+        amounts: "{zero} တွင် ကျန်နေသူသည် စရိတ်တွင် မပါဝင်ပါ။",
+        percent: "ကိန်းပြည့်များသာ။ ကျန်ငွေကို ပေးချေသူထံ ပေးပါသည်။",
+        shares: "တစ်ဦးဦးက ပိုသုံးသည့်အခါ ဝေစုကို သုံးပါ၊ ဥပမာ အဖော်တစ်ဦး ခေါ်လာသူ။",
+        income: "ဝင်ငွေများသည် စက်တွင်သာ ရှိပါသည်။ အဖွဲ့က ရာခိုင်နှုန်းများကိုသာ မြင်ရပါသည်။",
+        items: "ပစ္စည်းတစ်ခုစီကို စားသောက်ခဲ့သူများကြား ခွဲဝေပြီး ဝန်ဆောင်ခကို တစ်ဦးစီ စားသောက်ခဲ့သည့်အလိုက် ခွဲဝေပါသည်။",
+      },
+      label: {
+        amount: "{name} ၏ ပမာဏ", percent: "{name} ၏ ရာခိုင်နှုန်း", income: "{name} ၏ လစဉ် ဝင်ငွေ",
+        less: "{name} အတွက် ဝေစု တစ်ခု လျှော့ရန်", more: "{name} အတွက် ဝေစု တစ်ခု တိုးရန်", had: "{item} ကို စားသောက်ခဲ့သူ",
+      },
+    },
+    // Khmer: one form for every {n}, so no message holds "|". No space between words but one around a name, an item or an amount; the riel has no decimals in use, so the
+    // leftover is an amount, not cents. អ្នក for the user.
+    km: {
+      bill: "យប់ភីហ្សា", paid: "Pedro បានបង់", notIn: "មិននៅក្នុងចំណាយនេះទេ",
+      each: "ម្នាក់ {a}", among: "{a} ចែកក្នុងចំណោម {n} នាក់។", amongOne: "{a} សម្រាប់ 1 នាក់។", out: "{name} មិនចូលរួមទេ។",
+      nobody: "មិនទាន់មាននរណាចូលរួមទេ", nobodyEqual: "សូមធីកយ៉ាងហោចណាស់ម្នាក់ ដើម្បីចែក {a}។",
+      checkAll: "ធីកទាំងអស់", uncheckAll: "ដោះធីកទាំងអស់",
+      left: "នៅសល់ {a}", over: "លើស {a}", closed: "គ្រប់ចំនួន៖ {a}",
+      progress: "រហូតមកដល់ពេលនេះ {a} នៃ {b}។", closedMsg: "ផ្នែកនានាបូកគ្នាស្មើនឹងសរុប។",
+      parts: "{a} ចែកជា {n} ចំណែក",
+      personParts: "{name} មាន {n} ចំណែក។",
+      nobodyShares: "សូមផ្ដល់ចំណែកឱ្យយ៉ាងហោចណាស់ម្នាក់ ដើម្បីចែក {a}។",
+      ofEach: "{p} នៃចំណាយនីមួយៗ", ofBill: "{p} នៃចំណាយ", incomeDetail: "ផ្នែករបស់ម្នាក់ៗអាស្រ័យលើប្រាក់ចំណូលរបស់ពួកគេ។", perMonth: "/ខែ",
+      service: "សេវា ({p})", serviceSub: "តាមសមាមាត្រនៃអ្វីដែលម្នាក់ៗបានញ៉ាំ",
+      loose: "គូសចំណាំអ្នកដែលបានញ៉ាំមុខទំនិញនីមួយៗ", looseDetail: "ចុចលើមុខមនុស្សនៅលើមុខទំនិញនីមួយៗ ដើម្បីគូសចំណាំអ្នកដែលបានញ៉ាំវា។",
+      itemsClosed: "{a} ជាមុខទំនិញ និង {b} ជាសេវា។", nobodyItem: "មិនទាន់ធីកអ្នកណាទេ", eachItem: "ម្នាក់ {a}",
+      items: { pizza: "ភីហ្សាធំ", beer: "ស្រាបៀរ", salad: "សាឡាដ", draft: "ស្រាបៀរស្រស់", shrimp: "ចានបង្គា" },
+      receiptBill: "បារកំពង់ផែ",
+      hint: {
+        equal: "នៅពេលចែកមិនស្មើគ្នាល្អ ចំនួនដែលនៅសល់ទៅអ្នកដែលបានបង់។",
+        amounts: "អ្នកដែលនៅត្រឹម {zero} មិនចូលរួមក្នុងចំណាយទេ។",
+        percent: "តែលេខគត់ប៉ុណ្ណោះ។ ចំនួនដែលនៅសល់ទៅអ្នកដែលបានបង់។",
+        shares: "ប្រើចំណែកនៅពេលនរណាម្នាក់មានច្រើនជាង ដូចជាអ្នកដែលនាំភ្ញៀវមកម្នាក់។",
+        income: "ប្រាក់ចំណូលនៅតែលើឧបករណ៍។ ក្រុមឃើញតែភាគរយប៉ុណ្ណោះ។",
+        items: "មុខទំនិញនីមួយៗត្រូវបានចែកក្នុងចំណោមអ្នកដែលបានញ៉ាំវា ហើយសេវាត្រូវបានចែកតាមអ្វីដែលម្នាក់ៗបានញ៉ាំ។",
+      },
+      label: {
+        amount: "ផ្នែករបស់ {name}", percent: "ភាគរយរបស់ {name}", income: "ប្រាក់ចំណូលប្រចាំខែរបស់ {name}",
+        less: "ដកមួយចំណែកពី {name}", more: "បន្ថែមមួយចំណែកឱ្យ {name}", had: "អ្នកណាបានញ៉ាំ {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
@@ -1276,6 +1581,7 @@
     if (forms.length > 1) {
       const kind = plural.select(values.n);
       text = forms.length === 6 ? forms[["zero", "one", "two", "few", "many", "other"].indexOf(kind)]
+        : forms.length === 4 ? forms[{ one: 0, two: 1, few: 2 }[kind] ?? 3]
         : forms.length === 3 ? forms[{ one: 0, few: 1, two: 1 }[kind] ?? 2] : forms[kind === "few" ? 0 : 1];
     }
     return text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

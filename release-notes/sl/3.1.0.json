@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split na uri Apple Watch: poveži uro z računom svojega iPhona, oglej si svoja stanja in odprte skupine, tapni Plačal(a) sem v skupini, kjer dolguješ, in dodaj svoje skupno stanje na številčnico ure ali v Smart Stack; ko je ura povezana, deluje samostojno.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori bengalsko, malajsko in grško: v Profil › Jezik izberi „বাংলা“, „Bahasa Melayu“ ali „Ελληνικά“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo bangladeško tako in malezijski ringit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori hrvaško: v Profil › Jezik izberi „Hrvatski“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori filipinsko: v Profil › Jezik izberi „Filipino“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo filipinski peso (PHP, „₱“), nova skupina, ustvarjena na Filipinih, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori madžarsko: v Profil › Jezik izberi „Magyar“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo madžarski forint.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dodaj pripomoček Stanja na začetni ali zaklenjeni zaslon iPhona ali iPada, da na prvi pogled vidiš svoje skupno stanje in odprte skupine; tapni ga, da odpreš Stanja.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo valute Bolivije, Venezuele, Kostarike, Gvatemale, Hondurasa, Nikaragve, Dominikanske republike in Kube, nova skupina, ustvarjena tam, pa začne v lastni valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori srbsko: v Profil › Jezik izberi „Srpski“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo srbski dinar (RSD), nova skupina, ustvarjena v Srbiji, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori urdujsko: v Profil › Jezik izberi „اردو“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo pakistansko rupijo (PKR), nova skupina, ustvarjena v Pakistanu, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ko tapneš obvestilo o novem strošku, se strošek odpre takoj: aplikacija ga prenese, takoj ko obvestilo prispe.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Pozdravni zaslon na telefonih zdaj na vrhu prikazuje samo logotip, tako da ostane več prostora za gumbe.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Pasica skupine „Čas je za poravnavo“ ne prikazuje več datuma opomnika iz časa, preden je bil opomnik nastavljen ali spremenjen: opomnik, spremenjen na 25., počaka do 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

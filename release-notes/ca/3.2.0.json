@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "L’app ara parla búlgar: tria «Български» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla català: tria «Català» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla danès: tria «Dansk» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en corona danesa (DKK), i un grup creat a Dinamarca, Groenlàndia o les illes Fèroe comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla finès: tria «Suomi» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla marathi: tria «मराठी» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla noruec: tria «Norsk bokmål» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en corona noruega (NOK), i un grup creat a Noruega comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla persa: tria «فارسی» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Els grups ara poden dividir en rial iranià (IRR), i un grup creat a l’Iran comença en aquesta moneda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla eslovac: tria «Slovenčina» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla suahili: tria «Kiswahili» a Perfil › Idioma, o deixa que segueixi el teu dispositiu. Els grups nous a Kenya i Tanzània comencen en xíling kenyà (KES) o en xíling tanzà (TZS).",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla tàmil: tria «தமிழ்» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ara parla telugu: tria «తెలుగు» a Perfil › Idioma, o deixa que segueixi el teu dispositiu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A l’iPhone, l’iPad i el Mac, les dates en tailandès i en persa ara mostren l’any gregorià, com a Android i al web, sigui quin sigui el calendari del dispositiu.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

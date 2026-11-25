@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Ko odpreš osebo iz Stikov ali Stanj, se v njen profil poleg fotografije zdaj preneseta tudi ime in stanje, in nazaj, ko se vrneš.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "V Statistiki sredina obroča „Po osebah“ zdaj samo piše „Ti“, ko je delež tvoj, dolgo ime pa se konča s „…“, namesto da bi se dotikalo obroča.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ko odpreš skupino iz Skupin, obrazi njenih članov zdaj potujejo iz vrstice na zaslon skupine in nazaj, ko ga zapustiš.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Na telefonu odpiranje stroška zdaj prenese več z njim: kdo je plačal, potuje iz njegove vrstice na zaslonih Domov in Vsi stroški, čas iz vrstice v Stroških skupine, fotografija in ime skupine pa z zaslona skupine. Ko ga zapustiš, potujejo nazaj.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ime skupine zdaj potuje na zaslon skupine že ob odpiranju, ne samo na poti nazaj.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

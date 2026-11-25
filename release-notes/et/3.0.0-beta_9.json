@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Summad ja sildid ei murdu enam mitmele reale ega lõigata ära väikestel ekraanidel, volditavates seadmetes ja suure tekstiga.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Raskesti loetavatel tekstidel, nuppudel ja piirjoontel on nüüd suurem kontrast nii heledas kui ka tumedas teemas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Välja puudutamine iPhone’i brauseris ei suumi enam lehte.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

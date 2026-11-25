@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Lietotne tagad runā korejiešu valodā: izvēlies „한국어” sadaļā „Profils › Valoda” vai ļauj tai sekot ierīces valodai.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupās tagad var dalīt rēķinus Dienvidkorejas vonos (KRW), un grupa, kas izveidota Dienvidkorejā, sākas ar to.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sadaļā „Profils › Konts un sinhronizācija” tagad redzams tavs lietotāja ID, ko vari nokopēt ar vienu pieskārienu, lai pateiktu mums, kas tu esi, kad atbildi uz kādu no mūsu aptaujām.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotoattēls, ko pievieno rēķinam, tagad vispirms atveras ekrānā „Pielāgot fotoattēlu”, lai tu varētu izvēlēties kvadrātu, kas tiks pievienots.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "„Pēc ienākumiem” tagad atgādina ievadīt katra neto ienākumus pēc nodokļiem, un „Noklusējuma sadalījums” rāda katra procentu tikai tad, kad ienākumi ir ievadīti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupas galvene ir tīrāka: rinda ar dalībnieku skaitu un kopsummu zem nosaukuma ir noņemta. Sejas rāda, kas piedalās, un „Statistika” rāda kopsummu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kartes vai bankas izraksta fotoattēli tagad to norāda un iesaka aizpildīt rēķinu manuāli, nevis saka, ka čeku neizdevās nolasīt.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategorija statistikā tagad atver „Visi izdevumi” ar jau izvēlētu grupu, kategoriju un periodu, lai tu varētu meklēt arī šos rēķinus. „Visi izdevumi” ieguva arī filtru „Periods”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Statistikas sadaļā „Pa personām” pieskāriens blakus gredzenam vai tā vidū atceļ izvēlētās personas atlasi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

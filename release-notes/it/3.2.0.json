@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "L’app ora parla bulgaro: scegli \"Български\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla catalano: scegli \"Català\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla danese: scegli \"Dansk\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I gruppi ora possono dividere in corone danesi (DKK), e un gruppo creato in Danimarca, in Groenlandia o nelle Isole Fær Øer parte in questa valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla finlandese: scegli \"Suomi\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla marathi: scegli \"मराठी\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla norvegese: scegli \"Norsk bokmål\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I gruppi ora possono dividere in corone norvegesi (NOK), e un gruppo creato in Norvegia parte in questa valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla persiano: scegli \"فارسی\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I gruppi ora possono dividere in rial iraniano (IRR), e un gruppo creato in Iran parte in questa valuta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla slovacco: scegli \"Slovenčina\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla swahili: scegli \"Kiswahili\" in Profilo › Lingua, oppure lascia che segua il dispositivo. I nuovi gruppi in Kenya e Tanzania partono nello scellino keniota o tanzaniano.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla tamil: scegli \"தமிழ்\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "L’app ora parla telugu: scegli \"తెలుగు\" in Profilo › Lingua, oppure lascia che segua il dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Su iPhone, iPad e Mac, le date in thailandese e persiano ora mostrano l’anno gregoriano, come su Android e sul web, qualunque sia il calendario del dispositivo.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

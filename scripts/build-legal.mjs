@@ -67,26 +67,42 @@ const CHROME = {
   ca: { language: "Català", brand: "Blitz Split", locale: "ca", updated: "Actualitzat el {date}", read: "{n} min de lectura", toc: "En aquesta pàgina" },
   da: { language: "Dansk", brand: "Blitz Split", locale: "da", updated: "Opdateret {date}", read: "{n} min. læsetid", toc: "På denne side" },
   fi: { language: "Suomi", brand: "Blitz Split", locale: "fi", updated: "Päivitetty {date}", read: "Lukuaika {n} min", toc: "Tällä sivulla" },
+  lv: { language: "Latviešu", brand: "Blitz Split", locale: "lv", updated: "Atjaunināts: {date}", read: "Lasīšanas laiks: {n} min", toc: "Šajā lapā" },
+  et: { language: "Eesti", brand: "Blitz Split", locale: "et", updated: "Uuendatud {date}", read: "Lugemisaeg {n} min", toc: "Sellel lehel" },
+  lt: { language: "Lietuvių", brand: "Blitz Split", locale: "lt", updated: "Atnaujinta {date}", read: "Skaitymo laikas: {n} min.", toc: "Šiame puslapyje" },
+  sl: { language: "Slovenščina", brand: "Blitz Split", locale: "sl", updated: "Posodobljeno {date}", read: "{n} min branja", toc: "Na tej strani" },
+  gu: { language: "ગુજરાતી", brand: "Blitz Split", locale: "gu-u-nu-latn", updated: "છેલ્લે અપડેટ: {date}", read: "વાંચવામાં {n} મિનિટ", toc: "આ પેજ પર" },
+  ml: { language: "മലയാളം", brand: "Blitz Split", locale: "ml-u-nu-latn", updated: "അവസാനം അപ്‌ഡേറ്റ് ചെയ്തത്: {date}", read: "വായിക്കാൻ {n} മിനിറ്റ്", toc: "ഈ പേജിൽ" },
+  pa: { language: "ਪੰਜਾਬੀ", brand: "Blitz Split", locale: "pa-u-nu-latn", updated: "ਆਖਰੀ ਅੱਪਡੇਟ: {date}", read: "ਪੜ੍ਹਨ ਲਈ {n} ਮਿੰਟ", toc: "ਇਸ ਪੰਨੇ ’ਤੇ" },
+  kn: { language: "ಕನ್ನಡ", brand: "Blitz Split", locale: "kn", updated: "ಕೊನೆಯದಾಗಿ ಅಪ್‌ಡೇಟ್ ಮಾಡಿದ್ದು: {date}", read: "ಓದಲು {n} ನಿಮಿಷ", toc: "ಈ ಪುಟದಲ್ಲಿ" },
+  my: { language: "မြန်မာ", brand: "Blitz Split", locale: "my-u-nu-latn", updated: "{date} တွင် အပ်ဒိတ်လုပ်ခဲ့သည်", read: "ဖတ်ရန် {n} မိနစ်", toc: "ဤစာမျက်နှာတွင်" },
+  km: { language: "ខ្មែរ", brand: "Blitz Split", locale: "km-u-nu-latn", updated: "ធ្វើបច្ចុប្បន្នភាពនៅ {date}", read: "អាន {n} នាទី", toc: "នៅលើទំព័រនេះ" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
-const CHARACTERS_PER_MINUTE = {
+const MEASURED_CHARACTERS_PER_MINUTE = {
   ar: 612, de: 920, en: 987, es: 1025, fr: 998, he: 833, it: 950, ja: 357, nl: 978, pl: 916, pt: 913, "pt-PT": 913,
-  ru: 986, sv: 917, tr: 1054, zh: 255, "zh-Hant": 255, fi: 1078,
+  ru: 986, sv: 917, tr: 1054, zh: 255, "zh-Hant": 255, fi: 1078, sl: 885,
+};
+// Why each borrowed pace names the language it comes from: a correction to that language's number reaches it too.
+const CHARACTERS_PER_MINUTE = {
+  ...MEASURED_CHARACTERS_PER_MINUTE,
   // Why: the study has no Korean, and a Hangul block is one syllable, so this is its average of syllables per minute.
   ko: 370,
   // Why: the study has no Ukrainian, and Russian is the closest language it measured, in the same script.
-  uk: 986,
+  uk: MEASURED_CHARACTERS_PER_MINUTE.ru,
   // Why: the study has no Bulgarian either, and Russian is the closest language it measured, in the same script.
-  bg: 986,
+  bg: MEASURED_CHARACTERS_PER_MINUTE.ru,
   // Why: the study has no Urdu, and Arabic is the closest language it measured, in the same script.
-  ur: 612,
+  ur: MEASURED_CHARACTERS_PER_MINUTE.ar,
   // Why: the study has no Norwegian, and Swedish is the closest language it measured.
-  nb: 917,
+  nb: MEASURED_CHARACTERS_PER_MINUTE.sv,
   // Why: the study has no Persian, and Arabic is the closest language it measured, in the same script.
-  fa: 612,
+  fa: MEASURED_CHARACTERS_PER_MINUTE.ar,
   // Why: the study has no Danish, and Swedish is the closest language it measured.
-  da: 917,
+  da: MEASURED_CHARACTERS_PER_MINUTE.sv,
+  // Why: the study has no Estonian, and Finnish is the closest language it measured, of the same family.
+  et: MEASURED_CHARACTERS_PER_MINUTE.fi,
 };
 // The study's median without Chinese and Japanese, for a language it didn't measure. Why without them: a character of
 // theirs holds far more than a letter, so they would slow down every language written with letters.

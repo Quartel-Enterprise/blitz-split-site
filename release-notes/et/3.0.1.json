@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Vahekaart Saldod ei näita enam nullide rida, kui keegi kellelegi midagi ei võlgne: seal on lihtsalt kirjas „Kõik on arveldatud“.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Parandatud Profiil, mis näitas Google’iga sisse logitud konto e-posti kõrval Apple’i logo või Apple’iga sisse logitud konto kõrval Google’i logo, kui kontol on mõlemad.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

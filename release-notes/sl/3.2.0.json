@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Aplikacija zdaj govori bolgarsko: v Profil › Jezik izberi „Български“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori katalonsko: v Profil › Jezik izberi „Català“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori dansko: v Profil › Jezik izberi „Dansk“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo dansko krono (DKK), nova skupina, ustvarjena na Danskem, Grenlandiji ali Ferskih otokih, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori finsko: v Profil › Jezik izberi „Suomi“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori maratsko: v Profil › Jezik izberi „मराठी“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori norveško: v Profil › Jezik izberi „Norsk bokmål“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo norveško krono (NOK), nova skupina, ustvarjena na Norveškem, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori perzijsko: v Profil › Jezik izberi „فارسی“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skupine lahko zdaj uporabljajo iranski rial (IRR), nova skupina, ustvarjena v Iranu, pa začne v tej valuti.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori slovaško: v Profil › Jezik izberi „Slovenčina“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori svahilsko: v Profil › Jezik izberi „Kiswahili“ ali pa naj sledi jeziku tvoje naprave. Nove skupine v Keniji in Tanzaniji začnejo v kenijskem ali tanzanijskem šilingu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori tamilsko: v Profil › Jezik izberi „தமிழ்“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacija zdaj govori telugujsko: v Profil › Jezik izberi „తెలుగు“ ali pa naj sledi jeziku tvoje naprave.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Na iPhonu, iPadu in Macu datumi v tajščini in perzijščini zdaj prikazujejo gregorijansko leto, kot na Androidu in spletu, ne glede na koledar, ki ga uporablja naprava.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

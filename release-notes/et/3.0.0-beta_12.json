@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Jaotises Väljalaskemärkmed puuduta versiooni, et avada selle väljalase GitHubis, või nuppu GitHub, et näha kõiki väljalaskeid.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupi leht, kutse ja kulu üksikasjad näitavad nüüd kuni viie inimese fotosid kõrvuti, mitte kahte.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPadis või avatud iPhone Duol rõhtpaigutuses näitab ekraani täitev grupp (näiteks avalehelt avatuna) nüüd kulude kõrval oma fotot, liikmeid ja sinu saldot.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Avalehe kaardi „Üldsaldo“ puudutamine avab nüüd vahekaardi Saldod.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kui avad telefonis avalehelt grupi või kulu, lendab grupi saldo või kulu ikoon, pealkiri, kogusumma ja sinu osa selle ekraanile ning tagasi, kui naased.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profiil › Keel loetleb nüüd hispaania keelt kaks korda, „Español (Latinoamérica)“ ja „Español (España)“, nii et valid selle, mida räägid, olenemata sellest, kus su seade on.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kui telefon või tahvelarvuti on rõhtpaigutuses, algab see, mis on jaotistes Kontaktid ja Saldod loendi kõrval, nüüd ekraani ülaosast ning su profiilifoto on loendi kohal.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Nupu „Lisa inimene“ serv grupi jaotises Liikmed on paremini näha.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Kaardi värv jaotises „Makseviisid“ valitakse nüüd samade värvide hulgast kui kategooriatel: kaksteist värvi, sinu enda värvid ja „Uus värv“ uue loomiseks.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vaates „Jaga kulu“ on „Makstud“ nüüd väike nupp välja Jaotus all ning kui sul pole veel makseviisi, loob „Lisa makseviis“ selle kohe seal ja valib selle kulule. Deebetkaartidel on nüüd ka oma ikoon.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Makseviisi lisamine või muutmine jaotises Profiil avaneb nüüd selle kohal, mitte eraldi ekraanil.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "„Dünaamilised värvid“ selgitab nüüd, et rakendus võtab Androidi süsteemi värvid, mis tulevad sinu taustapildist või Androidi seadetes valitud paletist.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kui „Vähenda liikumist“ on sees, näitab grupi Statistika nüüd diagramme kohe, ilma et tulbad kasvaksid või rõngas sisse pühiks.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Brasiilia portugali keeles ütlesid Tegevus ja kulu ajalugu „Você criaste“ ja muud sellist, mitte „Você criou“.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Parandatud Statistika kuupäevavalija kuupäevad, mis murdusid üks-kaks tähte rea kohta; lõppkuupäev läheb nüüd alguskuupäeva alla, kui mõlemad ei mahu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Parandatud teavitused ja mõned laused, mis kuvati Hispaania hispaania ja Portugali portugali keeles inglise keeles või koodina nagu „push.bill_deleted“.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Parandatud avalehe inimeste rida Portugali portugali keeles, kus nime all oli „te deve“, mitte „deve-te“.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
