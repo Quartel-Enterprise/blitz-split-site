@@ -1019,9 +1019,10 @@ label.split-row { cursor: pointer; }
   animation: status-shine 4.5s ease-in-out infinite;
 }
 :root[dir="rtl"].motion .status.live .status-label { animation-direction: reverse; }
-:root.motion .platform:nth-child(2) .status-label { animation-delay: 0.7s; }
-:root.motion .platform:nth-child(3) .status-label { animation-delay: 1.4s; }
-:root.motion .platform:nth-child(4) .status-label { animation-delay: 2.1s; }
+:root.motion .platform:nth-child(3) .status-label { animation-delay: 0.7s; }
+:root.motion .platform:nth-child(4) .status-label { animation-delay: 1.4s; }
+/* The web app is second while the App Store ones aren't out, and its sweep keeps its spot, after Android's has passed. */
+:root.motion .platform:nth-child(2) .status-label { animation-delay: 2.1s; }
 @keyframes status-shine { 55%, 100% { background-position: 0 0; } }
 
 /* Privacy band */

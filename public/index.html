@@ -399,12 +399,20 @@
           <h2 data-i18n="platTitle">Native on every screen.</h2>
           <p data-i18n="platLead">The same groups and the same steps everywhere, each with the look of its own system.</p>
         </div>
+        <!-- The platforms you can already use come first: once CONFIG in stores.js gives the App Store its link, move the
+             web app's card back after the Mac's. -->
         <div class="platforms">
           <article class="platform">
             <svg class="icon"><use href="#i-phone"/></svg>
             <h3>Android</h3>
             <p data-i18n="pAndroid">Phones, tablets and foldables, in Material 3 Expressive.</p>
             <a class="status live" data-store-status="play" href="https://play.google.com/store/apps/details?id=com.quare.blitzsplit"><span class="status-label">Available on Google Play</span><svg class="status-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="platform">
+            <svg class="icon"><use href="#i-globe"/></svg>
+            <h3 data-i18n="pWebName">Web</h3>
+            <p data-i18n="pWeb">In any browser, still working offline.</p>
+            <a class="status live" data-store-status="web" href="https://web.blitzsplit.com"><span class="status-label">Open the web app</span><svg class="status-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
           <article class="platform">
             <svg class="icon"><use href="#i-tablet"/></svg>
@@ -417,12 +425,6 @@
             <h3>Mac</h3>
             <p data-i18n="pMac">A real Mac app, with its sidebar, toolbar and Settings window.</p>
             <a class="status soon" data-store-status="appstore"><span class="status-label">Coming soon</span><svg class="status-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </article>
-          <article class="platform">
-            <svg class="icon"><use href="#i-globe"/></svg>
-            <h3 data-i18n="pWebName">Web</h3>
-            <p data-i18n="pWeb">In any browser, still working offline.</p>
-            <a class="status live" data-store-status="web" href="https://web.blitzsplit.com"><span class="status-label">Open the web app</span><svg class="status-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
         </div>
       </div>
