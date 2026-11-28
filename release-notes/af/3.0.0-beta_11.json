@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "'n Rekening sonder Google of Apple word nou ná 30 dae sonder gebruik uitgevee. Die welkomskerm en Profiel sê dit, en as jy Google of Apple koppel, bly jou data behoue.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jy kan nou die app gradeer uit Profiel › Ondersteuning en terugvoer, met \"Gradeer die app\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "'n Uitgawe wat uit Tuis of Alle uitgawes oopgemaak is, gaan nou reguit terug na waar jy dit oopgemaak het, sonder om deur die groep te gaan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die \"+N\"-borrel van 'n stapel gesigte het onder die eerste gesig gewys in plaas van daarbo; dit is reggestel.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

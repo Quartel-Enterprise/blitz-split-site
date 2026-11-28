@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split praat nou Nederlands, Japannees, Turks en Indonesies, en die taallys noem elke taal in sy eie taal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepe en uitgawes kan nou die Poolse zloty, die Turkse lira en die Indonesiese roepia gebruik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel het 'n nuwe knoppie, Deel profiel: wie ook al jou skakel oopmaak, sien jou naam en foto en kan jou na 'n groep nooi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "'n Nuwe groep se uitnodigingskakel is dadelik gereed, selfs vanlyn, en Lede het 'n nuwe knoppie om dit te kopieer.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As jy 'n vorm toemaak met iets wat jy nie gestoor het nie, vra dit nou eers \"Gooi veranderings weg?\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die Privaatheidsbeleid en die Diensbepalings maak nou in die app oop in plaas van in die blaaier.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Op 'n foon gaan die boonste en onderste balke nou uit die pad wanneer jy afrol, en kom terug wanneer jy oprol.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Op Verdeel 'n uitgawe spring dit nie meer reguit na die horlosie wanneer jy 'n datum kies nie: die tyd het sy eie knoppie.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tik op die groep bo-aan Verdeel 'n uitgawe om dit oop te maak; as jy teruggaan, keer jy terug na die uitgawe met alles wat jy getik het.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tuis se Jongste uitgawes wys nou elke uitgawe se groep en wie betaal het as foto's.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix wys nou net vir mense wat dit waarskynlik sal gebruik, soos dié wat die app in Portugees gebruik, met 'n Pix-sleutel of in 'n groep in reais.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sinkroniseer tans…\" wys nou net die eerste keer dat jou rekening op 'n toestel laai, nie by elke sinkronisering nie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel bied nie meer aan om Google of Apple van jou rekening te ontkoppel nie: meld eerder af of vee die rekening uit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Wysig profiel maak nou as 'n blad oor Profiel oop in plaas van op 'n aparte skerm.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Die leë band tussen die vorm en die sleutelbord op Verdeel 'n uitgawe is weg.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "'n Kontak se gemeenskaplike Groepe wys nou elke groep se foto.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

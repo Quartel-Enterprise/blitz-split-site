@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "'n Uitgawe se skakel maak nou in die app oop in plaas van in die blaaier, met die foto's en opmerkings.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "'n Uitgawe se skakel wat nie meer gedeel word nie, of wat net die mense in die uitgawe kan oopmaak, sê dit nou in plaas daarvan om 'n fout te wys.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "'n Profiel se skakel maak nou oop selfs wanneer jy nie aangemeld het nie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel › Privaatheid en meer oor het 'n nuwe skakelaar, \"Deel gebruiksdata\": skakel dit af om op te hou stuur hoe jy die app gebruik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die skakels wat jy na jou profiel, na 'n opmerking en na die app deel, wys nou hul voorskou in jou taal.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

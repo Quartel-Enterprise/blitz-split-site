@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Te Çfarë ka të re, prekni një version për të hapur publikimin e tij në GitHub, ose butonin GitHub për të parë të gjitha publikimet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Faqja e një grupi, një ftesë dhe detajet e një shpenzimi tani shfaqin krah për krah fotot e deri në pesë personave në vend të dy.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Në një iPad ose një iPhone Duo të hapur të vendosur horizontalisht, një grup që mbush ekranin (i hapur nga Kreu, për shembull) tani shfaq foton, anëtarët dhe bilancin tuaj pranë shpenzimeve.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Prekja e kartës Bilanci i përgjithshëm te Kreu tani hap skedën Bilancet.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Në telefon, hapja e një grupi ose e një shpenzimi nga Kreu tani e çon bilancin e grupit, ose ikonën, titullin, totalin dhe pjesën tuaj të shpenzimit, deri në ekranin e tij dhe pastaj mbrapsht kur ktheheni.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profili › Gjuha tani e liston spanjishten dy herë, \"Español (Latinoamérica)\" dhe \"Español (España)\", që të zgjidhni atë që flisni kudo që të jetë pajisja juaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Me telefonin ose një tablet të vendosur horizontalisht, ajo që qëndron pranë listës te Kontaktet dhe Bilancet tani fillon në krye të ekranit, me foton e profilit tuaj mbi listë.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Buza e butonit \"Shto person\" te Anëtarët e një grupi shihet më lehtë.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Ngjyra e një karte te \"Mënyrat e pagesës\" tani zgjidhet nga të njëjtat ngjyra si kategoritë: dymbëdhjetë ngjyrat, ngjyrat tuaja dhe \"Ngjyrë e re\" për të krijuar një tjetër.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Te \"Ndaj shpenzimin\", \"Paguar me\" tani është një buton i vogël poshtë Ndarja, dhe nëse nuk keni ende asnjë mënyrë pagese, \"Shto një mënyrë pagese\" krijon një aty për aty dhe e zgjedh për shpenzimin. Kartat e debitit tani kanë edhe ikonën e tyre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Shtimi ose modifikimi i një mënyre pagese te Profili tani hapet mbi të në vend të një ekrani më vete.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Ngjyra dinamike tani shpjegon që aplikacioni merr ngjyrat e sistemit Android, që vijnë nga sfondi juaj ose nga paleta që keni zgjedhur te cilësimet e Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Me Reduce Motion të aktivizuar, Statistika e një grupi tani i shfaq grafikët menjëherë, pa u rritur shtyllat dhe pa u vizatuar unaza.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Në portugalishten e Brazilit, Aktiviteti dhe historiku i një shpenzimi thoshin \"Você criaste\" dhe të ngjashme në vend të \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "U rregulluan datat në zgjedhësin e datës te Statistika, që ndaheshin një ose dy shkronja për rresht; data e mbarimit tani shkon poshtë datës së fillimit kur të dyja nuk nxihen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "U rregulluan njoftimet dhe disa fjali që shfaqeshin në anglisht, ose si kod si \"push.bill_deleted\", në spanjishten e Spanjës dhe portugalishten e Portugalisë.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "U rregullua rreshti i personave te Kreu në portugalishten e Portugalisë, që thoshte \"te deve\" poshtë një emri në vend të \"deve-te\".",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

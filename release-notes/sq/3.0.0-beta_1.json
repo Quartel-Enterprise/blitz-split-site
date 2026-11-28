@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "notes": [
+    {
+      "text": "Blitz Split është një aplikacion i ri, i rindërtuar nga e para: zëvendëson Blitz Split 2.4.0 dhe funksionon në Android, iPhone, iPad, Mac dhe në ueb.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ndani një shpenzim në mënyrë të barabartë, sipas shumave, sipas përqindjeve, sipas pjesëve ose artikull për artikull, me një ose disa persona që paguajnë.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skanoni një kupon dhe aplikacioni lexon për ju artikujt dhe totalin e tij.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Krijoni grupe për udhëtime, shtëpinë ose ngjarje dhe ftoni njerëz me një lidhje ose një kod QR.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Shihni kush i detyrohet kujt në çdo grup dhe në të gjitha bashkë, regjistroni pagesat dhe thjeshtoni borxhet, që më pak pagesa të shlyejnë gjithçka.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gjithçka funksionon jashtë linje: ajo që bëni ruhet në pajisjen tuaj dhe dërgohet kur të jeni sërish në linjë.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Llogaria është opsionale: lidhni Google ose Apple, ose ruani një kod rikuperimi, për t’i rikthyer grupet tuaja në një pajisje tjetër.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Komentoni një shpenzim, bashkëngjitni foto, ndiqni çfarë ka ndodhur te Aktiviteti dhe shihni ku shkuan paratë te Statistika.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Çdo shpenzim dhe çdo pagesë ka monedhën e vet, dhe aplikacioni vjen në anglisht, portugalisht, spanjisht dhe frëngjisht.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

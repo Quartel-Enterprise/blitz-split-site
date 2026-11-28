@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Shpenzimet e një grupi tani kanë \"Shiko të gjitha\", që hap Të gjitha shpenzimet të filtruara tashmë sipas atij grupi, që të mund të kërkoni, renditni dhe filtroni shpenzimet e tij. Hiqni filtrin për të parë çdo grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Te Grup i ri, \"Shto me emër\" tani sugjeron persona nga Kontaktet tuaja ndërsa shkruani, me foton e tyre: prekni njërin për të krijuar grupin me po atë person.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kur lëvizni në një grup, shiriti i tij i sipërm i palosur shfaq vetëm foton dhe emrin e grupit, pa anëtarët dhe totalin të prerë pranë tyre.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Tani mund t’i shkarkoni 12 fjalët e kodit tuaj të rikuperimit si skedar teksti.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Ruani kodin tuaj të rikuperimit tani thotë që ai i rikthen të dhënat tuaja, dhe që pas 30 ditësh pa përdorim të dhënat fshihen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ndaj shpenzimin tani ka Skano kuponin edhe në krye, pranë Ruaj, që tastiera të mos e fshehë më, dhe Shto një mënyrë pagese është më i përmbajtur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Te Statistika e një grupi, Sipas personit tani është një unazë me pjesën e secilit, me të njëjtën ngjyrë që ka çdo person te Ndarja e parazgjedhur, me listën e emrave dhe shumave poshtë saj si legjendë. Konsumuar dhe Paguar ndryshojnë atë që shfaq.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Kush është brenda\" te Grup i ri shfaq foton e profilit tuaj në vend të inicialit tuaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Po sinkronizohet…\" nuk shfaqet më vazhdimisht te Kreu dhe Grupet kur ktheheni në aplikacion: sinkronizimet kryhen në heshtje sapo grupet tuaja të jenë në ekran.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Në tabletë dhe me telefonin të vendosur horizontalisht, hija e \"Ndaj shpenzimin\" në krye të shiritit anësor nuk pritet më në skajet e saj.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

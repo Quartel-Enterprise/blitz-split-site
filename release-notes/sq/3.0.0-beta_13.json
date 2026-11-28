@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikacioni tani flet rusisht dhe ukrainisht: zgjidhni \"Русский\" ose \"Українська\" te Profili › Gjuha, ose lëreni të ndjekë pajisjen tuaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupet tani mund të ndajnë shpenzimet në rublën ruse (RUB) dhe hryvnian ukrainase (UAH), dhe një grup i krijuar në Rusi ose Ukrainë fillon me monedhën e tij.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profili ka një preferencë të re, \"Formati i orës\": ndiqni sistemin, ose shfaqini gjithmonë oraret në formatin 24-orësh (14:30) ose 12-orësh me AM dhe PM (2:30 PM), te shpenzimet, Aktiviteti, komentet dhe zgjedhësit e orës.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Me telefonin të vendosur horizontalisht, dhe në tabletë, \"Ndaj shpenzimin\" i një grupi tani qëndron në shiritin e sipërm në vend që të notojë mbi shpenzimet.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Me Ngjyra dinamike të aktivizuara, ajo që i detyroheni mbetet portokalli në vend që të bëhet e kuqe, që të mos ngjajë kurrë me jeshilen e asaj që ju kthehet.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Te Aktiviteti, çdo rresht tani shfaq foton e grupit pranë emrit të tij, kur grupi ka një foto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bilanci juaj në këtë grup nuk e përsërit më shumën në një rresht të dytë kur vetëm merrni ose vetëm detyroheni.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Te Ndarja e parazgjedhur, pjesa e çdo personi në shpenzimin shembull tani ka ngjyrën e vet, me një pikë të së njëjtës ngjyrë para emrit, që personat pranë njëri-tjetrit në listë të mos duken kurrë si një.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Shiriti i sipërm i një shpenzimi tani shfaq foton e grupit, ose inicialet e tij, pranë emrit të grupit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prekja e fotos së dikujt tani e çon atë deri në profilin e tij, dhe mbrapsht kur ktheheni.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Një shpenzim i hapur nga Shpenzimet e një grupi tani zë vendin e vet ashtu si nga Kreu, dhe fotoja e grupit te shpenzimet e Kreut fluturon në shiritin e sipërm të shpenzimit.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Ndaj shpenzimin\" tani është edhe në krye të Bilancet dhe Kontaktet, dhe në ekranin e grupit kaloi në shiritin e sipërm në vend që të notojë mbi listë, me \"Shto njerëz\" tani te menyja ⋯. Fillon me emrin e vet dhe zvogëlohet në ikonën e vet kur lëvizni.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Te Grupet, prekja e kartës Bilanci i përgjithshëm hap Bilancet.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Fto njerëz\" në një grup tani quhet \"Shto njerëz\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Në iPad, skedat hapen në shiritin anësor, dhe kur qëndrojnë në shiritin e sipërm, si me iPad-in vertikal, \"Ndaj shpenzimin\" mbetet i dukshëm aty, ndërsa butonat e tjerë kalojnë në një rresht pak më poshtë.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Te \"Ndaj shpenzimin\", \"Paguar me\" tani shfaqet edhe kur shpenzimin e ka paguar dikush tjetër, i zbehur: prekja e tij shpjegon që vetëm ata që paguan mund të shënojnë me çfarë paguan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pa llogari, kodi juaj i rikuperimit tani është 12 fjalë të numëruara, më të lehta për t’u shkruar, dhe rikthimi i merr një fjalë për fushë, duke sugjeruar çdo fjalë ndërsa shkruani. Kodet e ruajtura para këtij versioni nuk funksionojnë më: ruani kodin e ri, ose lidhni Google ose Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Te Shpenzimet sipas kategorisë, çdo shpenzim tani ka të njëjtën meny ⋮ si te shpenzimet e një grupi: modifikojeni, duplikojeni, shpërndajeni ose fshijeni pa e hapur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Në ekrane të gjera (një telefon i vendosur horizontalisht, tabletë, Mac dhe ueb), Shpenzimet sipas kategorisë i mban kategoritë dhe totalin në një kolonë pranë shpenzimeve.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Në gjermanisht, holandisht dhe japonisht, fjalitë e Aktivitetit tani lexohen me renditjen natyrore të fjalëve të çdo gjuhe, pa dy pika para emrit të shpenzimit ose të grupit.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Shkronja e parë e \"Shto foto\" poshtë bashkëngjitjeve të një shpenzimi nuk pritet më.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Te Grupet, butoni për të krijuar një grup tani shkruan \"+ Grup\" dhe nuk ndahet më në dy rreshta.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Çfarë ka të re tani shfaq versionin që sapo instaluat, në vend që të presë deri në një ditë për të sjellë shënimet e tij.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Te Statistika e një grupi, butoni i periudhës (\"Gjithë kohën\") nuk ndahet më në dy rreshta: datat kalojnë poshtë tij kur të dyja nuk nxihen.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

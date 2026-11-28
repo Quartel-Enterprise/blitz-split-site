@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split në Apple Watch: lidheni me llogarinë e iPhone-it tuaj, shihni bilancet dhe grupet e hapura, prekni Pagova në një grup ku detyroheni, dhe shtoni bilancin tuaj të përgjithshëm në një fytyrë ore ose në Smart Stack; pasi lidhet, ora funksionon më vete.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Aplikacioni tani flet bengalisht, malajisht dhe greqisht: zgjidhni \"বাংলা\", \"Bahasa Melayu\" ose \"Ελληνικά\" te Profili › Gjuha, ose lëreni të ndjekë pajisjen tuaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupet tani mund të përdorin takën e Bangladeshit dhe ringitin malajzian.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacioni tani flet kroatisht: zgjidhni \"Hrvatski\" te Profili › Gjuha, ose lëreni të ndjekë pajisjen tuaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacioni tani flet filipinisht: zgjidhni \"Filipino\" te Profili › Gjuha, ose lëreni të ndjekë pajisjen tuaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupet tani mund të ndajnë shpenzimet në peson filipinase (PHP, \"₱\"), dhe një grup i krijuar në Filipine fillon me të.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacioni tani flet hungarisht: zgjidhni \"Magyar\" te Profili › Gjuha, ose lëreni të ndjekë pajisjen tuaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupet tani mund të përdorin forintin hungarez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Shtoni miniaplikacionin Bilancet në ekranin bazë ose në ekranin e kyçjes të iPhone-it ose iPad-it tuaj për të parë me një shikim bilancin tuaj të përgjithshëm dhe grupet e hapura; prekeni për të hapur Bilancet.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Grupet tani mund të përdorin monedhat e Bolivisë, Venezuelës, Kosta Rikës, Guatemalës, Hondurasit, Nikaraguas, Republikës Dominikane dhe Kubës, dhe një grup i krijuar atje fillon me monedhën e vendit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacioni tani flet serbisht: zgjidhni \"Srpski\" te Profili › Gjuha, ose lëreni të ndjekë pajisjen tuaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupet tani mund të ndajnë shpenzimet në dinarin serb (RSD), dhe një grup i krijuar në Serbi fillon me të.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Aplikacioni tani flet urdu: zgjidhni \"اردو\" te Profili › Gjuha, ose lëreni të ndjekë pajisjen tuaj.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupet tani mund të ndajnë shpenzimet në rupinë pakistaneze (PKR), dhe një grup i krijuar në Pakistan fillon me të.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prekja e njoftimit të një shpenzimi të ri e hap shpenzimin menjëherë: aplikacioni e sjell sapo mbërrin njoftimi.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Ekrani i mirëseardhjes në telefona tani shfaq vetëm logon në krye, duke lënë më shumë hapësirë për butonat.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Banderola \"Është koha të shlyeni llogaritë\" e grupit nuk shfaq më një datë kujtese nga para se kujtesa të vendosej ose të ndryshohej: një kujtesë e ndryshuar në datën 25 pret datën 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

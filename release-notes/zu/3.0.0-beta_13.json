@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "I-app manje isikhuluma isiRashiya nesi-Ukraine: khetha \"Русский\" noma \"Українська\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-ruble yaseRashiya (RUB) nange-hryvnia yase-Ukraine (UAH), futhi iqembu elakhiwe eRashiya noma e-Ukraine liqala ngohlobo lwemali yakhona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-Iphrofayela inokuncamelayo okusha, \"Ifomethi yesikhathi\": landela isistimu, noma ubonise njalo izikhathi ngamahora angu-24 (14:30) noma angu-12 nge-AM ne-PM (2:30 PM), ezindlekweni, ku-Umsebenzi, emazwaneni nakusikhethi sesikhathi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lapho ifoni ilele phansi, nakumathebhulethi, ukuthi \"Hlukanisa isindleko\" seqembu manje kuhlala kubha engenhla esikhundleni sokuntanta phezu kwezindleko.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Uma Imibala eguquguqukayo ivuliwe, lokho okufanele ukukhokhe kuhlala kusawolintshi esikhundleni sokuba bomvu, ukuze kungalokothi kubukeke njengoluhlaza lwalokho okubuyela kuwena.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ku-Umsebenzi, umugqa ngamunye manje ubonisa isithombe seqembu eduze kwegama lalo, uma iqembu linaso.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ibhalansi yakho kuleli qembu ayisaphindi inani emugqeni wesibili lapho uthola kuphela noma ukweleta kuphela.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ku-Ukuhlukanisa okuzenzakalelayo, ingxenye yomuntu ngamunye yesindleko sesibonelo manje inombala wayo, nechashaza elifanayo ngaphambi kwegama lakhe, ukuze abantu abaseduze ohlwini bangalokothi babukeke njengomuntu oyedwa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ibha engenhla yesindleko manje ibonisa isithombe seqembu, noma izinhlamvu zalo zokuqala, eduze kwegama leqembu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ukuthepha isithombe somuntu manje kusiyisa ephrofayeleni yakhe, futhi kusibuyise lapho ubuyela emuva.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Isindleko esivulwe ku-Izindleko zeqembu manje singena endaweni yaso njengoba senza ku-Ikhaya, futhi isithombe seqembu ezindlekweni ze-Ikhaya sindizela kubha engenhla yesindleko.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ukuthi \"Hlukanisa isindleko\" manje kukhona naphezulu ku-Amabhalansi naku-Oxhumana nabo, futhi esikrinini seqembu kudlulele kubha engenhla esikhundleni sokuntanta phezu kohlu, kanti ukuthi \"Engeza abantu\" manje kusemenyu ethi ⋯. Kuqala negama lakho bese kuncipha kube yisithonjana sakho njengoba uskrola.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ku-Amaqembu, ukuthepha ikhadi le-Ibhalansi iyonke kuvula i-Amabhalansi.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Ukuthi \"Mema abantu\" eqenjini manje sekubizwa ngokuthi \"Engeza abantu\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ku-iPad, amathebhu avuleka kubha eseceleni, futhi lapho ehlala kubha engenhla, njengoba kunjalo uma i-iPad imile, ukuthi \"Hlukanisa isindleko\" kuhlala kubonakala lapho kuyilapho ezinye izinkinobho zidlulela emugqeni ongezansi nje.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ku-\"Hlukanisa isindleko\", ukuthi \"Kukhokhwe ngani\" manje kuvela futhi lapho omunye umuntu ekhokhe isindleko, kufiphele: ukukuthepha kuchaza ukuthi labo abakhokhile kuphela abangamaka ukuthi bakhokhe ngani.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ngaphandle kwe-akhawunti, ikhodi yakho yokubuyisela manje ingamagama angu-12 anezinombolo, okulula ukuwabhala phansi, futhi ukubuyisela kuwathatha igama elilodwa enkundleni ngayinye, kuphakamisa igama ngalinye njengoba uthayipha. Amakhodi alondolozwe ngaphambi kwale nguqulo awasasebenzi: londoloza entsha, noma uxhume i-Google noma i-Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ku-Izindleko ngesigaba, isindleko ngasinye manje sinemenyu efanayo ethi ⋮ njengasezindlekweni zeqembu: sihlele, siphinde, yabelana ngaso noma usisuse ngaphandle kokusivula.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ezikrinini ezibanzi (ifoni ilele phansi, amathebhulethi, i-Mac newebhu), i-Izindleko ngesigaba igcina izigaba zayo nesamba kukholomu eseceleni kwezindleko.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "NgesiJalimane, isiDashi nesiJaphani, imisho ye-Umsebenzi manje ifundeka ngokuhleleka kwamagama okwemvelo kolimi ngalunye, ngaphandle kwekholoni ngaphambi kwegama lesindleko noma leqembu.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Uhlamvu lokuqala lokuthi \"Engeza isithombe\" ngaphansi kokunamathiselwe kwesindleko alusanqunywa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ku-Amaqembu, inkinobho yokwakha iqembu manje ithi \"+ Iqembu\" futhi ayisahlukani ibe imigqa emibili.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "I-Okusha manje ibonisa inguqulo osanda kuyifaka, esikhundleni sokulinda kuze kube usuku olulodwa ukuze kulethwe okusha kwayo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ku-Izibalo zeqembu, inkinobho yesikhathi (\"Sonke isikhathi\") ayisahlukani ibe imigqa emibili: izinsuku zidlulela ngaphansi kwayo lapho zombili zingangeni.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

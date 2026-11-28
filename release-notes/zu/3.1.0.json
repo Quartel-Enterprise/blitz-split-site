@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "I-Blitz Split ku-Apple Watch: yixhume ne-akhawunti ye-iPhone yakho, ubone amabhalansi akho namaqembu avulekile, uthephe okuthi Ngikhokhile eqenjini lapho ukweleta khona, futhi wengeze ibhalansi yakho iyonke ebusweni bewashi noma ku-Smart Stack; uma isixhunyiwe, iwashi lisebenza lodwa.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiBengali, isiMalay nesiGreki: khetha \"বাংলা\", \"Bahasa Melayu\" noma \"Ελληνικά\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angasebenzisa i-taka yaseBangladesh ne-ringgit yaseMalaysia.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiCroatia: khetha \"Hrvatski\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiFilipino: khetha \"Filipino\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-peso yasePhilippines (PHP, \"₱\"), futhi iqembu elakhiwe ePhilippines liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiHungary: khetha \"Magyar\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angasebenzisa i-forint yaseHungary.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Engeza iwijethi ethi Amabhalansi ku-Home Screen noma ku-Lock Screen ye-iPhone noma ye-iPad yakho ukuze ubone ibhalansi yakho iyonke namaqembu akho avulekile ngokushesha; yithephe ukuze uvule i-Amabhalansi.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angasebenzisa izinhlobo zemali zaseBolivia, eVenezuela, eCosta Rica, eGuatemala, eHonduras, eNicaragua, eDominican Republic naseCuba, futhi iqembu elakhiwe lapho liqala ngohlobo lwemali yakhona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiSerbia: khetha \"Srpski\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-dinar yaseSerbia (RSD), futhi iqembu elakhiwe eSerbia liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isi-Urdu: khetha \"اردو\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-rupee yasePakistan (PKR), futhi iqembu elakhiwe ePakistan liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ukuthepha isaziso sesindleko esisha kuvula isindleko ngokushesha: i-app isiletha ngokushesha lapho isaziso sifika.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Isikrini sokwamukela kumafoni manje sibonisa ilogo kuphela phezulu, kushiya isikhala esengeziwe sezinkinobho.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Isibhengezo seqembu esithi \"Sekuyisikhathi sokuxazulula izikweletu\" asisabonisi usuku lwesikhumbuzi lwangaphambi kokuba isikhumbuzi sisethwe noma sishintshwe: isikhumbuzi esishintshelwe kumhla ka-25 silinda umhla ka-25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

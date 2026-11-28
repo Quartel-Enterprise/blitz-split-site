@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Ukuvula umuntu ku-Oxhumana nabo noma ku-Amabhalansi manje kuyisa igama lakhe nebhalansi ephrofayeleni yakhe kanye nesithombe, futhi kukubuyise lapho ubuyela emuva.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Ku-Izibalo, phakathi kweringi ethi \"Ngomuntu\" manje kuthi nje \"Wena\" lapho isabelo singesakho, futhi igama elide liphela ngokuthi \"…\" esikhundleni sokuthinta iringi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lapho uvula iqembu ku-Amaqembu, ubuso bamalungu alo manje buhamba kusuka emugqeni buye esikrinini seqembu, futhi bubuye lapho uphuma.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Efonini, ukuvula isindleko manje kuthwala okuningi kwaso: ubani okhokhile uhamba kusuka emugqeni waso ku-Ikhaya naku-Zonke izindleko, isikhathi kusuka emugqeni waso ku-Izindleko zeqembu, nesithombe seqembu negama kusuka esikrinini seqembu. Kubuyela emuva lapho uphuma.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Igama leqembu manje lihamba liye esikrinini seqembu njengoba sivuleka, hhayi kuphela lapho ubuyela emuva.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

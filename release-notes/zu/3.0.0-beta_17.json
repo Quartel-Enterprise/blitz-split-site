@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "I-app manje isikhuluma isi-Arabhu, ihlelwe ukuthi ifundeke kusuka kwesokudla kuya kwesokunxele: khetha \"العربية\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-riyal yaseSaudi Arabia (SAR), i-dirham ye-UAE (AED), i-pound yaseGibhithe (EGP) ne-dirham yaseMorocco (MAD), futhi iqembu elakhiwe kwelinye lalawo mazwe liqala ngohlobo lwemali yakhona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiShayina (Esenziwe Lula): khetha \"中文（简体）\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-yuan yaseShayina (CNY), futhi iqembu elakhiwe ezweni elikhulu laseShayina liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiShayina (Sendabuko): khetha \"中文（繁體）\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-dollar entsha yaseTaiwan (TWD), futhi iqembu elakhiwe eTaiwan liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiCzech: khetha \"Čeština\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-koruna yaseCzechia (CZK), futhi iqembu elakhiwe eCzechia liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Iqembu ngalinye manje linesikhumbuzi salo sokuxazulula izikweletu: gcina esamasonto onke ngoMsombuluko ngo-10:00, khetha olunye usuku lwesonto noma usuku lwenyanga nesikhathi (isibonelo, njalo ngomhla ka-25 ngo-12:00), noma usivale, lapho wakha iqembu noma ku-Hlela iqembu. Abantu abasakweleta kuphela abathola isaziso, futhi babona isibhengezo eqenjini abangasivala.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiHebheru, ihlelwe ukuthi ifundeke kusuka kwesokudla kuya kwesokunxele: khetha \"עברית\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-shekel entsha yase-Israel (ILS), futhi iqembu elakhiwe e-Israel liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiHindi: khetha \"हिन्दी\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-rupee yase-India (INR), futhi iqembu elakhiwe e-India liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiRomania: khetha \"Română\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-leu yaseRomania (RON), futhi iqembu elakhiwe eRomania liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiSwidi: khetha \"Svenska\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-krona yaseSweden (SEK), futhi iqembu elakhiwe eSweden liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiThayi: khetha \"ไทย\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-baht yaseThailand (THB), futhi iqembu elakhiwe eThailand liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-app manje isikhuluma isiVietnam: khetha \"Tiếng Việt\" ku-Iphrofayela › Ulimi, noma uyivumele ilandele idivayisi yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amaqembu manje angahlukanisa nge-dong yaseVietnam (VND), futhi iqembu elakhiwe eVietnam liqala ngalolu hlobo lwemali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Thepha isithombe seqembu kubha engenhla yesindleko ukuze usibone sisikhulu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ukuthepha inkinobho efiphele ethi Yenza izikweletu zibe lula eqenjini labantu ababili manje kukutshela ukuthi izotholakala uma iqembu selinabantu abangu-3.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ku-Kusebenza kanjani kokuthi Yenza izikweletu zibe lula, isibonelo manje sibonisa izithombe zabantu esikhundleni sezinhlamvu zokuqala.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kulungisiwe isenzo sokubuyela emuva esasingaphumi ephrofayeleni yomuntu evulwe eshidini lenkokhelo; manje sibuyela eshidini.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

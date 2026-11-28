@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Skeda Bilancet nuk shfaq më një rresht me zero kur askush nuk i detyrohet asgjë askujt: thotë thjesht Gjithçka është shlyer.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U rregullua Profili që shfaqte logon e Apple pranë email-it të një llogarie të identifikuar me Google, ose logon e Google pranë një llogarie të identifikuar me Apple, kur llogaria i ka të dyja.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

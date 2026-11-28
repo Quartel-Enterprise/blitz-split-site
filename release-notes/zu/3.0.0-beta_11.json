@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "I-akhawunti engenayo i-Google noma i-Apple manje iyasuswa ngemva kwezinsuku ezingu-30 ingasetshenziswa. Isikrini sokwamukela ne-Iphrofayela kuyakusho lokho, futhi ukuxhuma i-Google noma i-Apple kugcina idatha yakho.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Manje ungalinganisa i-app ku-Iphrofayela › Usizo nempendulo, ngokuthi \"Linganisa i-app\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Isindleko esivulwe ku-Ikhaya noma ku-Zonke izindleko manje sibuyela ngqo lapho usivule khona, singadluli eqenjini laso.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kulungisiwe ibhamuza elithi \"+N\" lesitaki sobuso elalivela ngaphansi kobuso bokuqala esikhundleni sokuba phezu kwabo.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}
