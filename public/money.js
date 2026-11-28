@@ -121,7 +121,7 @@
   const cents = (amount) => amount * factor;
 
   // A percentage, as the language writes it: Turkish puts the sign first (%10); French, German, Russian, Swedish, Czech,
-  // Croatian, Serbian, Slovak, Norwegian, Catalan, Danish, Finnish, Lithuanian and Slovenian put a space before it (10 %). The phone (preview.js) and the split card (split-modes.js) share it.
+  // Croatian, Serbian, Slovak, Norwegian, Catalan, Danish, Finnish, Lithuanian and Slovenian put a space before it (10 %); Kazakh, though it follows Russian's numbers, writes 10% as `Intl` does. The phone (preview.js) and the split card (split-modes.js) share it.
   const lang = document.documentElement.dataset.lang;
   const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk", "nb", "ca", "da", "fi", "lt", "sl"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
 
