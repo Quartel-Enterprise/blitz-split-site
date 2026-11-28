@@ -2110,6 +2110,8 @@
   const face = (p) => `<span class="av ${p.color}"><img src="/people/${p.photo}.webp" alt=""></span>`;
   const prefix = window.money.symbolBefore;
   const suffix = window.money.symbolAfter;
+  // The percent field's sign on the side money.js writes it: first in Turkish (%10) and Basque (% 10), after elsewhere.
+  const percentFirst = pct(0).startsWith("%");
   // A money field grows with what it holds: ₩6,000,000 or Rp60.000.000 is longer than $6,000.
   const fit = (input) => input.style.setProperty("--chars", String(input.value.length));
   const moneyField = (value, label, extra = "") => `<span class="split-field">${prefix ? `<span>${prefix}</span>` : ""}`
@@ -2122,7 +2124,7 @@
     if (mode === "amounts") return moneyField(state.amounts[i], fill(TEXT.label.amount, { name }));
     if (mode === "percent") {
       const field = `<input type="text" inputmode="numeric" autocomplete="off" maxlength="3" value="${state.percent[i]}" aria-label="${fill(TEXT.label.percent, { name })}">`;
-      return `<span class="split-field">${lang === "tr" ? `<span>%</span>${field}` : `${field}<span>%</span>`}</span>`;
+      return `<span class="split-field">${percentFirst ? `<span>%</span>${field}` : `${field}<span>%</span>`}</span>`;
     }
     if (mode === "shares") {
       return `<span class="split-stepper"><button type="button" data-step="-1" aria-label="${fill(TEXT.label.less, { name })}">−</button>`
