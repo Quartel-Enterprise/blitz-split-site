@@ -1574,6 +1574,37 @@
         less: "ដកមួយចំណែកពី {name}", more: "បន្ថែមមួយចំណែកឱ្យ {name}", had: "អ្នកណាបានញ៉ាំ {item}",
       },
     },
+    // Odia: a noun after a number keeps one form, so no message holds "|". A name, an item or an amount never takes a case
+    // ending: it stands after a colon. ଆପଣ for the user.
+    or: {
+      bill: "ପିଜା ରାତି", paid: "Pedro ଦେୟ ଦେଲେ", notIn: "ଏଥିରେ ନାହାନ୍ତି",
+      each: "ପ୍ରତି ଜଣ {a}", among: "{n} ଜଣଙ୍କ ମଧ୍ୟରେ ବାଣ୍ଟାଗଲା: {a}।", amongOne: "କେବଳ 1 ଜଣଙ୍କ ପାଇଁ: {a}।", out: "ଏଥିରେ ନାହାନ୍ତି: {name}।",
+      nobody: "ଏପର୍ଯ୍ୟନ୍ତ କେହି ନାହାନ୍ତି", nobodyEqual: "ଏହି ରାଶି ବାଣ୍ଟିବାକୁ ଅତି କମରେ ଜଣଙ୍କୁ ଚୟନ କରନ୍ତୁ: {a}।",
+      checkAll: "ସମସ୍ତଙ୍କୁ ଚୟନ କରନ୍ତୁ", uncheckAll: "ସମସ୍ତଙ୍କ ଚୟନ ହଟାନ୍ତୁ",
+      left: "ବାକି: {a}", over: "ଅଧିକ: {a}", closed: "ମେଳ ଖାଇଲା: {a}",
+      progress: "ଏପର୍ଯ୍ୟନ୍ତ: {a} / {b}।", closedMsg: "ଭାଗଗୁଡ଼ିକ ମୋଟ ସହ ମେଳ ଖାଉଛି।",
+      parts: "{n} ଭାଗରେ ବାଣ୍ଟାଗଲା: {a}",
+      personParts: "{name}: {n} ଭାଗ।",
+      nobodyShares: "ଏହି ରାଶି ବାଣ୍ଟିବାକୁ ଅତି କମରେ ଜଣଙ୍କୁ ଗୋଟିଏ ଭାଗ ଦିଅନ୍ତୁ: {a}।",
+      ofEach: "ପ୍ରତି ଖର୍ଚ୍ଚର {p}", ofBill: "ଖର୍ଚ୍ଚର {p}", incomeDetail: "ପ୍ରତ୍ୟେକଙ୍କ ଭାଗ ତାଙ୍କ ଆୟ ଅନୁସାରେ।", perMonth: "/ମାସ",
+      service: "ସର୍ଭିସ୍ ({p})", serviceSub: "ପ୍ରତ୍ୟେକ ଯାହା ନେଲେ ସେହି ଅନୁପାତରେ",
+      loose: "ପ୍ରତି ଆଇଟମ୍ କିଏ ନେଲେ ଚିହ୍ନିତ କରନ୍ତୁ", looseDetail: "କିଏ ନେଲେ ଚିହ୍ନିତ କରିବାକୁ ପ୍ରତି ଆଇଟମ୍‌ର ମୁହଁଗୁଡ଼ିକରେ ଟ୍ୟାପ୍ କରନ୍ତୁ।",
+      itemsClosed: "ଆଇଟମ୍: {a}, ସର୍ଭିସ୍: {b}।", nobodyItem: "କାହାକୁ ଚୟନ କରାଯାଇନାହିଁ", eachItem: "ପ୍ରତି ଜଣ {a}",
+      items: { pizza: "ବଡ଼ ପିଜା", beer: "ବିୟର୍", salad: "ସାଲାଡ୍", draft: "ଡ୍ରାଫ୍ଟ ବିୟର୍", shrimp: "ଚିଙ୍ଗୁଡ଼ି ପ୍ଲାଟର୍" },
+      receiptBill: "ହାର୍ବର୍ ବାର୍",
+      hint: {
+        equal: "ସମାନ ଭାବେ ବାଣ୍ଟି ନହେଲେ, ବଳକା ପଇସା ଯିଏ ଦେଲେ ତାଙ୍କ ପାଖକୁ ଯାଏ।",
+        amounts: "ଯାହାଙ୍କ ରାଶି {zero} ରହେ, ସେ ଏହି ଖର୍ଚ୍ଚରେ ନାହାନ୍ତି।",
+        percent: "କେବଳ ପୂର୍ଣ୍ଣ ସଂଖ୍ୟା। ବଳକା ପଇସା ଯିଏ ଦେଲେ ତାଙ୍କ ପାଖକୁ ଯାଏ।",
+        shares: "କେହି ଅଧିକ ନେଲେ ଭାଗ ବ୍ୟବହାର କରନ୍ତୁ, ଯେପରି ଯିଏ ସାଙ୍ଗରେ ଜଣେ ଅତିଥି ଆଣିଛନ୍ତି।",
+        income: "ଆୟ ଡିଭାଇସ୍‌ରେ ହିଁ ରହେ। ଗ୍ରୁପ୍ କେବଳ ପ୍ରତିଶତ ଦେଖେ।",
+        items: "ପ୍ରତି ଆଇଟମ୍ ଯେଉଁମାନେ ନେଲେ ସେମାନଙ୍କ ମଧ୍ୟରେ ବାଣ୍ଟାଯାଏ, ଆଉ ସର୍ଭିସ୍ ପ୍ରତ୍ୟେକ ଯାହା ନେଲେ ସେହି ଅନୁସାରେ।",
+      },
+      label: {
+        amount: "ରାଶି: {name}", percent: "ପ୍ରତିଶତ: {name}", income: "ମାସିକ ଆୟ: {name}",
+        less: "ଗୋଟିଏ ଭାଗ କମ୍: {name}", more: "ଗୋଟିଏ ଭାଗ ଅଧିକ: {name}", had: "କିଏ ନେଲେ: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {

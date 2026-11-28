@@ -59,7 +59,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", gu: "in/", ml: "in/", pa: "in/", kn: "in/", my: "mm/", km: "kh/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", gu: "in/", ml: "in/", pa: "in/", kn: "in/", my: "mm/", km: "kh/", or: "in/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -636,6 +636,18 @@
       mismatchBody: "អ្នកកំពុងប្រើ {platform}។ ដើម្បីបទពិសោធន៍ល្អបំផុត សូមទាញយកកម្មវិធី {in}។",
       mismatchGo: "ទៅ {to}", mismatchStay: "បន្តទៅ {to}", close: "បិទ",
       in: { play: "ពី Google Play", appstore: "ពី App Store" }, to: { play: "Google Play", appstore: "App Store" },
+    },
+    // Odia: "Google Play" and "App Store" stay in Latin letters, so their case ending is written apart (ରେ, ରୁ, କୁ). ଆପଣ for
+    // the user.
+    or: {
+      play: ["ଏବେ ପାଆନ୍ତୁ", "ଶୀଘ୍ର ଆସୁଛି"], appstore: ["ଡାଉନଲୋଡ୍ କରନ୍ତୁ", "ଶୀଘ୍ର ଆସୁଛି"], web: ["ଏବେ ଖୋଲନ୍ତୁ", "ଶୀଘ୍ର ଆସୁଛି"], browser: "ବ୍ରାଉଜର୍",
+      getApp: "ଆପ୍ ପାଆନ୍ତୁ", openWeb: "ୱେବ୍ ଆପ୍ ଖୋଲନ୍ତୁ", soon: "ଶୀଘ୍ର ଆସୁଛି",
+      noteStore: "{in} ଆପ୍ ପାଆନ୍ତୁ।", noteApple: "ଆପଣ {platform} ବ୍ୟବହାର କରୁଛନ୍ତି କି? App Store ରେ ଆପ୍ ଆସିବା ପର୍ଯ୍ୟନ୍ତ ଏହାକୁ ବ୍ରାଉଜର୍‌ରେ ବ୍ୟବହାର କରନ୍ତୁ।", noteWeb: "କିଛି ଇନଷ୍ଟଲ୍ ନକରି ବ୍ରାଉଜର୍‌ରେ ଖୋଲନ୍ତୁ।",
+      playLive: "Google Play ରେ ଉପଲବ୍ଧ", appStoreLive: "App Store ରେ ଉପଲବ୍ଧ", webLive: "ୱେବ୍ ଆପ୍ ଖୋଲନ୍ତୁ",
+      mismatchTitle: "ଆପଣଙ୍କ ଷ୍ଟୋର୍ ବାଛନ୍ତୁ",
+      mismatchBody: "ଆପଣ {platform} ବ୍ୟବହାର କରୁଛନ୍ତି। ସବୁଠାରୁ ଭଲ ଅନୁଭବ ପାଇଁ, {in} ଆପ୍ ପାଆନ୍ତୁ।",
+      mismatchGo: "{to} ଯାଆନ୍ତୁ", mismatchStay: "ତଥାପି {to} ଯାଆନ୍ତୁ", close: "ବନ୍ଦ କରନ୍ତୁ",
+      in: { play: "Google Play ରୁ", appstore: "App Store ରୁ" }, to: { play: "Google Play କୁ", appstore: "App Store କୁ" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

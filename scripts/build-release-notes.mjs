@@ -85,6 +85,7 @@ const CHROME = {
   kn: { language: "ಕನ್ನಡ", brand: "Blitz Split", locale: "kn", title: "ಹೊಸತೇನು", lead: "ಆ್ಯಪ್‌ನ ಪ್ರತಿ ಆವೃತ್ತಿಯಲ್ಲಿ ಏನು ಬದಲಾಗಿದೆ.", showBeta: "ಬೀಟಾ ಆವೃತ್ತಿಗಳನ್ನು ತೋರಿಸಿ", beta: "ಬೀಟಾ", empty: "ಇನ್ನೂ ಸ್ಥಿರ ಆವೃತ್ತಿ ಇಲ್ಲ. ಏನನ್ನು ಪರೀಕ್ಷಿಸಲಾಗುತ್ತಿದೆ ಎಂದು ನೋಡಲು ಬೀಟಾ ಆವೃತ್ತಿಗಳನ್ನು ಆನ್ ಮಾಡಿ.", platforms: { android: "Android", ios: "iPhone ಮತ್ತು iPad", mac: "Mac", web: "ವೆಬ್" } },
   my: { language: "မြန်မာ", brand: "Blitz Split", locale: "my-u-nu-latn", title: "အသစ်များ", lead: "အက်ပ်၏ ဗားရှင်းတစ်ခုစီတွင် ပြောင်းလဲခဲ့သည်များ။", showBeta: "ဘီတာ ဗားရှင်းများ ပြရန်", beta: "ဘီတာ", empty: "တည်ငြိမ်သော ဗားရှင်း မရှိသေးပါ။ စမ်းသပ်နေသည်များကို ကြည့်ရန် ဘီတာ ဗားရှင်းများကို ဖွင့်ပါ။", platforms: { android: "Android", ios: "iPhone နှင့် iPad", mac: "Mac", web: "ဝဘ်" } },
   km: { language: "ខ្មែរ", brand: "Blitz Split", locale: "km-u-nu-latn", title: "អ្វីដែលថ្មី", lead: "អ្វីដែលបានផ្លាស់ប្ដូរនៅក្នុងកំណែនីមួយៗរបស់កម្មវិធី។", showBeta: "បង្ហាញកំណែបេតា", beta: "បេតា", empty: "មិនទាន់មានកំណែស្ថិរភាពនៅឡើយទេ។ សូមបើកកំណែបេតា ដើម្បីមើលអ្វីដែលកំពុងសាកល្បង។", platforms: { android: "Android", ios: "iPhone និង iPad", mac: "Mac", web: "វេប" } },
+  or: { language: "ଓଡ଼ିଆ", brand: "Blitz Split", locale: "or", title: "ନୂଆ କ’ଣ ଅଛି", lead: "ଆପ୍‌ର ପ୍ରତି ଭର୍ସନ୍‌ରେ କ’ଣ ବଦଳିଲା।", showBeta: "ବିଟା ଭର୍ସନ୍ ଦେଖାନ୍ତୁ", beta: "ବିଟା", empty: "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ସ୍ଥିର ଭର୍ସନ୍ ନାହିଁ। କ’ଣ ଟେଷ୍ଟ ହେଉଛି ଦେଖିବାକୁ ବିଟା ଭର୍ସନ୍ ଚାଲୁ କରନ୍ତୁ।", platforms: { android: "Android", ios: "iPhone ଓ iPad", mac: "Mac", web: "ୱେବ୍" } },
 };
 
 class NotesError extends Error {}

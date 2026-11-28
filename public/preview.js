@@ -991,6 +991,25 @@
       bills: (n) => `ចំណាយ ${n}`,
       titles: { b1: "ផ្ទះសំណាក់ Lagoa", b2: "អាហារពេលល្ងាចនៅ Ribeirão", b3: "ជិះឡានទៅឆ្នេរ", p1: "ការ៉េមនៅឆ្នេរ", p2: "គ្រឿងទេសប្រចាំសប្ដាហ៍", p3: "ចំណតរថយន្ត" },
     },
+    // Odia: a name stands as the subject ("{name} ଦେୟ ଦେଲେ", with the honorific past) and an amount after a colon, never
+    // with a case ending; a count needs no plural form, as Odia writes a noun after a number. ଆପଣ for the user.
+    or: {
+      paid: "{name} ଦେୟ ଦେଲେ", notIn: "ଏଥିରେ ନାହାନ୍ତି",
+      members: (people, bills) => `${people} ଜଣ · ${bills} ଖର୍ଚ୍ଚ`,
+      toGet: "ପାଇବାକୁ ଅଛି", youOwe: "ଆପଣଙ୍କୁ ଦେବାକୁ ଅଛି", settled: "ସବୁ ହିସାବ ମେଣ୍ଟିଗଲା", owesYou: "କିଏ ଆପଣଙ୍କୁ ଦେବେ", youOweTitle: "ଆପଣଙ୍କୁ ଦେବାକୁ ଅଛି",
+      eachOne: "ପ୍ରତ୍ୟେକଙ୍କ ବ୍ୟାଲାନ୍ସ", getsBack: "ପାଇବାକୁ ଅଛି", owes: "ଦେବାକୁ ଅଛି", even: "ହିସାବ ମେଣ୍ଟିଗଲା",
+      toSettle: "ହିସାବ ମେଣ୍ଟାଇବାକୁ", total: "ଗ୍ରୁପ୍‌ର ମୋଟ", lodging: "ରହଣି", food: "ଖାଦ୍ୟ", transport: "ଯାତାୟାତ",
+      sheetTitle: "ଖର୍ଚ୍ଚ ବାଣ୍ଟନ୍ତୁ", description: "ବିବରଣୀ", amount: "ରାଶି", whoPaid: "କିଏ ଦେଲେ",
+      splitAmong: "ଏମାନଙ୍କ ମଧ୍ୟରେ ସମାନ ଭାବେ ବାଣ୍ଟନ୍ତୁ", each: "ପ୍ରତି ଜଣ {value}", cancel: "ବାତିଲ୍ କରନ୍ତୁ", save: "ସେଭ୍ କରନ୍ତୁ", close: "ବନ୍ଦ କରନ୍ତୁ",
+      queue: (n) => `କ୍ୟୁରେ ${n} ପରିବର୍ତ୍ତନ`,
+      split: "କିପରି ବାଣ୍ଟାଗଲା", yourShare: "ଆପଣଙ୍କ ଭାଗ", deleteBill: "ଖର୍ଚ୍ଚ ଡିଲିଟ୍ କରନ୍ତୁ",
+      recordPayment: "ପେମେଣ୍ଟ ରେକର୍ଡ କରନ୍ତୁ", record: "ରେକର୍ଡ କରନ୍ତୁ", viaMethod: "ଟ୍ରାନ୍ସଫର୍ ମାଧ୍ୟମରେ", payment: "ପେମେଣ୍ଟ", deletePayment: "ପେମେଣ୍ଟ ଡିଲିଟ୍ କରନ୍ତୁ",
+      payLine: (from, to) => `${name(from)} → ${name(to)}`,
+      paidYou: (who, value) => `${who} ଆପଣଙ୍କୁ ଦେଲେ: ${value}`,
+      paidTotal: "ମୋଟ ଦେୟ", shareTotal: "ଖର୍ଚ୍ଚରେ ଭାଗ", balance: "ବ୍ୟାଲାନ୍ସ",
+      bills: (n) => `${n} ଖର୍ଚ୍ଚ`,
+      titles: { b1: "ଲାଗୋଆ ଗେଷ୍ଟହାଉସ୍", b2: "ରିବେରାଓରେ ଡିନର୍", b3: "ବିଚ୍‌କୁ ଯାତ୍ରା", p1: "ବିଚ୍‌ରେ ଆଇସକ୍ରିମ୍", p2: "ସପ୍ତାହର ବଜାର", p3: "ପାର୍କିଂ" },
+    },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
 
