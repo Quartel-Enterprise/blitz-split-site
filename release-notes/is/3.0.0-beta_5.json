@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split talar nú þýsku, ítölsku og pólsku: það fylgir tungumáli tækisins þíns, eða þú getur valið eitt í Prófíll › Tungumál.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hver flokkur hefur nú sinn eigin lit, og Tölfræði teiknar hvern flokk og hvern einstakling í sínum lit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nú getur þú breytt lit flokks, í eyðublaði flokksins eða í Flokkakort.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Valmynd kostnaðar í Kostnaður er með nýjan valkost, Afrita: hann opnar nýjan kostnað sem er þegar útfylltur eins og upprunalegi kostnaðurinn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hópar og kostnaður hverfa ekki lengur í smástund þegar þú kemur aftur í forritið.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Leit lokast ekki lengur strax þegar þú ert ekki enn með hóp.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nýr hópur byrjar nú sem Viðburður, fyrsta tegundin á listanum.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Þegar enginn hópur er kominn sýnir Bjóða með hlekk eða QR nú aðeins hnappinn Nýr hópur í stað hnappa sem þú gast ekki notað.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kvittun sem tekur lengri tíma að lesa endar ekki lengur á tengingarvillu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Flokkaraðir Tölfræði eru hreinni: þær telja ekki lengur upp upphæð hvers undirflokks.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

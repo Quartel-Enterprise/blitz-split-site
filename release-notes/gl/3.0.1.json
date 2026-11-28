@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "A pestana Saldos xa non mostra unha fila de ceros cando ninguén debe nada: só di Todo liquidado.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corrixiuse que Perfil mostrase o logotipo de Apple ao lado do correo electrónico dunha conta con sesión iniciada con Google, ou o de Google ao lado dunha con sesión iniciada con Apple, cando a conta ten os dous.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Gastu bat Diru-sarreren arabera bana daiteke orain, eta idazten dituzun diru-sarrerak taldeko kideekin partekatzen dira.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hasiera ataleko Azken gastuak zatiko gastu bakoitzak menu bat du orain: Editatu, Bikoiztu, Partekatu eta Ezabatu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hasiera ataleko Ikusi guztiak aukerak Gastu guztiak irekitzen du orain: parte zaren gastu guztiak, zure talde guztietakoak, bilaketa, iragazki eta ordenatzearekin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde baten argazkia handiagoa da orain haren pantailaren goialdean, eta korritu ahala txikitzen da, eta talde bat irekitzean haren errenkadatik animatzen da.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Jarduera atalak pertsonen argazkiak erakusten ditu orain, Saldoak › Taldeka zatiak talde bakoitzaren argazkia, eta Estatistikak ataleko Gasturik handiena zatiak haren kategoria.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profila › Kontua eta sinkronizazioa atalak Google edo Apple logotipoa eta zure posta elektroniko osoa erakusten ditu orain, zuk bakarrik ikusten duzuna.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ezabatu kontua atalak azaltzen du orain zer geratzen den zure taldeetan zure kontua desagertu ondoren.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix gako lehenetsia etengailuak ez du gehiago desaktibatuta ematen zure gako lehenetsian gai ilunean.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

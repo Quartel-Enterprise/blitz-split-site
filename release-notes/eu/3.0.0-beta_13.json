@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Aplikazioak errusieraz eta ukraineraz hitz egiten du orain: aukeratu \"Русский\" edo \"Українська\" Profila › Hizkuntza atalean, edo utzi zure gailuari jarraitzen.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Taldeek Errusiako errubloa (RUB) eta Ukrainako hryvnia (UAH) erabil ditzakete orain banatzeko, eta Errusian edo Ukrainan sortutako talde bat bere monetan hasten da.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profila atalak \"Ordu-formatua\" hobespen berria du: jarraitu sistemari, edo erakutsi beti orduak 24 orduko formatuan (14:30) edo 12 orduko formatuan AM eta PM erabiliz (2:30 PM), gastuetan, Jarduera atalean, iruzkinetan eta ordu-hautatzaileetan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefonoa etzanda dagoela, eta tabletetan, talde baten \"Banatu gastu bat\" goiko barran dago orain, gastuen gainean flotatu ordez.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kolore dinamikoak aktibatuta daudenean, zor duzuna laranja geratzen da, gorri bihurtu ordez, inoiz ez dezan ematen zuri itzultzen zaizunaren berdea.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Jarduera atalean, lerro bakoitzak taldearen argazkia erakusten du orain izenaren ondoan, taldeak argazkia duenean.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde honetako zure saldoak ez du zenbatekoa bigarren lerro batean errepikatzen, jaso bakarrik edo zor bakarrik egiten duzunean.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Banaketa lehenetsia atalean, adibideko gastuan pertsona bakoitzaren zatiak bere kolorea du orain, izenaren aurrean kolore bereko puntu batekin, zerrendan elkarren ondoan dauden pertsonak inoiz bat bera ez irudi dezaten.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gastu baten goiko barrak taldearen argazkia, edo haren inizialak, erakusten ditu orain taldearen izenaren ondoan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Norbaiten argazkia sakatzean, argazkia haren profilera eramaten da orain, eta itzultzean atzera.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Talde baten Gastuak ataletik irekitako gastu bat bere tokira mugitzen da orain, Hasiera ataletik bezala, eta Hasiera ataleko gastuetako taldearen argazkia gastuaren goiko barrara hegan joaten da.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Banatu gastu bat\" Saldoak eta Kontaktuak ataletako goialdean ere badago orain, eta talde-pantailan goiko barrara aldatu da, zerrendaren gainean flotatu ordez, eta \"Gehitu jendea\" ⋯ menuan dago orain. Bere izenarekin hasten da, eta korritu ahala ikono hutsera txikitzen da.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Taldeak atalean, Saldo orokorra txartela sakatzean Saldoak irekitzen da.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Talde bateko \"Gonbidatu jendea\" aukerak \"Gehitu jendea\" du izena orain.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPad gailuan, fitxak alboko barran irekitzen dira, eta goiko barran daudenean, iPad zutik dagoenean bezala, \"Banatu gastu bat\" bertan ikusgai geratzen da, beste botoiak azpiko errenkada batera mugitzen diren bitartean.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Banatu gastu bat\" atalean, \"Ordainketa-metodoa\" beste norbaitek gastua ordaindu duenean ere agertzen da orain, ilunduta: sakatuz gero, azaltzen du ordaindu dutenek bakarrik adieraz dezaketela zerekin ordaindu duten.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Konturik gabe, zure berreskuratze-kodea 12 hitz zenbakidun da orain, idazteko errazagoak, eta leheneratzean hitz bat eremu bakoitzean idazten da, idatzi ahala hitz bakoitza iradokiz. Bertsio hau baino lehen gordetako kodeek ez dute funtzionatzen: gorde kode berria, edo konektatu Google edo Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gastuak kategoriaka atalean, gastu bakoitzak talde bateko gastuetako ⋮ menu bera du orain: editatu, bikoiztu, partekatu edo ezabatu ireki gabe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pantaila zabaletan (telefono bat etzanda, tabletak, Mac eta weba), Gastuak kategoriaka atalak bere kategoriak eta guztira zutabe batean gordetzen ditu, gastuen ondoan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Alemanez, nederlanderaz eta japonieraz, Jarduera ataleko esaldiak hizkuntza bakoitzaren hitz-ordena naturalean irakurtzen dira orain, gastuaren edo taldearen izenaren aurretik bi punturik gabe.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Gastu baten eranskinen azpiko \"Gehitu argazkia\" aukeraren lehen letra ez da gehiago mozten.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Taldeak atalean, talde bat sortzeko botoiak \"+ Taldea\" dio orain, eta ez da gehiago bi lerrotan hausten.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Berrikuntzak atalak instalatu berri duzun bertsioa erakusten du orain, haren oharrak ekartzeko egun bat arte itxaron ordez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde baten Estatistikak atalean, aldiaren botoia (\"Denbora guztia\") ez da gehiago bi lerrotan hausten: datak haren azpira mugitzen dira biak ez direnean sartzen.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

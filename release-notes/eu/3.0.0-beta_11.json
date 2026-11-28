@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Google edo Apple gabeko kontua 30 egunez erabili gabe egon ondoren ezabatzen da orain. Ongietorri-pantailak eta Profila atalak hala esaten dute, eta Google edo Apple konektatuz gero zure datuak gordetzen dira.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Orain aplikazioa balora dezakezu Profila › Laguntza eta iritziak atalean, \"Baloratu aplikazioa\" aukerarekin.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Hasiera edo Gastu guztiak ataletik irekitako gastu batek ireki zenuen tokira itzultzen zaitu orain zuzenean, bere taldetik pasatu gabe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Konpondu da aurpegi-pila baten \"+N\" burbuila lehen aurpegiaren azpian agertzea, haren gainean agertu beharrean.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

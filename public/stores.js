@@ -59,7 +59,7 @@
     ? `${CONFIG.googlePlayUrl}&hl=${{ zh: "zh-CN", "zh-Hant": "zh-TW", he: "iw", sr: "sr", nb: "no" }[root.dataset.lang] || root.lang}${referrer ? `&referrer=${encodeURIComponent(referrer)}` : ""}` // the page's tag, as boot.js set it (pt-BR, pt-PT, en, hi…), but Chinese's (Simplified and Traditional), Hebrew's, Serbian's and Norwegian's as Google Play writes them (Play has one Serbian, sr, and no code for the Latin script the site writes, and names Norwegian no, as its no-NO listing)
     : "";
   const appStoreUrl = CONFIG.appStoreId
-    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", gu: "in/", ml: "in/", pa: "in/", kn: "in/", my: "mm/", km: "kh/", or: "in/", ne: "np/", az: "az/", am: "", si: "lk/", kk: "kz/", en: "us/" })}app/id${CONFIG.appStoreId}`
+    ? `https://apps.apple.com/${window.localized({ "pt-PT": "pt/", pt: "br/", es: "es/", fr: "fr/", de: "de/", it: "it/", pl: "pl/", nl: "nl/", tr: "tr/", id: "id/", ja: "jp/", ru: "ru/", uk: "ua/", ko: "kr/", ar: "sa/", hi: "in/", zh: "", he: "il/", th: "th/", vi: "vn/", "zh-Hant": "tw/", sv: "se/", cs: "cz/", ro: "ro/", bn: "bd/", ms: "my/", el: "gr/", hu: "hu/", fil: "ph/", ur: "pk/", hr: "hr/", sr: "rs/", sk: "sk/", nb: "no/", fa: "", sw: "ke/", ta: "in/", te: "in/", mr: "in/", bg: "bg/", ca: "", da: "dk/", fi: "fi/", lv: "lv/", et: "ee/", lt: "lt/", sl: "si/", gu: "in/", ml: "in/", pa: "in/", kn: "in/", my: "mm/", km: "kh/", or: "in/", ne: "np/", az: "az/", am: "", si: "lk/", kk: "kz/", mn: "mn/", ky: "kg/", lo: "la/", is: "is/", eu: "es/", gl: "es/", rm: "ch/", en: "us/" })}app/id${CONFIG.appStoreId}`
     : "";
   const STORES = {
     play: { url: playUrl, platform: "android", name: "Google Play" },
@@ -700,6 +700,78 @@
       mismatchBody: "Сіз {platform} пайдаланасыз. Ең жақсы тәжірибе үшін қолданбаны {in} алыңыз.",
       mismatchGo: "{to} өту", mismatchStay: "Бәрібір {to} өту", close: "Жабу",
       in: { play: "Google Play арқылы", appstore: "App Store арқылы" }, to: { play: "Google Play дүкеніне", appstore: "App Store дүкеніне" },
+    },
+    mn: {
+      play: ["Одоо авах", "Удахгүй"], appstore: ["Татаж авах", "Удахгүй"], web: ["Одоо нээх", "Удахгүй"], browser: "Хөтөч",
+      getApp: "Апп авах", openWeb: "Веб апп нээх", soon: "Удахгүй",
+      noteStore: "Аппыг {in} авна уу.", noteApple: "{platform} ашиглаж байна уу? Апп App Store дэлгүүрт гартал хөтөч дээрээ ашиглана уу.", noteWeb: "Хөтөч дээрээ нээнэ үү, юу ч суулгах шаардлагагүй.",
+      playLive: "Google Play дэлгүүрт бий", appStoreLive: "App Store дэлгүүрт бий", webLive: "Веб аппыг нээх",
+      mismatchTitle: "Дэлгүүрээ сонгоно уу",
+      mismatchBody: "Та {platform} ашиглаж байна. Хамгийн сайн туршлагын тулд аппыг {in} авна уу.",
+      mismatchGo: "{to} очих", mismatchStay: "Ямар ч байсан {to} очих", close: "Хаах",
+      in: { play: "Google Play дэлгүүрээс", appstore: "App Store дэлгүүрээс" }, to: { play: "Google Play дэлгүүр рүү", appstore: "App Store дэлгүүр рүү" },
+    },
+    ky: {
+      play: ["Азыр жүктөп алыңыз", "Жакында"], appstore: ["Жүктөп алыңыз", "Жакында"], web: ["Азыр ачыңыз", "Жакында"], browser: "Браузер",
+      getApp: "Колдонмону жүктөп алуу", openWeb: "Веб-колдонмону ачуу", soon: "Жакында",
+      noteStore: "Колдонмону {in} жүктөп алыңыз.", noteApple: "{platform} колдоносузбу? Колдонмо App Store дүкөнүнө келгенге чейин аны браузерде колдонуңуз.", noteWeb: "Браузерде ачыңыз, эч нерсе орнотуунун кереги жок.",
+      playLive: "Google Play дүкөнүндө бар", appStoreLive: "App Store дүкөнүндө бар", webLive: "Веб-колдонмону ачуу",
+      mismatchTitle: "Дүкөнүңүздү тандаңыз",
+      mismatchBody: "Сиз {platform} колдоносуз. Эң жакшы тажрыйба үчүн колдонмону {in} жүктөп алыңыз.",
+      mismatchGo: "{to} өтүү", mismatchStay: "Баары бир {to} өтүү", close: "Жабуу",
+      in: { play: "Google Play аркылуу", appstore: "App Store аркылуу" }, to: { play: "Google Play дүкөнүнө", appstore: "App Store дүкөнүнө" },
+    },
+    lo: {
+      play: ["ດາວໂຫຼດໄດ້ທີ່", "ໄວໆນີ້ທີ່"], appstore: ["ດາວໂຫຼດໄດ້ທີ່", "ໄວໆນີ້ທີ່"], web: ["ເປີດໃນ", "ໄວໆນີ້ໃນ"], browser: "ບຣາວເຊີ",
+      getApp: "ດາວໂຫຼດແອັບ", openWeb: "ເປີດເວັບແອັບ", soon: "ໄວໆນີ້",
+      noteStore: "ດາວໂຫຼດແອັບ{in}", noteApple: "ໃຊ້ {platform} ຢູ່ບໍ? ໃຊ້ງານຜ່ານບຣາວເຊີໄດ້ ຈົນກວ່າແອັບຈະມາຮອດ App Store", noteWeb: "ເປີດໃນບຣາວເຊີໄດ້ເລີຍ ບໍ່ຕ້ອງຕິດຕັ້ງ",
+      playLive: "ດາວໂຫຼດໄດ້ທີ່ Google Play", appStoreLive: "ດາວໂຫຼດໄດ້ທີ່ App Store", webLive: "ເປີດເວັບແອັບ",
+      mismatchTitle: "ເລືອກສະໂຕຂອງທ່ານ",
+      mismatchBody: "ທ່ານກຳລັງໃຊ້ {platform} ເພື່ອປະສົບການທີ່ດີທີ່ສຸດ ກະລຸນາດາວໂຫຼດແອັບ{in}",
+      mismatchGo: "ໄປ{to}", mismatchStay: "ສືບຕໍ່ໄປ{to}", close: "ປິດ",
+      in: { play: "ຈາກ Google Play", appstore: "ຈາກ App Store" }, to: { play: "ທີ່ Google Play", appstore: "ທີ່ App Store" },
+    },
+    is: {
+      play: ["Fáanlegt á", "Væntanlegt á"], appstore: ["Sæktu í", "Væntanlegt í"], web: ["Opnaðu í", "Væntanlegt í"], browser: "vafranum",
+      getApp: "Sækja appið", openWeb: "Opna vefappið", soon: "Væntanlegt",
+      noteStore: "Sæktu appið {in}.", noteApple: "Notar þú {platform}? Notaðu það í vafranum þar til appið kemur í App Store.", noteWeb: "Opnaðu það í vafranum, ekkert þarf að setja upp.",
+      playLive: "Fáanlegt á Google Play", appStoreLive: "Fáanlegt í App Store", webLive: "Opna vefappið",
+      mismatchTitle: "Veldu verslunina þína",
+      mismatchBody: "Þú notar {platform}. Sæktu appið {in} til að fá bestu upplifunina.",
+      mismatchGo: "Fara {to}", mismatchStay: "Halda samt áfram {to}", close: "Loka",
+      in: { play: "á Google Play", appstore: "í App Store" }, to: { play: "á Google Play", appstore: "í App Store" },
+    },
+    // Basque: "Google Play" and "App Store" stay in Latin letters with no case ending, so the ending goes on the word
+    // "denda" after them (Google Play dendan, App Store dendatik); a badge's small line ends in a colon. "Zu" for the user.
+    eu: {
+      play: ["Eskuratu hemen:", "Laster hemen:"], appstore: ["Deskargatu hemen:", "Laster hemen:"], web: ["Erabili", "Laster"], browser: "Nabigatzailean",
+      getApp: "Eskuratu aplikazioa", openWeb: "Ireki web-aplikazioa", soon: "Laster",
+      noteStore: "Eskuratu aplikazioa {in}.", noteApple: "{platform} erabiltzen duzu? Erabili nabigatzailean, aplikazioa App Store dendara iritsi arte.", noteWeb: "Ireki nabigatzailean, ezer instalatu gabe.",
+      playLive: "Eskuragarri Google Play dendan", appStoreLive: "Eskuragarri App Store dendan", webLive: "Ireki web-aplikazioa",
+      mismatchTitle: "Aukeratu zure denda",
+      mismatchBody: "{platform} erabiltzen ari zara. Esperientziarik onena izateko, eskuratu aplikazioa {in}.",
+      mismatchGo: "Joan {to}", mismatchStay: "Joan hala ere {to}", close: "Itxi",
+      in: { play: "Google Play dendatik", appstore: "App Store dendatik" }, to: { play: "Google Play dendara", appstore: "App Store dendara" },
+    },
+    gl: {
+      play: ["Dispoñible en", "Proximamente en"], appstore: ["Descargar na", "Proximamente na"], web: ["Abrir no seu", "Proximamente no seu"], browser: "Navegador",
+      getApp: "Obter a aplicación", openWeb: "Abrir a aplicación web", soon: "Proximamente",
+      noteStore: "Obteña a aplicación {in}.", noteApple: "Ten {platform}? Use a aplicación no seu navegador ata que chegue á App Store.", noteWeb: "Ábraa no seu navegador, sen instalar nada.",
+      playLive: "Dispoñible en Google Play", appStoreLive: "Dispoñible na App Store", webLive: "Abrir a aplicación web",
+      mismatchTitle: "Escolla a súa tenda",
+      mismatchBody: "Está a usar {platform}. Para unha mellor experiencia, obteña a aplicación {in}.",
+      mismatchGo: "Ir {to}", mismatchStay: "Continuar {to}", close: "Pechar",
+      in: { play: "en Google Play", appstore: "na App Store" }, to: { play: "a Google Play", appstore: "á App Store" },
+    },
+    rm: {
+      play: ["Disponibel sin", "Prest sin"], appstore: ["Chargiar giu en", "Prest en"], web: ["Avrir en Voss", "Prest en Voss"], browser: "Navigatur",
+      getApp: "Chargiar giu l'app", openWeb: "Avrir l'app web", soon: "Prest disponibel",
+      noteStore: "Chargiai giu l'app {in}.", noteApple: "Sin {platform}? Utilisai l'app en il navigatur fin ch'ella arriva en l'App Store.", noteWeb: "Avri l'app en il navigatur, senza installar nagut.",
+      playLive: "Disponibel sin Google Play", appStoreLive: "Disponibel en l'App Store", webLive: "Avrir l'app web",
+      mismatchTitle: "Tschernai Voss store",
+      mismatchBody: "Vus utilisais {platform}. Per la meglra experientscha, chargiai giu l'app {in}.",
+      mismatchGo: "Ir {to}", mismatchStay: "Tuttina ir {to}", close: "Serrar",
+      in: { play: "da Google Play", appstore: "da l'App Store" }, to: { play: "tar Google Play", appstore: "tar l'App Store" },
     },
   });
   const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);

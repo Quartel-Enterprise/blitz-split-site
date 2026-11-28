@@ -36,8 +36,8 @@ const ENGLISH_BY_DEFAULT = ["name"];
 // so only their languages are checked.
 const FORMATS = ["CURRENCY"];
 // Tables keyed by language that hold no words, only for some languages: the language picker's chips (site.js), the
-// codes that differ from a language's own. Only their keys are checked.
-const NOT_WORDS = ["LANGUAGE_CHIPS"];
+// codes that differ from a language's own, and the languages boot.js reads in one script only. Only their keys are checked.
+const NOT_WORDS = ["LANGUAGE_CHIPS", "ONE_SCRIPT"];
 
 const errors = [];
 const fail = (file, message) => errors.push(`${relative(ROOT, file)}: ${message}`);

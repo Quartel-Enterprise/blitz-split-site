@@ -5,12 +5,13 @@
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
 // Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese,
-// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian, Gujarati, Malayalam, Punjabi, Kannada, Burmese, Khmer, Odia, Nepali, Azerbaijani, Amharic, Sinhala or Kazakh, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
+// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian, Gujarati, Malayalam, Punjabi, Kannada, Burmese, Khmer, Odia, Nepali, Azerbaijani, Amharic, Sinhala, Kazakh, Mongolian, Kyrgyz, Lao, Icelandic, Basque, Galician or Romansh, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
 // the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
 // browser language (zh-Hant, zh-TW, zh-HK, zh-MO) picks Traditional Chinese, zh-Hant, as in the apps; every other zh-* stays zh.
 // Punjabi is written in Gurmukhi only: pa, pa-Guru and pa-IN pick it, while pa-Arab and pa-PK (Shahmukhi) don't.
+// Mongolian and Kyrgyz are written in Cyrillic only: mn-Mong and mn-CN (traditional script), or ky-Arab and ky-CN, don't pick them.
 (function () {
-  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "fa", "sw", "ta", "te", "mr", "bg", "ca", "da", "fi", "lv", "et", "lt", "sl", "gu", "ml", "pa", "kn", "my", "km", "or", "ne", "az", "am", "si", "kk"];
+  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "fa", "sw", "ta", "te", "mr", "bg", "ca", "da", "fi", "lv", "et", "lt", "sl", "gu", "ml", "pa", "kn", "my", "km", "or", "ne", "az", "am", "si", "kk", "mn", "ky", "lo", "is", "eu", "gl", "rm"];
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
   function stored(key) {
@@ -43,23 +44,28 @@
     const script = rest.find((part) => part.length === 4);
     return script ? script === "hant" : rest.some((part) => ["tw", "hk", "mo"].includes(part));
   };
-  // Punjabi, as the site writes it, is Gurmukhi: a tag's script, when it has one, must be Guru; with none, any region
-  // but Pakistan's, whose Punjabi is Shahmukhi (pa-PK, pa-Arab, pa-Arab-PK), which the site doesn't write.
-  const shahmukhi = (tag) => {
+  // A language the site writes in one script only: a tag's script, when it has one, must be that one; with none, any
+  // region but the one that writes it in another. Punjabi is Gurmukhi, not Pakistan's Shahmukhi (pa-PK, pa-Arab);
+  // Mongolian is Cyrillic, not Inner Mongolia's traditional script (mn-CN, mn-Mong); Kyrgyz is Cyrillic, not
+  // Xinjiang's Arabic script (ky-CN, ky-Arab).
+  const ONE_SCRIPT = { pa: ["guru", "pk"], mn: ["cyrl", "cn"], ky: ["cyrl", "cn"] };
+  const otherScript = (tag) => {
     const [language, ...rest] = subtags(tag);
-    if (language !== "pa") return false;
+    if (!ONE_SCRIPT[language]) return false;
+    const [written, elsewhere] = ONE_SCRIPT[language];
     const script = rest.find((part) => part.length === 4);
-    return script ? script !== "guru" : rest.includes("pk");
+    return script ? script !== written : rest.includes(elsewhere);
   };
   // Why: Traditional Chinese is a language of its own, with its whole tag as its code, "zh-Hant", as the apps' legal
   // pages and release notes ask for it; the bare "zh" is Simplified's.
   const TRADITIONAL = "zh-Hant";
   // A tag as the site reads it, from the browser or from ?lang= alike: Traditional Chinese or a variant (pt-PT) by
-  // the whole tag, every other language by its first subtag (zh-CN is zh, EN is en). A Shahmukhi Punjabi tag is none
-  // of ours, so the next of the browser's languages is tried.
+  // the whole tag, every other language by its first subtag (zh-CN is zh, EN is en). A tag in a script the site
+  // doesn't write (Shahmukhi Punjabi, traditional Mongolian, Arabic-script Kyrgyz) is none of ours, so the next of the
+  // browser's languages is tried.
   const normalize = (tag) => {
     if (traditional(tag)) return TRADITIONAL;
-    if (shahmukhi(tag)) return "";
+    if (otherScript(tag)) return "";
     return variantOf(tag) || canonical(subtags(tag)[0]);
   };
 

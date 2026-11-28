@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Forritið talar nú rússnesku og úkraínsku: veldu “Русский” eða “Українська” í Prófíll › Tungumál, eða láttu það fylgja tækinu þínu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hópar geta nú skipt í rússneskri rúblu (RUB) og úkraínskri hrinju (UAH), og hópur sem er búinn til í Rússlandi eða Úkraínu byrjar í gjaldmiðli síns lands.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prófíll er með nýja kjörstillingu, “Tímasnið”: fylgja kerfinu, eða alltaf sýna tíma á 24 tíma sniði (14:30) eða 12 tíma sniði með AM og PM (2:30 PM), í kostnaði, Virkni, athugasemdum og tímavölum.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Þegar síminn liggur á hlið, og á spjaldtölvum, er “Skipta kostnaði” hóps nú í efstu stikunni í stað þess að fljóta yfir kostnaðinum.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Þegar Breytilegir litir eru virkir helst það sem þú skuldar appelsínugult í stað þess að verða rautt, svo það líkist aldrei græna litnum á því sem þú færð til baka.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Í Virkni sýnir hver lína nú mynd hópsins við hlið nafns hans, þegar hópurinn er með mynd.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Staðan þín í þessum hópi endurtekur ekki lengur upphæðina í annarri línu þegar þú aðeins færð til baka eða aðeins skuldar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Í Sjálfgefin skipting hefur hlutur hvers og eins í dæmakostnaðinum nú sinn eigin lit, með samsvarandi punkti á undan nafninu, svo fólk sem er hlið við hlið á listanum líti aldrei út sem einn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Efsta stika kostnaðar sýnir nú mynd hópsins, eða upphafsstafi hans, við hlið nafns hópsins.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ef ýtt er á mynd af einhverjum flyst hún nú inn í prófíl viðkomandi, og aftur til baka þegar þú snýrð til baka.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Kostnaður sem er opnaður úr Kostnaði hóps færist nú á sinn stað eins og úr Heim, og mynd hópsins á kostnaði í Heim flýgur inn í efstu stiku kostnaðarins.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "“Skipta kostnaði” er nú líka efst í Staða og Tengiliðir, og á skjá hópsins færðist hann í efstu stikuna í stað þess að fljóta yfir listanum, og “Bæta við fólki” er nú í ⋯ valmyndinni. Hann byrjar með nafni sínu og minnkar niður í tákn sitt þegar þú flettir.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Í Hópar opnar Heildarstöðu-spjaldið Staða þegar ýtt er á það.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "“Bjóða fólki” í hópi heitir nú “Bæta við fólki”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Á iPad opnast flipar í hliðarstikunni, og þegar þeir eru í efstu stikunni, eins og þegar iPad er uppréttur, helst “Skipta kostnaði” sýnilegur þar á meðan hinir hnapparnir færast í röð rétt fyrir neðan.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Í “Skipta kostnaði” birtist “Greitt með” nú líka þegar einhver annar greiddi kostnaðinn, deyft: ef ýtt er á það kemur fram að aðeins þau sem greiddu geta merkt hvað þau greiddu með.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Án aðgangs er endurheimtarkóðinn þinn nú 12 númeruð orð, auðveldari að skrifa niður, og við endurheimt er eitt orð slegið inn í hvern reit, með tillögu að hverju orði á meðan þú skrifar. Kóðar sem voru vistaðir fyrir þessa útgáfu virka ekki lengur: vistaðu nýja kóðann, eða tengdu Google eða Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Í Kostnaður eftir flokkum hefur hver kostnaður nú sömu ⋮ valmynd og í kostnaði hóps: breyttu honum, afritaðu, deildu eða eyddu án þess að opna hann.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Á breiðum skjám (sími á hlið, spjaldtölvur, Mac og vefurinn) heldur Kostnaður eftir flokkum flokkunum og samtölunni í dálki við hlið kostnaðarins.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Á þýsku, hollensku og japönsku lesast setningar Virkni nú í eðlilegri orðaröð hvers tungumáls, án tvípunkts á undan nafni kostnaðarins eða hópsins.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Fyrsti stafurinn í “Bæta við mynd” undir viðhengjum kostnaðar skerst ekki lengur af.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Í Hópar heitir hnappurinn til að búa til hóp nú “+ Hópur” og brotnar ekki lengur í tvær línur.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Nýjungar sýna nú útgáfuna sem þú varst að setja upp, í stað þess að bíða í allt að sólarhring eftir lýsingu hennar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Í Tölfræði hóps brotnar tímabilshnappurinn (“Allur tíminn”) ekki lengur í tvær línur: dagsetningarnar færast undir hann þegar báðar komast ekki fyrir.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

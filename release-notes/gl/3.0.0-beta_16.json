@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "A aplicación xa fala coreano: escolla \"한국어\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en wons surcoreanos (KRW), e un grupo creado en Corea do Sur comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Conta e sincronización\" en Perfil agora mostra o seu ID de usuario, que pode copiar cun toque, para nos dicir quen é cando responda a unha das nosas enquisas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Unha foto que engade a un gasto agora ábrese primeiro en Axustar foto, para que encadre o cadrado que se anexa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Segundo os ingresos\" agora lémbralle que introduza os ingresos netos de cada persoa, despois de impostos, e \"División predeterminada\" só mostra a porcentaxe de cada persoa unha vez escritos uns ingresos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A cabeceira dun grupo está máis limpa: desapareceu a liña co número de membros e o total debaixo do seu nome. As caras mostran quen está, e Estatísticas mostra o total.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As fotos dunha tarxeta ou dun extracto bancario agora indícano, e suxiren encher o gasto a man, en vez de dicir que non se puido ler o recibo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Unha categoría en Estatísticas agora abre Todos os gastos co grupo, a categoría e o período xa escollidos, para que poida buscar tamén eses gastos. Todos os gastos tamén gañou un filtro de Período.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En Por persoa de Estatísticas, un toque ao lado do anel ou no seu centro deixa de destacar a persoa escollida.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Os importes e as etiquetas xa non se parten en varias liñas nin aparecen cortados en pantallas pequenas, dispositivos pregables e con texto grande.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os textos, botóns e contornos que custaba ler agora teñen máis contraste, nos temas claro e escuro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar un campo no navegador dun iPhone xa non amplía a páxina.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

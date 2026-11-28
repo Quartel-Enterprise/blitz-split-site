@@ -83,6 +83,13 @@ const CHROME = {
   am: { language: "አማርኛ", brand: "Blitz Split", locale: "am", updated: "የዘመነው: {date}", read: "የንባብ ጊዜ: {n} ደቂቃ", toc: "በዚህ ገጽ ላይ" },
   si: { language: "සිංහල", brand: "Blitz Split", locale: "si", updated: "යාවත්කාලීන කළේ: {date}", read: "කියවීමට මිනිත්තු {n}", toc: "මෙම පිටුවේ" },
   kk: { language: "Қазақ тілі", brand: "Blitz Split", locale: "kk", updated: "Жаңартылды: {date}", read: "Оқу уақыты: {n} мин", toc: "Осы бетте" },
+  mn: { language: "Монгол", brand: "Blitz Split", locale: "mn", updated: "Шинэчилсэн: {date}", read: "Унших хугацаа: {n} мин", toc: "Энэ хуудсанд" },
+  ky: { language: "Кыргызча", brand: "Blitz Split", locale: "ky", updated: "Жаңыртылды: {date}", read: "Окуу убактысы: {n} мүнөт", toc: "Бул бетте" },
+  lo: { language: "ລາວ", brand: "Blitz Split", locale: "lo", updated: "ອັບເດດເມື່ອ {date}", read: "ໃຊ້ເວລາອ່ານ {n} ນາທີ", toc: "ໃນໜ້ານີ້" },
+  is: { language: "Íslenska", brand: "Blitz Split", locale: "is", updated: "Uppfært: {date}", read: "Lestími: {n} mín.", toc: "Á þessari síðu" },
+  eu: { language: "Euskara", brand: "Blitz Split", locale: "eu", updated: "Eguneratze-data: {date}", read: "Irakurtzeko {n} minutu", toc: "Orri honetan" },
+  gl: { language: "Galego", brand: "Blitz Split", locale: "gl", updated: "Actualizado: {date}", read: "{n} min de lectura", toc: "Nesta páxina" },
+  rm: { language: "Rumantsch", brand: "Blitz Split", locale: "rm", updated: "Actualisà: {date}", read: "{n} min da lectura", toc: "Sin questa pagina" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
@@ -113,6 +120,19 @@ const CHARACTERS_PER_MINUTE = {
   az: MEASURED_CHARACTERS_PER_MINUTE.tr,
   // Why: the study has no Kazakh, and Russian is the closest language it measured, in the same script.
   kk: MEASURED_CHARACTERS_PER_MINUTE.ru,
+  // Why: the study has no Mongolian, and Russian is the closest language it measured, in the same script.
+  mn: MEASURED_CHARACTERS_PER_MINUTE.ru,
+  // Why: the study has no Kyrgyz, and Russian is the closest language it measured, in the same script.
+  ky: MEASURED_CHARACTERS_PER_MINUTE.ru,
+  // Why: the study has no Icelandic, and Swedish is the closest language it measured, of the same family.
+  is: MEASURED_CHARACTERS_PER_MINUTE.sv,
+  // Why: the study has no Basque, and Spanish is the language it measured that Basque readers also read, in Latin letters.
+  eu: MEASURED_CHARACTERS_PER_MINUTE.es,
+  // Why: the study has no Galician, and Spanish is the closest language it measured.
+  gl: MEASURED_CHARACTERS_PER_MINUTE.es,
+  // Why: the study has no Romansh, and Italian is the closest language it measured, of the same family.
+  rm: MEASURED_CHARACTERS_PER_MINUTE.it,
+  // Lao, like Thai, which the study didn't measure either, takes the default pace below.
 };
 // The study's median without Chinese and Japanese, for a language it didn't measure. Why without them: a character of
 // theirs holds far more than a letter, so they would slow down every language written with letters.

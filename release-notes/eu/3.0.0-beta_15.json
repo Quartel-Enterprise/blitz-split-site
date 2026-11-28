@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Kontaktuak edo Saldoak ataletik norbait irekitzean, haren izena eta saldoa haren profilera eramaten dira orain argazkiarekin batera, eta itzultzean atzera.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Estatistikak atalean, \"Pertsonaka\" eraztunaren erdian \"Zu\" besterik ez da agertzen orain zatia zurea denean, eta izen luze bat \"…\" batekin amaitzen da, eraztuna ukitu ordez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Taldeak ataletik talde bat irekitzean, kideen aurpegiak errenkadatik taldearen pantailara bidaiatzen dute orain, eta ateratzean atzera.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Telefonoan, gastu bat irekitzean gauza gehiago eramaten dira orain harekin: nork ordaindu duen Hasiera eta Gastu guztiak ataletako errenkadatik, ordua taldearen Gastuak ataleko errenkadatik, eta taldearen argazkia eta izena taldearen pantailatik. Ateratzean atzera bidaiatzen dute.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Talde baten izena taldearen pantailara bidaiatzen da orain hura irekitzean, ez bakarrik itzultzean.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split discurra ussa tudestg, talian e polac: l'app suonda la lingua da Voss apparat, u Vus pudais tscherner ina en Profil › Lingua.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mintga categoria ha ussa sia atgna colur, e Statisticas dissegna mintga categoria e mintga persuna en sia colur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Vus pudais ussa midar la colur d'ina categoria, en il formular da la categoria u en Carta da categorias.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Il menu d'in'expensa en Expensas ha ina nova opziun, Duplitgar: ella avra ina nova expensa gia emplenida sco l'originala.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gruppas ed expensas na svaneschan betg pli per in mument, cura che Vus turnais en l'app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La tschertga na sa serra betg pli immediatamain, sche Vus n'avais anc nagina gruppa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ina nova gruppa cumenza ussa sco Eveniment, l'emprim tip da la glista.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Senza gruppa mussa Envidar cun colliaziun u QR ussa mo il buttun Nova gruppa empè da buttuns che Vus na pudevas betg duvrar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ina quittanza che dovra dapli temp per vegnir legida na finescha betg pli cun in'errur da connexiun.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Las lingias da categorias en Statisticas èn pli netas: ellas na mussan betg pli l'import da mintga subcategoria.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

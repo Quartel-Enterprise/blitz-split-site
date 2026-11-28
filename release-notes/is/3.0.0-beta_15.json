@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Þegar einhver er opnaður úr Tengiliðir eða Staða flytjast nafn og staða viðkomandi nú inn í prófílinn ásamt myndinni, og aftur til baka þegar þú snýrð til baka.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Í Tölfræði segir miðja hringsins “Eftir einstaklingum” nú bara “Þú” þegar hluturinn er þinn, og langt nafn endar á “…” í stað þess að snerta hringinn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Þegar hópur er opnaður úr Hópar ferðast andlit meðlima hans nú úr röðinni inn á skjá hópsins, og til baka þegar þú ferð.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Í síma flyst nú meira af kostnaði með þegar hann er opnaður: hver greiddi ferðast úr röð hans í Heim og Allur kostnaður, tíminn úr röð hans í Kostnaði hópsins, og mynd og nafn hópsins af skjá hópsins. Þau ferðast til baka þegar þú ferð.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Nafn hóps ferðast nú inn á skjá hópsins þegar hann opnast, ekki aðeins á leiðinni til baka.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

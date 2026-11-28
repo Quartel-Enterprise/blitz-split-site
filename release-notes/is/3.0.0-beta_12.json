@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Í Nýjungum getur þú ýtt á útgáfu til að opna hana á GitHub, eða á GitHub-hnappinn til að sjá allar útgáfur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Síða hóps, boð og upplýsingar um kostnað sýna nú myndir af allt að fimm manns hlið við hlið í stað tveggja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Á iPad eða opnum iPhone Duo sem liggur á hlið sýnir hópur sem fyllir skjáinn (opnaður úr Heim, til dæmis) nú mynd sína, meðlimi og stöðuna þína við hlið kostnaðarins.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ef ýtt er á Heildarstöðu-spjaldið í Heim opnast nú flipinn Staða.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Í síma flýgur nú staða hópsins, eða tákn kostnaðarins, titill, samtala og þinn hlutur, inn á skjá hans þegar þú opnar hóp eða kostnað úr Heim, og aftur til baka þegar þú snýrð til baka.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Prófíll › Tungumál sýnir nú spænsku tvisvar, “Español (Latinoamérica)” og “Español (España)”, svo þú velur þá sem þú talar hvar sem tækið þitt er.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Þegar síminn eða spjaldtölva liggur á hlið byrjar það sem er við hlið listans í Tengiliðir og Staða nú efst á skjánum, með prófílmyndina þína yfir listanum.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Brún hnappsins “Bæta við einstaklingi” í Meðlimir hóps sést betur.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Litur korts í “Greiðslumátar” er nú valinn úr sömu litum og flokkar: litunum tólf, þínum eigin litum og “Nýr litur” til að búa til annan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Í “Skipta kostnaði” er “Greitt með” nú lítill hnappur undir skiptingunni, og ef þú ert ekki með neinn greiðslumáta enn býr “Bæta við greiðslumáta” hann til á staðnum og velur hann fyrir kostnaðinn. Debetkort hafa nú líka sitt eigið tákn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Þegar greiðslumáta er bætt við eða honum breytt í Prófíl opnast hann nú ofan á Prófíl í stað sérstaks skjás.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Breytilegir litir útskýrir nú að forritið notar kerfisliti Android, sem koma frá veggfóðrinu þínu eða litaspjaldinu sem þú valdir í stillingum Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Þegar Minnka hreyfingu er virkt sýnir Tölfræði hóps nú gröfin strax, án þess að súlurnar vaxi eða hringurinn sveiflist inn.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Á brasilískri portúgölsku sögðu Virkni og saga kostnaðar “Você criaste” og þess háttar í stað “Você criou”.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Lagað: dagsetningarnar í dagsetningavali Tölfræði brotnuðu einn eða tvo stafi í hverja línu; lokadagsetningin fer nú undir upphafsdagsetninguna þegar báðar komast ekki fyrir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Lagað: tilkynningar og nokkrar setningar birtust á ensku, eða sem kóði eins og “push.bill_deleted”, á spænsku Spánar og portúgölsku Portúgals.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Lagað: fólksröðin í Heim á portúgölsku Portúgals sagði “te deve” undir nafni í stað “deve-te”.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

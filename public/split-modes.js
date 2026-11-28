@@ -1752,6 +1752,204 @@
         less: "Бір үлес азайту: {name}", more: "Бір үлес қосу: {name}", had: "Кім алды: {item}",
       },
     },
+    mn: {
+      bill: "Пиццаны орой", paid: "Pedro төлсөн", notIn: "Энэ зардалд ороогүй",
+      each: "Тус бүр {a}", among: "{n} хүнд хуваасан: {a}.", amongOne: "Зөвхөн 1 хүнд: {a}.", out: "Оролцохгүй: {name}.",
+      nobody: "Одоогоор хэн ч алга", nobodyEqual: "Хуваахын тулд дор хаяж нэг хүнийг сонгоно уу: {a}.",
+      checkAll: "Бүгдийг сонгох", uncheckAll: "Бүх сонголтыг арилгах",
+      left: "Үлдсэн: {a}", over: "Илүү: {a}", closed: "Таарч байна: {a}",
+      progress: "Одоогоор: {a} / {b}.", closedMsg: "Хэсгүүдийн нийлбэр нийт дүнтэй таарч байна.",
+      parts: "{n} хэсэгт хуваасан: {a}",
+      personParts: "{name}: {n} хэсэг.",
+      nobodyShares: "Хуваахын тулд дор хаяж нэг хүнд хэсэг өгнө үү: {a}.",
+      ofEach: "Зардал бүрийн {p}", ofBill: "Зардлын {p}", incomeDetail: "Хүн бүрийн хэсэг орлогоос нь хамаарна.", perMonth: "/сар",
+      service: "Үйлчилгээ ({p})", serviceSub: "Хүн бүрийн авсантай пропорциональ",
+      loose: "Зүйл бүрийг хэн авсныг тэмдэглэнэ үү", looseDetail: "Хэн авсныг тэмдэглэхийн тулд зүйл бүр дээрх нүүрнүүдийг товшино уу.",
+      itemsClosed: "Зүйлс: {a}, үйлчилгээ: {b}.", nobodyItem: "Хэн ч сонгогдоогүй", eachItem: "Тус бүр {a}",
+      items: { pizza: "Том пицца", beer: "Шар айраг", salad: "Салат", draft: "Задгай шар айраг", shrimp: "Сам хорхойн таваг" },
+      receiptBill: "Боомт бар",
+      hint: {
+        equal: "Тэнцүү хуваагдахгүй бол үлдэгдлийг төлсөн хүнд өгнө.",
+        amounts: "Дүн нь {zero} үлдсэн хүн энэ зардалд оролцохгүй.",
+        percent: "Зөвхөн бүхэл тоо. Үлдэгдлийг төлсөн хүнд өгнө.",
+        shares: "Хэн нэгэн илүү авсан бол, жишээ нь хүн дагуулж ирсэн бол хэсгийг ашиглана уу.",
+        income: "Орлого төхөөрөмж дээр үлдэнэ. Бүлэг зөвхөн хувийг харна.",
+        items: "Зүйл бүрийг авсан хүмүүсийн дунд, харин үйлчилгээг хүн бүрийн авснаар хуваана.",
+      },
+      label: {
+        amount: "Дүн: {name}", percent: "Хувь: {name}", income: "Сарын орлого: {name}",
+        less: "Нэг хэсэг хасах: {name}", more: "Нэг хэсэг нэмэх: {name}", had: "Хэн авсан: {item}",
+      },
+    },
+    ky: {
+      bill: "Пицца кечеси", paid: "Pedro төлөдү", notIn: "Буга катышпайт",
+      each: "Ар бирине {a}", among: "{n} адамга бөлүндү: {a}.", amongOne: "1 адамга гана: {a}.", out: "Катышпайт: {name}.",
+      nobody: "Азырынча эч ким жок", nobodyEqual: "Бөлүү үчүн жок дегенде бир адамды белгилеңиз: {a}.",
+      checkAll: "Баарын белгилөө", uncheckAll: "Бардык белгилерди алып салуу",
+      left: "Калды: {a}", over: "Ашыкча: {a}", closed: "Дал келет: {a}",
+      progress: "Азырынча: {a} / {b}.", closedMsg: "Бөлүктөр жалпы суммага дал келет.",
+      parts: "{n} үлүшкө бөлүндү: {a}",
+      personParts: "{name}: {n} үлүш.",
+      nobodyShares: "Бөлүү үчүн жок дегенде бир адамга үлүш бериңиз: {a}.",
+      ofEach: "Ар бир чыгымдан {p}", ofBill: "Чыгымдан {p}", incomeDetail: "Ар кимдин бөлүгү анын кирешесине жараша.", perMonth: "/ай",
+      service: "Тейлөө ({p})", serviceSub: "Ар ким алганына пропорционалдуу",
+      loose: "Ар бир позицияны ким алганын белгилеңиз", looseDetail: "Ким алганын белгилөө үчүн ар бир позициядагы аватарларды басыңыз.",
+      itemsClosed: "Позициялар: {a}, тейлөө: {b}.", nobodyItem: "Эч ким белгиленген жок", eachItem: "Ар бирине {a}",
+      items: { pizza: "Чоң пицца", beer: "Сыра", salad: "Салат", draft: "Куюлма сыра", shrimp: "Креветка табагы" },
+      receiptBill: "Кемежай бары",
+      hint: {
+        equal: "Тең бөлүнбөсө, ашып калган тыйындар төлөгөн адамга берилет.",
+        amounts: "Суммасы {zero} болуп калган адам бул чыгымга катышпайт.",
+        percent: "Бүтүн сандар гана. Ашып калган тыйындар төлөгөн адамга берилет.",
+        shares: "Кимдир бирөө көбүрөөк алса, мисалы, жанына бирөөнү ээрчитип келсе, үлүштөрдү колдонуңуз.",
+        income: "Кирешелер түзмөктө калат. Топ пайыздарды гана көрөт.",
+        items: "Ар бир позиция аны алгандардын ортосунда, ал эми тейлөө акысы ар ким алганына жараша бөлүнөт.",
+      },
+      label: {
+        amount: "Сумма: {name}", percent: "Пайыз: {name}", income: "Айлык киреше: {name}",
+        less: "Бир үлүш азайтуу: {name}", more: "Бир үлүш кошуу: {name}", had: "Ким алды: {item}",
+      },
+    },
+    lo: {
+      bill: "ຄືນພິຊຊ່າ", paid: "Pedro ຈ່າຍ", notIn: "ບໍ່ຢູ່ໃນລາຍຈ່າຍນີ້",
+      each: "ຄົນລະ {a}", among: "{a} ແບ່ງ {n} ຄົນ", amongOne: "{a} ສຳລັບ 1 ຄົນ", out: "{name} ບໍ່ຮ່ວມແບ່ງ",
+      nobody: "ຍັງບໍ່ມີໃຜຮ່ວມແບ່ງ", nobodyEqual: "ກະລຸນາເລືອກຢ່າງໜ້ອຍ 1 ຄົນເພື່ອແບ່ງ {a}",
+      checkAll: "ເລືອກທັງໝົດ", uncheckAll: "ບໍ່ເລືອກທັງໝົດ",
+      left: "ເຫຼືອ {a}", over: "ເກີນ {a}", closed: "ຄົບພໍດີ: {a}",
+      progress: "{a} ຈາກ {b} ແລ້ວ", closedMsg: "ສ່ວນຕ່າງໆລວມກັນເທົ່າກັບຍອດລວມ",
+      parts: "{n} ສ່ວນ ສ່ວນລະ {a}", personParts: "{name} ມີ {n} ສ່ວນ", nobodyShares: "ກະລຸນາໃຫ້ສ່ວນແກ່ຢ່າງໜ້ອຍ 1 ຄົນເພື່ອແບ່ງ {a}",
+      ofEach: "{p} ຂອງແຕ່ລະລາຍຈ່າຍ", ofBill: "{p} ຂອງລາຍຈ່າຍ", incomeDetail: "ສ່ວນຂອງແຕ່ລະຄົນເປັນໄປຕາມລາຍຮັບ", perMonth: "/ເດືອນ",
+      service: "ຄ່າບໍລິການ ({p})", serviceSub: "ຕາມສັດສ່ວນທີ່ແຕ່ລະຄົນສັ່ງ",
+      loose: "ກະລຸນາໝາຍວ່າໃຜສັ່ງແຕ່ລະລາຍການ", looseDetail: "ແຕະໃບໜ້າໃນແຕ່ລະລາຍການເພື່ອໝາຍວ່າໃຜສັ່ງ",
+      itemsClosed: "ລາຍການ {a} ແລະຄ່າບໍລິການ {b}", nobodyItem: "ບໍ່ໄດ້ເລືອກໃຜ", eachItem: "ຄົນລະ {a}",
+      items: { pizza: "ພິຊຊ່າຖາດໃຫຍ່", beer: "ເບຍ", salad: "ສະຫຼັດ", draft: "ເບຍສົດ", shrimp: "ຈານກຸ້ງລວມ" },
+      receiptBill: "ບາທ່າເຮືອ",
+      hint: {
+        equal: "ຖ້າແບ່ງບໍ່ລົງຕົວ ເງິນເສດທີ່ເຫຼືອຈະເປັນຂອງຄົນທີ່ຈ່າຍ",
+        amounts: "ຄົນທີ່ຍັງເປັນ {zero} ຈະບໍ່ຮ່ວມແບ່ງລາຍຈ່າຍນີ້",
+        percent: "ໃຊ້ຈຳນວນເຕັມເທົ່ານັ້ນ ເງິນເສດທີ່ເຫຼືອຈະເປັນຂອງຄົນທີ່ຈ່າຍ",
+        shares: "ໃຊ້ສ່ວນເມື່ອບາງຄົນມີຫຼາຍກວ່າ ເຊັ່ນ ຄົນທີ່ພາໝູ່ມານຳ",
+        income: "ລາຍຮັບຢູ່ໃນອຸປະກອນເທົ່ານັ້ນ ກຸ່ມເຫັນພຽງເປີເຊັນ",
+        items: "ແຕ່ລະລາຍການແບ່ງລະຫວ່າງຄົນທີ່ສັ່ງ ແລະຄ່າບໍລິການແບ່ງຕາມທີ່ແຕ່ລະຄົນສັ່ງ",
+      },
+      label: {
+        amount: "ຈຳນວນເງິນຂອງ {name}", percent: "ເປີເຊັນຂອງ {name}", income: "ລາຍຮັບຕໍ່ເດືອນຂອງ {name}",
+        less: "ຫຼຸດສ່ວນຂອງ {name} 1 ສ່ວນ", more: "ເພີ່ມສ່ວນຂອງ {name} 1 ສ່ວນ", had: "ໃຜສັ່ງ {item}",
+      },
+    },
+    is: {
+      bill: "Pítsukvöld", paid: "Pedro greiddi", notIn: "Ekki með í þessum",
+      each: "{a} á mann", among: "Skipt á milli {n} manns: {a}.", amongOne: "Aðeins fyrir 1 manneskju: {a}.", out: "Ekki með: {name}.",
+      nobody: "Enginn er með enn", nobodyEqual: "Hakaðu við minnst eina manneskju til að skipta: {a}.",
+      checkAll: "Haka við alla", uncheckAll: "Taka hakið af öllum",
+      left: "Eftir: {a}", over: "Umfram: {a}", closed: "Stemmir: {a}",
+      progress: "Hingað til: {a} af {b}.", closedMsg: "Hlutarnir stemma við heildarupphæðina.",
+      parts: "{a} í {n} hlut|{a} í {n} hlutum|{a} í {n} hlutum", personParts: "{name} er með {n} hlut.|{name} er með {n} hluti.|{name} er með {n} hluti.",
+      nobodyShares: "Gefðu minnst einni manneskju hlut til að skipta: {a}.",
+      ofEach: "{p} af hverjum kostnaði", ofBill: "{p} af kostnaðinum", incomeDetail: "Hlutur hvers og eins fer eftir tekjum viðkomandi.", perMonth: "/mán.",
+      service: "Þjónusta ({p})", serviceSub: "Í hlutfalli við það sem hver og einn fékk",
+      loose: "Merktu hver fékk hvern lið", looseDetail: "Ýttu á andlitin við hvern lið til að merkja hver fékk hann.",
+      itemsClosed: "Liðir: {a}, þjónusta: {b}.", nobodyItem: "Enginn merktur", eachItem: "{a} á mann",
+      items: { pizza: "Stór pítsa", beer: "Bjór", salad: "Salat", draft: "Kranabjór", shrimp: "Rækjuplatti" },
+      receiptBill: "Hafnarbarinn",
+      hint: {
+        equal: "Þegar ekki gengur jafnt upp fær sá sem greiddi afganginn.",
+        amounts: "Sá sem stendur á {zero} er ekki með í kostnaðinum.",
+        percent: "Aðeins heilar tölur. Sá sem greiddi fær afganginn.",
+        shares: "Notaðu hluti þegar einhver fær meira, t.d. sá sem tók gest með.",
+        income: "Tekjurnar haldast á tækinu. Hópurinn sér aðeins prósenturnar.",
+        items: "Hverjum lið er skipt á milli þeirra sem fengu hann og þjónustunni eftir því sem hver og einn fékk.",
+      },
+      label: {
+        amount: "Upphæð: {name}", percent: "Prósenta: {name}", income: "Mánaðartekjur: {name}",
+        less: "Einum hlut færra: {name}", more: "Einum hlut meira: {name}", had: "Hver fékk: {item}",
+      },
+    },
+    // Basque: a noun after a number keeps its indefinite form (3 zati), so no message holds "|". A name, an item or an
+    // amount never takes a case ending: it stands after a colon. "Zu" for the user.
+    eu: {
+      bill: "Pizza gaua", paid: "Ordaintzailea: Pedro", notIn: "Ez dago honetan",
+      each: "{a} bakoitzeko", among: "{n} pertsonaren artean: {a}.", amongOne: "1 pertsonarentzat: {a}.", out: "Ez dago honetan: {name}.",
+      nobody: "Oraindik ez dago inor", nobodyEqual: "Markatu gutxienez pertsona bat zenbateko hau banatzeko: {a}.",
+      checkAll: "Markatu denak", uncheckAll: "Desmarkatu denak",
+      left: "Falta da: {a}", over: "Soberan: {a}", closed: "Bat dator: {a}",
+      progress: "Orain arte: {a} / {b}.", closedMsg: "Zatien batura guztirakoaren berdina da.",
+      parts: "{n} zatitan banatuta: {a}",
+      personParts: "{name}: {n} zati.",
+      nobodyShares: "Eman zati bat gutxienez pertsona bati zenbateko hau banatzeko: {a}.",
+      ofEach: "Gastu bakoitzaren {p}", ofBill: "Gastuaren {p}", incomeDetail: "Bakoitzaren zatia bere diru-sarreren araberakoa da.", perMonth: "/hil",
+      service: "Zerbitzua ({p})", serviceSub: "Bakoitzak hartutakoaren arabera",
+      loose: "Markatu nork hartu duen elementu bakoitza", looseDetail: "Sakatu elementu bakoitzeko aurpegiak nork hartu duen markatzeko.",
+      itemsClosed: "Elementuak: {a}, zerbitzua: {b}.", nobodyItem: "Inor ez markatuta", eachItem: "{a} bakoitzeko",
+      items: { pizza: "Pizza handia", beer: "Garagardoa", salad: "Entsalada", draft: "Kanilako garagardoa", shrimp: "Ganba-platera" },
+      receiptBill: "Portuko Taberna",
+      hint: {
+        equal: "Zatiketa zehatza ez denean, soberan dauden zentimoak ordaindu duenarentzat dira.",
+        amounts: "{zero} duena gastutik kanpo geratzen da.",
+        percent: "Zenbaki osoak bakarrik. Soberan dauden zentimoak ordaindu duenarentzat dira.",
+        shares: "Erabili zatiak norbaitek gehiago hartzen duenean, adibidez lagun bat ekarri duenak.",
+        income: "Diru-sarrerak gailuan geratzen dira. Taldeak ehunekoak bakarrik ikusten ditu.",
+        items: "Elementu bakoitza hartu dutenen artean banatzen da, eta zerbitzua bakoitzak hartutakoaren arabera.",
+      },
+      label: {
+        amount: "Zenbatekoa: {name}", percent: "Ehunekoa: {name}", income: "Hileko diru-sarrerak: {name}",
+        less: "Zati bat gutxiago: {name}", more: "Zati bat gehiago: {name}", had: "Nork hartu du: {item}",
+      },
+    },
+    gl: {
+      bill: "Noite de pizza", paid: "Pedro pagou", notIn: "Non participa neste",
+      each: "{a} cada persoa", among: "{a} entre {n} persoas.", amongOne: "{a} para 1 persoa.", out: "{name} non participa.",
+      nobody: "Aínda non hai ninguén", nobodyEqual: "Marque polo menos unha persoa para dividir {a}.",
+      checkAll: "Marcar todos", uncheckAll: "Desmarcar todos",
+      left: "Faltan: {a}", over: "Sobran: {a}", closed: "Cadra: {a}",
+      progress: "{a} de {b} ata agora.", closedMsg: "As partes suman o total.",
+      parts: "{n} partes de {a}", personParts: "{name}: {n} partes.", nobodyShares: "Dea polo menos unha parte a alguén para dividir {a}.",
+      ofEach: "{p} de cada gasto", ofBill: "{p} do gasto", incomeDetail: "A parte de cada persoa segue os seus ingresos.", perMonth: "/mes",
+      service: "Servizo ({p})", serviceSub: "En proporción ao que tomou cada persoa",
+      loose: "Marque quen tomou cada artigo", looseDetail: "Toque as caras de cada artigo para marcar quen o tomou.",
+      itemsClosed: "{a} en artigos e {b} de servizo.", nobodyItem: "Ninguén marcado", eachItem: "{a} cada persoa",
+      items: { pizza: "Pizza grande", beer: "Cervexa", salad: "Ensalada", draft: "Cana de cervexa", shrimp: "Bandexa de camaróns" },
+      receiptBill: "Bar do Porto",
+      hint: {
+        equal: "Cando non se pode dividir exactamente, os céntimos que sobran van para quen pagou.",
+        amounts: "Quen quede en {zero} queda fóra do gasto.",
+        percent: "Só números enteiros. Os céntimos que sobran van para quen pagou.",
+        shares: "Use partes cando alguén toma máis, como quen trae unha persoa acompañante.",
+        income: "Os ingresos quedan no dispositivo. O grupo só ve as porcentaxes.",
+        items: "Cada artigo divídese entre quen o tomou, e o servizo segundo o que tomou cada persoa.",
+      },
+      label: {
+        amount: "Importe: {name}", percent: "Porcentaxe: {name}", income: "Ingresos mensuais: {name}",
+        less: "Unha parte menos: {name}", more: "Unha parte máis: {name}", had: "Quen tomou: {item}",
+      },
+    },
+    rm: {
+      bill: "Saira da pizza", paid: "Pedro ha pajà", notIn: "Betg en questa",
+      each: "{a} per persuna", among: "Partì tranter {n} persunas: {a}.", amongOne: "Per 1 persuna: {a}.", out: "Betg en l'expensa: {name}.",
+      nobody: "Anc nagin n'è en l'expensa", nobodyEqual: "Marcai almain ina persuna per partir {a}.",
+      checkAll: "Marcar tuts", uncheckAll: "Demarcar tuts",
+      left: "I mancan {a}", over: "{a} memia bler", closed: "Quadra: {a}",
+      progress: "{a} da {b} fin ussa.", closedMsg: "Las parts fan ensemen il total.",
+      parts: "{n} parts da {a}", personParts: "{name}: {n} parts.", nobodyShares: "Dai almain ad ina persuna ina part per partir {a}.",
+      ofEach: "{p} da mintga expensa", ofBill: "{p} da l'expensa", incomeDetail: "La part da mintgin suonda sias entradas.", perMonth: "/mais",
+      service: "Servetsch ({p})", serviceSub: "En proporziun a quai che mintgin ha consumà",
+      loose: "Marcai tgi ha consumà mintga posiziun", looseDetail: "Tutgai las fatschas da mintga posiziun per marcar tgi l'ha consumada.",
+      itemsClosed: "{a} en posiziuns e {b} da servetsch.", nobodyItem: "Nagin marcà", eachItem: "{a} per persuna",
+      items: { pizza: "Pizza gronda", beer: "Biera", salad: "Insalata", draft: "Biera dal butschin", shrimp: "Plat da crevettas" },
+      receiptBill: "Bar dal Port",
+      hint: {
+        equal: "Sch'i na sa lascha betg partir exactamain, van ils centims che restan a tgi ch'ha pajà.",
+        amounts: "Tgi che resta tar {zero} n'è betg en l'expensa.",
+        percent: "Mo dumbers entirs. Ils centims che restan van a tgi ch'ha pajà.",
+        shares: "Utilisai parts, sch'insatgi consumescha dapli, per exempel tgi che maina in giast.",
+        income: "Las entradas restan sin l'apparat. La gruppa vesa mo ils procents.",
+        items: "Mintga posiziun vegn partida tranter quels che l'han consumada, ed il servetsch tenor quai che mintgin ha consumà.",
+      },
+      label: {
+        amount: "Import da: {name}", percent: "Procent da: {name}", income: "Entradas per mais da: {name}",
+        less: "Ina part main per: {name}", more: "Ina part dapli per: {name}", had: "Tgi ha consumà: {item}",
+      },
+    },
   });
   const plural = new Intl.PluralRules(lang);
   function fill(text, values) {
@@ -1912,6 +2110,8 @@
   const face = (p) => `<span class="av ${p.color}"><img src="/people/${p.photo}.webp" alt=""></span>`;
   const prefix = window.money.symbolBefore;
   const suffix = window.money.symbolAfter;
+  // The percent field's sign on the side money.js writes it: first in Turkish (%10) and Basque (% 10), after elsewhere.
+  const percentFirst = pct(0).startsWith("%");
   // A money field grows with what it holds: ₩6,000,000 or Rp60.000.000 is longer than $6,000.
   const fit = (input) => input.style.setProperty("--chars", String(input.value.length));
   const moneyField = (value, label, extra = "") => `<span class="split-field">${prefix ? `<span>${prefix}</span>` : ""}`
@@ -1924,7 +2124,7 @@
     if (mode === "amounts") return moneyField(state.amounts[i], fill(TEXT.label.amount, { name }));
     if (mode === "percent") {
       const field = `<input type="text" inputmode="numeric" autocomplete="off" maxlength="3" value="${state.percent[i]}" aria-label="${fill(TEXT.label.percent, { name })}">`;
-      return `<span class="split-field">${lang === "tr" ? `<span>%</span>${field}` : `${field}<span>%</span>`}</span>`;
+      return `<span class="split-field">${percentFirst ? `<span>%</span>${field}` : `${field}<span>%</span>`}</span>`;
     }
     if (mode === "shares") {
       return `<span class="split-stepper"><button type="button" data-step="-1" aria-label="${fill(TEXT.label.less, { name })}">−</button>`

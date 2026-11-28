@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Zenbatekoak eta etiketak ez dira gehiago lerroetan hausten edo mozten pantaila txikietan, gailu tolesgarrietan eta testu handiarekin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Irakurtzen zailak ziren testuek, botoiek eta ertzek kontraste handiagoa dute orain, gai argian eta ilunean.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPhone baten nabigatzailean eremu bat sakatzean ez da gehiago orria handitzen.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

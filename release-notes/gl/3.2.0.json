@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "A aplicación xa fala búlgaro: escolla \"Български\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala catalán: escolla \"Català\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala dinamarqués: escolla \"Dansk\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en coroas dinamarquesas (DKK), e un grupo creado en Dinamarca, Groenlandia ou as Illas Feroe comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala finés: escolla \"Suomi\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala marathi: escolla \"मराठी\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala noruegués: escolla \"Norsk bokmål\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en coroas norueguesas (NOK), e un grupo creado en Noruega comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala persa: escolla \"فارسی\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en riais iranianos (IRR), e un grupo creado en Irán comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala eslovaco: escolla \"Slovenčina\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala suahili: escolla \"Kiswahili\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo. Os grupos novos en Kenya e Tanzania comezan no xilin kenyano ou no xilin tanzano.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala támil: escolla \"தமிழ்\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala telugu: escolla \"తెలుగు\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En iPhone, iPad e Mac, as datas en tailandés e persa agora mostran o ano gregoriano, como en Android e na web, calquera que sexa o calendario que use o dispositivo.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

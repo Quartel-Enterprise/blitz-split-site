@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "En Novitads, tutgai ina versiun per avrir sia publicaziun sin GitHub, u il buttun GitHub per vesair tut las publicaziuns.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La pagina d'ina gruppa, in'invitaziun ed ils detagls d'in'expensa mussan ussa las fotos da fin a tschintg persunas ina sper l'autra empè da duas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sin in iPad u sin in iPhone Duo avert e tschentà da traviers, mussa ina gruppa che emplenescha il visur (averta per exempel da Start) ussa sia foto, ses commembers e Voss saldo sper las expensas.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Sche Vus tutgais la carta Saldo total da Start, s'avra ussa il tab Salds.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sin in telefon, sche Vus avris ina gruppa u in'expensa da Start, sgola ussa il saldo da la gruppa, u l'icona, il titel, il total e Voss part da l'expensa, en ses visur e puspè enavos, cura che Vus turnais.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Lingua mussa ussa il spagnol duas giadas, \"Español (Latinoamérica)\" ed \"Español (España)\", uschia che Vus tschernais quel che Vus discurris, nua che Voss apparat saja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cun il telefon u cun in tablet da traviers cumenza quai ch'è sper la glista en Contacts ed en Salds ussa al cumenzament dal visur, cun Vossa foto da profil sur la glista.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "L'ur dal buttun \"Agiuntar ina persuna\" en ils Commembers d'ina gruppa è pli bain visibel.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "La colur d'ina carta en \"Metodas da pajament\" vegn ussa tschernida da las medemas colurs sco tar las categorias: las dudesch colurs, Vossas atgnas e \"Nova colur\" per crear in'autra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En \"Partir in'expensa\" è \"Pajà cun\" ussa in pitschen buttun sut Partir, e sche Vus n'avais anc nagina metoda da pajament, creescha \"Agiuntar ina metoda da pajament\" ina directamain là e la tscherna per l'expensa. Las cartas da debit han ussa er lur atgna icona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sche Vus agiuntais u modifitgais ina metoda da pajament en Profil, s'avra quai ussa sur il Profil empè d'en in visur separà.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Colurs dinamicas explitgescha ussa che l'app prenda las colurs dal sistem dad Android, che derivan da Voss maletg da fund u da la paletta che Vus avais tschernì en ils parameters dad Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Cun Reduce Motion activà mussa la Statistica d'ina gruppa ussa directamain ses diagrams, senza che las travs creschian u ch'il rintg sa dasvilupia.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "En il portugais dal Brasil scriveva Activitad e l'istorgia d'in'expensa \"Você criaste\" e sumegliant empè da \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Curregì: las datas en la tscherna da datas da Statisticas rumpivan suenter ina u duas letras per lingia; la data da fin va ussa sut la data da cumenzament, sche omaduas na han betg plazza.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Curregì: notificaziuns e intginas frasas cumparevan per englais, u sco code sco \"push.bill_deleted\", en il spagnol da la Spagna ed en il portugais dal Portugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Curregì: la lingia da persunas da Start en il portugais dal Portugal scriveva \"te deve\" sut in num empè da \"deve-te\".",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

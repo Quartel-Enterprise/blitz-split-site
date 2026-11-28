@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split á Apple Watch: tengdu það við aðgang iPhone-símans þíns, sjáðu stöðurnar þínar og opna hópa, ýttu á Ég greiddi í hópi þar sem þú skuldar, og bættu heildarstöðunni þinni við úrskífu eða Smart Stack; þegar úrið er tengt virkar það sjálfstætt.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Forritið talar nú bengalsku, malajísku og grísku: veldu “বাংলা”, “Bahasa Melayu” eða “Ελληνικά” í Prófíll › Tungumál, eða láttu það fylgja tækinu þínu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hópar geta nú notað bangladesskt taka og malasískt ringgit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Forritið talar nú króatísku: veldu “Hrvatski” í Prófíll › Tungumál, eða láttu það fylgja tækinu þínu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Forritið talar nú filippseysku: veldu “Filipino” í Prófíll › Tungumál, eða láttu það fylgja tækinu þínu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hópar geta nú skipt í filippseyskum pesóa (PHP, “₱”), og hópur sem er búinn til á Filippseyjum byrjar í honum.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Forritið talar nú ungversku: veldu “Magyar” í Prófíll › Tungumál, eða láttu það fylgja tækinu þínu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hópar geta nú notað ungverska forintu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bættu græjunni Staða við heimaskjáinn eða lásskjáinn á iPhone eða iPad til að sjá heildarstöðuna þína og opna hópa í fljótu bragði; ýttu á hana til að opna Staða.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Hópar geta nú notað gjaldmiðla Bólivíu, Venesúela, Kosta Ríka, Gvatemala, Hondúras, Níkaragva, Dóminíska lýðveldisins og Kúbu, og hópur sem er búinn til þar byrjar í gjaldmiðli síns lands.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Forritið talar nú serbnesku: veldu “Srpski” í Prófíll › Tungumál, eða láttu það fylgja tækinu þínu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hópar geta nú skipt í serbneskum dínar (RSD), og hópur sem er búinn til í Serbíu byrjar í honum.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Forritið talar nú úrdú: veldu “اردو” í Prófíll › Tungumál, eða láttu það fylgja tækinu þínu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hópar geta nú skipt í pakistanskri rúpíu (PKR), og hópur sem er búinn til í Pakistan byrjar í henni.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ef ýtt er á tilkynningu um nýjan kostnað opnast kostnaðurinn strax: forritið sækir hann um leið og tilkynningin berst.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Upphafsskjárinn í símum sýnir nú aðeins merkið efst, sem gefur hnöppunum meira pláss.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Borðinn “Kominn tími til að gera upp” í hópnum sýnir ekki lengur dagsetningu áminningar frá því áður en áminningin var stillt eða henni breytt: áminning sem var breytt á 25. bíður eftir 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

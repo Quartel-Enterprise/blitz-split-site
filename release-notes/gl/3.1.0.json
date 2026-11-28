@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Blitz Split no Apple Watch: conécteo á conta do seu iPhone, vexa os seus saldos e os grupos abertos, toque Paguei nun grupo no que debe, e engada o seu saldo total a unha esfera do reloxo ou ao Smart Stack; unha vez conectado, o reloxo funciona por si só.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala bengalí, malaio e grego: escolla \"বাংলা\", \"Bahasa Melayu\" ou \"Ελληνικά\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden usar o taka de Bangladesh e o ringgit malaio.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala croata: escolla \"Hrvatski\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala filipino: escolla \"Filipino\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en pesos filipinos (PHP, \"₱\"), e un grupo creado nas Filipinas comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala húngaro: escolla \"Magyar\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden usar o forint húngaro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Engada o widget Saldos á pantalla de inicio ou á pantalla de bloqueo do seu iPhone ou iPad para ver dun vistazo o seu saldo total e os seus grupos abertos; tóqueo para abrir Saldos.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden usar as moedas de Bolivia, Venezuela, Costa Rica, Guatemala, Honduras, Nicaragua, a República Dominicana e Cuba, e un grupo creado alí comeza na súa propia moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala serbio: escolla \"Srpski\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en dinares serbios (RSD), e un grupo creado en Serbia comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala urdú: escolla \"اردو\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en rupias paquistanesas (PKR), e un grupo creado en Paquistán comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar a notificación dun gasto novo abre o gasto de inmediato: a aplicación tráeo en canto chega a notificación.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "A pantalla de benvida nos teléfonos agora mostra só o logotipo na parte superior, o que deixa máis espazo para os botóns.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "O aviso \"Hora de liquidar contas\" do grupo xa non mostra unha data de lembrete anterior a cando se configurou ou cambiou o lembrete: un lembrete cambiado ao día 25 espera polo día 25.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

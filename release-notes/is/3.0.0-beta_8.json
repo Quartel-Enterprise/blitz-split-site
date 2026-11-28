@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Nú er hægt að skipta kostnaði Eftir tekjum, og tekjunum sem þú slærð inn er deilt með meðlimum hópsins.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hver liður í Nýjasti kostnaður í Heim er nú með valmynd: Breyta, Afrita, Deila og Eyða.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sjá allt í Heim opnar nú Allur kostnaður: allan kostnað sem þú ert hluti af, í öllum hópunum þínum, með leit, síum og röðun.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mynd hóps er nú stærri efst á skjá hans og minnkar þegar þú flettir, og þegar hópur opnast hreyfist hann úr röð sinni.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Virkni sýnir nú myndir af fólki, Staða › Eftir hópum sýnir mynd hvers hóps, og Stærsti kostnaðurinn í Tölfræði sýnir flokk sinn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prófíll › Aðgangur og samstilling sýnir nú merki Google eða Apple og allt netfangið þitt, sem aðeins þú sérð.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Eyða aðgangi útskýrir nú hvað verður eftir í hópunum þínum eftir að aðgangurinn þinn er horfinn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Rofinn Sjálfgefinn Pix-lykill lítur ekki lengur út fyrir að vera óvirkur á sjálfgefna lyklinum þínum í dökku þema.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

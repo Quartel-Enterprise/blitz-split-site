@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "A ligazón dun gasto agora ábrese na aplicación en vez de no navegador, coas súas fotos e comentarios.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "A ligazón dun gasto que xa non se comparte, ou que só poden abrir as persoas do gasto, agora indícao en vez de mostrar un erro.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A ligazón dun perfil agora ábrese aínda que non teña a sesión iniciada.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil › Privacidade e información ten un interruptor novo, \"Compartir datos de uso\": desactíveo para deixar de enviar como usa a aplicación.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As ligazóns que comparte ao seu perfil, a un comentario e para obter a aplicación agora mostran a vista previa no seu idioma.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

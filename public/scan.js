@@ -339,6 +339,42 @@
       lines: [["2 ҚҰЙМА СЫРА", "14 000", 1], ["1 АСШАЯН ТАБАҒЫ", "48 000", 2]],
       subtotal: ["АРАЛЫҚ СОМА", "62 000"], service: ["ҚЫЗМЕТ 10%", "6 200", 3], total: ["БАРЛЫҒЫ", "68 200"],
     },
+    mn: {
+      store: "БООМТ БАР", address: "Цахлайн гудамж 120", date: "2026.11.08  21:47",
+      lines: [["2 ЗАДГАЙ ШАР АЙРАГ", "98,000", 1], ["1 САМ ХОРХОЙН ТАВАГ", "336,000", 2]],
+      subtotal: ["ДЭД ДҮН", "434,000"], service: ["ҮЙЛЧИЛГЭЭ 10%", "43,400", 3], total: ["НИЙТ", "477,400"],
+    },
+    ky: {
+      store: "КЕМЕЖАЙ БАРЫ", address: "Ак чардак көчөсү, 120", date: "08.11.2026  21:47",
+      lines: [["2 КУЮЛМА СЫРА", "2\u00a0436,00", 1], ["1 КРЕВЕТКА ТАБАГЫ", "8\u00a0352,00", 2]],
+      subtotal: ["АРАЛЫК СУММА", "10\u00a0788,00"], service: ["ТЕЙЛӨӨ 10%", "1\u00a0078,80", 3], total: ["ЖАЛПЫ", "11\u00a0866,80"],
+    },
+    lo: {
+      store: "ບາທ່າເຮືອ", address: "120 ຖະໜົນນົກນາງນວນ", date: "08/11/2026  21:47",
+      lines: [["2 ເບຍສົດ", "588.000", 1], ["1 ຈານກຸ້ງລວມ", "2.016.000", 2]],
+      subtotal: ["ລວມຍ່ອຍ", "2.604.000"], service: ["ຄ່າບໍລິການ 10%", "260.400", 3], total: ["ລວມທັງໝົດ", "2.864.400"],
+    },
+    is: {
+      store: "HAFNARBARINN", address: "Mávagata 120", date: "08.11.2026  21:47",
+      lines: [["2 KRANABJÓR", "2.800", 1], ["1 RÆKJUPLATTI", "9.600", 2]],
+      subtotal: ["MILLISAMTALA", "12.400"], service: ["ÞJÓNUSTA 10%", "1.240", 3], total: ["SAMTALS", "13.640"],
+    },
+    // Basque: a harbor bar's receipt, in euros, as the Basque Country prints it (the percent sign before the number).
+    eu: {
+      store: "PORTUKO TABERNA", address: "Kaioen kalea, 120", date: "2026/11/08  21:47",
+      lines: [["2 KANILAKO GARAGARDO", "28,00", 1], ["1 GANBA-PLATERA", "96,00", 2]],
+      subtotal: ["SUBTOTALA", "124,00"], service: ["ZERBITZUA % 10", "12,40", 3], total: ["GUZTIRA", "136,40"],
+    },
+    gl: {
+      store: "BAR DO PORTO", address: "Rúa das Gaivotas, 120", date: "08/11/2026  21:47",
+      lines: [["2 CANAS", "28,00", 1], ["1 BANDEXA CAMARÓNS", "96,00", 2]],
+      subtotal: ["SUBTOTAL", "124,00"], service: ["SERVIZO 10 %", "12,40", 3], total: ["TOTAL", "136,40"],
+    },
+    rm: {
+      store: "BAR DAL PORT", address: "Via dal Lai 120", date: "08.11.2026  21:47",
+      lines: [["2 BIERA DAL BUTSCHIN", "28.00", 1], ["1 PLAT CREVETTAS", "96.00", 2]],
+      subtotal: ["SUBTOTAL", "124.00"], service: ["SERVETSCH 10%", "12.40", 3], total: ["TOTAL", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 
