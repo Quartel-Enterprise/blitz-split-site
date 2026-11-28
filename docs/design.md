@@ -5,12 +5,12 @@
 Plain HTML with no build: `public/site.css` holds the design system's tokens (the web's zinc base and the brand's
 blue, light and dark) and every component, `public/boot.js` picks the theme and the language before the first paint,
 and `public/site.js` translates the page, in English, Portuguese (Brazil), Spanish, French, German, Italian, Polish,
-Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian, Gujarati, Malayalam, Punjabi, Kannada, Burmese, Khmer and Odia. The markup is in English; each page carries its other languages' strings in
+Dutch, Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian, Gujarati, Malayalam, Punjabi, Kannada, Burmese, Khmer, Odia, Nepali, Azerbaijani, Amharic, Sinhala and Kazakh. The markup is in English; each page carries its other languages' strings in
 `window.SITE_STRINGS` ([where they are written](#a-pages-strings)), and the legal pages write each language in full, in blocks marked `data-lang` (every
 language above), generated from their Markdown ([legal.md](legal.md)). The language is the first of the browser's languages the site has, English when none,
 and the language picker picks another, kept for the next visit, or "System" again, which forgets it and follows the
 browser (`boot.js` sets `data-lang-pref` to the language chosen or `system`);
-`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro|bn|ms|el|hu|fil|ur|hr|sr|sk|nb|fa|sw|ta|te|mr|bg|ca|da|fi|lv|et|lt|sl|gu|ml|pa|kn|my|km|or` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a fifty-fifth language: only the exact tag `pt-PT` (a browser's
+`?lang=en|pt|pt-PT|es|fr|de|it|pl|nl|tr|id|ja|ru|uk|ko|ar|hi|zh|he|th|vi|zh-Hant|sv|cs|ro|bn|ms|el|hu|fil|ur|hr|sr|sk|nb|fa|sw|ta|te|mr|bg|ca|da|fi|lv|et|lt|sl|gu|ml|pa|kn|my|km|or|ne|az|am|si|kk` and `?theme=light|dark` pin one. Portugal's Portuguese (`pt-PT`) is a variant of `pt`, not a sixtieth language: only the exact tag `pt-PT` (a browser's
 or `?lang=`) picks it, every other `pt-*` stays `pt`. `boot.js` sets `data-lang="pt"` (so the legal pages' blocks, the
 CSS and every `pt` word apply) and `data-variant="pt-PT"`, and `window.localized(table)` merges a `"pt-PT"` entry over
 `pt` key by key, so each page's `SITE_STRINGS` and each script's dictionary (`TEXT`, `PAPER`, `CURRENCY`) holds only
@@ -270,6 +270,48 @@ or after a colon ("ବାକି: {a}"), and "Google Play" and "App Store", in La
 India writes them, as Hindi does; Google Play's link uses `hl=or` and the App Store's the India storefront (`in/`). It
 draws in the system's font, with no Geist tracking, its titles with the room between their lines that Telugu's get, for
 its tall vowel signs and stacked consonants.
+Nepali (`ne`) is one variant for every `ne` tag, in Devanagari, as the apps write it: the respectful "तपाईं" and its
+honorific verb forms for the reader, and for a name too ("{name} ले तिर्नुभयो"), which carry no gender, the polite
+"-नुहोस्" on every button and instruction, plain everyday Nepali with the English loanwords Nepali apps use, in
+Devanagari (ग्रुप, ब्यालेन्स, लिंक, सेभ), and sentences that end in the danda "।", as Hindi's do. It writes the digits 0-9:
+`Intl`'s `ne` uses Devanagari digits, so every format the site asks of it says `ne-u-nu-latn`, and the split card reads
+Devanagari digits typed on a Nepali keyboard as the Latin ones (`latinDigits` in `money.js`). A noun after a number
+keeps one form, so no split card message holds "|". It is in Nepalese rupees (रु, grouped as India's), Google Play's
+link uses `hl=ne` and the App Store's Nepal's storefront (`np/`). It draws in the system's font, with no Geist
+tracking, its titles with the room between their lines that Hindi's get.
+Azerbaijani (`az`) is one variant for every `az` tag, in the Latin alphabet Azerbaijan writes (ə, ğ, ı, İ, ö, ş, ü, ç, q,
+x), as the apps write it: the respectful "siz" and its plural verb forms for the reader, lowercase mid-sentence, the
+polite "-ın/-in/-un/-ün" imperative on buttons and instructions, and the plain third person for a name ("{name} ödədi"),
+as the language has no gender. "Google Play" and "App Store" stay in Latin letters, so the case ending goes on the word
+"mağaza" after them ("App Store mağazasından"); a name, an item or an amount stands as the subject or after a colon, and
+a noun after a number stays singular, so no split card message holds "|". It is in manats, after the number with
+their qəpik (28,00 ₼), Google Play's link uses `hl=az` and the App Store's Azerbaijan's storefront (`az/`). Geist's
+Latin Extended subset has ə, so it keeps the site's font and its tracking, as Turkish does.
+Amharic (`am`) is one variant for every `am` tag, in the Ethiopic script, as the apps write it: the polite "እርስዎ" and
+its respectful plural verb forms for the reader, and for a name too ("{name} ከፈሉ"), which carry no gender, the polite
+plural imperative on buttons and instructions, plain everyday Amharic with the loanwords Ethiopian apps use, in
+Ethiopic, and sentences that end in "።", clauses parted by "፣". It writes the digits 0-9 and the Gregorian calendar,
+never Ethiopic numerals or the Ethiopian calendar (Ethiopic numerals have no zero and aren't decimal digits, so there
+is nothing for `latinDigits` to read). A noun after a number keeps one form, so no split card message holds "|". It is
+in birr, after the number with their santim, the demo's amounts multiplied by 150 (`money.cents`), Google Play's link
+uses `hl=am`; the App Store has no Ethiopian storefront, so its link names none and Apple opens the visitor's own,
+as Persian's and Catalan's do. It draws in the system's font, with no Geist tracking, its titles with the room between their lines that
+Hindi's get.
+Sinhala (`si`) is one variant for every `si` tag, in the Sinhala script, as the apps write it: colloquial-polite
+written Sinhala, not the literary style, the respectful "ඔබ" for the reader, the polite "-න්න" on every button and
+instruction, and the same gender-free colloquial past for a name ("{name} ගෙව්වා"), with the zero-width joiner its
+conjuncts need (ප්‍ර, ර්‍ය). It writes the digits 0-9, and the split card reads Sinhala Lith digits as the Latin ones
+(`latinDigits` in `money.js`). A noun after a number keeps one form, so no split card message holds "|". It is in Sri
+Lankan rupees (රු., whole rupees on the phone), Google Play's link uses `hl=si` and the App Store's Sri Lanka's
+storefront (`lk/`). It draws in the system's font, with no Geist tracking, its titles with the room between their lines
+that Telugu's get, for its tall vowel signs.
+Kazakh (`kk`) is one variant for every `kk` tag, in Cyrillic (with ә, ғ, қ, ң, ө, ұ, ү, һ, і), as the apps write it: the
+respectful "сіз" and its polite imperative in instructions and prompts, the verbal noun on buttons and menu items
+("Сақтау", "Жою"), as Kazakh apps write them, and the plain third person for a name ("{name} төледі"), as the language
+has no gender, with Kazakh syntax, not Russian's. A noun after a number stays singular, so no split card message holds
+"|". It is in tenge, after the number and grouped by spaces (68 200 ₸), a cent of the demo's being 5 ₸, Google Play's
+link uses `hl=kk` and the App Store's Kazakhstan's storefront (`kz/`). It draws in the system's font, with no Geist
+tracking, as Russian does.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which
 the phone, the split card and the receipt share): dollars in English and Spanish, reais in Brazil's Portuguese, euros
@@ -281,7 +323,7 @@ worth much less than the dollar, so the demo's own amounts are multiplied by a w
 that currency's own cents: every split adds up exactly and an amount typed in the split card stays as typed. Greek, Croatian, Slovak, Bulgarian, Catalan, Finnish, Latvian, Estonian, Lithuanian and Slovenian are in euros. Swahili is in Kenyan shillings for every `sw` visitor, Tanzania's too (the apps also have the Tanzanian shilling, which has no cents in use). The demo keeps every amount in cents and the twelve with no cents in use (the five below, the kyat, 21 to a cent, about 2,100 to the dollar, and the riel, 40 to a cent, about 4,000 to the dollar, and the taka in Bengali and the Pakistani rupee in Urdu, grouped as India's, the forint in Hungarian and the dinar in Serbian, a cent being one of each, and the Iranian rial in Persian, a cent being a thousand rials, so Persian's trip costs a tenth of the others' at a plausible million rials to the dollar and its amounts still fit a 320px phone, written ریال 4,860,000 for the ride (the phone's balance also shrinks with a narrow screen, `site.css`), the symbol first as `Intl` writes it, which reads after the number in the right-to-left line) show it scaled to whole
 units (a cent is Rp100, ¥1, ₩10, 10 ₫ and NT$1, the smallest whole scale, which keeps every split exact), so a $48.60 ride reads Rp486.000, ¥4,860, ₩48,600, 48.600 ₫, NT$4,860, 102,060 K or 194,400៛ and every split still adds
 up exactly; an amount typed in the split card rounds to the nearest ₩10, 10 ₫, Rp100, 21 K, 40៛ or a thousand rials, and a field grows with what it
-holds. The page's own amounts in `SITE_STRINGS` (`public/strings/index/`) and each receipt in `scan.js` are written the same way, by hand, so the
+holds. Nepali is in Nepalese rupees (रु 4,860 for the ride, grouped as India's) and Sinhala in Sri Lankan rupees (රු. 4,860), a cent being a rupee, Kazakh in tenge (24 300 ₸, five to a cent), all three in whole units, Azerbaijani in manats with their qəpik (48,60 ₼), and Amharic in birr with their santim, the demo's amounts multiplied by 150 (7,290 ብር). The page's own amounts in `SITE_STRINGS` (`public/strings/index/`) and each receipt in `scan.js` are written the same way, by hand, so the
 first paint shows them before any script runs.
 
 The language picker is the apps' Profile › Language: the header's translate button (with the code of the language
@@ -306,7 +348,7 @@ site picks a language from; each script's strings and formats still carry a key 
 
 The fonts, Geist and Geist Mono, are the site's own files (`public/fonts/`, the Latin and Latin Extended subsets Google
 Fonts serves, declared at the top of `public/site.css`), so the first paint waits on no other site; each page preloads
-`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Bengali, Greek, Urdu, Persian, Tamil, Telugu, Marathi, Gujarati, Malayalam, Punjabi, Kannada, Burmese, Khmer, Odia and Bulgarian fall back to the system's font, since neither subset has their
+`geist-latin.woff2`. Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese, Traditional Chinese, Bengali, Greek, Urdu, Persian, Tamil, Telugu, Marathi, Gujarati, Malayalam, Punjabi, Kannada, Burmese, Khmer, Odia, Nepali, Amharic, Sinhala, Kazakh and Bulgarian fall back to the system's font, since neither subset has their
 scripts (or, for Vietnamese, its Latin Extended Additional letters).
 
 ### A page's strings

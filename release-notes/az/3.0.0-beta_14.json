@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Qrupun Xərclər bölməsində indi “Hamısına baxın” var; o, Bütün xərclər bölməsini həmin qrup üzrə artıq filtrlənmiş açır, belə ki, onun xərclərini axtara, çeşidləyə və filtrləyə bilərsiniz. Bütün qrupları görmək üçün filtri təmizləyin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni qrup bölməsində “Adla əlavə edin” indi yazdıqca Kontaktlar bölmənizdən şəxsləri fotoları ilə təklif edir: həmin şəxslə qrup yaratmaq üçün birinə toxunun.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qrupu sürüşdürdükdə onun yığılmış yuxarı paneli yanında kəsilmiş üzvlər və cəmi olmadan yalnız qrupun fotosunu və adını göstərir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "İndi bərpa kodunuzun 12 sözünü mətn faylı kimi endirə bilərsiniz.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Bərpa kodunuzu yadda saxlayın indi onun məlumatlarınızı geri qaytardığını və 30 gün istifadə edilmədikdə məlumatların silindiyini bildirir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Xərc bölün bölməsində Qəbzi skan edin indi yuxarıda, Yadda saxlayın düyməsinin yanında da var, belə ki, klaviatura onu artıq gizlətmir, Ödəniş üsulu əlavə edin isə daha sakit görünür.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qrupun Statistika bölməsində Şəxslər üzrə indi hər kəsin payını göstərən halqa diaqramıdır, hər şəxs Standart bölgü bölməsindəki rəngindədir, altında isə izah kimi adlar və məbləğlər siyahısı var. İstehlak və Ödənilən göstərilənləri dəyişir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni qrup bölməsinin “Kimlər var” hissəsi baş hərfiniz əvəzinə profil fotonuzu göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiqə qayıtdıqda “Sinxronizasiya edilir…” artıq Əsas və Qruplar bölmələrində görünmür: qruplarınız ekranda olduqdan sonra sinxronizasiya sakitcə işləyir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Planşetlərdə və telefon üfüqi vəziyyətdə olduqda yan panelin yuxarısındakı “Xərc bölün” düyməsinin kölgəsi artıq kənarlarından kəsilmir.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

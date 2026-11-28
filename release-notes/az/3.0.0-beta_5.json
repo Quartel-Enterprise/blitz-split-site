@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split indi alman, italyan və polyak dillərində danışır: o, cihazınızın dilinə uyğunlaşır, ya da Profil › Dil bölməsində birini seçə bilərsiniz.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hər kateqoriyanın indi öz rəngi var, Statistika isə hər kateqoriyanı və hər şəxsi öz rəngində çəkir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "İndi kateqoriyanın rəngini kateqoriyanın formasında və ya Kateqoriya xəritəsi bölməsində dəyişə bilərsiniz.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Xərclər bölməsində xərcin menyusunda yeni seçim var, Dublikat yaradın: o, orijinal kimi artıq doldurulmuş yeni xərc açır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiqə qayıtdıqda qruplar və xərclər artıq bir anlıq yox olmur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hələ qrupunuz olmadıqda Axtarış artıq dərhal bağlanmır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni qrup indi siyahıdakı ilk növ olan Tədbir ilə başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hələ qrup olmadıqda Link və ya QR ilə dəvət edin indi istifadə edə bilmədiyiniz düymələr əvəzinə yalnız Yeni qrup düyməsini göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Oxunması daha uzun çəkən qəbz artıq bağlantı xətası ilə bitmir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Statistika bölməsinin kateqoriya sətirləri daha səliqəlidir: artıq hər alt kateqoriyanın məbləğini sadalamır.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

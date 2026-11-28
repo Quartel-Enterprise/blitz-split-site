@@ -5,12 +5,12 @@
 // site.js applies a theme picked on the page through window.applyTheme.
 // The language, English, Portuguese (Brazil), Spanish, French, German, Italian, Polish, Dutch,
 // Turkish, Indonesian, Japanese, Russian, Ukrainian, Korean, Arabic, Hindi, Simplified Chinese, Hebrew, Thai, Vietnamese,
-// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian, Gujarati, Malayalam, Punjabi, Kannada, Burmese, Khmer or Odia, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
+// Traditional Chinese, Swedish, Czech, Romanian, Bengali, Malay, Greek, Hungarian, Filipino, Urdu, Croatian, Serbian, Slovak, Norwegian (Bokmål), Persian, Swahili, Tamil, Telugu, Marathi, Bulgarian, Catalan, Danish, Finnish, Latvian, Estonian, Lithuanian, Slovenian, Gujarati, Malayalam, Punjabi, Kannada, Burmese, Khmer, Odia, Nepali, Azerbaijani, Amharic, Sinhala or Kazakh, or Portugal's Portuguese (pt-PT), a variant of pt: ?lang=, then the last one picked in the language picker, then
 // the browser's languages in order of preference, English when none of them is one of ours. A Traditional Chinese
 // browser language (zh-Hant, zh-TW, zh-HK, zh-MO) picks Traditional Chinese, zh-Hant, as in the apps; every other zh-* stays zh.
 // Punjabi is written in Gurmukhi only: pa, pa-Guru and pa-IN pick it, while pa-Arab and pa-PK (Shahmukhi) don't.
 (function () {
-  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "fa", "sw", "ta", "te", "mr", "bg", "ca", "da", "fi", "lv", "et", "lt", "sl", "gu", "ml", "pa", "kn", "my", "km", "or"];
+  const SUPPORTED = ["en", "pt", "es", "fr", "de", "it", "pl", "nl", "tr", "id", "ja", "ru", "uk", "ko", "ar", "hi", "zh", "he", "th", "vi", "zh-Hant", "sv", "cs", "ro", "bn", "ms", "el", "hu", "fil", "ur", "hr", "sr", "sk", "nb", "fa", "sw", "ta", "te", "mr", "bg", "ca", "da", "fi", "lv", "et", "lt", "sl", "gu", "ml", "pa", "kn", "my", "km", "or", "ne", "az", "am", "si", "kk"];
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
   function stored(key) {

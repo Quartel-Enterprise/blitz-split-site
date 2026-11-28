@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split indi niderland, yapon, türk və indoneziya dillərində danışır, dil siyahısı isə hər dili öz dilində adlandırır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar və xərclər indi Polşa zlotisindən, Türkiyə lirəsindən və İndoneziya rupisindən istifadə edə bilər.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil bölməsində yeni düymə var, Profili paylaşın: linkinizi açan hər kəs adınızı və fotonuzu görür və sizi qrupa dəvət edə bilər.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni qrupun dəvət linki oflayn olsa belə dərhal hazırdır, Üzvlər bölməsində isə onu kopyalamaq üçün yeni düymə var.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yadda saxlamadığınız bir şey olan formanı bağladıqda indi əvvəlcə “Dəyişikliklər ləğv edilsin?” soruşulur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Məxfilik siyasəti və İstifadə şərtləri indi brauzer əvəzinə tətbiqin içində açılır.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Telefonda aşağı sürüşdürdükdə yuxarı və aşağı panellər yol verir, yuxarı sürüşdürdükdə isə geri qayıdır.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Xərc bölün bölməsində tarix seçmək artıq birbaşa saata keçmir: vaxtın öz düyməsi var.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Qrupu açmaq üçün Xərc bölün bölməsinin yuxarısında ona toxunun; geri qayıtdıqda yazdığınız hər şeylə birlikdə xərcə qayıdırsınız.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Əsas bölməsindəki Son xərclər indi hər xərcin qrupunu və kimin ödədiyini fotolarla göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix indi yalnız ondan istifadə edə biləcək şəxslərə göstərilir, məsələn, tətbiqdən portuqal dilində istifadə edənlərə, Pix açarı olanlara və ya realla işləyən qrupda olanlara.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Sinxronizasiya edilir…” indi hər sinxronizasiyada deyil, yalnız hesabınız cihazda ilk dəfə yükləndikdə görünür.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil artıq Google və ya Apple-ı hesabınızdan ayırmağı təklif etmir: əvəzində çıxış edin və ya hesabı silin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profili redaktə edin indi ayrıca ekran əvəzinə Profil bölməsinin üstündə pəncərə kimi açılır.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Xərc bölün bölməsində forma ilə klaviatura arasındakı boş zolaq götürülüb.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kontaktın Ortaq qruplar hissəsi indi hər qrupun fotosunu göstərir.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

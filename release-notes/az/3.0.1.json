@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Heç kim heç nə borclu olmadıqda Balanslar tabı artıq sıfırlar sırası göstərmir: sadəcə Hamı hesablaşıb yazır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hesabda hər ikisi olduqda Profil bölməsinin Google ilə daxil olmuş hesabın e-poçtunun yanında Apple loqosunu, Apple ilə daxil olmuş hesabın yanında isə Google loqosunu göstərməsi düzəldildi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Xərcin linki indi brauzer əvəzinə tətbiqdə, fotoları və şərhləri ilə birlikdə açılır.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Artıq paylaşılmayan və ya yalnız xərcdəki şəxslərin aça bildiyi xərc linki indi xəta göstərmək əvəzinə bunu bildirir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil linki indi daxil olmadığınız halda da açılır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Məxfilik və haqqında bölməsində yeni “İstifadə məlumatlarını paylaşın” açarı var: tətbiqdən necə istifadə etdiyinizi göndərməyi dayandırmaq üçün onu söndürün.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profilinizə, şərhə və tətbiqi əldə etmək üçün paylaşdığınız linklər indi önizləmələrini sizin dilinizdə göstərir.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
