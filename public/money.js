@@ -73,7 +73,7 @@
     is: ["", ",", ".", "\u00a0kr.", 1],
     eu: ["", ",", ".", "\u00a0€"],
     gl: ["", ",", ".", "\u00a0€"],
-    rm: ["CHF\u00a0", ".", "'"],
+    rm: ["CHF\u00a0", ".", "\u2019"], // grouped by U+2019 (CHF 1’200), as CLDR and the apps write it
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");

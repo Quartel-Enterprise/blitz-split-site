@@ -312,13 +312,15 @@ has no gender, with Kazakh syntax, not Russian's. A noun after a number stays si
 "|". It is in tenge, after the number and grouped by spaces (68 200 ₸), a cent of the demo's being 5 ₸, Google Play's
 link uses `hl=kk` and the App Store's Kazakhstan's storefront (`kz/`). It draws in the system's font, with no Geist
 tracking, as Russian does.
-Mongolian (`mn`) is one variant for every `mn` tag, in Cyrillic (with ө and ү), as the apps write it: the respectful
+Mongolian (`mn`) is one variant, in Cyrillic (with ө and ү), as the apps write it, so `boot.js` skips a tag in the
+traditional script (`mn-Mong`, or `mn-CN` with none) as it skips Shahmukhi Punjabi: the respectful
 "та" and the polite "-на уу/-нэ үү" in instructions and prompts, the verbal noun on buttons ("Хадгалах", "Цуцлах"), and the plain
 past for a name ("{name} төлсөн"), as the language has no gender. A noun after a number stays singular, so no split
 card message holds "|". It is in tögrög, the sign before the number (₮ 170,100 for the ride), a cent of the demo's
 being 35 ₮, in whole units, Google Play's link uses `hl=mn` and the App Store's Mongolia's storefront (`mn/`). It draws
 in the system's font, with no Geist tracking, as Russian does.
-Kyrgyz (`ky`) is one variant for every `ky` tag, in Cyrillic (with ң, ө and ү), as the apps write it: the respectful
+Kyrgyz (`ky`) is one variant, in Cyrillic (with ң, ө and ү), as the apps write it, so `boot.js` skips a tag in
+another script (`ky-Arab`, or `ky-CN` with none): the respectful
 "сиз" and its polite imperative in instructions and prompts, the verbal noun on buttons ("Сактоо"), and the plain third
 person for a name ("{name} төлөдү"), with Kyrgyz syntax, not Russian's. A noun after a number stays singular, so no
 split card message holds "|". It is in som, after the number with their tyiyn and grouped by spaces, the demo's amounts
@@ -355,7 +357,7 @@ says. It keeps the site's font and its tracking.
 Romansh (`rm`) is one variant for every `rm` tag, in Rumantsch Grischun, as the apps write it: the formal "Vus" (always
 capitalised) and the second person plural for the reader, the infinitive on buttons ("Memorisar", "Interrumper"), and the perfect for a name ("{name} ha
 pajà"). A count's noun takes its plural in a ternary, so no split card message holds "|". It is in Swiss francs, the
-symbol first and grouped by apostrophes (CHF 48.60), Google Play's link uses `hl=rm` and the App Store's Switzerland's
+symbol first and grouped by U+2019 apostrophes, as CLDR and the apps do (CHF 1’200, CHF 48.60), Google Play's link uses `hl=rm` and the App Store's Switzerland's
 storefront (`ch/`). It keeps the site's font and its tracking.
 
 The landing's amounts are in the visitor's own currency, written as their language writes it (`public/money.js`, which

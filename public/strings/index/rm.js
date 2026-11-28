@@ -3,7 +3,7 @@
 // Romansh: Rumantsch Grischun, the formal "Vus" (always capitalised) with the 2nd person plural on every instruction
 // and the infinitive on buttons, the app's own words (expensa, pareggiar ils quints, code da recuperaziun, navigatur),
 // no article glued to a name or an amount (it stands after a colon or as the subject), no participle agreeing with the
-// visitor, and Swiss francs written as Switzerland does (CHF 1'200.50, money.js).
+// visitor, and Swiss francs written as Switzerland does (CHF 1’200.50, money.js).
 (window.SITE_STRINGS = window.SITE_STRINGS || {})["rm"] = {
   title: "Blitz Split · Partir expensas cun amis, era offline",
   description: "Creai ina gruppa, agiuntai quant che mintgin ha pajà e guardai tgi sto pajar quant a tgi. Funcziuna era offline, senza registraziun.",
@@ -28,7 +28,7 @@
   mTabStats: "Statisticas",
   mBill1: "Pensiun a Lagoa",
   mBill1Who: "Pedro ha pajà",
-  mBill1Amt: "CHF 1'200",
+  mBill1Amt: "CHF 1’200",
   mBill1Share: "+CHF 900",
   mBill2: "Tschaina a Ribeirão",
   mBill2Who: "Ana ha pajà",
