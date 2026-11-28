@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "A aplicación xa fala ruso e ucraíno: escolla \"Русский\" ou \"Українська\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en rublos rusos (RUB) e grivnas ucraínas (UAH), e un grupo creado en Rusia ou Ucraína comeza na súa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Perfil ten unha preferencia nova, \"Formato de hora\": seguir o sistema, ou mostrar sempre as horas en formato de 24 horas (14:30) ou de 12 horas con AM e PM (2:30 PM), nos gastos, en Actividade, nos comentarios e nos selectores de hora.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Co teléfono en horizontal, e nas tabletas, \"Dividir un gasto\" dun grupo agora está na barra superior en vez de flotar enriba dos gastos.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Con Cores dinámicas activado, o que vostede debe segue en laranxa en vez de volverse vermello, para que nunca se pareza ao verde do que lle volve.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "En Actividade, cada liña agora mostra a foto do grupo ao lado do seu nome, cando o grupo ten unha.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "O seu saldo neste grupo xa non repite o importe nunha segunda liña cando só recupera ou só debe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En División predeterminada, a parte de cada persoa no gasto de exemplo agora ten unha cor propia, cun punto da mesma cor antes do seu nome, para que as persoas que están xuntas na lista nunca parezan unha soa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A barra superior dun gasto agora mostra a foto do grupo, ou as súas iniciais, ao lado do nome do grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar a foto de alguén agora lévaa ata o seu perfil, e de volta cando regresa.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Un gasto aberto desde Gastos dun grupo agora móvese ao seu sitio como fai desde Inicio, e a foto do grupo nos gastos de Inicio voa ata a barra superior do gasto.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Dividir un gasto\" agora tamén está na parte superior de Saldos e Contactos, e na pantalla do grupo pasou á barra superior en vez de flotar enriba da lista, con \"Engadir persoas\" agora no menú ⋯. Comeza co seu nome e redúcese á súa icona ao desprazarse.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "En Grupos, tocar a tarxeta Saldo xeral abre Saldos.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Convidar persoas\" nun grupo agora chámase \"Engadir persoas\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "No iPad, as pestanas ábrense na barra lateral, e cando están na barra superior, como co iPad en vertical, \"Dividir un gasto\" segue á vista alí mentres os outros botóns pasan a unha fila xusto debaixo.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "En \"Dividir un gasto\", \"Pagado con\" agora tamén aparece, atenuado, cando pagou outra persoa: ao tocalo explícase que só quen pagou pode indicar con que pagou.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sen conta, o seu código de recuperación agora son 12 palabras numeradas, máis fáciles de anotar, e ao restaurar introdúcense unha palabra por campo, cunha suxestión para cada palabra mentres escribe. Os códigos gardados antes desta versión xa non funcionan: garde o novo, ou conecte Google ou Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En Gastos por categoría, cada gasto ten agora o mesmo menú ⋮ que nos gastos dun grupo: edíteo, duplíqueo, compártao ou elimíneo sen abrilo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En pantallas anchas (un teléfono en horizontal, as tabletas, o Mac e a web), Gastos por categoría mantén as súas categorías e o total nunha columna ao lado dos gastos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En alemán, neerlandés e xaponés, as frases de Actividade agora seguen a orde natural das palabras de cada idioma, sen dous puntos antes do nome do gasto ou do grupo.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "A primeira letra de \"Engadir foto\" debaixo dos anexos dun gasto xa non aparece cortada.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "En Grupos, o botón para crear un grupo agora di \"+ Grupo\" e xa non se parte en dúas liñas.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Novidades agora mostra a versión que acaba de instalar, en vez de esperar ata un día para traer as súas notas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nas Estatísticas dun grupo, o botón do período (\"Todo o período\") xa non se parte en dúas liñas: as datas pasan debaixo del cando non caben as dúas.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

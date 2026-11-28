@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Unha conta sen Google nin Apple agora elimínase despois de 30 días sen uso. A pantalla de benvida e Perfil indícano, e conectar Google ou Apple conserva os seus datos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Agora pode valorar a aplicación desde Perfil › Asistencia e comentarios, con \"Valorar a aplicación\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Un gasto aberto desde Inicio ou Todos os gastos agora volve directamente a onde o abriu, sen pasar polo seu grupo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corrixiuse que a burbulla \"+N\" dunha fila de caras aparecese debaixo da primeira cara en vez de enriba dela.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

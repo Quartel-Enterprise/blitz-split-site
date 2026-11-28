@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Ao abrir unha persoa desde Contactos ou Saldos, o seu nome e o seu saldo agora van ata o seu perfil xunto coa foto, e volven cando regresa.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "En Estatísticas, o centro do anel \"Por persoa\" agora só di \"Vostede\" cando a parte é súa, e un nome longo remata en \"…\" en vez de tocar o anel.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ao abrir un grupo desde Grupos, as caras dos seus membros agora viaxan desde a fila ata a pantalla do grupo, e volven cando sae.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Nun teléfono, abrir un gasto agora leva máis cousas con el: quen pagou viaxa desde a súa fila en Inicio e Todos os gastos, a hora desde a súa fila en Gastos do grupo, e a foto e o nome do grupo desde a pantalla do grupo. Volven cando sae.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "O nome dun grupo agora viaxa ata a pantalla do grupo ao abrila, non só á volta.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

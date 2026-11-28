@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Gastos dun grupo agora ten \"Ver todo\", que abre Todos os gastos xa filtrado por ese grupo, para que poida buscar, ordenar e filtrar os seus gastos. Quite o filtro para ver todos os grupos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En Novo grupo, \"Engadir polo nome\" agora suxire persoas dos seus Contactos mentres escribe, coa súa foto: toque unha para crear o grupo con esa mesma persoa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ao desprazarse por un grupo, a súa barra superior recollida mostra só a foto e o nome do grupo, sen os membros nin o total cortados ao lado.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Agora pode descargar as 12 palabras do seu código de recuperación como un ficheiro de texto.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Garde o seu código de recuperación agora indica que recupera os seus datos, e que sen uso durante 30 días os datos se eliminan.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Dividir un gasto agora ten tamén Escanear recibo na parte superior, ao lado de Gardar, para que o teclado xa non o tape, e Engadir un método de pagamento é máis discreto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nas Estatísticas dun grupo, Por persoa agora é un anel coa parte de cada un, na mesma cor que cada persoa ten en División predeterminada, coa lista de nomes e importes debaixo como lenda. Consumido e Pagado cambian o que mostra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Quen está\" en Novo grupo mostra a súa foto de perfil en vez da súa inicial.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sincronizando…\" xa non segue aparecendo en Inicio e Grupos cando volve á aplicación: as sincronizacións fanse en segundo plano unha vez que os seus grupos están na pantalla.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nas tabletas e co teléfono en horizontal, a sombra de \"Dividir un gasto\" na parte superior da barra lateral xa non aparece cortada nos bordos.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

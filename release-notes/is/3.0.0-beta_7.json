@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split talar nú hollensku, japönsku, tyrknesku og indónesísku, og tungumálalistinn nefnir hvert tungumál á því sjálfu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hópar og kostnaður geta nú notað pólskt slot, tyrkneska líru og indónesíska rúpíu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prófíll er með nýjan hnapp, Deila prófíl: hver sem opnar hlekkinn þinn sér nafnið þitt og myndina og getur boðið þér í hóp.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Boðshlekkur nýs hóps er tilbúinn strax, jafnvel ótengt, og Meðlimir er með nýjan hnapp til að afrita hann.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ef eyðublaði er lokað með einhverju sem þú hefur ekki vistað er nú fyrst spurt “Fleygja breytingum?”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Persónuverndarstefnan og Notkunarskilmálarnir opnast nú inni í forritinu í stað vafrans.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Í síma víkja efsta og neðsta stikan nú þegar þú flettir niður og koma aftur þegar þú flettir upp.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Í Skipta kostnaði hoppar val á dagsetningu ekki lengur beint í klukkuna: tíminn hefur sinn eigin hnapp.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Ýttu á hópinn efst í Skipta kostnaði til að opna hann; þegar þú ferð til baka kemur þú aftur í kostnaðinn með öllu sem þú slóst inn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nýjasti kostnaður í Heim sýnir nú hóp hvers kostnaðar og hver greiddi sem myndir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix birtist nú aðeins fólki sem líklegt er að noti það, svo sem þeim sem nota forritið á portúgölsku, eru með Pix-lykil eða eru í hópi í ríölum.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Samstillir…” birtist nú aðeins í fyrsta sinn sem aðgangurinn þinn hleðst í tæki, ekki við hverja samstillingu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prófíll býður ekki lengur upp á að aftengja Google eða Apple frá aðganginum þínum: skráðu þig út eða eyddu aðganginum í staðinn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Breyta prófíl opnast nú sem gluggi ofan á Prófíl í stað sérstaks skjás.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Auða bilið á milli eyðublaðsins og lyklaborðsins í Skipta kostnaði er horfið.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Sameiginlegir hópar tengiliðar sýna nú mynd hvers hóps.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

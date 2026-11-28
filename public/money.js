@@ -3,13 +3,14 @@
 // way by hand. The demo keeps every
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar, the
 // taka, the forint, the Pakistani rupee, the Serbian dinar, the Iranian rial, the kyat, the riel, the Nepalese and the
-// Sri Lankan rupee, the tenge) shows
+// Sri Lankan rupee, the tenge, the tögrög, the kip, the Icelandic króna) shows
 // it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫, NT$4,860, 102,060 K (about
 // 2,100 kyat to the dollar), 194,400៛ (about 4,000 riels to the dollar) or ریال 4,860,000 (a
 // thousand rials to the cent: at a plausible million rials to the dollar, Persian's trip costs a tenth of the others', so
 // its amounts still fit a 320px phone) and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
-// koruna, the leu, the ringgit, the Philippine peso, the Norwegian and the Danish krone, the Kenyan shilling, the birr) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
+// koruna, the leu, the ringgit, the Philippine peso, the Norwegian and the Danish krone, the Kenyan shilling, the birr,
+// the Kyrgyz som) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
 // preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč, 243 lei,
 // RM194.40, ₱2,430 or Ksh 6,318 (and 486 kr in Norwegian too, the krone being worth about the krona, and 340,20 kr. in Danish)
 // and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
@@ -66,6 +67,13 @@
     am: ["", ".", ",", "\u00a0ብር", 0, 3, 150],
     si: ["රු.\u00a0", ".", ",", "", 1],
     kk: ["", ",", "\u00a0", "\u00a0₸", 5],
+    mn: ["₮\u00a0", ".", ",", "", 35],
+    ky: ["", ",", "\u00a0", "\u00a0сом", 0, 3, 87],
+    lo: ["₭", ",", ".", "", 210],
+    is: ["", ",", ".", "\u00a0kr.", 1],
+    eu: ["", ",", ".", "\u00a0€"],
+    gl: ["", ",", ".", "\u00a0€"],
+    rm: ["CHF\u00a0", ".", "'"],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
@@ -92,10 +100,10 @@
     return isolate((cents > 0 ? "+" : "−") + text);
   }
   // Why: a Persian, Arabic or Urdu keyboard types its own digits (۴۸, ٤٨) and separators (٫ ٬), and a Hindi, Marathi,
-  // Nepali, Bengali, Punjabi, Gujarati, Odia, Tamil, Telugu, Malayalam, Kannada, Sinhala, Thai, Burmese or Khmer one may
-  // type its script's (४८, ৪৮, ੪੮, ૪૮, ୪୮, ௪௮, ౪౮, ൪൮, ೪೮, ෪෮, ๔๘, ၄၈, ៤៨), which \d doesn't match, so they are read as the Latin ones before
+  // Nepali, Bengali, Punjabi, Gujarati, Odia, Tamil, Telugu, Malayalam, Kannada, Sinhala, Thai, Lao, Burmese or Khmer one
+  // may type its script's (४८, ৪৮, ੪੮, ૪૮, ୪୮, ௪௮, ౪౮, ൪൮, ೪೮, ෪෮, ๔๘, ໔໘, ၄၈, ៤៨), which \d doesn't match, so they are read as the Latin ones before
   // anything else: each script's zero, and the nine digits after it.
-  const DIGIT_ZEROS = [0x660, 0x6f0, 0x966, 0x9e6, 0xa66, 0xae6, 0xb66, 0xbe6, 0xc66, 0xd66, 0xce6, 0xde6, 0xe50, 0x1040, 0x17e0];
+  const DIGIT_ZEROS = [0x660, 0x6f0, 0x966, 0x9e6, 0xa66, 0xae6, 0xb66, 0xbe6, 0xc66, 0xd66, 0xce6, 0xde6, 0xe50, 0xed0, 0x1040, 0x17e0];
   const latinDigits = (text) => text
     .replace(/\p{Nd}/gu, (d) => {
       const code = d.codePointAt(0);
@@ -121,9 +129,9 @@
   const cents = (amount) => amount * factor;
 
   // A percentage, as the language writes it: Turkish puts the sign first (%10); French, German, Russian, Swedish, Czech,
-  // Croatian, Serbian, Slovak, Norwegian, Catalan, Danish, Finnish, Lithuanian and Slovenian put a space before it (10 %); Kazakh, though it follows Russian's numbers, writes 10% as `Intl` does. The phone (preview.js) and the split card (split-modes.js) share it.
+  // Croatian, Serbian, Slovak, Norwegian, Catalan, Danish, Finnish, Lithuanian, Slovenian and Galician put a space before it (10 %); Basque puts the sign first, with a space (% 10); Kazakh and Kyrgyz, though they follow Russian's numbers, write 10% as `Intl` does. The phone (preview.js) and the split card (split-modes.js) share it.
   const lang = document.documentElement.dataset.lang;
-  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk", "nb", "ca", "da", "fi", "lt", "sl"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : `${n}%`);
+  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk", "nb", "ca", "da", "fi", "lt", "sl", "gl"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : lang === "eu" ? `% ${n}` : `${n}%`);
 
   window.money = { format, plain, parse, latinDigits, cents, percent, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
 })();

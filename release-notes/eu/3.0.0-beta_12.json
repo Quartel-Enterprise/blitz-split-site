@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Berrikuntzak atalean, sakatu bertsio bat haren argitalpena GitHub webgunean irekitzeko, edo GitHub botoia argitalpen guztiak ikusteko.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde baten orriak, gonbidapen batek eta gastu baten xehetasunek gehienez bost pertsonaren argazkiak erakusten dituzte orain elkarren ondoan, bi ordez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPad batean edo etzanda dagoen iPhone Duo ireki batean, pantaila betetzen duen talde batek (Hasiera ataletik irekita, adibidez) bere argazkia, kideak eta zure saldoa erakusten ditu orain gastuen ondoan.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Hasiera ataleko Saldo orokorra txartela sakatzean Saldoak fitxa irekitzen da orain.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefonoan, Hasiera ataletik talde edo gastu bat irekitzean, taldearen saldoa, edo gastuaren ikonoa, izenburua, guztira eta zure zatia, haren pantailara hegan joaten dira orain, eta itzultzean atzera.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profila › Hizkuntza atalean gaztelania bi aldiz agertzen da orain, \"Español (Latinoamérica)\" eta \"Español (España)\", hitz egiten duzuna aukera dezazun, zure gailua non dagoen kontuan hartu gabe.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefonoa edo tableta etzanda dagoela, Kontaktuak eta Saldoak ataletan zerrendaren ondoan dagoena pantailaren goialdean hasten da orain, zure profileko argazkia zerrendaren gainean dagoela.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Talde bateko Kideak ataleko \"Gehitu pertsona\" botoiaren ertza errazago ikusten da.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "\"Ordainketa-metodoak\" ataleko txartel baten kolorea kategorien kolore beretatik aukeratzen da orain: hamabi koloreak, zure koloreak eta \"Kolore berria\", beste bat sortzeko.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Banatu gastu bat\" atalean, \"Ordainketa-metodoa\" botoi txiki bat da orain Banatu aukeraren azpian, eta oraindik ordainketa-metodorik ez baduzu, \"Gehitu ordainketa-metodo bat\" aukerak bertan sortzen du bat eta gasturako aukeratzen du. Zordunketa-txartelek ere beren ikonoa dute orain.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profila atalean ordainketa-metodo bat gehitzean edo editatzean, haren gainean irekitzen da orain, pantaila bereizi batean ordez.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Kolore dinamikoak aukerak azaltzen du orain aplikazioak Android sistemaren koloreak hartzen dituela, zure horma-paperetik edo Android ezarpenetan aukeratu duzun paletatik datozenak.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Mugimendua murriztea aktibatuta dagoenean, talde baten Estatistikak atalak grafikoak berehala erakusten ditu orain, barrak hazi edo eraztuna biratu gabe.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Brasilgo portugesez, Jarduera atalak eta gastu baten historiak \"Você criaste\" eta antzekoak esaten zituzten, \"Você criou\" ordez.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Konpondu da Estatistikak ataleko data-hautatzailean datak lerro bakoitzeko letra bat edo bi hautsita agertzea; amaiera-data hasiera-dataren azpian jartzen da orain, biak ez direnean sartzen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Konpondu dira Espainiako gaztelaniaz eta Portugalgo portugesez ingelesez, edo \"push.bill_deleted\" bezalako kode gisa, agertzen ziren jakinarazpenak eta esaldi batzuk.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Konpondu da Hasiera ataleko pertsonen errenkada Portugalgo portugesez, izen baten azpian \"te deve\" esaten baitzuen, \"deve-te\" ordez.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

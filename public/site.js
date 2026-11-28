@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: …, da: …, fi: …, lv: …, et: …, lt: …, sl: …, gu: …, ml: …, pa: …, kn: …, my: …, km: …, or: …, ne: …, az: …, am: …, si: …, kk: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: …, da: …, fi: …, lv: …, et: …, lt: …, sl: …, gu: …, ml: …, pa: …, kn: …, my: …, km: …, or: …, ne: …, az: …, am: …, si: …, kk: …, mn: …, ky: …, lo: …, is: …, eu: …, gl: …, rm: … }
 // before this script, inline or, on the landing and the support page, as one file per language of which boot.js loads
 // the one it picked (public/strings/<page>/<language>.js); blocks written per language carry data-lang with the
 // language ("en", "pt", "fr"…).
@@ -106,6 +106,13 @@
     am: { search: "ቋንቋዎችን ይፈልጉ", clear: "ፍለጋውን ያጽዱ", none: "ምንም ቋንቋ አይዛመድም: “{query}”", system: "ሥርዓት", systemDetail: "የመሣሪያ ቋንቋ", back: "ይመለሱ", close: "ይዝጉ" },
     si: { search: "භාෂා සොයන්න", clear: "සෙවීම හිස් කරන්න", none: "ගැළපෙන භාෂාවක් නැහැ: “{query}”", system: "පද්ධතිය", systemDetail: "උපාංග භාෂාව", back: "ආපසු", close: "වසන්න" },
     kk: { search: "Тілдерді іздеу", clear: "Іздеуді тазалау", none: "Сәйкес тіл жоқ: “{query}”", system: "Жүйе", systemDetail: "Құрылғы тілі", back: "Артқа", close: "Жабу" },
+    mn: { search: "Хэл хайх", clear: "Хайлтыг арилгах", none: "Тохирох хэл алга: “{query}”", system: "Систем", systemDetail: "Төхөөрөмжийн хэл", back: "Буцах", close: "Хаах" },
+    ky: { search: "Тилдерди издөө", clear: "Издөөнү тазалоо", none: "Дал келген тил жок: “{query}”", system: "Тутум", systemDetail: "Түзмөк тили", back: "Артка", close: "Жабуу" },
+    lo: { search: "ຊອກຫາພາສາ", clear: "ລ້າງການຊອກຫາ", none: "ບໍ່ພົບພາສາທີ່ກົງກັບ “{query}”", system: "ລະບົບ", systemDetail: "ພາສາຂອງອຸປະກອນ", back: "ກັບຄືນ", close: "ປິດ" },
+    is: { search: "Leita að tungumálum", clear: "Hreinsa leit", none: "Ekkert tungumál passar við: “{query}”", system: "Kerfi", systemDetail: "Tungumál tækis", back: "Til baka", close: "Loka" },
+    eu: { search: "Bilatu hizkuntzak", clear: "Garbitu bilaketa", none: "Ez dago bat datorren hizkuntzarik: “{query}”", system: "Sistema", systemDetail: "Gailuaren hizkuntza", back: "Atzera", close: "Itxi" },
+    gl: { search: "Buscar idiomas", clear: "Borrar a busca", none: "Ningún idioma coincide con “{query}”", system: "Sistema", systemDetail: "Idioma do dispositivo", back: "Atrás", close: "Pechar" },
+    rm: { search: "Tschertgar ina lingua", clear: "Stizzar la tschertga", none: "Nagina lingua correspunda a “{query}”", system: "Sistem", systemDetail: "Lingua da l'apparat", back: "Enavos", close: "Serrar" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
   // Ukrainian by Ukraine's UA ("UK" reads as the United Kingdom) and the two Chinese by their scripts, as Chinese

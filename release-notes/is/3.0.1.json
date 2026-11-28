@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Flipinn Staða sýnir ekki lengur röð af núllum þegar enginn skuldar neitt: hann segir bara Allt uppgert.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lagað: Prófíll sýndi merki Apple við hlið netfangs aðgangs sem var skráður inn með Google, eða merki Google við hlið aðgangs sem var skráður inn með Apple, þegar aðgangurinn er með hvort tveggja.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

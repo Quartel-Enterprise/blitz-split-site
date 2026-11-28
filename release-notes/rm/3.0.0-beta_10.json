@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "La colliaziun d'in'expensa s'avra ussa en l'app empè dal navigatur, cun sias fotos e ses commentaris.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "La colliaziun d'in'expensa che n'è betg pli cundividida, u che mo las persunas en l'expensa pon avrir, di quai ussa empè da mussar in'errur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "La colliaziun d'in profil s'avra ussa er, sche Vus n'As avais betg annunzià.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Protecziun da datas e infurmaziuns ha in nov interruptur, \"Cundivider datas d'utilisaziun\": deactivai el per betg pli trametter co che Vus duvrais l'app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Las colliaziuns che Vus cundividais a Voss profil, ad in commentari e per obtegnair l'app mussan ussa lur prevista en Vossa lingua.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

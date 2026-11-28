@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Talde baten Gastuak atalak \"Ikusi guztiak\" du orain, eta Gastu guztiak irekitzen du talde horren arabera iragazita, haren gastuak bilatu, ordenatu eta iragazi ahal izateko. Garbitu iragazkia talde guztiak ikusteko.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde berria atalean, \"Gehitu izenaren bidez\" aukerak zure Kontaktuak ataleko pertsonak iradokitzen ditu orain idatzi ahala, haien argazkiarekin: sakatu bat pertsona horrekin bertarekin taldea sortzeko.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde batean korritzean, haren goiko barra tolestuak taldearen argazkia eta izena bakarrik erakusten ditu, ondoan kideak eta guztira moztuta agertu gabe.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Orain zure berreskuratze-kodearen 12 hitzak testu-fitxategi gisa deskarga ditzakezu.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Gorde zure berreskuratze-kodea pantailak esaten du orain zure datuak berreskuratzen dituela, eta 30 egunez erabili gabe datuak ezabatu egiten direla.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Banatu gastu bat atalak Eskaneatu tiketa ere badu orain goialdean, Gorde botoiaren ondoan, teklatuak gehiago ezkuta ez dezan, eta Gehitu ordainketa-metodo bat lasaiagoa da.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde baten Estatistikak atalean, Pertsonaka orain bakoitzaren zatiaren donut bat da, pertsona bakoitzak Banaketa lehenetsia atalean duen kolore berean, eta haren azpian izenen eta zenbatekoen zerrenda dago legenda gisa. Kontsumitutakoa eta Ordaindutakoa aukerek erakusten dena aldatzen dute.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde berria ataleko \"Nor dago\" zatiak zure profileko argazkia erakusten du, zure inizialaren ordez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sinkronizatzen…\" ez da gehiago agertzen Hasiera eta Taldeak ataletan aplikaziora itzultzean: sinkronizazioak isilean egiten dira zure taldeak pantailan daudenean.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tabletetan eta telefonoa etzanda dagoela, alboko barraren goialdeko \"Banatu gastu bat\" botoiaren itzala ez da gehiago mozten ertzetan.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

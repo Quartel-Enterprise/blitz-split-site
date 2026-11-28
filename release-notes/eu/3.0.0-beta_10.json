@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Gastu baten esteka aplikazioan irekitzen da orain, nabigatzailean ordez, bere argazki eta iruzkinekin.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Jada partekatzen ez den gastu baten estekak, edo gastuko kideek bakarrik ireki dezaketenak, hala dela esaten du orain, errore bat erakutsi ordez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil baten esteka saioa hasi ez duzunean ere irekitzen da orain.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profila › Pribatutasuna eta informazioa atalak etengailu berri bat du, \"Partekatu erabilera-datuak\": desaktibatu aplikazioa nola erabiltzen duzun bidaltzeari uzteko.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Zure profilerako, iruzkin baterako eta aplikazioa lortzeko partekatzen dituzun estekek zure hizkuntzan erakusten dute orain aurrebista.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split aplikazioak alemanez, italieraz eta polonieraz hitz egiten du orain: zure gailuaren hizkuntzari jarraitzen dio, edo bat aukera dezakezu Profila › Hizkuntza atalean.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kategoria bakoitzak bere kolorea du orain, eta Estatistikak atalak kategoria eta pertsona bakoitza bere kolorean marrazten ditu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Orain kategoria baten kolorea alda dezakezu, kategoriaren inprimakian edo Kategoria-mapa atalean.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Gastuak ataleko gastu baten menuak aukera berri bat du, Bikoiztu: gastu berri bat irekitzen du, jatorrizkoa bezala beteta.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Taldeak eta gastuak ez dira gehiago une batez desagertzen aplikaziora itzultzean.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bilaketa ez da gehiago berehala ixten oraindik talderik ez duzunean.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde berri bat Ekitaldia motarekin hasten da orain, zerrendako lehen motarekin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Oraindik talderik ez dagoenean, Gonbidatu esteka edo QR bidez atalak Talde berria botoia bakarrik erakusten du orain, erabili ezin zenituen botoien ordez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Irakurtzeko denbora gehiago behar duen tiket bat ez da gehiago konexio-errore batekin amaitzen.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Estatistikak ataleko kategoria-errenkadak garbiagoak dira: ez dute gehiago azpikategoria bakoitzaren zenbatekoa zerrendatzen.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

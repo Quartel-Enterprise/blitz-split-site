@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split aplikazioak nederlanderaz, japonieraz, turkieraz eta indonesieraz hitz egiten du orain, eta hizkuntzen zerrendak hizkuntza bakoitza bere hizkuntzan izendatzen du.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Taldeek eta gastuek Poloniako zlotya, Turkiako lira eta Indonesiako errupia erabil ditzakete orain.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profila atalak botoi berri bat du, Partekatu profila: zure esteka irekitzen duenak zure izena eta argazkia ikusten ditu, eta talde batera gonbida zaitzake.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Talde berri baten gonbidapen-esteka berehala dago prest, lineaz kanpo ere bai, eta Kideak atalak botoi berri bat du hura kopiatzeko.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Gorde ez duzun zerbait duen inprimaki bat ixtean, \"Aldaketak baztertu?\" galdetzen du orain lehenik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pribatutasun-politika eta Zerbitzu-baldintzak aplikazioaren barruan irekitzen dira orain, nabigatzailean ordez.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Telefonoan, goiko eta beheko barrak kentzen dira orain behera korritzean, eta gora korritzean itzultzen dira.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Banatu gastu bat atalean, data bat aukeratzean ez da gehiago zuzenean erlojura jauzi egiten: orduak bere botoia du.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Sakatu Banatu gastu bat ataleko goialdeko taldea hura irekitzeko; atzera egitean gastura itzultzen zara, idatzi duzun guztiarekin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hasiera ataleko Azken gastuak zatiak gastu bakoitzaren taldea eta nork ordaindu duen erakusten ditu orain argazki gisa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix erabiltzeko aukera gehien duten pertsonei bakarrik agertzen zaie orain, hala nola aplikazioa portugesez erabiltzen dutenei, Pix gako bat dutenei edo realetan dagoen talde batean daudenei.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sinkronizatzen…\" zure kontua gailu batean lehen aldiz kargatzen denean bakarrik agertzen da orain, ez sinkronizazio bakoitzean.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profila atalak ez du gehiago eskaintzen Google edo Apple zure kontutik deskonektatzea: amaitu saioa edo ezabatu kontua horren ordez.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Editatu profila orri gisa irekitzen da orain Profila ataleko gainean, pantaila bereizi baten ordez.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Banatu gastu bat atalean inprimakiaren eta teklatuaren arteko banda hutsa desagertu da.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kontaktu baten Talde komunak zatiak talde bakoitzaren argazkia erakusten du orain.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

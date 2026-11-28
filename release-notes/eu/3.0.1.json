@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "notes": [
+    {
+      "text": "Saldoak fitxak ez du gehiago zeroz betetako errenkadarik erakusten inork ezer zor ez duenean: Dena kitatuta besterik ez du esaten.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Konpondu da Profila atalak Apple logotipoa erakustea Google bidez saioa hasitako kontu baten posta elektronikoaren ondoan, edo Google logotipoa Apple bidez saioa hasitako baten ondoan, kontuak biak dituenean.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Aðgangi án Google eða Apple er nú eytt eftir 30 daga án notkunar. Upphafsskjárinn og Prófíll segja frá því, og ef þú tengir Google eða Apple heldur þú gögnunum þínum.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nú getur þú gefið forritinu einkunn í Prófíll › Aðstoð og ábendingar, með “Gefa forritinu einkunn”.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Kostnaður sem er opnaður úr Heim eða Allur kostnaður fer nú beint aftur þangað sem þú opnaðir hann, án þess að fara í gegnum hópinn hans.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lagað: “+N”-blaðran í stafla af andlitum birtist undir fyrsta andlitinu í stað þess að vera ofan á því.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

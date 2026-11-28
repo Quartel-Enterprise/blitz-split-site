@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Blitz Split é totalmente novo: refeito desde cero, para Android, iPhone, iPad, Mac e a web.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Divida un gasto a partes iguais, por importes, por porcentaxe, por partes ou por artigos. Escanee o recibo e escolla quen tomou que.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Funciona sen conexión e sen conta. Inicie sesión con Google ou Apple para manter os seus grupos sincronizados entre os seus dispositivos.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

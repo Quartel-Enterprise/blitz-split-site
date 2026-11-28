@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Sche Vus avris ina persuna da Contacts u da Salds, van ussa ses num e ses saldo cun en ses profil ensemen cun la foto, e puspè enavos, cura che Vus turnais.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "En Statisticas di il center dal rintg \"Tenor persuna\" ussa simplamain \"Vus\", cura che la part è Vossa, ed in num lung finescha cun \"…\" empè da tutgar il rintg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sche Vus avris ina gruppa da Gruppas, viagian las fatschas da ses commembers ussa da la lingia en il visur da la gruppa, e puspè enavos, cura che Vus al bandunais.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Sin in telefon va ussa dapli da l'expensa cun, cura che Vus l'avris: tgi che ha pajà viagia da sia lingia en Start ed en Tut las expensas, l'ura da sia lingia en las Expensas da la gruppa, e la foto ed il num da la gruppa dal visur da la gruppa. Els turnan enavos, cura che Vus bandunais l'expensa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Il num d'ina gruppa viagia ussa en il visur da la gruppa, cura ch'ella s'avra, e betg mo sin la via enavos.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

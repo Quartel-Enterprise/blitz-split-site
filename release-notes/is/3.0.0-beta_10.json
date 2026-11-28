@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Hlekkur á kostnað opnast nú í forritinu í stað vafrans, með myndum hans og athugasemdum.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Hlekkur á kostnað sem er ekki lengur deilt, eða sem aðeins fólk í kostnaðinum getur opnað, segir nú frá því í stað þess að sýna villu.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hlekkur á prófíl opnast nú líka þegar þú hefur ekki skráð þig inn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prófíll › Persónuvernd og um forritið er með nýjan rofa, “Deila notkunargögnum”: slökktu á honum til að hætta að senda upplýsingar um hvernig þú notar forritið.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hlekkirnir sem þú deilir á prófílinn þinn, á athugasemd og til að sækja forritið sýna nú forskoðun sína á þínu tungumáli.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

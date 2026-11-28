@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Kostnaður hóps er nú með “Sjá allt”, sem opnar Allur kostnaður þegar síaðan eftir þeim hópi, svo þú getur leitað í kostnaði hans, raðað honum og síað. Hreinsaðu síuna til að sjá alla hópa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Í Nýr hópur stingur “Bæta við eftir nafni” nú upp á fólki úr Tengiliðum á meðan þú skrifar, með mynd þess: ýttu á einn til að búa til hópinn með þeim sama einstaklingi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Þegar flett er í hópi sýnir samanbrotin efsta stika hans aðeins mynd og nafn hópsins, án meðlimanna og samtölunnar afskorinna við hliðina.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Nú getur þú sótt 12 orð endurheimtarkóðans þíns sem textaskrá.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Vistaðu endurheimtarkóðann þinn segir nú að hann endurheimti gögnin þín, og að gögnunum sé eytt eftir 30 daga án notkunar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Skipta kostnaði er nú líka með Skanna kvittun efst, við hlið Vista, svo lyklaborðið felur hann ekki lengur, og Bæta við greiðslumáta er látlausari.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Í Tölfræði hóps er Eftir einstaklingum nú kleinuhringjarit yfir hlut hvers og eins, í sama lit og hver og einn hefur í Sjálfgefin skipting, með lista yfir nöfn og upphæðir undir því sem skýringu. Notað og Greitt skipta um það sem það sýnir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Hverjir eru með” í Nýr hópur sýnir prófílmyndina þína í stað upphafsstafsins þíns.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Samstillir…” birtist ekki lengur sífellt í Heim og Hópar þegar þú kemur aftur í forritið: samstillingar keyra hljóðlega þegar hóparnir þínir eru komnir á skjáinn.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Á spjaldtölvum og þegar síminn liggur á hlið skerst skuggi “Skipta kostnaði” efst í hliðarstikunni ekki lengur af við brúnirnar.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

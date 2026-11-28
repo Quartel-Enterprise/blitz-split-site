@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Upphæðir og merkingar brotna ekki lengur á milli lína eða skerast af á litlum skjám, samanbrjótanlegum tækjum og með stóru letri.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Texti, hnappar og útlínur sem erfitt var að lesa hafa nú meiri birtuskil, í ljósu og dökku þema.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ef ýtt er á reit í vafra á iPhone þysjast síðan ekki lengur inn.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

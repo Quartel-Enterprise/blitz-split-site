@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "En Novidades, toque unha versión para abrir a súa publicación en GitHub, ou o botón de GitHub para ver todas as publicacións.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A páxina dun grupo, un convite e os detalles dun gasto agora mostran as fotos de ata cinco persoas unha ao lado da outra en vez de dúas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nun iPad ou nun iPhone Duo aberto en horizontal, un grupo que ocupa a pantalla (aberto desde Inicio, por exemplo) agora mostra a súa foto, os membros e o seu saldo ao lado dos gastos.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Tocar a tarxeta Saldo xeral de Inicio agora abre a pestana Saldos.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nun teléfono, ao abrir un grupo ou un gasto desde Inicio, o saldo do grupo, ou a icona, o título, o total e a súa parte do gasto, agora voan ata a súa pantalla e volven cando regresa.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Perfil › Idioma agora lista o español dúas veces, \"Español (Latinoamérica)\" e \"Español (España)\", para que escolla o que fala estea onde estea o seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Co teléfono ou unha tableta en horizontal, o que está ao lado da lista en Contactos e Saldos agora comeza na parte superior da pantalla, coa súa foto de perfil enriba da lista.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "O bordo do botón \"Engadir persoa\" en Membros dun grupo vese mellor.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "A cor dunha tarxeta en \"Métodos de pagamento\" agora escóllese entre as mesmas cores que as categorías: as doce cores, as súas propias e \"Nova cor\" para crear outra.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En \"Dividir un gasto\", \"Pagado con\" agora é un botón pequeno debaixo de Dividir, e se aínda non ten ningún método de pagamento, \"Engadir un método de pagamento\" crea un alí mesmo e escólleo para o gasto. As tarxetas de débito tamén teñen agora a súa propia icona.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Engadir ou editar un método de pagamento en Perfil agora ábrese enriba del en vez de nunha pantalla á parte.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Cores dinámicas agora explica que a aplicación toma as cores do sistema Android, que veñen do seu fondo de pantalla ou da paleta que escolleu na configuración de Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Coa opción de reducir o movemento activada, as Estatísticas dun grupo agora mostran os gráficos de inmediato, sen que as barras medren nin o anel se debuxe.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "En portugués do Brasil, Actividade e o historial dun gasto dicían \"Você criaste\" e similares en vez de \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Corrixiuse que as datas do selector de datas de Estatísticas partisen unha ou dúas letras por liña; a data de fin agora vai debaixo da data de inicio cando non caben as dúas.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Corrixíronse notificacións e algunhas frases que aparecían en inglés, ou como un código tipo \"push.bill_deleted\", en español de España e portugués de Portugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Corrixiuse a fila de persoas de Inicio en portugués de Portugal, que dicía \"te deve\" debaixo dun nome en vez de \"deve-te\".",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

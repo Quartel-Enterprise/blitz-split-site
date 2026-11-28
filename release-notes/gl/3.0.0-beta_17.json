@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "A aplicación xa fala árabe, deseñada para lerse de dereita a esquerda: escolla \"العربية\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en riais sauditas (SAR), dirhams dos Emiratos Árabes Unidos (AED), libras exipcias (EGP) e dirhams marroquís (MAD), e un grupo creado nun deses países comeza na súa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala chinés simplificado: escolla \"中文（简体）\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en yuans chineses (CNY), e un grupo creado na China continental comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala chinés tradicional: escolla \"中文（繁體）\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en novos dólares taiwaneses (TWD), e un grupo creado en Taiwán comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala checo: escolla \"Čeština\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en coroas checas (CZK), e un grupo creado en Chequia comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Cada grupo ten agora o seu propio lembrete para liquidar contas: manteña o semanal dos luns ás 10:00, escolla outro día da semana ou un día do mes e unha hora (por exemplo, cada día 25 ás 12:00), ou desactíveo, ao crear o grupo ou en Editar grupo. Só reciben a notificación as persoas que aínda deben, e ven no grupo un aviso que poden pechar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala hebreo, deseñada para lerse de dereita a esquerda: escolla \"עברית\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en novos shekels israelís (ILS), e un grupo creado en Israel comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala hindi: escolla \"हिन्दी\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en rupias indias (INR), e un grupo creado na India comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala romanés: escolla \"Română\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en leus romaneses (RON), e un grupo creado en Romanía comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala sueco: escolla \"Svenska\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en coroas suecas (SEK), e un grupo creado en Suecia comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala tailandés: escolla \"ไทย\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en bahts tailandeses (THB), e un grupo creado en Tailandia comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "A aplicación xa fala vietnamita: escolla \"Tiếng Việt\" en Perfil › Idioma, ou deixe que siga o idioma do seu dispositivo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Os grupos xa poden dividir en dongs vietnamitas (VND), e un grupo creado en Vietnam comeza nesa moeda.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Toque a foto do grupo na barra superior dun gasto para vela en grande.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tocar o interruptor atenuado Simplificar débedas nun grupo de dúas persoas agora indica que estará dispoñible cando o grupo teña 3 persoas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "En Como funciona de Simplificar débedas, o exemplo agora mostra fotos de persoas en vez de iniciais.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Corrixiuse que o xesto de volver atrás non saíse do perfil dunha persoa aberto desde a folla dun pagamento; agora volve á folla.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
