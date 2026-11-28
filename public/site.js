@@ -1,5 +1,5 @@
 // Shared by every page of the site: theme, language and the small behaviors of the header and the legal pages.
-// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: …, da: …, fi: …, lv: …, et: …, lt: …, sl: …, gu: …, ml: …, pa: …, kn: …, my: …, km: … }
+// The markup is in English; a page sets window.SITE_STRINGS = { pt: { key: "…" }, "pt-PT": { only the words that differ }, es: { … }, fr: …, de: …, it: …, pl: …, nl: …, tr: …, id: …, ja: …, ru: …, uk: …, ko: …, ar: …, hi: …, zh: …, he: …, th: …, vi: …, "zh-Hant": …, sv: …, cs: …, ro: …, bn: …, ms: …, el: …, hu: …, fil: …, ur: …, hr: …, sr: …, sk: …, nb: …, fa: …, sw: …, ta: …, te: …, mr: …, bg: …, ca: …, da: …, fi: …, lv: …, et: …, lt: …, sl: …, gu: …, ml: …, pa: …, kn: …, my: …, km: …, or: … }
 // before this script, inline or, on the landing and the support page, as one file per language of which boot.js loads
 // the one it picked (public/strings/<page>/<language>.js); blocks written per language carry data-lang with the
 // language ("en", "pt", "fr"…).
@@ -100,6 +100,7 @@
     kn: { search: "ಭಾಷೆಗಳನ್ನು ಹುಡುಕಿ", clear: "ಹುಡುಕಾಟವನ್ನು ತೆರವುಗೊಳಿಸಿ", none: "ಯಾವುದೇ ಭಾಷೆ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ: “{query}”", system: "ಸಿಸ್ಟಮ್", systemDetail: "ಸಾಧನದ ಭಾಷೆ", back: "ಹಿಂದೆ", close: "ಮುಚ್ಚಿ" },
     my: { search: "ဘာသာစကား ရှာရန်", clear: "ရှာဖွေမှု ရှင်းရန်", none: "“{query}” နှင့် ကိုက်ညီသော ဘာသာစကား မရှိပါ", system: "စနစ်", systemDetail: "စက်၏ ဘာသာစကား", back: "နောက်သို့", close: "ပိတ်ရန်" },
     km: { search: "ស្វែងរកភាសា", clear: "សម្អាតការស្វែងរក", none: "គ្មានភាសាណាត្រូវនឹង “{query}” ទេ", system: "ប្រព័ន្ធ", systemDetail: "ភាសាឧបករណ៍", back: "ថយក្រោយ", close: "បិទ" },
+    or: { search: "ଭାଷା ସନ୍ଧାନ କରନ୍ତୁ", clear: "ସନ୍ଧାନ ସଫା କରନ୍ତୁ", none: "କୌଣସି ଭାଷା ମେଳ ଖାଉନାହିଁ: “{query}”", system: "ସିଷ୍ଟମ୍", systemDetail: "ଡିଭାଇସ୍ ଭାଷା", back: "ପଛକୁ", close: "ବନ୍ଦ କରନ୍ତୁ" },
   };
   // Each language's code, as the apps' chips show it: its own, but Portugal's and Brazil's Portuguese by their regions,
   // Ukrainian by Ukraine's UA ("UK" reads as the United Kingdom) and the two Chinese by their scripts, as Chinese

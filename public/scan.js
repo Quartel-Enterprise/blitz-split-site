@@ -307,6 +307,12 @@
       lines: [["2 ស្រាបៀរស្រស់", "112,000", 1], ["1 ចានបង្គា", "384,000", 2]],
       subtotal: ["សរុបរង", "496,000"], service: ["សេវា 10%", "49,600", 3], total: ["សរុប", "545,600"],
     },
+    // Odia: a harbor bar's receipt, in rupees, as India prints it.
+    or: {
+      store: "ହାର୍ବର୍ ବାର୍", address: "120, ବିଚ୍ ରୋଡ୍", date: "08/11/2026  9:47 PM",
+      lines: [["2 ଡ୍ରାଫ୍ଟ ବିୟର୍", "28.00", 1], ["1 ଚିଙ୍ଗୁଡ଼ି ପ୍ଲାଟର୍", "96.00", 2]],
+      subtotal: ["ସବଟୋଟାଲ୍", "124.00"], service: ["ସର୍ଭିସ୍ ଚାର୍ଜ 10%", "12.40", 3], total: ["ମୋଟ", "136.40"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 
