@@ -1539,7 +1539,7 @@
   if (clock) {
     // Why: only the languages whose clock differs from the page's own tag (Latin digits, Taiwan's Traditional Chinese,
     // the US's English); any other uses the page's tag, which boot.js sets for every language.
-    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", gu: "gu-u-nu-latn", ml: "ml-u-nu-latn", pa: "pa-u-nu-latn", my: "my-u-nu-latn", km: "km-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
+    const format = new Intl.DateTimeFormat(window.localized({ ar: "ar-u-nu-latn", "zh-Hant": "zh-Hant-TW", bn: "bn-u-nu-latn", ur: "ur-u-nu-latn", fa: "fa-u-nu-latn-ca-gregory", mr: "mr-u-nu-latn", gu: "gu-u-nu-latn", ml: "ml-u-nu-latn", pa: "pa-u-nu-latn", my: "my-u-nu-latn", km: "km-u-nu-latn", ne: "ne-u-nu-latn", en: "en-US" }) || document.documentElement.lang, { hour: "numeric", minute: "2-digit" });
     const tick = () => {
       clock.textContent = format.formatToParts(new Date())
         .filter((part) => ["hour", "minute", "literal"].includes(part.type)).map((part) => part.value).join("").trim();

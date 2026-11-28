@@ -2,13 +2,14 @@
 // (preview.js) and the split card (split-modes.js) read window.money, and the receipt (scan.js) is printed the same
 // way by hand. The demo keeps every
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar, the
-// taka, the forint, the Pakistani rupee, the Serbian dinar, the Iranian rial, the kyat, the riel) shows
+// taka, the forint, the Pakistani rupee, the Serbian dinar, the Iranian rial, the kyat, the riel, the Nepalese and the
+// Sri Lankan rupee, the tenge) shows
 // it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫, NT$4,860, 102,060 K (about
 // 2,100 kyat to the dollar), 194,400៛ (about 4,000 riels to the dollar) or ریال 4,860,000 (a
 // thousand rials to the cent: at a plausible million rials to the dollar, Persian's trip costs a tenth of the others', so
 // its amounts still fit a 320px phone) and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
-// koruna, the leu, the ringgit, the Philippine peso, the Norwegian and the Danish krone, the Kenyan shilling) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
+// koruna, the leu, the ringgit, the Philippine peso, the Norwegian and the Danish krone, the Kenyan shilling, the birr) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
 // preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč, 243 lei,
 // RM194.40, ₱2,430 or Ksh 6,318 (and 486 kr in Norwegian too, the krone being worth about the krona, and 340,20 kr. in Danish)
 // and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
