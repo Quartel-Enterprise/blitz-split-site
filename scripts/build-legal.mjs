@@ -90,6 +90,13 @@ const CHROME = {
   eu: { language: "Euskara", brand: "Blitz Split", locale: "eu", updated: "Eguneratze-data: {date}", read: "Irakurtzeko {n} minutu", toc: "Orri honetan" },
   gl: { language: "Galego", brand: "Blitz Split", locale: "gl", updated: "Actualizado: {date}", read: "{n} min de lectura", toc: "Nesta páxina" },
   rm: { language: "Rumantsch", brand: "Blitz Split", locale: "rm", updated: "Actualisà: {date}", read: "{n} min da lectura", toc: "Sin questa pagina" },
+  zu: { language: "isiZulu", brand: "Blitz Split", locale: "zu", updated: "Kubuyekezwe: {date}", read: "Imizuzu yokufunda: {n}", toc: "Kuleli khasi" },
+  af: { language: "Afrikaans", brand: "Blitz Split", locale: "af", updated: "Bygewerk: {date}", read: "Leestyd: {n} min.", toc: "Op hierdie bladsy" },
+  ka: { language: "ქართული", brand: "Blitz Split", locale: "ka", updated: "განახლდა: {date}", read: "კითხვის დრო: {n} წუთი", toc: "ამ გვერდზე" },
+  hy: { language: "Հայերեն", brand: "Blitz Split", locale: "hy", updated: "Թարմացվել է: {date}", read: "Կարդալու ժամանակը: {n} րոպե", toc: "Այս էջում" },
+  sq: { language: "Shqip", brand: "Blitz Split", locale: "sq", updated: "Përditësuar: {date}", read: "Lexim: {n} min", toc: "Në këtë faqe" },
+  mk: { language: "Македонски", brand: "Blitz Split", locale: "mk", updated: "Ажурирано: {date}", read: "{n} мин. читање", toc: "На оваа страница" },
+  be: { language: "Беларуская", brand: "Blitz Split", locale: "be", updated: "Абноўлена: {date}", read: "{n} хв чытання", toc: "На гэтай старонцы" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
@@ -133,6 +140,13 @@ const CHARACTERS_PER_MINUTE = {
   // Why: the study has no Romansh, and Italian is the closest language it measured, of the same family.
   rm: MEASURED_CHARACTERS_PER_MINUTE.it,
   // Lao, like Thai, which the study didn't measure either, takes the default pace below.
+  // Why: the study has no Afrikaans, and Dutch is the closest language it measured, which Afrikaans comes from.
+  af: MEASURED_CHARACTERS_PER_MINUTE.nl,
+  // Why: the study has no Macedonian, and Russian is the closest language it measured, in the same script.
+  mk: MEASURED_CHARACTERS_PER_MINUTE.ru,
+  // Why: the study has no Belarusian, and Russian is the closest language it measured, in the same script.
+  be: MEASURED_CHARACTERS_PER_MINUTE.ru,
+  // Zulu, Georgian, Armenian and Albanian, with no close language the study measured, take the default pace below.
 };
 // The study's median without Chinese and Japanese, for a language it didn't measure. Why without them: a character of
 // theirs holds far more than a letter, so they would slow down every language written with letters.

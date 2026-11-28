@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Bedrae en etikette breek nie meer oor reëls of word afgesny op klein skerms, voubare toestelle en met groot teks nie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Teks, knoppies en buitelyne wat moeilik was om te lees, het nou meer kontras, in die ligte en donker temas.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As jy op 'n veld in 'n iPhone se blaaier tik, zoem die bladsy nie meer in nie.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

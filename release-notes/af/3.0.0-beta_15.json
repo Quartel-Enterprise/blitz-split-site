@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "As jy iemand uit Kontakte of Saldo's oopmaak, dra dit nou hul naam en saldo saam met die foto na hul profiel, en weer terug wanneer jy terugkeer.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "In Statistiek sê die middel van die ring \"Per persoon\" nou net \"Jy\" wanneer die deel joune is, en 'n lang naam eindig op \"…\" in plaas daarvan om aan die ring te raak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As jy 'n groep uit Groepe oopmaak, reis die lede se gesigte nou van die ry na die groep se skerm, en terug wanneer jy dit verlaat.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Op 'n foon dra dit nou meer van 'n uitgawe saam wanneer jy dit oopmaak: wie betaal het, reis van die ry op Tuis en Alle uitgawes, die tyd van die ry in die groep se Uitgawes, en die groep se foto en naam van die groep se skerm. Hulle reis terug wanneer jy dit verlaat.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "'n Groep se naam reis nou na die groep se skerm terwyl dit oopmaak, nie net op pad terug nie.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

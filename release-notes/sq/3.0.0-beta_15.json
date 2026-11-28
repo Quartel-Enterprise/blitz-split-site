@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Hapja e dikujt nga Kontaktet ose Bilancet tani e çon emrin dhe bilancin e tij në profilin e tij bashkë me foton, dhe mbrapsht kur ktheheni.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Te Statistika, mesi i unazës \"Sipas personit\" tani thotë thjesht \"Ju\" kur pjesa është juaja, dhe një emër i gjatë përfundon me \"…\" në vend që të prekë unazën.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kur hapni një grup nga Grupet, fytyrat e anëtarëve të tij tani udhëtojnë nga rreshti në ekranin e grupit, dhe mbrapsht kur largoheni.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Në telefon, hapja e një shpenzimi tani merr me vete më shumë prej tij: kush pagoi udhëton nga rreshti i tij te Kreu dhe Të gjitha shpenzimet, ora nga rreshti i tij te Shpenzimet e grupit, dhe fotoja dhe emri i grupit nga ekrani i grupit. Ato udhëtojnë mbrapsht kur largoheni.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Emri i një grupi tani udhëton në ekranin e grupit kur ai hapet, jo vetëm gjatë kthimit.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

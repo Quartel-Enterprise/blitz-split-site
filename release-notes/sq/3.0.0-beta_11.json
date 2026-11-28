@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Një llogari pa Google ose Apple tani fshihet pas 30 ditësh pa përdorim. Ekrani i mirëseardhjes dhe Profili e thonë këtë, dhe lidhja e Google ose Apple i mban të dhënat tuaja.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tani mund ta vlerësoni aplikacionin nga Profili › Mbështetja dhe komentet, me \"Vlerëso aplikacionin\".",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Një shpenzim i hapur nga Kreu ose Të gjitha shpenzimet tani kthehet drejt aty ku e hapët, pa kaluar nga grupi i tij.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "U rregullua flluska \"+N\" e një grumbulli fytyrash që shfaqej poshtë fytyrës së parë në vend që të ishte mbi të.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

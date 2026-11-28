@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Shumat dhe etiketat nuk ndahen më në disa rreshta dhe nuk priten më në ekrane të vogla, në pajisje të palosshme dhe me tekst të madh.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tekstet, butonat dhe konturet që lexoheshin me vështirësi tani kanë më shumë kontrast, në temën e çelët dhe në atë të errët.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Prekja e një fushe në shfletuesin e një iPhone nuk e zmadhon më faqen.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

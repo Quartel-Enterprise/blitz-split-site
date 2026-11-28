@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Die app praat nou Russies en Oekraïens: kies \"Русский\" of \"Українська\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepe kan nou in die Russiese roebel (RUB) en die Oekraïense hriwna (UAH) verdeel, en 'n groep wat in Rusland of Oekraïne geskep word, begin in sy geldeenheid.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profiel het 'n nuwe voorkeur, \"Tydformaat\": volg die stelsel, of wys tye altyd in 24-uur (14:30) of 12-uur met AM en PM (2:30 PM), in uitgawes, Aktiwiteit, opmerkings en die tydkiesers.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Met die foon wat plat lê, en op tablette, sit 'n groep se \"Verdeel 'n uitgawe\" nou in die boonste balk in plaas daarvan om oor die uitgawes te sweef.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Met Dinamiese kleure aan bly wat jy moet betaal, oranje in plaas daarvan om rooi te word, sodat dit nooit soos die groen lyk van wat na jou terugkom nie.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Aktiwiteit wys elke reël nou die groep se foto langs sy naam, wanneer die groep een het.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jou saldo in hierdie groep herhaal nie meer die bedrag op 'n tweede reël wanneer jy net terugkry of net moet betaal nie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Verstekverdeling het elke persoon se deel van die voorbeelduitgawe nou sy eie kleur, met 'n bypassende kolletjie voor die naam, sodat mense langs mekaar in die lys nooit soos een lyk nie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "'n Uitgawe se boonste balk wys nou die groep se foto, of sy voorletters, langs die groep se naam.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As jy op iemand se foto tik, dra dit nou die foto na hul profiel, en weer terug wanneer jy terugkeer.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "'n Uitgawe wat uit 'n groep se Uitgawes oopgemaak is, beweeg nou in plek soos uit Tuis, en die groep se foto op Tuis se uitgawes vlieg na die uitgawe se boonste balk.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "\"Verdeel 'n uitgawe\" is nou ook bo-aan Saldo's en Kontakte, en op die groepskerm het dit na die boonste balk geskuif in plaas daarvan om oor die lys te sweef, met \"Voeg mense by\" nou in die ⋯-kieslys. Dit begin met sy naam en krimp tot sy ikoon soos jy rol.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In Groepe maak die kaart Algehele saldo Saldo's oop as jy daarop tik.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "\"Nooi mense\" in 'n groep heet nou \"Voeg mense by\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op iPad maak die oortjies in die sybalk oop, en wanneer hulle in die boonste balk sit, soos met die iPad regop, bly \"Verdeel 'n uitgawe\" daar sigbaar terwyl die ander knoppies na 'n ry net daaronder skuif.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "In \"Verdeel 'n uitgawe\" wys \"Betaal met\" nou ook wanneer iemand anders die uitgawe betaal het, gedemp: as jy daarop tik, verduidelik dit dat net dié wat betaal het, kan aandui waarmee hulle betaal het.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Sonder 'n rekening is jou herstelkode nou 12 genommerde woorde, makliker om neer te skryf, en herstel neem hulle een woord per veld en stel elke woord voor terwyl jy tik. Kodes wat voor hierdie weergawe gestoor is, werk nie meer nie: stoor die nuwe een, of koppel Google of Apple.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Uitgawes per kategorie het elke uitgawe nou dieselfde ⋮-kieslys as in 'n groep se uitgawes: wysig, dupliseer, deel of vee dit uit sonder om dit oop te maak.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op wye skerms ('n foon wat plat lê, tablette, die Mac en die web) hou Uitgawes per kategorie die kategorieë en totaal in 'n kolom langs die uitgawes.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Duits, Nederlands en Japannees lees Aktiwiteit se sinne nou in elke taal se natuurlike woordorde, sonder 'n dubbelpunt voor die uitgawe of groep se naam.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Die eerste letter van \"Voeg foto by\" onder 'n uitgawe se aanhegsels word nie meer afgesny nie.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "In Groepe lees die knoppie om 'n groep te skep nou \"+ Groep\" en breek dit nie meer oor twee reëls nie.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Wat's nuut wys nou die weergawe wat jy pas geïnstalleer het, in plaas daarvan om tot 'n dag te wag om die notas te bring.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In 'n groep se Statistiek breek die tydperkknoppie (\"Alle tyd\") nie meer oor twee reëls nie: die datums skuif daaronder wanneer albei nie pas nie.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

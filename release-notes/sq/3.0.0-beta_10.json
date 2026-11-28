@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Lidhja e një shpenzimi tani hapet në aplikacion në vend të shfletuesit, me fotot dhe komentet e tij.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Lidhja e një shpenzimi që nuk shpërndahet më, ose që mund ta hapin vetëm personat në shpenzim, tani e thotë këtë në vend që të shfaqë një gabim.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lidhja e një profili tani hapet edhe kur nuk jeni identifikuar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profili › Privatësia dhe rreth nesh ka një çelës të ri, \"Shpërndaj të dhënat e përdorimit\": çaktivizojeni që të mos dërgohet më si e përdorni aplikacionin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lidhjet që shpërndani për profilin tuaj, për një koment dhe për të marrë aplikacionin tani e shfaqin pamjen paraprake në gjuhën tuaj.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "notes": [
+    {
+      "text": "Ilinki yesindleko manje ivuleka ku-app esikhundleni sesiphequluli, nezithombe zaso namazwana.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Ilinki yesindleko engasabelwana ngayo, noma abantu abasesindlekweni kuphela abangayivula, manje iyakusho lokho esikhundleni sokubonisa iphutha.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ilinki yephrofayela manje iyavuleka ngisho noma ungangenanga ngemvume.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "I-Iphrofayela › Ubumfihlo nolwazi inenkinobho entsha, \"Yabelana ngedatha yokusetshenziswa\": yivale ukuze uyeke ukuthumela indlela osebenzisa ngayo i-app.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Amalinki oyabelana ngawo ephrofayela yakho, amazwana nokuthola i-app manje abonisa umbukiso wawo wokuqala ngolimi lwakho.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

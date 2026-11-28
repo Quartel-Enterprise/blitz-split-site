@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-12",
+  "notes": [
+    {
+      "text": "Blitz Split tani flet holandisht, japonisht, turqisht dhe indonezisht, dhe lista e gjuhëve e emërton çdo gjuhë në vetë atë gjuhë.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupet dhe shpenzimet tani mund të përdorin zlotin polak, lirën turke dhe rupinë indoneziane.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profili ka një buton të ri, Shpërndaj profilin: kushdo që hap lidhjen tuaj sheh emrin dhe foton tuaj dhe mund t’ju ftojë në një grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lidhja e ftesës së një grupi të ri është gati menjëherë, edhe jashtë linje, dhe Anëtarët ka një buton të ri për ta kopjuar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Mbyllja e një formulari me diçka që nuk e keni ruajtur tani pyet fillimisht \"Të hidhen poshtë ndryshimet?\".",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Politika e privatësisë dhe Kushtet e shërbimit tani hapen brenda aplikacionit në vend të shfletuesit.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Në telefon, shiritat e sipërm dhe të poshtëm tani largohen kur lëvizni poshtë dhe rikthehen kur lëvizni lart.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Te Ndaj shpenzimin, zgjedhja e një date nuk kalon më drejt te ora: ora ka butonin e vet.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Prekni grupin në krye të Ndaj shpenzimin për ta hapur; kur ktheheni, rikthehet te shpenzimi me gjithçka që keni shkruar.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Shpenzimet e fundit te Kreu tani shfaqin grupin e çdo shpenzimi dhe kush pagoi si foto.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pix tani shfaqet vetëm për personat që ka gjasa ta përdorin, si ata që e përdorin aplikacionin në portugalisht, kanë një çelës Pix ose janë në një grup në real.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Po sinkronizohet…\" tani shfaqet vetëm herën e parë që llogaria juaj ngarkohet në një pajisje, jo në çdo sinkronizim.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profili nuk ofron më shkëputjen e Google ose Apple nga llogaria juaj: në vend të kësaj dilni ose fshini llogarinë.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Modifiko profilin tani hapet si fletë mbi Profilin në vend të një ekrani më vete.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Shiriti bosh midis formularit dhe tastierës te Ndaj shpenzimin është zhdukur.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Grupe të përbashkëta të një kontakti tani shfaqin foton e çdo grupi.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

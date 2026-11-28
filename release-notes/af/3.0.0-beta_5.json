@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split praat nou Duits, Italiaans en Pools: dit volg jou toestel se taal, of jy kan een kies in Profiel › Taal.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Elke kategorie het nou sy eie kleur, en Statistiek teken elke kategorie en elke persoon in hul eie kleur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Jy kan nou 'n kategorie se kleur verander, in die kategorie se vorm of in Kategoriekaart.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "'n Uitgawe se kieslys op Uitgawes het 'n nuwe opsie, Dupliseer: dit maak 'n nuwe uitgawe oop wat reeds soos die oorspronklike ingevul is.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepe en uitgawes verdwyn nie meer vir 'n oomblik wanneer jy na die app terugkom nie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Soek maak nie meer dadelik toe wanneer jy nog nie 'n groep het nie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "'n Nuwe groep begin nou as Geleentheid, die eerste soort op die lys.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Met nog geen groep nie, wys Nooi met skakel of QR nou net die knoppie Nuwe groep in plaas van knoppies wat jy nie kon gebruik nie.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "'n Strokie wat langer neem om te lees, eindig nie meer in 'n verbindingsfout nie.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Statistiek se kategorierye is skoner: hulle lys nie meer elke subkategorie se bedrag nie.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Tik in Wat's nuut op 'n weergawe om die vrystelling op GitHub oop te maak, of op die GitHub-knoppie om elke vrystelling te sien.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "'n Groep se bladsy, 'n uitnodiging en 'n uitgawe se besonderhede wys nou tot vyf mense se foto's langs mekaar in plaas van twee.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op 'n iPad of 'n oop iPhone Duo wat plat lê, wys 'n groep wat die skerm vul (byvoorbeeld uit Tuis oopgemaak) nou die foto, lede en jou saldo langs die uitgawes.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "As jy op Tuis se kaart Algehele saldo tik, maak dit nou die oortjie Saldo's oop.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op 'n foon vlieg die groep se saldo, of die uitgawe se ikoon, titel, totaal en jou deel, nou na die skerm wanneer jy 'n groep of 'n uitgawe uit Tuis oopmaak, en weer terug wanneer jy terugkeer.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profiel › Taal lys Spaans nou twee keer, \"Español (Latinoamérica)\" en \"Español (España)\", sodat jy die een kies wat jy praat, waar jou toestel ook al is.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Met die foon of 'n tablet wat plat lê, begin wat langs die lys in Kontakte en Saldo's staan, nou bo-aan die skerm, met jou profielfoto oor die lys.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Die rand van die knoppie \"Voeg persoon by\" in 'n groep se Lede is makliker om te sien.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "'n Kaart se kleur in \"Betaalmetodes\" kies nou uit dieselfde kleure as kategorieë: die twaalf kleure, jou eie en \"Nuwe kleur\" om nog een te skep.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In \"Verdeel 'n uitgawe\" is \"Betaal met\" nou 'n klein knoppie onder Verdeling, en as jy nog geen betaalmetode het nie, skep \"Voeg 'n betaalmetode by\" dadelik een en kies dit vir die uitgawe. Debietkaarte het nou ook hul eie ikoon.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As jy 'n betaalmetode in Profiel byvoeg of wysig, maak dit nou daaroor oop in plaas van op 'n aparte skerm.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dinamiese kleure verduidelik nou dat die app Android se stelselkleure gebruik, wat van jou muurpapier kom of van die palet wat jy in Android se instellings gekies het.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Met Verminder beweging aan wys 'n groep se Statistiek nou die grafieke dadelik, sonder dat die stawe groei of die ring inswaai.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "In Brasiliaanse Portugees het Aktiwiteit en 'n uitgawe se geskiedenis \"Você criaste\" en dergelike gesê in plaas van \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Die datums in Statistiek se datumkieser het een of twee letters per reël gebreek; dit is reggestel, en die einddatum gaan nou onder die begindatum wanneer albei nie pas nie.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kennisgewings en 'n paar sinne wat in Engels gewys het, of as 'n kode soos \"push.bill_deleted\", in Spanje se Spaans en Portugal se Portugees is reggestel.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Tuis se ry mense in Portugal se Portugees, wat \"te deve\" onder 'n naam gesê het in plaas van \"deve-te\", is reggestel.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

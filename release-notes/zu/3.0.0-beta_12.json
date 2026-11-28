@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Ku-Okusha, thepha inguqulo ukuze uvule ukukhishwa kwayo ku-GitHub, noma inkinobho ye-GitHub ukuze ubone konke ukukhishwa.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ikhasi leqembu, isimemo nemininingwane yesindleko manje kubonisa izithombe zabantu abafika kwabahlanu eceleni kwesinye esikhundleni sababili.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ku-iPad noma ku-iPhone Duo evuliwe ilele phansi, iqembu eligcwalisa isikrini (elivulwe ku-Ikhaya, isibonelo) manje libonisa isithombe salo, amalungu nebhalansi yakho eceleni kwezindleko.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Ukuthepha ikhadi le-Ibhalansi iyonke ku-Ikhaya manje kuvula ithebhu ethi Amabhalansi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Efonini, ukuvula iqembu noma isindleko ku-Ikhaya manje kundizisela ibhalansi yeqembu, noma isithonjana sesindleko, isihloko, isamba nesabelo sakho, esikrinini saso bese kubuya lapho ubuyela emuva.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "I-Iphrofayela › Ulimi manje ibhala isiSpanishi kabili, \"Español (Latinoamérica)\" ne-\"Español (España)\", ukuze ukhethe lesho osikhulumayo noma ngabe idivayisi yakho ikuphi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Lapho ifoni noma ithebhulethi ilele phansi, lokho okuseceleni kohlu ku-Oxhumana nabo nase-Amabhalansi manje kuqala phezulu esikrinini, nesithombe sakho sephrofayela phezu kohlu.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Unqenqema lwenkinobho ethi \"Engeza umuntu\" ku-Amalungu eqembu lubonakala kalula.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Umbala wekhadi ku-\"Izindlela zokukhokha\" manje ukhethwa emibaleni efanayo neyezigaba: imibala eyishumi nambili, eyakho kanye nethi \"Umbala omusha\" ukuze wakhe omunye.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ku-\"Hlukanisa isindleko\", ukuthi \"Kukhokhwe ngani\" manje kuyinkinobho encane ngaphansi kokuthi Hlukanisa, futhi uma ungenayo indlela yokukhokha okwamanje, ukuthi \"Engeza indlela yokukhokha\" kwakha eyodwa khona lapho bese kuyikhethela isindleko. Amakhadi edebhithi nawo manje anesithonjana sawo.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ukwengeza noma ukuhlela indlela yokukhokha ku-Iphrofayela manje kuvuleka phezu kwayo esikhundleni sesikrini esihlukile.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Ukuthi Imibala eguquguqukayo manje kuchaza ukuthi i-app ithatha imibala yesistimu ye-Android, evela ephepheni lakho lodonga noma kuphalethi oyikhethe kuzilungiselelo ze-Android.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Uma i-Reduce Motion ivuliwe, i-Izibalo zeqembu manje zibonisa amashadi azo ngokushesha, ngaphandle kokuthi amabha akhule noma iringi ishanele.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "NgesiPutukezi saseBrazil, i-Umsebenzi nomlando wesindleko kwakuthi \"Você criaste\" nokunye okunjalo esikhundleni sokuthi \"Você criou\".",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kulungisiwe izinsuku kusikhethi sezinsuku se-Izibalo ezazihlukanisa uhlamvu olulodwa noma ezimbili emugqeni ngamunye; usuku lokuphela manje luya ngaphansi kosuku lokuqala lapho zombili zingangeni.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Kulungisiwe izaziso nemisho embalwa eyayivela ngesiNgisi, noma njengekhodi efana ne-\"push.bill_deleted\", ngesiSpanishi saseSpain nangesiPutukezi sasePortugal.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Kulungisiwe umugqa wabantu ku-Ikhaya ngesiPutukezi sasePortugal, owawuthi \"te deve\" ngaphansi kwegama esikhundleni sokuthi \"deve-te\".",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

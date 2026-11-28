@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "notes": [
+    {
+      "text": "Die app praat nou Bulgaars: kies \"Български\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Katalaans: kies \"Català\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Deens: kies \"Dansk\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepe kan nou in die Deense kroon (DKK) verdeel, en 'n groep wat in Denemarke, Groenland of die Faroëreilande geskep word, begin daarin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Fins: kies \"Suomi\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Marathi: kies \"मराठी\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Noors: kies \"Norsk bokmål\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepe kan nou in die Noorse kroon (NOK) verdeel, en 'n groep wat in Noorweë geskep word, begin daarin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Persies: kies \"فارسی\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Groepe kan nou in die Iranse rial (IRR) verdeel, en 'n groep wat in Iran geskep word, begin daarin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Slowaaks: kies \"Slovenčina\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Swahili: kies \"Kiswahili\" in Profiel › Taal, of laat dit jou toestel volg. Nuwe groepe in Kenia en Tanzanië begin in die Keniaanse of Tanzaniese sjieling.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Tamil: kies \"தமிழ்\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Die app praat nou Teloegoe: kies \"తెలుగు\" in Profiel › Taal, of laat dit jou toestel volg.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op iPhone, iPad en Mac wys datums in Thai en Persies nou die Gregoriaanse jaar, soos op Android en die web, watter kalender die toestel ook al gebruik.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    }
+  ]
+}

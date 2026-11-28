@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "'n Groep se Uitgawes het nou \"Sien alles\", wat Alle uitgawes oopmaak, reeds volgens daardie groep gefiltreer, sodat jy die uitgawes kan soek, sorteer en filtreer. Maak die filter skoon om elke groep te sien.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In Nuwe groep stel \"Voeg by volgens naam\" nou mense uit jou Kontakte voor terwyl jy tik, met hul foto: tik op een om die groep met daardie selfde persoon te skep.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "As jy deur 'n groep rol, wys die ingevoude boonste balk net die groep se foto en naam, sonder die lede en totaal wat langsaan afgesny word.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Jy kan nou jou herstelkode se 12 woorde as 'n tekslêer aflaai.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Stoor jou herstelkode sê nou dat dit jou data terugbring, en dat die data uitgevee word ná 30 dae sonder gebruik.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Verdeel 'n uitgawe het nou ook Skandeer strokie bo-aan, langs Stoor, sodat die sleutelbord dit nie meer versteek nie, en Voeg 'n betaalmetode by is stiller.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "In 'n groep se Statistiek is Per persoon nou 'n ring van elkeen se deel, in dieselfde kleur wat elke persoon in Verstekverdeling het, met die lys name en bedrae daaronder as sy sleutel. Verbruik en Betaal wissel wat dit wys.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Nuwe groep se \"Wie is in\" wys jou profielfoto in plaas van jou voorletter.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "\"Sinkroniseer tans…\" verskyn nie meer telkens op Tuis en Groepe wanneer jy na die app terugkom nie: sinkronisering loop stil sodra jou groepe op die skerm is.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Op tablette en met die foon wat plat lê, word die skaduwee van \"Verdeel 'n uitgawe\" bo-aan die sybalk nie meer by die rande afgesny nie.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

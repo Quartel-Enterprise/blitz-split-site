@@ -3,14 +3,14 @@
 // way by hand. The demo keeps every
 // amount in cents; a currency with no cents in use (the won, the yen, the rupiah, the dong, the New Taiwan dollar, the
 // taka, the forint, the Pakistani rupee, the Serbian dinar, the Iranian rial, the kyat, the riel, the Nepalese and the
-// Sri Lankan rupee, the tenge, the tögrög, the kip, the Icelandic króna) shows
+// Sri Lankan rupee, the tenge, the tögrög, the kip, the Icelandic króna, the dram, the lek, the Macedonian denar) shows
 // it scaled to whole units, so a $48.60 ride reads ₩48,600, ¥4,860, Rp486.000, 48.600 ₫, NT$4,860, 102,060 K (about
 // 2,100 kyat to the dollar), 194,400៛ (about 4,000 riels to the dollar) or ریال 4,860,000 (a
 // thousand rials to the cent: at a plausible million rials to the dollar, Persian's trip costs a tenth of the others', so
 // its amounts still fit a 320px phone) and every split
 // still adds up exactly. A currency worth much less than the dollar but still written with its cents (the krona, the
 // koruna, the leu, the ringgit, the Philippine peso, the Norwegian and the Danish krone, the Kenyan shilling, the birr,
-// the Kyrgyz som) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
+// the Kyrgyz som, the rand, the lari, the Belarusian ruble) has the demo's own amounts multiplied by a whole number before any split (window.money.cents, which
 // preview.js and split-modes.js call on every amount they start from), so a $48.60 ride is 486 kr, 1 117,80 Kč, 243 lei,
 // RM194.40, ₱2,430 or Ksh 6,318 (and 486 kr in Norwegian too, the krone being worth about the krona, and 340,20 kr. in Danish)
 // and everything after works in that currency's own cents: every split adds up exactly and a typed amount reads as typed.
@@ -74,6 +74,13 @@
     eu: ["", ",", ".", "\u00a0€"],
     gl: ["", ",", ".", "\u00a0€"],
     rm: ["CHF\u00a0", ".", "\u2019"], // grouped by U+2019 (CHF 1’200), as CLDR and the apps write it
+    zu: ["R\u00a0", ".", ",", "", 0, 3, 18],
+    af: ["R\u00a0", ",", "\u00a0", "", 0, 3, 18],
+    ka: ["", ",", "\u00a0", "\u00a0₾", 0, 3, 3],
+    hy: ["", ",", "\u00a0", "\u00a0֏", 4],
+    sq: ["", ",", "\u00a0", "\u00a0Lekë", 1],
+    mk: ["", ",", ".", "\u00a0ден.", 1],
+    be: ["", ",", "\u00a0", "\u00a0Br", 0, 3, 3],
   });
   const [before, decimal, thousands, after = "", scale = 0, upper = 3, factor = 1] = CURRENCY;
   const upperGroups = new RegExp(`\\B(?=(\\d{${upper}})+$)`, "g");
@@ -129,9 +136,9 @@
   const cents = (amount) => amount * factor;
 
   // A percentage, as the language writes it: Turkish puts the sign first (%10); French, German, Russian, Swedish, Czech,
-  // Croatian, Serbian, Slovak, Norwegian, Catalan, Danish, Finnish, Lithuanian, Slovenian and Galician put a space before it (10 %); Basque puts the sign first, with a space (% 10); Kazakh and Kyrgyz, though they follow Russian's numbers, write 10% as `Intl` does. The phone (preview.js) and the split card (split-modes.js) share it.
+  // Croatian, Serbian, Slovak, Norwegian, Catalan, Danish, Finnish, Lithuanian, Slovenian, Galician, Macedonian and Belarusian put a space before it (10 %); Basque puts the sign first, with a space (% 10); Kazakh and Kyrgyz, though they follow Russian's numbers, write 10% as `Intl` does. The phone (preview.js) and the split card (split-modes.js) share it.
   const lang = document.documentElement.dataset.lang;
-  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk", "nb", "ca", "da", "fi", "lt", "sl", "gl"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : lang === "eu" ? `% ${n}` : `${n}%`);
+  const percent = (n) => (["fr", "de", "ru", "sv", "cs", "hr", "sr", "sk", "nb", "ca", "da", "fi", "lt", "sl", "gl", "mk", "be"].includes(lang) ? `${n} %` : lang === "tr" ? `%${n}` : lang === "eu" ? `% ${n}` : `${n}%`);
 
   window.money = { format, plain, parse, latinDigits, cents, percent, symbolBefore: before.trim(), symbolAfter: after.trim(), wholeUnits: Boolean(scale) };
 })();

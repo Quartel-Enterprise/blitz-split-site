@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-08",
+  "notes": [
+    {
+      "text": "Blitz Split tani flet gjermanisht, italisht dhe polonisht: ndjek gjuhën e pajisjes suaj, ose mund të zgjidhni një te Profili › Gjuha.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Çdo kategori tani ka ngjyrën e vet, dhe Statistika vizaton çdo kategori dhe çdo person me ngjyrën e tyre.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tani mund ta ndryshoni ngjyrën e një kategorie, në formularin e kategorisë ose te Harta e kategorive.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Menyja e një shpenzimi te Shpenzimet ka një opsion të ri, Dupliko: hap një shpenzim të ri të plotësuar tashmë si origjinali.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Grupet dhe shpenzimet nuk zhduken më për një çast kur ktheheni në aplikacion.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kërkimi nuk mbyllet më menjëherë kur nuk keni ende asnjë grup.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Një grup i ri tani fillon si Ngjarje, lloji i parë në listë.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Pa asnjë grup ende, Fto me lidhje ose QR tani shfaq vetëm butonin Grup i ri në vend të butonave që nuk mund t’i përdornit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Një kupon që kërkon më shumë kohë për t’u lexuar nuk përfundon më me gabim lidhjeje.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Rreshtat e kategorive te Statistika janë më të pastër: nuk e listojnë më shumën e çdo nënkategorie.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

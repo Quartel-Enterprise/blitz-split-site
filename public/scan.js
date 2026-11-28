@@ -375,6 +375,42 @@
       lines: [["2 BIERA DAL BUTSCHIN", "28.00", 1], ["1 PLAT CREVETTAS", "96.00", 2]],
       subtotal: ["SUBTOTAL", "124.00"], service: ["SERVETSCH 10%", "12.40", 3], total: ["TOTAL", "136.40"],
     },
+    zu: {
+      store: "IBHA YETHEKU", address: "120 Gull Street", date: "08/11/2026  21:47",
+      lines: [["2 UBHIYA WOMPOMPI", "504.00", 1], ["1 IPULETI LEZIMFANZI", "1,728.00", 2]],
+      subtotal: ["ISAMBA ESINCANE", "2,232.00"], service: ["ISEVISI 10%", "223.20", 3], total: ["ISAMBA", "2,455.20"],
+    },
+    af: {
+      store: "HAWEKROEG", address: "Meeustraat 120", date: "2026/11/08  21:47",
+      lines: [["2 TAPBIER", "504,00", 1], ["1 GARNALEBORD", "1\u00a0728,00", 2]],
+      subtotal: ["SUBTOTAAL", "2\u00a0232,00"], service: ["DIENSFOOI 10%", "223,20", 3], total: ["TOTAAL", "2\u00a0455,20"],
+    },
+    // Georgian: a harbor bar's receipt, in laris as money.js counts Georgian (three to the dollar).
+    ka: {
+      store: "ნავსადგურის ბარი", address: "თოლიების ქ. 120", date: "08.11.2026  21:47",
+      lines: [["2 ჩამოსასხმელი ლუდი", "84,00", 1], ["1 კრევეტების თეფში", "288,00", 2]],
+      subtotal: ["შუალედური ჯამი", "372,00"], service: ["მომსახურება 10%", "37,20", 3], total: ["ჯამი", "409,20"],
+    },
+    hy: {
+      store: "ՆԱՎԱՀԱՆԳՍՏԻ ԲԱՐ", address: "Ճայերի փողոց 120", date: "08.11.2026  21:47",
+      lines: [["2 ԼՑՆՈՎԻ ԳԱՐԵՋՈՒՐ", "11 200", 1], ["1 ԾՈՎԱԽԵՑԳԵՏՆԻ ԱՓՍԵ", "38 400", 2]],
+      subtotal: ["ՄԻՋԱՆԿՅԱԼ ԳՈՒՄԱՐ", "49 600"], service: ["ՍՊԱՍԱՐԿՈՒՄ 10%", "4 960", 3], total: ["ԸՆԴԱՄԵՆԸ", "54 560"],
+    },
+    sq: {
+      store: "BARI I PORTIT", address: "Rr. e Pulëbardhave 120", date: "08.11.2026  21:47",
+      lines: [["2 BIRRË FUÇIE", "2\u00a0800", 1], ["1 PJATË KARKALECA", "9\u00a0600", 2]],
+      subtotal: ["NËNTOTALI", "12\u00a0400"], service: ["SHËRBIMI 10%", "1\u00a0240", 3], total: ["TOTALI", "13\u00a0640"],
+    },
+    mk: {
+      store: "БАР ПРИСТАНИШТЕ", address: "ул. Галеби бр. 120", date: "08.11.2026  21:47",
+      lines: [["2 ТОЧЕНО ПИВО", "2.800", 1], ["1 ПЛАТО СО РАКЧИЊА", "9.600", 2]],
+      subtotal: ["МЕЃУЗБИР", "12.400"], service: ["УСЛУГА 10 %", "1.240", 3], total: ["ВКУПНО", "13.640"],
+    },
+    be: {
+      store: "ПАРТОВЫ БАР", address: "вул. Чаечная, 120", date: "08.11.2026  21:47",
+      lines: [["2 ПІВА РАЗЛІЎНОЕ", "84,00", 1], ["1 ТАЛЕРКА КРЭВЕТАК", "288,00", 2]],
+      subtotal: ["ПРАМЕЖКАВЫ ВЫНІК", "372,00"], service: ["АБСЛУГОЎВАННЕ 10 %", "37,20", 3], total: ["УСЯГО", "409,20"],
+    },
   });
   const line = ([label, value, row], extra = "") => `<div class="paper-line${extra}"${row ? ` data-scan-line="${row}"` : ""}><span>${label}</span><span>${value}</span></div>`;
 

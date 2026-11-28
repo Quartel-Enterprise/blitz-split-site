@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Një shpenzim tani mund të ndahet Sipas të ardhurave, dhe të ardhurat që shkruani ndahen me anëtarët e grupit.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Çdo shpenzim te Shpenzimet e fundit në Kreu tani ka një meny: Modifiko, Dupliko, Shpërndaj dhe Fshi.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Shiko të gjitha te Kreu tani hap Të gjitha shpenzimet: çdo shpenzim ku jeni pjesë, në të gjitha grupet tuaja, me kërkim, filtra dhe renditje.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fotoja e një grupi tani është më e madhe në krye të ekranit të tij dhe zvogëlohet kur lëvizni, dhe hapja e një grupi animohet nga rreshti i tij.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Aktiviteti tani shfaq fotot e personave, Bilancet › Sipas grupit shfaq foton e çdo grupi, dhe Shpenzimi më i madh te Statistika shfaq kategorinë e tij.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profili › Llogaria dhe sinkronizimi tani shfaq logon e Google ose Apple dhe email-in tuaj të plotë, që e shihni vetëm ju.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Fshi llogarinë tani shpjegon çfarë mbetet në grupet tuaja pasi llogaria juaj të jetë fshirë.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Çelësi Pix i parazgjedhur nuk duket më i çaktivizuar te çelësi juaj i parazgjedhur në temën e errët.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}
