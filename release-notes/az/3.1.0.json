@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-22",
+  "notes": [
+    {
+      "text": "Apple Watch-da Blitz Split: onu iPhone-unuzun hesabına qoşun, balanslarınızı və açıq qrupları görün, borclu olduğunuz qrupda Ödədim düyməsinə toxunun və ümumi balansınızı saat üzünə və ya Smart Stack-ə əlavə edin; qoşulduqdan sonra saat müstəqil işləyir.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Tətbiq indi benqal, malay və yunan dillərində danışır: Profil › Dil bölməsində “বাংলা”, “Bahasa Melayu” və ya “Ελληνικά” seçin, ya da cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Banqladeş takasından və Malayziya ringgitindən istifadə edə bilər.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi xorvat dilində danışır: Profil › Dil bölməsində “Hrvatski” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi filippin dilində danışır: Profil › Dil bölməsində “Filipino” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Filippin pesosu (PHP, “₱”) ilə bölə bilər, Filippində yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi macar dilində danışır: Profil › Dil bölməsində “Magyar” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Macarıstan forintindən istifadə edə bilər.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ümumi balansınızı və açıq qruplarınızı bir baxışda görmək üçün Balanslar vidcetini iPhone və ya iPad-inizin Əsas ekranına və ya Kilid ekranına əlavə edin; Balanslar bölməsini açmaq üçün ona toxunun.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Qruplar indi Boliviya, Venesuela, Kosta-Rika, Qvatemala, Honduras, Nikaraqua, Dominikan Respublikası və Kubanın valyutalarından istifadə edə bilər, orada yaradılan qrup isə öz valyutası ilə başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi serb dilində danışır: Profil › Dil bölməsində “Srpski” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Serbiya dinarı (RSD) ilə bölə bilər, Serbiyada yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi urdu dilində danışır: Profil › Dil bölməsində “اردو” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Pakistan rupisi (PKR) ilə bölə bilər, Pakistanda yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Yeni xərcin bildirişinə toxunmaq xərci dərhal açır: tətbiq onu bildiriş gələn kimi yükləyir.",
+      "platforms": [
+        "android",
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Telefonlarda xoş gəlmisiniz ekranı indi yuxarıda yalnız loqonu göstərir və düymələrə daha çox yer qalır.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Qrupun “Hesablaşma vaxtıdır” banneri artıq xatırlatma qurulmazdan və ya dəyişdirilməzdən əvvəlki xatırlatma tarixini göstərmir: ayın 25-nə dəyişdirilmiş xatırlatma 25-ni gözləyir.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

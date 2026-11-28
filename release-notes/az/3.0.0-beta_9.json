@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Məbləğlər və yazılar kiçik ekranlarda, qatlanan cihazlarda və böyük mətnlə artıq sətirlərə bölünmür və ya kəsilmir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Oxunması çətin olan mətn, düymələr və konturlar indi açıq və tünd temalarda daha kontrastlıdır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPhone brauzerində sahəyə toxunmaq artıq səhifəni böyütmür.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Kontaktlar və ya Balanslar bölməsindən kimisə açdıqda indi fotosu ilə birlikdə adı və balansı da onun profilinə keçir, qayıtdıqda isə geri qayıdır.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Statistika bölməsində “Şəxslər üzrə” halqasının ortasında pay sizindirsə, indi sadəcə “Siz” yazılır, uzun ad isə halqaya toxunmaq əvəzinə “…” ilə bitir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar bölməsindən qrup açdıqda onun üzvlərinin üzləri indi sətirdən qrupun ekranına keçir, çıxdıqda isə geri qayıdır.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Telefonda xərc açdıqda indi onun daha çox hissəsi onunla birlikdə keçir: kimin ödədiyi Əsas və Bütün xərclər bölmələrindəki sətirdən, vaxt qrupun Xərclər bölməsindəki sətirdən, qrupun fotosu və adı isə qrupun ekranından keçir. Çıxdıqda onlar geri qayıdır.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Qrupun adı indi yalnız qayıdarkən deyil, qrupun ekranı açılarkən də ora keçir.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

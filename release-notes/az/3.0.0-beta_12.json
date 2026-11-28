@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Yeniliklər bölməsində versiyaya toxunaraq onun GitHub-dakı buraxılışını açın, bütün buraxılışları görmək üçün isə GitHub düyməsinə toxunun.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qrupun səhifəsi, dəvət və xərcin təfərrüatları indi iki əvəzinə beş nəfərə qədər şəxsin fotosunu yan-yana göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPad-də və ya üfüqi vəziyyətdə açıq iPhone Duo-da ekranı dolduran qrup (məsələn, Əsas bölməsindən açılmış) indi xərclərin yanında fotosunu, üzvlərini və balansınızı göstərir.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Əsas bölməsindəki Ümumi balans kartına toxunmaq indi Balanslar tabını açır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefonda Əsas bölməsindən qrup və ya xərc açdıqda qrupun balansı, ya da xərcin ikonu, başlığı, cəmi və sizin payınız onun ekranına uçur, qayıtdıqda isə geri qayıdır.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Profil › Dil indi ispan dilini iki dəfə göstərir: “Español (Latinoamérica)” və “Español (España)”, belə ki, cihazınız harada olmasından asılı olmayaraq danışdığınızı seçirsiniz.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefon və ya planşet üfüqi vəziyyətdə olduqda Kontaktlar və Balanslar bölmələrində siyahının yanındakı hissə indi ekranın yuxarısından başlayır, profil fotonuz isə siyahının üstündədir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Qrupun Üzvlər bölməsindəki “Şəxs əlavə edin” düyməsinin kənarı daha yaxşı görünür.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "“Ödəniş üsulları” bölməsində kartın rəngi indi kateqoriyalarla eyni rənglərdən seçilir: on iki rəng, sizin öz rəngləriniz və başqasını yaratmaq üçün “Yeni rəng”.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Xərc bölün” bölməsində “Nə ilə ödənilib” indi Bölgü altında kiçik düymədir, hələ ödəniş üsulunuz yoxdursa, “Ödəniş üsulu əlavə edin” elə orada birini yaradır və onu xərc üçün seçir. Debet kartlarının da indi öz ikonu var.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil bölməsində ödəniş üsulunu əlavə etmək və ya redaktə etmək indi ayrıca ekranda deyil, onun üstündə açılır.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Dinamik rənglər indi tətbiqin Android-in sistem rənglərini götürdüyünü izah edir; bu rənglər divar kağızınızdan və ya Android ayarlarında seçdiyiniz palitradan gəlir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Hərəkəti azaldın açıq olduqda qrupun Statistika bölməsi indi diaqramlarını sütunların böyüməsi və ya halqanın dolması olmadan dərhal göstərir.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Braziliya portuqal dilində Fəaliyyət və xərcin tarixçəsi “Você criou” əvəzinə “Você criaste” və bənzərlərini yazırdı.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Statistika bölməsinin tarix seçicisində tarixlərin hər sətirdə bir-iki hərf qırılması düzəldildi; hər ikisi sığmadıqda bitmə tarixi indi başlama tarixinin altına keçir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "İspaniya ispan dilində və Portuqaliya portuqal dilində ingiliscə və ya “push.bill_deleted” kimi kod şəklində görünən bildirişlər və bəzi cümlələr düzəldildi.",
+      "platforms": [
+        "ios",
+        "mac"
+      ]
+    },
+    {
+      "text": "Portuqaliya portuqal dilində Əsas bölməsinin şəxslər sırası düzəldildi: ad altında “deve-te” əvəzinə “te deve” yazırdı.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

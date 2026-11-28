@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Tətbiq indi rus və ukrayna dillərində danışır: Profil › Dil bölməsində “Русский” və ya “Українська” seçin, ya da cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Rusiya rublu (RUB) və Ukrayna qrivnası (UAH) ilə bölə bilər, Rusiyada və ya Ukraynada yaradılan qrup isə öz valyutası ilə başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil bölməsində yeni “Vaxt formatı” seçimi var: sistemə uyğunlaşın və ya vaxtı xərclərdə, Fəaliyyət bölməsində, şərhlərdə və vaxt seçicilərində həmişə 24 saatlıq (14:30) və ya AM və PM ilə 12 saatlıq (2:30 PM) formatda göstərin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Telefon üfüqi vəziyyətdə olduqda və planşetlərdə qrupun “Xərc bölün” düyməsi indi xərclərin üstündə üzmək əvəzinə yuxarı paneldədir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Dinamik rənglər açıq olduqda borcunuz qırmızıya çevrilmək əvəzinə narıncı qalır, belə ki, sizə qayıdan məbləğin yaşıl rənginə heç vaxt bənzəmir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Fəaliyyət bölməsində hər sətir indi qrupun fotosu varsa, onu adının yanında göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Bu qrupdakı balansınız yalnız geri aldığınız və ya yalnız borclu olduğunuz halda məbləği artıq ikinci sətirdə təkrarlamır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Standart bölgü bölməsində nümunə xərcdə hər şəxsin hissəsinin indi öz rəngi və adının qarşısında uyğun nöqtəsi var, belə ki, siyahıda yan-yana olan şəxslər heç vaxt bir nəfər kimi görünmür.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Xərcin yuxarı paneli indi qrupun adının yanında onun fotosunu və ya baş hərflərini göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kiminsə fotosuna toxunmaq indi onu həmin şəxsin profilinə aparır, qayıtdıqda isə geri gətirir.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Qrupun Xərclər bölməsindən açılan xərc indi Əsas bölməsindəki kimi yerinə hərəkət edir, Əsas bölməsindəki xərclərdə qrupun fotosu isə xərcin yuxarı panelinə uçur.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "“Xərc bölün” indi Balanslar və Kontaktlar bölmələrinin yuxarısında da var, qrup ekranında isə siyahının üstündə üzmək əvəzinə yuxarı panelə keçib; “Şəxslər əlavə edin” indi ⋯ menyusundadır. Düymə adı ilə başlayır və sürüşdürdükcə ikonuna qədər kiçilir.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Qruplar bölməsində Ümumi balans kartına toxunmaq Balanslar bölməsini açır.",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    {
+      "text": "Qrupdakı “İnsanları dəvət edin” indi “Şəxslər əlavə edin” adlanır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "iPad-də tablar yan paneldə açılır, onlar yuxarı paneldə olduqda isə, iPad şaquli vəziyyətdə olduğu kimi, “Xərc bölün” orada görünən qalır, digər düymələr isə bir az aşağıdakı sıraya keçir.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "“Xərc bölün” bölməsində “Nə ilə ödənilib” indi xərci başqası ödədikdə də solğun görünür: ona toxunduqda yalnız ödəyənlərin nə ilə ödədiklərini qeyd edə biləcəyi izah edilir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hesabsız bərpa kodunuz indi yazmaq üçün daha asan olan 12 nömrələnmiş sözdür, bərpa zamanı isə sözlər hər sahəyə bir söz olmaqla daxil edilir və yazdıqca hər söz təklif edilir. Bu versiyadan əvvəl saxlanılan kodlar artıq işləmir: yenisini yadda saxlayın və ya Google ya da Apple-ı qoşun.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kateqoriyalar üzrə xərclər bölməsində hər xərcin indi qrupun xərclərindəki kimi ⋮ menyusu var: onu açmadan redaktə edin, dublikatını yaradın, paylaşın və ya silin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Geniş ekranlarda (üfüqi vəziyyətdə telefon, planşetlər, Mac və veb) Kateqoriyalar üzrə xərclər kateqoriyalarını və cəmini xərclərin yanında bir sütunda saxlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Alman, niderland və yapon dillərində Fəaliyyət cümlələri indi hər dilin təbii söz sırası ilə, xərcin və ya qrupun adından əvvəl iki nöqtə olmadan oxunur.",
+      "platforms": [
+        "web"
+      ]
+    },
+    {
+      "text": "Xərcin əlavələri altındakı “Foto əlavə edin” yazısının ilk hərfi artıq kəsilmir.",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "text": "Qruplar bölməsində qrup yaratmaq düyməsi indi “+ Qrup” yazılır və artıq iki sətrə bölünmür.",
+      "platforms": [
+        "ios"
+      ]
+    },
+    {
+      "text": "Yeniliklər indi qeydlərini gətirmək üçün bir günə qədər gözləmək əvəzinə yenicə quraşdırdığınız versiyanı göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qrupun Statistika bölməsində dövr düyməsi (“Bütün dövr”) artıq iki sətrə bölünmür: hər ikisi sığmadıqda tarixlər onun altına keçir.",
+      "platforms": [
+        "ios"
+      ]
+    }
+  ]
+}

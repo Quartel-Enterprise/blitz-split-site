@@ -78,6 +78,11 @@ const CHROME = {
   my: { language: "မြန်မာ", brand: "Blitz Split", locale: "my-u-nu-latn", updated: "{date} တွင် အပ်ဒိတ်လုပ်ခဲ့သည်", read: "ဖတ်ရန် {n} မိနစ်", toc: "ဤစာမျက်နှာတွင်" },
   km: { language: "ខ្មែរ", brand: "Blitz Split", locale: "km-u-nu-latn", updated: "ធ្វើបច្ចុប្បន្នភាពនៅ {date}", read: "អាន {n} នាទី", toc: "នៅលើទំព័រនេះ" },
   or: { language: "ଓଡ଼ିଆ", brand: "Blitz Split", locale: "or", updated: "ଶେଷ ଅପଡେଟ୍: {date}", read: "ପଢ଼ିବାକୁ {n} ମିନିଟ୍", toc: "ଏହି ପୃଷ୍ଠାରେ" },
+  ne: { language: "नेपाली", brand: "Blitz Split", locale: "ne-u-nu-latn", updated: "अन्तिम अपडेट: {date}", read: "पढ्न {n} मिनेट", toc: "यो पेजमा" },
+  az: { language: "Azərbaycan dili", brand: "Blitz Split", locale: "az", updated: "Yenilənib: {date}", read: "{n} dəqiqəlik oxu", toc: "Bu səhifədə" },
+  am: { language: "አማርኛ", brand: "Blitz Split", locale: "am", updated: "የዘመነው: {date}", read: "የንባብ ጊዜ: {n} ደቂቃ", toc: "በዚህ ገጽ ላይ" },
+  si: { language: "සිංහල", brand: "Blitz Split", locale: "si", updated: "යාවත්කාලීන කළේ: {date}", read: "කියවීමට මිනිත්තු {n}", toc: "මෙම පිටුවේ" },
+  kk: { language: "Қазақ тілі", brand: "Blitz Split", locale: "kk", updated: "Жаңартылды: {date}", read: "Оқу уақыты: {n} мин", toc: "Осы бетте" },
 };
 // The characters a language's reader takes in per minute, as the IReST study measured them (Trauzettel-Klosinski and
 // Dietz, IOVS 2012). Why characters: what a word is differs too much between languages to compare their texts by words.
@@ -104,6 +109,10 @@ const CHARACTERS_PER_MINUTE = {
   da: MEASURED_CHARACTERS_PER_MINUTE.sv,
   // Why: the study has no Estonian, and Finnish is the closest language it measured, of the same family.
   et: MEASURED_CHARACTERS_PER_MINUTE.fi,
+  // Why: the study has no Azerbaijani, and Turkish is the closest language it measured, of the same family and in Latin letters.
+  az: MEASURED_CHARACTERS_PER_MINUTE.tr,
+  // Why: the study has no Kazakh, and Russian is the closest language it measured, in the same script.
+  kk: MEASURED_CHARACTERS_PER_MINUTE.ru,
 };
 // The study's median without Chinese and Japanese, for a language it didn't measure. Why without them: a character of
 // theirs holds far more than a letter, so they would slow down every language written with letters.

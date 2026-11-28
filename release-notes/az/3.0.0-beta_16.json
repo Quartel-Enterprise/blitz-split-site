@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "notes": [
+    {
+      "text": "Tətbiq indi koreya dilində danışır: Profil › Dil bölməsində “한국어” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Cənubi Koreya vonu (KRW) ilə bölə bilər, Cənubi Koreyada yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil bölməsinin “Hesab və sinxronizasiya” hissəsi indi bir toxunuşla kopyalaya biləcəyiniz İstifadəçi ID-nizi göstərir, belə ki, sorğularımızdan birini cavablandırdıqda kim olduğunuzu bizə deyə bilərsiniz.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Xərcə əlavə etdiyiniz foto indi əvvəlcə Fotonu tənzimləyin bölməsində açılır, belə ki, əlavə ediləcək kvadratı özünüz çərçivəyə salırsınız.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "“Gəlirə görə” indi hər kəsin vergilərdən sonrakı xalis gəlirini daxil etməyi xatırladır, “Standart bölgü” isə hər kəsin faizini yalnız gəlir yazıldıqdan sonra göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qrupun başlığı daha səliqəlidir: adının altındakı üzv sayı və cəmi olan sətir götürülüb. Üzlər kimlərin olduğunu, Statistika isə cəmi göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Kart və ya bank çıxarışının fotoları indi qəbzin oxuna bilmədiyini demək əvəzinə bunu bildirir və xərci əl ilə doldurmağı təklif edir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Statistika bölməsində kateqoriya indi Bütün xərclər bölməsini qrup, kateqoriya və dövr artıq seçilmiş halda açır, belə ki, həmin xərcləri də axtara bilərsiniz. Bütün xərclər bölməsinə Dövr filtri də əlavə olunub.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Statistika bölməsinin Şəxslər üzrə hissəsində halqanın yanına və ya ortasına toxunmaq seçilmiş şəxsi buraxır.",
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}

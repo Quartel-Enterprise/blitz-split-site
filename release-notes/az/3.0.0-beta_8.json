@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "notes": [
+    {
+      "text": "Xərc indi Gəlirə görə bölünə bilər, yazdığınız gəlirlər isə qrupun üzvləri ilə paylaşılır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Əsas bölməsindəki Son xərclərin hər birinin indi menyusu var: Redaktə edin, Dublikat yaradın, Paylaşın və Silin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Əsas bölməsindəki Hamısına baxın indi Bütün xərclər bölməsini açır: qruplarınız üzrə iştirak etdiyiniz bütün xərclər, axtarış, filtrlər və çeşidləmə ilə.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qrupun fotosu indi ekranının yuxarısında daha böyükdür və sürüşdürdükcə kiçilir, qrupun açılması isə onun sətrindən animasiya ilə olur.",
+      "platforms": [
+        "android",
+        "ios",
+        "web"
+      ]
+    },
+    {
+      "text": "Fəaliyyət indi şəxslərin fotolarını, Balanslar › Qruplar üzrə hər qrupun fotosunu, Statistika bölməsinin Ən böyük xərc hissəsi isə onun kateqoriyasını göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Profil › Hesab və sinxronizasiya indi Google və ya Apple loqosunu və yalnız sizin gördüyünüz tam e-poçtunuzu göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hesabı silin indi hesabınız silindikdən sonra qruplarınızda nələrin qaldığını izah edir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Standart Pix açarı düyməsi tünd temada standart açarınızda artıq söndürülmüş kimi görünmür.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

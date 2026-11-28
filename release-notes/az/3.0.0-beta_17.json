@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-17",
+  "notes": [
+    {
+      "text": "Tətbiq indi sağdan sola oxunan düzülüşlə ərəb dilində danışır: Profil › Dil bölməsində “العربية” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Səudiyyə riyalı (SAR), BƏƏ dirhəmi (AED), Misir funtu (EGP) və Mərakeş dirhəmi (MAD) ilə bölə bilər, bu ölkələrdən birində yaradılan qrup isə öz valyutası ilə başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi sadələşdirilmiş Çin dilində danışır: Profil › Dil bölməsində “中文（简体）” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Çin yuanı (CNY) ilə bölə bilər, materik Çində yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi ənənəvi Çin dilində danışır: Profil › Dil bölməsində “中文（繁體）” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Yeni Tayvan dolları (TWD) ilə bölə bilər, Tayvanda yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi çex dilində danışır: Profil › Dil bölməsində “Čeština” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Çexiya kronu (CZK) ilə bölə bilər, Çexiyada yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Hər qrupun indi öz hesablaşma xatırlatması var: həftəlik xatırlatmanı bazar ertəsi saat 10:00-da saxlayın, başqa həftə günü və ya ayın günü və vaxt seçin (məsələn, hər ayın 25-i saat 12:00-da), ya da qrupu yaradarkən və ya Qrupu redaktə edin bölməsində onu söndürün. Bildirişi yalnız hələ borclu olanlar alır və onlar qrupda bağlaya biləcəkləri banner görürlər.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi sağdan sola oxunan düzülüşlə ivrit dilində danışır: Profil › Dil bölməsində “עברית” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi İsrail yeni şekeli (ILS) ilə bölə bilər, İsraildə yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi hind dilində danışır: Profil › Dil bölməsində “हिन्दी” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Hindistan rupisi (INR) ilə bölə bilər, Hindistanda yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi rumın dilində danışır: Profil › Dil bölməsində “Română” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Rumıniya leyi (RON) ilə bölə bilər, Rumıniyada yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi isveç dilində danışır: Profil › Dil bölməsində “Svenska” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi İsveç kronu (SEK) ilə bölə bilər, İsveçdə yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi tay dilində danışır: Profil › Dil bölməsində “ไทย” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Tailand batı (THB) ilə bölə bilər, Tailandda yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Tətbiq indi vyetnam dilində danışır: Profil › Dil bölməsində “Tiếng Việt” seçin və ya cihazınızın dilinə uyğunlaşmasına icazə verin.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qruplar indi Vyetnam donqu (VND) ilə bölə bilər, Vyetnamda yaradılan qrup isə onunla başlayır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Qrupun fotosunu böyük görmək üçün xərcin yuxarı panelində ona toxunun.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "İki nəfərlik qrupda solğun Borcları sadələşdirin açarına toxunduqda indi bu seçimin qrupda 3 nəfər olduqda əlçatan olacağı bildirilir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Borcları sadələşdirin bölməsinin Necə işləyir hissəsində nümunə indi baş hərflər əvəzinə şəxslərin fotolarını göstərir.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Ödəniş pəncərəsindən açılmış şəxsin profilindən geri jestinin çıxmaması düzəldildi; indi o, pəncərəyə qayıdır.",
+      "platforms": [
+        "android"
+      ]
+    }
+  ]
+}

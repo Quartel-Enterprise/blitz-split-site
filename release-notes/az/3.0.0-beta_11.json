@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "notes": [
+    {
+      "text": "Google və ya Apple olmayan hesab indi 30 gün istifadə edilmədikdə silinir. Xoş gəlmisiniz ekranı və Profil bunu bildirir, Google və ya Apple-ı qoşmaq isə məlumatlarınızı qoruyur.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "İndi tətbiqi Profil › Dəstək və rəy bölməsində “Tətbiqi qiymətləndirin” ilə qiymətləndirə bilərsiniz.",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "text": "Əsas və ya Bütün xərclər bölməsindən açılan xərc indi qrupundan keçmədən birbaşa açıldığı yerə qayıdır.",
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "text": "Üzlər yığınının “+N” qabarcığının birinci üzün üstündə deyil, altında görünməsi düzəldildi.",
+      "platforms": [
+        "web"
+      ]
+    }
+  ]
+}
