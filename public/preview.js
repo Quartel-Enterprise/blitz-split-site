@@ -996,7 +996,7 @@
     or: {
       paid: "{name} ଦେୟ ଦେଲେ", notIn: "ଏଥିରେ ନାହାନ୍ତି",
       members: (people, bills) => `${people} ଜଣ · ${bills} ଖର୍ଚ୍ଚ`,
-      toGet: "ପାଇବାକୁ ଅଛି", youOwe: "ଆପଣଙ୍କୁ ଦେବାକୁ ଅଛି", settled: "ସବୁ ହିସାବ ମେଣ୍ଟିଗଲା", owesYou: "କିଏ ଆପଣଙ୍କୁ ଦେବେ", youOweTitle: "ଆପଣଙ୍କୁ ଦେବାକୁ ଅଛି",
+      toGet: "ପାଇବାକୁ ଅଛି", youOwe: "ଆପଣ ଦେବେ", settled: "ସବୁ ହିସାବ ମେଣ୍ଟିଗଲା", owesYou: "କିଏ ଆପଣଙ୍କୁ ଦେବେ", youOweTitle: "ଆପଣ କାହାକୁ ଦେବେ",
       eachOne: "ପ୍ରତ୍ୟେକଙ୍କ ବ୍ୟାଲାନ୍ସ", getsBack: "ପାଇବାକୁ ଅଛି", owes: "ଦେବାକୁ ଅଛି", even: "ହିସାବ ମେଣ୍ଟିଗଲା",
       toSettle: "ହିସାବ ମେଣ୍ଟାଇବାକୁ", total: "ଗ୍ରୁପ୍‌ର ମୋଟ", lodging: "ରହଣି", food: "ଖାଦ୍ୟ", transport: "ଯାତାୟାତ",
       sheetTitle: "ଖର୍ଚ୍ଚ ବାଣ୍ଟନ୍ତୁ", description: "ବିବରଣୀ", amount: "ରାଶି", whoPaid: "କିଏ ଦେଲେ",
