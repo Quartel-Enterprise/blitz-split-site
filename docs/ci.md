@@ -2,9 +2,9 @@
 
 | Workflow | What it does | Locally |
 | --- | --- | --- |
-| `claude-review` | Reviews a pull request with Claude when it opens (or a draft is marked ready), pushes the fixes it can make as one commit and leaves the rest as inline comments. It runs on every push too, and reviews only the one that solves a conflict the pull request opened with | |
-| `claude-review-on-request` | Reviews it again, comments only, when the `ai-review` label is added | |
-| `claude-review-refs` | Fails when the workflows pin different releases of the review | |
+| `ai-review` | Reviews a pull request with Claude when it opens (or a draft is marked ready), pushes the fixes it can make as one commit and leaves the rest as inline comments. It runs on every push too, and reviews only the one that solves a conflict the pull request opened with | |
+| `ai-review-on-request` | Reviews it again, comments only, when the `ai-review` label is added | |
+| `ai-review-refs` | Fails when the workflows pin different releases of the review | |
 | `duplication` | Fails on copied JavaScript or CSS that `.jscpd-baseline.json` doesn't list | `npm run check:duplication` |
 | `legal` | Fails when a legal page isn't what its Markdown gives, or the Markdown has something the apps can't draw ([legal.md](legal.md)) | `npm run check:legal` |
 | `release-notes` | Fails when a version's notes have something the apps can't read, or a language's notes aren't English's ([release-notes.md](release-notes.md)) | `npm run check:release-notes` |
@@ -16,20 +16,20 @@ Cloudflare's Workers Builds deploys `main` on its own and reports it as a check 
 
 ## The review
 
-The review is [Quartel-Enterprise/claude-review](https://github.com/Quartel-Enterprise/claude-review), the same one as
+The review is [Quartel-Enterprise/ai-review](https://github.com/Quartel-Enterprise/ai-review), the same one as
 `blitz-split-client`'s, without its gate: the checks here take seconds, so they just run again on the review's fix
 commit. It needs the Claude GitHub App installed on the repository and the `CLAUDE_CODE_OAUTH_TOKEN` secret (from
 `claude setup-token`); when the token expires the review fails on authentication, and a new one goes in the secret. A
-pull request that changes `claude-review.yml` itself isn't reviewed, and neither is one from a `release-notes/<version>`
-branch, which a release of blitz-split-client writes and merges at once ([release-notes.md](release-notes.md#adding-a-version)). Bump every `Quartel-Enterprise/claude-review/*`
+pull request that changes `ai-review.yml` itself isn't reviewed, and neither is one from a `release-notes/<version>`
+branch, which a release of blitz-split-client writes and merges at once ([release-notes.md](release-notes.md#adding-a-version)). Bump every `Quartel-Enterprise/ai-review/*`
 `uses:` together.
 
 GitHub starts no `pull_request` workflow while a pull request conflicts with its base, so one opened (or marked ready)
-with a conflict gets no review then. That is why `claude-review` runs on every push too: the action reviews the push
+with a conflict gets no review then. That is why `ai-review` runs on every push too: the action reviews the push
 that solves the conflict, when the workflow has no run since the pull request opened (or a draft was last marked
 ready), and every other push, the review's own fix commit included, ends in seconds without reviewing. Each push runs
-in a concurrency group of its own, so it never cancels the opening review. `claude-review-on-request` waits up to two
-minutes for an unfinished `claude-review` run before dropping its label, so a label added right after a push isn't
+in a concurrency group of its own, so it never cancels the opening review. `ai-review-on-request` waits up to two
+minutes for an unfinished `ai-review` run before dropping its label, so a label added right after a push isn't
 dropped for that push's short run. See "Pull requests opened with a conflict" in the action's README.
 
 ## Merge when green
